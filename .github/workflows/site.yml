@@ -1,0 +1,88 @@
+# Builds and publishes the site.
+# Runs when you add or change a file, every weekday after the CSE closes,
+# and whenever you press "Run workflow" on the Actions tab.
+name: Build and publish site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 10:23 UTC = 15:53 in Sri Lanka, after the 14:30 market close. Monday to Friday.
+    - cron: "23 10 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # save fetched prices and logos
+  pages: write      # publish the site
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      problems: ${{ steps.build.outputs.problems }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # full history, so a rejected file can fall back to its last valid version
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Fetch names and logos for new companies
+        run: python scripts/fetch_companies.py
+
+      - name: Fetch closing prices
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python scripts/fetch_prices.py --missing-only
+          else
+            python scripts/fetch_prices.py
+          fi
+
+      - name: Save fetched prices and logos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated
+          if ! git diff --cached --quiet; then
+            git commit -m "Update CSE prices and company details"
+            git pull --rebase --autostash || true
+            git push || echo "::warning::Could not save fetched data this time; it will be fetched again on the next run."
+          fi
+
+      - name: Check analysis files and build the site
+        id: build
+        run: python scripts/build_site.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  # Marks the run as failed when something needs your attention, so GitHub
+  # emails you. The site has already been published by this point.
+  report:
+    needs: [build, deploy]
+    if: needs.build.outputs.problems == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::error::The site was published, but some files or the CSE data feed need attention. Open the 'build' job summary above for details."
+          exit 1
