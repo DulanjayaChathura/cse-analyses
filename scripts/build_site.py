@@ -12,6 +12,7 @@ import sys
 
 from common import DATA, GENERATED, PROBLEMS, ROOT, read_json, write_json
 from validate import validate_text
+import alerts
 
 SITE = ROOT / "_site"
 STATIC = ["index.html", "company.html", "assets"]
@@ -93,6 +94,17 @@ def main():
             problems = True
             report.append("### ⚠️ CSE data feed")
             report += [f"- {l}" for l in lines]
+
+    # Price targets for the website, with the date each one fired (from the Actions cache).
+    targets, alert_problems = alerts.load_targets()
+    if alert_problems:
+        problems = True
+        report.append("### ⚠️ alerts.json")
+        report += [f"- {p}" for p in alert_problems]
+    fired = alerts.load_state()["fired"]
+    for t in targets:
+        t["fired"] = fired.get(t["key"])
+    write_json(SITE / "data" / "alerts.json", {"targets": targets})
 
     write_json(SITE / "data" / "index.json", {"companies": manifest})
     write_json(SITE / "data" / "prices.json", read_json(GENERATED / "prices.json", {}))
