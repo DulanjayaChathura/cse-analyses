@@ -26,6 +26,36 @@ def today_colombo():
     return datetime.datetime.now(COLOMBO).date().isoformat()
 
 
+MARKET_CLOSE = datetime.time(14, 30)
+
+
+def last_session_date(now=None):
+    """Date of the most recent CSE trading session that has closed.
+
+    Weekends roll back to Friday; before 14:30 on a weekday the latest closed
+    session is the previous weekday. Public holidays aren't known here, so
+    callers also prefer a trade date reported by the CSE itself when present.
+    """
+    now = now or datetime.datetime.now(COLOMBO)
+    d = now.date()
+    if now.weekday() < 5 and now.time() < MARKET_CLOSE:
+        d -= datetime.timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= datetime.timedelta(days=1)
+    return d.isoformat()
+
+
+def date_from_cse(value):
+    """Turn a CSE timestamp (epoch milliseconds) into a Colombo date, or None."""
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return None
+    if v < 1e12:  # not epoch milliseconds
+        return None
+    return datetime.datetime.fromtimestamp(v / 1000, COLOMBO).date().isoformat()
+
+
 def now_utc():
     return datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 
