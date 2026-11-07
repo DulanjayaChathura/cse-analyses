@@ -10,12 +10,13 @@
   const ticker = new URLSearchParams(location.search).get("t");
   if (!ticker) { content.innerHTML = `<p>No company chosen. <a href="./">See all companies</a>.</p>`; return; }
 
-  let d, index, prices;
+  let d, index, prices, alertData;
   try {
-    [d, index, prices] = await Promise.all([
+    [d, index, prices, alertData] = await Promise.all([
       App.load(`data/tickers/${encodeURIComponent(ticker)}.json`),
       App.loadOptional("data/index.json", { companies: [] }),
       App.loadOptional("data/prices.json", {}),
+      App.loadOptional("data/alerts.json", { targets: [] }),
     ]);
   } catch (e) {
     content.innerHTML = `<p>There is no analysis for ${App.esc(ticker)}. <a href="./">See all companies</a>.</p>`;
@@ -30,6 +31,8 @@
   const v = has("valuation") ? d.valuation : {};
   const classes = has("shareClasses") ? d.shareClasses : [{ symbol: d.ticker, label: "Voting" }];
   const mainPrice = App.resolvePrice(classes[0].symbol, has("price") ? d.price : null, prices);
+  const classSymbols = new Set(classes.map((c) => c.symbol));
+  const myTargets = (alertData.targets || []).filter((t) => classSymbols.has(t.symbol));
   const status = App.priceStatus(mainPrice, v);
 
   /* ---------- Sections ---------- */
@@ -60,7 +63,8 @@
           <p class="ladder-caption">${App.term("Strong-buy price", "Strong-buy price")} ${App.rs(v.strongBuyPrice)} and ${App.term("buy price", "Buy price")} ${App.rs(v.buyPrice)} come from ${App.term("fair value", "Fair value")} ${App.rs(v.fairValue)} minus a ${App.term("margin of safety", "Margin of safety")}${v.marginOfSafety ? ` of ${v.marginOfSafety.strongBuy}% and ${v.marginOfSafety.buy}%` : ""}.</p></div>`;
     }, after: () => {
       const ex = has("scenarios") && d.scenarios.averages ? [d.scenarios.averages.bull] : [];
-      Charts.ladder(document.getElementById("ladder"), { price: mainPrice && mainPrice.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue, extra: ex });
+      Charts.ladder(document.getElementById("ladder"), { price: mainPrice && mainPrice.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue, extra: ex,
+        targets: myTargets.filter((t) => t.symbol === classes[0].symbol) });
     } },
 
     { id: "figures", title: "Key figures", key: "keyMetrics", html: () => `<h2>Key figures</h2>
@@ -118,6 +122,24 @@
           <tr><th class="rowh">${App.term(s.rowLabel || "")} ↓ / ${App.esc(s.columnLabel || "")} →</th>${s.columns.map((c) => `<th>${App.esc(c)}</th>`).join("")}</tr></thead>
           <tbody>${s.rows.map((r, i) => `<tr><th class="rowh">${App.esc(r)}</th>${s.values[i].map((val, j) => cell(val, i, j)).join("")}</tr>`).join("")}</tbody></table></div>
         ${s.note ? `<p style="margin-top:1rem">${App.esc(s.note)}</p>` : ""}`;
+    } },
+
+    { id: "alerts", title: "Your alerts", always: true, html: () => {
+      if (!myTargets.length) return `<h2>Your alerts</h2><p class="section-lead">No price alerts set for this company. Add targets to <b>alerts.json</b> in the repository to get Telegram messages.</p>`;
+      const rows = myTargets.map((t) => {
+        const pr = App.resolvePrice(t.symbol, t.symbol === classes[0].symbol && has("price") ? d.price : null, prices);
+        let state;
+        if (t.fired) state = `Sent on ${App.date(t.fired.at.slice(0, 10))} at ${App.price(t.fired.price)}`;
+        else if (pr) {
+          const away = ((t.price - pr.value) / pr.value) * 100;
+          state = `Waiting: ${Math.abs(away).toFixed(1)}% ${away < 0 ? "below" : "above"} the latest price`;
+        } else state = "Waiting";
+        return `<tr><td>${App.esc(t.symbol)}</td><td>${t.direction === "below" ? "At or below" : "At or above"} <b>${App.rs(t.price)}</b></td>
+          <td>${App.esc(t.note || "")}</td><td>${App.esc(state)}</td></tr>`;
+      }).join("");
+      return `<h2>Your alerts</h2>
+        <p class="section-lead">Checked about every 30 minutes during trading and after the close. Each alert is sent to Telegram once; change the target in alerts.json to set it again.</p>
+        <div class="table-wrap"><table><thead><tr><th>Share</th><th>Target</th><th>Note</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     } },
 
     { id: "buy-plan", title: "Buy plan", key: "buyPlan", html: () => {

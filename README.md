@@ -37,6 +37,48 @@ It's free: GitHub hosts it and runs the daily price update.
 
   Open the run on the **Actions** tab and click **build** to see the details. The site is still published in every one of these cases.
 
+## Telegram price alerts
+
+The site can post to a Telegram channel when a share reaches a price you choose. It checks about every 30 minutes during trading (roughly 09:37–14:07 Sri Lanka time, Monday to Friday; GitHub sometimes starts these late), and once more after the close.
+
+### One-time setup (about 10 minutes)
+
+1. **Create the channel.** In Telegram, tap the pencil icon, choose **New Channel**, give it a name, and pick **Private** (invite-only) or **Public**.
+2. **Create the bot.** Open a chat with **@BotFather**, send `/newbot`, choose a name and a username ending in `bot`. BotFather replies with a **token** (looks like `123456:ABC-...`). Keep it secret.
+3. **Make the bot an admin of the channel.** Open the channel, then **Administrators → Add Admin**, search for your bot's username, and allow **Post Messages**.
+4. **Save the token in GitHub.** In your repository, go to **Settings → Secrets and variables → Actions → New repository secret**. Name it `TELEGRAM_BOT_TOKEN` and paste the token.
+5. **Find the channel ID.**
+   - For a **public** channel, it's simply `@yourchannelname`.
+   - For a **private** channel, post any message in the channel. Then go to **Actions → Test Telegram → Run workflow**, open the run, and copy the number shown (it starts with `-100`).
+     Run logs in a public repository can be seen by anyone. The channel ID alone doesn't let anyone read or post in your channel, but you can delete the run afterwards if you prefer.
+6. **Save the channel ID** as another secret named `TELEGRAM_CHAT_ID`.
+7. **Test it.** Run **Actions → Test Telegram → Run workflow** again. A test message should appear in the channel.
+
+### Setting your targets
+
+Edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
+
+```json
+{
+  "targets": [
+    { "symbol": "DIAL.N0000", "direction": "below", "price": 35, "note": "first buying batch" },
+    { "symbol": "DIAL.N0000", "direction": "above", "price": 60, "note": "take profit" },
+    { "symbol": "JKH.X0000",  "direction": "below", "price": 15 }
+  ]
+}
+```
+
+- `direction` is `"below"` (alert when the price is at or below) or `"above"` (at or above).
+- `symbol` can be any share code, voting (`.N0000`) or non-voting (`.X0000`).
+- `note` is optional and appears in the message.
+- The file starts with one example target; change or delete it.
+
+**Each target is sent once.** When several targets for the same company are reached at the same check, they arrive in one message. To get alerted again, **change the target** (e.g. Rs 35 → Rs 34.50) or remove it and add it back. To re-arm **all** targets, delete the caches named `alert-state-…` under **Actions → Caches**.
+
+Sending an alert never creates a commit. Which alerts were sent is remembered in GitHub's Actions cache, and each company page shows the status under **Your alerts**. If GitHub ever loses that cache, which is rare, an alert you already received may be sent once more.
+
+If a message can't be sent (Telegram down, wrong token or channel), it's retried at the next check, and GitHub emails you about the failed run.
+
 ## Checking a file before uploading (optional)
 
 If you have Python installed: `python scripts/validate.py path/to/FILE.json`
@@ -57,7 +99,10 @@ If you have Python installed: `python scripts/validate.py path/to/FILE.json`
 | `generated/` | Prices, names and logos fetched from the CSE. Updated automatically; don't edit by hand. |
 | `index.html`, `company.html`, `assets/` | The website (plain HTML, CSS and JavaScript, with comments). |
 | `scripts/` | The data check, the site build and the CSE fetchers (Python, no extra packages). |
-| `.github/workflows/site.yml` | The automatic schedule. |
+| `.github/workflows/site.yml` | The automatic schedule: daily prices, the after-close alert check, building the site. |
+| `.github/workflows/alerts.yml` | The 30-minute alert checks during trading. |
+| `.github/workflows/telegram-test.yml` | The "Test Telegram" button. |
+| `alerts.json` | Your price targets. |
 | `prompt/analysis-prompt.md` | The prompt to paste into claude.ai. |
 
 ## Changing the site later

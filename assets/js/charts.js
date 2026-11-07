@@ -15,11 +15,11 @@ function niceTicks(min, max, count = 6) {
 }
 
 /* ---------- Price ladder: zones from strong-buy to above fair value ---------- */
-Charts.ladder = function (el, { price, strongBuy, buy, fair, extra = [] }) {
-  const vals = [price, strongBuy, buy, fair, ...extra].filter(App.isNum);
+Charts.ladder = function (el, { price, strongBuy, buy, fair, extra = [], targets = [] }) {
+  const vals = [price, strongBuy, buy, fair, ...extra, ...targets.map((t) => t.price)].filter(App.isNum);
   if (!App.isNum(fair) || vals.length < 2) { el.innerHTML = '<p class="na">Not enough valuation levels to draw the price ladder.</p>'; return; }
   const lo = Math.min(...vals) * 0.8, hi = Math.max(...vals) * 1.1;
-  const W = 1000, H = 150, L = 10, R = 990, barY = 62, barH = 26;
+  const W = 1000, H = targets.length ? 190 : 150, L = 10, R = 990, barY = 62, barH = 26;
   const x = scale(lo, hi, L, R);
   const zones = [
     [lo, App.isNum(strongBuy) ? strongBuy : lo, "--zone-strong"],
@@ -45,6 +45,14 @@ Charts.ladder = function (el, { price, strongBuy, buy, fair, extra = [] }) {
       `<text x="${x(v)}" y="${barY + barH + 44}" text-anchor="middle" font-size="14" font-weight="600" fill="${css("--ink")}">${App.rs(v)}</text>`;
   };
   s += level(strongBuy, "Strong buy") + level(buy, "Buy") + level(fair, "Fair value");
+  // Your alert targets: dashed line down from the bar to a label underneath.
+  targets.forEach((t, i) => {
+    if (!App.isNum(t.price)) return;
+    const tx = x(t.price), ly = barY + barH + 66 + (i % 2) * 18;
+    const color = t.fired ? css("--ink-soft") : css("--warn");
+    s += `<line x1="${tx}" x2="${tx}" y1="${barY + barH}" y2="${ly - 13}" stroke="${color}" stroke-width="1.5" stroke-dasharray="3 3"/>` +
+      `<text x="${tx}" y="${ly}" text-anchor="middle" font-size="13" fill="${color}">${t.direction === "below" ? "▼" : "▲"} Alert ${App.rs(t.price)}${t.fired ? " (sent)" : ""}</text>`;
+  });
   if (App.isNum(price)) {
     const px = x(price);
     s += `<line x1="${px}" x2="${px}" y1="${barY - 14}" y2="${barY + barH + 2}" stroke="${css("--accent")}" stroke-width="4" stroke-linecap="round"/>` +

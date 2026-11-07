@@ -1,0 +1,50 @@
+# Checks your price targets (alerts.json) every 30 minutes during CSE trading
+# hours and posts to your Telegram channel when one is crossed.
+# Never commits: which targets have fired is kept in the Actions cache.
+name: Price alerts
+
+on:
+  schedule:
+    # 04:07 to 08:37 UTC = 09:37 to 14:07 Sri Lanka time, Monday to Friday.
+    # GitHub can start scheduled runs late, especially at busy times.
+    - cron: "7,37 4-8 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write   # save the alert memory in the Actions cache
+
+concurrency:
+  group: alert-state
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Load which alerts have already been sent
+        uses: actions/cache/restore@v5
+        with:
+          path: .alert-state
+          key: alert-state-${{ github.run_id }}
+          restore-keys: alert-state-
+
+      - name: Check targets and send alerts
+        id: alerts
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/alerts.py --live
+
+      - name: Remember sent alerts
+        if: always() && steps.alerts.outputs.state_changed == 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: .alert-state
+          key: alert-state-${{ github.run_id }}-${{ github.run_attempt }}
