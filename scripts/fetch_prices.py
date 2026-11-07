@@ -36,7 +36,7 @@ def main(missing_only=False):
         print("No prices to fetch.")
         return 0
 
-    today = cse.today_colombo()
+    session = cse.last_session_date()
     try:
         summary = cse.trade_summary()
     except Exception as e:
@@ -50,8 +50,10 @@ def main(missing_only=False):
         row = summary.get(sym)
         price = prev = None
         did_trade = False
+        trade_date = None
         if row and num(row.get("price")):
             price, prev, did_trade = num(row.get("price")), num(row.get("previousClose")), traded(row)
+            trade_date = next((cse.date_from_cse(row.get(k)) for k in ("lastTradedTime", "tradeDate") if cse.date_from_cse(row.get(k))), None)
         else:
             try:
                 _, _, price, prev = cse.company_info(sym)
@@ -65,19 +67,20 @@ def main(missing_only=False):
             note_problem(f"{sym}: the CSE returned no price; keeping the last known price.")
             continue
 
+        # Prefer the trade date the CSE reports; otherwise use the latest closed session.
+        price_date = trade_date or (session if (market_traded or not old) else old.get("priceDate", session))
         entry = {
             "close": price,
             "previousClose": prev,
             "change": round(price - prev, 2) if prev else None,
             "changePct": round((price - prev) / prev * 100, 2) if prev else None,
-            # On a holiday/weekend nothing trades: keep the old price date.
-            "priceDate": today if (market_traded or not old) else old.get("priceDate", today),
-            "lastTradeDate": today if did_trade else old.get("lastTradeDate"),
+            "priceDate": price_date,
+            "lastTradeDate": (trade_date or price_date) if did_trade else old.get("lastTradeDate"),
             "fetchedAt": cse.now_utc(),
         }
         symbols_store[sym] = entry
         ok += 1
-        print(f"{sym}: {price} (traded today: {did_trade})")
+        print(f"{sym}: {price} (session {price_date}, traded: {did_trade})")
 
     store["source"] = "cse.lk (unofficial data feed)"
     store["updatedAt"] = cse.now_utc()
