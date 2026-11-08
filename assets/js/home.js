@@ -30,13 +30,6 @@
     ? `${companies.length} ${companies.length === 1 ? "company" : "companies"}. Prices last updated ${App.date(prices.updatedAt.slice(0, 10))}.`
     : `${companies.length} ${companies.length === 1 ? "company" : "companies"}`;
 
-  function gapText(c) {
-    const g = gap(c);
-    if (g === null) return "";
-    const pct = Math.round(Math.abs(g) * 100);
-    return `<span>${pct === 0 ? "At fair value" : `<b>${pct}%</b> ${g > 0 ? "above" : "below"} fair value`}</span>`;
-  }
-
   function card(c) {
     const lines = c.shareClasses.map((sc) => {
       const pr = App.resolvePrice(sc.symbol, sc.symbol === c.ticker ? c.price : null, prices);
@@ -60,7 +53,7 @@
       <div class="card-top">${App.logo(c)}<div><div class="card-name">${App.esc(c.name)}</div><div class="card-sector">${App.esc(c.sector || "")}</div></div></div>
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
-      <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span>${gapText(c)}<span>Analysis ${App.date(c.analysisDate)}</span></div>
+      <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span><span>Analysis ${App.date(c.analysisDate)}</span></div>
       <div class="badges">${badges.join("")}</div>
     </a>`;
   }
