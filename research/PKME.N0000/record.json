@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PKME.N0000",
+  "localFolder": "pick me",
+  "updated": "2026-11-09",
+  "reportsRead": [
+    {
+      "file": "Pick me Annual Report as at  2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: highlights (p. 7) and income statement (p. 87)."
+    },
+    {
+      "file": "pick me Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: highlights (p. 10), statements (pp. 122–123), dividends note 11 and shareholders' information (pp. 154–156)."
+    },
+    {
+      "file": "pick me Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Agrees with the audited annual report."
+    },
+    {
+      "file": "pick me Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    },
+    {
+      "file": "pick me Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 3.919,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 87"
+        },
+        "netProfit": {
+          "value": 0.679,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 87"
+        },
+        "eps": {
+          "value": 2.05,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, p. 87"
+        },
+        "roe": {
+          "value": 48.54,
+          "unit": "%",
+          "source": "Annual Report 2024/25, p. 7"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 5.835,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 87",
+          "note": "Up 49%"
+        },
+        "netProfit": {
+          "value": 1.17,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 87"
+        },
+        "eps": {
+          "value": 3.51,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, p. 87"
+        },
+        "roe": {
+          "value": 54.12,
+          "unit": "%",
+          "source": "Annual Report 2024/25, p. 7"
+        },
+        "dividendPerShare": {
+          "value": 2.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. note 11",
+          "note": "Rs 1.00 interim and Rs 1.30 final"
+        },
+        "navPerShare": {
+          "value": 7.76,
+          "unit": "Rs",
+          "source": "Interim to 31 Mar 2026"
+        },
+        "priceYearEnd": {
+          "value": 73.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 155"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 8.682,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 122",
+          "note": "Up 49%"
+        },
+        "netProfit": {
+          "value": 2.204,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 122",
+          "note": "Up 88%"
+        },
+        "eps": {
+          "value": 6.61,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 122"
+        },
+        "roe": {
+          "value": 68.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 10"
+        },
+        "dividendPerShare": {
+          "value": 4.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. note 11",
+          "note": "Rs 1.70 interim and Rs 2.60 final; payout 65%"
+        },
+        "navPerShare": {
+          "value": 11.47,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "freeCashFlow": {
+          "value": 2.5,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 10"
+        },
+        "gtv": {
+          "value": 84.5,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 10",
+          "note": "Value of trips and deliveries; up 49%"
+        },
+        "cashAndInvestments": {
+          "value": 3.369,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 123",
+          "note": "No borrowings apart from leases"
+        },
+        "peYearEnd": {
+          "value": 20.8,
+          "unit": "x",
+          "source": "Own calculation: Rs 137.25 / Rs 6.61"
+        },
+        "priceYearEnd": {
+          "value": 137.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 155"
+        },
+        "sharesOutstanding": {
+          "value": 333.324,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, p. 154"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 2.512,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Quarter; up 40%"
+        },
+        "netProfit": {
+          "value": 0.631,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Quarter; up 45%"
+        },
+        "eps": {
+          "value": 1.89,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Quarter; Rs 1.31 a year earlier"
+        },
+        "navPerShare": {
+          "value": 13.41,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "priceQuarterEnd": {
+          "value": 173.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 10",
+          "note": "Quarter range Rs 134.75–175.25"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 5.383,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Six months; up 38%. Quarter Rs 2.87bn, up 37%"
+        },
+        "netProfit": {
+          "value": 1.415,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Six months; up 49%. Quarter Rs 784mn, up 53%"
+        },
+        "eps": {
+          "value": 4.24,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Six months; quarter Rs 2.35"
+        },
+        "navPerShare": {
+          "value": 13.34,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "gtv": {
+          "value": 53.8,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; up 43%"
+        },
+        "cashAndInvestments": {
+          "value": 4.003,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Cash Rs 1.72bn plus other investments Rs 2.28bn"
+        },
+        "dividendDeclared": {
+          "value": 2.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": "Interim for 2026/27, 65% payout"
+        },
+        "sharesOutstanding": {
+          "value": 333.823,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, p. 9"
+        },
+        "priceQuarterEnd": {
+          "value": 154.25,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "Quarter range Rs 152.00–173.00"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 17.5% / Base 16% / Bull 15%",
+      "reason": "Bonds about 12% (Oct 2026) plus a premium for a young, fast-growing app business exposed to competition and regulation.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Growth path (DCF and dividends)",
+      "value": "15% / 25% / 32% in year 1, fading to 5% / 6% / 7% over 10 years",
+      "reason": "Profit grew 49–88% a year recently; growth should slow as the app matures.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Free cash flow this year",
+      "value": "Rs 8.0 / 8.7 / 9.2 a share",
+      "reason": "2025/26 free cash flow about Rs 2.5bn (Rs 7.5 a share), close to profit.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "8.7 × 12 / 9.3 × 16 / 9.7 × 20",
+      "reason": "H1 EPS Rs 4.24; second half 20% / 35% / 45% above last year's Rs 3.76.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Dividend this year",
+      "value": "Rs 5.6 / 6.0 / 6.3",
+      "reason": "65% payout of the EPS estimate.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Methods used",
+      "value": "Cash-flow DCF, P/E, dividend model",
+      "reason": "Asset-light cash generator; NAV and residual income not useful with such a small book value.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-09"
+    }
+  ],
+  "openQuestions": [
+    "Q3 results (to December 2026, due by mid-February): does profit growth stay above 35%?",
+    "Do fuel supply problems come back and hit driver numbers?",
+    "Any sign of price competition (for example from Uber)?",
+    "How fast are food and grocery delivery growing, and are they profitable?",
+    "What happens to the growing cash pile: higher dividends, or new spending?"
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-09",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "First analysis.",
+      "fairValue": 131.0,
+      "buyPrice": 111.4,
+      "strongBuyPrice": 98.3,
+      "priceAtTime": 154.25,
+      "archive": null
+    }
+  ]
+}

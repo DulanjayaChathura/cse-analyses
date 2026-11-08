@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PKME.N0000",
+  "company": {
+    "name": "Digital Mobility Solutions Lanka PLC",
+    "sector": "Ride-hailing and delivery app (PickMe)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "PKME.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-09",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 154.25,
+    "date": "2026-09-30",
+    "source": "Interim report to 30 Sep 2026 (quarter-end price)",
+    "note": "July–September 2026 range Rs 152.00–173.00; Rs 127.25 low in January–March 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A great, debt-free, fast-growing business, but the price already assumes years of fast growth",
+    "text": "Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000) is an excellent business: Sri Lanka's leading ride-hailing and delivery app, with no debt, a return on equity near 70% and profit up 49% in the six months to September 2026. At Rs 154.25 the share trades at 19.3x trailing earnings, which already prices in several more years of fast growth. Assuming growth slows from about 25% a year towards 6% over ten years, the methods put fair value at about Rs 131, so the price is about 18% above it. I'd buy at up to about Rs 111 and treat under Rs 98 as a strong buy."
+  },
+  "valuation": {
+    "fairValue": 131.0,
+    "buyPrice": 111.4,
+    "strongBuyPrice": 98.3,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 13.34,
+    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 16x trailing earnings)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 13.34,
+      "unit": "Rs",
+      "note": "30 Sep 2026; not useful for an app business"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 11.6,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 19.3,
+      "unit": "x",
+      "note": "Trailing EPS Rs 8.00"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 68.7,
+      "unit": "%",
+      "note": "Year to March 2026"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.8,
+      "unit": "%",
+      "note": "Rs 4.30 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 65,
+      "unit": "%"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": -0.9,
+      "unit": "x",
+      "display": "Net cash",
+      "note": "Rs 4.0bn cash and investments, no borrowings"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 38,
+      "unit": "%",
+      "note": "Six months to Sep 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 51,
+      "unit": "Rs bn",
+      "display": "~Rs 51bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 38% to Rs 5.38bn and profit rose 49% to Rs 1.41bn. EPS was Rs 4.24 against Rs 2.85. The September quarter was the best so far (Rs 784mn)."
+    },
+    {
+      "title": "Activity on the app",
+      "text": "Trips and deliveries worth Rs 53.8bn in the half (up 43%); about 2.1mn monthly users in the September quarter (up 38%) and 58% more drivers earning."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Revenue Rs 8.68bn (up 49%), profit Rs 2.20bn (up 88%), EPS Rs 6.61, ROE 68.7%, dividends Rs 4.30 (65% payout)."
+    },
+    {
+      "title": "Balance sheet and dividend",
+      "text": "No borrowings and Rs 4.0bn in cash and investments (about Rs 12 a share). An interim dividend of Rs 2.75 was declared for this year."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          2.05,
+          3.51,
+          6.61,
+          8.0
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "Rs bn",
+        "values": [
+          3.92,
+          5.83,
+          8.68,
+          10.17
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          48.5,
+          54.1,
+          68.7,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          2.3,
+          4.3,
+          null
+        ],
+        "notes": [
+          "Before listing",
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 13.34",
+      "reading": "The price is 11.6x NAV, but that isn't useful here: an app business needs very little capital."
+    },
+    {
+      "method": "Return on equity",
+      "value": "68.7%",
+      "reading": "Year to March 2026 (54% and 49% in the two years before)."
+    },
+    {
+      "method": "P/E",
+      "value": "19.3x",
+      "reading": "On trailing EPS of Rs 8.00. Year-end P/E 20.8x in both 2026 and 2025."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.8% yield",
+      "reading": "Rs 4.30 for 2025/26 (65% payout); Rs 2.75 interim declared for this year."
+    },
+    {
+      "method": "Cash flow",
+      "value": "About Rs 2.5bn",
+      "reading": "Free cash flow in 2025/26, close to profit. No borrowings; Rs 4.0bn of cash and investments."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF",
+      "bear": 83.7,
+      "base": 148.4,
+      "bull": 237.5,
+      "weighted": 146.8,
+      "comment": "Free cash flow of about Rs 8.7 a share, growth fading from 25% to 6% over 10 years (base). Widest range."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 104.4,
+      "base": 148.8,
+      "bull": 194.0,
+      "weighted": 144.5,
+      "comment": "EPS for the year to March 2027 times 12 / 16 / 20."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 58.6,
+      "base": 102.3,
+      "bull": 162.6,
+      "weighted": 101.3,
+      "comment": "The strictest: about a third of profit is kept, mostly as cash."
+    }
+  ],
+  "modelsNote": "PickMe turns nearly all its profit into free cash, so a cash-flow DCF suits it. Residual income adds little because the book value is so small, and NAV isn't a useful guide.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17.5%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Growth in year 1, fading over 10 years",
+        "bear": "15%",
+        "base": "25%",
+        "bull": "32%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Free cash flow this year (Rs a share)",
+        "bear": "8.0",
+        "base": "8.7",
+        "bull": "9.2"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "8.7 × 12",
+        "base": "9.3 × 16",
+        "bull": "9.7 × 20"
+      },
+      {
+        "label": "Dividend this year (Rs a share)",
+        "bear": "5.6",
+        "base": "6.0",
+        "bull": "6.3"
+      }
+    ],
+    "averages": {
+      "bear": 82.2,
+      "base": 133.2,
+      "bull": 198.0
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Base-case EPS for the year to March 2027 is about Rs 9.30 (second half up about 35%)."
+  },
+  "sensitivity": {
+    "title": "DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Growth in year 1",
+    "rows": [
+      "14.5%",
+      "16%",
+      "17.5%"
+    ],
+    "columns": [
+      "15%",
+      "25%",
+      "35%"
+    ],
+    "values": [
+      [
+        133.3,
+        177.8,
+        235.8
+      ],
+      [
+        112.2,
+        148.4,
+        195.2
+      ],
+      [
+        96.7,
+        126.8,
+        165.6
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Value is very sensitive to how long fast growth lasts."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 131.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 111.4
+      },
+      {
+        "shares": 150,
+        "maxPrice": 98.3
+      }
+    ],
+    "averagePrice": 115.31,
+    "totalCost": 57655,
+    "note": "About Rs 57,655 in total, against Rs 77,125 at Rs 154.25.",
+    "realism": "Rs 131 needs about a 15% fall. The share reached Rs 134.75 in April–June 2026 and Rs 127.25 in January–March 2026, so the first tier is realistic; Rs 111 and below would probably need a market sell-off or a growth scare."
+  },
+  "changeMyView": {
+    "higher": [
+      "Growth staying above 30% for longer.",
+      "Food and grocery delivery adding profit.",
+      "Lower interest rates.",
+      "A higher payout or special dividends from the cash pile."
+    ],
+    "lower": [
+      "A strong competitor (such as Uber) cutting prices.",
+      "Fuel shortages, or new rules on ride-hailing or driver pay.",
+      "Growth slowing sharply.",
+      "Much higher spending on new services.",
+      "Higher taxes on digital services."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000) is an excellent business: Sri Lanka's leading ride-hailing and delivery app, with no debt, a return on equity near 70% and profit up 49% in the six months to September 2026. At Rs 154.25 the share trades at 19.3x trailing earnings, which already prices in several more years of fast growth. Assuming growth slows from about 25% a year towards 6% over ten years, the methods put fair value at about Rs 131, so the price is about 18% above it. I'd buy at up to about Rs 111 and treat under Rs 98 as a strong buy.\n\nPrice and key figures\nPrice: Rs 154.25 (Interim report to 30 Sep 2026 (quarter-end price), 2026-09-30). Please check it live. In July–September 2026 it traded between Rs 152.00 and Rs 173.00, and in April–June between Rs 134.75 and Rs 175.25. It closed the year to March 2026 at Rs 137.25, up from Rs 73.10 a year earlier.\nSix months to 30 September 2026 (unaudited): revenue rose 38% to Rs 5.38bn and profit rose 49% to Rs 1.41bn. EPS was Rs 4.24 against Rs 2.85. The September quarter alone earned Rs 784mn (EPS Rs 2.35), the best quarter so far, even though fuel shortages held back the June quarter.\nActivity: the value of trips and deliveries on the app (GTV) rose 43% to Rs 53.8bn in the half year. About 2.1mn people used the app each month in the September quarter (up 38%), and the number of drivers earning on it rose 58%.\nYear to March 2026 (audited): revenue Rs 8.68bn (up 49%), profit Rs 2.20bn (up 88%), EPS Rs 6.61 (Rs 3.51), ROE 68.7%, dividends Rs 4.30 (65% of profit), free cash flow about Rs 2.5bn.\nBalance sheet: no borrowings apart from office leases, and Rs 4.0bn in cash and short-term investments at September 2026 (about Rs 12 a share). NAV is Rs 13.34.\nDividend: an interim dividend of Rs 2.75 was declared for this year (65% of half-year profit).\nHistory: EPS Rs 2.05 (2023/24), Rs 3.51 (2024/25), Rs 6.61 (2025/26). Listed on the CSE in October 2024.\n\nMethods\nNAV (Rs 13.34): 11.6x. Not useful here: the business needs very little capital, so its value is in its earnings, not its assets.\nReturn on equity: 68.7% in 2025/26 (54% and 49% in the two years before).\nP/E: 19.3x trailing EPS of Rs 8.00. Year-end P/E: 20.8x (2026), 20.8x (2025).\nDividends: Rs 4.30 for 2025/26, a 2.8% yield; 65% payout.\nCash-flow DCF (free cash flow about Rs 8.7 a share this year, growth fading over 10 years): Rs 83.7 / 148.4 / 237.5, weighted Rs 146.8.\nP/E method: Rs 104.4 / 148.8 / 194.0, weighted Rs 144.5.\nDividend model: Rs 58.6 / 102.3 / 162.6, weighted Rs 101.3.\n\nPickMe turns nearly all its profit into free cash, so a cash-flow DCF suits it; residual income adds little because the book value is so small. The dividend model is the strictest because about a third of profit is kept, mostly as cash. The DCF has the widest range because the value depends heavily on how long fast growth lasts.\n\nAssumptions (bear / base / bull)\nCost of equity: 17.5% / 16% / 15%.\nGrowth in the first year, fading to long-term growth over 10 years: 15% / 25% / 32%.\nLong-term growth: 5% / 6% / 7%.\nFree cash flow this year (Rs a share): 8.0 / 8.7 / 9.2.\nEPS for the year to March 2027 × P/E: 8.7 × 12 / 9.3 × 16 / 9.7 × 20.\nDividend this year (Rs a share): 5.6 / 6.0 / 6.3.\nAverage of the three methods: Rs 82.2 / Rs 133.2 / Rs 198.0.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). In the base case the second half of this year grows about 35% on last year's, giving EPS of about Rs 9.30 for the year to March 2027.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 131 (about 16x trailing earnings), so Rs 154.25 is about 18% above it.\nBuy price: a 15% margin of safety gives Rs 111.40, and 25% gives Rs 98.30.\nPlan for 500 shares: 200 at up to Rs 131.00, 150 at up to Rs 111.40 and 150 at up to Rs 98.30. That averages about Rs 115.31, about Rs 57,655, against Rs 77,125 at Rs 154.25.\nRealism: Rs 131 needs about a 15% fall. The share got close (Rs 134.75) in April–June 2026 and fell to Rs 127.25 in January–March 2026, so the first tier is realistic. Rs 111 and below would probably need a market sell-off or a growth scare.\n\nSensitivity (DCF base case, Rs per share)\nCost of equity 14.5%: 133.3 / 177.8 / 235.8 for first-year growth of 15% / 25% / 35%.\nCost of equity 16%: 112.2 / 148.4 / 195.2.\nCost of equity 17.5%: 96.7 / 126.8 / 165.6.\nValue is very sensitive to how long fast growth lasts.\n\nWhat would change my view\nSupports a higher value: growth staying above 30% for longer; food and grocery delivery adding profit; lower interest rates; a higher payout or special dividends from the cash pile.\nSupports a lower value: a strong competitor (such as Uber) cutting prices; fuel shortages or new rules on ride-hailing or driver pay; growth slowing sharply; much higher spending on new services; higher taxes on digital services.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}
