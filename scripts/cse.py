@@ -106,13 +106,25 @@ SMALL_WORDS = {"PLC", "LTD", "CO", "&"}
 
 
 def nice_name(name):
-    """'DIALOG AXIATA PLC' -> 'Dialog Axiata PLC'."""
+    """'DIALOG AXIATA PLC' -> 'Dialog Axiata PLC'; 'C I C HOLDINGS PLC' -> 'CIC Holdings PLC'."""
     if not name:
         return name
-    out = []
+    words, run = [], ""
     for w in name.split():
-        if w.upper() in SMALL_WORDS or len(w) == 1:
-            out.append(w.upper() if w.upper() != "CO" else "Co")
+        if len(w) == 1 and w.isalpha():      # spaced initials: C I C
+            run += w
+            continue
+        if run:
+            words.append((run, True)); run = ""
+        words.append((w, False))
+    if run:
+        words.append((run, True))
+    out = []
+    for w, initials in words:
+        core = w.strip("()&.,")
+        if initials or w.upper() in SMALL_WORDS or (core.isalpha() and not any(c in "AEIOU" for c in core.upper())):
+            out.append(w.upper() if w.upper() != "CO" else "Co")      # PLC, LTD, HNB, NDB, CIC
         else:
-            out.append(w[0].upper() + w[1:].lower())
+            i = next((k for k, c in enumerate(w) if c.isalpha()), 0)
+            out.append(w[:i] + w[i].upper() + w[i + 1:].lower())
     return " ".join(out)

@@ -13,6 +13,7 @@ import sys
 from common import DATA, GENERATED, PROBLEMS, ROOT, read_json, write_json
 from validate import validate_text
 import alerts
+import cse
 
 SITE = ROOT / "_site"
 STATIC = ["index.html", "company.html", "assets"]
@@ -62,7 +63,7 @@ def summarize(data, warnings, bad, previous, companies):
     ok = lambda k: k in data and k not in bad
     return {
         "ticker": t,
-        "name": fetched.get("name") or company.get("name") or t,
+        "name": (cse.nice_name(fetched["cseName"]) if fetched.get("cseName") else fetched.get("name")) or company.get("name") or t,
         "logo": fetched.get("logo"),
         "sector": company.get("sector"),
         "fiscalYearEnd": company.get("fiscalYearEnd") if ok("company") else None,

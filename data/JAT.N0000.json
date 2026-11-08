@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "ticker": "JAT.N0000",
+  "company": {
+    "name": "JAT Holdings PLC",
+    "sector": "Paints and wood coatings",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "JAT.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-08",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 32.5,
+    "date": "2026-09-30",
+    "source": "Interim report to 30 Sep 2026 (period-end price)",
+    "note": "July–September 2026 range Rs 32.40–40.20; April–June Rs 35.00–44.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Fast-growing after overseas expansion, but priced well above what its returns support",
+    "text": "JAT Holdings (JAT.N0000) is growing fast after expanding into New Zealand and Bangladesh, but the price is well ahead of what its returns support. At Rs 32.50 it trades at 1.38x its NAV of Rs 23.48 and 10.5x trailing earnings, with a 2.2% dividend yield. Return on equity has been 11–17% (13% in the year to March 2026), below the 18% return I require, so the book-value methods value it below NAV, and only the P/E method supports today's price. Averaging the methods gives a fair value of about Rs 21, so the price is about 55% above it. I'd buy at up to about Rs 17.80 and treat under Rs 15.70 as a strong buy. Sales rose 36% in the first half, but costs rose almost as fast and the business used cash to build inventory."
+  },
+  "valuation": {
+    "fairValue": 21.0,
+    "buyPrice": 17.8,
+    "strongBuyPrice": 15.7,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 23.48,
+    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 0.89x NAV)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 23.48,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.38,
+      "unit": "x",
+      "note": "Fails your NAV rule"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 10.5,
+      "unit": "x",
+      "note": "Trailing EPS Rs 3.10"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 13,
+      "unit": "%",
+      "note": "Year to March 2026"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.2,
+      "unit": "%",
+      "note": "About Rs 0.72 paid this year"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth (H1)",
+      "value": 36,
+      "unit": "%",
+      "note": "New Zealand and Bangladesh"
+    },
+    {
+      "id": "gearing",
+      "label": "Gearing",
+      "value": 21,
+      "unit": "%",
+      "note": "March 2026"
+    },
+    {
+      "id": "inventoryDays",
+      "label": "Inventory days",
+      "value": 154,
+      "unit": "",
+      "note": "Year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 17.0,
+      "unit": "Rs bn",
+      "display": "~Rs 17bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue rose 36% to Rs 7.01bn and profit attributable rose 24% to Rs 497mn. EPS was Rs 0.95 against Rs 0.77."
+    },
+    {
+      "title": "Where growth came from",
+      "text": "New Zealand (Mirotone) added Rs 693mn of sales, Bangladesh grew 49% and Sri Lanka 14%. Wood coatings rose 34% and decoratives 83%."
+    },
+    {
+      "title": "Costs and cash",
+      "text": "Selling costs rose 48% and administration 32%, so operating profit rose only 15%. Operating cash flow was negative as inventory rose Rs 1.13bn."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Revenue Rs 12.64bn (up 9%), profit Rs 1.52bn (down 14%), EPS Rs 2.92, ROE 13%, gearing 21%."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          16,
+          15,
+          11,
+          17,
+          13,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Helped by a tax credit",
+          null,
+          null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          7.7,
+          13.4,
+          10.5
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Year-end",
+          "Year-end",
+          "Trailing, at Rs 32.50"
+        ]
+      },
+      {
+        "id": "profit",
+        "label": "Profit for the year",
+        "unit": "Rs bn",
+        "values": [
+          1.21,
+          1.3,
+          1.02,
+          1.78,
+          1.52,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 23.48",
+      "reading": "The price is 1.38x NAV, so it fails your NAV rule."
+    },
+    {
+      "method": "Return on equity",
+      "value": "13%",
+      "reading": "Year to March 2026; 11–17% over the last five years, below the 18% required return."
+    },
+    {
+      "method": "P/E",
+      "value": "10.5x",
+      "reading": "On trailing EPS of Rs 3.10. Year-end P/E 13.4x (2026), 7.7x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.2% yield",
+      "reading": "About Rs 0.72 paid this year; the payout is 15–25% of profit."
+    },
+    {
+      "method": "Cash and debt",
+      "value": "Gearing 21%",
+      "reading": "Operating cash flow turned negative in the half as inventory grew; borrowings Rs 4.38bn."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 11.0,
+      "base": 15.7,
+      "bull": 24.7,
+      "weighted": 16.1,
+      "comment": "Below book value because ROE (about 14%) is under the 18% required return."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 23.2,
+      "base": 34.0,
+      "bull": 45.6,
+      "weighted": 33.1,
+      "comment": "The only method that supports today's price: assumes the market keeps paying about 10x earnings for growth."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 7.1,
+      "base": 13.3,
+      "bull": 24.4,
+      "weighted": 13.7,
+      "comment": "Book value plus profit earned above the required return; strict while ROE is below 18%."
+    }
+  ],
+  "modelsNote": "A dividend model (Rs 2.9 / 6.4 / 10.4) understates a company that keeps most of its profit, and heavy working capital makes free cash flow too irregular for a reliable DCF, so the fair value uses three methods.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20%",
+        "base": "18%",
+        "bull": "16.5%"
+      },
+      {
+        "label": "Long-run ROE (price to book)",
+        "bear": "12%",
+        "base": "14%",
+        "bull": "17%"
+      },
+      {
+        "label": "Return on equity path",
+        "bear": "13% falling to 11%",
+        "base": "14.5% falling to 14%",
+        "bull": "16% rising to 17%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "2.9 × 8",
+        "base": "3.4 × 10",
+        "bull": "3.8 × 12"
+      }
+    ],
+    "averages": {
+      "bear": 13.8,
+      "base": 21.0,
+      "bull": 31.6
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a small, export-exposed manufacturer. In the base case, the second half grows about 15% on last year's, giving EPS of about Rs 3.40 for the year to March 2027."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16%",
+      "18%",
+      "20%"
+    ],
+    "columns": [
+      "11%",
+      "14%",
+      "17%"
+    ],
+    "values": [
+      [
+        11.3,
+        17.4,
+        24.7
+      ],
+      [
+        8.9,
+        13.3,
+        18.5
+      ],
+      [
+        7.2,
+        10.5,
+        14.3
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "On book value, today's price would need ROE well above 17% for years."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 21.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 17.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 15.7
+      }
+    ],
+    "averagePrice": 18.45,
+    "totalCost": 9225,
+    "note": "About Rs 9,225 in total, against Rs 16,250 at Rs 32.50.",
+    "realism": "Rs 21 needs about a 35% fall and Rs 17.80 about 45%. The share was Rs 26.90 in March 2025, so it has been close recently, but it would take a market sell-off or a profit disappointment."
+  },
+  "changeMyView": {
+    "higher": [
+      "New Zealand and Bangladesh lifting ROE above 17%.",
+      "Costs growing slower than sales.",
+      "Inventory and receivables falling, turning cash flow positive.",
+      "A higher dividend payout.",
+      "Lower interest rates."
+    ],
+    "lower": [
+      "Costs continuing to rise as fast as sales.",
+      "More cash tied up in inventory (154 days) and receivables (139 days).",
+      "Integration problems with the overseas acquisitions.",
+      "A construction or furniture-export slowdown hitting wood coatings.",
+      "Currency swings in Bangladesh and New Zealand."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: JAT Holdings (JAT.N0000) is growing fast after expanding into New Zealand and Bangladesh, but the price is well ahead of what its returns support. At Rs 32.50 it trades at 1.38x its NAV of Rs 23.48 and 10.5x trailing earnings, with a 2.2% dividend yield. Return on equity has been 11–17% (13% in the year to March 2026), below the 18% return I require, so the book-value methods value it below NAV, and only the P/E method supports today's price. Averaging the methods gives a fair value of about Rs 21, so the price is about 55% above it. I'd buy at up to about Rs 17.80 and treat under Rs 15.70 as a strong buy. Sales rose 36% in the first half, but costs rose almost as fast and the business used cash to build inventory.\n\nPrice and key figures\nPrice: Rs 32.50 (Interim report to 30 Sep 2026 (period-end price), 2026-09-30). Please check it live. In July–September 2026 it traded between Rs 32.40 and Rs 40.20, after Rs 35.00–44.00 in April–June, and it closed the year to March 2026 at Rs 39.00.\nSix months to 30 September 2026 (group, unaudited): revenue rose 36% to Rs 7.01bn and profit attributable to shareholders rose 24% to Rs 497mn. EPS was Rs 0.95 against Rs 0.77.\nWhat drove it: the new New Zealand business (Mirotone) added Rs 693mn of sales, Bangladesh grew 49% to Rs 1.56bn, and Sri Lanka grew 14% to Rs 4.56bn. Wood coatings rose 34% and decoratives 83%; EV chargers fell 5%. But selling costs rose 48% and administration 32%, so operating profit rose only 15%. Finance costs fell 30%.\nCash: operating cash flow was negative (Rs 46mn outflow) because inventory rose Rs 1.13bn and advances Rs 0.65bn. Borrowings (including overdrafts) were Rs 4.38bn against cash and short-term investments of Rs 1.46bn.\nYear to March 2026 (group): revenue Rs 12.64bn (up 9%), profit Rs 1.52bn (down 14%, after a tax credit the year before), EPS Rs 2.92 (Rs 3.50), ROE 13%, NAV Rs 23.13. Inventory took 154 days to sell and customers 139 days to pay.\nDividend: Rs 376mn was paid in the half (about Rs 0.72 a share); the annual report lists Rs 0.44 a share for 2025/26.\n\nMethods\nNAV (Rs 23.48): 1.38x, so it fails your NAV rule.\nReturn on equity: 13% (year to March 2026). Earlier years: 17% (2025), 11% (2024), 15% (2023), 16% (2022).\nP/E: 10.5x trailing EPS of Rs 3.10. Year-end P/E: 13.4x (2026), 7.7x (2025).\nDividends: about Rs 0.72 paid this year, a 2.2% yield; the company pays out 15–25% of profit.\nDebt: gearing 21% and net debt Rs 2.19bn at March 2026; borrowings rose in the half to fund inventory.\nJustified price to book: Rs 11.0 / 15.7 / 24.7 across the cases, weighted Rs 16.1.\nP/E method: Rs 23.2 / 34.0 / 45.6, weighted Rs 33.1.\nResidual income: Rs 7.1 / 13.3 / 24.4, weighted Rs 13.7.\nDividend model: Rs 2.9 / 6.4 / 10.4 (not used in the fair value).\n\nJAT keeps most of its profit, so a dividend model understates it, and with heavy working capital its free cash flow is too irregular for a reliable DCF, so I used three methods. The P/E method is far more generous than the book-value methods because the market pays about 10x earnings for growth, while ROE is below the 18% required return.\n\nAssumptions (bear / base / bull)\nCost of equity: 20% / 18% / 16.5%.\nLong-run ROE (price to book): 12% / 14% / 17%.\nROE path (residual income): 13% falling to 11% / 14.5% falling to 14% / 16% rising to 17%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 2.9 × 8 / 3.4 × 10 / 3.8 × 12.\nAverage of the three methods: Rs 13.8 / Rs 21.0 / Rs 31.6.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a small, export-exposed manufacturer. In the base case, the second half grows about 15% on last year's (helped by New Zealand), giving EPS of about Rs 3.40 for the year to March 2027.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 21.00 (0.89x NAV), so Rs 32.50 is about 55% above it.\nBuy price: a 15% margin of safety gives Rs 17.80, and 25% gives Rs 15.70.\nPlan for 500 shares: 200 at up to Rs 21.00, 150 at up to Rs 17.80 and 150 at up to Rs 15.70. That averages about Rs 18.45, about Rs 9,225, against Rs 16,250 at Rs 32.50.\nRealism: Rs 21 needs about a 35% fall and Rs 17.80 about 45%. The share was Rs 26.90 in March 2025, so it has been there recently, but it would take a market sell-off or a profit disappointment.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 16%: 11.3 / 17.4 / 24.7 for long-run ROE of 11% / 14% / 17%.\nCost of equity 18%: 8.9 / 13.3 / 18.5.\nCost of equity 20%: 7.2 / 10.5 / 14.3.\nOn book value, today's price would need ROE well above 17% for years.\n\nWhat would change my view\nSupports a higher value: the New Zealand and Bangladesh businesses lifting ROE above 17%; costs growing slower than sales; inventory and receivables falling, turning cash flow positive; a higher dividend payout; lower interest rates.\nSupports a lower value: costs continuing to rise as fast as sales; more cash tied up in inventory (154 days) and receivables (139 days); integration problems with the overseas acquisitions; a construction or furniture-export slowdown hitting wood coatings; currency swings in Bangladesh and New Zealand.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}
