@@ -20,4 +20,4 @@ OneDrive\Documents\cse-research\
   ...
 ```
 
-To update a company, add the new PDF to its laptop folder and tell Claude (with the Claude desktop app open). Claude reads the record here and only the new PDF, updates the analysis and the record, archives the old analysis, and opens a pull request.
+To update a company, add the new PDF to its laptop folder and tell Claude (with the Claude desktop app open). Claude reads the record here and only the new PDF, updates the analysis and the record, archives the old analysis, and pushes straight to `main`, which republishes the site.

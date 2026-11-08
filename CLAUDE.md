@@ -39,7 +39,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
    - Set `updated`.
    - Append a `changeLog` entry with: what changed and why; the new fair value, buy and strong-buy prices; the price at the time; and the archive path.
 9. **Check.** Run `python scripts/validate.py data/<CODE>.json`. It must pass with no errors and ideally no warnings. Also run `python scripts/build_site.py` and make sure it completes.
-10. **Deliver.** Commit on a new branch named `update-<code>-<period>` (e.g. `update-dial-q3-2026`) and open a pull request. In the pull request description, say:
+10. **Deliver.** Commit straight to `main` (the owner asked for no pull requests) and push. The push starts the "Build and publish site" workflow, which republishes the site. Check that the run succeeds. If it fails, fix the problem and push again. Then tell the owner:
     - fair value, buy price and strong-buy price, old → new, and why;
     - the main new figures;
     - any assumption changes and restatements;

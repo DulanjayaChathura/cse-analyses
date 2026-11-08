@@ -39,8 +39,8 @@ research/DIAL.N0000/
 **To update:**
 1. Save the new PDF in the company's laptop folder.
 2. Tell Claude in a chat with the Claude desktop app open, e.g. "New report for Dialog".
-3. Claude reads the saved record and **only the new report**, updates the analysis and the record, archives the old analysis, and opens a **pull request**.
-4. Review the pull request and merge it. The site updates, including the **What changed** section and the fair-value history.
+3. Claude reads the saved record and **only the new report**, updates the analysis and the record, archives the old analysis, and pushes the changes straight to `main`.
+4. The push rebuilds the site automatically, including the **What changed** section and the fair-value history.
 
 The procedure and the standard analysis brief are in `CLAUDE.md`; the record format is in `docs/research-format.md`. For a **new company**, create its folder in `cse-research`, add its reports, and ask for a first analysis.
 
