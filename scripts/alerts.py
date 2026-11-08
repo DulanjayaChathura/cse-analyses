@@ -64,7 +64,11 @@ def load_targets():
 
 def load_state():
     s = read_json(STATE_FILE, {})
-    return s if isinstance(s.get("fired"), dict) else {"fired": {}}
+    if not isinstance(s, dict):
+        s = {}
+    if not isinstance(s.get("fired"), dict):
+        s["fired"] = {}
+    return s
 
 
 def crossed(t, price):

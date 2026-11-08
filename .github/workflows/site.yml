@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       problems: ${{ steps.build.outputs.problems }}
-      alerts_failed: ${{ steps.close_alerts.outcome == 'failure' }}
+      alerts_failed: ${{ steps.close_alerts.outcome == 'failure' || steps.announce.outcome == 'failure' }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -74,16 +74,24 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/alerts.py --close
 
-      - name: Remember sent alerts
-        if: always() && steps.close_alerts.outputs.state_changed == 'true'
+      - name: Check analysis files and build the site
+        id: build
+        run: python scripts/build_site.py
+
+      - name: Post new research to Telegram
+        id: announce
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/announce.py
+
+      - name: Remember sent alerts and announcements
+        if: always() && (steps.close_alerts.outputs.state_changed == 'true' || steps.announce.outputs.state_changed == 'true')
         uses: actions/cache/save@v5
         with:
           path: .alert-state
           key: alert-state-${{ github.run_id }}-${{ github.run_attempt }}
-
-      - name: Check analysis files and build the site
-        id: build
-        run: python scripts/build_site.py
 
       - uses: actions/configure-pages@v5
 

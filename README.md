@@ -72,6 +72,10 @@ The site can post to a Telegram channel when a share reaches a price you choose.
 6. **Save the channel ID** as another secret named `TELEGRAM_CHAT_ID`.
 7. **Test it.** Run **Actions → Test Telegram → Run workflow** again. A test message should appear in the channel.
 
+### New research notifications
+
+Whenever new or updated research is published, the build posts one message to the same Telegram channel. It lists each company, its fair value (old → new for updates), its buy price, and how far today's price is from fair value, with a link to the page. Research from the last 7 days that hasn't been announced is included; nothing is announced twice. Like the price alerts, this never creates a commit.
+
 ### Setting your targets
 
 Edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
