@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CHL.N0000",
+  "localFolder": "ceylon hospital",
+  "updated": "2026-11-09",
+  "reportsRead": [
+    {
+      "file": "Annual Report for the year ended 31 March 2024.pdf",
+      "title": "Annual Report 2023/24",
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Not read in detail: covered by the 2025/26 report's decade summary."
+    },
+    {
+      "file": "Annual Report for the year ended 31 March 2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Not read in detail: covered by the 2025/26 report's decade summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: highlights (p. 14) and decade at a glance (p. 217)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q3 FY2026",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Before the share split (EPS Rs 5.17 for the quarter)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Used for 2025/26 cash flow and share prices."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 7.84,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "netProfit": {
+          "value": 1.11,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Profit after tax, including minority interest"
+        },
+        "eps": {
+          "value": 7.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the 1-for-4 split"
+        },
+        "navPerShare": {
+          "value": 55.71,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the split"
+        },
+        "roe": {
+          "value": 13.4,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 7.905,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "netProfit": {
+          "value": 0.652,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Profit after tax, including minority interest"
+        },
+        "eps": {
+          "value": 4.22,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the 1-for-4 split"
+        },
+        "navPerShare": {
+          "value": 57.36,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the split"
+        },
+        "roe": {
+          "value": 7.67,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 9.153,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "netProfit": {
+          "value": 0.454,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Profit after tax, including minority interest"
+        },
+        "eps": {
+          "value": 2.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the 1-for-4 split"
+        },
+        "navPerShare": {
+          "value": 56.29,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the split"
+        },
+        "roe": {
+          "value": 5.15,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 9.405,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "netProfit": {
+          "value": 0.726,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Profit after tax, including minority interest"
+        },
+        "eps": {
+          "value": 3.89,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the 1-for-4 split"
+        },
+        "navPerShare": {
+          "value": 66.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Adjusted for the split"
+        },
+        "roe": {
+          "value": 6.07,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 10.979,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Up 17%"
+        },
+        "netProfit": {
+          "value": 1.052,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)",
+          "note": "Profit after tax; Rs 951mn attributable"
+        },
+        "eps": {
+          "value": 5.68,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "dividendPerShare": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a glance (p. 217)",
+          "note": "Company, paid in the year; payout 32%"
+        },
+        "navPerShare": {
+          "value": 70.94,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "roe": {
+          "value": 8.22,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "interestCover": {
+          "value": 8.26,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Financial highlights (p. 14)"
+        },
+        "operatingCashFlow": {
+          "value": 1.675,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, cash flow"
+        },
+        "capex": {
+          "value": 0.755,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, cash flow"
+        },
+        "priceYearEnd": {
+          "value": 60.0,
+          "unit": "Rs",
+          "source": "Interim to 31 Mar 2026, note 8.4",
+          "note": "Voting; non-voting Rs 47.50"
+        },
+        "sharesOutstanding": {
+          "value": 167.586,
+          "unit": "mn",
+          "source": "Interim to 30 Jun 2026, p. 13",
+          "note": "127.05mn voting and 40.54mn non-voting"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 2.989,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Up 9%"
+        },
+        "netProfit": {
+          "value": 0.288,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Attributable; up 6%"
+        },
+        "eps": {
+          "value": 1.72,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Rs 1.62 a year earlier"
+        },
+        "navPerShare": {
+          "value": 71.56,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 13"
+        },
+        "dividendPaid": {
+          "value": 1.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Rs 184mn"
+        },
+        "borrowings": {
+          "value": 1.395,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Loans plus overdraft"
+        },
+        "cashAndInvestments": {
+          "value": 2.632,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Cash, deposits and investments"
+        },
+        "priceQuarterEnd": {
+          "value": 64.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 13",
+          "note": "Voting, range Rs 57.60–69.00; non-voting Rs 49.50, range Rs 45.00–56.00"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 17.5% / Base 16% / Bull 15%",
+      "reason": "Bonds about 12% (Oct 2026) plus a premium; a hospital is fairly defensive.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Free cash flow this year",
+      "value": "Rs 4.5 / 5.0 / 5.5 a share",
+      "reason": "2025/26 free cash flow about Rs 0.92bn, about Rs 5 a share after minority interests.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Growth path (DCF)",
+      "value": "6%→5% / 10%→6% / 13%→7% over 10 years",
+      "reason": "Revenue grew 17% last year; about 12% a year over ten years.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "5.6 × 8 / 6.3 × 10 / 6.8 × 12",
+      "reason": "Q1 EPS Rs 1.72 (up 6%).",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "NAV multiple",
+      "value": "0.6x / 0.8x / 1.0x",
+      "reason": "ROE about 8% on revalued property.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Methods used",
+      "value": "NAV, P/E, cash-flow DCF",
+      "reason": "Residual income and justified P/B left out (ROE far below cost of equity); payout too low for a dividend model.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-09"
+    }
+  ],
+  "openQuestions": [
+    "Q2 results (to September 2026, due by mid-November): does profit growth pick up from 6%?",
+    "Does ROE rise above 10%?",
+    "What new building or equipment spending is planned?",
+    "Does the non-voting discount (about 23%) narrow?"
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-09",
+      "basedOn": "Q1 FY2027 (to Jun 2026)",
+      "summary": "First analysis.",
+      "fairValue": 57.5,
+      "buyPrice": 48.9,
+      "strongBuyPrice": 43.1,
+      "priceAtTime": 64.5,
+      "archive": null
+    }
+  ]
+}

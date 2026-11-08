@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CHL.N0000",
+  "company": {
+    "name": "Ceylon Hospitals PLC",
+    "sector": "Private hospital (Durdans)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "CHL.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "CHL.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-09",
+  "resultsCovered": {
+    "label": "Three months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2023/24, 2024/25 and 2025/26",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 64.5,
+    "date": "2026-06-30",
+    "source": "Interim report to 30 Jun 2026 (last traded price)",
+    "note": "Non-voting Rs 49.50. April–June 2026 range (voting): Rs 57.60–69.00. Per-share figures are after the 1-for-4 split of March 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A steady, growing hospital with net cash, but a low return on its revalued property",
+    "text": "Ceylon Hospitals PLC (CHL.N0000), owner of Durdans Hospital in Colombo, is a steady, profitable business: revenue grew 17% to Rs 11.0bn and profit 46% in the year to March 2026, and the June 2026 quarter was up another 6%. At Rs 64.50 the voting share trades at 0.9x its NAV of Rs 71.56 and 11.2x trailing earnings. That looks cheap against NAV, but the NAV is mostly revalued hospital property and the return on equity is only about 8%. Weighing NAV, earnings and cash flow, the methods put fair value at about Rs 57.50, so the voting share is about 12% above it. I'd buy at up to about Rs 49 and treat under Rs 43 as a strong buy. The non-voting shares (CHL.X0000) get the same profits and dividends and cost Rs 49.50, which is about 14% below fair value; they usually trade 20–25% below the voting shares and may stay there."
+  },
+  "valuation": {
+    "fairValue": 57.5,
+    "buyPrice": 48.9,
+    "strongBuyPrice": 43.1,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 71.56,
+    "note": "Fair value (for a voting share) weights the bear/base/bull averages of the three methods 30/50/20 (about 0.8x NAV). Non-voting shares have the same claim on profits and dividends."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 71.56,
+      "unit": "Rs",
+      "note": "30 Jun 2026; mostly revalued property"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.9,
+      "unit": "x",
+      "note": "Non-voting 0.69x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 11.2,
+      "unit": "x",
+      "note": "Trailing EPS Rs 5.78"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 8.2,
+      "unit": "%",
+      "note": "Year to March 2026; about 8% on average"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.7,
+      "unit": "%",
+      "note": "Rs 1.10 paid in June 2026"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 32,
+      "unit": "%",
+      "note": "Company, 2025/26"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": -0.1,
+      "unit": "x",
+      "display": "Net cash",
+      "note": "About Rs 1.2bn net cash and investments"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 17,
+      "unit": "%",
+      "note": "Year to March 2026; 9% in April–June 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 10.8,
+      "unit": "Rs bn",
+      "display": "~Rs 10.2bn",
+      "note": "Both share classes"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 June 2026 (group, unaudited)",
+      "text": "Revenue rose 9% to Rs 2.99bn and profit attributable rose 6% to Rs 288mn. EPS was Rs 1.72 against Rs 1.62."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Record revenue of Rs 10.98bn (up 17%), profit after tax Rs 1.05bn (up 45%), EPS Rs 5.68, ROE 8.2%."
+    },
+    {
+      "title": "Cash and debt",
+      "text": "Free cash flow about Rs 0.92bn last year. About Rs 2.6bn of cash and investments against Rs 1.4bn of borrowings."
+    },
+    {
+      "title": "Two share classes",
+      "text": "Voting and non-voting shares get the same profits and dividends; the non-voting usually trades 20–25% cheaper."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          7.25,
+          4.22,
+          2.9,
+          3.89,
+          5.68,
+          5.78
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "Rs bn",
+        "values": [
+          7.84,
+          7.91,
+          9.15,
+          9.41,
+          10.98,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          13.4,
+          7.7,
+          5.2,
+          6.1,
+          8.2,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          55.71,
+          57.36,
+          56.29,
+          66.3,
+          70.94,
+          71.56
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Jun 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 71.56",
+      "reading": "The voting share is 0.90x NAV and the non-voting 0.69x, but the NAV is mostly revalued property earning about 8%."
+    },
+    {
+      "method": "Return on equity",
+      "value": "8.2%",
+      "reading": "Year to March 2026 (6.1% in 2024/25); between 5% and 13% over six years."
+    },
+    {
+      "method": "P/E",
+      "value": "11.2x",
+      "reading": "On trailing EPS of Rs 5.78."
+    },
+    {
+      "method": "Dividends",
+      "value": "1.7% yield",
+      "reading": "Rs 1.10 paid in June 2026; payout about a fifth to a third of profit."
+    },
+    {
+      "method": "Cash flow",
+      "value": "About Rs 0.92bn",
+      "reading": "Free cash flow in 2025/26 (operating cash Rs 1.67bn less capital spending Rs 0.76bn)."
+    }
+  ],
+  "models": [
+    {
+      "id": "nav",
+      "name": "NAV method",
+      "bear": 42.9,
+      "base": 57.2,
+      "bull": 71.6,
+      "weighted": 55.8,
+      "comment": "0.6x / 0.8x / 1.0x NAV, because the property earns a low return."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 44.8,
+      "base": 63.0,
+      "bull": 81.6,
+      "weighted": 61.3,
+      "comment": "EPS for the year to March 2027 times 8 / 10 / 12."
+    },
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF",
+      "bear": 37.0,
+      "base": 56.0,
+      "bull": 82.1,
+      "weighted": 55.5,
+      "comment": "Free cash flow of about Rs 5 a share, growth fading over 10 years."
+    }
+  ],
+  "modelsNote": "A hospital is a steady cash business, so a cash-flow DCF suits it. Residual income and justified price to book would put it far below NAV because ROE is so low, so NAV is used directly with a discount. The payout is too low for a dividend model.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17.5%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Free cash flow this year (Rs a share)",
+        "bear": "4.5",
+        "base": "5.0",
+        "bull": "5.5"
+      },
+      {
+        "label": "Growth in year 1, fading over 10 years",
+        "bear": "6% → 5%",
+        "base": "10% → 6%",
+        "bull": "13% → 7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "5.6 × 8",
+        "base": "6.3 × 10",
+        "bull": "6.8 × 12"
+      },
+      {
+        "label": "NAV multiple",
+        "bear": "0.6x",
+        "base": "0.8x",
+        "bull": "1.0x"
+      }
+    ],
+    "averages": {
+      "bear": 41.6,
+      "base": 58.7,
+      "bull": 78.4
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Fair value is for a voting share; non-voting shares have the same claim on profits and dividends."
+  },
+  "sensitivity": {
+    "title": "DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Growth in year 1",
+    "rows": [
+      "15%",
+      "16%",
+      "17.5%"
+    ],
+    "columns": [
+      "6%",
+      "10%",
+      "14%"
+    ],
+    "values": [
+      [
+        55.6,
+        62.4,
+        70.1
+      ],
+      [
+        50.0,
+        56.0,
+        62.7
+      ],
+      [
+        43.5,
+        48.5,
+        54.1
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Value is most sensitive to the cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 57.5
+      },
+      {
+        "shares": 150,
+        "maxPrice": 48.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 43.1
+      }
+    ],
+    "averagePrice": 50.6,
+    "totalCost": 25300,
+    "note": "About Rs 25,300 in total, against Rs 32,250 at Rs 64.50 (voting).",
+    "realism": "Rs 57.50 needs about a 11% fall in the voting share, which traded at Rs 57.50–57.60 in March and June 2026, so the first tier is realistic. The non-voting shares (CHL.X0000) get the same profits and dividends and cost Rs 49.50, which is about 14% below fair value; they usually trade 20–25% below the voting shares and may stay there."
+  },
+  "changeMyView": {
+    "higher": [
+      "ROE rising above 10% as new facilities fill up.",
+      "Lower interest rates.",
+      "A higher dividend payout.",
+      "A sale of surplus property or the business at close to NAV."
+    ],
+    "lower": [
+      "Profit growth slowing after last year's jump.",
+      "More competition from new private hospitals in Colombo.",
+      "Rising salary and drug costs.",
+      "Heavy spending on new buildings that earns little."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2024, 2025 and 2026 and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Ceylon Hospitals PLC (CHL.N0000), owner of Durdans Hospital in Colombo, is a steady, profitable business: revenue grew 17% to Rs 11.0bn and profit 46% in the year to March 2026, and the June 2026 quarter was up another 6%. At Rs 64.50 the voting share trades at 0.9x its NAV of Rs 71.56 and 11.2x trailing earnings. That looks cheap against NAV, but the NAV is mostly revalued hospital property and the return on equity is only about 8%. Weighing NAV, earnings and cash flow, the methods put fair value at about Rs 57.50, so the voting share is about 12% above it. I'd buy at up to about Rs 49 and treat under Rs 43 as a strong buy. The non-voting shares (CHL.X0000) get the same profits and dividends and cost Rs 49.50, which is about 14% below fair value; they usually trade 20–25% below the voting shares and may stay there.\n\nPrice and key figures\nPrice: voting Rs 64.50 and non-voting Rs 49.50 (Interim report to 30 Jun 2026 (last traded price), 2026-06-30). Please check them live. In April–June 2026 the voting share traded between Rs 57.60 and Rs 69.00 and the non-voting between Rs 45.00 and Rs 56.00. At 31 March 2026 they closed at Rs 60.00 and Rs 47.50. All per-share figures are after the 1-for-4 share split of March 2026.\nThree months to 30 June 2026 (group, unaudited): revenue rose 9% to Rs 2.99bn and profit attributable rose 6% to Rs 288mn. EPS was Rs 1.72 against Rs 1.62. The September quarter results aren't in the folder yet (due by mid-November).\nYear to March 2026 (audited): revenue Rs 10.98bn (up 17%, a record), profit after tax Rs 1.05bn (up 45%), EPS Rs 5.68 (Rs 3.89), ROE 8.2%, NAV Rs 70.94. Dividends of Rs 1.00 were paid in the year, and Rs 1.10 more in June 2026.\nCash flow: operating cash flow Rs 1.67bn and capital spending Rs 0.76bn in 2025/26, leaving about Rs 0.92bn of free cash flow (about Rs 5 a share after minority interests).\nBalance sheet: borrowings and overdraft about Rs 1.4bn against about Rs 2.6bn of cash, deposits and investments at June 2026, so there is net cash. Most of the Rs 14.3bn of property was revalued upward in 2023–2025.\nHistory: EPS Rs 4.14 (2020/21), 7.25 (2021/22), 4.22 (2022/23), 2.90 (2023/24), 3.89 (2024/25), 5.68 (2025/26). ROE has been 5–13%, averaging about 8%.\n\nMethods\nNAV (Rs 71.56): 0.9x. Most of it is hospital land and buildings at valuers' prices, which earn only about 8% a year for shareholders.\nReturn on equity: 8.2% in 2025/26 (6.1% in 2024/25), well below a 16% cost of equity.\nP/E: 11.2x trailing EPS of Rs 5.78. Year-end P/E: 10.6x (2026).\nDividends: Rs 1.10 paid in June 2026, a 1.7% yield; the payout is low (about a fifth to a third of profit).\nNAV method (0.6x / 0.8x / 1.0x NAV): Rs 42.9 / 57.2 / 71.6, weighted Rs 55.8.\nP/E method: Rs 44.8 / 63.0 / 81.6, weighted Rs 61.3.\nCash-flow DCF: Rs 37.0 / 56.0 / 82.1, weighted Rs 55.5.\n\nA hospital is a steady cash business, so a cash-flow DCF suits it. Residual income and justified price to book would put it far below NAV because its ROE is so low, so I use NAV directly with a discount instead. The payout is too low for a dividend model.\n\nAssumptions (bear / base / bull)\nCost of equity: 17.5% / 16% / 15%.\nFree cash flow this year (Rs a share): 4.5 / 5.0 / 5.5, growing 6% / 10% / 13% at first and fading to 5% / 6% / 7% over 10 years.\nEPS for the year to March 2027 × P/E: 5.6 × 8 / 6.3 × 10 / 6.8 × 12.\nNAV multiple: 0.6x / 0.8x / 1.0x.\nAverage of the three methods: Rs 41.6 / Rs 58.7 / Rs 78.4.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Fair value is for a voting share; a non-voting share has the same claim on profits and dividends.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 57.50 (0.8x NAV), so the voting share at Rs 64.50 is about 12% above it.\nBuy price: a 15% margin of safety gives Rs 48.90, and 25% gives Rs 43.10.\nPlan for 500 shares: 200 at up to Rs 57.50, 150 at up to Rs 48.90 and 150 at up to Rs 43.10. That averages about Rs 50.60, about Rs 25,300, against Rs 32,250 at Rs 64.50.\nRealism: Rs 57.50 needs about a 11% fall in the voting share, which traded as low as Rs 57.50–57.60 in March and June 2026, so the first tier is realistic. The non-voting shares (CHL.X0000) get the same profits and dividends and cost Rs 49.50, which is about 14% below fair value; they usually trade 20–25% below the voting shares and may stay there.\n\nSensitivity (DCF base case, Rs per share)\nCost of equity 15%: 55.6 / 62.4 / 70.1 for first-year growth of 6% / 10% / 14%.\nCost of equity 16%: 50.0 / 56.0 / 62.7.\nCost of equity 17.5%: 43.5 / 48.5 / 54.1.\n\nWhat would change my view\nSupports a higher value: ROE rising above 10% as the new facilities fill up; lower interest rates; a higher dividend payout; a sale of surplus property or the business at close to NAV.\nSupports a lower value: profit growth slowing after last year's jump; more competition from new private hospitals in Colombo; rising salary and drug costs; heavy spending on new buildings that earns little.\n\nThese are my estimates from the annual reports for the years to March 2024, 2025 and 2026 and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}
