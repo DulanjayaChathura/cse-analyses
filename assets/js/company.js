@@ -10,13 +10,14 @@
   const ticker = new URLSearchParams(location.search).get("t");
   if (!ticker) { content.innerHTML = `<p>No company chosen. <a href="./">See all companies</a>.</p>`; return; }
 
-  let d, index, prices, alertData;
+  let d, index, prices, alertData, research;
   try {
-    [d, index, prices, alertData] = await Promise.all([
+    [d, index, prices, alertData, research] = await Promise.all([
       App.load(`data/tickers/${encodeURIComponent(ticker)}.json`),
       App.loadOptional("data/index.json", { companies: [] }),
       App.loadOptional("data/prices.json", {}),
       App.loadOptional("data/alerts.json", { targets: [] }),
+      App.loadOptional(`data/research/${encodeURIComponent(ticker)}.json`, null),
     ]);
   } catch (e) {
     content.innerHTML = `<p>There is no analysis for ${App.esc(ticker)}. <a href="./">See all companies</a>.</p>`;
@@ -74,6 +75,47 @@
     { id: "results", title: "Latest results", key: "highlights", html: () => `<h2>Latest results</h2>
       <div class="highlights">${d.highlights.map((h) => `<div><h3>${App.esc(h.title || "")}</h3>${App.md(h.text)}</div>`).join("")}</div>` },
 
+    { id: "changes", title: "What changed", always: true, html: () => {
+      if (!research) return `<h2>What changed</h2><p class="section-lead">No research record yet for this company.</p>`;
+      const log = (research.changeLog || []).slice().reverse();
+      const entries = log.map((e, i) => {
+        const prev = log[i + 1];
+        const fv = prev && App.isNum(prev.fairValue) && App.isNum(e.fairValue) && prev.fairValue !== e.fairValue
+          ? `Fair value ${App.rs(prev.fairValue)} → <b>${App.rs(e.fairValue)}</b>` : App.isNum(e.fairValue) ? `Fair value <b>${App.rs(e.fairValue)}</b>` : "";
+        return `<div class="status"><b>${App.date(e.date)}</b>${e.basedOn ? `, based on ${App.esc(e.basedOn)}` : ""}. ${fv}${App.isNum(e.buyPrice) ? `, buy price ${App.rs(e.buyPrice)}` : ""}.
+          <div>${App.esc(e.summary || "")}</div></div>`;
+      }).join("");
+      const periods = (research.periods || []).slice().sort((a, b) => String(a.periodEnd).localeCompare(String(b.periodEnd)));
+      const allNames = [...new Set(periods.flatMap((p) => Object.keys(p.figures || {})))];
+      const LABELS = { revenue: "Revenue", grossProfit: "Gross profit", grossMarginPct: "Gross margin", netProfit: "Net profit", eps: "EPS",
+        dividendPerShare: "Dividend per share", navPerShare: "NAV per share", roe: "Return on equity", peYearEnd: "P/E at year-end",
+        operatingCashFlow: "Operating cash flow", capexPaid: "Capex paid", capexCommitted: "Capex committed", freeCashFlow: "Free cash flow",
+        netDebt: "Net debt", netDebtToEbitda: "Net debt / EBITDA", debtToEquity: "Debt to equity", sharesOutstanding: "Shares outstanding",
+        fxGainLoss: "Exchange gain (loss)", contractedCapex: "Contracted capex", priceYearEnd: "Share price at year-end" };
+      const order = Object.keys(LABELS);
+      const names = allNames.slice().sort((a, b) => (order.indexOf(a) + 1 || 999) - (order.indexOf(b) + 1 || 999));
+      const cell = (f) => {
+        if (!f) return `<td class="num"></td>`;
+        const txt = App.isNum(f.value) ? App.withUnit(f.value, f.unit) : "–";
+        const tip = [f.note, f.source].filter(Boolean).join(". ");
+        return `<td class="num" title="${App.esc(tip)}">${txt}${f.note ? " *" : ""}</td>`;
+      };
+      const figTable = names.length ? `<div class="table-wrap"><table><thead><tr><th></th>${periods.map((p) => `<th class="num">${App.esc(p.period)}${p.audited === false ? "<br><span style='font-weight:400'>unaudited</span>" : ""}</th>`).join("")}</tr></thead>
+        <tbody>${names.map((n) => `<tr><td>${App.term(LABELS[n] || n)}</td>${periods.map((p) => cell((p.figures || {})[n])).join("")}</tr>`).join("")}</tbody></table></div>
+        <p class="section-lead" style="margin-top:.5rem">Hover over a figure to see its source. * means there's a note.</p>` : `<p class="na">No figures saved yet.</p>`;
+      const inputs = (research.valuationInputs || []).map((v) => `<tr><td>${App.term(v.name)}</td><td>${App.esc(v.value)}</td><td>${App.esc(v.reason || "")}</td><td style="white-space:nowrap">${App.date(v.since)}</td></tr>`).join("");
+      const reports = (research.reportsRead || []).map((r) => `<li>${App.esc(r.title || r.file)}${r.audited === false ? " (unaudited)" : ""}, read ${App.date(r.readOn)}</li>`).join("");
+      return `<h2>What changed</h2>
+        <p class="section-lead">Each update builds on the saved research record, reading only new reports.</p>
+        <div class="status-list" style="margin-bottom:1rem">${entries || '<p class="na">No updates logged yet.</p>'}</div>
+        ${log.length >= 2 ? `<div class="chart"><h3>Fair value over time</h3><div id="timeline"></div>
+          <div class="legend"><span><i style="background:var(--ink)"></i>Fair value</span><span><i style="background:var(--good)"></i>Buy price</span><span><i style="background:var(--accent)"></i>Share price at the time</span></div></div>`
+          : `<p class="section-lead">A fair-value history chart appears after the next update.</p>`}
+        ${(research.openQuestions || []).length ? `<h3 style="margin:1.2rem 0 .4rem">To check in the next report</h3><ul>${research.openQuestions.map((q) => `<li>${App.esc(q)}</li>`).join("")}</ul>` : ""}
+        <details class="more"><summary>Saved figures by period</summary>${figTable}</details>
+        ${inputs ? `<details class="more"><summary>Valuation inputs and reasons</summary><div class="table-wrap"><table><thead><tr><th>Input</th><th>Value</th><th>Reason</th><th>Since</th></tr></thead><tbody>${inputs}</tbody></table></div></details>` : ""}
+        ${reports ? `<details class="more"><summary>Reports read</summary><ul>${reports}</ul></details>` : ""}`;
+    }, after: () => { const el = document.getElementById("timeline"); if (el) Charts.timeline(el, research.changeLog || []); } },
     { id: "methods", title: "Valuation methods", key: "models", html: () => `<h2>Valuation methods</h2>
       <p class="section-lead">Value per share under each method, from the pessimistic (${App.term("bear", "Bear")}) to the optimistic (${App.term("bull", "Bull")}) case.</p>
       <div class="chart"><div id="models-chart"></div>

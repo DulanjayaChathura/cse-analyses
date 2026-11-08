@@ -32,6 +32,29 @@ def git_versions(path):
             yield c, r.stdout
 
 
+def check_record(rec, ticker):
+    """Light checks on a research record; returns a list of warnings."""
+    w = []
+    if not isinstance(rec, dict):
+        return ["record.json must contain a JSON object"]
+    if rec.get("ticker") != ticker:
+        w.append(f'ticker in record.json is {rec.get("ticker")!r}, expected "{ticker}"')
+    for key in ("reportsRead", "periods", "valuationInputs", "openQuestions", "changeLog"):
+        if not isinstance(rec.get(key), list):
+            w.append(f"'{key}' should be a list")
+    seen = set()
+    for per in rec.get("periods") or []:
+        name = per.get("period") if isinstance(per, dict) else None
+        if name in seen:
+            w.append(f"period '{name}' appears twice")
+        seen.add(name)
+    for e in rec.get("changeLog") or []:
+        if not isinstance(e, dict) or not isinstance(e.get("date"), str):
+            w.append("every changeLog entry needs a date")
+            break
+    return w
+
+
 def summarize(data, warnings, bad, previous, companies):
     t = data["ticker"]
     company = data.get("company") if isinstance(data.get("company"), dict) else {}
@@ -87,6 +110,24 @@ def main():
         data["_build"] = {"warnings": warnings, "badSections": bad, "previousVersion": previous}
         write_json(SITE / "data" / "tickers" / f"{data['ticker']}.json", data)
         manifest.append(summarize(data, warnings, bad, previous, companies))
+
+    # Research records (research/<CODE>/record.json) for the "What changed" section.
+    (SITE / "data" / "research").mkdir(parents=True, exist_ok=True)
+    for entry in manifest:
+        t = entry["ticker"]
+        path = ROOT / "research" / t / "record.json"
+        if not path.exists():
+            entry["hasResearch"] = False
+            continue
+        rec = read_json(path, None)
+        warns = check_record(rec, t) if rec is not None else ["record.json is not valid JSON"]
+        if warns:
+            problems = True
+            report.append(f"### ⚠️ research/{t}/record.json")
+            report += [f"- {x}" for x in warns]
+        if isinstance(rec, dict):
+            write_json(SITE / "data" / "research" / f"{t}.json", rec)
+        entry["hasResearch"] = isinstance(rec, dict)
 
     if PROBLEMS.exists():
         lines = [l for l in PROBLEMS.read_text(encoding="utf-8").splitlines() if l.strip()]

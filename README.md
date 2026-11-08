@@ -26,6 +26,25 @@ It's free: GitHub hosts it and runs the daily price update.
    To update a company, upload the new file with the same name. It replaces the old one, and GitHub keeps the old version in its history.
 5. The site updates about a minute later. The first time you add a company, its official name, logo and price are fetched from the CSE.
 
+## Updating a company with a new report (research records)
+
+Each company has a folder that keeps everything learned so far, so updates never start from scratch:
+
+```
+research/DIAL.N0000/
+  reports/      ← upload annual and interim report PDFs here
+  record.json   ← saved figures per period, valuation inputs and reasons, open questions, change log
+  history/      ← every earlier analysis, archived automatically before it's replaced
+```
+
+**To update:**
+1. Upload the new PDF to `research/<CODE>/reports/` on GitHub (**Add file → Upload files**). Name it clearly, e.g. `2026-Q3-interim.pdf`. Files must be under 25 MB.
+2. Tell Claude in a chat with this repository connected, e.g. "I uploaded the Q3 report for DIAL". With Claude Code on your laptop, you can instead run `/update DIAL.N0000`.
+3. Claude reads the saved record and **only the new report**, updates the analysis and the record, archives the old analysis, and opens a **pull request**.
+4. Review the pull request and merge it. The site updates, including the **What changed** section and the fair-value history.
+
+The full procedure Claude follows is in `CLAUDE.md`, and the record format is in `docs/research-format.md`. For a **new company**, upload its reports to a new `research/<CODE>/reports/` folder and ask for a first analysis.
+
 ## What runs automatically
 
 - **Every weekday at 15:53 Sri Lanka time** (after the market closes), closing prices are fetched from the CSE website and the site is rebuilt.
@@ -103,6 +122,8 @@ If you have Python installed: `python scripts/validate.py path/to/FILE.json`
 | `.github/workflows/alerts.yml` | The 30-minute alert checks during trading. |
 | `.github/workflows/telegram-test.yml` | The "Test Telegram" button. |
 | `alerts.json` | Your price targets. |
+| `research/` | Report PDFs, research records and archived analyses, one folder per company. |
+| `CLAUDE.md`, `.claude/commands/update.md` | The update procedure Claude follows. |
 | `prompt/analysis-prompt.md` | The prompt to paste into claude.ai. |
 
 ## Changing the site later

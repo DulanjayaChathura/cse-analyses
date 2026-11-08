@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "ticker": "DIAL.N0000",
+  "updated": "2026-10-26",
+  "reportsRead": [
+    {
+      "file": null,
+      "title": "Annual report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-10-26",
+      "note": "Read in the first analysis; the PDF isn't in the repository."
+    },
+    {
+      "file": null,
+      "title": "Interim financial statements, six months to 30 June 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-10-26",
+      "note": "Read in the first analysis; the PDF isn't in the repository."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "note": "Loss year; amount not recorded",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "roe": {
+          "value": 30,
+          "unit": "%",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "peYearEnd": {
+          "value": 3.7,
+          "unit": "x",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "roe": {
+          "value": 16,
+          "unit": "%",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "peYearEnd": {
+          "value": 8.2,
+          "unit": "x",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "priceYearEnd": {
+          "value": 11.7,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "roe": {
+          "value": 23,
+          "unit": "%",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "dividendPerShare": {
+          "value": 2.2,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Final dividend for FY25"
+        },
+        "netDebtToEbitda": {
+          "value": 0.64,
+          "unit": "x",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "debtToEquity": {
+          "value": 0.85,
+          "unit": "x",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "fxGainLoss": {
+          "value": -1.4,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Exchange loss booked in 2025"
+        },
+        "peYearEnd": {
+          "value": 13.2,
+          "unit": "x",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "contractedCapex": {
+          "value": 6.3,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "At December 2025"
+        }
+      }
+    },
+    {
+      "period": "H1 2025",
+      "periodEnd": "2025-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "grossMarginPct": {
+          "value": 51.8,
+          "unit": "%",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "fxGainLoss": {
+          "value": -0.6,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 95.5,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Up 9% year on year"
+        },
+        "netProfit": {
+          "value": 19.3,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Roughly double H1 2025"
+        },
+        "eps": {
+          "value": 2.1,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "grossMarginPct": {
+          "value": 56.8,
+          "unit": "%",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "operatingCashFlow": {
+          "value": 46.4,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "freeCashFlow": {
+          "value": 32,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "After capex, intangibles and lease payments; approximate"
+        },
+        "capexCommitted": {
+          "value": 24.6,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Committed in the half per segment notes"
+        },
+        "capexPaid": {
+          "value": 10.7,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "contractedCapex": {
+          "value": 16.9,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "fxGainLoss": {
+          "value": 0.5,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "navPerShare": {
+          "value": 9.68,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)"
+        },
+        "netDebt": {
+          "value": 62.5,
+          "unit": "Rs bn",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Including leases"
+        },
+        "dividendPerShare": {
+          "value": 0.7,
+          "unit": "Rs",
+          "source": "First analysis of 26 Oct 2026 (page not recorded)",
+          "note": "Interim proposed"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "17%",
+      "reason": "Sri Lankan bonds yield about 13%, plus a lower premium for a defensive telecom.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Base case most likely; downside given more weight than upside after a near-quadrupling of the price.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "Normalised FCFE 2026",
+      "value": "Bear Rs 32bn / Base Rs 42bn / Bull Rs 48bn",
+      "reason": "From H1 2026 free cash flow, adjusted for rising capex.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "Growth",
+      "value": "Bear 2–3% then 4% / Base 6–7% then 5% / Bull 7–10% then 6%",
+      "reason": "Five years, then long-term.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "ROE path",
+      "value": "Bear 30%→20% / Base 34%→25% / Bull 36%→30%",
+      "reason": "Today's very high ROE assumed to fade.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "2026 EPS × P/E",
+      "value": "Bear 3.5×8 / Base 4.0×10 / Bull 4.3×12",
+      "reason": "Base: second-half EPS stays near the first half's level (about Rs 4.0 for 2026).",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "Dividend per share, growth",
+      "value": "Bear Rs 2.40, 2% / Base Rs 2.90, 6% / Bull Rs 3.30, 8%",
+      "reason": "From FY25 final plus proposed interim.",
+      "since": "2026-10-26"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard for this portfolio.",
+      "since": "2026-10-26"
+    }
+  ],
+  "openQuestions": [
+    "Do margins of about 55%+ hold in the second half?",
+    "Does rising capex (contracted Rs 16.9bn, committed Rs 24.6bn) eat into free cash flow and dividends?",
+    "Were the Rs 0.5bn exchange gain and the cost savings one-offs?",
+    "Is a dividend of Rs 3+ a year sustained?",
+    "Any new telecom levies, VAT changes or spectrum costs?"
+  ],
+  "changeLog": [
+    {
+      "date": "2026-10-26",
+      "basedOn": "H1 2026",
+      "summary": "First analysis.",
+      "fairValue": 31,
+      "buyPrice": 26,
+      "strongBuyPrice": 23,
+      "priceAtTime": 42,
+      "archive": "research/DIAL.N0000/history/2026-10-26.json"
+    }
+  ]
+}
