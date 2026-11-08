@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PARQ.N0000",
+  "company": {
+    "name": "Swisstek (Ceylon) PLC",
+    "sector": "Tile grout, flooring and aluminium",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "PARQ.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-09",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 80.1,
+    "date": "2026-09-30",
+    "source": "Interim report to 30 Sep 2026 (closing price)",
+    "note": "July–September 2026 range Rs 67.10–86.00; about Rs 47 in March 2025."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A strong turnaround, but the price assumes high returns last, and debt jumped in the last quarter",
+    "text": "Swisstek (Ceylon) PLC (PARQ.N0000), the Lanka Tiles group's tile-grout and aluminium maker, has turned around strongly: EPS rose from a loss in 2023/24 to Rs 7.32 in 2025/26, and the six months to September 2026 were up another 8%. But at Rs 80.10 the share trades at 2.6x its NAV of Rs 31.06 and 10.6x trailing earnings, and the September quarter's profit fell 18% while borrowings jumped. Its profits are cyclical (losses in 2022/23 and 2023/24) and net debt is about 1.7x equity. Allowing today's 26% return on equity to fade, the methods put fair value at about Rs 46, so the price is about 74% above it. I'd buy at up to about Rs 39 and treat under Rs 34.50 as a strong buy."
+  },
+  "valuation": {
+    "fairValue": 46.0,
+    "buyPrice": 39.1,
+    "strongBuyPrice": 34.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 31.06,
+    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 1.5x NAV)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 31.06,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.6,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 10.6,
+      "unit": "x",
+      "note": "Trailing EPS Rs 7.53"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 26,
+      "unit": "%",
+      "note": "Year to March 2026; losses in 2022/23 and 2023/24"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.6,
+      "unit": "%",
+      "note": "Rs 2.05 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 1.7,
+      "unit": "x",
+      "note": "September 2026; about 1.1x in March"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 8,
+      "unit": "%",
+      "note": "Six months to Sep 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 11.0,
+      "unit": "Rs bn",
+      "display": "~Rs 11.0bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (group, unaudited)",
+      "text": "Sales rose 8% to Rs 8.66bn and profit attributable rose 8% to Rs 418mn. EPS was Rs 3.05 against Rs 2.84."
+    },
+    {
+      "title": "A weaker September quarter",
+      "text": "Quarter EPS fell to Rs 1.44 from Rs 1.76 as administrative costs nearly doubled and finance costs rose."
+    },
+    {
+      "title": "Two businesses",
+      "text": "Tile grout, adhesives and flooring sales up 25% to Rs 2.60bn; aluminium sales up 2% to Rs 6.06bn. Each earned a little over Rs 300mn before tax."
+    },
+    {
+      "title": "Debt jumped",
+      "text": "Borrowings rose to Rs 9.16bn from Rs 5.72bn in March; net debt about 1.7x equity. Operating cash flow was Rs 3.1bn negative in the half."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -0.51,
+          6.32,
+          7.32,
+          7.53
+        ],
+        "notes": [
+          "Loss year",
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "Rs bn",
+        "values": [
+          10.08,
+          15.27,
+          16.88,
+          17.53
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0.7,
+          1.45,
+          2.05,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          17.52,
+          26.76,
+          28.4,
+          31.06
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 31.06",
+      "reading": "The price is 2.6x NAV."
+    },
+    {
+      "method": "Return on equity",
+      "value": "26%",
+      "reading": "Year to March 2026 (32% in 2024/25), after losses in 2022/23 and 2023/24."
+    },
+    {
+      "method": "P/E",
+      "value": "10.6x",
+      "reading": "On trailing EPS of Rs 7.53. Year-end P/E 10.9x (2026), 7.4x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.6% yield",
+      "reading": "Rs 2.05 for 2025/26, 28% of profit."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt 1.7x equity",
+      "reading": "Borrowings Rs 9.16bn at September 2026, up from Rs 5.72bn in March."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 18.4,
+      "base": 33.9,
+      "bull": 58.5,
+      "weighted": 34.2,
+      "comment": "The strictest: assumes ROE settles at its long-run level (18% base) straight away."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 39.6,
+      "base": 60.0,
+      "bull": 80.0,
+      "weighted": 57.9,
+      "comment": "The most generous: EPS for the year to March 2027 times 6 / 8 / 10."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 20.4,
+      "base": 43.9,
+      "bull": 90.6,
+      "weighted": 46.2,
+      "comment": "Lets today's ROE fade gradually over 10 years."
+    }
+  ],
+  "modelsNote": "Swisstek pays out under a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock, so a cash-flow DCF isn't reliable. The fair value uses three methods.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18.5%",
+        "base": "17%",
+        "bull": "15.5%"
+      },
+      {
+        "label": "Long-run ROE (price to book)",
+        "bear": "13%",
+        "base": "18%",
+        "bull": "23%"
+      },
+      {
+        "label": "Return on equity path",
+        "bear": "20% falling to 13%",
+        "base": "24% falling to 18%",
+        "bull": "26% falling to 23%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "6.6 × 6",
+        "base": "7.5 × 8",
+        "bull": "8.0 × 10"
+      }
+    ],
+    "averages": {
+      "bear": 26.1,
+      "base": 45.9,
+      "bull": 76.4
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Base case: second half matches last year's Rs 4.48. Payout 28%."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15.5%",
+      "17%",
+      "18.5%"
+    ],
+    "columns": [
+      "13%",
+      "18%",
+      "23%"
+    ],
+    "values": [
+      [
+        32.6,
+        54.1,
+        81.6
+      ],
+      [
+        27.2,
+        43.9,
+        65.2
+      ],
+      [
+        23.3,
+        36.4,
+        53.3
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's price needs ROE to stay above 23% for many years."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 46.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 39.1
+      },
+      {
+        "shares": 150,
+        "maxPrice": 34.5
+      }
+    ],
+    "averagePrice": 40.48,
+    "totalCost": 20240,
+    "note": "About Rs 20,240 in total, against Rs 40,050 at Rs 80.10.",
+    "realism": "Rs 46 needs about a 43% fall. The share was about Rs 47 in March 2025, so it was there recently, but it's unlikely soon while profits hold up."
+  },
+  "changeMyView": {
+    "higher": [
+      "Tile grout and flooring sales growing 25% a year.",
+      "Borrowings falling back as stock is sold.",
+      "ROE staying above 25%.",
+      "A building boom in Sri Lanka."
+    ],
+    "lower": [
+      "Profit falling further after the weak September quarter.",
+      "Aluminium prices falling, or price competition with Alumex.",
+      "Borrowings staying high.",
+      "Construction slowing.",
+      "A return to the losses of 2022–2024."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Swisstek (Ceylon) PLC (PARQ.N0000), the Lanka Tiles group's tile-grout and aluminium maker, has turned around strongly: EPS rose from a loss in 2023/24 to Rs 7.32 in 2025/26, and the six months to September 2026 were up another 8%. But at Rs 80.10 the share trades at 2.6x its NAV of Rs 31.06 and 10.6x trailing earnings, and the September quarter's profit fell 18% while borrowings jumped. Its profits are cyclical (losses in 2022/23 and 2023/24) and net debt is about 1.7x equity. Allowing today's 26% return on equity to fade, the methods put fair value at about Rs 46, so the price is about 74% above it. I'd buy at up to about Rs 39 and treat under Rs 34.50 as a strong buy.\n\nPrice and key figures\nPrice: Rs 80.10 (Interim report to 30 Sep 2026 (closing price), 2026-09-30). Please check it live. In July–September 2026 it traded between Rs 67.10 and Rs 86.00. It closed the year to March 2026 at Rs 79.50, up from about Rs 47 a year earlier.\nSix months to 30 September 2026 (group, unaudited): sales rose 8% to Rs 8.66bn and profit attributable rose 8% to Rs 418mn. EPS was Rs 3.05 against Rs 2.84. But the September quarter's EPS fell to Rs 1.44 from Rs 1.76, as administrative costs nearly doubled and finance costs rose.\nSegments (six months): tile grout, adhesives and flooring sales rose 25% to Rs 2.60bn (profit before tax Rs 344mn); aluminium sales (Swisstek Aluminium) rose 2% to Rs 6.06bn (profit before tax Rs 318mn).\nYear to March 2026 (audited): revenue Rs 16.88bn (up 11%), profit attributable Rs 1.00bn (up 16%), EPS Rs 7.32 (Rs 6.32), return on average equity 26%, dividends Rs 2.05 (28% of profit), NAV Rs 28.40.\nDebt: borrowings Rs 9.16bn at September 2026, up from Rs 5.72bn in March, and net debt about Rs 8.6bn, about 1.7x equity. Operating cash flow was Rs 3.1bn negative in the half as stock rose and payables were paid down.\nCycle: group profit was Rs 900mn (2021/22), a loss of Rs 703mn (2022/23), a loss of Rs 113mn (2023/24, EPS Rs -0.51), then EPS Rs 6.32 (2024/25) and Rs 7.32 (2025/26).\n\nMethods\nNAV (Rs 31.06): 2.6x.\nReturn on equity: 26% in 2025/26 and 32% in 2024/25, after losses in the two years before.\nP/E: 10.6x trailing EPS of Rs 7.53. Year-end P/E: 10.9x (2026), 7.4x (2025).\nDividends: Rs 2.05 for 2025/26, a 2.6% yield, 28% of profit.\nJustified price to book: Rs 18.4 / 33.9 / 58.5, weighted Rs 34.2.\nP/E method: Rs 39.6 / 60.0 / 80.0, weighted Rs 57.9.\nResidual income: Rs 20.4 / 43.9 / 90.6, weighted Rs 46.2.\n\nSwisstek pays out under a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock, so a cash-flow DCF isn't reliable. Price to book is the strictest because it assumes ROE settles at 18% straight away; residual income lets today's ROE fade over 10 years.\n\nAssumptions (bear / base / bull)\nCost of equity: 18.5% / 17% / 15.5% (a cyclical, highly geared manufacturer).\nLong-run ROE (price to book): 13% / 18% / 23%.\nROE path (residual income): 20% falling to 13% / 24% falling to 18% / 26% falling to 23%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 6.6 × 6 / 7.5 × 8 / 8.0 × 10.\nAverage of the three methods: Rs 26.1 / Rs 45.9 / Rs 76.4.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). The base case assumes the second half matches last year's Rs 4.48. Payout 28%.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 46 (1.5x NAV), so Rs 80.10 is about 74% above it.\nBuy price: a 15% margin of safety gives Rs 39.10, and 25% gives Rs 34.50.\nPlan for 500 shares: 200 at up to Rs 46.00, 150 at up to Rs 39.10 and 150 at up to Rs 34.50. That averages about Rs 40.48, about Rs 20,240, against Rs 40,050 at Rs 80.10.\nRealism: Rs 46 needs about a 43% fall. The share was about Rs 47 in March 2025, so it was there recently, but it's unlikely soon while profits hold up.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 15.5%: 32.6 / 54.1 / 81.6 for long-run ROE of 13% / 18% / 23%.\nCost of equity 17%: 27.2 / 43.9 / 65.2.\nCost of equity 18.5%: 23.3 / 36.4 / 53.3.\nToday's price needs ROE to stay above 23% for many years.\n\nWhat would change my view\nSupports a higher value: the tile-grout and flooring business keeps growing 25% a year; borrowings fall back as stock is sold; ROE stays above 25%; a building boom in Sri Lanka.\nSupports a lower value: profit falling further after the weak September quarter; aluminium prices falling or price competition with Alumex; borrowings staying high; construction slowing; a return to the losses of 2022–2024.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}

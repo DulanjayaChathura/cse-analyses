@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PARQ.N0000",
+  "localFolder": "swisstek",
+  "updated": "2026-11-09",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used for 2023/24 EPS (Rs -0.51) and dividend (Rs 0.70)."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: performance highlights (p. 15), income statement (p. 136), five-year summary (pp. 195–196)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Covered by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Wrong file",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "This file is an exact copy of the June 2026 interim, not the March 2026 one. The audited annual report covers that period."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 10.079,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        },
+        "netProfit": {
+          "value": -0.113,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)",
+          "note": "Group, including non-controlling interest"
+        },
+        "eps": {
+          "value": -0.51,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, p. income statement"
+        },
+        "dividendPerShare": {
+          "value": 0.7,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, p. highlights"
+        },
+        "navPerShare": {
+          "value": 17.52,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        },
+        "priceYearEnd": {
+          "value": 19.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 15.269,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 136"
+        },
+        "netProfit": {
+          "value": 0.865,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 136",
+          "note": "Attributable"
+        },
+        "eps": {
+          "value": 6.32,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 136"
+        },
+        "dividendPerShare": {
+          "value": 1.45,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)"
+        },
+        "roe": {
+          "value": 32,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)",
+          "note": "Return on average equity"
+        },
+        "navPerShare": {
+          "value": 26.76,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        },
+        "priceYearEnd": {
+          "value": 46.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)",
+          "note": "Highlights page says Rs 46.60"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 16.884,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 136",
+          "note": "Up 11%"
+        },
+        "netProfit": {
+          "value": 1.001,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 136",
+          "note": "Attributable; up 16%"
+        },
+        "eps": {
+          "value": 7.32,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 136"
+        },
+        "dividendPerShare": {
+          "value": 2.05,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)",
+          "note": "Payout 28%"
+        },
+        "roe": {
+          "value": 26,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)",
+          "note": "Return on average equity"
+        },
+        "navPerShare": {
+          "value": 28.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)",
+          "note": "The highlights page says Rs 33.59, which includes non-controlling interest"
+        },
+        "borrowings": {
+          "value": 5.716,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)",
+          "note": "Including overdraft"
+        },
+        "interestCover": {
+          "value": 3.66,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)"
+        },
+        "peYearEnd": {
+          "value": 10.86,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Performance highlights (p. 15)"
+        },
+        "priceYearEnd": {
+          "value": 79.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        },
+        "sharesOutstanding": {
+          "value": 136.86,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, Five-year summary (pp. 195–196)"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 8.659,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months; up 8%. Quarter Rs 4.48bn"
+        },
+        "netProfit": {
+          "value": 0.418,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Attributable, six months; up 8%. Quarter Rs 197mn, down 18%"
+        },
+        "eps": {
+          "value": 3.05,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months; quarter Rs 1.44 (Rs 1.76 a year earlier)"
+        },
+        "navPerShare": {
+          "value": 31.06,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "borrowings": {
+          "value": 9.16,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Including overdraft; cash Rs 0.53bn"
+        },
+        "tileSegmentRevenue": {
+          "value": 2.598,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Flooring and tile accessories; up 25%"
+        },
+        "aluminiumRevenue": {
+          "value": 6.061,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Up 2%"
+        },
+        "priceQuarterEnd": {
+          "value": 80.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Quarter range Rs 67.10–86.00"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18.5% / Base 17% / Bull 15.5%",
+      "reason": "Bonds about 12% (Oct 2026) plus a premium for a cyclical, highly geared manufacturer.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Long-run ROE (price to book)",
+      "value": "13% / 18% / 23%",
+      "reason": "Losses in 2022–2024, 26–32% in the last two years.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "ROE path (residual income)",
+      "value": "20%→13% / 24%→18% / 26%→23%",
+      "reason": "Today's ROE fading over 10 years. Payout 28%.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Roughly nominal GDP growth.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "6.6 × 6 / 7.5 × 8 / 8.0 × 10",
+      "reason": "H1 EPS Rs 3.05; second half around last year's Rs 4.48. Lower multiples for a cyclical, geared business.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Methods used",
+      "value": "P/B, P/E, residual income",
+      "reason": "Dividend model left out (payout 28%); DCF unreliable with stock swings.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-09"
+    }
+  ],
+  "openQuestions": [
+    "Q3 results (to December 2026, due by mid-February): was the weak September quarter a one-off?",
+    "Why did administrative costs nearly double in the half?",
+    "Do borrowings come back down from Rs 9.2bn as stock is sold?",
+    "Is the aluminium business losing ground to Alumex, or just slower?",
+    "The 'March 2026' interim file in the laptop folder is a copy of the June one; replace it if needed."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-09",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "First analysis.",
+      "fairValue": 46.0,
+      "buyPrice": 39.1,
+      "strongBuyPrice": 34.5,
+      "priceAtTime": 80.1,
+      "archive": null
+    }
+  ]
+}

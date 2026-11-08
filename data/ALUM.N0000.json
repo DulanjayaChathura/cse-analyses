@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ALUM.N0000",
+  "company": {
+    "name": "Alumex PLC",
+    "sector": "Aluminium extrusions",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "ALUM.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-09",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 15.9,
+    "date": "2026-09-30",
+    "source": "Interim report to 30 Sep 2026 (last traded price)",
+    "note": "July–September 2026 range Rs 15.70–17.90; year to March 2026 range Rs 13.50–22.70."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Profits recovered, but they swing with aluminium prices and the company carries heavy debt",
+    "text": "Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys company, is earning well again: profit for the six months to September 2026 nearly quadrupled. But at Rs 15.90 the share trades at 1.8x its NAV of Rs 8.98, and its trailing P/E of 9.0x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40). Alumex's profits swing widely with aluminium prices and demand (a loss in 2022/23, almost nothing in 2023/24), and its borrowings are nearly twice its equity. On normal earnings the methods put fair value at about Rs 8.40, so the price is about 89% above it. I'd buy at up to about Rs 7.20 and treat under Rs 6.30 as a strong buy."
+  },
+  "valuation": {
+    "fairValue": 8.4,
+    "buyPrice": 7.2,
+    "strongBuyPrice": 6.3,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 8.98,
+    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 0.9x NAV)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 8.98,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.8,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 9.0,
+      "unit": "x",
+      "note": "Trailing EPS Rs 1.77, including one exceptional quarter"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 17,
+      "unit": "%",
+      "note": "Year to March 2026; ten-year average about 16.5%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 3.0,
+      "unit": "%",
+      "note": "Rs 0.47 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 33,
+      "unit": "%"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 1.8,
+      "unit": "x",
+      "note": "September 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 13,
+      "unit": "%",
+      "note": "Six months to Sep 2026; 18% in the year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 9.5,
+      "unit": "Rs bn",
+      "display": "~Rs 9.5bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 13% to Rs 8.60bn and profit rose to Rs 268mn from Rs 69mn. EPS was Rs 0.45 against Rs 0.12."
+    },
+    {
+      "title": "One big quarter",
+      "text": "Almost all of 2025/26's profit (EPS Rs 1.44) came in January–March 2026 (EPS Rs 1.40), when aluminium prices jumped. The year also included Rs 229mn of fire insurance income."
+    },
+    {
+      "title": "Debt",
+      "text": "Net debt about Rs 9.6bn, 1.8x equity. Short-term loans rose Rs 2.4bn in the half as inventory grew Rs 2.8bn. Interest cover 2.2x last year."
+    },
+    {
+      "title": "A cyclical record",
+      "text": "EPS over ten years ranged from a small loss (2022/23) to Rs 1.92 (2021/22), an average of about Rs 0.86."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.92,
+          -0.02,
+          0.31,
+          1.45,
+          1.44,
+          1.77
+        ],
+        "notes": [
+          null,
+          "Loss year",
+          null,
+          "Fire insurance",
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          34,
+          -0.3,
+          5,
+          21,
+          17,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0.6,
+          0.25,
+          0.0,
+          0.4,
+          0.47,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          "None paid",
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 8.98",
+      "reading": "The price is 1.8x NAV."
+    },
+    {
+      "method": "Return on equity",
+      "value": "17%",
+      "reading": "Year to March 2026 (21% in 2024/25), but 5% in 2023/24 and below zero in 2022/23. Ten-year average about 16.5%."
+    },
+    {
+      "method": "P/E",
+      "value": "9.0x",
+      "reading": "On trailing EPS of Rs 1.77, which includes the exceptional March 2026 quarter. Year-end P/E 11.5x (2026)."
+    },
+    {
+      "method": "Dividends",
+      "value": "3.0% yield",
+      "reading": "Rs 0.47 for 2025/26, a third of profit; Rs 0.20 paid so far this year."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt 1.8x equity",
+      "reading": "About Rs 9.6bn at September 2026, mostly short-term loans; interest cover 2.2x."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 4.0,
+      "base": 7.3,
+      "bull": 12.7,
+      "weighted": 7.4,
+      "comment": "Base-case long-run ROE of 15% is below the 17% cost of equity, so value is a little under book."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 6.0,
+      "base": 10.8,
+      "bull": 17.1,
+      "weighted": 10.6,
+      "comment": "The most generous: EPS for the year to March 2027 times 7 / 9 / 11."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 3.5,
+      "base": 6.9,
+      "bull": 14.3,
+      "weighted": 7.4,
+      "comment": "ROE of 12% falling to 11% / 15% / 19% over 10 years."
+    }
+  ],
+  "modelsNote": "Alumex pays out a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock levels, so a cash-flow DCF isn't reliable. The fair value uses three methods.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18.5%",
+        "base": "17%",
+        "bull": "15.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "11%",
+        "base": "15%",
+        "bull": "19%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "0.85 × 7",
+        "base": "1.20 × 9",
+        "bull": "1.55 × 11"
+      }
+    ],
+    "averages": {
+      "bear": 4.5,
+      "base": 8.3,
+      "bull": 14.7
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Base case: second half EPS about Rs 0.75, well below last year's exceptional Rs 1.32. Payout 33%."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15.5%",
+      "17%",
+      "18.5%"
+    ],
+    "columns": [
+      "11%",
+      "15%",
+      "19%"
+    ],
+    "values": [
+      [
+        4.4,
+        8.4,
+        14.0
+      ],
+      [
+        3.7,
+        6.9,
+        11.4
+      ],
+      [
+        3.2,
+        5.8,
+        9.5
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's price needs ROE well over 20% for many years."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 8.4
+      },
+      {
+        "shares": 150,
+        "maxPrice": 7.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 6.3
+      }
+    ],
+    "averagePrice": 7.41,
+    "totalCost": 3705,
+    "note": "About Rs 3,705 in total, against Rs 7,950 at Rs 15.90.",
+    "realism": "Rs 8.40 needs about a 47% fall. The share was Rs 9.50 in April 2024 and Rs 7.20 in March 2020, so it has been there in bad years, but it isn't likely soon unless earnings fall back."
+  },
+  "changeMyView": {
+    "higher": [
+      "Profits staying near the March 2026 quarter's level.",
+      "Borrowings falling as stock is sold.",
+      "Exports to Europe and Australia growing further.",
+      "A building boom in Sri Lanka."
+    ],
+    "lower": [
+      "Aluminium prices falling, so stock bought at high prices loses value.",
+      "Construction slowing.",
+      "Interest rates rising on its large short-term loans.",
+      "A return to the losses of 2022–2024.",
+      "Competition from Swisstek and imports."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The September 2026 interim is a scanned image read by text recognition, so check any figure that matters. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys company, is earning well again: profit for the six months to September 2026 nearly quadrupled. But at Rs 15.90 the share trades at 1.8x its NAV of Rs 8.98, and its trailing P/E of 9.0x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40). Alumex's profits swing widely with aluminium prices and demand (a loss in 2022/23, almost nothing in 2023/24), and its borrowings are nearly twice its equity. On normal earnings the methods put fair value at about Rs 8.40, so the price is about 89% above it. I'd buy at up to about Rs 7.20 and treat under Rs 6.30 as a strong buy.\n\nPrice and key figures\nPrice: Rs 15.90 (Interim report to 30 Sep 2026 (last traded price), 2026-09-30). Please check it live. In July–September 2026 it traded between Rs 15.70 and Rs 17.90. In the year to March 2026 it ranged from Rs 13.50 (April 2025) to Rs 22.70 (October 2025) and closed at Rs 16.60.\nSix months to 30 September 2026 (unaudited): revenue rose 13% to Rs 8.60bn and profit rose to Rs 268mn from Rs 69mn. EPS was Rs 0.45 against Rs 0.12. The September quarter earned Rs 118mn (EPS Rs 0.20), on a gross margin of 21%.\nYear to March 2026 (audited): revenue Rs 16.94bn (up 18%), profit Rs 863mn (flat), EPS Rs 1.44 (Rs 1.45), ROE 17%, dividends Rs 0.47. Almost all of that year's profit came in January–March 2026 (EPS Rs 1.40), when aluminium prices jumped. It also included Rs 229mn of insurance income from the 2024/25 fire at the Ekala plant.\nDebt: borrowings Rs 10.1bn and net debt about Rs 9.6bn at September 2026, about 1.8x equity. Short-term loans rose by Rs 2.4bn in the half as inventory grew by Rs 2.8bn. Interest cover was only 2.2x last year.\nCycle: EPS over ten years was Rs 1.26, 0.61, 0.21, 0.05, 1.40, 1.92, -0.02, 0.31, 1.45 and 1.44 (2016/17 to 2025/26), an average of about Rs 0.86. ROE averaged about 16.5%.\n\nMethods\nNAV (Rs 8.98): 1.8x.\nReturn on equity: 17% in 2025/26 and 21% in 2024/25 (the latter helped by fire insurance), but 5% in 2023/24 and below zero in 2022/23.\nP/E: 9.0x trailing EPS of Rs 1.77, including the exceptional March 2026 quarter. Year-end P/E: 11.5x (2026), 10.5x (2025).\nDividends: Rs 0.47 for 2025/26, a 3.0% yield, a third of profit; Rs 0.20 has been paid for this year.\nJustified price to book: Rs 4.0 / 7.3 / 12.7, weighted Rs 7.4.\nP/E method: Rs 6.0 / 10.8 / 17.1, weighted Rs 10.6.\nResidual income: Rs 3.5 / 6.9 / 14.3, weighted Rs 7.4.\n\nAlumex pays out a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock levels, so a cash-flow DCF isn't reliable. Price to book and residual income are stricter because the base-case ROE (15%) is below the cost of equity (17%).\n\nAssumptions (bear / base / bull)\nCost of equity: 18.5% / 17% / 15.5% (a cyclical, highly geared manufacturer).\nLong-run ROE (price to book and residual income): 11% / 15% / 19%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 0.85 × 7 / 1.20 × 9 / 1.55 × 11.\nAverage of the three methods: Rs 4.5 / Rs 8.3 / Rs 14.7.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). The base case assumes the second half earns about Rs 0.75 a share, well below last year's exceptional Rs 1.32. Payout 33%.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 8.40 (0.9x NAV), so Rs 15.90 is about 89% above it.\nBuy price: a 15% margin of safety gives Rs 7.20, and 25% gives Rs 6.30.\nPlan for 500 shares: 200 at up to Rs 8.40, 150 at up to Rs 7.20 and 150 at up to Rs 6.30. That averages about Rs 7.41, about Rs 3,705, against Rs 7,950 at Rs 15.90.\nRealism: Rs 8.40 needs about a 47% fall. The share was Rs 9.50 in April 2024 and Rs 7.20 in March 2020, so it has been there in bad years, but it isn't likely soon unless earnings fall back.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 15.5%: 4.4 / 8.4 / 14.0 for long-run ROE of 11% / 15% / 19%.\nCost of equity 17%: 3.7 / 6.9 / 11.4.\nCost of equity 18.5%: 3.2 / 5.8 / 9.5.\nToday's price needs ROE of well over 20% for many years.\n\nWhat would change my view\nSupports a higher value: profits staying near the March 2026 quarter's level; borrowings falling as stock is sold; exports to Europe and Australia growing further; a building boom in Sri Lanka.\nSupports a lower value: aluminium prices falling (stock bought at high prices loses value); construction slowing; interest rates rising on its large short-term loans; more of the cyclical losses seen in 2019–2020 and 2022–2024; competition from Swisstek and imports.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The September 2026 interim report is a scanned image, so I read its figures by text recognition; check any figure that matters. This is analysis, not personal financial advice."
+}
