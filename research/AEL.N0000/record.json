@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "ticker": "AEL.N0000",
+  "localFolder": "access eng",
+  "updated": "2026-11-09",
+  "reportsRead": [
+    {
+      "file": "access eng Annual Report 2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: income statement (p. 262) and investor relations five-year table (p. 235)."
+    },
+    {
+      "file": "Access engineering Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: highlights (p. 18), investor relations (pp. 53–57), statements (pp. 265–266), notes 6.2, 9, 13, 18, 28 and the condominium segment review (pp. 184–186)."
+    },
+    {
+      "file": "Acces Eng Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q3 FY2026",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    },
+    {
+      "file": "Access Eng Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Superseded by the audited annual report (EPS Rs 7.09 interim, Rs 7.17 audited)."
+    },
+    {
+      "file": "Access Eng Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 5.11,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "dividendPerShare": {
+          "value": 0.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "navPerShare": {
+          "value": 24.28,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "roe": {
+          "value": 16.74,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 2.48,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "dividendPerShare": {
+          "value": 0.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "navPerShare": {
+          "value": 29.56,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "roe": {
+          "value": 7.62,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 21.501,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 262"
+        },
+        "netProfit": {
+          "value": 6.861,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 262",
+          "note": "Attributable; includes a Rs 2.55bn tax credit and a Rs 1.11bn revaluation gain"
+        },
+        "eps": {
+          "value": 6.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "dividendPerShare": {
+          "value": 0.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "navPerShare": {
+          "value": 35.83,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "roe": {
+          "value": 17.92,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 34.511,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 262"
+        },
+        "netProfit": {
+          "value": 6.31,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, p. 262",
+          "note": "Attributable; includes a Rs 0.67bn deferred tax credit"
+        },
+        "eps": {
+          "value": 6.31,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "dividendPerShare": {
+          "value": 2.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "navPerShare": {
+          "value": 40.13,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "roe": {
+          "value": 14.73,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Investor relations (p. 57)"
+        },
+        "priceYearEnd": {
+          "value": 38.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 56"
+        }
+      }
+    },
+    {
+      "period": "Q3 FY2026",
+      "periodEnd": "2025-12-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 13.401,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 2",
+          "note": "Quarter; up 53%"
+        },
+        "netProfit": {
+          "value": 1.244,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 2",
+          "note": "Quarter, attributable"
+        },
+        "eps": {
+          "value": 1.24,
+          "unit": "Rs",
+          "source": "Interim to 31 Dec 2025, p. 2",
+          "note": "Quarter; nine months Rs 3.79"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 49.661,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 265",
+          "note": "Up 44%"
+        },
+        "netProfit": {
+          "value": 7.169,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 265",
+          "note": "Attributable. The unaudited interim said Rs 7.09bn (EPS Rs 7.09)."
+        },
+        "eps": {
+          "value": 7.17,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 265"
+        },
+        "coreEps": {
+          "value": 5.12,
+          "unit": "Rs",
+          "source": "Own calculation from notes 6.2 and 9.5 (pp. 280, 286)",
+          "note": "Without the Rs 4.01bn revaluation gain less about Rs 1.96bn deferred tax; all in 100%-owned subsidiaries"
+        },
+        "revaluationGain": {
+          "value": 4.011,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 280",
+          "note": "Investment property; mainly Access Logistic Park Ekala (Rs 2.85bn)"
+        },
+        "dividendPerShare": {
+          "value": 2.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 57",
+          "note": "Rs 1.00 in Jan 2026 and Rs 1.00 declared 17 Jun 2026"
+        },
+        "navPerShare": {
+          "value": 41.15,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 266"
+        },
+        "roe": {
+          "value": 18.06,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial highlights (p. 18)",
+          "note": "About 12.6% without the revaluation gain"
+        },
+        "investmentProperty": {
+          "value": 40.758,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Plus Rs 8.39bn work in progress at cost"
+        },
+        "condoWorkInProgress": {
+          "value": 34.43,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 307",
+          "note": "Marina Square flats at cost"
+        },
+        "customerAdvances": {
+          "value": 20.236,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 318",
+          "note": "Advances received, in trade payables"
+        },
+        "interestCover": {
+          "value": 5.85,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Financial highlights (p. 18)"
+        },
+        "priceYearEnd": {
+          "value": 67.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 56"
+        },
+        "sharesOutstanding": {
+          "value": 1000,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, p. 53"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 16.586,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Up 115%"
+        },
+        "netProfit": {
+          "value": 1.714,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Attributable; up 78%"
+        },
+        "eps": {
+          "value": 1.71,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Q1 FY2026 Rs 0.96"
+        },
+        "navPerShare": {
+          "value": 41.95,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "condoRevenue": {
+          "value": 2.566,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 7",
+          "note": "Segment profit Rs 0.79bn; none a year earlier"
+        },
+        "vehicleRevenue": {
+          "value": 8.061,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 7",
+          "note": "Segment profit Rs 0.77bn; Rs 2.26bn revenue a year earlier"
+        },
+        "financeCost": {
+          "value": 1.395,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Rs 0.52bn a year earlier"
+        },
+        "borrowings": {
+          "value": 43.916,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Loans plus overdraft; cash and deposits Rs 5.13bn"
+        },
+        "dividendPaid": {
+          "value": 1.0,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Rs 1.00 a share"
+        },
+        "priceQuarterEnd": {
+          "value": 77.2,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 10",
+          "note": "Q1 range Rs 66.90–79.50"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18% / Base 16.5% / Bull 15%",
+      "reason": "Bonds about 12% (Oct 2026) plus a premium for a geared construction and vehicle group.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Normal ROE (residual income)",
+      "value": "12%→11% / 13.5%→13% / 15.5%→15%",
+      "reason": "About 12.6% in 2025/26 without the revaluation gain; payout 35%.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Roughly nominal GDP growth.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "EPS to March 2027 without Marina Square × P/E",
+      "value": "4.5 × 8 / 5.5 × 10 / 6.5 × 12",
+      "reason": "Quarters of 2025/26 without the revaluation gain added to about Rs 5.1; Q1 is seasonally weak.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Marina Square value",
+      "value": "Rs 2.8 / 7.7 / 10.4 a share",
+      "reason": "Rs 34.4bn of flats at cost; pre-tax margin 15% / 30% / 35% (Q1 FY2027 segment margin 34%), 30% tax, discounted 0.65 / 0.75 / 0.80 for about three years of sales.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Adjusted NAV multiple",
+      "value": "0.85x / 1.0x / 1.1x",
+      "reason": "Conglomerate discount in the bear case; operating businesses worth more than book in the bull case.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Methods used",
+      "value": "Adjusted NAV, P/E, residual income",
+      "reason": "Dividend model left out (payout under half); DCF unreliable with Marina Square and vehicle stock swings.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-09"
+    }
+  ],
+  "openQuestions": [
+    "Q2 results (to September 2026, due by mid-November): how much Marina Square revenue and profit, and at what margin?",
+    "How many Marina Square flats are still unsold, and at what prices? (The reports don't say.)",
+    "Are vehicle sales holding up after the first rush of imports?",
+    "Do finance costs keep rising faster than profit, and does debt start falling as flat buyers pay up?",
+    "Is construction profit recovering (it fell in Q1)?",
+    "Any more revaluation gains? These are left out of earnings."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-09",
+      "basedOn": "Q1 FY2027 (to Jun 2026)",
+      "summary": "First analysis.",
+      "fairValue": 47.0,
+      "buyPrice": 40.0,
+      "strongBuyPrice": 35.3,
+      "priceAtTime": 77.2,
+      "archive": null
+    }
+  ]
+}
