@@ -60,12 +60,13 @@ def now_utc():
     return datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 
 
-def post(endpoint, data=None, retries=2):
+def post(endpoint, data=None, retries=2, referer=None):
     body = urllib.parse.urlencode(data or {}).encode()
+    headers = dict(HEADERS, **({"Referer": referer} if referer else {}))
     last = None
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(BASE + endpoint, data=body, headers=HEADERS, method="POST")
+            req = urllib.request.Request(BASE + endpoint, data=body, headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=30) as r:
                 return json.loads(r.read().decode("utf-8"))
         except Exception as e:  # network error, HTTP error, bad JSON
@@ -93,6 +94,29 @@ def company_info(symbol):
     info = d.get("reqSymbolInfo") or {}
     logo = (d.get("reqLogo") or {}).get("path")
     return info.get("name"), logo, info.get("lastTradedPrice"), info.get("previousClose")
+
+
+def financial_reports(symbol):
+    """Annual and quarterly reports the CSE lists for a company: [{id, kind, title, date, url}]."""
+    d = post("financials", {"symbol": symbol}, referer=f"https://www.cse.lk/company-profile?symbol={symbol}")
+    out = []
+    for key, kind in (("infoAnnualData", "annual"), ("infoQuarterlyData", "quarterly")):
+        for item in d.get(key) or []:
+            if not isinstance(item, dict):
+                continue
+            path = item.get("path") or item.get("url") or ""
+            if not path:
+                continue
+            url = path if path.startswith("http") else "https://cdn.cse.lk/" + path.lstrip("/")
+            date = None
+            for k in ("uploadedDate", "manualDate", "createdDate", "date"):
+                date = date_from_cse(item.get(k)) or (item.get(k)[:10] if isinstance(item.get(k), str) and len(item.get(k)) >= 10 else None)
+                if date:
+                    break
+            out.append({"id": str(item.get("id") or path), "kind": kind,
+                        "title": (item.get("fileText") or item.get("title") or item.get("name") or path.rsplit("/", 1)[-1]).strip(),
+                        "date": date, "url": url})
+    return out
 
 
 def trade_summary():

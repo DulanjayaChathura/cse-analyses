@@ -76,6 +76,10 @@ The site can post to a Telegram channel when a share reaches a price you choose.
 
 Whenever new or updated research is published, the build posts one message to the same Telegram channel. It lists each company, its fair value (old → new for updates), its buy price, and how far today's price is from fair value, with a link to the page. Research from the last 7 days that hasn't been announced is included; nothing is announced twice. Like the price alerts, this never creates a commit.
 
+### New report notifications
+
+Twice a day (about 08:07 and 20:07 Sri Lanka time) a check reads the CSE's list of annual and quarterly reports for every company on the site. When a new one appears, the Telegram channel gets a message with the report's name, date and a link to the PDF, plus which `cse-research` folder to save it in. Then ask Claude to update that company. To check straight away, use **Actions → New report check → Run workflow**.
+
 ### Setting your targets
 
 Edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
@@ -124,6 +128,7 @@ If you have Python installed: `python scripts/validate.py path/to/FILE.json`
 | `.github/workflows/site.yml` | The automatic schedule: daily prices, the after-close alert check, building the site. |
 | `.github/workflows/alerts.yml` | The 30-minute alert checks during trading. |
 | `.github/workflows/telegram-test.yml` | The "Test Telegram" button. |
+| `.github/workflows/reports.yml` | The twice-daily check for new company reports on the CSE. |
 | `alerts.json` | Your price targets. |
 | `research/` | Research records and archived analyses, one folder per company (the PDFs stay on your laptop). |
 | `CLAUDE.md`, `.claude/commands/update.md` | The update procedure Claude follows. |

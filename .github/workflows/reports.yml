@@ -1,0 +1,46 @@
+# Checks twice a day whether any company on the site has published a new
+# annual or quarterly report on the CSE, and posts it to Telegram.
+# Never commits: what's been seen is kept in the Actions cache.
+name: New report check
+
+on:
+  schedule:
+    # 02:37 and 14:37 UTC = 08:07 and 20:07 in Sri Lanka, every day
+    # (companies often publish results in the evening or at weekends).
+    - cron: "37 2,14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write   # save what's been seen in the Actions cache
+
+concurrency:
+  group: alert-state
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Load what's already been seen
+        uses: actions/cache/restore@v5
+        with:
+          path: .alert-state
+          key: alert-state-${{ github.run_id }}
+          restore-keys: alert-state-
+      - name: Check the CSE for new reports
+        id: watch
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/report_watch.py
+      - name: Remember what's been seen
+        if: always() && steps.watch.outputs.state_changed == 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: .alert-state
+          key: alert-state-${{ github.run_id }}-${{ github.run_attempt }}
