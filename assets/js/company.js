@@ -228,6 +228,12 @@
   function render() {
     let banner = "";
     if (d._build && d._build.previousVersion) banner = `<div class="banner">The latest file for this company was rejected by the data check, so this is the previous valid version.</div>`;
+    const lr = meta.latestResearch;
+    if (App.isRecentResearch(lr) && !App.isDismissed(App.researchKey(d.ticker, lr))) {
+      banner += `<div class="notice" role="status" id="research-notice"><div><h2>${lr.kind === "updated" ? "This analysis was updated" : "New research published"}</h2>
+        <p style="margin:0">${App.researchLine(lr)}${lr.kind === "updated" && lr.summary ? ` ${App.esc(lr.summary)}` : ""} <a href="#changes">See what changed</a></p></div>
+        <button type="button" data-dismiss="${App.esc(App.researchKey(d.ticker, lr))}">Dismiss</button></div>`;
+    }
     content.innerHTML = banner + sections.map((s) => {
       let inner;
       try { inner = s.always || has(s.key) ? s.html() : `<h2>${App.esc(s.title)}</h2>${NA}`; }
@@ -251,5 +257,11 @@
   };
   show();
   document.addEventListener("themechange", show);
+  content.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-dismiss]");
+    if (!b) return;
+    App.dismiss(b.dataset.dismiss);
+    document.getElementById("research-notice")?.remove();
+  });
   if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
 })();

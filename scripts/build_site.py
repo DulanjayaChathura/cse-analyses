@@ -139,6 +139,15 @@ def main():
             report += [f"- {x}" for x in warns]
         if isinstance(rec, dict):
             write_json(SITE / "data" / "research" / f"{t}.json", rec)
+            log = [e for e in rec.get("changeLog") or [] if isinstance(e, dict) and e.get("date")]
+            if log:
+                last = log[-1]
+                prev = log[-2] if len(log) > 1 else None
+                entry["latestResearch"] = {
+                    "date": last["date"], "kind": "updated" if prev else "new",
+                    "basedOn": last.get("basedOn"), "summary": last.get("summary"),
+                    "fairValue": last.get("fairValue"), "previousFairValue": prev.get("fairValue") if prev else None,
+                }
         entry["hasResearch"] = isinstance(rec, dict)
 
     if PROBLEMS.exists():

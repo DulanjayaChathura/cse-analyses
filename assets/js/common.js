@@ -243,4 +243,24 @@ App.initGlossary = function () {
   window.addEventListener("scroll", hide, { passive: true });
 };
 
+/* ---------- New research notices ---------- */
+App.NEW_RESEARCH_DAYS = 7;   // how long a "new research" notice shows
+App.isRecentResearch = function (r) {
+  const d = r && App.parseDate(r.date);
+  return !!d && App.daysBetween(d, App.today()) <= App.NEW_RESEARCH_DAYS;
+};
+App.researchKey = (ticker, r) => `seen:${ticker}:${r.date}`;
+App.isDismissed = function (key) {
+  try { return localStorage.getItem(key) === "1"; } catch (e) { return false; }
+};
+App.dismiss = function (key) {
+  try { localStorage.setItem(key, "1"); } catch (e) { /* storage unavailable: shows again next visit */ }
+};
+App.researchLine = function (r) {
+  const fv = App.isNum(r.previousFairValue) && App.isNum(r.fairValue) && r.previousFairValue !== r.fairValue
+    ? `fair value ${App.rs(r.previousFairValue)} → ${App.rs(r.fairValue)}`
+    : App.isNum(r.fairValue) ? `fair value ${App.rs(r.fairValue)}` : "";
+  return `${r.kind === "updated" ? "Updated" : "New research"} on ${App.date(r.date)}${r.basedOn ? `, based on ${App.esc(r.basedOn)}` : ""}${fv ? `: ${fv}` : ""}.`;
+};
+
 App.init = function () { App.initTheme(); App.initGlossary(); };

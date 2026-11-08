@@ -133,6 +133,13 @@ p { margin: 0 0 0.8em; max-width: 72ch; }
 .status.warn { border-left-color: var(--warn); }
 .status.bad { border-left-color: var(--bad); }
 .status.good { border-left-color: var(--good); }
+.notice { display: flex; gap: 1rem; align-items: flex-start; justify-content: space-between; padding: 0.9rem 1.1rem; margin-bottom: 1.4rem;
+  border-radius: var(--radius-sm); background: var(--zone-buy); border-left: 4px solid var(--good); }
+.notice h2 { font-size: 1.05rem; margin: 0 0 0.3rem; }
+.notice ul { margin: 0; padding-left: 1.1rem; }
+.notice li { margin: 0.15rem 0; }
+.notice button { font: inherit; font-size: 0.85rem; background: none; border: 1px solid var(--rule); color: var(--ink); border-radius: 999px; padding: 0.2rem 0.8rem; cursor: pointer; white-space: nowrap; }
+.badge.new { color: var(--good-strong); background: var(--zone-buy); border-color: var(--good); font-weight: 600; }
 .banner { padding: 0.8rem 1rem; border-radius: var(--radius-sm); background: var(--zone-fair); margin-bottom: 1.4rem; font-size: 0.92rem; }
 
 /* ladder */

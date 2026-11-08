@@ -29,6 +29,7 @@
     const v = c.valuation || {};
     const st = App.priceStatus(main, v);
     const badges = [];
+    if (App.isRecentResearch(c.latestResearch)) badges.push(`<span class="badge new">${c.latestResearch.kind === "updated" ? "Updated" : "New research"} ${App.date(c.latestResearch.date)}</span>`);
     if (st) badges.push(`<span class="badge ${st.cls}">${App.esc(st.label)}</span>`);
     const rs = App.resultsStatus(c.resultsCovered, c.fiscalYearEnd);
     if (rs && rs.level !== "ok") badges.push(`<span class="badge ${rs.level}">Analysis may be out of date</span>`);
@@ -52,6 +53,20 @@
   }
   render();
   document.addEventListener("themechange", render);
+
+  // Banner listing research published in the last few days that this viewer hasn't dismissed.
+  const fresh = companies.filter((c) => App.isRecentResearch(c.latestResearch) && !App.isDismissed(App.researchKey(c.ticker, c.latestResearch)))
+    .sort((a, b) => b.latestResearch.date.localeCompare(a.latestResearch.date));
+  const noticeEl = document.getElementById("notice");
+  if (fresh.length) {
+    noticeEl.innerHTML = `<div class="notice" role="status"><div><h2>New research published</h2><ul>${fresh.map((c) =>
+      `<li><a href="company.html?t=${encodeURIComponent(c.ticker)}">${App.esc(c.name)}</a>: ${App.researchLine(c.latestResearch)}</li>`).join("")}</ul></div>
+      <button type="button" id="dismiss-notice">Dismiss</button></div>`;
+    document.getElementById("dismiss-notice").addEventListener("click", () => {
+      fresh.forEach((c) => App.dismiss(App.researchKey(c.ticker, c.latestResearch)));
+      noticeEl.innerHTML = "";
+    });
+  }
 
   document.getElementById("search").addEventListener("input", (e) => {
     const q = e.target.value.trim().toLowerCase();
