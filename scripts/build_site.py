@@ -56,6 +56,17 @@ def check_record(rec, ticker):
     return w
 
 
+def display_name(fetched, company, ticker):
+    """The CSE's official name, written the way the analysis file writes it when they match
+    (e.g. CSE "C I C HOLDINGS PLC" + file "CIC Holdings PLC" -> "CIC Holdings PLC")."""
+    key = lambda x: "".join(ch for ch in (x or "").lower() if ch.isalnum())
+    official = fetched.get("cseName") or fetched.get("name")
+    mine = company.get("name")
+    if official and mine and key(official) == key(mine):
+        return mine
+    return (cse.nice_name(official) if official else None) or mine or ticker
+
+
 def summarize(data, warnings, bad, previous, companies):
     t = data["ticker"]
     company = data.get("company") if isinstance(data.get("company"), dict) else {}
@@ -63,7 +74,7 @@ def summarize(data, warnings, bad, previous, companies):
     ok = lambda k: k in data and k not in bad
     return {
         "ticker": t,
-        "name": (cse.nice_name(fetched["cseName"]) if fetched.get("cseName") else fetched.get("name")) or company.get("name") or t,
+        "name": display_name(fetched, company, t),
         "logo": fetched.get("logo"),
         "sector": company.get("sector"),
         "fiscalYearEnd": company.get("fiscalYearEnd") if ok("company") else None,
