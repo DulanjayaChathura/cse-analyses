@@ -13,10 +13,29 @@
     updatedEl.textContent = "";
     return;
   }
-  const companies = (index.companies || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+  /* Gap between the current price and fair value, as a fraction: -0.2 means
+     20% below fair value. Cards are ordered from the lowest gap (cheapest
+     against fair value) to the highest; companies without a price or fair
+     value go last, in name order. */
+  function gap(c) {
+    const pr = App.resolvePrice(c.ticker, c.price, prices);
+    const fv = c.valuation && c.valuation.fairValue;
+    return pr && App.isNum(fv) && fv > 0 ? pr.value / fv - 1 : null;
+  }
+  const companies = (index.companies || []).slice()
+    .map((c) => ({ c, g: gap(c) }))
+    .sort((a, b) => (a.g === null) - (b.g === null) || (a.g ?? 0) - (b.g ?? 0) || a.c.name.localeCompare(b.c.name))
+    .map((x) => x.c);
   updatedEl.textContent = prices.updatedAt
     ? `${companies.length} ${companies.length === 1 ? "company" : "companies"}. Prices last updated ${App.date(prices.updatedAt.slice(0, 10))}.`
     : `${companies.length} ${companies.length === 1 ? "company" : "companies"}`;
+
+  function gapText(c) {
+    const g = gap(c);
+    if (g === null) return "";
+    const pct = Math.round(Math.abs(g) * 100);
+    return `<span>${pct === 0 ? "At fair value" : `<b>${pct}%</b> ${g > 0 ? "above" : "below"} fair value`}</span>`;
+  }
 
   function card(c) {
     const lines = c.shareClasses.map((sc) => {
@@ -41,7 +60,7 @@
       <div class="card-top">${App.logo(c)}<div><div class="card-name">${App.esc(c.name)}</div><div class="card-sector">${App.esc(c.sector || "")}</div></div></div>
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
-      <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span><span>Analysis ${App.date(c.analysisDate)}</span></div>
+      <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span>${gapText(c)}<span>Analysis ${App.date(c.analysisDate)}</span></div>
       <div class="badges">${badges.join("")}</div>
     </a>`;
   }
