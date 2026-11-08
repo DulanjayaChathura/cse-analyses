@@ -1,27 +1,28 @@
 {
   "schemaVersion": 1,
   "ticker": "DIAL.N0000",
+  "localFolder": "dialog",
   "updated": "2026-10-26",
   "reportsRead": [
     {
-      "file": null,
+      "file": "Dialog Annual Report as at 31st December 2025.pdf",
       "title": "Annual report 2025",
       "period": "FY 2025",
       "periodEnd": "2025-12-31",
       "type": "annual",
       "audited": true,
       "readOn": "2026-10-26",
-      "note": "Read in the first analysis; the PDF isn't in the repository."
+      "note": "Read in the first analysis (in claude.ai); page references weren't recorded."
     },
     {
-      "file": null,
+      "file": "Dialog Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
       "title": "Interim financial statements, six months to 30 June 2026",
       "period": "H1 2026",
       "periodEnd": "2026-06-30",
       "type": "interim",
       "audited": false,
       "readOn": "2026-10-26",
-      "note": "Read in the first analysis; the PDF isn't in the repository."
+      "note": "Read in the first analysis (in claude.ai); page references weren't recorded."
     }
   ],
   "periods": [
