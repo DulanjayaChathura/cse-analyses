@@ -26,6 +26,24 @@ It's free: GitHub hosts it and runs the daily price update.
    To update a company, upload the new file with the same name. It replaces the old one, and GitHub keeps the old version in its history.
 5. The site updates about a minute later. The first time you add a company, its official name, logo and price are fetched from the CSE.
 
+## Updating a company with a new report (research records)
+
+Report PDFs stay on your laptop in `OneDrive\Documents\cse-research\<company>\`. The repository keeps everything learned from them:
+
+```
+research/DIAL.N0000/
+  record.json   ← saved figures per period (with sources), valuation inputs and reasons, open questions, change log
+  history/      ← every earlier analysis, archived before it's replaced
+```
+
+**To update:**
+1. Save the new PDF in the company's laptop folder.
+2. Tell Claude in a chat with the Claude desktop app open, e.g. "New report for Dialog".
+3. Claude reads the saved record and **only the new report**, updates the analysis and the record, archives the old analysis, and opens a **pull request**.
+4. Review the pull request and merge it. The site updates, including the **What changed** section and the fair-value history.
+
+The procedure and the standard analysis brief are in `CLAUDE.md`; the record format is in `docs/research-format.md`. For a **new company**, create its folder in `cse-research`, add its reports, and ask for a first analysis.
+
 ## What runs automatically
 
 - **Every weekday at 15:53 Sri Lanka time** (after the market closes), closing prices are fetched from the CSE website and the site is rebuilt.
@@ -103,6 +121,8 @@ If you have Python installed: `python scripts/validate.py path/to/FILE.json`
 | `.github/workflows/alerts.yml` | The 30-minute alert checks during trading. |
 | `.github/workflows/telegram-test.yml` | The "Test Telegram" button. |
 | `alerts.json` | Your price targets. |
+| `research/` | Research records and archived analyses, one folder per company (the PDFs stay on your laptop). |
+| `CLAUDE.md`, `.claude/commands/update.md` | The update procedure Claude follows. |
 | `prompt/analysis-prompt.md` | The prompt to paste into claude.ai. |
 
 ## Changing the site later

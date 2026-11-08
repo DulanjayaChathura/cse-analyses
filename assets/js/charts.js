@@ -135,3 +135,36 @@ Charts.bars = function (el, periods, series) {
   });
   el.innerHTML = s + "</svg>";
 };
+
+/* ---------- Fair value, buy price and share price across updates ---------- */
+Charts.timeline = function (el, entries) {
+  const pts = entries.filter((e) => App.parseDate(e.date));
+  const series = [
+    ["fairValue", "Fair value", "--ink"],
+    ["buyPrice", "Buy price", "--good"],
+    ["priceAtTime", "Share price at the time", "--accent"],
+  ];
+  const vals = pts.flatMap((e) => series.map(([k]) => e[k])).filter(App.isNum);
+  if (pts.length < 2 || !vals.length) { el.innerHTML = ""; return; }
+  const W = 1000, H = 260, L = 50, R = W - 20, top = 20, bottom = H - 40;
+  const t0 = App.parseDate(pts[0].date).getTime(), t1 = App.parseDate(pts[pts.length - 1].date).getTime();
+  const x = (d) => L + ((App.parseDate(d).getTime() - t0) / Math.max(1, t1 - t0)) * (R - L);
+  const lo = Math.min(...vals) * 0.85, hi = Math.max(...vals) * 1.1;
+  const y = scale(lo, hi, bottom, top);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fair value, buy price and share price at each update">`;
+  niceTicks(lo, hi, 5).forEach((t) => {
+    s += `<line x1="${L}" x2="${R}" y1="${y(t)}" y2="${y(t)}" stroke="${css("--rule")}"/>` +
+      `<text x="${L - 8}" y="${y(t) + 4}" text-anchor="end" font-size="13" fill="${css("--ink-soft")}">${App.num(t)}</text>`;
+  });
+  pts.forEach((e) => {
+    const anchor = e === pts[0] ? "start" : e === pts[pts.length - 1] ? "end" : "middle";
+    s += `<text x="${x(e.date)}" y="${H - 14}" text-anchor="${anchor}" font-size="13" fill="${css("--ink-soft")}">${App.date(e.date)}</text>`;
+  });
+  series.forEach(([k, label, c]) => {
+    const p = pts.filter((e) => App.isNum(e[k]));
+    if (!p.length) return;
+    s += `<polyline fill="none" stroke="${css(c)}" stroke-width="2.5" points="${p.map((e) => `${x(e.date)},${y(e[k])}`).join(" ")}"/>`;
+    p.forEach((e) => { s += `<circle cx="${x(e.date)}" cy="${y(e[k])}" r="5" fill="${css(c)}"><title>${label} ${App.rs(e[k])}, ${App.date(e.date)}</title></circle>`; });
+  });
+  el.innerHTML = s + "</svg>";
+};
