@@ -28,7 +28,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 6. **Re-run the valuation.**
    - Use every method in the current analysis: NAV, ROE, P/E, dividends, DCF or residual income, and so on, with bear, base and bull cases.
    - Keep `valuationInputs` unless the new data clearly justifies a change. For each change, update `value`, write the reason, and set `since` to today.
-   - Look up the latest share price with web search, and say where it's from and its date.
+   - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
    - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, and `fullText`.
