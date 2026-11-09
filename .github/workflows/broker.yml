@@ -1,13 +1,13 @@
 # Saves the day's posts from the Telegram channel (for example, broker
 # messages forwarded from WhatsApp) into inbox/, ready for the daily summary.
-# Runs every day at 15:00 Sri Lanka time, after the 14:30 market close,
+# Runs every day at 20:45 Sri Lanka time, ahead of the 21:00 summary,
 # and whenever you press "Run workflow" on the Actions tab.
 name: Collect broker messages
 
 on:
   schedule:
-    # 09:30 UTC = 15:00 in Sri Lanka, every day.
-    - cron: "30 9 * * *"
+    # 15:15 UTC = 20:45 in Sri Lanka, every day.
+    - cron: "15 15 * * *"
   workflow_dispatch:
 
 permissions:
