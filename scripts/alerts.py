@@ -8,6 +8,12 @@ Each target fires once. Which targets have fired is remembered in
 (not in the repository, so sending an alert never creates a commit).
 A target re-arms when you change it (symbol, direction or price), or when
 the "alert-state" caches are deleted under Actions -> Caches.
+
+Buy-price alerts are automatic and need nothing in alerts.json: every company
+whose business tests are "good" (quality.rating in its data file, i.e. the
+watch list) is checked against its buy price and strong-buy price, for each
+share class. Each fires once, and re-arms when the price climbs back more than
+3% above that level or when the analysis changes the level.
 """
 import datetime
 import html
@@ -60,6 +66,29 @@ def load_targets():
         t["key"] = target_key(t)
         targets.append(t)
     return targets, problems
+
+
+REARM = 1.03   # an automatic alert can fire again once the price is back 3% above its level
+
+
+def auto_targets():
+    """Buy-price and strong-buy-price alerts for every good business (the watch list)."""
+    out = []
+    for path in sorted(DATA.glob("*.json")):
+        d = read_json(path, None)
+        if not isinstance(d, dict) or (d.get("quality") or {}).get("rating") != "good":
+            continue
+        v = d.get("valuation") if isinstance(d.get("valuation"), dict) else {}
+        symbols = [c.get("symbol") for c in d.get("shareClasses") or [] if isinstance(c, dict)] or [d.get("ticker")]
+        for level, field in (("buy", "buyPrice"), ("strong-buy", "strongBuyPrice")):
+            price = v.get(field)
+            if not isinstance(price, (int, float)) or isinstance(price, bool) or price <= 0:
+                continue
+            for sym in symbols:
+                if isinstance(sym, str) and SYMBOL_RE.match(sym):
+                    out.append({"symbol": sym, "direction": "below", "price": float(price), "note": "",
+                                "auto": level, "key": f"auto|{sym}|{level}|{float(price):g}"})
+    return out
 
 
 def load_state():
@@ -162,6 +191,12 @@ def build_message(ticker, symbol_hits, prices):
         price, when = prices[sym]
         lines.append(f"\n<b>{sym}</b> {rs(price)} ({html.escape(when)})")
         for t in ts:
+            if t.get("auto") == "buy":
+                lines.append(f"🟢 At or below my buy price {rs(t['price'])}. It passes the business tests, so it is now in category 1: Buy now.")
+                continue
+            if t.get("auto") == "strong-buy":
+                lines.append(f"🟢 At or below my strong-buy price {rs(t['price'])}.")
+                continue
             arrow = "⬇️ At or below" if t["direction"] == "below" else "⬆️ At or above"
             note = f": {html.escape(t['note'])}" if t["note"] else ""
             lines.append(f"{arrow} your target {rs(t['price'])}{note}")
@@ -182,6 +217,8 @@ def main(mode):
     targets, problems = load_targets()
     for p in problems:
         print(f"::error::{p}")
+    auto = auto_targets()
+    targets = targets + auto
     state = load_state()
     fired = state["fired"]
 
@@ -194,12 +231,20 @@ def main(mode):
             changed = True
 
     pending = [t for t in targets if t["key"] not in fired]
-    print(f"{len(targets)} targets, {len(pending)} not yet fired.")
-    if not pending:
+    spent_auto = [t for t in auto if t["key"] in fired]
+    print(f"{len(targets) - len(auto)} of your targets and {len(auto)} automatic buy-price alerts; {len(pending)} not yet fired.")
+    if not pending and not spent_auto:
         return finish(state, changed, problems, failed=False)
 
-    symbols = sorted({t["symbol"] for t in pending})
+    symbols = sorted({t["symbol"] for t in pending + spent_auto})
     prices = live_prices(symbols) if mode == "live" else close_prices(symbols)
+
+    # Re-arm an automatic alert once the price has recovered well above its level.
+    for t in spent_auto:
+        if t["symbol"] in prices and prices[t["symbol"]][0] > t["price"] * REARM:
+            del fired[t["key"]]
+            changed = True
+            print(f"Re-armed {t['key']}")
     hits = [(t, prices[t["symbol"]][0]) for t in pending if t["symbol"] in prices and crossed(t, prices[t["symbol"]][0])]
     if not hits:
         print("No targets crossed.")

@@ -80,6 +80,10 @@ Whenever new or updated research is published, the build posts one message to th
 
 Twice a day (about 08:07 and 20:07 Sri Lanka time) a check reads the CSE's list of annual and quarterly reports for every company on the site. When a new one appears, the Telegram channel gets a message with the report's name, date and a link to the PDF, plus which `cse-research` folder to save it in. Then ask Claude to update that company. To check straight away, use **Actions → New report check → Run workflow**.
 
+### Automatic buy-price alerts
+
+Every company in category 2 (watch list: a good business on the four business tests) is also checked against its own buy price and strong-buy price, for each share class, every 30 minutes during trading and again after the close. When a share falls to one of these, the Telegram channel gets a message saying it has moved to category 1, "Buy now". Each alert is sent once; it re-arms when the price climbs back more than 3% above that level, or when an updated analysis changes the price. Nothing needs to be set in `alerts.json` for these.
+
 ### Setting your targets
 
 Edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
