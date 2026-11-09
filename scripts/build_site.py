@@ -16,7 +16,7 @@ import alerts
 import cse
 
 SITE = ROOT / "_site"
-STATIC = ["index.html", "company.html", "assets"]
+STATIC = ["index.html", "company.html", "broker.html", "assets"]
 
 
 def git_versions(path):
@@ -167,6 +167,20 @@ def main():
     for t in targets:
         t["fired"] = fired.get(t["key"])
     write_json(SITE / "data" / "alerts.json", {"targets": targets})
+
+    # Broker summaries (broker/<date>.json) for the "Broker updates" page.
+    # Each day is copied as-is; data/broker/index.json lists the days, newest first.
+    days = []
+    (SITE / "data" / "broker").mkdir(parents=True, exist_ok=True)
+    for path in sorted((ROOT / "broker").glob("*.json"), reverse=True):
+        day = read_json(path, None)
+        if not isinstance(day, dict) or not day.get("date"):
+            problems = True
+            report.append(f"### ⚠️ broker/{path.name} is not a valid broker summary and was skipped")
+            continue
+        write_json(SITE / "data" / "broker" / path.name, day)
+        days.append({"date": day["date"], "file": path.name, "source": day.get("source")})
+    write_json(SITE / "data" / "broker" / "index.json", {"days": days})
 
     write_json(SITE / "data" / "index.json", {"companies": manifest})
     write_json(SITE / "data" / "prices.json", read_json(GENERATED / "prices.json", {}))

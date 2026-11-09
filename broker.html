@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broker updates</title>
+  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">CSE share analyses <span>Colombo Stock Exchange</span></a>
+    <nav class="topnav"><a href="./">Companies</a><a href="broker.html" class="active">Broker updates</a></nav>
+    <button class="theme-toggle" type="button">Dark mode</button>
+  </header>
+
+  <main class="page">
+    <!-- Day picker: arrows move between the saved days. -->
+    <div class="home-head">
+      <div>
+        <h1>Broker updates</h1>
+        <p id="sub">Loading…</p>
+      </div>
+      <div class="daynav">
+        <button type="button" id="prev" aria-label="Earlier day">‹</button>
+        <select id="day" aria-label="Choose a day"></select>
+        <button type="button" id="next" aria-label="Later day">›</button>
+      </div>
+    </div>
+
+    <div id="content"></div>
+  </main>
+
+  <footer class="footer">
+    A summary of broker messages, not financial advice. Broker figures are read from their images and may contain small errors; targets are the broker's own 12-month price targets.
+  </footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/broker.js"></script>
+</body>
+</html>

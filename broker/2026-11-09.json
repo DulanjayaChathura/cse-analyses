@@ -1,0 +1,444 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-09",
+ "source": "HNB Stockbrokers",
+ "posts": 10,
+ "callsPriceDate": "2026-11-06",
+ "note": "Read from the broker's images. The recommendation tables were small, so a figure may be slightly off. Targets are the broker's 12-month price targets; 'not set' means the broker shows TBA.",
+ "highlights": [
+  "A strong day: the ASPI rose 1.37% and the S&P SL20 1.62%, led by Commercial Bank, HNB, Asiri, Tokyo Cement and Access Engineering.",
+  "Foreign investors were net sellers of Rs 63mn, mostly Commercial Bank, CIC and NTB.",
+  "2027 Budget: primary spending up 12% and capital spending up 27%; the broker expects a wider tax base rather than big tax increases.",
+  "The broker updated its recommendations on 38 shares."
+ ],
+ "market": {
+  "aspi": 21531.37,
+  "aspiChangePct": 1.37,
+  "aspiPoints": 291.72,
+  "sp20": 6143.15,
+  "sp20ChangePct": 1.62,
+  "turnoverBn": 3.33,
+  "marketPE": 11.05,
+  "marketPBV": 1.28,
+  "marketCapTn": 7.74,
+  "foreignBuyMn": 16.79,
+  "foreignSellMn": 79.91,
+  "foreignNetMn": -63.13,
+  "gainers": [
+   "COMB",
+   "HNB",
+   "ASIR",
+   "TKYO",
+   "AEL"
+  ],
+  "losers": [
+   "CARS",
+   "RICH",
+   "LOLC"
+  ],
+  "foreignFlows": [
+   {
+    "code": "COMB",
+    "mn": -32
+   },
+   {
+    "code": "CIC",
+    "mn": -14
+   },
+   {
+    "code": "NTB",
+    "mn": -7
+   },
+   {
+    "code": "ABL",
+    "mn": -4
+   },
+   {
+    "code": "DIPD",
+    "mn": -3
+   },
+   {
+    "code": "FCT",
+    "mn": 1
+   },
+   {
+    "code": "CWL",
+    "mn": 1
+   },
+   {
+    "code": "MELS",
+    "mn": 1
+   },
+   {
+    "code": "BIL",
+    "mn": 1
+   }
+  ],
+  "momentum": [
+   {
+    "code": "SHL",
+    "pct": 83
+   },
+   {
+    "code": "CRL",
+    "pct": 67
+   },
+   {
+    "code": "MULL",
+    "pct": 60
+   },
+   {
+    "code": "SCAP",
+    "pct": 52
+   },
+   {
+    "code": "ACME",
+    "pct": 47
+   }
+  ]
+ },
+ "calls": [
+  {
+   "code": "COMB.N0000",
+   "name": "Commercial Bank",
+   "sector": "Banks",
+   "price": 212.0,
+   "rating": "Moderate buy",
+   "target": 253
+  },
+  {
+   "code": "HNB.N0000",
+   "name": "Hatton National Bank (voting)",
+   "sector": "Banks",
+   "price": 393.0,
+   "rating": "Buy",
+   "target": 575
+  },
+  {
+   "code": "HNB.X0000",
+   "name": "Hatton National Bank (non-voting)",
+   "sector": "Banks",
+   "price": 343.0,
+   "rating": "Buy",
+   "target": 469
+  },
+  {
+   "code": "SAMP.N0000",
+   "name": "Sampath Bank",
+   "sector": "Banks",
+   "price": 151.8,
+   "rating": "Buy",
+   "target": 190
+  },
+  {
+   "code": "NTB.N0000",
+   "name": "Nations Trust Bank",
+   "sector": "Banks",
+   "price": 315.0,
+   "rating": "Buy",
+   "target": 400
+  },
+  {
+   "code": "ACL.N0000",
+   "name": "ACL Cables",
+   "sector": "Capital goods",
+   "price": 97.9,
+   "rating": "Moderate buy",
+   "target": 115
+  },
+  {
+   "code": "HAYL.N0000",
+   "name": "Hayleys",
+   "sector": "Capital goods",
+   "price": 228.0,
+   "rating": "Moderate buy",
+   "target": 260
+  },
+  {
+   "code": "HHL.N0000",
+   "name": "Hemas Holdings",
+   "sector": "Capital goods",
+   "price": 32.2,
+   "rating": "Buy",
+   "target": 39
+  },
+  {
+   "code": "JKH.N0000",
+   "name": "John Keells Holdings",
+   "sector": "Capital goods",
+   "price": 18.9,
+   "rating": "Buy",
+   "target": 30
+  },
+  {
+   "code": "RCL.N0000",
+   "name": "Royal Ceramics Lanka",
+   "sector": "Capital goods",
+   "price": 46.0,
+   "rating": "Hold",
+   "target": null
+  },
+  {
+   "code": "CSLK.N0000",
+   "name": "Cable Solutions",
+   "sector": "Capital goods",
+   "price": 13.8,
+   "rating": "Hold",
+   "target": 13
+  },
+  {
+   "code": "AEL.N0000",
+   "name": "Access Engineering",
+   "sector": "Capital goods",
+   "price": 80.5,
+   "rating": "Moderate buy",
+   "target": 90
+  },
+  {
+   "code": "MGT.N0000",
+   "name": "Hayleys Fabric",
+   "sector": "Consumer durables and apparel",
+   "price": 31.5,
+   "rating": "Hold",
+   "target": 32
+  },
+  {
+   "code": "TJL.N0000",
+   "name": "Teejay Lanka",
+   "sector": "Consumer durables and apparel",
+   "price": 32.5,
+   "rating": "Hold",
+   "target": 40
+  },
+  {
+   "code": "OSEA.N0000",
+   "name": "Overseas Realty (Ceylon)",
+   "sector": "Real estate",
+   "price": 54.7,
+   "rating": "Hold",
+   "target": null
+  },
+  {
+   "code": "CIC.N0000",
+   "name": "CIC Holdings (voting)",
+   "sector": "Materials",
+   "price": 28.0,
+   "rating": "Hold",
+   "target": null
+  },
+  {
+   "code": "DIPD.N0000",
+   "name": "Dipped Products",
+   "sector": "Materials",
+   "price": 66.0,
+   "rating": "Hold",
+   "target": 65
+  },
+  {
+   "code": "HAYC.N0000",
+   "name": "Haycarb",
+   "sector": "Materials",
+   "price": 214.25,
+   "rating": "Hold",
+   "target": 165
+  },
+  {
+   "code": "TKYO.N0000",
+   "name": "Tokyo Cement (voting)",
+   "sector": "Materials",
+   "price": 81.7,
+   "rating": "Buy",
+   "target": 120
+  },
+  {
+   "code": "TKYO.X0000",
+   "name": "Tokyo Cement (non-voting)",
+   "sector": "Materials",
+   "price": 63.8,
+   "rating": "Buy",
+   "target": 104
+  },
+  {
+   "code": "JAT.N0000",
+   "name": "JAT Holdings",
+   "sector": "Materials",
+   "price": 38.3,
+   "rating": "Buy",
+   "target": 49
+  },
+  {
+   "code": "CFIN.N0000",
+   "name": "Central Finance",
+   "sector": "Diversified financials",
+   "price": 218.0,
+   "rating": "Buy",
+   "target": 310
+  },
+  {
+   "code": "LFIN.N0000",
+   "name": "LB Finance",
+   "sector": "Diversified financials",
+   "price": 159.0,
+   "rating": "Buy",
+   "target": 200
+  },
+  {
+   "code": "VFIN.N0000",
+   "name": "Vallibel Finance",
+   "sector": "Diversified financials",
+   "price": 88.0,
+   "rating": "Buy",
+   "target": 120
+  },
+  {
+   "code": "COCR.N0000",
+   "name": "Commercial Credit and Finance",
+   "sector": "Diversified financials",
+   "price": 102.0,
+   "rating": "Buy",
+   "target": 153.5
+  },
+  {
+   "code": "PKME.N0000",
+   "name": "Digital Mobility Solutions (PickMe)",
+   "sector": "Transportation",
+   "price": 166.25,
+   "rating": "Hold",
+   "target": 180
+  },
+  {
+   "code": "SINS.N0000",
+   "name": "Singer (Sri Lanka)",
+   "sector": "Retailing",
+   "price": 75.4,
+   "rating": "Moderate buy",
+   "target": 85
+  },
+  {
+   "code": "KHL.N0000",
+   "name": "John Keells Hotels",
+   "sector": "Consumer services",
+   "price": 16.5,
+   "rating": "Buy",
+   "target": 25
+  },
+  {
+   "code": "AHUN.N0000",
+   "name": "Aitken Spence Hotel Holdings",
+   "sector": "Consumer services",
+   "price": 83.6,
+   "rating": "Buy",
+   "target": 150
+  },
+  {
+   "code": "JETS.N0000",
+   "name": "Jetwing Symphony",
+   "sector": "Consumer services",
+   "price": 14.2,
+   "rating": "Moderate buy",
+   "target": 16
+  },
+  {
+   "code": "DIAL.N0000",
+   "name": "Dialog Axiata",
+   "sector": "Telecommunication",
+   "price": 47.1,
+   "rating": "Moderate buy",
+   "target": 55
+  },
+  {
+   "code": "SLTL.N0000",
+   "name": "Sri Lanka Telecom",
+   "sector": "Telecommunication",
+   "price": 85.0,
+   "rating": "Hold",
+   "target": 90
+  },
+  {
+   "code": "MELS.N0000",
+   "name": "Melstacorp",
+   "sector": "Food, beverage and tobacco",
+   "price": 184.0,
+   "rating": "Buy",
+   "target": 260
+  },
+  {
+   "code": "DIST.N0000",
+   "name": "Distilleries",
+   "sector": "Food, beverage and tobacco",
+   "price": 55.5,
+   "rating": "Hold",
+   "target": null
+  },
+  {
+   "code": "SUN.N0000",
+   "name": "Sunshine Holdings",
+   "sector": "Food, beverage and tobacco",
+   "price": 30.8,
+   "rating": "Hold",
+   "target": null
+  },
+  {
+   "code": "CCS.N0000",
+   "name": "Ceylon Cold Stores",
+   "sector": "Food, beverage and tobacco",
+   "price": 126.5,
+   "rating": "Buy",
+   "target": 160
+  },
+  {
+   "code": "LION.N0000",
+   "name": "Lion Brewery (Ceylon)",
+   "sector": "Food, beverage and tobacco",
+   "price": 1883.5,
+   "rating": "Buy",
+   "target": 2320
+  },
+  {
+   "code": "UAL.N0000",
+   "name": "Union Assurance",
+   "sector": "Insurance",
+   "price": 70.8,
+   "rating": "Hold",
+   "target": null
+  }
+ ],
+ "dividends": [
+  {
+   "code": "CARG.N0000",
+   "name": "Cargills (Ceylon)",
+   "dps": 7.0,
+   "type": "First interim",
+   "price": 657.5,
+   "yieldPct": 3.0,
+   "xd": "2026-11-17",
+   "pay": "2026-12-07"
+  },
+  {
+   "code": "COMD.N0000",
+   "name": "Commercial Development Company",
+   "dps": 4.0,
+   "type": "Interim",
+   "price": 292.25,
+   "yieldPct": 3.8,
+   "xd": "2026-11-17",
+   "pay": "2026-12-07"
+  },
+  {
+   "code": "EBCR.N0000",
+   "name": "E B Creasy and Company",
+   "dps": 0.5,
+   "type": "First interim",
+   "price": 34.7,
+   "yieldPct": 4.3,
+   "xd": "2026-11-17",
+   "pay": "2026-12-07"
+  }
+ ],
+ "news": [
+  {
+   "title": "2027 Budget",
+   "text": "The spending bill points to a 12% rise in primary spending, led by a 27% rise in capital spending. Strong 2026 revenue helped, but slower vehicle imports could slow revenue growth. The broker expects the government to widen the tax base rather than raise taxes sharply."
+  }
+ ]
+}
