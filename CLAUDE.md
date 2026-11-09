@@ -48,6 +48,14 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 ## A new company (first analysis)
 Read all PDFs in the company's laptop folder. Write a full `data/<CODE>.json` following `docs/json-format.md`, and a new `record.json` with every report in `reportsRead` and every period's figures. Then do steps 9–10.
 
+## Daily broker summary
+Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. Every day at 15:00 Sri Lanka time the "Collect broker messages" workflow saves new posts to `inbox/<date>/messages.json`, with full-size images in `inbox/<date>/files/`. Then:
+1. Find posts not yet summarised: every message in `inbox/*/messages.json` whose id isn't in any `broker/*.json` `messageIds`. If there are none, stop.
+2. Read every text and look at every image (recommendation tables, market snapshot, dividend cards, news). Never invent a figure; if one can't be read, leave it out and say so in `note`.
+3. Write `broker/<today>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages.
+4. Run `python scripts/build_site.py`, commit to `main` and push. The build publishes the page and posts the short version to Telegram.
+5. Don't change any company's analysis because of a broker call. Mention big disagreements in the highlights instead.
+
 ## Rules
 - Never invent a figure. If something can't be found, use `null`, add a note, and mention it in the pull request.
 - Numbers in JSON are plain numbers (42, not "Rs 42").
