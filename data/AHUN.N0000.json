@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "ticker": "AHUN.N0000",
+  "company": {
+    "name": "Aitken Spence Hotel Holdings PLC",
+    "sector": "Hotels and resorts",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "AHUN.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-09",
+  "resultsCovered": {
+    "label": "Three months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26 (amended version)",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 94.0,
+    "date": "2026-06-30",
+    "source": "Interim report to 30 Jun 2026 (closing price)",
+    "note": "April–June 2026 range Rs 84.70–102.75; Rs 91.60 at 31 March 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A strong recovery, but returns are modest, debt and leases are heavy, and the latest quarter was weak",
+    "text": "Aitken Spence Hotel Holdings PLC (AHUN.N0000) owns 2,676 hotel rooms, mostly in the Maldives, with resorts in Sri Lanka and hotels in Oman and India. Its profit recovered strongly to EPS of Rs 9.16 in the year to March 2026. At Rs 94.00 the share trades at 1.06x its NAV of Rs 88.89 and 12.9x trailing earnings. But its return on equity has averaged well under 10% over ten years (11.6% last year, its best), debt is about half its capital, and the April–June 2026 quarter's loss tripled as the Maldives business weakened and lease costs doubled. Weighing NAV, earnings and cash flow, the methods put fair value at about Rs 69.50, so the price is about 35% above it. I'd buy at up to about Rs 59 and treat under Rs 52 as a strong buy."
+  },
+  "valuation": {
+    "fairValue": 69.5,
+    "buyPrice": 59.0,
+    "strongBuyPrice": 52.1,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 88.89,
+    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 0.8x NAV)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 88.89,
+      "unit": "Rs",
+      "note": "30 Jun 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.06,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 12.9,
+      "unit": "x",
+      "note": "Trailing EPS Rs 7.31"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 11.6,
+      "unit": "%",
+      "note": "Year to March 2026; ten-year average well under 10%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0.3,
+      "unit": "%",
+      "note": "Rs 0.28 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 3,
+      "unit": "%"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.5,
+      "unit": "x",
+      "note": "Bank debt only; about 1.0x including leases"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": -12,
+      "unit": "%",
+      "note": "April–June 2026; up 7% in the year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 31.6,
+      "unit": "Rs bn",
+      "display": "~Rs 31.6bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 June 2026 (group, unaudited)",
+      "text": "Revenue fell 12% to Rs 9.04bn and the loss attributable grew to Rs 972mn (Rs 2.89 a share) from Rs 351mn. The Maldives and Middle East lost Rs 1.18bn before tax."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Revenue Rs 52.3bn (up 7%), EPS Rs 9.16 (Rs 6.77), ROE 11.6%, occupancy 69%. First dividend since 2019: Rs 0.28."
+    },
+    {
+      "title": "Leases doubled",
+      "text": "Lease liabilities rose to Rs 23.0bn from Rs 10.7bn a year earlier, raising lease and interest costs. Bank borrowings about Rs 34.9bn."
+    },
+    {
+      "title": "Seasonal profits",
+      "text": "Most profit comes in January–March (EPS Rs 8.07 in 2026); April–September usually loses money."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.85,
+          -0.94,
+          3.35,
+          6.77,
+          9.16,
+          7.31
+        ],
+        "notes": [
+          null,
+          "Loss year",
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          3.5,
+          1.8,
+          5.4,
+          10.2,
+          11.6,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "Rs bn",
+        "values": [
+          24.57,
+          46.06,
+          47.26,
+          48.74,
+          52.35,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          58.6,
+          62.08,
+          63.03,
+          70.1,
+          88.13,
+          88.89
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Jun 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 88.89",
+      "reading": "The price is 1.06x NAV. Most of it is hotel property, much of it dollar-based in the Maldives."
+    },
+    {
+      "method": "Return on equity",
+      "value": "11.6%",
+      "reading": "Year to March 2026, its best in a decade; well under 10% on average over ten years."
+    },
+    {
+      "method": "P/E",
+      "value": "12.9x",
+      "reading": "On trailing EPS of Rs 7.31. Year-end P/E 10.0x (2026), 11.8x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "0.3% yield",
+      "reading": "Rs 0.28 for 2025/26, the first dividend since 2019."
+    },
+    {
+      "method": "Cash flow",
+      "value": "Rs 11.2bn",
+      "reading": "Operating cash flow in 2025/26 against capital spending of Rs 1.85bn, but lease payments are rising."
+    }
+  ],
+  "models": [
+    {
+      "id": "nav",
+      "name": "NAV method",
+      "bear": 44.4,
+      "base": 62.2,
+      "bull": 80.0,
+      "weighted": 60.4,
+      "comment": "0.5x / 0.7x / 0.9x NAV, because the hotels earn a low return on their value."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 35.0,
+      "base": 67.5,
+      "bull": 104.5,
+      "weighted": 65.2,
+      "comment": "EPS for the year to March 2027 times 7 / 9 / 11."
+    },
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF",
+      "bear": 43.8,
+      "base": 81.0,
+      "bull": 145.9,
+      "weighted": 82.8,
+      "comment": "The most generous: free cash flow of Rs 6.0 / 8.5 / 11.0 a share after leases and capital spending."
+    }
+  ],
+  "modelsNote": "Residual income gives very low values (Rs 7 / 21 / 55) because ROE is below the cost of equity and almost nothing is paid out; it is left out because it ignores the hotels' asset value. The dividend is too small for a dividend model.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18%",
+        "base": "16.5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Free cash flow this year (Rs a share)",
+        "bear": "6.0",
+        "base": "8.5",
+        "bull": "11.0"
+      },
+      {
+        "label": "Growth in year 1, fading over 10 years",
+        "bear": "3% → 5%",
+        "base": "6% → 6%",
+        "bull": "9% → 7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "5.0 × 7",
+        "base": "7.5 × 9",
+        "bull": "9.5 × 11"
+      },
+      {
+        "label": "NAV multiple",
+        "bear": "0.5x",
+        "base": "0.7x",
+        "bull": "0.9x"
+      }
+    ],
+    "averages": {
+      "bear": 41.1,
+      "base": 70.2,
+      "bull": 110.1
+    },
+    "common": "Sri Lankan government bonds yield about 11–12%. Free cash flow is after capital spending of about Rs 3bn, lease payments of about Rs 4bn and minority interests (about 31%)."
+  },
+  "sensitivity": {
+    "title": "DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Free cash flow (Rs a share)",
+    "rows": [
+      "15%",
+      "16.5%",
+      "18%"
+    ],
+    "columns": [
+      "6.0",
+      "8.5",
+      "11.0"
+    ],
+    "values": [
+      [
+        66.7,
+        94.4,
+        122.2
+      ],
+      [
+        57.1,
+        81.0,
+        104.8
+      ],
+      [
+        50.0,
+        70.8,
+        91.7
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Value depends mostly on how much cash is left after the larger lease payments."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 69.5
+      },
+      {
+        "shares": 150,
+        "maxPrice": 59.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 52.1
+      }
+    ],
+    "averagePrice": 61.13,
+    "totalCost": 30565,
+    "note": "About Rs 30,565 in total, against Rs 47,000 at Rs 94.00.",
+    "realism": "Rs 69.50 needs about a 26% fall. The share was Rs 66.20 in March 2024 and about Rs 75 within the last year, so the first tier is possible in a weak market; Rs 59 and below would need a tourism setback."
+  },
+  "changeMyView": {
+    "higher": [
+      "Maldives occupancy and room rates recovering.",
+      "Tourist arrivals to Sri Lanka growing strongly.",
+      "ROE staying above 11% and debt falling.",
+      "A weaker rupee lifting dollar earnings.",
+      "A higher dividend."
+    ],
+    "lower": [
+      "More losses in the Maldives.",
+      "Higher lease and interest costs eating the cash flow.",
+      "A travel shock: conflict, health scare or fuel prices.",
+      "A stronger rupee.",
+      "Heavy spending to refurbish older resorts."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 (amended version) and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Aitken Spence Hotel Holdings PLC (AHUN.N0000) owns 2,676 hotel rooms, mostly in the Maldives, with resorts in Sri Lanka and hotels in Oman and India. Its profit recovered strongly to EPS of Rs 9.16 in the year to March 2026. At Rs 94.00 the share trades at 1.06x its NAV of Rs 88.89 and 12.9x trailing earnings. But its return on equity has averaged well under 10% over ten years (11.6% last year, its best), debt is about half its capital, and the April–June 2026 quarter's loss tripled as the Maldives business weakened and lease costs doubled. Weighing NAV, earnings and cash flow, the methods put fair value at about Rs 69.50, so the price is about 35% above it. I'd buy at up to about Rs 59 and treat under Rs 52 as a strong buy.\n\nPrice and key figures\nPrice: Rs 94.00 (Interim report to 30 Jun 2026 (closing price), 2026-06-30). Please check it live. In April–June 2026 it traded between Rs 84.70 and Rs 102.75. It closed the year to March 2026 at Rs 91.60, up from Rs 80.10 a year earlier.\nThree months to 30 June 2026 (group, unaudited): revenue fell 12% to Rs 9.04bn and the loss attributable to shareholders grew to Rs 972mn from Rs 351mn, a loss per share of Rs 2.89 against Rs 1.04. This is the off-season, so April–June is usually a loss, but the Maldives and Middle East businesses lost Rs 1.18bn before tax against Rs 0.21bn a year earlier.\nSeasonality: most profit comes in January–March (EPS Rs 8.07 in that quarter of 2026) and October–December (Rs 3.99); April–September usually loses money.\nYear to March 2026 (audited, amended annual report): revenue Rs 52.3bn (up 7%), profit before tax Rs 6.58bn (up 33%), profit attributable Rs 3.10bn, EPS Rs 9.16 (Rs 6.77), ROE 11.6%, NAV Rs 88.13, occupancy 69%, EBITDA Rs 14.8bn, interest cover 3.1x. A final dividend of Rs 0.28 a share was paid in June 2026, the first since 2019.\nDebt: bank borrowings and overdrafts about Rs 34.9bn and lease liabilities Rs 23.0bn at June 2026, against Rs 12.3bn of cash and deposits. Lease liabilities more than doubled in a year (Rs 10.7bn at June 2025), so lease and interest costs are now much higher. Gearing including leases was 51% at March 2026.\nCash flow: operating cash flow was Rs 11.2bn in 2025/26 and capital spending only Rs 1.85bn, but lease payments, interest on the larger leases and catch-up spending will take a bigger share from now on.\nHistory: EPS Rs 3.43 (2017/18), 2.37, then losses in 2019/20 (Rs -1.90) and 2020/21 (Rs -13.93, COVID), Rs 1.85, -0.94, 3.35, 6.77 and 9.16 (2025/26). ROE was 1.8% to 6% in most normal years before the last two.\n\nMethods\nNAV (Rs 88.89): 1.06x. Most of it is hotel property, much of it in US dollars in the Maldives, so a weaker rupee raises it.\nReturn on equity: 11.6% in 2025/26 and 10.2% in 2024/25; ten-year average well under 10%.\nP/E: 12.9x trailing EPS of Rs 7.31. Year-end P/E: 10.0x (2026), 11.8x (2025).\nDividends: Rs 0.28 a year, a 0.3% yield. Not a dividend share.\nNAV method (0.5x / 0.7x / 0.9x NAV): Rs 44.4 / 62.2 / 80.0, weighted Rs 60.4.\nP/E method: Rs 35.0 / 67.5 / 104.5, weighted Rs 65.2.\nCash-flow DCF: Rs 43.8 / 81.0 / 145.9, weighted Rs 82.8.\n\nHotels' accounting profit understates their cash because depreciation is large, so a cash-flow DCF suits AHUN, but its free cash flow now has to cover much bigger lease payments. A residual-income model gives very low values (Rs 7 / 21 / 55) because ROE is below the cost of equity and almost nothing is paid out; I don't use it because it ignores the hotels' asset value. The dividend is too small for a dividend model.\n\nAssumptions (bear / base / bull)\nCost of equity: 18% / 16.5% / 15% (a geared, seasonal business exposed to tourism shocks and currencies).\nFree cash flow to shareholders this year (Rs a share): 6.0 / 8.5 / 11.0, after capital spending of about Rs 3bn and lease payments of about Rs 4bn, and after minority interests (about 31%).\nGrowth in the first year, fading over 10 years: 3% / 6% / 9%, to long-term 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 5.0 × 7 / 7.5 × 9 / 9.5 × 11.\nNAV multiple: 0.5x / 0.7x / 0.9x.\nAverage of the three methods: Rs 41.1 / Rs 70.2 / Rs 110.1.\nCommon: Sri Lankan government bonds yield about 11–12%. The base case assumes this year's EPS falls to about Rs 7.50 because of the weaker first quarter and higher lease costs.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 69.50 (0.8x NAV), so Rs 94.00 is about 35% above it.\nBuy price: a 15% margin of safety gives Rs 59.00, and 25% gives Rs 52.10.\nPlan for 500 shares: 200 at up to Rs 69.50, 150 at up to Rs 59.00 and 150 at up to Rs 52.10. That averages about Rs 61.13, about Rs 30,565, against Rs 47,000 at Rs 94.00.\nRealism: Rs 69.50 needs about a 26% fall. The share was Rs 66.20 in March 2024 and Rs 75 within the last year (broker's 52-week low), so the first tier is possible in a weak market; Rs 59 and below would need a tourism setback.\n\nSensitivity (DCF base case, Rs per share)\nCost of equity 15%: 66.7 / 94.4 / 122.2 for free cash flow of Rs 6.0 / 8.5 / 11.0 a share.\nCost of equity 16.5%: 57.1 / 81.0 / 104.8.\nCost of equity 18%: 50.0 / 70.8 / 91.7.\n\nWhat would change my view\nSupports a higher value: Maldives occupancy and room rates recovering; tourist arrivals to Sri Lanka growing strongly; ROE staying above 11%; debt falling; a weaker rupee lifting dollar earnings; a higher dividend.\nSupports a lower value: more losses in the Maldives; higher lease and interest costs eating the cash flow; a travel shock (conflict, health scare, fuel prices); a stronger rupee; heavy spending to refurbish older resorts.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 (amended version) and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}

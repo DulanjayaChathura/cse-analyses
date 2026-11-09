@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "ticker": "AHUN.N0000",
+  "localFolder": "AHUN",
+  "updated": "2026-11-09",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Not read in detail: covered by the 2025/26 decade summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026 (Amended Version).pdf",
+      "title": "Annual Report 2025/26 (amended)",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Used: financial and non-financial highlights (pp. 16–17), decade at a glance (p. 331), property list (p. 332)."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26 (original)",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-09",
+      "note": "Not used: superseded by the amended version."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q3 FY2026",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Quarter EPS Rs 3.99; nine months Rs 1.10."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09",
+      "note": "Quarter EPS Rs 8.07; agrees with the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-09"
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 24.571,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "netProfit": {
+          "value": 0.624,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)",
+          "note": "Attributable to the parent"
+        },
+        "eps": {
+          "value": 1.85,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "navPerShare": {
+          "value": 58.6,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "roe": {
+          "value": 3.51,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "priceYearEnd": {
+          "value": 35.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 46.06,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "netProfit": {
+          "value": -0.288,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)",
+          "note": "Attributable to the parent"
+        },
+        "eps": {
+          "value": -0.94,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "navPerShare": {
+          "value": 62.08,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "roe": {
+          "value": 1.81,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "priceYearEnd": {
+          "value": 59.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 47.259,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "netProfit": {
+          "value": 1.14,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)",
+          "note": "Attributable to the parent"
+        },
+        "eps": {
+          "value": 3.35,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "navPerShare": {
+          "value": 63.03,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "roe": {
+          "value": 5.42,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "priceYearEnd": {
+          "value": 66.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 48.741,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "netProfit": {
+          "value": 2.29,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)",
+          "note": "Attributable to the parent"
+        },
+        "eps": {
+          "value": 6.77,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "navPerShare": {
+          "value": 70.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "roe": {
+          "value": 10.23,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "priceYearEnd": {
+          "value": 80.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 52.349,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)",
+          "note": "Up 7%"
+        },
+        "netProfit": {
+          "value": 3.096,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)",
+          "note": "Attributable; group profit after tax Rs 5.03bn"
+        },
+        "eps": {
+          "value": 9.16,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "dividendPerShare": {
+          "value": 0.28,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 5",
+          "note": "Final for 2025/26 (Rs 94.2mn), paid in April–June 2026"
+        },
+        "navPerShare": {
+          "value": 88.13,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "roe": {
+          "value": 11.64,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "ebitda": {
+          "value": 14.824,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "interestCover": {
+          "value": 3.07,
+          "unit": "x",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "gearing": {
+          "value": 51.19,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)",
+          "note": "Including leases"
+        },
+        "operatingCashFlow": {
+          "value": 11.237,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), Decade at a glance (p. 331)"
+        },
+        "capex": {
+          "value": 1.85,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (amended), p. 17"
+        },
+        "occupancy": {
+          "value": 69,
+          "unit": "%",
+          "source": "Annual Report 2025/26 (amended), p. 17"
+        },
+        "priceYearEnd": {
+          "value": 91.6,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "sharesOutstanding": {
+          "value": 336.29,
+          "unit": "mn",
+          "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 9.036,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Down 12%"
+        },
+        "netProfit": {
+          "value": -0.972,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Attributable; Rs -0.351bn a year earlier"
+        },
+        "eps": {
+          "value": -2.89,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Rs -1.04 a year earlier"
+        },
+        "navPerShare": {
+          "value": 88.89,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "maldivesMiddleEastPBT": {
+          "value": -1.175,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 9",
+          "note": "South Asian and Middle East sector; Rs -0.205bn a year earlier"
+        },
+        "leaseLiabilities": {
+          "value": 23.004,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Rs 10.738bn at June 2025"
+        },
+        "bankBorrowings": {
+          "value": 34.945,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Including overdrafts; cash Rs 5.79bn and other financial assets Rs 6.53bn"
+        },
+        "priceQuarterEnd": {
+          "value": 94.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 11",
+          "note": "Quarter range Rs 84.70–102.75"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18% / Base 16.5% / Bull 15%",
+      "reason": "Bonds about 11–12% plus a premium for a geared, seasonal tourism business.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Free cash flow this year",
+      "value": "Rs 6.0 / 8.5 / 11.0 a share",
+      "reason": "Operating cash flow Rs 11.2bn (2025/26), less capital spending of about Rs 3bn and lease payments of about Rs 4bn, times the parent's ~69% share.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Growth path (DCF)",
+      "value": "3%→5% / 6%→6% / 9%→7% over 10 years",
+      "reason": "Tourism recovery, offset by higher lease costs.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "5.0 × 7 / 7.5 × 9 / 9.5 × 11",
+      "reason": "Q1 loss Rs 1.85 a share worse than last year.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "NAV multiple",
+      "value": "0.5x / 0.7x / 0.9x",
+      "reason": "ROE below the cost of equity for most of the last decade.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Methods used",
+      "value": "NAV, P/E, cash-flow DCF",
+      "reason": "Residual income left out (ignores asset value); dividend too small for a dividend model.",
+      "since": "2026-11-09"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-09"
+    }
+  ],
+  "openQuestions": [
+    "Q2 results (to September 2026, due by mid-November): is the Maldives loss getting worse or recovering?",
+    "Why did lease liabilities double (new or renewed Maldives leases?), and what is the yearly lease cost now?",
+    "October–March peak season: occupancy and room rates in the Maldives and Sri Lanka.",
+    "Does the dividend grow from Rs 0.28?",
+    "The broker (HNB Stockbrokers, 9 Nov 2026) rates it Buy with a Rs 150 target, far above my Rs 69.50."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-09",
+      "basedOn": "Q1 FY2027 (to Jun 2026)",
+      "summary": "First analysis.",
+      "fairValue": 69.5,
+      "buyPrice": 59.0,
+      "strongBuyPrice": 52.1,
+      "priceAtTime": 94.0,
+      "archive": null
+    }
+  ]
+}
