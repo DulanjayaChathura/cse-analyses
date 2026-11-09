@@ -85,6 +85,8 @@ def summarize(data, warnings, bad, previous, companies):
         "verdict": data["summary"].get("verdict") if ok("summary") else None,
         "headline": data["summary"].get("headline") if ok("summary") else None,
         "resultsCovered": data["resultsCovered"] if ok("resultsCovered") else None,
+        # Business-test result; the page turns it into a category using the latest price.
+        "quality": {k: data["quality"].get(k) for k in ("rating", "passed", "outOf", "reason")} if ok("quality") else None,
         "badSections": bad,
         "warningCount": len(warnings),
         "usingPreviousVersion": previous,

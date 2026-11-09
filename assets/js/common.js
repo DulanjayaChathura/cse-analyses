@@ -135,6 +135,26 @@ App.priceStatus = function (price, v) {
   return { key: "above-fair", cls: "bad", label: rel, rel, pct };
 };
 
+/* ---------- Categories ----------
+   Two questions decide a company's category:
+   1. Is the business good enough to own for years? (data file: quality.rating,
+      "good" when it passes at least 3 of the 4 business tests)
+   2. Is the price at or below the buy price? (latest price of any share class)
+   Category 1 = good business at or below the buy price; 2 = good business,
+   price still too high; 3 = the business fails the tests. */
+App.CATEGORIES = {
+  1: { n: 1, name: "Buy now", cls: "cat1", lead: "Good businesses priced at or below my buy price." },
+  2: { n: 2, name: "Watch list", cls: "cat2", lead: "Good businesses, but the price is above my buy price. Wait for it to fall." },
+  3: { n: 3, name: "Avoid for now", cls: "cat3", lead: "The business fails my tests: low returns, heavy debt, uneven profit or weak cash flow." },
+};
+App.category = function (quality, valuation, classPrices) {
+  if (!quality || !quality.rating) return null;
+  if (quality.rating !== "good") return App.CATEGORIES[3];
+  const buy = valuation && valuation.buyPrice;
+  const cheap = App.isNum(buy) && (classPrices || []).some((p) => p && App.isNum(p.value) && p.value <= buy);
+  return App.CATEGORIES[cheap ? 1 : 2];
+};
+
 App.priceSourceText = function (pr) {
   if (!pr) return "No price available";
   if (pr.source === "cse") {

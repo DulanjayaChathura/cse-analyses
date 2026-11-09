@@ -20,6 +20,7 @@ KNOWN_SECTIONS = [
     "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
     "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote",
     "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText",
+    "quality",
 ]
 CORE = {"schemaVersion", "ticker", "analysisDate"}
 
@@ -215,6 +216,25 @@ def chk_notes(s):
     return [] if isinstance(s, dict) else ["must be an object"]
 
 
+def chk_quality(s):
+    """Business tests behind the category shown on the site (see docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    if s.get("rating") not in ("good", "weak"):
+        p.append('rating must be "good" or "weak"')
+    tests = s.get("tests")
+    if not isinstance(tests, list) or not tests:
+        p.append("tests must be a non-empty list")
+    else:
+        for i, t in enumerate(tests):
+            if not isinstance(t, dict) or not is_str(t.get("label")) or not isinstance(t.get("pass"), bool):
+                p.append(f"test {i + 1}: needs a label and pass (true or false)")
+        if not p and s.get("rating") == "good" and sum(t["pass"] for t in tests) < 3:
+            p.append('rating "good" needs at least 3 tests passed')
+    return p
+
+
 CHECKERS = {
     "company": chk_company, "shareClasses": chk_share_classes, "resultsCovered": chk_results,
     "price": chk_price, "summary": chk_summary, "valuation": chk_valuation,
@@ -222,6 +242,7 @@ CHECKERS = {
     "methodReadings": chk_readings, "models": chk_models, "modelsNote": chk_text,
     "scenarios": chk_scenarios, "sensitivity": chk_sensitivity, "buyPlan": chk_buyplan,
     "changeMyView": chk_cmv, "notes": chk_notes, "fullText": chk_text,
+    "quality": chk_quality,
 }
 
 

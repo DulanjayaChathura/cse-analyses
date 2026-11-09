@@ -39,6 +39,7 @@ for example `data/DIAL.N0000.json`. A new file for the same company simply repla
 | `resultsCovered` | `{label, periodEnd, audited, sources[]}` | "Based on…" line, and the "newer results are probably out" warning. |
 | `price` | `{value, date, source, note}` | Analysis price; the daily CSE close replaces it when newer. |
 | `summary` | `{verdict, headline, text}`; `verdict` is one of `"strong-buy"`, `"buy"`, `"fair"`, `"overpriced"` | Verdict header. |
+| `quality` | `{rating, passed, outOf, reason, assessed, tests: [{id, label, pass, value, note}]}`. Four tests: `returns` (return on equity of 15% or more, judged over several years), `debt` (net debt no more than equity; for a bank, capital comfortably above the minimum), `steady` (no loss in five years and no reliance on one-offs), `cash` (profit turns into cash and dividends). `rating` is `"good"` when at least 3 pass, else `"weak"`. | Category on the cards and the "Business tests" section. The site works out the category from `rating` and the latest price: 1 = good and a share class at or below the buy price; 2 = good, price above the buy price; 3 = weak. |
 | `valuation` | `{fairValue, buyPrice, strongBuyPrice, marginOfSafety{buy,strongBuy}, scenarioWeights{bear,base,bull}, nav, note}` | Price bar, badges, % above or below fair value. |
 | `keyMetrics` | `[{id, label, value, unit, display?, note?}]`; `unit` is `"Rs"`, `"Rs bn"`, `"Rs mn"`, `"x"`, `"%"` or `""`; `display` overrides the shown text (e.g. `"11–12%"`) | Key figures cards. |
 | `highlights` | `[{title, text}]` | "Latest results" panel. |

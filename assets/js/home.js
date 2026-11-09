@@ -41,6 +41,8 @@
     const v = c.valuation || {};
     const st = App.priceStatus(main, v);
     const badges = [];
+    const cat = catOf(c);
+    if (cat) badges.push(`<span class="badge ${cat.cls}" title="${App.esc((c.quality && c.quality.reason) || "")}">Category ${cat.n}: ${cat.name}</span>`);
     if (App.isRecentResearch(c.latestResearch)) badges.push(`<span class="badge new">${c.latestResearch.kind === "updated" ? "Updated" : "New research"} ${App.date(c.latestResearch.date)}</span>`);
     if (st) badges.push(`<span class="badge ${st.cls}">${App.esc(st.label)}</span>`);
     const rs = App.resultsStatus(c.resultsCovered, c.fiscalYearEnd);
@@ -58,10 +60,26 @@
     </a>`;
   }
 
+  /* A company's category, from its business tests and the latest price of each share class. */
+  function catOf(c) {
+    return App.category(c.quality, c.valuation, c.shareClasses.map((sc) => App.resolvePrice(sc.symbol, sc.symbol === c.ticker ? c.price : null, prices)));
+  }
+
+  /* Cards are grouped by category; inside a group the order stays lowest gap first. */
   function render() {
-    cardsEl.innerHTML = companies.length
-      ? companies.map(card).join("")
-      : `<div class="empty">No companies yet. Add an analysis file to the <b>data</b> folder in GitHub and it will appear here about a minute later.</div>`;
+    if (!companies.length) {
+      cardsEl.innerHTML = `<div class="empty">No companies yet. Add an analysis file to the <b>data</b> folder in GitHub and it will appear here about a minute later.</div>`;
+      return;
+    }
+    const groups = [1, 2, 3].map((n) => ({ cat: App.CATEGORIES[n], list: companies.filter((c) => (catOf(c) || {}).n === n) }));
+    const unrated = companies.filter((c) => !catOf(c));
+    cardsEl.innerHTML = groups.map((g) => `<section class="cat-group">
+        <h2><span class="cat-num ${g.cat.cls}">${g.cat.n}</span>${g.cat.name} <span class="cat-count">${g.list.length}</span></h2>
+        <p class="cat-lead">${g.cat.lead}</p>
+        ${g.list.length ? `<div class="cards">${g.list.map(card).join("")}</div>`
+          : `<p class="cat-empty">${g.cat.n === 1 ? "No company is at or below its buy price today." : "None."}</p>`}
+      </section>`).join("")
+      + (unrated.length ? `<section class="cat-group"><h2>Not rated yet <span class="cat-count">${unrated.length}</span></h2><div class="cards">${unrated.map(card).join("")}</div></section>` : "");
   }
   render();
   document.addEventListener("themechange", render);
@@ -83,5 +101,7 @@
   document.getElementById("search").addEventListener("input", (e) => {
     const q = e.target.value.trim().toLowerCase();
     cardsEl.querySelectorAll(".card").forEach((el) => { el.hidden = q && !el.dataset.search.includes(q); });
+    // While searching, hide a category that has no matching card.
+    cardsEl.querySelectorAll(".cat-group").forEach((g) => { g.hidden = q && !g.querySelector(".card:not([hidden])"); });
   });
 })();

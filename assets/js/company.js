@@ -52,6 +52,9 @@
       if (has("resultsCovered")) statuses.push(`<div class="status ${rs ? rs.level : ""}">Based on ${App.esc(d.resultsCovered.label || App.date(d.resultsCovered.periodEnd))}${d.resultsCovered.audited === false ? ", unaudited" : ""}. ${rs ? App.esc(rs.text) : ""}</div>`);
       if (has("price") && d.price.note) statuses.push(`<div class="status">${App.esc(d.price.note)}</div>`);
 
+      const cat = has("quality") ? App.category(d.quality, v, classes.map((sc, i) => (i === 0 ? mainPrice : App.resolvePrice(sc.symbol, null, prices)))) : null;
+      if (cat) statuses.unshift(`<div class="status ${cat.n === 3 ? "bad" : cat.n === 1 ? "good" : "warn"}"><b>Category ${cat.n}: ${cat.name}.</b> ${App.esc(d.quality.reason || "")} <a href="#quality">See the tests</a></div>`);
+
       const sum = has("summary") ? d.summary : null;
       return `
         <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)}</h1>
@@ -66,6 +69,17 @@
       const ex = has("scenarios") && d.scenarios.averages ? [d.scenarios.averages.bull] : [];
       Charts.ladder(document.getElementById("ladder"), { price: mainPrice && mainPrice.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue, extra: ex,
         targets: myTargets.filter((t) => t.symbol === classes[0].symbol) });
+    } },
+
+    { id: "quality", title: "Business tests", key: "quality", html: () => {
+      const q = d.quality, n = q.tests.filter((t) => t.pass).length;
+      return `<h2>Business tests</h2>
+      <p class="section-lead">Is this a business worth owning for years? It passes ${n} of ${q.tests.length} tests; it needs 3 to count as a good business. A good business goes on the watch list, and becomes "Buy now" when a share class is at or below the buy price.</p>
+      <div class="tests">${q.tests.map((t) => `<div class="test ${t.pass ? "pass" : "fail"}">
+        <div class="test-mark" aria-hidden="true">${t.pass ? "✓" : "✗"}</div>
+        <div><div class="test-label">${App.esc(t.label)} <span class="sr-only">${t.pass ? "(passed)" : "(failed)"}</span></div>
+          <div class="test-value">${App.esc(t.value || "")}</div>${t.note ? `<div class="test-note">${App.esc(t.note)}</div>` : ""}</div></div>`).join("")}</div>
+      ${q.assessed ? `<p class="section-lead">Assessed ${App.date(q.assessed)}.</p>` : ""}`;
     } },
 
     { id: "figures", title: "Key figures", key: "keyMetrics", html: () => `<h2>Key figures</h2>
