@@ -50,6 +50,16 @@
     "nav": 19.22,
     "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (about 1.26x NAV)."
   },
+  "dividend": {
+    "perShare": 0.95,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, Ten year summary (p. 232)",
+    "latest": {
+      "perShare": 0.25,
+      "label": "interim for 2026/27",
+      "source": "Interim Q2 FY2027, p. 19"
+    }
+  },
   "keyMetrics": [
     {
       "id": "nav",

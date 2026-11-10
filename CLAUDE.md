@@ -32,7 +32,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
    - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
-   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, and `fullText`.
+   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, and `fullText`.
    - Keep the same writing style: short summary first, then tables, plain language.
 8. **Update the record.**
    - Add the new period to `periods`, and add the report to `reportsRead` (with `file`, `readOn`).

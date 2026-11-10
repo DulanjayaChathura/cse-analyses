@@ -20,7 +20,7 @@ KNOWN_SECTIONS = [
     "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
     "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote",
     "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText",
-    "quality",
+    "quality", "dividend",
 ]
 CORE = {"schemaVersion", "ticker", "analysisDate"}
 
@@ -235,6 +235,24 @@ def chk_quality(s):
     return p
 
 
+def chk_dividend(s):
+    """Latest dividend per share, shown on the home-page card (see docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    for name, d in (("dividend", s), ("latest", s.get("latest"))):
+        if d is None and name == "latest":
+            continue
+        if not isinstance(d, dict):
+            p.append(f"{name} must be an object")
+            continue
+        if not is_num_or_null(d.get("perShare")) or (is_num(d.get("perShare")) and d["perShare"] < 0):
+            p.append(f"{name}: perShare must be a number of rupees (0 or more) or null")
+        if not is_str(d.get("label")):
+            p.append(f'{name}: label is needed, e.g. "for 2025/26"')
+    return p
+
+
 CHECKERS = {
     "company": chk_company, "shareClasses": chk_share_classes, "resultsCovered": chk_results,
     "price": chk_price, "summary": chk_summary, "valuation": chk_valuation,
@@ -242,7 +260,7 @@ CHECKERS = {
     "methodReadings": chk_readings, "models": chk_models, "modelsNote": chk_text,
     "scenarios": chk_scenarios, "sensitivity": chk_sensitivity, "buyPlan": chk_buyplan,
     "changeMyView": chk_cmv, "notes": chk_notes, "fullText": chk_text,
-    "quality": chk_quality,
+    "quality": chk_quality, "dividend": chk_dividend,
 }
 
 

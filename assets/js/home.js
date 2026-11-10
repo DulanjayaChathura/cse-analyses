@@ -56,8 +56,18 @@
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
       <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span><span>Analysis ${App.date(c.analysisDate)}</span></div>
+      ${dividendLine(c.dividend)}
       <div class="badges">${badges.join("")}</div>
     </a>`;
+  }
+
+  /* "Dividend Rs 0.95 for 2025/26 · Rs 0.25 interim for 2026/27" (per share). */
+  function dividendLine(d) {
+    if (!d || !App.isNum(d.perShare)) return "";
+    const part = (x) => `<b>${App.rs(x.perShare)}</b> ${App.esc(x.label || "")}`;
+    const latest = d.latest && App.isNum(d.latest.perShare) ? `<span>Latest: ${part(d.latest)}</span>` : "";
+    const tip = [d.note, d.source && `Source: ${d.source}`, d.latest && d.latest.source && `Latest: ${d.latest.source}`].filter(Boolean).join("\n");
+    return `<div class="card-dividend" title="${App.esc(tip)}"><span>Dividend per share ${part(d)}</span>${latest}</div>`;
   }
 
   /* A company's category, from its business tests and the latest price of each share class. */

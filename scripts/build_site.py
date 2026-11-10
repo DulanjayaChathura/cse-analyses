@@ -87,6 +87,8 @@ def summarize(data, warnings, bad, previous, companies):
         "resultsCovered": data["resultsCovered"] if ok("resultsCovered") else None,
         # Business-test result; the page turns it into a category using the latest price.
         "quality": {k: data["quality"].get(k) for k in ("rating", "passed", "outOf", "reason")} if ok("quality") else None,
+        # Latest dividend per share for the card.
+        "dividend": data["dividend"] if ok("dividend") else None,
         "badSections": bad,
         "warningCount": len(warnings),
         "usingPreviousVersion": previous,
