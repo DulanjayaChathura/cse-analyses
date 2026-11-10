@@ -50,7 +50,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 Read all PDFs in the company's laptop folder. Write a full `data/<CODE>.json` following `docs/json-format.md`, and a new `record.json` with every report in `reportsRead` and every period's figures. Then do steps 9–10.
 
 ## Daily broker summary
-Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. Every day at 13:45 Saudi time (16:15 Sri Lanka) the "Collect broker messages" workflow saves new posts to `inbox/<date>/messages.json`, with full-size images in `inbox/<date>/files/`. A scheduled Claude task runs at 14:00 Saudi time (16:30 Sri Lanka) and then:
+Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. Every day at 15:45 Saudi time (18:15 Sri Lanka) the "Collect broker messages" workflow saves new posts to `inbox/<date>/messages.json`, with full-size images in `inbox/<date>/files/`. A scheduled Claude task runs at 16:00 Saudi time (18:30 Sri Lanka). It first starts the "Build and publish site" workflow if today's closing prices are missing (GitHub sometimes skips the 14:00 scheduled run), and then:
 1. Find posts not yet summarised: every message in `inbox/*/messages.json` whose id isn't in any `broker/*.json` `messageIds`. If there are none, stop.
 2. Read every text and look at every image (recommendation tables, market snapshot, dividend cards, news). Never invent a figure; if one can't be read, leave it out and say so in `note`.
 3. Write `broker/<today>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages.

@@ -2,6 +2,8 @@
 
   python scripts/fetch_prices.py               # all symbols (daily job)
   python scripts/fetch_prices.py --missing-only  # only symbols with no price yet
+  python scripts/fetch_prices.py --if-stale      # all symbols, but only if any price was
+                                                 # fetched before the latest CSE close
 
 If the CSE can't be reached, the previous prices are kept and a warning is
 recorded; the site then shows how old the price is.
@@ -25,11 +27,31 @@ def traded(row):
     return any((num(row.get(k)) or 0) > 0 for k in VOLUME_KEYS)
 
 
-def main(missing_only=False):
+def is_stale(symbols_store, wanted):
+    """True if any wanted symbol has no price, or was fetched before the latest close."""
+    import datetime
+    session = datetime.date.fromisoformat(cse.last_session_date())
+    close_at = datetime.datetime.combine(session, cse.MARKET_CLOSE, tzinfo=cse.COLOMBO)
+    for s in wanted:
+        fetched = (symbols_store.get(s) or {}).get("fetchedAt")
+        if not fetched:
+            return True
+        try:
+            if datetime.datetime.fromisoformat(fetched) < close_at:
+                return True
+        except ValueError:
+            return True
+    return False
+
+
+def main(missing_only=False, if_stale=False):
     path = GENERATED / "prices.json"
     store = read_json(path, {})
     symbols_store = store.setdefault("symbols", {})
     wanted = sorted({s for syms in tickers_and_symbols().values() for s in syms})
+    if if_stale and not is_stale(symbols_store, wanted):
+        print("Prices are already from the latest close.")
+        missing_only = True
     if missing_only:
         wanted = [s for s in wanted if s not in symbols_store]
     if not wanted:
@@ -90,4 +112,4 @@ def main(missing_only=False):
 
 
 if __name__ == "__main__":
-    sys.exit(main("--missing-only" in sys.argv))
+    sys.exit(main("--missing-only" in sys.argv, "--if-stale" in sys.argv))

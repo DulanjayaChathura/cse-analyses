@@ -1,6 +1,9 @@
 # Builds and publishes the site.
 # Runs when you add or change a file, every weekday after the CSE closes,
 # and whenever you press "Run workflow" on the Actions tab.
+# GitHub sometimes skips or delays scheduled runs, so the daily Claude task at
+# 16:00 Saudi time starts this workflow if prices are missing, and any push build refreshes the
+# prices if they are older than the latest close.
 name: Build and publish site
 
 on:
@@ -42,7 +45,7 @@ jobs:
       - name: Fetch closing prices
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            python scripts/fetch_prices.py --missing-only
+            python scripts/fetch_prices.py --if-stale
           else
             python scripts/fetch_prices.py
           fi
@@ -67,7 +70,7 @@ jobs:
 
       - name: Check price alerts against the close
         id: close_alerts
-        if: github.event_name == 'schedule'
+        if: github.event_name != 'push'
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

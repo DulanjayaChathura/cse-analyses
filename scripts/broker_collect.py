@@ -1,6 +1,6 @@
 """Save new posts from the Telegram channel into inbox/ for the daily broker summary.
 
-Runs once a day at 13:45 Saudi time / 16:15 Sri Lanka time (.github/workflows/broker.yml).
+Runs once a day at 15:45 Saudi time / 18:15 Sri Lanka time (.github/workflows/broker.yml).
 The bot is an admin of the channel, so Telegram gives it every post, including
 messages forwarded from WhatsApp, as "channel_post" updates. Telegram keeps
 these for about 24 hours, so one run a day is enough.

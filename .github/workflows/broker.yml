@@ -1,13 +1,13 @@
 # Saves the day's posts from the Telegram channel (for example, broker
 # messages forwarded from WhatsApp) into inbox/, ready for the daily summary.
-# Runs every day at 13:45 Saudi time (16:15 Sri Lanka), ahead of the 14:00 Saudi-time summary,
+# Runs every day at 15:45 Saudi time (18:15 Sri Lanka), ahead of the 16:00 Saudi-time summary,
 # and whenever you press "Run workflow" on the Actions tab.
 name: Collect broker messages
 
 on:
   schedule:
-    # 10:45 UTC = 13:45 in Saudi Arabia (16:15 in Sri Lanka), every day.
-    - cron: "45 10 * * *"
+    # 12:45 UTC = 15:45 in Saudi Arabia (18:15 in Sri Lanka), every day.
+    - cron: "45 12 * * *"
   workflow_dispatch:
 
 permissions:
