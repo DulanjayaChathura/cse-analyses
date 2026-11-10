@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "ticker": "JKH.N0000",
+  "analysisDate": "2026-11-10",
+  "company": {
+    "name": "John Keells Holdings PLC",
+    "sector": "Diversified holdings",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "JKH.N0000",
+      "label": "Voting"
+    }
+  ],
+  "resultsCovered": {
+    "label": "First half of 2026/27 (six months to 30 September 2026)",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024/25 and 2025/26",
+      "Interim financial statements to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 19.0,
+    "date": "2026-11-10",
+    "source": "provisional",
+    "note": "Closed Rs 18.80 on 30 September 2026; range since April 2026 Rs 18.20–21.00 (2025/26: Rs 17.80–26.10)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A blue chip with returns far below its cost of capital: at Rs 19.00 it's above fair value; wait for Rs 11.2 or lower",
+    "text": "John Keells Holdings (JKH.N0000) is Sri Lanka's largest listed group: ports and bunkering, Keells supermarkets, Elephant House drinks and ice cream, hotels, property, Nations Trust Bank and Union Assurance, and the new City of Dreams resort. At Rs 19.00 the share trades at 0.81x its NAV of Rs 23.60, so it passes your NAV rule, but at 18.6x trailing earnings it isn't cheap, because the group earns very little on its equity: return on equity was 3.4% in 2025/26 and has been 1–7.5% for ten years, while the group spent heavily on City of Dreams and the West Container Terminal. Those projects are now ramping up, and that is what the market is paying for. On a 16% cost of equity the four methods put fair value at about Rs 13.2, so the price is about 44% above it. I'd buy at up to about Rs 11.2 and treat under Rs 9.9 as a strong buy. First-half 2026/27 profit to shareholders jumped to Rs 5.2bn from Rs 0.8bn, but it fails two of the four business tests, so it is one to avoid for now unless returns clearly improve."
+  },
+  "valuation": {
+    "fairValue": 13.2,
+    "buyPrice": 11.2,
+    "strongBuyPrice": 9.9,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 23.6,
+    "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (about 0.56x NAV). No sum of the parts was done."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 23.6,
+      "unit": "Rs",
+      "note": "30 Sep 2026, 17.74bn shares"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.81,
+      "unit": "x",
+      "note": "Passes your NAV rule"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 18.6,
+      "unit": "x",
+      "note": "Trailing EPS about Rs 1.02"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 3.4,
+      "unit": "%",
+      "note": "2025/26; trailing about 4.3%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.3,
+      "unit": "%",
+      "note": "Rs 0.25 paid in 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 32,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.31,
+      "unit": "x",
+      "note": "31 Mar 2026, excluding leases"
+    },
+    {
+      "id": "ebitdaGrowth",
+      "label": "EBITDA growth (H1)",
+      "value": 11,
+      "unit": "%",
+      "note": "Rs 34.65bn in April–September 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 337,
+      "unit": "Rs bn",
+      "display": "~Rs 337bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "First half of 2026/27 (unaudited)",
+      "text": "Revenue rose 10% to Rs 283.7bn and group EBITDA 11% to Rs 34.65bn. Profit to shareholders rose to Rs 5.23bn (EPS Rs 0.30) from Rs 0.85bn (Rs 0.05). Q2 profit to shareholders was Rs 5.17bn against Rs 1.65bn."
+    },
+    {
+      "title": "What drove it",
+      "text": "Ports and bunkering EBITDA nearly tripled (the West Container Terminal is beyond phase 1 capacity; bunkering volumes up 31%). City of Dreams turned EBITDA-positive, property sales at Cinnamon Life and Tri-Zen were booked, and Nations Trust Bank's profit rose."
+    },
+    {
+      "title": "What held it back",
+      "text": "John Keells CG Auto (BYD cars, 50% owned) fell back from last year's one-off rush of vehicle imports, cutting retail EBITDA 37%. Maldives resorts and Colombo hotels earned less as the Middle East conflict disrupted travel. City of Dreams still lost Rs 1.19bn before tax in Q2."
+    },
+    {
+      "title": "Balance sheet and cash",
+      "text": "NAV per share Rs 23.60. Net debt about 31% of equity (March 2026), interest cover 2.5x. Operating cash flow was Rs 18.8bn in the half, against Rs 2.8bn a year earlier. Management says the big investment phase is over and the group should now generate net positive cash."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.25,
+          1.12,
+          0.69,
+          0.32,
+          0.77,
+          1.02
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Recurring Rs 0.75",
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          7.5,
+          5.6,
+          3.2,
+          1.0,
+          3.4,
+          4.3
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Trailing, approximate"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          11.6,
+          12.5,
+          28.1,
+          63.1,
+          23.9,
+          18.6
+        ],
+        "notes": [
+          "Year-end, split-adjusted",
+          "Year-end, split-adjusted",
+          "Year-end, split-adjusted",
+          "Year-end",
+          "Year-end",
+          "At Rs 19.00"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          17.7,
+          19.3,
+          20.3,
+          22.6,
+          23.4,
+          23.6
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 23.60",
+      "reading": "30 September 2026. The price is 0.81x NAV, so it passes your NAV rule. Much of the book value is new hotel, casino and port assets that don't yet earn a full return."
+    },
+    {
+      "method": "Return on equity",
+      "value": "3.4%",
+      "reading": "2025/26. Ten-year range 1.0–11.1%; last above 10% in 2017/18. About 4.3% on trailing profit."
+    },
+    {
+      "method": "P/E",
+      "value": "18.6x",
+      "reading": "On trailing EPS of about Rs 1.02. Year-end: 23.9x (2025/26), 63x (2024/25), 28x (2023/24), 12–13x in 2021/22–2022/23."
+    },
+    {
+      "method": "Dividends",
+      "value": "1.3% yield",
+      "reading": "Rs 0.25 paid in 2025/26; first interim of Rs 0.10 for 2026/27 declared. Too small to value the share on."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt 31% of equity",
+      "reading": "About Rs 245bn of borrowings excluding leases at 30 September 2026, partly offset by cash and investments. Interest cover 2.5x in 2025/26."
+    },
+    {
+      "method": "EBITDA",
+      "value": "Rs 78bn recurring",
+      "reading": "2025/26, up 71%, including a one-off Rs 18bn from JKCG. First half of 2026/27 Rs 34.65bn, up 11%."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 3.93,
+      "base": 9.44,
+      "bull": 17.7,
+      "weighted": 9.44,
+      "comment": "Book value times (long-run ROE − growth) ÷ (cost of equity − growth). With ROE far below the cost of equity, this is harsh: 0.17x / 0.4x / 0.75x NAV."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 3.5,
+      "base": 7.23,
+      "bull": 13.97,
+      "weighted": 7.46,
+      "comment": "ROE rising from 4.5% / 5.5% / 6.5% to 7% / 10% / 13% over five years as City of Dreams and the port terminal mature."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 11.2,
+      "base": 18.0,
+      "bull": 26.4,
+      "weighted": 17.64,
+      "comment": "2026/27 EPS of Rs 0.80 / 1.00 / 1.20 times 14 / 18 / 22, roughly the market's range when profits recovered."
+    },
+    {
+      "id": "ev",
+      "name": "EV / EBITDA",
+      "bear": 12.28,
+      "base": 18.71,
+      "bull": 26.37,
+      "weighted": 18.31,
+      "comment": "Group EBITDA of Rs 65bn / 72bn / 80bn for 2026/27 at 6x / 7x / 8x, less about Rs 172bn of net debt and other claims (2025/26 EV less market value)."
+    }
+  ],
+  "modelsNote": "JKH's cash flow has been swamped by investment in City of Dreams and the port terminal, so a cash-flow DCF isn't reliable yet; EV/EBITDA stands in for a cash-flow view. A dividend model doesn't suit a group paying Rs 0.25 a share. No sum of the parts using listed subsidiaries' prices was done.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "7%",
+        "base": "10%",
+        "bull": "13%"
+      },
+      {
+        "label": "Return on equity path",
+        "bear": "4.5% rising to 7%",
+        "base": "5.5% rising to 10%",
+        "bull": "6.5% rising to 13%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "EPS 2026/27 × P/E",
+        "bear": "0.80 × 14",
+        "base": "1.00 × 18",
+        "bull": "1.20 × 22"
+      },
+      {
+        "label": "EBITDA 2026/27 × multiple",
+        "bear": "Rs 65bn × 6",
+        "base": "Rs 72bn × 7",
+        "bull": "Rs 80bn × 8"
+      }
+    ],
+    "averages": {
+      "bear": 7.73,
+      "base": 13.34,
+      "bull": 21.11
+    },
+    "common": "The same cost of equity as Hayleys: Sri Lankan government bonds yield about 11–12%, plus a premium for equity. Payout 30%. Management's own figure is a 17% return on capital outside City of Dreams; the bull case assumes City of Dreams gets the group close to that."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15%",
+      "16%",
+      "17%"
+    ],
+    "columns": [
+      "7%",
+      "10%",
+      "13%"
+    ],
+    "values": [
+      [
+        3.66,
+        8.2,
+        13.88
+      ],
+      [
+        3.37,
+        7.23,
+        12.03
+      ],
+      [
+        3.13,
+        6.44,
+        10.55
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even a 13% long-run ROE gives about Rs 12–14; today's Rs 19.00 needs ROE in the mid-teens, or investors accepting a lower return."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 13.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 11.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 10.0
+      }
+    ],
+    "averagePrice": 11.56,
+    "totalCost": 5780,
+    "note": "About Rs 5,780 in total, against Rs 9,500 for 500 shares at Rs 19.00. At this share price 500 shares is a small position; scale the tiers up in the same proportions if you want more.",
+    "realism": "The range since April 2026 is Rs 18.20–21.00 and the 2025/26 low was Rs 17.80. Rs 11.2 is about 41% below today's price and well below anything seen in the last two years (split-adjusted lows near Rs 14 came in 2022–2023). It would take a market crash or a profit setback."
+  },
+  "changeMyView": {
+    "higher": [
+      "City of Dreams reaching a profit after interest and depreciation, with the casino's variable rent starting.",
+      "The West Container Terminal's full capacity (December 2026) lifting the port profit share.",
+      "Group ROE above 8% for a full year without one-off vehicle sales.",
+      "Debt falling as management promises net positive cash flow.",
+      "Lower interest rates, which would lower the cost of equity."
+    ],
+    "lower": [
+      "City of Dreams staying loss-making after depreciation and interest.",
+      "Vehicle import curbs or duty changes hitting JKCG further.",
+      "Tourism disrupted by the Middle East conflict.",
+      "New large investments that delay cash returns again.",
+      "Rupee weakness raising costs on the US-dollar City of Dreams loan."
+    ]
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "A strong franchise, but returns on equity have been far too low for years.",
+    "assessed": "2026-11-10",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "3.4%",
+        "note": "Between 1% and 7.5% every year since 2018/19."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.31x equity",
+        "note": "Excluding leases; interest cover 2.5x."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Uneven",
+        "note": "No full-year loss, but EPS fell to Rs 0.32 in 2024/25 and 2025/26 relied on a one-off rush of vehicle sales."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Positive",
+        "note": "Operating cash flow Rs 25.9bn in 2025/26 against Rs 22.1bn profit; Rs 18.8bn in H1 2026/27."
+      }
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the 2026 interim reports. The interim figures are unaudited, and the price is from 2026-11-10 (provisional), so check it before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: John Keells Holdings (JKH.N0000) is Sri Lanka's largest listed group: ports and bunkering, Keells supermarkets, Elephant House drinks and ice cream, hotels, property, Nations Trust Bank and Union Assurance, and the new City of Dreams resort. At Rs 19.00 the share trades at 0.81x its NAV of Rs 23.60, so it passes your NAV rule, but at 18.6x trailing earnings it isn't cheap, because the group earns very little on its equity: return on equity was 3.4% in 2025/26 and has been 1–7.5% for ten years, while the group spent heavily on City of Dreams and the West Container Terminal. Those projects are now ramping up, and that is what the market is paying for. On a 16% cost of equity the four methods put fair value at about Rs 13.2, so the price is about 44% above it. I'd buy at up to about Rs 11.2 and treat under Rs 9.9 as a strong buy. First-half 2026/27 profit to shareholders jumped to Rs 5.2bn from Rs 0.8bn, but it fails two of the four business tests, so it is one to avoid for now unless returns clearly improve.\n\nPrice and key figures\nPrice: Rs 19.00 (provisional, 2026-11-10). It closed at Rs 18.80 on 30 September 2026 and has traded between Rs 18.20 and Rs 21.00 since April 2026.\nFirst half of 2026/27 (April–September, unaudited): revenue Rs 283.7bn (up 10%), EBITDA Rs 34.65bn (up 11%), profit before tax Rs 12.0bn (up 10%), profit to shareholders Rs 5.23bn against Rs 0.85bn; EPS Rs 0.30 against Rs 0.05.\nBy business (H1 EBITDA): transport Rs 9.9bn (up 184%: bunkering and the West Container Terminal); retail Rs 10.9bn (down 37%: supermarkets up 8%, JKCG down 55%); financial services Rs 5.6bn (up 29%); consumer foods Rs 3.5bn (up 19%); property Rs 1.8bn; leisure Rs 1.2bn (City of Dreams Rs 0.7bn against a Rs 1.1bn loss).\n2025/26 (audited): revenue Rs 528.9bn (up 67%), recurring EBITDA Rs 78.0bn (up 71%, of which Rs 18.3bn from JKCG), profit to shareholders Rs 13.6bn, EPS Rs 0.77 (recurring Rs 0.75), ROE 3.4%, dividend paid Rs 0.25.\nTen-year record: EPS (split-adjusted) Rs 1.00–1.29 in 2016/17–2017/18, then Rs 0.29–1.25 since; ROE 1–7.5% since 2018/19. The group has invested heavily: total debt rose from Rs 23bn in 2017 to Rs 273bn in 2026.\nNAV Rs 23.60 per share; price to NAV 0.81x.\n\nValuation (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 3.93 | 9.44 | 17.7 | 9.44\nResidual income | 3.5 | 7.23 | 13.97 | 7.46\nP/E method | 11.2 | 18.0 | 26.4 | 17.64\nEV / EBITDA | 12.28 | 18.71 | 26.37 | 18.31\nAverage | 7.73 | 13.34 | 21.11 | 13.2\nFair value Rs 13.2 (weights 30/50/20), buy price Rs 11.2 (15% below), strong buy Rs 9.9 (25% below).\nThe two book-value methods say Rs 7–9 because JKH earns far less than the 16% an investor should demand. The two market methods (P/E and EV/EBITDA) say about Rs 18, close to today's price, because they assume the market keeps valuing JKH as it does now. Fair value sits between them.\n\nAssumptions\nCost of equity 17% / 16% / 15%; long-run ROE 7% / 10% / 13%; growth 5% / 6% / 7%; 2026/27 EPS Rs 0.80 / 1.00 / 1.20 at 14x / 18x / 22x; EBITDA Rs 65bn / 72bn / 80bn at 6x / 7x / 8x less Rs 172bn of net claims.\n\nBuy plan (500 shares)\n200 at up to Rs 13.00, 150 at up to Rs 11.2, 150 at up to Rs 10.00.\nThe range since April 2026 is Rs 18.20–21.00 and the 2025/26 low was Rs 17.80. Rs 11.2 is about 41% below today's price and well below anything seen in the last two years (split-adjusted lows near Rs 14 came in 2022–2023). It would take a market crash or a profit setback.\n\nWhat would change my view\nHigher: City of Dreams reaching a profit after interest and depreciation, with the casino's variable rent starting.; The West Container Terminal's full capacity (December 2026) lifting the port profit share.; Group ROE above 8% for a full year without one-off vehicle sales.; Debt falling as management promises net positive cash flow.; Lower interest rates, which would lower the cost of equity.\nLower: City of Dreams staying loss-making after depreciation and interest.; Vehicle import curbs or duty changes hitting JKCG further.; Tourism disrupted by the Middle East conflict.; New large investments that delay cash returns again.; Rupee weakness raising costs on the US-dollar City of Dreams loan.\n\nBusiness tests: 2 of 4 passed (debt and cash pass; return on equity and steady profit fail), so it's in 'avoid for now'. The test to watch is return on equity: if City of Dreams and the port lift it to 10% or more, the picture changes."
+}

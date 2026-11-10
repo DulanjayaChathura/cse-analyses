@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "ticker": "JKH.N0000",
+  "localFolder": "JOHN KEELLS HOLDINGS",
+  "updated": "2026-11-10",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-10",
+      "note": "Figures taken from the decade summary in the 2025/26 report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim Q4 2025/26",
+      "period": "FY 2025/26 (unaudited)",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-10",
+      "note": "Superseded by the audited annual report; used for the 2025/26 price range."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-10",
+      "note": "Used: highlights (p. 4), share information (p. 161), dividend note 20, decade at a glance (p. 570)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim Q1 2026/27",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-10",
+      "note": null
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim Q2 2026/27",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-10",
+      "note": "Used: chairperson's message (PDF pp. 3–7), income statement (p. 9), balance sheet (p. 11), cash flow (pp. 12–13), share information (p. 29)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021/22",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 20.213,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Attributable to shareholders"
+        },
+        "eps": {
+          "value": 1.25,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "roe": {
+          "value": 7.5,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "navPerShare": {
+          "value": 17.7,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "On March 2026 share count"
+        },
+        "debtToEquity": {
+          "value": 81.3,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "priceYearEnd": {
+          "value": 14.5,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Split-adjusted (10-for-1, Oct 2024)"
+        }
+      }
+    },
+    {
+      "period": "FY 2022/23",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 18.174,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Attributable to shareholders"
+        },
+        "eps": {
+          "value": 1.12,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "roe": {
+          "value": 5.6,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "navPerShare": {
+          "value": 19.3,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "On March 2026 share count"
+        },
+        "debtToEquity": {
+          "value": 73.3,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "priceYearEnd": {
+          "value": 14.0,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Split-adjusted (10-for-1, Oct 2024)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023/24",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 11.249,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Attributable to shareholders"
+        },
+        "eps": {
+          "value": 0.69,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "roe": {
+          "value": 3.2,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "navPerShare": {
+          "value": 20.3,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "On March 2026 share count"
+        },
+        "debtToEquity": {
+          "value": 65.2,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "priceYearEnd": {
+          "value": 19.4,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Split-adjusted (10-for-1, Oct 2024)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 5.326,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Attributable to shareholders"
+        },
+        "eps": {
+          "value": 0.32,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "roe": {
+          "value": 1.0,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "navPerShare": {
+          "value": 22.6,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "On March 2026 share count"
+        },
+        "debtToEquity": {
+          "value": 57.4,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "priceYearEnd": {
+          "value": 20.2,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        }
+      }
+    },
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 528.851,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Up 67%"
+        },
+        "ebitda": {
+          "value": 78.048,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 4",
+          "note": "Recurring; reported Rs 80.0bn; JKCG Rs 18.3bn"
+        },
+        "netProfit": {
+          "value": 13.64,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Attributable; recurring Rs 13.24bn"
+        },
+        "eps": {
+          "value": 0.77,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Recurring Rs 0.75"
+        },
+        "dividendPerShare": {
+          "value": 0.25,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, note 20",
+          "note": "Paid in the year"
+        },
+        "navPerShare": {
+          "value": 23.4,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "roe": {
+          "value": 3.4,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "operatingCashFlow": {
+          "value": 25.857,
+          "unit": "Rs bn",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "netDebtToEquity": {
+          "value": 31.2,
+          "unit": "%",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Excluding leases"
+        },
+        "interestCover": {
+          "value": 2.5,
+          "unit": "x",
+          "source": "Annual report 2025/26, p. 570"
+        },
+        "peYearEnd": {
+          "value": 23.9,
+          "unit": "x",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "Rs 18.40 / Rs 0.77"
+        },
+        "priceYearEnd": {
+          "value": 18.4,
+          "unit": "Rs",
+          "source": "Annual report 2025/26, p. 570",
+          "note": "2025/26 range Rs 17.80–26.10"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 141.647,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026",
+          "note": "Up 24%"
+        },
+        "netProfit": {
+          "value": 0.062,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026",
+          "note": "Attributable; Q1 2025/26 loss Rs 0.80bn"
+        },
+        "eps": {
+          "value": 0.004,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026"
+        },
+        "navPerShare": {
+          "value": 23.46,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 283.736,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 9",
+          "note": "Up 10%"
+        },
+        "ebitda": {
+          "value": 34.651,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Up 11%"
+        },
+        "netProfit": {
+          "value": 5.233,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 9",
+          "note": "Attributable; H1 2025/26 Rs 0.85bn"
+        },
+        "eps": {
+          "value": 0.3,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, PDF p. 9",
+          "note": "Q2 Rs 0.29"
+        },
+        "dividendPerShare": {
+          "value": 0.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "First interim 2026/27, payable by 2 Dec 2026"
+        },
+        "navPerShare": {
+          "value": 23.6,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, PDF p. 11"
+        },
+        "operatingCashFlow": {
+          "value": 18.827,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 12"
+        },
+        "capexPaid": {
+          "value": 6.287,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 12"
+        },
+        "borrowingsExLeases": {
+          "value": 244.692,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 11",
+          "note": "Long and short term loans plus overdrafts"
+        },
+        "cashAndShortTermInvestments": {
+          "value": 124.307,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 11",
+          "note": "Includes Union Assurance's investments"
+        },
+        "sharesOutstanding": {
+          "value": 17741.205,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, PDF p. 29"
+        },
+        "priceQuarterEnd": {
+          "value": 18.8,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, PDF p. 29",
+          "note": "Q2 high Rs 20.40, low Rs 18.70"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 17% / Base 16% / Bull 15%",
+      "reason": "Same as Hayleys: Sri Lankan bonds about 11–12% plus an equity premium.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "7% / 10% / 13%",
+      "reason": "ROE 1–7.5% for eight years; management cites 17% ROCE outside City of Dreams.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "ROE path (residual income)",
+      "value": "4.5%→7% / 5.5%→10% / 6.5%→13% over five years",
+      "reason": "Trailing ROE about 4.3%; City of Dreams and the port terminal ramping up.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Nominal growth.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "EPS 2026/27 × P/E",
+      "value": "0.80 × 14 / 1.00 × 18 / 1.20 × 22",
+      "reason": "H1 EPS Rs 0.30; second half usually stronger (winter tourism season).",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "EBITDA 2026/27 × multiple, net claims",
+      "value": "Rs 65bn × 6 / 72bn × 7 / 80bn × 8; claims Rs 172.1bn",
+      "reason": "H1 EBITDA Rs 34.65bn; EV/EBITDA 6–11x in five years; claims = 2025/26 EV Rs 497.8bn less market value Rs 325.7bn.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Payout",
+      "value": "30%",
+      "reason": "2025/26 dividend Rs 4.4bn on Rs 13.6bn profit.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Shares",
+      "value": "17,741mn",
+      "reason": "30 September 2026, after the 10-for-1 split of October 2024.",
+      "since": "2026-11-10"
+    }
+  ],
+  "openQuestions": [
+    "Q3 2026/27 (Oct–Dec, due by mid-February): does the winter tourism season lift leisure, and does City of Dreams reach a profit before tax?",
+    "West Container Terminal at full capacity from December 2026: how much does the port profit share rise?",
+    "Does net debt fall, as management says the investment phase is over?",
+    "JKCG after the May 2026 vehicle duty surcharge and financing limits: how many cars a quarter?",
+    "Is the casino's variable rent triggered?"
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-10",
+      "basedOn": "H1 2026/27",
+      "summary": "First analysis.",
+      "fairValue": 13.2,
+      "buyPrice": 11.2,
+      "strongBuyPrice": 9.9,
+      "priceAtTime": 19.0,
+      "archive": null
+    }
+  ]
+}
