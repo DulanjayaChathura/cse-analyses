@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "SINS.N0000",
   "localFolder": "singer",
-  "updated": "2026-11-08",
+  "updated": "2026-11-10",
   "reportsRead": [
     {
       "file": "Singer Annual Report 2025.pdf",
@@ -52,6 +52,15 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-08"
+    },
+    {
+      "file": "INTERIM FINANCIAL STATEMENTS FOR THE SIX MONTHS.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-10"
     }
   ],
   "periods": [
@@ -300,6 +309,103 @@
           "note": "Q1 range Rs 66.00–92.50"
         }
       }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 74.407,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; up 30%. Quarter Rs 35.68bn, up 21%"
+        },
+        "netProfit": {
+          "value": 3.504,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Attributable, six months; up 20%. Quarter Rs 1.356bn, down 6%"
+        },
+        "eps": {
+          "value": 3.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months (Rs 2.51 a year earlier); quarter Rs 1.16 (Rs 1.23)"
+        },
+        "navPerShare": {
+          "value": 19.23,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netFinanceCost": {
+          "value": 2.026,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; Rs 0.914bn a year earlier"
+        },
+        "impairmentCharge": {
+          "value": 0.457,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Bad debts, six months; up 53%"
+        },
+        "borrowings": {
+          "value": 94.488,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Loans plus overdrafts; Rs 82.330bn at March 2026"
+        },
+        "netDebt": {
+          "value": 86.496,
+          "unit": "Rs bn",
+          "source": "Own calculation from p. 4",
+          "note": "Borrowings less cash and bank deposits, same basis as the annual report's Rs 74.7bn"
+        },
+        "netDebtToEquity": {
+          "value": 3.5,
+          "unit": "x",
+          "source": "Own calculation from p. 4",
+          "note": "Total equity Rs 24.52bn"
+        },
+        "operatingCashFlow": {
+          "value": -3.614,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Rs -9.312bn a year earlier"
+        },
+        "capex": {
+          "value": 1.649,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7"
+        },
+        "financeSegmentPBT": {
+          "value": 3.858,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 9",
+          "note": "Financial services segment profit, six months; up 52%"
+        },
+        "dividendDeclared": {
+          "value": 0.981,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "About Rs 0.84 a share for 2026/27 so far"
+        },
+        "deemedVatContingency": {
+          "value": 1.186,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "Not provided; before the Court of Appeal"
+        },
+        "priceQuarterEnd": {
+          "value": 78.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Quarter range Rs 71.50–84.90; six months Rs 66.00–92.50"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -323,9 +429,9 @@
     },
     {
       "name": "ROE path (residual income)",
-      "value": "30%→18% / 38%→22% / 42%→28%",
-      "reason": "Today's ROE fading over 10 years. Payout 30%.",
-      "since": "2026-11-08"
+      "value": "28%→18% / 34%→22% / 40%→28%",
+      "reason": "Starting ROE lowered: the September 2026 quarter annualises to about 25%. Payout 30%.",
+      "since": "2026-11-10"
     },
     {
       "name": "Long-term growth",
@@ -335,9 +441,9 @@
     },
     {
       "name": "EPS to March 2027 × P/E",
-      "value": "5.5 × 7 / 7.6 × 9 / 8.5 × 11",
-      "reason": "Q1 EPS Rs 1.84; rest of year about 15% above last year's Rs 5.01. Lower multiples for peak-cycle earnings.",
-      "since": "2026-11-08"
+      "value": "5.5 × 7 / 6.6 × 9 / 7.3 × 11",
+      "reason": "H1 EPS Rs 3.00; second half about Rs 3.60 in the base case (last year Rs 3.78), as quarterly profit has started to fall.",
+      "since": "2026-11-10"
     },
     {
       "name": "Methods used",
@@ -353,11 +459,11 @@
     }
   ],
   "openQuestions": [
-    "Q2 results (to September 2026, due by mid-November): does growth continue at 40%+?",
-    "Do net finance costs keep rising faster than profit?",
-    "Are bad debts rising after rapid credit growth?",
-    "Does net debt rise above 3.4x equity?",
-    "How much of profit comes from Singer Finance versus retail?"
+    "Q3 results (to December 2026, the festive quarter, due by mid-February): does profit grow again, or fall for a second quarter?",
+    "Do net finance costs keep rising faster than profit (doubled in the half)?",
+    "Bad-debt charges rose about 50%: are they rising faster than customer credit?",
+    "Does net debt rise above 4x equity?",
+    "Court of Appeal decision on the Rs 1.19bn deemed-VAT case (no provision made)."
   ],
   "changeLog": [
     {
@@ -369,6 +475,16 @@
       "strongBuyPrice": 33.8,
       "priceAtTime": 74.1,
       "archive": null
+    },
+    {
+      "date": "2026-11-10",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Six-month results: revenue up 30%, profit up 20%, but September-quarter profit fell 6% as finance costs doubled; net debt 3.5x equity. Lowered EPS for the year to March 2027 (base 7.6 → 6.6) and the starting ROE in residual income. Fair value Rs 45.0 → 42.3. Category 3 unchanged (1 of 4 tests).",
+      "fairValue": 42.3,
+      "buyPrice": 36.0,
+      "strongBuyPrice": 31.7,
+      "priceAtTime": 75.0,
+      "archive": "research/SINS.N0000/history/2026-11-08.json"
     }
   ]
 }
