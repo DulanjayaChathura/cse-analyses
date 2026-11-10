@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "ticker": "HHL.N0000",
+  "company": {
+    "name": "Hemas Holdings PLC",
+    "sector": "Diversified group (consumer, healthcare)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "HHL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-10",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 31.0,
+    "date": "2026-09-30",
+    "source": "CSE closing price, as printed in the September 2026 interim report",
+    "note": "The CSE feed couldn't be reached when this was written, so this is the last confirmed close; the site replaces it with the daily CSE close. April–September 2026 range Rs 29.50–33.70."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A good, low-debt business, but the price already assumes returns above what it has earned",
+    "text": "Hemas Holdings PLC (HHL.N0000) is a Sri Lankan group built around everyday needs: consumer brands (Kumarika, Baby Cheramy, Atlas stationery), the country's largest pharmaceutical distributor and a drug maker (Morison), two hospitals and a small mobility arm. It is a good business: return on equity has been 15–18% for three years, debt is low and profit is steady. Last year (to March 2026) was a record, with EPS of Rs 2.98. This year started badly (April–June earnings fell 21% on Middle East cost increases) but the September quarter recovered, and half-year EPS is Rs 0.98 against Rs 1.09. At Rs 31.00 the share is 1.6x its NAV of Rs 19.22 and 10.8x trailing earnings. The methods put fair value at about Rs 24.2, so the price is about 28% above it. I'd buy at up to about Rs 20.6 and treat under Rs 18.2 as a strong buy. Watch-list material rather than a buy today."
+  },
+  "valuation": {
+    "fairValue": 24.2,
+    "buyPrice": 20.6,
+    "strongBuyPrice": 18.2,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 19.22,
+    "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (about 1.26x NAV)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 19.22,
+      "unit": "Rs",
+      "note": "30 Sep 2026, 2,996mn shares"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.6,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 10.8,
+      "unit": "x",
+      "note": "Trailing EPS Rs 2.87"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 17.2,
+      "unit": "%",
+      "note": "Year to March 2026; about 16% on the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 3.1,
+      "unit": "%",
+      "note": "Rs 0.95 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.2,
+      "unit": "x",
+      "note": "Sep 2026, after the Twiga purchase; net cash in March 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 9.5,
+      "unit": "%",
+      "note": "April–September 2026; 17% in the September quarter"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 93,
+      "unit": "Rs bn",
+      "display": "~Rs 93bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue rose 17% to Rs 37.8bn and profit attributable was Rs 2.00bn (down 3% on a year earlier but more than double the June quarter). EPS Rs 0.67 against Rs 0.69. Gross margin fell 3.1 points to 29.7% as fuel, freight and currency costs were only partly passed on."
+    },
+    {
+      "title": "Six months to 30 September 2026",
+      "text": "Revenue Rs 66.6bn (up 9.5%), profit attributable Rs 2.94bn (down 9.7%), EPS Rs 0.98 (Rs 1.09). Interim dividend Rs 0.25 declared."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Record year: revenue Rs 127.4bn (up 8%), profit attributable Rs 8.92bn (up 11%), EPS Rs 2.98, ROE 17.2%, dividends Rs 0.95. Net cash of about Rs 10bn at year end."
+    },
+    {
+      "title": "Twiga purchase and cash",
+      "text": "Bought 75% of Twiga Stationers (Kenya) for Rs 5.46bn in August 2026. With Rs 12.3bn more tied up in stock and debtors, operating cash flow was −Rs 8.4bn for the half and the group moved to net debt of about Rs 11.9bn."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.42,
+          1.43,
+          2.05,
+          2.7,
+          2.98,
+          2.87
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          13.8,
+          13.4,
+          15.3,
+          17.7,
+          17.2,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          6.49,
+          9.08,
+          7.85,
+          8.9,
+          9.93,
+          10.8
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "At Rs 31.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0.87,
+          0.47,
+          0.47,
+          0.8,
+          0.95,
+          null
+        ],
+        "notes": [
+          "Pre-split Rs 4.35 ÷ 5",
+          "Pre-split Rs 2.35 ÷ 5",
+          "Pre-split Rs 2.35 ÷ 5",
+          "Pre-split Rs 4.00 ÷ 5",
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          11.93,
+          12.88,
+          14.56,
+          16.67,
+          19.03,
+          19.22
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 19.22",
+      "reading": "The price is 1.6x NAV."
+    },
+    {
+      "method": "Return on equity",
+      "value": "17.2%",
+      "reading": "Year to March 2026 (17.7% the year before); about 15.5% on average over five years and 13% over ten."
+    },
+    {
+      "method": "P/E",
+      "value": "10.8x",
+      "reading": "On trailing EPS of Rs 2.87. Year-end P/E between 6.5x and 9.9x over the last five years."
+    },
+    {
+      "method": "Dividends",
+      "value": "3.1% yield",
+      "reading": "Rs 0.95 for 2025/26, about a third of profit."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "About Rs 3 a share",
+      "reading": "Rs 9.4bn in 2025/26 (operating cash flow Rs 11.8bn less capex Rs 2.4bn), but negative in the first half of this year."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt Rs 11.9bn",
+      "reading": "0.2x equity at September 2026, after the Twiga purchase; net cash six months earlier."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 13.4,
+      "base": 20.2,
+      "bull": 29.5,
+      "weighted": 20.0,
+      "comment": "Long-run ROE of 13% / 16% / 18.5% against a 16.5% / 15.5% / 14.5% cost of equity."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 12.5,
+      "base": 20.6,
+      "bull": 32.4,
+      "weighted": 20.5,
+      "comment": "ROE of 14% / 16% / 17% moving to its long-run level over 10 years."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 19.2,
+      "base": 28.0,
+      "bull": 37.8,
+      "weighted": 27.3,
+      "comment": "EPS for the year to March 2027 times 8 / 10 / 12."
+    },
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF",
+      "bear": 17.9,
+      "base": 28.7,
+      "bull": 46.5,
+      "weighted": 29.0,
+      "comment": "Free cash flow of Rs 2.0 / 2.5 / 3.0 a share, growing 6% / 9% / 12% and fading to 5% / 6% / 7% over 10 years."
+    }
+  ],
+  "modelsNote": "Hemas generates steady cash with little debt, so a cash-flow DCF suits it alongside the book-based methods. It pays out only about a third of profit, so a dividend model would understate it and is shown only as a reading. The book-based methods are stricter because they need ROE well above the cost of equity to justify paying much over book.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "16.5%",
+        "base": "15.5%",
+        "bull": "14.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "13%",
+        "base": "16%",
+        "bull": "18.5%"
+      },
+      {
+        "label": "Return on equity path",
+        "bear": "14% falling to 13%",
+        "base": "16% throughout",
+        "bull": "17% rising to 18.5%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "2.40 × 8",
+        "base": "2.80 × 10",
+        "bull": "3.15 × 12"
+      },
+      {
+        "label": "Free cash flow this year (Rs a share)",
+        "bear": "2.0",
+        "base": "2.5",
+        "bull": "3.0"
+      },
+      {
+        "label": "Cash-flow growth, year 1 fading over 10 years",
+        "bear": "6% → 5%",
+        "base": "9% → 6%",
+        "bull": "12% → 7%"
+      }
+    ],
+    "averages": {
+      "bear": 15.8,
+      "base": 24.4,
+      "bull": 36.5
+    },
+    "common": "Sri Lankan government bonds yield about 11–12%. Payout 32%. Per-share figures use 2,996mn shares (after the 1-for-5 split in April 2025)."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "14.5%",
+      "15.5%",
+      "16.5%"
+    ],
+    "columns": [
+      "13%",
+      "16%",
+      "18.5%"
+    ],
+    "values": [
+      [
+        17.1,
+        23.9,
+        30.3
+      ],
+      [
+        15.0,
+        20.6,
+        25.9
+      ],
+      [
+        13.3,
+        18.0,
+        22.5
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Rs 31 needs ROE of about 20% for many years at a 15.5% cost of equity; Hemas's best year was 17.7%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 24.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 20.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 18.2
+      }
+    ],
+    "averagePrice": 21.32,
+    "totalCost": 10660,
+    "note": "About Rs 10,660 in total, against Rs 15,500 at Rs 31.00.",
+    "realism": "Rs 24.2 needs about a 22% fall. The share touched Rs 24.00 (split-adjusted) in 2025/26 but has held Rs 29.50–33.70 since April 2026. A weaker second half or a market fall would be needed; Rs 18.2 hasn't been seen since 2024."
+  },
+  "changeMyView": {
+    "higher": [
+      "ROE back above 17% once costs are passed on.",
+      "Working capital released, taking the group back to net cash.",
+      "Twiga earning well and opening East African growth.",
+      "NMRA approving pharma price increases.",
+      "Lower interest rates."
+    ],
+    "lower": [
+      "Margins staying squeezed by fuel, freight and a weaker rupee.",
+      "Pharma price controls holding prices down.",
+      "Cash staying tied up in stock and debtors.",
+      "Twiga or further acquisitions earning less than their cost.",
+      "Leisure joint-venture losses on its dollar loans."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "High returns, little debt, steady profit and good cash generation over time, though this half-year's cash flow was weak.",
+    "assessed": "2026-11-10",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "17.2%",
+        "note": "15.3%, 17.7% and 17.2% in the last three years; about 16% on the last 12 months."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.2x equity",
+        "note": "Net debt Rs 11.9bn at Sep 2026 after the Twiga purchase; net cash in March 2026. Interest cover 13.8x last year."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit in each of the last ten years; EPS has doubled since 2021/22. This half-year is down 10%."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Yes, over three years",
+        "note": "Operating cash flow Rs 13.9bn, 13.4bn and 11.8bn against profit of 6.4bn, 8.3bn and 9.3bn. But −Rs 8.4bn in the six months to Sep 2026 and negative in 2022/23 — watch this."
+      }
+    ]
+  },
+  "fullText": "Summary: Hemas Holdings PLC (HHL.N0000) is a Sri Lankan group built around everyday needs: consumer brands (Kumarika, Baby Cheramy, Atlas stationery), the country's largest pharmaceutical distributor and a drug maker (Morison), two hospitals and a small mobility arm. It is a good business: return on equity has been 15–18% for three years, debt is low and profit is steady. Last year (to March 2026) was a record, with EPS of Rs 2.98. This year started badly (April–June earnings fell 21% on Middle East cost increases) but the September quarter recovered, and half-year EPS is Rs 0.98 against Rs 1.09. At Rs 31.00 the share is 1.6x its NAV of Rs 19.22 and 10.8x trailing earnings. The methods put fair value at about Rs 24.2, so the price is about 28% above it. I'd buy at up to about Rs 20.6 and treat under Rs 18.2 as a strong buy. Watch-list material rather than a buy today.\n\nPrice and key figures\nPrice: Rs 31.00 (CSE close on 30 September 2026, from the interim report; the CSE feed couldn't be reached when this was written, so please check it live). It traded between Rs 29.50 and Rs 33.70 from April to September 2026 and ended the year to March 2026 at Rs 29.60 (Rs 24.00 low, Rs 36.70 high after the 1-for-5 split in April 2025).\nThree months to 30 September 2026 (group, unaudited): revenue rose 17.0% to Rs 37.8bn, with all four sectors growing (hospitals +19%, consumer brands +18%, life sciences +16%). Gross margin fell 3.1 points to 29.7% because the group chose to absorb much of the higher fuel, freight and currency costs. Profit attributable was Rs 2.00bn, 3% lower than a year earlier but more than double the June quarter; EPS Rs 0.67 (Rs 0.69).\nSix months to 30 September 2026: revenue Rs 66.6bn (up 9.5%), profit attributable Rs 2.94bn (down 9.7%), EPS Rs 0.98 (Rs 1.09). Consumer brands earnings fell 30% and life sciences 24% on margin pressure (pharma prices are regulated); hospitals rose 15% and mobility 58%. An interim dividend of Rs 0.25 has been declared.\nYear to March 2026 (audited): revenue Rs 127.4bn (up 8%), profit attributable Rs 8.92bn (up 11%, a record), EPS Rs 2.98 (Rs 2.70), ROE 17.2%, NAV Rs 19.03, dividends Rs 0.95 (32% of profit). Operating cash flow Rs 11.8bn and capex Rs 2.4bn. Net cash about Rs 10bn at year end.\nTwiga and cash: in August 2026 Hemas bought 75% of Twiga Stationers & Printers in Kenya for Rs 5.46bn (provisional goodwill Rs 1.40bn), with a put and call option over the remaining 25%. Together with Rs 12.3bn more tied up in stock and debtors, operating cash flow was −Rs 8.4bn for the half, and borrowings rose to Rs 25.2bn against Rs 13.3bn of cash: net debt about Rs 11.9bn, 0.2x equity.\nHistory (split-adjusted EPS): Rs 1.22 (2016/17), 0.90, 1.13, 0.41, 1.09, 1.42, 1.43, 2.05, 2.70 and 2.98 (2025/26). ROE averaged about 13% over ten years and about 15.5% over the last five.\n\nMethods\nNAV (Rs 19.22): 1.6x.\nReturn on equity: 17.2% in 2025/26 and 17.7% in 2024/25; 13–14% in 2021–2023.\nP/E: 10.8x trailing EPS of Rs 2.87. Year-end P/E: 9.9x (2026), 8.9x (2025), 7.9x (2024).\nDividends: Rs 0.95 for 2025/26, a 3.1% yield, about a third of profit.\nJustified price to book: Rs 13.4 / 20.2 / 29.5, weighted Rs 20.0.\nResidual income: Rs 12.5 / 20.6 / 32.4, weighted Rs 20.5.\nP/E method: Rs 19.2 / 28.0 / 37.8, weighted Rs 27.3.\nCash-flow DCF: Rs 17.9 / 28.7 / 46.5, weighted Rs 29.0.\n\nHemas turns profit into cash in most years and carries little debt, so a cash-flow DCF suits it. The payout is only about a third, so a dividend model would understate it. The book-based methods are stricter: at a 15.5% cost of equity, ROE of 16% only justifies a little over book value.\n\nAssumptions (bear / base / bull)\nCost of equity: 16.5% / 15.5% / 14.5% (a defensive, low-debt group, but exposed to currency and price controls).\nLong-run ROE: 13% / 16% / 18.5%.\nROE path (residual income): 14% falling to 13% / 16% throughout / 17% rising to 18.5%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 2.40 × 8 / 2.80 × 10 / 3.15 × 12. Half-year EPS is Rs 0.98; the second half earned Rs 1.89 last year.\nFree cash flow this year: Rs 2.0 / 2.5 / 3.0 a share (Rs 3.1 last year, but negative this half), growing 6% / 9% / 12% and fading to 5% / 6% / 7% over 10 years.\nAverage of the four methods: Rs 15.8 / Rs 24.4 / Rs 36.5.\nCommon: Sri Lankan government bonds yield about 11–12%. Payout 32%. Per-share figures use 2,996mn shares.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 24.2 (1.26x NAV), so Rs 31.00 is about 28% above it.\nBuy price: a 15% margin of safety gives Rs 20.60, and 25% gives Rs 18.20.\nPlan for 500 shares: 200 at up to Rs 24.20, 150 at up to Rs 20.60 and 150 at up to Rs 18.20. That averages about Rs 21.32, about Rs 10,660, against Rs 15,500 at Rs 31.00.\nRealism: Rs 24.2 needs about a 22% fall. The share touched Rs 24.00 in 2025/26 but has held Rs 29.50–33.70 since April 2026, so it would take a weak second half or a market fall.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 14.5%: 17.1 / 23.9 / 30.3 for long-run ROE of 13% / 16% / 18.5%.\nCost of equity 15.5%: 15.0 / 20.6 / 25.9.\nCost of equity 16.5%: 13.3 / 18.0 / 22.5.\nRs 31 needs ROE of about 20% for many years at a 15.5% cost of equity; Hemas's best year was 17.7%.\n\nWhat would change my view\nSupports a higher value: ROE back above 17% once cost increases are passed on; working capital released and a return to net cash; Twiga earning well and opening East African growth; the drug regulator (NMRA) approving price increases; lower interest rates.\nSupports a lower value: margins staying squeezed by fuel, freight and a weaker rupee; price controls holding pharma prices down; cash staying tied up in stock and debtors; Twiga or further acquisitions (management has earmarked over USD 100mn) earning less than their cost; leisure joint-venture losses on its dollar loans.\n\nBusiness tests: 4 of 4 pass (ROE 17%, net debt 0.2x equity, profit every year, cash flow above profit over the last three years), so Hemas counts as a good business. The weak point to watch is this half-year's negative cash flow.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+}
