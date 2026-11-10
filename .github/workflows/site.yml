@@ -7,8 +7,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # 10:23 UTC = 15:53 in Sri Lanka, after the 14:30 market close. Monday to Friday.
-    - cron: "23 10 * * 1-5"
+    # 11:00 UTC = 14:00 in Saudi Arabia (16:30 in Sri Lanka), after the 14:30 Sri Lanka market close. Monday to Friday.
+    - cron: "0 11 * * 1-5"
   workflow_dispatch:
 
 permissions:

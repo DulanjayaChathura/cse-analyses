@@ -46,7 +46,7 @@ The procedure and the standard analysis brief are in `CLAUDE.md`; the record for
 
 ## What runs automatically
 
-- **Every weekday at 15:53 Sri Lanka time** (after the market closes), closing prices are fetched from the CSE website and the site is rebuilt.
+- **Every weekday at 14:00 Saudi time (16:30 Sri Lanka)**, after the market closes,, closing prices are fetched from the CSE website and the site is rebuilt.
 - **Whenever you upload a file**, it's checked and the site is rebuilt.
 - **You get an email from GitHub** when a run "fails". That happens when:
   - **a file was rejected** (for example, broken JSON or a ticker that doesn't match the filename). The site keeps showing the previous valid version of that company;
