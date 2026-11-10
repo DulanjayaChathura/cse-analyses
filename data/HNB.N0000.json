@@ -27,15 +27,15 @@
     ]
   },
   "price": {
-    "value": 380.0,
+    "value": 415.0,
     "date": "2026-11-10",
-    "source": "provisional",
-    "note": "Non-voting Rs 330. Closed Rs 403.75 (non-voting Rs 336.00) on 30 June 2026; 2026 range Rs 388.00–460.00 (non-voting Rs 317.50–404.00)."
+    "source": "CSE closing price",
+    "note": "Non-voting Rs 366.50. Closed Rs 403.75 (non-voting Rs 336.00) on 30 June 2026; 2026 range Rs 388.00–460.00 (non-voting Rs 317.50–404.00)."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "A strong bank at 0.7x NAV, but at Rs 380 the voting share is about 8% above fair value: buy at Rs 298 or lower",
-    "text": "Hatton National Bank (HNB.N0000 voting, HNB.X0000 non-voting) is one of Sri Lanka's strongest private banks: well capitalised, with low net bad loans (net Stage 3 1.17%) and a 4.4% interest margin. At Rs 380 the voting share trades at 0.7x group NAV of Rs 539.85 and 4.6x trailing earnings, so it passes your NAV rule easily. But I use an 18% cost of equity for a Sri Lankan bank, and on that basis the four methods put fair value at about Rs 351, so the voting share is about 8% above it and the non-voting share at Rs 330 is about 6% below. I'd buy at up to about Rs 298 and treat under Rs 263 as a strong buy. The bank is growing fast (loans up 15% in six months, bank profit up 9%), but group profit fell 3% in the first half of 2026 and return on equity has slipped to about 17% (bank) and 14% (group) now that the big provision write-backs of 2024–2025 are over. The non-voting share carries the same dividends at a 13% discount, so it is the better buy if you don't need a vote."
+    "headline": "A strong bank at 0.77x NAV, but at Rs 415 the voting share is about 18% above fair value: buy at Rs 298 or lower",
+    "text": "Hatton National Bank (HNB.N0000 voting, HNB.X0000 non-voting) is one of Sri Lanka's strongest private banks: well capitalised, with low net bad loans (net Stage 3 1.17%) and a 4.4% interest margin. At Rs 415 the voting share trades at 0.77x group NAV of Rs 539.85 and 5.0x trailing earnings, so it passes your NAV rule easily. But I use an 18% cost of equity for a Sri Lankan bank, and on that basis the four methods put fair value at about Rs 351, so the voting share is about 18% above it and the non-voting share at Rs 366.50 is about 4% above. I'd buy at up to about Rs 298 and treat under Rs 263 as a strong buy. The bank is growing fast (loans up 15% in six months, bank profit up 9%), but group profit fell 3% in the first half of 2026 and return on equity has slipped to about 17% (bank) and 14% (group) now that the big provision write-backs of 2024–2025 are over. The non-voting share carries the same dividends at a 12% discount, so it is the better buy if you don't need a vote."
   },
   "valuation": {
     "fairValue": 351,
@@ -64,14 +64,14 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 0.7,
+      "value": 0.77,
       "unit": "x",
-      "note": "Non-voting 0.61x; passes your NAV rule"
+      "note": "Non-voting 0.68x; passes your NAV rule"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 4.6,
+      "value": 5.0,
       "unit": "x",
       "note": "Trailing group EPS Rs 82.23"
     },
@@ -85,9 +85,9 @@
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 5.3,
+      "value": 4.8,
       "unit": "%",
-      "note": "Rs 20 for 2025 (Rs 15 cash = 3.9%)"
+      "note": "Rs 20 for 2025 (Rs 15 cash = 3.6%)"
     },
     {
       "id": "payout",
@@ -120,9 +120,9 @@
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 214,
+      "value": 234,
       "unit": "Rs bn",
-      "display": "~Rs 214bn",
+      "display": "~Rs 234bn",
       "note": "Both share classes"
     }
   ],
@@ -206,7 +206,7 @@
           4.25,
           4.2,
           4.79,
-          4.6
+          5.0
         ],
         "notes": [
           "Year-end",
@@ -214,7 +214,7 @@
           "Year-end",
           "Year-end",
           "Year-end",
-          "Trailing, at Rs 380"
+          "Trailing, at Rs 415"
         ]
       },
       {
@@ -227,7 +227,7 @@
           0.46,
           0.7,
           0.75,
-          0.7
+          0.77
         ],
         "notes": [
           "Year-end",
@@ -235,7 +235,7 @@
           "Year-end",
           "Year-end",
           "Year-end",
-          "At Rs 380"
+          "At Rs 415"
         ]
       }
     ]
@@ -244,7 +244,7 @@
     {
       "method": "NAV",
       "value": "Rs 539.85",
-      "reading": "Group NAV per share at 30 June 2026 (bank Rs 486.88). The voting share is at 0.7x and the non-voting at 0.61x, so both pass your NAV rule."
+      "reading": "Group NAV per share at 30 June 2026 (bank Rs 486.88). The voting share is at 0.77x and the non-voting at 0.68x, so both pass your NAV rule."
     },
     {
       "method": "Return on equity",
@@ -253,13 +253,13 @@
     },
     {
       "method": "P/E",
-      "value": "4.6x",
+      "value": "5.0x",
       "reading": "On trailing group EPS of Rs 82.23. Year-end P/E: 4.8x (2025), 4.2x (2024), 4.3x (2023), 2.9x (2022)."
     },
     {
       "method": "Dividends",
-      "value": "5.3% yield",
-      "reading": "Rs 20 for 2025: Rs 15 cash and Rs 5 in new shares (a scrip dividend). Cash alone is 3.9%. Paid once a year after the annual results."
+      "value": "4.8% yield",
+      "reading": "Rs 20 for 2025: Rs 15 cash and Rs 5 in new shares (a scrip dividend). Cash alone is 3.6%. Paid once a year after the annual results."
     },
     {
       "method": "Capital",
@@ -392,7 +392,7 @@
       "row": 1,
       "column": 1
     },
-    "note": "Today's Rs 380 needs about a 16.5% cost of equity, or long-run ROE near 17% at 18%."
+    "note": "The residual-income base case (Rs 408) is close to today's Rs 415; fair value is lower mainly because the dividend model, at a 25% payout, gives only about Rs 167."
   },
   "buyPlan": {
     "totalShares": 500,
@@ -412,8 +412,8 @@
     ],
     "averagePrice": 299.9,
     "totalCost": 149950,
-    "note": "About Rs 149,950 in total, against Rs 190,000 for 500 voting shares at Rs 380. The prices apply to either share class; the non-voting share gets there first.",
-    "realism": "This year's range is Rs 388.00–460.00 for the voting share and Rs 317.50–404.00 for the non-voting. The voting share hasn't traded near Rs 298 in 2026; it needs about a 22% fall. The non-voting share at Rs 330 needs about 10%, and its 2026 low of Rs 317.50 came close to the first tier."
+    "note": "About Rs 149,950 in total, against Rs 207,500 for 500 voting shares at Rs 415. The prices apply to either share class; the non-voting share gets there first.",
+    "realism": "This year's range is Rs 388.00–460.00 for the voting share and Rs 317.50–404.00 for the non-voting. The voting share hasn't traded near Rs 298 in 2026; it needs about a 28% fall. The non-voting share at Rs 366.50 needs about 19%, and its 2026 low of Rs 317.50 came close to the first tier."
   },
   "changeMyView": {
     "higher": [
@@ -463,13 +463,13 @@
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": true,
-        "value": "3.9% cash yield",
+        "value": "3.6% cash yield",
         "note": "Rs 15 cash plus Rs 5 in shares for 2025; a bank keeps most profit to fund loans."
       }
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the 2024 and 2025 annual reports and the 2025–2026 interim reports. The interim figures are unaudited, and the price is from 2026-11-10 (provisional), so check it before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the 2024 and 2025 annual reports and the 2025–2026 interim reports. The interim figures are unaudited, and the price is from 2026-11-10 (CSE closing price), so check it before ordering. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: Hatton National Bank (HNB.N0000 voting, HNB.X0000 non-voting) is one of Sri Lanka's strongest private banks: well capitalised, with low net bad loans (net Stage 3 1.17%) and a 4.4% interest margin. At Rs 380 the voting share trades at 0.7x group NAV of Rs 539.85 and 4.6x trailing earnings, so it passes your NAV rule easily. But I use an 18% cost of equity for a Sri Lankan bank, and on that basis the four methods put fair value at about Rs 351, so the voting share is about 8% above it and the non-voting share at Rs 330 is about 6% below. I'd buy at up to about Rs 298 and treat under Rs 263 as a strong buy. The bank is growing fast (loans up 15% in six months, bank profit up 9%), but group profit fell 3% in the first half of 2026 and return on equity has slipped to about 17% (bank) and 14% (group) now that the big provision write-backs of 2024–2025 are over. The non-voting share carries the same dividends at a 13% discount, so it is the better buy if you don't need a vote.\n\nPrice and key figures\nPrice: Rs 380 voting and Rs 330 non-voting (provisional, 2026-11-10). On 30 June 2026 they closed at Rs 403.75 and Rs 336.00. 2026 range: Rs 388.00–460.00 voting, Rs 317.50–404.00 non-voting.\nFirst half of 2026 (unaudited): group profit after tax fell 3% to Rs 22.6bn; group EPS Rs 37.87 against Rs 38.87. The bank alone earned Rs 23.1bn (up 9%), EPS Rs 40.09.\nWhat drove it: bank net interest income rose 21% to Rs 55.3bn (margin 4.40% against 4.26%), fees rose 30%, and total operating income rose 27% to Rs 76.7bn. Costs rose 14%, so cost to income fell to 34.5%. Against that, impairment was a Rs 4.1bn charge, against a Rs 5.1bn write-back a year earlier. At group level, trading results fell to Rs 0.1bn from Rs 1.5bn even though the bank alone made Rs 2.0bn, so the subsidiaries lost money on investments held at fair value.\nBalance sheet: gross loans Rs 1.74tn, up Rs 224bn (15%) in six months; deposits Rs 2.10tn, up 7%, about 34% in current and savings accounts. Net Stage 3 loans 1.17%, gross 4.42%, coverage 73.4%. CET1 15.44% (16.85% at end-2025), total capital 18.18%, liquidity coverage 187%.\nTrack record (group): EPS Rs 33.27 (2021), 26.81 (2022), 39.82 (2023), 76.14 (2024), 83.23 (2025). Return on equity about 11.5%, 8.5%, 11.5%, 18.4% and 16.9%. The jump in 2024–2025 came partly from writing back provisions made during the debt crisis (Rs 79bn in 2024, offset by a Rs 49bn loss on the international sovereign bond exchange; Rs 8–9bn in 2025).\nDividends: Rs 20 for 2025 (Rs 15 cash and Rs 5 scrip), Rs 15 cash for 2024. About 24% of profit.\nNAV: group Rs 539.85 per share at 30 June 2026 (bank Rs 486.88). Voting share at 0.7x, non-voting at 0.61x.\n\nValuation (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 323.9 | 449.9 | 625.1 | 447.1\nP/E method | 280 | 390 | 504 | 379.8\nDividend model | 120.0 | 166.7 | 231.6 | 165.6\nResidual income | 253.7 | 408.0 | 652.0 | 410.5\nAverage | 244.4 | 353.6 | 503.2 | 351\nFair value Rs 351 (weights 30/50/20), buy price Rs 298 (15% below), strong buy Rs 263 (25% below).\n\nAssumptions\nCost of equity 20% / 18% / 16.5%; long-run group ROE 14% / 16% / 18%; growth 5% / 6% / 7%; 2026 EPS Rs 70 / 78 / 84 at 4x / 5x / 6x; 2026 dividend Rs 18 / 20 / 22. The same cost of equity as Sampath Bank, because both are leveraged Sri Lankan banks holding large government-bond portfolios.\n\nVoting or non-voting?\nBoth share classes get the same dividends and the same share of profit; only the voting share has a vote. The non-voting share at Rs 330 is 13% cheaper, which is the usual gap for HNB. For a long-term investor buying 500 shares, the non-voting share is the better value.\n\nBuy plan (500 shares)\n200 at up to Rs 320, 150 at up to Rs 298, 150 at up to Rs 275: average about Rs 299.9.\nThis year's range is Rs 388.00–460.00 for the voting share and Rs 317.50–404.00 for the non-voting. The voting share hasn't traded near Rs 298 in 2026; it needs about a 22% fall. The non-voting share at Rs 330 needs about 10%, and its 2026 low of Rs 317.50 came close to the first tier.\n\nWhat would change my view\nHigher: Q3 2026 results (due mid-November) showing group profit growing again.; Group ROE back above 17% without provision write-backs.; The net interest margin holding at 4.4% while loans keep growing.; A larger cash dividend (more than Rs 15) for 2026.; Lower interest rates, which would lower the cost of equity.\nLower: Fast loan growth (15% in six months) turning into bad loans in 2027–2028.; Capital falling further, leading to more scrip dividends or a rights issue.; More trading losses at the insurance and finance subsidiaries.; Higher taxes on banks in the November 2026 budget.; Margins squeezed as deposit rates rise.\n\nBusiness tests: 4 of 4 passed (return on equity, capital, steady profit, dividends), so HNB is a good business. Return on equity is the borderline test to watch: the bank's is 16.8% but the group's is 14.2% this half."
+  "fullText": "Summary: Hatton National Bank (HNB.N0000 voting, HNB.X0000 non-voting) is one of Sri Lanka's strongest private banks: well capitalised, with low net bad loans (net Stage 3 1.17%) and a 4.4% interest margin. At Rs 415 the voting share trades at 0.77x group NAV of Rs 539.85 and 5.0x trailing earnings, so it passes your NAV rule easily. But I use an 18% cost of equity for a Sri Lankan bank, and on that basis the four methods put fair value at about Rs 351, so the voting share is about 18% above it and the non-voting share at Rs 366.50 is about 4% above. I'd buy at up to about Rs 298 and treat under Rs 263 as a strong buy. The bank is growing fast (loans up 15% in six months, bank profit up 9%), but group profit fell 3% in the first half of 2026 and return on equity has slipped to about 17% (bank) and 14% (group) now that the big provision write-backs of 2024–2025 are over. The non-voting share carries the same dividends at a 12% discount, so it is the better buy if you don't need a vote.\n\nPrice and key figures\nPrice: Rs 415 voting and Rs 366.50 non-voting (CSE closing price, 2026-11-10). On 30 June 2026 they closed at Rs 403.75 and Rs 336.00. 2026 range: Rs 388.00–460.00 voting, Rs 317.50–404.00 non-voting.\nFirst half of 2026 (unaudited): group profit after tax fell 3% to Rs 22.6bn; group EPS Rs 37.87 against Rs 38.87. The bank alone earned Rs 23.1bn (up 9%), EPS Rs 40.09.\nWhat drove it: bank net interest income rose 21% to Rs 55.3bn (margin 4.40% against 4.26%), fees rose 30%, and total operating income rose 27% to Rs 76.7bn. Costs rose 14%, so cost to income fell to 34.5%. Against that, impairment was a Rs 4.1bn charge, against a Rs 5.1bn write-back a year earlier. At group level, trading results fell to Rs 0.1bn from Rs 1.5bn even though the bank alone made Rs 2.0bn, so the subsidiaries lost money on investments held at fair value.\nBalance sheet: gross loans Rs 1.74tn, up Rs 224bn (15%) in six months; deposits Rs 2.10tn, up 7%, about 34% in current and savings accounts. Net Stage 3 loans 1.17%, gross 4.42%, coverage 73.4%. CET1 15.44% (16.85% at end-2025), total capital 18.18%, liquidity coverage 187%.\nTrack record (group): EPS Rs 33.27 (2021), 26.81 (2022), 39.82 (2023), 76.14 (2024), 83.23 (2025). Return on equity about 11.5%, 8.5%, 11.5%, 18.4% and 16.9%. The jump in 2024–2025 came partly from writing back provisions made during the debt crisis (Rs 79bn in 2024, offset by a Rs 49bn loss on the international sovereign bond exchange; Rs 8–9bn in 2025).\nDividends: Rs 20 for 2025 (Rs 15 cash and Rs 5 scrip), Rs 15 cash for 2024. About 24% of profit.\nNAV: group Rs 539.85 per share at 30 June 2026 (bank Rs 486.88). Voting share at 0.77x, non-voting at 0.68x.\n\nValuation (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 323.9 | 449.9 | 625.1 | 447.1\nP/E method | 280 | 390 | 504 | 379.8\nDividend model | 120.0 | 166.7 | 231.6 | 165.6\nResidual income | 253.7 | 408.0 | 652.0 | 410.5\nAverage | 244.4 | 353.6 | 503.2 | 351\nFair value Rs 351 (weights 30/50/20), buy price Rs 298 (15% below), strong buy Rs 263 (25% below).\n\nAssumptions\nCost of equity 20% / 18% / 16.5%; long-run group ROE 14% / 16% / 18%; growth 5% / 6% / 7%; 2026 EPS Rs 70 / 78 / 84 at 4x / 5x / 6x; 2026 dividend Rs 18 / 20 / 22. The same cost of equity as Sampath Bank, because both are leveraged Sri Lankan banks holding large government-bond portfolios.\n\nVoting or non-voting?\nBoth share classes get the same dividends and the same share of profit; only the voting share has a vote. The non-voting share at Rs 366.50 is 12% cheaper, which is the usual gap for HNB. For a long-term investor buying 500 shares, the non-voting share is the better value.\n\nBuy plan (500 shares)\n200 at up to Rs 320, 150 at up to Rs 298, 150 at up to Rs 275: average about Rs 299.9.\nThis year's range is Rs 388.00–460.00 for the voting share and Rs 317.50–404.00 for the non-voting. The voting share hasn't traded near Rs 298 in 2026; it needs about a 28% fall. The non-voting share at Rs 366.50 needs about 19%, and its 2026 low of Rs 317.50 came close to the first tier.\n\nWhat would change my view\nHigher: Q3 2026 results (due mid-November) showing group profit growing again.; Group ROE back above 17% without provision write-backs.; The net interest margin holding at 4.4% while loans keep growing.; A larger cash dividend (more than Rs 15) for 2026.; Lower interest rates, which would lower the cost of equity.\nLower: Fast loan growth (15% in six months) turning into bad loans in 2027–2028.; Capital falling further, leading to more scrip dividends or a rights issue.; More trading losses at the insurance and finance subsidiaries.; Higher taxes on banks in the November 2026 budget.; Margins squeezed as deposit rates rise.\n\nBusiness tests: 4 of 4 passed (return on equity, capital, steady profit, dividends), so HNB is a good business. Return on equity is the borderline test to watch: the bank's is 16.8% but the group's is 14.2% this half."
 }
