@@ -1,0 +1,67 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-10",
+ "source": "HNB Stockbrokers",
+ "posts": 14,
+ "callsPriceDate": "2026-11-09",
+ "note": "The only broker call today is the Tokyo Cement earnings note (prices as of 9 November). The Singer and Jetwing Symphony cards are results summaries, not new ratings. Foreign flow figures per stock are read from the snapshot chart's bar labels. The X thread on why the Iran war hit Sri Lankan shares was only linked, not posted, so only its teaser is summarised. Two images were decorative (a news banner and a stock-chart photo).",
+ "highlights": [
+  "A very strong day: the ASPI jumped 2.75% (592 points) and the S&P SL20 3.66% on Rs 7.9bn turnover, led by Commercial Bank, Dialog, HNB, Hayleys and Vallibel One.",
+  "Foreign investors sold a net Rs 1.2bn, almost all of it in Dialog (about Rs 1.0bn), even though Dialog's price rose 4.9%. The site's Dialog fair value (Rs 31) is still well below the broker's last target (Rs 55).",
+  "Singer rose 6.5% to Rs 79.90, close to the broker's Rs 85 target but nearly double the site's fair value of Rs 42.3. September-quarter sales rose 21%, but earnings per share fell 6% to Rs 1.16.",
+  "Tokyo Cement: the broker keeps Buy with targets of Rs 120 (voting) and Rs 104 (non-voting) but changed its short-term outlook to Negative after margins fell.",
+  "Oil fell sharply after the US signalled it would hold off on new strikes on Iran, and world markets rallied."
+ ],
+ "market": {
+  "aspi": 22123.39,
+  "aspiChangePct": 2.75,
+  "aspiPoints": 592.02,
+  "sp20": 6368.12,
+  "sp20ChangePct": 3.66,
+  "turnoverBn": 7.91,
+  "marketPE": 11.32,
+  "marketPBV": 1.31,
+  "marketCapTn": 7.93,
+  "foreignBuyMn": 26.95,
+  "foreignSellMn": 1230,
+  "foreignNetMn": -1200,
+  "gainers": ["COMB", "DIAL", "HNB", "HAYL", "VONE"],
+  "losers": ["AAIC", "SCAP", "LOFC", "GREG", "CCS"],
+  "foreignFlows": [
+   {"code": "DIAL", "mn": -1015},
+   {"code": "COMB", "mn": -35},
+   {"code": "SPEN", "mn": -30},
+   {"code": "JKH", "mn": -29},
+   {"code": "PABC", "mn": -23},
+   {"code": "JFP", "mn": 10},
+   {"code": "MEL", "mn": 4},
+   {"code": "RENU", "mn": 3},
+   {"code": "SUN", "mn": 2},
+   {"code": "CITH", "mn": 1}
+  ],
+  "momentum": [
+   {"code": "SHL", "pct": 70},
+   {"code": "MULL", "pct": 60},
+   {"code": "CITH", "pct": 50},
+   {"code": "CRL", "pct": 47},
+   {"code": "ACME", "pct": 46}
+  ]
+ },
+ "calls": [
+  {"code": "TKYO.N0000", "name": "Tokyo Cement (voting)", "sector": "Materials", "price": 84.7, "rating": "Buy", "target": 120},
+  {"code": "TKYO.X0000", "name": "Tokyo Cement (non-voting)", "sector": "Materials", "price": 63.5, "rating": "Buy", "target": 104}
+ ],
+ "dividends": [],
+ "news": [
+  {"title": "Tokyo Cement September quarter", "text": "Sales rose 28% to Rs 20.9bn on a price increase in April and about 12% higher volumes, and market share rose to 34%. Dearer clinker and a weaker rupee cut the gross margin to 28%, and profit for shareholders fell 13% to Rs 866mn. Return on equity is 7.7%. The broker expects a softer December quarter and says margins must recover before returns improve."},
+  {"title": "Singer September quarter", "text": "Sales rose 21% to Rs 35.7bn, but earnings per share fell to Rs 1.16 from Rs 1.23. The broker puts the shares at 11.8 times trailing earnings and 4.2 times book value."},
+  {"title": "Jetwing Symphony September quarter", "text": "Sales rose 8% to Rs 1.28bn and earnings per share were Rs 0.35, against Rs 0.39 a year earlier. The shares trade at 17.7 times trailing earnings and 1.9 times book value."},
+  {"title": "Government budget in surplus", "text": "The budget showed a Rs 22.3bn surplus for the first nine months of 2026, against a Rs 441bn deficit a year earlier. Revenue rose 20%, helped by taxes on vehicle imports."},
+  {"title": "Bank lending outpacing deposits", "text": "Banks' loans reached 74% of deposits at the end of June, the first time above 70% in three years. The Central Bank warned that loans growing faster than deposits could become a risk."},
+  {"title": "HNB partners with IFC", "text": "HNB and the World Bank's IFC will work together to expand supply chain finance and improve HNB's risk management."},
+  {"title": "JKH and the port terminal", "text": "JKH is still waiting for the government to decide what happens to its SAGT terminal when the concession ends in 2029: a handover, a new tender or an extension."},
+  {"title": "Hayleys supermarkets and tourism", "text": "Hayleys Retail chose Blue Yonder's software to build a new grocery chain. Tourist arrivals passed 1.9 million this year but are behind last year's pace."},
+  {"title": "Sri Lankan shares and the Iran war", "text": "A broker thread says the ASPI has been one of 2026's worst markets because of the Iran war, and that one factor will decide the recovery. Oil fell more than $7 a barrel after the US said it would hold off on new strikes, and US and Asian indices rose about 2–4%."}
+ ],
+ "messageIds": [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
+}
