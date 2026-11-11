@@ -2,27 +2,232 @@
  "schemaVersion": 1,
  "date": "2026-11-11",
  "source": "HNB Stockbrokers",
- "posts": 1,
- "callsPriceDate": null,
- "note": "Only one post arrived today: HNB Stockbrokers' news highlights (text only). There was no market snapshot, recommendation table or dividend card, so market figures, broker calls and dividends are left out.",
+ "posts": 12,
+ "callsPriceDate": "2026-11-10",
+ "note": "Twelve posts: the morning news round-up (text) and eleven images sent in the evening — the daily market snapshot, a sector heat map, a world indices screen, a Central Finance earnings note, Haycarb and Dialog results cards and five dividend cards. The Central Finance call uses prices as of 10 November. The Haycarb and Dialog cards are results summaries, not new ratings. Foreign flow figures per stock are read from the snapshot chart's bar labels; index contributor bars carry no values, so only their names are listed.",
  "highlights": [
-  "A quiet day on the channel: only the broker's news round-up was posted, with no market snapshot or new buy/sell calls.",
-  "Electricity tariffs will stay unchanged for the last quarter of 2026, even though supply costs rose 2.88%.",
-  "The government approved US$200mn of ADB financing for small-business lending and Rs 9.1bn of road contracts, and aims to spend its full Rs 2,000bn capital budget next year.",
-  "A survey found the poorest fifth of households lost 16% of their real income between 2016 and early 2025, while the richest fifth gained about the same."
+  "A quiet, slightly lower day: the ASPI fell 0.41% (90 points) on Rs 4.8bn turnover, with HNB, Ceylon Ocean Lines (OSEA), Commercial Bank and Hayleys pulling it down and Dialog, Distilleries and Ceylon Cold Stores lifting it.",
+  "Foreign investors turned net buyers (about Rs 46mn), buying HNB (Rs 79mn) and Commercial Bank (Rs 35mn) and selling DFCC (Rs 84mn).",
+  "Central Finance: the broker keeps Buy with a Rs 310 target (price Rs 228.75), as the shares trade at 0.6 times book even though September-quarter profit got a one-off lift from Nations Trust Bank.",
+  "Dialog declared a third interim dividend of Rs 0.70 (XD 20 November) and posted quarterly EPS of Rs 1.00, up 62%. At Rs 49.70 it is still about 60% above the site's fair value of Rs 31.",
+  "Haycarb's September-quarter sales rose 40% and EPS 88% to Rs 4.71; Three Acre Farms declared Rs 35 a share (yield 11.5%)."
  ],
- "market": {},
- "calls": [],
- "dividends": [],
+ "market": {
+  "aspi": 22032.93,
+  "aspiChangePct": -0.41,
+  "aspiPoints": -90.46,
+  "sp20": 6349.0,
+  "sp20ChangePct": -0.3,
+  "turnoverBn": 4.82,
+  "marketPE": 11.28,
+  "marketPBV": 1.3,
+  "marketCapTn": 7.9,
+  "foreignBuyMn": 158.86,
+  "foreignSellMn": 112.47,
+  "foreignNetMn": 46.39,
+  "gainers": [
+   "DIAL",
+   "DIST",
+   "CCS",
+   "SPEN",
+   "DFCC"
+  ],
+  "losers": [
+   "HNB",
+   "OSEA",
+   "COMB",
+   "HAYL",
+   "CARS"
+  ],
+  "foreignFlows": [
+   {
+    "code": "HNB",
+    "mn": 79
+   },
+   {
+    "code": "COMB",
+    "mn": 35
+   },
+   {
+    "code": "WAPO",
+    "mn": 21
+   },
+   {
+    "code": "CLND",
+    "mn": 6
+   },
+   {
+    "code": "VFIN",
+    "mn": 5
+   },
+   {
+    "code": "PLR",
+    "mn": -2
+   },
+   {
+    "code": "COCR",
+    "mn": -2
+   },
+   {
+    "code": "DIPD",
+    "mn": -2
+   },
+   {
+    "code": "ABL",
+    "mn": -13
+   },
+   {
+    "code": "DFCC",
+    "mn": -84
+   }
+  ],
+  "momentum": [
+   {
+    "code": "CRL",
+    "pct": 44
+   },
+   {
+    "code": "SHL",
+    "pct": 44
+   },
+   {
+    "code": "CITH",
+    "pct": 41
+   },
+   {
+    "code": "MULL",
+    "pct": 41
+   },
+   {
+    "code": "RGEM",
+    "pct": 33
+   }
+  ]
+ },
+ "calls": [
+  {
+   "code": "CFIN.N0000",
+   "name": "Central Finance",
+   "sector": "Diversified financials",
+   "price": 228.75,
+   "rating": "Buy",
+   "target": 310
+  }
+ ],
+ "dividends": [
+  {
+   "code": "DIAL.N0000",
+   "name": "Dialog Axiata",
+   "dps": 0.7,
+   "type": "Third interim",
+   "price": 49.4,
+   "yieldPct": 7.3,
+   "xd": "2026-11-20",
+   "pay": "2026-12-10"
+  },
+  {
+   "code": "TAFL.N0000",
+   "name": "Three Acre Farms",
+   "dps": 35.0,
+   "type": "Interim",
+   "price": 653.5,
+   "yieldPct": 11.5,
+   "xd": "2026-11-19",
+   "pay": "2026-12-09"
+  },
+  {
+   "code": "GRAN.N0000",
+   "name": "Ceylon Grain Elevators",
+   "dps": 10.0,
+   "type": "Interim",
+   "price": 479.0,
+   "yieldPct": 5.2,
+   "xd": "2026-11-19",
+   "pay": "2026-12-09"
+  },
+  {
+   "code": "ASIY.N0000",
+   "name": "Asia Siyaka Commodities",
+   "dps": 0.23,
+   "type": "First interim",
+   "price": 13.5,
+   "yieldPct": 5.2,
+   "xd": "2026-11-19",
+   "pay": "2026-12-09"
+  },
+  {
+   "code": "CTHR.N0000",
+   "name": "C T Holdings",
+   "dps": 6.0,
+   "type": "First interim",
+   "price": 549.75,
+   "yieldPct": 3.0,
+   "xd": "2026-11-18",
+   "pay": "2026-12-08"
+  }
+ ],
  "news": [
-  {"title": "ADB funding for small-business lending", "text": "The Cabinet approved agreements with the Asian Development Bank for US$200mn to improve access to finance for micro, small and medium-sized businesses."},
-  {"title": "Rs 9.1bn of road contracts", "text": "Four road contracts worth Rs 9.1bn were approved, covering national highway upgrades and repairs to roads damaged by Cyclone Ditwah."},
-  {"title": "Full capital budget planned for next year", "text": "The government has changed its procurement timetable so that it can spend all of the Rs 2,000bn capital budget planned for next year."},
-  {"title": "No electricity tariff change in Q4", "text": "The utilities regulator kept tariffs unchanged for October–December 2026 despite a 2.88% rise in the cost of supply."},
-  {"title": "Rs 1bn for the dairy industry", "text": "The 2026 budget puts Rs 1bn into livestock, with the National Livestock Development Board running a programme to raise local milk production."},
-  {"title": "Income gap widening", "text": "Between 2016 and early 2025 the poorest fifth of households lost 16.4% of their real monthly income, while the richest fifth gained 16.5%, and poverty is back to its level of nine years ago."},
-  {"title": "Russian refining hit", "text": "Ukrainian drone strikes since late October have cut Russia's oil refining capacity by about 30%, according to industry sources."},
-  {"title": "More LNG through Hormuz", "text": "LNG shipments through the Strait of Hormuz rose to 31 tankers in October from 27 in September, the most since the Iran war began in February."}
+  {
+   "title": "Central Finance September quarter",
+   "text": "Net interest income rose 5.8% on the quarter to Rs 3.9bn, but the interest margin narrowed to 12.6% as funding costs rose faster than lease yields. Bad-loan write-backs almost disappeared and NPLs rose to 1.8%. Profit for shareholders still rose 33.5% to Rs 3.7bn, thanks to a one-off tax credit at Nations Trust Bank, where it owns about 21%. The broker expects profit to fall next quarter; return on equity is 13.1%."
+  },
+  {
+   "title": "Dialog September quarter",
+   "text": "Revenue rose 6.2% to Rs 48.5bn and EPS to Rs 1.00 from Rs 0.62. The broker puts the shares at 13.2 times trailing earnings and 4.95 times book value."
+  },
+  {
+   "title": "Haycarb September quarter",
+   "text": "Revenue rose 40% to Rs 20.8bn and EPS to Rs 4.71 from Rs 2.50. The shares trade at 13.4 times trailing earnings and 2.0 times book value."
+  },
+  {
+   "title": "World markets",
+   "text": "US indices slipped about 0.3%, while Taiwan rose 2% and Korea 1.2%; Hong Kong fell 0.8%."
+  },
+  {
+   "title": "ADB funding for small-business lending",
+   "text": "The Cabinet approved agreements with the Asian Development Bank for US$200mn to improve access to finance for micro, small and medium-sized businesses."
+  },
+  {
+   "title": "Rs 9.1bn of road contracts",
+   "text": "Four road contracts worth Rs 9.1bn were approved, covering national highway upgrades and repairs to roads damaged by Cyclone Ditwah."
+  },
+  {
+   "title": "Full capital budget planned for next year",
+   "text": "The government has changed its procurement timetable so that it can spend all of the Rs 2,000bn capital budget planned for next year."
+  },
+  {
+   "title": "No electricity tariff change in Q4",
+   "text": "The utilities regulator kept tariffs unchanged for October–December 2026 despite a 2.88% rise in the cost of supply."
+  },
+  {
+   "title": "Rs 1bn for the dairy industry",
+   "text": "The 2026 budget puts Rs 1bn into livestock, with the National Livestock Development Board running a programme to raise local milk production."
+  },
+  {
+   "title": "Income gap widening",
+   "text": "Between 2016 and early 2025 the poorest fifth of households lost 16.4% of their real monthly income, while the richest fifth gained 16.5%, and poverty is back to its level of nine years ago."
+  },
+  {
+   "title": "Russian refining hit",
+   "text": "Ukrainian drone strikes since late October have cut Russia's oil refining capacity by about 30%, according to industry sources."
+  },
+  {
+   "title": "More LNG through Hormuz",
+   "text": "LNG shipments through the Strait of Hormuz rose to 31 tankers in October from 27 in September, the most since the Iran war began in February."
+  }
  ],
- "messageIds": [48]
+ "messageIds": [
+  48,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60
+ ]
 }
