@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LGL.N0000",
+  "localFolder": "laugfs gas",
+  "updated": "2026-11-11",
+  "reportsRead": [
+    {
+      "file": "Annual Report for 2023,24.pdf",
+      "title": "Annual Report 2023/24",
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Not read in detail: covered by the 2024/25 report's highlights and five-year summary."
+    },
+    {
+      "file": "Annual Report for 2024,25.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Used: financial highlights (p. 13), five-year summary (p. 230), shareholders (p. 232)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "9M FY2026",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Covered by the March 2026 interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Used for the 2025/26 year, including segments."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Latest figures used. Its company 'year to March 2026' column repeats 2024/25 figures."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": -1.77,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        },
+        "operatingCashFlow": {
+          "value": 1.207,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": -10.54,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        },
+        "operatingCashFlow": {
+          "value": -1.319,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 5.74,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        },
+        "operatingCashFlow": {
+          "value": -1.406,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, five-year summary (p. 230)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": -2.52,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "operatingCashFlow": {
+          "value": 0.537,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "revenue": {
+          "value": 31.2,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "navPerShare": {
+          "value": 7.59,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)",
+          "note": "Payout shown as '-'"
+        },
+        "roe": {
+          "value": -33,
+          "unit": "%",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": -6.56,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "operatingCashFlow": {
+          "value": 0.395,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "revenue": {
+          "value": 44.187,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "navPerShare": {
+          "value": 5.55,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)",
+          "note": "Payout shown as '-'"
+        },
+        "netProfit": {
+          "value": -2.539,
+          "unit": "Rs bn",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)",
+          "note": "Loss to owners"
+        },
+        "roe": {
+          "value": -118,
+          "unit": "%",
+          "source": "Annual Report 2024/25, financial highlights (p. 13) and five-year summary (p. 230)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 37.243,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, p. 1"
+        },
+        "netProfit": {
+          "value": -3.344,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, p. 1",
+          "note": "Loss to owners; column headed 'Audited' in later reports but no annual report in the folder"
+        },
+        "eps": {
+          "value": -8.64,
+          "unit": "Rs",
+          "source": "Interim to 31 Mar 2026, p. 1"
+        },
+        "navPerShare": {
+          "value": -3.06,
+          "unit": "Rs",
+          "source": "Interim to 31 Mar 2026, statement of financial position"
+        },
+        "operatingCashFlow": {
+          "value": -0.325,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, cash flow statement"
+        },
+        "lpgOperatingProfit": {
+          "value": 2.114,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, segment report (p. 11)",
+          "note": "Company (Sri Lankan LPG); profit after tax Rs 183mn"
+        },
+        "shippingLoss": {
+          "value": -2.517,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, segment report (p. 11)",
+          "note": "Transportation & logistics, after tax"
+        },
+        "tradingLoss": {
+          "value": -1.077,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, segment report (p. 11)"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 6.036,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter; Rs 12.06bn a year earlier"
+        },
+        "netProfit": {
+          "value": -0.578,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter, loss to owners"
+        },
+        "eps": {
+          "value": -1.49,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter"
+        },
+        "navPerShare": {
+          "value": -4.97,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "operatingCashFlow": {
+          "value": -2.08,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 5",
+          "note": "Quarter; inventory up Rs 3.25bn"
+        },
+        "netDebt": {
+          "value": 33.713,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Borrowings 16.62 long-term + 20.27 short-term less cash 3.18"
+        },
+        "lpgOperatingProfit": {
+          "value": 0.124,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, segment report (p. 11)",
+          "note": "Quarter"
+        },
+        "sharesOutstanding": {
+          "value": 387.0,
+          "unit": "",
+          "source": "Interim to 30 Jun 2026, note 4.6",
+          "note": "Millions: 335.0 voting + 52.0 non-voting"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Methods used",
+      "value": "Sum of the parts less debt; recovery earnings × P/E",
+      "reason": "Negative equity and losses rule out book-value, ROE, dividend and residual-income methods.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "LPG operating cash profit × multiple",
+      "value": "Rs 2.0bn × 5 / 2.8bn × 6.5 / 3.2bn × 7",
+      "reason": "About Rs 3.1bn in 2025/26 (operating profit Rs 2.11bn plus depreciation), Rs 390mn in Q1 FY2027.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Ships and terminal",
+      "value": "50% / 80% / 90% of Rs 17.8bn book",
+      "reason": "Loss-making assets; a sale might not fetch book value.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Net debt",
+      "value": "Rs 33.7bn",
+      "reason": "June 2026 borrowings less cash; cylinder deposits left out.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-11"
+    }
+  ],
+  "openQuestions": [
+    "Add the audited 2025/26 annual report: is there a going-concern warning from the auditors, and what are the debt terms?",
+    "Q2 results (to September 2026, due by mid-November): do LPG margins recover after the 2026 price increases?",
+    "Any plan to sell or refinance the ships, or a rights issue or support from LAUGFS Holdings?",
+    "Are the Rs 20bn of short-term loans being rolled over?",
+    "Why the Dubai trading arm had no outside sales in April–June 2026."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-11",
+      "basedOn": "Q1 FY2027 (to Jun 2026)",
+      "summary": "First analysis.",
+      "fairValue": 7.9,
+      "buyPrice": 6.7,
+      "strongBuyPrice": 5.9,
+      "priceAtTime": 51.0,
+      "archive": null
+    }
+  ]
+}

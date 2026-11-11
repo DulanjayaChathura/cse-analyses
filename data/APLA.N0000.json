@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "ticker": "APLA.N0000",
+  "company": {
+    "name": "ACL Plastics PLC",
+    "sector": "PVC compound for cables",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "APLA.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-11",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 159.0,
+    "date": "2026-09-30",
+    "source": "Closing price in the interim report to 30 September 2026",
+    "note": "July–September 2026 range Rs 135.00–172.00. No newer CSE close was available when this was written; the site shows the latest CSE close once fetched."
+  },
+  "summary": {
+    "verdict": "fair",
+    "headline": "A debt-free, high-return supplier to its parent, priced about right",
+    "text": "ACL Plastics PLC (APLA.N0000) makes the PVC compound that coats cables, and sells about 97% of it to its parent ACL Cables and sister company Kelani Cables. It is a small, debt-free and very profitable business: return on equity was 20% in the year to March 2026 and has averaged about 22% over five years, and about a third of its value is cash and unit trusts (Rs 2.2bn net, about Rs 52 a share). Profit for the six months to September 2026 rose 28% (EPS Rs 10.72), though the September quarter was 10% lower as margins narrowed. At Rs 159 (30 September close; check the live price) the share trades at 7.5x trailing earnings and 1.4x its NAV of Rs 111.51. The methods put fair value at about Rs 139, so the price is about 14% above it: fairly priced rather than cheap. I'd buy at up to about Rs 118 and treat under Rs 104 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "High returns, lots of cash, no loss in ten years and profit mostly turned into cash, though it depends on two related customers.",
+    "assessed": "2026-11-11",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "20%",
+        "note": "Year to March 2026; about 22% on average over five years (13% in 2024/25)."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 2.2bn",
+        "note": "September 2026: Rs 2.4bn of unit trusts, deposits and cash against Rs 221mn of short-term loans and overdraft."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "No loss in ten years",
+        "note": "Profit fell 34% in 2023/24; recent profit includes unit-trust and exchange gains."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Mostly",
+        "note": "Operating cash flow Rs 1.66bn against Rs 1.26bn of profit over the two years to March 2026, but minus Rs 456mn in April–September 2026 as stock and receivables grew. Payout about 20%."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 139.0,
+    "buyPrice": 118.0,
+    "strongBuyPrice": 104.0,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 111.51,
+    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20 (about 1.25x NAV)."
+  },
+  "dividend": {
+    "perShare": 3.75,
+    "label": "for 2025/26 (paid September 2026)",
+    "source": "Interim to 30 Sep 2026, note 7",
+    "note": "Rs 158mn in total, up from Rs 2.50 a share (split-adjusted) for 2024/25."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 111.51,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.43,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 7.5,
+      "unit": "x",
+      "note": "Trailing EPS Rs 21.29; about 5.8x leaving out the cash and its income"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 20,
+      "unit": "%",
+      "note": "Year to March 2026; five-year average about 22%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.4,
+      "unit": "%",
+      "note": "Rs 3.75 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 20,
+      "unit": "%"
+    },
+    {
+      "id": "netCash",
+      "label": "Net cash",
+      "value": 2.19,
+      "unit": "Rs bn",
+      "note": "September 2026, about Rs 52 a share"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 16,
+      "unit": "%",
+      "note": "Six months to Sep 2026; 17% in the year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 6.7,
+      "unit": "Rs bn",
+      "display": "~Rs 6.7bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 16% to Rs 1.53bn and profit rose 28% to Rs 452mn (EPS Rs 10.72 against Rs 8.37). The half included Rs 77mn of unrealised unit-trust gains and Rs 66mn of exchange gains."
+    },
+    {
+      "title": "A softer September quarter",
+      "text": "Quarterly revenue rose 28% to Rs 788mn, but the gross margin fell to 25% from 31%, so profit slipped 10% to Rs 157mn (EPS Rs 3.73 against Rs 4.13)."
+    },
+    {
+      "title": "Two customers, both in the family",
+      "text": "In 2025/26, 48% of sales went to ACL Cables (which owns 65%) and 49% to Kelani Cables. Prices and volumes depend on the group."
+    },
+    {
+      "title": "Cash and dividend",
+      "text": "Stock and receivables rose Rs 663mn in the half, so operating cash flow was minus Rs 456mn; it took a Rs 200mn short-term loan and cashed Rs 285mn of unit trusts. A Rs 3.75 dividend (up 50%) was paid in September. Each share was split into ten on 29 December 2025."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (split-adjusted)",
+        "unit": "Rs",
+        "values": [
+          17.12,
+          15.07,
+          10.82,
+          11.03,
+          18.94,
+          21.29
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Trailing"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          37,
+          25,
+          15,
+          13,
+          20,
+          null
+        ],
+        "notes": [
+          "Profit over average equity",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          2.1,
+          2.6,
+          3.6,
+          5.6,
+          6.9,
+          7.5
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 159, trailing"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend paid (split-adjusted)",
+        "unit": "Rs",
+        "values": [
+          1.0,
+          1.5,
+          1.5,
+          2.0,
+          2.5,
+          3.75
+        ],
+        "notes": [
+          "Paid in the year",
+          null,
+          null,
+          null,
+          null,
+          "Paid Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 111.51",
+      "reading": "The price is 1.4x NAV; about Rs 55 of NAV is cash, unit trusts and listed shares."
+    },
+    {
+      "method": "Return on equity",
+      "value": "20%",
+      "reading": "About 22% on average over five years, from 13% to 37%, despite carrying a lot of cash."
+    },
+    {
+      "method": "P/E",
+      "value": "7.5x",
+      "reading": "On trailing EPS of Rs 21.29. Leaving out the cash and its income, the business itself is priced at about 5.8x."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.4% yield",
+      "reading": "Rs 3.75 for 2025/26, about 20% of profit; up from Rs 1.00 paid in 2021/22."
+    },
+    {
+      "method": "Customer risk",
+      "value": "97% to group",
+      "reading": "Almost all sales go to ACL Cables and Kelani Cables, so margins are set within the group."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 65.0,
+      "base": 117.1,
+      "bull": 195.1,
+      "weighted": 117.1,
+      "comment": "Long-run ROE of 13% / 17% / 21% against a cost of equity of 18% / 16.5% / 15%."
+    },
+    {
+      "id": "sotp",
+      "name": "Business at a P/E plus cash",
+      "bear": 109.5,
+      "base": 161.3,
+      "bull": 220.9,
+      "weighted": 157.7,
+      "comment": "Operating profit after tax of Rs 9.10 / 13.30 / 16.60 a share times 6 / 8 / 10, plus Rs 54.90 of net cash and investments."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 68.5,
+      "base": 133.4,
+      "bull": 271.6,
+      "weighted": 141.6,
+      "comment": "ROE of 20% moving to 13% / 17% / 21% over ten years; 20% payout."
+    }
+  ],
+  "modelsNote": "Its cash pile is a big part of the value, so one method values the operating business and adds the cash separately. A dividend model would understate it (payout about 20%), and cash flow swings with stock levels, so there is no DCF.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18%",
+        "base": "16.5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "13%",
+        "base": "17%",
+        "bull": "21%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "6%",
+        "base": "6.5%",
+        "bull": "7%"
+      },
+      {
+        "label": "Operating profit after tax per share × P/E",
+        "bear": "9.10 × 6",
+        "base": "13.30 × 8",
+        "bull": "16.60 × 10"
+      }
+    ],
+    "averages": {
+      "bear": 81.0,
+      "base": 137.3,
+      "bull": 229.2
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Net cash, unit trusts and listed shares Rs 54.90 a share at September 2026. Base operating profit about Rs 800mn a year (Rs 437mn in the first half). Payout 20%."
+  },
+  "sensitivity": {
+    "title": "Residual income, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15%",
+      "16.5%",
+      "18%"
+    ],
+    "columns": [
+      "13%",
+      "17%",
+      "21%"
+    ],
+    "values": [
+      [
+        101.2,
+        169.7,
+        257.4
+      ],
+      [
+        81.4,
+        133.4,
+        199.9
+      ],
+      [
+        67.2,
+        107.8,
+        159.5
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Rs 159 needs ROE to settle near 19–20% with a 16.5% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 139.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 118.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 104.0
+      }
+    ],
+    "averagePrice": 122.2,
+    "totalCost": 61100,
+    "note": "About Rs 61,100 in total, against Rs 79,500 at Rs 159.00.",
+    "realism": "Rs 118 needs about a 26% fall. The share closed at Rs 131.25 in March 2026 and was Rs 135 at its July–September low, so a buy price is within reach in an ordinary market dip."
+  },
+  "changeMyView": {
+    "higher": [
+      "ACL and Kelani Cables keeping up strong cable sales, so volumes keep growing.",
+      "Gross margin back above 30%.",
+      "A bigger dividend or a special dividend from the cash pile.",
+      "New customers outside the group."
+    ],
+    "lower": [
+      "The group squeezing its margins (it buys almost all the output).",
+      "PVC resin prices rising faster than selling prices.",
+      "A cable slowdown at ACL and Kelani.",
+      "The cash being lent to or invested in group companies on poor terms."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. Per-share figures before the December 2025 split have been divided by ten. The price is the 30 September 2026 close; check it live. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: ACL Plastics PLC (APLA.N0000) makes the PVC compound that coats cables, and sells about 97% of it to its parent ACL Cables and sister company Kelani Cables. It is a small, debt-free and very profitable business: return on equity was 20% in the year to March 2026 and has averaged about 22% over five years, and about a third of its value is cash and unit trusts (Rs 2.2bn net, about Rs 52 a share). Profit for the six months to September 2026 rose 28% (EPS Rs 10.72), though the September quarter was 10% lower as margins narrowed. At Rs 159 (30 September close; check the live price) the share trades at 7.5x trailing earnings and 1.4x its NAV of Rs 111.51. The methods put fair value at about Rs 139, so the price is about 14% above it: fairly priced rather than cheap. I'd buy at up to about Rs 118 and treat under Rs 104 as a strong buy.\n\nPrice and key figures\nPrice: Rs 159.00 (closing price 30 September 2026, from the interim report). Please check it live. In July–September 2026 it traded between Rs 135 and Rs 172. It closed March 2026 at Rs 131.25.\nSix months to 30 September 2026 (unaudited): revenue Rs 1.53bn (up 16%), profit Rs 452mn (up 28%), EPS Rs 10.72 (Rs 8.37). The September quarter: revenue Rs 788mn (up 28%), gross margin 25% (31%), profit Rs 157mn (down 10%), EPS Rs 3.73.\nYear to March 2026 (audited): revenue Rs 2.85bn (up 17%), gross margin 31% (24%), profit Rs 798mn (up 72%), EPS Rs 18.94 (Rs 11.03), ROE 20%. Trailing EPS is about Rs 21.29.\nNAV Rs 111.51 a share (September 2026). 42.1 million shares after the 1-for-10 split. ACL Cables owns 65%.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified P/B | 65.0 | 117.1 | 195.1 | 117.1\nBusiness at a P/E plus cash | 109.5 | 161.3 | 220.9 | 157.7\nResidual income | 68.5 | 133.4 | 271.6 | 141.6\nAverage | 81.0 | 137.3 | 229.2 | 138.8\nFair value about Rs 139 (30% bear, 50% base, 20% bull). Buy at up to Rs 118 (15% below); strong buy under Rs 104 (25% below).\n\nAssumptions\nCost of equity 18% / 16.5% / 15%, against government bonds of about 12%. Long-run ROE 13% / 17% / 21% (five-year average about 22%). Growth 6% / 6.5% / 7%. Operating business: profit after tax of Rs 9.10 / 13.30 / 16.60 a share at 6 / 8 / 10 times, plus Rs 54.90 of net cash and investments.\n\nWhat stands out\n- Debt-free with Rs 2.4bn of unit trusts, deposits and cash (Rs 221mn of short-term borrowing at September).\n- Captive customers: 97% of sales to ACL Cables and Kelani Cables. This keeps volumes steady but means the group sets the margin.\n- Some of the latest profit is market and currency gains (Rs 77mn unit trusts, Rs 66mn exchange in the half).\n- Dividend raised to Rs 3.75 (from Rs 2.50), about 20% of profit.\n\n500-share plan\n200 shares up to Rs 139, 150 up to Rs 118, 150 up to Rs 104: average about Rs 122, about Rs 61,100 in total. Rs 118 needs about a 26% fall; the share was Rs 131 in March 2026, so that's within reach in a market dip.\n\nWhat would change my view\nHigher: strong cable demand at ACL and Kelani, gross margin back above 30%, a bigger or special dividend, customers outside the group.\nLower: the group squeezing margins, PVC resin costs rising, a cable slowdown, the cash being used on poor terms within the group.\n\nBusiness tests: 4 of 4 passed, so it's a good business priced a little above fair value: watch list."
+}

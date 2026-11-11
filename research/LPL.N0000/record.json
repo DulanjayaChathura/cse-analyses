@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LPL.N0000",
+  "localFolder": "LAUGFS POWER",
+  "updated": "2026-11-11",
+  "reportsRead": [
+    {
+      "file": "Annual Report for the Financial Year ended 31.03.2025.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Not read in detail: covered by the 2025/26 report's five-year summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Used: performance highlights (p. 10), directors' report (dividend), plant valuation assumptions (note 7.1.6), five-year summary (p. 161)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Scanned; read by text recognition. Unaudited year profit Rs 6mn before the audit reversal."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Scanned; covered by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Scanned image; figures read by text recognition. Latest figures used."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 1.028,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "netProfit": {
+          "value": -0.903,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "eps": {
+          "value": -2.33,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "navPerShare": {
+          "value": 5.28,
+          "unit": "Rs",
+          "source": "Worked out: equity in the five-year summary over 387 million shares"
+        },
+        "operatingCashFlow": {
+          "value": 0.436,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 0.969,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "netProfit": {
+          "value": -0.114,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "eps": {
+          "value": -0.29,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "navPerShare": {
+          "value": 4.99,
+          "unit": "Rs",
+          "source": "Worked out: equity in the five-year summary over 387 million shares"
+        },
+        "operatingCashFlow": {
+          "value": -0.104,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "roe": {
+          "value": -5.7,
+          "unit": "%",
+          "source": "Worked out: profit over average equity (five-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 0.968,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "netProfit": {
+          "value": 0.052,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "eps": {
+          "value": 0.13,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "navPerShare": {
+          "value": 5.12,
+          "unit": "Rs",
+          "source": "Worked out: equity in the five-year summary over 387 million shares"
+        },
+        "operatingCashFlow": {
+          "value": 1.008,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "roe": {
+          "value": 2.7,
+          "unit": "%",
+          "source": "Worked out: profit over average equity (five-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 1.273,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)",
+          "note": "Includes Rs 376mn of contract billing in 2024/25"
+        },
+        "netProfit": {
+          "value": 0.25,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "eps": {
+          "value": 0.65,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "navPerShare": {
+          "value": 5.76,
+          "unit": "Rs",
+          "source": "Worked out: equity in the five-year summary over 387 million shares"
+        },
+        "operatingCashFlow": {
+          "value": 0.092,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "roe": {
+          "value": 11.9,
+          "unit": "%",
+          "source": "Worked out: profit over average equity (five-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 0.765,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "netProfit": {
+          "value": 0.461,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)",
+          "note": "Includes Rs 544mn impairment reversal"
+        },
+        "eps": {
+          "value": 1.19,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "navPerShare": {
+          "value": 6.94,
+          "unit": "Rs",
+          "source": "Worked out: equity in the five-year summary over 387 million shares"
+        },
+        "operatingCashFlow": {
+          "value": 0.297,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, five-year summary (p. 161)"
+        },
+        "roe": {
+          "value": 18.7,
+          "unit": "%",
+          "source": "Worked out: profit over average equity (five-year summary)"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Annual Report of the Board of Directors"
+        },
+        "generationGwh": {
+          "value": 35.2,
+          "unit": "",
+          "source": "Annual Report 2025/26, performance highlights (p. 10)",
+          "note": "GWh; 41.1 in 2024/25"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 0.48,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months"
+        },
+        "netProfit": {
+          "value": 0.087,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months"
+        },
+        "eps": {
+          "value": 0.23,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months"
+        },
+        "navPerShare": {
+          "value": 7.17,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 5"
+        },
+        "operatingCashFlow": {
+          "value": 0.118,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Six months"
+        },
+        "netDebt": {
+          "value": 1.55,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Loans 1.23 + 0.40, overdraft 0.03, less cash 0.10"
+        },
+        "receivables": {
+          "value": 1.068,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Trade and other receivables, mostly the CEB"
+        },
+        "sharesOutstanding": {
+          "value": 387.0,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 5.4",
+          "note": "Millions: 335.0 voting + 52.0 non-voting"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Methods used",
+      "value": "Cash-flow DCF over contract life; NAV multiple",
+      "reason": "Fixed-life power contracts; underlying earnings near nil and no dividend.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Free cash flow a year",
+      "value": "Rs 430 / 520 / 600mn",
+      "reason": "First-half EBITDA Rs 328mn (about Rs 650mn a year) less tax and upkeep.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Discount rate",
+      "value": "17% / 15% / 13.5%",
+      "reason": "Bonds about 12% plus a premium for a single, slow-paying state customer; the company itself uses 15.3–16.3%.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Contract life",
+      "value": "About 10 years (solar)",
+      "reason": "Annual Report 2025/26, note 7.1.6.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-11"
+    }
+  ],
+  "openQuestions": [
+    "Q3 results (to December 2026, due by mid-February): does hydro keep up its higher output?",
+    "Are CEB receivables (Rs 1.07bn) being paid down?",
+    "Any plan to extend the solar contracts or add new plants?",
+    "Check the scanned interim figures against the next audited report."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-11",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "First analysis.",
+      "fairValue": 5.0,
+      "buyPrice": 4.25,
+      "strongBuyPrice": 3.75,
+      "priceAtTime": 10.3,
+      "archive": null
+    }
+  ]
+}

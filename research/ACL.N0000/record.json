@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ACL.N0000",
+  "localFolder": "ACL cabel",
+  "updated": "2026-11-11",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,25.pdf",
+      "title": "Annual Report 2024/25",
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Not read in detail: covered by the 2025/26 report's ten-year summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-11",
+      "note": "Used: financial highlights (pp. 7–8), directors' report (pp. 104–106), statements of changes in equity and cash flows (pp. 123–124), Decade at a Glance (p. 192)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "9M FY2026",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Quarter EPS Rs 2.57; nine months Rs 6.87."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Unaudited year EPS Rs 9.13; audited figure Rs 8.82."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Latest figures used. No September 2026 interim in the folder yet (due by mid-November)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 35.329,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "netProfit": {
+          "value": 5.114,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Group profit after tax, including minority interests"
+        },
+        "eps": {
+          "value": 5.99,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Divided by three for the 1-for-3 split"
+        },
+        "dividendPerShare": {
+          "value": 0.33,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Paid in the year, split-adjusted"
+        },
+        "navPerShare": {
+          "value": 24.24,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Split-adjusted"
+        },
+        "roe": {
+          "value": 28.0,
+          "unit": "%",
+          "source": "Worked out: profit to owners over average equity (Decade at a Glance)"
+        },
+        "peYearEnd": {
+          "value": 3.17,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 30.147,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "netProfit": {
+          "value": 7.013,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Group profit after tax, including minority interests"
+        },
+        "eps": {
+          "value": 8.28,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Divided by three for the 1-for-3 split"
+        },
+        "dividendPerShare": {
+          "value": 0.33,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Paid in the year, split-adjusted"
+        },
+        "navPerShare": {
+          "value": 32.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Split-adjusted"
+        },
+        "roe": {
+          "value": 29.1,
+          "unit": "%",
+          "source": "Worked out: profit to owners over average equity (Decade at a Glance)"
+        },
+        "peYearEnd": {
+          "value": 3.31,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 29.196,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "netProfit": {
+          "value": 3.446,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Group profit after tax, including minority interests"
+        },
+        "eps": {
+          "value": 3.98,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Divided by three for the 1-for-3 split"
+        },
+        "dividendPerShare": {
+          "value": 0.42,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Paid in the year, split-adjusted"
+        },
+        "navPerShare": {
+          "value": 37.05,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Split-adjusted"
+        },
+        "roe": {
+          "value": 11.4,
+          "unit": "%",
+          "source": "Worked out: profit to owners over average equity (Decade at a Glance)"
+        },
+        "peYearEnd": {
+          "value": 7.05,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 37.487,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "netProfit": {
+          "value": 5.42,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Group profit after tax, including minority interests"
+        },
+        "eps": {
+          "value": 6.37,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Divided by three for the 1-for-3 split"
+        },
+        "dividendPerShare": {
+          "value": 0.42,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Paid in the year, split-adjusted"
+        },
+        "navPerShare": {
+          "value": 42.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Split-adjusted"
+        },
+        "roe": {
+          "value": 16.0,
+          "unit": "%",
+          "source": "Worked out: profit to owners over average equity (Decade at a Glance)"
+        },
+        "peYearEnd": {
+          "value": 6.38,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "operatingCashFlow": {
+          "value": 3.929,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, cash flow statement (p. 124)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 45.508,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "netProfit": {
+          "value": 7.28,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Group profit after tax, including minority interests"
+        },
+        "eps": {
+          "value": 8.82,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "dividendPerShare": {
+          "value": 0.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)",
+          "note": "Paid in the year, split-adjusted"
+        },
+        "navPerShare": {
+          "value": 51.35,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "roe": {
+          "value": 18.7,
+          "unit": "%",
+          "source": "Worked out: profit to owners over average equity (Decade at a Glance)"
+        },
+        "peYearEnd": {
+          "value": 9.64,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Decade at a Glance (p. 192)"
+        },
+        "operatingCashFlow": {
+          "value": 1.435,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, cash flow statement (p. 124)"
+        },
+        "capexPaid": {
+          "value": 0.4,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, cash flow statement (p. 124)",
+          "note": "PPE plus capital work in progress"
+        },
+        "sharesOutstanding": {
+          "value": 718.72,
+          "unit": "",
+          "source": "Annual Report 2025/26, statement of changes in equity",
+          "note": "Millions, after the split"
+        },
+        "fxGainLoss": {
+          "value": 0.5,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, note 7"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 11.487,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter"
+        },
+        "grossMarginPct": {
+          "value": 24.2,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter; 29.7% a year earlier"
+        },
+        "netProfit": {
+          "value": 1.843,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter, to owners"
+        },
+        "eps": {
+          "value": 2.56,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Quarter"
+        },
+        "navPerShare": {
+          "value": 54.04,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 4"
+        },
+        "operatingCashFlow": {
+          "value": -4.613,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 7",
+          "note": "Quarter"
+        },
+        "netDebt": {
+          "value": -10.905,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Net cash: FVTPL 6.33 + deposits 7.22 + cash 1.65 less borrowings, overdraft and leases 4.29"
+        },
+        "fxGainLoss": {
+          "value": 0.59,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, note 8"
+        },
+        "sharesOutstanding": {
+          "value": 718.72,
+          "unit": "",
+          "source": "Interim to 30 Jun 2026, p. 6",
+          "note": "Millions"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18% / Base 16.5% / Bull 15%",
+      "reason": "Bonds about 12% (Oct 2026) plus a premium for a cyclical manufacturer with a strong balance sheet.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "14% / 17% / 20%",
+      "reason": "Five-year average about 21%, including a 29% year (2022/23); 11% in 2023/24.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "6% / 6.5% / 7%",
+      "reason": "Roughly nominal GDP growth.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "7.00 × 6 / 9.00 × 8 / 10.50 × 10",
+      "reason": "Q1 EPS Rs 2.56 included an exchange gain; ten-year average P/E about 5.5x.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Methods used",
+      "value": "P/B, P/E, residual income",
+      "reason": "Dividend model left out (payout about 6%); DCF unreliable with copper stock swings.",
+      "since": "2026-11-11"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-11"
+    }
+  ],
+  "openQuestions": [
+    "Q2 results (to September 2026, due by mid-November): does the gross margin recover from 24%, and how much of profit is exchange gains?",
+    "Does the Rs 4.5bn inventory build reverse, and are the new short-term loans repaid?",
+    "Will a dividend for 2025/26 be declared (last year's Rs 1.50 pre-split was paid in October)?",
+    "Copper price direction and its effect on stock values.",
+    "Export growth (Rs 2.68bn in Q1, up 33%)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-11",
+      "basedOn": "Q1 FY2027 (to Jun 2026)",
+      "summary": "First analysis.",
+      "fairValue": 63.5,
+      "buyPrice": 54.0,
+      "strongBuyPrice": 47.6,
+      "priceAtTime": 100.0,
+      "archive": null
+    }
+  ]
+}

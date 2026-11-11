@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LPL.N0000",
+  "company": {
+    "name": "LAUGFS Power PLC",
+    "sector": "Renewable power (solar and hydro)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "LPL.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "LPL.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-11",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26",
+      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 10.3,
+    "date": "2026-09-30",
+    "source": "Last traded price (voting) in the interim report to 30 September 2026",
+    "note": "Non-voting Rs 8.80. July–September 2026 range Rs 10.00–11.60 (voting). No newer CSE close was available when this was written; the site shows the latest CSE close once fetched."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Last year's profit was an accounting reversal; the solar contracts are running down",
+    "text": "LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) owns solar plants at Hambantota and Embilipitiya and small hydro plants, selling all its power to the Ceylon Electricity Board (CEB). Its reported profit of Rs 461mn for the year to March 2026 (EPS Rs 1.19) came almost entirely from reversing Rs 544mn of earlier impairments; without that it lost money, as generation fell 14%. The six months to September 2026 were better: revenue up 17% and profit Rs 87mn (EPS Rs 0.23), helped by the hydro plants. But the main solar contracts have only about ten years left, the CEB owes it about Rs 1.07bn, and it pays no dividend. At Rs 10.30 (voting, 30 September; check the live price) the share is 1.4x its NAV of Rs 7.17. A cash-flow valuation of the remaining contracts and a NAV check put fair value at about Rs 5.00, so the price is about double that. I'd buy at up to about Rs 4.25 and treat under Rs 3.75 as a strong buy."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Low underlying returns, losses in two of the last five years and slow payment by its only customer.",
+    "assessed": "2026-11-11",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About minus 3% underlying",
+        "note": "Reported 19% in 2025/26 came from a Rs 544mn impairment reversal; 12% in 2024/25, 3% in 2023/24."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.56x equity",
+        "note": "Net debt about Rs 1.55bn at September 2026 against equity of Rs 2.78bn."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2021/22 and 2022/23",
+        "note": "2025/26 profit depended on a one-off reversal."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No dividends",
+        "note": "Cash flow is positive, but the CEB owes about Rs 1.07bn (more than a year's revenue) and no dividend was paid for 2025/26."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 5.0,
+    "buyPrice": 4.25,
+    "strongBuyPrice": 3.75,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 7.17,
+    "note": "Fair value weights the bear/base/bull averages of two methods 30/50/20 (about 0.7x NAV)."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "for 2025/26 (none)",
+    "source": "Annual Report 2025/26, Annual Report of the Board of Directors",
+    "note": "The company didn't declare or propose a dividend for 2025/26."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 7.17,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.44,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": null,
+      "unit": "x",
+      "display": "n/m",
+      "note": "Trailing EPS Rs 1.36 is almost all the impairment reversal; underlying about nil"
+    },
+    {
+      "id": "evEbitda",
+      "label": "EV / EBITDA",
+      "value": 8.3,
+      "unit": "x",
+      "note": "First-half EBITDA Rs 328mn doubled, with about ten years of solar contracts left"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": null,
+      "unit": "%",
+      "display": "~ -3% underlying",
+      "note": "19% reported for 2025/26, from the reversal"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "No dividend"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 1.55,
+      "unit": "Rs bn",
+      "note": "September 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 17,
+      "unit": "%",
+      "note": "Six months to Sep 2026; down 15% in the year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 3.9,
+      "unit": "Rs bn",
+      "display": "~Rs 3.9bn",
+      "note": "Both share classes"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 17% to Rs 480mn and profit rose to Rs 87mn from Rs 23mn (EPS Rs 0.23 against Rs 0.06). Hydro revenue jumped to Rs 91mn from Rs 22mn; solar was flat at Rs 389mn. Administrative costs fell 24%."
+    },
+    {
+      "title": "2025/26: profit from a reversal",
+      "text": "Audited profit Rs 461mn (EPS Rs 1.19) included a Rs 544mn reversal of earlier impairments; the unaudited fourth-quarter report had shown only Rs 6mn. Generation fell 14% to 35.2 GWh and revenue 15% to Rs 765mn."
+    },
+    {
+      "title": "One customer, slow to pay",
+      "text": "All power goes to the CEB. Trade and other receivables were Rs 1.07bn at September 2026, up Rs 200mn in six months, against half-year revenue of Rs 480mn."
+    },
+    {
+      "title": "Contracts running down",
+      "text": "The annual report gives about ten years left on the two solar companies' power purchase contracts. Net debt is about Rs 1.55bn. No dividend for 2025/26."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -2.33,
+          -0.29,
+          0.13,
+          0.65,
+          1.19,
+          1.36
+        ],
+        "notes": [
+          "Loss",
+          "Loss",
+          null,
+          null,
+          "Rs 1.40 from impairment reversal",
+          "Trailing, includes the reversal"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          -6,
+          3,
+          12,
+          19,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Reversal; underlying negative",
+          null
+        ]
+      },
+      {
+        "id": "ocf",
+        "label": "Operating cash flow",
+        "unit": "Rs mn",
+        "values": [
+          436,
+          -104,
+          1008,
+          92,
+          297,
+          118
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Six months"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 7.17",
+      "reading": "The price is 1.44x NAV. Book value rests on the company's own valuation of plants with about ten years of contracts left."
+    },
+    {
+      "method": "Return on equity",
+      "value": "Low",
+      "reading": "Underlying profit was about nil over the last year; the reported 19% came from a write-back."
+    },
+    {
+      "method": "P/E",
+      "value": "Not meaningful",
+      "reading": "Trailing EPS Rs 1.36 is almost entirely the Rs 544mn reversal (Rs 1.40 a share)."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend for 2025/26."
+    },
+    {
+      "method": "Cash flow",
+      "value": "EBITDA ~Rs 650mn a year",
+      "reading": "Based on the first half; about Rs 520mn a year after tax and upkeep, falling to little when the solar contracts end."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF (contract life)",
+      "bear": 2.3,
+      "base": 4.6,
+      "bull": 6.6,
+      "weighted": 4.3,
+      "comment": "Free cash flow of Rs 430 / 520 / 600mn a year for ten years at 17% / 15% / 13.5%, a small hydro tail, plus overdue CEB receivables, less Rs 1.55bn net debt."
+    },
+    {
+      "id": "nav",
+      "name": "NAV multiple",
+      "bear": 4.3,
+      "base": 5.7,
+      "bull": 7.2,
+      "weighted": 5.6,
+      "comment": "0.6 / 0.8 / 1.0 times NAV of Rs 7.17, because the plants are wasting assets with low returns."
+    }
+  ],
+  "modelsNote": "A power producer with fixed-life contracts suits a cash-flow DCF. With underlying earnings near nil and no dividend, P/E, dividend and residual-income methods don't apply, so NAV is used as a cross-check.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Free cash flow a year",
+        "bear": "Rs 430mn",
+        "base": "Rs 520mn",
+        "bull": "Rs 600mn"
+      },
+      {
+        "label": "Discount rate",
+        "bear": "17%",
+        "base": "15%",
+        "bull": "13.5%"
+      },
+      {
+        "label": "Hydro after the solar contracts (years 11–20)",
+        "bear": "Rs 50mn a year",
+        "base": "Rs 100mn a year",
+        "bull": "Rs 100mn a year"
+      },
+      {
+        "label": "Overdue CEB receivables counted",
+        "bear": "Rs 0.40bn",
+        "base": "Rs 0.60bn",
+        "bull": "Rs 0.75bn"
+      },
+      {
+        "label": "Price to NAV",
+        "bear": "0.6x",
+        "base": "0.8x",
+        "bull": "1.0x"
+      }
+    ],
+    "averages": {
+      "bear": 3.3,
+      "base": 5.2,
+      "bull": 6.9
+    },
+    "common": "Net debt Rs 1.55bn at September 2026. 387 million shares (335 million voting, 52 million non-voting), valued the same. The company's own plant valuations use 15.3–16.3% discount rates."
+  },
+  "sensitivity": {
+    "title": "DCF, Rs per share",
+    "rowLabel": "Discount rate",
+    "columnLabel": "Free cash flow a year",
+    "rows": [
+      "13.5%",
+      "15%",
+      "17%"
+    ],
+    "columns": [
+      "Rs 430mn",
+      "Rs 520mn",
+      "Rs 600mn"
+    ],
+    "values": [
+      [
+        3.8,
+        5.1,
+        6.2
+      ],
+      [
+        3.4,
+        4.6,
+        5.6
+      ],
+      [
+        3.0,
+        4.1,
+        5.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Rs 10.30 would need much more cash flow, or contracts extended well beyond their current terms."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 5.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.25
+      },
+      {
+        "shares": 150,
+        "maxPrice": 3.75
+      }
+    ],
+    "averagePrice": 4.4,
+    "totalCost": 2200,
+    "note": "About Rs 2,200 in total, against Rs 5,150 at Rs 10.30.",
+    "realism": "Rs 4.25 needs a fall of about 59%. The voting share's low in the last year was about Rs 10 and it was last below Rs 5 around 2020, so this isn't likely soon."
+  },
+  "changeMyView": {
+    "higher": [
+      "Contracts extended or renewed at good tariffs.",
+      "The CEB paying its overdue bills.",
+      "New plants added at good returns.",
+      "Hydro output staying at this year's higher level."
+    ],
+    "lower": [
+      "Generation falling further (it fell 14% last year).",
+      "The CEB paying even later or cutting tariffs.",
+      "Another impairment once the contracts get closer to ending.",
+      "Money lent to or tied up with LAUGFS group companies."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim reports are scanned images read by text recognition, so check any figure that matters. The price is the last traded price at 30 September 2026; check it live. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) owns solar plants at Hambantota and Embilipitiya and small hydro plants, selling all its power to the Ceylon Electricity Board (CEB). Its reported profit of Rs 461mn for the year to March 2026 (EPS Rs 1.19) came almost entirely from reversing Rs 544mn of earlier impairments; without that it lost money, as generation fell 14%. The six months to September 2026 were better: revenue up 17% and profit Rs 87mn (EPS Rs 0.23), helped by the hydro plants. But the main solar contracts have only about ten years left, the CEB owes it about Rs 1.07bn, and it pays no dividend. At Rs 10.30 (voting, 30 September; check the live price) the share is 1.4x its NAV of Rs 7.17. A cash-flow valuation of the remaining contracts and a NAV check put fair value at about Rs 5.00, so the price is about double that. I'd buy at up to about Rs 4.25 and treat under Rs 3.75 as a strong buy.\n\nPrice and key figures\nPrice: Rs 10.30 voting, Rs 8.80 non-voting (last traded, 30 September 2026). Please check them live. In July–September 2026 the voting share traded between Rs 10.00 and Rs 11.60; a year earlier it was Rs 15.80.\nSix months to 30 September 2026 (unaudited): revenue Rs 480mn (up 17%), operating profit Rs 184mn (Rs 99mn), profit Rs 87mn (Rs 23mn), EPS Rs 0.23 (Rs 0.06). Hydro revenue Rs 91mn (Rs 22mn), solar Rs 389mn (Rs 387mn). EBITDA about Rs 328mn.\nYear to March 2026 (audited): revenue Rs 765mn (down 15%), generation 35.2 GWh (down 14%), profit Rs 461mn including a Rs 544mn impairment reversal, EPS Rs 1.19. Without the reversal, a loss of about Rs 84mn.\nNAV Rs 7.17 a share (September 2026). Net debt about Rs 1.55bn. 387 million shares. LAUGFS Holdings owns 74% of the voting shares.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nCash-flow DCF | 2.3 | 4.6 | 6.6 | 4.3\nNAV multiple | 4.3 | 5.7 | 7.2 | 5.6\nAverage | 3.3 | 5.2 | 6.9 | 5.0\nFair value about Rs 5.00 (30% bear, 50% base, 20% bull). Buy at up to Rs 4.25 (15% below); strong buy under Rs 3.75 (25% below).\n\nAssumptions\nFree cash flow (EBITDA less tax and upkeep) of Rs 430 / 520 / 600mn a year for the roughly ten years left on the solar contracts, discounted at 17% / 15% / 13.5%. The hydro plants add Rs 50 / 100 / 100mn a year for years 11–20. Overdue CEB receivables count for Rs 0.40 / 0.60 / 0.75bn. NAV cross-check at 0.6 / 0.8 / 1.0 times.\n\nWhat stands out\n- Last year's profit was an accounting write-back, not cash.\n- The plants are wasting assets: once the contracts end, tariffs and output after that are unknown.\n- The CEB owes it more than a year's revenue.\n- Debt is moderate (net debt about half of equity).\n\n500-share plan\n200 shares up to Rs 5.00, 150 up to Rs 4.25, 150 up to Rs 3.75: average about Rs 4.40, about Rs 2,200 in total. Rs 4.25 needs a fall of about 59%, so it isn't likely soon.\n\nWhat would change my view\nHigher: contracts extended at good tariffs, the CEB paying up, new plants at good returns, hydro output staying high.\nLower: falling generation, later CEB payments or tariff cuts, another impairment, money tied up with group companies.\n\nBusiness tests: 1 of 4 passed (debt): avoid for now."
+}
