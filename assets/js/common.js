@@ -42,6 +42,8 @@ App.num = function (v, maxDec = 2) {
 App.price = (v) => (App.isNum(v) ? "Rs " + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "–");
 /* Per-share values from the analysis: as written (Rs 31, Rs 26.5). */
 App.rs = (v) => (App.isNum(v) ? "Rs " + App.num(v) : "–");
+/* Always two decimals, for per-share amounts such as dividends (Rs 1.50). */
+App.rs2 = (v) => (App.isNum(v) ? "Rs " + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "–");
 App.withUnit = function (v, unit) {
   if (!App.isNum(v)) return "n/m";
   switch (unit) {

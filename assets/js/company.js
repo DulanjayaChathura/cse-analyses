@@ -84,7 +84,7 @@
 
     { id: "figures", title: "Key figures", key: "keyMetrics", html: () => `<h2>Key figures</h2>
       <div class="figures">${d.keyMetrics.map((m) => `<div class="figure"><div class="lbl">${App.term(m.label)}</div>
-        <div class="num">${App.esc(m.display || App.withUnit(m.value, m.unit))}</div>${m.note ? `<div class="note">${App.esc(m.note)}</div>` : ""}</div>`).join("")}</div>` },
+        <div class="num">${App.esc(m.display || App.withUnit(m.value, m.unit))}</div>${m.note ? `<div class="note">${App.esc(m.note)}</div>` : ""}</div>`).join("")}${dividendFigure()}</div>` },
 
     { id: "results", title: "Latest results", key: "highlights", html: () => `<h2>Latest results</h2>
       <div class="highlights">${d.highlights.map((h) => `<div><h3>${App.esc(h.title || "")}</h3>${App.md(h.text)}</div>`).join("")}</div>` },
@@ -230,13 +230,65 @@
 
   /* Sections the site doesn't know yet are listed at the end. */
   const knownKeys = new Set(["schemaVersion", "ticker", "analysisDate", "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
-    "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build"]);
+    "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
+    "quality", "dividend"]);
   const unknown = Object.keys(d).filter((k) => !knownKeys.has(k));
-  const pretty = (val) => Array.isArray(val) ? `<ul>${val.map((x) => `<li>${pretty(x)}</li>`).join("")}</ul>`
-    : val && typeof val === "object" ? `<dl class="other">${Object.entries(val).map(([k, x]) => `<dt>${App.esc(k)}</dt><dd>${pretty(x)}</dd>`).join("")}</dl>`
-    : App.esc(val);
-  if (unknown.length) sections.push({ id: "other", title: "Other details", always: true, html: () => `<h2>Other details</h2>
-    <dl class="other">${unknown.map((k) => `<dt>${App.esc(k)}</dt><dd>${pretty(d[k])}</dd>`).join("")}</dl>` });
+  /* Latest dividend per share, as one more key-figure tile. */
+  function dividendFigure() {
+    const dv = d.dividend;
+    if (!dv || !App.isNum(dv.perShare)) return "";
+    const latest = dv.latest && App.isNum(dv.latest.perShare) ? `Latest: ${App.rs2(dv.latest.perShare)} ${dv.latest.label || ""}` : "";
+    return `<div class="figure"><div class="lbl">Dividend per share</div><div class="num">${App.rs2(dv.perShare)}</div>
+      <div class="note">${App.esc([dv.label, latest].filter(Boolean).join(". "))}</div></div>`;
+  }
+
+  /* Extra research sections (decision box, moat, Sri Lanka checks, key ratios, …):
+     one card each, label beside value, with a row of links to jump between them. */
+  const STATUS = { ok: "good", watch: "warn", risk: "bad", warning: "warn", fail: "bad", pass: "good" };
+  function statusBadge(word) {
+    const cls = STATUS[String(word).toLowerCase()];
+    return cls ? `<span class="badge ${cls}">${App.esc(word)}</span>` : null;
+  }
+  function moreValue(val) {
+    if (val === null || val === undefined || val === "") return "–";
+    if (Array.isArray(val)) return `<ul class="more-list">${val.map((x) => `<li>${moreValue(x)}</li>`).join("")}</ul>`;
+    if (typeof val === "object") return `<div class="more-rows nested">${Object.entries(val).map(([k, x]) => moreRow(k, x)).join("")}</div>`;
+    const text = String(val);
+    const whole = statusBadge(text.trim());
+    if (whole) return whole;
+    // "Watch: policy rate raised…" → badge + text
+    const m = text.match(/^(OK|Watch|Risk|Warning|Pass|Fail)\s*[:–-]\s*(.*)$/is);
+    if (m) return `${statusBadge(m[1])} ${App.esc(m[2])}`;
+    // "2023 30% · 2024 16% · …" → a row of years
+    const parts = text.split(" · ");
+    const PERIOD = /^((?:\d{4}(?:\/\d{2})?|H[12] \d{4}|Q[1-4] \d{4}|(?:Mar|Jun|Sep|Dec) \d{4}|now|\d+ months to [A-Za-z]+ \d{4}|last 12 months|\d{4} so far))\s+(.*)$/i;
+    const periods = parts.map((x) => x.match(PERIOD));
+    if (parts.length >= 3 || (parts.length === 2 && periods.every(Boolean))) return `<div class="trend">${parts.map((x, i) => {
+      const y = periods[i];
+      return y ? `<span><small>${App.esc(y[1])}</small>${App.esc(y[2])}</span>` : `<span>${App.esc(x)}</span>`;
+    }).join("")}</div>`;
+    return App.esc(text);
+  }
+  function moreRow(k, x) {
+    return `<div class="more-row"><div class="more-key">${App.esc(k)}</div><div class="more-val">${moreValue(x)}</div></div>`;
+  }
+  const SHOW_ROWS = 8;
+  function moreCard(k, i) {
+    const val = d[k];
+    const warn = /doesn.t cover|not covered|limitations/i.test(k);
+    let body;
+    if (val && typeof val === "object" && !Array.isArray(val)) {
+      const rows = Object.entries(val).map(([a, b]) => moreRow(a, b));
+      body = `<div class="more-rows">${rows.slice(0, SHOW_ROWS).join("")}</div>`
+        + (rows.length > SHOW_ROWS ? `<details class="more-rest"><summary>Show all ${rows.length}</summary><div class="more-rows">${rows.slice(SHOW_ROWS).join("")}</div></details>` : "");
+    } else {
+      body = `<div class="more-val">${moreValue(val)}</div>`;
+    }
+    return `<div class="more-card${warn ? " warn" : ""}" id="more-${i}"><h3>${App.esc(k)}</h3>${body}</div>`;
+  }
+  if (unknown.length) sections.push({ id: "other", title: "More research", always: true, html: () => `<h2>More research</h2>
+    <nav class="more-jump" aria-label="More research sections">${unknown.map((k, i) => `<a href="#more-${i}">${App.esc(k.replace(/\s*\(.*\)$/, ""))}</a>`).join("")}</nav>
+    ${unknown.map(moreCard).join("")}` });
 
   /* ---------- Render ---------- */
   function render() {

@@ -64,7 +64,7 @@
   /* "Dividend Rs 0.95 for 2025/26 · Rs 0.25 interim for 2026/27" (per share). */
   function dividendLine(d) {
     if (!d || !App.isNum(d.perShare)) return "";
-    const part = (x) => `<b>${App.rs(x.perShare)}</b> ${App.esc(x.label || "")}`;
+    const part = (x) => `<b>${App.rs2(x.perShare)}</b> ${App.esc(x.label || "")}`;
     const latest = d.latest && App.isNum(d.latest.perShare) ? `<span>Latest: ${part(d.latest)}</span>` : "";
     const tip = [d.note, d.source && `Source: ${d.source}`, d.latest && d.latest.source && `Latest: ${d.latest.source}`].filter(Boolean).join("\n");
     return `<div class="card-dividend" title="${App.esc(tip)}"><span>Dividend per share ${part(d)}</span>${latest}</div>`;

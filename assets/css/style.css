@@ -207,8 +207,26 @@ details.more[open] > summary { margin-bottom: 0.6rem; }
 
 .fulltext { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: 1.2rem 1.5rem; white-space: pre-wrap; font-size: 0.93rem; max-width: 100%; }
 .disclaimer { font-size: 0.88rem; color: var(--ink-soft); }
-dl.other dt { font-weight: 600; margin-top: 0.6rem; }
-dl.other dd { margin: 0.1rem 0 0 0; }
+/* more research */
+.more-jump { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.2rem; }
+.more-jump a { font-size: 0.82rem; padding: 0.2rem 0.7rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink); text-decoration: none; background: var(--surface); }
+.more-jump a:hover { border-color: var(--ink-soft); }
+.more-card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: 1rem 1.3rem; margin-bottom: 1rem; scroll-margin-top: 1rem; }
+.more-card h3 { margin: 0 0 0.5rem; font-size: 1.02rem; }
+.more-card.warn { border-color: var(--warn); }
+.more-card.warn h3 { color: var(--warn); }
+.more-row { display: grid; grid-template-columns: minmax(9rem, 30%) 1fr; gap: 0.3rem 1.2rem; padding: 0.55rem 0; border-top: 1px solid var(--rule); font-size: 0.93rem; }
+.more-rows > .more-row:first-child { border-top: none; }
+.more-key { color: var(--ink-soft); font-weight: 600; font-size: 0.88rem; }
+.more-val .badge { margin-right: 0.3rem; font-size: 0.75rem; padding: 0.05rem 0.5rem; }
+.more-rows.nested .more-row { padding: 0.3rem 0; }
+.more-list { margin: 0; padding-left: 1.1rem; }
+.more-list li { margin-bottom: 0.35rem; }
+.trend { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; }
+.trend span { display: inline-flex; flex-direction: column; padding: 0.15rem 0.55rem; border-radius: 6px; background: var(--bg); font-variant-numeric: tabular-nums; }
+.trend small { color: var(--ink-soft); font-size: 0.72rem; }
+.more-rest summary { cursor: pointer; color: var(--ink-soft); font-size: 0.88rem; padding: 0.4rem 0; }
+@media (max-width: 640px) { .more-row { grid-template-columns: 1fr; } }
 
 /* glossary terms */
 .term { border-bottom: 1px dotted currentColor; cursor: help; position: relative; }
