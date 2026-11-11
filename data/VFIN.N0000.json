@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "ticker": "VFIN.N0000",
+  "company": {
+    "name": "Vallibel Finance PLC",
+    "sector": "Banks and finance",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "VFIN.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-12",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024/25 and 2025/26 (Ernst & Young)",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 90.0,
+    "date": "2026-11-11",
+    "source": "CSE closing price (cse.lk)",
+    "note": "12-month range Rs 73.50–115.50. July–September 2026 Rs 84.00–97.70, closed September at Rs 84.50. Rights issue in May 2026 at Rs 72."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "High returns, but growth has outrun its capital",
+    "text": "Vallibel Finance (VFIN.N0000) is a fast-growing finance company controlled by the Vallibel (Dhammika Perera) group, offering leasing, vehicle loans, gold loans and deposits. Its profits are strong (return on equity about 22%, group EPS Rs 8.96 in the six months to September 2026, up 21%), but the growth has been extreme: loans rose 70% in 2025/26 and another 9% by September, funded largely by borrowings that tripled. Capital is now thin even after a May 2026 rights issue at Rs 72: core capital 10.82% against a 10% minimum, total capital 14.75% against 14%. Non-performing loans doubled to Rs 7.5bn in a year, impairment charges rose sixfold, and no dividend was paid for 2025/26. At Rs 90.00 (CSE, 11 November 2026) it trades at 1.02x NAV (Rs 88.25) and 5.4x trailing earnings. Three methods put fair value at about Rs 80, so the price is about 13% above it. I'd buy at up to Rs 67.90 and treat under Rs 59.90 as a strong buy."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "High returns and steady profits, but capital is barely above the minimum and no dividend was paid for 2025/26.",
+    "assessed": "2026-11-12",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "About 22%",
+        "note": "21.8% annualised (H1 2026/27); 19.9% (2025/26), 17.4%, 16.5%; 12.1% in 2022/23."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (finance company)",
+        "pass": false,
+        "value": "Core capital 10.82%",
+        "note": "Minimum 10%; total capital 14.75% (minimum 14%). Down from 16.5% and 21.5% in March 2025 despite a Rs 2.1bn rights issue."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "EPS halved in 2022/23 (Rs 5.69 from Rs 12.37) but no loss."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No dividend for 2025/26",
+        "note": "Rs 2.75 for 2024/25; profit is being retained (and new capital raised) to fund loan growth. Interest cover only 1.5x."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 79.9,
+    "buyPrice": 67.9,
+    "strongBuyPrice": 59.9,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 88.25,
+    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20 (about 0.91x NAV). The dividend model isn't used because no dividend was paid for 2025/26."
+  },
+  "dividend": {
+    "perShare": 2.75,
+    "label": "for 2024/25 (none for 2025/26)",
+    "source": "Annual Report 2025/26, ten-year summary (p. 399)"
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 88.25,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.02,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 5.4,
+      "unit": "x",
+      "note": "Group EPS Rs 16.67"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 21.84,
+      "unit": "%",
+      "note": "Annualised, H1 2026/27"
+    },
+    {
+      "id": "tier1",
+      "label": "Core capital ratio",
+      "value": 10.82,
+      "unit": "%",
+      "note": "Minimum 10%"
+    },
+    {
+      "id": "totalCapital",
+      "label": "Total capital ratio",
+      "value": 14.75,
+      "unit": "%",
+      "note": "Minimum 14%"
+    },
+    {
+      "id": "npl",
+      "label": "Gross non-performing loans",
+      "value": 4.4,
+      "unit": "%",
+      "note": "Rs 7.5bn of Rs 171bn; 2.5% in March"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "None for 2025/26"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 23.8,
+      "unit": "Rs bn",
+      "display": "~Rs 24bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to September 2026 (unaudited)",
+      "text": "Group profit up 31% to Rs 2.35bn (EPS Rs 8.96 against Rs 7.41). Net interest income up 44% to Rs 7.24bn; impairment charges Rs 886m against Rs 140m. ROE 21.8%."
+    },
+    {
+      "title": "Bad loans doubling",
+      "text": "Gross non-performing loans rose to Rs 7.53bn from Rs 3.52bn a year earlier (about 4.4% of loans, from 2.5% in March). Net NPLs Rs 2.16bn against a net negative a year ago."
+    },
+    {
+      "title": "Thin capital despite a rights issue",
+      "text": "A 1-for-8 rights issue at Rs 72 raised Rs 2.12bn in May 2026, but core capital is only 10.82% (minimum 10%) and total capital 14.75% (minimum 14%), because loans keep growing (Rs 171bn, up 9% in six months)."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "EPS Rs 15.12 (group), ROE about 20–22%. Lending up 70% to Rs 156.5bn, borrowings up from Rs 21bn to Rs 70bn. No dividend (Rs 2.75 the year before)."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (company)",
+        "unit": "Rs",
+        "values": [
+          12.37,
+          5.69,
+          9.1,
+          10.82,
+          14.77,
+          16.16
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          27.33,
+          12.08,
+          16.51,
+          17.39,
+          19.9,
+          21.84
+        ],
+        "notes": [
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Annualised H1"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          3.0,
+          5.78,
+          4.29,
+          5.0,
+          6.23,
+          5.4
+        ],
+        "notes": [
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Group EPS, at Rs 90.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          2.0,
+          1.0,
+          2.0,
+          2.75,
+          0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "None",
+          null
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 88.25",
+      "reading": "Group NAV at 30 September 2026; 1.02x."
+    },
+    {
+      "method": "Return on equity",
+      "value": "21.8%",
+      "reading": "High, but partly from very high leverage (debt and deposits about 8x equity)."
+    },
+    {
+      "method": "P/E",
+      "value": "5.4x",
+      "reading": "Trailing group EPS Rs 16.67; year-end P/E 3.0–6.2x over five years."
+    },
+    {
+      "method": "Dividends",
+      "value": "None for 2025/26",
+      "reading": "Profit is retained to fund growth; a dividend model would give only Rs 12–36, so it isn't used."
+    },
+    {
+      "method": "Capital",
+      "value": "Core 10.82%",
+      "reading": "Barely above the 10% minimum; more capital raising (and dilution) is likely if growth continues."
+    },
+    {
+      "method": "Asset quality",
+      "value": "NPL about 4.4%",
+      "reading": "Doubled in a year as the 2025 loan book seasons; impairments up sixfold."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 49.6,
+      "base": 74.7,
+      "bull": 109.3,
+      "weighted": 74.1,
+      "comment": "Book value Rs 88.25 × (ROE − growth) ÷ (cost of equity − growth): ROE 14% / 17% / 20%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 60,
+      "base": 87.5,
+      "bull": 114,
+      "weighted": 84.5,
+      "comment": "2026/27 EPS of Rs 15.00 / 17.50 / 19.00 at 4 / 5 / 6 times."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 48.5,
+      "base": 80.2,
+      "bull": 132.2,
+      "weighted": 81.1,
+      "comment": "ROE moving from 21.8% to 14% / 17% / 20% over ten years; 20% payout."
+    }
+  ],
+  "modelsNote": "A finance company, so residual income and justified price-to-book replace a DCF, alongside P/E. I use a higher cost of equity (19% base) than for the banks because capital is thin, leverage high and bad loans rising.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "21%",
+        "base": "19%",
+        "bull": "17.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "17%",
+        "bull": "20%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "15.00 × 4",
+        "base": "17.50 × 5",
+        "bull": "19.00 × 6"
+      }
+    ],
+    "averages": {
+      "bear": 52.7,
+      "base": 80.8,
+      "bull": 118.5
+    },
+    "common": "10-year government bond about 12.4% plus about 6.5 points for a highly leveraged finance company with thin capital. Base EPS assumes the second half is similar to the first, with impairments still elevated."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "17.5%",
+      "19%",
+      "21%"
+    ],
+    "columns": [
+      "14%",
+      "17%",
+      "20%"
+    ],
+    "values": [
+      [
+        69.7,
+        97.3,
+        130.5
+      ],
+      [
+        58.2,
+        80.2,
+        106.4
+      ],
+      [
+        47.0,
+        63.6,
+        83.3
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 90 needs a long-run ROE of about 18% at a 19% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 79.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 67.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 59.9
+      }
+    ],
+    "averagePrice": 70.3,
+    "totalCost": 35150,
+    "note": "About Rs 35,150 in total, against Rs 45,000 at Rs 90.00.",
+    "realism": "Rs 67.90 is below the 12-month low of Rs 73.50 and the Rs 72 rights price, so it needs a market fall or bad news on loans."
+  },
+  "changeMyView": {
+    "higher": [
+      "Capital rebuilt to 13%+ core without heavy dilution.",
+      "NPLs stabilising below 4% with ROE above 20%.",
+      "Dividends resuming."
+    ],
+    "lower": [
+      "Another rights issue at a low price.",
+      "NPLs rising above 6%.",
+      "Capital ratios breaching the minimum, forcing slower growth.",
+      "Higher funding costs (interest cover is only 1.5x)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the interim reports to September 2026 (unaudited). This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 13% above fair value of Rs 80.",
+    "Expected yearly return at Rs 90": "About 11% a year: no dividend + book growth about 15% − about 4% a year if the price moved to fair value, with high risk.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case −41% (Rs 52.70); bull case +32% (Rs 118.50).",
+    "Confidence": "Low to medium: profits are strong, but capital is thin and bad loans are rising fast.",
+    "Margin of safety": "Buy 15% below fair value (Rs 67.90), strong buy 25% below (Rs 59.90)."
+  },
+  "Business and moat": {
+    "What it does": "Leasing, vehicle loans, gold loans and other lending, funded by deposits and bank borrowings; a subsidiary holds property.",
+    "Moat": "Narrow: part of the Vallibel group, with a growing branch network; competes with banks and larger finance companies."
+  },
+  "Management and governance": {
+    "Ownership": "Vallibel Investments (Pvt) Ltd 51.4% and K.A.D.D. (Dhammika) Perera 21.4%; the Perera family about 7% more. Public float small.",
+    "Auditor": "Ernst & Young.",
+    "Rating": "OK"
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Risk: interest cover 1.5x; funding is mostly deposits and bank borrowings.",
+    "Credit cycle": "Risk: loans grew 70% in a year; NPLs are rising.",
+    "Regulation": "Capital barely above Central Bank minimums.",
+    "Liquidity": "OK."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "High-ROE lender, only at a discount to NAV.",
+    "Sell triggers": "Price above Rs 103.90 (30% above fair value); core capital below the minimum; NPLs above 6%."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 67.90 or lower",
+    "Strong buy": "Rs 59.90 or lower",
+    "Sell trigger": "Rs 103.90 or higher"
+  },
+  "Key ratios (five-year trend)": {
+    "EPS (company)": "2021/22 Rs 12.37 · 2022/23 Rs 5.69 · 2023/24 Rs 9.10 · 2024/25 Rs 10.82 · 2025/26 Rs 14.77",
+    "NAV per share": "Rs 45.25 · Rs 47.09 · Rs 55.10 · Rs 64.23 · Rs 76.59 · Sep 2026 Rs 84.41 (company)",
+    "Growth in advances": "2023/24 11% · 2024/25 35% · 2025/26 70%",
+    "Core capital": "Mar 2025 16.5% · Mar 2026 10.6% · Sep 2026 10.8%",
+    "Gross NPL": "Mar 2025 3.56% · Mar 2026 2.53% · Sep 2026 about 4.4%"
+  },
+  "What this analysis doesn't cover": [
+    "Loan mix by product (gold, vehicle, SME) and where the NPLs are.",
+    "The subsidiary's separate results."
+  ],
+  "fullText": "Summary: Vallibel Finance (VFIN.N0000) is a fast-growing finance company controlled by the Vallibel (Dhammika Perera) group, offering leasing, vehicle loans, gold loans and deposits. Its profits are strong (return on equity about 22%, group EPS Rs 8.96 in the six months to September 2026, up 21%), but the growth has been extreme: loans rose 70% in 2025/26 and another 9% by September, funded largely by borrowings that tripled. Capital is now thin even after a May 2026 rights issue at Rs 72: core capital 10.82% against a 10% minimum, total capital 14.75% against 14%. Non-performing loans doubled to Rs 7.5bn in a year, impairment charges rose sixfold, and no dividend was paid for 2025/26. At Rs 90.00 (CSE, 11 November 2026) it trades at 1.02x NAV (Rs 88.25) and 5.4x trailing earnings. Three methods put fair value at about Rs 80, so the price is about 13% above it. I'd buy at up to Rs 67.90 and treat under Rs 59.90 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 49.6 | 74.7 | 109.3 | 74.1\nP/E method | 60 | 87.5 | 114 | 84.5\nResidual income | 48.5 | 80.2 | 132.2 | 81.1\nAverage | 52.7 | 80.8 | 118.5 | 79.9\n\nBusiness tests: 2 of 4 passed (returns, steady profit; fails capital and dividends), so it's weak: avoid for now.\n\n500-share plan\n200 shares up to Rs 79.90, 150 up to Rs 67.90, 150 up to Rs 59.90."
+}

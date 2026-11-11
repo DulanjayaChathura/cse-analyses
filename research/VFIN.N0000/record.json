@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "ticker": "VFIN.N0000",
+  "localFolder": "vallibel",
+  "updated": "2026-11-12",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,25.pdf",
+      "title": "Annual report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Figures from the 2025/26 report's comparatives."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Financial highlights (pp. 16–17), EPS note 22, ten-year summary (pp. 396–399)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Balance sheet, income statement, rights issue (note 7), selected indicators, shareholders."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 15.12,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, note 22",
+          "note": "Group; company 14.77"
+        },
+        "navPerShare": {
+          "value": 76.59,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16",
+          "note": "Company"
+        },
+        "roe": {
+          "value": 21.65,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "loans": {
+          "value": 156.543,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 16",
+          "note": "Up 70%"
+        },
+        "borrowings": {
+          "value": 70.465,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "deposits": {
+          "value": 83.459,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "tier1": {
+          "value": 10.55,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "totalCapital": {
+          "value": 14.79,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "grossNpl": {
+          "value": 2.53,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16",
+          "note": "None; Rs 2.75 for 2024/25"
+        },
+        "priceYearEnd": {
+          "value": 92.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netInterestIncome": {
+          "value": 7.245,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group; 5.035 a year earlier"
+        },
+        "impairment": {
+          "value": 0.886,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "0.140 a year earlier"
+        },
+        "netProfit": {
+          "value": 2.353,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group; 1.800 a year earlier"
+        },
+        "eps": {
+          "value": 8.96,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group; 7.41 a year earlier"
+        },
+        "navPerShare": {
+          "value": 88.25,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, balance sheet",
+          "note": "Group; company 84.41"
+        },
+        "loans": {
+          "value": 171.39,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet",
+          "note": "149.35 loans + 22.04 leases and HP"
+        },
+        "grossNpa": {
+          "value": 7.526,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, selected indicators",
+          "note": "3.517 a year earlier"
+        },
+        "tier1": {
+          "value": 10.82,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, selected indicators"
+        },
+        "totalCapital": {
+          "value": 14.75,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, selected indicators"
+        },
+        "roe": {
+          "value": 21.84,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, selected indicators"
+        },
+        "rightsIssue": {
+          "value": 2.119,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 7",
+          "note": "1 for 8 at Rs 72, May 2026"
+        },
+        "sharesOutstanding": {
+          "value": 264.885,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, selected indicators",
+          "note": "Millions"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 16.67,
+          "unit": "Rs",
+          "source": "Worked out: 15.12 + 8.96 − 7.41 (group)"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "21% / 19% / 17.5%",
+      "reason": "Bond about 12.4% plus about 6.5 points: thin capital and high leverage.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "14% / 17% / 20%; 5% / 6% / 7%",
+      "reason": "ROE 12–27% over five years; rising NPLs.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "15 × 4 / 17.5 × 5 / 19 × 6",
+      "reason": "H1 Rs 8.96; P/E 3–6x over five years.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Dividend model",
+      "value": "Not used",
+      "reason": "No dividend for 2025/26.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    }
+  ],
+  "openQuestions": [
+    "NPL trend in the December 2026 quarter.",
+    "Capital plans: another rights issue or subordinated debt?",
+    "Dividend for 2026/27."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-12",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "First analysis. Justified P/B, P/E and residual income; business tests 2 of 4 (category 3, avoid for now).",
+      "fairValue": 79.9,
+      "buyPrice": 67.9,
+      "strongBuyPrice": 59.9,
+      "priceAtTime": 90.0,
+      "archive": null
+    }
+  ]
+}

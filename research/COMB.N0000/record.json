@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "ticker": "COMB.N0000",
+  "localFolder": "commercial",
+  "updated": "2026-11-12",
+  "reportsRead": [
+    {
+      "file": "Commercial Bank of Ceylon PLC - Annual Report 2023.pdf",
+      "title": "Annual report 2023",
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Financial highlights only."
+    },
+    {
+      "file": "Commercial Bank of Ceylon PLC - Annual Report 2024.pdf",
+      "title": "Annual report 2024",
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Financial highlights only."
+    },
+    {
+      "file": "Annual Report as at 31st December 2025.pdf",
+      "title": "Annual report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Financial highlights and goals (pp. 20–21), decade at a glance (pp. 212–215)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the June interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Income statement, balance sheet, ratios (p. 18), share information (p. 19)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 60.938,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Group"
+        },
+        "eps": {
+          "value": 36.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 203.04,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Group"
+        },
+        "dividendPerShare": {
+          "value": 10.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 20",
+          "note": "8.00 cash + 2.50 shares"
+        },
+        "roe": {
+          "value": 19.61,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Group"
+        },
+        "cet1": {
+          "value": 13.035,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Bank"
+        },
+        "netStage3": {
+          "value": 1.54,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 20"
+        },
+        "priceYearEnd": {
+          "value": 200.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 20",
+          "note": "Non-voting 190.50"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netInterestIncome": {
+          "value": 79.693,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, income statement",
+          "note": "Group; 68.812 a year earlier"
+        },
+        "impairment": {
+          "value": 14.848,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, income statement",
+          "note": "Group; 11.127 a year earlier; Q2 11.665 vs 3.976"
+        },
+        "netProfit": {
+          "value": 35.423,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, income statement",
+          "note": "Group; 31.165 a year earlier"
+        },
+        "eps": {
+          "value": 21.14,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, income statement",
+          "note": "Group; 18.87 a year earlier"
+        },
+        "navPerShare": {
+          "value": 216.14,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, balance sheet",
+          "note": "Group"
+        },
+        "roe": {
+          "value": 20.28,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 18",
+          "note": "Bank"
+        },
+        "cet1": {
+          "value": 13.234,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 18",
+          "note": "Bank"
+        },
+        "grossStage3": {
+          "value": 5.32,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 18"
+        },
+        "nim": {
+          "value": 4.51,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 18"
+        },
+        "sharesOutstanding": {
+          "value": 1654.801,
+          "unit": "",
+          "source": "CSE, 11 Nov 2026",
+          "note": "Millions: 1,557.475 voting + 97.326 non-voting"
+        }
+      }
+    },
+    {
+      "period": "TTM Jun 2026",
+      "periodEnd": "2026-06-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 39.13,
+          "unit": "Rs",
+          "source": "Worked out: 36.86 + 21.14 − 18.87"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "20% / 18% / 16.5%",
+      "reason": "Same as Sampath: bond about 12.4% plus a bank premium.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "15% / 17% / 19%; 5% / 6% / 7%",
+      "reason": "ROE 19.5–22% in 2024–2025, 10–15% in 2021–2023.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "2026 EPS × P/E",
+      "value": "38 × 4.5 / 41 × 5.5 / 44 × 6.5",
+      "reason": "H1 Rs 21.14; higher impairments in H2.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Dividend per share, growth",
+      "value": "Rs 10.50, 4% / Rs 11.50, 7% / Rs 12.50, 9%",
+      "reason": "Rs 10.50 for 2025.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    }
+  ],
+  "openQuestions": [
+    "September 2026 quarter: did impairments stay high?",
+    "Capital ratios after loan growth; any capital raising.",
+    "2026 dividend."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-12",
+      "basedOn": "Interim to 30 Jun 2026",
+      "summary": "First analysis. Justified P/B, P/E, dividends and residual income; business tests 4 of 4 (category 2, watch list).",
+      "fairValue": 182.0,
+      "buyPrice": 154.7,
+      "strongBuyPrice": 136.5,
+      "priceAtTime": 224.75,
+      "archive": null
+    }
+  ]
+}

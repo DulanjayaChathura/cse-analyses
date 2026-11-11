@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CFIN.N0000",
+  "localFolder": "central finance",
+  "updated": "2026-11-12",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2023,24.pdf",
+      "title": "Annual report 2023/24",
+      "period": "FY 2023/24",
+      "periodEnd": "2024-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Figures taken from the 2025/26 decade summary."
+    },
+    {
+      "file": "Annual Report 2024,25.pdf",
+      "title": "Annual report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Figures taken from the 2025/26 report's comparatives."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-12",
+      "note": "Financial highlights (p. 6), decade at a glance (pp. 318–319), Nations Trust Bank stake note."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Superseded by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-12",
+      "note": "Income statement, balance sheet, capital and asset-quality ratios, shareholders."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 10.25,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 6",
+          "note": "Group, to shareholders"
+        },
+        "eps": {
+          "value": 45.09,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 6",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 375.23,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 6",
+          "note": "Group"
+        },
+        "dividendPerShare": {
+          "value": 6.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 6"
+        },
+        "roe": {
+          "value": 10.52,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6",
+          "note": "Company"
+        },
+        "loans": {
+          "value": 104.824,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 6"
+        },
+        "deposits": {
+          "value": 48.812,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 6"
+        },
+        "grossNpl": {
+          "value": 1.65,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6"
+        },
+        "tier1": {
+          "value": 35.95,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6"
+        },
+        "priceYearEnd": {
+          "value": 228.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 6"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netInterestIncome": {
+          "value": 7.643,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Group; 6.901 a year earlier"
+        },
+        "associateProfit": {
+          "value": 3.328,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Nations Trust Bank; 2.315 a year earlier"
+        },
+        "netProfit": {
+          "value": 6.531,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Group, to shareholders; 5.570 a year earlier"
+        },
+        "netProfitCompany": {
+          "value": 2.862,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "3.328 a year earlier"
+        },
+        "eps": {
+          "value": 28.73,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Group; 24.50 a year earlier"
+        },
+        "navPerShare": {
+          "value": 395.47,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, balance sheet"
+        },
+        "loans": {
+          "value": 118.93,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet",
+          "note": "22.58 loans + 96.35 leases and HP"
+        },
+        "borrowings": {
+          "value": 29.937,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet"
+        },
+        "deposits": {
+          "value": 51.153,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet"
+        },
+        "tier1": {
+          "value": 31.86,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, selected ratios"
+        },
+        "grossStage3": {
+          "value": 1.79,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, selected ratios"
+        },
+        "ntbStakePct": {
+          "value": 19.72,
+          "unit": "%",
+          "source": "Annual Report 2025/26, associate note",
+          "note": "9.84 + 4.92 + 4.96; must fall to 15%"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 49.32,
+          "unit": "Rs",
+          "source": "Worked out: 45.09 + 28.73 − 24.50"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "19.5% / 18% / 16.5%",
+      "reason": "Bond about 12.4% plus about 5.5 points.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "11% / 12.5% / 14%; growth 5% / 6% / 7%",
+      "reason": "Group ROE 12–14% for five years.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "48 × 4.5 / 52 × 5.5 / 54 × 6.5",
+      "reason": "H1 Rs 28.73; ten-year P/E average about 5.2x.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Dividend model",
+      "value": "Not used",
+      "reason": "Payout about 14% of group profit.",
+      "since": "2026-11-12"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-12"
+    }
+  ],
+  "openQuestions": [
+    "How and when the Nations Trust Bank stake is cut to 15%, and at what price.",
+    "Company profit trend as borrowing costs rise; net interest margin.",
+    "Asset quality of the 2025–2026 loan growth.",
+    "2025/26 final dividend and any payout increase."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-12",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "First analysis. Justified P/B, P/E and residual income; business tests 3 of 4 (category 2, watch list).",
+      "fairValue": 219.3,
+      "buyPrice": 186.4,
+      "strongBuyPrice": 164.4,
+      "priceAtTime": 231.5,
+      "archive": null
+    }
+  ]
+}

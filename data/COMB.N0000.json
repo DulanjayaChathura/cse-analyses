@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "ticker": "COMB.N0000",
+  "company": {
+    "name": "Commercial Bank of Ceylon PLC",
+    "sector": "Banks",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "COMB.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "COMB.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-12",
+  "resultsCovered": {
+    "label": "Six months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2023, 2024 and 2025",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 224.75,
+    "date": "2026-11-11",
+    "source": "CSE closing price (cse.lk)",
+    "note": "Non-voting Rs 195.50. 12-month range: voting Rs 170.00–235.25, non-voting Rs 176.00–210.00. Closed 2025 at Rs 200.75 (voting)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A top-quality bank, priced a little ahead of its value",
+    "text": "Commercial Bank of Ceylon (COMB.N0000 voting, COMB.X0000 non-voting) is Sri Lanka's largest private bank, with Rs 3.74tn of assets and a Bangladesh operation. It is a strong bank: return on equity 20% (first half of 2026), net interest margin 4.5%, a 38% cost-to-income ratio, CET1 capital 13.2% against an 8.5% minimum, and a Rs 10.50 dividend for 2025. At Rs 224.75 (CSE, 11 November 2026) it trades at 1.04x its group NAV of Rs 216.14 and 5.7x trailing earnings. Four methods put fair value at about Rs 182, so the voting share is about 23% above it; the non-voting share (Rs 195.50, same dividends) is about 7% above. I'd buy at up to Rs 154.70 and treat under Rs 136.50 as a strong buy. Watch impairments: second-quarter charges nearly tripled to Rs 11.7bn, which the bank linked to the geopolitical environment, and gross Stage 3 loans are still 5.3%."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "High returns, sound capital, profitable through the crisis and a steady dividend.",
+    "assessed": "2026-11-12",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "About 20%",
+        "note": "Bank ROE 20.3% (H1 2026), 19.5% (2025), 22.1% (2024; 16.6% normalised); 9.8–14.7% in 2021–2023."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (bank)",
+        "pass": true,
+        "value": "CET1 13.2%",
+        "note": "Minimum 8.5%; total capital 16.6% (minimum 14%); leverage ratio 7.9%."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit dipped in 2023 (ROE 9.8%) during the debt restructuring; 2024 included restructuring one-offs."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "4.7% yield",
+        "note": "Rs 10.50 for 2025 (Rs 8.00 cash + Rs 2.50 in shares); about 29% of profit paid out."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 182.0,
+    "buyPrice": 154.7,
+    "strongBuyPrice": 136.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 216.14,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.84x group NAV). The same levels apply to both share classes."
+  },
+  "dividend": {
+    "perShare": 10.5,
+    "label": "for 2025 (Rs 8.00 cash + Rs 2.50 in new shares)",
+    "source": "Annual Report 2025, financial highlights (p. 20)"
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 216.14,
+      "unit": "Rs",
+      "note": "30 June 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.04,
+      "unit": "x",
+      "note": "Non-voting 0.90x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 5.7,
+      "unit": "x",
+      "note": "Group EPS Rs 39.13"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (H1 2026)",
+      "value": 20.28,
+      "unit": "%",
+      "note": "Bank, annualised"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 4.7,
+      "unit": "%",
+      "note": "Rs 10.50 for 2025"
+    },
+    {
+      "id": "nim",
+      "label": "Net interest margin",
+      "value": 4.51,
+      "unit": "%"
+    },
+    {
+      "id": "cet1",
+      "label": "CET1 capital ratio",
+      "value": 13.23,
+      "unit": "%",
+      "note": "Minimum 8.5%"
+    },
+    {
+      "id": "stage3",
+      "label": "Gross Stage 3 loans",
+      "value": 5.32,
+      "unit": "%",
+      "note": "Net 1.38%; coverage 74%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 369,
+      "unit": "Rs bn",
+      "display": "~Rs 369bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "First half of 2026",
+      "text": "Group profit up 13.7% to Rs 35.4bn (EPS Rs 21.14 against Rs 18.87). Net interest income up 15.8% to Rs 79.7bn; total operating income up 17.9%. ROE 20.3%, NIM 4.51%, cost-to-income 37.8%."
+    },
+    {
+      "title": "Impairments jumped in the second quarter",
+      "text": "Impairment charges were Rs 11.7bn in April–June against Rs 4.0bn a year earlier (Rs 14.8bn for the half, up 33%), which the bank linked to the geopolitical environment. Second-quarter profit still rose 8%."
+    },
+    {
+      "title": "2025",
+      "text": "Group profit Rs 60.9bn (up 9%), EPS Rs 36.86. Gross loans up 37% to Rs 2.09tn. Dividend Rs 10.50 (Rs 8.00 cash, Rs 2.50 scrip). Net Stage 3 ratio fell to 1.54% from 2.76%."
+    },
+    {
+      "title": "Capital",
+      "text": "CET1 13.2% and total capital 16.6% at June 2026, down from 14.2% and 18.1% at end-2024 as loans grew fast; still well above minimums."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (group)",
+        "unit": "Rs",
+        "values": [
+          null,
+          18.13,
+          15.37,
+          37.94,
+          36.86,
+          39.13
+        ],
+        "notes": [
+          "Not read",
+          "As first reported",
+          "Restated",
+          "Restated; restructuring gains",
+          null,
+          "To Jun 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity (bank)",
+        "unit": "%",
+        "values": [
+          14.66,
+          12.46,
+          9.78,
+          22.06,
+          19.51,
+          20.28
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "16.6% normalised",
+          null,
+          "H1 2026, annualised"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (bank, year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          6.0,
+          3.89,
+          5.6,
+          5.7
+        ],
+        "notes": [
+          "Not read",
+          "Not read",
+          "Rounded",
+          null,
+          null,
+          "At Rs 224.75"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          7.5,
+          4.5,
+          6.5,
+          9.5,
+          10.5,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Rs 8.00 cash + Rs 2.50 shares",
+          "Paid yearly"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 216.14",
+      "reading": "Group NAV at 30 June 2026; voting 1.04x, non-voting 0.90x."
+    },
+    {
+      "method": "Return on equity",
+      "value": "20.3%",
+      "reading": "First half of 2026 (bank). Above my 18% cost of equity, so the bank is worth a little above book in the base case."
+    },
+    {
+      "method": "P/E",
+      "value": "5.7x",
+      "reading": "Trailing group EPS Rs 39.13; year-end P/E 3.9x (2024), 5.6x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "4.7% yield",
+      "reading": "Rs 10.50 for 2025, about 29% of profit (22% in cash)."
+    },
+    {
+      "method": "Capital",
+      "value": "CET1 13.2%",
+      "reading": "Comfortable, but has fallen as loans grew 37% in 2025."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 5.32%",
+      "reading": "Gross Stage 3 down from 5.81%; 74% covered. Watch the jump in second-quarter impairments."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 144.1,
+      "base": 198.1,
+      "bull": 273.0,
+      "weighted": 196.9,
+      "comment": "Book value Rs 216.14 × (ROE − growth) ÷ (cost of equity − growth): ROE 15% / 17% / 19%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 171.0,
+      "base": 225.5,
+      "bull": 286.0,
+      "weighted": 221.2,
+      "comment": "2026 EPS of Rs 38 / 41 / 44 at 4.5 / 5.5 / 6.5 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 67.8,
+      "base": 99.2,
+      "bull": 141.5,
+      "weighted": 98.2,
+      "comment": "Rs 10.50 / 11.50 / 12.50 a share, growing 4% / 7% / 9% for five years, then 5% / 6% / 7%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 144.6,
+      "base": 211.4,
+      "bull": 311.1,
+      "weighted": 211.3,
+      "comment": "ROE moving from 20% to 15% / 17% / 19% over ten years; 29% payout."
+    }
+  ],
+  "modelsNote": "A bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends (same approach as Sampath and HNB).",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20%",
+        "base": "18%",
+        "bull": "16.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "15%",
+        "base": "17%",
+        "bull": "19%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026 EPS × P/E",
+        "bear": "38 × 4.5",
+        "base": "41 × 5.5",
+        "bull": "44 × 6.5"
+      },
+      {
+        "label": "Dividend per share, growth",
+        "bear": "Rs 10.50, 4%",
+        "base": "Rs 11.50, 7%",
+        "bull": "Rs 12.50, 9%"
+      }
+    ],
+    "averages": {
+      "bear": 131.9,
+      "base": 183.6,
+      "bull": 252.9
+    },
+    "common": "10-year government bond about 12.4% (9 Nov 2026) plus a premium for a leveraged bank with large government-bond holdings. Base 2026 EPS assumes a second half similar to the first, less higher impairments."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16.5%",
+      "18%",
+      "20%"
+    ],
+    "columns": [
+      "15%",
+      "17%",
+      "19%"
+    ],
+    "values": [
+      [
+        209.4,
+        255.5,
+        306.8
+      ],
+      [
+        175.0,
+        211.4,
+        252.0
+      ],
+      [
+        142.0,
+        169.3,
+        199.7
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 224.75 needs a long-run ROE near 18% at an 18% cost of equity, or a 16.5% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 182.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 154.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 136.5
+      }
+    ],
+    "averagePrice": 160.16,
+    "totalCost": 80080,
+    "note": "About Rs 80,080 in total, against Rs 112,375 at Rs 224.75. Prices apply to either share class.",
+    "realism": "Rs 154.70 is below the 12-month lows (voting Rs 170, non-voting Rs 176), so it needs a broad market fall. The non-voting share (Rs 195.50) is the cheaper way in."
+  },
+  "changeMyView": {
+    "higher": [
+      "ROE holding at 20% with impairments easing.",
+      "Interest rates falling (each point off the cost of equity adds roughly Rs 25–30 a share).",
+      "Higher cash dividends."
+    ],
+    "lower": [
+      "Impairments staying at second-quarter levels.",
+      "Capital ratios falling further with loan growth (a rights issue would dilute).",
+      "Higher bank taxes or another sovereign debt event."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2023–2025 annual reports and the interim reports to June 2026. The September 2026 quarter wasn't in the folder. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: voting share about 23% above fair value of Rs 182; non-voting about 7% above.",
+    "Expected yearly return at Rs 224.75": "About 10% a year: dividend 4.7% + book growth about 12% − about 7% a year if the price moved to fair value.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case −41% (Rs 131.90); bull case +13% (Rs 252.90).",
+    "Confidence": "Medium to high: a strong bank; impairments and capital are the uncertainties.",
+    "Margin of safety": "Buy 15% below fair value (Rs 154.70), strong buy 25% below (Rs 136.50)."
+  },
+  "Business and moat": {
+    "What it does": "Sri Lanka's largest private commercial bank: corporate, SME and retail banking, 272 branches in Sri Lanka and 20 in Bangladesh, plus a small Maldives operation.",
+    "Moat": "Wide: scale, low-cost deposits (Rs 3.0tn), the highest capital base among private banks, strong brand."
+  },
+  "Management and governance": {
+    "Ownership": "Widely held: Y.S.H.I. Silva 9.9%, D.P. Pieris 9.6%, DFCC Bank 9.6%, EPF 7.3%, IFC 7.1%, Sri Lanka Insurance 5.0%.",
+    "Rating": "OK"
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: policy rate 8.75%; bond yields about 12.4%.",
+    "Sovereign exposure": "Risk: large government-securities holdings; the 2022–2024 restructuring cut profits.",
+    "Liquidity": "OK: heavily traded."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "Top-quality bank with 20% ROE and a 4–5% yield, best bought below book.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 236.60); CET1 below 11%; ROE below 15% for a year."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 154.70 or lower (either class)",
+    "Strong buy": "Rs 136.50 or lower",
+    "Sell trigger": "Rs 236.60 or higher"
+  },
+  "Key ratios (five-year trend)": {
+    "Bank ROE": "2021 14.7% · 2022 12.5% · 2023 9.8% · 2024 22.1% · 2025 19.5% · H1 2026 20.3%",
+    "Dividend per share": "2021 Rs 7.50 · 2022 Rs 4.50 · 2023 Rs 6.50 · 2024 Rs 9.50 · 2025 Rs 10.50",
+    "CET1 (bank)": "2021 11.9% · 2022 11.4% · 2023 11.4% · 2024 14.2% · 2025 13.0% · Jun 2026 13.2%",
+    "Net Stage 3 ratio": "2023 5.85% · 2024 2.76% · 2025 1.54% · Jun 2026 1.38%",
+    "Group NAV per share": "2023 Rs 167.77 · 2024 Rs 174.58 · 2025 Rs 203.04 · Jun 2026 Rs 216.14"
+  },
+  "What this analysis doesn't cover": [
+    "The September 2026 quarter (not in the folder).",
+    "Detail of the second-quarter impairment increase."
+  ],
+  "fullText": "Summary: Commercial Bank of Ceylon (COMB.N0000 voting, COMB.X0000 non-voting) is Sri Lanka's largest private bank, with Rs 3.74tn of assets and a Bangladesh operation. It is a strong bank: return on equity 20% (first half of 2026), net interest margin 4.5%, a 38% cost-to-income ratio, CET1 capital 13.2% against an 8.5% minimum, and a Rs 10.50 dividend for 2025. At Rs 224.75 (CSE, 11 November 2026) it trades at 1.04x its group NAV of Rs 216.14 and 5.7x trailing earnings. Four methods put fair value at about Rs 182, so the voting share is about 23% above it; the non-voting share (Rs 195.50, same dividends) is about 7% above. I'd buy at up to Rs 154.70 and treat under Rs 136.50 as a strong buy. Watch impairments: second-quarter charges nearly tripled to Rs 11.7bn, which the bank linked to the geopolitical environment, and gross Stage 3 loans are still 5.3%.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 144.1 | 198.1 | 273.0 | 196.9\nP/E method | 171.0 | 225.5 | 286.0 | 221.2\nDividend model | 67.8 | 99.2 | 141.5 | 98.2\nResidual income | 144.6 | 211.4 | 311.1 | 211.3\nAverage | 131.9 | 183.6 | 252.9 | 182.0\n\nBusiness tests: 4 of 4 passed, so it's a good business at a high price: watch list. The non-voting share is the cheaper way in.\n\n500-share plan\n200 shares up to Rs 182.00, 150 up to Rs 154.70, 150 up to Rs 136.50 (either class)."
+}
