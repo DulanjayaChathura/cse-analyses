@@ -53,6 +53,16 @@
       "audited": false,
       "readOn": "2026-11-11",
       "note": "Re-read 2026-11-11 with page references; reviewed by Deloitte. First read 2026-10-26."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-11",
+      "note": "Reviewed by Deloitte (10 Nov 2026). Balance sheet p. 2, nine months p. 3, quarter p. 4, cash flow p. 7, segments note 3 (pp. 8–10), share price and shareholders pp. 11, capex commitments and events after the period p. 14."
     }
   ],
   "periods": [
@@ -471,19 +481,19 @@
         "revenue": {
           "value": 45.69,
           "unit": "Rs bn",
-          "source": "Worked out: 2025 less the other three quarters",
-          "note": "Quarter"
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; comparative"
         },
         "netProfit": {
-          "value": 5.696,
+          "value": 5.693,
           "unit": "Rs bn",
-          "source": "Worked out: 2025 less the other three quarters",
-          "note": "Quarter"
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; comparative. Was 5.696, worked out from the year less other quarters (not a restatement)"
         },
         "eps": {
           "value": 0.62,
           "unit": "Rs",
-          "source": "September-quarter results as reported by EconomyNext and Financial Chronicle (11 Nov 2026); Q3 report not yet in the folder"
+          "source": "Interim to 30 Sep 2026, p. 4"
         }
       }
     },
@@ -708,33 +718,289 @@
       "audited": false,
       "figures": {
         "revenue": {
-          "value": 48.54,
+          "value": 48.537,
           "unit": "Rs bn",
-          "source": "September-quarter results as reported by EconomyNext and Financial Chronicle (11 Nov 2026); Q3 report not yet in the folder",
+          "source": "Interim to 30 Sep 2026, p. 4",
           "note": "Quarter"
         },
-        "netProfit": {
-          "value": 9.24,
+        "grossProfit": {
+          "value": 28.329,
           "unit": "Rs bn",
-          "source": "September-quarter results as reported by EconomyNext and Financial Chronicle (11 Nov 2026); Q3 report not yet in the folder",
+          "source": "Interim to 30 Sep 2026, p. 4",
           "note": "Quarter"
+        },
+        "grossMarginPct": {
+          "value": 58.4,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter"
+        },
+        "operatingProfit": {
+          "value": 13.473,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter"
+        },
+        "financeCosts": {
+          "value": 1.91,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; 3.294 a year earlier"
+        },
+        "netProfit": {
+          "value": 9.245,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; 9.243 to owners"
         },
         "eps": {
           "value": 1.0,
           "unit": "Rs",
-          "source": "September-quarter results as reported by EconomyNext and Financial Chronicle (11 Nov 2026); Q3 report not yet in the folder",
+          "source": "Interim to 30 Sep 2026, p. 4",
           "note": "Quarter"
         },
         "fxGainLoss": {
           "value": -0.918,
           "unit": "Rs bn",
-          "source": "September-quarter results as reported by EconomyNext and Financial Chronicle (11 Nov 2026); Q3 report not yet in the folder"
+          "source": "Interim to 30 Sep 2026, p. 4"
         },
         "dividendPerShare": {
           "value": 0.7,
           "unit": "Rs",
-          "source": "HNB broker summary 11 Nov 2026",
-          "note": "Third interim for 2026; ex-dividend 20 Nov, paid 10 Dec"
+          "source": "Interim to 30 Sep 2026, note 20 (p. 14)",
+          "note": "Third interim for 2026, declared after the quarter; ex-dividend 20 Nov, paid 10 Dec (HNB broker summary)"
+        },
+        "operatingCashFlow": {
+          "value": 20.697,
+          "unit": "Rs bn",
+          "source": "Worked out: nine months (p. 7) less H1"
+        },
+        "freeCashFlow": {
+          "value": 12.54,
+          "unit": "Rs bn",
+          "source": "Worked out: nine months less H1"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 144.052,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Nine months; 133.109 a year earlier"
+        },
+        "grossProfit": {
+          "value": 82.606,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "grossMarginPct": {
+          "value": 57.3,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "operatingProfit": {
+          "value": 39.331,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "27.640 a year earlier"
+        },
+        "depreciationAmortisation": {
+          "value": 36.863,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 8)",
+          "note": "Includes impairment; 36.006 a year earlier"
+        },
+        "ebitda": {
+          "value": 76.193,
+          "unit": "Rs bn",
+          "source": "Worked out: operating profit + depreciation, amortisation and impairment"
+        },
+        "financeCosts": {
+          "value": 6.117,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "8.230 a year earlier"
+        },
+        "netProfit": {
+          "value": 28.546,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "28.543 to owners; 14.885 a year earlier"
+        },
+        "eps": {
+          "value": 3.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "1.62 a year earlier"
+        },
+        "fxGainLoss": {
+          "value": -0.412,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "-1.040 a year earlier"
+        },
+        "dividendPerShare": {
+          "value": 2.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Paid in the nine months: Rs 1.50 final for 2025 + two Rs 0.70 interims for 2026 (Rs 26.68bn)"
+        },
+        "operatingCashFlow": {
+          "value": 67.084,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "50.643 a year earlier"
+        },
+        "capexPaid": {
+          "value": 19.019,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "PPE 15.37 + intangibles 3.65; 19.838 a year earlier"
+        },
+        "capexBooked": {
+          "value": 34.987,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 9)",
+          "note": "Segment capital expenditure; 16.962 a year earlier"
+        },
+        "leasePrincipal": {
+          "value": 3.164,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7"
+        },
+        "freeCashFlow": {
+          "value": 44.9,
+          "unit": "Rs bn",
+          "source": "Worked out: operating cash flow less capex paid and lease principal (p. 7); 27.86 a year earlier"
+        },
+        "contractedCapex": {
+          "value": 15.707,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 19 (p. 14)"
+        },
+        "navPerShare": {
+          "value": 9.99,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "totalEquity": {
+          "value": 91.876,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "borrowings": {
+          "value": 64.112,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "16.80 long-term + 47.31 short-term; 76.49 at Dec 2025"
+        },
+        "leaseLiabilities": {
+          "value": 13.205,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "cash": {
+          "value": 20.575,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "netDebt": {
+          "value": 56.74,
+          "unit": "Rs bn",
+          "source": "Worked out from p. 2",
+          "note": "Borrowings and leases less cash; 43.54 without leases"
+        },
+        "debtToEquity": {
+          "value": 0.62,
+          "unit": "x",
+          "source": "Worked out: net debt including leases ÷ equity"
+        },
+        "provisionOtherLiabilities": {
+          "value": 8.979,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "9.139 at Mar 2026, 8.929 at Jun 2026, 4.957 at Dec 2025; still not explained"
+        },
+        "sharesOutstanding": {
+          "value": 9200.335,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 7 (p. 10)",
+          "note": "Millions"
+        },
+        "publicFloatPct": {
+          "value": 15.85,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, note 11 (p. 11)",
+          "note": "29,367 public shareholders (24,876 at Dec 2025)"
+        },
+        "epfHoldingPct": {
+          "value": 3.08,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, note 10 (p. 11)"
+        },
+        "priceRangeQuarter": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 8 (p. 11)",
+          "note": "High 49.90, low 43.00, last 45.80"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 190.58,
+          "unit": "Rs bn",
+          "source": "Worked out: 2025 + 9M 2026 − 9M 2025"
+        },
+        "netProfit": {
+          "value": 34.42,
+          "unit": "Rs bn",
+          "source": "Worked out: 2025 + 9M 2026 − 9M 2025",
+          "note": "Owners"
+        },
+        "eps": {
+          "value": 3.74,
+          "unit": "Rs",
+          "source": "Worked out: 2.26 + 3.10 − 1.62"
+        },
+        "roe": {
+          "value": 39.2,
+          "unit": "%",
+          "source": "Worked out: profit ÷ average of Sep 2025 and Sep 2026 equity"
+        },
+        "ebitda": {
+          "value": 98.54,
+          "unit": "Rs bn",
+          "source": "Worked out: 2025 EBITDA 86.0 + 9M 2026 76.19 − 9M 2025 63.65"
+        },
+        "netDebtToEbitda": {
+          "value": 0.58,
+          "unit": "x",
+          "source": "Worked out"
+        },
+        "freeCashFlow": {
+          "value": 50.7,
+          "unit": "Rs bn",
+          "source": "Worked out: 33.66 + 44.90 − 27.86",
+          "note": "Flattered: capex booked exceeds capex paid"
+        },
+        "grossMarginPct": {
+          "value": 57.1,
+          "unit": "%",
+          "source": "Worked out"
         }
       }
     }
@@ -790,12 +1056,12 @@
     }
   ],
   "openQuestions": [
-    "Add the September 2026 interim report: confirm the Q3 figures, the September balance sheet and capex paid.",
-    "Why did the asset-retirement provision jump by Rs 4.2bn in January–March 2026?",
-    "How much will 5G capex absorb in 2026–2027, and does the Rs 0.70 quarterly dividend hold?",
+    "Full-year 2026 results (due early February 2027): final dividend, EBITDA margin, and whether capex paid catches up with capex booked (Rs 35.0bn booked vs Rs 19.0bn paid in nine months).",
+    "Why did the asset-retirement provision rise by about Rs 4bn in January–March 2026? Look in the 2026 annual report's provisions note.",
+    "5G spectrum cost and 2027 capex guidance; does the Rs 0.70 quarterly dividend hold as payments rise?",
     "Any change to the BOI 2% revenue-tax arrangement or telecom levies in the 2027 budget.",
-    "Full-year 2026 results (due early February 2027): final dividend and EBITDA margin.",
-    "Which affiliate's receivable was impaired by Rs 1.06bn in 2025?"
+    "Which affiliate's receivable was impaired by Rs 1.06bn in 2025?",
+    "Effect of deconsolidating Digital Health (now an associate) in Q4 2026."
   ],
   "changeLog": [
     {
@@ -817,6 +1083,16 @@
       "strongBuyPrice": 24.0,
       "priceAtTime": 49.7,
       "archive": "research/DIAL.N0000/history/2026-10-26.json"
+    },
+    {
+      "date": "2026-11-11",
+      "basedOn": "Interim to 30 Sep 2026 (reviewed)",
+      "summary": "Read the full September 2026 interim report: it confirmed the press figures used this morning (Q3 profit Rs 9.24bn, EPS Rs 1.00). Q3 2025 profit set to the reported Rs 5.693bn (was 5.696 worked out). New September balance sheet: NAV Rs 9.99, borrowings Rs 64.1bn, net debt 0.58x EBITDA. Valuation inputs kept: trailing FCFE Rs 50.7bn is above the Rs 43bn base, but Rs 35bn of capex was booked in nine months against Rs 19bn paid, so not raised. Residual income rises with the higher book value (base Rs 23.0 → 23.7). Business tests 3 of 4; category unchanged (watch list).",
+      "fairValue": 32.2,
+      "buyPrice": 27.4,
+      "strongBuyPrice": 24.2,
+      "priceAtTime": 49.7,
+      "archive": "research/DIAL.N0000/history/2026-11-11.json"
     }
   ]
 }
