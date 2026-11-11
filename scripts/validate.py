@@ -24,6 +24,16 @@ KNOWN_SECTIONS = [
 ]
 CORE = {"schemaVersion", "ticker", "analysisDate"}
 
+# Sections from the new research framework. Until the site has its own layout
+# for them, they are shown under "Other details" without raising a warning.
+FRAMEWORK_SECTIONS = {
+    "Decision box", "Business and moat", "Management and governance", "Accounting quality",
+    "Peer and history comparison", "Sri Lanka checks", "Crisis stress test (2022-style)",
+    "Portfolio fit", "Broker view", "Investment case and sell rules",
+    "Suggested Telegram alerts (not set; needs your approval)", "Key ratios (five-year trend)",
+    "What this analysis doesn't cover",
+}
+
 
 def is_num(v):
     return isinstance(v, (int, float)) and not isinstance(v, bool)
@@ -296,7 +306,7 @@ def validate_text(text, filename):
             bad.append(key)
             warnings.append(f"Section '{key}' has problems and will be shown as not available: " + "; ".join(problems[:5]))
     for key in data:
-        if key not in CORE and key not in CHECKERS:
+        if key not in CORE and key not in CHECKERS and key not in FRAMEWORK_SECTIONS:
             warnings.append(f"Unknown section '{key}' (shown under 'Other details').")
     return data, errors, warnings, bad
 
