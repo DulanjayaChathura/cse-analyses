@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "ticker": "COCO.N0000",
+  "company": {
+    "name": "Renuka Foods PLC",
+    "sector": "Food, beverage and tobacco",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "COCO.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "COCO.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-12",
+  "resultsCovered": {
+    "label": "Three months to 30 June 2026 (audited year to 31 March 2026)",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024/25",
+      "Annual report 2025/26 (KPMG, clean opinion) and its errata (amended dividend notice)",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 22.7,
+    "date": "2026-11-11",
+    "source": "CSE closing price (cse.lk)",
+    "note": "Non-voting Rs 22.20. After the 2-for-1 split (February 2026): April–June 2026 range Rs 24.90–34.00; closed March 2026 at Rs 28.90. The CSE's 12-month high of Rs 79.20 is from before the split (about Rs 39.60 after it)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A coconut-boom recovery, priced as if the good year will last",
+    "text": "Renuka Foods (COCO.N0000 voting, COCO.X0000 non-voting) owns Richlife dairy and Shaw Wallace (canned fish, soya, snacks) outright and 53% of Renuka Agri Foods, the coconut-milk exporter. 2025/26 was a strong year after two losses: coconut exports rose to Rs 9.75bn from Rs 6.27bn, group profit was Rs 669m and owners' profit Rs 568m (EPS Rs 1.62 after the February 2-for-1 split). But that is a 9.5% return on equity in a good year; over five years owners' profit averaged only about Rs 110m a year (two losses), operating cash flow over three years was negative, and the dividend for 2025/26 is Rs 0.19 (half in new shares). At Rs 22.70 (CSE, 11 November 2026) the share trades at 1.29x its NAV of about Rs 17.60 and 13.5x trailing earnings, which needs a return on equity of about 20% to justify. Four methods put fair value at about Rs 13.90, so the price is about 63% above it. I'd buy at up to Rs 11.80 and treat under Rs 10.40 as a strong buy. On market prices it looks closer to fair: its 53% of Renuka Agri Foods alone is worth about Rs 12.40 a share. Governance is a concern: the group paid Rs 782m for 16% of Renuka Enterprises, the family company that is also Renuka Foods' largest shareholder."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Moderate debt, but low returns, losses in two of the last five years, and negative cash flow over three years.",
+    "assessed": "2026-11-12",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more (and ROCE 12% or more)",
+        "pass": false,
+        "value": "Owners' ROE 9.5% (2025/26)",
+        "note": "−7% in 2024/25, −14% in 2023/24, 8% in 2022/23, 12% in 2021/22."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity (and no more than 3x EBITDA)",
+        "pass": true,
+        "value": "0.25x equity, about 1.5x EBITDA",
+        "note": "Net debt Rs 2.4bn (June 2026), almost all short-term bank loans of Renuka Agri Foods and Shaw Wallace, rolled over regularly."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2023/24 and 2024/25",
+        "note": "Owners' profit Rs 554m, Rs 368m, −Rs 611m, −Rs 342m, Rs 568m over the five years to March 2026; driven by coconut prices."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends (cash conversion 70%+ over 3 years)",
+        "pass": false,
+        "value": "Negative",
+        "note": "Operating cash flow −Rs 1.29bn over the three years to March 2026 (−0.71, −1.67, +1.09); Rs 0.22bn in April–June 2026. No dividends for 2023/24 or 2024/25."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 13.9,
+    "buyPrice": 11.8,
+    "strongBuyPrice": 10.4,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 17.6,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.79x NAV). The same levels apply to both share classes."
+  },
+  "dividend": {
+    "perShare": 0.19,
+    "label": "first and final for 2025/26 (Rs 0.10 cash + Rs 0.09 in new shares)",
+    "source": "Errata to Annual Report 2025/26 (amended AGM notice)",
+    "note": "No dividend for 2023/24 or 2024/25."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 17.6,
+      "unit": "Rs",
+      "note": "June 2026, rebuilt from the audited March figure (company reports Rs 17.88)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.29,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 13.5,
+      "unit": "x",
+      "note": "EPS Rs 1.68, 12 months to June 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (owners)",
+      "value": 9.5,
+      "unit": "%",
+      "note": "2025/26; losses the two years before"
+    },
+    {
+      "id": "earningsYield",
+      "label": "Earnings yield vs bond",
+      "value": 7.4,
+      "unit": "%",
+      "note": "10-year bond about 12.4%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0.8,
+      "unit": "%",
+      "note": "Rs 0.19, about half in shares"
+    },
+    {
+      "id": "ralStake",
+      "label": "Renuka Agri Foods stake at market",
+      "value": 12.4,
+      "unit": "Rs",
+      "note": "53% of RAL.N0000 at Rs 10.90, per Renuka Foods share"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.25,
+      "unit": "x",
+      "note": "June 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 8.53,
+      "unit": "Rs bn",
+      "display": "~Rs 8.5bn",
+      "note": "Both classes, 375.9m shares"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "2025/26 (audited)",
+      "text": "Revenue up 31% to Rs 18.0bn on coconut exports (Rs 9.75bn against Rs 6.27bn; Germany doubled, Austria quadrupled). Gross profit Rs 3.3bn (Rs 1.9bn). Group profit Rs 669m against a Rs 377m loss; owners' profit Rs 568m (EPS Rs 1.62). Agri foods earned Rs 209m and consumer brands Rs 460m after tax."
+    },
+    {
+      "title": "Uneven quarters and audit changes",
+      "text": "Owners' profit was about Rs 493m in July–September and Rs 283m in October–December, then a loss of about Rs 291m in January–March. The audit cut group profit from Rs 1,091m in the March interim to Rs 669m (owners' share Rs 610m → Rs 568m), and the June interim starts from an unaudited March balance sheet."
+    },
+    {
+      "title": "Stake in Renuka Agri Foods sold down",
+      "text": "Renuka Foods sold 23% of Renuka Agri Foods for Rs 2.2bn, cutting its stake from 76% to 53%. The gain went to equity (owners' equity +Rs 438m from changes in holdings), and minority interests rose to Rs 2.4bn."
+    },
+    {
+      "title": "Rs 782m into the family's management company",
+      "text": "The group bought 6.8m shares (16%) of Renuka Enterprises (Pvt) Ltd for Rs 782m. Renuka Enterprises provides management services to the group and owns 46% of Renuka Foods' voting shares, so money went from this listed company to its own controlling shareholder's group."
+    },
+    {
+      "title": "April–June 2026 quarter (unaudited)",
+      "text": "Revenue down 1% to Rs 3.77bn; gross margin 19.8% (16.7%). Group profit Rs 217m (Rs 80m); owners' profit Rs 106m (EPS Rs 0.28; Rs 0.22 a year earlier after the split). Consumer brands Rs 131m, agri foods Rs 86m. Finance income jumped to Rs 204m (Rs 46m), not explained."
+    },
+    {
+      "title": "Share split and dividend",
+      "text": "Shares were split 2-for-1 in February 2026 (374.6m shares). A first and final dividend of Rs 0.19 for 2025/26: Rs 0.10 in cash and Rs 0.09 in new shares."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (after the 2026 split)",
+        "unit": "Rs",
+        "values": [
+          2.26,
+          1.48,
+          -2.45,
+          -0.97,
+          1.62,
+          1.68
+        ],
+        "notes": [
+          "Halved for the split",
+          "Halved for the split",
+          "Loss; halved for the split",
+          "Loss; restated",
+          null,
+          "To Jun 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity (owners)",
+        "unit": "%",
+        "values": [
+          12.4,
+          7.8,
+          -13.8,
+          -7.2,
+          9.5,
+          9.5
+        ],
+        "notes": [
+          "Company figure",
+          null,
+          "Loss",
+          "Loss",
+          null,
+          "Estimated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          null,
+          17.8,
+          13.5
+        ],
+        "notes": [
+          "Year-end price not read",
+          "Year-end price not read",
+          "Loss year",
+          "Loss year",
+          "Year-end, Rs 28.90",
+          "At Rs 22.70"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0,
+          0.41,
+          0,
+          0,
+          0.19,
+          null
+        ],
+        "notes": [
+          "None",
+          "Before the split",
+          "None",
+          "None",
+          "Half in shares",
+          "None declared yet"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 17.60",
+      "reading": "1.29x NAV. A business earning 7–10% on equity in good years is worth less than its book value at an 17.5% required return."
+    },
+    {
+      "method": "Return on equity",
+      "value": "9.5%",
+      "reading": "The best year in four, and still well below 17.5%. Two losses in five years."
+    },
+    {
+      "method": "P/E",
+      "value": "13.5x",
+      "reading": "Earnings yield 7.4% against a 12.4% government bond, on peak-cycle coconut earnings. Five-year average owners' profit is only Rs 0.29 a share."
+    },
+    {
+      "method": "Dividends",
+      "value": "0.8% yield",
+      "reading": "Rs 0.19, about half paid in new shares; nothing for the two years before. Too small to value on."
+    },
+    {
+      "method": "Sum of the parts",
+      "value": "~Rs 22",
+      "reading": "Renuka Agri Foods stake Rs 12.40 a share at market, consumer brands Rs 9–12, Renuka Enterprises stake Rs 2.10, less holding-level debt. At market prices it's about fairly priced, but Renuka Agri Foods itself trades on a boom year."
+    },
+    {
+      "method": "Residual income",
+      "value": "Rs 6–12",
+      "reading": "Book value Rs 17.60 earning 6–12% against a 16.5–18.5% required return: lowest method."
+    }
+  ],
+  "models": [
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 7.2,
+      "base": 14.0,
+      "bull": 22.8,
+      "weighted": 13.7,
+      "comment": "Normal EPS of Rs 0.90 / 1.40 / 1.90 times 8 / 10 / 12."
+    },
+    {
+      "id": "nav",
+      "name": "Price to NAV",
+      "bear": 10.6,
+      "base": 14.1,
+      "bull": 17.6,
+      "weighted": 13.7,
+      "comment": "NAV Rs 17.60 at 0.6x / 0.8x / 1.0x."
+    },
+    {
+      "id": "sotp",
+      "name": "Sum of the parts",
+      "bear": 15.1,
+      "base": 20.0,
+      "bull": 23.9,
+      "weighted": 19.3,
+      "comment": "Renuka Agri Foods stake (Rs 12.40 a share at market) less 40% / 25% / 10%, plus consumer brands at Rs 7 / 10 / 12 and other assets less debt Rs 0.70."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 6.1,
+      "base": 8.7,
+      "bull": 12.2,
+      "weighted": 8.7,
+      "comment": "ROE 6% / 9% / 12% against a cost of equity of 18.5% / 17.5% / 16.5%, over ten years."
+    }
+  ],
+  "modelsNote": "Earnings swing with coconut prices and cash flow has been weak, so no DCF. The sum of the parts (anchored on Renuka Agri Foods' market price) is the most generous method; residual income, which charges for the low returns, is the least.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18.5%",
+        "base": "17.5%",
+        "bull": "16.5%"
+      },
+      {
+        "label": "Normal EPS × P/E",
+        "bear": "0.90 × 8",
+        "base": "1.40 × 10",
+        "bull": "1.90 × 12"
+      },
+      {
+        "label": "Price to NAV",
+        "bear": "0.6x",
+        "base": "0.8x",
+        "bull": "1.0x"
+      },
+      {
+        "label": "Discount to the Renuka Agri Foods stake",
+        "bear": "40%",
+        "base": "25%",
+        "bull": "10%"
+      },
+      {
+        "label": "Owners' ROE",
+        "bear": "6%",
+        "base": "9%",
+        "bull": "12%"
+      }
+    ],
+    "averages": {
+      "bear": 9.8,
+      "base": 14.2,
+      "bull": 19.1
+    },
+    "common": "10-year government bond about 12.4% (9 Nov 2026). Base cost of equity = bond + about 5 points for a family-controlled food group with cyclical earnings. Normal EPS assumes coconut margins ease from 2025/26 levels."
+  },
+  "sensitivity": {
+    "title": "P/E method, Rs per share",
+    "rowLabel": "Normal EPS",
+    "columnLabel": "P/E",
+    "rows": [
+      "Rs 1.00",
+      "Rs 1.40",
+      "Rs 1.80"
+    ],
+    "columns": [
+      "8x",
+      "10x",
+      "12x"
+    ],
+    "values": [
+      [
+        8.0,
+        10.0,
+        12.0
+      ],
+      [
+        11.2,
+        14.0,
+        16.8
+      ],
+      [
+        14.4,
+        18.0,
+        21.6
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even Rs 1.80 at 12x (Rs 21.60) is below today's price; the price needs about Rs 1.90 a share every year at 12x."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 13.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 11.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 10.4
+      }
+    ],
+    "averagePrice": 12.22,
+    "totalCost": 6110,
+    "note": "About Rs 6,110 in total, against Rs 11,350 at Rs 22.70. Prices apply to either share class.",
+    "realism": "Rs 11.80 needs about a 48% fall. After the split the share has traded between about Rs 22 and Rs 34; it was much lower before the 2025 coconut rally. A return there would probably need coconut margins to fall back."
+  },
+  "changeMyView": {
+    "higher": [
+      "Owners' ROE staying above 15% through a normal coconut year.",
+      "Consumer brands (Richlife, Shaw Wallace) earning steadily above Rs 500m a year.",
+      "Cash dividends of Rs 0.50+ a share.",
+      "Operating cash flow consistently above profit."
+    ],
+    "lower": [
+      "Coconut prices spiking again (2023/24 and 2024/25 were losses).",
+      "More money moved to related family companies.",
+      "Further stake sales in Renuka Agri Foods below market value.",
+      "US tariffs or EU deforestation rules hitting exports."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the interim reports to June 2026 (unaudited). The September 2026 quarter wasn't in the folder. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 63% above fair value of Rs 13.90.",
+    "Expected yearly return at Rs 22.70": "About −9% a year over three years: dividend 0.8% + book growth about 5% − about 15% a year if the price moved to fair value.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case −57% (Rs 9.80); bull case −16% (Rs 19.10). Even the bull case is below today's price.",
+    "What the price assumes": "Owners' ROE of about 20% for ten years, or Rs 1.90 of EPS every year at 12x: more than double its five-year record.",
+    "Confidence": "Low to medium: the methods give Rs 9–20 in the base case; earnings depend on coconut prices.",
+    "Margin of safety": "Buy 15% below fair value (Rs 11.80), strong buy 25% below (Rs 10.40)."
+  },
+  "Business and moat": {
+    "What it does": "Agri foods (57% of 2025/26 revenue): Renuka Agri Foods and Renuka Agri Organics make coconut milk, cream and other coconut products, mostly for export to Europe and the Middle East. Consumer brands (43%): Richlife dairy (milk, yoghurt, cheese), Shaw Wallace (Renuka Captain and Plaza canned fish, soya, cereals, snacks, juices).",
+    "Segment profit 2025/26": "Agri foods Rs 209m (a Rs 218m loss in 2024/25); consumer brands Rs 460m (a Rs 159m loss); both after tax and before minority interests.",
+    "Moat": "Narrow: private-label and B2B export relationships, Richlife's brand (7th dairy brand by Kantar, 35,000 outlets), Shaw Wallace's distribution. Coconut supply and prices are outside its control.",
+    "Ownership of subsidiaries": "Richlife 100%, Shaw Wallace 98.9%, Renuka Agri Foods 53.0% (76.0% a year earlier)."
+  },
+  "Management and governance": {
+    "Ownership": "Renuka Enterprises (Pvt) Ltd 46.06%, Renuka Holdings 5.51%, the Rajiyah family 5.00%, Cargo Boat Investment 3.06% (all group or family); CJ Patel 8.37%, Eagle View 7.56%. Public float 31.99% of voting shares.",
+    "Related parties": "Rs 782m paid for 16% of Renuka Enterprises, the group's management company and Renuka Foods' largest shareholder. Royalty of Rs 89m to Renuka International Ltd and Rs 14.4m rent, both director-linked. Key management pay Rs 265m (Rs 169m), about half of owners' profit.",
+    "Auditor": "KPMG, clean opinion for 2025/26.",
+    "Reporting quality": "Interim EPS figures are inconsistent (the June 2026 interim shows basic EPS Rs 0.28 but diluted Rs 0.55), and interims start from unaudited balances.",
+    "Rating": "Watch"
+  },
+  "Sri Lanka checks": {
+    "Coconut prices": "Risk: the main driver of agri profits; shortages caused the 2023/24 and 2024/25 losses.",
+    "Exports and trade": "Watch: 43–57% of revenue is exported; US tariffs and EU deforestation rules are risks; a weaker rupee helps.",
+    "Interest rates": "Watch: Rs 3.9bn of short-term loans; interest cover 2.9x in 2025/26.",
+    "Consumers": "Watch: household incomes still below pre-2022 levels; spending is value-focused.",
+    "Liquidity": "OK for the voting share; thin for the non-voting share.",
+    "Catalysts": "September 2026 quarter (due by mid-November), coconut crop and prices, any further related-party deals."
+  },
+  "Portfolio fit": {
+    "Cost of 500 shares": "About Rs 11,350 now; about Rs 5,900 at the buy price.",
+    "Overlap": "Renuka Holdings (on the site) owns 43% of Renuka Foods; holding both doubles the exposure.",
+    "Note": "Shown for information, not as advice on how much to hold."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "Only at a deep discount: a recovering coconut exporter and dairy brand with moderate debt.",
+    "The case is broken if": "More value goes to related family companies, or coconut margins collapse again.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 18.10: today's price is above this)."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 11.80 or lower",
+    "Strong buy": "Rs 10.40 or lower",
+    "Sell trigger": "Rs 18.10 or higher (already exceeded)"
+  },
+  "Key ratios (five-year trend)": {
+    "Revenue": "2021/22 Rs 10.7bn · 2022/23 Rs 17.1bn · 2023/24 Rs 14.2bn · 2024/25 Rs 13.8bn · 2025/26 Rs 18.0bn",
+    "Gross margin": "16.7% · 19.0% · 12.1% · 13.5% · 18.4% · Apr–Jun 2026 19.8%",
+    "Owners' profit": "Rs 554m · Rs 368m · −Rs 611m · −Rs 342m · Rs 568m · Apr–Jun 2026 Rs 106m",
+    "Return on equity (owners)": "12.4% · 7.8% · −13.8% · −7.2% · 9.5%",
+    "NAV per share (after split)": "Mar 2025 Rs 14.67 · Mar 2026 Rs 17.38 · Jun 2026 about Rs 17.60",
+    "Operating cash flow": "2023/24 −Rs 0.71bn · 2024/25 −Rs 1.67bn · 2025/26 Rs 1.09bn · Apr–Jun 2026 Rs 0.22bn",
+    "Net debt": "Mar 2025 Rs 4.4bn · Mar 2026 Rs 2.4bn · Jun 2026 Rs 2.4bn",
+    "Interest cover": "2021/22 4.4x · 2022/23 0.9x · 2023/24 −0.2x · 2024/25 0.2x · 2025/26 2.9x (company figures)",
+    "Current ratio": "1.13 · 1.29 · 1.04 · 1.06 · 1.48 (company figures)",
+    "Minority share of equity": "Mar 2025 10% · Mar 2026 27% · Jun 2026 29%",
+    "Graham number": "Rs 25.80 (√(22.5 × 1.68 × 17.60)); flattered by a peak-year EPS"
+  },
+  "What this analysis doesn't cover": [
+    "The September 2026 quarter (not yet in the folder).",
+    "Renuka Agri Foods' own reports (only the consolidated figures were read).",
+    "Why finance income jumped to Rs 204m in April–June 2026.",
+    "The terms behind the Renuka Trading share deal in note 18.4, which are hard to follow."
+  ],
+  "fullText": "Summary: Renuka Foods (COCO.N0000 voting, COCO.X0000 non-voting) owns Richlife dairy and Shaw Wallace (canned fish, soya, snacks) outright and 53% of Renuka Agri Foods, the coconut-milk exporter. 2025/26 was a strong year after two losses: coconut exports rose to Rs 9.75bn from Rs 6.27bn, group profit was Rs 669m and owners' profit Rs 568m (EPS Rs 1.62 after the February 2-for-1 split). But that is a 9.5% return on equity in a good year; over five years owners' profit averaged only about Rs 110m a year (two losses), operating cash flow over three years was negative, and the dividend for 2025/26 is Rs 0.19 (half in new shares). At Rs 22.70 (CSE, 11 November 2026) the share trades at 1.29x its NAV of about Rs 17.60 and 13.5x trailing earnings, which needs a return on equity of about 20% to justify. Four methods put fair value at about Rs 13.90, so the price is about 63% above it. I'd buy at up to Rs 11.80 and treat under Rs 10.40 as a strong buy. On market prices it looks closer to fair: its 53% of Renuka Agri Foods alone is worth about Rs 12.40 a share. Governance is a concern: the group paid Rs 782m for 16% of Renuka Enterprises, the family company that is also Renuka Foods' largest shareholder.\n\nPrice and key figures\nPrice: Rs 22.70 voting, Rs 22.20 non-voting (CSE, 11 November 2026). It closed March 2026 at Rs 28.90 and traded at Rs 24.90–34.00 in April–June (after the 2-for-1 split).\n2025/26 (audited): revenue Rs 18.0bn (up 31%), gross profit Rs 3.3bn, group profit Rs 669m, owners' profit Rs 568m, EPS Rs 1.62, owners' ROE 9.5%, NAV Rs 17.38.\nApril–June 2026 (unaudited): revenue Rs 3.77bn, group profit Rs 217m, owners' profit Rs 106m, EPS Rs 0.28. Net debt Rs 2.4bn. NAV about Rs 17.60.\n\nDecision box\nFair value about Rs 13.90; price about 63% above it. Expected return at today's price about −9% a year over three years. Bear case −57%, bull case −16%. The price assumes owners' ROE of about 20%. Buy up to Rs 11.80, strong buy under Rs 10.40.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nP/E | 7.2 | 14.0 | 22.8 | 13.7\nPrice to NAV | 10.6 | 14.1 | 17.6 | 13.7\nSum of the parts | 15.1 | 20.0 | 23.9 | 19.3\nResidual income | 6.1 | 8.7 | 12.2 | 8.7\nAverage | 9.8 | 14.2 | 19.1 | 13.9\n\nAssumptions\nCost of equity 18.5% / 17.5% / 16.5%. Normal EPS Rs 0.90 / 1.40 / 1.90 at 8 / 10 / 12 times. 0.6x / 0.8x / 1.0x NAV. Renuka Agri Foods stake at market less 40% / 25% / 10%. Owners' ROE 6% / 9% / 12%.\n\nConcerns\nTwo losses in five years, negative cash flow over three years, tiny dividends, Rs 782m paid for a stake in the family's management company (Renuka Foods' own largest shareholder), key management pay of Rs 265m, and audit adjustments that cut group profit by 39% from the March interim.\n\nBusiness tests: 1 of 4 passed (debt; fails returns, steady profit and cash conversion), so it's a weak business: avoid for now.\n\n500-share plan\n200 shares up to Rs 13.90, 150 up to Rs 11.80, 150 up to Rs 10.40: average about Rs 12.20, about Rs 6,110 in total. Rs 11.80 needs about a 48% fall.\n\nNote: Renuka Holdings (also on the site) owns 43% of Renuka Foods, so holding both doubles the exposure."
+}
