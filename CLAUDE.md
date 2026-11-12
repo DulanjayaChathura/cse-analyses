@@ -49,11 +49,23 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 ## A new company (first analysis)
 Read all PDFs in the company's laptop folder. Write a full `data/<CODE>.json` following `docs/json-format.md`, and a new `record.json` with every report in `reportsRead` and every period's figures. Then do steps 9–10.
 
-## Daily broker summary
-Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. Every day at 15:45 Saudi time (18:15 Sri Lanka) the "Collect broker messages" workflow saves new posts to `inbox/<date>/messages.json`, with full-size images in `inbox/<date>/files/`. A scheduled Claude task runs at 16:00 Saudi time (18:30 Sri Lanka). It first starts the "Build and publish site" workflow if today's closing prices are missing (GitHub sometimes skips the 14:00 scheduled run), and then:
-1. Find posts not yet summarised: every message in `inbox/*/messages.json` whose id isn't in any `broker/*.json` `messageIds`. If there are none, stop.
-2. Read every text and look at every image (recommendation tables, market snapshot, dividend cards, news). Never invent a figure; if one can't be read, leave it out and say so in `note`.
-3. Write `broker/<today>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages.
+## Broker summary (on demand, with /summary)
+Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. The "Collect broker messages" workflow (`broker.yml`) saves new posts to `inbox/<date>/messages.json` (the date it collected them, Sri Lanka time), with full-size images in `inbox/<date>/files/`. It runs every day at 15:45 Saudi time so no post is lost (Telegram keeps them only about 24 hours), and also whenever a summary is requested.
+
+The owner asks for a summary by posting a command in the channel:
+- `/summary`: summarise every post since the previous summary command; file it under the command's own date.
+- `/summary12` (also `/summary-12`, `/summary 12`): the same posts, filed under the 12th of the command's month (the previous month if the 12th hasn't come yet).
+
+The collector saves these commands with a `"command"` mark. They divide the posts: each command covers the posts after the previous command and before itself. Never treat a command as broker content.
+
+To write the summaries:
+1. Make sure the latest posts are collected (run `broker.yml` and wait for it), then `git pull`.
+2. Run `python scripts/broker_pending.py --text` (or without `--text` for JSON). It lists every command not yet handled, oldest first, with its target date and the exact message ids it covers. Use only those ids; don't pick posts yourself.
+3. For each pending command, in order:
+   - If it covers no posts, run `python scripts/broker_pending.py --done <commandId> none 0` and move on.
+   - Otherwise read every text and look at every image in its posts (recommendation tables, market snapshot, dividend cards, news). Never invent a figure; if one can't be read, leave it out and say so in `note`.
+   - Write `broker/<date>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages. If the file already exists, merge the new posts into it. Add the message ids to `messageIds` and the command's id to `commands`.
+   - Run `python scripts/broker_pending.py --done <commandId> <date> <number of posts>`.
 4. Run `python scripts/build_site.py`, commit to `main` and push. The build publishes the page and posts the short version to Telegram.
 5. Don't change any company's analysis because of a broker call. Mention big disagreements in the highlights instead.
 

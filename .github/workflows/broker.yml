@@ -1,7 +1,8 @@
 # Saves the day's posts from the Telegram channel (for example, broker
-# messages forwarded from WhatsApp) into inbox/, ready for the daily summary.
-# Runs every day at 15:45 Saudi time (18:15 Sri Lanka), ahead of the 16:00 Saudi-time summary,
-# and whenever you press "Run workflow" on the Actions tab.
+# messages forwarded from WhatsApp) into inbox/, ready for a /summary request.
+# Runs every day at 15:45 Saudi time (18:15 Sri Lanka) so no post is lost (Telegram keeps
+# them for about 24 hours), whenever /summary is posted in the channel, and whenever
+# you press "Run workflow" on the Actions tab.
 name: Collect broker messages
 
 on:

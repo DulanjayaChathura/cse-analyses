@@ -22,7 +22,7 @@
   }
   const days = list.days || [];
   if (!days.length) {
-    content.innerHTML = `<div class="empty">No broker updates yet. Forward the broker's messages to the Telegram channel and they'll appear here after the daily 4 pm (Saudi time) summary.</div>`;
+    content.innerHTML = `<div class="empty">No broker updates yet. Forward the broker's messages to the Telegram channel and post /summary in the channel to get them summarised here.</div>`;
     sub.textContent = "";
     return;
   }

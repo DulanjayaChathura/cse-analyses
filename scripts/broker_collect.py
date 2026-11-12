@@ -1,4 +1,4 @@
-"""Save new posts from the Telegram channel into inbox/ for the daily broker summary.
+"""Save new posts from the Telegram channel into inbox/ for the broker summaries.
 
 Runs once a day at 15:45 Saudi time / 18:15 Sri Lanka time (.github/workflows/broker.yml).
 The bot is an admin of the channel, so Telegram gives it every post, including
@@ -13,10 +13,15 @@ Saved to:
                                      tells Telegram it can drop the older ones
 
 The site's own posts (price alerts, research and broker summaries) are skipped.
+
+The owner's commands "/summary" and "/summary<day>" (e.g. "/summary12") are saved
+too, marked with "command": {"day": <day or null>}. They mark where each broker
+summary ends: see scripts/broker_pending.py.
 """
 import datetime
 import json
 import os
+import re
 import sys
 import urllib.request
 
@@ -28,6 +33,16 @@ INBOX = ROOT / "inbox"
 LAST_ID = INBOX / "last_update_id.txt"
 MAX_FILE = 20 * 1024 * 1024        # the Bot API can't download larger files
 OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test")   # messages this site posts itself
+# "/summary", "/summary12", "/summary-12", "/summary 12", "/summary@SomeBot": a summary command.
+COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$", re.IGNORECASE)
+
+
+def command_of(text):
+    """{"day": 12} for "/summary12", {"day": None} for "/summary", else None."""
+    m = COMMAND.match(text.strip())
+    if not m:
+        return None
+    return {"day": int(m.group(1)) if m.group(1) else None}
 
 
 def colombo_time(ts):
@@ -104,14 +119,18 @@ def main():
                 files.append(f) if f else None
         except Exception as e:
             print(f"::warning::Couldn't download the file in post {post['message_id']}: {e}")
-        saved["messages"].append({
+        entry = {
             "id": post["message_id"],
             "time": colombo_time(post["date"]),
             "forwardedFrom": forwarded_from(post),
             "album": post.get("media_group_id"),
             "text": text,
             "files": files,
-        })
+        }
+        cmd = command_of(text) if not files else None
+        if cmd:
+            entry["command"] = cmd
+        saved["messages"].append(entry)
         seen.add(post["message_id"])
         new += 1
 

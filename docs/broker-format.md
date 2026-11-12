@@ -1,6 +1,6 @@
 # Broker summary format (`broker/<YYYY-MM-DD>.json`)
 
-One file per day. The "Broker updates" page (`broker.html`) shows them, newest
+One file per day: the day the owner chose with `/summary` or `/summary<day>` (see CLAUDE.md). The "Broker updates" page (`broker.html`) shows them, newest
 first, and the build posts the newest one to Telegram once. Raw posts collected
 from the Telegram channel are in `inbox/<date>/` (see `scripts/broker_collect.py`).
 
@@ -13,6 +13,7 @@ All numbers are plain numbers. Leave out anything the messages don't give.
 | `source` | Broker name, e.g. `"HNB Stockbrokers"` |
 | `posts` | Number of messages summarised |
 | `messageIds` | Telegram message ids summarised (from `inbox/*/messages.json`), so nothing is summarised twice |
+| `commands` | Ids of the `/summary` command posts this summary answers (see `scripts/broker_pending.py`) |
 | `callsPriceDate` | Date of the prices in the broker's recommendation table |
 | `note` | Caveats, e.g. figures read from small images |
 | `highlights` | 3–5 short sentences: the day's most important points |
