@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "ticker": "JINS.N0000",
+  "localFolder": "janashakthi insurance",
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024.pdf",
+      "title": "Annual report 2024",
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "EPS and dividend notes."
+    },
+    {
+      "file": "Annual Report as at 31st December 2025.pdf",
+      "title": "Annual Report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Financial highlights (p. 18), CAR, associate note 8, dividend note 36, life fund note."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the June interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Balance sheet p. 1, income statement p. 2, notes 15, 19–21 (pp. 12–14), SLFRS 17 mapping (note 24)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 8.65,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 18",
+          "note": "Up 31%"
+        },
+        "netProfit": {
+          "value": 3.47,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, MD&A"
+        },
+        "eps": {
+          "value": 15.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 18",
+          "note": "Before the split; 5.10 after"
+        },
+        "roe": {
+          "value": 28,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 18"
+        },
+        "dividendPerShare": {
+          "value": 15.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, note 36",
+          "note": "Before the split; 5.00 after"
+        },
+        "navPerShare": {
+          "value": 73.47,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 18",
+          "note": "Before the split; 24.49 after"
+        },
+        "car": {
+          "value": 284,
+          "unit": "%",
+          "source": "Annual Report 2025, MD&A"
+        },
+        "surplusTransfer": {
+          "value": 0.477,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, life fund note",
+          "note": "1.794 in 2024"
+        },
+        "priceYearEnd": {
+          "value": 129.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, MD&A",
+          "note": "Before the split"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 5.112,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "3.769 a year earlier"
+        },
+        "realisedGains": {
+          "value": 0.041,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "1.764 a year earlier"
+        },
+        "associateProfit": {
+          "value": -0.289,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "0.660 a year earlier"
+        },
+        "netProfit": {
+          "value": 0.13,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "1.318 a year earlier"
+        },
+        "eps": {
+          "value": 0.19,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Restated for the split; 1.94 a year earlier"
+        },
+        "navPerShare": {
+          "value": 24.68,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 20.1"
+        },
+        "totalEquity": {
+          "value": 16.771,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1"
+        },
+        "borrowings": {
+          "value": 1.352,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1"
+        },
+        "sharesOutstanding": {
+          "value": 679.578,
+          "unit": "",
+          "source": "Interim to 30 Jun 2026, note 19",
+          "note": "Millions, after 3-for-1 split on 9 April 2026"
+        },
+        "parentHoldingPct": {
+          "value": 74.24,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, note 21",
+          "note": "Janashakthi Ltd"
+        }
+      }
+    },
+    {
+      "period": "TTM Jun 2026",
+      "periodEnd": "2026-06-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 3.35,
+          "unit": "Rs",
+          "source": "Worked out: 5.10 + 0.19 − 1.94"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "19% / 17.5% / 16%",
+      "reason": "Bond about 12.4% plus about 5 points.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "11% / 16% / 20%; 5% / 6% / 7%",
+      "reason": "Normal profit Rs 2.5–3.5bn (investment income, life-fund transfer, associate) on Rs 16.8bn equity.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Normal EPS × P/E",
+      "value": "3.00 × 6 / 4.00 × 8 / 4.80 × 10",
+      "reason": "EPS 5.10–6.64 in 2023–2025 included large gains.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividends",
+      "value": "Rs 2.50 / 3.50 / 4.50; growth 3% / 6% / 8%",
+      "reason": "Rs 5.00 for 2025 was 98% of profit.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Third-quarter results and the year-end life-fund surplus transfer.",
+    "First Capital Holdings' results.",
+    "2026 dividend size.",
+    "Effect of SLFRS 17 on equity when adopted."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Jun 2026",
+      "summary": "First analysis. Justified P/B, P/E, dividends and residual income; business tests 3 of 4 (category 2, watch list).",
+      "fairValue": 24.6,
+      "buyPrice": 20.9,
+      "strongBuyPrice": 18.5,
+      "priceAtTime": 41.6,
+      "archive": null
+    }
+  ]
+}
