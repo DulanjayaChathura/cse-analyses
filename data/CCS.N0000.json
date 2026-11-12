@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CCS.N0000",
+  "company": {
+    "name": "Ceylon Cold Stores PLC",
+    "sector": "Food, beverage and retail",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "CCS.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024/25 and 2025/26",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 125.0,
+    "date": "2026-11-12",
+    "source": "CSE closing price (cse.lk)",
+    "note": "12-month range Rs 98.00–144.50. July–September 2026 Rs 117.25–135.25, closed September at Rs 118.75. Closed March 2026 at Rs 103.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A top-quality consumer business, priced for a much lower required return",
+    "text": "Ceylon Cold Stores (CCS.N0000), 71% owned by John Keells, makes Elephant House soft drinks and ice cream and runs the Keells supermarket chain. It is an excellent business: EPS rose from Rs 2.18 in 2021/22 to Rs 8.30 in 2025/26, return on equity is 32%, and it pays out 70–85% of profit in cash (Rs 7.02 a share declared for 2025/26). But the first half of 2026/27 slowed: revenue rose 17% to Rs 103.5bn, yet profit fell 7% to Rs 2.28bn as supermarket profit fell and finance costs rose 31%. Debt is high once leases are counted (net debt about 1.65x equity), and heavy store and logistics investment means dividends recently exceeded free cash flow. At Rs 125.00 (CSE, 12 November 2026) it trades at 15.4x trailing earnings and 5.2x book, with a 5.6% yield. At the 16.5% return I require, four methods put fair value at about Rs 66.70, so the price is about 87% above it: the market is pricing in a much lower required return for a John Keells company. I'd buy at up to Rs 56.70 and treat under Rs 50.00 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "High returns, rising profits and generous cash dividends; debt including leases is above equity.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "32% (2025/26)",
+        "note": "11.8% (2021/22) rising every year to 32.2%; helped by high payouts and borrowing."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity (and no more than 3x EBITDA)",
+        "pass": false,
+        "value": "1.65x equity incl. leases",
+        "note": "Bank debt and overdrafts Rs 23.4bn plus leases Rs 15.2bn, less Rs 0.9bn cash (Sep 2026); 0.98x equity without leases. About 2x EBITDA."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit grew every year from 2021/22 to 2025/26; the first half of 2026/27 fell 7%."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends (cash conversion 70%+ over 3 years)",
+        "pass": true,
+        "value": "1.8x",
+        "note": "Operating cash flow Rs 14.0bn against profit Rs 7.9bn in 2025/26; cash dividends Rs 5.4bn paid."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 66.7,
+    "buyPrice": 56.7,
+    "strongBuyPrice": 50.0,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 24.1,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 8.2x trailing EPS)."
+  },
+  "dividend": {
+    "perShare": 7.02,
+    "label": "for 2025/26 (three interims Rs 3.68 + final Rs 3.34)",
+    "source": "Annual Report 2025/26, Annual Report of the Board (p. 260)",
+    "latest": {
+      "perShare": 1.08,
+      "label": "first interim for 2026/27",
+      "source": "Interim to 30 Sep 2026, p. 1"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 15.4,
+      "unit": "x",
+      "note": "EPS Rs 8.13, 12 months to Sep 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 32.2,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.6,
+      "unit": "%",
+      "note": "Rs 7.02 for 2025/26"
+    },
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 24.1,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 5.2,
+      "unit": "x"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt incl. leases / equity",
+      "value": 1.65,
+      "unit": "x",
+      "note": "0.98x without leases"
+    },
+    {
+      "id": "fcfYield",
+      "label": "Free cash flow yield",
+      "value": 1.2,
+      "unit": "%",
+      "note": "2025/26, after Rs 10.4bn capex and Rs 2.2bn leases; about 5.5% on a normal year"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 118.8,
+      "unit": "Rs bn",
+      "display": "~Rs 119bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "First half of 2026/27 (unaudited)",
+      "text": "Revenue up 17% to Rs 103.5bn; gross profit up 12%. Profit fell 7% to Rs 2.28bn (EPS Rs 2.40 against Rs 2.57): finance costs rose 31%, administrative costs 22%, and the tax charge 17%."
+    },
+    {
+      "title": "Manufacturing strong, supermarkets weaker",
+      "text": "Beverages and ice cream earned Rs 4.10bn after tax (up 35%) on revenue up 19%; supermarkets earned Rs 1.0bn (down 16%) on revenue up 17%, as new outlets and logistics costs weighed on margins."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Revenue Rs 184.6bn (up 17%), profit Rs 7.89bn (up 32%), EPS Rs 8.30, ROE 32%. Dividends Rs 7.02 declared (85% of profit)."
+    },
+    {
+      "title": "Investment and debt",
+      "text": "Capex doubled to Rs 10.4bn in 2025/26 and continued at Rs 4.8bn in the half year (new Keells outlets, the Kerawalapitiya logistics centre, factory capacity). With dividends of Rs 5.4bn and Rs 4.2bn in those periods, overdrafts and short-term loans rose to Rs 17.3bn."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          2.18,
+          2.64,
+          3.61,
+          6.27,
+          8.3,
+          8.13
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          11.76,
+          13.4,
+          17.23,
+          26.72,
+          32.15,
+          33.4
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Estimated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          17.88,
+          15.13,
+          14.95,
+          13.08,
+          12.41,
+          15.4
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "At Rs 125.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share (paid)",
+        "unit": "Rs",
+        "values": [
+          1.2,
+          1.19,
+          1.87,
+          4.3,
+          5.67,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 4.42 paid in H1"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "15.4x",
+      "reading": "Trailing EPS Rs 8.13; year-end P/E 12.4–17.9x over five years. An earnings yield of 6.5% against a 12.4% government bond."
+    },
+    {
+      "method": "Return on equity",
+      "value": "32%",
+      "reading": "Excellent, though boosted by paying out most profit and using debt."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.6% yield",
+      "reading": "Rs 7.02 for 2025/26, in cash; recently more than free cash flow."
+    },
+    {
+      "method": "NAV",
+      "value": "Rs 24.10",
+      "reading": "5.2x book; book value matters little for a consumer brand and retailer."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "Rs 1.4bn (2025/26)",
+      "reading": "Low because capex doubled; I use a normal Rs 6.5bn (about Rs 6.80 a share)."
+    },
+    {
+      "method": "Debt",
+      "value": "1.65x equity incl. leases",
+      "reading": "Rising as capex and dividends exceed cash generation."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "FCFE DCF",
+      "bear": 35.1,
+      "base": 63.1,
+      "bull": 109.0,
+      "weighted": 63.9,
+      "comment": "Normal free cash flow to shareholders of Rs 4.5bn / 6.5bn / 8.5bn (after capex and lease payments), growing 4% / 7% / 9% for five years, then 4% / 5% / 6%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 70.0,
+      "base": 96.0,
+      "bull": 123.2,
+      "weighted": 93.6,
+      "comment": "2026/27 EPS of Rs 7.00 / 8.00 / 8.80 at 10 / 12 / 14 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 43.2,
+      "base": 60.9,
+      "bull": 88.6,
+      "weighted": 61.1,
+      "comment": "Rs 6.00 / 6.80 / 7.50 a share, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 38.5,
+      "base": 48.5,
+      "bull": 62.5,
+      "weighted": 48.3,
+      "comment": "Book value Rs 24.10; ROE moving from 32% to 20% / 25% / 28%; 80% payout."
+    }
+  ],
+  "modelsNote": "A steady cash generator, so a free-cash-flow DCF, alongside P/E, dividends and residual income. The P/E method is the most generous because it assumes the market keeps paying 12x.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17.5%",
+        "base": "16.5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Normal free cash flow (2026/27)",
+        "bear": "Rs 4.5bn",
+        "base": "Rs 6.5bn",
+        "bull": "Rs 8.5bn"
+      },
+      {
+        "label": "Growth for five years, then long-term",
+        "bear": "4%, 4%",
+        "base": "7%, 5%",
+        "bull": "9%, 6%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "7.00 × 10",
+        "base": "8.00 × 12",
+        "bull": "8.80 × 14"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 6.00",
+        "base": "Rs 6.80",
+        "bull": "Rs 7.50"
+      }
+    ],
+    "averages": {
+      "bear": 46.7,
+      "base": 67.1,
+      "bull": 95.8
+    },
+    "common": "10-year government bond about 12.4% plus about 4 points for a defensive market leader (same as Dialog). Base 2026/27 EPS assumes a second half close to last year's Rs 5.73."
+  },
+  "sensitivity": {
+    "title": "FCFE DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-term growth",
+    "rows": [
+      "15%",
+      "16.5%",
+      "17.5%"
+    ],
+    "columns": [
+      "4%",
+      "5%",
+      "6%"
+    ],
+    "values": [
+      [
+        68.0,
+        72.7,
+        78.4
+      ],
+      [
+        59.7,
+        63.1,
+        67.1
+      ],
+      [
+        55.2,
+        58.0,
+        61.2
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 125 needs a cost of equity near 11–12%, or free cash flow about twice my normal level."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 66.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 56.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 50.0
+      }
+    ],
+    "averagePrice": 58.69,
+    "totalCost": 29345,
+    "note": "About Rs 29,345 in total, against Rs 62,500 at Rs 125.00.",
+    "realism": "The 12-month low was Rs 98.00, so even the first tier (Rs 66.70) needs a fall well beyond this year's range. The share last traded near these levels in 2023/24 (year-end Rs 53.90)."
+  },
+  "changeMyView": {
+    "higher": [
+      "Supermarket margins recovering as new stores mature.",
+      "Capex falling back, lifting free cash flow towards Rs 8bn+.",
+      "Lower interest rates (both the cost of equity and its finance costs)."
+    ],
+    "lower": [
+      "Debt continuing to rise to fund dividends.",
+      "Sugar tax or other levies on soft drinks.",
+      "Consumer spending weakening.",
+      "Further falls in supermarket profit."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the interim reports to September 2026 (unaudited). This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 87% above fair value of Rs 66.70.",
+    "Expected yearly return at Rs 125": "About -7% a year: dividend 5.6% + growth about 6% − about 19% a year if the price moved to fair value.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case -63% (Rs 46.7); bull case -23% (Rs 95.8).",
+    "What the price assumes": "A cost of equity of about 11–12%, or normal free cash flow of about Rs 12bn a year.",
+    "Confidence": "Medium: a predictable business; the gap is about the required return, not the business.",
+    "Margin of safety": "Buy 15% below fair value (Rs 56.70), strong buy 25% below (Rs 50.00)."
+  },
+  "Business and moat": {
+    "What it does": "Manufacturing (beverages: Elephant House soft drinks and water; frozen confectionery: Elephant House ice cream), 20% of revenue; Keells supermarkets (via Jaykay Marketing Services), 80%.",
+    "Moat": "Wide in beverages and ice cream (brand, distribution, cold chain); moderate in supermarkets (scale, Nexus loyalty programme)."
+  },
+  "Management and governance": {
+    "Ownership": "John Keells Holdings 70.66%, Whittall Boustead 10.70%; public float 18.55%.",
+    "Auditor": "Ernst & Young.",
+    "Rating": "OK"
+  },
+  "Sri Lanka checks": {
+    "Consumer spending": "Watch: depends on household incomes recovering.",
+    "Taxes": "Risk: VAT and any sugar or beverage levies.",
+    "Interest rates": "Watch: Rs 17bn of short-term debt and overdrafts.",
+    "Liquidity": "OK."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A high-quality consumer franchise, at a much lower price.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 86.71); ROE below 20%; debt above 2x equity incl. leases."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 56.70 or lower",
+    "Strong buy": "Rs 50.00 or lower",
+    "Sell trigger": "Rs 86.71 or higher (already exceeded)"
+  },
+  "Key ratios (five-year trend)": {
+    "EPS": "2021/22 Rs 2.18 · 2022/23 Rs 2.64 · 2023/24 Rs 3.61 · 2024/25 Rs 6.27 · 2025/26 Rs 8.30",
+    "Return on equity": "11.8% · 13.4% · 17.2% · 26.7% · 32.2%",
+    "Interest cover": "2.3x · 1.5x · 2.4x · 4.7x · 5.2x",
+    "Debt / equity (company definition)": "99% · 118% · 82% · 67% · 77%",
+    "Dividend payout": "55% · 45% · 52% · 69% · 68% (paid basis)",
+    "Current ratio": "0.66 · 0.68 · 0.66 · 0.71 · 0.69"
+  },
+  "What this analysis doesn't cover": [
+    "The Rs 2.8bn of 'eliminations / adjustments' between segment results and group profit before tax isn't explained in the interim.",
+    "Store count and like-for-like sales."
+  ],
+  "fullText": "Summary: Ceylon Cold Stores (CCS.N0000), 71% owned by John Keells, makes Elephant House soft drinks and ice cream and runs the Keells supermarket chain. It is an excellent business: EPS rose from Rs 2.18 in 2021/22 to Rs 8.30 in 2025/26, return on equity is 32%, and it pays out 70–85% of profit in cash (Rs 7.02 a share declared for 2025/26). But the first half of 2026/27 slowed: revenue rose 17% to Rs 103.5bn, yet profit fell 7% to Rs 2.28bn as supermarket profit fell and finance costs rose 31%. Debt is high once leases are counted (net debt about 1.65x equity), and heavy store and logistics investment means dividends recently exceeded free cash flow. At Rs 125.00 (CSE, 12 November 2026) it trades at 15.4x trailing earnings and 5.2x book, with a 5.6% yield. At the 16.5% return I require, four methods put fair value at about Rs 66.70, so the price is about 87% above it: the market is pricing in a much lower required return for a John Keells company. I'd buy at up to Rs 56.70 and treat under Rs 50.00 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFCFE DCF | 35.1 | 63.1 | 109.0 | 63.9\nP/E method | 70.0 | 96.0 | 123.2 | 93.6\nDividend model | 43.2 | 60.9 | 88.6 | 61.1\nResidual income | 38.5 | 48.5 | 62.5 | 48.3\nAverage | 46.7 | 67.1 | 95.8 | 66.7\n\nBusiness tests: 3 of 4 passed (returns, steady profit, cash; fails debt including leases), so it's a good business at a high price: watch list."
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LMF.N0000",
+  "localFolder": "LANKA MILK FOODS",
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,2025.pdf",
+      "title": "Annual report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Figures from the 2025/26 ten-year summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Financial highlights (p. 16), other investments note 15, ten-year summary (p. 228)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Income statements, balance sheet, share price (note 10), shareholders."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 20.827,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "netProfit": {
+          "value": 2.621,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "eps": {
+          "value": 6.55,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "roe": {
+          "value": 6.87,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "dividendPerShare": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "navPerShare": {
+          "value": 95.39,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16"
+        },
+        "investments": {
+          "value": 27.962,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15.1",
+          "note": "Melstacorp 151.846m shares 25.510; Distilleries 44.991m shares 2.452"
+        },
+        "priceYearEnd": {
+          "value": 80.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 16"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 12.666,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, group income statement",
+          "note": "Up 26%"
+        },
+        "netProfit": {
+          "value": 1.395,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, group income statement",
+          "note": "1.186 a year earlier"
+        },
+        "eps": {
+          "value": 3.49,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, group income statement",
+          "note": "2.97 a year earlier"
+        },
+        "dividendIncome": {
+          "value": 0.552,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, cash flow"
+        },
+        "navPerShare": {
+          "value": 105.14,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, balance sheet"
+        },
+        "investments": {
+          "value": 30.964,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet"
+        },
+        "netDebt": {
+          "value": 4.65,
+          "unit": "Rs bn",
+          "source": "Worked out",
+          "note": "Borrowings, overdraft and leases less cash"
+        },
+        "priceQuarterEnd": {
+          "value": 83.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 10"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 7.07,
+          "unit": "Rs",
+          "source": "Worked out: 6.55 + 3.49 − 2.97"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Holding-company discount",
+      "value": "40% / 30% / 20%",
+      "reason": "Circular family-group holdings; typical CSE discounts 30–50%.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dairy profit × P/E",
+      "value": "1.2bn × 8 / 1.4bn × 10 / 1.6bn × 12",
+      "reason": "Group profit less dividends received: Rs 0.84bn in H1 2026/27 (Rs 1.40bn − Rs 0.55bn).",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "EPS × P/E",
+      "value": "6 × 8 / 7 × 10 / 8 × 12",
+      "reason": "Trailing EPS Rs 7.07.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Holdings prices",
+      "value": "Melstacorp Rs 193.75; Distilleries Rs 58.00",
+      "reason": "CSE, 12 Nov 2026. Update at each review.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Dairy profit trend in the second half.",
+    "Dividend for 2026/27.",
+    "Melstacorp's price, which drives most of NAV."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "First analysis. NAV less discount, sum of the parts and P/E; business tests 2 of 4 (category 3, avoid for now).",
+      "fairValue": 76.9,
+      "buyPrice": 65.4,
+      "strongBuyPrice": 57.7,
+      "priceAtTime": 91.9,
+      "archive": null
+    }
+  ]
+}

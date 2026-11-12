@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CCS.N0000",
+  "localFolder": "CEYLON COLD STORES",
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,25.pdf",
+      "title": "Annual report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Figures from the 2025/26 report's comparatives and decade summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Board report (p. 260), cash flow (pp. 277–278), decade at a glance and key ratios (pp. 350–351)."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the September interim."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Income statement p. 1, balance sheet p. 3, cash flow, segments, share information (note 9)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 184.595,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 260"
+        },
+        "operatingProfit": {
+          "value": 13.578,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 260"
+        },
+        "netProfit": {
+          "value": 7.886,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 260"
+        },
+        "eps": {
+          "value": 8.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, key ratios (p. 351)"
+        },
+        "roe": {
+          "value": 32.15,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 351"
+        },
+        "dividendPerShare": {
+          "value": 7.02,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 260",
+          "note": "Declared: 3.68 interims + 3.34 final"
+        },
+        "operatingCashFlow": {
+          "value": 14.006,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 277"
+        },
+        "capexPaid": {
+          "value": 10.416,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 277",
+          "note": "PPE 8.91 + intangibles 1.51"
+        },
+        "leasePayments": {
+          "value": 2.208,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 277"
+        },
+        "freeCashFlow": {
+          "value": 1.38,
+          "unit": "Rs bn",
+          "source": "Worked out"
+        },
+        "navPerShare": {
+          "value": 26.26,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 351"
+        },
+        "priceYearEnd": {
+          "value": 103.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 351"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 103.489,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Up 17%"
+        },
+        "grossProfit": {
+          "value": 13.356,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1"
+        },
+        "operatingProfit": {
+          "value": 5.498,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1"
+        },
+        "financeCosts": {
+          "value": 1.612,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Up 31%"
+        },
+        "netProfit": {
+          "value": 2.282,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Down 7%"
+        },
+        "eps": {
+          "value": 2.4,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "2.57 a year earlier"
+        },
+        "segmentProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, segment note",
+          "note": "Manufacturing 4.096 (3.042); supermarkets 0.996 (1.190); eliminations −2.81 before tax"
+        },
+        "operatingCashFlow": {
+          "value": 5.968,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, cash flow"
+        },
+        "capexPaid": {
+          "value": 4.788,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, cash flow"
+        },
+        "dividendsPaid": {
+          "value": 4.212,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, cash flow"
+        },
+        "navPerShare": {
+          "value": 24.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "netDebt": {
+          "value": 37.75,
+          "unit": "Rs bn",
+          "source": "Worked out from p. 3",
+          "note": "Including Rs 15.2bn of leases; 22.5 without"
+        },
+        "sharesOutstanding": {
+          "value": 950.4,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 9.1",
+          "note": "Millions"
+        },
+        "publicFloatPct": {
+          "value": 18.55,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, note 9.4"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 8.13,
+          "unit": "Rs",
+          "source": "Worked out: 8.30 + 2.40 − 2.57"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "17.5% / 16.5% / 15%",
+      "reason": "Bond about 12.4% plus about 4 points for a defensive leader (as Dialog).",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Normal FCFE",
+      "value": "Rs 4.5bn / 6.5bn / 8.5bn; growth 4% / 7% / 9%, then 4% / 5% / 6%",
+      "reason": "OCF about Rs 15bn less normal capex Rs 6–7bn and leases Rs 2.4bn.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "7.00 × 10 / 8.00 × 12 / 8.80 × 14",
+      "reason": "H1 Rs 2.40; H2 last year Rs 5.73.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividends",
+      "value": "Rs 6.00 / 6.80 / 7.50; growth 3% / 6% / 8%",
+      "reason": "Rs 7.02 for 2025/26.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "ROE path",
+      "value": "32% → 20% / 25% / 28%",
+      "reason": "ROE 12–32% over five years.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Second-half supermarket margins and new-store returns.",
+    "Whether capex slows and debt stops rising.",
+    "What the Rs 2.8bn segment eliminations consist of."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "First analysis. FCFE DCF, P/E, dividends and residual income; business tests 3 of 4 (category 2, watch list).",
+      "fairValue": 66.7,
+      "buyPrice": 56.7,
+      "strongBuyPrice": 50.0,
+      "priceAtTime": 125.0,
+      "archive": null
+    }
+  ]
+}

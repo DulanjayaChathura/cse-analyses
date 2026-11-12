@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "ticker": "DIST.N0000",
+  "company": {
+    "name": "Distilleries Company of Sri Lanka PLC",
+    "sector": "Beverages",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "DIST.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Three months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024/25 and 2025/26",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 58.0,
+    "date": "2026-11-12",
+    "source": "CSE closing price (cse.lk)",
+    "note": "12-month range Rs 49.20–66.00. 2025/26 range Rs 34.00–67.50, closed March 2026 at Rs 54.50."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A tax-collecting monopoly with superb returns, but profit has stalled",
+    "text": "Distilleries Company of Sri Lanka (DIST.N0000), 92% owned by Melstacorp, is the country's dominant arrack maker (and now also brews beer through DCSL Breweries Lanka). It is extremely profitable: return on equity 77%, no debt, Rs 5.7bn of net cash, and about 80% of profit paid out (Rs 3.00 a share for 2025/26). But profit has stopped growing because the government takes most of the price: excise duty was Rs 102.9bn of Rs 164.4bn gross turnover in 2025/26, and a higher income-tax rate for alcohol makers cut profit 4% that year; April–June 2026 profit fell another 7% (EPS Rs 0.86 against Rs 0.92). At Rs 58.00 (CSE, 12 November 2026) it trades at 15.9x trailing earnings with a 5.2% yield. Four methods put fair value at about Rs 32.70, so the price is about 77% above it. I'd buy at up to Rs 27.80 and treat under Rs 24.50 as a strong buy. Only 7.65% of the shares are publicly held."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "Exceptional returns, no debt, profitable every year and most profit paid in cash.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "77% (2025/26)",
+        "note": "77–154% over five years, because almost all profit is paid out."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 5.7bn",
+        "note": "June 2026; borrowings nil, overdraft Rs 0.5bn."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "But it swings with excise and tax changes: down 24% in 2023/24, down 4% in 2025/26."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "82% payout",
+        "note": "Operating cash flow Rs 15.2bn against profit Rs 16.8bn (company) in 2025/26; dividends Rs 3.00 in cash."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 32.7,
+    "buyPrice": 27.8,
+    "strongBuyPrice": 24.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 4.95,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 9.0x trailing EPS)."
+  },
+  "dividend": {
+    "perShare": 3.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, financial highlights (p. 3)"
+  },
+  "keyMetrics": [
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 15.9,
+      "unit": "x",
+      "note": "Group EPS Rs 3.65, 12 months to Jun 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 77.3,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.2,
+      "unit": "%",
+      "note": "Rs 3.00 for 2025/26"
+    },
+    {
+      "id": "fcfYield",
+      "label": "Free cash flow yield",
+      "value": 5.3,
+      "unit": "%",
+      "note": "Rs 14.1bn in 2025/26"
+    },
+    {
+      "id": "netCash",
+      "label": "Net cash",
+      "value": 5.7,
+      "unit": "Rs bn",
+      "note": "June 2026"
+    },
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 4.95,
+      "unit": "Rs"
+    },
+    {
+      "id": "exciseShare",
+      "label": "Excise duty share of gross turnover",
+      "value": 63,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 266.8,
+      "unit": "Rs bn",
+      "display": "~Rs 267bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "April–June 2026 (unaudited)",
+      "text": "Gross revenue up 12% to Rs 41.6bn and net revenue up 14% to Rs 14.5bn, but cost of sales rose 53%, so gross profit fell 6%. Profit fell 7% to Rs 3.96bn (EPS Rs 0.86 against Rs 0.92); tax took 45% of pre-tax profit."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Gross turnover Rs 164.4bn (up 18%), of which excise duty Rs 102.9bn. Profit after tax Rs 16.8bn (company), down 4%, after a higher income-tax rate for the alcohol industry. Group EPS Rs 3.71; dividend Rs 3.00 (82% payout)."
+    },
+    {
+      "title": "Into beer",
+      "text": "DCSL Breweries Lanka is being integrated into the group, adding beer to the arrack and spirits portfolio."
+    },
+    {
+      "title": "Very small free float",
+      "text": "Melstacorp owns 92.35%; the public holds 7.65%, so trading can be thin."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.7,
+          4.1,
+          3.1,
+          3.83,
+          3.71,
+          3.65
+        ],
+        "notes": [
+          "Company",
+          "Company",
+          "Company",
+          "Company",
+          "Group",
+          "Group, to Jun 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          125.2,
+          154.1,
+          135.0,
+          101.6,
+          77.3,
+          null
+        ],
+        "notes": [
+          "Company",
+          "Company",
+          "Company",
+          "Company",
+          "Company",
+          "See 2025/26"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          11.4,
+          4.8,
+          8.7,
+          9.5,
+          15.0,
+          15.9
+        ],
+        "notes": [
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          null,
+          null,
+          "At Rs 58.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          1.6,
+          2.2,
+          3.9,
+          2.7,
+          3.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Not yet declared"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "15.9x",
+      "reading": "Highest in five years (4.8–15x at year-ends) while profit is flat."
+    },
+    {
+      "method": "Return on equity",
+      "value": "77%",
+      "reading": "Exceptional, because nearly all profit is paid out and the business needs little capital."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.2% yield",
+      "reading": "Rs 3.00 in cash for 2025/26; payout 70–124% over five years."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "5.3% yield",
+      "reading": "Rs 14.1bn in 2025/26 (operating cash flow less investing)."
+    },
+    {
+      "method": "NAV",
+      "value": "Rs 4.95",
+      "reading": "Book value is tiny because profit is paid out; not a useful anchor."
+    },
+    {
+      "method": "Tax exposure",
+      "value": "63% of turnover",
+      "reading": "Excise duty and income tax decide profit; the government can change both at any budget."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "FCFE DCF",
+      "bear": 18.9,
+      "base": 27.8,
+      "bull": 40.4,
+      "weighted": 27.6,
+      "comment": "Free cash flow to shareholders of Rs 13.0bn / 15.5bn / 17.5bn, growing 2% / 5% / 7% for five years, then 3% / 4% / 5%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 33.0,
+      "base": 43.2,
+      "bull": 54.6,
+      "weighted": 42.4,
+      "comment": "2026/27 EPS of Rs 3.30 / 3.60 / 3.90 at 10 / 12 / 14 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 18.8,
+      "base": 25.5,
+      "bull": 36.1,
+      "weighted": 25.6,
+      "comment": "Rs 2.80 / 3.10 / 3.40 a share, growing 2% / 5% / 7%, then 3% / 4% / 5%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 27.2,
+      "base": 34.8,
+      "bull": 48.6,
+      "weighted": 35.3,
+      "comment": "Book value Rs 4.95; ROE moving from 75% to 55% / 65% / 75%; 85% payout."
+    }
+  ],
+  "modelsNote": "A cash generator with no debt, so a free-cash-flow DCF, alongside P/E, dividends and residual income.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17.5%",
+        "base": "16.5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Free cash flow (2026/27)",
+        "bear": "Rs 13.0bn",
+        "base": "Rs 15.5bn",
+        "bull": "Rs 17.5bn"
+      },
+      {
+        "label": "Growth for five years, then long-term",
+        "bear": "2%, 3%",
+        "base": "5%, 4%",
+        "bull": "7%, 5%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "3.30 × 10",
+        "base": "3.60 × 12",
+        "bull": "3.90 × 14"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 2.80",
+        "base": "Rs 3.10",
+        "bull": "Rs 3.40"
+      }
+    ],
+    "averages": {
+      "bear": 24.5,
+      "base": 32.8,
+      "bull": 44.9
+    },
+    "common": "10-year government bond about 12.4% plus about 4 points; tax and excise risk offsets the monopoly position. Base 2026/27 EPS assumes the first quarter's 7% fall narrows."
+  },
+  "sensitivity": {
+    "title": "FCFE DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-term growth",
+    "rows": [
+      "15%",
+      "16.5%",
+      "17.5%"
+    ],
+    "columns": [
+      "3%",
+      "4%",
+      "5%"
+    ],
+    "values": [
+      [
+        29.8,
+        31.6,
+        33.7
+      ],
+      [
+        26.4,
+        27.8,
+        29.3
+      ],
+      [
+        24.6,
+        25.7,
+        27.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 58 needs a cost of equity of about 10–11%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 32.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 27.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 24.5
+      }
+    ],
+    "averagePrice": 28.77,
+    "totalCost": 14385,
+    "note": "About Rs 14,385 in total, against Rs 29,000 at Rs 58.00.",
+    "realism": "The 12-month low was Rs 49.20 and the 2024/25 low Rs 24.90; Rs 27.80 needs about a 52% fall, last seen in 2024–2025."
+  },
+  "changeMyView": {
+    "higher": [
+      "Excise or income-tax relief for legal producers.",
+      "Volume growth as incomes recover and illicit alcohol is curbed.",
+      "Beer adding to profit.",
+      "Lower interest rates."
+    ],
+    "lower": [
+      "Further excise or tax increases.",
+      "Illicit alcohol gaining share.",
+      "Melstacorp taking more cash out through related-party deals."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the interim reports to June 2026 (unaudited). The September 2026 quarter wasn't in the folder. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 77% above fair value of Rs 32.70.",
+    "Expected yearly return at Rs 58": "About -8% a year: dividend 5.2% + growth about 4% − about 17% a year if the price moved to fair value.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case -58% (Rs 24.5); bull case -23% (Rs 44.9).",
+    "Confidence": "Medium: the business is stable, but tax policy can change profit quickly.",
+    "Margin of safety": "Buy 15% below fair value (Rs 27.80), strong buy 25% below (Rs 24.50)."
+  },
+  "Business and moat": {
+    "What it does": "Arrack (coconut and blended), other spirits and, since the breweries acquisition, beer through DCSL Breweries Lanka.",
+    "Moat": "Very wide: market leader for decades, brand recall, licences and scale; the main competitor is illicit alcohol."
+  },
+  "Management and governance": {
+    "Ownership": "Melstacorp 92.35% (Jayawardena family group).",
+    "Auditor": "KPMG.",
+    "Rating": "OK"
+  },
+  "Sri Lanka checks": {
+    "Taxes": "High risk: excise duty and a higher income-tax rate for alcohol.",
+    "Illicit alcohol": "Risk: grows when legal prices rise.",
+    "Liquidity": "Low: 7.65% free float."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A near-monopoly with huge returns and cash payouts, at a lower price.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 42.51); a large tax increase."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 27.80 or lower",
+    "Strong buy": "Rs 24.50 or lower",
+    "Sell trigger": "Rs 42.51 or higher (already exceeded)"
+  },
+  "Key ratios (five-year trend)": {
+    "Gross turnover (company)": "2021/22 Rs 107.1bn · 2022/23 Rs 123.4bn · 2023/24 Rs 115.4bn · 2024/25 Rs 138.9bn · 2025/26 Rs 164.4bn",
+    "Profit after tax (company)": "Rs 8.0bn · Rs 18.8bn · Rs 14.3bn · Rs 17.6bn · Rs 16.8bn",
+    "Dividend payout": "89.7% · 54% · 124% · 70.5% · 82%",
+    "Operating cash flow": "Rs 12.3bn · Rs 7.1bn · Rs 17.9bn · Rs 18.3bn · Rs 15.2bn"
+  },
+  "What this analysis doesn't cover": [
+    "The September 2026 quarter.",
+    "Breweries' separate profit contribution.",
+    "Volume data by brand."
+  ],
+  "fullText": "Summary: Distilleries Company of Sri Lanka (DIST.N0000), 92% owned by Melstacorp, is the country's dominant arrack maker (and now also brews beer through DCSL Breweries Lanka). It is extremely profitable: return on equity 77%, no debt, Rs 5.7bn of net cash, and about 80% of profit paid out (Rs 3.00 a share for 2025/26). But profit has stopped growing because the government takes most of the price: excise duty was Rs 102.9bn of Rs 164.4bn gross turnover in 2025/26, and a higher income-tax rate for alcohol makers cut profit 4% that year; April–June 2026 profit fell another 7% (EPS Rs 0.86 against Rs 0.92). At Rs 58.00 (CSE, 12 November 2026) it trades at 15.9x trailing earnings with a 5.2% yield. Four methods put fair value at about Rs 32.70, so the price is about 77% above it. I'd buy at up to Rs 27.80 and treat under Rs 24.50 as a strong buy. Only 7.65% of the shares are publicly held.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFCFE DCF | 18.9 | 27.8 | 40.4 | 27.6\nP/E method | 33.0 | 43.2 | 54.6 | 42.4\nDividend model | 18.8 | 25.5 | 36.1 | 25.6\nResidual income | 27.2 | 34.8 | 48.6 | 35.3\nAverage | 24.5 | 32.8 | 44.9 | 32.7\n\nBusiness tests: 4 of 4 passed, so it's a good business at a high price: watch list."
+}

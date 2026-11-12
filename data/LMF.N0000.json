@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LMF.N0000",
+  "company": {
+    "name": "Lanka Milk Foods (CWE) PLC",
+    "sector": "Food and investments",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "LMF.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024/25 and 2025/26 (KPMG)",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 91.9,
+    "date": "2026-11-12",
+    "source": "CSE closing price (cse.lk)",
+    "note": "12-month range Rs 62.60–97.70. July–September 2026 Rs 83.00–90.10, closed September at Rs 83.90. Closed March 2026 at Rs 80.10."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Mostly a holding of Melstacorp shares with a dairy business attached",
+    "text": "Lanka Milk Foods (LMF.N0000) makes Lakspray milk powder and Ambewela dairy products, but most of its value is shares: 151.8m Melstacorp shares and 45m Distilleries shares, worth about Rs 32bn (Rs 80 a share) at 12 November prices. Melstacorp in turn owns 32.6% of Lanka Milk Foods, so the Jayawardena group's holdings run in a circle. The dairy business is growing (revenue up 26% in the half year to Rs 12.7bn; group profit up 18% to Rs 1.40bn, EPS Rs 3.49) but earns a low return on the group's equity (6.9% in 2025/26), and the dividend is small (Rs 1.00). At Rs 91.90 (CSE, 12 November 2026) it trades at 0.87x NAV (Rs 105.14) and about 13x trailing earnings. Three methods put fair value at about Rs 76.90, so the price is about 20% above it. I'd buy at up to Rs 65.40 and treat under Rs 57.70 as a strong buy."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "Low debt and steady profits, but low returns and a small dividend.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "6.9% (2025/26)",
+        "note": "3.5–10.2% over five years; equity is mostly share holdings yielding dividends."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.11x",
+        "note": "Net debt about Rs 4.6bn (including leases) against equity of Rs 42.1bn (Sep 2026)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit swings with tax: Rs 1.0bn in 2024/25, Rs 2.6bn in 2025/26."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "15% payout",
+        "note": "Rs 1.00 a share for 2025/26 against EPS Rs 6.55."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 76.9,
+    "buyPrice": 65.4,
+    "strongBuyPrice": 57.7,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 105.14,
+    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20 (about 0.73x NAV). Residual income isn't used because most book value is unrealised share gains that never pass through profit; dividends are shown as a reading."
+  },
+  "dividend": {
+    "perShare": 1.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, financial highlights (p. 16)"
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 105.14,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.87,
+      "unit": "x"
+    },
+    {
+      "id": "investments",
+      "label": "Share holdings at market",
+      "value": 80.1,
+      "unit": "Rs",
+      "note": "Per LMF share, 12 Nov prices"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 13.0,
+      "unit": "x",
+      "note": "EPS Rs 7.07"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 6.87,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.1,
+      "unit": "%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 36.8,
+      "unit": "Rs bn",
+      "display": "~Rs 37bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to September 2026 (unaudited)",
+      "text": "Revenue up 26% to Rs 12.7bn; gross profit up 19%. Group profit up 18% to Rs 1.40bn (EPS Rs 3.49 against Rs 2.97), including Rs 0.55bn of dividends from its Melstacorp and Distilleries shares."
+    },
+    {
+      "title": "The share holdings",
+      "text": "151.8m Melstacorp shares (Rs 29.4bn at Rs 193.75) and 45.0m Distilleries shares (Rs 2.6bn at Rs 58.00), held at market value through equity. Their value rose Rs 7.0bn in 2025/26, which isn't counted in profit."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Revenue Rs 20.8bn (up 10%), profit Rs 2.62bn (Rs 1.01bn), EPS Rs 6.55, dividend Rs 1.00, NAV Rs 95.39."
+    },
+    {
+      "title": "Circular ownership",
+      "text": "Melstacorp owns 32.6% of Lanka Milk Foods and Milford Exports (Ceylon) (Pvt) Ltd 33.6%, while Lanka Milk Foods owns 13% of Melstacorp."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          2.66,
+          2.97,
+          5.54,
+          2.51,
+          6.55,
+          7.07
+        ],
+        "notes": [
+          "Split-adjusted",
+          "Split-adjusted",
+          "Split-adjusted",
+          "Split-adjusted",
+          "Split-adjusted",
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          9.32,
+          8.09,
+          10.16,
+          3.48,
+          6.87,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "See 2025/26"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          4.98,
+          4.74,
+          4.91,
+          17.29,
+          12.22,
+          13.0
+        ],
+        "notes": [
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "At Rs 91.90"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0.75,
+          0.5,
+          0.63,
+          0.63,
+          1.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Not yet declared"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 105.14",
+      "reading": "0.87x. Most of NAV is the Melstacorp and Distilleries shares at market."
+    },
+    {
+      "method": "Sum of the parts",
+      "value": "Rs 80 + dairy",
+      "reading": "Shares worth Rs 80 a share at market; dairy worth roughly Rs 30–50 a share. Holding companies like this usually trade 30–50% below their parts."
+    },
+    {
+      "method": "P/E",
+      "value": "13x",
+      "reading": "Trailing EPS Rs 7.07, about a third of which is dividends received."
+    },
+    {
+      "method": "Return on equity",
+      "value": "6.9%",
+      "reading": "Low, because most equity is shares yielding about 2–4% in dividends."
+    },
+    {
+      "method": "Dividends",
+      "value": "1.1% yield",
+      "reading": "Rs 1.00 for 2025/26; too small to value on."
+    }
+  ],
+  "models": [
+    {
+      "id": "nav",
+      "name": "NAV less holding discount",
+      "bear": 63.1,
+      "base": 73.6,
+      "bull": 84.1,
+      "weighted": 72.5,
+      "comment": "NAV Rs 105.14 less 40% / 30% / 20%."
+    },
+    {
+      "id": "sotp",
+      "name": "Sum of the parts",
+      "bear": 72.0,
+      "base": 91.1,
+      "bull": 112.1,
+      "weighted": 89.6,
+      "comment": "Dairy profit Rs 1.2bn / 1.4bn / 1.6bn at 8 / 10 / 12 times, plus the Melstacorp and Distilleries shares (Rs 32.0bn at 12 Nov prices) less 40% / 30% / 20%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 48,
+      "base": 70,
+      "bull": 96,
+      "weighted": 68.6,
+      "comment": "EPS of Rs 6 / 7 / 8 (including dividends received) at 8 / 10 / 12 times."
+    }
+  ],
+  "modelsNote": "A holding company with an operating dairy business, so NAV less a discount and a sum of the parts at market prices, checked against P/E. Residual income would undervalue it (book value is mostly unrealised share gains), and the dividend is too small to model.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Holding-company discount",
+        "bear": "40%",
+        "base": "30%",
+        "bull": "20%"
+      },
+      {
+        "label": "Dairy profit × P/E",
+        "bear": "Rs 1.2bn × 8",
+        "base": "Rs 1.4bn × 10",
+        "bull": "Rs 1.6bn × 12"
+      },
+      {
+        "label": "EPS × P/E",
+        "bear": "6 × 8",
+        "base": "7 × 10",
+        "bull": "8 × 12"
+      }
+    ],
+    "averages": {
+      "bear": 61.0,
+      "base": 78.2,
+      "bull": 97.4
+    },
+    "common": "Melstacorp Rs 193.75 and Distilleries Rs 58.00 (CSE, 12 Nov 2026). Dairy profit excludes dividends received."
+  },
+  "sensitivity": {
+    "title": "Sum of the parts base case, Rs per share",
+    "rowLabel": "Holding discount",
+    "columnLabel": "Dairy P/E",
+    "rows": [
+      "20%",
+      "30%",
+      "40%"
+    ],
+    "columns": [
+      "8x",
+      "10x",
+      "12x"
+    ],
+    "values": [
+      [
+        92.1,
+        99.1,
+        106.1
+      ],
+      [
+        84.1,
+        91.1,
+        98.1
+      ],
+      [
+        76.0,
+        83.0,
+        90.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 91.90 is close to the base sum of the parts; the NAV and P/E methods are lower."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 76.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 65.4
+      },
+      {
+        "shares": 150,
+        "maxPrice": 57.7
+      }
+    ],
+    "averagePrice": 67.69,
+    "totalCost": 33845,
+    "note": "About Rs 33,845 in total, against Rs 45,950 at Rs 91.90.",
+    "realism": "The 12-month low was Rs 62.60, so Rs 65.40 is within this year's range; it also depends on Melstacorp's price."
+  },
+  "changeMyView": {
+    "higher": [
+      "Higher dividends passed through from Melstacorp and Distilleries.",
+      "Dairy profit above Rs 2bn.",
+      "A simpler group structure."
+    ],
+    "lower": [
+      "A fall in Melstacorp's share price (90% of the holdings).",
+      "Milk-powder import competition or price controls.",
+      "Related-party dealings within the Jayawardena group."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024/25 and 2025/26 annual reports and the interim reports to September 2026 (unaudited). This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 20% above fair value of Rs 76.90.",
+    "Downside / upside": "Bear case -34% (Rs 61.0); bull case 6% (Rs 97.4).",
+    "Confidence": "Low to medium: value depends mostly on Melstacorp's price.",
+    "Margin of safety": "Buy 15% below fair value (Rs 65.40), strong buy 25% below (Rs 57.70)."
+  },
+  "Business and moat": {
+    "What it does": "Dairy: Lakspray milk powder, Ambewela and Happy Cow brands, farms at Ambewela and Pattipola; plus share holdings in Melstacorp and Distilleries.",
+    "Moat": "Moderate: well-known brands and its own farms; competes with imported milk powder."
+  },
+  "Management and governance": {
+    "Ownership": "Milford Exports (Ceylon) 33.6%, Melstacorp 32.6%, EPF 3.8%. Controlled by the Jayawardena group.",
+    "Auditor": "KPMG.",
+    "Rating": "Watch"
+  },
+  "Sri Lanka checks": {
+    "Dairy prices": "Risk: milk-powder prices are often regulated.",
+    "Share market": "Risk: Melstacorp's price drives NAV.",
+    "Liquidity": "Moderate."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A discounted way to own Melstacorp and Distilleries plus a growing dairy, at the right price.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 99.97)."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 65.40 or lower",
+    "Strong buy": "Rs 57.70 or lower",
+    "Sell trigger": "Rs 99.97 or higher"
+  },
+  "Key ratios (five-year trend)": {
+    "Revenue": "2021/22 Rs 9.8bn · 2022/23 Rs 14.2bn · 2023/24 Rs 16.7bn · 2024/25 Rs 18.9bn · 2025/26 Rs 20.8bn",
+    "Profit": "Rs 1.06bn · Rs 1.19bn · Rs 2.22bn · Rs 1.01bn · Rs 2.62bn",
+    "NAV per share": "Rs 28.58 · Rs 36.76 · Rs 54.52 · Rs 72.27 · Rs 95.39 · Sep 2026 Rs 105.14",
+    "Gross margin": "14.9% · 12.6% · 16.0% · 14.9% · 16.2%"
+  },
+  "What this analysis doesn't cover": [
+    "Melstacorp's own valuation (its 32.6% stake in Lanka Milk Foods makes the holdings circular).",
+    "Dairy segment detail beyond group figures."
+  ],
+  "fullText": "Summary: Lanka Milk Foods (LMF.N0000) makes Lakspray milk powder and Ambewela dairy products, but most of its value is shares: 151.8m Melstacorp shares and 45m Distilleries shares, worth about Rs 32bn (Rs 80 a share) at 12 November prices. Melstacorp in turn owns 32.6% of Lanka Milk Foods, so the Jayawardena group's holdings run in a circle. The dairy business is growing (revenue up 26% in the half year to Rs 12.7bn; group profit up 18% to Rs 1.40bn, EPS Rs 3.49) but earns a low return on the group's equity (6.9% in 2025/26), and the dividend is small (Rs 1.00). At Rs 91.90 (CSE, 12 November 2026) it trades at 0.87x NAV (Rs 105.14) and about 13x trailing earnings. Three methods put fair value at about Rs 76.90, so the price is about 20% above it. I'd buy at up to Rs 65.40 and treat under Rs 57.70 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nNAV less holding discount | 63.1 | 73.6 | 84.1 | 72.5\nSum of the parts | 72.0 | 91.1 | 112.1 | 89.6\nP/E method | 48 | 70 | 96 | 68.6\nAverage | 61.0 | 78.2 | 97.4 | 76.9\n\nBusiness tests: 2 of 4 passed (debt, steady profit; fails returns and dividends), so it's weak: avoid for now."
+}

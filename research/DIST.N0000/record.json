@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "ticker": "DIST.N0000",
+  "localFolder": "DISTILLERIES COMPANY OF SRI LANKA",
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "Annual Report 2024,2025.pdf",
+      "title": "Annual report 2024/25",
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Figures from the 2025/26 ten-year summary."
+    },
+    {
+      "file": "Annual Report as at 31st March 2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Financial highlights (p. 3), chairman's message, ten-year summary (p. 145), group EPS note."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
+      "title": "Interim to 31 Dec 2025",
+      "period": "Q3 2025/26",
+      "periodEnd": "2025-12-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q4 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Superseded by the annual report."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Income statement p. 1, balance sheet p. 2, shareholders."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 164.38,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Gross turnover (company); excise 102.898; net 61.482"
+        },
+        "netProfit": {
+          "value": 16.844,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company"
+        },
+        "eps": {
+          "value": 3.71,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, EPS note",
+          "note": "Group; company 3.66"
+        },
+        "roe": {
+          "value": 77.3,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "dividendPerShare": {
+          "value": 3.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "navPerShare": {
+          "value": 4.74,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company"
+        },
+        "operatingCashFlow": {
+          "value": 15.158,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 145",
+          "note": "Company"
+        },
+        "priceYearEnd": {
+          "value": 54.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 41.621,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "Gross; net 14.469"
+        },
+        "grossProfit": {
+          "value": 7.929,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "8.397 a year earlier"
+        },
+        "netProfit": {
+          "value": 3.964,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "4.250 a year earlier"
+        },
+        "eps": {
+          "value": 0.86,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 1",
+          "note": "0.92 a year earlier"
+        },
+        "navPerShare": {
+          "value": 4.95,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 2"
+        },
+        "netCash": {
+          "value": 5.73,
+          "unit": "Rs bn",
+          "source": "Worked out from p. 2",
+          "note": "Short-term investments 5.27 + cash 1.00 − overdraft 0.55"
+        },
+        "parentHoldingPct": {
+          "value": 92.35,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, shareholders",
+          "note": "Melstacorp"
+        }
+      }
+    },
+    {
+      "period": "TTM Jun 2026",
+      "periodEnd": "2026-06-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 3.65,
+          "unit": "Rs",
+          "source": "Worked out: 3.71 + 0.86 − 0.92"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "17.5% / 16.5% / 15%",
+      "reason": "Bond about 12.4% plus about 4 points.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "FCFE",
+      "value": "Rs 13.0bn / 15.5bn / 17.5bn; growth 2% / 5% / 7%, then 3% / 4% / 5%",
+      "reason": "Operating cash flow Rs 15–18bn, capex about Rs 1bn.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "3.30 × 10 / 3.60 × 12 / 3.90 × 14",
+      "reason": "Q1 Rs 0.86 (−7%); five-year P/E 4.8–15x.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividends",
+      "value": "Rs 2.80 / 3.10 / 3.40",
+      "reason": "Rs 3.00 for 2025/26.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "ROE path",
+      "value": "75% → 55% / 65% / 75%; 85% payout",
+      "reason": "ROE 77–154% over five years.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "September 2026 quarter: does the profit decline continue?",
+    "Any excise changes in the November 2026 budget.",
+    "Breweries' contribution."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Jun 2026",
+      "summary": "First analysis. FCFE DCF, P/E, dividends and residual income; business tests 4 of 4 (category 2, watch list).",
+      "fairValue": 32.7,
+      "buyPrice": 27.8,
+      "strongBuyPrice": 24.5,
+      "priceAtTime": 58.0,
+      "archive": null
+    }
+  ]
+}
