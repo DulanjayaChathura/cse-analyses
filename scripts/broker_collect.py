@@ -32,7 +32,7 @@ from common import ROOT, read_json, write_json
 INBOX = ROOT / "inbox"
 LAST_ID = INBOX / "last_update_id.txt"
 MAX_FILE = 20 * 1024 * 1024        # the Bot API can't download larger files
-OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test")   # messages this site posts itself
+OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳")   # messages this site (and the /summary listener) posts itself
 # "/summary", "/summary12", "/summary-12", "/summary 12", "/summary@SomeBot": a summary command.
 COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$", re.IGNORECASE)
 
