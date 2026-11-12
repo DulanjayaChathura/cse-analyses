@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "SAMP.N0000",
   "localFolder": "sampath bank",
-  "updated": "2026-11-08",
+  "updated": "2026-11-13",
   "reportsRead": [
     {
       "file": "Sampath bank Annual Report as at 31st December 2025.pdf",
@@ -50,6 +50,16 @@
       "audited": true,
       "readOn": "2026-11-08",
       "note": "Not read in detail: 2024 and earlier figures come from the 2025 report's ten-year summary."
+    },
+    {
+      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Commentary pp. 1–2, income statement p. 3 (PDF), balance sheet, notes 5 (share price) and 6 (reclassification), ratios p. 21."
     }
   ],
   "periods": [
@@ -422,6 +432,111 @@
           "source": "Interim to 30 Jun 2026, PDF p. 16"
         }
       }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 99.688,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group total operating income; up 15%"
+        },
+        "netInterestIncome": {
+          "value": 65.93,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Bank; up 15%"
+        },
+        "netProfit": {
+          "value": 26.537,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group; up 15%. Bank Rs 24.6bn"
+        },
+        "eps": {
+          "value": 22.63,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, income statement",
+          "note": "Group; 19.74 a year earlier. Q3 7.40 vs 6.41"
+        },
+        "navPerShare": {
+          "value": 173.18,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, balance sheet",
+          "note": "Group; bank 158.87"
+        },
+        "roe": {
+          "value": 18.38,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, ratios",
+          "note": "Bank, annualised"
+        },
+        "nim": {
+          "value": 4.22,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, ratios"
+        },
+        "costToIncome": {
+          "value": 44.33,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, ratios"
+        },
+        "cet1": {
+          "value": 12.27,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, ratios",
+          "note": "Bank; total capital 15.32%"
+        },
+        "stage3Gross": {
+          "value": 6.07,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, ratios",
+          "note": "Coverage 68.66%"
+        },
+        "impairment": {
+          "value": 6.0,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, commentary",
+          "note": "Bank; loans 8.1, reversal on other instruments 1.3"
+        },
+        "grossLoans": {
+          "value": 1496.6,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 1.1",
+          "note": "Bank; up 22%"
+        },
+        "deposits": {
+          "value": 1830.09,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, balance sheet",
+          "note": "Bank"
+        },
+        "priceQuarterEnd": {
+          "value": 140.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 5",
+          "note": "Q3 range 135.50–144.25"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 30.66,
+          "unit": "Rs",
+          "source": "Worked out: 27.77 + 22.63 − 19.74"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -457,9 +572,9 @@
     },
     {
       "name": "2026 EPS × P/E",
-      "value": "28 × 4.5 / 31 × 5.5 / 33 × 6.5",
-      "reason": "H1 EPS Rs 15.23; second half similar, less the tax and recovery one-offs. P/E range from recent year-ends (3.0–5.7x).",
-      "since": "2026-11-08"
+      "value": "29 × 4.5 / 31 × 5.5 / 32 × 6.5",
+      "reason": "Nine-month EPS Rs 22.63; Q3 Rs 7.40, so the full year is very likely Rs 29–32. P/E range from recent year-ends (3.0–5.7x).",
+      "since": "2026-11-13"
     },
     {
       "name": "Dividend per share 2026, growth",
@@ -475,11 +590,10 @@
     }
   ],
   "openQuestions": [
-    "Q3 2026: does profit hold up without the H1 tax settlement and recoveries?",
-    "How far does CET1 fall with continued loan growth, and is the 2026 dividend paid in cash?",
-    "Do Stage 2 loans (up Rs 36.8bn in H1) move into Stage 3?",
-    "Does the net interest margin stay above 4.2% as rates move?",
-    "Any new taxes on banks in the November 2026 budget?"
+    "Full-year 2026 (due February 2027): final dividend, and whether it stays in cash with CET1 at 12.3%.",
+    "Does impairment stay elevated as the 2026 loan growth (22%) seasons?",
+    "Cost growth (22%) vs income growth (14%).",
+    "Any new taxes on banks in the November 2026 budget."
   ],
   "changeLog": [
     {
@@ -491,6 +605,16 @@
       "strongBuyPrice": 106,
       "priceAtTime": 152.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Q3 confirmed the first half: 9M group EPS Rs 22.63 (+15%). Questions answered: profit held up in Q3 (+15%) despite the H1 one-offs; CET1 fell further to 12.27% and Rs 10bn Tier 2 debentures were raised; Stage 3 kept falling (6.07%). NAV Rs 173.18 lifted the P/B and residual-income methods; 2026 EPS range narrowed to 29/31/32. Business tests 4 of 4; category unchanged (watch list).",
+      "fairValue": 144,
+      "buyPrice": 122,
+      "strongBuyPrice": 108,
+      "priceAtTime": 157.0,
+      "archive": "research/SAMP.N0000/history/2026-11-08.json"
     }
   ]
 }

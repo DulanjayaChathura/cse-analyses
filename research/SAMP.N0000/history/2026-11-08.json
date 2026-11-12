@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "ticker": "SAMP.N0000",
+  "company": {
+    "name": "Sampath Bank PLC",
+    "sector": "Banking",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "SAMP.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-08",
+  "resultsCovered": {
+    "label": "First half of 2026 (six months to 30 June 2026)",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025",
+      "Interim financial statements to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 152.0,
+    "date": "2026-11-06",
+    "source": "CSE closing price",
+    "note": "Closed Rs 143.25 on 30 June 2026; first-half 2026 range Rs 137.75–167.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A well-run bank, but at Rs 152 the price is a little above fair value: wait for Rs 130 or lower",
+    "text": "Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, but at today's price it's a little above fair value. At Rs 152 it trades at 0.91x its group NAV of Rs 166.78, so it still passes your NAV rule, and at 5.1x trailing earnings with a 6.8% dividend yield it looks cheap on simple multiples. But a Sri Lankan bank needs a high return to justify owning it (I use an 18% cost of equity), and on that basis the four methods put fair value at about Rs 141, so the price is about 8% above it. I'd buy at up to about Rs 120 and treat under Rs 106 as a strong buy. Profit is growing (group profit up 14% in the first half of 2026), but loans grew 18% in six months, which is using up capital, and the first half was helped by one-offs."
+  },
+  "valuation": {
+    "fairValue": 141,
+    "buyPrice": 120,
+    "strongBuyPrice": 106,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 166.78,
+    "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (about 0.85x group NAV)."
+  },
+  "dividend": {
+    "perShare": 10.3,
+    "label": "for 2025 (cash)",
+    "source": "Annual Report 2025, PDF p. 15"
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 166.78,
+      "unit": "Rs",
+      "note": "30 June 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.91,
+      "unit": "x",
+      "note": "Still passes your NAV rule"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 5.1,
+      "unit": "x",
+      "note": "Trailing group EPS Rs 29.67"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (H1 2026)",
+      "value": 18.9,
+      "unit": "%",
+      "note": "Bank, annualised"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 6.8,
+      "unit": "%",
+      "note": "Rs 10.30 for 2025"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 40,
+      "unit": "%",
+      "note": "Share of profit paid out"
+    },
+    {
+      "id": "nim",
+      "label": "Net interest margin",
+      "value": 4.21,
+      "unit": "%",
+      "note": "H1 2026 (bank)"
+    },
+    {
+      "id": "cet1",
+      "label": "CET1 capital ratio",
+      "value": 13.21,
+      "unit": "%",
+      "note": "Down from 14.75% at end-2025"
+    },
+    {
+      "id": "stage3",
+      "label": "Gross Stage 3 loans",
+      "value": 6.54,
+      "unit": "%",
+      "note": "Down from 8.37%; coverage 65.6%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 178,
+      "unit": "Rs bn",
+      "display": "~Rs 178bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "First half of 2026 (group, unaudited)",
+      "text": "Profit after tax rose 14% to Rs 17.9bn and EPS to Rs 15.23 from Rs 13.33. Second-quarter profit rose 65% year on year."
+    },
+    {
+      "title": "What drove it",
+      "text": "Net interest income rose 11% (margin 4.21% against 4.11%), fees rose 26%, and exchange income jumped to Rs 7.2bn as the rupee weakened. Bond-sale gains fell to Rs 1.0bn from Rs 3.5bn."
+    },
+    {
+      "title": "Costs, provisions and one-offs",
+      "text": "Impairment charges rose to Rs 5.0bn from Rs 1.2bn on 18% loan growth and extra provisions, and costs rose 21%. Tax fell 18% because prior-year assessments were finalised, and Q2 included over Rs 3bn of recoveries."
+    },
+    {
+      "title": "Loans, asset quality and capital",
+      "text": "Gross loans grew Rs 226bn (18%) to Rs 1,449bn. Gross Stage 3 loans fell to 6.54% from 8.37%, but Stage 2 rose Rs 36.8bn. CET1 fell to 13.21% from 14.75%; a Rs 10bn green bond was issued in July."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity (bank)",
+        "unit": "%",
+        "values": [
+          10.95,
+          12.65,
+          17.74,
+          17.93,
+          18.91
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "H1 2026, annualised"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (bank)",
+        "unit": "x",
+        "values": [
+          2.98,
+          4.82,
+          5.08,
+          5.69,
+          5.5
+        ],
+        "notes": [
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Trailing, at Rs 152.00"
+        ]
+      },
+      {
+        "id": "pb",
+        "label": "Price to book (bank)",
+        "unit": "x",
+        "values": [
+          0.31,
+          0.56,
+          0.83,
+          0.96,
+          0.99
+        ],
+        "notes": [
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "At Rs 152.00"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 166.78",
+      "reading": "Group NAV per share at 30 June 2026. The price is 0.91x NAV, so it passes your NAV rule."
+    },
+    {
+      "method": "Return on equity",
+      "value": "18.9%",
+      "reading": "First half of 2026, annualised (bank). 2025: 17.9%, 2024: 17.7%, 2023: 12.7%, 2022: 11.0%."
+    },
+    {
+      "method": "P/E",
+      "value": "5.1x",
+      "reading": "On trailing group EPS of Rs 29.67. Bank year-end P/E: 5.7x (2025), 5.1x (2024), 4.8x (2023), 3.0x (2022)."
+    },
+    {
+      "method": "Dividends",
+      "value": "6.8% yield",
+      "reading": "Rs 10.30 cash for 2025 (40% of profit), paid once a year after the annual results."
+    },
+    {
+      "method": "Capital",
+      "value": "CET1 13.21%",
+      "reading": "Total capital 15.62%, down from 17.65% at end-2025 as loans grew 18%. Comfortably above minimums, but falling."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 6.54%",
+      "reading": "Gross impaired loans down from 8.37%, with 65.6% covered by provisions. Stage 2 loans rose Rs 36.8bn."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 111.2,
+      "base": 152.9,
+      "bull": 210.7,
+      "weighted": 151.9,
+      "comment": "Values the bank as a multiple of its book value, set by long-run ROE against the cost of equity and growth."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 126.0,
+      "base": 170.5,
+      "bull": 214.5,
+      "weighted": 165.9,
+      "comment": "The most generous method, because the base case assumes the market pays 5.5x earnings, close to its recent range."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 71.3,
+      "base": 106.4,
+      "bull": 147.6,
+      "weighted": 104.1,
+      "comment": "The strictest method, because the bank keeps 60% of its profit to fund loan growth instead of paying it out."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 97.7,
+      "base": 143.4,
+      "bull": 207.1,
+      "weighted": 142.4,
+      "comment": "Used instead of a cash-flow DCF, which doesn't suit a bank: book value plus profit earned above the 18% required return."
+    }
+  ],
+  "modelsNote": "A bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20%",
+        "base": "18%",
+        "bull": "16.5%"
+      },
+      {
+        "label": "Long-run ROE (price to book)",
+        "bear": "15%",
+        "base": "17%",
+        "bull": "19%"
+      },
+      {
+        "label": "Return on equity path",
+        "bear": "16.5% falling to 14%",
+        "base": "18% falling to 16%",
+        "bull": "19% falling to 18%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026 EPS × P/E",
+        "bear": "28 × 4.5",
+        "base": "31 × 5.5",
+        "bull": "33 × 6.5"
+      },
+      {
+        "label": "Dividend per share 2026, growth",
+        "bear": "Rs 11.00, 4%",
+        "base": "Rs 12.40, 7%",
+        "bull": "Rs 13.20, 9%"
+      }
+    ],
+    "averages": {
+      "bear": 101.5,
+      "base": 143.3,
+      "bull": 195.0
+    },
+    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a leveraged bank with large government-bond holdings. Payout stays near 40%. In the base case, second-half EPS is similar to the first half's, less the tax and recovery one-offs, giving about Rs 31 for 2026."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16%",
+      "18%",
+      "20%"
+    ],
+    "columns": [
+      "14%",
+      "16%",
+      "18%"
+    ],
+    "values": [
+      [
+        150.2,
+        179.5,
+        211.5
+      ],
+      [
+        121.9,
+        143.4,
+        166.8
+      ],
+      [
+        102.1,
+        118.4,
+        136.1
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 152 is only supported with a 16% cost of equity, or with an 18% cost of equity and a long-run ROE of 18%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 130
+      },
+      {
+        "shares": 150,
+        "maxPrice": 120
+      },
+      {
+        "shares": 150,
+        "maxPrice": 110
+      }
+    ],
+    "averagePrice": 121.0,
+    "totalCost": 60500,
+    "note": "About Rs 60,500 in total, against Rs 76,000 for 500 shares at Rs 152.",
+    "realism": "This year's reported range is Rs 137.75–167.00 (first half of 2026), and the 2025 low was Rs 99.90. The first tier at Rs 130 needs about a 14% fall, and Rs 120 about 21%, which would need a broad market sell-off. A small starter at today's price yields about 6.8%, but it's above fair value."
+  },
+  "changeMyView": {
+    "higher": [
+      "Loan growth continuing while Stage 3 loans keep falling.",
+      "The net interest margin holding above 4.2%.",
+      "Lower interest rates, which would lower the cost of equity.",
+      "ROE staying above 19% without one-offs.",
+      "Cash dividends of Rs 12+ for 2026.",
+      "Q3 results (to September, due by mid-November) confirming the first half."
+    ],
+    "lower": [
+      "Capital being used up by fast loan growth, leading to smaller cash dividends, a scrip dividend or a rights issue.",
+      "A provisioning cycle: Stage 2 loans rose Rs 36.8bn in the half.",
+      "One-offs not repeating: the tax settlement, Rs 3bn+ of recoveries and the exchange gains.",
+      "Rising rates squeezing margins and the value of the bond portfolio.",
+      "Higher taxes on banks (VAT on financial services, income tax surcharges).",
+      "Stress in the government-bond market, where the bank holds large investments."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the 2025–2026 interim reports. The interim figures are unaudited, and the price is the CSE close of 6 November 2026, so check it before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, but at today's price it's a little above fair value. At Rs 152 it trades at 0.91x its group NAV of Rs 166.78, so it still passes your NAV rule, and at 5.1x trailing earnings with a 6.8% dividend yield it looks cheap on simple multiples. But a Sri Lankan bank needs a high return to justify owning it (I use an 18% cost of equity), and on that basis the four methods put fair value at about Rs 141, so the price is about 8% above it. I'd buy at up to about Rs 120 and treat under Rs 106 as a strong buy. Profit is growing (group profit up 14% in the first half of 2026), but loans grew 18% in six months, which is using up capital, and the first half was helped by one-offs.\n\nPrice and key figures\nPrice: Rs 152.00, the CSE close on 6 November 2026. It closed at Rs 143.25 on 30 June 2026, after a Q2 range of Rs 137.75–150.75, and reached Rs 167.00 in Q1 2026.\nFirst half of 2026 (group, unaudited): profit after tax rose 14% to Rs 17.9bn. EPS was Rs 15.23 against Rs 13.33. Second-quarter profit rose 65%.\nWhat drove it: net interest income rose 11% (bank Rs 42.8bn; net interest margin 4.21% against 4.11% for 2025), fees rose 26%, and exchange income rose to Rs 7.2bn as the rupee weakened. Against that, impairment charges rose to Rs 5.0bn from Rs 1.2bn because of 18% loan growth and extra provisions, costs rose 21%, and gains on bond sales fell to Rs 1.0bn from Rs 3.5bn. Tax fell 18% because prior-year assessments were finalised, and the second quarter included over Rs 3bn of impairment reversals from recoveries. Both are one-offs.\nBalance sheet: gross loans grew Rs 226bn (18%) to Rs 1,449bn; deposits reached Rs 1.76tn. The gross Stage 3 (impaired) loan ratio fell to 6.54% from 8.37%, with 65.6% covered by provisions, but Stage 2 loans rose Rs 36.8bn as the bank reclassified exposures cautiously.\nCapital: CET1 fell to 13.21% from 14.75% and total capital to 15.62% from 17.65%, as loan growth used capital. The bank issued a Rs 10bn Basel III green bond in July 2026.\n2025 (group): profit Rs 32.6bn (up 13.5%), EPS Rs 27.77, dividend Rs 10.30 (40% of profit, in cash), NAV Rs 165.23. Bank ROE 17.9%.\n\nMethods\nNAV (group Rs 166.78): 0.91x, passes your NAV rule. Book value matters more for a bank than for a telecom company.\nReturn on equity: 18.9% for the first half of 2026, annualised (bank). 2025: 17.9%, 2024: 17.7%, 2023: 12.7%, 2022: 11.0%.\nP/E: 5.1x trailing group EPS of Rs 29.67. Bank year-end P/E: 5.7x (2025), 5.1x (2024), 4.8x (2023), 3.0x (2022).\nDividends: Rs 10.30 for 2025, a 6.8% yield, 40% of profit, paid once a year.\nCapital and asset quality: CET1 13.21%, total capital 15.62%; gross Stage 3 6.54%, coverage 65.6%.\nJustified price to book: Rs 111.2 / 152.9 / 210.7 across the cases, weighted Rs 151.9.\nP/E method: Rs 126.0 / 170.5 / 214.5, weighted Rs 165.9.\nDividend model: Rs 71.3 / 106.4 / 147.6, weighted Rs 104.1.\nResidual income: Rs 97.7 / 143.4 / 207.1, weighted Rs 142.4.\n\nA bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income, which values the bank as its book value plus the profit it earns above the 18% return investors require. The dividend model is the strictest because the bank keeps 60% of its profit to fund loan growth. The P/E method is the most generous because the base case assumes the market pays 5.5x earnings, close to its recent range.\n\nAssumptions (bear / base / bull)\nCost of equity: 20% / 18% / 16.5%.\nLong-run ROE (price to book): 15% / 17% / 19%.\nROE path (residual income): 16.5% falling to 14% / 18% falling to 16% / 19% falling to 18%.\nLong-term growth: 5% / 6% / 7%.\n2026 EPS × P/E: 28 × 4.5 / 31 × 5.5 / 33 × 6.5.\nDividend per share 2026, then growth for five years: Rs 11.00, 4% / Rs 12.40, 7% / Rs 13.20, 9%.\nAverage of the four methods: Rs 101.5 / Rs 143.3 / Rs 195.0.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a leveraged bank with large government-bond holdings. Payout stays near 40%. In the base case, second-half EPS is similar to the first half's, less the tax and recovery one-offs, giving about Rs 31 for 2026.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 141 (0.85x NAV), so Rs 152 is about 8% above it.\nBuy price: a 15% margin of safety gives Rs 120, and 25% gives Rs 106.\nPlan for 500 shares: 200 at up to Rs 130, 150 at up to Rs 120 and 150 at up to Rs 110. That averages about Rs 121, about Rs 60,500, against Rs 76,000 at Rs 152.\nRealism: this year's reported range is Rs 137.75–167.00 (first half of 2026), and the 2025 low was Rs 99.90. The first tier at Rs 130 needs about a 14% fall, and Rs 120 about 21%, which would need a broad market sell-off. A small starter at today's price yields about 6.8%, but it's above fair value.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 16%: 150.2 / 179.5 / 211.5 for long-run ROE of 14% / 16% / 18%.\nCost of equity 18%: 121.9 / 143.4 / 166.8.\nCost of equity 20%: 102.1 / 118.4 / 136.1.\nToday's Rs 152 is only supported with a 16% cost of equity, or with an 18% cost of equity and a long-run ROE of 18%.\n\nWhat would change my view\nSupports a higher value: loan growth continuing while Stage 3 loans keep falling; the margin holding above 4.2%; lower interest rates, which would lower the cost of equity; ROE staying above 19%; cash dividends of Rs 12+ for 2026; Q3 results (due by mid-November) confirming the first half.\nSupports a lower value: capital being used up by fast loan growth, leading to smaller cash dividends, a scrip dividend or a rights issue; a provisioning cycle (Stage 2 loans rose Rs 36.8bn); the first half's one-offs (tax settlement, recoveries, exchange gains) not repeating; rising rates squeezing margins and the bond portfolio; higher taxes on banks; stress in the government-bond market.\n\nThese are my estimates from the 2025 annual report and the 2025–2026 interim reports. The interim figures are unaudited, and the price is the CSE close of 6 November 2026, so check it before ordering. This is analysis, not personal financial advice.",
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "A strong bank: good returns, sound capital and a high dividend.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "About 19%",
+        "note": "Near 18% for three years; 11–13% in 2022–2023."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Well capitalised",
+        "note": "A bank, so judged on capital: core capital 13.2%, above the minimum but falling."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Return on equity has risen each year since 2022."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "6.8% yield",
+        "note": "40% of profit paid out."
+      }
+    ],
+    "assessed": "2026-11-09"
+  }
+}
