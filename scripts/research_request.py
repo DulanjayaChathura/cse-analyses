@@ -7,12 +7,17 @@ request in research/requests.json and tells the channel. The workflow then start
 "Research on request" Claude task, which runs `list`, does the work and marks each request
 `done` (see CLAUDE.md, "Research requests from Telegram").
 
-Commands (code: DIAL, DIAL.N0000 or COMB.X0000; anything after the code is a note for Claude):
-  /update DIAL [note]      update from reports published after the current analysis
-  /add COMB [n] [note]     new company: latest annual report (or the last n, at most 3)
-                           and the quarterly reports after it; an existing company → /update
-  /redo DIAL [note]        redo the valuation from the saved research record; no reports
-  /redo DIAL full [note]   redo everything from the reports (as /add)
+Commands (code: DIAL, DIAL.N0000 or COMB.X0000; several codes can be given, space- or
+comma-separated; anything after the last code is a note for Claude, shared by all of them):
+  /update DIAL [COMB ...] [note]   update each from reports published after its current analysis
+  /add COMB [n] [note]             new company: latest annual report (or the last n, at most 3)
+                                    and the quarterly reports after it; an existing company → /update
+                                    (the [n] shorthand only applies with a single code)
+  /redo DIAL [COMB ...] [note]        redo the valuation from the saved research record; no reports
+  /redo DIAL [COMB ...] full [note]   redo everything from the reports (as /add)
+
+Each code is queued and its reports downloaded separately; one Claude run then works through
+every queued request (see CLAUDE.md), so a multi-code command costs one run, not one per code.
 
   python scripts/research_request.py check "<command text>" [message id]
         prints start=true|false to $GITHUB_OUTPUT
@@ -37,8 +42,30 @@ MAX_FILES = 4
 MAX_BYTES = 95 * 1024 * 1024        # GitHub refuses files over 100 MB
 STALE_HOURS = 6                      # a request still open after this is treated as abandoned
 RETRY_AFTER_MINUTES = 3              # a repeated command retries starting Claude for a request still pending after this
+MAX_CODES = 8                         # codes accepted from one command
 
-COMMAND = re.compile(r"^/(update|add|redo)(?:@\w+)?\s+([A-Za-z0-9&]{1,10}(?:\.[A-Za-z]\d{4})?)\s*(.*)$", re.IGNORECASE | re.DOTALL)
+COMMAND = re.compile(r"^/(update|add|redo)(?:@\w+)?\s+(.+)$", re.IGNORECASE | re.DOTALL)
+CODE_TOKEN = re.compile(r"^[A-Z][A-Z0-9&]{0,9}(?:\.[A-Z]\d{4})?$")
+
+
+def take_codes(rest):
+    """Consume one or more CSE codes from the front of `rest` ('DIAL COMB.N0000, SAMP note…').
+    An ordinary word (e.g. a note starting with "please check…") looks exactly like a short
+    code, so only the very first token is taken on trust (handle_code then reports it as an
+    unknown code if it turns out not to be one); every token after that is kept as a code only
+    if it actually resolves to a real company, so the note can start with anything. Always
+    stops at the reserved word 'full' or at MAX_CODES."""
+    tokens = rest.split()
+    codes, i = [], 0
+    while i < len(tokens) and len(codes) < MAX_CODES:
+        tok = tokens[i].rstrip(",").upper()
+        if tok == "FULL" or not CODE_TOKEN.match(tok):
+            break
+        if codes and not resolve(tok)[0]:
+            break
+        codes.append(tok)
+        i += 1
+    return codes, " ".join(tokens[i:])
 
 
 def now():
@@ -189,49 +216,34 @@ def download(ticker, reports, have):
     return saved, problems
 
 
-def check(text, message_id=None):
-    m = COMMAND.match(text.strip())
-    if not m:
-        say(f"⚠️ I didn't understand <code>{html.escape(text[:60])}</code>. Use /update CODE, /add CODE or /redo CODE.", message_id)
-        output(start="false")
-        return 0
-    verb, code, rest = m.group(1).lower(), m.group(2), m.group(3).strip()
+def handle_code(verb, code, annuals, redo_full, note, text, message_id):
+    """Queue one code's request. Returns (started, request id or None); posts its own reply."""
     ticker, name, on_site = resolve(code)
     if not ticker:
         say(f"⚠️ {html.escape(code.upper())} isn't a CSE company code I can find. Nothing was started.", message_id)
-        output(start="false")
-        return 0
+        return False, None
 
-    annuals = 1
     if verb == "add":
-        n = re.match(r"^(\d)\b\s*(.*)$", rest, re.DOTALL)
-        if n:
-            annuals, rest = max(1, min(3, int(n.group(1)))), n.group(2).strip()
         mode = "update" if on_site else "add"
     elif verb == "redo":
-        full = re.match(r"^full\b\s*(.*)$", rest, re.IGNORECASE | re.DOTALL)
-        mode, rest = ("redo-full", full.group(1).strip()) if full else ("redo", rest)
+        mode = "redo-full" if redo_full else "redo"
     else:
         mode = "update"
-    note = rest or None
     label = f"{html.escape(name)} ({ticker})"
 
     if mode in ("update", "redo", "redo-full") and not on_site:
         say(f"⚠️ {label} isn't on the site yet. Use /add {ticker.split('.')[0]} to add it.", message_id)
-        output(start="false")
-        return 0
+        return False, None
 
     reqs = load_requests()
     dup = open_request(reqs, ticker)
     if dup and dup["status"] == "pending" and now() - datetime.datetime.fromisoformat(dup["requestedAt"]) > datetime.timedelta(minutes=RETRY_AFTER_MINUTES):
         # Saved earlier, but Claude never picked it up (e.g. the start failed): start it again.
         say(f"⏳ {label} was already queued but hasn't started yet, so I'm starting it again.", message_id)
-        output(start="true", request=dup["id"], retry="true")
-        return 0
+        return True, dup["id"]
     if dup:
         say(f"⏳ {label} is already queued ({dup['mode']}, requested {dup['requestedAt'][11:16]} UTC). Nothing new was started.", message_id)
-        output(start="false")
-        return 0
+        return False, None
 
     files, problems = [], []
     if mode != "redo":
@@ -240,8 +252,7 @@ def check(text, message_id=None):
             pick, have = choose_reports(ticker, mode, annuals, analysis_date)
         except Exception as e:
             say(f"⚠️ Couldn't read the CSE report list for {label} ({html.escape(str(e))}). Try again later.", message_id)
-            output(start="false")
-            return 0
+            return False, None
         if not pick:
             if verb == "add" and on_site:
                 msg = f"⏳ {label} is already on the site, so I treated this as /update: no new report since its analysis ({analysis_date}). Nothing was started."
@@ -250,13 +261,11 @@ def check(text, message_id=None):
             else:
                 msg = f"⚠️ The CSE lists no reports for {label}. Nothing was started."
             say(msg, message_id)
-            output(start="false")
-            return 0
+            return False, None
         files, problems = download(ticker, pick, have)
         if not files:
             say(f"⚠️ Couldn't download the reports for {label}: " + html.escape("; ".join(problems)), message_id)
-            output(start="false")
-            return 0
+            return False, None
 
     req = {
         "id": f"{now().strftime('%Y%m%d%H%M%S')}-{ticker.split('.')[0]}",
@@ -275,7 +284,41 @@ def check(text, message_id=None):
     warn = "" if not problems else "\n⚠️ " + html.escape("; ".join(problems))
     say(f"⏳ {what} started for {label}. The result will appear on the site and here when done "
         f"(about {'15–40' if mode in ('add', 'redo-full') else '10–25'} minutes).{extra}{warn}", message_id)
-    output(start="true", request=req["id"])
+    return True, req["id"]
+
+
+def check(text, message_id=None):
+    m = COMMAND.match(text.strip())
+    if not m:
+        say(f"⚠️ I didn't understand <code>{html.escape(text[:60])}</code>. Use /update CODE, /add CODE or /redo CODE.", message_id)
+        output(start="false")
+        return 0
+    verb, rest = m.group(1).lower(), m.group(2).strip()
+    codes, rest = take_codes(rest)
+    if not codes:
+        say(f"⚠️ I didn't understand <code>{html.escape(text[:60])}</code>. Use /update CODE, /add CODE or /redo CODE.", message_id)
+        output(start="false")
+        return 0
+
+    annuals = 1
+    if verb == "add" and len(codes) == 1:
+        n = re.match(r"^(\d)\b\s*(.*)$", rest, re.DOTALL)
+        if n:
+            annuals, rest = max(1, min(3, int(n.group(1)))), n.group(2).strip()
+    redo_full = False
+    if verb == "redo":
+        fm = re.match(r"^full\b\s*(.*)$", rest, re.IGNORECASE | re.DOTALL)
+        if fm:
+            redo_full, rest = True, fm.group(1).strip()
+    note = rest.strip() or None
+
+    started_any, first_id = False, None
+    for code in codes:
+        started, req_id = handle_code(verb, code, annuals, redo_full, note, text, message_id)
+        started_any = started_any or started
+        first_id = first_id or req_id
+
+    output(start="true", request=first_id) if started_any else output(start="false")
     return 0
 
 
