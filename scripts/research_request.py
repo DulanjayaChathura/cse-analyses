@@ -36,6 +36,7 @@ REPORTS = ROOT / "reports"
 MAX_FILES = 4
 MAX_BYTES = 95 * 1024 * 1024        # GitHub refuses files over 100 MB
 STALE_HOURS = 6                      # a request still open after this is treated as abandoned
+RETRY_AFTER_MINUTES = 3              # a repeated command retries starting Claude for a request still pending after this
 
 COMMAND = re.compile(r"^/(update|add|redo)(?:@\w+)?\s+([A-Za-z0-9&]{1,10}(?:\.[A-Za-z]\d{4})?)\s*(.*)$", re.IGNORECASE | re.DOTALL)
 
@@ -222,6 +223,11 @@ def check(text, message_id=None):
 
     reqs = load_requests()
     dup = open_request(reqs, ticker)
+    if dup and dup["status"] == "pending" and now() - datetime.datetime.fromisoformat(dup["requestedAt"]) > datetime.timedelta(minutes=RETRY_AFTER_MINUTES):
+        # Saved earlier, but Claude never picked it up (e.g. the start failed): start it again.
+        say(f"⏳ {label} was already queued but hasn't started yet, so I'm starting it again.", message_id)
+        output(start="true", request=dup["id"], retry="true")
+        return 0
     if dup:
         say(f"⏳ {label} is already queued ({dup['mode']}, requested {dup['requestedAt'][11:16]} UTC). Nothing new was started.", message_id)
         output(start="false")

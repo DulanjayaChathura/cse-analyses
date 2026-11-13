@@ -44,8 +44,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add research/requests.json reports
-          git commit -m "Research request ${{ steps.check.outputs.request }} [skip ci]"
-          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          if ! git diff --cached --quiet; then
+            git commit -m "Research request ${{ steps.check.outputs.request }} [skip ci]"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
       - name: Start Claude
         if: steps.check.outputs.start == 'true'
         env:
@@ -57,14 +59,20 @@ jobs:
           if [ -z "$ROUTINE_URL" ] || [ -z "$ROUTINE_TOKEN" ]; then
             msg="⚠️ The request is saved, but Claude can't be started: add RESEARCH_ROUTINE_URL and RESEARCH_ROUTINE_TOKEN to the repository's Actions secrets."
           else
-            code=$(curl -s -o /tmp/fire.json -w '%{http_code}' -X POST "$ROUTINE_URL" \
-              -H "Authorization: Bearer $ROUTINE_TOKEN" \
-              -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
-              -H "anthropic-version: 2023-06-01" \
-              -H "Content-Type: application/json" \
-              -d "{\"text\": \"Research request ${{ steps.check.outputs.request }}\"}")
-            if [ "$code" = "200" ]; then echo "Claude started."; exit 0; fi
-            msg="⚠️ The request is saved, but Claude didn't start (HTTP $code). It will be picked up by the next request, or press Run now on the 'Research on request' task."
+            # Try a few times: the service sometimes answers 429/5xx for a moment.
+            for wait in 0 20 60 120; do
+              sleep $wait
+              code=$(curl -s -o /tmp/fire.json -w '%{http_code}' -X POST "$ROUTINE_URL" \
+                -H "Authorization: Bearer $ROUTINE_TOKEN" \
+                -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+                -H "anthropic-version: 2023-06-01" \
+                -H "Content-Type: application/json" \
+                -d "{\"text\": \"Research request ${{ steps.check.outputs.request }}\"}")
+              if [ "$code" = "200" ]; then echo "Claude started."; exit 0; fi
+              echo "Start attempt answered HTTP $code."
+              case "$code" in 429|5*|000) ;; *) break ;; esac
+            done
+            msg="⚠️ The request is saved, but Claude didn't start (HTTP $code). Send the same command again in a few minutes to retry."
           fi
           echo "$msg"
           curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
