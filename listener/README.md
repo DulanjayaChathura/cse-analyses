@@ -57,3 +57,26 @@ If the reply says something failed:
 - `collection failed (GitHub 401/403/404)`: the GitHub token is wrong, expired, or lacks **Actions: Read and write** on `cse-analyses`.
 - `Claude failed to start (401)`: the Claude token or Fire URL is wrong; regenerate the token on the task and update `ROUTINE_TOKEN`.
 - No reply at all: the second bot isn't an admin of the channel, or step 4.6 wasn't done.
+
+## Research commands (/update, /add, /redo)
+The same worker also passes these to GitHub (the "Research request" workflow), which
+checks the command, downloads the reports from the CSE and starts the
+"Research on request" Claude task. Replies come from your main bot within about a minute.
+
+| Command | Does |
+|---|---|
+| `/update DIAL` | Update from reports published since the current analysis |
+| `/add COMB` (`/add COMB 3` for the last 3 annual reports) | New company, first analysis |
+| `/redo DIAL` | Redo the valuation from the saved research (no reports) |
+| `/redo DIAL full` | Redo everything from the reports |
+
+Anything after the code is passed to Claude as a note, e.g. `/redo DIAL use 13% discount rate`.
+
+One-time setup:
+1. Create a Claude task "Research on request (CSE site)" with an **API** trigger
+   (instructions in CLAUDE.md's "Research requests from Telegram"); copy its Fire URL and token.
+2. GitHub → the `cse-analyses` repository → **Settings** → **Secrets and variables** →
+   **Actions** → **New repository secret**, twice:
+   `RESEARCH_ROUTINE_URL` (the Fire URL) and `RESEARCH_ROUTINE_TOKEN` (the token).
+3. Cloudflare → the `cse-summary` worker → **Edit code** → replace the code with the
+   latest `listener/worker.js` → **Deploy**. No new Cloudflare secrets are needed.

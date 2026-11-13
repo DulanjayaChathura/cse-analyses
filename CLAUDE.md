@@ -5,7 +5,7 @@ This repository is a static website (GitHub Pages) that shows long-term valuatio
 ## Main files
 - `data/<CODE>.json`: the current analysis shown on the site. Format: `docs/json-format.md`. Example: `data/DIAL.N0000.json`.
 - `research/<CODE>/record.json`: the research record (figures per period, valuation inputs, open questions, change log). Format: `docs/research-format.md`.
-- Report PDFs are **not** in this repository. They live on the owner's laptop in `cse-research\<folder>\` (one folder per company, e.g. `dialog`, `sampath bank`), reached through the Claude desktop app's folder connection. The folder name for each company is saved as `localFolder` in its `record.json`; ask the owner if a new company's folder isn't clear.
+- Report PDFs for requests made from Telegram (`/update`, `/add`, `/redo … full`) are downloaded from the CSE into `reports/<CODE>/` (see "Research requests from Telegram"). Otherwise report PDFs are **not** in this repository: they live on the owner's laptop in `cse-research\<folder>\` (one folder per company, e.g. `dialog`, `sampath bank`), reached through the Claude desktop app's folder connection. The folder name for each company is saved as `localFolder` in its `record.json`; ask the owner if a new company's folder isn't clear.
 - `research/<CODE>/history/<analysisDate>.json`: archived earlier analyses.
 - `alerts.json`: the owner's Telegram price targets. Don't change it unless asked.
 - `generated/`: written by GitHub Actions. Never edit by hand.
@@ -48,6 +48,24 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 
 ## A new company (first analysis)
 Read all PDFs in the company's laptop folder. Write a full `data/<CODE>.json` following `docs/json-format.md`, and a new `record.json` with every report in `reportsRead` and every period's figures. Then do steps 9–10.
+
+## Research requests from Telegram (/update, /add, /redo)
+The owner can ask for research by posting a command in the Telegram channel. The listener starts the "Research request" workflow (`research-request.yml`), which runs `scripts/research_request.py check`: it checks the code with the CSE, downloads the reports needed into `reports/<CODE>/` (at most 4; `reports/<CODE>/index.json` lists them), queues the request in `research/requests.json`, replies in the channel, and starts the "Research on request" Claude task. Repeated commands for a company that's already queued, codes that don't exist, and updates with no new report are answered in the channel without starting Claude.
+
+| Command | Mode | What to do |
+|---|---|---|
+| `/update DIAL [note]` | `update` | Follow "Updating a company from a new report", reading the downloaded files instead of the laptop folder. |
+| `/add COMB [n] [note]` | `add` | Follow "A new company (first analysis)" with the downloaded files (the latest annual report, or the last n, and the quarterlies after it). Set `localFolder` to `null`. |
+| `/redo DIAL [note]` | `redo` | Redo the valuation from the saved research record: no reports. Re-check every assumption against the record's figures, use the latest CSE close, apply the current analysis brief and format (including any newer sections other analyses have), re-score the business tests, then archive and rewrite as in steps 7–10. |
+| `/redo DIAL full [note]` | `redo-full` | Rebuild the research record and the analysis from the downloaded reports, as for a new company, keeping the record's `changeLog` and earlier `reportsRead`. Archive the old analysis first. |
+
+To handle the requests:
+1. `git pull`, then `python scripts/research_request.py list`. It shows each pending request with its mode, the owner's note and the report files. If there are none, stop.
+2. Handle them oldest first. The owner's note (if any) says what to focus on or change; follow it unless it would mean inventing figures.
+3. For downloaded reports, record `file` in `reportsRead` as the repository path (e.g. `reports/DIAL.N0000/2026-11-12_quarterly_Interim-Q3-2026.pdf`). If a report listed under "problem" couldn't be stored, say so in the change log and the hand-over.
+4. In the `changeLog` entry, start the summary with how it was asked for, e.g. "Requested from Telegram (/redo DIAL: use 13% discount rate)."
+5. Validate, build, commit to `main` and push as in steps 9–10, together with `python scripts/research_request.py done <id> "<one line: fair value old → new, buy price, category>"`. If a request can't be finished, run `python scripts/research_request.py failed <id> "<reason>"` (this tells the channel) and commit that.
+6. The site build announces the new analysis in Telegram, so there's no need to post anything else.
 
 ## Broker summary (on demand, with /summary)
 Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Telegram channel. The "Collect broker messages" workflow (`broker.yml`) saves new posts to `inbox/<date>/messages.json` (the date it collected them, Sri Lanka time), with full-size images in `inbox/<date>/files/`. It runs every day at 15:45 Saudi time so no post is lost (Telegram keeps them only about 24 hours), and also whenever a summary is requested.

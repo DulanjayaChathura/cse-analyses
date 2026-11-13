@@ -1,0 +1,73 @@
+# Handles /update, /add and /redo posted in the Telegram channel.
+# The /summary listener (listener/worker.js) starts this workflow with the command text.
+# It checks the command, downloads the company's reports from the CSE into reports/<CODE>/,
+# queues the request in research/requests.json, tells the channel, and then starts the
+# "Research on request" Claude task (only when there is real work to do).
+name: Research request
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Command, e.g. /update DIAL or /add COMB"
+        required: true
+      message_id:
+        description: "Telegram message id of the command (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-request      # one at a time, so a repeated command sees the first one
+  cancel-in-progress: false
+
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Check the command and download reports
+        id: check
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          COMMAND_TEXT: ${{ inputs.text }}
+        run: python scripts/research_request.py check "$COMMAND_TEXT" "${{ inputs.message_id }}"
+      - name: Save the request and reports
+        if: steps.check.outputs.start == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/requests.json reports
+          git commit -m "Research request ${{ steps.check.outputs.request }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+      - name: Start Claude
+        if: steps.check.outputs.start == 'true'
+        env:
+          ROUTINE_URL: ${{ secrets.RESEARCH_ROUTINE_URL }}
+          ROUTINE_TOKEN: ${{ secrets.RESEARCH_ROUTINE_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$ROUTINE_URL" ] || [ -z "$ROUTINE_TOKEN" ]; then
+            msg="⚠️ The request is saved, but Claude can't be started: add RESEARCH_ROUTINE_URL and RESEARCH_ROUTINE_TOKEN to the repository's Actions secrets."
+          else
+            code=$(curl -s -o /tmp/fire.json -w '%{http_code}' -X POST "$ROUTINE_URL" \
+              -H "Authorization: Bearer $ROUTINE_TOKEN" \
+              -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+              -H "anthropic-version: 2023-06-01" \
+              -H "Content-Type: application/json" \
+              -d "{\"text\": \"Research request ${{ steps.check.outputs.request }}\"}")
+            if [ "$code" = "200" ]; then echo "Claude started."; exit 0; fi
+            msg="⚠️ The request is saved, but Claude didn't start (HTTP $code). It will be picked up by the next request, or press Run now on the 'Research on request' task."
+          fi
+          echo "$msg"
+          curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" --data-urlencode "text=${msg}" \
+            --data-urlencode "reply_to_message_id=${{ inputs.message_id }}" --data-urlencode "allow_sending_without_reply=true"
+          exit 1

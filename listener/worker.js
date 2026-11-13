@@ -7,6 +7,11 @@
  *   1. starts the "Collect broker messages" workflow on GitHub (broker.yml),
  *   2. starts the "Broker summary on demand" Claude task (its API trigger),
  *   3. replies in the channel that the summary has started.
+ * For "/update CODE", "/add CODE" and "/redo CODE" it starts the "Research request"
+ * workflow on GitHub (research-request.yml), which checks the command, downloads the
+ * reports and starts the "Research on request" Claude task; that workflow replies in
+ * the channel itself (within about a minute). This worker replies only if GitHub
+ * can't be reached.
  * Every other post is ignored. The main bot keeps collecting posts as before.
  *
  * Settings (Cloudflare → the worker → Settings → Variables and Secrets):
@@ -24,6 +29,7 @@
  * once in a browser. It connects the helper bot to this worker.
  */
 const COMMAND = /^\/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$/i;
+const RESEARCH = /^\/(update|add|redo)(?:@\w+)?\s+\S/i;
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
 
 export default {
@@ -53,6 +59,10 @@ export default {
     const post = update.channel_post;
     if (!post || !sameChat(post.chat || {}, env.CHANNEL)) return new Response("ignored");
     const text = (post.text || "").trim();
+    if (RESEARCH.test(text)) {
+      ctx.waitUntil(research(env, post, text));
+      return new Response("ok");
+    }
     const m = text.match(COMMAND);
     if (!m) return new Response("ignored");
 
@@ -120,6 +130,34 @@ async function start(env, post, text, day) {
     disable_notification: true,
     ...(session ? { reply_markup: { inline_keyboard: [[{ text: "Watch the run", url: session }]] } } : {}),
   });
+}
+
+async function research(env, post, text) {
+  const repo = env.REPO || "DulanjayaChathura/cse-analyses";
+  let problem = null;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/research-request.yml/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "cse-summary-listener",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({ ref: "main", inputs: { text: text.slice(0, 500), message_id: String(post.message_id) } }),
+    });
+    if (!r.ok) problem = `GitHub ${r.status}`;
+  } catch (e) {
+    problem = "GitHub unreachable";
+  }
+  if (problem) {
+    await telegram(env, "sendMessage", {
+      chat_id: post.chat.id,
+      text: `⚠️ Couldn't start the request (${problem}). Nothing was started; try again later.`,
+      reply_to_message_id: post.message_id,
+      disable_notification: true,
+    });
+  }
 }
 
 function sameChat(chat, wanted) {

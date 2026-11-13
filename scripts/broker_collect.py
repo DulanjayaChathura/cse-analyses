@@ -32,7 +32,7 @@ from common import ROOT, read_json, write_json
 INBOX = ROOT / "inbox"
 LAST_ID = INBOX / "last_update_id.txt"
 MAX_FILE = 20 * 1024 * 1024        # the Bot API can't download larger files
-OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳")   # messages this site (and the /summary listener) posts itself
+OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳", "⚠️")   # messages this site (and the listener) posts itself
 # "/summary", "/summary12", "/summary-12", "/summary 12", "/summary@SomeBot": a summary command.
 COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$", re.IGNORECASE)
 
@@ -105,6 +105,10 @@ def main():
             continue
         text = post.get("text") or post.get("caption") or ""
         if text.startswith(OWN_PREFIXES) or post["message_id"] in seen:
+            skipped += 1
+            continue
+        # Other commands (/update, /add, /redo, …) are for the research requests, not broker news.
+        if text.strip().startswith("/") and not post.get("photo") and not post.get("document") and not command_of(text):
             skipped += 1
             continue
         files = []

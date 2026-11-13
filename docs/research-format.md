@@ -8,7 +8,7 @@ The research record keeps everything worth carrying forward between analyses, so
 | `ticker` | The main share code, e.g. `"DIAL.N0000"`. |
 | `localFolder` | The company's folder name inside `cse-research` on the owner's laptop, e.g. `"sampath bank"`. |
 | `updated` | Date of the last update, `YYYY-MM-DD`. |
-| `reportsRead` | Every report already read: `{file, title, period, periodEnd, type ("annual" or "interim"), audited, readOn, note}`. `file` is the PDF's file name in the laptop folder, or `null` if unknown. |
+| `reportsRead` | Every report already read: `{file, title, period, periodEnd, type ("annual" or "interim"), audited, readOn, note}`. `file` is the PDF's file name in the laptop folder, its repository path (`reports/<CODE>/…pdf`) when it was downloaded for a Telegram request, or `null` if unknown. |
 | `periods` | Figures per period, oldest first: `{period, periodEnd, months, type, audited, figures}`. Each figure is `{value, unit, source, note}`; `source` names the report and page, e.g. `"Interim Q3 2026, p. 4"`. `value` is `null` if unknown. |
 | `valuationInputs` | Assumptions used in the valuation: `{name, value, reason, since}`. Change one only with a stated reason, and update `since`. |
 | `openQuestions` | Things to check in the next report. |
