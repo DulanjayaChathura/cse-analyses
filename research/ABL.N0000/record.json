@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ABL.N0000",
+  "localFolder": null,
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "reports/ABL.N0000/2026-04-16_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Used: financial highlights (p. 32), directors' report on dividends (p. 197), ten years at a glance (pp. 314–317), investor relations (pp. 338–339). Page numbers are the printed ones."
+    },
+    {
+      "file": "reports/ABL.N0000/2026-05-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Income statement p. 4, balance sheet p. 6, ratios p. 13, share prices p. 15."
+    },
+    {
+      "file": "reports/ABL.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Income statement p. 4, balance sheet p. 6, ratios p. 13, share prices p. 15."
+    },
+    {
+      "file": "reports/ABL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Commentary pp. 2–3, income statement p. 4, balance sheet p. 6, cash flow p. 8, financing and impairment notes pp. 9–10, ratios p. 13, share prices p. 15, shareholders p. 16."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 0.825,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "equity": {
+          "value": 13.639,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "eps": {
+          "value": 0.28,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "dividendPerShare": {
+          "value": 0.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "navPerShare": {
+          "value": 5.07,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "roe": {
+          "value": 6.3,
+          "unit": "%",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Worked out: profit ÷ average equity"
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 0.788,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "equity": {
+          "value": 14.361,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "eps": {
+          "value": 0.28,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "dividendPerShare": {
+          "value": 0.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "navPerShare": {
+          "value": 5.16,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Old share count (before the 2023 rights issue and share-count change); not comparable"
+        },
+        "roe": {
+          "value": 5.6,
+          "unit": "%",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Worked out: profit ÷ average equity"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 1.387,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "equity": {
+          "value": 21.697,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "eps": {
+          "value": 2.52,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "dividendPerShare": {
+          "value": 1.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Paid before the 2023 rights issue (payout 24%)"
+        },
+        "navPerShare": {
+          "value": 39.37,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "roe": {
+          "value": 7.7,
+          "unit": "%",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Worked out: profit ÷ average equity"
+        },
+        "totalAssets": {
+          "value": 159.452,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "statedCapital": {
+          "value": 17.633,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Stated capital after the 2023 rights issue (Rs 11.35bn in 2022)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 1.775,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "equity": {
+          "value": 22.842,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "eps": {
+          "value": 3.22,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "dividendPerShare": {
+          "value": 1.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "navPerShare": {
+          "value": 41.45,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "roe": {
+          "value": 8.0,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "totalAssets": {
+          "value": 182.337,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "priceYearEnd": {
+          "value": 24.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "cet1": {
+          "value": 15.0,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "totalCapitalRatio": {
+          "value": 17.6,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "netStage3": {
+          "value": 1.3,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32",
+          "note": "Labelled 'Impaired financing (Stage 3) ratio'"
+        },
+        "netInterestMargin": {
+          "value": 4.0,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32",
+          "note": "Net financing margin"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 2.481,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "equity": {
+          "value": 25.085,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "eps": {
+          "value": 4.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "dividendPerShare": {
+          "value": 1.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Interim declared and paid October 2025 for FY 2025"
+        },
+        "navPerShare": {
+          "value": 45.52,
+          "unit": "Rs",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "roe": {
+          "value": 10.4,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "totalAssets": {
+          "value": 204.307,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "financing": {
+          "value": 150.952,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "deposits": {
+          "value": 172.074,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)"
+        },
+        "impairmentCharge": {
+          "value": -0.64,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, pp. 314–317 (ten years at a glance)",
+          "note": "Write-back"
+        },
+        "priceYearEnd": {
+          "value": 30.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "peYearEnd": {
+          "value": 6.67,
+          "unit": "x",
+          "source": "Worked out: Rs 30.00 ÷ EPS Rs 4.50"
+        },
+        "cet1": {
+          "value": 13.0,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "totalCapitalRatio": {
+          "value": 14.7,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "grossStage3": {
+          "value": 2.8,
+          "unit": "%",
+          "source": "Interim 30 Sep 2026, p. 13 (Dec 2025 column)"
+        },
+        "netStage3": {
+          "value": 1.2,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32"
+        },
+        "netInterestMargin": {
+          "value": 4.3,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 32",
+          "note": "Net financing margin"
+        },
+        "costToIncome": {
+          "value": 51.8,
+          "unit": "%",
+          "source": "Interim 30 Sep 2026, p. 13 (Dec 2025 column)"
+        },
+        "sharesOutstanding": {
+          "value": 551.126,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 338"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 0.502,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 4",
+          "note": "Year to date"
+        },
+        "eps": {
+          "value": 0.91,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 4",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 46.09,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 6"
+        },
+        "equity": {
+          "value": 25.405,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 6"
+        },
+        "roe": {
+          "value": 8.1,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13",
+          "note": "Annualised"
+        },
+        "cet1": {
+          "value": 13.2,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13"
+        },
+        "totalCapitalRatio": {
+          "value": 14.9,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13"
+        },
+        "costToIncome": {
+          "value": 54.4,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13"
+        },
+        "netInterestMargin": {
+          "value": 4.4,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13",
+          "note": "Financing margin"
+        },
+        "priceQuarterEnd": {
+          "value": 30.0,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 15",
+          "note": "Last traded price"
+        },
+        "grossStage3": {
+          "value": null,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13",
+          "note": "Not extracted"
+        },
+        "netStage3": {
+          "value": null,
+          "unit": "%",
+          "source": "Interim Q1 2026, p. 13",
+          "note": "Not extracted"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 1.125,
+          "unit": "Rs bn",
+          "source": "Interim H1 2026, p. 4",
+          "note": "Year to date"
+        },
+        "eps": {
+          "value": 2.04,
+          "unit": "Rs",
+          "source": "Interim H1 2026, p. 4",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 47.3,
+          "unit": "Rs",
+          "source": "Interim H1 2026, p. 6"
+        },
+        "equity": {
+          "value": 26.072,
+          "unit": "Rs bn",
+          "source": "Interim H1 2026, p. 6"
+        },
+        "roe": {
+          "value": 8.9,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13",
+          "note": "Annualised"
+        },
+        "cet1": {
+          "value": 12.4,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13"
+        },
+        "totalCapitalRatio": {
+          "value": 13.8,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13"
+        },
+        "costToIncome": {
+          "value": 51.2,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13"
+        },
+        "netInterestMargin": {
+          "value": 4.3,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13",
+          "note": "Financing margin"
+        },
+        "priceQuarterEnd": {
+          "value": 26.8,
+          "unit": "Rs",
+          "source": "Interim H1 2026, p. 15",
+          "note": "Last traded price"
+        },
+        "grossStage3": {
+          "value": 2.8,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13"
+        },
+        "netStage3": {
+          "value": 1.1,
+          "unit": "%",
+          "source": "Interim H1 2026, p. 13"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 1.66,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 4",
+          "note": "Year to date"
+        },
+        "eps": {
+          "value": 3.01,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 4",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 48.36,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 6"
+        },
+        "equity": {
+          "value": 26.655,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6"
+        },
+        "roe": {
+          "value": 8.6,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13",
+          "note": "Annualised"
+        },
+        "cet1": {
+          "value": 12.2,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "totalCapitalRatio": {
+          "value": 13.6,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "costToIncome": {
+          "value": 52.4,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "netInterestMargin": {
+          "value": 4.3,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13",
+          "note": "Financing margin"
+        },
+        "priceQuarterEnd": {
+          "value": 26.0,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 15",
+          "note": "Last traded price"
+        },
+        "grossStage3": {
+          "value": 3.0,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "netStage3": {
+          "value": 1.3,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "netProfitQuarter": {
+          "value": 0.536,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 4",
+          "note": "Q3 alone, down 24%"
+        },
+        "impairmentCharge": {
+          "value": 0.279,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 4",
+          "note": "Year to date; Rs 112mn write-back in 9M 2025"
+        },
+        "financing": {
+          "value": 160.444,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Net"
+        },
+        "deposits": {
+          "value": 179.74,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6"
+        },
+        "totalAssets": {
+          "value": 213.686,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6"
+        },
+        "leverageRatio": {
+          "value": 9.7,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 13"
+        },
+        "capexPaid": {
+          "value": 3.819,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 8",
+          "note": "Property Rs 3.04bn + intangibles Rs 0.78bn"
+        },
+        "sharesOutstanding": {
+          "value": 551.223,
+          "unit": "mn",
+          "source": "Interim 9M 2026, p. 16"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim 9M 2026",
+          "note": "No 2026 dividend declared by 30 Sep 2026"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "21% / 19% / 17.5%",
+      "reason": "10-year government bond about 12.4% plus about 6.5 points: a small, BBB-(lka)-rated bank (one point above Commercial Bank).",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "9% / 11% / 14%; growth 5% / 6% / 7%",
+      "reason": "ROE 6–8% in 2021–2024, 10.4% in 2025 (with a write-back), 8.6% in 9M 2026. Bull assumes spare equity (12.5% of assets) is used to grow.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "2026 EPS × P/E",
+      "value": "3.80 × 5 / 4.10 × 6 / 4.40 × 7",
+      "reason": "9M 2026 EPS Rs 3.01; year-end P/E 7.6x (2024), 6.7x (2025).",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividend model",
+      "value": "Rs 1.30 / 1.40 / 1.50 next, growing 4% / 7% / 9% for five years, then 5% / 6% / 7%",
+      "reason": "Rs 1.30 for 2025, about 29% of profit.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Residual income",
+      "value": "ROE from 9% fading to long-run over ten years; 29% payout",
+      "reason": "Starts near the 9M 2026 ROE.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "2026 dividend (usually declared September–October; none by 30 September 2026).",
+    "Fourth-quarter impairments and whether the third-quarter charge was a one-off.",
+    "Total capital ratio (13.6% against a 12.5% minimum): any capital raising or Tier 2 issue.",
+    "Cost-to-income after the property purchase (depreciation up 56% in Q3).",
+    "Current CSE price: this analysis used the 30 September 2026 last trade; check the daily feed picks up ABL.N0000.",
+    "2024 low price shown as Rs 1.90 in the annual report (p. 338) looks like a misprint; not used."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Annual report 2025 and interims to 31 Mar, 30 Jun and 30 Sep 2026",
+      "summary": "Requested from Telegram (/add ABL.N000; note \".N000\", taken as the share-code suffix). First analysis: justified P/B, P/E, dividend model and residual income; business tests 3 of 4 (fails return on equity), category 2 (watch list). Price is the 30 Sep 2026 last trade from the interim report because the CSE feed wasn't reachable from this run. ROE for 2021–2023 is worked out from profit and equity; per-share figures before 2023 are on the old share count and left out of the history charts. No report problems.",
+      "fairValue": 17.3,
+      "buyPrice": 14.7,
+      "strongBuyPrice": 13.0,
+      "priceAtTime": 26.0,
+      "archive": null
+    }
+  ]
+}

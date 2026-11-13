@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ABL.N0000",
+  "company": {
+    "name": "Amana Bank PLC",
+    "sector": "Banks",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "ABL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 26.0,
+    "date": "2026-09-30",
+    "source": "Last traded price in the interim report to 30 Sep 2026 (p. 15)",
+    "note": "The CSE price feed couldn't be reached from this run; the daily CSE close replaces this when available. Range January–September 2026: Rs 25.60–33.20. Closed 2025 at Rs 30.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A clean, well-capitalised Islamic bank, but returns are too low for its price",
+    "text": "Amãna Bank (ABL.N0000) is Sri Lanka's only fully Islamic (non-interest) commercial bank, with Rs 214bn of assets, 33 branches and the IsDB Group as its main shareholder (about 28%). It is a clean, well-capitalised small bank: gross Stage 3 loans 3.0% (net 1.3%), equity of 12.5% of assets, a 43% current-and-savings deposit share and a Rs 1.30 dividend for 2025. Its weakness is returns: ROE was 8.6% in the nine months to September 2026 and 10.4% in its record 2025, well below a cost of equity near 19%, because costs take 52% of income and taxes take more than half of operating profit. At Rs 26.00 (last trade on 30 September 2026, from the interim report) it trades at 0.54x NAV of Rs 48.36 and 5.7x trailing earnings. That looks cheap, but four methods put fair value at about Rs 17.30, because a bank earning 9–11% on equity is worth less than its book value. I'd buy at up to Rs 14.70 and treat under Rs 13.00 as a strong buy. Third-quarter profit fell 24% as impairments returned and costs rose after a property purchase, and the total capital ratio (13.6%) is now only 1.1 points above its 12.5% minimum."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Sound capital, profit every year and a steady dividend, but return on equity is well below 15%.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 9%",
+        "note": "8.6% (9 months 2026), 10.4% (2025), 8.0% (2024); about 6–8% in 2021–2023 (worked out from profit and equity)."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (bank)",
+        "pass": true,
+        "value": "CET1 12.2%",
+        "note": "Minimum 7%; leverage ratio 9.7% (minimum 3%). But total capital 13.6% is only 1.1 points above its 12.5% minimum, down from 17.6% at end-2024."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit rose from Rs 0.82bn (2021) to Rs 2.48bn (2025); 2025 was helped by a Rs 640mn impairment write-back."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "5.0% yield",
+        "note": "Dividend paid every year since 2018; Rs 1.30 for 2025, about 29% of profit."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 17.3,
+    "buyPrice": 14.7,
+    "strongBuyPrice": 13.0,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 48.36,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.36x NAV). The low multiple of book reflects an ROE of about 9–11% against a cost of equity of about 19%."
+  },
+  "dividend": {
+    "perShare": 1.3,
+    "label": "for 2025 (interim, paid October 2025)",
+    "source": "Annual Report 2025, p. 32 and directors' report (p. 197)",
+    "note": "No 2026 dividend had been declared in the September 2026 interim; the bank usually declares in September–October."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 48.36,
+      "unit": "Rs",
+      "note": "30 September 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.54,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 5.7,
+      "unit": "x",
+      "note": "EPS Rs 4.59 (12 months to Sep 2026)"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (9M 2026)",
+      "value": 8.6,
+      "unit": "%",
+      "note": "Annualised"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.0,
+      "unit": "%",
+      "note": "Rs 1.30 for 2025"
+    },
+    {
+      "id": "nim",
+      "label": "Financing margin",
+      "value": 4.3,
+      "unit": "%"
+    },
+    {
+      "id": "cet1",
+      "label": "CET1 capital ratio",
+      "value": 12.2,
+      "unit": "%",
+      "note": "Minimum 7%; total capital 13.6% (minimum 12.5%)"
+    },
+    {
+      "id": "stage3",
+      "label": "Gross Stage 3 financing",
+      "value": 3.0,
+      "unit": "%",
+      "note": "Net 1.3%; coverage 57.6%"
+    },
+    {
+      "id": "costIncome",
+      "label": "Cost to income",
+      "value": 52.4,
+      "unit": "%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 14.3,
+      "unit": "Rs bn",
+      "display": "~Rs 14.3bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Nine months to September 2026",
+      "text": "Profit up 3% to Rs 1.66bn (EPS Rs 3.01 against Rs 2.92). Net financing income up 11% to Rs 6.74bn; total operating income up 11%. Operating costs up 16%; cost-to-income 52.4%. ROE 8.6%."
+    },
+    {
+      "title": "Weak third quarter",
+      "text": "July–September profit fell 24% to Rs 536mn (EPS Rs 0.97). Impairments were a Rs 119mn charge against a Rs 256mn write-back a year earlier, and depreciation rose 56% after the bank bought property (Rs 3.0bn of property and Rs 0.8bn of intangibles bought in nine months)."
+    },
+    {
+      "title": "2025: record year",
+      "text": "Profit up 40% to Rs 2.48bn (EPS Rs 4.50), helped by a Rs 640mn impairment write-back. Financing up 36% to Rs 151bn. ROE 10.4%. Dividend Rs 1.30 (highest so far)."
+    },
+    {
+      "title": "Capital and asset quality",
+      "text": "CET1 12.2% and total capital 13.6% at September 2026, down from 15.0% and 17.6% at end-2024 as financing grew. Gross Stage 3 3.0%, net 1.3%: among the lowest in the industry."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          2.52,
+          3.22,
+          4.5,
+          4.59
+        ],
+        "notes": [
+          "Rs 0.28 on the old share count; not comparable",
+          "Rs 0.28 on the old share count; not comparable",
+          "Rights issue in 2023",
+          null,
+          "Helped by impairment write-back",
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          6.3,
+          5.6,
+          7.7,
+          8.0,
+          10.4,
+          8.6
+        ],
+        "notes": [
+          "Worked out from profit and average equity",
+          "Worked out from profit and average equity",
+          "Worked out from profit and average equity",
+          null,
+          null,
+          "9M 2026, annualised"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          7.6,
+          6.7,
+          5.7
+        ],
+        "notes": [
+          "Year-end price not read",
+          "Year-end price not read",
+          "Year-end price not read",
+          "At Rs 24.50",
+          "At Rs 30.00",
+          "At Rs 26.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          1.2,
+          1.2,
+          1.3,
+          null
+        ],
+        "notes": [
+          "Rs 0.10 on the old share count",
+          "Rs 0.10 on the old share count",
+          null,
+          null,
+          "Paid October 2025",
+          "2026 not yet declared"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 48.36",
+      "reading": "30 September 2026; price is 0.54x book."
+    },
+    {
+      "method": "Return on equity",
+      "value": "8.6%",
+      "reading": "Nine months 2026, annualised; 10.4% in 2025. Well below my 19% cost of equity, so the bank is worth less than book."
+    },
+    {
+      "method": "P/E",
+      "value": "5.7x",
+      "reading": "Trailing EPS Rs 4.59; year-end P/E 7.6x (2024), 6.7x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.0% yield",
+      "reading": "Rs 1.30 for 2025, about 29% of profit; paid every year since 2018."
+    },
+    {
+      "method": "Capital",
+      "value": "CET1 12.2%",
+      "reading": "Equity is a high 12.5% of assets, but the total capital ratio has fallen to 13.6% against a 12.5% minimum."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 3.0%",
+      "reading": "Net 1.3%, among the lowest in the industry; impairments turned from write-backs to charges in 2026."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 12.1,
+      "base": 18.6,
+      "bull": 32.2,
+      "weighted": 19.4,
+      "comment": "Book value Rs 48.36 × (ROE − growth) ÷ (cost of equity − growth): ROE 9% / 11% / 14%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 19.0,
+      "base": 24.6,
+      "bull": 30.8,
+      "weighted": 24.2,
+      "comment": "2026 EPS of Rs 3.80 / 4.10 / 4.40 at 5 / 6 / 7 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 7.9,
+      "base": 11.1,
+      "bull": 15.2,
+      "weighted": 11.0,
+      "comment": "Rs 1.30 / 1.40 / 1.50 a share, growing 4% / 7% / 9% for five years, then 5% / 6% / 7%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 9.6,
+      "base": 14.1,
+      "bull": 23.8,
+      "weighted": 14.7,
+      "comment": "ROE moving from 9% to 9% / 11% / 14% over ten years; 29% payout."
+    }
+  ],
+  "modelsNote": "A bank's cash flows are mostly financing and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends (same approach as the other banks on the site).",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "21%",
+        "base": "19%",
+        "bull": "17.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "9%",
+        "base": "11%",
+        "bull": "14%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026 EPS × P/E",
+        "bear": "3.80 × 5",
+        "base": "4.10 × 6",
+        "bull": "4.40 × 7"
+      },
+      {
+        "label": "Dividend per share, growth",
+        "bear": "Rs 1.30, 4%",
+        "base": "Rs 1.40, 7%",
+        "bull": "Rs 1.50, 9%"
+      }
+    ],
+    "averages": {
+      "bear": 12.2,
+      "base": 17.1,
+      "bull": 25.5
+    },
+    "common": "10-year government bond about 12.4% plus a premium for a small, BBB-(lka)-rated bank (one point above Commercial Bank). Base 2026 EPS assumes a fourth quarter a little better than the third (9M EPS Rs 3.01). Bull ROE assumes the bank uses its spare equity to grow financing faster."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "17.5%",
+      "19%",
+      "21%"
+    ],
+    "columns": [
+      "9%",
+      "11%",
+      "14%"
+    ],
+    "values": [
+      [
+        11.8,
+        16.4,
+        24.4
+      ],
+      [
+        10.4,
+        14.1,
+        20.5
+      ],
+      [
+        8.9,
+        11.8,
+        16.7
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 26.00 isn't reached anywhere in this table: it needs a long-run ROE of about 15% at a 17.5% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 17.3
+      },
+      {
+        "shares": 150,
+        "maxPrice": 14.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 13.0
+      }
+    ],
+    "averagePrice": 15.23,
+    "totalCost": 7615,
+    "note": "About Rs 7,615 in total, against Rs 13,000 at Rs 26.00.",
+    "realism": "Rs 14.70 is far below this year's range (Rs 25.60–33.20, January–September 2026) and the 2025 low of Rs 21.70, so it would need a large market fall. More realistic: wait for ROE to rise toward 13–14%, which would lift fair value."
+  },
+  "changeMyView": {
+    "higher": [
+      "ROE rising to 13–14% as the bank uses its spare equity (each point of long-run ROE adds about Rs 2–4 a share).",
+      "Interest rates falling (each point off the cost of equity adds about Rs 1.50 a share).",
+      "A bigger dividend or a lower tax burden."
+    ],
+    "lower": [
+      "Impairments rising further after the third-quarter charge.",
+      "Total capital falling toward the 12.5% minimum, forcing a rights issue.",
+      "Costs staying above half of income after the property purchase."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the interim reports to September 2026. The price is the 30 September 2026 last trade from the interim report, because the CSE feed couldn't be reached. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 50% above fair value of Rs 17.30, even though it trades at about half of book.",
+    "Expected yearly return at Rs 26.00": "About 5–6% a year: dividend 5% + book growth about 6% − about 5% a year if the price moved to fair value over eight years.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case −53% (Rs 12.20); bull case −2% (Rs 25.50).",
+    "Confidence": "Medium: the figures are clean; the key question is whether ROE can rise to the mid-teens.",
+    "Margin of safety": "Buy 15% below fair value (Rs 14.70), strong buy 25% below (Rs 13.00)."
+  },
+  "Business and moat": {
+    "What it does": "Islamic (non-interest) commercial bank: SME, business and retail financing, gold financing, trade finance; 33 branches.",
+    "Moat": "Narrow: the only fully Islamic bank in Sri Lanka, a loyal deposit base (43% current and savings accounts) and IsDB backing; but small scale."
+  },
+  "Management and governance": {
+    "Ownership": "IB Growth Fund (IsDB Group) 24.9% and Islamic Development Bank 3.3%; Senthilverl Holdings through Sampath Bank and Cargills Bank 19.8%; Bank Islam Malaysia and AB Bank 3.8% each. Public holding 44.7%.",
+    "Rating": "OK: Fitch BBB-(lka), Lanka Rating Agency BBB+."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: financing margin steady at 4.3%.",
+    "Taxes": "Risk: VAT on financial services, the levy and income tax took 54% of operating profit in 9M 2026.",
+    "Liquidity": "Thin: float-adjusted market cap about Rs 6.4bn."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "Clean balance sheet and a 5% yield; worth owning only well below book unless ROE rises.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 22.50); total capital ratio below 13%; Stage 3 above 5%."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 14.70 or lower",
+    "Strong buy": "Rs 13.00 or lower"
+  },
+  "Key ratios (five-year trend)": {
+    "ROE": "2021 6.3% · 2022 5.6% · 2023 7.7% · 2024 8.0% · 2025 10.4% · 9M 2026 8.6%",
+    "Profit after tax": "2021 Rs 0.82bn · 2022 Rs 0.79bn · 2023 Rs 1.39bn · 2024 Rs 1.77bn · 2025 Rs 2.48bn · 9M 2026 Rs 1.66bn",
+    "NAV per share": "2023 Rs 39.37 · 2024 Rs 41.45 · 2025 Rs 45.52 · Sep 2026 Rs 48.36",
+    "CET1": "2024 15.0% · 2025 13.0% · Sep 2026 12.2%",
+    "Gross Stage 3": "2024 1.3% (net) · 2025 2.8% gross / 1.2% net · Sep 2026 3.0% / 1.3%"
+  },
+  "What this analysis doesn't cover": [
+    "A current CSE price (the feed couldn't be reached; the site will replace the 30 September price).",
+    "Any 2026 dividend declared after 30 September 2026.",
+    "Per-share figures before 2023, which are on the old share count (before the 2023 rights issue and share-count change)."
+  ],
+  "fullText": "Summary: Amãna Bank (ABL.N0000) is Sri Lanka's only fully Islamic (non-interest) commercial bank, with Rs 214bn of assets, 33 branches and the IsDB Group as its main shareholder (about 28%). It is a clean, well-capitalised small bank: gross Stage 3 loans 3.0% (net 1.3%), equity of 12.5% of assets, a 43% current-and-savings deposit share and a Rs 1.30 dividend for 2025. Its weakness is returns: ROE was 8.6% in the nine months to September 2026 and 10.4% in its record 2025, well below a cost of equity near 19%, because costs take 52% of income and taxes take more than half of operating profit. At Rs 26.00 (last trade on 30 September 2026, from the interim report) it trades at 0.54x NAV of Rs 48.36 and 5.7x trailing earnings. That looks cheap, but four methods put fair value at about Rs 17.30, because a bank earning 9–11% on equity is worth less than its book value. I'd buy at up to Rs 14.70 and treat under Rs 13.00 as a strong buy. Third-quarter profit fell 24% as impairments returned and costs rose after a property purchase, and the total capital ratio (13.6%) is now only 1.1 points above its 12.5% minimum.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 12.1 | 18.6 | 32.2 | 19.4\nP/E method | 19.0 | 24.6 | 30.8 | 24.2\nDividend model | 7.9 | 11.1 | 15.2 | 11.0\nResidual income | 9.6 | 14.1 | 23.8 | 14.7\nAverage | 12.2 | 17.1 | 25.5 | 17.3\n\nBusiness tests: 3 of 4 passed (fails return on equity), so it counts as a good business, but the price is well above the buy price: watch list.\n\n500-share plan\n200 shares up to Rs 17.30, 150 up to Rs 14.70, 150 up to Rs 13.00. About Rs 7,615 in total.\n\nWhat would change my view: ROE rising to 13–14% would lift fair value toward Rs 22–25; capital falling toward the minimum or rising impairments would lower it."
+}
