@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "LGL.N0000",
   "localFolder": "laugfs gas",
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "reportsRead": [
     {
       "file": "Annual Report for 2023,24.pdf",
@@ -53,6 +53,16 @@
       "audited": false,
       "readOn": "2026-11-11",
       "note": "Latest figures used. Its company 'year to March 2026' column repeats 2024/25 figures."
+    },
+    {
+      "file": "reports/LGL.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Downloaded from the CSE for /update LGL. All 18 pages read. Restates the year to March 2026."
     }
   ],
   "periods": [
@@ -209,34 +219,38 @@
         "revenue": {
           "value": 37.243,
           "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026, p. 1"
+          "source": "Interim to 31 Mar 2026, p. 1",
+          "note": "Unchanged in the Interim to 30 Sep 2026 (Rs 37.243bn)."
         },
         "netProfit": {
-          "value": -3.344,
+          "value": -4.9,
           "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026, p. 1",
-          "note": "Loss to owners; column headed 'Audited' in later reports but no annual report in the folder"
+          "source": "Interim to 30 Sep 2026, p. 2 (year to 31 March 2026 column)",
+          "note": "Restated: was Rs -3.344bn in the Interim to 31 Mar 2026. Column marked unaudited; no reason given. Loss to owners."
         },
         "eps": {
-          "value": -8.64,
+          "value": -12.66,
           "unit": "Rs",
-          "source": "Interim to 31 Mar 2026, p. 1"
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Restated: was Rs -8.64 in the Interim to 31 Mar 2026."
         },
         "navPerShare": {
-          "value": -3.06,
+          "value": -7.11,
           "unit": "Rs",
-          "source": "Interim to 31 Mar 2026, statement of financial position"
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Restated: was Rs -3.06 in the Interim to 31 Mar 2026. Equity to owners Rs -2.752bn."
         },
         "operatingCashFlow": {
           "value": -0.325,
           "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026, cash flow statement"
+          "source": "Interim to 31 Mar 2026, cash flow statement",
+          "note": "Not restated in the newer report (it has no full-year cash flow)."
         },
         "lpgOperatingProfit": {
           "value": 2.114,
           "unit": "Rs bn",
           "source": "Interim to 31 Mar 2026, segment report (p. 11)",
-          "note": "Company (Sri Lankan LPG); profit after tax Rs 183mn"
+          "note": "Company (Sri Lankan LPG). Interim to 30 Sep 2026 shows company operating profit Rs 2.123bn and a loss after tax of Rs 334mn (the March interim's segment report showed Rs 183mn profit after tax)."
         },
         "shippingLoss": {
           "value": -2.517,
@@ -279,7 +293,8 @@
         "navPerShare": {
           "value": -4.97,
           "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, p. 3"
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "As reported in June. The restated March 2026 equity (Rs -2.752bn) less the Q1 comprehensive loss (Rs 560mn) implies about Rs -8.56 a share instead; the September report gives no June figure."
         },
         "operatingCashFlow": {
           "value": -2.08,
@@ -291,7 +306,7 @@
           "value": 33.713,
           "unit": "Rs bn",
           "source": "Interim to 30 Jun 2026, p. 3",
-          "note": "Borrowings 16.62 long-term + 20.27 short-term less cash 3.18"
+          "note": "Borrowings 16.62 long-term + 20.27 short-term less cash 3.18. The June long/short split (16.62/20.27) is out of line with March (10.91/21.62) and September (10.80/24.85); not rechecked."
         },
         "lpgOperatingProfit": {
           "value": 0.124,
@@ -306,6 +321,75 @@
           "note": "Millions: 335.0 voting + 52.0 non-voting"
         }
       }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 11.743,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; Rs 25.216bn a year earlier. Quarter Jul–Sep Rs 5.708bn (Rs 13.156bn)"
+        },
+        "netProfit": {
+          "value": -2.121,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, loss to owners; quarter Rs -1.543bn (Rs -0.827bn)"
+        },
+        "eps": {
+          "value": -5.48,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; quarter Rs -3.99 (Rs -2.14)"
+        },
+        "navPerShare": {
+          "value": -12.88,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Equity to owners Rs -4.983bn; total equity Rs -4.328bn"
+        },
+        "operatingCashFlow": {
+          "value": -1.257,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Six months, after finance costs paid Rs 1.453bn"
+        },
+        "netDebt": {
+          "value": 32.645,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Borrowings 10.805 long-term + 24.853 short-term less cash 3.013"
+        },
+        "lpgOperatingProfit": {
+          "value": -0.416,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7 and segment report (p. 12)",
+          "note": "Six months, company; Rs 1.189bn profit a year earlier. Quarter Rs -0.541bn (Rs +0.679bn) with a gross loss of Rs 337mn"
+        },
+        "shippingLoss": {
+          "value": -0.641,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, segment report (p. 12)",
+          "note": "Six months, after tax; Rs -0.686bn a year earlier. Outside revenue Rs 1.073bn"
+        },
+        "tradingLoss": {
+          "value": -0.246,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, segment report (p. 12)",
+          "note": "Six months; no revenue"
+        },
+        "sharesOutstanding": {
+          "value": 387.0,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 4.5 (p. 16)",
+          "note": "Millions: 335.0 voting + 52.0 non-voting"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -317,21 +401,27 @@
     },
     {
       "name": "LPG operating cash profit × multiple",
-      "value": "Rs 2.0bn × 5 / 2.8bn × 6.5 / 3.2bn × 7",
-      "reason": "About Rs 3.1bn in 2025/26 (operating profit Rs 2.11bn plus depreciation), Rs 390mn in Q1 FY2027.",
-      "since": "2026-11-11"
+      "value": "Rs 1.5bn × 5 / 2.3bn × 6.5 / 3.0bn × 7",
+      "reason": "Cut from 2.0 / 2.8 / 3.2bn: the LPG company made an operating loss of Rs 541mn in July–September 2026 (gross loss); last-12-month operating cash profit about Rs 1.6bn against about Rs 3.1bn in 2025/26.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Turnaround EPS (P/E method)",
+      "value": "Below zero / Rs 0.30 / Rs 2.00 at 10 / 12 times",
+      "reason": "Base cut from Rs 0.50: losses deepened and the LPG business turned loss-making in July–September 2026.",
+      "since": "2026-11-13"
     },
     {
       "name": "Ships and terminal",
-      "value": "50% / 80% / 90% of Rs 17.8bn book",
-      "reason": "Loss-making assets; a sale might not fetch book value.",
-      "since": "2026-11-11"
+      "value": "50% / 80% / 90% of Rs 17.6bn book",
+      "reason": "Loss-making assets; a sale might not fetch book value. Book updated to the September 2026 segment non-current assets.",
+      "since": "2026-11-13"
     },
     {
       "name": "Net debt",
-      "value": "Rs 33.7bn",
-      "reason": "June 2026 borrowings less cash; cylinder deposits left out.",
-      "since": "2026-11-11"
+      "value": "Rs 32.6bn",
+      "reason": "September 2026 borrowings (Rs 35.7bn) less cash (Rs 3.0bn); cylinder deposits left out.",
+      "since": "2026-11-13"
     },
     {
       "name": "Scenario weights",
@@ -347,11 +437,11 @@
     }
   ],
   "openQuestions": [
-    "Add the audited 2025/26 annual report: is there a going-concern warning from the auditors, and what are the debt terms?",
-    "Q2 results (to September 2026, due by mid-November): do LPG margins recover after the 2026 price increases?",
+    "Add the audited 2025/26 annual report: why was the year's loss restated from Rs 3.34bn to Rs 4.90bn, and is there a going-concern warning?",
+    "Q3 results (to December 2026): does the LPG business get back to a gross profit, and why did it sell below cost in July–September?",
+    "Are the Rs 24.9bn of short-term loans being rolled over, and on what terms?",
     "Any plan to sell or refinance the ships, or a rights issue or support from LAUGFS Holdings?",
-    "Are the Rs 20bn of short-term loans being rolled over?",
-    "Why the Dubai trading arm had no outside sales in April–June 2026."
+    "Does the Dubai trading arm restart or close (no sales since April 2026)?"
   ],
   "changeLog": [
     {
@@ -363,6 +453,16 @@
       "strongBuyPrice": 5.9,
       "priceAtTime": 51.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-13",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/update LGL). Added the interim to 30 September 2026. The LPG business made an operating loss in July–September (gross loss); group loss to owners Rs 1.54bn for the quarter, Rs 2.12bn for the half; NAV minus Rs 12.88. Restatement: year to March 2026 loss to owners Rs 4.90bn (was 3.344), EPS -12.66 (was -8.64), NAV -7.11 (was -3.06), no reason given. Cut LPG cash profit to 1.5/2.3/3.0bn and base turnaround EPS to Rs 0.30; ships book 17.6bn; net debt 32.6bn. Fair value 7.9 → 5.7. Still 0 of 4 business tests: avoid for now (unchanged).",
+      "fairValue": 5.7,
+      "buyPrice": 4.8,
+      "strongBuyPrice": 4.3,
+      "priceAtTime": 49.4,
+      "archive": "research/LGL.N0000/history/2026-11-11.json"
     }
   ]
 }

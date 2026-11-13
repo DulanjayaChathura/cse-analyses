@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LGL.N0000",
+  "company": {
+    "name": "LAUGFS Gas PLC",
+    "sector": "LPG distribution and shipping",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "LGL.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "LGL.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-11",
+  "resultsCovered": {
+    "label": "Three months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2023/24",
+      "Annual report 2024/25",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 51.0,
+    "date": "2026-06-30",
+    "source": "Last traded price (voting) in the interim report to 30 June 2026",
+    "note": "Non-voting Rs 42.10. April–June 2026 range Rs 50.00–68.00 (voting). No newer CSE close was available when this was written; the site shows the latest CSE close once fetched."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Loss-making, with negative equity and heavy short-term debt: the price assumes a rescue",
+    "text": "LAUGFS Gas PLC (LGL.N0000 voting, LGL.X0000 non-voting) runs Sri Lanka's second LPG brand, plus LPG ships, a Hambantota terminal and a Dubai trading arm. The home LPG business still makes an operating profit (Rs 2.1bn in the year to March 2026), but the shipping and trading arms lost Rs 3.6bn, so the group lost Rs 3.34bn (EPS minus Rs 8.64) and another Rs 578mn in April–June 2026. It has lost money in five of the last six years, owes about Rs 36.9bn (Rs 20.3bn of it due within a year) against Rs 3.2bn of cash, and shareholders' equity is now negative (NAV minus Rs 4.97 a share). Even so, the share roughly doubled in a year to Rs 51 (voting, end of June; check the live price), valuing the equity at about Rs 19bn. On a sum of the parts, after debt, I get a fair value of about Rs 7.90, and nil in the bear case. I'd only buy at up to about Rs 6.70 (strong buy under Rs 5.90), and would avoid it until the debt is dealt with."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 0,
+    "outOf": 4,
+    "reason": "Repeated losses, negative equity and Rs 37bn of borrowings.",
+    "assessed": "2026-11-11",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "Negative",
+        "note": "Losses in five of the last six years; equity is now below zero."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "Net debt Rs 33.7bn, equity negative",
+        "note": "Rs 20.3bn of borrowings due within a year (June 2026); interest Rs 662mn a quarter against operating profit of Rs 93mn."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2021/22, 2023/24, 2024/25, 2025/26",
+        "note": "Only 2022/23 was profitable in the last five years."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No",
+        "note": "Operating cash flow minus Rs 325mn in 2025/26 and minus Rs 2.1bn in April–June 2026; no dividend."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 7.9,
+    "buyPrice": 6.7,
+    "strongBuyPrice": 5.9,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": -4.97,
+    "note": "Fair value weights the bear/base/bull averages of two methods 30/50/20. The bear case is nil because the debt is larger than the business is worth; the value comes mostly from the bull case."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "for 2024/25 (none)",
+    "source": "Annual Report 2024/25, financial highlights (p. 13)",
+    "note": "No dividend in 2023/24 or 2024/25, and none is likely while equity is negative."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": -4.97,
+      "unit": "Rs",
+      "note": "30 Jun 2026; negative"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": null,
+      "unit": "x",
+      "display": "n/a (negative NAV)"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": null,
+      "unit": "x",
+      "display": "Loss",
+      "note": "Trailing EPS about minus Rs 9.31"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": null,
+      "unit": "%",
+      "display": "Negative"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 33.7,
+      "unit": "Rs bn",
+      "note": "June 2026; Rs 20.3bn of borrowings due within a year"
+    },
+    {
+      "id": "lpgOperatingProfit",
+      "label": "LPG business operating profit",
+      "value": 2.11,
+      "unit": "Rs bn",
+      "note": "Year to March 2026; Rs 124mn in April–June 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": -50,
+      "unit": "%",
+      "note": "April–June 2026, group; the Sri Lankan LPG business was flat"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 19.3,
+      "unit": "Rs bn",
+      "display": "~Rs 19bn",
+      "note": "Both share classes"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 June 2026 (unaudited)",
+      "text": "Group revenue halved to Rs 6.04bn because the Dubai trading arm had no outside sales. The loss to owners widened to Rs 578mn (EPS minus Rs 1.49 against minus Rs 0.82). The LPG business's operating profit fell to Rs 124mn from Rs 510mn as margins narrowed."
+    },
+    {
+      "title": "Year to March 2026 (per the fourth-quarter report)",
+      "text": "Loss to owners Rs 3.34bn (EPS minus Rs 8.64). The LPG business made Rs 2.11bn of operating profit and Rs 183mn after interest and tax; shipping lost Rs 2.52bn and trading Rs 1.08bn. The audited 2025/26 annual report isn't in the folder yet."
+    },
+    {
+      "title": "Debt and negative equity",
+      "text": "Borrowings rose to Rs 36.9bn at June 2026 (Rs 20.3bn short-term) against Rs 3.2bn of cash. Equity to owners is minus Rs 1.92bn. Finance costs were Rs 2.8bn last year, more than the whole group's operating profit."
+    },
+    {
+      "title": "The share price",
+      "text": "The voting share rose from Rs 26.70 to Rs 51.00 in the year to June 2026 (it touched Rs 80 in January–March 2026) despite the losses. LAUGFS Holdings owns 74% of the voting shares."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -10.54,
+          5.74,
+          -2.52,
+          -6.56,
+          -8.64,
+          -9.31
+        ],
+        "notes": [
+          "Loss",
+          null,
+          "Loss",
+          "Loss",
+          "Loss (unaudited)",
+          "Trailing"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          7.59,
+          5.55,
+          -3.06,
+          -4.97
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Negative",
+          "June 2026"
+        ]
+      },
+      {
+        "id": "ocf",
+        "label": "Operating cash flow",
+        "unit": "Rs bn",
+        "values": [
+          -1.32,
+          -1.41,
+          0.54,
+          0.39,
+          -0.33,
+          -2.08
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "April–June 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Minus Rs 4.97",
+      "reading": "Liabilities exceed assets, even with land, ships and cylinders at revalued amounts."
+    },
+    {
+      "method": "Return on equity",
+      "value": "Negative",
+      "reading": "Losses in five of the last six years."
+    },
+    {
+      "method": "P/E",
+      "value": "Loss",
+      "reading": "Trailing loss about Rs 9.31 a share; no earnings to value."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend in recent years."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt Rs 33.7bn",
+      "reading": "About 20 times the group's yearly operating cash profit before interest; most of it is short-term bank debt."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Sum of the parts less debt",
+      "bear": 0.0,
+      "base": 7.6,
+      "bull": 23.0,
+      "weighted": 8.4,
+      "comment": "LPG business at 5 / 6.5 / 7 times operating cash profit (Rs 2.0 / 2.8 / 3.2bn), property Rs 3.8 / 4.2 / 4.2bn, ships and terminal at 50% / 80% / 90% of book, less Rs 33.7bn of net debt. The bear case is below zero, shown as nil."
+    },
+    {
+      "id": "pe",
+      "name": "Recovery earnings × P/E",
+      "bear": 0.0,
+      "base": 5.0,
+      "bull": 24.0,
+      "weighted": 7.3,
+      "comment": "EPS after a turnaround of below zero / Rs 0.50 / Rs 2.00, times 10 / 12."
+    }
+  ],
+  "modelsNote": "With negative equity, losses and no dividend, book value, ROE, dividend and residual-income methods don't work. Both methods ask what the businesses are worth if the losses stop, less the debt.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "LPG operating cash profit × multiple",
+        "bear": "Rs 2.0bn × 5",
+        "base": "Rs 2.8bn × 6.5",
+        "bull": "Rs 3.2bn × 7"
+      },
+      {
+        "label": "Ships and terminal, share of book (Rs 17.8bn)",
+        "bear": "50%",
+        "base": "80%",
+        "bull": "90%"
+      },
+      {
+        "label": "Investment property",
+        "bear": "Rs 3.8bn",
+        "base": "Rs 4.2bn",
+        "bull": "Rs 4.2bn"
+      },
+      {
+        "label": "EPS after a turnaround × P/E",
+        "bear": "Loss",
+        "base": "0.50 × 10",
+        "bull": "2.00 × 12"
+      }
+    ],
+    "averages": {
+      "bear": 0.0,
+      "base": 6.3,
+      "bull": 23.5
+    },
+    "common": "Net debt Rs 33.7bn at June 2026 (borrowings Rs 36.9bn less cash Rs 3.2bn); cylinder deposits of Rs 2.8bn are left out. 387 million shares (335 million voting, 52 million non-voting), valued the same."
+  },
+  "sensitivity": {
+    "title": "Sum of the parts, Rs per share",
+    "rowLabel": "LPG multiple",
+    "columnLabel": "Ships at % of book",
+    "rows": [
+      "5x",
+      "6.5x",
+      "8x"
+    ],
+    "columns": [
+      "60%",
+      "80%",
+      "100%"
+    ],
+    "values": [
+      [
+        0.0,
+        0.0,
+        5.9
+      ],
+      [
+        0.0,
+        7.6,
+        16.8
+      ],
+      [
+        9.2,
+        18.4,
+        27.6
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Base LPG operating cash profit Rs 2.8bn. Rs 51 needs much more than the most generous case here."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 7.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 6.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 5.9
+      }
+    ],
+    "averagePrice": 6.94,
+    "totalCost": 3470,
+    "note": "About Rs 3,470 in total, against Rs 25,500 at Rs 51.00. I wouldn't buy at all until the debt is refinanced or the ships are sold.",
+    "realism": "Rs 6.70 needs a fall of about 87%. The voting share was Rs 8 in May 2020, so it has been there, but only in a crisis. Not realistic soon."
+  },
+  "changeMyView": {
+    "higher": [
+      "Selling or refinancing the ships so the group debt falls sharply.",
+      "A rights issue or parent support that fixes the negative equity.",
+      "LPG margins holding after the 2026 price increases.",
+      "The shipping arm breaking even."
+    ],
+    "lower": [
+      "Banks refusing to roll over the Rs 20bn of short-term loans.",
+      "More shipping losses.",
+      "Government price controls squeezing LPG margins.",
+      "A rights issue at a low price that dilutes current shareholders."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2024 and March 2025 and the interim reports to June 2026; the audited 2025/26 annual report wasn't in the folder. The June 2026 interim's company 'year to March 2026' column repeats the 2024/25 figures, so the March 2026 interim was used for those. The price is the last traded price at 30 June 2026; check it live. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: LAUGFS Gas PLC (LGL.N0000 voting, LGL.X0000 non-voting) runs Sri Lanka's second LPG brand, plus LPG ships, a Hambantota terminal and a Dubai trading arm. The home LPG business still makes an operating profit (Rs 2.1bn in the year to March 2026), but the shipping and trading arms lost Rs 3.6bn, so the group lost Rs 3.34bn (EPS minus Rs 8.64) and another Rs 578mn in April–June 2026. It has lost money in five of the last six years, owes about Rs 36.9bn (Rs 20.3bn of it due within a year) against Rs 3.2bn of cash, and shareholders' equity is now negative (NAV minus Rs 4.97 a share). Even so, the share roughly doubled in a year to Rs 51 (voting, end of June; check the live price), valuing the equity at about Rs 19bn. On a sum of the parts, after debt, I get a fair value of about Rs 7.90, and nil in the bear case. I'd only buy at up to about Rs 6.70 (strong buy under Rs 5.90), and would avoid it until the debt is dealt with.\n\nPrice and key figures\nPrice: Rs 51.00 voting, Rs 42.10 non-voting (last traded, 30 June 2026). Please check them live. In April–June 2026 the voting share traded between Rs 50 and Rs 68; a year earlier it was Rs 26.70.\nThree months to 30 June 2026 (unaudited): group revenue Rs 6.04bn (Rs 12.06bn), operating profit Rs 93mn (Rs 525mn), finance costs Rs 662mn, loss to owners Rs 578mn, EPS minus Rs 1.49 (minus Rs 0.82). The Sri Lankan LPG business: revenue Rs 6.01bn (flat), operating profit Rs 124mn (Rs 510mn), loss Rs 234mn.\nYear to March 2026 (fourth-quarter report): group revenue Rs 37.24bn (down 16%), loss to owners Rs 3.34bn, EPS minus Rs 8.64. By segment: LPG operating profit Rs 2.11bn (profit after tax Rs 183mn), shipping loss Rs 2.52bn, trading loss Rs 1.08bn, property profit Rs 111mn.\nBalance sheet, June 2026: borrowings Rs 36.9bn (Rs 20.3bn short-term), cash Rs 3.2bn, equity to owners minus Rs 1.92bn (minus Rs 4.97 a share).\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nSum of the parts less debt | 0.0 | 7.6 | 23.0 | 8.4\nRecovery earnings × P/E | 0.0 | 5.0 | 24.0 | 7.3\nAverage | 0.0 | 6.3 | 23.5 | 7.9\nFair value about Rs 7.90 (30% bear, 50% base, 20% bull). Buy at up to Rs 6.70 (15% below); strong buy under Rs 5.90 (25% below).\n\nAssumptions\nLPG business worth 5 / 6.5 / 7 times operating cash profit of Rs 2.0 / 2.8 / 3.2bn (about Rs 3.1bn last year including depreciation, but only about Rs 390mn in April–June 2026). Ships and the Hambantota terminal (Rs 17.8bn of segment assets) at 50% / 80% / 90% of book. Investment property Rs 3.8 / 4.2 / 4.2bn. Net debt Rs 33.7bn. After a turnaround: EPS below zero / Rs 0.50 / Rs 2.00 at 10 / 12 times.\n\nWhat stands out\n- The LPG brand is a real business, but the group's debt is bigger than what all its parts are reasonably worth.\n- Interest alone (Rs 2.8bn last year) is more than the group's operating profit.\n- More than half the borrowings fall due within a year, so it depends on banks rolling them over.\n- The market price looks like a bet on a rescue, a sale of the ships or a big recovery; none of that is announced in the reports.\n\n500-share plan\n200 shares up to Rs 7.90, 150 up to Rs 6.70, 150 up to Rs 5.90: average about Rs 6.94, about Rs 3,470 in total. That needs a fall of about 87%, so it isn't realistic. I'd wait until the debt is dealt with and look again.\n\nWhat would change my view\nHigher: selling or refinancing the ships, a rights issue or parent support that fixes equity, LPG margins holding after the 2026 price rises, shipping breaking even.\nLower: banks not rolling over short-term loans, more shipping losses, price controls on LPG, a dilutive rights issue.\n\nBusiness tests: 0 of 4 passed: avoid for now."
+}
