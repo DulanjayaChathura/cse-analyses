@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PLC.N0000",
+  "company": {
+    "name": "People's Leasing & Finance PLC",
+    "sector": "Finance (leasing, loans, gold loans, insurance)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "PLC.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (year to 31 March 2026)",
+      "Interim financial statements to 30 June 2026",
+      "Interim financial statements to 30 September 2026"
+    ]
+  },
+  "price": {
+    "value": 18.0,
+    "date": "2026-09-30",
+    "source": "Last traded price at 30 September 2026, interim report p. 13",
+    "note": "The CSE price feed could not be reached from this run and no dated November quote was found on the web (the latest dated quote found was Rs 19.40 on 5 August 2026, Zonebourse), so the analysis uses the 30 September close; the site replaces it with the daily CSE close. July–September 2026 range Rs 17.70–22.20; April–June Rs 20.70–25.60. Closed March 2026 at Rs 22.40 (2025/26 range Rs 15.70–32.00)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Fast loan growth, rising bad loans and a dividend paid in shares: worth about Rs 12.70, buy at Rs 10.80 or lower",
+    "text": "People's Leasing & Finance (PLC.N0000), the 75%-owned leasing and finance arm of People's Bank, looks expensive at Rs 18.00 against my fair value of about Rs 12.70. Company profit rose 41% in 2025/26 to Rs 5.08bn (EPS Rs 2.30, ROE 11.3%) as the loan book grew 75% in one year to Rs 276bn, and group profit attributable was Rs 5.77bn (EPS Rs 2.61). The September 2026 half-year was flat for the group (EPS Rs 1.21 against Rs 1.20), but the warning sign is loan quality: Stage 3 (bad) loans in the company jumped from Rs 5.5bn in March to Rs 21.0bn in September, from 2.0% to 7.0% of loans, and impairment charges quadrupled. The share trades at 0.73x group NAV of Rs 24.65 and about 6.9x trailing earnings. The Rs 1.40 dividend for 2025/26 was paid entirely in new shares (scrip), not cash. Because returns on equity of 8–13% are below the 18% return I require, four methods put fair value at about half of book value. I'd buy at up to Rs 10.80 and treat Rs 9.50 or less as a strong buy. The business passes two of the four tests (adequate capital, profit every year) and fails return on equity and cash dividends, so it is 'avoid for now'."
+  },
+  "valuation": {
+    "fairValue": 12.7,
+    "buyPrice": 10.8,
+    "strongBuyPrice": 9.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 24.65,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.52x group NAV)."
+  },
+  "dividend": {
+    "perShare": 1.4,
+    "label": "for 2025/26 (Rs 0.70 interim + Rs 0.70 final, both scrip)",
+    "source": "Annual Report 2025/26, corporate governance section and note 58.1; interim to 30 Sep 2026, explanatory note 7",
+    "note": "Both parts were paid as new shares, not cash. The Rs 1.40 for 2024/25 was paid in cash."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 24.65,
+      "unit": "Rs",
+      "note": "30 September 2026; company Rs 21.90"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.73,
+      "unit": "x",
+      "note": "At Rs 18.00"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 6.9,
+      "unit": "x",
+      "note": "Group EPS about Rs 2.62, 12 months to Sep 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (H1 2026/27)",
+      "value": 10.0,
+      "unit": "%",
+      "note": "Group and company, annualised; company 11.3% in 2025/26"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 7.8,
+      "unit": "%",
+      "note": "Rs 1.40 for 2025/26, paid in shares"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 60,
+      "unit": "%",
+      "note": "Company, 2025/26 (scrip)"
+    },
+    {
+      "id": "tier1",
+      "label": "Core capital ratio",
+      "value": 15.25,
+      "unit": "%",
+      "note": "31 March 2026; minimum 10% (22.94% a year earlier)"
+    },
+    {
+      "id": "stage3",
+      "label": "Stage 3 loans (company)",
+      "value": 7.0,
+      "unit": "%",
+      "note": "Rs 21.0bn of Rs 300.3bn at Sep 2026; 2.0% in March"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 40.9,
+      "unit": "Rs bn",
+      "display": "~Rs 41bn",
+      "note": "2,269.6mn shares at Rs 18.00"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to September 2026 (group, unaudited)",
+      "text": "Profit attributable Rs 2.75bn, up 6.5%; EPS Rs 1.21 against Rs 1.20 (more shares after scrip dividends). Second-quarter EPS Rs 0.62 against Rs 0.65. Company profit up 14% to Rs 2.43bn (EPS Rs 1.07)."
+    },
+    {
+      "title": "What drove it",
+      "text": "Net interest income rose 37% to Rs 15.0bn on a much bigger loan book, but interest costs rose 84% and impairment charges rose from Rs 378mn to Rs 2.08bn. Operating costs rose 26%."
+    },
+    {
+      "title": "Bad loans jumped",
+      "text": "Company Stage 3 loans rose from Rs 5.5bn (March) to Rs 9.0bn (June) and Rs 21.0bn (September), 7.0% of gross loans; Stage 2 doubled to Rs 35.2bn. Impairment held against Stage 3 is only about 21%. The interim report does not explain the rise."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Company profit Rs 5.08bn (up 41%), EPS Rs 2.30, ROE 11.3%. Group profit attributable Rs 5.77bn, EPS Rs 2.61. Loans and leases up 75% to Rs 275.7bn (new disbursements up 88%, gold loans up 106%); total assets up 65%."
+    },
+    {
+      "title": "Capital and funding",
+      "text": "Core capital fell from 22.9% to 15.3% (minimum 10%) as loans grew. A Rs 10bn Tier 2 term loan was raised in 2025/26 and Rs 10bn of 13.75% subordinated debentures in September 2026. Deposits up 23% in the half-year to Rs 203bn. Rated A(lka) by Fitch."
+    },
+    {
+      "title": "Dividend and shareholders",
+      "text": "Rs 1.40 for 2025/26, all in new shares (Rs 0.70 interim in October 2025 and Rs 0.70 final). Shares in issue have grown from 1,580mn to 2,270mn since 2019 through scrip dividends. People's Bank owns 75%."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity (company)",
+        "unit": "%",
+        "values": [
+          12.74,
+          7.68,
+          8.68,
+          8.56,
+          11.3,
+          10.0
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "H1 2026/27, annualised"
+        ]
+      },
+      {
+        "id": "eps",
+        "label": "EPS (company)",
+        "unit": "Rs",
+        "values": [
+          2.47,
+          1.48,
+          1.64,
+          1.67,
+          2.3,
+          2.37
+        ],
+        "notes": [
+          "As reported at the time",
+          "As reported at the time",
+          "As reported at the time",
+          "1.63 restated for later scrip shares",
+          null,
+          "12 months to Sep 2026"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (company EPS, year-end)",
+        "unit": "x",
+        "values": [
+          3.28,
+          5.34,
+          6.69,
+          10.7,
+          9.74,
+          7.6
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "At Rs 18.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share (for the year)",
+        "unit": "Rs",
+        "values": [
+          1.25,
+          0.5,
+          1.4,
+          1.4,
+          1.4,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Cash",
+          "Paid in shares (scrip)",
+          "No 2026/27 dividend declared yet"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 24.65",
+      "reading": "Group NAV at 30 September 2026; the price is 0.73x. Company NAV Rs 21.90. Company NAV has grown slowly (Rs 15.63 in 2016/17), held back by scrip dilution."
+    },
+    {
+      "method": "Return on equity",
+      "value": "About 10–11%",
+      "reading": "Company: 11.3% in 2025/26, 8.6% in 2024/25, 8.7% in 2023/24, 7.7% in 2022/23, 12.7% in 2021/22. Below the 18% return I require."
+    },
+    {
+      "method": "P/E",
+      "value": "6.9x",
+      "reading": "On trailing group EPS of about Rs 2.62. Year-end P/E ranged from 3.3x (2021/22) to 10.7x (2024/25)."
+    },
+    {
+      "method": "Dividends",
+      "value": "7.8% yield",
+      "reading": "Rs 1.40 for 2025/26, but paid in shares, so holders received no cash; 2024/25's Rs 1.40 was cash."
+    },
+    {
+      "method": "Capital",
+      "value": "Core capital 15.3%",
+      "reading": "Down from 22.9% as loans grew 75%; propped up with Rs 20bn of Tier 2 debt. Still 5 points above the 10% minimum."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 7.0%",
+      "reading": "Up from 2.0% in six months, with low provision cover (about 21% on Stage 3). The biggest risk to the valuation."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 8.5,
+      "base": 12.32,
+      "bull": 18.16,
+      "weighted": 12.34,
+      "comment": "Group NAV Rs 24.65 × (ROE − growth) ÷ (cost of equity − growth): long-run ROE 10% / 12% / 14%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 11.0,
+      "base": 16.25,
+      "bull": 22.4,
+      "weighted": 15.91,
+      "comment": "2026/27 group EPS of Rs 2.20 / 2.50 / 2.80 at 5 / 6.5 / 8 times (year-end P/E has ranged 3.3x–10.7x over five years)."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 6.52,
+      "base": 11.33,
+      "bull": 15.79,
+      "weighted": 10.78,
+      "comment": "Rs 1.00 / 1.40 / 1.50 next year, growing 3% / 5% / 7% for five years, then 5% / 6% / 7%. The last two dividends were paid in shares, which flatters this method."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 8.5,
+      "base": 11.52,
+      "bull": 16.2,
+      "weighted": 11.55,
+      "comment": "Used instead of a cash-flow DCF: book value plus profit above the required return, ROE moving from about 10–11% now to the long-run level over ten years, 50% payout."
+    }
+  ],
+  "modelsNote": "A finance company's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "19.5%",
+        "base": "18%",
+        "bull": "16.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "10%",
+        "base": "12%",
+        "bull": "14%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "2.20 × 5",
+        "base": "2.50 × 6.5",
+        "bull": "2.80 × 8"
+      },
+      {
+        "label": "Next dividend, five-year growth",
+        "bear": "Rs 1.00, 3%",
+        "base": "Rs 1.40, 5%",
+        "bull": "Rs 1.50, 7%"
+      }
+    ],
+    "averages": {
+      "bear": 8.63,
+      "base": 12.86,
+      "bull": 18.14
+    },
+    "common": "10-year government bond about 12.4% (November 2026) plus about 5.5 points for a leveraged lender, the same as Central Finance: the People's Bank parent and A(lka) rating offset the fast-growing, less-seasoned loan book. H1 group EPS is Rs 1.21, so base 2026/27 EPS of Rs 2.50 allows a slightly better second half despite higher impairments; the bear case assumes the Stage 3 surge needs much bigger provisions."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16.5%",
+      "18%",
+      "19.5%"
+    ],
+    "columns": [
+      "10%",
+      "12%",
+      "14%"
+    ],
+    "values": [
+      [
+        10.51,
+        13.21,
+        16.13
+      ],
+      [
+        9.33,
+        11.52,
+        13.88
+      ],
+      [
+        8.4,
+        10.21,
+        12.16
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "No combination in the table reaches Rs 18; the price implies a long-run ROE of about 17–18% or a cost of equity near 12–13%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 12.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 10.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 9.5
+      }
+    ],
+    "averagePrice": 11.17,
+    "totalCost": 5585,
+    "note": "About Rs 5,600 in total, against Rs 9,000 for 500 shares at Rs 18.00.",
+    "realism": "Not realistic soon: Rs 10.80 is 40% below the September close. This year the share has traded between Rs 17.70 and Rs 25.60, and Rs 15.70 was the 2025/26 low. It last traded near Rs 11 in 2023/24 (low Rs 7.00) and Rs 4.90 in 2022/23, so prices this low happen only in a crisis or a sharp loan-quality scare."
+  },
+  "changeMyView": {
+    "higher": [
+      "Stage 3 loans falling back towards 2–3% without big write-offs, showing the rise was temporary or a classification change.",
+      "ROE staying above 13% as the larger loan book earns through.",
+      "A return to cash dividends.",
+      "Lower funding costs (interest cover is only 1.28x).",
+      "Clear, lasting support from People's Bank, such as a capital injection rather than more scrip."
+    ],
+    "lower": [
+      "Stage 3 loans rising further in the December quarter, needing much bigger provisions (cover on Stage 3 is only about 21%).",
+      "Core capital moving close to the 10% minimum, forcing slower growth or a rights issue.",
+      "More dividends paid in shares, diluting holders.",
+      "Interest costs rising faster than lending rates (up 84% in the half-year).",
+      "Weakness at People's Bank or state-ownership decisions that put policy aims ahead of shareholders."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the unaudited interim reports to 30 June and 30 September 2026. The price is the 30 September 2026 close because a newer CSE close wasn't available to this run, so check the current price before ordering. This is analysis, not personal financial advice."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "Adequate capital and profit every year, but returns are low and the latest dividend was paid in shares.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 8–13%",
+        "note": "Company ROE 11.3% in 2025/26, 8.6% in 2024/25, 8.7% in 2023/24, 7.7% in 2022/23, 12.7% in 2021/22; about 10% annualised in H1 2026/27. Last above 15% in 2018/19."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Core capital 15.3%",
+        "note": "A finance company, so judged on capital: core capital 15.25% and total capital 18.88% at March 2026 against minimums of 10% and 14%. Passes, but the buffer has shrunk from 22.9% in a year."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Company profit Rs 3.0–5.1bn in each of the last five years, no losses in ten; it fell 35% in 2022/23 (the crisis year). No large one-offs, but rising bad loans are a threat."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Scrip dividend",
+        "note": "The Rs 1.40 for 2025/26 was paid entirely in new shares; only Rs 7mn of cash dividends left the company in H1 2026/27. Shares in issue are up 44% since 2019 from scrip dividends."
+      }
+    ]
+  },
+  "fullText": "Summary: People's Leasing & Finance (PLC.N0000), the 75%-owned leasing and finance arm of People's Bank, looks expensive at Rs 18.00 against my fair value of about Rs 12.70. Company profit rose 41% in 2025/26 to Rs 5.08bn (EPS Rs 2.30, ROE 11.3%) as the loan book grew 75% in one year to Rs 276bn, and group profit attributable was Rs 5.77bn (EPS Rs 2.61). The September 2026 half-year was flat for the group (EPS Rs 1.21 against Rs 1.20), but the warning sign is loan quality: Stage 3 (bad) loans in the company jumped from Rs 5.5bn in March to Rs 21.0bn in September, from 2.0% to 7.0% of loans, and impairment charges quadrupled. The share trades at 0.73x group NAV of Rs 24.65 and about 6.9x trailing earnings. The Rs 1.40 dividend for 2025/26 was paid entirely in new shares (scrip), not cash. Because returns on equity of 8–13% are below the 18% return I require, four methods put fair value at about half of book value. I'd buy at up to Rs 10.80 and treat Rs 9.50 or less as a strong buy. The business passes two of the four tests (adequate capital, profit every year) and fails return on equity and cash dividends, so it is 'avoid for now'.\n\nPrice and key figures\nPrice: Rs 18.00, the last traded price on 30 September 2026 (interim report). July–September 2026 range Rs 17.70–22.20.\nSix months to September 2026 (group, unaudited): profit attributable Rs 2.75bn (up 6.5%), EPS Rs 1.21 against Rs 1.20. Net interest income up 37%, interest expense up 84%, impairment Rs 2.08bn against Rs 378mn, costs up 26%.\n2025/26 (audited): company profit Rs 5.08bn (up 41%), EPS Rs 2.30, ROE 11.3%; group profit attributable Rs 5.77bn, EPS Rs 2.61. Loans and leases up 75% to Rs 275.7bn. Core capital 15.25% (22.94%). Dividend Rs 1.40, all scrip.\nBalance sheet at September 2026 (group): loans Rs 318.2bn, deposits Rs 211.2bn, bank borrowing Rs 99.1bn, debentures Rs 10.0bn, equity attributable Rs 55.95bn, NAV Rs 24.65. Company Stage 3 loans Rs 21.0bn (7.0%) against Rs 5.5bn (2.0%) in March.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 8.5 | 12.32 | 18.16 | 12.34\nP/E method | 11.0 | 16.25 | 22.4 | 15.91\nDividend model | 6.52 | 11.33 | 15.79 | 10.78\nResidual income | 8.5 | 11.52 | 16.2 | 11.55\nAverage | 8.63 | 12.86 | 18.14 | 12.7\n\nAssumptions (bear / base / bull)\nCost of equity 19.5% / 18% / 16.5%; long-run ROE 10% / 12% / 14%; growth 5% / 6% / 7%; 2026/27 EPS 2.20 × 5 / 2.50 × 6.5 / 2.80 × 8; next dividend Rs 1.00 / 1.40 / 1.50 growing 3% / 5% / 7% for five years.\n\nFair value Rs 12.70; buy Rs 10.80 (15% below); strong buy Rs 9.50 (25% below).\n\nBusiness tests: 2 of 4 passed (fails return on equity and cash dividends): avoid for now.\n\n500-share plan\n200 shares up to Rs 12.70, 150 up to Rs 10.80, 150 up to Rs 9.50: about Rs 5,600 in total. Not realistic soon: the buy price is 40% below the September close.\n\nUncertain: the price is the 30 September close (no newer CSE close was available to this run). The interim reports don't explain why Stage 3 loans rose almost fourfold in six months. Group ROE for 2025/26 isn't stated in the reports read (my estimate is about 11%), so the history uses company figures. Group EPS for 2025/26 (Rs 2.61) is on 2,209.9mn shares; a further 59.8mn scrip shares were issued for the final dividend."
+}
