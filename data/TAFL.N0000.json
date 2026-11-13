@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "ticker": "TAFL.N0000",
+  "company": {
+    "name": "Three Acre Farms PLC",
+    "sector": "Food, Beverage & Tobacco (poultry breeding)",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "TAFL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025 (audited)",
+      "Interim reports to 30 June and 30 September 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 625.5,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 September 2026, Interim Q3 2026, p. 9",
+    "note": "The CSE close couldn't be fetched for this analysis (the share isn't yet in the site's daily prices, cse.lk was not reachable, and no dated November 2026 quote was found on the web); the site's daily CSE close will replace this. Range April–September 2026 Rs 556.75–695.00 (quarterly reports; January–March not available). Closed 2025 at Rs 592.25 and 2024 at Rs 298.25."
+  },
+  "summary": {
+    "verdict": "fair",
+    "headline": "A cash-rich, well-run chick breeder, priced a little above fair value after a strong year",
+    "text": "Three Acre Farms (TAFL.N0000) breeds poultry and sells day-old chicks (DOCs) for broiler meat and egg-laying farms, plus some commercial broiler farming. It is 57% owned by Ceylon Grain Elevators (CGE, the Prima group), which is also its largest customer and feed supplier. Two sister companies were merged into it from 1 January 2026. Profit swings with chick prices: Rs 659m (2022), Rs 2.50bn (2023), Rs 1.70bn (2024) and Rs 1.54bn (2025, EPS Rs 65.40). 2026 is a strong year: January–September profit Rs 1.52bn (EPS Rs 64.57), up 63%, on 24% higher revenue and good broiler chick prices. The balance sheet is unusual: Rs 7.96bn of cash (about Rs 338 a share) and no borrowings, against equity of Rs 10.16bn (NAV Rs 431.54). Interest on that cash was Rs 603m in nine months, about 27% of pre-tax profit. At Rs 625.50 (last trade on 30 September 2026, from the Q3 report) the share trades at 6.9x trailing earnings of Rs 90.37, 1.45x book, with a 6.4% yield on the Rs 40 dividend for 2025. Five methods put fair value at about Rs 560: the cash plus a normal-year business is worth about Rs 690 in the base case, but a dividend model and residual income are much lower because the cash earns well below the 17% return I ask and the parent decides how much of it is paid out. So the price is about 12% above fair value. I'd buy at up to Rs 476 and treat under Rs 420 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "Return on equity around 20% on average despite a large cash pile, no borrowings, profit every year and cash flow above profit; but profit swings a lot with chick prices.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "21% average 2022–2025",
+        "note": "Group profit on average equity: 11.8% (2022), 36.2% (2023), 20.3% (2024), 16.8% (2025) and about 21.6% for the 12 months to September 2026 (worked out from Annual Report 2025, p. 280, and Interim Q3 2026). Achieved even though about 80% of equity is cash."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 7.96bn",
+        "note": "No borrowings at 30 September 2026; cash Rs 7.96bn against equity Rs 10.16bn (Interim Q3 2026, p. 5)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year 2021–2025",
+        "note": "Rs 0.96bn, 0.66bn, 2.50bn, 1.70bn and 1.54bn (Annual Report 2025, p. 280). A pass, but a weak one in spirit: profit swings 2–4x with chick prices, and 2025 included a Rs 254m non-cash fair-value gain on the flock."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Operating cash Rs 2.71bn vs profit Rs 1.54bn (2025)",
+        "note": "Free cash flow after flock purchases and capex Rs 1.40bn in 2025 and Rs 2.65bn in 2024 (Annual Report 2025, p. 240). Only Rs 0.48bn in January–September 2026 as Rs 1.07bn went into inventories and amounts due from the parent. Dividend Rs 40 for 2025 (61% of EPS)."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 560.3,
+    "buyPrice": 476.3,
+    "strongBuyPrice": 420.2,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 431.54,
+    "note": "Fair value weights the bear/base/bull averages of five methods 30/50/20 (about 1.3x NAV and 7.5x base normal EPS). The methods disagree because of the Rs 7.96bn cash: valued at face it supports about Rs 690–720; valued by what shareholders receive as dividends, much less."
+  },
+  "dividend": {
+    "perShare": 40.0,
+    "label": "final for 2025 (paid 2026)",
+    "source": "Annual Report 2025, p. 279 (note 29); Interim Q3 2026, p. 6",
+    "note": "Rs 55 for 2024 (Rs 25 interim and Rs 30 final), Rs 28 for 2023 and none for 2022. No interim declared for 2026 so far."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 431.54,
+      "unit": "Rs",
+      "note": "30 September 2026 (Rs 406.97 at December 2025)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.45,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 6.9,
+      "unit": "x",
+      "note": "EPS Rs 90.37, 12 months to September 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 16.8,
+      "unit": "%",
+      "note": "2025 on average equity; about 21.6% for the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 6.4,
+      "unit": "%",
+      "note": "Rs 40 for 2025"
+    },
+    {
+      "id": "netCashPerShare",
+      "label": "Net cash per share",
+      "value": 337.97,
+      "unit": "Rs",
+      "note": "Rs 7.96bn, no borrowings, 30 September 2026"
+    },
+    {
+      "id": "grossMargin",
+      "label": "Gross margin",
+      "value": 30.0,
+      "unit": "%",
+      "note": "January–September 2026 (21.0% a year earlier)"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 14.7,
+      "unit": "Rs bn",
+      "display": "~Rs 14.7bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "January–September 2026 (unaudited)",
+      "text": "Revenue up 24% to Rs 5.51bn; gross profit up 78% to Rs 1.65bn (margin 30.0% against 21.0%). Interest income up 33% to Rs 603m. Profit Rs 1.52bn against Rs 932m (EPS Rs 64.57 against Rs 39.60). Q3 alone: revenue Rs 1.99bn (+15%), profit Rs 595m (+26%), EPS Rs 25.28. Broiler chick demand and prices were strong; layer chicks were weak because of an egg glut."
+    },
+    {
+      "title": "Cash and dividend",
+      "text": "Cash Rs 7.96bn at September (Rs 8.42bn in December) after paying the Rs 40 dividend (Rs 942m), Rs 1.15bn on flock and farms, and Rs 0.33bn now owed by the parent. NAV rose to Rs 431.54."
+    },
+    {
+      "title": "2025 (audited)",
+      "text": "Revenue flat at Rs 6.18bn as layer chick prices fell from Rs 429 to Rs 198; gross profit up 15% to Rs 1.65bn thanks to the breeder side. Interest income down 26% to Rs 617m as rates fell; tax up to Rs 931m. Profit Rs 1.54bn (down 9%), EPS Rs 65.40. Dividend Rs 40 (Rs 55 for 2024)."
+    },
+    {
+      "title": "Merger and new grandparent farm",
+      "text": "Millennium Multibreeder Farms and Ceylon Pioneer Poultry Breeders were merged into the company from 1 January 2026; 2025 comparatives are the old group figures, so the share count (23.545m) and totals are unchanged. A Rs 550m grandparent farm at Ittapana is planned to raise parent-stock output."
+    },
+    {
+      "title": "Reliance on the parent",
+      "text": "CGE (Prima) bought 28% of the group's goods and 21% in services in 2025 and supplied 37% of its purchases, mainly feed (Annual Report 2025, p. 277). Prices between them shape TAFL's margins, and the parent also controls how much cash is paid out."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          40.69,
+          27.99,
+          106.34,
+          72.26,
+          65.4,
+          90.37
+        ],
+        "notes": [
+          "Group profit ÷ 23.545m shares; helped by a tax credit",
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          11.8,
+          36.2,
+          20.3,
+          16.8,
+          21.6
+        ],
+        "notes": [
+          "2020 equity not in the reports read",
+          "On average equity",
+          "On average equity",
+          "On average equity",
+          "On average equity",
+          "On average equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          7.38,
+          4.46,
+          2.18,
+          4.13,
+          9.06,
+          6.92
+        ],
+        "notes": [
+          "At Rs 300.25",
+          "At Rs 124.75",
+          "At Rs 232.00",
+          "At Rs 298.25",
+          "At Rs 592.25",
+          "At Rs 625.50"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          10.0,
+          0,
+          28.0,
+          55.0,
+          40.0,
+          null
+        ],
+        "notes": [
+          null,
+          "None paid",
+          null,
+          "Rs 25 interim + Rs 30 final",
+          "Final, paid 2026",
+          "None declared yet for 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "6.9x",
+      "reading": "Low, but trailing profit is near a cyclical high and about a quarter of it is interest on cash."
+    },
+    {
+      "method": "NAV",
+      "value": "1.45x",
+      "reading": "Rs 431.54 a share, of which about Rs 338 is cash."
+    },
+    {
+      "method": "Return on equity",
+      "value": "16.8% (2025)",
+      "reading": "Good, around 20% on average, despite the idle cash; the farming business alone earns far more on its assets."
+    },
+    {
+      "method": "Dividends",
+      "value": "6.4% yield",
+      "reading": "Rs 40 for 2025, 61% of EPS; patchy history (none for 2022)."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "Rs 1.40bn (2025)",
+      "reading": "About 9.5% of the market value; much lower in 2026 so far because of working capital."
+    },
+    {
+      "method": "Net cash",
+      "value": "Rs 338 a share",
+      "reading": "54% of the price. Worth face value only if it is eventually paid out or used well."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Business + net cash",
+      "bear": 504.6,
+      "base": 692.7,
+      "bull": 889.4,
+      "weighted": 675.6,
+      "comment": "Normal operating profit before tax of Rs 1.4bn / 1.9bn / 2.4bn, taxed at 30%, at 6 / 7 / 8 times, plus Rs 6.0bn / 7.0bn / 7.5bn of the Rs 7.96bn cash."
+    },
+    {
+      "id": "dcf",
+      "name": "Operating free cash flow DCF + cash",
+      "bear": 505.5,
+      "base": 716.4,
+      "bull": 972.7,
+      "weighted": 704.4,
+      "comment": "Operating free cash flow (after chick-flock purchases and capex, excluding interest) of Rs 0.85bn / 1.15bn / 1.45bn, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%; cost of equity 18% / 17% / 16%; plus the same cash."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 395.4,
+      "base": 631.8,
+      "bull": 879.6,
+      "weighted": 610.4,
+      "comment": "Normal EPS of Rs 56.50 / 74.30 / 92.60 (operating profit plus interest on cash, after tax) at 7 / 8.5 / 9.5 times."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income (P/B from ROE)",
+      "bear": 277.4,
+      "base": 431.5,
+      "bull": 647.3,
+      "weighted": 428.5,
+      "comment": "NAV Rs 431.54 at long-run ROE of 13% / 17% / 21% against a 18% / 17% / 16% cost of equity, growth 4% / 5% / 6%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 243.0,
+      "base": 386.1,
+      "bull": 584.2,
+      "weighted": 382.8,
+      "comment": "Next dividend Rs 35 / 45 / 55, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%."
+    }
+  ],
+  "modelsNote": "A cyclical but cash-generating business with a very large cash pile and no debt, so the business and the cash are valued separately (business plus cash, and a free-cash-flow DCF plus cash), with P/E, residual income and a dividend model as checks. The last three value the cash at what it earns for shareholders, which is why they are lower.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18%",
+        "base": "17%",
+        "bull": "16%"
+      },
+      {
+        "label": "Normal operating profit before tax (excl. interest)",
+        "bear": "Rs 1.4bn",
+        "base": "Rs 1.9bn",
+        "bull": "Rs 2.4bn"
+      },
+      {
+        "label": "Multiple of after-tax operating profit",
+        "bear": "6x",
+        "base": "7x",
+        "bull": "8x"
+      },
+      {
+        "label": "Cash counted (of Rs 7.96bn)",
+        "bear": "Rs 6.0bn",
+        "base": "Rs 7.0bn",
+        "bull": "Rs 7.5bn"
+      },
+      {
+        "label": "Operating free cash flow",
+        "bear": "Rs 0.85bn",
+        "base": "Rs 1.15bn",
+        "bull": "Rs 1.45bn"
+      },
+      {
+        "label": "Growth for five years, then long-term",
+        "bear": "3%, 4%",
+        "base": "6%, 5%",
+        "bull": "8%, 6%"
+      },
+      {
+        "label": "Normal EPS × P/E",
+        "bear": "56.50 × 7",
+        "base": "74.30 × 8.5",
+        "bull": "92.60 × 9.5"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "13%",
+        "base": "17%",
+        "bull": "21%"
+      },
+      {
+        "label": "Next dividend",
+        "bear": "Rs 35",
+        "base": "Rs 45",
+        "bull": "Rs 55"
+      }
+    ],
+    "averages": {
+      "bear": 385.2,
+      "base": 571.7,
+      "bull": 794.6
+    },
+    "common": "10-year government bond about 12.4% plus 3.5–5.5 points for a small, cyclical, parent-controlled share. Tax 30% (31% in 2026 so far). Operating profit was Rs 0.6–0.65bn in 2021–2022, Rs 2.25bn in 2023, Rs 1.50bn in 2024, Rs 1.86bn in 2025 and Rs 2.59bn in the last 12 months; the base takes Rs 1.9bn as a normal year, below today's peak. Interest on cash assumed about 8% before tax."
+  },
+  "sensitivity": {
+    "title": "Business + net cash, Rs per share",
+    "rowLabel": "Multiple of after-tax operating profit",
+    "columnLabel": "Normal operating profit before tax",
+    "rows": [
+      "6x",
+      "7x",
+      "8x"
+    ],
+    "columns": [
+      "Rs 1.4bn",
+      "Rs 1.9bn",
+      "Rs 2.4bn"
+    ],
+    "values": [
+      [
+        547.0,
+        636.2,
+        725.4
+      ],
+      [
+        588.7,
+        692.7,
+        796.8
+      ],
+      [
+        630.3,
+        749.2,
+        868.1
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Cash counted at Rs 7.0bn. The last 12 months' operating profit was Rs 2.59bn; at 7x that alone would give about Rs 836. Today's Rs 625.50 is covered by this method in most cases; the gap to fair value comes from the dividend and residual-income methods, which discount the cash."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 560.3
+      },
+      {
+        "shares": 150,
+        "maxPrice": 476.3
+      },
+      {
+        "shares": 150,
+        "maxPrice": 420.2
+      }
+    ],
+    "averagePrice": 493.07,
+    "totalCost": 246535,
+    "note": "About Rs 246,535 in total, against Rs 312,750 at Rs 625.50.",
+    "realism": "The first tier (Rs 560.30) is within reach: the low in July–September 2026 was Rs 556.75. The buy price (Rs 476) was last seen in July–September 2025 (low Rs 455), and the strong-buy price needs a fall of about a third. Thin trading (about 6.7m shares in 2025) means prices can jump either way."
+  },
+  "changeMyView": {
+    "higher": [
+      "A special dividend or a clear policy to pay out much of the Rs 7.96bn cash.",
+      "Broiler chick prices holding up into 2027, making Rs 2.5bn of operating profit a normal year.",
+      "The new grandparent farm lifting output without hurting margins.",
+      "Higher deposit rates raising interest income."
+    ],
+    "lower": [
+      "Chick prices falling back, as layer prices did in 2025 (Rs 429 → Rs 198).",
+      "Bird flu or another disease outbreak at the farms.",
+      "Cash being lent to, or tied up with, the parent (Rs 0.33bn was due from related companies at September 2026).",
+      "Feed costs rising faster than chick prices.",
+      "Falling deposit rates cutting interest income further."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the interim reports to June and September 2026 (unaudited). The price used is the last trade on 30 September 2026 from the Q3 report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "fullText": "Three Acre Farms (TAFL.N0000) breeds poultry and sells day-old chicks (DOCs) for broiler meat and egg-laying farms, plus some commercial broiler farming. It is 57% owned by Ceylon Grain Elevators (CGE, the Prima group), which is also its largest customer and feed supplier. Two sister companies were merged into it from 1 January 2026. Profit swings with chick prices: Rs 659m (2022), Rs 2.50bn (2023), Rs 1.70bn (2024) and Rs 1.54bn (2025, EPS Rs 65.40). 2026 is a strong year: January–September profit Rs 1.52bn (EPS Rs 64.57), up 63%, on 24% higher revenue and good broiler chick prices. The balance sheet is unusual: Rs 7.96bn of cash (about Rs 338 a share) and no borrowings, against equity of Rs 10.16bn (NAV Rs 431.54). Interest on that cash was Rs 603m in nine months, about 27% of pre-tax profit. At Rs 625.50 (last trade on 30 September 2026, from the Q3 report) the share trades at 6.9x trailing earnings of Rs 90.37, 1.45x book, with a 6.4% yield on the Rs 40 dividend for 2025. Five methods put fair value at about Rs 560: the cash plus a normal-year business is worth about Rs 690 in the base case, but a dividend model and residual income are much lower because the cash earns well below the 17% return I ask and the parent decides how much of it is paid out. So the price is about 12% above fair value. I'd buy at up to Rs 476 and treat under Rs 420 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nBusiness + net cash | 504.6 | 692.7 | 889.4 | 675.6\nOperating FCF DCF + cash | 505.5 | 716.4 | 972.7 | 704.4\nP/E method | 395.4 | 631.8 | 879.6 | 610.4\nResidual income | 277.4 | 431.5 | 647.3 | 428.5\nDividend model | 243.0 | 386.1 | 584.2 | 382.8\nAverage | 385.2 | 571.7 | 794.6 | 560.3\n\nFair value Rs 560.30 (bear 30 / base 50 / bull 20). Buy price Rs 476.30 (15% below), strong buy Rs 420.20 (25% below).\n\nHow the business works: the company keeps parent flocks and sells day-old chicks to broiler and layer farmers, and raises some broilers itself. Its profit depends on chick prices, which swing with farmers' demand and the price of chicken and eggs. That is why profit went from Rs 659m in 2022 to Rs 2.50bn in 2023 and back to Rs 1.54bn in 2025. 2026 is a good year for broiler chicks but a poor one for layer chicks.\n\nWhy the methods disagree: Rs 7.96bn (Rs 338 a share) sits in bank deposits earning about 8–10% before tax. If you count it at face value, the business plus cash is worth about Rs 690–720 a share in the base case, above today's price. But the cash earns well below the 17% return I ask, and shareholders only get it when the board (controlled by CGE) pays it out. The dividend model (Rs 45 next year in the base case) and residual income value it on that basis and come out at Rs 386–432. I give every method equal weight, which puts fair value about 12% below the price.\n\nExpected return at Rs 625.50: dividend about 6.4% plus growth of about 5–6% gives about 12% a year, below the 17% I ask, unless more of the cash is paid out.\n\nBuy plan: 200 shares up to Rs 560.30, 150 up to Rs 476.30 and 150 up to Rs 420.20, about Rs 246,535 in total (average Rs 493.07), against Rs 312,750 at Rs 625.50. The first tier is close to this year's low of Rs 556.75; the rest needs a fall.\n\nBusiness tests: 4 of 4 passed (steady profit is a weak pass because profit swings so much), so it's a good business at a price a little too high: watch list (category 2).\n\nUncertain: the price is the last trade on 30 September 2026 because the CSE close couldn't be fetched; the site will show the daily close. The Q1 2026 report wasn't among the downloaded files, so the January–March price range is missing (Q1 figures were worked out as half-year less Q2). 2021 return on equity can't be worked out because 2020 equity isn't in the reports read. The 2025 'Financial Highlights' page shows ROE of 19% and dividends paid of Rs 941.8m, which don't match the accounts (16.8% on average equity; Rs 706.4m paid in 2025); I used the accounts."
+}
