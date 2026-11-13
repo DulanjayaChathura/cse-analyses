@@ -61,6 +61,7 @@
   const pct = (v, dec = 0) => (App.isNum(v) ? `${v > 0 ? "+" : ""}${v.toFixed(dec)}%` : "–");
   const tile = (label, value, foot, cls = "") =>
     `<div class="tile"><div class="tile-label">${label}</div><div class="tile-value ${cls}">${value}</div><div class="tile-foot">${foot}</div></div>`;
+  const newsCard = (n) => `<article class="bk-news-card"><h3>${App.esc(n.title)}</h3><p>${App.esc(n.text)}</p></article>`;
 
   /* One line per company on my site: price (dot), my fair value (green) and the
      broker's target (blue) on a shared scale, so the gap is visible at a glance. */
@@ -95,6 +96,19 @@
 
     const flows = (m.foreignFlows || []).slice().sort((a, b) => a.mn - b.mn);
     const maxFlow = Math.max(1, ...flows.map((f) => Math.abs(f.mn)));
+    const news = d.news || [];
+    const NEWS_SHOWN = 4;
+    const codeChips = (codes, cls) => (codes || []).map((c) => `<span class="badge ${cls}">${App.esc(c)}</span>`).join("");
+
+    /* Jump nav: skip straight to a section on a long day. */
+    const jump = [
+      (d.highlights || []).length && ["#bk-highlights", "In short"],
+      ownCalls.length && ["#bk-compare", "Your companies"],
+      calls.length && ["#bk-calls", "All calls"],
+      (d.dividends || []).length && ["#bk-dividends", "Dividends"],
+      (flows.length || (m.momentum || []).length) && ["#bk-market", "Market details"],
+      news.length && ["#bk-news", "News"],
+    ].filter(Boolean);
 
     content.innerHTML = `
       <div class="tiles">
@@ -104,15 +118,17 @@
         ${App.isNum(m.foreignNetMn) ? tile("Foreign investors", `${m.foreignNetMn < 0 ? "−" : "+"}Rs ${Math.abs(Math.round(m.foreignNetMn))}mn`, m.foreignNetMn < 0 ? "Net sellers" : "Net buyers", m.foreignNetMn < 0 ? "down" : "up") : ""}
       </div>
 
-      ${(d.highlights || []).length ? `<section class="bk-card"><h2>Today in short</h2><ul class="bk-list">${d.highlights.map((h) => `<li>${App.esc(h)}</li>`).join("")}</ul></section>` : ""}
+      ${jump.length > 2 ? `<nav class="more-jump">${jump.map(([href, label]) => `<a href="${href}">${App.esc(label)}</a>`).join("")}</nav>` : ""}
 
-      ${ownCalls.length ? `<section class="bk-card">
+      ${(d.highlights || []).length ? `<section class="bk-card" id="bk-highlights"><h2>Today in short</h2><ul class="bk-list">${d.highlights.map((h) => `<li>${App.esc(h)}</li>`).join("")}</ul></section>` : ""}
+
+      ${ownCalls.length ? `<section class="bk-card" id="bk-compare">
         <div class="bk-head"><h2>Your companies: broker vs my view</h2>
           <div class="legend"><span><i class="lg-dot"></i>Price</span><span><i class="lg-fv"></i>My fair value</span><span><i class="lg-tg"></i>Broker target</span></div></div>
         ${ownCalls.map((c) => compareRow(c, mine[c.code])).join("")}
       </section>` : ""}
 
-      <section class="bk-card">
+      <section class="bk-card" id="bk-calls">
         <div class="bk-head"><h2>All broker calls <span class="muted-s" id="count"></span></h2>
           <div class="filters">
             <input type="search" id="q" class="search" placeholder="Search company or code" aria-label="Search calls">
@@ -126,22 +142,28 @@
       </section>
 
       <div class="bk-grid">
-        ${(d.dividends || []).length ? `<section class="bk-card"><h2>Coming dividends</h2>
+        ${(d.dividends || []).length ? `<section class="bk-card" id="bk-dividends"><h2>Coming dividends</h2>
           <table class="bk-table"><thead><tr><th>Company</th><th class="num">Dividend</th><th class="num">Yield</th><th>XD date</th><th>Paid</th></tr></thead><tbody>
           ${d.dividends.map((v) => `<tr><td>${App.esc(v.name)} <span class="muted-s">${App.esc(v.code.split(".")[0])}</span></td><td class="num">${App.price(v.dps)}</td><td class="num">${App.isNum(v.yieldPct) ? v.yieldPct.toFixed(1) + "%" : "–"}</td><td class="nowrap">${App.date(v.xd)}</td><td class="nowrap">${App.date(v.pay)}</td></tr>`).join("")}
           </tbody></table></section>` : ""}
 
-        ${flows.length || (m.momentum || []).length ? `<section class="bk-card"><h2>Market details</h2>
+        ${flows.length || (m.momentum || []).length ? `<section class="bk-card" id="bk-market"><h2>Market details</h2>
           ${flows.length ? `<h3 class="bk-sub">Foreign buying and selling (Rs mn)</h3>
           ${flows.map((f) => `<div class="flow"><span>${App.esc(f.code)}</span><div class="flow-bar"><div class="${f.mn < 0 ? "neg" : "pos"}" style="width:${(Math.abs(f.mn) / maxFlow * 50).toFixed(1)}%"></div></div><span class="num">${f.mn > 0 ? "+" : ""}${f.mn}</span></div>`).join("")}` : ""}
-          ${(m.gainers || []).length ? `<p class="muted-s"><b>Lifted the index:</b> ${m.gainers.join(", ")}. <b>Held it back:</b> ${(m.losers || []).join(", ") || "–"}.</p>` : ""}
-          ${(m.momentum || []).length ? `<p class="muted-s"><b>Biggest 10-day rises:</b> ${m.momentum.map((x) => `${x.code} +${x.pct}%`).join(", ")}.</p>` : ""}
+          ${(m.gainers || []).length ? `<div class="chip-line"><b>Lifted the index</b><div class="badges">${codeChips(m.gainers, "good")}</div></div>` : ""}
+          ${(m.losers || []).length ? `<div class="chip-line"><b>Held it back</b><div class="badges">${codeChips(m.losers, "bad")}</div></div>` : ""}
+          ${(m.momentum || []).length ? `<div class="chip-line"><b>Biggest 10-day rises</b><div class="badges">${m.momentum.map((x) => `<span class="badge good">${App.esc(x.code)} +${x.pct}%</span>`).join("")}</div></div>` : ""}
         </section>` : ""}
       </div>
 
-      ${(d.news || []).length ? `<section class="bk-card"><h2>News and views</h2>${d.news.map((n) => `<h3 class="bk-sub">${App.esc(n.title)}</h3><p>${App.esc(n.text)}</p>`).join("")}</section>` : ""}
+      ${news.length ? `<section class="bk-card" id="bk-news"><h2>News and views</h2>
+        <div class="bk-news">${news.slice(0, NEWS_SHOWN).map(newsCard).join("")}</div>
+        ${news.length > NEWS_SHOWN ? `<details class="more-rest"><summary>Show all ${news.length} items</summary><div class="bk-news">${news.slice(NEWS_SHOWN).map(newsCard).join("")}</div></details>` : ""}
+      </section>` : ""}
 
-      ${d.note ? `<p class="muted-s">${App.esc(d.note)}</p>` : ""}`;
+      ${d.note ? (d.note.length > 220
+          ? `<details class="more"><summary>Notes on this summary</summary><p class="muted-s">${App.esc(d.note)}</p></details>`
+          : `<p class="muted-s">${App.esc(d.note)}</p>`) : ""}`;
 
     /* Filterable, sorted table of every call. */
     const rowsEl = document.getElementById("rows"), countEl = document.getElementById("count");
