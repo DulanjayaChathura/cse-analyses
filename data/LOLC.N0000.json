@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LOLC.N0000",
+  "company": {
+    "name": "LOLC Holdings PLC",
+    "sector": "Diversified financials (holding company)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "LOLC.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (audited, year to 31 March 2026)",
+      "Interim financial statements to 30 September 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 435.5,
+    "date": "2026-09-30",
+    "source": "Closing price for the quarter, Interim to 30 Sep 2026, p. 15",
+    "note": "The CSE price feed couldn't be reached when this was written; the site shows the latest CSE close once it is fetched. July–September 2026 range Rs 435.00–523.50. Closed March 2026 at Rs 529.75 (2025/26 range Rs 504.00–640.00)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Cheap against book, but low returns, one-off profits and no dividends justify the discount",
+    "text": "LOLC Holdings (LOLC.N0000) is a Sri Lankan conglomerate whose value sits mainly in LOLC Finance (96%), the country's largest finance company, alongside plantations (tea in Sri Lanka and East Africa), Browns trading and manufacturing, hotels, insurance and microfinance in about 20 countries. The share looks cheap: at Rs 435.50 (closing price for September 2026, from the interim report) it trades at 0.49x its group NAV of Rs 886.62 and about 6.1x trailing earnings (EPS Rs 71.63). But the discount is earned. Recurring return on equity is only about 9% (8.6% in 2025/26, 8.7% over the last 12 months), the big profit years (2021/22, 2024/25) came from one-off gains such as a Rs 54.5bn bargain-purchase gain on African tea estates, it has paid no dividend in ten years, and outside shareholders own only about 15%. Four methods put fair value at about Rs 337, so the price is about 29% above it. I'd buy only at Rs 286.20 or lower and treat Rs 252.50 as a strong buy. Both are well below the lowest price of the past year (Rs 435.00 in September 2026), so this is a wait-and-watch share. It fails all four business tests, so it is in category 3: avoid for now."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 0,
+    "outOf": 4,
+    "reason": "Recurring return on equity about 9%, heavily borrowed, profits swing on one-off gains, and no dividend in ten years.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 9%",
+        "note": "8.62% in 2025/26 and about 8.7% for the 12 months to Sep 2026. The 15.5% in 2024/25 and 31.9% in 2021/22 came from one-off gains."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "Group 1.02x; company interest cover 1.86x",
+        "note": "Group borrowings and overdrafts less cash Rs 698.7bn against total equity Rs 683.7bn (Sep 2026), before Rs 783.8bn of customer deposits. Holding company borrowings Rs 374.9bn; debt to equity 0.88x and interest cover 1.86x in 2025/26."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Profit every year, but one-offs",
+        "note": "No loss to shareholders in ten years, but EPS swung Rs 128.71 → 47.08 → 62.95 → 104.61 → 66.64 on acquisition gains (Rs 54.5bn bargain purchase in 2024/25) and fair-value gains."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No dividend in ten years",
+        "note": "Group operating cash flow −Rs 73.5bn in 2025/26 and −Rs 10.1bn in the half year (lending growth); the holding company's own operating cash flow was also negative."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 336.7,
+    "buyPrice": 286.2,
+    "strongBuyPrice": 252.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 886.62,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.38x group NAV). No dividend model (no dividends) and no DCF (a lender's cash flow isn't meaningful)."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "none for 2025/26",
+    "source": "Annual Report 2025/26, financial highlights (p. 3)",
+    "note": "No dividend paid in any of the ten years 2016/17–2025/26."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 886.62,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.49,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 6.1,
+      "unit": "x",
+      "note": "EPS Rs 71.63, 12 months to Sep 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 8.7,
+      "unit": "%",
+      "note": "12 months to Sep 2026; 8.62% in 2025/26"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "No dividend in ten years"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market value",
+      "value": 207.0,
+      "unit": "Rs bn",
+      "note": "475.2m shares at Rs 435.50"
+    },
+    {
+      "id": "float",
+      "label": "Public shareholding",
+      "value": 15.09,
+      "unit": "%",
+      "note": "31 Mar 2026; chairman and related holdings about 85%"
+    },
+    {
+      "id": "lofcNpl",
+      "label": "LOLC Finance gross NPL",
+      "value": 5.02,
+      "unit": "%",
+      "note": "31 Mar 2026"
+    },
+    {
+      "id": "netDebt",
+      "label": "Group net borrowings to equity",
+      "value": 1.02,
+      "unit": "x",
+      "note": "Sep 2026, excluding customer deposits"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to September 2026 (unaudited)",
+      "text": "Profit to shareholders up 19% to Rs 15.06bn (EPS Rs 31.70 against Rs 26.71); the September quarter alone Rs 18.69 (Rs 16.97). Gross income rose 24% to Rs 250.9bn and gross profit 40%, but impairment charges more than doubled to Rs 16.79bn and finance costs rose. Including minority shareholders, group profit fell 3% to Rs 11.81bn: the minorities' share was a Rs 3.26bn loss."
+    },
+    {
+      "title": "Segments, half year",
+      "text": "Results from operating activities: financial services Rs 24.43bn (Rs 25.78bn), plantation and agriculture Rs 3.95bn (Rs 1.21bn), manufacturing and trading Rs 4.45bn (Rs 6.36bn), leisure Rs 2.04bn (a small loss), insurance Rs 0.24bn (Rs 0.91bn)."
+    },
+    {
+      "title": "Balance sheet growing fast",
+      "text": "Loans and advances up 11% in six months to Rs 1,093.9bn, deposits up 13% to Rs 783.8bn, borrowings up 12% to Rs 755.1bn. NAV per share Rs 886.62, up 7.5% since March, partly from currency translation gains."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Profit to shareholders Rs 31.67bn, EPS Rs 66.64 (Rs 104.61 the year before, which included a Rs 54.5bn bargain-purchase gain on African tea estates). Results from operating activities up 53% to Rs 70.3bn. LOLC Finance earned a record Rs 27.4bn. The Barceló Whale Lagoon resort in the Maldives was sold for USD 57.5m in December 2025."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (group, to shareholders)",
+        "unit": "Rs",
+        "values": [
+          128.71,
+          47.08,
+          62.95,
+          104.61,
+          66.64,
+          71.63
+        ],
+        "notes": [
+          "Includes large investment gains",
+          null,
+          null,
+          "Includes Rs 54.5bn bargain-purchase gain (group)",
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          31.89,
+          8.96,
+          10.82,
+          15.5,
+          8.62,
+          8.7
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Worked out"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          4.64,
+          7.97,
+          6.31,
+          5.69,
+          7.95,
+          6.08
+        ],
+        "notes": [
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "At Rs 435.50"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          515.81,
+          535.5,
+          628.39,
+          721.16,
+          824.79,
+          886.62
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Sep 2026"
+        ]
+      },
+      {
+        "id": "pb",
+        "label": "Price to NAV (year-end)",
+        "unit": "x",
+        "values": [
+          1.16,
+          0.7,
+          0.63,
+          0.82,
+          0.64,
+          0.49
+        ],
+        "notes": [
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "At Rs 435.50"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "notes": [
+          "None paid",
+          "None paid",
+          "None paid",
+          "None paid",
+          "None paid",
+          "None paid"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 886.62",
+      "reading": "0.49x group NAV, the lowest year-end level in the last five years (0.63–1.16x). NAV has grown about 12% a year since 2021/22, partly from currency and revaluation gains."
+    },
+    {
+      "method": "Return on equity",
+      "value": "About 9%",
+      "reading": "Well below the 19% I require, so the shares should trade well below book. Only one-off gains lifted ROE above 15%."
+    },
+    {
+      "method": "P/E",
+      "value": "6.1x",
+      "reading": "On trailing EPS of Rs 71.63. Ten-year average year-end P/E about 5.3x, five-year about 6.5x."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend in ten years, so a dividend model can't be used; shareholders rely entirely on the share price."
+    },
+    {
+      "method": "DCF",
+      "value": "Not used",
+      "reading": "Group operating cash flow is negative because deposits and borrowings are lent out, so residual income replaces a DCF."
+    },
+    {
+      "method": "Look-through (LOLC Finance)",
+      "value": "About Rs 311",
+      "reading": "The 96.29% stake in LOLC Finance was worth about Rs 148bn at March 2026 prices (directors' disclosure, p. 242). Other listed stakes add more, but the holding company carries Rs 374.9bn of borrowings, so this is a reading only."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 171.6,
+      "base": 306.9,
+      "bull": 506.6,
+      "weighted": 306.2,
+      "comment": "Group NAV Rs 886.62 × (ROE − growth) ÷ (cost of equity − growth): ROE 8% / 10.5% / 13%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 59.8,
+      "base": 137.6,
+      "bull": 291.8,
+      "weighted": 145.1,
+      "comment": "ROE moving from about 9% today to 8% / 10.5% / 13% over ten years; no dividends, so all profit is kept."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 300.0,
+      "base": 408.0,
+      "bull": 570.0,
+      "weighted": 408.0,
+      "comment": "2026/27 EPS of Rs 60 / 68 / 76 at 5 / 6 / 7.5 times (ten-year average year-end P/E about 5.3x, five-year about 6.5x)."
+    },
+    {
+      "id": "nav",
+      "name": "NAV at a holding-company discount",
+      "bear": 399.0,
+      "base": 487.6,
+      "bull": 620.6,
+      "weighted": 487.6,
+      "comment": "0.45x / 0.55x / 0.70x group NAV (year-end P/B 0.63–0.82x in 2023–2026; 0.49x now)."
+    }
+  ],
+  "modelsNote": "A financial holding company, so I used justified price to book, residual income, P/E and NAV at a discount instead of a DCF. With no dividends and ROE below the cost of equity, residual income is the harshest method: kept profits earn less than shareholders require.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20.5%",
+        "base": "19%",
+        "bull": "17.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "8%",
+        "base": "10.5%",
+        "bull": "13%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "60 × 5",
+        "base": "68 × 6",
+        "bull": "76 × 7.5"
+      },
+      {
+        "label": "Price to NAV",
+        "bear": "0.45x",
+        "base": "0.55x",
+        "bull": "0.70x"
+      }
+    ],
+    "averages": {
+      "bear": 232.6,
+      "base": 335.0,
+      "bull": 497.2
+    },
+    "common": "10-year government bond about 12.4% (November 2026) plus about 6.5 points for a leveraged, frontier-market conglomerate with no dividend and a 15% free float. Base 2026/27 EPS assumes the second half roughly matches last year's (Rs 39.93) after a first half of Rs 31.70, less some one-off gains."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "17.5%",
+      "19%",
+      "20.5%"
+    ],
+    "columns": [
+      "8%",
+      "10.5%",
+      "13%"
+    ],
+    "values": [
+      [
+        69.2,
+        176.5,
+        310.9
+      ],
+      [
+        53.9,
+        137.6,
+        242.2
+      ],
+      [
+        42.6,
+        108.8,
+        191.6
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 435.50 needs a long-run ROE of about 16% at a 19% cost of equity, which LOLC has reached only in years with one-off gains."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 336.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 286.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 252.5
+      }
+    ],
+    "averagePrice": 296.29,
+    "totalCost": 148145.0,
+    "note": "About Rs 148,145 in total, against Rs 217,750 at Rs 435.50.",
+    "realism": "Rs 286.2 is about 34% below the September 2026 close and well below the 12-month low of Rs 435.00. The share last traded this low in 2023/24 (2024/25 low Rs 350), so the buy price is unlikely to be reached without a sharp market fall."
+  },
+  "changeMyView": {
+    "higher": [
+      "Recurring ROE above 13% without acquisition or fair-value gains.",
+      "Starting a regular dividend.",
+      "Simplifying the group (selling or listing non-core businesses) or a buy-back at the holding company.",
+      "A higher public float and better liquidity."
+    ],
+    "lower": [
+      "Bad loans rising at LOLC Finance (gross NPL 5.0%) or the overseas microfinance businesses; impairments already doubled in the half year.",
+      "A stronger rupee reversing the currency translation gains that have lifted NAV.",
+      "More acquisitions funded with holding-company debt.",
+      "Losses returning in plantations or leisure."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the audited annual report to March 2026 and the unaudited interim report to September 2026. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 29% above fair value of Rs 337, even though it trades at half of book.",
+    "Expected yearly return at Rs 435.50": "About 6–7% a year: no dividend, book growth about 9% from profit, less about 2–3% a year if the price drifted towards fair value.",
+    "Compared with": "One-year T-bill about 9%; 10-year bond about 12.4%; LOLC's own 2031 debenture yields 13.15%.",
+    "Downside / upside": "Bear case -47% (Rs 232.6); bull case +14% (Rs 497.2).",
+    "Confidence": "Low to medium: a complex group in 27 countries, with profits shaped by acquisition accounting, fair-value gains and currency moves.",
+    "Margin of safety": "Buy 15% below fair value (Rs 286.2), strong buy 25% below (Rs 252.5)."
+  },
+  "Business and moat": {
+    "What it does": "Holding company for LOLC Finance (leasing, loans and deposits in Sri Lanka), microfinance in about 20 countries, LOLC General and Life insurance, Browns trading and manufacturing, tea and other plantations (Sri Lanka, Kenya, Tanzania, Rwanda, China), hotels in Sri Lanka and the Maldives, and newer ventures (graphene, extraction, mining).",
+    "Moat": "Moderate in finance: LOLC Finance is the largest finance company in Sri Lanka with a large deposit base. The other businesses are mostly commodity-like (tea, trading, hotels).",
+    "Growth": "Loans grew about 31% in 2025/26 and 11% in the half year; growth by acquisition (African tea estates in 2024/25, FLMC Plantations and Tea Smallholder Factories in 2025/26)."
+  },
+  "Management and governance": {
+    "Ownership": "Mr I.C. Nanayakkara (chairman) about 49% directly and LOLC Capital (Pvt) Ltd 31%; Mrs K.U. Amarasinghe 5%; EPF 2.4%. Public holding 15.09% (31 Mar 2026).",
+    "Record": "Built a large international group, but has paid no dividend in ten years and relies on acquisition gains and complex structures; many related-party balances between group companies.",
+    "Rating": "Caution"
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: group finance costs rose in the half year as borrowings grew.",
+    "Currency": "Watch: a large share of assets is abroad; translation gains added Rs 18.7bn to group equity in the half year and can reverse.",
+    "Credit quality": "Watch: impairment charges doubled to Rs 16.79bn in the half year.",
+    "Liquidity": "OK for 500 shares (about Rs 218,000), but only 15% of shares are freely traded."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A deep discount to book and a large, growing finance franchise; worth owning only at a price that pays for the low returns and governance risk.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 437.7); ROE staying below 8%; or holding-company borrowings growing faster than NAV."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 286.2 or lower",
+    "Strong buy": "Rs 252.5 or lower"
+  },
+  "Key ratios (five-year trend)": {
+    "EPS": "2021/22 Rs 128.71 · 2022/23 Rs 47.08 · 2023/24 Rs 62.95 · 2024/25 Rs 104.61 · 2025/26 Rs 66.64 · H1 2026/27 Rs 31.70",
+    "NAV per share": "Rs 515.81 · Rs 535.50 · Rs 628.39 · Rs 721.16 · Rs 824.79 · Sep 2026 Rs 886.62",
+    "ROE": "31.89% · 8.96% · 10.82% · 15.50% · 8.62%",
+    "Year-end price": "Rs 597.00 · Rs 375.00 · Rs 397.50 · Rs 594.75 · Rs 529.75",
+    "Group loans and advances": "Mar 2025 Rs 751.4bn · Mar 2026 Rs 981.8bn · Sep 2026 Rs 1,093.9bn"
+  },
+  "What this analysis doesn't cover": [
+    "The separate reports of LOLC Finance, Browns Investments and the other listed subsidiaries.",
+    "LOLC Finance's capital ratios.",
+    "The holding company's debt net of amounts owed by group companies."
+  ],
+  "fullText": "Summary: LOLC Holdings (LOLC.N0000) is a Sri Lankan conglomerate whose value sits mainly in LOLC Finance (96%), the country's largest finance company, alongside plantations (tea in Sri Lanka and East Africa), Browns trading and manufacturing, hotels, insurance and microfinance in about 20 countries. The share looks cheap: at Rs 435.50 (closing price for September 2026, from the interim report) it trades at 0.49x its group NAV of Rs 886.62 and about 6.1x trailing earnings (EPS Rs 71.63). But the discount is earned. Recurring return on equity is only about 9% (8.6% in 2025/26, 8.7% over the last 12 months), the big profit years (2021/22, 2024/25) came from one-off gains such as a Rs 54.5bn bargain-purchase gain on African tea estates, it has paid no dividend in ten years, and outside shareholders own only about 15%. Four methods put fair value at about Rs 337, so the price is about 29% above it. I'd buy only at Rs 286.20 or lower and treat Rs 252.50 as a strong buy. Both are well below the lowest price of the past year (Rs 435.00 in September 2026), so this is a wait-and-watch share. It fails all four business tests, so it is in category 3: avoid for now.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 171.6 | 306.9 | 506.6 | 306.2\nResidual income | 59.8 | 137.6 | 291.8 | 145.1\nP/E method | 300.0 | 408.0 | 570.0 | 408.0\nNAV at a holding-company discount | 399.0 | 487.6 | 620.6 | 487.6\nAverage | 232.6 | 335.0 | 497.2 | 336.7\n\nFair value Rs 336.7 (bear 30 / base 50 / bull 20). Buy price Rs 286.2 (15% below), strong buy Rs 252.5 (25% below). Price Rs 435.50 (30 September 2026 close, interim report p. 15): about 29% above fair value.\n\nWhy these methods\nLOLC is mainly a finance group (financial services are about 60% of assets and most of the profit), so a cash-flow DCF doesn't fit: group operating cash flow is negative because deposits and borrowings are lent out (Rs −73.5bn in 2025/26). I used the methods for lenders and holding companies: justified price to book and residual income (what the equity is worth given the return it earns), P/E, and NAV at a holding-company discount. A dividend model isn't possible because LOLC Holdings has paid no dividend in ten years.\n\nKey figures\n- 2025/26 (audited): profit to shareholders Rs 31.67bn, EPS Rs 66.64 (2024/25: Rs 104.61, boosted by a Rs 54.5bn bargain-purchase gain). Group profit including minorities Rs 23.38bn; minority shareholders' share was a loss of Rs 8.28bn. Results from operating activities up 53% to Rs 70.3bn. ROE 8.62%.\n- Six months to 30 September 2026 (unaudited): profit to shareholders Rs 15.06bn (+19%), EPS Rs 31.70 (Rs 26.71). Impairment charges more than doubled to Rs 16.79bn. Group profit including minorities fell 3% to Rs 11.81bn.\n- NAV per share Rs 886.62 (30 Sep 2026), Rs 824.79 (Mar 2026), Rs 515.81 (Mar 2022): about 12% a year, helped by currency translation gains and revaluations as well as profit.\n- Loans and advances Rs 1,093.9bn, deposits Rs 783.8bn, interest-bearing borrowings Rs 755.1bn (group, Sep 2026).\n- LOLC Finance: record profit after tax Rs 27.4bn in 2025/26, gross NPL 5.02%. The group's 96.29% stake was worth about Rs 148bn at March 2026 market prices (about Rs 311 per LOLC share), before the holding company's own debt.\n\nAssumptions\nCost of equity 20.5% / 19% / 17.5% (10-year bond about 12.4% plus about 6.5 points for a leveraged, frontier-market conglomerate with no dividend and a 15% free float); long-run ROE 8% / 10.5% / 13%; growth 5% / 6% / 7%; 2026/27 EPS Rs 60 / 68 / 76 at 5 / 6 / 7.5 times; NAV discount 0.45x / 0.55x / 0.70x.\n\nBusiness tests: 0 of 4 passed. Returns about 9% (fail); group net borrowings about 1.02x total equity and holding-company interest cover 1.86x (fail); profit swings on one-off gains (fail); no dividends and negative operating cash flow (fail). Category 3: avoid for now.\n\n500-share plan\n200 shares up to Rs 336.7, 150 up to Rs 286.2, 150 up to Rs 252.5: about Rs 148,145 in total (average Rs 296.29), against Rs 217,750 at Rs 435.50. The buy price is about 34% below the latest price and well below the 12-month low of Rs 435.00; the share last traded that low in 2023/24 (2024/25 low Rs 350). Realistic only in a sharp market fall.\n\nWhat would change my view\nHigher: recurring ROE moving above 13% without one-off gains; a regular dividend; simplification (selling or listing non-core businesses) or a buy-back at the holding company; a higher public float.\nLower: rising bad loans at LOLC Finance or the overseas microfinance banks; a weaker rupee reversing translation gains; more acquisitions funded by holding-company debt; losses in plantations or leisure.\n\nUncertain: the latest CSE price could not be fetched here (the CSE site was blocked from this environment), so the 30 September 2026 close is used; the site will show the daily CSE close once it is fetched. LOLC Finance's capital ratios and the holding company's net debt after intra-group balances were not extracted. The listed-subsidiary values are directors' disclosures at 31 March 2026 prices and some holdings are indirect, so the look-through figure is only a reading, not a model."
+}

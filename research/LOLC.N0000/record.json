@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "ticker": "LOLC.N0000",
+  "localFolder": null,
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "reports/LOLC.N0000/2026-08-28_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Downloaded from the CSE for the Telegram request. Earlier years taken from the financial highlights and ten-year summary (pp. 3, 354–357)."
+    },
+    {
+      "file": "reports/LOLC.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim financial statements to 30 September 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Downloaded from the CSE for the Telegram request."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021/22",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 128.71,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Group, to shareholders (adjusted)"
+        },
+        "roe": {
+          "value": 31.89,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "navPerShare": {
+          "value": 515.81,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company NAV = equity attributable to shareholders"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "None paid"
+        },
+        "yearEndPrice": {
+          "value": 597.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "peYearEnd": {
+          "value": 4.64,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Worked out"
+        }
+      }
+    },
+    {
+      "period": "FY 2022/23",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 47.08,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Group, to shareholders (adjusted)"
+        },
+        "roe": {
+          "value": 8.96,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "navPerShare": {
+          "value": 535.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company NAV = equity attributable to shareholders"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "None paid"
+        },
+        "yearEndPrice": {
+          "value": 375.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "peYearEnd": {
+          "value": 7.97,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Worked out"
+        }
+      }
+    },
+    {
+      "period": "FY 2023/24",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 62.95,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Group, to shareholders (adjusted)"
+        },
+        "roe": {
+          "value": 10.82,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "navPerShare": {
+          "value": 628.39,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company NAV = equity attributable to shareholders"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "None paid"
+        },
+        "yearEndPrice": {
+          "value": 397.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "peYearEnd": {
+          "value": 6.31,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Worked out"
+        }
+      }
+    },
+    {
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "eps": {
+          "value": 104.61,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Group, to shareholders (adjusted)"
+        },
+        "roe": {
+          "value": 15.5,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "navPerShare": {
+          "value": 721.16,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Company NAV = equity attributable to shareholders"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "None paid"
+        },
+        "yearEndPrice": {
+          "value": 594.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "peYearEnd": {
+          "value": 5.69,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Worked out"
+        },
+        "netProfitToShareholders": {
+          "value": 49.71,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 121"
+        },
+        "netProfitGroup": {
+          "value": 41.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 121",
+          "note": "Including minorities"
+        },
+        "bargainPurchaseGain": {
+          "value": 54.49,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120 and p. 164",
+          "note": "Group; mainly Browns Plantations East Africa Rs 37.7bn"
+        },
+        "loans": {
+          "value": 751.42,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 118",
+          "note": "Advances and other loans at amortised cost"
+        },
+        "operatingCashFlow": {
+          "value": 54.54,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 134",
+          "note": "Group"
+        },
+        "totalEquity": {
+          "value": 604.21,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119",
+          "note": "Including minorities"
+        }
+      }
+    },
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossIncome": {
+          "value": 429.14,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120"
+        },
+        "revenue": {
+          "value": 158.22,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120",
+          "note": "Non-interest revenue; interest income Rs 189.18bn"
+        },
+        "grossProfit": {
+          "value": 61.7,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120"
+        },
+        "netInterestIncome": {
+          "value": 119.24,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120"
+        },
+        "resultsFromOperations": {
+          "value": 70.34,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120"
+        },
+        "impairment": {
+          "value": 16.74,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120"
+        },
+        "bargainPurchaseGain": {
+          "value": 2.15,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 120 and p. 164",
+          "note": "FLMC Plantations Rs 1.90bn, Tea Smallholder Factories Rs 0.25bn"
+        },
+        "netProfitGroup": {
+          "value": 23.38,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 121",
+          "note": "Including minorities (minorities' share: loss of Rs 8.28bn)"
+        },
+        "netProfit": {
+          "value": 31.67,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 121",
+          "note": "To shareholders"
+        },
+        "eps": {
+          "value": 66.64,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 121",
+          "note": "Continuing operations Rs 67.52"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "None paid"
+        },
+        "navPerShare": {
+          "value": 824.79,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 3 and p. 12"
+        },
+        "roe": {
+          "value": 8.62,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "yearEndPrice": {
+          "value": 529.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 385",
+          "note": "Year range Rs 504.00–640.00"
+        },
+        "peYearEnd": {
+          "value": 7.95,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3",
+          "note": "Worked out"
+        },
+        "operatingCashFlow": {
+          "value": -73.53,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 134",
+          "note": "Group"
+        },
+        "capexPaid": {
+          "value": 25.73,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 135",
+          "note": "Acquisition of PPE"
+        },
+        "loans": {
+          "value": 981.81,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 118"
+        },
+        "deposits": {
+          "value": 694.27,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119"
+        },
+        "borrowings": {
+          "value": 673.25,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119",
+          "note": "Plus overdrafts Rs 47.20bn; cash Rs 116.97bn"
+        },
+        "totalEquity": {
+          "value": 654.63,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119",
+          "note": "Including minorities Rs 262.69bn"
+        },
+        "attributableEquity": {
+          "value": 391.94,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119"
+        },
+        "companyBorrowings": {
+          "value": 344.86,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 119",
+          "note": "Holding company; overdrafts Rs 20.64bn"
+        },
+        "companyDebtToEquity": {
+          "value": 0.88,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "companyInterestCover": {
+          "value": 1.86,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 3"
+        },
+        "sharesOutstanding": {
+          "value": 475.2,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 385",
+          "note": "Millions"
+        },
+        "publicHolding": {
+          "value": 15.09,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 385"
+        },
+        "lofcProfit": {
+          "value": 27.4,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 12",
+          "note": "LOLC Finance PLC profit after tax"
+        },
+        "lofcGrossNpl": {
+          "value": 5.02,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 16",
+          "note": "LOLC Finance"
+        },
+        "lofcStakeMarketValue": {
+          "value": 148.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 236 and p. 242",
+          "note": "Worked out: LOLC Finance market value Rs 153.71bn × 96.29% control holding"
+        },
+        "fxTranslationOci": {
+          "value": 24.05,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 122",
+          "note": "Group"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossIncome": {
+          "value": 250.9,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 202.02bn)"
+        },
+        "netInterestIncome": {
+          "value": 70.28,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 58.63bn)"
+        },
+        "grossProfit": {
+          "value": 37.88,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 27.06bn)"
+        },
+        "resultsFromOperations": {
+          "value": 38.53,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 35.76bn)"
+        },
+        "impairment": {
+          "value": 16.79,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 7.96bn)"
+        },
+        "netProfitGroup": {
+          "value": 11.81,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months, including minorities (Rs 12.18bn)"
+        },
+        "netProfit": {
+          "value": 15.06,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months, to shareholders (Rs 12.69bn)"
+        },
+        "eps": {
+          "value": 31.7,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Six months (Rs 26.71); quarter Rs 18.69 (Rs 16.97)"
+        },
+        "navPerShare": {
+          "value": 886.62,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "attributableEquity": {
+          "value": 421.32,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "totalEquity": {
+          "value": 683.71,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "loans": {
+          "value": 1093.91,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "deposits": {
+          "value": 783.8,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2"
+        },
+        "borrowings": {
+          "value": 755.13,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Plus overdrafts Rs 53.92bn; cash Rs 110.42bn"
+        },
+        "netDebt": {
+          "value": 698.63,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Worked out: borrowings + overdrafts − cash, excluding deposits"
+        },
+        "companyBorrowings": {
+          "value": 374.88,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Holding company; overdrafts Rs 16.30bn"
+        },
+        "operatingCashFlow": {
+          "value": -10.12,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 13",
+          "note": "Six months, group"
+        },
+        "fxTranslationOci": {
+          "value": 18.69,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Six months, group"
+        },
+        "quarterPriceRange": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 15",
+          "note": "July–September 2026: high Rs 523.50, low Rs 435.00, close Rs 435.50"
+        },
+        "epsTtm": {
+          "value": 71.63,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 121 and Interim to 30 Sep 2026, p. 3",
+          "note": "Worked out: 66.64 − 26.71 + 31.70"
+        },
+        "roeTtm": {
+          "value": 8.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 121 and Interim to 30 Sep 2026, p. 2–3",
+          "note": "Worked out: Rs 34.04bn ÷ average equity Rs 392.3bn"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "20.5% / 19% / 17.5%",
+      "reason": "10-year bond about 12.4% plus about 6.5 points: leveraged, frontier-market conglomerate, no dividend, 15% free float.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "8% / 10.5% / 13%; growth 5% / 6% / 7%",
+      "reason": "Recurring ROE about 9% (8.6% in 2025/26, 8.7% TTM); comprehensive return about 13% in 2025/26 including currency gains.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Starting ROE (residual income)",
+      "value": "9%",
+      "reason": "TTM 8.7%.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "60 × 5 / 68 × 6 / 76 × 7.5",
+      "reason": "H1 Rs 31.70; ten-year average year-end P/E about 5.3x, five-year 6.5x.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Price to NAV",
+      "value": "0.45x / 0.55x / 0.70x",
+      "reason": "Year-end P/B 0.63–0.82x in 2023–2026; low returns and no dividend.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividend model and DCF",
+      "value": "Not used",
+      "reason": "No dividends in ten years; a lender's operating cash flow isn't meaningful.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Do impairment charges keep rising (Rs 16.79bn in H1 2026/27, double last year)? LOLC Finance gross NPL was 5.02% at March 2026.",
+    "Recurring profit to shareholders without acquisition, fair-value or currency gains; does ROE move above 10%?",
+    "Holding-company borrowings (Rs 374.9bn at Sep 2026) against NAV, and the interest cover (1.86x in 2025/26).",
+    "Any dividend, buy-back or change in public float.",
+    "Why minority shareholders' share keeps showing losses (Rs 3.26bn in H1) while shareholders' profit grows.",
+    "LOLC Finance capital ratios (not extracted this time)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Annual report 2025/26 and interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add LOLC.N000; note \".N000\", read as the share code LOLC.N0000). First analysis: justified P/B, residual income, P/E and NAV at a discount; no dividend model (no dividends) and no DCF. Business tests 0 of 4 (category 3, avoid for now). Price is the 30 Sep 2026 close from the interim report because the CSE feed couldn't be reached. No report problems.",
+      "fairValue": 336.7,
+      "buyPrice": 286.2,
+      "strongBuyPrice": 252.5,
+      "priceAtTime": 435.5,
+      "archive": null
+    }
+  ]
+}
