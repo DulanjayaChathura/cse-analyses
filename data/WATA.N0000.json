@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "ticker": "WATA.N0000",
+  "company": {
+    "name": "Watawala Plantations PLC",
+    "sector": "Food, Beverage & Tobacco (oil palm plantations and dairy)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "WATA.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (year to 31 March 2026, audited)",
+      "Interim reports to 30 June and 30 September 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 46.4,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 September 2026, Interim Q2 2026/27, p. 14",
+    "note": "The CSE close couldn't be fetched for this analysis (the share isn't yet in the site's daily prices, cse.lk wasn't reachable and no dated November 2026 quote was found on the web); the site's daily CSE close will replace this. Range April–September 2026 Rs 41.00–52.30; April 2025–March 2026 Rs 36.70–49.80 (Annual Report p. 226)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A steady, cash-paying palm oil grower, but the price is more than double fair value",
+    "text": "Watawala Plantations (WATA.N0000) grows oil palm on about 3,394 hectares in three estates (Homadola, Talangaha, Nakiyadeniya) leased from the state until 2045, runs its own mill selling crude palm oil in Sri Lanka, and owns Lonach Dairy, a loss-making dairy farm now fully owned. It is 77% owned by Sunshine Wilmar. Oil palm makes almost all the profit: group profit was Rs 1.66bn (2020/21), 3.46bn (2021/22, helped by a tax credit), 2.33bn, 2.34bn, 1.88bn and Rs 2.33bn in 2025/26 (EPS Rs 2.34), on revenue up 21% to Rs 9.44bn. The first half of 2026/27 brought revenue up 10% to Rs 5.56bn and profit up 2% to Rs 1.75bn (EPS Rs 1.73): palm prices were good but costs and tax rose, and dairy lost Rs 100m. The company pays out roughly everything it earns (Rs 2.50 a share for 2025/26, Rs 4.30 for 2024/25), so equity is small (NAV Rs 3.39) and return on equity looks huge (74% in 2025/26). At Rs 46.40 (last trade on 30 September 2026, from the Q2 report) the share trades at 19.7x trailing earnings of Rs 2.36 and yields 5.4% on the 2025/26 dividend. Four methods put fair value at about Rs 18.65: with a 16% return asked of the share and little room to grow (a government ban on new oil palm planting since 2021 and leases ending in 2045), a business earning about Rs 2.4bn a year is worth around Rs 19bn, not the Rs 47bn the market pays. The price only makes sense if you accept about 9% a year (the 5.4% dividend plus some growth), below the roughly 12% on government bonds. So the share is well above fair value. A good business, but I'd buy only at up to Rs 15.85 and treat under Rs 14.00 as a strong buy: levels last seen in 2023–24."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "High returns, low debt, profit every year and cash flow above profit; but returns look high partly because the company pays out more than it earns, and growth is blocked by the planting ban.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "35–74% a year 2020/21–2025/26",
+        "note": "Group profit on average equity: 34.4% (2020/21), 58.0% (2021/22), 35.5%, 37.6%, 38.6% and 73.6% (2025/26), worked out from the ten-year summary (Annual Report 2025/26, pp. 218–223). The recent jump is because dividends above profit shrank equity from Rs 6.2bn to Rs 2.9bn; even on the old, larger equity returns were about 35%."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net debt Rs 0.88bn vs equity Rs 3.44bn",
+        "note": "Loans Rs 0.91bn and overdrafts Rs 0.53bn, less cash and short-term deposits Rs 0.56bn, at 30 September 2026 (Interim Q2 2026/27, p. 5). Rs 1.43bn including Rs 0.55bn of estate lease liabilities: still well under equity, and about 0.3x a year's operating profit."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year 2020/21–2025/26",
+        "note": "Rs 1.66bn, 3.46bn, 2.33bn, 2.34bn, 1.88bn and 2.33bn (Annual Report 2025/26, p. 219). 2021/22 was lifted by a tax credit. Dairy losses (Rs 584m operating loss in 2025/26, including a Rs 370m non-cash fall in herd value) drag on results."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Operating cash Rs 3.29bn vs profit Rs 2.33bn (2025/26)",
+        "note": "Free cash flow after capex and herd purchases about Rs 2.3bn in 2025/26 and Rs 2.8bn in 2024/25 (Annual Report 2025/26, p. 146). Dividends paid were larger (Rs 3.05bn and Rs 4.47bn), funded partly by running down deposits and borrowing; payout cannot stay above 100% for ever."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 18.65,
+    "buyPrice": 15.85,
+    "strongBuyPrice": 13.99,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 3.39,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 7.9x base normal EPS and 8.1x a dividend of Rs 2.30). NAV (Rs 3.39) is not used as a value: the estates are carried at 1992 values and equity is kept small by paying out nearly all profit."
+  },
+  "dividend": {
+    "perShare": 2.5,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, pp. 15 and 164 (note 17)",
+    "note": "Rs 1.70 interim (paid November 2025) + Rs 0.80 final (paid in the June 2026 quarter). Rs 4.30 for 2024/25 (Rs 1.60 + 1.40 + 1.30). No interim for 2026/27 had been declared in the reports read."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 3.39,
+      "unit": "Rs",
+      "note": "30 September 2026 (Rs 2.86 at March 2026)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 13.7,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 19.7,
+      "unit": "x",
+      "note": "EPS Rs 2.36, 12 months to September 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 73.6,
+      "unit": "%",
+      "note": "2025/26 on average equity; high because equity is small after large dividends"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.4,
+      "unit": "%",
+      "note": "Rs 2.50 for 2025/26"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 0.88,
+      "unit": "Rs bn",
+      "note": "30 September 2026; Rs 1.43bn including lease liabilities"
+    },
+    {
+      "id": "grossMargin",
+      "label": "Gross margin",
+      "value": 55.9,
+      "unit": "%",
+      "note": "April–September 2026 (56.4% a year earlier)"
+    },
+    {
+      "id": "evEbitda",
+      "label": "EV / EBITDA",
+      "value": 11.7,
+      "unit": "x",
+      "note": "EV Rs 48.6bn on 2025/26 operating profit plus depreciation of Rs 4.15bn"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 47.2,
+      "unit": "Rs bn",
+      "display": "~Rs 47.2bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "April–September 2026 (unaudited)",
+      "text": "Revenue up 10% to Rs 5.56bn (oil palm +11% to Rs 5.00bn, dairy −3% to Rs 561m). Gross profit up 9% to Rs 3.11bn; oil palm gross margin 61.5% against 62.6%, on higher fertiliser, harvesting and milling costs. Tax up 11% to Rs 864m. Profit Rs 1.75bn (+2%), EPS Rs 1.73 against Rs 1.71. Q2 alone: revenue Rs 2.75bn (+4%), profit Rs 867m (−4%), EPS Rs 0.85."
+    },
+    {
+      "title": "Dairy",
+      "text": "Lonach Dairy lost Rs 100m in the half (Rs 94m a year earlier), though the Q2 loss narrowed to Rs 35m from Rs 68m. The company bought out the remaining minority holders for Rs 514m in the half, so dairy losses now fall fully on Watawala's shareholders."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Revenue up 21% to Rs 9.44bn as palm oil sales rose 26% to Rs 8.4bn on higher volumes and prices; gross margin 51% (46%). Profit Rs 2.33bn (+24%), EPS Rs 2.34. Dairy's operating loss widened to Rs 584m, including a Rs 370m non-cash fall in herd value. Dividend Rs 2.50 (Rs 1.70 interim + Rs 0.80 final)."
+    },
+    {
+      "title": "Dividends above profit",
+      "text": "Dividends paid were Rs 4.47bn in 2024/25 and Rs 3.05bn in 2025/26, against profit of Rs 1.88bn and 2.33bn, so equity fell from Rs 6.19bn (March 2024) to Rs 2.91bn (March 2026) and borrowings rose. Future dividends should track profit more closely (about Rs 2.2–2.5 a share)."
+    },
+    {
+      "title": "Policy and lease",
+      "text": "New oil palm planting has been banned since 2021; the annual report says an expert committee has recommended allowing it on degraded rubber land and the government is reconsidering (p. 65). The estates are leased from the state for 53 years from June 1992, so the leases run to 2045."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2020/21",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.64,
+          3.4,
+          2.33,
+          2.32,
+          1.89,
+          2.34,
+          2.36
+        ],
+        "notes": [
+          "Adjusted for the share split",
+          "Helped by a tax credit",
+          null,
+          null,
+          "Ten-year summary shows Rs 1.82",
+          null,
+          "To September 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          34.4,
+          58.0,
+          35.5,
+          37.6,
+          38.6,
+          73.6,
+          64.8
+        ],
+        "notes": [
+          "Group profit on average equity",
+          "Group profit on average equity",
+          "Group profit on average equity",
+          "Group profit on average equity",
+          "Group profit on average equity",
+          "Group profit on average equity",
+          "On average of September 2025 and 2026 equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          6.96,
+          5.49,
+          6.39,
+          7.65,
+          14.81,
+          17.65,
+          19.66
+        ],
+        "notes": [
+          "At Rs 11.42 (split-adjusted)",
+          "At Rs 18.66",
+          "At Rs 14.90",
+          "At Rs 17.74",
+          "At Rs 28.00",
+          "At Rs 41.30",
+          "At Rs 46.40"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend paid in the year",
+        "unit": "Rs",
+        "values": [
+          1.2,
+          1.8,
+          2.8,
+          2.4,
+          4.4,
+          3.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Rs 4.30 declared for the year",
+          "Rs 2.50 declared for the year",
+          "No interim for 2026/27 declared yet"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "19.7x",
+      "reading": "High for a plantation with no room to plant more; 5–8x was normal until 2024."
+    },
+    {
+      "method": "NAV",
+      "value": "13.7x",
+      "reading": "NAV of Rs 3.39 means little: the estates are on the books at 1992 values and nearly all profit is paid out."
+    },
+    {
+      "method": "Return on equity",
+      "value": "74% (2025/26)",
+      "reading": "Excellent, but flattered by a shrinking equity base; about 35–38% on the older, larger equity."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.4% yield",
+      "reading": "Rs 2.50 for 2025/26; payout has been above 100%, so expect dividends close to profit from now on."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "Rs 2.3bn (2025/26)",
+      "reading": "About 4.9% of the market value."
+    },
+    {
+      "method": "EV / EBITDA",
+      "value": "11.7x",
+      "reading": "Rich for a commodity grower with a fixed land area and a lease ending in 2045."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Free cash flow DCF (equity)",
+      "bear": 10.93,
+      "base": 17.14,
+      "bull": 23.96,
+      "weighted": 16.64,
+      "comment": "Free cash flow to shareholders (after interest, tax, capex and herd purchases) of Rs 1.8bn / 2.2bn / 2.6bn a year. Bear: growth 2% and cash flows stop when the estate leases end in 2045. Base/bull: growth 4% / 5% for five years, then 3% / 4% for ever (leases renewed). Cost of equity 17% / 16% / 15%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 14.96,
+      "base": 23.6,
+      "bull": 34.2,
+      "weighted": 23.13,
+      "comment": "Normal EPS of Rs 1.87 / 2.36 / 2.85 (group profit Rs 1.9bn / 2.4bn / 2.9bn) at 8 / 10 / 12 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 12.0,
+      "base": 18.21,
+      "bull": 25.29,
+      "weighted": 17.76,
+      "comment": "Next dividend Rs 1.80 / 2.30 / 2.70, growing 2% / 4% / 5% for five years, then 2% / 3% / 4%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 11.48,
+      "base": 17.37,
+      "bull": 24.68,
+      "weighted": 17.07,
+      "comment": "NAV Rs 3.39 plus the value of earning Rs 1.87 / 2.36 / 2.85 a share on it, above a 17% / 16% / 15% cost of equity, with that excess growing 1% / 3% / 4%."
+    }
+  ],
+  "modelsNote": "A cash-generating plantation that pays out almost all its profit, so value comes from cash flows and dividends: a free cash flow DCF and a dividend model, with P/E and residual income as checks. All four agree within a few rupees, and all are far below the price.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Normal group profit (EPS)",
+        "bear": "Rs 1.9bn (Rs 1.87)",
+        "base": "Rs 2.4bn (Rs 2.36)",
+        "bull": "Rs 2.9bn (Rs 2.85)"
+      },
+      {
+        "label": "P/E on normal EPS",
+        "bear": "8x",
+        "base": "10x",
+        "bull": "12x"
+      },
+      {
+        "label": "Free cash flow to shareholders",
+        "bear": "Rs 1.8bn",
+        "base": "Rs 2.2bn",
+        "bull": "Rs 2.6bn"
+      },
+      {
+        "label": "Growth for five years, then long-term",
+        "bear": "2%, ends 2045",
+        "base": "4%, 3%",
+        "bull": "5%, 4%"
+      },
+      {
+        "label": "Next dividend",
+        "bear": "Rs 1.80",
+        "base": "Rs 2.30",
+        "bull": "Rs 2.70"
+      },
+      {
+        "label": "Estate leases after 2045",
+        "bear": "Not renewed",
+        "base": "Renewed",
+        "bull": "Renewed; planting ban eased"
+      }
+    ],
+    "averages": {
+      "bear": 12.34,
+      "base": 19.08,
+      "bull": 27.03
+    },
+    "common": "10-year government bond about 12% plus 3–5 points for a single-crop company with a planting ban, dairy losses and a lease ending in 2045. Tax 30% on agriculture (33% effective in April–September 2026). Group profit was Rs 1.7–2.3bn in five of the last six years and Rs 2.41bn in the last 12 months, at good palm oil prices, so the base takes Rs 2.4bn as normal. Shares 1,016.5m."
+  },
+  "sensitivity": {
+    "title": "Free cash flow DCF (base growth), Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Free cash flow to shareholders",
+    "rows": [
+      "15%",
+      "16%",
+      "17%"
+    ],
+    "columns": [
+      "Rs 1.8bn",
+      "Rs 2.2bn",
+      "Rs 2.6bn"
+    ],
+    "values": [
+      [
+        15.2,
+        18.58,
+        21.96
+      ],
+      [
+        14.02,
+        17.14,
+        20.25
+      ],
+      [
+        13.01,
+        15.91,
+        18.8
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 4% for five years, then 3%. Even at 15% and Rs 2.6bn the DCF gives Rs 22, half the price. Rs 46.40 needs a cost of equity of about 9% with 4% growth for ever. If the leases end in 2045 without renewal, the base DCF falls to Rs 15.77."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 18.65
+      },
+      {
+        "shares": 150,
+        "maxPrice": 15.85
+      },
+      {
+        "shares": 150,
+        "maxPrice": 13.99
+      }
+    ],
+    "averagePrice": 16.41,
+    "totalCost": 8206,
+    "note": "About Rs 8,206 in total, against Rs 23,200 at Rs 46.40.",
+    "realism": "Not realistic soon: the lowest price in April 2025–September 2026 was Rs 36.70, about twice the fair value. The buy prices match split-adjusted year-end prices of March 2023 (Rs 14.90) and March 2024 (Rs 17.74), before the market re-rated plantations as interest rates fell. It would take a big market fall or a sharp drop in palm oil prices."
+  },
+  "changeMyView": {
+    "higher": [
+      "The government lifting the planting ban, letting Watawala plant on degraded rubber land and grow output.",
+      "Clear renewal or extension of the estate leases beyond 2045.",
+      "Palm oil prices staying high (Indonesian biodiesel demand, import costs) so Rs 2.9bn+ of profit becomes normal.",
+      "Dairy turning profitable or being closed.",
+      "Interest rates falling further, lowering the return investors need."
+    ],
+    "lower": [
+      "A fall in palm oil prices, or cheaper imported edible oil.",
+      "Higher wages, fertiliser and milling costs squeezing the 60% gross margin.",
+      "Lower oil extraction rates or less bought-in fruit, as in the first half of 2026/27.",
+      "Rising dairy losses now that Watawala owns all of Lonach.",
+      "Money tied up with group companies (Rs 661m due from related companies at September 2026, up from Rs 319m).",
+      "Any move to phase out existing oil palm, as was proposed in 2021."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim reports to June and September 2026 (unaudited). The price used is the last trade on 30 September 2026 from the Q2 report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 149% above fair value of Rs 18.65.",
+    "Downside / upside": "Bear case Rs 12.34; bull case Rs 27.03 (both well below the price).",
+    "What the price assumes": "Investors accepting about 9% a year (5.4% dividend plus growth), below government bond yields, or profit roughly doubling for good.",
+    "Confidence": "Medium: profit has been steady, but palm prices and policy can move it.",
+    "Margin of safety": "Buy 15% below fair value (Rs 15.85), strong buy 25% below (Rs 13.99)."
+  },
+  "Business and moat": {
+    "What it does": "Grows oil palm on about 3,394 hectares (plus small areas of tea, cinnamon, rubber and coconut) across three estates, processes fruit bunches into crude palm oil at its own mill and sells it in Sri Lanka, which imports most of its edible oil. Owns Lonach Dairy, a large dairy farm.",
+    "Moat": "Moderate: one of very few oil palm growers in Sri Lanka, and the planting ban stops new competitors, but it also stops Watawala growing. Prices follow world palm oil prices."
+  },
+  "Management and governance": {
+    "Ownership": "Sunshine Wilmar (Pvt) Ltd 77.02%; public float 22.98% (21,941 public shareholders, September 2026).",
+    "Leadership": "Acting CEO (S G Sathasivam) at both interim reports; directors hold no shares.",
+    "Related parties": "Rs 661m due from related companies at September 2026 (Rs 319m at March)."
+  },
+  "Sri Lanka checks": {
+    "Policy": "Ban on new oil palm planting since 2021; under review (Annual Report p. 65).",
+    "Land": "Estates leased from JEDB/SLSPC for 53 years from 1992, ending 2045.",
+    "Tax": "30% for agriculture, 20% for dairy farming (Annual Report notes)."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 15.85 or lower",
+    "Strong buy": "Rs 13.99 or lower"
+  },
+  "What this analysis doesn't cover": [
+    "A November 2026 CSE price (last trade 30 September 2026 used).",
+    "Palm oil production volumes, yields and selling prices per kg (not set out clearly in the reports read).",
+    "Whether an interim dividend for 2026/27 has been declared since 29 October 2026.",
+    "Any decision on the oil palm planting ban after April 2026."
+  ],
+  "fullText": "Watawala Plantations (WATA.N0000) grows oil palm on about 3,394 hectares in three estates (Homadola, Talangaha, Nakiyadeniya) leased from the state until 2045, runs its own mill selling crude palm oil in Sri Lanka, and owns Lonach Dairy, a loss-making dairy farm now fully owned. It is 77% owned by Sunshine Wilmar. Oil palm makes almost all the profit: group profit was Rs 1.66bn (2020/21), 3.46bn (2021/22, helped by a tax credit), 2.33bn, 2.34bn, 1.88bn and Rs 2.33bn in 2025/26 (EPS Rs 2.34), on revenue up 21% to Rs 9.44bn. The first half of 2026/27 brought revenue up 10% to Rs 5.56bn and profit up 2% to Rs 1.75bn (EPS Rs 1.73): palm prices were good but costs and tax rose, and dairy lost Rs 100m. The company pays out roughly everything it earns (Rs 2.50 a share for 2025/26, Rs 4.30 for 2024/25), so equity is small (NAV Rs 3.39) and return on equity looks huge (74% in 2025/26). At Rs 46.40 (last trade on 30 September 2026, from the Q2 report) the share trades at 19.7x trailing earnings of Rs 2.36 and yields 5.4% on the 2025/26 dividend. Four methods put fair value at about Rs 18.65: with a 16% return asked of the share and little room to grow (a government ban on new oil palm planting since 2021 and leases ending in 2045), a business earning about Rs 2.4bn a year is worth around Rs 19bn, not the Rs 47bn the market pays. The price only makes sense if you accept about 9% a year (the 5.4% dividend plus some growth), below the roughly 12% on government bonds. So the share is well above fair value. A good business, but I'd buy only at up to Rs 15.85 and treat under Rs 14.00 as a strong buy: levels last seen in 2023–24.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFree cash flow DCF (equity) | 10.93 | 17.14 | 23.96 | 16.64\nP/E method | 14.96 | 23.60 | 34.20 | 23.13\nDividend model | 12.00 | 18.21 | 25.29 | 17.76\nResidual income | 11.48 | 17.37 | 24.68 | 17.07\nAverage | 12.34 | 19.08 | 27.03 | 18.65\n\nFair value Rs 18.65 (bear 30 / base 50 / bull 20). Buy price Rs 15.85 (15% below), strong buy Rs 13.99 (25% below).\n\nHow the business works: oil palm fruit is harvested all year on the company's three estates, plus fruit bought from outgrowers, and crushed at its mill into crude palm oil and kernel oil, sold to local refiners. Sri Lanka produces only about a fifth of its edible oil, so prices follow imported palm oil, in rupees. Margins are high (gross margin around 60% for oil palm) because the trees are mature and the land is on a long lease. The dairy farm loses money.\n\nWhy the methods are so far below the price: the business earns about Rs 2.4bn a year and pays out almost all of it. Valued at the 16% return I ask (bond yields of about 12% plus a premium), Rs 2.2–2.4bn a year with modest growth is worth about Rs 17–24 a share. Growth is limited because no new oil palm can be planted, and the estate leases end in 2045. At Rs 46.40 the market pays about 20x earnings and accepts a dividend yield of 5.4%, which implies a return of about 9% a year: less than a government bond.\n\nDividends: Rs 2.50 for 2025/26 and Rs 4.30 for 2024/25. Payouts above profit cut equity from Rs 6.19bn to Rs 2.91bn in two years; future dividends should be close to profit, about Rs 2.2–2.5 a share.\n\nBuy plan: 200 shares up to Rs 18.65, 150 up to Rs 15.85 and 150 up to Rs 13.99, about Rs 8,206 in total (average Rs 16.41), against Rs 23,200 at Rs 46.40. Not realistic soon: the lowest price since April 2025 was Rs 36.70.\n\nBusiness tests: 4 of 4 passed, so it's a good business at a price far too high: watch list (category 2).\n\nUncertain: the price is the last trade on 30 September 2026 because the CSE close couldn't be fetched; the site will show the daily close. Return on equity for the last 12 months uses September 2025 equity from the NAV per share of Rs 3.92 in the CEO review. 2024/25 EPS is Rs 1.89 in the highlights and Rs 1.82 in the ten-year summary; I used Rs 1.89. Palm oil volumes and prices per kg weren't extracted. Owner's note on the request ('.N00') looked like part of the code and was ignored."
+}
