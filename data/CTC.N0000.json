@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CTC.N0000",
+  "company": {
+    "name": "Ceylon Tobacco Company PLC",
+    "sector": "Tobacco",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "CTC.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025 (audited)",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 1788.0,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 September 2026, Interim Q3 2026, p. 7",
+    "note": "The CSE close couldn't be fetched for this analysis (the share wasn't yet in the site's daily prices and cse.lk was not reachable); the site's daily CSE close will replace this. 2026 range so far Rs 1,654.75–1,849.00 (quarterly reports); 2025 range Rs 1,200.00–1,735.00, closed 2025 at Rs 1,725.50."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A tax-collecting cash machine that pays out everything, but the price already assumes a lot",
+    "text": "Ceylon Tobacco Company (CTC.N0000), 84% owned by British American Tobacco, sells almost all the legal cigarettes in Sri Lanka. It is a cash machine: no borrowings, Rs 28.8bn of cash, and every rupee of profit paid out as dividends (Rs 155.54 a share for 2025). But the government takes most of the price: levies were Rs 149.1bn of Rs 215.7bn turnover in 2025, and the income-tax rate rose from 40% to 45%, so profit fell 2% to Rs 29.1bn. January–September 2026 profit rose 5% to Rs 22.0bn (EPS Rs 117.28 against Rs 111.74), and three interim dividends of Rs 34, 41 and 41 have been declared. At Rs 1,788 (last trade on 30 September 2026, from the Q3 report) it trades at 11.1x trailing earnings with a dividend yield of about 9%. Four methods put fair value at about Rs 1,530, so the price is about 17% above it. I'd buy at up to Rs 1,301 and treat under Rs 1,148 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "Extraordinary returns, no debt, profit every year and all profit paid out in cash.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "263% (2025)",
+        "note": "155–263% from 2022 to 2025, because almost all profit is paid out and the business needs little capital."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 28.8bn",
+        "note": "September 2026; no borrowings (the BAT loan was repaid in 2025). Much of the cash is matched by levies, tax and dividends owed (current liabilities Rs 35.0bn)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Rs 16.1bn (2021) to Rs 29.1bn (2025); 2025 fell 2% only because the tax rate rose to 45%. Nine months 2026 up 5%."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "100% payout",
+        "note": "Operating cash flow Rs 31.0bn against profit Rs 29.1bn in 2025; capex only Rs 0.8bn."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 1530.6,
+    "buyPrice": 1301.0,
+    "strongBuyPrice": 1148.0,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 57.1,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 9.5x trailing EPS)."
+  },
+  "dividend": {
+    "perShare": 155.54,
+    "label": "for 2025",
+    "source": "Annual Report 2025, p. 22 and p. 176 (interims 32 + 41 + 37 + 28, final 17.54)",
+    "latest": {
+      "perShare": 41.0,
+      "label": "third interim for 2026",
+      "source": "Interim Q3 2026, p. 2 (payable by 11 Dec 2026; earlier 2026 interims Rs 34.00 and Rs 41.00)"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 11.1,
+      "unit": "x",
+      "note": "EPS Rs 161.08, 12 months to Sep 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 263,
+      "unit": "%",
+      "note": "2025"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 8.7,
+      "unit": "%",
+      "note": "Rs 155.54 for 2025"
+    },
+    {
+      "id": "fcfYield",
+      "label": "Free cash flow yield",
+      "value": 9.0,
+      "unit": "%",
+      "note": "Rs 30.2bn in 2025"
+    },
+    {
+      "id": "netCash",
+      "label": "Net cash",
+      "value": 28.8,
+      "unit": "Rs bn",
+      "note": "September 2026"
+    },
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 57.1,
+      "unit": "Rs",
+      "note": "September 2026"
+    },
+    {
+      "id": "leviesShare",
+      "label": "Government levies share of turnover",
+      "value": 69,
+      "unit": "%",
+      "note": "2025"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 334.9,
+      "unit": "Rs bn",
+      "display": "~Rs 335bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "July–September 2026 (unaudited)",
+      "text": "Turnover up 7% to Rs 56.6bn and revenue after levies up 7% to Rs 17.5bn. Other operating costs jumped to Rs 2.2bn from Rs 0.7bn, so pre-tax profit was flat at Rs 13.7bn, but a lower tax charge lifted profit 10% to Rs 7.6bn (EPS Rs 40.44 against Rs 36.77). Third interim dividend Rs 41.00."
+    },
+    {
+      "title": "January–September 2026 (unaudited)",
+      "text": "Revenue up 6% to Rs 50.2bn; profit up 5% to Rs 22.0bn (EPS Rs 117.28). Operating cash flow fell to Rs 17.7bn from Rs 21.0bn as payables were run down and more tax was paid. Interims Rs 34 + 41 + 41."
+    },
+    {
+      "title": "2025 (audited)",
+      "text": "Turnover Rs 215.7bn (up 6%), of which government levies Rs 149.1bn. Pre-tax profit up 10% to Rs 53.9bn, but the tax rate rose from 40% to 45%, so profit fell 2% to Rs 29.1bn. EPS Rs 155.54, all paid out. Total taxes paid Rs 173.8bn."
+    },
+    {
+      "title": "Very small free float",
+      "text": "BAT owns 84.13% and Philip Morris 8.32%; the public holds 15.87%, so trading can be thin."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          86.2,
+          109.27,
+          147.64,
+          158.24,
+          155.54,
+          161.08
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          154.6,
+          189.0,
+          258.9,
+          262.7,
+          null
+        ],
+        "notes": [
+          "Opening equity not in the reports read",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "See 2025"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          10.2,
+          5.7,
+          6.5,
+          8.8,
+          11.1,
+          11.1
+        ],
+        "notes": [
+          "Worked out from market cap",
+          "Worked out from market cap (the table's Rs 953.75 price looks wrong)",
+          "Worked out",
+          null,
+          null,
+          "At Rs 1,788"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          109.27,
+          147.64,
+          158.24,
+          155.54,
+          null
+        ],
+        "notes": [
+          "Not clear in the report (61% payout)",
+          "100% payout",
+          "100% payout",
+          null,
+          null,
+          "2026: Rs 116 in three interims so far"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "11.1x",
+      "reading": "At the top of its five-year range (5.7–11.1x at year-ends) while profit grows only a few per cent."
+    },
+    {
+      "method": "Return on equity",
+      "value": "263%",
+      "reading": "Exceptional, because all profit is paid out and the business needs very little capital."
+    },
+    {
+      "method": "Dividends",
+      "value": "8.7% yield",
+      "reading": "Rs 155.54 for 2025, a 100% payout for four years running."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "9.0% yield",
+      "reading": "Rs 30.2bn in 2025 (operating cash flow less capex)."
+    },
+    {
+      "method": "NAV",
+      "value": "Rs 57.10",
+      "reading": "Book value is tiny because profit is paid out; not a useful anchor."
+    },
+    {
+      "method": "Tax exposure",
+      "value": "69% of turnover",
+      "reading": "Excise and income tax decide profit; the government can change both at any budget."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "FCFE DCF",
+      "bear": 1041.3,
+      "base": 1350.0,
+      "bull": 1773.2,
+      "weighted": 1342.0,
+      "comment": "Free cash flow to shareholders of Rs 150 / 162 / 172 a share next year, growing 2% / 4% / 6% for five years, then 3% / 4% / 5%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 1350.0,
+      "base": 1760.0,
+      "bull": 2184.0,
+      "weighted": 1721.8,
+      "comment": "2026 EPS of Rs 150 / 160 / 168 at 9 / 11 / 13 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 1027.4,
+      "base": 1333.3,
+      "bull": 1731.9,
+      "weighted": 1321.3,
+      "comment": "Rs 148 / 160 / 168 a share, growing 2% / 4% / 6% for five years, then 3% / 4% / 5%."
+    },
+    {
+      "id": "yield",
+      "name": "Dividend yield",
+      "bear": 1428.6,
+      "base": 1777.8,
+      "bull": 2100.0,
+      "weighted": 1737.5,
+      "comment": "Dividend of Rs 150 / 160 / 168 at a yield of 10.5% / 9% / 8%."
+    }
+  ],
+  "modelsNote": "A cash generator with no debt that pays out all its profit, so a free-cash-flow DCF, P/E, a dividend model and a dividend-yield check. NAV and residual income aren't meaningful with book value this small.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Free cash flow per share (next year)",
+        "bear": "Rs 150",
+        "base": "Rs 162",
+        "bull": "Rs 172"
+      },
+      {
+        "label": "Growth for five years, then long-term",
+        "bear": "2%, 3%",
+        "base": "4%, 4%",
+        "bull": "6%, 5%"
+      },
+      {
+        "label": "2026 EPS × P/E",
+        "bear": "150 × 9",
+        "base": "160 × 11",
+        "bull": "168 × 13"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 148–150",
+        "base": "Rs 160",
+        "bull": "Rs 168"
+      },
+      {
+        "label": "Dividend yield the market asks",
+        "bear": "10.5%",
+        "base": "9%",
+        "bull": "8%"
+      }
+    ],
+    "averages": {
+      "bear": 1211.8,
+      "base": 1555.3,
+      "bull": 1947.3
+    },
+    "common": "10-year government bond about 12.4% plus about 3–4 points; the BAT parent and 100% payout offset some of the tax and excise risk. Base 2026 EPS assumes the fourth quarter is close to last year's Rs 43.80."
+  },
+  "sensitivity": {
+    "title": "FCFE DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-term growth",
+    "rows": [
+      "15%",
+      "16%",
+      "17%"
+    ],
+    "columns": [
+      "3%",
+      "4%",
+      "5%"
+    ],
+    "values": [
+      [
+        1390.6,
+        1472.7,
+        1571.2
+      ],
+      [
+        1282.9,
+        1350.0,
+        1429.3
+      ],
+      [
+        1190.6,
+        1246.2,
+        1311.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 1,788 needs a cost of equity of about 13%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 1530.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 1301.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 1148.0
+      }
+    ],
+    "averagePrice": 1346.94,
+    "totalCost": 673470,
+    "note": "About Rs 673,470 in total, against Rs 894,000 at Rs 1,788.",
+    "realism": "The 2026 low so far is Rs 1,654.75 (January–March). Rs 1,301 needs about a 27% fall, last seen in the first half of 2025 (lows Rs 1,200 and Rs 1,237); Rs 1,148 is below every price in 2025 and 2026. Watch the 2027 budget: an excise jump is the most likely trigger for such a fall."
+  },
+  "changeMyView": {
+    "higher": [
+      "No excise increase, or a smaller one, in the 2027 budget.",
+      "A cut in the 45% income-tax rate.",
+      "Real progress against illicit cigarettes lifting legal volumes.",
+      "Lower interest rates (a lower cost of equity)."
+    ],
+    "lower": [
+      "A large excise increase that cuts volumes.",
+      "Illicit cigarettes gaining share.",
+      "Profit falling as costs rise (other costs tripled in the September quarter).",
+      "BAT taking more cash out through fees or changing the payout policy."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the interim reports to September 2026 (unaudited). The price used is the last trade on 30 September 2026 from the Q3 report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 17% above fair value of Rs 1,530.60.",
+    "Expected yearly return at Rs 1,788": "About 13% a year (dividend about 9% + growth about 4%) if the market keeps today's valuation; less if it moves to fair value.",
+    "Compared with": "10-year government bond about 12.4%.",
+    "Downside / upside": "Bear case −32% (Rs 1,212); bull case +9% (Rs 1,947).",
+    "Confidence": "Medium-high on the business; medium on the price, because tax policy can change profit quickly.",
+    "Margin of safety": "Buy 15% below fair value (Rs 1,301.00), strong buy 25% below (Rs 1,148.00)."
+  },
+  "Business and moat": {
+    "What it does": "Makes, markets and sells cigarettes (John Player Gold Leaf, Dunhill and others); buys local tobacco leaf from farmers.",
+    "Moat": "Very wide: the only large legal cigarette maker, with brands, licences and distribution; the main competitor is illicit cigarettes."
+  },
+  "Management and governance": {
+    "Ownership": "British American Tobacco 84.13%, Philip Morris 8.32%; public 15.87% (Interim Q3 2026, p. 8–9).",
+    "Rating": "OK: run as part of BAT, with a long record of paying out all profit."
+  },
+  "Sri Lanka checks": {
+    "Taxes": "High risk: excise and a 45% income-tax rate; Rs 173.8bn paid to the government in 2025.",
+    "Illicit cigarettes": "Risk: grows when legal prices rise.",
+    "Liquidity": "Low: 15.87% free float."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A near-monopoly that pays out everything, with a 9% yield, bought at a lower price.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 1,989.78); a large excise increase that cuts volumes."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 1,301.00 or lower",
+    "Strong buy": "Rs 1,148.00 or lower",
+    "Sell trigger": "Rs 1,989.78 or higher"
+  },
+  "Key ratios (five-year trend)": {
+    "Turnover": "2021 Rs 134.4bn · 2022 Rs 167.2bn · 2023 Rs 200.0bn · 2024 Rs 204.3bn · 2025 Rs 215.7bn",
+    "Profit after tax": "Rs 16.1bn · Rs 20.5bn · Rs 27.7bn · Rs 29.6bn · Rs 29.1bn",
+    "Dividend payout": "61% · 100% · 100% · 100% · 100%",
+    "Operating cash flow": "2024 Rs 31.4bn · 2025 Rs 31.0bn (earlier years not in the reports read)"
+  },
+  "What this analysis doesn't cover": [
+    "Sales volumes (the reports don't give them).",
+    "The 2027 budget's excise decisions.",
+    "Why other operating costs rose to Rs 2.2bn in the September 2026 quarter (the report doesn't say)."
+  ],
+  "fullText": "Ceylon Tobacco Company (CTC.N0000), 84% owned by British American Tobacco, sells almost all the legal cigarettes in Sri Lanka. It is a cash machine: no borrowings, Rs 28.8bn of cash, and every rupee of profit paid out as dividends (Rs 155.54 a share for 2025). But the government takes most of the price: levies were Rs 149.1bn of Rs 215.7bn turnover in 2025, and the income-tax rate rose from 40% to 45%, so profit fell 2% to Rs 29.1bn. January–September 2026 profit rose 5% to Rs 22.0bn (EPS Rs 117.28 against Rs 111.74), and three interim dividends of Rs 34, 41 and 41 have been declared. At Rs 1,788 (last trade on 30 September 2026, from the Q3 report) it trades at 11.1x trailing earnings with a dividend yield of about 9%. Four methods put fair value at about Rs 1,530, so the price is about 17% above it. I'd buy at up to Rs 1,301 and treat under Rs 1,148 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFCFE DCF | 1,041.3 | 1,350.0 | 1,773.2 | 1,342.0\nP/E method | 1,350.0 | 1,760.0 | 2,184.0 | 1,721.8\nDividend model | 1,027.4 | 1,333.3 | 1,731.9 | 1,321.3\nDividend yield | 1,428.6 | 1,777.8 | 2,100.0 | 1,737.5\nAverage | 1,211.8 | 1,555.3 | 1,947.3 | 1,530.6\n\nWhy the price looks high: the market is pricing CTC as if a 13% return is enough. With a 16% cost of equity (10-year bond about 12.4% plus about 4 points for tax and excise risk) the cash-flow methods give about Rs 1,330–1,350; only the P/E and yield methods support today's price.\n\nExpected return at Rs 1,788: dividend about 9% plus growth of about 4% gives about 13% a year, before any change in the share price's rating. That is above the bond yield but below the 16% I ask of a single-product business whose profit the government can change at each budget.\n\nBuy plan: 200 shares up to Rs 1,530.60, 150 up to Rs 1,301.00 and 150 up to Rs 1,148.00, about Rs 673,470 in total (average Rs 1,346.94), against Rs 894,000 at Rs 1,788.\n\nBusiness tests: 4 of 4 passed, so it's a good business at a high price: watch list (category 2)."
+}

@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CTC.N0000",
+  "localFolder": null,
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "reports/CTC.N0000/2026-04-20_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual Report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Key highlights (p. 22, five years), Finance Director's review (p. 32–33), statements (p. 140–143), dividends (p. 127, 170, 176, 180). Page numbers are PDF pages. The p. 22 table has errors: net assets 2024/2025 shown as 111,367/110,475 and the 2022 price as 953.75; its 'dividend per share' row repeats EPS."
+    },
+    {
+      "file": "reports/CTC.N0000/2026-05-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13"
+    },
+    {
+      "file": "reports/CTC.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q2 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13"
+    },
+    {
+      "file": "reports/CTC.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13"
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 134.369,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22",
+          "note": "Turnover; levies 100.753; revenue after levies 33.615"
+        },
+        "netProfit": {
+          "value": 16.146,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "eps": {
+          "value": 86.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22",
+          "note": "Table shows 86.20 (same as EPS) but payout 61%; per-share figure unclear"
+        },
+        "navPerShare": {
+          "value": 47.98,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "priceYearEnd": {
+          "value": 878.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 167.194,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22",
+          "note": "Turnover; levies 122.922; revenue 44.272"
+        },
+        "netProfit": {
+          "value": 20.469,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "eps": {
+          "value": 109.27,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "dividendPerShare": {
+          "value": 109.27,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22",
+          "note": "100% payout"
+        },
+        "navPerShare": {
+          "value": 93.38,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "roe": {
+          "value": 154.6,
+          "unit": "%",
+          "source": "Worked out from Annual Report 2025, p. 22",
+          "note": "Average of 2021 and 2022 equity"
+        },
+        "priceYearEnd": {
+          "value": 625.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22",
+          "note": "Worked out from market cap Rs 117,077mn; the table's price of 953.75 repeats 2023"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 200.019,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22",
+          "note": "Turnover; levies 142.299; revenue 57.721"
+        },
+        "netProfit": {
+          "value": 27.656,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "eps": {
+          "value": 147.64,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "dividendPerShare": {
+          "value": 147.64,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22",
+          "note": "100% payout"
+        },
+        "navPerShare": {
+          "value": 62.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        },
+        "roe": {
+          "value": 189.0,
+          "unit": "%",
+          "source": "Worked out from Annual Report 2025, p. 22"
+        },
+        "priceYearEnd": {
+          "value": 953.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 22"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 204.281,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 140",
+          "note": "Turnover; levies 141.752; revenue 62.529"
+        },
+        "netProfit": {
+          "value": 29.643,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 140"
+        },
+        "eps": {
+          "value": 158.24,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 140"
+        },
+        "dividendPerShare": {
+          "value": 158.24,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 170, 180",
+          "note": "32.70 + 38.30 + 40.90 + 29.10 + 17.24"
+        },
+        "navPerShare": {
+          "value": 59.45,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 127"
+        },
+        "roe": {
+          "value": 258.9,
+          "unit": "%",
+          "source": "Worked out"
+        },
+        "operatingCashFlow": {
+          "value": 31.407,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 143"
+        },
+        "capexPaid": {
+          "value": 1.238,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 143"
+        },
+        "freeCashFlow": {
+          "value": 30.169,
+          "unit": "Rs bn",
+          "source": "Worked out"
+        },
+        "netDebt": {
+          "value": -27.268,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 141",
+          "note": "Cash 27.561 less BAT loan 0.293"
+        },
+        "sharesOutstanding": {
+          "value": 187.323751,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 127"
+        },
+        "priceYearEnd": {
+          "value": 1397.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 180"
+        },
+        "peYearEnd": {
+          "value": 8.83,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 127"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 215.67,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 140",
+          "note": "Turnover; levies 149.107; revenue 66.563"
+        },
+        "netProfit": {
+          "value": 29.136,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 140",
+          "note": "Tax rate 45% (40% in 2024)"
+        },
+        "eps": {
+          "value": 155.54,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 140"
+        },
+        "dividendPerShare": {
+          "value": 155.54,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 176",
+          "note": "32 + 41 + 37 + fourth interim 28.00 + final 17.54"
+        },
+        "navPerShare": {
+          "value": 58.97,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 4",
+          "note": "Equity Rs 11.048bn"
+        },
+        "roe": {
+          "value": 262.7,
+          "unit": "%",
+          "source": "Worked out"
+        },
+        "operatingCashFlow": {
+          "value": 30.996,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 143"
+        },
+        "capexPaid": {
+          "value": 0.798,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 143"
+        },
+        "freeCashFlow": {
+          "value": 30.198,
+          "unit": "Rs bn",
+          "source": "Worked out"
+        },
+        "netDebt": {
+          "value": -31.368,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 141",
+          "note": "No borrowings"
+        },
+        "sharesOutstanding": {
+          "value": 187.323751,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 127"
+        },
+        "priceYearEnd": {
+          "value": 1725.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 180",
+          "note": "p. 22 says 1,725.00"
+        },
+        "peYearEnd": {
+          "value": 11.09,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 127"
+        },
+        "taxesPaidToGovernment": {
+          "value": 173.8,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 26"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 52.068,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 3",
+          "note": "Quarter turnover; revenue after levies 16.070"
+        },
+        "netProfit": {
+          "value": 6.699,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 3",
+          "note": "Quarter"
+        },
+        "eps": {
+          "value": 35.76,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 3",
+          "note": "Quarter"
+        },
+        "dividendPerShare": {
+          "value": 34.0,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 2",
+          "note": "First interim 2026"
+        },
+        "navPerShare": {
+          "value": 67.51,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, p. 4"
+        },
+        "operatingCashFlow": {
+          "value": 2.129,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 6",
+          "note": "Quarter"
+        },
+        "capexPaid": {
+          "value": 0.038,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, p. 6"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 104.503,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026, p. 3",
+          "note": "Year-to-date turnover; Q2 alone 52.435; revenue after levies YTD 32.635"
+        },
+        "netProfit": {
+          "value": 14.393,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026, p. 3",
+          "note": "Year to date; Q2 alone 7.694"
+        },
+        "eps": {
+          "value": 76.83,
+          "unit": "Rs",
+          "source": "Interim Q2 2026, p. 3",
+          "note": "Year to date; Q2 alone 41.07"
+        },
+        "dividendPerShare": {
+          "value": 41.0,
+          "unit": "Rs",
+          "source": "Interim Q2 2026, p. 2",
+          "note": "Second interim 2026"
+        },
+        "navPerShare": {
+          "value": 57.72,
+          "unit": "Rs",
+          "source": "Interim Q2 2026, p. 4"
+        },
+        "operatingCashFlow": {
+          "value": 7.299,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026, p. 6",
+          "note": "Year to date"
+        },
+        "capexPaid": {
+          "value": 0.05,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026, p. 6",
+          "note": "Year to date"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 161.126,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 3",
+          "note": "Year-to-date turnover; Q3 alone 56.623; revenue after levies YTD 50.181"
+        },
+        "netProfit": {
+          "value": 21.969,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 3",
+          "note": "Year to date (+5%); Q3 alone 7.576 (+10%)"
+        },
+        "eps": {
+          "value": 117.28,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 3",
+          "note": "Year to date; Q3 alone 40.44"
+        },
+        "dividendPerShare": {
+          "value": 41.0,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Third interim 2026, payable by 11 Dec 2026"
+        },
+        "navPerShare": {
+          "value": 57.1,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 4"
+        },
+        "operatingCashFlow": {
+          "value": 17.693,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 6",
+          "note": "Year to date (9M 2025: 20.980)"
+        },
+        "capexPaid": {
+          "value": 0.122,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 6",
+          "note": "Year to date"
+        },
+        "netDebt": {
+          "value": -28.715,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 4",
+          "note": "Cash 28.767 less leases 0.052"
+        },
+        "sharesOutstanding": {
+          "value": 187.323751,
+          "unit": "mn",
+          "source": "Interim Q3 2026, p. 8"
+        },
+        "otherOperatingExpenses": {
+          "value": 2.225,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 3",
+          "note": "Q3 alone, against 0.730 in Q3 2025; not explained"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "17% / 16% / 15%",
+      "reason": "Bond about 12.4% plus 3–4 points; BAT parent and full payout offset some tax risk.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "FCFE",
+      "value": "Rs 150 / 162 / 172 a share; growth 2% / 4% / 6%, then 3% / 4% / 5%",
+      "reason": "FCF Rs 30.2bn (Rs 161) in 2024 and 2025.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "2026 EPS × P/E",
+      "value": "150 × 9 / 160 × 11 / 168 × 13",
+      "reason": "9M EPS Rs 117.28; Q4 2025 Rs 43.80; year-end P/E 5.7–11.1x.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividends",
+      "value": "Rs 148–150 / 160 / 168; yield 10.5% / 9% / 8%",
+      "reason": "100% payout; Rs 155.54 for 2025.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Full-year 2026 EPS and the fourth interim and final dividends (Q4 2025 EPS was Rs 43.80).",
+    "Excise changes in the 2027 budget and their effect on volumes.",
+    "Why other operating costs rose to Rs 2.2bn in the September 2026 quarter; one-off or recurring?",
+    "Whether operating cash flow recovers (9M 2026 Rs 17.7bn against Rs 21.0bn)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add CTC.N000; the note '.N000' was only the rest of the code). First analysis from the 2025 annual report and the three 2026 quarterly reports. FCFE DCF, P/E, dividend model and dividend yield; business tests 4 of 4 (category 2, watch list). Price is the 30 Sep 2026 last trade from the Q3 report because the CSE close couldn't be fetched.",
+      "fairValue": 1530.6,
+      "buyPrice": 1301.0,
+      "strongBuyPrice": 1148.0,
+      "priceAtTime": 1788.0,
+      "archive": null
+    }
+  ]
+}
