@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "ticker": "MCPL.N0000",
+  "company": {
+    "name": "Mahaweli Coconut Plantations PLC",
+    "sector": "Food, Beverage & Tobacco (coconut plantation)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "MCPL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (year to 31 March 2026, audited)",
+      "Interim report to 30 September 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 52.5,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 September 2026, Interim Q2 2026/27, pp. 1 and 8",
+    "note": "The CSE close couldn't be fetched for this analysis (the share isn't yet in the site's daily prices, cse.lk wasn't reachable from here and no dated November 2026 quote was found on the web); the site's daily CSE close will replace this. The price was before the Rs 3.00 dividend (ex-dividend 1 October 2026). Range April–September 2026 Rs 46.00–55.00; 2025/26 Rs 32.00–63.00 (Interim p. 8; Annual Report p. 129)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A cash-rich coconut estate with a strong balance sheet, but the price is more than double fair value and the land leases end in 2028–29",
+    "text": "Mahaweli Coconut Plantations (MCPL.N0000) grows coconuts on 551 hectares of Mahaweli Authority land at Pimburettewa in the dry zone (Polonnaruwa), irrigated by drip and solar pumps, and sells about 3.2–3.8 million nuts a year to desiccated coconut makers, plus some copra, coir, coco peat and teak. It is a small company (35.0m shares, about Rs 1.8bn market value) owned mostly by coconut millers, with no controlling shareholder. Profit after tax has swung between Rs 36m and Rs 191m over ten years: Rs 140m in 2024/25 and Rs 121m in 2025/26 (EPS Rs 3.46) at a record coconut price of Rs 128.52 a nut. The first half of 2026/27 brought a loss of Rs 13m (EPS −Rs 0.38) as cost of sales rose 62% while revenue fell 3% in a severe drought. The balance sheet is strong: about Rs 427m of cash and deposits and no bank debt, so roughly Rs 9 a share is net cash after the Rs 3.00 dividend for 2025/26 (ex-dividend 1 October 2026). The big risk is the land: the three leases end in March 2028, November 2028 and August 2029, and one has never been signed by the Mahaweli Authority; the company expects renewal but hasn't started talks. At Rs 52.50 (last trade on 30 September 2026, from the Q2 report) the share trades at 27x trailing earnings of Rs 1.96, 15x the 2025/26 earnings and 2.4x NAV of Rs 21.91, yielding 5.7%. Four methods put fair value at about Rs 21.67: a business that earns around Rs 110m in a normal year is worth roughly Rs 0.8bn at the 16% return I ask, not Rs 1.8bn. Three of four business tests pass, so it counts as a good business, but the price is far too high: buy only up to Rs 18.42, strong buy under Rs 16.25."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "No debt, a cash pile and profit that turns into cash and dividends; returns averaged about 17% over five years but are falling, and profit swings widely with weather and coconut prices. The tests don't capture the land lease risk (expiry 2028–29).",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "Average 16.8% over 2021/22–2025/26",
+        "note": "27%, 10%, 17%, 16% and 14% (Annual Report 2025/26, p. 131, ten-year summary). Falling: about 9% in the 12 months to September 2026. A marginal pass; equity includes about Rs 0.4bn of cash and deposits earning interest."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash about Rs 0.41bn vs equity Rs 0.75bn",
+        "note": "Cash Rs 10.5m and short-term deposits Rs 416.9m against only Rs 16.7m of land lease liabilities and no bank overdraft at 30 September 2026 (Interim Q2 2026/27, p. 1). About Rs 105m of that pays the 2025/26 dividend in October 2026."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Rs 70m–191m a year; loss in H1 2026/27",
+        "note": "Profit after tax Rs 191m (2021/22), 70m, 136m, 140m and 121m (2025/26), Annual Report p. 131. No full-year loss, but profit fell 64% in 2022/23, and the six months to September 2026 lost Rs 13.2m in a drought (Interim p. 2). Teak revaluation gains (Rs 7.6m, 19.7m) and a Rs 9.0m unclaimed-dividend write-back help some years."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Operating cash Rs 1.07bn vs profit Rs 1.11bn over ten years",
+        "note": "Ten-year operating cash flow is 96% of profit (Annual Report p. 131). 2025/26: Rs 89m against profit Rs 121m because Rs 85m of tax was paid, including the previous year's (Rs 7m in 2024/25). Dividends paid every year."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 21.67,
+    "buyPrice": 18.42,
+    "strongBuyPrice": 16.25,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 21.91,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 6.9x base normal EPS of Rs 3.14, or 1.0x NAV). NAV of Rs 21.91 includes about Rs 9 of net cash and Rs 6.69 of teak at fair value."
+  },
+  "dividend": {
+    "perShare": 3.0,
+    "label": "final for 2025/26",
+    "source": "Annual Report 2025/26, pp. 9, 11 and 138 (notice of meeting)",
+    "note": "Approved at the AGM on 30 September 2026; ex-dividend 1 October 2026. Rs 3.00 final for 2024/25 as well (paid in 2025/26, Annual Report p. 96). One final dividend a year; no interims."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 21.91,
+      "unit": "Rs",
+      "note": "30 September 2026, after the Rs 3.00 dividend (Rs 25.29 at March 2026)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.4,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 26.8,
+      "unit": "x",
+      "note": "EPS Rs 1.96, 12 months to September 2026; 15.2x on 2025/26 EPS of Rs 3.46"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 13.9,
+      "unit": "%",
+      "note": "2025/26 (Annual Report p. 8); about 9% in the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.7,
+      "unit": "%",
+      "note": "Rs 3.00 for 2025/26"
+    },
+    {
+      "id": "netCash",
+      "label": "Net cash",
+      "value": 0.41,
+      "unit": "Rs bn",
+      "note": "30 September 2026, before paying the Rs 105m dividend"
+    },
+    {
+      "id": "grossMargin",
+      "label": "Gross margin",
+      "value": 36.3,
+      "unit": "%",
+      "note": "2025/26 (48.6% in 2024/25); negative in April–September 2026"
+    },
+    {
+      "id": "nuts",
+      "label": "Coconut crop",
+      "value": 3.76,
+      "unit": "",
+      "display": "3.76m nuts",
+      "note": "2025/26; average price Rs 128.52 a nut"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 1.84,
+      "unit": "Rs bn",
+      "display": "~Rs 1.84bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "April–September 2026 (unaudited)",
+      "text": "Revenue down 3% to Rs 189.6m, but cost of sales up 62% to Rs 207.1m, so a gross loss of Rs 17.5m (gross profit Rs 67.9m a year earlier). Administration costs up 22%. Loss Rs 13.2m (EPS −Rs 0.38) against a profit of Rs 39.1m. Q2 alone: revenue Rs 96.5m (+3%), profit Rs 4.5m (−84%). The report gives no reason for the cost jump; the annual report warned of a severe dry-zone drought from May 2026 (no rain from 18 May to 31 August) and a lower 2026/27 crop."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Record revenue of Rs 456.9m (+10%) as the average coconut price rose 15% to Rs 128.52 a nut on a flat crop of 3.76m nuts. Gross margin fell to 36.3% from 48.6% on higher wages, maintenance and harvesting costs and cyclone Ditwah damage. Profit Rs 121.0m (−14%), EPS Rs 3.46. Dividend Rs 3.00 (about 87% of profit)."
+    },
+    {
+      "title": "Land leases end 2028–29",
+      "text": "The 551 hectares are held under three Mahaweli Authority leases ending 31 March 2028 (129 ha, never signed by the Authority), 30 November 2028 (292 ha) and 31 August 2029 (130 ha). The company rates this a high risk, says such leases are generally extended, and plans to start renewal talks in the expiry year (Annual Report pp. 46 and 110)."
+    },
+    {
+      "title": "Water tax and fertiliser",
+      "text": "The Mahaweli Authority plans to charge for irrigation water; the cost can't yet be estimated. Fertiliser reached only 60% of palms in 2025/26 because of supply problems and a March 2026 ban on fertiliser issues by private companies (Annual Report pp. 9–11, 17)."
+    },
+    {
+      "title": "Cash and teak",
+      "text": "Cash and deposits of Rs 427m at September 2026 (about Rs 12 a share; about Rs 9 after the October dividend) and 22,153 teak trees valued at Rs 234m (Rs 6.69 a share), sold gradually."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          5.46,
+          1.99,
+          3.88,
+          4.01,
+          3.46,
+          1.96
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To September 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          27,
+          10,
+          17,
+          16,
+          13.9,
+          8.9
+        ],
+        "notes": [
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Key highlights (14% in the ten-year summary)",
+          "Profit to September 2026 on average of September 2025 and 2026 equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          9.28,
+          14.25,
+          26.79
+        ],
+        "notes": [
+          "Year-end price not in the reports read",
+          "Year-end price not in the reports read",
+          "Year-end price not in the reports read",
+          "At Rs 37.20",
+          "At Rs 49.30",
+          "At Rs 52.50 (30 September 2026)"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend paid in the year",
+        "unit": "Rs",
+        "values": [
+          2.5,
+          1.5,
+          1.5,
+          2.0,
+          3.0,
+          3.0
+        ],
+        "notes": [
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Final for 2023/24",
+          "Final for 2024/25",
+          "Final for 2025/26, paid October 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "P/E",
+      "value": "26.8x trailing (15.2x on 2025/26)",
+      "reading": "High for a single-crop estate whose profit swings with rain and coconut prices; 9x at March 2025."
+    },
+    {
+      "method": "NAV",
+      "value": "2.4x",
+      "reading": "NAV of Rs 21.91 is mostly cash, teak and irrigation assets; paying 2.4x book for returns of 9–14% doesn't add up."
+    },
+    {
+      "method": "Return on equity",
+      "value": "14% (2025/26)",
+      "reading": "About 17% on average over five years, falling to 9% in the last 12 months; diluted by a large cash holding."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.7% yield",
+      "reading": "Rs 3.00 for each of the last two years, close to 90% of profit; likely lower for 2026/27 after the first-half loss."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "Rs 52m (2025/26) / 112m (2024/25)",
+      "reading": "Before interest income; about 3–6% of the market value."
+    },
+    {
+      "method": "Net cash",
+      "value": "About Rs 9 a share",
+      "reading": "After the October 2026 dividend; a cushion, but only a sixth of the price."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Free cash flow DCF + net cash",
+      "bear": 14.98,
+      "base": 25.7,
+      "bull": 34.38,
+      "weighted": 24.22,
+      "comment": "Operating free cash flow (before interest income) of Rs 45m / 75m / 95m a year plus about Rs 305m net cash after the 2025/26 dividend. Bear: leases not renewed, so three more years of cash, the teak sold (Rs 234m less 30% tax) and the cash returned. Base/bull: leases renewed, growth 3% / 4% for ever. Cost of equity 17% / 16% / 15%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 12.0,
+      "base": 25.15,
+      "bull": 40.0,
+      "weighted": 24.17,
+      "comment": "Normal profit Rs 70m / 110m / 140m (EPS Rs 2.00 / 3.14 / 4.00) at 6 / 8 / 10 times. The justified P/E for a 90% payout, 3% growth and a 16% return is about 7x."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 8.82,
+      "base": 21.79,
+      "bull": 30.73,
+      "weighted": 19.69,
+      "comment": "Dividend Rs 1.50 / 2.75 / 3.25 a share; growth 0% / 3% / 4% for ever; cost of equity 17% / 16% / 15%. Rs 3.00 was paid for each of the last two years."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 11.13,
+      "base": 19.12,
+      "bull": 28.4,
+      "weighted": 18.58,
+      "comment": "NAV Rs 21.91 plus the value of earning Rs 2.00 / 3.14 / 4.00 a share on it against a 17% / 16% / 15% cost of equity, with the excess growing 1% / 3% / 4%. Normal returns of 9–14% are below the cost of equity in bear and base, so value is below book."
+    }
+  ],
+  "modelsNote": "A small cash generator that pays out most of its profit, so value comes from cash flow, dividends and earnings, with residual income as a check against book value. The lease expiry in 2028–29 is handled in the bear case (no renewal). All four methods are far below the price.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Normal profit after tax (EPS)",
+        "bear": "Rs 70m (Rs 2.00)",
+        "base": "Rs 110m (Rs 3.14)",
+        "bull": "Rs 140m (Rs 4.00)"
+      },
+      {
+        "label": "P/E on normal EPS",
+        "bear": "6x",
+        "base": "8x",
+        "bull": "10x"
+      },
+      {
+        "label": "Operating free cash flow",
+        "bear": "Rs 45m",
+        "base": "Rs 75m",
+        "bull": "Rs 95m"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "0%",
+        "base": "3%",
+        "bull": "4%"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 1.50",
+        "base": "Rs 2.75",
+        "bull": "Rs 3.25"
+      },
+      {
+        "label": "Land leases (2028–29)",
+        "bear": "Not renewed",
+        "base": "Renewed on similar terms",
+        "bull": "Renewed; water tax small"
+      }
+    ],
+    "averages": {
+      "bear": 11.73,
+      "base": 22.94,
+      "bull": 33.38
+    },
+    "common": "10-year government bond about 12% plus 3–5 points for a small, thinly traded single-crop company with lease and weather risk. Tax 30%. Profit averaged Rs 111m over ten years and Rs 132m over five, in years that included record coconut prices, so the base takes Rs 110m as normal. Net cash Rs 305m after the 2025/26 dividend. Shares 34,996,115."
+  },
+  "sensitivity": {
+    "title": "Free cash flow DCF + net cash (3% growth), Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Operating free cash flow",
+    "rows": [
+      "15%",
+      "16%",
+      "17%"
+    ],
+    "columns": [
+      "Rs 45m",
+      "Rs 75m",
+      "Rs 95m"
+    ],
+    "values": [
+      [
+        19.75,
+        27.11,
+        32.02
+      ],
+      [
+        18.9,
+        25.7,
+        30.22
+      ],
+      [
+        18.18,
+        24.48,
+        28.69
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even at 15% and Rs 95m a year the DCF gives Rs 32, well below Rs 52.50. The price needs about Rs 150m of free cash a year for ever at 16%, twice the base, or a cost of equity near 10%. If the leases are not renewed the value falls to about Rs 15."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 21.67
+      },
+      {
+        "shares": 150,
+        "maxPrice": 18.42
+      },
+      {
+        "shares": 150,
+        "maxPrice": 16.25
+      }
+    ],
+    "averagePrice": 19.07,
+    "totalCost": 9535,
+    "note": "About Rs 9,535 in total, against Rs 26,250 at Rs 52.50. Trading is thin (about 4m shares traded in 2025/26), so use limit orders.",
+    "realism": "Not realistic soon: the lowest price in April 2024–September 2026 was Rs 25.10 (2024/25), and Rs 32.00 in 2025/26. It would take a sharp fall in coconut prices, a lease problem or a weak market."
+  },
+  "changeMyView": {
+    "higher": [
+      "Clear renewal of all three land leases for another 30 years on similar rent.",
+      "Coconut prices staying near Rs 120+ a nut while the crop recovers to 4.5m+ nuts with full fertiliser.",
+      "The water tax being dropped or set low.",
+      "Coir, coco peat and cinnamon growing into a real second business.",
+      "A special dividend or other return of the surplus cash."
+    ],
+    "lower": [
+      "Any sign the Mahaweli Authority won't renew the leases, or wants much higher rent.",
+      "More drought (El Niño) cutting the 2026/27 crop, as the first-half loss suggests.",
+      "Coconut prices falling back as national output recovers.",
+      "A heavy water tax or rising wages squeezing margins further.",
+      "A lower dividend for 2026/27."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim report to 30 September 2026 (unaudited). The price used is the last trade on 30 September 2026 from the Q2 report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 142% above fair value of Rs 21.67.",
+    "Downside / upside": "Bear case Rs 11.73; bull case Rs 33.38 (both well below the price).",
+    "What the price assumes": "Profit of about Rs 200m a year for good (well above any year but 2021/22), or investors accepting a return of about 9–10%, below government bonds.",
+    "Confidence": "Low to medium: profit swings with weather and coconut prices, and the land leases end in 2028–29.",
+    "Margin of safety": "Buy 15% below fair value (Rs 18.42), strong buy 25% below (Rs 16.25)."
+  },
+  "Business and moat": {
+    "What it does": "Grows coconuts on 551 hectares of irrigated dry-zone land at Pimburettewa, Aralaganwila (about 74,000 palms, 51 nuts a tree in 2025/26), and sells them mainly to desiccated coconut mills, many of them shareholders. Small side lines: copra, coir, coco peat and coco chips (Rs 22m revenue), teak, cinnamon, pepper and areca nut. Largest supplier of seed nuts to the Coconut Cultivation Board.",
+    "Moat": "Weak: a price-taker in a commodity, with no say over the land, water price or fertiliser supply. Advantages are good irrigation and yields above the coconut triangle average."
+  },
+  "Management and governance": {
+    "Ownership": "Widely held: the 20 largest shareholders own 53%, mostly coconut millers and their owners; public 90.83% (1,310 public shareholders, September 2026). Listed on the Diri Savi board.",
+    "Leadership": "Managing Director/CEO J F Fernandopulle; directors hold about 7.8% between them.",
+    "Related parties": "Sells coconuts to companies linked to directors and shareholders (e.g. Rs 23.7m to Baduwatta DC Mills in the September quarter, Interim p. 5)."
+  },
+  "Sri Lanka checks": {
+    "Land": "Mahaweli Authority leases ending 31 March 2028, 30 November 2028 and 31 August 2029; the 129-hectare lease was never signed by the Authority (Annual Report p. 110).",
+    "Policy": "Planned water tax on irrigation; March 2026 ban on fertiliser issues by private companies (Annual Report pp. 9–11).",
+    "Tax": "30% income tax (Annual Report p. 121)."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 18.42 or lower",
+    "Strong buy": "Rs 16.25 or lower"
+  },
+  "What this analysis doesn't cover": [
+    "A November 2026 CSE price (last trade 30 September 2026 used, before the Rs 3.00 dividend).",
+    "Why cost of sales rose 62% in April–September 2026 (not explained in the interim report); crop and nut prices for the half.",
+    "Year-end share prices before March 2025.",
+    "Any progress on renewing the land leases or on the water tax."
+  ],
+  "fullText": "Mahaweli Coconut Plantations (MCPL.N0000) grows coconuts on 551 hectares of Mahaweli Authority land at Pimburettewa in the dry zone (Polonnaruwa), irrigated by drip and solar pumps, and sells about 3.2–3.8 million nuts a year to desiccated coconut makers, plus some copra, coir, coco peat and teak. It is a small company (35.0m shares, about Rs 1.8bn market value) owned mostly by coconut millers, with no controlling shareholder. Profit after tax has swung between Rs 36m and Rs 191m over ten years: Rs 140m in 2024/25 and Rs 121m in 2025/26 (EPS Rs 3.46) at a record coconut price of Rs 128.52 a nut. The first half of 2026/27 brought a loss of Rs 13m (EPS −Rs 0.38) as cost of sales rose 62% while revenue fell 3% in a severe drought. The balance sheet is strong: about Rs 427m of cash and deposits and no bank debt, so roughly Rs 9 a share is net cash after the Rs 3.00 dividend for 2025/26 (ex-dividend 1 October 2026). The big risk is the land: the three leases end in March 2028, November 2028 and August 2029, and one has never been signed by the Mahaweli Authority; the company expects renewal but hasn't started talks. At Rs 52.50 (last trade on 30 September 2026, from the Q2 report) the share trades at 27x trailing earnings of Rs 1.96, 15x the 2025/26 earnings and 2.4x NAV of Rs 21.91, yielding 5.7%. Four methods put fair value at about Rs 21.67: a business that earns around Rs 110m in a normal year is worth roughly Rs 0.8bn at the 16% return I ask, not Rs 1.8bn. Three of four business tests pass, so it counts as a good business, but the price is far too high: buy only up to Rs 18.42, strong buy under Rs 16.25.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFree cash flow DCF + net cash | 14.98 | 25.70 | 34.38 | 24.22\nP/E method | 12.00 | 25.15 | 40.00 | 24.17\nDividend model | 8.82 | 21.79 | 30.73 | 19.69\nResidual income | 11.13 | 19.12 | 28.40 | 18.58\nAverage | 11.73 | 22.94 | 33.38 | 21.67\n\nFair value Rs 21.67 (bear 30 / base 50 / bull 20). Buy price Rs 18.42 (15% below), strong buy Rs 16.25 (25% below).\n\nHow the business works: the estate harvests coconuts six times a year from about 74,000 palms on irrigated dry-zone land and sells them, mostly to desiccated coconut mills. Revenue depends on the crop (3.7–5.5m nuts a year over the last decade) and the nut price, which reached a record Rs 128.52 in 2025/26 as national output fell short of demand. Costs are mostly wages, fertiliser, irrigation and harvesting, so a poor crop hits profit hard, as in the first half of 2026/27.\n\nWhy the methods are so far below the price: in a normal year the company earns about Rs 110m (Rs 3.14 a share) including interest on its cash. At the 16% return I ask, that is worth about Rs 20–26 a share, plus or minus the cash. At Rs 52.50 the market pays 27x the last 12 months' earnings and 15x a record-price year.\n\nThe leases: all the land is leased from the Mahaweli Authority and the three leases end between March 2028 and August 2029. The company expects renewal; if they weren't renewed, shareholders would get roughly the cash, the teak and two or three more years of profit, about Rs 15 a share.\n\nDividends: Rs 3.00 for 2025/26 (ex-dividend 1 October 2026) and Rs 3.00 for 2024/25, about 87% of profit. After the first-half loss, a smaller dividend for 2026/27 is likely.\n\nBuy plan: 200 shares up to Rs 21.67, 150 up to Rs 18.42 and 150 up to Rs 16.25, about Rs 9,535 in total (average Rs 19.07), against Rs 26,250 at Rs 52.50. Not realistic soon: the lowest price since April 2024 was Rs 25.10.\n\nBusiness tests: 3 of 4 passed (returns, debt, cash; profit is not steady), so it's a good business at a price far too high: watch list (category 2).\n\nUncertain: the price is the last trade on 30 September 2026, before the dividend, because the CSE close couldn't be fetched; the site will show the daily close. The interim report doesn't explain the 62% rise in cost of sales. Dividend payable of about Rs 105m appears to sit in trade payables at 30 September 2026, inflating first-half operating cash flow. Return on equity for 2025/26 is 13.92% in the key highlights and 14% in the ten-year summary. Owner's note on the request ('.N00') looked like part of the code and was ignored."
+}
