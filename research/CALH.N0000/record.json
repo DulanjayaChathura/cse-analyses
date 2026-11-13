@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CALH.N0000",
+  "localFolder": null,
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "reports/CALH.N0000/2026-09-03_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Financial highlights (p. 8), CEO review (pp. 12–13), financial review (pp. 26–28), directors' report (p. 69), statements (pp. 112–118), Note 14 (p. 141), Note 21 (pp. 151–152), investor information (p. 192). Printed page numbers. Only two years are shown (listed May 2025); no five- or ten-year summary."
+    },
+    {
+      "file": "reports/CALH.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Printed page numbers."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 17.076,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Total income, group"
+        },
+        "feeIncome": {
+          "value": 2.534,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "netTradingIncome": {
+          "value": 6.655,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "fairValueGainLoss": {
+          "value": -1.518,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "profitBeforeTax": {
+          "value": 6.626,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "netProfit": {
+          "value": 3.607,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Attributable to shareholders; group profit Rs 4.228bn"
+        },
+        "eps": {
+          "value": 1.88,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 112 and Note 14 (p. 141)"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, cash flow (p. 118)",
+          "note": "Only a total is reported: Rs 2,042,187,568 paid by CALH (about Rs 1.07 a share on 1,914.5mn shares, worked out)"
+        },
+        "navPerShare": {
+          "value": 9.44,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "roe": {
+          "value": 21.08,
+          "unit": "%",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "totalAssets": {
+          "value": 111.771,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 114"
+        },
+        "totalEquity": {
+          "value": 20.595,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 114",
+          "note": "Parent Rs 18.066bn"
+        },
+        "debtToEquity": {
+          "value": 4.18,
+          "unit": "x",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "operatingCashFlow": {
+          "value": -0.65,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 117"
+        },
+        "sharesOutstanding": {
+          "value": 1914.549,
+          "unit": "",
+          "source": "Annual Report 2025/26, Note 14 (p. 141)",
+          "note": "Million shares"
+        }
+      }
+    },
+    {
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 14.979,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Total income, group"
+        },
+        "feeIncome": {
+          "value": 3.526,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Up 39%"
+        },
+        "netTradingIncome": {
+          "value": 3.436,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "fairValueGainLoss": {
+          "value": -1.773,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112"
+        },
+        "profitBeforeTax": {
+          "value": 4.196,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Segments: primary dealer Rs 2.9bn, asset management Rs 954mn, stockbroking Rs 820mn (CEO review, p. 13)"
+        },
+        "netProfit": {
+          "value": 2.418,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 112",
+          "note": "Attributable to shareholders; group profit Rs 2.697bn"
+        },
+        "eps": {
+          "value": 1.18,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 112 and Note 14 (p. 141)",
+          "note": "Weighted shares 2,046.2mn"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, cash flow (p. 118)",
+          "note": "Only a total is reported: Rs 2,072,049,345 paid by CALH (about Rs 1.00 a share on 2,072.0mn shares, worked out)"
+        },
+        "navPerShare": {
+          "value": 9.61,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "roe": {
+          "value": 12.66,
+          "unit": "%",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "totalAssets": {
+          "value": 103.941,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 114"
+        },
+        "totalEquity": {
+          "value": 22.02,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 114",
+          "note": "Parent Rs 19.916bn"
+        },
+        "debtToEquity": {
+          "value": 3.51,
+          "unit": "x",
+          "source": "Annual Report 2025/26, financial highlights (p. 8)"
+        },
+        "operatingCashFlow": {
+          "value": 2.63,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 117"
+        },
+        "sharesOutstanding": {
+          "value": 2072.049,
+          "unit": "",
+          "source": "Annual Report 2025/26, Note 14 (p. 141)",
+          "note": "Million shares; 157.5mn issued at Rs 10.00 in the May 2025 IPO"
+        },
+        "priceYearEnd": {
+          "value": 15.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, investor information (p. 192)",
+          "note": "Year range Rs 14.00–20.00"
+        },
+        "peYearEnd": {
+          "value": 12.7,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 192 and p. 112",
+          "note": "Worked out: Rs 15.00 ÷ Rs 1.18"
+        },
+        "caltStakeMarketValue": {
+          "value": 14.618,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Note 21 (pp. 151–152)",
+          "note": "Market value of the 86% stake in Capital Alliance PLC (CALT), 283.3mn shares"
+        }
+      }
+    },
+    {
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 2.014,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Total income, year-to-date; Rs 8.826bn a year earlier"
+        },
+        "feeIncome": {
+          "value": 1.627,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Year-to-date; Rs 1.629bn a year earlier"
+        },
+        "netTradingIncome": {
+          "value": -2.961,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Year-to-date; gain Rs 2.576bn a year earlier"
+        },
+        "fairValueGainLoss": {
+          "value": -0.332,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Year-to-date"
+        },
+        "profitBeforeTax": {
+          "value": -2.168,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Year-to-date; primary dealer −Rs 3.511bn, rest of group +Rs 1.343bn before tax (p. 17); CEO says Rs 1.5bn excluding CALT"
+        },
+        "netProfit": {
+          "value": -2.098,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Year-to-date, attributable; Q2 alone −Rs 0.240bn"
+        },
+        "eps": {
+          "value": -1.01,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 and Note 3.1 (p. 11)",
+          "note": "Year-to-date; Q2 −Rs 0.12"
+        },
+        "navPerShare": {
+          "value": 8.63,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 7"
+        },
+        "totalAssets": {
+          "value": 62.687,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7"
+        },
+        "totalEquity": {
+          "value": 19.587,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Parent Rs 17.872bn"
+        },
+        "repos": {
+          "value": 31.699,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 13"
+        },
+        "netDebt": {
+          "value": 39.201,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, Note 4 (p. 12)",
+          "note": "Interest-bearing borrowings Rs 40.490bn less cash Rs 1.289bn; gearing 2.00 (3.48 in March 2026). Company only: Rs 4.117bn, gearing 0.46"
+        },
+        "operatingCashFlow": {
+          "value": 7.334,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "Year-to-date; driven by selling government securities"
+        },
+        "sharesOutstanding": {
+          "value": 2072.049,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, Note 3 (p. 11)",
+          "note": "Million shares"
+        },
+        "publicHolding": {
+          "value": 14.75,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 18"
+        },
+        "priceQuarterEnd": {
+          "value": 12.2,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 18",
+          "note": "Quarter range Rs 12.00–14.20"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "19% / 17.5% / 16%",
+      "reason": "10-year bond about 12.4% plus about 5 points for a leveraged, rate-sensitive group with a growing fee business.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Long-run ROE and growth",
+      "value": "11% / 16% / 22%; growth 5% / 6% / 7%",
+      "reason": "Two audited years at 21% and 13%; fee businesses growing; base set between them.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Next 12 months ROE",
+      "value": "−6% / 4% / 12%",
+      "reason": "H1 2026/27 loss; second half depends on yields (which had fallen back by early November).",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Normalised EPS × P/E",
+      "value": "0.95 × 5 / 1.38 × 6.5 / 1.90 × 8",
+      "reason": "Long-run ROE × NAV Rs 8.63.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Payout",
+      "value": "60% / 65% / 70%",
+      "reason": "Dividends were 57% and 86% of profit in the two reported years.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Second-half 2026/27: does the primary dealer return to profit now that yields have fallen back, and does NAV stay above Rs 8?",
+    "Do the non-primary-dealer businesses keep earning about Rs 1.1bn a half?",
+    "Whether any dividend is declared for 2026/27, and whether a per-share figure is published.",
+    "Price and funding of the 51% Asia Frontier Capital acquisition; holding-company short-term loan of Rs 4.13bn.",
+    "Why income tax was Rs 432mn in a half with a pre-tax loss (tax on profitable subsidiaries; no group relief).",
+    "A current CSE closing price (the analysis used 30 September 2026)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add CALH.N0000). First analysis from the 2025/26 annual report and the September 2026 interim. Justified P/B, P/E on normalised earnings, dividend model and residual income; business tests 1 of 4 (category 3, avoid for now). Price is the 30 September 2026 close from the interim report because the CSE feed couldn't be reached. Dividend per share left null: only totals are reported. Only two audited years are available.",
+      "fairValue": 7.65,
+      "buyPrice": 6.5,
+      "strongBuyPrice": 5.75,
+      "priceAtTime": 12.2,
+      "archive": null
+    }
+  ]
+}
