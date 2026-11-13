@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "ticker": "UAL.N0000",
+  "company": {
+    "name": "Union Assurance PLC",
+    "sector": "Insurance",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "UAL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025 (audited)",
+      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 68.0,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 September 2026, Interim Q3 2026, p. 19",
+    "note": "The CSE close couldn't be fetched for this analysis (the share wasn't yet in the site's daily prices, cse.lk was not reachable, and no dated November 2026 quote was found on the web); the site's daily CSE close will replace this. 2026 range so far Rs 60.00–83.20 (quarterly reports); closed 2025 at Rs 77.30 and 2024 at Rs 61.90."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A steady, well-run life insurer, but the price is ahead of its earnings",
+    "text": "Union Assurance (UAL.N0000) is a life insurer, 90% owned by John Keells Holdings. Its profit comes mainly from a yearly surplus that the actuary releases from the life fund to shareholders, and that surplus has grown steadily: Rs 2.3bn (2022), Rs 2.8bn, Rs 3.0bn and Rs 3.4bn (2025). Premiums grew 19% in 2025 to Rs 25.75bn and 13% in January–September 2026, helped by a new exclusive bancassurance deal with Sampath Bank. Profit for 2025 was Rs 3.37bn (EPS Rs 5.72), down 10% after the sale of its Fairfirst stake. Nine-month 2026 profit was Rs 746m (EPS Rs 1.27, against Rs 1.32), because the surplus transfer comes at the year-end. The capital ratio is 215% against a 120% minimum. Book value fell to Rs 31.89 a share in September 2026, from Rs 39.66, because of the Rs 5.00 dividend and fair-value losses on bonds. At Rs 68.00 (last trade on 30 September 2026, from the Q3 report) it trades at 12.0x trailing earnings, 2.1x book, with a 7.4% dividend yield. Four methods put fair value at about Rs 53.60, so the price is about 27% above it. I'd buy at up to Rs 45.60 and treat under Rs 40.20 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "Returns around 15–20%, strong capital, profit every year from a steady surplus, and most profit paid as dividends.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "16% average 2021–2025",
+        "note": "Return on net assets 13.4% (2021), 18.5%, 19.6%, 15.6% and 14.3% (2025), Annual Report 2025, p. 354. Falling since 2023, so it's a borderline pass; about 16% on the last 12 months (estimated)."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (insurer)",
+        "pass": true,
+        "value": "CAR 215%",
+        "note": "Minimum 120% (December 2025; 264% a year earlier). No borrowings apart from a Rs 0.21bn overdraft."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year 2016–2025",
+        "note": "The life-fund surplus is set by the actuary and has risen every year since 2020. 2025 included the Fairfirst share of profit and capital-gains tax on its sale; quarters swing with fair-value gains and losses."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "87% payout (2025)",
+        "note": "Rs 2.95bn paid for 2025 (Rs 5.00 a share) against profit of Rs 3.37bn; 79% for 2024. No dividend was paid for 2022."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 53.6,
+    "buyPrice": 45.6,
+    "strongBuyPrice": 40.2,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 31.89,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 1.7x NAV and 9x base EPS). No embedded value is published, so the yearly life-fund surplus and normal earnings are the anchors."
+  },
+  "dividend": {
+    "perShare": 5.0,
+    "label": "final for 2025 (paid 2026)",
+    "source": "Annual Report 2025, p. 303–304; Interim Q3 2026, note 22",
+    "note": "Also Rs 5.00 for 2024. The company pays one final dividend a year, so none is declared yet for 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 31.89,
+      "unit": "Rs",
+      "note": "30 September 2026 (Rs 39.66 at December 2025)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.13,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 12.0,
+      "unit": "x",
+      "note": "EPS Rs 5.67, 12 months to September 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 14.3,
+      "unit": "%",
+      "note": "2025 (company figure: return on net assets)"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 7.4,
+      "unit": "%",
+      "note": "Rs 5.00 for 2025"
+    },
+    {
+      "id": "car",
+      "label": "Capital adequacy ratio",
+      "value": 215,
+      "unit": "%",
+      "note": "December 2025; minimum 120%"
+    },
+    {
+      "id": "gwpGrowth",
+      "label": "Premium growth",
+      "value": 13,
+      "unit": "%",
+      "note": "January–September 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 40.1,
+      "unit": "Rs bn",
+      "display": "~Rs 40bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "January–September 2026 (unaudited)",
+      "text": "Gross written premium up 13% to Rs 20.83bn (Q3 alone up 8% to Rs 7.44bn). Net investment income up 16% to Rs 10.54bn, but realised and fair-value results swung to a Rs 0.30bn loss from a Rs 2.71bn gain. Profit Rs 746m against Rs 776m (EPS Rs 1.27 against Rs 1.32); last year's figure was cut by Rs 313m of capital-gains tax on the Fairfirst sale. No life-fund surplus has been transferred yet: it comes at the year-end (Rs 3.4bn for 2025)."
+    },
+    {
+      "title": "Book value down 20% this year",
+      "text": "Equity fell from Rs 23.37bn to Rs 18.79bn (NAV Rs 39.66 → Rs 31.89): the Rs 2.95bn dividend and Rs 2.41bn of fair-value losses on available-for-sale bonds (mostly in the policyholder fund), against Rs 0.75bn of profit."
+    },
+    {
+      "title": "2025 (audited)",
+      "text": "Premium Rs 25.75bn (up 19%), new business up 26%. Surplus from the life fund Rs 3.4bn (Rs 3.0bn in 2024). Profit Rs 3.37bn (Rs 3.74bn), EPS Rs 5.72. Dividend Rs 5.00. CAR 215% (264%)."
+    },
+    {
+      "title": "Sampath partnership and Fairfirst sale",
+      "text": "An exclusive bancassurance deal with Sampath Bank (January 2025) lifted intangible assets to Rs 7.27bn and added future payments to other liabilities. The 22% stake in Fairfirst Insurance was sold in 2025 (Rs 2.64bn received)."
+    },
+    {
+      "title": "New accounting standards",
+      "text": "SLFRS 17 and SLFRS 9 are coming; the company is 'substantially ready' and doesn't expect a material effect on total equity at transition, but profit will be recognised differently."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          4.66,
+          6.38,
+          6.35,
+          5.72,
+          5.67
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          18.5,
+          19.6,
+          15.6,
+          14.3,
+          15.8
+        ],
+        "notes": [
+          "Return on net assets",
+          "Return on net assets",
+          "Return on net assets",
+          "Return on net assets",
+          "Estimated on average equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          5.98,
+          6.3,
+          9.75,
+          13.52,
+          12.0
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "At Rs 68.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0,
+          8.75,
+          5.0,
+          5.0,
+          null
+        ],
+        "notes": [
+          "None paid",
+          "Annual Report 2025, p. 354",
+          "For 2024",
+          "For 2025",
+          "Paid once a year; none yet for 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 31.89",
+      "reading": "2.1x book. Life insurers are usually worth more than book because profits on existing policies aren't counted, but Union Assurance doesn't publish an embedded value."
+    },
+    {
+      "method": "Return on equity",
+      "value": "14% (2025)",
+      "reading": "13–20% over five years; about 16% on the last 12 months on a smaller equity base. I assume 17% in a normal year."
+    },
+    {
+      "method": "P/E",
+      "value": "12.0x",
+      "reading": "On trailing EPS of Rs 5.67; 6.3x at end-2023 and 13.5x at end-2025."
+    },
+    {
+      "method": "Dividends",
+      "value": "7.4% yield",
+      "reading": "Rs 5.00 a year, about 80–90% of profit; room to grow with the surplus."
+    },
+    {
+      "method": "Life-fund surplus",
+      "value": "Rs 3.4bn (2025)",
+      "reading": "Grew about 14% a year from 2022 to 2025; the actuary reported a further Rs 11.6bn of surplus kept in the conventional fund before the transfer."
+    },
+    {
+      "method": "Capital",
+      "value": "CAR 215%",
+      "reading": "Down from 264% after the Sampath payment; still well above 120%."
+    }
+  ],
+  "models": [
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 45.0,
+      "base": 64.9,
+      "bull": 85.8,
+      "weighted": 63.1,
+      "comment": "Normal EPS of Rs 5.00 / 5.90 / 6.60 at 9 / 11 / 13 times (year-end P/E was 6.3x in 2023, 9.8x in 2024 and 13.5x in 2025)."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 33.4,
+      "base": 55.1,
+      "bull": 79.8,
+      "weighted": 53.5,
+      "comment": "Rs 4.50 / 5.00 / 5.50 a share, growing 3% / 7% / 9% for five years, then 4% / 6% / 7%."
+    },
+    {
+      "id": "dcf",
+      "name": "Life-fund transfer DCF",
+      "bear": 42.1,
+      "base": 63.5,
+      "bull": 91.3,
+      "weighted": 62.7,
+      "comment": "Yearly surplus transferred to shareholders of Rs 3.0bn / 3.6bn / 4.0bn, taxed at 30%, growing 4% / 8% / 11% for ten years, then 4% / 6% / 7%; plus shareholder-fund net assets less intangibles (Rs 9.26bn, Rs 15.71 a share)."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 25.5,
+      "base": 35.4,
+      "bull": 48.6,
+      "weighted": 35.1,
+      "comment": "Book value Rs 31.89; ROE moving to 13% / 17% / 21% over ten years; 85% payout. Understates a life insurer because the value of policies in force isn't on the balance sheet."
+    }
+  ],
+  "modelsNote": "An insurer, so like a bank: no cash-flow DCF of the whole business. Instead a DCF of the yearly surplus released to shareholders, plus P/E, dividends and residual income. Normal earnings assume a rising surplus transfer and shareholder-fund income of about Rs 1.4bn before tax, not fair-value gains.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "17.5%",
+        "base": "16%",
+        "bull": "15%"
+      },
+      {
+        "label": "Surplus transferred (2026)",
+        "bear": "Rs 3.0bn",
+        "base": "Rs 3.6bn",
+        "bull": "Rs 4.0bn"
+      },
+      {
+        "label": "Surplus growth (10 years)",
+        "bear": "4%",
+        "base": "8%",
+        "bull": "11%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "4–5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "13%",
+        "base": "17%",
+        "bull": "21%"
+      },
+      {
+        "label": "Normal EPS × P/E",
+        "bear": "5.00 × 9",
+        "base": "5.90 × 11",
+        "bull": "6.60 × 13"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 4.50",
+        "base": "Rs 5.00",
+        "bull": "Rs 5.50"
+      }
+    ],
+    "averages": {
+      "bear": 36.5,
+      "base": 54.8,
+      "bull": 76.4
+    },
+    "common": "10-year government bond about 12.4% plus 2.5–5 points for a life insurer (base 16%: steadier than most, with a strong parent). Normal EPS of Rs 5.90 is about Rs 3.5bn of profit: a Rs 3.6bn surplus plus about Rs 1.4bn of shareholder income, taxed at about 30%."
+  },
+  "sensitivity": {
+    "title": "Life-fund transfer DCF, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Surplus growth (10 years)",
+    "rows": [
+      "15%",
+      "16%",
+      "17.5%"
+    ],
+    "columns": [
+      "4%",
+      "8%",
+      "11%"
+    ],
+    "values": [
+      [
+        58.1,
+        69.1,
+        79.4
+      ],
+      [
+        54.0,
+        63.5,
+        72.5
+      ],
+      [
+        49.2,
+        57.1,
+        64.4
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Starting surplus Rs 3.6bn, long-term growth 6%. Today's Rs 68.00 needs the surplus to grow about 9–10% a year for ten years at a 16% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 53.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 45.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 40.2
+      }
+    ],
+    "averagePrice": 47.18,
+    "totalCost": 23590,
+    "note": "About Rs 23,590 in total, against Rs 34,000 at Rs 68.00.",
+    "realism": "Unlikely without a market fall: the 2026 low so far is Rs 60.00 and the low in April–June 2025 was Rs 49.00. The share closed 2023 at Rs 40.20 and 2024 at Rs 61.90, so these prices were last seen in 2024 or earlier. Even the first tier (Rs 53.60) is 11% below this year's low."
+  },
+  "changeMyView": {
+    "higher": [
+      "A 2026 surplus transfer well above Rs 3.6bn (it was Rs 3.4bn for 2025).",
+      "An embedded value or SLFRS 17 contractual service margin showing large future profits on existing policies.",
+      "Premium growth from the Sampath partnership staying above 15%.",
+      "A higher dividend for 2026."
+    ],
+    "lower": [
+      "A flat or smaller surplus transfer for 2026.",
+      "CAR falling much below 200%.",
+      "SLFRS 17 reducing equity or profit more than expected.",
+      "Rising lapses or claims on the fast-grown bancassurance book.",
+      "Tax disputes going against the company (Rs 0.94bn of VAT and SSCL assessments for 2024 are under appeal)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the interim reports to September 2026 (unaudited). The price used is the last trade on 30 September 2026 from the Q3 report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 27% above fair value of Rs 53.60.",
+    "Downside / upside": "Bear case -46% (Rs 36.5); bull case +12% (Rs 76.4).",
+    "What the price assumes": "The yearly surplus growing about 9–10% a year for ten years, or a P/E of about 11.5x on normal earnings.",
+    "Confidence": "Medium: the surplus is steady, but no embedded value is published and SLFRS 17 is coming.",
+    "Margin of safety": "Buy 15% below fair value (Rs 45.60), strong buy 25% below (Rs 40.20)."
+  },
+  "Business and moat": {
+    "What it does": "Life insurance only, through about 95 branches, an agency force of over 3,000, five bancassurance partners (exclusive with Sampath, Nations Trust and others) and the Clicklife app.",
+    "Moat": "Moderate to good: one of the larger private life insurers, the John Keells name, and exclusive bank partnerships that are hard for rivals to win."
+  },
+  "Management and governance": {
+    "Ownership": "John Keells Holdings 90.0%; public float 10.0% (3,318 public shareholders, September 2026).",
+    "Related parties": "Investments in John Keells group companies (Rs 0.78bn of shares at September 2026) and shared services with the group.",
+    "Rating": "Good"
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: rising bond yields cut book value through fair-value losses (Rs 2.41bn in 2026) but lift investment income.",
+    "Share market": "Moderate: Rs 11.7bn of investments held at fair value through profit or loss (September 2026); their swings drove the 2026 fair-value losses.",
+    "Tax": "Risk: VAT and SSCL assessments for 2024 (Rs 0.94bn with penalties) are under appeal.",
+    "Liquidity": "Low: only a 10% free float."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A steady, growing life insurer with a strong parent, bought below about 9x normal earnings.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 69.68); CAR below 160%; surplus transfer cut."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 45.60 or lower",
+    "Strong buy": "Rs 40.20 or lower",
+    "Sell trigger": "Rs 69.68 or higher"
+  },
+  "Key ratios (five-year trend)": {
+    "Gross written premium": "2021 Rs 15.41bn · 2022 Rs 16.68bn · 2023 Rs 18.87bn · 2024 Rs 21.65bn · 2025 Rs 25.75bn",
+    "Surplus from the life fund": "Rs 1.6bn · Rs 2.3bn · Rs 2.8bn · Rs 3.0bn · Rs 3.4bn",
+    "Profit after tax": "Rs 2.05bn · Rs 2.75bn · Rs 3.76bn · Rs 3.74bn · Rs 3.37bn",
+    "Return on net assets": "13.4% · 18.5% · 19.6% · 15.6% · 14.3%"
+  },
+  "What this analysis doesn't cover": [
+    "Embedded value or value of new business (not published).",
+    "The SLFRS 17 transition figures (not yet disclosed).",
+    "The exact cost and term of the Sampath Bank partnership (not extracted).",
+    "A November 2026 CSE price."
+  ],
+  "fullText": "Union Assurance (UAL.N0000) is a life insurer, 90% owned by John Keells Holdings. Its profit comes mainly from a yearly surplus that the actuary releases from the life fund to shareholders, and that surplus has grown steadily: Rs 2.3bn (2022), Rs 2.8bn, Rs 3.0bn and Rs 3.4bn (2025). Premiums grew 19% in 2025 to Rs 25.75bn and 13% in January–September 2026, helped by a new exclusive bancassurance deal with Sampath Bank. Profit for 2025 was Rs 3.37bn (EPS Rs 5.72), down 10% after the sale of its Fairfirst stake. Nine-month 2026 profit was Rs 746m (EPS Rs 1.27, against Rs 1.32), because the surplus transfer comes at the year-end. The capital ratio is 215% against a 120% minimum. Book value fell to Rs 31.89 a share in September 2026, from Rs 39.66, because of the Rs 5.00 dividend and fair-value losses on bonds. At Rs 68.00 (last trade on 30 September 2026, from the Q3 report) it trades at 12.0x trailing earnings, 2.1x book, with a 7.4% dividend yield. Four methods put fair value at about Rs 53.60, so the price is about 27% above it. I'd buy at up to Rs 45.60 and treat under Rs 40.20 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nP/E method | 45.0 | 64.9 | 85.8 | 63.1\nDividend model | 33.4 | 55.1 | 79.8 | 53.5\nLife-fund transfer DCF | 42.1 | 63.5 | 91.3 | 62.7\nResidual income | 25.5 | 35.4 | 48.6 | 35.1\nAverage | 36.5 | 54.8 | 76.4 | 53.6\n\nHow the profit works: most of the profit is a yearly transfer of surplus from the life fund, certified by the actuary at the year-end. That's why the nine-month profit (Rs 746m) looks small next to the full-year 2025 profit of Rs 3.37bn. The transfer has grown from Rs 1.6bn (2021) to Rs 3.4bn (2025), and the actuary reported a further Rs 11.6bn of surplus kept in the conventional fund before the transfer.\n\nWhy the price looks high: with a 16% cost of equity (10-year bond about 12.4% plus about 3.5 points) the methods give about Rs 35–64 in the base case. Today's Rs 68.00 needs the surplus to grow about 9–10% a year for a decade, or a P/E of 11.5x on normal earnings of about Rs 5.90. Possible, given 19% premium growth and the Sampath deal, but it leaves no margin of safety.\n\nExpected return at Rs 68.00: dividend about 7.4% plus growth of about 7% gives about 14% a year, below the 16% I ask.\n\nBuy plan: 200 shares up to Rs 53.60, 150 up to Rs 45.60 and 150 up to Rs 40.20, about Rs 23,590 in total (average Rs 47.18), against Rs 34,000 at Rs 68.00. This year's low is Rs 60.00, so the plan needs a market fall.\n\nBusiness tests: 4 of 4 passed (returns are a borderline pass at about 16% on average), so it's a good business at a high price: watch list (category 2).\n\nUncertain: the price is the last trade on 30 September 2026 because the CSE close couldn't be fetched; the site will show the daily close. No embedded value is published."
+}

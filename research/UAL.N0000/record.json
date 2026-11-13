@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "ticker": "UAL.N0000",
+  "localFolder": null,
+  "updated": "2026-11-13",
+  "reportsRead": [
+    {
+      "file": "reports/UAL.N0000/2026-03-06_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual Report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-13",
+      "note": "Key figures (pp. 76–77), MD&A (pp. 82–83), actuary's report (p. 246), EPS and dividend notes (pp. 303–304), Decade at a Glance (pp. 352–354). Page numbers are the printed page numbers."
+    },
+    {
+      "file": "reports/UAL.N0000/2026-05-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+      "title": "Interim Financial Statements, quarter to 31 March 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Headline figures and share information only."
+    },
+    {
+      "file": "reports/UAL.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim Financial Statements, quarter to 30 June 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Headline figures and share information only."
+    },
+    {
+      "file": "reports/UAL.N0000/2026-11-03_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim Financial Statements, nine months to 30 September 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-13",
+      "note": "Read in full. Page numbers are the printed page numbers."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 15.406,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "lifeSurplusTransfer": {
+          "value": 1.6,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "netProfit": {
+          "value": 2.054,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "eps": {
+          "value": 3.48,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "navPerShare": {
+          "value": 26.23,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "roe": {
+          "value": 13.44,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Return on net assets"
+        },
+        "peYearEnd": {
+          "value": 8.44,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "totalEquity": {
+          "value": 15.455,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "sharesOutstanding": {
+          "value": 58.929,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Shares rose tenfold in 2022; the decade table restates EPS but not 2021 NAV, price or DPS"
+        },
+        "dividendPerShare": {
+          "value": 22.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Before the 2022 tenfold increase in shares"
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 16.675,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "lifeSurplusTransfer": {
+          "value": 2.3,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "netProfit": {
+          "value": 2.747,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "eps": {
+          "value": 4.66,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "navPerShare": {
+          "value": 24.12,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "roe": {
+          "value": 18.52,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Return on net assets"
+        },
+        "peYearEnd": {
+          "value": 5.98,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "totalEquity": {
+          "value": 14.214,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "sharesOutstanding": {
+          "value": 589.286,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "dividendPerShare": {
+          "value": 0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Shown as '-' (none)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 18.867,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "lifeSurplusTransfer": {
+          "value": 2.8,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "netProfit": {
+          "value": 3.758,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "eps": {
+          "value": 6.38,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "navPerShare": {
+          "value": 41.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "roe": {
+          "value": 19.59,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Return on net assets"
+        },
+        "peYearEnd": {
+          "value": 6.3,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "totalEquity": {
+          "value": 24.161,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "sharesOutstanding": {
+          "value": 589.286,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "dividendPerShare": {
+          "value": 8.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 21.647,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "lifeSurplusTransfer": {
+          "value": 3.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "netProfit": {
+          "value": 3.741,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "eps": {
+          "value": 6.35,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "navPerShare": {
+          "value": 40.16,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "roe": {
+          "value": 15.64,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Return on net assets"
+        },
+        "peYearEnd": {
+          "value": 9.75,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "totalEquity": {
+          "value": 23.668,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "sharesOutstanding": {
+          "value": 589.286,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "dividendPerShare": {
+          "value": 5.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 25.75,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76",
+          "note": "Up 19%"
+        },
+        "netWrittenPremium": {
+          "value": 24.052,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76"
+        },
+        "annualisedNewBusinessPremium": {
+          "value": 10.082,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76",
+          "note": "Up 26%"
+        },
+        "lifeSurplusTransfer": {
+          "value": 3.4,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76"
+        },
+        "netProfit": {
+          "value": 3.37,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76",
+          "note": "Down 10%: Fairfirst sold, capital-gains tax of Rs 0.31bn"
+        },
+        "eps": {
+          "value": 5.72,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 303"
+        },
+        "dividendPerShare": {
+          "value": 5.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 303–304",
+          "note": "Final, paid 2026"
+        },
+        "navPerShare": {
+          "value": 39.66,
+          "unit": "Rs",
+          "source": "Annual Report 2025, p. 77"
+        },
+        "roe": {
+          "value": 14.3,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Return on net assets; 14% in the key-figures table, p. 77"
+        },
+        "peYearEnd": {
+          "value": 13.52,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Price Rs 77.30"
+        },
+        "totalEquity": {
+          "value": 23.373,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76"
+        },
+        "car": {
+          "value": 215,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 246 (actuary's report)",
+          "note": "Minimum 120%; 264% in 2024"
+        },
+        "operatingCashFlow": {
+          "value": 16.89,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 76",
+          "note": "Cash generated from operating activities (mostly policyholder money)"
+        },
+        "intangibleAssets": {
+          "value": 7.275,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)",
+          "note": "Mainly the exclusive Sampath Bank partnership (p. 83)"
+        },
+        "sharesOutstanding": {
+          "value": 589.286,
+          "unit": "mn",
+          "source": "Annual Report 2025, p. 354 (Decade at a Glance)"
+        },
+        "lifeFundSurplusRetained": {
+          "value": 11.611,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 246 (actuary's report)",
+          "note": "Surplus in conventional business before shareholder transfer"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 6.677,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026",
+          "note": "Year to date"
+        },
+        "netProfit": {
+          "value": 0.266,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026",
+          "note": "Year to date; no life-fund surplus transferred yet (comes at year-end)"
+        },
+        "eps": {
+          "value": 0.45,
+          "unit": "Rs",
+          "source": "Interim Q1 2026",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 34.09,
+          "unit": "Rs",
+          "source": "Interim Q1 2026"
+        },
+        "totalEquity": {
+          "value": 20.088,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 13.39,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026",
+          "note": "Year to date"
+        },
+        "netProfit": {
+          "value": 0.504,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026",
+          "note": "Year to date; no life-fund surplus transferred yet (comes at year-end)"
+        },
+        "eps": {
+          "value": 0.86,
+          "unit": "Rs",
+          "source": "Interim Q2 2026",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 32.4,
+          "unit": "Rs",
+          "source": "Interim Q2 2026"
+        },
+        "totalEquity": {
+          "value": 19.09,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 20.827,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Year to date"
+        },
+        "netProfit": {
+          "value": 0.746,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Year to date; no life-fund surplus transferred yet (comes at year-end)"
+        },
+        "eps": {
+          "value": 1.27,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Year to date"
+        },
+        "navPerShare": {
+          "value": 31.89,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 19"
+        },
+        "totalEquity": {
+          "value": 18.792,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 6"
+        },
+        "netInvestmentIncome": {
+          "value": 10.54,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Year to date, up 16%"
+        },
+        "realisedAndFairValueGains": {
+          "value": -0.3,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 2",
+          "note": "Year to date (9M 2025: +2.706)"
+        },
+        "operatingCashFlow": {
+          "value": 13.349,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 9",
+          "note": "Year to date"
+        },
+        "sharesOutstanding": {
+          "value": 589.286,
+          "unit": "mn",
+          "source": "Interim Q3 2026, p. 19"
+        },
+        "intangibleAssets": {
+          "value": 7.125,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 6"
+        },
+        "shareholderFundEquity": {
+          "value": 15.94,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 14"
+        },
+        "quarterProfit": {
+          "value": 0.242,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, p. 4",
+          "note": "Q3 alone (Q3 2025: loss of 0.027 after capital-gains tax)"
+        },
+        "priceLastTraded": {
+          "value": 68.0,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, p. 19",
+          "note": "30 Sep 2026; quarter range 67.90–75.60"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Cost of equity",
+      "value": "17.5% / 16% / 15%",
+      "reason": "10-year bond about 12.4% plus 2.5–5 points; steady actuarial surplus and JKH parent.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Surplus transferred in 2026",
+      "value": "Rs 3.0bn / 3.6bn / 4.0bn",
+      "reason": "Rs 3.4bn for 2025, growing about 14% a year since 2022; bear assumes a cut after CAR fell to 215%.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Surplus growth (10 years) and long-term growth",
+      "value": "4%/4% · 8%/6% · 11%/7%",
+      "reason": "Premiums grew 15–19% a year in 2024–2025 and 13% in 2026 so far.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Normal EPS and P/E",
+      "value": "Rs 5.00 × 9 / 5.90 × 11 / 6.60 × 13",
+      "reason": "Surplus plus about Rs 1.4bn shareholder income before tax at about 30% tax; year-end P/E 6.3–13.5x in 2023–2025.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Dividend per share",
+      "value": "Rs 4.50 / 5.00 / 5.50",
+      "reason": "Rs 5.00 for both 2024 and 2025.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Long-run ROE (residual income)",
+      "value": "13% / 17% / 21%",
+      "reason": "Return on net assets 13–20% in 2021–2025.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Shareholder-fund net assets less intangibles",
+      "value": "Rs 9.26bn",
+      "reason": "Shareholder-fund equity Rs 15.94bn less Rs 6.68bn intangibles held outside the life fund (Rs 7.12bn total less Rs 0.45bn in the life fund), Sep 2026.",
+      "since": "2026-11-13"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-13"
+    }
+  ],
+  "openQuestions": [
+    "Size of the 2026 life-fund surplus transfer (Rs 3.4bn for 2025) and full-year EPS.",
+    "Final dividend for 2026 (Rs 5.00 for 2025).",
+    "CAR at December 2026 (215% a year earlier).",
+    "SLFRS 17 / SLFRS 9 transition effect on equity and any contractual service margin disclosed.",
+    "Outcome of the 2024 VAT and SSCL assessments (Rs 0.94bn with penalties).",
+    "Premium growth from the Sampath Bank partnership."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-13",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add UAL.N00; the note '.N00' was only the rest of the code). First analysis from the 2025 annual report and the three 2026 quarterly reports. P/E, dividend model, life-fund surplus DCF and residual income; business tests 4 of 4 (category 2, watch list). Price is the 30 Sep 2026 last trade from the Q3 report because the CSE close couldn't be fetched. Not found: embedded value, SLFRS 17 transition figures.",
+      "fairValue": 53.6,
+      "buyPrice": 45.6,
+      "strongBuyPrice": 40.2,
+      "priceAtTime": 68.0,
+      "archive": null
+    }
+  ]
+}
