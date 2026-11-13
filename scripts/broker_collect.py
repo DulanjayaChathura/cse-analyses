@@ -34,15 +34,20 @@ LAST_ID = INBOX / "last_update_id.txt"
 MAX_FILE = 20 * 1024 * 1024        # the Bot API can't download larger files
 OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳", "⚠️")   # messages this site (and the listener) posts itself
 # "/summary", "/summary12", "/summary-12", "/summary 12", "/summary@SomeBot": a summary command.
-COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$", re.IGNORECASE)
+# Add " redo" ("/summary12 redo") to rewrite that day's summary from all its posts.
+COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?(?:\s+(redo))?$", re.IGNORECASE)
 
 
 def command_of(text):
-    """{"day": 12} for "/summary12", {"day": None} for "/summary", else None."""
+    """{"day": 12} for "/summary12", {"day": None} for "/summary", {"day": 12, "redo": True}
+    for "/summary12 redo", else None."""
     m = COMMAND.match(text.strip())
     if not m:
         return None
-    return {"day": int(m.group(1)) if m.group(1) else None}
+    out = {"day": int(m.group(1)) if m.group(1) else None}
+    if m.group(2):
+        out["redo"] = True
+    return out
 
 
 def colombo_time(ts):

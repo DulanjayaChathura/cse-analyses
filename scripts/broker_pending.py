@@ -8,6 +8,9 @@ Each command covers the posts between the previous summary command and itself:
   /summary12    → summary filed under the 12th of the command's month
                   (or of the previous month, if the 12th is still to come)
 
+"/summary12 redo" (or "/summary redo") rewrites that day's summary from scratch: it covers the
+same new posts plus every post already summarised into that day ("redo": true in the output).
+
 A command is done once it is recorded in inbox/summary_commands.json (written by
 --done below; also accepted: its id in the "commands" list of a broker/<date>.json file).
 The first command ever (no earlier command) covers every post after the newest post
@@ -39,6 +42,11 @@ def load_messages():
 
 
 DONE = ROOT / "inbox" / "summary_commands.json"
+
+
+def day_ids(date):
+    """Message ids already summarised into broker/<date>.json."""
+    return set(read_json(ROOT / "broker" / f"{date}.json", {}).get("messageIds") or []) if date else set()
 
 
 def load_done():
@@ -84,6 +92,10 @@ def pending():
             start = max([x for x in summarised if x < cmd["id"]], default=0)
         window = [p for p in posts if start < p["id"] < cmd["id"] and p["id"] not in summarised]
         date, note = target_date(cmd)
+        redo = bool((cmd.get("command") or {}).get("redo"))
+        if redo:
+            earlier = day_ids(date)
+            window = sorted([p for p in posts if p["id"] in earlier] + window, key=lambda p: p["id"])
         out.append({
             "commandId": cmd["id"],
             "command": cmd["text"].strip(),
@@ -91,6 +103,7 @@ def pending():
             "date": date,
             "dateNote": note,
             "afterCommandId": commands[i - 1]["id"] if i > 0 else None,
+            "redo": redo,
             "messageIds": [p["id"] for p in window],
             "posts": [{"id": p["id"], "folder": p["folder"], "time": p["time"]} for p in window],
         })
@@ -119,7 +132,8 @@ def main():
         if not result:
             print("No pending /summary commands.")
         for r in result:
-            print(f"{r['command']} (message {r['commandId']}, {r['commandTime']}) → broker/{r['date']}.json: "
+            print(("REDO (rewrite the whole day from these posts) " if r["redo"] else "") +
+                  f"{r['command']} (message {r['commandId']}, {r['commandTime']}) → broker/{r['date']}.json: "
                   f"{len(r['messageIds'])} post(s) {r['messageIds']}" + (f"  NOTE: {r['dateNote']}" if r["dateNote"] else ""))
         return 0
     print(json.dumps({"pending": result}, indent=2, ensure_ascii=False))

@@ -73,6 +73,7 @@ Broker messages (HNB Stockbrokers, forwarded from WhatsApp) are posted to the Te
 The owner asks for a summary by posting a command in the channel:
 - `/summary`: summarise every post since the previous summary command; file it under the command's own date.
 - `/summary12` (also `/summary-12`, `/summary 12`): the same posts, filed under the 12th of the command's month (the previous month if the 12th hasn't come yet).
+- `/summary12 redo` (or `/summary redo`): rewrite that day's summary from scratch, from every post already in it plus the new ones. `broker_pending.py` marks it `REDO` and lists all those posts.
 
 The collector saves these commands with a `"command"` mark. They divide the posts: each command covers the posts after the previous command and before itself. Never treat a command as broker content.
 
@@ -82,7 +83,7 @@ To write the summaries:
 3. For each pending command, in order:
    - If it covers no posts, run `python scripts/broker_pending.py --done <commandId> none 0` and move on.
    - Otherwise read every text and look at every image in its posts (recommendation tables, market snapshot, dividend cards, news). Never invent a figure; if one can't be read, leave it out and say so in `note`.
-   - Write `broker/<date>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages. If the file already exists, merge the new posts into it. Add the message ids to `messageIds` and the command's id to `commands`.
+   - Write `broker/<date>.json` following `docs/broker-format.md`: highlights first, then market, every broker call (full CSE codes), dividends, news. Paraphrase; don't copy long passages. If the file already exists, merge the new posts into it, except for a `REDO` command: then write the file from scratch from the listed posts (keep only its earlier `commands` list). Add the message ids to `messageIds` and the command's id to `commands`.
    - Run `python scripts/broker_pending.py --done <commandId> <date> <number of posts>`.
 4. Run `python scripts/build_site.py`, commit to `main` and push. The build publishes the page and posts the short version to Telegram.
 5. Don't change any company's analysis because of a broker call. Mention big disagreements in the highlights instead.

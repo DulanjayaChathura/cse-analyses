@@ -28,7 +28,7 @@
  * After saving the settings, open https://<this worker's address>/setup?key=<WEBHOOK_SECRET>
  * once in a browser. It connects the helper bot to this worker.
  */
-const COMMAND = /^\/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?$/i;
+const COMMAND = /^\/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?(?:\s+(redo))?$/i;
 const RESEARCH = /^\/(update|add|redo)(?:@\w+)?\s+\S/i;
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
 
@@ -67,12 +67,12 @@ export default {
     if (!m) return new Response("ignored");
 
     // Answer Telegram at once; do the work in the background.
-    ctx.waitUntil(start(env, post, text, m[1] ? Number(m[1]) : null));
+    ctx.waitUntil(start(env, post, text, m[1] ? Number(m[1]) : null, Boolean(m[2])));
     return new Response("ok");
   },
 };
 
-async function start(env, post, text, day) {
+async function start(env, post, text, day, redo) {
   const repo = env.REPO || "DulanjayaChathura/cse-analyses";
   const results = [];
 
@@ -121,7 +121,7 @@ async function start(env, post, text, day) {
   const target = day ? `for the ${ordinal(day)}` : "for today";
   const ok = results.every((x) => !x.includes("failed"));
   const msg = ok
-    ? `${REPLY_PREFIX} Summary started ${target}. It will appear on the site and here in about 10–30 minutes.`
+    ? `${REPLY_PREFIX} Summary ${redo ? "rewrite" : ""} started ${target}`.replace("  ", " ") + `. It will appear on the site and here in about 10–30 minutes.`
     : `${REPLY_PREFIX} Summary ${target}: ${results.join("; ")}.`;
   await telegram(env, "sendMessage", {
     chat_id: post.chat.id,
