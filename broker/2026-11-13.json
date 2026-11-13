@@ -2,32 +2,85 @@
  "schemaVersion": 1,
  "date": "2026-11-13",
  "source": "HNB Stockbrokers",
- "posts": 2,
+ "posts": 10,
  "messageIds": [
   91,
-  92
+  92,
+  106,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115
  ],
  "commands": [
-  93
+  93,
+  116
  ],
  "callsPriceDate": null,
- "note": "Only two posts. Message 91 is the owner's text 'summary13' (a command typed without the slash), not broker content, so nothing is summarised from it. Message 92 is HNB Stockbrokers' sector heat map for the 12 Nov 2026 close, forwarded from 'cse stock'; it appears to be the same heat map already covered in the 12 Nov summary. It shows only one-day price changes (tile size = market cap, companies over Rs 5bn), so there are no index levels, turnover, foreign flows, broker ratings, targets or dividends to report. Percentages on the smallest tiles (e.g. APLA, COCO, RHL, LGL, CHL) are too small to read and are left out.",
+ "note": "Merged from two /summary13 commands (93 and 116). Message 91 ('summary13', typed without the slash) and message 106 ('Research on request') are not broker content, so nothing is summarised from them. Messages 109, 110 and 114 arrived with no text and no saved file (probably media the collector could not store), so their content could not be read and is left out. Message 92 is the heat map for the 12 Nov close (already in the 12 Nov summary); message 112 is the heat map for the 13 Nov close. Heat maps show only one-day price changes for companies over Rs 5bn, so there are no index levels, turnover or foreign flows; percentages on the smallest tiles (e.g. APLA, COCO, ALUM, RHL, LGL, CHL, JAT) are too small to read and are left out. No broker ratings or price targets were posted, so there is nothing to compare with the site's fair values. The Dipped Products card shows a 'Share Price' of Rs 59.70 for the latest quarter (Rs 66.90 a year earlier) beside a last close of Rs 71.10 on 12 Nov; the 59.70 is likely the quarter-end price, as the card does not say.",
  "highlights": [
-  "A quiet day for broker content: the only broker post was the sector heat map for the 12 Nov close, repeating what the 12 Nov summary already covered.",
-  "Telecom, materials and finance led: Sri Lanka Telecom rose 8.1%, Ceylon Tea Services 5.4%, LOLC Finance 4.1% and Tokyo Cement 3.3%; Dialog gained 0.6%.",
-  "Banks were mixed and flat: HNB +0.37%, Commercial Bank +0.22%, Sampath unchanged, while NTB fell 0.45% and DFCC 1.21%.",
-  "No new broker ratings, targets or dividend cards, so there is nothing to set against the site's fair values."
+  "A weak day on 13 Nov: banks fell (HNB −1.88%, Sampath −1.91%, NDB and NTB −1.29%, DFCC −2.80%) with Commercial Bank flat, and John Keells slipped 1.52%; Dialog (+0.40%) and Ceylon Tobacco (+1.05%) held up.",
+  "Dipped Products' September quarter: revenue Rs 25.3bn (+19.5% year on year) and EPS Rs 2.53 (+64.4%), its best quarter in two years; P/E 9.5x and P/B 1.15x at Rs 71.10. The shares rose 3.94% on 13 Nov.",
+  "Ceylon Tobacco declared a third interim dividend of Rs 41.00 (XD 23 Nov, paid 11 Dec); the broker puts the trailing dividend yield at 8.9% at Rs 1,809.50.",
+  "2027 Budget: tax relief for the middle class and record capital spending; the President said public debt should fall to 87% of GDP by 2032, better than the earlier 95% target.",
+  "No new broker ratings or targets, so nothing to set against the site's fair values."
  ],
  "market": {},
  "calls": [],
- "dividends": [],
+ "dividends": [
+  {
+   "code": "CTC.N0000",
+   "name": "Ceylon Tobacco Company PLC",
+   "dps": 41.0,
+   "type": "Third interim",
+   "price": 1809.5,
+   "yieldPct": 8.9,
+   "xd": "2026-11-23",
+   "pay": "2026-12-11"
+  }
+ ],
  "news": [
+  {
+   "title": "Dipped Products: Q2 2026/27 results",
+   "text": "Revenue Rs 25,338mn against Rs 21,196mn a year earlier (+19.5%), up 1.25% on the June quarter. EPS Rs 2.53 against Rs 1.54 (+64.4%), up from Rs 2.06 in the June quarter. The broker's card shows a trailing P/E of 9.53x and P/B of 1.15x at the 12 Nov close of Rs 71.10."
+  },
+  {
+   "title": "Sector heat map, 13 Nov close",
+   "text": "Gainers among larger companies: DIPD +3.94%, CFLB +3.97%, SPEN +3.60%, AHPL +2.00%, LOFC +1.96%, GLAS +1.19%, CTC +1.05%, PKME +1.03%. Biggest falls: RICH −6.21%, PLR −4.48%, CFVF −4.30%, CDB −4.29%, BIL −4.00%, JINS −3.13%, DFCC −2.80%, DOCK −2.68%, ACL −2.64%, WIND −2.51%, HNB.X −2.43%, SINS −2.40%, CIC −2.37%."
+  },
+  {
+   "title": "Companies analysed on this site, 13 Nov",
+   "text": "PickMe +1.03%, Access Engineering +0.71%, Ceylon Cold Stores +0.60%, Distilleries +0.52%, Dialog +0.40%; Commercial Bank and Tokyo Cement unchanged; Hemas −0.30%, Aitken Spence Hotels −0.58%, Hayleys −0.63%, Central Finance −1.40%, John Keells −1.52%, PARQ −1.59%, Vallibel Finance −1.77%, HNB −1.88%, Sampath −1.91%, Lanka Milk Foods −2.18%, CIC −2.37%, Singer −2.40%, ACL Cables −2.64%, Janashakthi Insurance −3.13%."
+  },
+  {
+   "title": "2027 Budget",
+   "text": "The President, also finance minister, presented the government's third budget: middle-class tax relief, record capital spending, and a forecast that public debt falls to 87% of GDP by 2032 (earlier target 95%)."
+  },
+  {
+   "title": "Private credit",
+   "text": "Private-sector credit reached Rs 2.1tn in the first nine months of 2026, with short-term loans taking a larger share; lawmakers asked whether enough is going into new investment and capacity."
+  },
+  {
+   "title": "Trade and exports",
+   "text": "Sri Lanka is seeking a new free trade agreement with China, and officials reviewed progress towards the US$5bn ICT/BPM export target for 2030."
+  },
+  {
+   "title": "Hayleys Solar",
+   "text": "Hayleys Solar opened what it calls Sri Lanka's first 24/7 renewable energy operations centre, monitoring renewable assets from one digital platform."
+  },
+  {
+   "title": "Global",
+   "text": "India is buying more Gulf crude as Russian oil loses its price advantage; US shares closed lower as Nvidia fell after news of its CEO's exit outweighed gains in energy stocks."
+  },
   {
    "title": "Sector heat map, 12 Nov close",
    "text": "Biggest gains among larger companies: SLTL +8.11%, CTEA +5.39%, LOFC +4.08%, TKYO +3.28%, CDB +2.94%, GREG +2.86%, WIND +2.31%. Biggest falls: SFCL −1.94%, AHPL −1.77%, AHUN −1.61%, CFVF −1.48%, LIOC −1.35%, SFIN −1.34%, JAT −1.27%, DFCC −1.21%, CCS −0.99%."
   },
   {
-   "title": "Companies analysed on this site",
+   "title": "Companies analysed on this site, 12 Nov",
    "text": "Moves on the heat map: Tokyo Cement +3.28%, PARQ (Swisstek) +2.39%, CIC Holdings +1.72%, ACL Cables +1.71%, PickMe (PKME) +1.04%, Access Engineering +0.71%, Vallibel Finance +0.67%, Hemas +0.61%, Dialog +0.60%, Central Finance +0.43%, HNB +0.37%, Singer +0.25%, Commercial Bank +0.22%; John Keells, Hayleys and Sampath unchanged; JAT Holdings −1.27% and Aitken Spence Hotel Holdings −1.61%."
   }
  ]
