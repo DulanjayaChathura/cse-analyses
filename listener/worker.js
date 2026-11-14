@@ -12,6 +12,12 @@
  * reports and starts the "Research on request" Claude task; that workflow replies in
  * the channel itself (within about a minute). This worker replies only if GitHub
  * can't be reached.
+ * A plain reply (e.g. just "update all", or no text at all) to one of the "New report
+ * on the CSE" announcements (report_watch.py) is read the same way: every ticker code
+ * in parentheses in the announcement is pulled out and turned into one /update (or
+ * /add, /redo, /redo … full if the reply says so) for all of them. A reply that says
+ * anything else (a real note) is left alone — use an explicit /update CODE1 CODE2 ...
+ * for that.
  * Every other post is ignored. The main bot keeps collecting posts as before.
  *
  * Settings (Cloudflare → the worker → Settings → Variables and Secrets):
@@ -30,6 +36,8 @@
  */
 const COMMAND = /^\/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?(?:\s+(redo))?$/i;
 const RESEARCH = /^\/(update|add|redo)(?:@\w+)?\s+\S/i;
+const TICKER_IN_PARENS = /\(([A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4})\)/g;
+const REPLY_ACK = /^(all|please|pls|ok(ay)?|yes|go(\s+ahead)?|do\s*it|k|full)?$/i;
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
 
 export default {
@@ -59,6 +67,12 @@ export default {
     const post = update.channel_post;
     if (!post || !sameChat(post.chat || {}, env.CHANNEL)) return new Response("ignored");
     const text = (post.text || "").trim();
+
+    const replyText = replyCommand(post);
+    if (replyText) {
+      ctx.waitUntil(research(env, post, replyText));
+      return new Response("ok");
+    }
     if (RESEARCH.test(text)) {
       ctx.waitUntil(research(env, post, text));
       return new Response("ok");
@@ -158,6 +172,30 @@ async function research(env, post, text) {
       disable_notification: true,
     });
   }
+}
+
+// A plain reply ("update all", "", "redo full", ...) to a message listing ticker codes
+// in parentheses — e.g. a "New report on the CSE" announcement — becomes one /update
+// (or /add, /redo) for every code in it. Returns null if this isn't that: no codes in
+// the original message, or the reply says something more than a short acknowledgement
+// (a real note needs an explicit /update CODE1 CODE2 ... instead, so it isn't guessed at).
+function replyCommand(post) {
+  const orig = post.reply_to_message;
+  if (!orig || !orig.text) return null;
+  const codes = [...new Set([...orig.text.matchAll(TICKER_IN_PARENS)].map((m) => m[1]))];
+  if (!codes.length) return null;
+
+  let rest = (post.text || "").trim().replace(/^(please|pls)\s+/i, "");
+  let verb = "update";
+  const vm = rest.match(/^\/?(update|add|redo)\b\s*(.*)$/i);
+  if (vm) {
+    verb = vm[1].toLowerCase();
+    rest = vm[2].trim();
+  }
+  if (!REPLY_ACK.test(rest)) return null;
+
+  const full = verb === "redo" && /\bfull\b/i.test(post.text || "") ? " full" : "";
+  return `/${verb} ${codes.join(" ")}${full}`;
 }
 
 function sameChat(chat, wanted) {

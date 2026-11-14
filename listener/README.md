@@ -70,7 +70,14 @@ checks the command, downloads the reports from the CSE and starts the
 | `/redo DIAL` | Redo the valuation from the saved research (no reports) |
 | `/redo DIAL full` | Redo everything from the reports |
 
-Anything after the code is passed to Claude as a note, e.g. `/redo DIAL use 13% discount rate`.
+Several codes can be given in one command, space- or comma-separated (`/update DIAL COMB SAMP`);
+anything after the codes is passed to Claude as a note, e.g. `/redo DIAL use 13% discount rate`.
+
+**Replying to a "New report on the CSE" post** (the one `report_watch.py` sends, listing
+each company's code in parentheses) with just a short reply — nothing at all, "update all",
+"ok", or "redo full" — runs the matching command for every code in that post, with no need
+to type them out. A reply that says anything else (a real note) is left alone; use an
+explicit `/update CODE1 CODE2 ...` for that.
 
 One-time setup:
 1. Create a Claude task "Research on request (CSE site)" with an **API** trigger

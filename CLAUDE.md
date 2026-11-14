@@ -61,6 +61,8 @@ The owner can ask for research by posting a command in the Telegram channel. Sev
 
 A note after several codes applies to all of them. A code that doesn't resolve or is already queued is reported and skipped on its own; the rest of the batch still runs.
 
+A plain reply ("update all", "ok", "redo full", or nothing at all) to one of the "New report on the CSE" announcements (sent by `scripts/report_watch.py`, listing each company's code in parentheses) is turned into the matching multi-code command for every code in that announcement by `listener/worker.js` — there's nothing extra to do here; by the time it reaches `research_request.py` it's an ordinary `/update DIAL COMB ...` (or `/add`, `/redo`) like any other.
+
 To handle the requests:
 1. `git pull`, then `python scripts/research_request.py list`. It shows each pending request with its mode, the owner's note and the report files. If there are none, stop.
 2. Handle them oldest first. The owner's note (if any) says what to focus on or change; follow it unless it would mean inventing figures.
