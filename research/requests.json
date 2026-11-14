@@ -242,6 +242,51 @@
       "status": "done",
       "result": "Fair value Rs 21.67 (first analysis), buy Rs 18.42 (strong buy 16.25), watch list (category 2)",
       "finishedAt": "2026-11-13T19:40:29+00:00"
+    },
+    {
+      "id": "20261114090324-ACL",
+      "ticker": "ACL.N0000",
+      "name": "ACL Cables PLC",
+      "mode": "update",
+      "command": "/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000",
+      "note": null,
+      "files": [
+        "reports/ACL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "163",
+      "requestedAt": "2026-11-14T09:03:24+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "20261114090327-COCO",
+      "ticker": "COCO.N0000",
+      "name": "Renuka Foods PLC",
+      "mode": "update",
+      "command": "/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000",
+      "note": null,
+      "files": [
+        "reports/COCO.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "163",
+      "requestedAt": "2026-11-14T09:03:27+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "20261114090347-RHL",
+      "ticker": "RHL.N0000",
+      "name": "Renuka Holdings PLC",
+      "mode": "update",
+      "command": "/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000",
+      "note": null,
+      "files": [
+        "reports/RHL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "163",
+      "requestedAt": "2026-11-14T09:03:47+00:00",
+      "status": "pending"
     }
   ]
 }
