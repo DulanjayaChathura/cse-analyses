@@ -18,27 +18,28 @@
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024",
-      "Annual report 2025",
-      "Interim reports to 31 Dec 2025, 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026 (the last two reviewed by Deloitte)"
+      "Annual Report 2025 (audited; reports/DIAL.N0000/2026-05-19_annual_Annual-Report-as-at-31st-December-2025.pdf)",
+      "Interim to 30 Jun 2026 (reviewed by Deloitte)",
+      "Interim to 30 Sep 2026 (reviewed by Deloitte)",
+      "Earlier figures from the research record: annual report 2024, interims to 31 Dec 2025 and 31 Mar 2026"
     ]
   },
   "price": {
     "value": 50.2,
     "date": "2026-11-13",
     "source": "CSE closing price (generated/prices.json)",
-    "note": "July–September 2026 range Rs 43.00–49.90, closed September at Rs 45.80 (Interim to 30 Sep 2026, p. 11); April–June Rs 30.10–48.40; 2025 range Rs 11.40–32.50."
+    "note": "July–September 2026 range Rs 43.00–49.90, closed September at Rs 45.80 (Interim to 30 Sep 2026, p. 11); April–June Rs 30.10–48.40 (Interim to 30 Jun 2026, p. 11); 2025 range Rs 11.40–32.50."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "An excellent business, but once growth has to be paid for, the price is about double what it's worth",
-    "text": "Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. Results are strong: nine-month EPS Rs 3.10 against Rs 1.62, trailing EPS about Rs 3.74, borrowings down to Rs 64bn. This redo applies the new rule that growth has to be paid for. Dialog's depreciation and amortisation runs at about Rs 49bn a year, so once the network is maintained, cash from operations leaves about Rs 33bn (Rs 3.60 a share), not the Rs 43–51bn of free cash flow used before, and every point of growth needs more capex earning about 20%, only a little above the 16.5% cost of equity. Growth therefore adds little value, and the P/E I can justify falls to about 7.5x (its own 2021–2025 average was 7.6x). Fair value drops from Rs 32.20 to about Rs 25.50. At Rs 50.20 (CSE close, 13 November 2026) the price is about 97% above that; it implies a cost of equity of about 10%, below the 12.4% government bond. I'd buy at up to about Rs 21.70 and treat under Rs 19.10 as a strong buy. The business tests still pass 3 of 4, so it stays on the watch list. Brokers and peer multiples (about 15–16x) say Rs 52–60; the gap is interest rates and the cost of growth, not the quality of the business."
+    "headline": "An excellent business, but the price is about 75% above what it's worth",
+    "text": "Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. Results are strong: nine-month EPS Rs 3.10 against Rs 1.62, trailing EPS about Rs 3.74, borrowings down to Rs 64bn. This full redo re-read the 2025 annual report and the June and September 2026 interims, recorded the capex, depreciation and working-capital figures that were missing, and applies the new required-return rule: a beta of 0.63 gives a cost of equity of 14.7% (was a hand-set 16.5%) and a WACC of 13.8%. The DCF now values the whole company at WACC and subtracts net debt. Fair value rises from Rs 25.50 to about Rs 28.70, mainly because of the lower discount rate. At Rs 50.20 (CSE close, 13 November 2026) the price is about 75% above that; it implies a WACC of about 10%, below the 12.24% government bond. I'd buy at up to about Rs 24.40 and treat under Rs 21.50 as a strong buy. The business tests still pass 3 of 4, so it stays on the watch list. The beta is provisional: Damodaran's emerging-markets figure couldn't be read in this run."
   },
   "quality": {
     "rating": "good",
     "passed": 3,
     "outOf": 4,
-    "reason": "Dominant, cash-generative and lightly indebted; the one failure is the 2022 loss in the rupee crisis. Re-scored 14 November 2026: unchanged.",
+    "reason": "Dominant, cash-generative and lightly indebted; the one failure is the 2022 loss in the rupee crisis. Re-scored 14 November 2026 from the re-read reports: unchanged.",
     "assessed": "2026-11-14",
     "tests": [
       {
@@ -67,14 +68,14 @@
         "label": "Profit turns into cash and dividends (cash conversion 70%+ over 3 years)",
         "pass": true,
         "value": "2.6x",
-        "note": "Operating cash flow Rs 136bn against Rs 53bn of profit in 2023–2025; about 75% of profit paid out."
+        "note": "Operating cash flow Rs 136bn against Rs 53bn of profit in 2023–2025 (depreciation is large); after maintenance capex, 2025 cash still covered dividends paid 1.08x, and the 12 months to September 2026 about 1.4x."
       }
     ]
   },
   "valuation": {
-    "fairValue": 25.5,
-    "buyPrice": 21.7,
-    "strongBuyPrice": 19.1,
+    "fairValue": 28.7,
+    "buyPrice": 24.4,
+    "strongBuyPrice": 21.5,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -85,12 +86,12 @@
       "bull": 20
     },
     "nav": 9.99,
-    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Redone on 14 November 2026 with the reinvestment rules: the DCF now starts from cash after maintenance capex and pays for growth, and the P/E multiples are capped at what supported growth justifies."
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Full redo on 14 November 2026: discount rates now come from the beta (cost of equity 14.7%, WACC 13.8%), and the DCF values the whole company at WACC less net debt."
   },
   "dividend": {
     "perShare": 1.5,
     "label": "final for 2025 (paid July 2026)",
-    "source": "Annual Report 2025, DIAL share information (p. 72)",
+    "source": "Annual Report 2025, financial capital (p. 76) and five-year summary (pp. 286–287)",
     "latest": {
       "perShare": 2.1,
       "label": "declared so far for 2026 (three interims of Rs 0.70; the third goes ex-dividend 20 Nov)",
@@ -123,7 +124,7 @@
       "label": "Earnings yield vs bond",
       "value": 7.5,
       "unit": "%",
-      "note": "10-year bond about 12.4%"
+      "note": "10-year bond 12.24%"
     },
     {
       "id": "roe",
@@ -133,11 +134,19 @@
       "note": "12 months to Sep 2026; 23% in 2025"
     },
     {
-      "id": "roce",
-      "label": "ROCE",
-      "value": 19.8,
+      "id": "roc",
+      "label": "Return on capital",
+      "value": 18.2,
       "unit": "%",
-      "note": "2025"
+      "note": "2025 after-tax operating profit Rs 30.0bn ÷ opening equity and net debt Rs 164.8bn; ROCE 19.8% on the company's measure"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity / WACC",
+      "value": 14.7,
+      "unit": "%",
+      "display": "14.7% / 13.8%",
+      "note": "Beta 0.63 (provisional)"
     },
     {
       "id": "dividendYield",
@@ -149,9 +158,9 @@
     {
       "id": "fcfYield",
       "label": "Cash yield after maintenance capex",
-      "value": 7.1,
+      "value": 7.7,
       "unit": "%",
-      "note": "Rs 33bn a year (operating cash flow, 12 months to Sep 2026, less depreciation as the maintenance stand-in), before growth spending. 11.1% on the old free-cash-flow measure."
+      "note": "Operating cash flow Rs 82.0bn (12 months to Sep 2026) less base maintenance capex Rs 46.3bn = Rs 35.7bn, before growth spending"
     },
     {
       "id": "netDebtEbitda",
@@ -163,15 +172,16 @@
     {
       "id": "supportedGrowth",
       "label": "Growth reinvestment supports",
-      "value": 7.8,
+      "value": -1.4,
       "unit": "%",
-      "note": "Share of profit kept (34%) × ROE (23%), 2025. Capex-based check not possible yet: 2025 depreciation isn't in the record."
+      "note": "2025: reinvestment −Rs 2.2bn (capex booked Rs 27.5bn below depreciation Rs 48.2bn, offset by Rs 18.3bn of working capital) × return on capital 18.2%. Profit kept × ROE gives 7.8%."
     },
     {
       "id": "evEbitda",
       "label": "EV / EBITDA",
       "value": 5.3,
-      "unit": "x"
+      "unit": "x",
+      "note": "EV Rs 519bn; EBITDA Rs 98.5bn, 12 months to Sep 2026"
     },
     {
       "id": "marketCap",
@@ -183,32 +193,32 @@
   ],
   "highlights": [
     {
-      "title": "What changed in this redo (14 November 2026)",
-      "text": "No new reports. The valuation was redone under the new reinvestment, capex and R&D rules. The DCF now starts from operating cash flow less maintenance capex (Rs 82.0bn less about Rs 49.2bn of depreciation, so about Rs 33bn) and takes off the capex each year's growth needs at a 20% return on new capital; the P/E multiples are capped at what that growth justifies (6 / 7.5 / 9.5x instead of 8 / 10 / 12x). Fair value Rs 32.20 → Rs 25.50."
+      "title": "What changed in this full redo (14 November 2026)",
+      "text": "Requested as /redo DIAL full. The 2025 annual report and the June and September 2026 interims were re-read from the CSE downloads. New in the record: 2025 depreciation, impairment and amortisation Rs 48.2bn, capex booked Rs 27.5bn, working capital up Rs 18.3bn, operating profit Rs 38.6bn, tax rate 22.2%, interest paid Rs 8.6bn (inside operating cash flow), and the same for 2024. Discount rates now come from a beta of 0.63 (cost of equity 14.7%, WACC 13.8%) instead of a hand-set 16.5%, and the DCF values the whole company less net debt. Fair value Rs 25.50 → Rs 28.70."
     },
     {
       "title": "September 2026 quarter (reviewed by the auditors)",
-      "text": "Revenue up 6.2% to Rs 48.54bn; profit up 62% to Rs 9.24bn (EPS Rs 1.00 against Rs 0.62). Gross margin 58.4% (53.6%) as direct costs fell 5%; finance costs fell 42% to Rs 1.91bn, offset partly by a Rs 0.92bn exchange loss. The press figures used this morning were correct."
+      "text": "Revenue up 6.2% to Rs 48.54bn; profit up 62% to Rs 9.24bn (EPS Rs 1.00 against Rs 0.62). Gross margin 58.4% (53.6%) as direct costs fell 5%; finance costs fell 42% to Rs 1.91bn, offset partly by a Rs 0.92bn exchange loss."
     },
     {
       "title": "Nine months to September 2026",
-      "text": "Revenue up 8.2% to Rs 144.1bn; profit Rs 28.5bn against Rs 14.9bn (EPS Rs 3.10 against Rs 1.62). Operating cash flow Rs 67.1bn (Rs 50.6bn). Mobile earned Rs 30.6bn of operating profit, broadband Rs 8.4bn and TV Rs 0.4bn (a loss last year)."
+      "text": "Revenue up 8.2% to Rs 144.1bn; operating profit Rs 39.3bn against Rs 27.6bn; profit Rs 28.5bn against Rs 14.9bn (EPS Rs 3.10 against Rs 1.62). Operating cash flow Rs 67.1bn (Rs 50.6bn); interest paid fell to Rs 4.2bn (Rs 6.6bn). Effective tax rate 14.4%."
     },
     {
       "title": "Stronger balance sheet",
-      "text": "Borrowings fell to Rs 64.1bn from Rs 76.5bn in December and Rs 71.3bn in June; cash Rs 20.6bn. Net debt including leases is Rs 56.7bn, 0.62x equity and 0.58x EBITDA. NAV per share rose to Rs 9.99 even after Rs 26.7bn of dividends."
+      "text": "Borrowings fell to Rs 64.1bn from Rs 76.5bn in December (Rs 107.7bn at end-2024); cash Rs 20.6bn. Net debt including leases is Rs 56.7bn, 0.62x equity and 0.58x EBITDA. NAV per share rose to Rs 9.99 even after Rs 26.7bn of dividends."
     },
     {
-      "title": "5G capex is booked faster than it is paid",
-      "text": "Capital expenditure booked in nine months was Rs 35.0bn (24% of revenue) against Rs 17.0bn a year earlier, but only Rs 19.0bn was paid in cash. The rest sits mostly in payables (up Rs 5.5bn), so free cash flow (Rs 44.9bn in nine months) is flattered and will fall when suppliers are paid. Contracted capex still to come: Rs 15.7bn."
+      "title": "Where the depreciation goes",
+      "text": "The Rs 48.2bn charged in 2025 is equipment depreciation Rs 31.8bn, impairment Rs 1.0bn, software and licence amortisation Rs 4.9bn (licences Rs 0.9bn), lease (right-of-use) depreciation Rs 2.8bn and Rs 7.6bn of amortised dealer commissions and set-top boxes (contract costs, whose cash cost is already inside operating cash flow). So depreciation as reported overstates the capex needed to keep the network running; the calculator's range is Rs 31.9bn (average capex booked) to Rs 48.2bn, base Rs 46.3bn."
+    },
+    {
+      "title": "Capex below depreciation in 2024 and 2025, catching up in 2026",
+      "text": "Capex booked was Rs 36.3bn in 2024 and Rs 27.5bn in 2025 against depreciation of Rs 45.8bn and Rs 48.2bn. In the nine months to September 2026 it was Rs 35.0bn (Rs 17.0bn a year earlier), about equal to depreciation of Rs 36.9bn, with only Rs 19.0bn paid in cash so far and Rs 15.7bn more contracted. This year's jump is mostly the 5G and fibre upgrade: largely keeping the network current rather than new capacity, so it is judged as maintenance more than growth."
     },
     {
       "title": "Group changes",
       "text": "In October Dialog sold 20% of Digital Health for Rs 375m (Digital Health becomes an associate), and several small subsidiaries were merged into Digital Holdings Lanka on 30 September."
-    },
-    {
-      "title": "Capex below depreciation",
-      "text": "Capex paid has run well below depreciation and amortisation: Rs 19.0bn against Rs 36.9bn in the nine months to September 2026, and about Rs 27.7bn against roughly Rs 47bn in 2025 (EBITDA Rs 86.0bn less operating profit). Capex booked this year (Rs 35.0bn) is about equal to depreciation, so the network is being kept up but not much expanded: growth from here relies on the 5G network already ordered, pricing and margins rather than new capacity. Part of the depreciation line is right-of-use (lease) depreciation, licence amortisation and impairment, so it may overstate true maintenance; the company gives no split."
     }
   ],
   "history": {
@@ -316,90 +326,107 @@
     {
       "method": "Return on equity",
       "value": "23% (2025), ~39% now",
-      "reading": "Excellent, but partly because the 2022 loss and dividends shrank equity. With 66–75% paid out, the profit kept supports about 7.8% growth a year (34% kept × 23% ROE)."
+      "reading": "Excellent, but partly because the 2022 loss and high payouts shrank equity; the jump to 39% comes from profit nearly doubling (lower finance costs, margins up to 57%). With about 75% paid out, the profit kept supports about 7.8% growth a year."
+    },
+    {
+      "method": "Return on capital and reinvestment",
+      "value": "18.2%; −1.4% supported",
+      "reading": "2025 after-tax operating profit Rs 30.0bn on Rs 164.8bn of opening capital. Net reinvestment was slightly negative (capex Rs 20.6bn below depreciation, offset by Rs 18.3bn of working capital as payables were paid down), so on 2025 figures reinvestment supports no growth; 2026 capex is back at about depreciation."
     },
     {
       "method": "P/E",
       "value": "13.4x",
-      "reading": "Earnings yield 7.5% against a 12.4% government bond. With growth paid for at a 20–35% return, the P/E I can justify is about 6–9.5x (base 7.5x), close to Dialog's own 2021–2025 average of about 7.6x."
+      "reading": "Earnings yield 7.5% against a 12.24% government bond. With growth paid for out of profit, the P/E justified at a 14.7% cost of equity is about 6.5 / 8 / 10.6x; Dialog's own 2021–2025 average was about 7.6x."
     },
     {
       "method": "Dividends",
       "value": "5.6% yield",
-      "reading": "Rs 0.70 a quarter (Rs 25.8bn a year). Covered 1.3x by cash after maintenance capex (Rs 33bn), so not at risk on that test, but dividends plus the capex 6% growth needs (about Rs 12bn) are more than the cash, so either borrowing rises or growth is slower."
+      "reading": "Rs 0.70 a quarter (Rs 25.8bn a year). Covered about 1.4x by cash after maintenance capex over the 12 months to September (Rs 35.7bn), 1.08x in 2025: not at risk, but thin if working capital or 5G payments absorb cash."
     },
     {
-      "method": "Cash after maintenance capex",
-      "value": "~7.1% yield",
-      "reading": "Operating cash flow Rs 82.0bn over the 12 months to September less about Rs 49.2bn of depreciation (the maintenance stand-in) = Rs 33bn, Rs 3.60 a share. The old free-cash-flow figure (Rs 50.7bn) subtracted capex paid, which has lagged depreciation."
+      "method": "Whole-company DCF",
+      "value": "Rs 27.35 base",
+      "reading": "Cash before interest after maintenance capex Rs 36bn (base), growing 5% with the capex that needs, at a 13.8% WACC, less Rs 56.7bn net debt. The price needs a WACC of about 10%."
     },
     {
       "method": "Peers",
       "value": "SLT ~15–18x, Asia ~16x",
-      "reading": "On peer P/Es Dialog would be worth Rs 52–60. Peers' P/Es don't account for Sri Lanka's 12.4% bond yield or the capex growth needs, so I use them as a check, not a method."
+      "reading": "On peer P/Es Dialog would be worth Rs 52–60. Peers' P/Es don't account for Sri Lanka's 12.24% bond yield or the capex growth needs, so I use them as a check, not a method."
     }
   ],
   "models": [
     {
       "id": "dcf",
-      "name": "Cash-flow DCF (growth paid for)",
-      "bear": 13.6,
-      "base": 22.9,
-      "bull": 35.1,
-      "weighted": 22.6,
-      "comment": "Cash after maintenance capex Rs 26 / 33 / 37bn, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%, less the capex that growth needs at a 15% / 20% / 25% return on new capital (on after-tax operating profit of Rs 36 / 40 / 44bn)."
+      "name": "Whole-company DCF (WACC, less net debt)",
+      "bear": 10.17,
+      "base": 27.35,
+      "bull": 49.78,
+      "weighted": 26.7,
+      "comment": "Cash before interest after maintenance capex Rs 24 / 36 / 42bn, growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%, less the reinvestment growth needs at a 15% / 20% / 25% return on capital (after-tax operating profit Rs 32 / 39 / 42bn), at WACC 15.1% / 13.8% / 12.5%, less net debt Rs 56.7bn. Value after year 5: 54% / 66% / 75% (bull just under the 75% flag)."
     },
     {
       "id": "pe",
       "name": "P/E method",
-      "bear": 19.8,
-      "base": 30.0,
-      "bull": 41.8,
-      "weighted": 29.3,
-      "comment": "2027 EPS of Rs 3.30 / 4.00 / 4.40 times 6 / 7.5 / 9.5: the P/E justified when growth is paid for out of profit (payout = 1 − growth ÷ ROE)."
+      "bear": 21.4,
+      "base": 32.0,
+      "bull": 46.6,
+      "weighted": 31.7,
+      "comment": "2027 EPS of Rs 3.30 / 4.00 / 4.40 times 6.5 / 8 / 10.6: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE, long-run ROE 20 / 25 / 30%). Base EPS equals the run-rate (latest quarter × 4 = Rs 4.00); bear 17.5% below it allows for exchange losses and a higher tax rate."
     },
     {
       "id": "ddm",
       "name": "Dividend model",
-      "bear": 16.5,
-      "base": 26.6,
-      "bull": 40.0,
-      "weighted": 26.2,
-      "comment": "Rs 2.40 / 2.80 / 3.20 a share, growing 2% / 6% / 7.5% for five years (capped at the 7.8% supported rate), then 4% / 5% / 6%."
+      "bear": 18.1,
+      "base": 27.9,
+      "bull": 43.6,
+      "weighted": 28.1,
+      "comment": "Rs 2.40 / 2.80 / 3.20 a share, growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%, at the cost of equity 16.2% / 14.7% / 13.2%."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 18.0,
-      "base": 23.7,
-      "bull": 33.2,
-      "weighted": 23.9,
-      "comment": "Book value Rs 9.99 (September); ROE falling from 40% to 20% / 25% / 30% over ten years; 75% payout. Unchanged."
+      "bear": 20.3,
+      "base": 27.8,
+      "bull": 40.7,
+      "weighted": 28.1,
+      "comment": "Book value Rs 9.99 (September); ROE falling from 40% to 20% / 25% / 30% over ten years; 75% payout; cost of equity 16.2% / 14.7% / 13.2%; after year ten the excess return grows at the long-run rate."
     }
   ],
-  "modelsNote": "A steady cash generator, so the DCF carries real weight, alongside P/E, dividends and residual income. Growth check: assumed 3% / 6% / 8% against 7.8% supported by profit kept × ROE, all within 2 points; the capex-based check couldn't be run because 2025 depreciation isn't in the research record, and capex this year is only about equal to depreciation. Because new capital earns about 20% against a 16.5% cost of equity, growth adds little value, which is why the DCF and P/E fell in this redo.",
+  "modelsNote": "A steady cash generator, so the whole-company DCF carries full weight, alongside P/E, dividends and residual income. Growth check: assumed 2% / 5% / 7% against −1.4% supported by 2025 reinvestment × return on capital (7.8% on profit kept × ROE); all three are more than 2 points above, kept because 2025 reinvestment was held down by a one-off pay-down of payables and a capex dip, 2026 capex is back at depreciation with 5G spectrum bought and Rs 15.7bn contracted, revenue is growing 8% on the existing network, and the DCF still charges reinvestment (growth ÷ return on capital) for every point of growth. Assumptions were lowered by a point from 3% / 6% / 8%.",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Cost of equity",
-        "bear": "18%",
-        "base": "16.5%",
-        "bull": "15%"
+        "label": "Cost of equity (beta 0.63)",
+        "bear": "16.2%",
+        "base": "14.7%",
+        "bull": "13.2%"
       },
       {
-        "label": "Cash after maintenance capex, start",
-        "bear": "Rs 26bn",
-        "base": "Rs 33bn",
-        "bull": "Rs 37bn"
+        "label": "WACC",
+        "bear": "15.1%",
+        "base": "13.8%",
+        "bull": "12.5%"
+      },
+      {
+        "label": "Cash before interest after maintenance capex, start",
+        "bear": "Rs 24bn",
+        "base": "Rs 36bn",
+        "bull": "Rs 42bn"
+      },
+      {
+        "label": "After-tax operating profit, start",
+        "bear": "Rs 32bn",
+        "base": "Rs 39bn",
+        "bull": "Rs 42bn"
       },
       {
         "label": "Growth: five years, then long-term",
-        "bear": "3%, then 4%",
-        "base": "6%, then 5%",
-        "bull": "8%, then 6%"
+        "bear": "2%, then 3.5%",
+        "base": "5%, then 4.5%",
+        "bull": "7%, then 5.5%"
       },
       {
-        "label": "Return on new capital (sets the capex growth needs)",
+        "label": "Return on new capital (sets the reinvestment)",
         "bear": "15%",
         "base": "20%",
         "bull": "25%"
@@ -412,32 +439,32 @@
       },
       {
         "label": "2027 EPS × P/E",
-        "bear": "3.30 × 6",
-        "base": "4.00 × 7.5",
-        "bull": "4.40 × 9.5"
+        "bear": "3.30 × 6.5",
+        "base": "4.00 × 8",
+        "bull": "4.40 × 10.6"
       },
       {
         "label": "Dividend per share, growth",
         "bear": "Rs 2.40, 2%",
-        "base": "Rs 2.80, 6%",
-        "bull": "Rs 3.20, 7.5%"
+        "base": "Rs 2.80, 5%",
+        "bull": "Rs 3.20, 7%"
       }
     ],
     "averages": {
-      "bear": 17.0,
-      "base": 25.8,
-      "bull": 37.5
+      "bear": 17.5,
+      "base": 28.8,
+      "bull": 45.2
     },
-    "common": "10-year government bond about 12.4% (9 Nov 2026), one-year T-bill about 9.1%, policy rate 8.75% (raised in May 2026). Base cost of equity = bond + about 4 points for a defensive, AAA-rated market leader. Maintenance capex = depreciation and amortisation (about Rs 49.2bn a year: Rs 36.86bn in nine months), as Dialog gives no split. Growth needs reinvestment of growth ÷ return on new capital, e.g. 6% ÷ 20% = 30% of after-tax operating profit in the base case, and 5% ÷ 20% = 25% in the long run. Supported growth 7.8% (34% of profit kept × 23% ROE, 2025)."
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 0.63 (provisional). Cost of debt 8.25% (interest paid ÷ average borrowings and leases, 2025), tax 22.2%, debt weight 10.9%. Start cash: bear is the calculator's 2025 figure (operating cash Rs 65.5bn + after-tax interest Rs 6.7bn − depreciation Rs 48.2bn); base and bull lean on the 12 months to September 2026 (operating cash Rs 82.0bn + after-tax interest Rs 4.9bn − Rs 46.3bn base maintenance ≈ Rs 40.5bn), less about Rs 4.5bn in the base for capex payables still to be paid. After-tax operating profit: trailing operating profit Rs 50.3bn taxed at 22% (base); bear at 30% in case the BOI tax deal ends and profit fades; bull at 16%, nearer the 2026 rate. Long-run reinvestment = growth ÷ return on capital (3.5/15 = 23%, 4.5/20 = 23%, 5.5/25 = 22%)."
   },
   "sensitivity": {
-    "title": "DCF base case, Rs per share",
-    "rowLabel": "Cost of equity",
+    "title": "Whole-company DCF base case, Rs per share",
+    "rowLabel": "WACC",
     "columnLabel": "Return on new capital",
     "rows": [
-      "15%",
-      "16.5%",
-      "18%"
+      "12.3%",
+      "13.8%",
+      "15.3%"
     ],
     "columns": [
       "15%",
@@ -446,74 +473,75 @@
     ],
     "values": [
       [
-        22.2,
-        26.5,
-        29.0
+        29.38,
+        33.88,
+        36.57
       ],
       [
-        19.2,
-        22.9,
-        25.1
+        23.56,
+        27.35,
+        29.62
       ],
       [
-        16.9,
-        20.2,
-        22.2
+        19.36,
+        22.63,
+        24.6
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Even the most generous corner (Rs 29.00) is far below today's price. Changing long-term growth hardly matters (Rs 22.8–23.0 for 4–6%), because each rupee of growth needs capex earning only a little more than the cost of equity. The price needs a cost of equity of about 10%."
+    "note": "Even the most generous corner (Rs 36.57) is well below today's price. Long-run growth matters little (Rs 26.4–28.5 for 3.5–5.5%). The price needs a WACC of about 10% in the base case."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 25.5
+        "maxPrice": 28.7
       },
       {
         "shares": 150,
-        "maxPrice": 21.7
+        "maxPrice": 24.4
       },
       {
         "shares": 150,
-        "maxPrice": 19.1
+        "maxPrice": 21.5
       }
     ],
-    "averagePrice": 22.44,
-    "totalCost": 11220,
-    "note": "About Rs 11,220 in total, against Rs 25,100 at Rs 50.20.",
-    "realism": "Rs 21.70 needs about a 57% fall. The share last traded that low in 2025 (2025 range Rs 11.40–32.50, close Rs 29.80); its 2026 low was Rs 30.10 (April–June) and the September-quarter low Rs 43.00. Not realistic this year without a market crash or a big rise in interest rates; even the first tier (Rs 25.50) is below this year's low."
+    "averagePrice": 25.25,
+    "totalCost": 12625,
+    "note": "About Rs 12,625 in total, against Rs 25,100 at Rs 50.20.",
+    "realism": "Rs 24.40 needs about a 51% fall. The share last traded that low in 2025 (range Rs 11.40–32.50, close Rs 29.80); its 2026 low was Rs 30.10 (April–June) and the September-quarter low Rs 43.00. Not realistic this year without a market crash or a big rise in interest rates; even the first tier (Rs 28.70) is below this year's low."
   },
   "changeMyView": {
     "higher": [
-      "Interest rates falling (each point off the cost of equity adds about Rs 2–3 a share).",
-      "Evidence that new capex earns well above 20% (e.g. 5G and home broadband lifting revenue growth above 8% while capex stays near depreciation).",
-      "The company disclosing maintenance capex below depreciation (part of the Rs 49bn is lease depreciation, licence amortisation and impairment).",
-      "Margins holding near 55–58% as energy costs ease; a higher dividend (Rs 0.80+ a quarter) sustained without more borrowing."
+      "Interest rates falling: each point off WACC adds about Rs 4 a share in the base DCF.",
+      "A verified beta below 0.63 (e.g. Damodaran's emerging-markets telecom figure), or a lower country premium.",
+      "Evidence that new capex earns well above 20% (5G and home broadband lifting revenue growth above 8% while capex stays near depreciation).",
+      "The company disclosing maintenance capex well below depreciation (Rs 7.6bn of it is contract-cost amortisation and Rs 2.8bn lease depreciation).",
+      "Margins holding near 55–58%; a higher dividend (Rs 0.80+ a quarter) sustained without more borrowing."
     ],
     "lower": [
+      "The BOI 2% revenue-tax deal ending: the 2025 report's goodwill note mentions an 'impending expiration of tax concession in year 2027' (p. 241); 30% tax on profit would cut after-tax profit sharply.",
       "5G capex absorbing cash and cutting dividends, or borrowings rising to fund dividends.",
       "Capex staying below depreciation for years (under-investment) while profit is reported as rising.",
-      "Loss of the 2% revenue-based tax deal with the BOI (the company would face 30% tax on profit).",
-      "Another rupee crisis (2022: a Rs 33bn loss).",
+      "Another rupee crisis (2022: a Rs 33bn loss), or a higher bond yield.",
       "Price competition from SLT-Mobitel and Hutch, or regulator-imposed tariff cuts."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the 2024 and 2025 annual reports and the interim reports to September 2026. Figures for the 12 months to September 2026 are worked out from those reports. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the 2025 annual report, the interim reports to June and September 2026, and earlier reports summarised in the research record. Figures for the 12 months to September 2026 are worked out from those reports. This is analysis, not personal financial advice."
   },
   "Decision box": {
-    "Verdict": "Overpriced: about 97% above fair value of Rs 25.50.",
-    "Expected yearly return at Rs 50.20": "About −10% a year over three years: dividends 5.6% + growth 5% − about 20% a year if the price moved to fair value. After 15% dividend tax and brokerage, about −11%.",
-    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
-    "Downside / upside": "Bear case −66% (Rs 17.00); bull case −25% (Rs 37.50). Even the bull case is well below today's price.",
-    "What the price assumes": "A cost of equity of about 10%, below the 12.4% government bond. Faster growth barely helps: even 20% a year for five years at a 30% return on new capital gives about Rs 34.",
-    "Confidence": "Medium: the methods give Rs 23–30 in the base case; the business is predictable, but maintenance capex is uncertain (no company split) and 2022 showed how a rupee crisis can hit it.",
-    "Margin of safety": "Medium confidence: buy 15% below fair value (Rs 21.70), strong buy 25% below (Rs 19.10)."
+    "Verdict": "Overpriced: about 75% above fair value of Rs 28.70.",
+    "Expected yearly return at Rs 50.20": "About −8% a year over three years: dividends 5.6% + growth 5% − about 17% a year if the price moved to fair value.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond 12.24%.",
+    "Downside / upside": "Bear case −65% (Rs 17.50); bull case −10% (Rs 45.20). Even the bull case is below today's price.",
+    "What the price assumes": "A WACC of about 10% in the base DCF, below the 12.24% government bond.",
+    "Confidence": "Medium: the methods give Rs 27–32 in the base case; the beta is provisional and maintenance capex uncertain (no company split).",
+    "Margin of safety": "Medium confidence: buy 15% below fair value (Rs 24.40), strong buy 25% below (Rs 21.50)."
   },
   "Business and moat": {
     "What it does": "Mobile (78% of revenue in the nine months to September 2026), fixed and home broadband via Dialog Broadband Networks (15%), and pay TV via Dialog Television (7%). Also digital payments (eZ Cash), data centres and a finance company.",
@@ -538,7 +566,9 @@
     "Underlying earnings": "Exchange losses net of gains of about Rs 0.75bn over the 12 months to September 2026 removed: underlying EPS about Rs 3.82 against reported Rs 3.74.",
     "Restatements": "2024 figures were restated in the 2025 accounts (December 2025 interim, note 17).",
     "Revaluations": "None: property and equipment are carried at cost, so NAV isn't inflated.",
-    "To check": "The 'provision for other liabilities' (asset retirement obligations) jumped from Rs 4.96bn to Rs 9.14bn in January–March 2026 and was Rs 8.98bn in September, still with no explanation in the interim reports. Capex booked (Rs 35.0bn) far exceeds capex paid (Rs 19.0bn) in nine months, so cash flow is temporarily flattered."
+    "To check": "The 'provision for other liabilities' (asset retirement obligations) jumped from Rs 4.96bn to Rs 9.14bn in January–March 2026 and was Rs 8.98bn in September, still with no explanation in the interim reports. Capex booked (Rs 35.0bn) far exceeds capex paid (Rs 19.0bn) in nine months, so cash flow is temporarily flattered.",
+    "Depreciation make-up": "Of Rs 48.2bn in 2025, Rs 7.6bn is amortisation of contract costs (dealer commissions, set-top boxes, routers) whose cash is spent inside operating cash flow, and Rs 2.8bn is lease depreciation; counting all of it as maintenance capex is conservative.",
+    "Dividend cash vs declared": "Nine months 2026: Rs 33.5bn of dividends paid in the cash flow statement against Rs 26.7bn in the company's changes in equity; the difference isn't explained."
   },
   "Peer and history comparison": {
     "Sri Lanka Telecom (SLTL.N0000)": "P/E about 15–18x, P/B about 1.5x, ROE about 11%, dividend yield about 1%, EV/EBITDA about 5x (web data from June 2026; dates vary).",
@@ -564,23 +594,23 @@
     "Survival": "Survives comfortably: low debt, AAA rating and a strong parent. Dividends would probably be cut, and the share price could halve (in 2022 it fell to Rs 8.50 and the P/E collapsed)."
   },
   "Portfolio fit": {
-    "Cost of 500 shares": "About Rs 25,100 now; about Rs 10,850 at the buy price.",
+    "Cost of 500 shares": "About Rs 25,100 now; about Rs 12,200 at the buy price.",
     "Overlap": "None with other companies on the site; it is the site's only telecom.",
     "Note": "Shown for information, not as advice on how much to hold."
   },
   "Broker view": {
-    "HNB Stockbrokers (9 Nov 2026)": "Moderate buy, target Rs 55, against my fair value of Rs 25.50.",
-    "Why we differ": "The broker's target is close to peer P/E multiples (about 15x). My methods discount future cash at about 16.5% because Sri Lankan bonds yield 12.4%, and since this redo they also charge for the capex growth needs. If rates fall, the gap narrows."
+    "HNB Stockbrokers (9 Nov 2026)": "Moderate buy, target Rs 55, against my fair value of Rs 28.70.",
+    "Why we differ": "The broker's target is close to peer P/E multiples (about 15x). My methods discount at a 13.8% WACC / 14.7% cost of equity because Sri Lankan bonds yield 12.24%, and they charge for the capex growth needs. If rates fall, the gap narrows."
   },
   "Investment case and sell rules": {
     "Why own it": "Dominant market leader with a wide moat, high returns, strong cash flow, low debt and a 5–7% dividend.",
     "The case is broken if": "Market share falls clearly below 60%; the BOI tax deal ends; 5G capex forces a dividend cut; or a rupee crisis returns.",
-    "Sell triggers": "Price more than 30% above fair value (above Rs 33.20: today's price is above this); the case breaks; or a clearly better opportunity appears."
+    "Sell triggers": "Price more than 30% above fair value (above Rs 37.30: today's price is above this); the case breaks; or a clearly better opportunity appears."
   },
   "Suggested Telegram alerts (not set; needs your approval)": {
-    "Buy": "Rs 21.70 or lower",
-    "Strong buy": "Rs 19.10 or lower",
-    "Sell trigger": "Rs 33.20 or higher (already exceeded)"
+    "Buy": "Rs 24.40 or lower",
+    "Strong buy": "Rs 21.50 or lower",
+    "Sell trigger": "Rs 37.30 or higher (already exceeded)"
   },
   "Key ratios (five-year trend)": {
     "Return on equity": "2023 30% · 2024 16% · 2025 23% · 12 months to Sep 2026 about 39%",
@@ -599,7 +629,7 @@
     "Operating cash flow": "2021 Rs 54.3bn · 2022 Rs 56.7bn · 2023 Rs 21.3bn · 2024 Rs 49.5bn · 2025 Rs 65.5bn · nine months 2026 Rs 67.1bn (Rs 50.6bn)",
     "Free cash flow to equity (after interest, capex, leases)": "2024 Rs 10.9bn · 2025 Rs 33.7bn · nine months 2026 Rs 44.9bn · 12 months to Sep 2026 Rs 50.7bn (Rs 5.51 a share), flattered by capex not yet paid",
     "Cash conversion (operating cash flow ÷ profit, 2023–2025)": "2.6x",
-    "Capex to revenue": "2023 14% · 2024 18% · 2025 11% · nine months 2026 24% booked, 13% paid",
+    "Capex to revenue": "2023 14% · 2024 18% (21% booked) · 2025 15% paid, 15% booked (the company's own measure: 11%) · nine months 2026 24% booked, 13% paid",
     "Accruals": "Low: operating cash flow is far above profit because depreciation is large",
     "Inventory / receivable / payable days (2025)": "8 / 77 / 292 days; cash conversion cycle about −208 days (customers prepay and suppliers, including capex suppliers, are paid late)",
     "Net debt incl. leases": "Sep 2026 Rs 56.7bn (Rs 43.5bn without leases); 0.62x equity (Jun 2026 Rs 64.0bn)",
@@ -621,14 +651,46 @@
     "Altman Z''-score (Jun 2026)": "0.48, which reads as 'distress', but it isn't meaningful here: the formula penalises negative working capital, which is normal for telecoms (prepaid customers, long supplier terms). Fitch rates Dialog AAA(lka).",
     "Capex vs depreciation": "2025 capex paid Rs 27.7bn against about Rs 47bn of depreciation and amortisation (worked out: EBITDA Rs 86.0bn less operating profit); nine months 2026 paid Rs 19.0bn, booked Rs 35.0bn, against Rs 36.9bn",
     "Cash after maintenance capex": "12 months to Sep 2026: Rs 82.0bn operating cash flow − about Rs 49.2bn depreciation = about Rs 33bn (Rs 3.60 a share); covers Rs 25.8bn of yearly dividends 1.3x",
-    "Supported growth": "7.8% (34% of 2025 profit kept × 23% ROE); about 9.8% on the 12 months to September (25% kept × 39%), flattered by low equity"
+    "Supported growth": "7.8% (34% of 2025 profit kept × 23% ROE); about 9.8% on the 12 months to September (25% kept × 39%), flattered by low equity",
+    "Capex booked vs depreciation": "2024 Rs 36.3bn vs Rs 45.8bn · 2025 Rs 27.5bn vs Rs 48.2bn · nine months 2026 Rs 35.0bn vs Rs 36.9bn",
+    "Return on capital (after-tax operating profit ÷ opening equity and net debt)": "2025 18.2%",
+    "Effective tax rate": "2024 23.0% · 2025 22.2% · nine months 2026 14.4%"
   },
   "What this analysis doesn't cover": [
+    "Damodaran's emerging-markets telecom beta and the local beta pages couldn't be opened in this run (blocked by the network settings); the beta of 0.63 rests on web-search extracts and should be rechecked.",
     "The reason for the Rs 4.0bn jump in asset-retirement provisions in early 2026 (still not explained in the September report).",
+    "Whether the BOI tax concession really ends in 2027 (only a footnote in the goodwill note mentions it).",
     "Exact 5G spectrum cost and capex guidance for 2026–2027 (not disclosed in the reports read).",
     "Subscriber and market-share figures after December 2025.",
-    "Peer figures for Sri Lanka Telecom come from web data with mixed dates; its own reports weren't read.",
-    "Depreciation, working-capital change, acquisitions, operating profit, tax rate and equity for 2025 aren't in the research record (this /redo read no reports), so the capex-based growth check couldn't be run; the 2025 depreciation of about Rs 47bn is worked out from EBITDA less operating profit. Record them from the 2025 or 2026 annual report on the next update."
+    "Peer figures for Sri Lanka Telecom come from web data with mixed dates; its own reports weren't read."
   ],
-  "fullText": "Summary: Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. Results are strong: nine-month EPS Rs 3.10 against Rs 1.62, trailing EPS about Rs 3.74, borrowings down to Rs 64bn. This redo (14 November 2026, no new reports) applies the new rule that growth has to be paid for. Dialog's depreciation and amortisation runs at about Rs 49bn a year, so once the network is maintained, cash from operations leaves about Rs 33bn (Rs 3.60 a share), not the Rs 43–51bn of free cash flow used before, and every point of growth needs more capex earning about 20%, only a little above the 16.5% cost of equity. Growth therefore adds little value, and the P/E I can justify falls to about 7.5x (its own 2021–2025 average was 7.6x). Fair value drops from Rs 32.20 to about Rs 25.50. At Rs 50.20 (CSE close, 13 November 2026) the price is about 97% above that; it implies a cost of equity of about 10%, below the 12.4% government bond. I'd buy at up to about Rs 21.70 and treat under Rs 19.10 as a strong buy. The business tests still pass 3 of 4, so it stays on the watch list.\n\nPrice and key figures\nPrice: Rs 50.20 (CSE close, 13 November 2026). It traded between Rs 43.00 and Rs 49.90 in July–September and closed September at Rs 45.80; it closed 2025 at Rs 29.80 and 2024 at Rs 11.70.\nSeptember 2026 quarter (reviewed): revenue Rs 48.54bn (up 6.2%), gross margin 58.4%, profit Rs 9.24bn (up 62%), EPS Rs 1.00 (Rs 0.62), finance costs down 42%, exchange loss Rs 0.92bn, third interim dividend Rs 0.70.\nNine months to September 2026: revenue Rs 144.1bn (up 8.2%), profit Rs 28.5bn, EPS Rs 3.10 (Rs 1.62), operating cash flow Rs 67.1bn, depreciation and amortisation Rs 36.9bn, capex booked Rs 35.0bn but paid Rs 19.0bn.\nBalance sheet, 30 September 2026: borrowings Rs 64.1bn (Rs 76.5bn in December), cash Rs 20.6bn, net debt including leases Rs 56.7bn (0.58x EBITDA), NAV Rs 9.99.\n2025 (audited): revenue Rs 179.6bn, EBITDA Rs 86.0bn (47.9% margin), profit Rs 20.8bn, EPS Rs 2.26, ROE 23%, ROCE 19.8%, dividend Rs 1.50, capex paid Rs 27.7bn, net debt 0.64x EBITDA.\n12 months to September 2026: EPS Rs 3.74 (Rs 3.82 without exchange gains and losses), ROE about 39%, EBITDA about Rs 98.5bn, operating cash flow about Rs 82.0bn.\n\nDecision box\nFair value about Rs 25.50; price about 97% above it. Expected return at today's price about −10% a year over three years, against a one-year T-bill of about 9.1%. Bear case −66%, bull case −25%. The price needs a cost of equity of about 10%, below the government bond. Confidence medium, so buy at up to Rs 21.70 (−15%) and strong buy under Rs 19.10 (−25%).\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nCash-flow DCF (growth paid for) | 13.6 | 22.9 | 35.1 | 22.6\nP/E | 19.8 | 30.0 | 41.8 | 29.3\nDividend model | 16.5 | 26.6 | 40.0 | 26.2\nResidual income | 18.0 | 23.7 | 33.2 | 23.9\nAverage | 17.0 | 25.8 | 37.5 | 25.5\n\nReinvestment, capex and growth\n- Maintenance capex: Dialog gives no split, so depreciation and amortisation stands in: about Rs 49.2bn a year (Rs 36.86bn in nine months, including some impairment). Part of it is lease (right-of-use) depreciation and licence amortisation, so it may overstate true maintenance; the rule's usual worry (that depreciation understates it) is less likely here.\n- Cash before growth spending: operating cash flow of about Rs 82.0bn over the 12 months to September less Rs 49.2bn = about Rs 33bn (Rs 3.60 a share). It covers the Rs 25.8bn of yearly dividends 1.3x, so the dividend is not at risk on that test; but dividends plus the roughly Rs 12bn of capex that 6% growth needs come to more than the cash, so either borrowing rises or growth comes in slower.\n- Capex is below depreciation: paid Rs 27.7bn in 2025 against about Rs 47bn (EBITDA less operating profit), and Rs 19.0bn in nine months of 2026 against Rs 36.9bn. Booked capex this year (Rs 35.0bn, mostly 5G) is about equal to depreciation. So this year's high capex is mostly keeping the network up to date (maintenance and the 5G upgrade), not expansion. If paid capex stays below depreciation for several years, that would be under-investment.\n- Growth check: assumed 3% / 6% / 8% for five years against 7.8% supported by the share of profit kept (34%) times ROE (23%) in 2025: all within 2 points. The capex-based check (reinvestment rate × return on capital) couldn't be run: 2025 depreciation, working-capital change and operating profit aren't in the research record. On this year's figures net reinvestment is close to zero, so the growth assumed has to come from the 5G network already ordered, pricing and margins; that is the reason for keeping the base at 6%.\n- Long-run growth 4% / 5% / 6%, below the 12.4% bond, with 4/15 = 27%, 5/20 = 25% and 6/25 = 24% of after-tax operating profit reinvested to get it.\n- R&D: not disclosed, so no adjustment.\n\nAssumptions\nCost of equity 18% / 16.5% / 15% (bond about 12.4% plus 4 points for a defensive leader), unchanged. DCF: cash after maintenance capex Rs 26 / 33 / 37bn, growing 3% / 6% / 8% for five years and 4% / 5% / 6% after, less the capex that growth needs at a 15% / 20% / 25% return on new capital (after-tax operating profit Rs 36 / 40 / 44bn; the base is trailing profit Rs 34.4bn plus finance costs after tax). 2027 EPS Rs 3.30 / 4.00 / 4.40 at 6 / 7.5 / 9.5 times: the P/E justified when growth is paid for out of profit. Dividends Rs 2.40 / 2.80 / 3.20 growing 2% / 6% / 7.5% (bull capped at the supported 7.8%). ROE falling from 40% to 20% / 25% / 30%, unchanged.\n\nWhat changed in this redo\nNo new reports; the owner asked for a redo (/redo DIAL). Under the new reinvestment rules:\n- DCF: the old method grew a free-cash-flow figure (Rs 34 / 43 / 50bn) that subtracted capex paid, which has lagged depreciation, and charged nothing for growth. It now starts from cash after maintenance capex and pays for growth: weighted Rs 41.5 → Rs 22.6.\n- P/E: 8 / 10 / 12x implied about 9% a year growth with 75% paid out, above what the bear case assumes; capped at 6 / 7.5 / 9.5x: weighted Rs 38.5 → Rs 29.3.\n- Dividend model: bull growth capped at 7.5% and long-run growth set explicitly at 4% / 5% / 6%: weighted Rs 25.0 → Rs 26.2.\n- Residual income unchanged at Rs 23.9.\nFair value Rs 32.20 → Rs 25.50, buy Rs 27.40 → Rs 21.70, strong buy Rs 24.20 → Rs 19.10.\n\nPeers and history\nSri Lanka Telecom trades at roughly 15–18x earnings and Asian telecoms at about 16x; on those multiples Dialog would be worth Rs 52–60. But its own P/E averaged about 7.6x in 2021–2025, and its 7.5% earnings yield is well below the 12.4% government bond. HNB Stockbrokers rates it a moderate buy with a Rs 55 target.\n\nRisks to watch\nInterest rates (policy rate raised to 8.75% in May 2026), the rupee, the BOI tax deal, 5G capex payments, capex staying below depreciation, energy costs, a 15.85% free float, and the unexplained Rs 4bn rise in asset-retirement provisions. In a 2022-style crisis it would survive but cut dividends, and the price could halve.\n\n500-share plan\n200 shares up to Rs 25.50, 150 up to Rs 21.70, 150 up to Rs 19.10: average about Rs 22.44, about Rs 11,220 in total. Rs 21.70 needs about a 57% fall; the share was last that low in 2025, and this year's low was Rs 30.10, so the plan is unlikely to fill without a market crash or a big rise in rates.\n\nSell rules\nIf you already hold Dialog: the price is above the sell trigger (30% above fair value, Rs 33.20). The business case itself is intact.\n\nBusiness tests: 3 of 4 passed (returns, debt, cash; fails steady profit because of the 2022 loss), so it's a good business at a high price: watch list, unchanged."
+  "fullText": "Summary: Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. Results are strong: nine-month EPS Rs 3.10 against Rs 1.62, trailing EPS about Rs 3.74, borrowings down to Rs 64bn. This full redo (requested as /redo DIAL full, 14 November 2026) re-read the 2025 annual report and the June and September 2026 interims, filled in the capex, depreciation and working-capital figures the record lacked, and applies the new required-return rule. A beta of 0.63 gives a cost of equity of 14.7% and a WACC of 13.8%, lower than the hand-set 16.5% used before, so fair value rises from Rs 25.50 to about Rs 28.70. At Rs 50.20 (CSE close, 13 November 2026) the price is about 75% above that and implies a WACC of about 10%, below the 12.24% government bond. I'd buy at up to about Rs 24.40 and treat under Rs 21.50 as a strong buy. The business tests still pass 3 of 4, so it stays on the watch list.\n\nPrice and key figures\nPrice: Rs 50.20 (CSE close, 13 November 2026). It traded between Rs 43.00 and Rs 49.90 in July–September and Rs 30.10–48.40 in April–June; it closed 2025 at Rs 29.80.\nSeptember 2026 quarter (reviewed): revenue Rs 48.54bn (up 6.2%), gross margin 58.4%, operating profit Rs 13.47bn, profit Rs 9.24bn (up 62%), EPS Rs 1.00 (Rs 0.62), finance costs down 42%, exchange loss Rs 0.92bn, third interim dividend Rs 0.70.\nNine months to September 2026: revenue Rs 144.1bn (up 8.2%), operating profit Rs 39.3bn (Rs 27.6bn), profit Rs 28.5bn, EPS Rs 3.10 (Rs 1.62), operating cash flow Rs 67.1bn after Rs 4.2bn of interest paid, depreciation and amortisation Rs 36.9bn, capex booked Rs 35.0bn but paid Rs 19.0bn.\nBalance sheet, 30 September 2026: borrowings Rs 64.1bn (Rs 76.5bn in December, Rs 107.7bn at end-2024), cash Rs 20.6bn, net debt including leases Rs 56.7bn (0.58x EBITDA), NAV Rs 9.99.\n2025 (audited): revenue Rs 179.6bn, operating profit Rs 38.6bn, EBITDA Rs 86.0bn, profit Rs 20.8bn, EPS Rs 2.26, ROE 23%, tax rate 22.2%, dividend Rs 1.50; depreciation, impairment and amortisation Rs 48.2bn; capex booked Rs 27.5bn, paid Rs 27.7bn; working capital up Rs 18.3bn; interest paid Rs 8.6bn.\n\nRequired return\nCost of equity = risk-free 8.24% (12.24% bond less a 4.0% default spread) + beta 0.63 × (4.2% mature premium + 6.08% country premium) = 14.7%; bear 16.2%, bull 13.2%. Cost of debt 8.25% (interest paid Rs 8.57bn ÷ average borrowings and leases); after 22.2% tax, 6.4%. Debt is 10.9% of market value, so WACC is 15.1% / 13.8% / 12.5%.\nThe beta is provisional. Damodaran's emerging-markets telecom beta couldn't be read in this run, so his US Telecom Services unlevered beta (0.38) stood in; relevered at Dialog's low debt it is 0.42. Local 5-year betas from web-search extracts were 0.66, 0.48 and 0.63 (median 0.63). The rule takes the higher, 0.63. It should be rechecked in January 2027.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nWhole-company DCF | 10.2 | 27.4 | 49.8 | 26.7\nP/E | 21.4 | 32.0 | 46.6 | 31.7\nDividend model | 18.1 | 27.9 | 43.6 | 28.1\nResidual income | 20.3 | 27.8 | 40.7 | 28.1\nAverage | 17.5 | 28.8 | 45.2 | 28.7\n\nReinvestment, capex and growth\n- Maintenance capex: Dialog gives no split. The calculator's range is Rs 48.2bn (depreciation as reported, bear), Rs 46.3bn (less impairment and licence amortisation, base) and Rs 31.9bn (average capex booked 2024–2025, bull). Depreciation includes Rs 7.6bn of amortised dealer commissions and set-top boxes, whose cash is already spent inside operating cash flow, and Rs 2.8bn of lease depreciation, so the bear and base figures are conservative.\n- Cash before interest and growth spending: 2025 operating cash flow Rs 65.5bn plus Rs 6.7bn of after-tax interest (Dialog puts interest paid in operating cash flow) = Rs 72.2bn, less maintenance = Rs 24.0bn / 25.9bn / 40.3bn. 2025 was held down by an Rs 18.3bn working-capital outflow as payables were paid down. Over the 12 months to September 2026 the same sum is about Rs 40.5bn in the base case. The DCF starts from Rs 24 / 36 / 42bn.\n- Capex below depreciation: Rs 36.3bn booked against Rs 45.8bn in 2024, and Rs 27.5bn against Rs 48.2bn in 2025. In 2026 booked capex is back to about depreciation (Rs 35.0bn against Rs 36.9bn in nine months), mostly the 5G and fibre upgrade. That is mostly keeping the network current, so I judge it as maintenance more than growth. Watch that paid capex catches up (Rs 19.0bn paid so far).\n- Growth check: on 2025 figures reinvestment was −Rs 2.2bn, so reinvestment × return on capital (18.2%) supports −1.4% growth. Profit kept × ROE gives 7.8%. Assumed growth is 2% / 5% / 7%, a point lower than before, and all three are more than 2 points above the capex-based figure. They are kept for four reasons: 2025 reinvestment was depressed by a one-off pay-down of payables and a capex dip; 2026 capex is back at depreciation, with the 5G spectrum bought and Rs 15.7bn contracted; revenue is growing about 8% on the existing network through pricing and data use; and the DCF still charges growth ÷ return on capital in reinvestment every year.\n- Long-run growth is 3.5% / 4.5% / 5.5%, below the 12.24% bond and below WACC. It needs 23% / 23% / 22% of after-tax operating profit reinvested.\n- Earnings run-rate: latest quarter × 4 = Rs 4.00 (trailing 12 months Rs 3.74). The base 2027 EPS is Rs 4.00, at the run-rate. The bear case (Rs 3.30) allows for exchange losses and a higher tax rate.\n- Dividend cover: cash after maintenance capex covered dividends paid 1.08x in 2025 and about 1.4x over the 12 months to September, so the dividend is not flagged as at risk.\n- R&D: not disclosed, so no adjustment.\n- Ratio checks: beta 0.63, cost of equity 14.7% and WACC 13.8% are within range. Cost of debt 8.25% is at the bottom of the house range (bond − 4 points) because part of the debt was cheaper dollar loans and short-term bank lines. ROE of 39% is a one-year jump from profit nearly doubling on a small equity base, so the residual income model fades it to 25%. Net debt/EBITDA is 0.58x. Value after year 5 in the DCF is 54% / 66% / 75%, with the bull case right at the flag.\n\nAssumptions\nDCF: start cash Rs 24 / 36 / 42bn and after-tax operating profit Rs 32 / 39 / 42bn (trailing operating profit Rs 50.3bn at 30% / 22% / 16% tax; 30% in the bear case in case the BOI revenue-tax deal ends), growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%. Return on new capital is 15% / 20% / 25%. Discounted at WACC 15.1% / 13.8% / 12.5%, less net debt Rs 56.7bn.\nP/E: 2027 EPS Rs 3.30 / 4.00 / 4.40 at 6.5 / 8 / 10.6x, the forward P/E justified at the cost of equity when growth is paid for.\nDividends: Rs 2.40 / 2.80 / 3.20, growing 2% / 5% / 7% then 3.5% / 4.5% / 5.5%.\nResidual income: book value Rs 9.99, ROE from 40% to 20% / 25% / 30% over ten years.\n\nWhat changed in this redo\n- Record rebuilt from the CSE downloads. 2025 and 2024 reinvestment figures (depreciation split, capex booked, impairment, licence amortisation, working capital, acquisitions, operating profit, tax rate, equity, borrowings, leases, interest paid) were added, and the 2025 cash-flow page reference was corrected to p. 209.\n- Required return: beta 0.63, cost of equity 14.7% (was 16.5% set by hand), WACC 13.8%.\n- DCF: now the whole company at WACC less net debt, starting from cash before interest. Weighted Rs 22.6 → Rs 26.7.\n- P/E: justified multiples 6.5 / 8 / 10.6x at the new cost of equity (were 6 / 7.5 / 9.5x). Weighted Rs 29.3 → Rs 31.7.\n- Dividend model Rs 26.2 → Rs 28.1; residual income Rs 23.9 → Rs 28.1.\n- Fair value Rs 25.50 → Rs 28.70, buy Rs 21.70 → Rs 24.40, strong buy Rs 19.10 → Rs 21.50.\n\nPeers and history\nSri Lanka Telecom trades at roughly 15–18x earnings and Asian telecoms at about 16x; on those multiples Dialog would be worth Rs 52–60. But its own P/E averaged about 7.6x in 2021–2025, and its 7.5% earnings yield is well below the 12.24% government bond. HNB Stockbrokers rates it a moderate buy with a Rs 55 target.\n\nRisks to watch\nInterest rates, the rupee, the BOI tax deal (the 2025 goodwill note mentions an impending expiry of a tax concession in 2027), 5G capex payments, capex lagging depreciation, energy costs, a 15.85% free float, and the unexplained Rs 4bn rise in asset-retirement provisions. In a 2022-style crisis it would survive but cut dividends, and the price could halve.\n\n500-share plan\n200 shares up to Rs 28.70, 150 up to Rs 24.40 and 150 up to Rs 21.50: average about Rs 25.25, about Rs 12,625 in total. Rs 24.40 needs about a 51% fall. The share was last that low in 2025, and this year's low was Rs 30.10, so the plan is unlikely to fill without a market crash or a big rise in rates.\n\nSell rules\nIf you already hold Dialog: the price is above the sell trigger (30% above fair value, Rs 37.30). The business case itself is intact.\n\nBusiness tests: 3 of 4 passed (returns, debt and cash; it fails steady profit because of the 2022 loss). So it's a good business at a high price: watch list, unchanged.",
+  "requiredReturn": {
+    "beta": 0.63,
+    "betaBasis": "Provisional. Higher of (a) Damodaran's US Telecom Services unlevered beta 0.38 relevered at Dialog's net debt to market value (0.12): 0.42, used because his emerging-markets dataset couldn't be read in this run; and (b) the median of local 5-year betas from web-search extracts (StockAnalysis 0.66, Investing.com 0.48, Simply Wall St 0.63): 0.63. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 16.2,
+      "base": 14.7,
+      "bull": 13.2
+    },
+    "costOfDebt": 8.25,
+    "wacc": {
+      "bear": 15.1,
+      "base": 13.8,
+      "bull": 12.5
+    },
+    "debtWeight": 10.9,
+    "asOf": "2026-11-14",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 8.57bn ÷ average borrowings and leases Rs 104bn (Annual Report 2025, pp. 205, 209)",
+      "Weights: market cap Rs 461.9bn at Rs 50.20 (CSE close 13 Nov 2026), net debt Rs 56.7bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.63 × (4.2% + 6.08%) = 14.7%; bear +1.5, bull −1.5 points. WACC weights equity 89.1% and after-tax debt (8.25% × (1 − 22.2%) = 6.4%) 10.9%. Cost of debt is near the bottom of the house range (bond − 4 points) because part of the debt was in dollars and short-term bank lines."
+  }
 }

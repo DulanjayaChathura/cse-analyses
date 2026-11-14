@@ -15,14 +15,14 @@
       "note": "Not read in detail: 2024 figures (restated) come from the 2025 report's five-year summary."
     },
     {
-      "file": "Dialog Annual Report as at 31st December 2025.pdf",
+      "file": "reports/DIAL.N0000/2026-05-19_annual_Annual-Report-as-at-31st-December-2025.pdf",
       "title": "Annual report 2025",
       "period": "FY 2025",
       "periodEnd": "2025-12-31",
       "type": "annual",
       "audited": true,
-      "readOn": "2026-11-11",
-      "note": "Re-read 2026-11-11 with page references: highlights (p. 15), business review (p. 63), share information (p. 72), financial capital (pp. 75–76), audit report and key audit matters, cash flow (p. 208), notes 21 (borrowings), 25 (provisions), 37 (related parties), tax note, five-year summary (pp. 286–287). First read 2026-10-26."
+      "readOn": "2026-11-14",
+      "note": "Re-read 2026-11-14 for /redo DIAL full from the CSE download (laptop copy: 'Dialog Annual Report as at 31st December 2025.pdf'). Re-read 2026-11-11 with page references: highlights (p. 15), business review (p. 63), share information (p. 72), financial capital (pp. 75–76), audit report and key audit matters, cash flow (p. 208), notes 21 (borrowings), 25 (provisions), 37 (related parties), tax note, five-year summary (pp. 286–287). First read 2026-10-26. This read added: statements pp. 204–210, note 7 intangibles (p. 237), note 8 PPE (p. 242), note 9 leases, note 26(c) contract costs (p. 269), tax note (p. 277), note 33 cash flow (pp. 275–276), network capex (p. 127). Printed page = PDF page − 2."
     },
     {
       "file": "Dialog Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
@@ -45,24 +45,24 @@
       "note": "Q1 figures; first Rs 0.70 interim for 2026; provision jump."
     },
     {
-      "file": "Dialog Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
+      "file": "reports/DIAL.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
       "title": "Interim to 30 Jun 2026",
       "period": "H1 2026",
       "periodEnd": "2026-06-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-11",
-      "note": "Re-read 2026-11-11 with page references; reviewed by Deloitte. First read 2026-10-26."
+      "readOn": "2026-11-14",
+      "note": "Re-read 2026-11-14 for /redo DIAL full from the CSE download (laptop copy: 'Dialog Interim Financial Statements for the Quarter ended 30th June 2026.pdf'). Re-read 2026-11-11 with page references; reviewed by Deloitte. First read 2026-10-26."
     },
     {
-      "file": "Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
+      "file": "reports/DIAL.N0000/2026-11-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
       "title": "Interim to 30 Sep 2026",
       "period": "9M 2026",
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-11",
-      "note": "Reviewed by Deloitte (10 Nov 2026). Balance sheet p. 2, nine months p. 3, quarter p. 4, cash flow p. 7, segments note 3 (pp. 8–10), share price and shareholders pp. 11, capex commitments and events after the period p. 14."
+      "readOn": "2026-11-14",
+      "note": "Re-read 2026-11-14 for /redo DIAL full from the CSE download (laptop copy: 'Interim Financial Statements for the Quarter ended 30th September 2026.pdf'). Reviewed by Deloitte (10 Nov 2026). Balance sheet p. 2, nine months p. 3, quarter p. 4, cash flow p. 7, segments note 3 (pp. 8–10), share price and shareholders pp. 11, capex commitments and events after the period p. 14."
     }
   ],
   "periods": [
@@ -282,13 +282,104 @@
         "capexPaid": {
           "value": 34.395,
           "unit": "Rs bn",
-          "source": "Annual Report 2025, cash flow statement (p. 208)",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
           "note": "PPE 30.12 + intangibles 4.28"
         },
         "netDebtToEbitda": {
           "value": 1.0,
           "unit": "x",
           "source": "Annual Report 2025, financial capital (p. 76)"
+        },
+        "depreciation": {
+          "value": 45.787,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 33(a) (p. 275)",
+          "note": "Depreciation, impairment and amortisation (restated comparative)"
+        },
+        "impairment": {
+          "value": 0.29,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 8(a) (p. 242)",
+          "note": null
+        },
+        "licenceAmortisation": {
+          "value": 1.578,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 7(a) (p. 237)",
+          "note": null
+        },
+        "capexBooked": {
+          "value": 36.33,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, notes 7(a) and 8(a) (pp. 237, 242)",
+          "note": "PPE additions 36.241 + intangible additions 0.090; excludes assets from the Airtel acquisition"
+        },
+        "workingCapitalChange": {
+          "value": 8.421,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 33(a) (p. 275)",
+          "note": "Increase: receivables +7.555, other financial assets +5.095, inventories −1.173, trade payables −1.798, other financial liabilities −1.258"
+        },
+        "acquisitions": {
+          "value": 5.51,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Airtel Lanka, net cash"
+        },
+        "operatingProfit": {
+          "value": 20.779,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": null
+        },
+        "taxRate": {
+          "value": 23.0,
+          "unit": "%",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": "Worked out: 3.705 ÷ 16.140"
+        },
+        "totalEquity": {
+          "value": 78.354,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 204)",
+          "note": "Owners; restated"
+        },
+        "borrowings": {
+          "value": 107.694,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 205)",
+          "note": "Non-current 35.750 + current 71.944"
+        },
+        "leaseLiabilities": {
+          "value": 12.52,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 205)",
+          "note": null
+        },
+        "cash": {
+          "value": 33.786,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 204)",
+          "note": null
+        },
+        "netDebt": {
+          "value": 86.428,
+          "unit": "Rs bn",
+          "source": "Worked out from Annual Report 2025, pp. 204–205",
+          "note": "Borrowings and leases less cash"
+        },
+        "interestPaid": {
+          "value": 9.471,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": null,
+          "section": "operating"
+        },
+        "dividendsPaid": {
+          "value": 3.76,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": null
         }
       }
     },
@@ -328,7 +419,8 @@
         "operatingCashFlow": {
           "value": 65.527,
           "unit": "Rs bn",
-          "source": "Annual Report 2025, five-year summary (pp. 286–287)"
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Five-year summary (pp. 286–287) gives the same figure"
         },
         "roe": {
           "value": 23.1,
@@ -373,8 +465,8 @@
         "capexPaid": {
           "value": 27.692,
           "unit": "Rs bn",
-          "source": "Annual Report 2025, cash flow statement (p. 208)",
-          "note": "PPE 23.49 + intangibles 4.21"
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "PPE 23.486 + intangibles 4.206 (page reference corrected from p. 208)"
         },
         "freeCashFlow": {
           "value": 33.66,
@@ -401,47 +493,132 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025, note 21(d)"
         },
-        "depreciation": {
-          "value": null,
-          "unit": "Rs bn",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update. Worked out for the text only: EBITDA Rs 86.0bn less operating profit (21.5% margin) ≈ Rs 47bn; not used as a recorded figure."
-        },
-        "workingCapitalChange": {
-          "value": null,
-          "unit": "Rs bn",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
-        },
-        "acquisitions": {
-          "value": null,
-          "unit": "Rs bn",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
-        },
-        "operatingProfit": {
-          "value": null,
-          "unit": "Rs bn",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
-        },
-        "taxRate": {
-          "value": null,
-          "unit": "%",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
-        },
-        "totalEquity": {
-          "value": null,
-          "unit": "Rs bn",
-          "source": null,
-          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
-        },
         "rdExpensed": {
           "value": null,
           "unit": "Rs bn",
-          "source": null,
-          "note": "Not recorded; R&D isn't separately disclosed in the reports read (check on the next annual report)."
+          "source": "Annual Report 2025",
+          "note": "Not disclosed separately (checked the notes and the innovation review)"
+        },
+        "depreciation": {
+          "value": 48.164,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 33(a) (p. 275)",
+          "note": "Depreciation, impairment and amortisation: PPE depreciation 31.812 + PPE impairment 1.001 (note 8, p. 242), intangible amortisation 4.874 (note 7, p. 237), right-of-use depreciation 2.785 (note 9), contract cost amortisation 7.619 (note 26(c)(i), p. 269; dealer commissions and set-top boxes/routers, whose cash cost is already inside operating cash flow), write-offs about 0.07"
+        },
+        "impairment": {
+          "value": 1.001,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 8(a) (p. 242)",
+          "note": "PPE impairment; net impairment on financial assets (3.29) is a separate line, not in depreciation"
+        },
+        "licenceAmortisation": {
+          "value": 0.861,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 7(a) (p. 237)",
+          "note": "Licences column of intangible amortisation"
+        },
+        "contractCostAmortisation": {
+          "value": 7.619,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 26(c)(i) (p. 269)",
+          "note": "Inside depreciation and amortisation; additions 6.437 are paid through operating cash flow, not capex"
+        },
+        "rightOfUseDepreciation": {
+          "value": 2.785,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 9 (p. 247)",
+          "note": null
+        },
+        "capexBooked": {
+          "value": 27.534,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, notes 7(a) and 8(a) (pp. 237, 242)",
+          "note": "PPE additions 27.292 + intangible additions 0.242. The report quotes group capex of Rs 20.2bn (financial capital, p. 76) and Rs 26bn (network review, p. 127) on its own definitions"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, network review (p. 127)",
+          "note": "Not separable: the report says Rs 17bn of Rs 26bn went to 'strengthening physical network infrastructure, supporting the expansion of 5G and 4G networks, fibre deployment and data centre capabilities', which mixes upkeep and expansion, so none is counted as named growth capex"
+        },
+        "workingCapitalChange": {
+          "value": 18.348,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 33(a) (p. 275)",
+          "note": "Increase (cash tied up): receivables −2.596, other financial assets +5.065, inventories −0.030, trade payables +16.603 (paid down), other financial liabilities −0.694"
+        },
+        "acquisitions": {
+          "value": 0.047,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Investment in associate"
+        },
+        "operatingProfit": {
+          "value": 38.608,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": null
+        },
+        "taxRate": {
+          "value": 22.2,
+          "unit": "%",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": "Worked out: tax 5.910 ÷ profit before tax 26.670. The company pays a 2% revenue-based tax under its BOI agreement (tax note, p. 277); subsidiaries 15–30%"
+        },
+        "totalEquity": {
+          "value": 90.13,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 204)",
+          "note": "Attributable to owners; 90.013 including non-controlling interests"
+        },
+        "borrowings": {
+          "value": 76.486,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 205)",
+          "note": "Non-current 15.482 + current 61.004 (of which bank overdrafts 15.805, p. 210)"
+        },
+        "leaseLiabilities": {
+          "value": 11.239,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 205)",
+          "note": "Non-current 9.427 + current 1.812"
+        },
+        "cash": {
+          "value": 19.05,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of financial position (p. 204)",
+          "note": null
+        },
+        "netDebt": {
+          "value": 68.675,
+          "unit": "Rs bn",
+          "source": "Worked out from Annual Report 2025, pp. 204–205",
+          "note": "Borrowings and leases less cash"
+        },
+        "interestPaid": {
+          "value": 8.574,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Interest expense in the income statement 11.314 includes lease interest",
+          "section": "operating"
+        },
+        "dividendsPaid": {
+          "value": 17.785,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Paid in 2025; total declared for FY 2025 Rs 13.8bn (p. 76)"
+        },
+        "sharesOutstanding": {
+          "value": 9200.335,
+          "unit": "",
+          "source": "Annual Report 2025, note 17",
+          "note": "Millions"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, note 7 (p. 237)",
+          "note": "No capitalised development costs in the intangible note"
         }
       }
     },
@@ -933,9 +1110,10 @@
           "source": "Interim to 30 Sep 2026, p. 2"
         },
         "totalEquity": {
-          "value": 91.876,
+          "value": 91.868,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 2"
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Owners (91.876 including non-controlling interests)"
         },
         "borrowings": {
           "value": 64.112,
@@ -992,6 +1170,25 @@
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, note 8 (p. 11)",
           "note": "High 49.90, low 43.00, last 45.80"
+        },
+        "interestPaid": {
+          "value": 4.246,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "6.582 a year earlier",
+          "section": "operating"
+        },
+        "dividendsPaid": {
+          "value": 33.474,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "The company statement of changes in equity shows Rs 26.68bn of dividends for the period (p. 6); the difference isn't explained"
+        },
+        "taxRate": {
+          "value": 14.4,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Worked out: 4.801 ÷ 33.347"
         }
       }
     },
@@ -1043,93 +1240,129 @@
           "value": 57.1,
           "unit": "%",
           "source": "Worked out"
+        },
+        "operatingProfit": {
+          "value": 50.3,
+          "unit": "Rs bn",
+          "source": "Worked out: 2025 38.61 + 9M 2026 39.33 − 9M 2025 27.64",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 81.97,
+          "unit": "Rs bn",
+          "source": "Worked out: 65.53 + 67.08 − 50.64",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 6.238,
+          "unit": "Rs bn",
+          "source": "Worked out: 8.574 + 4.246 − 6.582",
+          "note": null,
+          "section": "operating"
+        },
+        "depreciationAmortisation": {
+          "value": 49.02,
+          "unit": "Rs bn",
+          "source": "Worked out: 48.16 + 36.86 − 36.01",
+          "note": null
         }
       }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "0.63 (provisional)",
+      "reason": "8 steps, 14 Nov 2026. (1) Business: one segment in effect, integrated Sri Lankan telecom (mobile 78% of nine-month 2026 revenue, broadband 15%, TV 7%), so one sector beta. (2) Damodaran's emerging-markets unlevered beta for telecom (betaEmerg, January 2026) could NOT be read: his site is blocked by this run's network settings. As a stand-in, his US Telecom Services unlevered beta (January 2026, cash-corrected 0.38, from a web-search extract of his Betas page) was used; recheck with the emerging-markets figure. (3) Relevered with net debt Rs 56.7bn ÷ market value Rs 461.9bn = 0.12 and 22.2% tax: 0.38 × (1 + 0.778 × 0.12) = 0.42. (4) Local 5-year betas from web-search extracts (the pages themselves couldn't be opened): StockAnalysis 0.66 (5Y), Investing.com 0.48 (5Y), Simply Wall St 0.63 (period not stated); median 0.63. Not a thinly traded share. (5) Higher of 0.42 and 0.63 = 0.63. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets dataset and three verified local 5-year betas.",
+      "since": "2026-11-14"
+    },
+    {
       "name": "Cost of equity",
-      "value": "Bear 18% / Base 16.5% / Bull 15%",
-      "reason": "10-year bond about 12.4% (9 Nov 2026) plus about 4 points; previously a single 17% on a 13% bond. Scenario range added under the new framework.",
-      "since": "2026-11-11"
+      "value": "Bear 16.2% / Base 14.7% / Bull 13.2%",
+      "reason": "From scripts/reinvestment.py (14 Nov 2026): 8.24% + 0.63 × (4.2% + 6.08%) = 14.7%, ±1.5 points. Replaces the hand-set 18 / 16.5 / 15%.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Growth",
+      "value": "Bear 2% then 3.5% / Base 5% then 4.5% / Bull 7% then 5.5%",
+      "reason": "Lowered a point (was 3/6/8% then 4/5/6%) because 2025 reinvestment supports little growth; long-run below the 12.24% bond and WACC, reinvesting growth ÷ return on capital (23% / 23% / 22%).",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "ROE path",
+      "value": "40% → 20% / 25% / 30% over ten years",
+      "reason": "Unchanged; discounted at the new cost of equity.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "2027 EPS × P/E",
+      "value": "3.30 × 6.5 / 4.00 × 8 / 4.40 × 10.6",
+      "reason": "Forward P/E justified at the new cost of equity: payout (1 − g ÷ ROE, long-run ROE 20/25/30%, g 3.5/4.5/5.5%) ÷ (r − g). Base EPS = run-rate Rs 4.00 (Q3 2026 × 4).",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Dividend per share, growth",
+      "value": "Rs 2.40, 2% / Rs 2.80, 5% / Rs 3.20, 7%; then 3.5% / 4.5% / 5.5%",
+      "reason": "Growth lowered with the growth input; above the −1.4% capex-based supported rate for the reasons in the Growth check, below the 7.8% equity-route rate. Cash after maintenance covers dividends 1.08x (2025) to 1.4x (12 months to Sep 2026).",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Medium confidence (methods Rs 27–32 in the base case; beta provisional).",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Cash after maintenance capex (start)",
+      "value": "Bear Rs 24bn / Base Rs 36bn / Bull Rs 42bn",
+      "reason": "Cash before interest. Bear = calculator FY 2025 (operating cash 65.53 + after-tax interest 6.67 − depreciation 48.16). Base = 12 months to Sep 2026 (81.97 + 4.85 − base maintenance 46.30 = 40.5) less about 4.5 for capex payables still to be paid. Bull ≈ calculator FY 2025 at bull maintenance (40.3) and the trailing figure.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "calculator range: Rs 48.2bn / 46.3bn / 31.9bn",
+      "reason": "No company split. Bear = depreciation as reported; base = less impairment (1.00) and licence amortisation (0.86); bull = average capex booked 2024–2025. Depreciation includes Rs 7.6bn of contract-cost amortisation (cash already in operating cash flow) and Rs 2.8bn of lease depreciation, so bear and base are conservative.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Return on new capital",
+      "value": "Bear 15% / Base 20% / Bull 25%",
+      "reason": "Unchanged. 2025 return on capital 18.2% (after-tax operating profit ÷ opening equity and net debt); about 26% on trailing profit and September capital.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Bear Rs 32bn / Base Rs 39bn / Bull Rs 42bn",
+      "reason": "Trailing operating profit Rs 50.3bn taxed at 22% (base, the 2025 rate); bear at 30% with some fade, for the risk that the BOI revenue-tax deal ends (goodwill note, AR 2025 p. 241); bull 16%, near the 2026 rate. Was Rs 36 / 40 / 44bn worked out from net profit.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 2% / 5% / 7%; supported -1.4% (reinvestment rate × return on capital, FY 2025). Bear 3.4, base 6.4, bull 8.4 pts above: kept because 2025 reinvestment was depressed by a one-off Rs 16.6bn pay-down of payables and a capex dip; 2026 capex booked (Rs 35.0bn in nine months) is back at depreciation with 5G spectrum bought and Rs 15.7bn contracted; revenue is growing 8% on the existing network; and the DCF charges growth ÷ return on capital in reinvestment every year. Equity route (profit kept × ROE) 7.8%.",
+      "reason": "From scripts/reinvestment.py on the FY 2025 figures recorded in this redo; assumptions lowered a point from 3 / 6 / 8%.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 15.1% / Base 13.8% / Bull 12.5%",
+      "reason": "From scripts/reinvestment.py (14 Nov 2026): cost of debt 8.25% (interest paid ÷ average borrowings and leases, 2025), tax 22.2%, debt weight 10.9% (net debt Rs 56.7bn, market cap Rs 461.9bn at Rs 50.20).",
+      "since": "2026-11-14"
     },
     {
       "name": "Scenario weights",
       "value": "Bear 30 / Base 50 / Bull 20",
       "reason": "The owner's standard weighting.",
       "since": "2026-10-26"
-    },
-    {
-      "name": "Growth",
-      "value": "Bear 3% then 4% / Base 6% then 5% / Bull 8% then 6%",
-      "reason": "Five years, then long-term (below the 12.4% bond); long-run reinvestment 27% / 25% / 24% of after-tax operating profit. Unchanged.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "ROE path",
-      "value": "40% → 20% / 25% / 30% over ten years",
-      "reason": "Starting ROE raised from 34% to 40% for the 12 months to September 2026; long-run levels unchanged.",
-      "since": "2026-11-11"
-    },
-    {
-      "name": "2027 EPS × P/E",
-      "value": "3.30 × 6 / 4.00 × 7.5 / 4.40 × 9.5",
-      "reason": "P/E capped at the multiple justified when growth is paid for (payout = 1 − growth ÷ ROE; two-stage with ROE 30/35/40% then 20/25/30%): 5.9 / 7.3 / 9.6x. Was 8 / 10 / 12x, which implied about 9% growth.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "Dividend per share, growth",
-      "value": "Rs 2.40, 2% / Rs 2.80, 6% / Rs 3.20, 7.5%; then 4% / 5% / 6%",
-      "reason": "Bull growth capped at the supported 7.8% (was 8%); long-run growth stated explicitly.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "Margins of safety",
-      "value": "Buy 15% / Strong buy 25%",
-      "reason": "Medium confidence under the new framework (methods Rs 23–42 in the base case).",
-      "since": "2026-11-11"
-    },
-    {
-      "name": "Cash after maintenance capex (start)",
-      "value": "Bear Rs 26bn / Base Rs 33bn / Bull Rs 37bn",
-      "reason": "Replaces 'Normalised FCFE 2027' (Rs 34 / 43 / 50bn) under the new reinvestment rule. Base = operating cash flow over the 12 months to Sep 2026 (Rs 82.0bn: 65.53 + 67.08 − 50.64) less depreciation and amortisation run-rate Rs 49.2bn (9M 2026 Rs 36.86bn × 4/3). Bear allows profit to fade towards 2025 levels; bull a little higher cash generation.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "Maintenance capex basis",
-      "value": "depreciation",
-      "reason": "Dialog gives no maintenance/growth split. Depreciation includes right-of-use depreciation, licence amortisation and impairment, so it may overstate maintenance here.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "Return on new capital",
-      "value": "Bear 15% / Base 20% / Bull 25%",
-      "reason": "Sets the reinvestment growth needs (growth ÷ return). Base close to 2025 ROIC/ROCE of 19.8% (Annual Report 2025, pp. 15, 76).",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "After-tax operating profit (start)",
-      "value": "Bear Rs 36bn / Base Rs 40bn / Bull Rs 44bn",
-      "reason": "Base = trailing net profit Rs 34.4bn plus trailing finance costs (about Rs 8.2bn) after 30% tax; worked out, because 2025 operating profit and tax rate aren't in the record.",
-      "since": "2026-11-14"
-    },
-    {
-      "name": "Growth check",
-      "value": "Assumed 3% / 6% / 8%; supported 7.8% (share of profit kept × ROE). All within 2 pts.",
-      "reason": "From scripts/reinvestment.py (FY 2025: 33.6% kept × 23.1% ROE). Capex-based check not possible: FY 2025 depreciation, working capital and operating profit not in the record. On 9M 2026 figures capex booked (Rs 35.0bn) ≈ depreciation (Rs 36.9bn), so net reinvestment is near zero; base 6% relies on the 5G network already ordered, pricing and margin recovery.",
-      "since": "2026-11-14"
     }
   ],
   "openQuestions": [
-    "Full-year 2026 results (due early February 2027): final dividend, EBITDA margin, and whether capex paid catches up with capex booked (Rs 35.0bn booked vs Rs 19.0bn paid in nine months).",
-    "From the 2026 annual report (or the 2025 one), record the reinvestment figures for the latest year: depreciation and amortisation (split out right-of-use and impairment if possible), working-capital change, acquisitions, operating profit, tax rate and equity, so the capex-based growth check can run.",
-    "Does Dialog say how much of its capex is maintenance vs growth (5G, fibre)? If maintenance is clearly below depreciation, cash after maintenance capex and fair value rise.",
-    "Is paid capex staying below depreciation (Rs 27.7bn vs about Rs 47bn in 2025)? Several years of that would be under-investment.",
+    "Beta: replace the provisional 0.63 in January 2027 with Damodaran's emerging-markets telecom unlevered beta (betaEmerg) and three verified local 5-year betas; this run couldn't open those sites.",
+    "Full-year 2026 results (due early February 2027): final dividend, capex booked vs paid (Rs 35.0bn vs Rs 19.0bn in nine months), working-capital swing, and whether 2026 reinvestment turns positive (capex above depreciation).",
+    "BOI tax concession: the 2025 goodwill note mentions an 'impending expiration of tax concession in year 2027' (p. 241). Does the 2% revenue-based tax end, and what rate applies after?",
+    "Does Dialog give any maintenance/growth capex split for 5G and fibre?",
     "Why did the asset-retirement provision rise by about Rs 4bn in January–March 2026? Look in the 2026 annual report's provisions note.",
-    "5G spectrum cost and 2027 capex guidance; does the Rs 0.70 quarterly dividend hold as payments rise, without borrowings rising?",
-    "Any change to the BOI 2% revenue-tax arrangement or telecom levies in the 2027 budget.",
-    "Effect of deconsolidating Digital Health (now an associate) in Q4 2026."
+    "Nine-month 2026 dividends paid Rs 33.5bn (cash flow) vs Rs 26.7bn (company equity statement): what is the difference?",
+    "Effect of deconsolidating Digital Health (now an associate) in Q4 2026; any 2027 budget changes to telecom levies."
   ],
   "changeLog": [
     {
@@ -1171,6 +1404,16 @@
       "strongBuyPrice": 19.1,
       "priceAtTime": 50.2,
       "archive": "research/DIAL.N0000/history/2026-11-11-2.json"
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "Annual Report 2025 and interims to 30 Jun and 30 Sep 2026 (CSE downloads), re-read in full",
+      "summary": "Requested from Telegram (/redo DIAL full). Research record rebuilt from the downloaded reports: FY 2025 and FY 2024 reinvestment figures added (depreciation, impairment and amortisation 48.16 / 45.79; capex booked 27.53 / 36.33; impairment, licence and contract-cost amortisation; working capital +18.35 / +8.42; acquisitions; operating profit 38.61 / 20.78; tax 22.2% / 23.0%; equity; borrowings; leases; interest paid 8.57 / 9.47, operating section), plus 9M 2026 interest paid and dividends paid. Earlier figures and reportsRead kept. Beta 0.63 (provisional: Damodaran's emerging-markets dataset and the local beta pages were blocked by the network settings, so it rests on web-search extracts) gives cost of equity 14.7% (was 16.5% by hand) and WACC 13.8%. Capex-based supported growth −1.4% (2025 reinvestment −2.2bn × 18.2% return on capital); growth lowered to 2 / 5 / 7% and kept above it with reasons. DCF now whole-company at WACC less net debt: weighted 22.6 → 26.7; P/E 29.3 → 31.7 (6.5 / 8 / 10.6x); dividends 26.2 → 28.1; residual income 23.9 → 28.1. Business tests 3 of 4, unchanged; category unchanged (watch list). Fair value Rs 25.50 → 28.70, buy Rs 21.70 → 24.40, strong buy Rs 19.10 → 21.50.",
+      "fairValue": 28.7,
+      "buyPrice": 24.4,
+      "strongBuyPrice": 21.5,
+      "priceAtTime": 50.2,
+      "archive": "research/DIAL.N0000/history/2026-11-14.json"
     }
   ]
 }
