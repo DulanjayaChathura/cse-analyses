@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "HAYL.N0000",
   "localFolder": "HAYLEYS PLC",
-  "updated": "2026-11-09",
+  "updated": "2026-11-14",
   "reportsRead": [
     {
       "file": "Annual Report 2024,2025.pdf",
@@ -52,6 +52,16 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-09"
+    },
+    {
+      "file": "reports/HAYL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-14",
+      "note": "Downloaded from the CSE for a Telegram /update request. Page numbers are the 'Page n' footers."
     }
   ],
   "periods": [
@@ -341,6 +351,86 @@
           "note": "Quarter range Rs 214.00–244.00"
         }
       }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "note": "Six months to 30 September 2026 (year to date). The September quarter alone: revenue Rs 178.688bn (up 29%), profit attributable Rs 3.963bn (up 66%), EPS Rs 5.02 (Rs 3.18), p. 2.",
+      "figures": {
+        "revenue": {
+          "value": 358.013,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, continuing operations; up 33%"
+        },
+        "netProfit": {
+          "value": 7.528,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, attributable; up 93% (Rs 3.898bn); includes Rs 0.416bn loss from the Maldives hotel"
+        },
+        "eps": {
+          "value": 9.55,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; Rs 5.19 a year earlier; continuing operations Rs 10.07"
+        },
+        "epsQuarter": {
+          "value": 5.02,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "September quarter; Rs 3.18 a year earlier"
+        },
+        "navPerShare": {
+          "value": 153.11,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, investor information (p. 19)"
+        },
+        "equityAttributable": {
+          "value": 121.725,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Total equity including minority interests Rs 183.680bn"
+        },
+        "borrowings": {
+          "value": 334.441,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Long-term Rs 96.020bn, current portion Rs 48.372bn and short-term Rs 190.049bn; cash and deposits Rs 63.705bn"
+        },
+        "financeCost": {
+          "value": 16.184,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; up 89%"
+        },
+        "operatingCashFlow": {
+          "value": 7.321,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "Six months; Rs -6.675bn a year earlier"
+        },
+        "capex": {
+          "value": 43.638,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "Six months, property, plant and equipment; Rs 10.378bn a year earlier"
+        },
+        "sharesOutstanding": {
+          "value": 795,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, note 6 (p. 13)"
+        },
+        "priceQuarterEnd": {
+          "value": 225.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, investor information (p. 19)",
+          "note": "July–September range Rs 222.00–240.00"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -369,10 +459,16 @@
       "since": "2026-11-09"
     },
     {
+      "name": "First-year ROE (residual income path)",
+      "value": "13% / 15% / 17%",
+      "reason": "Raised from 12% / 14% / 16%: base EPS of Rs 23 is about 15% on average equity; the half year annualises to about 13%.",
+      "since": "2026-11-14"
+    },
+    {
       "name": "EPS to March 2027 × P/E",
-      "value": "17 × 8 / 20 × 10 / 23 × 12",
-      "reason": "Q1 EPS Rs 4.56 (Rs 2.01 a year earlier); last year Rs 18.71.",
-      "since": "2026-11-09"
+      "value": "20 × 8 / 23 × 10 / 25 × 12",
+      "reason": "Raised from 17 / 20 / 23: first-half EPS is already Rs 9.55, and the second half was the stronger one last year (Rs 13.52, about Rs 12.75 on 795mn shares).",
+      "since": "2026-11-14"
     },
     {
       "name": "Methods used",
@@ -388,9 +484,10 @@
     }
   ],
   "openQuestions": [
-    "Q2 results (to September 2026, due by mid-November): does the June quarter's jump in profit continue?",
-    "Were the large June-quarter gains in 'Others' and 'Industry Inputs' one-offs?",
-    "Do borrowings come down after the rights issue and the Maldives sale?",
+    "Q3 results (to December 2026, due by mid-February): does the second half again earn far more than the first, as in 2025/26?",
+    "Does the jump in transport and logistics profit (Rs 7.24bn against Rs 3.09bn) last?",
+    "Borrowings rose to Rs 334bn and finance costs rose 89%: does debt start falling once the Rs 43.6bn of new plant is paid for?",
+    "Is an interim dividend declared for 2026/27?",
     "A sum of the parts using listed subsidiaries' prices (Dipped Products, Haycarb, Singer, Alumex, Kelani Valley, Talawakelle and others) would test the book-based value."
   ],
   "changeLog": [
@@ -403,6 +500,16 @@
       "strongBuyPrice": 103.5,
       "priceAtTime": 228.75,
       "archive": null
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/update HAYL.N0000). Added the September 2026 interim: six-month EPS Rs 9.55 (Rs 5.19), NAV Rs 153.11, borrowings Rs 334bn. Raised the March 2027 EPS estimates to 20 / 23 / 25 and the first-year ROE in the residual income path to 13% / 15% / 17%; other inputs unchanged. Fair value Rs 138 → Rs 151. Business tests still 1 of 4 (avoid for now). Earlier questions: Q2 profit growth continued (up 66%); 'Others' was not a one-off (Rs 3.90bn against Rs 4.15bn a year earlier) while industry inputs nearly doubled; borrowings rose rather than fell.",
+      "fairValue": 151.0,
+      "buyPrice": 128.35,
+      "strongBuyPrice": 113.25,
+      "priceAtTime": 236.25,
+      "archive": "research/HAYL.N0000/history/2026-11-09.json"
     }
   ]
 }
