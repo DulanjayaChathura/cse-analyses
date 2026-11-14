@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "RHL.N0000",
   "localFolder": "renuka h",
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "reportsRead": [
     {
       "file": "Annual Report 2024,25.pdf",
@@ -73,6 +73,16 @@
       "audited": false,
       "readOn": "2026-11-12",
       "note": "Not reviewed by auditors. Opening March 2026 balance is unaudited (owners' equity Rs 10,078m vs audited Rs 9,660m). Income statement p. 3, balance sheet p. 4, equity p. 5, cash flow p. 6, segments p. 7, notes pp. 8–9, shareholders pp. 10–11."
+    },
+    {
+      "file": "reports/RHL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q2 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-14",
+      "note": "Downloaded from the CSE for a Telegram request. Not reviewed by auditors; opening March 2026 balance is now the audited one. Operational review p. 2, income statement p. 3, balance sheet p. 4, equity p. 5, cash flow p. 6, segments p. 7 (six months only), notes pp. 8–9, shareholders pp. 10–11, corporate information p. 12 (auditors Ernst & Young)."
     }
   ],
   "periods": [
@@ -617,16 +627,16 @@
           "note": "Group; 0.427 a year earlier"
         },
         "netProfitOwners": {
-          "value": 0.148,
+          "value": 0.137,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, p. 3",
-          "note": "0.207 a year earlier"
+          "source": "Worked out from Interim Q2 2026/27, p. 3 (six months 0.160 less quarter 0.023)",
+          "note": "Restated (implied): the June interim showed 0.148; group profit unchanged at 0.407. 0.207 a year earlier"
         },
         "eps": {
-          "value": 0.78,
+          "value": 0.72,
           "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, p. 3",
-          "note": "1.09 a year earlier"
+          "source": "Worked out from Interim Q2 2026/27, p. 3 (0.84 − 0.12)",
+          "note": "Restated (implied): the June interim showed 0.78. 1.09 a year earlier"
         },
         "segmentProfit": {
           "value": null,
@@ -712,7 +722,8 @@
         "eps": {
           "value": 3.39,
           "unit": "Rs",
-          "source": "Worked out: 3.70 + 0.78 − 1.09"
+          "source": "Worked out: 3.70 + 0.78 − 1.09",
+          "note": "Based on the June interim's Q1 EPS 0.78; about 3.33 with the implied restated 0.72"
         },
         "netProfitOwners": {
           "value": 0.643,
@@ -721,6 +732,226 @@
         },
         "roe": {
           "value": 6.7,
+          "unit": "%",
+          "source": "Worked out, estimated"
+        }
+      }
+    },
+    {
+      "period": "Q2 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 3.8,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 5.008 a year earlier. Six months 7.645 (8.869)"
+        },
+        "grossProfit": {
+          "value": 0.683,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 1.257 a year earlier. Six months 1.473 (1.941)"
+        },
+        "grossMarginPct": {
+          "value": 18.0,
+          "unit": "%",
+          "source": "Worked out",
+          "note": "Quarter; 25.1% a year earlier. Six months 19.3% (21.9%)"
+        },
+        "operatingProfit": {
+          "value": 0.231,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 0.765 a year earlier. Six months 0.570 (0.978)"
+        },
+        "financeIncome": {
+          "value": 0.208,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 0.035 a year earlier. Six months 0.501 (0.107); finance cost six months 0.365"
+        },
+        "portfolioGains": {
+          "value": -0.308,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter, fair-value loss on quoted shares; +0.484 a year earlier. Six months −0.293 (+0.790)"
+        },
+        "netProfit": {
+          "value": -0.079,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Group, quarter; 1.156 a year earlier. Six months 0.328 (1.582)"
+        },
+        "netProfitOwners": {
+          "value": 0.023,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter (22.6m); 0.658 a year earlier. Six months 0.160 (0.865). Minorities −0.102 in the quarter"
+        },
+        "eps": {
+          "value": 0.12,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 3.47 a year earlier. Six months 0.84 (4.56)"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "No interim dividend shown"
+        },
+        "segmentProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 7",
+          "note": "Six months, after tax before NCI: agri exports 0.244 (0.219), consumer brands 0.038 (0.492), investment 0.046 (0.871). Quarter by difference from the June interim: about 0.119, 0.009, −0.207"
+        },
+        "operatingCashFlow": {
+          "value": 0.639,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 6",
+          "note": "Six months; −0.307 a year earlier. About 0.797 in the quarter by difference"
+        },
+        "capexPaid": {
+          "value": 0.415,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 6",
+          "note": "Six months, PPE"
+        },
+        "acquisitionOfSubsidiary": {
+          "value": 0.741,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 6",
+          "note": "Six months, net of cash acquired; company paid 0.269. Not explained; note 8 says no significant events. Shares in existing subsidiaries: +0.234 net"
+        },
+        "ownershipChangeToOwners": {
+          "value": -0.573,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 5",
+          "note": "Six months (NCI +0.066); about −0.320 in the quarter after −0.253 in April–June. Not explained"
+        },
+        "equityOwners": {
+          "value": 9.247,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "Opening March balance now the audited 9.660"
+        },
+        "navPerShare": {
+          "value": 48.75,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "On 189.69m shares; 50.93 in March"
+        },
+        "nci": {
+          "value": 11.884,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "56% of group equity"
+        },
+        "borrowings": {
+          "value": 3.56,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "3.200 due within a year + 0.359 after"
+        },
+        "bankOverdraft": {
+          "value": 0.546,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "leaseLiabilities": {
+          "value": 0.226,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "cash": {
+          "value": 6.371,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "shortTermDeposits": {
+          "value": 0.457,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "quotedShares": {
+          "value": 3.343,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "4.086 in March; 0.743 net sold in six months"
+        },
+        "netDebt": {
+          "value": -2.5,
+          "unit": "Rs bn",
+          "source": "Worked out",
+          "note": "Net cash: 6.828 cash and deposits less 4.331 borrowings, overdraft and leases"
+        },
+        "currentRatio": {
+          "value": 3.15,
+          "unit": "x",
+          "source": "Worked out from p. 4"
+        },
+        "sharesOutstanding": {
+          "value": 189.69,
+          "unit": "",
+          "source": "Interim Q2 2026/27, note 3 (p. 8)",
+          "note": "Millions: 165.488 voting + 24.202 non-voting, unchanged from March; the 2025/26 scrip shares (0.788m + 0.160m) aren't shown and no scrip dividend appears in equity"
+        },
+        "renukaGroupHoldingPct": {
+          "value": 50.07,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, p. 10",
+          "note": "Voting; unchanged from June"
+        },
+        "publicFloatPct": {
+          "value": 29.61,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, note 6 (p. 8)",
+          "note": "Voting; non-voting 93.03%"
+        },
+        "priceRangeQuarter": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, note 5 (p. 8)",
+          "note": "Voting high 50.40, low 38.80, last 39.90; non-voting 39.10 / 28.00 / 29.90"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": -0.02,
+          "unit": "Rs",
+          "source": "Worked out: 3.70 + 0.84 − 4.56",
+          "note": "The prior-year six months (unaudited) were before the 2025/26 audit cuts"
+        },
+        "netProfitOwners": {
+          "value": -0.003,
+          "unit": "Rs bn",
+          "source": "Worked out: 0.702 + 0.160 − 0.865"
+        },
+        "netProfit": {
+          "value": -0.007,
+          "unit": "Rs bn",
+          "source": "Worked out: 1.247 + 0.328 − 1.582",
+          "note": "Group"
+        },
+        "operatingCashFlow": {
+          "value": 1.889,
+          "unit": "Rs bn",
+          "source": "Worked out: 0.943 + 0.639 + 0.307"
+        },
+        "roe": {
+          "value": 0.0,
           "unit": "%",
           "source": "Worked out, estimated"
         }
@@ -742,9 +973,9 @@
     },
     {
       "name": "NAV per share",
-      "value": "Rs 50.12",
-      "reason": "Audited March 2026 owners' equity (Rs 9,660m) + June-quarter profit (Rs 148m) − ownership changes (Rs 253m), ÷ 190.64m shares after the scrip issue. The company's June figure (Rs 52.57) starts from an unaudited March balance.",
-      "since": "2026-11-12"
+      "value": "Rs 48.75",
+      "reason": "September 2026 owners' equity Rs 9,247m (now built on the audited March balance) ÷ 189.69m shares, the company's own figure (Interim Q2 2026/27, p. 4). Was Rs 50.12 (June, rebuilt on 190.64m shares); the September report shows no scrip shares issued.",
+      "since": "2026-11-14"
     },
     {
       "name": "Holding-company discount to NAV",
@@ -755,13 +986,13 @@
     {
       "name": "Listed stakes at market (sum of the parts)",
       "value": "Rs 41.8 / 43.8 / 45.8 a share, less 40% / 30% / 20%",
-      "reason": "Renuka Foods 43.41%, Ceylon Land & Equity 43.55%, Galle Face Capital Partners 29.55% (may overlap; excluded in the low case), Campbell Place land 72.24%, at CSE prices of 11 Nov 2026: COCO.N 22.70, COCO.X 22.20, KZOO.N 8.90, WAPO.N 20.90.",
+      "reason": "Renuka Foods 43.41%, Ceylon Land & Equity 43.55%, Galle Face Capital Partners 29.55% (may overlap; excluded in the low case), Campbell Place land 72.24%, at CSE prices of 11 Nov 2026: COCO.N 22.70, COCO.X 22.20, KZOO.N 8.90, WAPO.N 20.90. Checked 14 Nov 2026: Renuka Foods at 13 Nov closes (COCO.N 22.50, COCO.X 20.20) takes about Rs 0.24 a share off, offset by using 189.69m shares; rounded values unchanged. KZOO and WAPO not in the CSE feed, kept at 11 Nov prices.",
       "since": "2026-11-12"
     },
     {
       "name": "Normal EPS × P/E",
       "value": "2.00 × 8 / 2.60 × 10 / 3.20 × 12",
-      "reason": "Trailing EPS Rs 3.39 is mostly portfolio gains; the food businesses earned about Rs 1 a share for owners in 2025/26; interest on Rs 6bn of cash adds about Rs 1.",
+      "reason": "Trailing EPS Rs 3.39 is mostly portfolio gains; the food businesses earned about Rs 1 a share for owners in 2025/26; interest on Rs 6bn of cash adds about Rs 1. Kept 14 Nov 2026: April–September owners' EPS Rs 0.84 includes a Rs 293m portfolio loss and Rs 501m of interest income; without the loss, underlying earnings look like roughly Rs 2.00–3.50 a year.",
       "since": "2026-11-12"
     },
     {
@@ -778,13 +1009,13 @@
     }
   ],
   "openQuestions": [
-    "September 2026 quarter (due by mid-November): owners' profit without portfolio gains, interest income on the rights-issue cash, consumer-brands margin.",
-    "Does the September interim restate the opening March 2026 balance to the audited figures (owners' equity Rs 9,660m)?",
+    "December 2026 quarter (due by mid-February): owners' profit without portfolio gains or losses, consumer-brands recovery (Rs 38m in six months against Rs 492m), interest income as cash is used.",
+    "Which subsidiary was acquired for Rs 741m (company paid Rs 269m), and which stake changes cost owners Rs 573m in April–September 2026 (about Rs 320m in the September quarter)?",
+    "Were the 2025/26 scrip dividend shares (788,393 voting, 160,336 non-voting) issued? The September interim still shows 189.69m shares and no scrip dividend in equity.",
+    "Why the segment assets moved so much between March and September (investment Rs 15.8bn → Rs 3.4bn; agri and consumer up).",
     "Galle Face Icon: remaining cost, funding, timetable, and the renegotiated contractor commitments.",
-    "Who bought the subsidiary shares sold in 2025/26 (Rs 5.7bn) and at what prices; any further sell-downs.",
-    "What was behind the Rs 253m ownership-change charge to owners' equity in April–June 2026?",
-    "First results under Ernst & Young (2026/27 audit); any changes to valuations or tax.",
-    "Exact holding chain inside the group (does Ceylon Land & Equity hold part of Galle Face Capital Partners?), to firm up the sum of the parts."
+    "First audit by Ernst & Young (2026/27); any changes to valuations or tax.",
+    "Exact holding chain inside the group (does Ceylon Land & Equity hold part of Galle Face Capital Partners?), and current stakes after the 2026 changes, to firm up the sum of the parts."
   ],
   "changeLog": [
     {
@@ -796,6 +1027,16 @@
       "strongBuyPrice": 20.1,
       "priceAtTime": 36.9,
       "archive": null
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "Interim to 30 Sep 2026 (unaudited), with the audited annual report 2025/26",
+      "summary": "Requested from Telegram (/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000). Weak September quarter: revenue −24% to Rs 3.80bn, Rs 308m share-portfolio loss, group loss Rs 79m, owners' profit Rs 23m (EPS 0.12 vs 3.47); six months owners' Rs 160m (EPS 0.84 vs 4.56); 12-month EPS about nil. Owners' equity fell to Rs 9.25bn (NAV Rs 48.75 from 50.93) after a further Rs 573m charge from unexplained subsidiary stake changes; the report now starts from the audited March balance (answers the open question). Operating cash flow Rs 639m in six months; net cash Rs 2.5bn. Restatement: April–June owners' profit implied Rs 137m (EPS 0.72) vs Rs 148m (0.78) reported. Only valuation input changed: NAV Rs 50.12 → 48.75 (189.69m shares; no scrip shares shown, flagged as uncertain). KZOO/WAPO prices kept at 11 Nov (not in the CSE feed). Fair value Rs 26.80 → 26.40, buy 22.80 → 22.40, strong buy 20.10 → 19.80. Business tests still 1 of 4: category 3 (avoid for now), unchanged. Price Rs 36.10 voting / Rs 26.00 non-voting (CSE close, 13 Nov 2026).",
+      "fairValue": 26.4,
+      "buyPrice": 22.4,
+      "strongBuyPrice": 19.8,
+      "priceAtTime": 36.1,
+      "archive": "research/RHL.N0000/history/2026-11-12.json"
     }
   ]
 }

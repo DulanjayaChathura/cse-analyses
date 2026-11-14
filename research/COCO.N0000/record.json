@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "COCO.N0000",
   "localFolder": "renuka food",
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "reportsRead": [
     {
       "file": "Annual Report 2024,25.pdf",
@@ -63,6 +63,16 @@
       "audited": false,
       "readOn": "2026-11-12",
       "note": "Opening March balance unaudited (owners' equity Rs 6,594m vs audited Rs 6,511m). Income statement p. 3, balance sheet p. 4, cash flow p. 6, segments p. 7, notes pp. 8–9, shareholders p. 10."
+    },
+    {
+      "file": "reports/COCO.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q2 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-14",
+      "note": "Renuka Foods PLC's own report (cover and p. 11). Operational review p. 2, income statement p. 3, balance sheet p. 4 (opening March balance now audited), equity p. 5, cash flow p. 6, segments p. 7, notes pp. 8–9, top 20 shareholders p. 10. Downloaded for the Telegram request."
     }
   ],
   "periods": [
@@ -543,6 +553,191 @@
           "source": "Worked out: 1.62 + 0.28 − 0.22 (split-adjusted)"
         }
       }
+    },
+    {
+      "period": "Q2 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 3.775,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 4.974 a year earlier. Six months 7.544 (8.772)"
+        },
+        "grossProfit": {
+          "value": 0.638,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 1.203 a year earlier. Six months 1.384 (1.844)"
+        },
+        "grossMarginPct": {
+          "value": 16.9,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 24.2% a year earlier. Six months 18.3% (21.0%)"
+        },
+        "operatingProfit": {
+          "value": 0.174,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 0.722 a year earlier. Six months 0.401 (0.900)"
+        },
+        "financeIncome": {
+          "value": 0.091,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; six months 0.294 (0.098). Cash interest received only 0.037 in six months (p. 6); not explained"
+        },
+        "financeCosts": {
+          "value": 0.199,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 0.132 a year earlier. Six months 0.356 (0.292)"
+        },
+        "netProfit": {
+          "value": 0.065,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Group, quarter; 0.625 a year earlier. Six months 0.282 (0.705)"
+        },
+        "netProfitOwners": {
+          "value": -0.026,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter; 0.493 a year earlier. Six months 0.079 (0.576); minorities took 0.091 in the quarter"
+        },
+        "eps": {
+          "value": -0.07,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 3",
+          "note": "Quarter, basic and diluted. Six months 0.21. Year-earlier comparatives (3.34 quarter, 3.77 six months) are pre-split and don't reconcile with the profits"
+        },
+        "segmentProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 7",
+          "note": "Six months after tax: agri foods 0.244 (0.210), consumer brands 0.038 (0.496). Quarter worked out from Q1: agri about 0.158, consumer brands about −0.093"
+        },
+        "exportRevenue": {
+          "value": 3.338,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 7",
+          "note": "Six months; 4.545 a year earlier. Exports 44% of quarter revenue (p. 2)"
+        },
+        "operatingCashFlow": {
+          "value": 0.465,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 6",
+          "note": "Six months; −0.350 a year earlier. About 0.248 in the quarter"
+        },
+        "capexPaid": {
+          "value": 0.319,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 6",
+          "note": "Six months, PPE and investment property"
+        },
+        "equityInvestments": {
+          "value": 1.202,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "Investment in equity instruments, 0.782 at March (16% of Renuka Enterprises); 0.420 cash paid in six months (p. 6), not said what for"
+        },
+        "ownershipChangeToOwners": {
+          "value": 0.152,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 5",
+          "note": "Moved from minority interests to owners' equity (change in ownership without loss of control); company invested 0.400 in an existing subsidiary (p. 6). Not explained"
+        },
+        "equityOwners": {
+          "value": 6.742,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "nci": {
+          "value": 2.468,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "navPerShare": {
+          "value": 17.94,
+          "unit": "Rs",
+          "source": "Worked out: 6,742m ÷ 375.9m shares after the October scrip issue",
+          "note": "Company shows 18.00 on 374.6m (p. 4)"
+        },
+        "borrowings": {
+          "value": 3.227,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "3.197 current + 0.030 non-current; leases 0.222; overdraft 0.101"
+        },
+        "cash": {
+          "value": 0.938,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "netDebt": {
+          "value": 2.61,
+          "unit": "Rs bn",
+          "source": "Worked out from p. 4, including leases and overdraft"
+        },
+        "debtToEquity": {
+          "value": 0.28,
+          "unit": "x",
+          "source": "Worked out: net debt ÷ total equity 9.211"
+        },
+        "sharesOutstanding": {
+          "value": 374.624,
+          "unit": "",
+          "source": "Interim Q2 2026/27, p. 8",
+          "note": "Millions: 360.011 voting + 14.614 non-voting (note 3); plus 1.223 voting and 0.059 non-voting scrip shares allotted 2 Oct 2026 (note 10)"
+        },
+        "publicFloatPct": {
+          "value": 31.99,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, p. 8",
+          "note": "Voting; non-voting 83.30% (note 6)"
+        },
+        "priceRangeQuarter": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 8",
+          "note": "Voting 22.00–28.70, last 22.20; non-voting 19.10–26.00, last 20.00 (note 5)"
+        },
+        "renukaEnterprisesHoldingPct": {
+          "value": 56.57,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, p. 10",
+          "note": "Of voting shares; 46.06% in June. The Rajiyahs' joint 18m shares (p. 9) and apparently Renuka Holdings' 5.51% moved to it"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfitOwners": {
+          "value": 0.072,
+          "unit": "Rs bn",
+          "source": "Worked out: 0.568 + 0.079 − 0.576"
+        },
+        "eps": {
+          "value": 0.19,
+          "unit": "Rs",
+          "source": "Worked out: owners' profit 72m ÷ 375.9m shares",
+          "note": "Reported EPS can't be used: the year-earlier six-month EPS 3.77 is pre-split and doesn't reconcile"
+        },
+        "roe": {
+          "value": 1.1,
+          "unit": "%",
+          "source": "Worked out on average owners' equity 6.63bn"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -560,15 +755,15 @@
     },
     {
       "name": "NAV per share",
-      "value": "Rs 17.60",
-      "reason": "Audited March 2026 owners' equity (Rs 6,511m) + June-quarter owners' profit (Rs 106m) ÷ 375.9m shares.",
-      "since": "2026-11-12"
+      "value": "Rs 17.94",
+      "reason": "Owners' equity at 30 Sep 2026 (Rs 6,742m, now built on the audited March balance) ÷ 375.9m shares after the October scrip issue. Rs 152m of the rise since March is a transfer from minority interests.",
+      "since": "2026-11-14"
     },
     {
       "name": "Normal EPS × P/E",
-      "value": "0.90 × 8 / 1.40 × 10 / 1.90 × 12",
-      "reason": "Trailing EPS Rs 1.68 in a strong coconut year; five-year average about Rs 0.29.",
-      "since": "2026-11-12"
+      "value": "0.60 × 8 / 1.10 × 10 / 1.60 × 12",
+      "reason": "Cut from 0.90 / 1.40 / 1.90: the September quarter showed coconut margins easing (gross margin 16.9% vs 24.2%) and consumer brands in loss; twelve-month EPS fell to about Rs 0.19 against 1.62 in 2025/26; five-year average about Rs 0.29.",
+      "since": "2026-11-14"
     },
     {
       "name": "Price to NAV",
@@ -578,15 +773,15 @@
     },
     {
       "name": "Sum of the parts",
-      "value": "Renuka Agri Foods stake Rs 12.40 a share less 40% / 25% / 10%; consumer brands Rs 7 / 10 / 12; other assets less debt Rs 0.70",
-      "reason": "53.03% of RAL.N0000 at Rs 10.90 (11 Nov 2026); consumer brands at about 8–11x normal profit of Rs 350–450m.",
-      "since": "2026-11-12"
+      "value": "Renuka Agri Foods stake Rs 12.40 a share less 40% / 25% / 10%; consumer brands Rs 5 / 8 / 11; other assets less debt Rs 0.70",
+      "reason": "53.03% of RAL.N0000 at Rs 10.90 (11 Nov 2026; no newer CSE close found). Consumer brands cut from 7 / 10 / 12: six-month profit Rs 38m (Rs 496m) with a loss of about Rs 93m in July–September; normal profit now taken as about Rs 250–400m. Other assets kept: the Rs 420m of new equity investments was paid from cash.",
+      "since": "2026-11-14"
     },
     {
       "name": "Owners' ROE",
-      "value": "6% / 9% / 12%",
-      "reason": "Five-year range −14% to 12%.",
-      "since": "2026-11-12"
+      "value": "5% / 8% / 11%",
+      "reason": "Cut from 6 / 9 / 12: twelve-month owners' ROE fell to about 1%; five-year range −14% to 12%.",
+      "since": "2026-11-14"
     },
     {
       "name": "Margins of safety",
@@ -596,11 +791,12 @@
     }
   ],
   "openQuestions": [
-    "September 2026 quarter (due by mid-November): coconut margins, consumer-brands profit, and why finance income jumped in April–June.",
-    "Does the September interim restate the opening March balance to the audited figures?",
-    "Purpose and value of the Rs 782m stake in Renuka Enterprises; any dividends from it.",
-    "Any further sales of Renuka Agri Foods shares, and at what price.",
-    "Shaw Wallace lost Rs 398m in 2025/26 (note 18.3): is it recovering?"
+    "December 2026 quarter (due by mid-February): do coconut margins and exports stabilise, and do consumer brands return to profit?",
+    "What were the Rs 420m of new 'investment in equity instruments' (now Rs 1,202m) and the Rs 400m put into an existing subsidiary? Did the stake in Renuka Agri Foods rise above 53.03%?",
+    "Why was finance income Rs 294m in six months when only Rs 37m of interest was received in cash?",
+    "Renuka Enterprises now holds 56.57% of voting shares: any mandatory offer, delisting talk or further related-party deals?",
+    "Shaw Wallace lost Rs 398m in 2025/26 (note 18.3): consumer brands lost about Rs 93m in July–September — is Shaw Wallace the cause?",
+    "Any interim dividend for 2026/27."
   ],
   "changeLog": [
     {
@@ -612,6 +808,16 @@
       "strongBuyPrice": 10.4,
       "priceAtTime": 22.7,
       "archive": null
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "Interim to 30 Sep 2026 (unaudited), with the audited annual report 2025/26",
+      "summary": "Requested from Telegram (/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000). Read the September 2026 interim. Quarter revenue −24% to Rs 3.78bn, gross margin 16.9% (24.2%), owners' loss Rs 26m (profit Rs 493m); six-month owners' profit Rs 79m (Rs 576m); twelve-month EPS about Rs 0.19. Consumer brands slipped to a loss of about Rs 93m in the quarter. Operating cash flow Rs 465m for six months. Rs 420m more put into unexplained equity investments (now Rs 1,202m); Rs 152m moved from minority interests to owners. Renuka Enterprises now holds 56.57% of voting shares. NAV Rs 17.94. Opening March balance now matches the audited figures; no restatement of earlier periods. Cut normal EPS to 0.60/1.10/1.60, consumer brands to Rs 5/8/11 and owners' ROE to 5/8/11%. Fair value Rs 13.90 → 12.60, buy Rs 11.80 → 10.70, strong buy Rs 10.40 → 9.40. Business tests still 1 of 4 (debt only): category 3, avoid for now (unchanged). Renuka Agri Foods price kept at Rs 10.90 (11 Nov 2026), as no newer CSE close was available. Price Rs 22.50 voting, Rs 20.20 non-voting (CSE, 13 Nov 2026).",
+      "fairValue": 12.6,
+      "buyPrice": 10.7,
+      "strongBuyPrice": 9.4,
+      "priceAtTime": 22.5,
+      "archive": "research/COCO.N0000/history/2026-11-12.json"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "ACL.N0000",
   "localFolder": "ACL cabel",
-  "updated": "2026-11-11",
+  "updated": "2026-11-14",
   "reportsRead": [
     {
       "file": "Annual Report 2024,25.pdf",
@@ -53,6 +53,16 @@
       "audited": false,
       "readOn": "2026-11-11",
       "note": "Latest figures used. No September 2026 interim in the folder yet (due by mid-November)."
+    },
+    {
+      "file": "reports/ACL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-14",
+      "note": "Downloaded from the CSE for a Telegram request. Quarter EPS Rs 2.04; six months Rs 4.61. Page numbers are the printed ones (group P&L p. 1, balance sheet p. 4, cash flow p. 7, notes pp. 8–9, shareholders p. 10)."
     }
   ],
   "periods": [
@@ -381,6 +391,139 @@
           "note": "Millions"
         }
       }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 25.791,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 1",
+          "note": "Six months (YTD); up 22% from Rs 21.178bn. Quarter Rs 14.304bn, up 26%"
+        },
+        "grossProfit": {
+          "value": 6.186,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 1",
+          "note": "Six months; quarter Rs 3.404bn"
+        },
+        "grossMarginPct": {
+          "value": 24.0,
+          "unit": "%",
+          "source": "Interim Q2 2026/27, p. 1",
+          "note": "Six months, worked out (28.0% a year earlier). Quarter 23.8% (26.5%)"
+        },
+        "netProfit": {
+          "value": 3.312,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 1",
+          "note": "Six months, to owners (Rs 3.091bn a year earlier). Quarter Rs 1.469bn (Rs 1.484bn). Group profit after tax Rs 3.880bn"
+        },
+        "eps": {
+          "value": 4.61,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 1",
+          "note": "Six months (Rs 4.30). Quarter Rs 2.04 (Rs 2.06)"
+        },
+        "dividendPerShare": {
+          "value": 0.6,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, note 5 (p. 9)",
+          "note": "For 2025/26; declared 28 Sep 2026 (Rs 431.2mn), paid 26 Oct 2026"
+        },
+        "navPerShare": {
+          "value": 55.46,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 4"
+        },
+        "roe": {
+          "value": 17.8,
+          "unit": "%",
+          "source": "Worked out: twelve-month profit to owners Rs 6.559bn over average equity of Sep 2025 (Rs 33.94bn, p. 5) and Sep 2026 (Rs 39.86bn, p. 4)"
+        },
+        "operatingCashFlow": {
+          "value": -4.657,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 7",
+          "note": "Six months; so about minus Rs 0.04bn in the quarter (Q1 minus Rs 4.613bn)"
+        },
+        "capexPaid": {
+          "value": 0.237,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 7",
+          "note": "Six months"
+        },
+        "freeCashFlow": {
+          "value": -4.894,
+          "unit": "Rs bn",
+          "source": "Worked out from Interim Q2 2026/27, p. 7",
+          "note": "Six months: operating cash flow less capex"
+        },
+        "netDebt": {
+          "value": -10.374,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "Net cash: FVTPL 6.229 + short-term deposits 7.140 + cash 2.080 less borrowings 4.524, overdraft 0.524 and leases 0.027 (long-term fixed deposits of Rs 0.053bn left out). March 2026 on the same basis: net cash Rs 14.755bn"
+        },
+        "debtToEquity": {
+          "value": 0.11,
+          "unit": "x",
+          "source": "Worked out from Interim Q2 2026/27, p. 4",
+          "note": "Borrowings, overdraft and leases Rs 5.08bn over total equity Rs 46.39bn"
+        },
+        "inventory": {
+          "value": 19.078,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "Rs 14.128bn at March 2026; about Rs 18.8bn at June 2026"
+        },
+        "shortTermBorrowings": {
+          "value": 4.428,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "Rs 1.952bn at March 2026"
+        },
+        "exportSales": {
+          "value": 6.233,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 8",
+          "note": "Six months, up 46% from Rs 4.269bn; quarter about Rs 3.55bn (worked out: six months less Q1 Rs 2.68bn)"
+        },
+        "fxGainLoss": {
+          "value": 0.447,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27, p. 9",
+          "note": "Six months gain, in net finance income; quarter a loss of Rs 0.144bn"
+        },
+        "sharesOutstanding": {
+          "value": 718.72,
+          "unit": "",
+          "source": "Interim Q2 2026/27, p. 10",
+          "note": "Millions"
+        },
+        "priceHighQuarter": {
+          "value": 100.5,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "July–September 2026"
+        },
+        "priceLowQuarter": {
+          "value": 91.1,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "July–September 2026"
+        },
+        "priceCloseQuarter": {
+          "value": 92.0,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27, p. 4",
+          "note": "30 September 2026"
+        }
+      }
     }
   ],
   "valuationInputs": [
@@ -428,11 +571,12 @@
     }
   ],
   "openQuestions": [
-    "Q2 results (to September 2026, due by mid-November): does the gross margin recover from 24%, and how much of profit is exchange gains?",
-    "Does the Rs 4.5bn inventory build reverse, and are the new short-term loans repaid?",
-    "Will a dividend for 2025/26 be declared (last year's Rs 1.50 pre-split was paid in October)?",
-    "Copper price direction and its effect on stock values.",
-    "Export growth (Rs 2.68bn in Q1, up 33%)."
+    "Q3 results (to December 2026, due by mid-February): does the gross margin recover from 24% (26–28% a year earlier)?",
+    "Does inventory (Rs 19.1bn) start to fall and release cash, and are the Rs 4.4bn of short-term loans repaid?",
+    "Exchange gains and losses: a Rs 590mn gain in Q1 then a Rs 144mn loss in Q2; how big is the swing next quarter?",
+    "Copper price direction and its effect on stock values (not covered in the interim reports).",
+    "Exports (Rs 6.23bn in six months, up 46%): can the growth continue?",
+    "Second-half EPS against the base case of about Rs 4.39 (Rs 4.52 a year earlier)."
   ],
   "changeLog": [
     {
@@ -444,6 +588,16 @@
       "strongBuyPrice": 47.6,
       "priceAtTime": 100.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/update ACL.N0000 COCO.N0000 DIST.N0000 HAYL.N0000 JINS.N0000 RHL.N0000). Updated from the interim report to 30 September 2026. Quarter flat: revenue up 26% to Rs 14.30bn, gross margin 23.8% (26.5%), Rs 144mn exchange loss, EPS Rs 2.04 (Rs 2.06); six months EPS Rs 4.61 (Rs 4.30). NAV Rs 55.46 (Rs 54.04 in June). Inventory Rs 19.08bn, operating cash flow minus Rs 4.66bn for the half, short-term loans Rs 4.43bn, net cash about Rs 10.4bn. Dividend Rs 0.60 for 2025/26 paid 26 Oct 2026. No valuation inputs changed; no restatements found. Fair value Rs 63.50 → 64.70 only from the higher NAV (P/B and residual income). Fair value Rs 64.70, buy Rs 55.00, strong buy Rs 48.50; price Rs 101.50 (CSE close 13 Nov 2026). Business tests 3 of 4 (fails cash), category 2 watch list, unchanged. Note: the 11 Nov residual-income bull case used a starting ROE of 19% (18% in bear and base); kept and now stated. Copper prices not in the report, so not assessed.",
+      "fairValue": 64.7,
+      "buyPrice": 55.0,
+      "strongBuyPrice": 48.5,
+      "priceAtTime": 101.5,
+      "archive": "research/ACL.N0000/history/2026-11-11.json"
     }
   ]
 }
