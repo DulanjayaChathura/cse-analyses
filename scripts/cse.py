@@ -76,6 +76,16 @@ def post(endpoint, data=None, retries=2, referer=None):
 
 
 def download(url, retries=2):
+    # The CSE sometimes gives a report path with a literal space or other character a URL
+    # can't contain (e.g. "...1794568769850.27 - CSE.pdf"). Encode it properly; safe="%"
+    # leaves an already-encoded path (e.g. "%20") alone instead of double-encoding it.
+    parts = urllib.parse.urlsplit(url)
+    url = urllib.parse.urlunsplit((
+        parts.scheme, parts.netloc,
+        urllib.parse.quote(parts.path, safe="/%"),
+        urllib.parse.quote(parts.query, safe="=&%"),
+        parts.fragment,
+    ))
     last = None
     for attempt in range(retries + 1):
         try:
