@@ -17,18 +17,31 @@ The owner's standard request is: "I'm a long-term investor planning to buy 500 s
 - Include a 500-share buy plan in tiers, and say how realistic the buy price is given this year's trading range.
 - Score the four business tests in `quality` (`docs/json-format.md`): return on equity of 15% or more, net debt no more than equity, steady profit, and profit turning into cash. Three passes make the business "good". The site turns this into a category: 1 buy now (good and at or below the buy price), 2 watch list (good, price too high), 3 avoid for now (fails the tests). Re-score the tests on every update and say in the hand-over if the category changed.
 
+### Reinvestment, capex and R&D (every analysis)
+Growth has to be paid for. Run `python scripts/reinvestment.py <CODE> --assumed <bear>,<base>,<bull>` (the growth % each scenario assumes for the next five years or so) and use what it prints; don't do this arithmetic by hand.
+- **Growth check (all companies, banks included).** Supported growth = reinvestment rate × return on capital (for banks, finance companies and insurers: share of profit kept × ROE). A scenario assuming more than 2 percentage points above the supported rate needs a specific reason (a plant already built, a contract signed, margins clearly recovering) or a lower assumption. Save the result as the `Growth check` valuation input and put one line on it in `modelsNote`.
+- **Long-run growth** (after the growth years) stays below the long-term government bond yield, and the company must still reinvest growth ÷ return on capital to get it, never zero.
+- **Cash-flow DCF.** Start from cash from operations less maintenance capex (cash before growth spending), then take off, each year, the reinvestment that year's growth needs (growth ÷ return on capital, as a share of after-tax operating profit). Don't grow a free cash flow figure at a rate chosen separately.
+- **Maintenance capex** is the company's own split if it gives one; otherwise depreciation (which tends to understate it; say so). Growth capex is the rest. In the text, say whether a high-capex year is mostly growth (an investment, judged on its return) or mostly maintenance (a business that's costly to keep running).
+- **Reinvestment** = (capex − depreciation) + increase in working capital + acquisitions + net R&D. Financial investments the company holds (shares, deposits, investment property) are not reinvestment; they stay in NAV and sum of the parts.
+- **R&D.** Only when R&D is at least 2% of revenue and at least 3 years of figures exist: the calculator builds the research asset over the `R&D life` (default 3 years tech/telecom, 5 manufacturing, 10 pharma) and prints adjusted profit, equity, ROE and P/E. Add an "R&D-adjusted" row to `models` next to the normal method; bear treats R&D as pure cost, base uses the adjusted figures. Don't count development already capitalised under LKAS 38 twice. Don't add the research asset to NAV.
+- **P/E and dividends.** The P/E chosen in each scenario must not imply more growth than is supported. Dividend growth is capped at the supported rate; if dividends are more than cash after maintenance capex, flag the dividend as at risk.
+- **Warnings for the text** (not extra business tests; the four tests stay on reported figures): capex or R&D cut sharply while profit jumps; capex funded mainly by new borrowing; capex below depreciation for several years (under-investing).
+- If a figure the calculator needs isn't in the record, it says so and the method works as before; say what was missing in the hand-over.
+
 ## Updating a company from a new report
 
 Follow these steps whenever the owner says a new report was added to the laptop folder (or runs `/update <CODE>`).
 
 1. **Read the record first.** Read `research/<CODE>/record.json` and `data/<CODE>.json`. Don't re-read reports already listed in `reportsRead` unless a figure needs checking.
 2. **Find what's new.** List the company's folder on the laptop (`localFolder` in the record). A PDF whose name isn't in `reportsRead[].file` is new. If nothing is new, say so and stop.
-3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date.
+3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date. From an annual report of a company that isn't a bank, finance company or insurer, also record the reinvestment figures (capex, depreciation, working capital change, acquisitions, operating profit, tax rate, total equity, and R&D: see "Reinvestment figures" in `docs/research-format.md`).
 4. **Check restatements.** If the new report restates an earlier period's figure, correct it in `periods` and add a note saying it was restated and the old value.
 5. **Answer the open questions** in the record, using the new figures.
 6. **Re-run the valuation.**
    - Use every method in the current analysis: NAV, ROE, P/E, dividends, DCF or residual income, and so on, with bear, base and bull cases.
    - Keep `valuationInputs` unless the new data clearly justifies a change. For each change, update `value`, write the reason, and set `since` to today.
+   - Run `scripts/reinvestment.py` and apply "Reinvestment, capex and R&D" above: growth check on every scenario, the DCF built from reinvestment, and the R&D adjustment where it applies.
    - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
@@ -39,7 +52,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
    - Replace `openQuestions` with what to watch next.
    - Set `updated`.
    - Append a `changeLog` entry with: what changed and why; the new fair value, buy and strong-buy prices; the price at the time; and the archive path.
-9. **Check.** Run `python scripts/validate.py data/<CODE>.json`. It must pass with no errors and ideally no warnings. Also run `python scripts/build_site.py` and make sure it completes.
+9. **Check.** Run `python scripts/validate.py data/<CODE>.json`. It must pass with no errors and ideally no warnings. It also checks the research record and warns if the latest annual period of a non-financial company is missing capex or depreciation, or if the `Growth check` input is missing; fix those you can, and name the rest in the hand-over. Also run `python scripts/build_site.py` and make sure it completes.
 10. **Deliver.** Commit straight to `main` (the owner asked for no pull requests) and push. The push starts the "Build and publish site" workflow, which republishes the site. Check that the run succeeds. If it fails, fix the problem and push again. Then tell the owner:
     - fair value, buy price and strong-buy price, old → new, and why;
     - the main new figures;

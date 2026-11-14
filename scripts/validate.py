@@ -311,10 +311,39 @@ def validate_text(text, filename):
     return data, errors, warnings, bad
 
 
+def record_warnings(data):
+    """Checks on research/<CODE>/record.json (command line only; the site build doesn't use them).
+    A figure recorded as null with a note (e.g. "not disclosed") counts as recorded."""
+    from reinvestment import ALIASES, FINANCIAL_WORDS
+    ticker = data.get("ticker")
+    path = Path(__file__).resolve().parent.parent / "research" / str(ticker) / "record.json"
+    if not path.exists():
+        return [f"No research record at research/{ticker}/record.json."]
+    try:
+        record = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        return [f"Research record is not valid JSON (line {e.lineno}): {e.msg}"]
+    out = []
+    sector = ((data.get("company") or {}).get("sector") or "").lower()
+    annuals = sorted([p for p in record.get("periods") or [] if p.get("type") == "annual"],
+                     key=lambda p: p.get("periodEnd") or "")
+    if annuals and not any(w in sector for w in FINANCIAL_WORDS):
+        figs = annuals[-1].get("figures") or {}
+        for key, label in (("capex", "capex"), ("depreciation", "depreciation")):
+            if not any(name in figs for name in ALIASES[key]):
+                out.append(f"Research record: {label} missing for {annuals[-1].get('period')} "
+                           "(record it from the annual report, or null with a note if not disclosed).")
+    if not any((v.get("name") or "").lower() == "growth check" for v in record.get("valuationInputs") or []):
+        out.append("Research record: no 'Growth check' valuation input (run scripts/reinvestment.py).")
+    return out
+
+
 def main(paths):
     failed = False
     for path in paths:
         data, errors, warnings, _ = validate_text(Path(path).read_text(encoding="utf-8"), path)
+        if data is not None:
+            warnings = warnings + record_warnings(data)
         status = "REJECTED" if errors else ("OK with warnings" if warnings else "OK")
         print(f"{path}: {status}")
         for e in errors:
