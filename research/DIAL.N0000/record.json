@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "DIAL.N0000",
   "localFolder": "dialog",
-  "updated": "2026-11-11",
+  "updated": "2026-11-14",
   "reportsRead": [
     {
       "file": "Dialog Annual Report 2024.pdf",
@@ -400,6 +400,48 @@
           "value": 5.631,
           "unit": "Rs bn",
           "source": "Annual Report 2025, note 21(d)"
+        },
+        "depreciation": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update. Worked out for the text only: EBITDA Rs 86.0bn less operating profit (21.5% margin) ≈ Rs 47bn; not used as a recorded figure."
+        },
+        "workingCapitalChange": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
+        },
+        "acquisitions": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
+        },
+        "operatingProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
+        },
+        "taxRate": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
+        },
+        "totalEquity": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not in the record: this /redo read no reports. Take it from the Annual Report 2025 cash flow statement (p. 208) or notes on the next update."
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": null,
+          "note": "Not recorded; R&D isn't separately disclosed in the reports read (check on the next annual report)."
         }
       }
     },
@@ -1019,16 +1061,10 @@
       "since": "2026-10-26"
     },
     {
-      "name": "Normalised FCFE 2027",
-      "value": "Bear Rs 34bn / Base Rs 43bn / Bull Rs 50bn",
-      "reason": "Trailing FCFE Rs 45bn to June 2026, less higher 5G capex (about 15% of revenue in the base case). Base raised from Rs 42bn.",
-      "since": "2026-11-11"
-    },
-    {
       "name": "Growth",
       "value": "Bear 3% then 4% / Base 6% then 5% / Bull 8% then 6%",
-      "reason": "Five years, then long-term; about unchanged.",
-      "since": "2026-10-26"
+      "reason": "Five years, then long-term (below the 12.4% bond); long-run reinvestment 27% / 25% / 24% of after-tax operating profit. Unchanged.",
+      "since": "2026-11-14"
     },
     {
       "name": "ROE path",
@@ -1038,29 +1074,61 @@
     },
     {
       "name": "2027 EPS × P/E",
-      "value": "3.30 × 8 / 4.00 × 10 / 4.40 × 12",
-      "reason": "Trailing underlying EPS Rs 3.82; P/E capped by the 12.4% bond yield. Peer P/Es (15–16x) used only as a check.",
-      "since": "2026-11-11"
+      "value": "3.30 × 6 / 4.00 × 7.5 / 4.40 × 9.5",
+      "reason": "P/E capped at the multiple justified when growth is paid for (payout = 1 − growth ÷ ROE; two-stage with ROE 30/35/40% then 20/25/30%): 5.9 / 7.3 / 9.6x. Was 8 / 10 / 12x, which implied about 9% growth.",
+      "since": "2026-11-14"
     },
     {
       "name": "Dividend per share, growth",
-      "value": "Rs 2.40, 2% / Rs 2.80, 6% / Rs 3.20, 8%",
-      "reason": "Rs 0.70 a quarter; base cut from Rs 2.90 after correcting the dividend labels.",
-      "since": "2026-11-11"
+      "value": "Rs 2.40, 2% / Rs 2.80, 6% / Rs 3.20, 7.5%; then 4% / 5% / 6%",
+      "reason": "Bull growth capped at the supported 7.8% (was 8%); long-run growth stated explicitly.",
+      "since": "2026-11-14"
     },
     {
       "name": "Margins of safety",
       "value": "Buy 15% / Strong buy 25%",
       "reason": "Medium confidence under the new framework (methods Rs 23–42 in the base case).",
       "since": "2026-11-11"
+    },
+    {
+      "name": "Cash after maintenance capex (start)",
+      "value": "Bear Rs 26bn / Base Rs 33bn / Bull Rs 37bn",
+      "reason": "Replaces 'Normalised FCFE 2027' (Rs 34 / 43 / 50bn) under the new reinvestment rule. Base = operating cash flow over the 12 months to Sep 2026 (Rs 82.0bn: 65.53 + 67.08 − 50.64) less depreciation and amortisation run-rate Rs 49.2bn (9M 2026 Rs 36.86bn × 4/3). Bear allows profit to fade towards 2025 levels; bull a little higher cash generation.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "depreciation",
+      "reason": "Dialog gives no maintenance/growth split. Depreciation includes right-of-use depreciation, licence amortisation and impairment, so it may overstate maintenance here.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Return on new capital",
+      "value": "Bear 15% / Base 20% / Bull 25%",
+      "reason": "Sets the reinvestment growth needs (growth ÷ return). Base close to 2025 ROIC/ROCE of 19.8% (Annual Report 2025, pp. 15, 76).",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Bear Rs 36bn / Base Rs 40bn / Bull Rs 44bn",
+      "reason": "Base = trailing net profit Rs 34.4bn plus trailing finance costs (about Rs 8.2bn) after 30% tax; worked out, because 2025 operating profit and tax rate aren't in the record.",
+      "since": "2026-11-14"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 3% / 6% / 8%; supported 7.8% (share of profit kept × ROE). All within 2 pts.",
+      "reason": "From scripts/reinvestment.py (FY 2025: 33.6% kept × 23.1% ROE). Capex-based check not possible: FY 2025 depreciation, working capital and operating profit not in the record. On 9M 2026 figures capex booked (Rs 35.0bn) ≈ depreciation (Rs 36.9bn), so net reinvestment is near zero; base 6% relies on the 5G network already ordered, pricing and margin recovery.",
+      "since": "2026-11-14"
     }
   ],
   "openQuestions": [
     "Full-year 2026 results (due early February 2027): final dividend, EBITDA margin, and whether capex paid catches up with capex booked (Rs 35.0bn booked vs Rs 19.0bn paid in nine months).",
+    "From the 2026 annual report (or the 2025 one), record the reinvestment figures for the latest year: depreciation and amortisation (split out right-of-use and impairment if possible), working-capital change, acquisitions, operating profit, tax rate and equity, so the capex-based growth check can run.",
+    "Does Dialog say how much of its capex is maintenance vs growth (5G, fibre)? If maintenance is clearly below depreciation, cash after maintenance capex and fair value rise.",
+    "Is paid capex staying below depreciation (Rs 27.7bn vs about Rs 47bn in 2025)? Several years of that would be under-investment.",
     "Why did the asset-retirement provision rise by about Rs 4bn in January–March 2026? Look in the 2026 annual report's provisions note.",
-    "5G spectrum cost and 2027 capex guidance; does the Rs 0.70 quarterly dividend hold as payments rise?",
+    "5G spectrum cost and 2027 capex guidance; does the Rs 0.70 quarterly dividend hold as payments rise, without borrowings rising?",
     "Any change to the BOI 2% revenue-tax arrangement or telecom levies in the 2027 budget.",
-    "Which affiliate's receivable was impaired by Rs 1.06bn in 2025?",
     "Effect of deconsolidating Digital Health (now an associate) in Q4 2026."
   ],
   "changeLog": [
@@ -1093,6 +1161,16 @@
       "strongBuyPrice": 24.2,
       "priceAtTime": 49.7,
       "archive": "research/DIAL.N0000/history/2026-11-11.json"
+    },
+    {
+      "date": "2026-11-14",
+      "basedOn": "Interim to 30 Sep 2026 (reviewed); no new reports",
+      "summary": "Requested from Telegram (/redo DIAL.N0000). Redone under the new reinvestment, capex and R&D rules. DCF rebuilt from cash after maintenance capex (operating cash flow Rs 82.0bn less depreciation Rs 49.2bn ≈ Rs 33bn base) less the capex growth needs at a 15/20/25% return on new capital: weighted Rs 41.5 → 22.6. P/E capped at the growth-justified 6 / 7.5 / 9.5x (was 8 / 10 / 12x): Rs 38.5 → 29.3. Dividend bull growth capped at 7.5%: Rs 25.0 → 26.2. Residual income unchanged (Rs 23.9). Growth check: assumed 3/6/8% vs 7.8% supported (profit kept × ROE), all within 2 pts; capex-based check not possible because FY 2025 depreciation, working capital and operating profit aren't in the record (set to null with notes). Warning: capex paid below depreciation in 2025 and 9M 2026. Business tests re-scored: 3 of 4, unchanged; category unchanged (watch list). Fair value Rs 32.20 → 25.50, buy Rs 27.40 → 21.70, strong buy Rs 24.20 → 19.10.",
+      "fairValue": 25.5,
+      "buyPrice": 21.7,
+      "strongBuyPrice": 19.1,
+      "priceAtTime": 50.2,
+      "archive": "research/DIAL.N0000/history/2026-11-11-2.json"
     }
   ]
 }

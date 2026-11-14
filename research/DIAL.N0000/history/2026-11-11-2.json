@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 1,
+  "ticker": "DIAL.N0000",
+  "company": {
+    "name": "Dialog Axiata PLC",
+    "sector": "Telecommunications",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "DIAL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-11",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2024",
+      "Annual report 2025",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026 (the last two reviewed by Deloitte)"
+    ]
+  },
+  "price": {
+    "value": 49.7,
+    "date": "2026-11-11",
+    "source": "CSE closing price",
+    "note": "July–September 2026 range Rs 43.00–49.90, closed September at Rs 45.80 (Interim to 30 Sep 2026, p. 11); April–June Rs 30.10–48.40; 2025 range Rs 11.40–32.50."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "An excellent business, priced for growth that Sri Lankan interest rates don't support",
+    "text": "Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. The full September 2026 report confirms it is getting better: quarterly profit rose 62% to Rs 9.24bn (EPS Rs 1.00), nine-month EPS is Rs 3.10 against Rs 1.62, borrowings fell to Rs 64bn from Rs 76bn in December, and trailing EPS is about Rs 3.74. But at Rs 49.70 (CSE close, 11 November 2026) the price has run ahead even of that. It earns 7.5% on the price (P/E 13.3x) while 10-year government bonds pay about 12.4%, and to justify Rs 49.70 its free cash flow would need to grow about 12% a year for five years. Four methods put fair value at about Rs 32.20 (Rs 32.00 this morning, from press figures; the small rise is the higher September book value), so the price is about 54% above it; even my bull case (Rs 47) is below today's price. I'd buy at up to about Rs 27.40 and treat under Rs 24.20 as a strong buy. One thing to watch: 5G capex booked in nine months was Rs 35bn, twice last year's, but only Rs 19bn has been paid so far, so cash flow will look weaker in the coming quarters. On peer multiples (Sri Lanka Telecom and regional telecoms at roughly 15–16x earnings) it looks fairly priced, which is why brokers are more positive; the gap is about interest rates, not the business."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Dominant, cash-generative and lightly indebted; the one failure is the 2022 loss in the rupee crisis.",
+    "assessed": "2026-11-11",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more (and ROCE 12% or more)",
+        "pass": true,
+        "value": "ROE 23%, ROCE 19.8%",
+        "note": "2025; about 39% over the 12 months to September 2026. 16–30% in 2023–2025, a loss in 2022."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity (and no more than 3x EBITDA)",
+        "pass": true,
+        "value": "0.62x equity, 0.58x EBITDA",
+        "note": "Including leases, September 2026 (0.72x and 0.67x in June). Borrowings Rs 64.1bn, down from Rs 76.5bn in December."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Loss in 2022",
+        "note": "Rs 33.4bn loss when the rupee collapsed; profitable every year since. Exchange gains/losses still swing quarterly profit by up to Rs 0.9bn."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends (cash conversion 70%+ over 3 years)",
+        "pass": true,
+        "value": "2.6x",
+        "note": "Operating cash flow Rs 136bn against Rs 53bn of profit in 2023–2025; about 75% of profit paid out."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 32.2,
+    "buyPrice": 27.4,
+    "strongBuyPrice": 24.2,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 9.99,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply."
+  },
+  "dividend": {
+    "perShare": 1.5,
+    "label": "final for 2025 (paid July 2026)",
+    "source": "Annual Report 2025, DIAL share information (p. 72)",
+    "latest": {
+      "perShare": 2.1,
+      "label": "declared so far for 2026 (three interims of Rs 0.70; the third goes ex-dividend 20 Nov)",
+      "source": "Interim to 30 Sep 2026, p. 3 (Rs 2.90 paid in nine months = Rs 1.50 final + two Rs 0.70 interims) and note 20 (p. 14)"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 9.99,
+      "unit": "Rs",
+      "note": "30 Sep 2026; NAV understates a telecom"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 5.0,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 13.3,
+      "unit": "x",
+      "note": "EPS Rs 3.74, 12 months to Sep 2026"
+    },
+    {
+      "id": "earningsYield",
+      "label": "Earnings yield vs bond",
+      "value": 7.5,
+      "unit": "%",
+      "note": "10-year bond about 12.4%"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 39,
+      "unit": "%",
+      "note": "12 months to Sep 2026; 23% in 2025"
+    },
+    {
+      "id": "roce",
+      "label": "ROCE",
+      "value": 19.8,
+      "unit": "%",
+      "note": "2025"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 5.6,
+      "unit": "%",
+      "note": "Rs 2.80 a year at Rs 0.70 a quarter"
+    },
+    {
+      "id": "fcfYield",
+      "label": "FCF yield",
+      "value": 11.1,
+      "unit": "%",
+      "note": "12 months to Sep 2026; capex paid lags capex booked, about 9.4% on a normal year"
+    },
+    {
+      "id": "netDebtEbitda",
+      "label": "Net debt / EBITDA",
+      "value": 0.58,
+      "unit": "x",
+      "note": "Including leases, Sep 2026"
+    },
+    {
+      "id": "evEbitda",
+      "label": "EV / EBITDA",
+      "value": 5.2,
+      "unit": "x"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 457,
+      "unit": "Rs bn",
+      "display": "~Rs 457bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "September 2026 quarter (reviewed by the auditors)",
+      "text": "Revenue up 6.2% to Rs 48.54bn; profit up 62% to Rs 9.24bn (EPS Rs 1.00 against Rs 0.62). Gross margin 58.4% (53.6%) as direct costs fell 5%; finance costs fell 42% to Rs 1.91bn, offset partly by a Rs 0.92bn exchange loss. The press figures used this morning were correct."
+    },
+    {
+      "title": "Nine months to September 2026",
+      "text": "Revenue up 8.2% to Rs 144.1bn; profit Rs 28.5bn against Rs 14.9bn (EPS Rs 3.10 against Rs 1.62). Operating cash flow Rs 67.1bn (Rs 50.6bn). Mobile earned Rs 30.6bn of operating profit, broadband Rs 8.4bn and TV Rs 0.4bn (a loss last year)."
+    },
+    {
+      "title": "Stronger balance sheet",
+      "text": "Borrowings fell to Rs 64.1bn from Rs 76.5bn in December and Rs 71.3bn in June; cash Rs 20.6bn. Net debt including leases is Rs 56.7bn, 0.62x equity and 0.58x EBITDA. NAV per share rose to Rs 9.99 even after Rs 26.7bn of dividends."
+    },
+    {
+      "title": "5G capex is booked faster than it is paid",
+      "text": "Capital expenditure booked in nine months was Rs 35.0bn (24% of revenue) against Rs 17.0bn a year earlier, but only Rs 19.0bn was paid in cash. The rest sits mostly in payables (up Rs 5.5bn), so free cash flow (Rs 44.9bn in nine months) is flattered and will fall when suppliers are paid. Contracted capex still to come: Rs 15.7bn."
+    },
+    {
+      "title": "Group changes",
+      "text": "In October Dialog sold 20% of Digital Health for Rs 375m (Digital Health becomes an associate), and several small subsidiaries were merged into Digital Holdings Lanka on 30 September."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          2.08,
+          -4.06,
+          2.44,
+          1.43,
+          2.26,
+          3.74
+        ],
+        "notes": [
+          null,
+          "Rupee-crisis loss",
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          null,
+          30,
+          16,
+          23,
+          39
+        ],
+        "notes": [
+          null,
+          "Loss year",
+          null,
+          null,
+          null,
+          "To Sep 2026"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          5.2,
+          null,
+          3.7,
+          8.2,
+          13.2,
+          13.3
+        ],
+        "notes": [
+          "Year-end",
+          "Loss year",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "At Rs 49.70"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          1.24,
+          0,
+          1.34,
+          1.0,
+          1.5,
+          2.1
+        ],
+        "notes": [
+          null,
+          "None",
+          null,
+          null,
+          null,
+          "2026 so far"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 9.99",
+      "reading": "5.0x NAV. NAV understates a telecom, whose value is its network, spectrum and customers, so I give it no direct weight."
+    },
+    {
+      "method": "Return on equity",
+      "value": "23% (2025), ~39% now",
+      "reading": "Excellent, but partly because the 2022 loss and dividends shrank equity; it should fade as equity rebuilds and 5G is depreciated."
+    },
+    {
+      "method": "P/E",
+      "value": "13.3x",
+      "reading": "Earnings yield 7.5% against a 12.4% government bond. Dialog's own year-end P/E averaged about 7.6x in 2021–2025 (excluding 2022)."
+    },
+    {
+      "method": "Dividends",
+      "value": "5.6% yield",
+      "reading": "Rs 0.70 a quarter; about 75% of profit paid out. After 15% withholding tax, about 4.8%."
+    },
+    {
+      "method": "Free cash flow",
+      "value": "~9.4–11.1% yield",
+      "reading": "Rs 50.7bn over the 12 months to September, but flattered: Rs 35bn of capex was booked in nine months against Rs 19bn paid. I use a normal Rs 43bn."
+    },
+    {
+      "method": "Peers",
+      "value": "SLT ~15–18x, Asia ~16x",
+      "reading": "On peer P/Es Dialog would be worth Rs 52–60. Peers' P/Es don't account for Sri Lanka's 12.4% bond yield, so I use them as a check, not a method."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Free cash flow to equity DCF",
+      "bear": 25.7,
+      "base": 41.9,
+      "bull": 64.2,
+      "weighted": 41.5,
+      "comment": "Normalised FCFE of Rs 34 / 43 / 50bn, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 26.4,
+      "base": 40.0,
+      "bull": 52.8,
+      "weighted": 38.5,
+      "comment": "2027 EPS of Rs 3.30 / 4.00 / 4.40 times 8 / 10 / 12."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 16.2,
+      "base": 25.1,
+      "bull": 37.8,
+      "weighted": 25.0,
+      "comment": "Rs 2.40 / 2.80 / 3.20 a share, growing 2% / 6% / 8% for five years."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 18.0,
+      "base": 23.7,
+      "bull": 33.2,
+      "weighted": 23.9,
+      "comment": "Book value Rs 9.99 (September); ROE falling from 40% to 20% / 25% / 30% over ten years; 75% payout."
+    }
+  ],
+  "modelsNote": "A steady cash generator, so the DCF carries real weight, alongside P/E, dividends and residual income. The dividend and residual-income methods are lower because Dialog pays most profit out and keeps a small book value.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18%",
+        "base": "16.5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Free cash flow to equity, 2027",
+        "bear": "Rs 34bn",
+        "base": "Rs 43bn",
+        "bull": "Rs 50bn"
+      },
+      {
+        "label": "Growth: five years, then long-term",
+        "bear": "3%, then 4%",
+        "base": "6%, then 5%",
+        "bull": "8%, then 6%"
+      },
+      {
+        "label": "ROE path over ten years",
+        "bear": "40% → 20%",
+        "base": "40% → 25%",
+        "bull": "40% → 30%"
+      },
+      {
+        "label": "2027 EPS × P/E",
+        "bear": "3.30 × 8",
+        "base": "4.00 × 10",
+        "bull": "4.40 × 12"
+      },
+      {
+        "label": "Dividend per share, growth",
+        "bear": "Rs 2.40, 2%",
+        "base": "Rs 2.80, 6%",
+        "bull": "Rs 3.20, 8%"
+      }
+    ],
+    "averages": {
+      "bear": 21.6,
+      "base": 32.7,
+      "bull": 47.0
+    },
+    "common": "10-year government bond about 12.4% (9 Nov 2026), one-year T-bill about 9.1%, policy rate 8.75% (raised in May 2026). Base cost of equity = bond + about 4 points for a defensive, AAA-rated market leader. Base FCFE assumes capex of about 15% of revenue once 5G spending settles."
+  },
+  "sensitivity": {
+    "title": "DCF base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-term growth",
+    "rows": [
+      "15%",
+      "16.5%",
+      "18%"
+    ],
+    "columns": [
+      "4%",
+      "5%",
+      "6%"
+    ],
+    "values": [
+      [
+        45.1,
+        48.2,
+        51.9
+      ],
+      [
+        39.6,
+        41.9,
+        44.5
+      ],
+      [
+        35.3,
+        37.0,
+        38.9
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even the most generous corner (Rs 51.90) only just reaches today's price."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 32.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 27.4
+      },
+      {
+        "shares": 150,
+        "maxPrice": 24.2
+      }
+    ],
+    "averagePrice": 28.36,
+    "totalCost": 14180,
+    "note": "About Rs 14,180 in total, against Rs 24,850 at Rs 49.70.",
+    "realism": "Rs 27.40 needs about a 45% fall. The share was below that until late 2025 (2025 close Rs 29.80); its 2026 low was Rs 30.10 (April–June) and the September-quarter low Rs 43.00. A return there would probably take a market fall or higher interest rates."
+  },
+  "changeMyView": {
+    "higher": [
+      "Interest rates falling (each point off the cost of equity adds about Rs 4–5 a share).",
+      "5G and home broadband lifting revenue growth well above 6% without capex staying near 19% of revenue.",
+      "Margins holding near 55% as energy costs ease.",
+      "A higher dividend (Rs 0.80+ a quarter) sustained."
+    ],
+    "lower": [
+      "5G capex absorbing cash and cutting dividends.",
+      "Loss of the 2% revenue-based tax deal with the BOI (the company would face 30% tax on profit).",
+      "Another rupee crisis (2022: a Rs 33bn loss).",
+      "Price competition from SLT-Mobitel and Hutch, or regulator-imposed tariff cuts.",
+      "Foreign investors continuing to sell (Rs 1.0bn net sold on 10 November)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024 and 2025 annual reports and the interim reports to September 2026. Figures for the 12 months to September 2026 are worked out from those reports. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 54% above fair value of Rs 32.20.",
+    "Expected yearly return at Rs 49.70": "About −3% a year over three years: dividends 5.6% + growth 5% − about 13.4% a year if the price moved to fair value. After 15% dividend tax and brokerage, about −4%.",
+    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
+    "Downside / upside": "Bear case −57% (Rs 21.60); bull case −5% (Rs 47.00). Even the bull case is below today's price.",
+    "What the price assumes": "About 12% a year free-cash-flow growth for five years (base case 6%), or a cost of equity of 14.7%, only 2.3 points above government bonds.",
+    "Confidence": "Medium: the methods give Rs 24–42 in the base case; the business is predictable but 2022 showed how a rupee crisis can hit it.",
+    "Margin of safety": "Medium confidence: buy 15% below fair value (Rs 27.40), strong buy 25% below (Rs 24.20)."
+  },
+  "Business and moat": {
+    "What it does": "Mobile (78% of revenue in the nine months to September 2026), fixed and home broadband via Dialog Broadband Networks (15%), and pay TV via Dialog Television (7%). Also digital payments (eZ Cash), data centres and a finance company.",
+    "Market position": "About 64% of mobile subscribers (19.6 million) after merging with Airtel Lanka in 2024; 22.3 million subscribers in total; largest pay-TV operator (1.6 million+). Competitors: SLT-Mobitel (state-controlled) and Hutch.",
+    "Moat": "Wide: scale in a three-player market, the largest network, 5G spectrum won in December 2025 (100 MHz at 3.5 GHz, 200 MHz at 27 GHz), the strongest brand, and a tax deal competitors don't have.",
+    "Growth drivers": "Data and home-broadband demand, price increases, 5G (1.5 million+ 5G users), enterprise and digital services. The low-margin international 'hubbing' business has been scaled down.",
+    "Customer and supplier concentration": "Millions of retail customers; key suppliers are network-equipment vendors and the energy grid.",
+    "Tax advantage": "The company pays a 2% revenue-based tax under its BOI agreement instead of 30% on profit; its broadband and TV subsidiaries pay 15% and 20%.",
+    "Segment profit, nine months 2026": "Mobile Rs 30.6bn (Rs 22.4bn), fixed/broadband Rs 8.4bn (Rs 5.6bn), TV Rs 0.4bn (a Rs 0.3bn loss) of operating profit (Interim to 30 Sep 2026, note 3)."
+  },
+  "Management and governance": {
+    "Ownership": "Axiata Group (Malaysia) 73.75%, Bharti Airtel 10.36%, EPF 3.08% (2.90% earlier). Public float 15.85%, held by 29,367 shareholders (24,876 in December); foreign investors held 53% of the float at end-2025.",
+    "Track record": "Delivered Rs 5.5bn of cost savings in 2025, completed the Airtel merger, cut USD debt from Rs 34.9bn to Rs 5.6bn, and paid above its 50% minimum payout. Rated OK.",
+    "Capital allocation": "About 70–75% of profit paid out; capex raised for 5G; simplifying the group (five subsidiaries merged into Digital Holdings Lanka on 30 September 2026); sold 20% of Digital Health for Rs 375m in October 2026.",
+    "Related parties": "Head-office charges to Axiata Rs 0.41bn in 2025 (Rs 1.1bn in 2024). A Rs 1.06bn impairment on money owed by affiliates in 2025: watch.",
+    "Auditor": "Deloitte; clean opinion for 2025. Key audit matters: Rs 19.8bn of goodwill impairment testing, and mobile revenue recognition. The June and September 2026 interims were reviewed.",
+    "Director dealings": "The CEO, Supun Weerasinghe, holds 4.26 million shares; no other directors hold shares directly.",
+    "Legal": "A Rs 1.63bn customs dispute (Dialog Broadband Networks) is still in the Court of Appeal; argument refixed for 17 February 2027.",
+    "Rating": "OK"
+  },
+  "Accounting quality": {
+    "Underlying earnings": "Exchange losses net of gains of about Rs 0.75bn over the 12 months to September 2026 removed: underlying EPS about Rs 3.82 against reported Rs 3.74.",
+    "Restatements": "2024 figures were restated in the 2025 accounts (December 2025 interim, note 17).",
+    "Revaluations": "None: property and equipment are carried at cost, so NAV isn't inflated.",
+    "To check": "The 'provision for other liabilities' (asset retirement obligations) jumped from Rs 4.96bn to Rs 9.14bn in January–March 2026 and was Rs 8.98bn in September, still with no explanation in the interim reports. Capex booked (Rs 35.0bn) far exceeds capex paid (Rs 19.0bn) in nine months, so cash flow is temporarily flattered."
+  },
+  "Peer and history comparison": {
+    "Sri Lanka Telecom (SLTL.N0000)": "P/E about 15–18x, P/B about 1.5x, ROE about 11%, dividend yield about 1%, EV/EBITDA about 5x (web data from June 2026; dates vary).",
+    "Asian telecoms": "Average P/E about 16x (Simply Wall St).",
+    "Dialog's own history": "Year-end P/E 3.7–13.2x in 2021–2025 (average about 7.6x excluding 2022); P/B 1.0–3.0x. Today's 13.3x and 5.1x are at the top of its range.",
+    "Reading": "Cheap against peers on P/E, expensive against its own history and against Sri Lankan bond yields."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: policy rate raised to 8.75% in May 2026; 10-year bond about 12.4%. A yield stock like Dialog loses value when rates rise.",
+    "Rupee": "Watch: rupee down 6.7% against the dollar this year (6 Nov). Network equipment, energy and roaming are dollar-linked; dollar debt is now small (Rs 5.6bn). Exchange loss Rs 0.92bn in the September quarter.",
+    "Tax and regulation": "Risk: the 2% revenue tax depends on the BOI agreement; telecom levies and tariff approvals by the regulator (TRCSL); the 2027 budget was being finalised in November 2026.",
+    "Dependence on the state": "OK: customers are households and businesses, not the government.",
+    "Energy and weather": "Watch: high energy costs from the Middle East conflict; Cyclone Ditwah disrupted the network in late 2025.",
+    "Liquidity": "OK: one of the most traded shares on the CSE; 500 shares (about Rs 24,850) are easy to buy or sell.",
+    "Free float and control": "Watch: only 15.85% free float; Axiata controls the company.",
+    "Catalysts": "Ex-dividend Rs 0.70 on 20 November (paid 10 December); full-year 2026 results due early February 2027; 5G rollout and capex payments; any change in Axiata's stake.",
+    "ESG": "OK: no major controversies found; energy use and carbon footprint are the main issues.",
+    "Going concern / audit": "OK: clean audit opinion, AAA(lka) rating from Fitch."
+  },
+  "Crisis stress test (2022-style)": {
+    "Scenario": "Rupee falls 40%, interest rates up 10 points, demand down 5%.",
+    "Likely effect (rough estimate)": "Exchange loss on dollar debt about Rs 4bn; extra interest about Rs 6bn a year on Rs 64bn of local borrowings; higher dollar costs. Profit could fall from about Rs 34bn to about Rs 15–20bn.",
+    "Survival": "Survives comfortably: low debt, AAA rating and a strong parent. Dividends would probably be cut, and the share price could halve (in 2022 it fell to Rs 8.50 and the P/E collapsed)."
+  },
+  "Portfolio fit": {
+    "Cost of 500 shares": "About Rs 24,850 now; about Rs 13,700 at the buy price.",
+    "Overlap": "None with other companies on the site; it is the site's only telecom.",
+    "Note": "Shown for information, not as advice on how much to hold."
+  },
+  "Broker view": {
+    "HNB Stockbrokers (9 Nov 2026)": "Moderate buy, target Rs 55, against my fair value of Rs 32.20.",
+    "Why we differ": "The broker's target is close to peer P/E multiples (about 15x); my methods discount future cash at about 16.5% because Sri Lankan bonds yield 12.4%. If rates fall, the gap narrows."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "Dominant market leader with a wide moat, high returns, strong cash flow, low debt and a 5–7% dividend.",
+    "The case is broken if": "Market share falls clearly below 60%; the BOI tax deal ends; 5G capex forces a dividend cut; or a rupee crisis returns.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 41.90: today's price is above this); the case breaks; or a clearly better opportunity appears."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 27.40 or lower",
+    "Strong buy": "Rs 24.20 or lower",
+    "Sell trigger": "Rs 41.90 or higher (already exceeded)"
+  },
+  "Key ratios (five-year trend)": {
+    "Return on equity": "2023 30% · 2024 16% · 2025 23% · 12 months to Sep 2026 about 39%",
+    "Return on capital employed (ROCE)": "2023 13.5% · 2024 14.9% · 2025 19.8%",
+    "Return on invested capital (ROIC)": "2023 13.1% · 2024 10.8% · 2025 19.8%",
+    "Gross margin": "2023 36.2% · 2024 42.5% · 2025 53.4% · 12 months to Sep 2026 57.1%",
+    "Operating margin": "2021 16.5% · 2022 1.4% · 2023 11.5% · 2024 12.1% · 2025 21.5% · 12 months to Sep 2026 26.4%",
+    "Net margin": "2021 12.0% · 2022 −18.8% · 2023 11.1% · 2024 7.3% · 2025 11.6% · 12 months to Sep 2026 18.1%",
+    "DuPont (2025)": "Net margin 11.6% × asset turnover 0.61 × leverage 3.5 ≈ ROE 23–25%",
+    "Asset turnover": "2024 0.55 · 2025 0.65",
+    "Revenue growth": "2022 +26% · 2023 +2% · 2024 −6% · 2025 +5% · 12 months to Sep 2026 +6.5%",
+    "EPS": "2021 Rs 2.08 · 2022 −Rs 4.06 · 2023 Rs 2.44 · 2024 Rs 1.43 · 2025 Rs 2.26 · 12 months to Sep 2026 Rs 3.74 (underlying, without exchange gains/losses, Rs 3.82)",
+    "Dividend per share": "2021 Rs 1.24 · 2022 nil · 2023 Rs 1.34 · 2024 Rs 1.00 · 2025 Rs 1.50 · 2026 so far Rs 2.10 (three interims)",
+    "Dividend cover / payout": "Cover about 1.3x; payout about 70–75% (68% of nine-month 2026 EPS; policy minimum 50%; 66% for 2025)",
+    "NAV per share": "2021 Rs 11.40 · 2022 Rs 5.48 · 2023 Rs 8.04 · 2024 Rs 8.51 · 2025 Rs 9.78 · Sep 2026 Rs 9.99",
+    "Operating cash flow": "2021 Rs 54.3bn · 2022 Rs 56.7bn · 2023 Rs 21.3bn · 2024 Rs 49.5bn · 2025 Rs 65.5bn · nine months 2026 Rs 67.1bn (Rs 50.6bn)",
+    "Free cash flow to equity (after interest, capex, leases)": "2024 Rs 10.9bn · 2025 Rs 33.7bn · nine months 2026 Rs 44.9bn · 12 months to Sep 2026 Rs 50.7bn (Rs 5.51 a share), flattered by capex not yet paid",
+    "Cash conversion (operating cash flow ÷ profit, 2023–2025)": "2.6x",
+    "Capex to revenue": "2023 14% · 2024 18% · 2025 11% · nine months 2026 24% booked, 13% paid",
+    "Accruals": "Low: operating cash flow is far above profit because depreciation is large",
+    "Inventory / receivable / payable days (2025)": "8 / 77 / 292 days; cash conversion cycle about −208 days (customers prepay and suppliers, including capex suppliers, are paid late)",
+    "Net debt incl. leases": "Sep 2026 Rs 56.7bn (Rs 43.5bn without leases); 0.62x equity (Jun 2026 Rs 64.0bn)",
+    "Net debt / EBITDA": "2023 1.19x · 2024 1.00x · 2025 0.64x · Jun 2026 0.67x · Sep 2026 0.58x",
+    "Interest cover": "2021 29.5x · 2022 1.7x · 2023 2.5x · 2024 2.5x · 2025 4.1x · nine months 2026 6.4x",
+    "Current ratio / quick ratio": "Sep 2026 0.50 / 0.49 (normal for a telecom with prepaid customers)",
+    "Debt due within a year": "74% of borrowings (Rs 47.3bn of Rs 64.1bn), mostly revolving local bank loans and overdrafts",
+    "Share count change": "+13% in 2024 (shares issued to Bharti Airtel for Airtel Lanka); none since",
+    "P/E (year end)": "2021 5.2x · 2022 loss · 2023 3.7x · 2024 8.2x · 2025 13.2x · now 13.3x",
+    "P/B (year end)": "2021 1.0x · 2022 1.6x · 2023 1.1x · 2024 1.4x · 2025 3.0x · now 5.0x",
+    "EV/EBITDA and EV/EBIT": "5.2x and 10.2x (EV Rs 514bn; EBITDA Rs 98.5bn and EBIT Rs 50.3bn for the 12 months to September 2026)",
+    "P/S": "2.4x",
+    "PEG": "About 2.6 on 5% expected growth (0.9 on the 15% a year EPS recovery since 2023, which won't repeat)",
+    "Earnings yield vs 10-year bond": "7.5% vs about 12.4%: the share earns 4.9 points less than a government bond",
+    "FCF yield": "11.1% on the 12 months to September 2026 (flattered: capex booked exceeds capex paid by Rs 16bn this year); about 9.4% on my normal Rs 43bn",
+    "Dividend yield": "5.6% on Rs 2.80 a year (four quarterly Rs 0.70s); 7.2% on the Rs 3.60 declared over the last 12 months including the 2025 final",
+    "Graham number": "Rs 29.00 (√(22.5 × EPS 3.74 × NAV 9.99)); understates high-return businesses like Dialog",
+    "Piotroski F-score (2025)": "8 of 9: strong (only the current ratio got worse)",
+    "Altman Z''-score (Jun 2026)": "0.48, which reads as 'distress', but it isn't meaningful here: the formula penalises negative working capital, which is normal for telecoms (prepaid customers, long supplier terms). Fitch rates Dialog AAA(lka)."
+  },
+  "What this analysis doesn't cover": [
+    "The reason for the Rs 4.0bn jump in asset-retirement provisions in early 2026 (still not explained in the September report).",
+    "Exact 5G spectrum cost and capex guidance for 2026–2027 (not disclosed in the reports read).",
+    "Subscriber and market-share figures after December 2025.",
+    "Peer figures for Sri Lanka Telecom come from web data with mixed dates; its own reports weren't read."
+  ],
+  "fullText": "Summary: Dialog Axiata (DIAL.N0000) is Sri Lanka's dominant telecom company: about 64% of mobile users, the largest broadband and pay-TV operator, the first 5G network, low debt and a AAA local credit rating. The full September 2026 report confirms it is getting better: quarterly profit rose 62% to Rs 9.24bn (EPS Rs 1.00), nine-month EPS is Rs 3.10 against Rs 1.62, borrowings fell to Rs 64bn from Rs 76bn in December, and trailing EPS is about Rs 3.74. But at Rs 49.70 (CSE close, 11 November 2026) the price has run ahead even of that. It earns 7.5% on the price (P/E 13.3x) while 10-year government bonds pay about 12.4%, and to justify Rs 49.70 its free cash flow would need to grow about 12% a year for five years. Four methods put fair value at about Rs 32.20 (Rs 32.00 this morning, from press figures; the small rise is the higher September book value), so the price is about 54% above it; even my bull case (Rs 47) is below today's price. I'd buy at up to about Rs 27.40 and treat under Rs 24.20 as a strong buy. One thing to watch: 5G capex booked in nine months was Rs 35bn, twice last year's, but only Rs 19bn has been paid so far, so cash flow will look weaker in the coming quarters. On peer multiples (Sri Lanka Telecom and regional telecoms at roughly 15–16x earnings) it looks fairly priced, which is why brokers are more positive; the gap is about interest rates, not the business.\n\nPrice and key figures\nPrice: Rs 49.70 (CSE close, 11 November 2026). It traded between Rs 43.00 and Rs 49.90 in July–September and closed September at Rs 45.80; it closed 2025 at Rs 29.80 and 2024 at Rs 11.70.\nSeptember 2026 quarter (reviewed): revenue Rs 48.54bn (up 6.2%), gross margin 58.4%, profit Rs 9.24bn (up 62%), EPS Rs 1.00 (Rs 0.62), finance costs down 42%, exchange loss Rs 0.92bn, third interim dividend Rs 0.70.\nNine months to September 2026: revenue Rs 144.1bn (up 8.2%), profit Rs 28.5bn, EPS Rs 3.10 (Rs 1.62), operating cash flow Rs 67.1bn, capex booked Rs 35.0bn but paid Rs 19.0bn.\nBalance sheet, 30 September 2026: borrowings Rs 64.1bn (Rs 76.5bn in December), cash Rs 20.6bn, net debt including leases Rs 56.7bn (0.58x EBITDA), NAV Rs 9.99.\n2025 (audited): revenue Rs 179.6bn, EBITDA Rs 86.0bn (47.9% margin), profit Rs 20.8bn, EPS Rs 2.26, ROE 23%, ROCE 19.8%, dividend Rs 1.50, net debt 0.64x EBITDA.\n12 months to September 2026: EPS Rs 3.74 (Rs 3.82 without exchange gains and losses), ROE about 39%, EBITDA about Rs 98.5bn.\n\nDecision box\nFair value about Rs 32.20; price about 54% above it. Expected return at today's price about −3% a year over three years, against a one-year T-bill of about 9.1%. Bear case −57%, bull case −5%. The price assumes about 12% a year free-cash-flow growth for five years, or a cost of equity of 14.7%. Confidence medium, so buy at up to Rs 27.40 (−15%) and strong buy under Rs 24.20 (−25%).\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nFCFE DCF | 25.7 | 41.9 | 64.2 | 41.5\nP/E | 26.4 | 40.0 | 52.8 | 38.5\nDividend model | 16.2 | 25.1 | 37.8 | 25.0\nResidual income | 18.0 | 23.7 | 33.2 | 23.9\nAverage | 21.6 | 32.7 | 47.0 | 32.2\n\nAssumptions (unchanged)\nCost of equity 18% / 16.5% / 15% (bond about 12.4% plus 4 points for a defensive leader). FCFE in 2027 of Rs 34 / 43 / 50bn, growing 3% / 6% / 8% for five years and 4% / 5% / 6% after. 2027 EPS Rs 3.30 / 4.00 / 4.40 at 8 / 10 / 12 times. Dividends Rs 2.40 / 2.80 / 3.20. ROE falling from 40% to 20% / 25% / 30%. Trailing free cash flow (Rs 50.7bn) is above the Rs 43bn base, but Rs 16bn of booked 5G capex is still unpaid, so I kept it.\n\nWhat changed today\nThe full September report replaced the press figures; they were correct. The only valuation change is the residual-income method, which now starts from the September book value of Rs 9.99 (Rs 9.68 in June): fair value Rs 32.00 → Rs 32.20, buy Rs 27.20 → Rs 27.40, strong buy Rs 24.00 → Rs 24.20.\n\nPeers and history\nSri Lanka Telecom trades at roughly 15–18x earnings and Asian telecoms at about 16x; on those multiples Dialog would be worth Rs 52–60. But its own P/E averaged about 7.6x in 2021–2025, and its 7.5% earnings yield is well below the 12.4% government bond. HNB Stockbrokers rates it a moderate buy with a Rs 55 target.\n\nKey ratios\nRisks to watch\nInterest rates (policy rate raised to 8.75% in May 2026), the rupee, the BOI tax deal, 5G capex payments, energy costs, a 15.85% free float, and the unexplained Rs 4bn rise in asset-retirement provisions. In a 2022-style crisis it would survive but cut dividends, and the price could halve.\n\n500-share plan\n200 shares up to Rs 32.20, 150 up to Rs 27.40, 150 up to Rs 24.20: average about Rs 28.40, about Rs 14,180 in total. Rs 27.40 needs about a 45% fall; it was last there in late 2025.\n\nSell rules\nIf you already hold Dialog: the price is above the sell trigger (30% above fair value, Rs 41.90). The business case itself is intact.\n\nBusiness tests: 3 of 4 passed (returns, debt, cash; fails steady profit because of the 2022 loss), so it's a good business at a high price: watch list, unchanged."
+}
