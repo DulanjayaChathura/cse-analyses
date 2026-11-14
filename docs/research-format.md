@@ -40,10 +40,17 @@ Record these from every annual report, in Rs bn, so capex, growth and R&D can be
 - `operatingProfit`: profit from operations, before finance costs and tax.
 - `taxRate`: the effective tax rate, in %.
 - `totalEquity`: equity attributable to the owners of the company.
+- `capexBooked`: additions to property, plant and equipment and intangible assets in the year (the asset notes). It can differ from `capexPaid` when capex is paid later.
+- `impairment`, `licenceAmortisation`: the impairment charge and the amortisation of licences and spectrum inside depreciation and amortisation, when the notes split them out. They aren't the cost of keeping the business running, so they come off depreciation in the maintenance range.
+- `growthCapexNamed`: capex the report ties to a named expansion (a new network, a plant, a branch programme), with the projects named in `note`. Only what the report itself names; never an estimate.
+- `interestPaid`: interest paid in the year (cash flow statement), with an extra key `"section": "operating"` or `"financing"` for where the statement puts it. When it's in operating, the DCF adds it back after tax to get cash before interest.
+- `borrowings`, `leaseLiabilities`: borrowings and lease liabilities at year end (current plus non-current). Used for the cost of debt.
 - `rdExpensed`, `rdCapitalised`, `rdAsset`: research and development charged to profit in the year; development costs capitalised as an intangible in the year; and the capitalised development balance at year end (the LKAS 38 note). Look for them in every annual report; most Sri Lankan companies don't disclose R&D, which is fine: `null`, "not disclosed".
 
 Saved assumptions (`valuationInputs`) that go with them:
 
 - `Maintenance capex basis`: `"depreciation"` (the default stand-in) or `"company split"`, with the reason.
 - `R&D life`: years over which R&D keeps paying off (default 3 for tech and telecom, 5 for manufacturing and others, 10 for pharma), only when R&D is material.
+- `Beta`: the company's beta, with the 8-step working in `reason` (CLAUDE.md, "Required return and the DCF"). Refresh each January.
+- `Cost of equity`, `WACC`: bear / base / bull, as the calculator prints them, with the date.
 - `Growth check`: the growth each scenario assumes against the growth the company's reinvestment supports, and the reason for any scenario more than 2 percentage points above it, e.g. `"Assumed 3% / 6% / 8%; supported 5.4%. Bull 2.6 pts above: the new kiln is built and starts in 2027."`

@@ -3,12 +3,17 @@
     python scripts/reinvestment.py DIAL                      the figures
     python scripts/reinvestment.py DIAL --assumed 3,6,8      ... and check bear/base/bull growth (%)
     python scripts/reinvestment.py DIAL --long-run 4         ... and the reinvestment 4% long-run growth needs
+    python scripts/reinvestment.py DIAL --eps 3.3,4,4.4      ... and check next-year EPS against the run-rate
+    python scripts/reinvestment.py DIAL --dcf "start=26,33,37;nopat=36,40,44;growth=3,6,8;longrun=4,5,6;roc=15,20,25"
+                                                             ... and value the whole company (WACC, minus net debt)
     python scripts/reinvestment.py DIAL --json               machine-readable
 
 Uses the latest annual period in research/<CODE>/record.json (and the one before it for opening
 capital and R&D history). Figures it needs but can't find are listed, never guessed; the one
 labelled fallback is Sri Lanka's standard 30% tax rate when no tax rate is recorded.
-See "Reinvestment, capex and R&D" in CLAUDE.md for how the results are used.
+It also works out the required return (beta and CAPM, from research/market-inputs.json and the
+record's `Beta` input), WACC, and a maintenance capex range. See "Reinvestment, capex and R&D" and
+"Required return and the DCF" in CLAUDE.md for how the results are used.
 """
 import argparse
 import json
@@ -41,7 +46,17 @@ ALIASES = {
     "dps": ("dividendPerShare",),
     "roe": ("roe",),
     "rdExpensed": ("rdExpensed",),
+    "interestPaid": ("interestPaid",),
+    "borrowings": ("borrowings",),
+    "leases": ("leaseLiabilities",),
+    "shares": ("sharesOutstanding",),
+    "capexBooked": ("capexBooked",),
+    "impairment": ("impairment",),
+    "licenceAmortisation": ("licenceAmortisation",),
+    "growthCapexNamed": ("growthCapexNamed",),
 }
+BETA_LOW, BETA_HIGH = 0.3, 2.0     # outside this, the beta needs checking (house limits)
+TERMINAL_HEAVY = 75.0              # % of DCF value from after the growth years that earns a note
 
 
 def find_record(code):
@@ -103,6 +118,29 @@ def rd_life(record, sector):
     if any(w in sector for w in ("telecom", "tech", "software", "digital", "mobile", "app")):
         return 3, "default for tech/telecom"
     return 5, "default"
+
+
+def maint_range(last, annuals):
+    """Maintenance capex stand-ins, highest (bear) to lowest (bull); None if depreciation is missing."""
+    cands = []
+    dep = bn(last, "depreciation")
+    if dep is None:
+        return None
+    cands.append(("depreciation as reported", dep))
+    imp, lic = bn(last, "impairment"), bn(last, "licenceAmortisation")
+    if imp is not None or lic is not None:
+        cands.append(("depreciation less impairment and licence amortisation", dep - (imp or 0) - (lic or 0)))
+    booked = [bn(p, "capexBooked") for p in annuals[-3:] if bn(p, "capexBooked") is not None]
+    named = bn(last, "growthCapexNamed")
+    if booked:
+        cands.append((f"average capex booked over {len(booked)} year{'s' if len(booked) > 1 else ''}", sum(booked) / len(booked)))
+        if named is not None and bn(last, "capexBooked") is not None:
+            cands.append(("capex booked less named growth projects", bn(last, "capexBooked") - named))
+    vals = sorted(v for _, v in cands)
+    n = len(vals)
+    mid = vals[n // 2] if n % 2 else (vals[n // 2 - 1] + vals[n // 2]) / 2
+    return {"candidates": [{"basis": k, "value": round(v, 3)} for k, v in cands],
+            "bear": round(vals[-1], 3), "base": round(mid, 3), "bull": round(vals[0], 3)}
 
 
 def analyse(code, assumed=None, long_run=None):
@@ -181,15 +219,27 @@ def analyse(code, assumed=None, long_run=None):
 
     # Firm route: capex, maintenance vs growth, reinvestment, return on capital.
     if not financial:
-        capex, dep = bn(last, "capex"), bn(last, "depreciation")
+        booked = bn(last, "capexBooked")
+        capex, dep = (booked if booked is not None else bn(last, "capex")), bn(last, "depreciation")
         for name, v in (("capex", capex), ("depreciation", dep)):
             if v is None:
                 out["missing"].append(name)
         firm = {}
+        mr = maint_range(last, annuals)
+        if mr:
+            out["maintenanceRange"] = mr
+            if len(mr["candidates"]) == 1:
+                out["notes"].append("Only one maintenance capex stand-in recorded (depreciation): record capex booked, "
+                                    "impairment, licence amortisation and named growth projects for a range.")
         if capex is not None and dep is not None:
             maint = bn(last, "maintenanceCapex")
-            basis = "company split" if maint is not None else "depreciation (tends to understate)"
-            maint = maint if maint is not None else dep
+            if maint is not None:
+                basis = "company split"
+            elif len(mr["candidates"]) > 1:
+                maint, basis = mr["base"], "middle of the maintenance range"
+            else:
+                maint, basis = dep, "depreciation (may over- or understate)"
+            firm["capexBasis"] = "booked (additions)" if booked is not None else "paid (cash flow)"
             wc, acq = bn(last, "workingCapitalChange"), bn(last, "acquisitions")
             if wc is None:
                 out["missing"].append("working capital change (taken as 0)")
@@ -274,6 +324,291 @@ def analyse(code, assumed=None, long_run=None):
     return out
 
 
+# ---------------------------------------------------------------------------
+# Required return, WACC, maintenance range, EPS run-rate and the whole-company DCF.
+
+def first_number(text):
+    m = re.search(r"-?\d+(?:\.\d+)?", str(text or ""))
+    return float(m.group()) if m else None
+
+
+def saved_input(record, name):
+    for v in record.get("valuationInputs") or []:
+        if (v.get("name") or "").strip().lower() == name.lower():
+            return v
+    return None
+
+
+def latest(periods, key, getter=bn):
+    """The newest period (by period end, longest span first) that has the figure."""
+    best = None
+    for p in periods:
+        v = getter(p, key)
+        if v is None:
+            continue
+        rank = (p.get("periodEnd") or "", p.get("months") or 0)
+        if best is None or rank > best[0]:
+            best = (rank, v, p.get("period"))
+    return (best[1], best[2]) if best else (None, None)
+
+
+def market_inputs():
+    path = ROOT / "research" / "market-inputs.json"
+    if not path.exists():
+        return None
+    m = json.loads(path.read_text(encoding="utf-8"))
+    return {k: (m[k]["value"] if isinstance(m.get(k), dict) else None)
+            for k in ("bondYield10y", "defaultSpread", "matureERP", "volatilityFactor", "taxRate", "scenarioSpread")} | {
+            "sources": {k: f"{m[k]['source']} ({m[k]['date']})" for k in m if isinstance(m[k], dict) and "source" in m[k]}}
+
+
+def share_price(ticker):
+    path = ROOT / "generated" / "prices.json"
+    if path.exists():
+        s = (json.loads(path.read_text(encoding="utf-8")).get("symbols") or {}).get(ticker) or {}
+        if isinstance(s.get("close"), (int, float)):
+            return float(s["close"]), f"CSE close {s.get('priceDate')}"
+    return None, None
+
+
+def shares_mn(periods):
+    best = None
+    for p in periods:
+        f = fig(p, "shares")
+        if not f:
+            continue
+        unit = (f.get("unit") or "").strip().lower()
+        v = float(f["value"]) * (1000 if unit == "bn" else 1)
+        rank = (p.get("periodEnd") or "", p.get("months") or 0)
+        if best is None or rank > best[0]:
+            best = (rank, v)
+    return best[1] if best else None
+
+
+def capital(o, eps_assumed=None, dcf_spec=None, price=None):
+    """Adds requiredReturn, maintenanceRange, epsCheck and dcf to the analyse() output."""
+    if "error" in o:
+        return o
+    ticker, record = find_record(o["ticker"])
+    periods = record.get("periods") or []
+    annuals = sorted([p for p in periods if p.get("type") == "annual"], key=lambda p: p.get("periodEnd") or "")
+    last = annuals[-1]
+    m = market_inputs()
+    rr = {"missing": []}
+    o["requiredReturn"] = rr
+    if not m or None in (m["bondYield10y"], m["defaultSpread"], m["matureERP"], m["volatilityFactor"]):
+        rr["missing"].append("research/market-inputs.json (bond yield, default spread, mature ERP, volatility factor)")
+        return o
+    rf = m["bondYield10y"] - m["defaultSpread"]
+    crp = m["defaultSpread"] * m["volatilityFactor"]
+    erp = m["matureERP"] + crp
+    rr.update({"bondYieldPct": m["bondYield10y"], "defaultSpreadPct": m["defaultSpread"],
+               "riskFreePct": round(rf, 2), "matureErpPct": m["matureERP"],
+               "countryPremiumPct": round(crp, 2), "totalErpPct": round(erp, 2), "sources": m["sources"]})
+    b = saved_input(record, "Beta")
+    beta = first_number(b.get("value")) if b else None
+    if beta is None:
+        rr["missing"].append("the `Beta` valuation input (see 'Required return and the DCF' in CLAUDE.md)")
+    else:
+        rr["beta"] = beta
+        rr["betaBasis"] = b.get("reason")
+        if not BETA_LOW <= beta <= BETA_HIGH:
+            o["warnings"].append(f"Beta {beta:g} is outside {BETA_LOW:g}-{BETA_HIGH:g}: check it before using it.")
+        ke = rf + beta * erp
+        spread = m.get("scenarioSpread") or 1.5
+        rr["costOfEquityPct"] = {"bear": round(ke + spread, 1), "base": round(ke, 1), "bull": round(ke - spread, 1)}
+        rr["formula"] = (f"{rf:.2f}% + {beta:g} × ({m['matureERP']:g}% + {crp:.2f}%) = {ke:.1f}% "
+                         f"(bear +{spread:g}, bull −{spread:g})")
+
+    # WACC (companies that aren't banks, finance companies or insurers).
+    tax = plain(last, "taxRate")
+    tax_basis = "effective rate" if tax is not None else "standard rate"
+    tax = tax if tax is not None else (m.get("taxRate") or STATUTORY_TAX)
+    if not o["financial"]:
+        net_debt, nd_period = latest(periods, "netDebt")
+        if price is None:
+            price, price_src = share_price(ticker)
+        else:
+            price_src = "given"
+        sh = shares_mn(periods)
+        interest = bn(last, "interestPaid")
+        debt = (bn(last, "borrowings") or 0) + (bn(last, "leases") or 0)
+        prev = annuals[-2] if len(annuals) > 1 else None
+        debt0 = ((bn(prev, "borrowings") or 0) + (bn(prev, "leases") or 0)) if prev else 0
+        avg_debt = (debt + debt0) / 2 if debt0 else debt
+        if interest is not None and avg_debt > 0:
+            kd, kd_basis = interest / avg_debt * 100, f"interest paid ÷ average borrowings and leases, {last.get('period')}"
+        else:
+            kd, kd_basis = m["bondYield10y"], "10-year bond yield (interest paid or borrowings not recorded)"
+            if interest is None:
+                rr["missing"].append(f"interest paid ({last.get('period')})")
+        if kd < m["bondYield10y"] - 4 or kd > m["bondYield10y"] + 8:
+            o["warnings"].append(f"Cost of debt {kd:.1f}% looks out of line with the {m['bondYield10y']:g}% bond yield: check interest and debt.")
+        rr["costOfDebtPct"] = round(kd, 2)
+        rr["costOfDebtBasis"] = kd_basis
+        rr["taxRatePct"] = tax
+        rr["taxBasis"] = tax_basis
+        for name, v in (("net debt", net_debt), ("share price", price), ("shares outstanding", sh)):
+            if v is None:
+                rr["missing"].append(name)
+        if None not in (net_debt, price, sh):
+            equity_mv = price * sh / 1000              # Rs bn
+            w_d = max(net_debt, 0) / (equity_mv + max(net_debt, 0))
+            rr.update({"netDebt": round(net_debt, 3), "netDebtPeriod": nd_period, "price": price,
+                       "priceSource": price_src, "sharesMn": sh, "marketCap": round(equity_mv, 2),
+                       "debtWeightPct": round(w_d * 100, 1)})
+            if "costOfEquityPct" in rr:
+                rr["waccPct"] = {k: round((1 - w_d) * v + w_d * kd * (1 - tax / 100), 1)
+                                 for k, v in rr["costOfEquityPct"].items()}
+
+        # Cash before growth spending, before interest (for the whole-company DCF).
+        ocf, ocf_period = latest(periods, "operatingCashFlow")
+        ann_ocf = bn(last, "operatingCashFlow")
+        f_int = fig(last, "interestPaid")
+        section = (f_int or {}).get("section")
+        o["firmCash"] = {"operatingCashFlow": None if ann_ocf is None else round(ann_ocf, 3),
+                         "period": last.get("period"), "interestSection": section}
+        if ann_ocf is not None and interest is not None:
+            add_back = interest * (1 - tax / 100) if section == "operating" else 0.0
+            o["firmCash"]["interestAddBack"] = round(add_back, 3)
+            o["firmCash"]["beforeInterest"] = round(ann_ocf + add_back, 3)
+            if section not in ("operating", "financing"):
+                o["notes"].append("interestPaid has no `section` (operating or financing): interest not added back.")
+            if "maintenanceRange" in o:
+                o["firmCash"]["afterMaintenance"] = {k: round(ann_ocf + add_back - o["maintenanceRange"][k], 3)
+                                                     for k in ("bear", "base", "bull")}
+
+    # EPS run-rate: the base case shouldn't start below what the company is earning now.
+    ttm = [p for p in periods if (p.get("months") == 12 and p.get("type") != "annual") or p is last]
+    run, run_src = latest(ttm, "eps", plain)
+    quarters = [p for p in periods if p.get("months") == 3]
+    q, q_src = latest(quarters, "eps", plain)
+    o["epsRunRate"] = {"latest12Months": run, "period": run_src,
+                       "latestQuarterX4": None if q is None else round(q * 4, 2), "quarter": q_src}
+    if eps_assumed:
+        ref = max(x for x in (run, None if q is None else q * 4) if x is not None) if (run or q) else None
+        if ref:
+            o["epsRunRate"]["check"] = []
+            for name, e in zip(("bear", "base", "bull"), eps_assumed):
+                gap = (e / ref - 1) * 100
+                o["epsRunRate"]["check"].append({"scenario": name, "eps": e, "vsRunRatePct": round(gap, 1)})
+            base_gap = o["epsRunRate"]["check"][1]["vsRunRatePct"]
+            if base_gap < -10:
+                o["warnings"].append(f"Base-case EPS is {abs(base_gap):.0f}% below the run-rate (Rs {ref:.2f}): "
+                                     "give a specific reason (a one-off, a known cost coming) or raise it.")
+
+    if dcf_spec:
+        o["dcf"] = firm_dcf(o, dcf_spec)
+    return o
+
+
+def parse_dcf(text):
+    spec = {}
+    for part in text.split(";"):
+        if "=" in part:
+            k, v = part.split("=", 1)
+            spec[k.strip().lower()] = [float(x) for x in v.split(",")]
+    need = ("start", "nopat", "growth", "longrun", "roc")
+    missing = [k for k in need if len(spec.get(k, [])) != 3]
+    if missing:
+        raise SystemExit(f"--dcf needs three values (bear,base,bull) for: {', '.join(missing)}")
+    spec["years"] = int(spec.get("years", [5])[0])
+    return spec
+
+
+def firm_dcf(o, spec):
+    """Whole-company DCF: cash before interest, less the reinvestment growth needs, at WACC, minus net debt."""
+    rr = o.get("requiredReturn") or {}
+    wacc = rr.get("waccPct")
+    if o["financial"]:
+        return {"error": "No DCF for banks, finance companies or insurers: use residual income."}
+    if not wacc or rr.get("netDebt") is None or not rr.get("sharesMn"):
+        return {"error": "WACC, net debt or shares missing: see requiredReturn.missing."}
+    bond = rr.get("bondYieldPct")
+    out = {"method": "whole company: cash before interest at WACC, minus net debt", "years": spec["years"],
+           "netDebt": rr["netDebt"], "sharesMn": rr["sharesMn"], "scenarios": []}
+    for i, name in enumerate(("bear", "base", "bull")):
+        c, p = spec["start"][i], spec["nopat"][i]
+        g1, g2, roc = spec["growth"][i] / 100, spec["longrun"][i] / 100, spec["roc"][i] / 100
+        r = wacc[name] / 100
+        row = {"scenario": name, "waccPct": wacc[name]}
+        if g2 >= r or (bond and spec["longrun"][i] >= bond):
+            row["error"] = f"long-run growth {spec['longrun'][i]:g}% must be below WACC and the {bond:g}% bond yield"
+            out["scenarios"].append(row)
+            continue
+        pv = 0.0
+        flows = []
+        for t in range(1, spec["years"] + 1):
+            c, p = c * (1 + g1), p * (1 + g1)
+            free = c - g1 / roc * p
+            flows.append(round(free, 2))
+            pv += free / (1 + r) ** t
+        c6, p6 = c * (1 + g2), p * (1 + g2)
+        tv = (c6 - g2 / roc * p6) / (r - g2)
+        pv_tv = tv / (1 + r) ** spec["years"]
+        firm = pv + pv_tv
+        equity = firm - rr["netDebt"]
+        row.update({"freeCash": flows, "pvGrowthYears": round(pv, 2), "pvAfter": round(pv_tv, 2),
+                    "afterSharePct": round(pv_tv / firm * 100, 1) if firm > 0 else None,
+                    "firmValue": round(firm, 2), "equityValue": round(equity, 2),
+                    "perShare": round(equity * 1000 / rr["sharesMn"], 2)})
+        if row["afterSharePct"] and row["afterSharePct"] > TERMINAL_HEAVY:
+            row["note"] = f"{row['afterSharePct']:g}% of the value comes after year {spec['years']}: say so in the text."
+        out["scenarios"].append(row)
+    return out
+
+
+def show_capital(o):
+    rr = o.get("requiredReturn") or {}
+    if "riskFreePct" in rr:
+        print(f"  Required return: risk-free {rr['riskFreePct']}% (bond {rr['bondYieldPct']}% − default spread "
+              f"{rr['defaultSpreadPct']}%); ERP {rr['matureErpPct']}% + country {rr['countryPremiumPct']}%")
+        if "formula" in rr:
+            c = rr["costOfEquityPct"]
+            print(f"    cost of equity {rr['formula']} → bear {c['bear']}% / base {c['base']}% / bull {c['bull']}%")
+        if "costOfDebtPct" in rr:
+            print(f"    cost of debt {rr['costOfDebtPct']}% ({rr['costOfDebtBasis']}), tax {rr['taxRatePct']:g}% ({rr['taxBasis']})")
+        if "waccPct" in rr:
+            w = rr["waccPct"]
+            print(f"    market cap Rs {rr['marketCap']}bn at Rs {rr['price']:g} ({rr['priceSource']}), net debt Rs {rr['netDebt']}bn "
+                  f"({rr['netDebtPeriod']}) → debt weight {rr['debtWeightPct']}%")
+            print(f"    WACC bear {w['bear']}% / base {w['base']}% / bull {w['bull']}%")
+    for x in rr.get("missing", []):
+        print(f"  Required return missing: {x}")
+    mr = o.get("maintenanceRange")
+    if mr:
+        print("  Maintenance capex range: bear Rs {bear}bn / base Rs {base}bn / bull Rs {bull}bn".format(**mr))
+        for c in mr["candidates"]:
+            print(f"    {c['basis']}: Rs {c['value']}bn")
+    fc = o.get("firmCash") or {}
+    if "beforeInterest" in fc:
+        print(f"  Operating cash {fc['period']} Rs {fc['operatingCashFlow']}bn + after-tax interest added back "
+              f"Rs {fc['interestAddBack']}bn (interest in {fc['interestSection'] or 'unknown section'}) = Rs {fc['beforeInterest']}bn")
+        if "afterMaintenance" in fc:
+            a = fc["afterMaintenance"]
+            print(f"    less maintenance → start cash bear Rs {a['bear']}bn / base Rs {a['base']}bn / bull Rs {a['bull']}bn")
+    er = o.get("epsRunRate") or {}
+    if er.get("latest12Months") is not None or er.get("latestQuarterX4") is not None:
+        print(f"  EPS run-rate: Rs {er['latest12Months']} ({er['period']}); latest quarter × 4 Rs {er['latestQuarterX4']} ({er['quarter']})")
+        for c in er.get("check", []):
+            print(f"    {c['scenario']:4}  EPS Rs {c['eps']:g}  {c['vsRunRatePct']:+g}% vs run-rate")
+    d = o.get("dcf")
+    if d:
+        if "error" in d:
+            print(f"  DCF: {d['error']}")
+        else:
+            print(f"  DCF ({d['method']}), net debt Rs {d['netDebt']}bn:")
+            for r in d["scenarios"]:
+                if "error" in r:
+                    print(f"    {r['scenario']:4}  {r['error']}")
+                    continue
+                print(f"    {r['scenario']:4}  WACC {r['waccPct']}%  first-year free cash Rs {r['freeCash'][0]}bn  "
+                      f"firm Rs {r['firmValue']}bn − net debt = Rs {r['equityValue']}bn → Rs {r['perShare']} a share "
+                      f"({r['afterSharePct']}% after year {d['years']})")
+                if r.get("note"):
+                    print(f"          note: {r['note']}")
+
+
 def show(o):
     if "error" in o:
         print(o["error"])
@@ -284,7 +619,7 @@ def show(o):
     print(f"  Share of profit kept × ROE: {e['retentionPct']}% × {e['roePct']}% = {e['supportedGrowthPct']}%")
     f = o.get("firmRoute") or {}
     if f:
-        print(f"  Capex Rs {f['capex']}bn; maintenance Rs {f['maintenanceCapex']}bn ({f['maintenanceBasis']}); "
+        print(f"  Capex Rs {f['capex']}bn ({f['capexBasis']}); maintenance Rs {f['maintenanceCapex']}bn ({f['maintenanceBasis']}); "
               f"growth Rs {f['growthCapex']}bn ({f['growthCapexPct']}% of capex)")
         if "cashBeforeGrowthSpending" in f:
             print(f"  Cash before growth spending (operating cash − maintenance): Rs {f['cashBeforeGrowthSpending']}bn"
@@ -314,6 +649,7 @@ def show(o):
     if "longRun" in o:
         lr = o["longRun"]
         print(f"  Long-run {lr['growthPct']:g}% growth at {lr['returnPct']}% return needs {lr['reinvestmentNeededPct']}% reinvested")
+    show_capital(o)
     for w in o["warnings"]:
         print(f"  WARNING: {w}")
     for n in o["notes"]:
@@ -327,10 +663,14 @@ def main():
     ap.add_argument("code")
     ap.add_argument("--assumed", help="bear,base,bull growth %, e.g. 3,6,8")
     ap.add_argument("--long-run", type=float, help="long-run growth %")
+    ap.add_argument("--eps", help="next-year EPS bear,base,bull, checked against the run-rate")
+    ap.add_argument("--dcf", help='"start=..;nopat=..;growth=..;longrun=..;roc=..[;years=5]", three values each (Rs bn, %)')
+    ap.add_argument("--price", type=float, help="share price (default: latest CSE close)")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     assumed = [float(x) for x in a.assumed.split(",")] if a.assumed else None
-    o = analyse(a.code, assumed, a.long_run)
+    eps = [float(x) for x in a.eps.split(",")] if a.eps else None
+    o = capital(analyse(a.code, assumed, a.long_run), eps, parse_dcf(a.dcf) if a.dcf else None, a.price)
     print(json.dumps(o, indent=1)) if a.json else show(o)
     return 1 if "error" in o else 0
 

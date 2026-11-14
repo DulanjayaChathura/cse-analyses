@@ -263,6 +263,33 @@ def chk_dividend(s):
     return p
 
 
+def chk_required_return(s):
+    """Beta, cost of equity and WACC, shown as the "Required return" tile (see docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    for k in ("beta", "riskFree", "matureERP", "countryPremium"):
+        if not is_num(s.get(k)):
+            p.append(f"{k} must be a number")
+    for k, need in (("costOfEquity", True), ("wacc", False)):
+        v = s.get(k)
+        if v is None and not need:
+            continue
+        if not isinstance(v, dict) or not all(is_num(v.get(c)) for c in ("bear", "base", "bull")):
+            p.append(f"{k} must be {{bear, base, bull}} numbers" + ("" if need else " or null"))
+    if is_num(s.get("beta")) and not 0.3 <= s["beta"] <= 2:
+        p.append("beta outside 0.3-2: explain it in betaBasis") if not is_str(s.get("betaBasis")) else None
+    w, c = s.get("wacc"), s.get("costOfEquity")
+    if isinstance(w, dict) and isinstance(c, dict) and is_num(w.get("base")) and is_num(c.get("base")) and w["base"] > c["base"]:
+        p.append("WACC above the cost of equity: check the cost of debt")
+    if not is_date(s.get("asOf")):
+        p.append("asOf must be a YYYY-MM-DD date")
+    return p
+
+
+# Checked when present; no warning when missing (older analyses predate them).
+OPTIONAL_SECTIONS = {"requiredReturn": chk_required_return}
+
 CHECKERS = {
     "company": chk_company, "shareClasses": chk_share_classes, "resultsCovered": chk_results,
     "price": chk_price, "summary": chk_summary, "valuation": chk_valuation,
@@ -305,8 +332,14 @@ def validate_text(text, filename):
         if problems:
             bad.append(key)
             warnings.append(f"Section '{key}' has problems and will be shown as not available: " + "; ".join(problems[:5]))
+    for key, check in OPTIONAL_SECTIONS.items():
+        if key in data:
+            problems = check(data[key])
+            if problems:
+                bad.append(key)
+                warnings.append(f"Section '{key}' has problems and will be shown as not available: " + "; ".join(problems[:5]))
     for key in data:
-        if key not in CORE and key not in CHECKERS and key not in FRAMEWORK_SECTIONS:
+        if key not in CORE and key not in CHECKERS and key not in OPTIONAL_SECTIONS and key not in FRAMEWORK_SECTIONS:
             warnings.append(f"Unknown section '{key}' (shown under 'Other details').")
     return data, errors, warnings, bad
 
@@ -333,8 +366,23 @@ def record_warnings(data):
             if not any(name in figs for name in ALIASES[key]):
                 out.append(f"Research record: {label} missing for {annuals[-1].get('period')} "
                            "(record it from the annual report, or null with a note if not disclosed).")
-    if not any((v.get("name") or "").lower() == "growth check" for v in record.get("valuationInputs") or []):
+    names = {(v.get("name") or "").lower() for v in record.get("valuationInputs") or []}
+    if "growth check" not in names:
         out.append("Research record: no 'Growth check' valuation input (run scripts/reinvestment.py).")
+    if "beta" not in names:
+        out.append("Research record: no 'Beta' valuation input (the 8 steps in CLAUDE.md, 'Required return and the DCF').")
+    financial = any(w in sector for w in FINANCIAL_WORDS)
+    if annuals and not financial:
+        f = (annuals[-1].get("figures") or {}).get("interestPaid")
+        if f is None:
+            out.append(f"Research record: interestPaid missing for {annuals[-1].get('period')} (needed for WACC and the DCF).")
+        elif f.get("section") not in ("operating", "financing"):
+            out.append("Research record: interestPaid needs \"section\": \"operating\" or \"financing\".")
+    rr = data.get("requiredReturn")
+    if rr is None:
+        out.append("No 'requiredReturn' section (beta, cost of equity, WACC): copy it from scripts/reinvestment.py.")
+    elif any(m.get("id") == "dcf" for m in data.get("models") or [] if isinstance(m, dict)) and not financial and not rr.get("wacc"):
+        out.append("The DCF needs WACC in 'requiredReturn' (whole-company DCF: WACC, minus net debt).")
     return out
 
 

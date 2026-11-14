@@ -84,7 +84,7 @@
 
     { id: "figures", title: "Key figures", key: "keyMetrics", html: () => `<h2>Key figures</h2>
       <div class="figures">${d.keyMetrics.map((m) => `<div class="figure"><div class="lbl">${App.term(m.label)}</div>
-        <div class="num">${App.esc(m.display || App.withUnit(m.value, m.unit))}</div>${m.note ? `<div class="note">${App.esc(m.note)}</div>` : ""}</div>`).join("")}${dividendFigure()}</div>` },
+        <div class="num">${App.esc(m.display || App.withUnit(m.value, m.unit))}</div>${m.note ? `<div class="note">${App.esc(m.note)}</div>` : ""}</div>`).join("")}${dividendFigure()}${requiredReturnFigure()}</div>` },
 
     { id: "results", title: "Latest results", key: "highlights", html: () => `<h2>Latest results</h2>
       <div class="highlights">${d.highlights.map((h) => `<div><h3>${App.esc(h.title || "")}</h3>${App.md(h.text)}</div>`).join("")}</div>` },
@@ -231,7 +231,7 @@
   /* Sections the site doesn't know yet are listed at the end. */
   const knownKeys = new Set(["schemaVersion", "ticker", "analysisDate", "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
     "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
-    "quality", "dividend"]);
+    "quality", "dividend", "requiredReturn"]);
   const unknown = Object.keys(d).filter((k) => !knownKeys.has(k));
   /* Latest dividend per share, as one more key-figure tile. */
   function dividendFigure() {
@@ -240,6 +240,26 @@
     const latest = dv.latest && App.isNum(dv.latest.perShare) ? `Latest: ${App.rs2(dv.latest.perShare)} ${dv.latest.label || ""}` : "";
     return `<div class="figure"><div class="lbl">Dividend per share</div><div class="num">${App.rs2(dv.perShare)}</div>
       <div class="note">${App.esc([dv.label, latest].filter(Boolean).join(". "))}</div></div>`;
+  }
+
+  /* Required return (cost of equity) with the beta; hover or tap shows how it's built up. */
+  function requiredReturnFigure() {
+    if (!has("requiredReturn")) return "";
+    const r = d.requiredReturn, c = r.costOfEquity || {}, w = r.wacc;
+    const pc = (x) => (App.isNum(x) ? `${App.num(x)}%` : "–");
+    const erp = App.isNum(r.matureERP) && App.isNum(r.countryPremium) ? r.matureERP + r.countryPremium : null;
+    const rows = [
+      ["Risk-free rate", pc(r.riskFree), "10-year rupee bond less Sri Lanka's default spread"],
+      ["Beta", App.isNum(r.beta) ? App.num(r.beta) : "–", r.betaBasis || ""],
+      ["Share risk premium", pc(erp), `${pc(r.matureERP)} mature market + ${pc(r.countryPremium)} Sri Lanka`],
+      ["Cost of equity", pc(c.base), `${pc(r.riskFree)} + ${App.isNum(r.beta) ? App.num(r.beta) : "–"} × ${pc(erp)}; bear ${pc(c.bear)}, bull ${pc(c.bull)}`],
+    ];
+    if (w) rows.push(["WACC", pc(w.base), `Used by the DCF. Debt ${pc(r.debtWeight)} of the company at ${pc(r.costOfDebt)} before tax; bear ${pc(w.bear)}, bull ${pc(w.bull)}`]);
+    const tip = rows.map(([k, v, x]) => `<div class="rr-row"><b>${App.esc(k)}</b><span>${App.esc(v)}</span>${x ? `<small>${App.esc(x)}</small>` : ""}</div>`).join("");
+    return `<div class="figure rr" tabindex="0" aria-describedby="rr-tip"><div class="lbl">${App.term("Required return")} <span class="rr-i" aria-hidden="true">ⓘ</span></div>
+      <div class="num">${pc(c.base)}</div>
+      <div class="note">Beta ${App.isNum(r.beta) ? App.num(r.beta) : "–"}${w ? `, WACC ${pc(w.base)}` : ""}${r.asOf ? `. ${App.date(r.asOf)}` : ""}</div>
+      <div class="rr-tip" id="rr-tip" role="tooltip">${tip}${r.note ? `<p>${App.esc(r.note)}</p>` : ""}</div></div>`;
   }
 
   /* Extra research sections (decision box, moat, Sri Lanka checks, key ratios, …):

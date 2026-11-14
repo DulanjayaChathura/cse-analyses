@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-15",
+  "note": "Shared inputs for the required return (CAPM) of every company. Refresh each January, and sooner if the 10-year bond yield moves by more than 1 point. scripts/reinvestment.py reads this file; never type these figures into an analysis by hand.",
+  "bondYield10y": {
+    "value": 12.24,
+    "unit": "%",
+    "date": "2026-10-13",
+    "source": "Cbonds, yield to maturity on 10-year Sri Lanka government bonds (rupee)",
+    "note": "The rupee 10-year yield. Long-run growth must stay below this."
+  },
+  "defaultSpread": {
+    "value": 4.0,
+    "unit": "%",
+    "date": "2026-11-14",
+    "source": "Market-based: Sri Lanka's dollar bond yields (about 3.6-8.4%) against US 10-year Treasuries (about 4.2%), as discussed with the owner on 14 November 2026",
+    "note": "Taken out of the bond yield to get a risk-free rate, then scaled by the volatility factor to get the country premium. Damodaran's rating-based spread is the alternative."
+  },
+  "matureERP": {
+    "value": 4.2,
+    "unit": "%",
+    "date": "2026-07-01",
+    "source": "Damodaran, Country Risk 2026 edition: mature-market equity risk premium, July 2026",
+    "note": "The extra return investors want from shares over bonds in a mature market."
+  },
+  "volatilityFactor": {
+    "value": 1.52,
+    "unit": "x",
+    "date": "2026-07-01",
+    "source": "Damodaran: emerging-market equity volatility relative to emerging-market government bonds",
+    "note": "Country premium = default spread x this factor."
+  },
+  "taxRate": {
+    "value": 30,
+    "unit": "%",
+    "date": "2026-11-15",
+    "source": "Sri Lanka standard corporate income tax rate",
+    "note": "Used for after-tax cost of debt and interest only when a company's own effective rate isn't recorded."
+  },
+  "scenarioSpread": {
+    "value": 1.5,
+    "unit": "points",
+    "date": "2026-11-15",
+    "source": "House rule",
+    "note": "Bear required return = base + this; bull = base - this."
+  }
+}

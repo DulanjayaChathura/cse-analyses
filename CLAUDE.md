@@ -21,13 +21,37 @@ The owner's standard request is: "I'm a long-term investor planning to buy 500 s
 Growth has to be paid for. Run `python scripts/reinvestment.py <CODE> --assumed <bear>,<base>,<bull>` (the growth % each scenario assumes for the next five years or so) and use what it prints; don't do this arithmetic by hand.
 - **Growth check (all companies, banks included).** Supported growth = reinvestment rate × return on capital (for banks, finance companies and insurers: share of profit kept × ROE). A scenario assuming more than 2 percentage points above the supported rate needs a specific reason (a plant already built, a contract signed, margins clearly recovering) or a lower assumption. Save the result as the `Growth check` valuation input and put one line on it in `modelsNote`.
 - **Long-run growth** (after the growth years) stays below the long-term government bond yield, and the company must still reinvest growth ÷ return on capital to get it, never zero.
-- **Cash-flow DCF.** Start from cash from operations less maintenance capex (cash before growth spending), then take off, each year, the reinvestment that year's growth needs (growth ÷ return on capital, as a share of after-tax operating profit). Don't grow a free cash flow figure at a rate chosen separately.
-- **Maintenance capex** is the company's own split if it gives one; otherwise depreciation (which tends to understate it; say so). Growth capex is the rest. In the text, say whether a high-capex year is mostly growth (an investment, judged on its return) or mostly maintenance (a business that's costly to keep running).
+- **Cash-flow DCF (whole company).** Value the whole business, then take off what's owed to lenders:
+  1. Start cash = cash from operations, plus after-tax interest if the company puts interest paid inside operating cash (many Sri Lankan companies do; record `interestPaid` with its `section`), less maintenance capex. This is cash before interest and before growth spending. The calculator prints it for each maintenance case.
+  2. Each year, take off the reinvestment that year's growth needs (growth ÷ return on capital, as a share of after-tax operating profit). Don't grow a free cash flow figure at a rate chosen separately.
+  3. Discount at **WACC** (from "Required return and the DCF" below), never at the cost of equity.
+  4. Subtract net debt (borrowings plus lease liabilities, less cash) at the latest balance sheet date, then divide by the shares.
+  Use `scripts/reinvestment.py --dcf` for the arithmetic, and say in the DCF comment how much of the value comes after the growth years when it's over 75%.
+- **Maintenance capex** is the company's own split if it gives one. Otherwise use a bear/base/bull range, which the calculator works out from what's recorded: bear = depreciation as reported; the others from depreciation less impairment and licence amortisation, the average capex booked over up to three years, and capex booked less named growth projects (a new network, a plant, a branch programme the report names). Use capex booked (additions in the asset notes), not only cash paid, since some capex is paid later. In the text, say whether a high-capex year is mostly growth (an investment, judged on its return) or mostly maintenance (a business that's costly to keep running).
 - **Reinvestment** = (capex − depreciation) + increase in working capital + acquisitions + net R&D. Financial investments the company holds (shares, deposits, investment property) are not reinvestment; they stay in NAV and sum of the parts.
 - **R&D.** Only when R&D is at least 2% of revenue and at least 3 years of figures exist: the calculator builds the research asset over the `R&D life` (default 3 years tech/telecom, 5 manufacturing, 10 pharma) and prints adjusted profit, equity, ROE and P/E. Add an "R&D-adjusted" row to `models` next to the normal method; bear treats R&D as pure cost, base uses the adjusted figures. Don't count development already capitalised under LKAS 38 twice. Don't add the research asset to NAV.
+- **Earnings run-rate.** Run the calculator with `--eps <bear>,<base>,<bull>` (next year's EPS in each case). The base case shouldn't start more than 10% below the run-rate (the latest 12 months, or the latest quarter × 4, whichever is higher) unless there's a specific reason (a one-off gain in the run-rate, a cost already announced). Say the reason in the P/E comment.
+- **Ratio ranges.** Check every ratio you use against `docs/ratio-ranges.md`. A figure outside its range needs a sentence explaining why it's right for this company.
 - **P/E and dividends.** The P/E chosen in each scenario must not imply more growth than is supported. Dividend growth is capped at the supported rate; if dividends are more than cash after maintenance capex, flag the dividend as at risk.
 - **Warnings for the text** (not extra business tests; the four tests stay on reported figures): capex or R&D cut sharply while profit jumps; capex funded mainly by new borrowing; capex below depreciation for several years (under-investing).
 - If a figure the calculator needs isn't in the record, it says so and the method works as before; say what was missing in the hand-over.
+
+### Required return and the DCF (every analysis)
+The required return is the return a shareholder should demand. It's worked out the same way for every company (CAPM with a country premium, as Damodaran sets out), from the shared figures in `research/market-inputs.json` and the company's beta. The calculator does the arithmetic and prints the cost of equity, the cost of debt and WACC; don't type a cost of equity by hand.
+- **Formula.** Cost of equity = risk-free rate + beta × (mature-market equity premium + country premium). Risk-free rate = 10-year rupee bond yield − Sri Lanka's default spread. Country premium = default spread × volatility factor. Bear = base + 1.5 points, bull = base − 1.5 points.
+- **Market inputs.** Refresh `research/market-inputs.json` each January (Damodaran's update) and whenever the 10-year bond yield has moved by more than 1 point since its date: source and date for every figure.
+- **Beta: the 8 steps.** Save the result as the `Beta` valuation input, with the working in `reason`, and refresh it each January.
+  1. Say what the business is. For a group, weight the betas of its segments by their share of profit or value.
+  2. Take Damodaran's emerging-markets unlevered beta for the sector (`betaEmerg` dataset).
+  3. Relever it with the company's net debt to equity at market value: levered = unlevered × (1 + (1 − tax) × D/E). Banks, finance companies and insurers skip this and use the sector's levered beta (for big banks, Damodaran's global money-center figure).
+  4. Take the median of local **5-year** betas from at least 3 sources (e.g. CSE data vendors, broker reports). Ignore 1-year betas, and ignore local betas for shares that trade thinly (many days with no trade).
+  5. Use the higher of steps 3 and 4.
+  6. Check it's between 0.3 and 2; outside that, explain or recheck.
+  7. The calculator puts it into the formula.
+  8. Show it: the `requiredReturn` section of the analysis (`docs/json-format.md`), which the company page shows as the "Required return" tile.
+- **WACC** (companies that aren't banks, finance companies or insurers) weights the cost of equity and the after-tax cost of debt by market value (share price × shares, and net debt). Cost of debt = interest paid ÷ average borrowings and leases; the bond yield only if those aren't recorded (say so).
+- **Use them consistently.** The DCF discounts at WACC and subtracts net debt. The P/E, dividend and residual income methods and the justified P/E and P/B use the cost of equity. Long-run growth stays below the bond yield and below WACC.
+- Copy the calculator's `requiredReturn` figures into the analysis's `requiredReturn` section and save `Cost of equity` (and `WACC`) as valuation inputs, with the date.
 
 ## Updating a company from a new report
 
@@ -35,17 +59,17 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 
 1. **Read the record first.** Read `research/<CODE>/record.json` and `data/<CODE>.json`. Don't re-read reports already listed in `reportsRead` unless a figure needs checking.
 2. **Find what's new.** List the company's folder on the laptop (`localFolder` in the record). A PDF whose name isn't in `reportsRead[].file` is new. If nothing is new, say so and stop.
-3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date. From an annual report of a company that isn't a bank, finance company or insurer, also record the reinvestment figures (capex, depreciation, working capital change, acquisitions, operating profit, tax rate, total equity, and R&D: see "Reinvestment figures" in `docs/research-format.md`).
+3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date. From an annual report of a company that isn't a bank, finance company or insurer, also record the reinvestment figures (capex, depreciation, working capital change, acquisitions, operating profit, tax rate, total equity, interest paid and which section of the cash flow statement it's in, borrowings and lease liabilities, capex booked, impairment, licence amortisation, named growth projects, and R&D: see "Reinvestment figures" in `docs/research-format.md`).
 4. **Check restatements.** If the new report restates an earlier period's figure, correct it in `periods` and add a note saying it was restated and the old value.
 5. **Answer the open questions** in the record, using the new figures.
 6. **Re-run the valuation.**
    - Use every method in the current analysis: NAV, ROE, P/E, dividends, DCF or residual income, and so on, with bear, base and bull cases.
    - Keep `valuationInputs` unless the new data clearly justifies a change. For each change, update `value`, write the reason, and set `since` to today.
-   - Run `scripts/reinvestment.py` and apply "Reinvestment, capex and R&D" above: growth check on every scenario, the DCF built from reinvestment, and the R&D adjustment where it applies.
+   - Run `scripts/reinvestment.py` (with `--assumed`, `--eps` and `--dcf`) and apply "Reinvestment, capex and R&D" and "Required return and the DCF" above: growth check on every scenario, the earnings run-rate check, the cost of equity and WACC from the beta, the whole-company DCF, the ratio ranges, and the R&D adjustment where it applies.
    - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
-   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, and `fullText`.
+   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, `requiredReturn`, and `fullText`.
    - Keep the same writing style: short summary first, then tables, plain language.
 8. **Update the record.**
    - Add the new period to `periods`, and add the report to `reportsRead` (with `file`, `readOn`).
