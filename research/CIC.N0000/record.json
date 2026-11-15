@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "CIC.N0000",
   "localFolder": "cic",
-  "updated": "2026-11-08",
+  "updated": "2026-11-15",
   "reportsRead": [
     {
       "file": "cic Annual Report 2025.pdf",
@@ -313,14 +313,35 @@
           "note": "Voting; non-voting Rs 22.90; H1 range Rs 27.00–32.00"
         }
       }
+    },
+    {
+      "period": "12 months to Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "ttm",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 3.94,
+          "unit": "Rs",
+          "source": "Worked out from recorded figures: FY 2026 EPS Rs 3.64 (Annual Report 2025/26, p. 16) + H1 FY2027 Rs 1.67 − H1 FY2026 Rs 1.37 (Interim to 30 Sep 2026, p. 4)",
+          "note": "Trailing 12 months; same figure as the earlier analysis used"
+        }
+      }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "1.08 (provisional)",
+      "reason": "8 steps, 15 Nov 2026. (1) Business: a Sri Lankan group with four operating segments (agri solutions: fertiliser, crop protection, seeds; livestock solutions: feed and poultry; industrial solutions: paints and chemicals; health and personal care) plus an equity-accounted stake of about 6% in John Keells. The record has no segment profit split, so the four segments are weighted equally; the John Keells stake (about 21% of H1 FY2027 profit, Rs 0.67bn of Rs 3.17bn) is a diversified group itself and is assumed to have the same beta. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins from web-search extracts of his global sector table, unlevered and cash-corrected: Farming/Agriculture 0.49 (date not shown), Food Processing 0.56 (January 2026), Chemical (Diversified) 0.91 (date not shown), Drugs (Pharmaceutical) 1.00 (as used for HHL, date not shown). Average (0.49 + 0.56 + 0.91 + 1.00) ÷ 4 = 0.74. (3) Relevered with debt to market value 0.66 and the standard 30% tax: 0.74 × (1 + 0.7 × 0.66) = 1.08. The debt is GROSS borrowings Rs 35.0bn (30 Sep 2026) because cash isn't in the record, against market value Rs 52.9bn (1,458.0mn voting × Rs 28.80 + 437.4mn non-voting × Rs 25.00, CSE close 13 Nov 2026); net debt would give a somewhat lower beta. (4) Local 5-year betas: none found. Simply Wall St 0.19 (no period stated) and TradingView 1.32 (1-year, ignored); stockanalysis.com couldn't be opened. Fewer than 3 usable sources. (5) Higher of 1.08 and (no local figure) = 1.08. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file, segment profit weights and cash (a /redo CIC full would record them).",
+      "since": "2026-11-15"
+    },
+    {
       "name": "Cost of equity",
-      "value": "Bear 20% / Base 18% / Bull 16.5%",
-      "reason": "Bonds about 12% (Oct 2026) plus a premium for a diversified group with rising debt.",
-      "since": "2026-11-08"
+      "value": "Bear 20.8% / Base 19.3% / Bull 17.8%",
+      "reason": "From scripts/reinvestment.py (15 Nov 2026): 8.24% + 1.08 × (4.2% + 6.08%) = 19.3%, ±1.5 points. Replaces the hand-set 20 / 18 / 16.5%.",
+      "since": "2026-11-15"
     },
     {
       "name": "Scenario weights",
@@ -348,24 +369,44 @@
     },
     {
       "name": "EPS to March 2027 × P/E",
-      "value": "3.6 × 6 / 4.2 × 8 / 4.5 × 10",
-      "reason": "H1 EPS Rs 1.67; H2 about 10% above last year's Rs 2.27. P/E range from year-ends.",
-      "since": "2026-11-08"
+      "value": "3.6 × 3.9 / 4.2 × 4.5 / 4.5 × 5.4 (justified forward P/E)",
+      "reason": "Justified P/E = (1 − g ÷ ROE) ÷ (r − g) at the new cost of equity, replacing the market's 6 / 8 / 10x, which implied more value than ROE below the required return supports. Base EPS 6.6% above the Rs 3.94 run-rate.",
+      "since": "2026-11-15"
     },
     {
       "name": "Methods used",
-      "value": "P/B, P/E, residual income",
-      "reason": "Dividend model left out (payout only 14%); DCF unsuitable while investment is heavy and much profit is the non-cash JKH share.",
-      "since": "2026-11-08"
+      "value": "Justified P/B, justified P/E, residual income",
+      "reason": "Dividend model left out (payout only 14%); whole-company DCF not used: much profit is the non-cash JKH share, and capex, depreciation, cash and interest paid aren't recorded.",
+      "since": "2026-11-15"
     },
     {
       "name": "Margins of safety",
       "value": "Buy 15% / Strong buy 25%",
       "reason": "The owner's standard.",
       "since": "2026-11-08"
+    },
+    {
+      "name": "WACC",
+      "value": null,
+      "reason": "Not worked out (15 Nov 2026): interest paid and cash aren't in the research record, so neither cost of debt nor net debt is known. No DCF is used.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 9.6% / 12.6% / 14.5% (earnings growth over five years implied by the residual income ROE paths); supported 12.9% (86.3% of profit kept × 15.0% ROE, FY 2026). All within 2 pts. Capex-based check not possible: capex and depreciation not recorded.",
+      "reason": "From scripts/reinvestment.py on the record's FY 2026 figures.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": null,
+      "reason": "Not set: capex and depreciation aren't in the record (a /redo CIC full would add them).",
+      "since": "2026-11-15"
     }
   ],
   "openQuestions": [
+    "Record the missing reinvestment figures (capex, depreciation, working capital, cash, interest paid and its section, segment profit) with a /redo CIC full, then rework the beta (segment weights, net debt), WACC and a capex-based growth check.",
+    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and local 5-year betas if any can be found.",
     "Does agri solutions recover in the second half (results down 27% in H1)?",
     "Do finance costs keep rising faster than profit?",
     "How much of profit growth comes from the John Keells share versus CIC's own businesses?",
@@ -382,6 +423,16 @@
       "strongBuyPrice": 17.0,
       "priceAtTime": 27.8,
       "archive": null
+    },
+    {
+      "date": "2026-11-15",
+      "basedOn": "H1 FY2027 (to Sep 2026); research record only",
+      "summary": "Requested from Telegram (/redo CIC.X0000; queued for CIC.N0000, which covers both share classes). Redone from the saved record with the current brief. Beta 1.08 (provisional: Damodaran's site was blocked, so global sector betas for agriculture, food processing, chemicals and pharma from web-search extracts, averaged equally because no segment split is recorded, relevered with gross borrowings because cash isn't recorded; no local 5-year beta found) gives cost of equity 19.3% (was 18% by hand). P/E method now a justified P/E (3.9 / 4.5 / 5.4x) instead of 6 / 8 / 10x: weighted 32.3 → 18.5. P/B 19.0 → 17.2; residual income 16.6 → 14.1. Added a trailing-12-month EPS period (Rs 3.94, worked out from recorded figures). Growth check within 2 pts (9.6 / 12.6 / 14.5% vs 12.9% supported). WACC, DCF and the capex-based checks not possible: capex, depreciation, cash and interest paid aren't in the record. Business tests 3 of 4, unchanged; category unchanged (watch list). Fair value Rs 22.60 → 16.60, buy Rs 19.20 → 14.10, strong buy Rs 17.00 → 12.50.",
+      "fairValue": 16.6,
+      "buyPrice": 14.1,
+      "strongBuyPrice": 12.5,
+      "priceAtTime": 28.8,
+      "archive": "research/CIC.N0000/history/2026-11-08.json"
     }
   ]
 }
