@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "HHL.N0000",
   "localFolder": "hemas",
-  "updated": "2026-11-10",
+  "updated": "2026-11-15",
   "reportsRead": [
     {
       "file": "Annual Report FY2024,25.pdf",
@@ -51,6 +51,34 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-10"
+    },
+    {
+      "file": "reports/HHL.N0000/2026-05-22_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-15",
+      "note": "Re-read for /redo full: income statement (p. 154), balance sheet (p. 156), cash flow (p. 159), segments (p. 166), finance cost (p. 171), tax (p. 174), PPE (p. 180), leases (p. 188), intangibles (p. 191), borrowings (p. 208), commitments (p. 225), ten-year summary (p. 232). Printed page numbers (PDF page minus 2)."
+    },
+    {
+      "file": "reports/HHL.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-15"
+    },
+    {
+      "file": "reports/HHL.N0000/2026-11-05_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-15"
     }
   ],
   "periods": [
@@ -120,6 +148,11 @@
           "unit": "x",
           "source": "Annual Report 2025/26, Ten year summary (p. 232)",
           "note": "Gross debt to equity"
+        },
+        "operatingProfit": {
+          "value": 6.783,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         }
       }
     },
@@ -189,6 +222,11 @@
           "unit": "x",
           "source": "Annual Report 2025/26, Ten year summary (p. 232)",
           "note": "Gross debt to equity"
+        },
+        "operatingProfit": {
+          "value": 10.963,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         }
       }
     },
@@ -258,6 +296,11 @@
           "unit": "x",
           "source": "Annual Report 2025/26, Ten year summary (p. 232)",
           "note": "Gross debt to equity"
+        },
+        "operatingProfit": {
+          "value": 11.921,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         }
       }
     },
@@ -312,9 +355,10 @@
           "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         },
         "capexPaid": {
-          "value": 5.08,
+          "value": 5.196,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "PPE 5.080 + intangibles 0.116 (the ten-year summary's 5.080 is PPE only)"
         },
         "freeCashFlow": {
           "value": 8.308,
@@ -327,6 +371,100 @@
           "unit": "x",
           "source": "Annual Report 2025/26, Ten year summary (p. 232)",
           "note": "Gross debt to equity"
+        },
+        "operatingProfit": {
+          "value": 13.707,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 154) (2025 column)",
+          "note": "Includes share of equity-accounted investees 0.452"
+        },
+        "taxRate": {
+          "value": 34.5,
+          "unit": "%",
+          "source": "Annual Report 2025/26, note 9.1 (p. 174) (2025 column)",
+          "note": "Tax 4.390 ÷ profit before tax 12.729 (the report rounds to 34%)"
+        },
+        "totalEquity": {
+          "value": 49.78,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 156) (2025 column)",
+          "note": "Attributable to owners"
+        },
+        "depreciation": {
+          "value": 1.998,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "PPE depreciation and impairment 1.589 + right-of-use amortisation 0.340 + intangible amortisation 0.069"
+        },
+        "impairment": {
+          "value": 0.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, notes 12.1 and 15.1 (pp. 180, 191) (2025 column)",
+          "note": "No PPE or intangible impairment in 2024/25"
+        },
+        "capexBooked": {
+          "value": 5.178,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, notes 12.1 and 15.1 (pp. 180, 191) (2025 column)",
+          "note": "PPE additions 5.080 + intangible additions 0.098"
+        },
+        "growthCapexNamed": {
+          "value": 1.9,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, financial review (p. 23)",
+          "note": "Land for the Thalawathugoda hospital expansion, called a one-off by the report"
+        },
+        "workingCapitalChange": {
+          "value": -3.781,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "Released: inventories −2.209, receivables −0.483, payables +1.093, other +0.004"
+        },
+        "acquisitions": {
+          "value": 0.689,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "Paid to non-controlling interests (financing section): buying out minority stakes. No subsidiary or associate purchases in investing."
+        },
+        "interestPaid": {
+          "value": 1.265,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "Finance cost paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 5.741,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 24 (p. 208) and statement of financial position (p. 156) (2025 column)",
+          "note": "Term loans 5.424 + bank overdraft 0.317 (lease liabilities are inside the reported borrowings and recorded separately)"
+        },
+        "leaseLiabilities": {
+          "value": 2.132,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 14.2 (p. 188) (2025 column)"
+        },
+        "cash": {
+          "value": 12.579,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 156) (2025 column)"
+        },
+        "netDebt": {
+          "value": -4.706,
+          "unit": "Rs bn",
+          "source": "Worked out from Annual Report 2025/26, pp. 156, 188, 208 (2025 column)",
+          "note": "Net cash: borrowings 5.741 + leases 2.132 − cash 12.579 (the report gives −4.7, p. 23)"
+        },
+        "dividendsPaid": {
+          "value": 2.388,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159) (2025 column)",
+          "note": "To owners of the parent"
+        },
+        "sharesOutstanding": {
+          "value": 2986.537,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         }
       }
     },
@@ -380,9 +518,10 @@
           "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         },
         "capexPaid": {
-          "value": 2.409,
+          "value": 2.677,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "PPE 2.409 + intangibles 0.267"
         },
         "freeCashFlow": {
           "value": 9.399,
@@ -405,12 +544,133 @@
         "netDebt": {
           "value": -10.249,
           "unit": "Rs bn",
-          "source": "Interim Q2 FY2027, p. 10 (31 Mar 2026 column)",
-          "note": "Net cash: borrowings and overdraft 7.53 less cash 17.78"
+          "source": "Worked out from Annual Report 2025/26, pp. 156, 188, 208",
+          "note": "Net cash: borrowings 5.199 + leases 2.335 − cash 17.783 (the report gives −10.2, p. 23)"
         },
         "sharesOutstanding": {
           "value": 2995.985,
           "unit": "mn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)"
+        },
+        "grossProfit": {
+          "value": 41.428,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 154)"
+        },
+        "operatingProfit": {
+          "value": 14.145,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 154)",
+          "note": "Includes share of equity-accounted investees 0.322"
+        },
+        "ebitda": {
+          "value": 16.4,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, business model (p. 14)"
+        },
+        "taxRate": {
+          "value": 32.3,
+          "unit": "%",
+          "source": "Annual Report 2025/26, note 9.1 (p. 174)",
+          "note": "Tax 4.431 ÷ profit before tax 13.723 (the report rounds to 32%); includes tax on dividends 0.468"
+        },
+        "totalEquity": {
+          "value": 57.011,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 156)",
+          "note": "Attributable to owners; 57.727 with non-controlling interests"
+        },
+        "depreciation": {
+          "value": 2.364,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "PPE depreciation and impairment 1.828 + right-of-use amortisation 0.415 + intangible amortisation and impairment 0.122"
+        },
+        "impairment": {
+          "value": 0.06,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, notes 12.1 and 15.1 (pp. 180, 191)",
+          "note": "PPE 0.011 + software 0.049"
+        },
+        "capexBooked": {
+          "value": 2.664,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, notes 12.1 and 15.1 (pp. 180, 191)",
+          "note": "PPE additions 2.409 (all paid in cash, note 12.1.6) + intangible additions 0.255"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, financial review (p. 23)",
+          "note": "Not separable: capex was 'directed towards expanding and modernising' service and manufacturing sites (Wattala hospital expansion named, p. 11), with no amount"
+        },
+        "workingCapitalChange": {
+          "value": 0.536,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "Inventories +1.774, receivables +0.462, payables −1.699 (report says Rs 553mn, p. 23)"
+        },
+        "acquisitions": {
+          "value": 0.19,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "Investment in associate/equity-accounted investee"
+        },
+        "interestPaid": {
+          "value": 0.753,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "Finance cost paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 5.199,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 24 (p. 208) and statement of financial position (p. 156)",
+          "note": "Term loans 3.811 + bank overdraft 1.388"
+        },
+        "leaseLiabilities": {
+          "value": 2.335,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 14.2 (p. 188)"
+        },
+        "cash": {
+          "value": 17.783,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 156)"
+        },
+        "dividendsPaid": {
+          "value": 2.837,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flows (p. 159)",
+          "note": "To owners of the parent"
+        },
+        "rdExpensed": {
+          "value": 0.35,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, business model (p. 14)",
+          "note": "'Rs 350 Mn invested in R&D and innovation'; not split between expense and capital. 0.3% of revenue, below the 2% threshold, so no R&D adjustment"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15.1 (p. 191)",
+          "note": "No capitalised development costs in the intangible note"
+        },
+        "contractedCapex": {
+          "value": 1.996,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 34.1 (p. 225)"
+        },
+        "capexPaidPPE": {
+          "value": 2.409,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary (p. 232)",
+          "note": "Ten-year summary 'capital expenditure' (PPE only)"
+        },
+        "interestCover": {
+          "value": 13.79,
+          "unit": "x",
           "source": "Annual Report 2025/26, Ten year summary (p. 232)"
         }
       }
@@ -450,6 +710,18 @@
           "unit": "Rs bn",
           "source": "Interim Q1 FY2027, p. 15",
           "note": "Quarter"
+        },
+        "operatingProfit": {
+          "value": 1.627,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027, p. 8",
+          "note": "Quarter; down 21.2%"
+        },
+        "priceRange": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim Q1 FY2027, p. 19",
+          "note": "Quarter: high 33.70, low 29.50, close 32.90 at 30 June"
         }
       }
     },
@@ -488,7 +760,7 @@
           "value": 0.25,
           "unit": "Rs",
           "source": "Interim Q2 FY2027, p. 19",
-          "note": "Interim for 2026/27, paid by 4 Dec 2026"
+          "note": "Interim for 2026/27 declared after the half (note 4), paid by 4 Dec 2026"
         },
         "navPerShare": {
           "value": 19.22,
@@ -502,16 +774,16 @@
           "note": "Year to date; working capital up Rs 12.3bn"
         },
         "capexPaid": {
-          "value": 2.159,
+          "value": 2.454,
           "unit": "Rs bn",
           "source": "Interim Q2 FY2027, p. 15",
-          "note": "Year to date, PPE only"
+          "note": "Year to date: PPE 2.159 + intangibles 0.295"
         },
         "netDebt": {
           "value": 11.885,
           "unit": "Rs bn",
           "source": "Interim Q2 FY2027, p. 10",
-          "note": "Borrowings 8.62 + 9.76 + overdraft 6.78 less cash 13.28; excludes Rs 1.81bn Twiga put/call liability"
+          "note": "Borrowings 8.623 + 9.762 + overdraft 6.781 less cash 13.281 (leases are inside the borrowings); excludes the Rs 1.81bn Twiga put/call liability"
         },
         "debtToEquity": {
           "value": 0.42,
@@ -527,59 +799,149 @@
         "acquisitionTwiga": {
           "value": 5.464,
           "unit": "Rs bn",
-          "source": "Interim Q2 FY2027, p. 19",
+          "source": "Interim Q2 FY2027, pp. 15, 19",
           "note": "75% of Twiga Stationers & Printers (Kenya), 17 Aug 2026; provisional goodwill 1.398"
+        },
+        "operatingProfit": {
+          "value": 5.404,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 8",
+          "note": "Year to date, down 2.8%; Q2 alone 3.777 (+8.1%)"
+        },
+        "depreciation": {
+          "value": 1.352,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 15",
+          "note": "Year to date: depreciation 1.045 + right-of-use 0.248 + intangibles 0.058"
+        },
+        "interestPaid": {
+          "value": 0.647,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 15",
+          "note": "Year to date",
+          "section": "operating"
+        },
+        "ebitda": {
+          "value": 6.756,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 2",
+          "note": "Year to date, up 0.9%; Q2 alone 4.498"
+        },
+        "borrowings": {
+          "value": 25.167,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 10",
+          "note": "Interest-bearing borrowings 8.623 + 9.762 (including leases) + overdraft 6.781"
+        },
+        "cash": {
+          "value": 13.281,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 10"
+        },
+        "totalEquity": {
+          "value": 57.577,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 10",
+          "note": "Attributable to owners"
+        },
+        "dividendsPaid": {
+          "value": 2.247,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027, p. 15",
+          "note": "Final for 2025/26, Rs 0.75 a share"
+        },
+        "priceRange": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Interim Q2 FY2027, p. 20",
+          "note": "Report gives six-month high 33.30, low 30.00, close 31.00; this conflicts with the Q1 report (29.50–33.70 in April–June), so April–September 2026 was 29.50–33.70"
         }
       }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "0.95 (provisional)",
+      "reason": "8 steps, 15 Nov 2026. (1) Business: a Sri Lankan group; weighted by 2025/26 profit attributable of the profitable segments (Annual Report 2025/26, segment note p. 166): Consumer Brands Rs 5.39bn (home and personal care, stationery) and Healthcare Rs 4.91bn (pharma distribution and manufacturing, hospitals), 52% / 48%. Mobility (Rs 0.86bn, 8%) left out because no sector beta for it could be read; the loss-making Others segment (leisure, head office) is not weighted. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins from web-search extracts of his global sector table (date not shown in the extract, so not confirmed as January 2026): Household Products unlevered, cash-corrected 0.77; Drugs (Pharmaceutical) 1.00 (used for all of Healthcare; no Hospitals row could be read). Weighted: 0.52 × 0.77 + 0.48 × 1.00 = 0.88. (3) Relevered with net debt Rs 11.9bn (30 Sep 2026) ÷ market value Rs 99.2bn (Rs 33.10 × 2,996mn shares) = 0.12 and 32.3% tax: 0.88 × (1 + 0.677 × 0.12) = 0.95. (4) Local 5-year betas: none found. StockAnalysis shows Beta (5Y) n/a; Simply Wall St 0.26 (April 2025) and Investing.com 0.36 give no period; TradingView 1.09 is a 1-year beta (ignored). Fewer than 3 usable sources, so step 4 can't be completed. (5) Higher of 0.95 and (no local figure) = 0.95. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file (including Hospitals and Transportation rows) and three verified local 5-year betas.",
+      "since": "2026-11-15"
+    },
+    {
       "name": "Cost of equity",
-      "value": "Bear 16.5% / Base 15.5% / Bull 14.5%",
-      "reason": "Bonds about 11–12% plus a premium; low debt and defensive businesses, but currency and price-control risk.",
+      "value": "Bear 19.5% / Base 18.0% / Bull 16.5%",
+      "reason": "From scripts/reinvestment.py (15 Nov 2026): 8.24% + 0.95 × (4.2% + 6.08%) = 18.0%, ±1.5 points. Replaces the hand-set 16.5 / 15.5 / 14.5%.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 18.1% / Base 16.8% / Bull 15.4%",
+      "reason": "From scripts/reinvestment.py (15 Nov 2026): cost of debt 9.77% (interest paid 0.753 ÷ average borrowings and leases 7.70, FY 2026), tax 32.3%, debt weight 10.7% (net debt Rs 11.9bn at Sep 2026, market cap Rs 99.2bn at Rs 33.10).",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 4% / 7% / 10%; supported 2.3% (reinvestment rate 10.7% × return on capital 21.2%, FY 2026). Base 4.7 and bull 7.7 pts above: kept because FY 2026 reinvestment was unusually low (cash built up for acquisitions) and FY 2027 reinvestment is already under way — Twiga bought for Rs 5.46bn, Rs 12.3bn into working capital and capex Rs 2.45bn against depreciation Rs 1.35bn in H1, Rs 2.0bn of capex contracted; profit kept × ROE gives 11.7%; and the DCF charges growth ÷ return on capital in reinvestment every year.",
+      "reason": "From scripts/reinvestment.py on the FY 2026 figures recorded in this redo.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Growth",
+      "value": "Bear 4% then 4% / Base 7% then 5% / Bull 10% then 6%",
+      "reason": "Five years, then long-run. Was 5 / 6 / 7% long-term only. Long-run below the 12.24% bond and WACC, reinvesting growth ÷ return on capital (29% / 28% / 29%).",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Return on new capital",
+      "value": "Bear 14% / Base 18% / Bull 21%",
+      "reason": "FY 2026 return on capital 21.2% (after-tax operating profit ÷ opening equity and net debt); acquisitions such as Twiga dilute it.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Cash after maintenance capex (start)",
+      "value": "Bear Rs 7.1bn / Base Rs 9.0bn / Bull Rs 9.5bn",
+      "reason": "Calculator FY 2026: operating cash 11.81 + after-tax interest 0.51 − maintenance 3.92 / 2.36 / 2.30 = 8.40 / 9.95 / 10.01, times 95% for minority shareholders, bear and base trimmed for this year's margin squeeze.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Bear Rs 8.1bn / Base Rs 9.0bn / Bull Rs 9.7bn",
+      "reason": "Trailing operating profit Rs 13.99bn × (1 − 32.3%) = 9.47, owners' share about 9.0; bear 10% lower; bull assumes margins recover.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "calculator range: Rs 3.92bn / 2.36bn / 2.30bn",
+      "reason": "No company split. Bear = average capex booked FY 2025–26 (includes the Rs 1.9bn Thalawathugoda land, so high); base = depreciation and amortisation; bull = less impairment.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "14% / 17% / 19%",
+      "reason": "Ten-year average about 13%, five-year about 15.5%, last two years 17–18%; ROE path from 15 / 16 / 17%.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "2.53 × 4.6 / 2.83 × 5.4 / 3.08 × 6.7",
+      "reason": "H1 EPS Rs 0.98; H2 Rs 1.55 / 1.85 / 2.10 (last year 1.89). P/E = two-stage forward P/E justified at the cost of equity (payout 1 − growth ÷ ROE). Base 5% below the Rs 2.98 run-rate.",
+      "since": "2026-11-15"
+    },
+    {
+      "name": "Payout",
+      "value": "32% for five years",
+      "reason": "2025/26 payout 31.8%; after year five, 1 − growth ÷ ROE.",
       "since": "2026-11-10"
+    },
+    {
+      "name": "Methods used",
+      "value": "Justified P/B, residual income, P/E, whole-company DCF",
+      "reason": "Dividend model left out (payout a third); dividends shown as a reading.",
+      "since": "2026-11-15"
     },
     {
       "name": "Scenario weights",
       "value": "Bear 30 / Base 50 / Bull 20",
       "reason": "The owner's standard weighting.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Long-run ROE",
-      "value": "13% / 16% / 18.5%",
-      "reason": "Ten-year average about 13%, five-year about 15.5%, last two years 17–18%.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Long-term growth",
-      "value": "5% / 6% / 7%",
-      "reason": "Roughly nominal GDP growth.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "EPS to March 2027 × P/E",
-      "value": "2.40 × 8 / 2.80 × 10 / 3.15 × 12",
-      "reason": "H1 EPS Rs 0.98; H2 last year Rs 1.89. Year-end P/E 6.5–9.9x over five years.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Free cash flow this year and growth",
-      "value": "Rs 2.0 / 2.5 / 3.0 a share; 6%→5% / 9%→6% / 12%→7%",
-      "reason": "FCF Rs 3.1 a share in 2025/26 and 2.8 in 2024/25, negative in 2022/23 and in H1 FY2027.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Payout",
-      "value": "32%",
-      "reason": "2025/26 payout 31.8%.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Methods used",
-      "value": "P/B, residual income, P/E, cash-flow DCF",
-      "reason": "Dividend model left out (payout a third).",
       "since": "2026-11-10"
     },
     {
@@ -590,10 +952,11 @@
     }
   ],
   "openQuestions": [
+    "Beta (January 2027): replace the stand-ins with Damodaran's emerging-markets betas (household products, pharmaceuticals, hospitals, transportation) and three local 5-year betas; fair value moves about Rs 1.5–2 per 0.1 of beta.",
     "Q3 results (to December 2026, due by mid-February): does the September-quarter recovery hold, and does gross margin recover from 29.7%?",
-    "Does working capital unwind (Rs 12.3bn built up in H1) and operating cash flow turn positive for the year?",
-    "Twiga's first contribution after its school season, and the final purchase price allocation (provisional goodwill Rs 1.40bn).",
-    "NMRA pharma pricing: do approved price increases restore Life Sciences margins?",
+    "Does the Rs 12.3bn of working capital built up in H1 unwind after the school season, and does operating cash flow turn positive for the year?",
+    "Twiga's first school-season contribution, and the final purchase price allocation (provisional goodwill Rs 1.40bn; put/call liability Rs 1.81bn).",
+    "NMRA pharma pricing (stay order on the pricing formula from 14 October): do price increases restore Life Sciences margins?",
     "Use of the USD 100mn+ earmarked for new growth platforms: further acquisitions and their returns."
   ],
   "changeLog": [
@@ -606,6 +969,16 @@
       "strongBuyPrice": 18.2,
       "priceAtTime": 33.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-15",
+      "basedOn": "Annual Report 2025/26 and interims to 30 Jun and 30 Sep 2026 (CSE downloads), re-read in full",
+      "summary": "Requested from Telegram (/redo HHL full). Research record rebuilt from the downloaded reports: FY 2026 and FY 2025 reinvestment figures added (depreciation and amortisation 2.36 / 2.00; capex booked 2.66 / 5.18, with the Rs 1.9bn Thalawathugoda land named as growth in FY 2025; working capital +0.54 / −3.78; acquisitions 0.19 / 0.69; operating profit 14.15 / 13.71; tax 32.3% / 34.5%; equity; borrowings, leases and cash; interest paid 0.75 / 1.27, operating section; dividends paid), R&D Rs 0.35bn (0.3% of revenue, no adjustment), H1 FY2027 capex, depreciation and interest. Earlier figures, reportsRead and change log kept. Beta 0.95 (provisional: Damodaran's site was blocked, so global sector betas from web-search extracts; no local 5-year beta found) gives cost of equity 18.0% (was 15.5% by hand) and WACC 16.8%. Capex-based supported growth 2.3%; growth 4 / 7 / 10% kept above it with reasons. DCF now whole-company at WACC less net debt: weighted 29.0 → 14.8; P/E 27.3 → 15.3 (justified 4.6 / 5.4 / 6.7x); P/B 20.0 → 17.4; residual income 20.5 → 16.5. Price ranges: the September report's six-month range conflicts with the June report; the June report's was used. Business tests 4 of 4, unchanged; category unchanged (watch list). Fair value Rs 24.20 → 16.00, buy Rs 20.60 → 13.60, strong buy Rs 18.20 → 12.00.",
+      "fairValue": 16.0,
+      "buyPrice": 13.6,
+      "strongBuyPrice": 12.0,
+      "priceAtTime": 33.1,
+      "archive": "research/HHL.N0000/history/2026-11-10.json"
     }
   ]
 }
