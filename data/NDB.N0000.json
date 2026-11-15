@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "ticker": "NDB.N0000",
+  "company": {
+    "name": "National Development Bank PLC",
+    "sector": "Banking",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "NDB.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-15",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025 (published before the fraud restatement)",
+      "Interim financial statements to 31 Mar, 30 Jun and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 103.0,
+    "date": "2026-11-05",
+    "source": "EconomyNext market report (web search); CSE site couldn't be reached from this run",
+    "note": "Closed Rs 109.50 on 30 September 2026. 2026 range from the interim reports: Rs 104.50 (April–June low) to Rs 159.00 (January–March high); Rs 103 on 5 November is lower still. The site replaces this with the CSE close."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Cheap on book value, but a fraud-hit bank with thin capital and a suspended dividend: fair value about Rs 88, buy below Rs 75",
+    "text": "National Development Bank (NDB.N0000) is a mid-sized commercial bank recovering from a Rs 13.64bn internal fraud found in April 2026. That loss was spread over 2024–2026 and wiped out about Rs 6bn of book value and half of 2025's profit. The core business is holding up: group profit for the nine months to September 2026 was Rs 7.6bn (EPS Rs 17.59), and Rs 9.0bn without the fraud (+11%). Bad loans are falling (Stage 3 gross 8.60%) and impairments halved. But the net interest margin dropped to 3.57%, the third quarter's profit fell 21%, CET1 is only 9.48% against an 8.5% Tier 1 minimum, and the Central Bank has suspended the Rs 6.46 cash dividend for 2025. At Rs 103 the share trades at 0.50x group NAV of Rs 204.98 and 3.5x profit without the fraud, which looks cheap. Return on equity is only about 12–13% even without the fraud, though, and NDB's own published betas put its cost of equity at 21%. On that basis four methods put fair value at about Rs 88. I'd buy at Rs 75 or less and treat Rs 66 as a strong buy. It fails three of the four business tests (returns, capital and cash dividends), so it's 'avoid for now'. The biggest uncertainty is the beta: on the 0.70 sector beta used for Sampath, fair value would be roughly Rs 130–150."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Profitable every year, but ROE is below 15% even without the fraud, capital is close to the minimum and the Central Bank has stopped the cash dividend.",
+    "assessed": "2026-11-15",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 12–13%",
+        "note": "Group: 8.4% in 2025 as restated (13.6% without the fraud), 11.8% for nine months of 2026 (bank 13.5% without the fraud). 4.6–8.1% in 2022–2023, 12.5% in 2021 and 2024."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "CET1 9.48%",
+        "note": "A bank, so judged on capital. CET1/Tier 1 is 9.48% (Tier 1 minimum 8.5%; 11.25% at end-2025 restated) and total capital 14.77% (minimum 12.5%), helped by Rs 16bn of Tier 2 bonds. That's not comfortable headroom: the CBSL has restricted the cash dividend and Fitch moved the outlook to Negative."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "No loss in ten years, even restated for the fraud (2022: Rs 3.0bn). Caveat: profits for 2024–2025 were overstated by Rs 0.9bn and Rs 5.1bn until the fraud was found."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Cash dividend suspended",
+        "note": "The Rs 6.46 cash part of the 2025 dividend hasn't been paid on the CBSL's instruction. Part of each dividend since 2023 has been paid in new shares (scrip): 60% for 2023, 38% for 2024, 24% for 2025."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.24,
+    "betaBasis": "Provisional. A bank, so the sector's levered beta isn't relevered: Damodaran's January 2026 Bank (Money Center) 0.70 (web-search extract). NDB's own yearly betas against the ASPI (Annual Report 2025, p. 520) were 0.53, 0.63, 2.44, 1.24 and 1.46 for 2021–2025, a median of 1.24. TradingView shows 1.60 and Simply Wall St 0.70 (January 2025), neither with a confirmed 5-year window. The median of the three local figures is 1.24, above 0.70, so 1.24 is used. Recheck in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 22.5,
+      "base": 21.0,
+      "bull": 19.5
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-15",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: NDB Annual Report 2025, p. 520; web-search extracts of Damodaran, TradingView and Simply Wall St (15 Nov 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.24 × (4.2% + 6.08%) = 21.0%; bear +1.5, bull −1.5 points. That's at the top of the house range of about 12–22% because NDB's share has moved more than the market (beta 1.24, against 0.70 for Sampath). No WACC: a bank is valued on its equity."
+  },
+  "valuation": {
+    "fairValue": 88,
+    "buyPrice": 75,
+    "strongBuyPrice": 66,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 204.98,
+    "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (Rs 87.9, about 0.43x group NAV). Very sensitive to the provisional beta: at 0.70 (cost of equity 15.4%) the base case would be about Rs 130–150."
+  },
+  "dividend": {
+    "perShare": 8.5,
+    "label": "final for 2025 (Rs 6.46 cash, suspended, + Rs 2.04 scrip)",
+    "source": "Interim 9M 2026, note 6",
+    "note": "The CBSL instructed the bank not to pay the cash part after the fraud; it sits in the balance sheet as dividend payable while the board talks to the regulator. A new buyer wouldn't receive it. For 2024: Rs 8.00 (Rs 5.00 cash + Rs 3.00 scrip)."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share (group)",
+      "value": 204.98,
+      "unit": "Rs",
+      "note": "30 September 2026, after the fraud; bank Rs 191.48"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.5,
+      "unit": "x",
+      "note": "Group NAV; 0.54x bank NAV"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 5.15,
+      "unit": "x",
+      "note": "Group EPS about Rs 20.0 with fraud losses; 3.5x on about Rs 29.6 without them"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (9M 2026)",
+      "value": 11.84,
+      "unit": "%",
+      "note": "Group, annualised; bank 13.5% without the fraud"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": null,
+      "unit": "%",
+      "display": "Suspended",
+      "note": "2025 cash dividend held back by the CBSL; Rs 8.50 declared would be 8.3%"
+    },
+    {
+      "id": "nim",
+      "label": "Net interest margin",
+      "value": 3.57,
+      "unit": "%",
+      "note": "9M 2026 (bank), from 4.06% in 2025"
+    },
+    {
+      "id": "cet1",
+      "label": "CET1 capital ratio",
+      "value": 9.48,
+      "unit": "%",
+      "note": "Bank; Tier 1 minimum 8.5%"
+    },
+    {
+      "id": "stage3",
+      "label": "Gross Stage 3 loans",
+      "value": 8.6,
+      "unit": "%",
+      "note": "Down from 9.18%; coverage 65.4%"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 21.0,
+      "unit": "%",
+      "note": "Beta 1.24 (provisional)"
+    },
+    {
+      "id": "fraud",
+      "label": "Fraud loss (total)",
+      "value": 13.64,
+      "unit": "Rs bn",
+      "note": "Rs 1.46bn before 2025, 9.62bn in 2025, 2.56bn in Q1 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 44.5,
+      "unit": "Rs bn",
+      "display": "~Rs 44.5bn",
+      "note": "432.2m shares at Rs 103"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "The fraud and the restatement",
+      "text": "An internal fraud found in April 2026 was finally put at Rs 13.64bn (Deloitte forensic report, September). It was booked as an expense in the periods it happened: Rs 1.46bn before 2025, Rs 9.62bn in 2025 and Rs 2.56bn in Q1 2026. Restated 2025 group profit fell to Rs 6.8bn from Rs 12.0bn, EPS to Rs 15.77 from Rs 27.83, and end-2025 NAV to Rs 201.31 from Rs 215.45. Any recoveries will be booked as income when received."
+    },
+    {
+      "title": "Nine months to September 2026 (group, unaudited)",
+      "text": "Profit attributable Rs 7.6bn, up 34% on the restated Rs 5.7bn; EPS Rs 17.59 against Rs 13.16. Without the fraud, profit after tax was Rs 9.0bn against Rs 8.1bn (+11%)."
+    },
+    {
+      "title": "The third quarter",
+      "text": "Group profit Rs 2.8bn, down 21% (bank −9%). Net interest income fell 12% in the quarter as deposits repriced faster than loans; a Rs 0.4bn impairment reversal helped."
+    },
+    {
+      "title": "Income, costs and asset quality",
+      "text": "Net interest income −2% (margin 3.57% from 4.06%); bank fees +14%; impairment charges −48% to Rs 3.0bn. Gross Stage 3 8.60% (9.18% at end-2025), net 3.00%, coverage 65.4%. Cost-to-income 42% without the fraud."
+    },
+    {
+      "title": "Balance sheet, capital and dividend",
+      "text": "Loans and deposits barely grew (+1.4% and +1.5%); CASA fell to 20.7%. CET1 9.48%, total capital 14.77% after Rs 16bn of Tier 2 bonds in March. The CBSL suspended the Rs 6.46 cash dividend for 2025; the Rs 2.04 scrip part was paid in shares. Fitch: A-(lka), outlook Negative. NDB sold its Seylan Bank stake at Rs 104 a share in May."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity (group)",
+        "unit": "%",
+        "values": [
+          12.5,
+          4.6,
+          8.1,
+          12.46,
+          8.38,
+          11.84
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "As first reported; restated not published",
+          "Restated for the fraud (13.58% first reported)",
+          "9M 2026, annualised"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (group)",
+        "unit": "x",
+        "values": [
+          3.3,
+          4.25,
+          4.5,
+          5.11,
+          8.96,
+          5.15
+        ],
+        "notes": [
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end, on EPS as first reported",
+          "Year-end, on restated EPS Rs 15.77 (5.08x first reported)",
+          "Trailing EPS about Rs 20.0, at Rs 103"
+        ]
+      },
+      {
+        "id": "pb",
+        "label": "Price to book (group)",
+        "unit": "x",
+        "values": [
+          0.39,
+          0.18,
+          0.35,
+          0.61,
+          0.7,
+          0.5
+        ],
+        "notes": [
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end, restated NAV Rs 201.31",
+          "NAV Rs 204.98, at Rs 103"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 204.98",
+      "reading": "Group NAV per share at 30 September 2026, after writing off the fraud. The price is 0.50x NAV, so it passes your NAV rule, but with ROE below the cost of equity a discount to book is justified."
+    },
+    {
+      "method": "Return on equity",
+      "value": "11.8%",
+      "reading": "Nine months of 2026, annualised (group); about 13% without the fraud. 2025 restated 8.4%; 4.6–12.5% in 2021–2024."
+    },
+    {
+      "method": "P/E",
+      "value": "5.2x",
+      "reading": "On trailing group EPS of about Rs 20.0 (3.5x on about Rs 29.6 without the fraud). Year-end P/E 3.3–5.1x in 2021–2024."
+    },
+    {
+      "method": "Dividends",
+      "value": "Suspended",
+      "reading": "Rs 8.50 declared for 2025 (Rs 6.46 cash not paid on the CBSL's instruction, Rs 2.04 in shares). Rs 8.00 for 2024 (Rs 5.00 cash)."
+    },
+    {
+      "method": "Required return",
+      "value": "21.0%",
+      "reading": "Cost of equity from beta 1.24 (provisional); 22.5% bear, 19.5% bull."
+    },
+    {
+      "method": "Capital",
+      "value": "CET1 9.48%",
+      "reading": "Down from 11.25% (restated) at end-2025; Tier 1 minimum 8.5%. Total capital 14.77% (minimum 12.5%)."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 8.60%",
+      "reading": "Gross, down from 9.18%; net 3.00%, coverage 65.4%."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 70.3,
+      "base": 95.7,
+      "bull": 131.2,
+      "weighted": 95.1,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 204.98: 0.34x / 0.47x / 0.64x book, with ROE 11% / 13% / 15%, growth 5% / 6% / 7%. A P/B well below 1x is outside the usual range for a listed bank, but follows here from ROE below a 21% cost of equity."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 79.2,
+      "base": 102.6,
+      "bull": 135.0,
+      "weighted": 102.1,
+      "comment": "2027 group EPS Rs 24 / 27 / 30 × 3.3 / 3.8 / 4.5. Base is 5% above the Rs 25.6 run-rate (Q3 2026 × 4) and below the Rs 29.6 earned over 12 months without the fraud, because the margin is falling. The P/Es equal the justified 3.3x / 3.8x / 4.6x at a 21% cost of equity; NDB traded at 3.3–5.1x in 2021–2024."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 50.2,
+      "base": 78.1,
+      "bull": 109.3,
+      "weighted": 76.0,
+      "comment": "35% of EPS paid for five years while profit grows 3% / 5% / 7% (bear: no dividend for 2027), then the payout rises to 1 − growth ÷ ROE (55% / 54% / 53%) at 5% / 6% / 7% growth."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 53.1,
+      "base": 79.5,
+      "bull": 114.2,
+      "weighted": 78.5,
+      "comment": "Used instead of a cash-flow DCF, which doesn't suit a bank. Book Rs 204.98 plus profit above the cost of equity: ROE 10%→11% / 12.5%→13% / 14%→15% over ten years, 35% payout, then the excess return grows at the long-run rate. ROE stays below the cost of equity, so value is below book."
+    }
+  ],
+  "modelsNote": "A bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price to book, alongside P/E and dividends, all at the 21.0% cost of equity (22.5% / 19.5% bear / bull). Growth check: assumed 3% / 5% / 7% a year for the five years after 2027, against 3.9% supported on the restated 2025 figures (46% of profit kept × 8.4% ROE). The bull case is 3.1 points above, because 2025's ROE is cut by the one-off fraud loss: keeping 65% at a 13% ROE supports about 8.5%. Long-run growth of 5–7% stays below the 12.24% bond yield and needs 45–47% of profit kept.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "22.5%",
+        "base": "21.0%",
+        "bull": "19.5%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "11%",
+        "base": "13%",
+        "bull": "15%"
+      },
+      {
+        "label": "Return on equity path (residual income)",
+        "bear": "10% rising to 11%",
+        "base": "12.5% rising to 13%",
+        "bull": "14% rising to 15%"
+      },
+      {
+        "label": "Profit growth, five years after 2027",
+        "bear": "3%",
+        "base": "5%",
+        "bull": "7%"
+      },
+      {
+        "label": "Long-run growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2027 EPS × P/E",
+        "bear": "24 × 3.3",
+        "base": "27 × 3.8",
+        "bull": "30 × 4.5"
+      },
+      {
+        "label": "Payout",
+        "bear": "none for 2027, then 35%, then 55%",
+        "base": "35%, then 54%",
+        "bull": "35%, then 53%"
+      }
+    ],
+    "averages": {
+      "bear": 63.2,
+      "base": 89.0,
+      "bull": 122.4
+    },
+    "common": "Group figures, 432.2m shares. Cost of equity from the house formula (risk-free 8.24% + beta 1.24 × 10.28% equity premium). No fraud recoveries assumed; any would add to profit. The suspended Rs 6.46 cash dividend is already a liability, so it isn't in NAV."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "19.5%",
+      "21.0%",
+      "22.5%"
+    ],
+    "columns": [
+      "11%",
+      "13%",
+      "15%"
+    ],
+    "values": [
+      [
+        66.1,
+        90.5,
+        119.0
+      ],
+      [
+        58.6,
+        79.5,
+        103.6
+      ],
+      [
+        52.6,
+        70.6,
+        91.4
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 103 needs a 15% long-run ROE at a 21% cost of equity. On Sampath's 0.70 beta (cost of equity 15.4%) the base residual income value would be about Rs 141, and the justified P/B about Rs 153."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 75
+      },
+      {
+        "shares": 150,
+        "maxPrice": 70
+      },
+      {
+        "shares": 150,
+        "maxPrice": 66
+      }
+    ],
+    "averagePrice": 70.8,
+    "totalCost": 35400,
+    "note": "About Rs 35,400 in total, against Rs 51,500 for 500 shares at Rs 103. Wait for the business tests to improve (capital, the dividend) before buying even at these prices.",
+    "realism": "Unlikely soon. Rs 75 is 27% below today's Rs 103, and the lowest 2026 price in the reports is Rs 104.50 (Rs 103 on 5 November). Prices that low were last seen in 2024 (low Rs 60.00 in March 2024); a further shock, such as a rights issue, would be needed."
+  },
+  "changeMyView": {
+    "higher": [
+      "A verified 5-year beta near 0.7–0.9, which would cut the cost of equity to 15–17% (worth roughly Rs 40–60 a share).",
+      "The CBSL letting the cash dividend be paid, and cash dividends resuming for 2026.",
+      "Recoveries from the fraud (booked as income).",
+      "CET1 back above 11% without a rights issue.",
+      "ROE without the fraud reaching 15%, or the margin recovering above 4%."
+    ],
+    "lower": [
+      "A rights issue at a low price to rebuild capital (CET1 9.48%).",
+      "Further fraud findings, penalties or a CBSL restriction on growth.",
+      "The margin falling further (3.57%) as deposits reprice.",
+      "A credit-rating downgrade from A-(lka), which would raise funding costs.",
+      "A new provisioning cycle (Stage 3 still 8.6% gross)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report (published before the fraud restatement) and the 2026 interim reports to September 2026. The interim figures are unaudited, the beta is provisional, and the price (Rs 103.00 on 5 November 2026) is from a news report, not the CSE, so check it before ordering. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Avoid for now: Rs 103 is 17% above fair value of Rs 88, and the bank fails three of the four business tests.",
+    "Expected yearly return at Rs 103": "About 15–17% a year if the price stays near 0.5x book and dividends resume: a 9% yield (35% of Rs 27 EPS) plus book growth of about 8%. Below the 21% cost of equity.",
+    "Compared with": "10-year government bond 12.24%; cost of equity 21.0%.",
+    "Downside / upside": "Bear case Rs 63 (−39%); bull case Rs 122 (+19%).",
+    "What the price assumes": "At 0.50x NAV, with 6% long-run growth and a 21% cost of equity, a long-run ROE of about 13.5%: about what NDB earns without the fraud. At a 15.4% cost of equity it would assume only about 10.7%.",
+    "Confidence": "Low to medium: the four methods agree (Rs 78–103 base), but the beta, and so the cost of equity, is provisional and moves fair value more than anything else.",
+    "Margin of safety": "None at today's price."
+  },
+  "Business and moat": {
+    "What it does": "A Sri Lankan commercial bank with 113 branches, Rs 653bn of gross loans and Rs 717bn of deposits (bank, September 2026), strong in corporate, project and SME lending. Subsidiaries: NDB Investment Bank, NDB Securities, NDB Wealth and property; banking is about 97% of group profit.",
+    "Moat": "Narrow to none: a good corporate franchise but a low CASA ratio (20.7%), so funding costs more than at bigger retail banks, and the fraud has damaged trust in its controls.",
+    "Growth": "Loans grew 26% in 2025 but only 1.4% in nine months of 2026 as capital tightened."
+  },
+  "Accounting quality": {
+    "The fraud": "Rs 13.64bn over 2024–2026, found in April 2026. Profits for 2024 and 2025 were overstated by Rs 0.9bn and Rs 5.1bn after tax. The annual report 2025 was published before this and its figures are now superseded.",
+    "Underlying earnings": "Without the fraud, group profit after tax was about Rs 12.8bn over the last 12 months (about Rs 29.6 a share); the bank reports annualised EPS of Rs 27.43 without it.",
+    "Other comprehensive income": "The fair-value reserve fell Rs 2.1bn in nine months as bond prices fell; it goes straight to equity, not profit."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Risk: deposits repricing faster than loans cut the margin to 3.57%.",
+    "Regulation": "Risk: the CBSL has already restricted the cash dividend; it could also limit growth.",
+    "Tax": "Banks pay VAT on financial services (Rs 3.7bn in nine months) on top of income tax: about 49% of profit before both.",
+    "Dependence on the state": "Watch: about Rs 296bn in government and other debt securities (amortised cost and FVOCI)."
+  },
+  "Crisis stress test (2022-style)": {
+    "What happened in 2022": "Impairment Rs 29.3bn (against Rs 10.3bn in 2021); group profit fell to Rs 3.0bn (ROE 4.6%); the share price fell to Rs 31.30 (0.18x book).",
+    "Today": "With CET1 at 9.48%, a repeat would almost certainly mean a rights issue at a low price. That's the main reason the bear case is Rs 63."
+  },
+  "Investment case and sell rules": {
+    "Why it might be worth owning later": "A cheap price to book (0.5x), improving asset quality and a core ROE of about 13% if controls are fixed and capital rebuilt.",
+    "What would make it investable": "Cash dividends allowed again, CET1 above 11%, and core ROE at 14%+ for a year.",
+    "Sell triggers (if bought)": "Price more than 30% above fair value (above Rs 114); a rights issue at a deep discount; or further fraud findings."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 75 or lower",
+    "Strong buy": "Rs 66 or lower"
+  },
+  "Key ratios (five-year trend)": {
+    "Return on equity (group)": "2021 12.5% · 2022 4.6% · 2023 8.1% · 2024 12.5% (first reported) · 2025 8.4% (restated) · 9M 2026 11.8%",
+    "Net interest margin (bank)": "2024 4.34% · 2025 4.06% · 9M 2026 3.57%",
+    "CET1 (bank)": "2024 13.68% · 2025 11.25% (restated) · Sep 2026 9.48%",
+    "Gross Stage 3 (bank)": "2025 9.18% · Sep 2026 8.60%",
+    "Dividend per share": "2021 5.50 · 2022 2.50 · 2023 5.00 · 2024 8.00 · 2025 8.50 (cash part suspended)"
+  },
+  "What this analysis doesn't cover": [
+    "The CSE site and the beta sites (StockAnalysis, Damodaran) couldn't be reached in this run; the price is from a news report and the beta is provisional.",
+    "Restated 2024 EPS and ROE aren't published, so 2024 history uses the figures first reported.",
+    "Peer banks (SAMP, COMB, HNB) weren't compared in this run.",
+    "The outcome of the CBSL's review of the fraud."
+  ],
+  "fullText": "Summary: National Development Bank (NDB.N0000) is a mid-sized commercial bank recovering from a Rs 13.64bn internal fraud found in April 2026. That loss was spread over 2024–2026 and wiped out about Rs 6bn of book value and half of 2025's profit. The core business is holding up: group profit for the nine months to September 2026 was Rs 7.6bn (EPS Rs 17.59), and Rs 9.0bn without the fraud (+11%). Bad loans are falling (Stage 3 gross 8.60%) and impairments halved. But the net interest margin dropped to 3.57%, the third quarter's profit fell 21%, CET1 is only 9.48% against an 8.5% Tier 1 minimum, and the Central Bank has suspended the Rs 6.46 cash dividend for 2025. At Rs 103 the share trades at 0.50x group NAV of Rs 204.98 and 3.5x profit without the fraud, which looks cheap. Return on equity is only about 12–13% even without the fraud, though, and NDB's own published betas put its cost of equity at 21%. On that basis four methods put fair value at about Rs 88. I'd buy at Rs 75 or less and treat Rs 66 as a strong buy. It fails three of the four business tests (returns, capital and cash dividends), so it's 'avoid for now'. The biggest uncertainty is the beta: on the 0.70 sector beta used for Sampath, fair value would be roughly Rs 130–150.\n\nPrice and key figures\nPrice: Rs 103.00 on 5 November 2026 (EconomyNext market report; the CSE site couldn't be reached). It closed September at Rs 109.50; the 2026 range in the reports is Rs 104.50–159.00.\nThe fraud: Rs 13.64bn in total (Rs 1.46bn before 2025, Rs 9.62bn in 2025, Rs 2.56bn in Q1 2026), booked as an expense; 2024 and 2025 restated. Restated 2025: group EPS Rs 15.77 (27.83 first reported), NAV Rs 201.31 (215.45), ROE 8.4% (13.6%).\nNine months to September 2026 (group, unaudited): profit Rs 7.6bn (+34% on restated), EPS Rs 17.59; Rs 9.0bn without the fraud (+11%). Q3 profit Rs 2.8bn (−21%). Net interest income −2% (margin 3.57%), fees +8%, impairments −48%.\nBalance sheet: gross loans Rs 653bn (+1.4%), deposits Rs 717bn, Stage 3 8.60% gross, CET1 9.48% (Tier 1 minimum 8.5%), total capital 14.77%. Cash dividend for 2025 (Rs 6.46) suspended by the CBSL. Fitch A-(lka), Negative.\n\nRequired return\nCost of equity = 8.24% risk-free + 1.24 beta × (4.2% + 6.08%) = 21.0%; bear 22.5%, bull 19.5%. The beta is the median of NDB's own yearly betas against the ASPI (2021–2025), TradingView and Simply Wall St; provisional until January 2027.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 70.3 | 95.7 | 131.2 | 95.1\nP/E method | 79.2 | 102.6 | 135.0 | 102.1\nDividend model | 50.2 | 78.1 | 109.3 | 76.0\nResidual income | 53.1 | 79.5 | 114.2 | 78.5\nAverage | 63.2 | 89.0 | 122.4 | 88\n\nAssumptions (bear / base / bull)\nCost of equity 22.5% / 21.0% / 19.5%; long-run ROE 11% / 13% / 15%; ROE path 10%→11% / 12.5%→13% / 14%→15%; growth for five years 3% / 5% / 7% (supported 3.9% on restated 2025, about 8.5% without the fraud); long-run growth 5% / 6% / 7%; 2027 EPS 24 × 3.3 / 27 × 3.8 / 30 × 4.5.\n\nFair value Rs 88, buy Rs 75, strong buy Rs 66. On a 0.70 beta (cost of equity 15.4%) fair value would be roughly Rs 130–150.\n\nBusiness tests: 1 of 4 passed (steady profit); fails returns, capital and cash dividends: avoid for now (category 3).\n\n500-share plan\n200 shares up to Rs 75, 150 up to Rs 70, 150 up to Rs 66: about Rs 35,400 in total. Not realistic soon; wait for capital and the dividend to recover."
+}

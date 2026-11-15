@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "ticker": "NDB.N0000",
+  "localFolder": null,
+  "updated": "2026-11-15",
+  "reportsRead": [
+    {
+      "file": "reports/NDB.N0000/2026-03-04_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual Report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-15",
+      "note": "Published before the fraud was found (April 2026), so its 2024–2025 figures are pre-restatement. Used: performance highlights (PDF p. 17), dividends (p. 316), investor relations (pp. 518–521, incl. yearly betas), ten years at a glance (pp. 530–531)."
+    },
+    {
+      "file": "reports/NDB.N0000/2026-04-30_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+      "title": "Interim to 31 Mar 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-15",
+      "note": "Income statement, balance sheet, selected indicators, share information."
+    },
+    {
+      "file": "reports/NDB.N0000/2026-07-22_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-15",
+      "note": "Income statement, balance sheet, selected indicators, share information."
+    },
+    {
+      "file": "reports/NDB.N0000/2026-10-21_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-15",
+      "note": "Commentary pp. 2–5, income statement p. 6, balance sheet p. 7, cash flow p. 10, notes 3 (fraud), 6 (dividend), 7 (Tier 2), 8 (Seylan sale), 10 (restatement) pp. 12–15, indicators p. 18, share information p. 22 (printed page numbers)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 6.904,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group, attributable to shareholders"
+        },
+        "eps": {
+          "value": 20.88,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group, basic"
+        },
+        "dividendPerShare": {
+          "value": 5.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Final for 2021"
+        },
+        "navPerShare": {
+          "value": 175.65,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "roe": {
+          "value": 12.5,
+          "unit": "%",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "peYearEnd": {
+          "value": 3.3,
+          "unit": "x",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "priceYearEnd": {
+          "value": 68.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)",
+          "note": "Not adjusted for scrip"
+        },
+        "priceHigh": {
+          "value": 103.59,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceLow": {
+          "value": 67.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "totalEquity": {
+          "value": 62.727,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group shareholders' funds"
+        },
+        "betaVsAspi": {
+          "value": 0.53,
+          "unit": "",
+          "source": "Annual Report 2025, PDF p. 520 (beta of NDB share against ASPI)",
+          "note": "Window not stated; reads as that year's beta"
+        },
+        "sharesOutstanding": {
+          "value": 357.124,
+          "unit": "mn",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 3.009,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group, attributable to shareholders"
+        },
+        "eps": {
+          "value": 7.53,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group, basic"
+        },
+        "dividendPerShare": {
+          "value": 2.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Final for 2022"
+        },
+        "navPerShare": {
+          "value": 177.6,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "roe": {
+          "value": 4.6,
+          "unit": "%",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "peYearEnd": {
+          "value": 4.25,
+          "unit": "x",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "priceYearEnd": {
+          "value": 32.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)",
+          "note": "Not adjusted for scrip"
+        },
+        "priceHigh": {
+          "value": 73.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceLow": {
+          "value": 31.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "totalEquity": {
+          "value": 67.505,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group shareholders' funds"
+        },
+        "betaVsAspi": {
+          "value": 0.63,
+          "unit": "",
+          "source": "Annual Report 2025, PDF p. 520 (beta of NDB share against ASPI)",
+          "note": "Window not stated; reads as that year's beta"
+        },
+        "sharesOutstanding": {
+          "value": 380.095,
+          "unit": "mn",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 5.758,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group, attributable to shareholders"
+        },
+        "eps": {
+          "value": 13.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group, basic"
+        },
+        "dividendPerShare": {
+          "value": 5.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "For 2023: Rs 2.00 cash + Rs 3.00 scrip (AR 2025 p. 316)"
+        },
+        "navPerShare": {
+          "value": 186.43,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "roe": {
+          "value": 8.1,
+          "unit": "%",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "peYearEnd": {
+          "value": 4.5,
+          "unit": "x",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "priceYearEnd": {
+          "value": 64.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)",
+          "note": "Not adjusted for scrip"
+        },
+        "priceHigh": {
+          "value": 85.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceLow": {
+          "value": 31.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "totalEquity": {
+          "value": 74.471,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, PDF pp. 530–531 (Ten years at a glance, group; before the fraud restatement)",
+          "note": "Group shareholders' funds"
+        },
+        "betaVsAspi": {
+          "value": 2.44,
+          "unit": "",
+          "source": "Annual Report 2025, PDF p. 520 (beta of NDB share against ASPI)",
+          "note": "Window not stated; reads as that year's beta"
+        },
+        "sharesOutstanding": {
+          "value": 399.464,
+          "unit": "mn",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 8.899,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12) and Annual Report 2025 p. 530",
+          "note": "Restated for the fraud: group profit after tax Rs 8.997bn less minority Rs 0.098bn. Originally Rs 9.794bn (attributable)."
+        },
+        "eps": {
+          "value": 23.05,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 17",
+          "note": "As originally reported (group, basic; p. 521 shows 23.57). Restated EPS not published; the fraud cut 2024 profit by Rs 0.895bn, about Rs 2.15 a share."
+        },
+        "dividendPerShare": {
+          "value": 8.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "For 2024: Rs 5.00 cash + Rs 3.00 scrip"
+        },
+        "navPerShare": {
+          "value": 199.13,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "roe": {
+          "value": 12.46,
+          "unit": "%",
+          "source": "Annual Report 2025, PDF p. 17",
+          "note": "As originally reported (group). Restated ROE not published."
+        },
+        "peYearEnd": {
+          "value": 5.11,
+          "unit": "x",
+          "source": "Annual Report 2025, PDF p. 521 (Key shareholder return indicators, group; before the fraud restatement)",
+          "note": "Group"
+        },
+        "priceYearEnd": {
+          "value": 113.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)",
+          "note": "Not adjusted for scrip"
+        },
+        "priceHigh": {
+          "value": 114.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceLow": {
+          "value": 60.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "totalEquity": {
+          "value": 81.848,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 10.1 (p. 14)",
+          "note": "Group, restated at 1 Jan 2025 (originally Rs 82.743bn)"
+        },
+        "betaVsAspi": {
+          "value": 1.24,
+          "unit": "",
+          "source": "Annual Report 2025, PDF p. 520 (beta of NDB share against ASPI)",
+          "note": "Window not stated; reads as that year's beta"
+        },
+        "sharesOutstanding": {
+          "value": 415.513,
+          "unit": "mn",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "bankNetProfit": {
+          "value": 8.135,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12)",
+          "note": "Bank, restated (Rs 9.030bn as first reported)"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 6.722,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12) and Annual Report 2025 p. 530",
+          "note": "Restated for the fraud: group profit after tax Rs 6.808bn less minority Rs 0.086bn. Originally Rs 11.865bn."
+        },
+        "bankNetProfit": {
+          "value": 5.896,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12)",
+          "note": "Bank, restated (Rs 11.040bn as first reported; fraud net Rs 5.143bn)"
+        },
+        "coreProfitBeforeTax": {
+          "value": 22.769,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12)",
+          "note": "Group, before the fraud loss of Rs 9.565bn"
+        },
+        "eps": {
+          "value": 15.77,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Group, restated (27.83 as first reported)"
+        },
+        "bankEps": {
+          "value": 13.83,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank, restated (25.90 as first reported)"
+        },
+        "dividendPerShare": {
+          "value": 8.5,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, note 6 (p. 13)",
+          "note": "Final for 2025: Rs 6.46 cash (payment suspended by the CBSL; held as dividend payable) + Rs 2.04 scrip (5.3m shares issued 10 April 2026)"
+        },
+        "navPerShare": {
+          "value": 201.31,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Group, restated (215.45 as first reported); bank 187.36"
+        },
+        "roe": {
+          "value": 8.38,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Group, restated (13.58% as first reported); bank 7.52% (13.49%)"
+        },
+        "totalEquity": {
+          "value": 85.936,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Group shareholders' equity, restated (Rs 91.974bn first reported)"
+        },
+        "peYearEnd": {
+          "value": 8.96,
+          "unit": "x",
+          "source": "Worked out: Rs 141.25 ÷ restated group EPS Rs 15.77",
+          "note": "5.08x on the EPS first reported"
+        },
+        "priceYearEnd": {
+          "value": 141.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceHigh": {
+          "value": 158.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "priceLow": {
+          "value": 94.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "netInterestMargin": {
+          "value": 4.06,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank"
+        },
+        "cet1": {
+          "value": 11.25,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank, restated (12.35% first reported); minimum 7%, Tier 1 minimum 8.5%"
+        },
+        "totalCapitalRatio": {
+          "value": 14.8,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank, restated (15.89% first reported); minimum 12.5%"
+        },
+        "stage3Gross": {
+          "value": 9.18,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank; net 3.75%"
+        },
+        "stage3Coverage": {
+          "value": 59.1,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank"
+        },
+        "costToIncome": {
+          "value": 61.7,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18 (selected performance indicators, restated 31 Dec 2025)",
+          "note": "Bank, with the fraud loss; 41.04% without"
+        },
+        "grossLoans": {
+          "value": 643.86,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 11.1 (p. 16)",
+          "note": "Bank"
+        },
+        "deposits": {
+          "value": 707.167,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Bank"
+        },
+        "betaVsAspi": {
+          "value": 1.46,
+          "unit": "",
+          "source": "Annual Report 2025, PDF p. 520 (beta of NDB share against ASPI)",
+          "note": "Window not stated; reads as that year's beta"
+        },
+        "sharesOutstanding": {
+          "value": 426.889,
+          "unit": "mn",
+          "source": "Annual Report 2025, PDF p. 518 (share price movement)"
+        },
+        "capexPaid": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "—",
+          "note": "Not collected: a bank, so the reinvestment figures don't apply"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 1.603,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, income statement (PDF p. 6)",
+          "note": "Group, quarter, with the fraud loss as first estimated (Rs 2.67bn gross); restated later to Rs 2.56bn"
+        },
+        "eps": {
+          "value": 3.71,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, income statement",
+          "note": "Group, quarter; bank 4.06"
+        },
+        "navPerShare": {
+          "value": 197.37,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, balance sheet",
+          "note": "Group; bank 183.78"
+        },
+        "roe": {
+          "value": 12.61,
+          "unit": "%",
+          "source": "Interim Q1 2026, selected indicators",
+          "note": "Bank, annualised; group 11.02%"
+        },
+        "netInterestMargin": {
+          "value": 3.86,
+          "unit": "%",
+          "source": "Interim Q1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "cet1": {
+          "value": 9.52,
+          "unit": "%",
+          "source": "Interim Q1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "totalCapitalRatio": {
+          "value": 15.41,
+          "unit": "%",
+          "source": "Interim Q1 2026, selected indicators",
+          "note": "Bank, after the Rs 16bn Tier 2 bond"
+        },
+        "priceQuarterEnd": {
+          "value": 130.0,
+          "unit": "Rs",
+          "source": "Interim Q1 2026, share information",
+          "note": "Quarter range Rs 124.75–159.00"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 4.845,
+          "unit": "Rs bn",
+          "source": "Interim H1 2026, statement of changes in equity",
+          "note": "Group, attributable, six months"
+        },
+        "eps": {
+          "value": 11.21,
+          "unit": "Rs",
+          "source": "Interim H1 2026, income statement",
+          "note": "Group, six months; bank 11.19"
+        },
+        "navPerShare": {
+          "value": 199.0,
+          "unit": "Rs",
+          "source": "Interim H1 2026, balance sheet",
+          "note": "Group; bank 185.21"
+        },
+        "roe": {
+          "value": 12.69,
+          "unit": "%",
+          "source": "Interim H1 2026, selected indicators",
+          "note": "Bank, annualised; group 11.83%"
+        },
+        "netInterestMargin": {
+          "value": 3.75,
+          "unit": "%",
+          "source": "Interim H1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "cet1": {
+          "value": 9.67,
+          "unit": "%",
+          "source": "Interim H1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "totalCapitalRatio": {
+          "value": 15.32,
+          "unit": "%",
+          "source": "Interim H1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "stage3Gross": {
+          "value": 8.89,
+          "unit": "%",
+          "source": "Interim H1 2026, selected indicators",
+          "note": "Bank"
+        },
+        "priceQuarterEnd": {
+          "value": 112.5,
+          "unit": "Rs",
+          "source": "Interim H1 2026, share information",
+          "note": "Quarter range Rs 104.50–132.75"
+        }
+      }
+    },
+    {
+      "period": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netProfit": {
+          "value": 2.767,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, attributable, quarter (Rs 3.499bn a year earlier, −21%); bank Rs 2.886bn (−9%)"
+        },
+        "eps": {
+          "value": 6.4,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, quarter (8.09 a year earlier); bank 6.68"
+        },
+        "impairment": {
+          "value": -0.418,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Net reversal in the quarter"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 82.021,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group gross income (+9%)"
+        },
+        "netInterestIncome": {
+          "value": 25.639,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group (−2%); bank 25.385"
+        },
+        "netFeeIncome": {
+          "value": 8.025,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group (+8%); bank 6.583 (+14%)"
+        },
+        "impairment": {
+          "value": 3.038,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Down 48% from 5.886"
+        },
+        "operatingExpenses": {
+          "value": 18.8,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, including Rs 2.56bn fraud loss"
+        },
+        "fraudLoss": {
+          "value": 2.56,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12)",
+          "note": "Gross, all in Q1 2026; total fraud Rs 13.640bn (Rs 1.463bn before 2025, Rs 9.617bn in 2025, Rs 2.560bn in 2026)"
+        },
+        "profitBeforeTax": {
+          "value": 15.281,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, before VAT on financial services; Rs 17.841bn without the fraud"
+        },
+        "netProfit": {
+          "value": 7.603,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, attributable (+34% on restated Rs 5.689bn); bank 7.711 (+51%)"
+        },
+        "coreNetProfit": {
+          "value": 9.026,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 3 (p. 12)",
+          "note": "Group profit after tax without the fraud (Rs 8.139bn a year earlier, +11%)"
+        },
+        "eps": {
+          "value": 17.59,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 6",
+          "note": "Group, nine months (13.16 restated a year earlier); bank 17.84"
+        },
+        "navPerShare": {
+          "value": 204.98,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Group; bank 191.48"
+        },
+        "totalEquity": {
+          "value": 88.59,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Group shareholders' equity; bank 82.757"
+        },
+        "roe": {
+          "value": 11.84,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Group, annualised; bank 12.87% (13.46% without the fraud)"
+        },
+        "netInterestMargin": {
+          "value": 3.57,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank (4.06% in 2025)"
+        },
+        "costToIncome": {
+          "value": 49.14,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank; 41.96% without the fraud"
+        },
+        "cet1": {
+          "value": 9.48,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank; minimum 7%, Tier 1 minimum 8.5%; group 10.16%"
+        },
+        "totalCapitalRatio": {
+          "value": 14.77,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank; minimum 12.5%"
+        },
+        "leverageRatio": {
+          "value": 5.34,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank; minimum 3%"
+        },
+        "stage3Gross": {
+          "value": 8.6,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank; net 3.00%"
+        },
+        "stage3Coverage": {
+          "value": 65.36,
+          "unit": "%",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Bank"
+        },
+        "grossLoans": {
+          "value": 653.096,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 11.1 (p. 16)",
+          "note": "Bank (+1.4% in nine months)"
+        },
+        "deposits": {
+          "value": 717.468,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "Bank (+1.5%); CASA 20.7% (23.9%)"
+        },
+        "dividendPayable": {
+          "value": 2.861,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, p. 7",
+          "note": "The suspended 2025 cash dividend (Rs 6.46 a share)"
+        },
+        "tier2Raised": {
+          "value": 16.0,
+          "unit": "Rs bn",
+          "source": "Interim 9M 2026, note 7 (p. 13)",
+          "note": "Basel III Tier 2 GSS+ bonds, March 2026"
+        },
+        "sharesOutstanding": {
+          "value": 432.198,
+          "unit": "mn",
+          "source": "Interim 9M 2026, p. 22"
+        },
+        "priceQuarterEnd": {
+          "value": 109.5,
+          "unit": "Rs",
+          "source": "Interim 9M 2026, p. 22",
+          "note": "Quarter range Rs 106.00–114.25"
+        },
+        "creditRating": {
+          "value": null,
+          "unit": "",
+          "source": "Interim 9M 2026, p. 18",
+          "note": "Fitch Ratings Lanka A-(lka), Negative outlook (A(lka) Stable at end-2025)"
+        }
+      }
+    },
+    {
+      "period": "TTM Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 20.0,
+          "unit": "Rs",
+          "source": "Worked out from FY 2025 restated and 9M 2025/2026 (Interim 9M 2026, pp. 6 and 12)",
+          "note": "Group attributable profit Rs 6.722bn + 7.603bn − 5.689bn = Rs 8.636bn over about 432m shares. Includes Rs 4.1bn of after-tax fraud losses; about Rs 29.6 without them."
+        },
+        "coreEps": {
+          "value": 29.6,
+          "unit": "Rs",
+          "source": "Worked out from note 3 (Interim 9M 2026, p. 12)",
+          "note": "Group profit without the fraud: FY 2025 Rs 11.951bn + 9M 2026 Rs 9.026bn − 9M 2025 Rs 8.139bn = Rs 12.838bn (incl. about Rs 0.05bn minority)"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "1.24 (provisional)",
+      "since": "2026-11-15",
+      "reason": "8 steps, 15 Nov 2026. (1) Business: a Sri Lankan commercial bank (banking is about 97% of group profit; NDB Investment Bank, NDB Securities, NDB Wealth and property the rest), so one sector beta. (2)–(3) A bank, so no relevering: the sector's levered beta, Damodaran's Bank (Money Center) 0.70 (January 2026, as used for SAMP; from a web-search extract, his site couldn't be opened). (4) Local betas: no source with a stated 5-year window could be opened. Used instead: the median of the five yearly betas against the ASPI that NDB itself publishes (Annual Report 2025, p. 520: 0.53, 0.63, 2.44, 1.24, 1.46 for 2021–2025) = 1.24; TradingView 1.60 (window not stated); Simply Wall St 0.70 (January 2025). Median of the three: 1.24. Traded on most days (72,275 trades in 2025), so not thin. (5) Higher of 0.70 and 1.24 = 1.24. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: replace with three verified 5-year betas in January 2027. At Damodaran's 0.70 the cost of equity would be 15.4% and fair value roughly 50–60% higher."
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 22.5% / Base 21.0% / Bull 19.5%",
+      "since": "2026-11-15",
+      "reason": "From scripts/reinvestment.py (15 Nov 2026): 8.24% + 1.24 × (4.2% + 6.08%) = 21.0%, ±1.5 points. At the top of the 12–22% house range because the beta is high; the bear case is above it."
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 3% / 5% / 7%; supported 3.9% (share of profit kept × ROE, FY 2025 restated: 46.1% × 8.38%). Bull 3.1 pts above: 2025 ROE is cut by the one-off fraud loss; on profit without the fraud, keeping 65% at a 13% ROE supports about 8.5%.",
+      "since": "2026-11-15",
+      "reason": "From scripts/reinvestment.py on the restated FY 2025 figures; earnings growth for the five years after 2027."
+    },
+    {
+      "name": "Long-run ROE (price to book)",
+      "value": "11% / 13% / 15%",
+      "since": "2026-11-15",
+      "reason": "Group ROE without the fraud: 12.5% (2021), 12.5% (2024), 13.6% (2025), about 13.5% in 9M 2026; 4.6–8.1% in 2022–2023. Bear allows for higher control costs and recoveries never coming; bull for NDB reaching the 15% of stronger peers."
+    },
+    {
+      "name": "ROE path (residual income)",
+      "value": "10%→11% / 12.5%→13% / 14%→15%",
+      "since": "2026-11-15",
+      "reason": "Over 10 years from about 12–13% today, then the excess return (negative while ROE is below the cost of equity) grows at the long-run rate."
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "since": "2026-11-15",
+      "reason": "Below the 12.24% bond yield and the cost of equity; needs 45–47% of profit kept (growth ÷ ROE)."
+    },
+    {
+      "name": "2027 EPS × P/E",
+      "value": "24 × 3.3 / 27 × 3.8 / 30 × 4.5",
+      "since": "2026-11-15",
+      "reason": "Group EPS without fraud losses was about Rs 29.6 over the last 12 months; Q3 2026 × 4 = Rs 25.6. Base +5% on the higher run-rate (25.6) used by the calculator; NIM is falling (3.57% from 4.06%). P/Es equal the justified 3.3x / 3.8x / 4.6x at a 21% cost of equity."
+    },
+    {
+      "name": "Dividends",
+      "value": "35% of EPS for five years (bear: nothing for 2027), then 1 − growth ÷ ROE (55% / 54% / 53%)",
+      "since": "2026-11-15",
+      "reason": "NDB paid 31–37% of group EPS in 2021–2024, part in scrip; the CBSL suspended the 2025 cash dividend after the fraud."
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "since": "2026-11-15",
+      "reason": "The owner's standard weighting."
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "since": "2026-11-15",
+      "reason": "The owner's standard."
+    }
+  ],
+  "openQuestions": [
+    "What the CBSL decides on the suspended Rs 6.46 cash dividend for 2025, and whether cash dividends resume for 2026.",
+    "Any recoveries of the Rs 13.64bn fraud (would be booked as income) and the outcome of the CBSL's review.",
+    "CET1 (9.48%, Tier 1 minimum 8.5%): does it recover, or is a rights issue needed?",
+    "Net interest margin (3.57%) and the fall in CASA (20.7%): bottoming out?",
+    "Fitch's rating outlook (A-(lka) Negative).",
+    "Three verified local 5-year betas and Damodaran's January 2027 emerging-markets bank beta (the 1.24 beta is provisional)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-15",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add NDB). First analysis from the four downloaded CSE reports (Annual Report 2025 and the Q1, H1 and 9M 2026 interims). The annual report predates the Rs 13.64bn fraud found in April 2026, so 2024–2025 figures use the restated numbers in the 9M 2026 interim (2024 EPS and ROE restated not published: first-reported figures kept with a note). Cost of equity 21.0% from a provisional beta of 1.24 (median of NDB's own yearly ASPI betas 2021–2025, TradingView 1.60, Simply Wall St 0.70; no verified 5-year beta could be opened). Price Rs 103.00 (5 Nov 2026) from an EconomyNext report: the CSE site was blocked in this run. Business tests 1 of 4 (fails returns, capital and cash dividends): avoid for now (category 3).",
+      "fairValue": 88,
+      "buyPrice": 75,
+      "strongBuyPrice": 66,
+      "priceAtTime": 103.0,
+      "archive": null
+    }
+  ]
+}
