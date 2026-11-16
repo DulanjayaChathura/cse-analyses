@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "ticker": "HNBF.X0000",
+  "company": {
+    "name": "HNB Finance PLC",
+    "sector": "Finance and leasing",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "HNBF.X0000",
+      "label": "Non-voting"
+    },
+    {
+      "symbol": "HNBF.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-16",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025/26 (year to 31 March 2026, audited)",
+      "Interim financial statements to 30 June and 30 September 2026"
+    ]
+  },
+  "price": {
+    "value": 7.0,
+    "date": "2026-09-30",
+    "source": "Last traded price of the non-voting share at 30 September 2026, from the company's interim report (CSE data). The CSE site couldn't be reached from this run and HNBF isn't yet in the site's price file.",
+    "note": "Voting share Rs 7.90 on the same day. Non-voting range: Rs 6.80–8.40 (July–September 2026), 7.10–9.40 (April–June 2026), 7.30–9.50 (2025/26). An undated Simply Wall St snapshot showed Rs 8.20. The site replaces this with the CSE close."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A fast-growing leasing company with thin capital and no dividend: fair value about Rs 3.85, buy below Rs 3.27",
+    "text": "HNB Finance (HNBF.X0000 non-voting, HNBF.N0000 voting) is a Sri Lankan leasing and finance company, 51.9% owned by Hatton National Bank. It has just had its best year: in the year to March 2026 lending grew 70% to Rs 76bn on the vehicle-leasing boom, profit more than doubled to Rs 1.68bn (EPS Rs 0.81) and return on equity reached 20%. The six months to September 2026 kept going: profit Rs 929mn (+50%), annualised ROE 16.9%. Bad loans fell sharply (Stage 3 7.9% from 15.2%). But part of 2025/26's profit came from the last Rs 734mn of a tax credit from the Prime Finance merger (worth about Rs 220mn); the tax rate is now 45%. Capital is thin for a company growing this fast: Tier 1 is 10.61% against an 8.5% minimum even after a Rs 2.5bn rights issue in mid-2026, and there have been two rights issues in two years and no dividend since 2017/18. Over ten years the record is uneven, with losses in 2020/21 and 2022/23. At Rs 7.00 the non-voting share trades at 1.4x NAV of Rs 4.99 and 9.0x trailing earnings (Rs 0.78 on the enlarged share count). That price assumes a long-run ROE of about 23%. With an 18.2% cost of equity and a long-run ROE of about 15%, the three methods put fair value at about Rs 3.85 (0.77x NAV). I'd buy at Rs 3.27 or less and treat Rs 2.89 as a strong buy. It fails all four business tests (steady returns, capital, steady profit, dividends), so it's 'avoid for now'. The voting share (Rs 7.90) has the same claim on profits and is worth the same per share on these methods."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 0,
+    "outOf": 4,
+    "reason": "Returns are strong now but weren't for most of the past decade, capital is close to the minimum, there were losses in 2020/21 and 2022/23, and no dividend has been paid since 2017/18.",
+    "assessed": "2026-11-16",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "17–20% lately; about 8% average",
+        "note": "20.0% in 2025/26 (about 17.3% without the merger tax credit) and 16.9% annualised for H1 2026/27. But 11.5–11.6% in 2023/24–2024/25, −9.4% in 2022/23, 8.1% in 2021/22, −2.5% in 2020/21 and 8.2% in 2019/20. Two good years aren't yet a record."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "Tier 1 10.61%",
+        "note": "A finance company, so judged on capital. Tier 1 10.61% (minimum 8.5%) and total capital 14.13% (minimum 12.5%) at September 2026, only after a Rs 2.5bn rights issue; Tier 1 was 9.04% in June and 9.61% in March. Assets are 8.4x equity. Rights issues in 2024/25 and 2026/27 show growth needs fresh capital."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Loss in 2022/23",
+        "note": "Losses of Rs 496mn in 2022/23 and Rs 124mn in 2020/21. 2024/25 and 2025/26 were helped by tax losses and the merger tax credit (Rs 656mn and Rs 1.53bn of taxable income sheltered)."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No dividend since 2017/18",
+        "note": "No dividend for eight years; all profit and two rights issues have gone into lending. Operating cash flow was −Rs 2.4bn in 2025/26, normal for a lender growing 70%, but nothing reaches shareholders in cash."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.97,
+    "betaBasis": "Provisional. A finance company, so the sector's levered beta isn't relevered: Damodaran's Financial Svcs. (Non-bank & Insurance) 0.97 (January 2026, web-search extract, possibly the US file). Local 5-year betas: StockAnalysis 0.82 (voting share); TradingView 0.96 (window not stated); only two sources (0.89 average). The higher, 0.97, is used. Recheck in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 19.7,
+      "base": 18.2,
+      "bull": 16.7
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-16",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: web-search extracts of Damodaran (sector), StockAnalysis and TradingView (16 Nov 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.97 × (4.2% + 6.08%) = 18.2%; bear +1.5, bull −1.5 points. Within the house range of about 12–22%. No WACC: a finance company is valued on its equity."
+  },
+  "valuation": {
+    "fairValue": 3.85,
+    "buyPrice": 3.27,
+    "strongBuyPrice": 2.89,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 4.99,
+    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20 (Rs 3.85, about 0.77x NAV of Rs 4.99). Same value for the voting and non-voting shares, which share profits and dividends equally."
+  },
+  "dividend": {
+    "perShare": null,
+    "label": "none since 2017/18 (none for 2025/26)",
+    "source": "Annual Report 2025/26, Annual Report of the Board, section 30 (p. 301); ten-year summary (p. 426)",
+    "note": "Last dividend Rs 0.23 per share for 2017/18."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 4.99,
+      "unit": "Rs",
+      "note": "30 September 2026, after the rights issue; Rs 4.45 at March 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.4,
+      "unit": "x",
+      "note": "Non-voting at Rs 7.00; voting 1.58x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 9.0,
+      "unit": "x",
+      "note": "TTM profit Rs 1.99bn ÷ 2,539.6mn shares = Rs 0.78"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (H1 2026/27)",
+      "value": 16.94,
+      "unit": "%",
+      "note": "Annualised; 19.96% for 2025/26 (about 17.3% without the merger tax credit)"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "display": "None",
+      "note": "No dividend since 2017/18"
+    },
+    {
+      "id": "nim",
+      "label": "Net interest margin",
+      "value": 12.33,
+      "unit": "%",
+      "note": "2025/26; 11.10% in 2024/25"
+    },
+    {
+      "id": "tier1",
+      "label": "Tier 1 capital ratio",
+      "value": 10.61,
+      "unit": "%",
+      "note": "September 2026; minimum 8.5%. Total capital 14.13% (minimum 12.5%)"
+    },
+    {
+      "id": "stage3",
+      "label": "Gross Stage 3 loans",
+      "value": 7.9,
+      "unit": "%",
+      "note": "March 2026, from 15.2%; coverage 77.8%"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 18.2,
+      "unit": "%",
+      "note": "Beta 0.97 (provisional)"
+    },
+    {
+      "id": "loans",
+      "label": "Lending portfolio",
+      "value": 81.9,
+      "unit": "Rs bn",
+      "note": "September 2026; +70% in 2025/26, +7% in six months"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 19.7,
+      "unit": "Rs bn",
+      "display": "~Rs 19.7bn",
+      "note": "2,099.2mn voting at Rs 7.90 + 440.4mn non-voting at Rs 7.00 (30 Sep 2026)"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Gross income Rs 18.5bn (+39%), net interest income Rs 8.6bn (+57%), profit Rs 1.68bn (+120%), EPS Rs 0.81 (0.43). ROE 20.0%. Lending Rs 76.3bn (+70%), leases doubling to Rs 51.0bn; deposits Rs 68.9bn (+63%). Loan impairment charges rose to Rs 1.55bn (0.66bn)."
+    },
+    {
+      "title": "The tax credit",
+      "text": "Income tax was only 38% of profit before tax because Rs 734mn of taxable income was sheltered by the last of the tax credit from the 2022 merger with Prime Finance (worth about Rs 220mn of profit). It's now used up: the H1 2026/27 tax rate was 45%. Without it, 2025/26 profit would have been about Rs 1.46bn (ROE about 17.3%)."
+    },
+    {
+      "title": "Six months to September 2026 (unaudited)",
+      "text": "Net interest income Rs 5.48bn (+46%), impairment Rs 685mn (+18%), profit Rs 929mn (+50%), EPS Rs 0.38. The September quarter: profit Rs 499mn (+20%). Net fees turned negative as fee expenses doubled; other income +36%."
+    },
+    {
+      "title": "Capital and the rights issue",
+      "text": "A 2-for-9 rights issue (381.7mn voting at Rs 5.50 and 80.1mn non-voting at Rs 5.00) raised Rs 2.50bn in mid-2026, the second in two years. Tier 1 rose to 10.61% (9.04% in June) and total capital to 14.13%. Shares are now 2,539.6mn; NAV Rs 4.99."
+    },
+    {
+      "title": "Asset quality",
+      "text": "Gross Stage 3 fell to 7.9% at March 2026 from 15.2%, with coverage up to 77.8% from 59.1%. Fitch upgraded the rating to A(lka), Stable."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          8.06,
+          -9.42,
+          11.6,
+          11.54,
+          19.96,
+          16.94
+        ],
+        "notes": [
+          null,
+          "Loss year",
+          null,
+          "Helped by tax losses and the merger tax credit",
+          "About 17.3% without the merger tax credit",
+          "H1 2026/27, annualised"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (non-voting)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          11.4,
+          9.88,
+          9.0
+        ],
+        "notes": [
+          "Year-end price not in the reports read",
+          "Loss year",
+          "Year-end price not in the reports read",
+          "Rs 4.90 ÷ EPS 0.43",
+          "Rs 8.00 ÷ EPS 0.81",
+          "Rs 7.00 ÷ TTM EPS 0.78"
+        ]
+      },
+      {
+        "id": "pb",
+        "label": "Price to book (non-voting)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          1.15,
+          1.8,
+          1.4
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Rs 4.90 ÷ NAV 4.27",
+          "Rs 8.00 ÷ NAV 4.45",
+          "Rs 7.00 ÷ NAV 4.99"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 4.99",
+      "reading": "September 2026, after the rights issue. The non-voting share is at 1.4x NAV: a premium the business would need a long-run ROE above the 18.2% cost of equity to earn."
+    },
+    {
+      "method": "Return on equity",
+      "value": "16.9%",
+      "reading": "H1 2026/27 annualised; 20.0% for 2025/26 (about 17.3% without the tax credit). The ten-year record is uneven: −9.4% to 11.6% from 2019/20 to 2024/25."
+    },
+    {
+      "method": "P/E",
+      "value": "9.0x",
+      "reading": "On TTM EPS of Rs 0.78 on today's share count. Year-end P/E 11.4x (2024/25) and 9.9x (2025/26)."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend since 2017/18, so no dividend model; profit and rights money all go into lending."
+    },
+    {
+      "method": "Required return",
+      "value": "18.2%",
+      "reading": "Cost of equity from beta 0.97 (provisional); 19.7% bear, 16.7% bull."
+    },
+    {
+      "method": "Capital",
+      "value": "Tier 1 10.61%",
+      "reading": "Minimum 8.5%; total capital 14.13% (minimum 12.5%). Only 2.1 points of headroom after a fresh rights issue."
+    },
+    {
+      "method": "Asset quality",
+      "value": "Stage 3 7.9%",
+      "reading": "Gross, down from 15.2%; coverage 77.8%. Not yet tested by a downturn at the new, larger size."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 2.38,
+      "base": 3.68,
+      "bull": 5.66,
+      "weighted": 3.69,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 4.99: 0.48x / 0.74x / 1.13x book, with long-run ROE 12% / 15% / 18% and growth 5% / 6% / 7%. Below 1x book in the bear and base cases because the long-run ROE is below the 18.2% cost of equity."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 2.98,
+      "base": 4.11,
+      "bull": 5.83,
+      "weighted": 4.11,
+      "comment": "2026/27 EPS Rs 0.71 / 0.79 / 0.87 × 4.2 / 5.2 / 6.7. Base is 6% below the Rs 0.84 run-rate (Q1 × 4, on fewer shares before the rights issue) and level with the Rs 0.78 TTM on today's shares; the tax rate is now 45%. Bear is 15% below because impairments could rise as the new leases age. The P/Es are the justified P/Es at each cost of equity (payout 1 − growth ÷ ROE), well below the 9–11x the market has paid."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 2.3,
+      "base": 3.71,
+      "bull": 6.08,
+      "weighted": 3.76,
+      "comment": "Used instead of a cash-flow DCF, which doesn't suit a lender. Book Rs 4.99 plus profit above the cost of equity: ROE 15%→12% / 17%→15% / 19%→18% over ten years, no dividend for three years then 1 − growth ÷ ROE, then the excess return grows at the long-run rate. Only the bull case earns more than its cost of equity."
+    }
+  ],
+  "modelsNote": "A finance company's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price to book, alongside P/E, all at the 18.2% cost of equity (19.7% / 16.7% bear / bull). No dividend model: none paid since 2017/18. Growth check: assumed earnings growth of 8% / 12% / 16% a year for the five years after 2026/27, against 20.0% supported (all of 2025/26's profit kept × 20.0% ROE), so all within. Long-run growth of 5–7% stays below the 12.24% bond yield and needs 39–42% of profit kept at the long-run ROE.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "19.7%",
+        "base": "18.2%",
+        "bull": "16.7%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "12%",
+        "base": "15%",
+        "bull": "18%"
+      },
+      {
+        "label": "Return on equity path (residual income)",
+        "bear": "15% falling to 12%",
+        "base": "17% falling to 15%",
+        "bull": "19% falling to 18%"
+      },
+      {
+        "label": "Earnings growth, five years after 2026/27",
+        "bear": "8%",
+        "base": "12%",
+        "bull": "16%"
+      },
+      {
+        "label": "Long-run growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "2026/27 EPS × P/E",
+        "bear": "0.71 × 4.2",
+        "base": "0.79 × 5.2",
+        "bull": "0.87 × 6.7"
+      },
+      {
+        "label": "Payout",
+        "bear": "none for 3 years, then 58%",
+        "base": "none for 3 years, then 60%",
+        "bull": "none for 3 years, then 61%"
+      }
+    ],
+    "averages": {
+      "bear": 2.55,
+      "base": 3.83,
+      "bull": 5.85
+    },
+    "common": "Company figures, 2,539.6mn shares (voting and non-voting together) after the 2026 rights issue. Cost of equity from the house formula (risk-free 8.24% + beta 0.97 × 10.28% equity premium). Tax at the full rate from now on (the merger credit is used up). No further rights issue assumed; one at below fair value would lower the value per share."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16.7%",
+      "18.2%",
+      "19.7%"
+    ],
+    "columns": [
+      "12%",
+      "15%",
+      "18%"
+    ],
+    "values": [
+      [
+        3.21,
+        4.38,
+        5.57
+      ],
+      [
+        2.74,
+        3.71,
+        4.69
+      ],
+      [
+        2.38,
+        3.19,
+        4.02
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 7.00 isn't reached anywhere in this grid. On the justified price to book it needs a long-run ROE of about 23% at an 18.2% cost of equity; HNB Finance last earned that in 2017/18."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 3.85
+      },
+      {
+        "shares": 150,
+        "maxPrice": 3.27
+      },
+      {
+        "shares": 150,
+        "maxPrice": 2.89
+      }
+    ],
+    "averagePrice": 3.39,
+    "totalCost": 1694,
+    "note": "About Rs 1,700 in total, against Rs 3,500 for 500 non-voting shares at Rs 7.00. 500 shares is a very small sum here (the shares cost under Rs 10); scale the tiers up if you want a meaningful position. Wait for the business tests to improve (capital, a dividend) before buying even at these prices.",
+    "realism": "Unlikely soon. Rs 3.85 is 45% below Rs 7.00; the non-voting share hasn't traded below Rs 6.80 since mid-2025 (low Rs 3.80 in April–June 2025, Rs 4.10 in 2024/25). It would need the leasing cycle to turn or a large loss."
+  },
+  "changeMyView": {
+    "higher": [
+      "ROE holding at 17–20% through a full year at the 45% tax rate and with leasing growth slowing.",
+      "A verified 5-year beta well below 0.97, which would cut the cost of equity (at 0.7 it would be about 15.4%, worth roughly Rs 1–1.5 a share).",
+      "Tier 1 above 12% without another rights issue, and a dividend policy.",
+      "HNB using HNB Finance as its main retail-lending arm, with funding support that lowers its cost of funds."
+    ],
+    "lower": [
+      "Another rights issue below fair value (the last two were at Rs 5.00–5.50).",
+      "Impairments rising as the 2025/26 lease book seasons, or vehicle prices falling.",
+      "The margin (12.3%) squeezed by higher deposit rates.",
+      "A repeat of 2022/23 (loss of Rs 496mn), which at today's leverage would eat into thin capital."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim reports to September 2026. The interim figures are unaudited, the beta is provisional, and the price (Rs 7.00 on 30 September 2026) is from the company's interim report, not today's CSE close, so check it before ordering. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Avoid for now: Rs 7.00 is 82% above fair value of Rs 3.85, and the company fails all four business tests.",
+    "Expected yearly return at Rs 7.00": "About 15–17% a year if the price stays at 1.4x book and ROE holds near 17% (all profit kept, no dividend). Below the 18.2% cost of equity, and lower if the price falls towards book.",
+    "Compared with": "10-year government bond 12.24%; cost of equity 18.2%.",
+    "Downside / upside": "Bear case Rs 2.55 (−64%); bull case Rs 5.85 (−16%).",
+    "What the price assumes": "At 1.4x NAV, with 6% long-run growth and an 18.2% cost of equity, a long-run ROE of about 23%.",
+    "Confidence": "Medium on the direction, low on the exact number: the three methods agree (Rs 3.68–4.11 base), but the beta is provisional and the 2025/26 boom makes the long-run ROE hard to judge.",
+    "Margin of safety": "None at today's price."
+  },
+  "Business and moat": {
+    "What it does": "A licensed finance company with 76 branches: vehicle leasing (about 73% of lending), gold loans, microfinance, SME and personal loans, funded mainly by fixed deposits (Rs 71bn). Hatton National Bank owns 51.9% of the voting shares; one account (Seylan Bank PLC A/C No. 3) holds 77.8% of the non-voting shares, so only about 15% of them trade freely.",
+    "Moat": "Narrow: the HNB name helps raise deposits (Fitch A(lka)), but funding still costs about 10% and leasing is crowded.",
+    "Growth": "Lending +70% in 2025/26 as vehicle imports reopened; +7% in the six months to September 2026."
+  },
+  "Accounting quality": {
+    "Tax credit": "The merger tax credit sheltered Rs 734mn of taxable income in 2025/26 and Rs 796mn in 2024/25 (plus Rs 656mn of tax losses). It's used up, so the tax rate has risen to about 45% (income tax plus the effect of VAT on financial services is higher still).",
+    "Fee income": "Net fee and commission income turned negative in H1 2026/27 (−Rs 40mn) as fee expenses, likely dealer commissions on leases, doubled.",
+    "Profit timing": "Fast lease growth brings interest income forward while loan losses come later; the 2025/26 book hasn't been through a downturn."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Risk: deposits cost about 10%; a rate rise would squeeze the 12.3% margin.",
+    "Regulation": "Risk: the CBSL's capital minimums (Tier 1 8.5%, total 12.5%) bind; vehicle-import or loan-to-value rules can change leasing volumes quickly.",
+    "Tax": "Income tax 30% plus VAT and SSCL on financial services (Rs 1.16bn in 2025/26).",
+    "Dependence on the state": "Rs 15.1bn in treasury bills and repos (September 2026), mostly for liquidity."
+  },
+  "Crisis stress test (2022-style)": {
+    "What happened in 2022/23": "A loss of Rs 496mn (ROE −9.4%); Stage 3 rose to about 15%.",
+    "Today": "With Tier 1 at 10.61% and assets at 8.4x equity, a repeat would likely need another rights issue. That's the main reason for the bear case of Rs 2.55."
+  },
+  "Investment case and sell rules": {
+    "Why it might be worth owning later": "A bank-backed lender with a high margin, falling bad loans and ROE near 17–20% if it lasts.",
+    "What would make it investable": "A price near book or below, Tier 1 above 12%, a dividend, and ROE above 18% through a full year at the new tax rate.",
+    "Sell triggers (if bought)": "Price more than 30% above fair value (above Rs 5.00); a rights issue at a deep discount; Stage 3 back above 12%."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 3.27 or lower (HNBF.X0000)",
+    "Strong buy": "Rs 2.89 or lower (HNBF.X0000)"
+  },
+  "Key ratios (five-year trend)": {
+    "Return on equity": "2021/22 8.1% · 2022/23 −9.4% · 2023/24 11.6% · 2024/25 11.5% · 2025/26 20.0% · H1 2026/27 16.9%",
+    "EPS (Rs)": "2021/22 0.24 · 2022/23 −0.29 · 2023/24 0.36 · 2024/25 0.43 · 2025/26 0.81 · H1 2026/27 0.38",
+    "Tier 1 / total capital": "Mar 2025 11.38% / 14.44% · Mar 2026 9.61% / 13.07% · Sep 2026 10.61% / 14.13%",
+    "Gross Stage 3": "Mar 2025 15.2% · Mar 2026 7.9%",
+    "Dividend per share": "None since 2017/18 (Rs 0.23)"
+  },
+  "What this analysis doesn't cover": [
+    "The CSE site, Damodaran's site and the beta sites couldn't be opened in this run; the price is the 30 September 2026 last trade from the interim report and the beta is provisional.",
+    "Year-end share prices before 2024/25 aren't in the reports read, so the P/E history starts in 2024/25.",
+    "Stage 3 at September 2026 isn't in the interim report.",
+    "Peer finance companies (CFIN, VFIN, LOLC) weren't compared in this run."
+  ],
+  "fullText": "Summary: HNB Finance (HNBF.X0000 non-voting, HNBF.N0000 voting) is a Sri Lankan leasing and finance company, 51.9% owned by Hatton National Bank. It has just had its best year: in the year to March 2026 lending grew 70% to Rs 76bn on the vehicle-leasing boom, profit more than doubled to Rs 1.68bn (EPS Rs 0.81) and return on equity reached 20%. The six months to September 2026 kept going: profit Rs 929mn (+50%), annualised ROE 16.9%. Bad loans fell sharply (Stage 3 7.9% from 15.2%). But part of 2025/26's profit came from the last Rs 734mn of a tax credit from the Prime Finance merger (worth about Rs 220mn); the tax rate is now 45%. Capital is thin for a company growing this fast: Tier 1 is 10.61% against an 8.5% minimum even after a Rs 2.5bn rights issue in mid-2026, and there have been two rights issues in two years and no dividend since 2017/18. Over ten years the record is uneven, with losses in 2020/21 and 2022/23. At Rs 7.00 the non-voting share trades at 1.4x NAV of Rs 4.99 and 9.0x trailing earnings (Rs 0.78 on the enlarged share count). That price assumes a long-run ROE of about 23%. With an 18.2% cost of equity and a long-run ROE of about 15%, the three methods put fair value at about Rs 3.85 (0.77x NAV). I'd buy at Rs 3.27 or less and treat Rs 2.89 as a strong buy. It fails all four business tests (steady returns, capital, steady profit, dividends), so it's 'avoid for now'. The voting share (Rs 7.90) has the same claim on profits and is worth the same per share on these methods.\n\nPrice and key figures\nPrice: non-voting Rs 7.00 and voting Rs 7.90, last traded on 30 September 2026 (company interim report; the CSE site couldn't be reached from this run). Non-voting range: Rs 6.80–8.40 in July–September 2026 and Rs 7.30–9.50 in 2025/26.\nYear to March 2026 (audited): gross income Rs 18.5bn (+39%), net interest income Rs 8.6bn (+57%, margin 12.3%), loan impairment Rs 1.55bn, profit Rs 1.68bn (+120%), EPS Rs 0.81, ROE 20.0%, NAV Rs 4.45. Lending Rs 76.3bn (+70%), deposits Rs 68.9bn. No dividend.\nTax credit: Rs 734mn of taxable income was sheltered by the last of the Prime Finance merger credit (about Rs 220mn of profit). Without it, profit would have been about Rs 1.46bn (ROE about 17.3%). It's now used up; the H1 2026/27 tax rate was 45%.\nSix months to September 2026 (unaudited): net interest income Rs 5.48bn (+46%), impairment Rs 685mn, profit Rs 929mn (+50%), EPS Rs 0.38; Q2 profit Rs 499mn (+20%). ROE 16.9% annualised.\nCapital: 2-for-9 rights issue raised Rs 2.50bn in mid-2026 (voting at Rs 5.50, non-voting at Rs 5.00); 2,539.6mn shares now. Tier 1 10.61% (minimum 8.5%), total capital 14.13% (minimum 12.5%). NAV Rs 4.99.\nAsset quality: gross Stage 3 7.9% at March 2026 (15.2% a year earlier), coverage 77.8%. Fitch A(lka), Stable.\nHistory: EPS Rs 0.24 (2021/22), −0.29 (2022/23), 0.36 (2023/24), 0.43 (2024/25), 0.81 (2025/26). ROE 8.1%, −9.4%, 11.6%, 11.5%, 20.0%. Last dividend Rs 0.23 for 2017/18.\n\nRequired return\nCost of equity = 8.24% risk-free + 0.97 beta × (4.2% + 6.08%) = 18.2%; bear 19.7%, bull 16.7%. Beta: Damodaran's non-bank financial services sector 0.97 against local 5-year betas of 0.82 (StockAnalysis) and 0.96 (TradingView); provisional until January 2027.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 2.38 | 3.68 | 5.66 | 3.69\nP/E method | 2.98 | 4.11 | 5.83 | 4.11\nResidual income | 2.3 | 3.71 | 6.08 | 3.76\nAverage | 2.55 | 3.83 | 5.85 | 3.85\n\nA finance company's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price to book, alongside P/E, all at the 18.2% cost of equity (19.7% / 16.7% bear / bull). No dividend model: none paid since 2017/18. Growth check: assumed earnings growth of 8% / 12% / 16% a year for the five years after 2026/27, against 20.0% supported (all of 2025/26's profit kept × 20.0% ROE), so all within. Long-run growth of 5–7% stays below the 12.24% bond yield and needs 39–42% of profit kept at the long-run ROE.\n\nAssumptions (bear / base / bull)\nCost of equity 19.7% / 18.2% / 16.7%; long-run ROE 12% / 15% / 18%; ROE path 15%→12% / 17%→15% / 19%→18%; earnings growth for five years 8% / 12% / 16% (supported 20%); long-run growth 5% / 6% / 7%; 2026/27 EPS × P/E 0.71 × 4.2 / 0.79 × 5.2 / 0.87 × 6.7.\nCompany figures, 2,539.6mn shares (voting and non-voting together) after the 2026 rights issue. Cost of equity from the house formula (risk-free 8.24% + beta 0.97 × 10.28% equity premium). Tax at the full rate from now on (the merger credit is used up). No further rights issue assumed; one at below fair value would lower the value per share.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 3.85 (0.77x NAV), so the non-voting share at Rs 7.00 is 82% above it and the voting share at Rs 7.90 is 105% above it.\nBuy price: a 15% margin of safety gives Rs 3.27, and 25% gives Rs 2.89.\nPlan for 500 shares: 200 at up to Rs 3.85, 150 at up to Rs 3.27 and 150 at up to Rs 2.89: about Rs 1,700 at an average of Rs 3.39.\nRealism: Unlikely soon. Rs 3.85 is 45% below Rs 7.00; the non-voting share hasn't traded below Rs 6.80 since mid-2025 (low Rs 3.80 in April–June 2025, Rs 4.10 in 2024/25). It would need the leasing cycle to turn or a large loss.\n\nBusiness tests: 0 of 4 (category 3, avoid for now)\nReturns: fail (17–20% lately, but about 8% on average over the past decade). Capital: fail (Tier 1 10.61% against 8.5%, after a rights issue). Steady profit: fail (losses in 2020/21 and 2022/23). Cash and dividends: fail (no dividend since 2017/18).\n\nSensitivity (residual income base case, Rs per share; long-run ROE 12% / 15% / 18%)\nCost of equity 16.7%: 3.21 / 4.38 / 5.57.\nCost of equity 18.2%: 2.74 / 3.71 / 4.69.\nCost of equity 19.7%: 2.38 / 3.19 / 4.02.\n\nWhat would change my view\nSupports a higher value: ROE holding at 17–20% through a full year at the 45% tax rate and with leasing growth slowing.; A verified 5-year beta well below 0.97, which would cut the cost of equity (at 0.7 it would be about 15.4%, worth roughly Rs 1–1.5 a share).; Tier 1 above 12% without another rights issue, and a dividend policy.; HNB using HNB Finance as its main retail-lending arm, with funding support that lowers its cost of funds.\nSupports a lower value: Another rights issue below fair value (the last two were at Rs 5.00–5.50).; Impairments rising as the 2025/26 lease book seasons, or vehicle prices falling.; The margin (12.3%) squeezed by higher deposit rates.; A repeat of 2022/23 (loss of Rs 496mn), which at today's leverage would eat into thin capital.\n\nThese are estimates from the 2025/26 annual report and the interim reports to September 2026. The interim figures are unaudited, the beta is provisional, and the price (Rs 7.00 on 30 September 2026) is from the company's interim report, not today's CSE close, so check it before ordering. This is analysis, not personal financial advice."
+}
