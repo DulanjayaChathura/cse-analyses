@@ -1,0 +1,542 @@
+{
+ "schemaVersion": 1,
+ "ticker": "VONE.N0000",
+ "analysisDate": "2026-11-16",
+ "company": {
+  "name": "Vallibel One PLC",
+  "sector": "Diversified holding company (finance, banking stake, tiles, consumer)",
+  "fiscalYearEnd": "03-31"
+ },
+ "shareClasses": [
+  {
+   "symbol": "VONE.N0000",
+   "label": "Voting"
+  }
+ ],
+ "resultsCovered": {
+  "label": "Six months to 30 September 2026",
+  "periodEnd": "2026-09-30",
+  "audited": false,
+  "sources": [
+   "Annual Report 2025/26, amended version (CSE download)",
+   "Interim reports to 30 June and 30 September 2026 (CSE downloads)"
+  ]
+ },
+ "price": {
+  "value": 88.8,
+  "date": "2026-09-30",
+  "source": "CSE closing price at 30 September 2026, from the interim report (share information, p. 11); the current CSE close couldn't be fetched from this run",
+  "note": "Quarter range Rs 88.20–96.90 (July–September 2026), Rs 91.00–104.00 (April–June). The daily CSE close will replace this price once the site fetches it."
+ },
+ "summary": {
+  "verdict": "overpriced",
+  "headline": "A holding company at a discount to its parts, but the parts earn less than their cost of capital: fair value about Rs 60.50",
+  "text": "Vallibel One PLC (VONE.N0000) holds 51.75% of LB Finance, 55.96% of Royal Ceramics, 14.95% of Sampath Bank, 68.75% of Delmege, the unfinished Greener Water hotel and, since October, just over half of The Fortress Resorts; the holding company itself has no debt. Year to March 2026: revenue Rs 149.3bn (+22%), profit to owners Rs 13.17bn (+12%), EPS Rs 11.57, dividend Rs 3.00. The first half of this year was better again: EPS Rs 4.93 against Rs 4.03 (+22%), led by LB Finance after its purchase of Associated Motor Finance. At Rs 88.80 (CSE close on 30 September 2026; the current price couldn't be fetched) the share is 7.1x trailing EPS of Rs 12.47 and 0.81x NAV of Rs 110.29, and about 15% below what its stakes are worth at today's market prices (about Rs 104 a share). But owners' ROE has been only 10–12.5% for three years against an 18.3% cost of equity (beta 0.98), and Royal Ceramics, a quarter of the value, is itself valued by this site at well below its price. On four methods (sum of the parts, P/E, justified P/B, residual income) the fair value is about Rs 60.50, so the price is about 47% above it. I'd buy at up to Rs 51.40 and treat under Rs 45.40 as a strong buy. It passes 2 of the 4 business tests (debt and steady profit; it fails on returns and cash), so it goes in category 3, avoid for now."
+ },
+ "quality": {
+  "rating": "weak",
+  "passed": 2,
+  "outOf": 4,
+  "reason": "No debt at the holding company and ten years of profit, but owners' ROE of 10–12.5% and little of the group's profit reaching shareholders as cash. First assessment, 16 November 2026.",
+  "assessed": "2026-11-16",
+  "tests": [
+   {
+    "id": "returns",
+    "label": "Return on equity of 15% or more",
+    "pass": false,
+    "value": "11.5%",
+    "note": "Owners' ROE 11.5% in 2025/26, 10.1% in 2024/25, 12.5% in 2023/24, 14.9% and 18.9% before that; about 11.8% over the last 12 months. Held down by the Sampath stake carried at market (yield about 6%) and the idle Greener Water hotel."
+   },
+   {
+    "id": "debt",
+    "label": "Net debt no more than equity",
+    "pass": true,
+    "value": "Holding company net cash",
+    "note": "The holding company has Rs 3.9bn of cash and deposits and only Rs 0.12bn of leases. Group debt of about Rs 180bn (1.0x total equity) is LB Finance's funding for Rs 377bn of loans; Royal Ceramics' net debt is 0.55x its equity."
+   },
+   {
+    "id": "steady",
+    "label": "Steady profit: no loss in five years, no one-offs",
+    "pass": true,
+    "value": "Profit every year for ten years",
+    "note": "Owners' profit Rs 10.35bn, 9.52bn, 9.89bn, 11.76bn and 13.17bn over the last five years; +22% in the first half of 2026/27. No material one-off gains."
+   },
+   {
+    "id": "cash",
+    "label": "Profit turns into cash and dividends",
+    "pass": false,
+    "value": "About 31%",
+    "note": "Dividends received by the holding company Rs 4.14bn in 2025/26 against Rs 13.17bn of owners' profit; it paid Rs 3.42bn out (26%). LB Finance's growth absorbs its capital, and Royal Ceramics' operating cash flow is weak."
+   }
+  ]
+ },
+ "requiredReturn": {
+  "beta": 0.98,
+  "betaBasis": "Provisional. Value-weighted look-through: LB Finance stake (41%) at the finance-company levered beta 0.97, Royal Ceramics stake (26%) at this site's RCL beta 1.12, Sampath Bank stake (24%) at the money-centre bank beta 0.70, unlisted operating businesses (10%) at 1.28 (building materials relevered, RCL's figure): 0.98. Web-search stand-ins (Damodaran's emerging-markets file couldn't be opened). One local 5-year beta found (StockAnalysis 0.87). Refresh in January 2027.",
+  "riskFree": 8.24,
+  "matureERP": 4.2,
+  "countryPremium": 6.08,
+  "costOfEquity": {
+   "bear": 19.8,
+   "base": 18.3,
+   "bull": 16.8
+  },
+  "costOfDebt": null,
+  "wacc": null,
+  "debtWeight": null,
+  "asOf": "2026-11-16",
+  "sources": [
+   "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+   "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+   "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+   "Weights: LB Finance at Rs 159 (HNB Stockbrokers, 9 Nov 2026), RCL Rs 47.00 and SAMP Rs 151.75 (CSE closes, 16 Nov 2026), unlisted at cost"
+  ],
+  "note": "Cost of equity = 8.24% + 0.98 × (4.2% + 6.08%) = 18.3%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares. Treated like a financial holding: the holding company has no debt and the group's borrowings are LB Finance's lending funds, so no WACC or whole-company DCF."
+ },
+ "valuation": {
+  "fairValue": 60.5,
+  "buyPrice": 51.4,
+  "strongBuyPrice": 45.4,
+  "marginOfSafety": {
+   "buy": 15,
+   "strongBuy": 25
+  },
+  "scenarioWeights": {
+   "bear": 30,
+   "base": 50,
+   "bull": 20
+  },
+  "nav": 110.29,
+  "note": "Fair value weights the bear/base/bull averages of four methods (sum of the parts, P/E, justified P/B, residual income) 30/50/20: Rs 44.7 / 61.0 / 82.9, giving Rs 60.47 (0.55x NAV). Cost of equity 18.3% from a beta of 0.98."
+ },
+ "dividend": {
+  "perShare": 3.0,
+  "label": "for 2025/26",
+  "source": "Annual Report 2025/26, p. 269 and p. 244 (interim Rs 3.00 paid July 2025)",
+  "note": "A further Rs 1.50 a share (Rs 1.71bn) was paid in the June 2026 quarter (Interim Q2 2026/27, p. 5); the reports read don't say which year it is for."
+ },
+ "keyMetrics": [
+  {
+   "id": "nav",
+   "label": "NAV per share",
+   "value": 110.29,
+   "unit": "Rs",
+   "note": "Group, 30 Sep 2026"
+  },
+  {
+   "id": "pnav",
+   "label": "Price to NAV",
+   "value": 0.81,
+   "unit": "x"
+  },
+  {
+   "id": "pe",
+   "label": "P/E (trailing)",
+   "value": 7.1,
+   "unit": "x",
+   "note": "Trailing EPS Rs 12.47"
+  },
+  {
+   "id": "roe",
+   "label": "Return on equity",
+   "value": 11.5,
+   "unit": "%",
+   "note": "Owners, 2025/26; about 11.8% over the last 12 months"
+  },
+  {
+   "id": "dividendYield",
+   "label": "Dividend yield",
+   "value": 3.4,
+   "unit": "%",
+   "note": "Rs 3.00 for 2025/26"
+  },
+  {
+   "id": "payout",
+   "label": "Payout ratio",
+   "value": 26,
+   "unit": "%"
+  },
+  {
+   "id": "sotpMarket",
+   "label": "Parts at market prices",
+   "value": 104,
+   "unit": "Rs",
+   "note": "Per share, no holding discount; price about 15% below"
+  },
+  {
+   "id": "lbfShare",
+   "label": "LB Finance share of value",
+   "value": 41,
+   "unit": "%",
+   "note": "At market prices"
+  },
+  {
+   "id": "holdcoCash",
+   "label": "Holding-company net cash",
+   "value": 3.9,
+   "unit": "Rs bn",
+   "note": "30 Sep 2026"
+  },
+  {
+   "id": "costOfEquity",
+   "label": "Cost of equity",
+   "value": 18.3,
+   "unit": "%",
+   "note": "Beta 0.98 (provisional)"
+  },
+  {
+   "id": "marketCap",
+   "label": "Market cap",
+   "value": 101.1,
+   "unit": "Rs bn",
+   "display": "~Rs 101bn"
+  }
+ ],
+ "highlights": [
+  {
+   "title": "Three months to 30 September 2026 (group, unaudited)",
+   "text": "Revenue Rs 44.37bn (+27%), interest income +51%. Profit to owners Rs 2.86bn, EPS Rs 2.51 (Rs 2.33): +8%. Other operating expenses Rs 0.93bn (Rs 0.18bn), mostly LB Finance's provisions."
+  },
+  {
+   "title": "Six months to 30 September 2026",
+   "text": "Revenue Rs 85.05bn (+29%), operating profit Rs 20.03bn (+24%), profit to owners Rs 5.61bn (+22%), EPS Rs 4.93 (Rs 4.03). Finance segment profit Rs 7.43bn (+27%), tiles and bathware Rs 1.38bn (+25%), packaging −53%. A Rs 1.9bn impairment of receivables, and Rs 1.38bn taken off owners' equity on an amalgamation in the group. NAV Rs 110.29. Holding company dividend income Rs 2.22bn (+48%); Rs 1.50 a share paid out."
+  },
+  {
+   "title": "After the half-year",
+   "text": "Vallibel One bought 35.6mn more Fortress Resorts shares on 21–22 October 2026, taking it to 50.74% (53.33% with the group), so Fortress becomes a subsidiary. Lanka Walltiles (a Royal Ceramics subsidiary) proposed a Rs 5bn rights issue (8 for 17 at Rs 39). The Greener Water hotel's completion has been 'further extended'."
+  },
+  {
+   "title": "Year to March 2026 (audited)",
+   "text": "Record year: revenue Rs 149.3bn (+22%), operating profit Rs 38.26bn (+24%), profit to owners Rs 13.17bn (+12%), EPS Rs 11.57, dividend Rs 3.00, ROE 11.5%. LB Finance bought Associated Motor Finance; group loans rose from Rs 199bn to Rs 333bn. LB Finance earned Rs 14.04bn (100%), Royal Ceramics Rs 4.63bn to its owners."
+  }
+ ],
+ "history": {
+  "periods": [
+   "FY2022",
+   "FY2023",
+   "FY2024",
+   "FY2025",
+   "FY2026",
+   "Latest"
+  ],
+  "series": [
+   {
+    "id": "eps",
+    "label": "EPS",
+    "unit": "Rs",
+    "values": [
+     9.09,
+     8.36,
+     8.69,
+     10.34,
+     11.57,
+     12.47
+    ],
+    "notes": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     "Trailing 12 months"
+    ]
+   },
+   {
+    "id": "roe",
+    "label": "Return on equity",
+    "unit": "%",
+    "values": [
+     18.9,
+     14.9,
+     12.5,
+     10.1,
+     11.5,
+     11.8
+    ],
+    "notes": [
+     "Ten-year summary",
+     "Ten-year summary",
+     "Ten-year summary",
+     "Ten-year summary",
+     "Ten-year summary",
+     "Last 12 months, approx."
+    ]
+   },
+   {
+    "id": "pe",
+    "label": "P/E",
+    "unit": "x",
+    "values": [
+     4.42,
+     4.38,
+     5.81,
+     5.7,
+     7.94,
+     7.1
+    ],
+    "notes": [
+     "At Rs 40.20",
+     "At Rs 36.60",
+     "At Rs 50.50",
+     "At Rs 58.90",
+     "At Rs 91.90",
+     "At Rs 88.80"
+    ]
+   },
+   {
+    "id": "dps",
+    "label": "Dividend per share",
+    "unit": "Rs",
+    "values": [
+     2.5,
+     0,
+     1.0,
+     3.0,
+     3.0,
+     null
+    ],
+    "notes": [
+     null,
+     "No dividend",
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "id": "nav",
+    "label": "NAV per share",
+    "unit": "Rs",
+    "values": [
+     61.43,
+     67.54,
+     80.81,
+     93.62,
+     108.84,
+     110.29
+    ],
+    "notes": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     "30 Sep 2026"
+    ]
+   }
+  ]
+ },
+ "methodReadings": [
+  {
+   "method": "NAV",
+   "value": "Rs 110.29",
+   "reading": "The price is 0.81x group NAV (30 September 2026). NAV carries Sampath at market and revalued land; subsidiaries are consolidated at book."
+  },
+  {
+   "method": "Return on equity",
+   "value": "11.5%",
+   "reading": "Owners' ROE in 2025/26; 10–12.5% for three years, against an 18.3% cost of equity. LB Finance earns about 20–24%; the tile businesses, the Sampath stake and the idle hotel pull it down."
+  },
+  {
+   "method": "P/E",
+   "value": "7.1x",
+   "reading": "On trailing EPS of Rs 12.47. At an 18.3% cost of equity the justified forward P/E is about 4.4x."
+  },
+  {
+   "method": "Dividends",
+   "value": "3.4% yield",
+   "reading": "Rs 3.00 for 2025/26, about a quarter of profit; well covered by the Rs 4.14bn of dividends the holding company received. A dividend model gives only Rs 20–29, so it's left out of the average."
+  },
+  {
+   "method": "Sum of the parts",
+   "value": "Rs 82.5 (base)",
+   "reading": "LB Finance at 1.15x book, Royal Ceramics and Sampath at this site's own values, unlisted businesses at cost or on profit, less a 10% holding discount, plus Rs 3.9bn cash. At market prices the parts are about Rs 104."
+  },
+  {
+   "method": "Required return",
+   "value": "18.3%",
+   "reading": "CAPM with a country premium, beta 0.98 (provisional). No WACC: the holding company has no debt."
+  },
+  {
+   "method": "Debt",
+   "value": "Holding company net cash",
+   "reading": "Rs 3.9bn of cash and deposits; group borrowings are LB Finance's funding."
+  }
+ ],
+ "models": [
+  {
+   "id": "sotp",
+   "name": "Sum of the parts (holding-company look-through)",
+   "bear": 53.33,
+   "base": 82.52,
+   "bull": 118.19,
+   "weighted": 80.9,
+   "comment": "LB Finance (286.73mn shares, 51.75%) at justified price to book on its own book value (Rs 32.8bn share, March 2026): 0.82x (ROE 17%, growth 5%, cost of equity 19.7%) / 1.15x (ROE 20%, growth 6%, 18.2%) / market Rs 159 (HNB Stockbrokers table, 9 Nov 2026): Rs 26.7 / 37.6 / 45.6bn. Royal Ceramics (620.03mn shares) and Sampath Bank (175.35mn) at this site's own bear/base/bull values (RCL Rs 21.87 / 27.15 / 35.48; SAMP Rs 125.6 / 184.6 / 278.4): Rs 13.6 / 16.8 / 22.0bn and Rs 22.0 / 32.4 / 48.8bn. Delmege at cost Rs 2.65bn / 5x its Rs 1.00bn profit share / 6x; Greener Water at cost Rs 7.35bn less 30% in the bear (hotel still unfinished); Swisstek Aluminium and The Fortress Resorts Rs 0.94bn. Less a holding-company discount of 20% / 10% / 0%, plus the holding company's own net cash and deposits Rs 3.90bn (30 Sep 2026). At market prices with no discount the parts come to about Rs 104 a share."
+  },
+  {
+   "id": "pe",
+   "name": "P/E method",
+   "bear": 42.71,
+   "base": 53.51,
+   "bull": 67.9,
+   "weighted": 53.15,
+   "comment": "EPS for the year to March 2027 of Rs 10.90 / 12.20 / 13.20 (H1 Rs 4.93 plus a second half of Rs 6.0 / 7.3 / 8.3; last year's second half was Rs 7.54) times 3.9 / 4.4 / 5.1: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE, long-run ROE 10.5 / 12 / 13.5%, growth 4 / 5 / 6%). Base EPS is 2% below the Rs 12.47 run-rate (last 12 months); the bear is 13% below because the September quarter (Rs 2.51) annualises to only Rs 10.04 and LB Finance booked a Rs 1.9bn impairment of receivables in the half."
+  },
+  {
+   "id": "pb",
+   "name": "Justified price to book",
+   "bear": 45.37,
+   "base": 58.05,
+   "bull": 76.59,
+   "weighted": 57.95,
+   "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × group NAV Rs 110.29 (30 Sep 2026): ROE 10.5% / 12% / 13.5%, growth 4% / 5% / 6%, cost of equity 19.8% / 18.3% / 16.8%: 0.41x / 0.53x / 0.69x. NAV carries the Sampath stake at market and revalued land."
+  },
+  {
+   "id": "ri",
+   "name": "Residual income",
+   "bear": 37.33,
+   "base": 49.79,
+   "bull": 68.96,
+   "weighted": 49.89,
+   "comment": "Book value Rs 110.29 (September 2026); ROE moving from 11% / 12% / 13% to 10.5% / 12% / 13.5% over ten years; 26% payout for five years, then the payout growth allows; cost of equity 19.8% / 18.3% / 16.8%; after year ten the (negative) excess return grows at 4% / 5% / 6%."
+  }
+ ],
+ "modelsNote": "A holding company whose consolidated accounts are dominated by a finance company (LB Finance is three-quarters of group assets), so it's treated like a financial: sum of the parts, P/E, justified P/B and residual income, no whole-company DCF (Royal Ceramics' operating DCF sits inside its site value used in the sum of the parts). A dividend model is left out because the payout is only 26%. Growth check: assumed 4% / 5% / 6% long-run against 8.5% supported (profit kept 74.1% × ROE 11.5%): all within the limit, and below the 12.24% bond yield. All methods use the same 18.3% cost of equity (bear 19.8%, bull 16.8%).",
+ "scenarios": {
+  "assumptions": [
+   {
+    "label": "Cost of equity (beta 0.98)",
+    "bear": "19.8%",
+    "base": "18.3%",
+    "bull": "16.8%"
+   },
+   {
+    "label": "LB Finance stake",
+    "bear": "0.82x book (Rs 26.7bn)",
+    "base": "1.15x book (Rs 37.6bn)",
+    "bull": "Market Rs 159 (Rs 45.6bn)"
+   },
+   {
+    "label": "Royal Ceramics per share (site value)",
+    "bear": "Rs 21.87",
+    "base": "Rs 27.15",
+    "bull": "Rs 35.48"
+   },
+   {
+    "label": "Sampath Bank per share (site value)",
+    "bear": "Rs 125.6",
+    "base": "Rs 184.6",
+    "bull": "Rs 278.4"
+   },
+   {
+    "label": "Unlisted (Delmege, Greener Water, others)",
+    "bear": "Rs 8.7bn",
+    "base": "Rs 13.3bn",
+    "bull": "Rs 14.3bn"
+   },
+   {
+    "label": "Holding-company discount",
+    "bear": "20%",
+    "base": "10%",
+    "bull": "0%"
+   },
+   {
+    "label": "EPS to March 2027 × P/E",
+    "bear": "10.90 × 3.9",
+    "base": "12.20 × 4.4",
+    "bull": "13.20 × 5.1"
+   },
+   {
+    "label": "Long-run ROE / growth",
+    "bear": "10.5% / 4%",
+    "base": "12% / 5%",
+    "bull": "13.5% / 6%"
+   }
+  ],
+  "averages": {
+   "bear": 44.69,
+   "base": 60.97,
+   "bull": 82.91
+  },
+  "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 0.98 (provisional). Holding-company cash and deposits Rs 3.90bn added in every case. Long-run growth below the bond yield. Per-share figures use 1,138.9mn shares."
+ },
+ "sensitivity": {
+  "title": "Sum of the parts, base case, Rs per share",
+  "rowLabel": "Holding-company discount",
+  "columnLabel": "LB Finance stake valued at",
+  "rows": [
+   "0%",
+   "10%",
+   "20%"
+  ],
+  "columns": [
+   "0.82x book",
+   "1.15x book",
+   "Market Rs 159"
+  ],
+  "values": [
+   [
+    81.8,
+    91.3,
+    98.3
+   ],
+   [
+    73.9,
+    82.5,
+    88.8
+   ],
+   [
+    66.1,
+    73.7,
+    79.3
+   ]
+  ],
+  "base": {
+   "row": 1,
+   "column": 1
+  },
+  "note": "Only with LB Finance at its market price and no holding discount does the sum of the parts reach the Rs 88.80 price comfortably; the other three methods, built on the group's 11–12% ROE, stay in the Rs 50s."
+ },
+ "buyPlan": {
+  "totalShares": 500,
+  "tiers": [
+   {
+    "shares": 200,
+    "maxPrice": 60.5
+   },
+   {
+    "shares": 150,
+    "maxPrice": 51.4
+   },
+   {
+    "shares": 150,
+    "maxPrice": 45.4
+   }
+  ],
+  "averagePrice": 53.24,
+  "totalCost": 26620,
+  "note": "About Rs 26,620 in total, against Rs 44,400 at Rs 88.80.",
+  "realism": "Not realistic in the near term. Rs 60.50 needs a 32% fall; the share traded Rs 88.20–104.00 between April and September 2026 and about Rs 82–115 over the past year. It was last near Rs 51–58 between March 2024 (Rs 50.50) and mid-2025 (low Rs 56.20 in the June 2025 quarter). Only a broad market fall, trouble at LB Finance, or a lower beta in January would bring the levels together."
+ },
+ "changeMyView": {
+  "higher": [
+   "LB Finance keeping ROE above 20% with credit costs under control after the Associated Motor Finance purchase.",
+   "A higher payout: more of LB Finance's and Royal Ceramics' profit reaching Vallibel One shareholders.",
+   "Greener Water's hotel opening, or the project being sold.",
+   "A lower beta once Damodaran's file and three local 5-year betas can be checked (the one found is 0.87).",
+   "Lower bond yields or a smaller Sri Lanka default spread."
+  ],
+  "lower": [
+   "Rising loan losses at LB Finance (Rs 1.9bn of receivables impaired this half).",
+   "A fall in Sampath Bank's share price, which goes straight into NAV.",
+   "Spending on the Fortress Resorts control stake or the Lanka Walltiles rights issue without a clear return.",
+   "Another delay or write-down at Greener Water.",
+   "Housing demand slowing, hurting Royal Ceramics."
+  ]
+ },
+ "notes": {
+  "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, the price is the 30 September 2026 close (the current CSE close couldn't be fetched), and the beta is provisional, so check the price before ordering. This is analysis, not personal financial advice."
+ },
+ "fullText": "**Summary**\n\nVallibel One PLC (VONE.N0000) is Mr Dhammika Perera's holding company. Its value sits in three listed stakes and a handful of private businesses: 51.75% of LB Finance (the biggest piece, about 41% of the parts at market prices), 55.96% of Royal Ceramics (tiles, bathware, and a further 26.08% of LB Finance), 14.95% of Sampath Bank, 68.75% of Delmege (consumer and trading), 100% of Greener Water (an unfinished hotel project) and, since October 2026, just over half of The Fortress Resorts. The holding company itself has no debt and about Rs 3.9bn of cash and deposits.\n\nResults are strong and rising. Year to March 2026: revenue Rs 149.3bn (+22%), profit to owners Rs 13.17bn (+12%), EPS Rs 11.57, dividend Rs 3.00. Six months to September 2026: EPS Rs 4.93 against Rs 4.03 (+22%), driven by LB Finance (segment profit +27%) after it bought Associated Motor Finance. NAV is Rs 110.29.\n\nAt Rs 88.80 (CSE close at 30 September 2026, from the interim report; the current CSE price wasn't reachable from this run) the share is 7.1x trailing EPS of Rs 12.47 and 0.81x NAV. That looks cheap, and it is about 15% below what the parts are worth at today's market prices (about Rs 104 a share). But the group earns only about 11–12% on owners' equity, well under the 18.3% a shareholder should demand at a beta of 0.98, and two of the three listed stakes (Royal Ceramics and, at the bull end, Sampath) are themselves valued by this site below or near their own prices. On four methods the fair value is about **Rs 60.50**. I'd buy at up to **Rs 51.40** and treat under **Rs 45.40** as a strong buy. The business passes 2 of 4 tests (debt, steady profit; it fails returns and cash), so it is **category 3, avoid for now**.\n\n**Valuation table (Rs per share)**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| Sum of the parts | 53.3 | 82.5 | 118.2 | 80.9 |\n| P/E | 42.7 | 53.5 | 67.9 | 53.2 |\n| Justified P/B | 45.4 | 58.1 | 76.6 | 58.0 |\n| Residual income | 37.3 | 49.8 | 69.0 | 49.9 |\n| **Average** | **44.7** | **61.0** | **82.9** | **60.5** |\n\nWeights bear 30 / base 50 / bull 20. Buy price = fair value less 15% (Rs 51.40), strong buy = less 25% (Rs 45.40).\n\n**What the company owns (30 September 2026)**\n\n- LB Finance PLC: 286.73mn shares (51.75% direct; 66.34% with Royal Ceramics' stake). Profit Rs 14.04bn in 2025/26, equity Rs 63.3bn, ROE about 24%. Worth Rs 45.6bn at Rs 159.\n- Royal Ceramics Lanka PLC: 620.03mn shares (55.96%). Worth Rs 29.1bn at Rs 47.00 (CSE close, 16 November 2026). This site values it at Rs 27.20 a share (category 3).\n- Sampath Bank PLC: 175.35mn shares (14.95%), carried at Rs 24.5bn (Rs 140.00) in September; Rs 26.6bn at Rs 151.75 (CSE close, 16 November). This site values it at Rs 186.\n- Unlisted: Delmege (68.75%, cost Rs 2.65bn, Vallibel One's share of profit Rs 1.00bn in 2025/26), Greener Water (100%, cost Rs 7.35bn, hotel completion \"further extended\"), Swisstek Aluminium (37.56% direct, cost Rs 0.49bn), Vallibel One Properties.\n- The Fortress Resorts PLC: 18.59% at March (market value Rs 0.45bn); bought up to 50.74% on 21–22 October 2026 (cost not given in the reports read).\n- Holding-company cash and short-term investments Rs 3.99bn, lease liabilities Rs 0.12bn.\n\n**Methods**\n\n*Sum of the parts.* The natural method for a holding company. LB Finance isn't covered by this site, so it's valued on its own book value at a justified price to book (its ROE is about 20–24%, beta 0.97, cost of equity about 18.2%): 0.82x / 1.15x / market. Royal Ceramics and Sampath use this site's own bear/base/bull values, so the views stay consistent. The holding-company discount is 20% / 10% / 0%: the holding company's running costs are covered by the technical fees it charges (admin Rs 0.50bn vs other income Rs 0.49bn in 2025/26), so the discount stands for control (the Perera family and related companies own about 80%; 19.5% is public) and profit kept in the subsidiaries. Result Rs 53.3 / 82.5 / 118.2.\n\n*P/E.* Base EPS Rs 12.20 for 2026/27 (H1 Rs 4.93 + Rs 7.30), level with the Rs 12.47 run-rate. Justified forward P/E at the cost of equity 3.9x / 4.4x / 5.1x. Result Rs 42.7 / 53.5 / 67.9.\n\n*Justified P/B and residual income.* Owners' ROE has been 10–12.5% for three years (18.9% in 2021/22). Long-run ROE 10.5% / 12% / 13.5% against a cost of equity of 19.8% / 18.3% / 16.8% means kept profit earns less than shareholders require, so book value is worth less than its face: 0.41x–0.69x NAV.\n\n*Dividends.* Rs 3.00 a year for two years (Rs 1.00 and nothing in the two years before): a 26% payout and a 3.4% yield. A dividend model (Rs 3.00 growing 4–6% at 16.8–19.8%) gives only Rs 20–29 because three-quarters of profit is kept, so it isn't in the average. The dividend itself is safe: the holding company received Rs 4.14bn of dividends in 2025/26 (Rs 2.22bn in this half) against Rs 3.42bn paid.\n\n*DCF.* Not used. The consolidated cash flow is dominated by LB Finance's lending (loans +Rs 136.6bn last year), so a whole-company DCF would be meaningless; the operating businesses are valued by a DCF inside this site's Royal Ceramics analysis, which feeds the sum of the parts.\n\n**Required return**\n\nCost of equity = 8.24% + 0.98 × (4.2% + 6.08%) = 18.3% (bear 19.8%, bull 16.8%). Risk-free = 12.24% bond yield − 4.0% default spread. Beta 0.98 (provisional): the value-weighted average of LB Finance 0.97 (finance companies), Royal Ceramics 1.12 (this site's figure), Sampath 0.70 (money-centre banks) and the unlisted operating businesses 1.28; one local 5-year beta found (StockAnalysis 0.87). No WACC: the holding company has no debt, and the group's borrowings are LB Finance's funding.\n\n**Growth check**\n\nProfit kept × ROE = 74.1% × 11.5% = 8.5% supported. The methods assume 4% / 5% / 6% long-run, all below it and below the 12.24% bond yield.\n\n**Business tests (2 of 4)**\n\n- Returns: fail. Owners' ROE 11.5% (2025/26), 10.1%, 12.5%, 14.9%, 18.9% in the years before.\n- Debt: pass. The holding company has net cash; the group's Rs 180bn of debt is LB Finance's deposit and bank funding (loans Rs 377bn at September). Royal Ceramics' net debt is 0.55x its equity.\n- Steady profit: pass. Owners' profit in each of the last ten years, Rs 9.5–13.2bn over the last five.\n- Cash: fail. Only about Rs 4.1bn of the Rs 13.2bn owners' profit reached the holding company as dividends last year; LB Finance's growth absorbs its capital, and Royal Ceramics' operating cash flow is weak.\n\n**Buy plan (500 shares)**\n\n- 200 shares up to Rs 60.50\n- 150 shares up to Rs 51.40\n- 150 shares up to Rs 45.40\n\nAverage about Rs 53.24, total about Rs 26,620 (Rs 44,400 at Rs 88.80). Not realistic soon: the share traded Rs 88.20–104.00 from April to September 2026 and Rs 82–115 over the past year (web range); it was last near Rs 51–58 between March 2024 (Rs 50.50) and mid-2025 (low Rs 56.20 in the June 2025 quarter).\n\n**What would change the view**\n\nHigher: LB Finance keeping ROE above 20% with clean credit; Royal Ceramics' operating businesses earning above 12% on capital; Greener Water's hotel opening or being sold; a lower beta after January's refresh; a higher payout. Lower: credit losses at LB Finance (the Rs 1.9bn receivables impairment this half); a weaker Sampath share price; money put into the Lanka Walltiles rights issue or the Fortress Resorts without a return; another delay at Greener Water.\n\n**Uncertain or missing**\n\nThe current CSE price couldn't be fetched (network block) and Rs 88.80 is the 30 September close; the site's daily CSE close will replace it. LB Finance's price (Rs 159) is from a 9 November broker table. LB Finance's share count (554mn) is worked out from the 51.75% stake. The cost of the October Fortress purchase isn't in the reports read. Delmege's book value is unclear (the subsidiary summary and the minority-interest balance don't agree), so it is valued on profit. Group capex booked and working-capital change weren't recorded because the group figures mix LB Finance's lending with the operating businesses."
+}
