@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "HNB.N0000",
   "localFolder": "hnb",
-  "updated": "2026-11-10",
+  "updated": "2026-11-16",
   "reportsRead": [
     {
       "file": "Annual Report 2024.pdf",
@@ -12,7 +12,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-10",
-      "note": "2024 figures taken from the ten-year summary in the 2025 annual report, which covers the same years."
+      "note": "2024 figures taken from the ten-year summary in the 2025 annual report, which covers the same years. Earlier read (laptop folder); superseded by the /redo full rebuild on 2026-11-16."
     },
     {
       "file": "Interim Financial Statements for the Quarter ended 31st December 2025.pdf",
@@ -22,7 +22,7 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-10",
-      "note": "Superseded by the audited 2025 annual report."
+      "note": "Superseded by the audited 2025 annual report. Earlier read (laptop folder); superseded by the /redo full rebuild on 2026-11-16."
     },
     {
       "file": "Annual Report as at 31st December 2025.pdf",
@@ -32,7 +32,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-10",
-      "note": "Used: income statement (p. 332), ten-year statistical summary (p. 568), quarterly statistics (p. 569)."
+      "note": "Used: income statement (p. 332), ten-year statistical summary (p. 568), quarterly statistics (p. 569). Earlier read (laptop folder); superseded by the /redo full rebuild on 2026-11-16."
     },
     {
       "file": "Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
@@ -42,7 +42,7 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-10",
-      "note": null
+      "note": "Earlier read (laptop folder); superseded by the /redo full rebuild on 2026-11-16."
     },
     {
       "file": "Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
@@ -52,7 +52,47 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-10",
-      "note": "Used: commentary (PDF p. 2), income statement (p. 3), balance sheet (pp. 5–6), equity (p. 8), key ratios (p. 14), share information (p. 16), loans (p. 18)."
+      "note": "Used: commentary (PDF p. 2), income statement (p. 3), balance sheet (pp. 5–6), equity (p. 8), key ratios (p. 14), share information (p. 16), loans (p. 18). Earlier read (laptop folder); superseded by the /redo full rebuild on 2026-11-16."
+    },
+    {
+      "file": "reports/HNB.N0000/2026-03-09_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual Report 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-16",
+      "note": "Used: financial highlights (p. 8), strategy scorecard (p. 36), income statement (p. 332), balance sheet (p. 335), ten-year summary (p. 568), quarterly statistics (p. 569). Printed page numbers."
+    },
+    {
+      "file": "reports/HNB.N0000/2026-05-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+      "title": "Interim Q1 2026",
+      "period": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-16",
+      "note": "Income statement PDF p. 4, balance sheet pp. 6–7, ratios p. 16, share information p. 18, loans p. 20."
+    },
+    {
+      "file": "reports/HNB.N0000/2026-08-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim Q2 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-16",
+      "note": "Income statement PDF p. 3, balance sheet pp. 5–6, ratios p. 14, share information p. 16, loans p. 18."
+    },
+    {
+      "file": "reports/HNB.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim Q3 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-16",
+      "note": "Commentary PDF p. 2, income statement p. 3, balance sheet pp. 5–6, equity p. 7, cash flow p. 9, ratios p. 14, share information p. 16, loans p. 18, deposits p. 20."
     }
   ],
   "periods": [
@@ -66,38 +106,50 @@
         "eps": {
           "value": 33.27,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted for the weighted share count of 2025"
         },
-        "netProfit": {
+        "netProfitBank": {
           "value": 17.3,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 568",
+          "source": "Annual Report 2025, p. 568",
           "note": "Bank profit after tax"
         },
         "roe": {
+          "value": null,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group ROE not given for this year in the reports read; bank ROE in roeBank"
+        },
+        "roeBank": {
           "value": 12.1,
           "unit": "%",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; group about 11.5% (worked out from group EPS and NAV)"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Bank, return on average shareholders' funds"
         },
         "navPerShare": {
           "value": 308.96,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted to shares in issue at 31 Dec 2025"
         },
         "dividendPerShare": {
           "value": 9.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Gross"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Gross; cash Rs 6.5, rest scrip"
         },
         "priceYearEnd": {
           "value": 135.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Voting"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting; non-voting Rs 122.25"
+        },
+        "peYearEnd": {
+          "value": 3.73,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting price ÷ group EPS (unadjusted)"
         }
       }
     },
@@ -111,38 +163,50 @@
         "eps": {
           "value": 26.81,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted for the weighted share count of 2025"
         },
-        "netProfit": {
+        "netProfitBank": {
           "value": 14.033,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 568",
+          "source": "Annual Report 2025, p. 568",
           "note": "Bank profit after tax"
         },
         "roe": {
+          "value": null,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group ROE not given for this year in the reports read; bank ROE in roeBank"
+        },
+        "roeBank": {
           "value": 9.0,
           "unit": "%",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; group about 8.5% (worked out from group EPS and NAV)"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Bank, return on average shareholders' funds"
         },
         "navPerShare": {
           "value": 320.54,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted to shares in issue at 31 Dec 2025"
         },
         "dividendPerShare": {
           "value": 5.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Gross"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Gross; cash Rs 0, rest scrip"
         },
         "priceYearEnd": {
           "value": 78.9,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Voting"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting; non-voting Rs 70.00"
+        },
+        "peYearEnd": {
+          "value": 2.76,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting price ÷ group EPS (unadjusted)"
         }
       }
     },
@@ -156,38 +220,50 @@
         "eps": {
           "value": 39.82,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted for the weighted share count of 2025"
         },
-        "netProfit": {
+        "netProfitBank": {
           "value": 20.353,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 568",
+          "source": "Annual Report 2025, p. 568",
           "note": "Bank profit after tax"
         },
         "roe": {
+          "value": 11.5,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 36",
+          "note": "Group"
+        },
+        "roeBank": {
           "value": 11.82,
           "unit": "%",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; group about 11.5% (worked out from group EPS and NAV)"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Bank, return on average shareholders' funds"
         },
         "navPerShare": {
           "value": 371.17,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted to shares in issue at 31 Dec 2025"
         },
         "dividendPerShare": {
           "value": 8.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Gross"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Gross; cash Rs 4, rest scrip"
         },
         "priceYearEnd": {
           "value": 169.25,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Voting"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting; non-voting Rs 140.00"
+        },
+        "peYearEnd": {
+          "value": 4.16,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting price ÷ group EPS (unadjusted)"
         }
       }
     },
@@ -201,38 +277,68 @@
         "eps": {
           "value": 76.14,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted for the weighted share count of 2025"
         },
-        "netProfit": {
+        "netProfitBank": {
           "value": 41.342,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; includes Rs 79bn of provision write-backs and a Rs 49bn loss on the sovereign bond exchange"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Bank; includes Rs 79bn of provision write-backs and a Rs 49.5bn loss on the sovereign bond exchange"
         },
         "roe": {
+          "value": 18.39,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 8",
+          "note": "Group"
+        },
+        "roeBank": {
           "value": 19.85,
           "unit": "%",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; group about 18.4% (worked out from group EPS and NAV)"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Bank, return on average shareholders' funds"
         },
         "navPerShare": {
           "value": 457.07,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group, adjusted for current share count"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Group, adjusted to shares in issue at 31 Dec 2025"
         },
         "dividendPerShare": {
           "value": 15.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Gross"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Gross; cash Rs 15"
         },
         "priceYearEnd": {
           "value": 319.75,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Voting"
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting; non-voting Rs 256.75"
+        },
+        "peYearEnd": {
+          "value": 4.2,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 568",
+          "note": "Voting price ÷ group EPS (unadjusted)"
+        },
+        "netProfit": {
+          "value": 43.539,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 332",
+          "note": "Group, attributable to equity holders"
+        },
+        "impairment": {
+          "value": -77.874,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 332",
+          "note": "Group write-back; offset by a Rs 49.5bn loss on the sovereign bond exchange"
+        },
+        "totalEquity": {
+          "value": 261.361,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 335",
+          "note": "Group, attributable"
         }
       }
     },
@@ -246,78 +352,116 @@
         "revenue": {
           "value": 174.875,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 332",
-          "note": "Group total operating income"
+          "source": "Annual Report 2025, p. 332",
+          "note": "Group total operating income; bank Rs 127.8bn"
         },
         "netInterestIncome": {
           "value": 95.736,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 332",
+          "source": "Annual Report 2025, p. 332",
           "note": "Bank; group Rs 115.1bn"
-        },
-        "netProfit": {
-          "value": 47.593,
-          "unit": "Rs bn",
-          "source": "Annual report 2025, p. 332",
-          "note": "Group, attributable; bank Rs 45.4bn"
         },
         "impairment": {
           "value": -8.395,
           "unit": "Rs bn",
-          "source": "Annual report 2025, p. 332",
-          "note": "Group write-back"
+          "source": "Annual Report 2025, p. 332",
+          "note": "Group write-back; bank Rs 9.2bn"
+        },
+        "netProfit": {
+          "value": 47.593,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 332",
+          "note": "Group, attributable; bank Rs 45.4bn; group incl. minorities Rs 49.8bn"
         },
         "eps": {
           "value": 83.23,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 332",
+          "source": "Annual Report 2025, p. 332",
           "note": "Group; bank Rs 79.44"
         },
         "dividendPerShare": {
           "value": 20.0,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Rs 15 cash + Rs 5 scrip"
+          "source": "Annual Report 2025, p. 332",
+          "note": "Final: Rs 15 cash + Rs 5 scrip (paid 2026)"
         },
         "navPerShare": {
           "value": 529.51,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
-          "note": "Group; bank Rs 472.74"
+          "source": "Annual Report 2025, p. 335",
+          "note": "Group; bank Rs 472.74. Rs 524.47 on the 577.32mn shares after the scrip (Interim Q3 2026, PDF p. 6)"
+        },
+        "totalEquity": {
+          "value": 302.785,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 335",
+          "note": "Group, attributable; bank Rs 270.3bn"
         },
         "roe": {
+          "value": 16.87,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 8",
+          "note": "Group"
+        },
+        "roeBank": {
           "value": 18.11,
           "unit": "%",
-          "source": "Annual report 2025, p. 568",
-          "note": "Bank; group about 16.9%"
+          "source": "Annual Report 2025, p. 8",
+          "note": "Bank"
         },
         "nim": {
           "value": 4.26,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 2"
+          "source": "Annual Report 2025, p. 569",
+          "note": "Bank, regulatory basis (4.61% on the highlights basis, p. 8)"
+        },
+        "costToIncome": {
+          "value": 37.82,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 569",
+          "note": "Bank"
         },
         "cet1": {
           "value": 16.85,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14",
+          "source": "Annual Report 2025, p. 569",
           "note": "Bank; total capital 19.95%"
         },
-        "peYearEnd": {
-          "value": 4.79,
-          "unit": "x",
-          "source": "Annual report 2025, p. 568"
+        "stage3Net": {
+          "value": 1.09,
+          "unit": "%",
+          "source": "Annual Report 2025, p. 569",
+          "note": "Bank; coverage 75.97%; gross 4.56% (Interim Q3 2026, PDF p. 14)"
+        },
+        "grossLoans": {
+          "value": 1513.96,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 8",
+          "note": "Bank; up 30.5%"
+        },
+        "deposits": {
+          "value": 1961.851,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, p. 8",
+          "note": "Bank; up 14.4%"
         },
         "priceYearEnd": {
           "value": 398.5,
           "unit": "Rs",
-          "source": "Annual report 2025, p. 568",
+          "source": "Annual Report 2025, p. 568",
           "note": "Voting; non-voting Rs 318.75"
+        },
+        "peYearEnd": {
+          "value": 4.79,
+          "unit": "x",
+          "source": "Annual Report 2025, p. 568",
+          "note": null
         },
         "sharesOutstanding": {
           "value": 571.82,
           "unit": "mn",
-          "source": "Interim to 30 Jun 2026, PDF p. 16",
-          "note": "455.97mn voting + 115.85mn non-voting"
+          "source": "Interim Q1 2026, PDF p. 18",
+          "note": "455.97mn voting + 115.85mn non-voting at 31 Dec 2025"
         }
       }
     },
@@ -329,45 +473,82 @@
       "audited": false,
       "figures": {
         "netProfit": {
-          "value": 10.357,
+          "value": 10.089,
           "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026",
-          "note": "Group, quarter; down 6%. Bank Rs 9.95bn"
+          "source": "Interim Q1 2026, PDF p. 4",
+          "note": "Group attributable, quarter; down 5.7%. Bank Rs 9.95bn, down 2.7%"
         },
         "eps": {
           "value": 17.64,
           "unit": "Rs",
-          "source": "Interim to 31 Mar 2026",
-          "note": "Group, quarter"
+          "source": "Interim Q1 2026, PDF p. 4",
+          "note": "Group, quarter; Q1 2025 Rs 18.71"
+        },
+        "impairment": {
+          "value": 3.082,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, PDF p. 4",
+          "note": "Group charge; Q1 2025 write-back Rs 0.2bn"
         },
         "navPerShare": {
           "value": 528.2,
           "unit": "Rs",
-          "source": "Interim to 31 Mar 2026",
-          "note": "Group"
+          "source": "Interim Q1 2026, PDF p. 7",
+          "note": "Group; bank Rs 471.47"
         },
-        "roe": {
+        "roeBank": {
           "value": 14.74,
           "unit": "%",
-          "source": "Interim to 31 Mar 2026",
+          "source": "Interim Q1 2026, PDF p. 16",
           "note": "Bank, annualised"
         },
         "nim": {
           "value": 4.45,
           "unit": "%",
-          "source": "Interim to 31 Mar 2026"
+          "source": "Interim Q1 2026, PDF p. 16",
+          "note": null
+        },
+        "costToIncome": {
+          "value": 37.15,
+          "unit": "%",
+          "source": "Interim Q1 2026, PDF p. 16",
+          "note": null
         },
         "cet1": {
           "value": 15.03,
           "unit": "%",
-          "source": "Interim to 31 Mar 2026",
+          "source": "Interim Q1 2026, PDF p. 16",
           "note": "Bank; total capital 18.07%"
+        },
+        "stage3Net": {
+          "value": 1.18,
+          "unit": "%",
+          "source": "Interim Q1 2026, PDF p. 16",
+          "note": "Coverage 73.29%"
+        },
+        "grossLoans": {
+          "value": 1627.736,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, PDF p. 20",
+          "note": "Bank"
+        },
+        "deposits": {
+          "value": 2023.59,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026, PDF p. 6",
+          "note": "Bank"
+        },
+        "sharesOutstanding": {
+          "value": 571.82,
+          "unit": "mn",
+          "source": "Interim Q1 2026, PDF p. 18",
+          "note": "Before the scrip dividend"
         },
         "priceQuarterEnd": {
           "value": 410.75,
           "unit": "Rs",
-          "source": "Interim to 31 Mar 2026",
-          "note": "Voting; non-voting Rs 354.25; Q1 high Rs 460.00, low Rs 388.50"
+          "source": "Interim Q1 2026, PDF p. 18",
+          "note": "Voting; non-voting Rs 354.25. Quarter range voting Rs 388.50–460.00, non-voting Rs 318.50–404.00"
         }
       }
     },
@@ -381,100 +562,249 @@
         "revenue": {
           "value": 101.83,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "source": "Interim Q2 2026, PDF p. 3",
           "note": "Group total operating income; up 24%"
         },
         "netInterestIncome": {
           "value": 55.279,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "source": "Interim Q2 2026, PDF p. 3",
           "note": "Bank; up 21%"
         },
         "netProfit": {
           "value": 21.864,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 3",
-          "note": "Group, attributable; down 3%. Bank Rs 23.1bn, up 9%"
+          "source": "Interim Q2 2026, PDF p. 3",
+          "note": "Group attributable; down 2.6%. Bank Rs 23.1bn, up 9%"
         },
         "eps": {
           "value": 37.87,
           "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "source": "Interim Q2 2026, PDF p. 3",
           "note": "Group; H1 2025 Rs 38.87. Bank Rs 40.09"
         },
         "impairment": {
           "value": 5.03,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "source": "Interim Q2 2026, PDF p. 3",
           "note": "Group charge; H1 2025 write-back Rs 4.8bn"
         },
         "navPerShare": {
           "value": 539.85,
           "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, PDF p. 6",
+          "source": "Interim Q2 2026, PDF p. 6",
           "note": "Group; bank Rs 486.88"
         },
-        "roe": {
+        "roeBank": {
           "value": 16.79,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14",
-          "note": "Bank, annualised; group about 14.2%"
+          "source": "Interim Q2 2026, PDF p. 14",
+          "note": "Bank, annualised"
         },
         "nim": {
           "value": 4.4,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14"
+          "source": "Interim Q2 2026, PDF p. 14",
+          "note": null
         },
         "costToIncome": {
           "value": 34.48,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14"
+          "source": "Interim Q2 2026, PDF p. 14",
+          "note": null
         },
         "cet1": {
           "value": 15.44,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14",
+          "source": "Interim Q2 2026, PDF p. 14",
           "note": "Bank; total capital 18.18%"
         },
         "stage3Net": {
           "value": 1.17,
           "unit": "%",
-          "source": "Interim to 30 Jun 2026, PDF p. 14",
+          "source": "Interim Q2 2026, PDF p. 14",
           "note": "Gross 4.42%; coverage 73.42%"
         },
         "grossLoans": {
           "value": 1737.857,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 18",
-          "note": "Bank; up Rs 224bn (15%)"
+          "source": "Interim Q2 2026, PDF p. 18",
+          "note": "Bank"
         },
         "deposits": {
           "value": 2100.606,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, PDF p. 5",
+          "source": "Interim Q2 2026, PDF p. 5",
           "note": "Bank"
         },
         "sharesOutstanding": {
           "value": 577.32,
           "unit": "mn",
-          "source": "Interim to 30 Jun 2026, PDF p. 16",
-          "note": "460.22mn voting + 117.10mn non-voting"
+          "source": "Interim Q2 2026, PDF p. 16",
+          "note": "460.22mn voting + 117.10mn non-voting, after the 2025 scrip dividend"
         },
         "priceQuarterEnd": {
           "value": 403.75,
           "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, PDF p. 16",
-          "note": "Voting; non-voting Rs 336.00; Q2 high Rs 419.50, low Rs 388.00"
+          "source": "Interim Q2 2026, PDF p. 16",
+          "note": "Voting; non-voting Rs 336.00. Quarter range voting Rs 388.00–419.50, non-voting Rs 317.50–365.00"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 153.081,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Group total operating income; up 21%. Q3 alone Rs 51.3bn, up 16%"
+        },
+        "netInterestIncome": {
+          "value": 85.501,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Bank; up 23.6%. Group Rs 103.1bn"
+        },
+        "feeIncome": {
+          "value": 20.561,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Bank net fees; up 25.4%"
+        },
+        "tradingResult": {
+          "value": -6.834,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Bank net trading loss (Q3 alone −Rs 8.8bn); net other operating income rose to Rs 13.1bn (Q3 Rs 7.3bn) on exchange gains, so the two largely offset"
+        },
+        "impairment": {
+          "value": 6.622,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Group charge; 9M 2025 write-back Rs 6.9bn. Bank Rs 5.3bn"
+        },
+        "profitBeforeTax": {
+          "value": 55.014,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Group; flat (−0.2%). Bank Rs 52.3bn, up 5.4%"
+        },
+        "netProfit": {
+          "value": 32.395,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Group attributable; down 3.2%. Q3 Rs 10.5bn, down 4.6%. Bank Rs 33.0bn, up 4.8%"
+        },
+        "eps": {
+          "value": 56.11,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, PDF p. 3",
+          "note": "Group; 9M 2025 Rs 57.99. Q3 Rs 18.24 (Q3 2025 Rs 19.12). Bank Rs 57.21"
+        },
+        "navPerShare": {
+          "value": 554.63,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, PDF p. 6",
+          "note": "Group; bank Rs 500.83"
+        },
+        "totalEquity": {
+          "value": 320.198,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 6",
+          "note": "Group, attributable; bank Rs 289.1bn"
+        },
+        "roe": {
+          "value": 13.9,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF pp. 3, 6",
+          "note": "Group, annualised: worked out as 9M attributable profit × 4/3 ÷ average of opening and closing equity"
+        },
+        "roeBank": {
+          "value": 15.74,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": "Bank, annualised"
+        },
+        "nim": {
+          "value": 4.5,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": null
+        },
+        "costToIncome": {
+          "value": 36.13,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": null
+        },
+        "cet1": {
+          "value": 14.26,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": "Bank; total capital 16.59% (minimum 13.5%); group CET1 15.10%; leverage 6.97%"
+        },
+        "lcr": {
+          "value": 165.32,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": "All currency; 227.75% at end-2025; NSFR 121.72%"
+        },
+        "stage3Net": {
+          "value": 1.09,
+          "unit": "%",
+          "source": "Interim Q3 2026, PDF p. 14",
+          "note": "Gross 4.12%; coverage 73.46%"
+        },
+        "grossLoans": {
+          "value": 1827.442,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 18",
+          "note": "Bank; up Rs 313.5bn (20.7%) in nine months"
+        },
+        "deposits": {
+          "value": 2213.533,
+          "unit": "Rs bn",
+          "source": "Interim Q3 2026, PDF p. 5",
+          "note": "Bank; up Rs 251.7bn (12.8%); CASA 32.0% (PDF p. 2)"
+        },
+        "sharesOutstanding": {
+          "value": 577.32,
+          "unit": "mn",
+          "source": "Interim Q3 2026, PDF p. 16",
+          "note": "460.22mn voting + 117.10mn non-voting"
+        },
+        "priceQuarterEnd": {
+          "value": 384.0,
+          "unit": "Rs",
+          "source": "Interim Q3 2026, PDF p. 16",
+          "note": "Voting; non-voting Rs 327.00. Quarter range voting Rs 377.00–407.00, non-voting Rs 314.50–340.00"
         }
       }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "0.80 (provisional)",
+      "reason": "8 steps, 16 Nov 2026. (1) Business: a Sri Lankan commercial bank; the bank earned Rs 33.0bn of the group's Rs 33.6bn nine-month profit (HNB Life, HNB Finance and HNB Investment Bank the rest), so one sector beta. (2)–(3) A bank, so no relevering: the sector's levered beta, Damodaran's Bank (Money Center) 0.70 (January 2026, as used for SAMP and NDB; web-search extract, his site couldn't be opened from this run). (4) Local betas from web-search extracts (pages not opened; stockanalysis.com is blocked here): StockAnalysis 0.65 (5-year), TradingView 0.80 (older snapshot, window not stated), Simply Wall St 0.84 (November 2024, window not stated); median 0.80. TradingView's 1-year beta of 1.36 is ignored (1-year). Voting share trades daily, so not thin. (5) Higher of 0.70 and 0.80 = 0.80. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified 5-year local betas.",
+      "since": "2026-11-16"
+    },
+    {
       "name": "Cost of equity",
-      "value": "Bear 20% / Base 18% / Bull 16.5%",
-      "reason": "Same as Sampath Bank: Sri Lankan 7–10-year bonds yield about 12%, plus a premium for a leveraged bank with large government-bond holdings.",
-      "since": "2026-11-10"
+      "value": "Bear 18.0% / Base 16.5% / Bull 15.0%",
+      "reason": "From scripts/reinvestment.py (16 Nov 2026): 8.24% + 0.80 × (4.2% + 6.08%) = 16.5%, ±1.5 points. Replaces the hand-set 20 / 18 / 16.5% of the first analysis.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 6% / 9% / 12%; supported 12.8% (share of profit kept × ROE, FY 2025: 76.0% × 16.9% group). All within 2 pts.",
+      "reason": "From scripts/reinvestment.py on the FY 2025 group figures (dividend Rs 20 incl. Rs 5 scrip ÷ EPS Rs 83.23); earnings growth for the five years after 2027.",
+      "since": "2026-11-16"
     },
     {
       "name": "Scenario weights",
@@ -484,53 +814,53 @@
     },
     {
       "name": "Long-run ROE (group)",
-      "value": "14% / 16% / 18%",
-      "reason": "Group ROE 16.9–18.4% in 2024–2025 was lifted by provision write-backs; H1 2026 annualised 14.2% (bank 16.8%).",
-      "since": "2026-11-10"
+      "value": "13% / 15% / 17%",
+      "reason": "Cut a point from 14 / 16 / 18%: group ROE was 16.9% (2025) and 18.4% (2024) with provision write-backs, but only about 13.9% annualised for 9M 2026 now that provisions are a charge again; 11.5% in 2023.",
+      "since": "2026-11-16"
     },
     {
       "name": "ROE path (residual income)",
-      "value": "14% flat / 15.5%→16% / 17%→18%",
-      "reason": "Starts near the H1 2026 level, moving to the long-run level over five years.",
-      "since": "2026-11-10"
+      "value": "13% flat / 14.5%→15% / 16%→17%",
+      "reason": "Ten years from about today's 13.9% group ROE; then the excess return grows at the long-run rate.",
+      "since": "2026-11-16"
     },
     {
       "name": "Long-term growth",
       "value": "5% / 6% / 7%",
-      "reason": "Nominal growth for a Sri Lankan bank.",
+      "reason": "Below the 12.24% bond yield and the cost of equity; needs 38–41% of profit kept (growth ÷ ROE).",
       "since": "2026-11-10"
     },
     {
-      "name": "2026 EPS × P/E",
-      "value": "70 × 4 / 78 × 5 / 84 × 6",
-      "reason": "H1 group EPS Rs 37.87; year-end P/E 4.2–4.8x in 2023–2025.",
-      "since": "2026-11-10"
+      "name": "2027 EPS × P/E",
+      "value": "74 × 4.5 / 84 × 5.5 / 92 × 6.5",
+      "reason": "2026 group EPS about Rs 77 (9M Rs 56.11). Base +9% in 2027 on 20% loan growth; bear 9% below the Rs 81.35 trailing run-rate because that includes Q4 2025's provision write-back. P/Es within the 2.8–4.8x year-end range of 2021–2025 plus a little, and below justified 5.0x / 6.1x / 7.9x.",
+      "since": "2026-11-16"
     },
     {
-      "name": "Dividend 2026, growth",
-      "value": "Rs 18, 4% / Rs 20, 6% / Rs 22, 7%",
-      "reason": "Rs 20 for 2025 (Rs 15 cash, Rs 5 scrip); payout about 24%.",
-      "since": "2026-11-10"
-    },
-    {
-      "name": "Payout",
-      "value": "25%",
-      "reason": "2025 dividend cover 4.0x.",
-      "since": "2026-11-10"
+      "name": "Dividends",
+      "value": "24% of EPS for five years, then 1 − growth ÷ ROE (62% / 60% / 59%)",
+      "reason": "Rs 20 for 2025 (Rs 15 cash + Rs 5 scrip) was 24% of group EPS. Replaces a fixed Rs 18 / 20 / 22 growing for ever: dividend growth now follows profit (capped at the 12.8% supported).",
+      "since": "2026-11-16"
     },
     {
       "name": "Shares",
       "value": "577.32mn (460.22mn voting + 117.10mn non-voting)",
-      "reason": "30 June 2026, after the 2025 scrip dividend.",
+      "reason": "30 September 2026, after the 2025 scrip dividend.",
+      "since": "2026-11-10"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
       "since": "2026-11-10"
     }
   ],
   "openQuestions": [
-    "Q3 2026 (due mid-November): does group profit grow again, and do subsidiary trading losses reverse?",
-    "Loan growth of 15% in six months: do Stage 2 and Stage 3 loans start rising?",
-    "How far does CET1 (15.44%) fall, and is the 2026 dividend paid in cash or partly in shares again?",
-    "Does the net interest margin stay near 4.4%?",
-    "Any new taxes on banks in the November 2026 budget?"
+    "FY 2026 (due about February 2027): does group profit grow in Q4, and does group ROE end the year near 14% or back above 15%?",
+    "Loans grew 20.7% in nine months: do Stage 2 and Stage 3 loans start rising in 2027?",
+    "Capital: does total capital (16.59%) keep falling, any Tier 2 issue, and is the 2026 dividend again partly scrip?",
+    "Trading losses (Rs 8.8bn in Q3) against exchange gains: do they keep offsetting?",
+    "Beta is provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified 5-year local betas."
   ],
   "changeLog": [
     {
@@ -542,6 +872,16 @@
       "strongBuyPrice": 263,
       "priceAtTime": 415.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-16",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/redo HNB.X0000 full; resolved to HNB.N0000, which covers both share classes). Research record rebuilt from the four downloaded CSE reports (Annual Report 2025 and the Q1, H1 and 9M 2026 interims), keeping the earlier change log and reports read. Cost of equity now from the house CAPM formula with a provisional beta of 0.80 (16.5% base, from 18% hand-set): the main reason fair value rose, with NAV up to Rs 554.63. 9M 2026: loans +20.7%, bank NII +24%, but a Rs 6.6bn group impairment charge (write-back a year earlier) left group profit −3% and group ROE about 13.9%, so long-run ROE cut a point to 13/15/17%. P/E now on 2027 EPS; dividend model raises payout to 1 − g/ROE after five years. Beta sources only from web-search extracts (Damodaran and StockAnalysis blocked). Group ROE for 2021–2022 not in the reports read (null). Business tests 4 of 4 (ROE and capital thinner); category watch list → buy now (non-voting Rs 346.25 below the Rs 381 buy price).",
+      "fairValue": 448,
+      "buyPrice": 381,
+      "strongBuyPrice": 336,
+      "priceAtTime": 399.75,
+      "archive": "research/HNB.N0000/history/2026-11-10.json"
     }
   ]
 }
