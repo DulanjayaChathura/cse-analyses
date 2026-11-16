@@ -475,6 +475,22 @@
       "status": "done",
       "result": "First analysis: fair value Rs 27.20, buy Rs 23.10, strong buy Rs 20.40; price Rs 48.10; category 3 (avoid for now, 2 of 4 tests)",
       "finishedAt": "2026-11-16T19:03:45+00:00"
+    },
+    {
+      "id": "20261116193921-INME",
+      "ticker": "INME.N0000",
+      "name": "Insureme Insurance Brokers PLC",
+      "mode": "add",
+      "command": "/add INME.N0000",
+      "note": null,
+      "files": [
+        "reports/INME.N0000/2026-08-03_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/INME.N0000/2026-11-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "239",
+      "requestedAt": "2026-11-16T19:39:21+00:00",
+      "status": "pending"
     }
   ]
 }
