@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "ticker": "RCL.N0000",
+  "company": {
+    "name": "Royal Ceramics Lanka PLC",
+    "sector": "Building materials (tiles, bathware, aluminium, packaging) with a 26% associate stake",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "RCL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-16",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE download)",
+      "Interim reports to 30 June and 30 September 2026 (CSE downloads)"
+    ]
+  },
+  "price": {
+    "value": 48.1,
+    "date": "2026-11-12",
+    "source": "Fiscal.ai last close, via web search (CSE site not reachable from this run)",
+    "note": "Rocell's investor page showed a later close of Rs 47.50 (undated). September quarter range Rs 41.90–49.90; Rs 45.40 at 30 September."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Record profits, but half come from LB Finance and the tile businesses earn below their cost of capital: fair value about Rs 27",
+    "text": "Royal Ceramics Lanka PLC (RCL.N0000, 'Rocell') is Sri Lanka's largest tile maker, with bathware, aluminium (Swisstek) and packaging businesses, mostly held through 55%-owned Lanka Walltiles, and a 26.08% stake in LB Finance. That stake matters more than it looks: LB Finance earned Rs 3.64bn of the group's Rs 6.97bn owners' profit last year (52%). Year to March 2026 was a record: revenue Rs 68.1bn (+14%), EPS Rs 6.29 (Rs 4.56), dividends Rs 2.00. The first half of this year continued it: EPS Rs 3.00 against Rs 2.41, with gross margin up to 35.8%, though the September quarter was flat (Rs 1.38 against Rs 1.37) as finance costs rose. At Rs 48.10 (12 November 2026, web quote; the CSE close wasn't available) the share is 7.0x trailing earnings and 0.93x NAV of Rs 51.91, which looks cheap. But the operating businesses earn only about 8–9% on the capital tied up in them, well below the 14.9% WACC that a beta of 1.12 gives, and owners' ROE is 13–14% even with LB Finance. On a 19.8% cost of equity the four methods give a fair value of about Rs 27.20, so the price is about 77% above it. I'd buy at up to about Rs 23.10 and treat under Rs 20.40 as a strong buy. The business passes 2 of the 4 tests (debt and steady profit; it fails on returns and on cash, with operating cash flow of −Rs 5.9bn this half-year), so it goes in category 3, avoid for now. The beta is provisional and the biggest uncertainty: the market's own 5-year beta is 0.32, and at a beta of 0.8 fair value would be roughly 30% higher, still well below the price."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "Moderate debt and steady profit, but returns below 15% and cash flow held back by ever-rising stock. First assessment, 16 November 2026.",
+    "assessed": "2026-11-16",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "13.4%",
+        "note": "Owners' ROE 13.4% in 2025/26, about 14% over the last 12 months (reported 11.3% and 9.3% on total equity for the last two years). Over half of profit is LB Finance's; the operating businesses earn about 8–9% after tax on their capital."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.55x equity",
+        "note": "Net debt Rs 31.7bn at Sep 2026 (seasonal stock build), 0.39x in March 2026; about 2.5x operating EBITDA; interest cover 5x."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit in both years read",
+        "note": "Group profit Rs 5.05bn and Rs 6.97bn in the last two years, up 24% this half; the parent company made a profit in each of the last ten years. Group figures before 2024/25 weren't in the reports read."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Weak",
+        "note": "Operating cash flow Rs 0.33bn (2024/25), Rs 9.64bn (2025/26), −Rs 5.87bn (H1 2026/27): about Rs 4.1bn in 2.5 years against roughly Rs 9bn of operating-business profit. LB Finance's profit arrives mostly as book profit (dividends Rs 0.80bn of Rs 3.64bn)."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.12,
+    "betaBasis": "Provisional. Building Materials unlevered 0.90 relevered to 1.28 (net debt 0.59x market value, 29% tax), weighted 48% (operating businesses' share of owners' profit), and finance-company levered beta 0.97 for the LB Finance stake, weighted 52%: 1.12. Web-search stand-ins (Damodaran's emerging-markets file couldn't be opened). Only one local 5-year beta found (StockAnalysis 0.32). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 21.3,
+      "base": 19.8,
+      "bull": 18.3
+    },
+    "costOfDebt": 9.26,
+    "wacc": {
+      "bear": 15.8,
+      "base": 14.9,
+      "bull": 13.9
+    },
+    "debtWeight": 37.3,
+    "asOf": "2026-11-16",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 2.65bn ÷ average borrowings and leases Rs 28.6bn (Annual Report 2025/26, pp. 222, 266)",
+      "Weights: market cap Rs 53.3bn at Rs 48.10 (12 Nov 2026), net debt Rs 31.67bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.12 × (4.2% + 6.08%) = 19.8%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares, toward the top because of the finance stake and the debt in the operating businesses. WACC weights equity 62.7% and after-tax debt (9.26% × (1 − 29%) = 6.6%) 37.3%."
+  },
+  "valuation": {
+    "fairValue": 27.2,
+    "buyPrice": 23.1,
+    "strongBuyPrice": 20.4,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 51.91,
+    "note": "Fair value weights the bear/base/bull averages of four methods (sum of the parts with an operating DCF, P/E, justified P/B, residual income) 30/50/20: Rs 21.9 / 27.2 / 35.5, giving Rs 27.23 (0.52x NAV). Discount rates come from the beta (cost of equity 19.8%, WACC 14.9%)."
+  },
+  "dividend": {
+    "perShare": 2.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, financial highlights (p. 15): interim Rs 1.00 + final Rs 1.00",
+    "note": "No interim for 2026/27 had been declared in the reports read."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 51.91,
+      "unit": "Rs",
+      "note": "30 Sep 2026, includes revalued land"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.93,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 7.0,
+      "unit": "x",
+      "note": "Trailing EPS Rs 6.88"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 13.4,
+      "unit": "%",
+      "note": "Owners, year to March 2026; about 14% on the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 4.2,
+      "unit": "%",
+      "note": "Rs 2.00 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 32,
+      "unit": "%"
+    },
+    {
+      "id": "lbfShare",
+      "label": "Profit from LB Finance",
+      "value": 52,
+      "unit": "%",
+      "note": "Rs 3.64bn of Rs 6.97bn owners' profit, 2025/26"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.55,
+      "unit": "x",
+      "note": "Sep 2026; 0.39x in March"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 9,
+      "unit": "%",
+      "note": "April–September 2026; 14% last year"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 19.8,
+      "unit": "%",
+      "note": "Beta 1.12 (provisional); WACC 14.9%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 53.3,
+      "unit": "Rs bn",
+      "display": "~Rs 53bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue Rs 16.93bn (+3.6%), gross profit Rs 6.20bn (+16%), but distribution costs +23% and finance costs +32% (Rs 0.87bn). Share of associates Rs 0.98bn (+11%). Profit to owners Rs 1.52bn, EPS Rs 1.38 (Rs 1.37): flat."
+    },
+    {
+      "title": "Six months to 30 September 2026",
+      "text": "Revenue Rs 33.11bn (+9%), gross margin 35.8% (32.0%), associates Rs 2.00bn (+22%), profit to owners Rs 3.32bn (+24%), EPS Rs 3.00 (Rs 2.41). Tiles profit +32%, bathware back in profit, packaging −53%. Operating cash flow −Rs 5.87bn as stock rose Rs 5.0bn; net debt Rs 31.7bn (Rs 21.6bn in March). Final dividend of Rs 1.00 for 2025/26 paid."
+    },
+    {
+      "title": "Lanka Walltiles rights issue",
+      "text": "After the half-year, 55%-owned Lanka Walltiles proposed a Rs 5bn rights issue (8 for 17 at Rs 39), followed by a merger with its plantation subsidiary. RCL's share would be about Rs 2.75bn if it follows its rights."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Record year: revenue Rs 68.10bn (+14%), operating profit excluding associates Rs 8.82bn, LB Finance share Rs 3.64bn (+29%), profit to owners Rs 6.97bn (+38%), EPS Rs 6.29, dividends Rs 2.00. Operating cash flow Rs 9.64bn; capex Rs 3.9bn against depreciation Rs 3.4bn."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          4.56,
+          6.29,
+          6.88
+        ],
+        "notes": [
+          null,
+          null,
+          "Trailing 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          9.3,
+          13.4,
+          14.1
+        ],
+        "notes": [
+          "As reported, on total equity",
+          "Owners, average equity",
+          "Last 12 months, approx."
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          8.1,
+          6.8,
+          7.0
+        ],
+        "notes": [
+          "At Rs 37.00",
+          "At Rs 43.00",
+          "At Rs 48.10"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          1.6,
+          2.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          43.9,
+          49.86,
+          51.91
+        ],
+        "notes": [
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 51.91",
+      "reading": "The price is 0.93x NAV (30 September 2026); NAV includes Rs 7.97bn of revaluation reserves."
+    },
+    {
+      "method": "Return on equity",
+      "value": "13.4%",
+      "reading": "Owners' ROE in 2025/26; about 14% over the last 12 months. The operating businesses earn about 8–9% after tax on their capital; LB Finance lifts the total."
+    },
+    {
+      "method": "P/E",
+      "value": "7.0x",
+      "reading": "On trailing EPS of Rs 6.88. At a 19.8% cost of equity the justified forward P/E is about 4.5x."
+    },
+    {
+      "method": "Dividends",
+      "value": "4.2% yield",
+      "reading": "Rs 2.00 for 2025/26, about a third of profit; covered 3.4x by cash after maintenance capex last year, but not in 2024/25 or this half."
+    },
+    {
+      "method": "Sum of the parts",
+      "value": "Rs 21.4 (base)",
+      "reading": "LB Finance and Delmege at book about Rs 20.8 a share; the operating businesses add little after Rs 31.7bn of net debt at a 14.9% WACC."
+    },
+    {
+      "method": "Required return",
+      "value": "19.8% / WACC 14.9%",
+      "reading": "CAPM with a country premium, beta 1.12 (provisional)."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt Rs 31.7bn",
+      "reading": "0.55x owners' equity at September after a seasonal stock build; 0.39x in March. Interest cover 5x."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Sum of the parts: operating DCF (WACC, less net debt) + associates",
+      "bear": 17.66,
+      "base": 21.39,
+      "bull": 30.52,
+      "weighted": 22.1,
+      "comment": "Operating businesses (tiles, bathware, aluminium, packaging) valued as a whole company: cash before interest after maintenance capex Rs 5.4 / 6.4 / 7.0bn (consolidated), growing 2% / 4% / 6% for five years, then 3% / 4% / 5%, less the reinvestment growth needs at an 8% / 9% / 11% return on capital (after-tax operating profit Rs 6.0 / 6.7 / 7.0bn), at WACC 15.8% / 14.9% / 13.9%, less net debt Rs 31.67bn at 30 September 2026 (seasonally high). Firm value Rs 27.0 / 32.7 / 44.3bn gives equity of −Rs 4.2 / 0.9 / 11.4 per share; the bear is taken as zero, and owners keep 68% (minorities own about a third of the operating subsidiaries). Value after year 5: 50% / 61% / 71%, under the 75% flag. Plus the associates (LB Finance 26.08%, Delmege 21%): Rs 17.7 (15% below book) / 20.8 (book, Rs 23.02bn at September) / 22.8 (LB Finance at its August 2026 market value of about Rs 87.7bn, plus Delmege at book) per share."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 25.65,
+      "base": 30.82,
+      "bull": 38.26,
+      "weighted": 30.76,
+      "comment": "EPS for the year to March 2027 of Rs 6.40 / 6.90 / 7.40 (H1 Rs 3.00 plus a second half of Rs 3.40 / 3.90 / 4.40; last year's was Rs 3.88) times 4.0 / 4.5 / 5.2: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE, long-run ROE 12 / 13.5 / 15%, growth 4 / 5 / 6%). Base EPS is level with the Rs 6.88 run-rate (last 12 months)."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 24.0,
+      "base": 29.81,
+      "bull": 37.98,
+      "weighted": 29.7,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 51.91: ROE 12% / 13.5% / 15%, growth 4% / 5% / 6%, cost of equity 21.3% / 19.8% / 18.3%. NAV includes revalued land and buildings (revaluation reserve Rs 7.97bn)."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 20.15,
+      "base": 26.58,
+      "bull": 35.16,
+      "weighted": 26.37,
+      "comment": "Book value Rs 51.91 (September 2026); ROE moving from 12% / 13.5% / 14.5% to 12% / 13.5% / 15% over ten years; 32% payout for five years, then the payout growth allows; cost of equity 21.3% / 19.8% / 18.3%; after year ten the (negative) excess return grows at 4% / 5% / 6%."
+    }
+  ],
+  "modelsNote": "Two businesses in one share, so a sum of the parts replaces a plain DCF: the tile, bathware, aluminium and packaging businesses are valued as a whole company at WACC less net debt, and the LB Finance and Delmege stakes are added at book (market value in the bull case). P/E, justified P/B and residual income work on group figures, which include LB Finance's profit. A dividend model is left out (payout a third). Growth check: assumed 2% / 4% / 6% for the operating businesses against 0.7% supported by 2025/26 reinvestment × return on capital (8.3%); base and bull are kept above it because 2025/26 reinvestment was unusually low after a heavy 2024/25 and this half has already put about Rs 5bn into stock, and the DCF charges growth ÷ return on capital in reinvestment every year. All methods use the same 19.8% cost of equity (WACC 14.9% in the DCF).",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 1.12)",
+        "bear": "21.3%",
+        "base": "19.8%",
+        "bull": "18.3%"
+      },
+      {
+        "label": "WACC",
+        "bear": "15.8%",
+        "base": "14.9%",
+        "bull": "13.9%"
+      },
+      {
+        "label": "Operating cash before interest after maintenance capex, start",
+        "bear": "Rs 5.4bn",
+        "base": "Rs 6.4bn",
+        "bull": "Rs 7.0bn"
+      },
+      {
+        "label": "After-tax operating profit, start (excl. associates)",
+        "bear": "Rs 6.0bn",
+        "base": "Rs 6.7bn",
+        "bull": "Rs 7.0bn"
+      },
+      {
+        "label": "Growth: five years, then long-term",
+        "bear": "2%, then 3%",
+        "base": "4%, then 4%",
+        "bull": "6%, then 5%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "8%",
+        "base": "9%",
+        "bull": "11%"
+      },
+      {
+        "label": "Associates (LB Finance, Delmege) per share",
+        "bear": "Rs 17.7 (book −15%)",
+        "base": "Rs 20.8 (book)",
+        "bull": "Rs 22.8 (LB Finance at market)"
+      },
+      {
+        "label": "ROE path over ten years",
+        "bear": "12% → 12%",
+        "base": "13.5% → 13.5%",
+        "bull": "14.5% → 15%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "6.40 × 4.0",
+        "base": "6.90 × 4.5",
+        "bull": "7.40 × 5.2"
+      }
+    ],
+    "averages": {
+      "bear": 21.87,
+      "base": 27.15,
+      "bull": 35.48
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.12 (provisional). Cost of debt 9.26%, tax 29% (on profit excluding associates), debt weight 37.3%. Start cash: after-tax operating profit (trailing Rs 9.42bn operating profit × 71% = Rs 6.7bn) plus depreciation Rs 3.37bn less maintenance capex Rs 3.93 / 3.65 / 3.37bn (calculator range); the calculator's 2025/26 figure (Rs 7.6–8.2bn) was not used because that year's cash flow was lifted by higher payables. Owners' share of the operating businesses 68% (minorities hold about a third: 35% of their book value, 30% of their profit). Long-run reinvestment = growth ÷ return on capital (3/8 = 38%, 4/9 = 44%, 5/11 = 45%). Per-share figures use 1,107.9mn shares."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "18.3%",
+      "19.8%",
+      "21.3%"
+    ],
+    "columns": [
+      "12%",
+      "13.5%",
+      "15%"
+    ],
+    "values": [
+      [
+        26.2,
+        30.3,
+        34.5
+      ],
+      [
+        23.1,
+        26.6,
+        30.1
+      ],
+      [
+        20.5,
+        23.6,
+        26.6
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even at an 18.3% cost of equity and a 15% long-run ROE, residual income gives about Rs 34.5, well below Rs 48.10. The price implies a cost of equity of about 14%, or an ROE near 18%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 27.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 23.1
+      },
+      {
+        "shares": 150,
+        "maxPrice": 20.4
+      }
+    ],
+    "averagePrice": 23.93,
+    "totalCost": 11965,
+    "note": "About Rs 11,970 in total, against Rs 24,050 at Rs 48.10.",
+    "realism": "Not realistic in the near term. Rs 27.20 needs the price to fall by 43%; the lowest price in the last two years was Rs 28.00 (September 2024), and it has traded Rs 39.70–54.00 since April 2025. Only a market fall like 2022, a sharp drop in LB Finance's profit, or a lower beta after January's refresh would bring the levels together."
+  },
+  "changeMyView": {
+    "higher": [
+      "A lower beta once Damodaran's emerging-markets figures and three local 5-year betas can be checked (the one local 5-year beta found is 0.32).",
+      "Return on capital in the operating businesses above 12%: stock coming down and gross margin holding above 35%.",
+      "Net debt back towards March's Rs 21.6bn as the seasonal stock build unwinds.",
+      "LB Finance keeping ROE above 20% and paying more of its profit out.",
+      "Lower bond yields or a smaller Sri Lanka default spread."
+    ],
+    "lower": [
+      "Housing and construction demand slowing, or cheap tile imports.",
+      "Energy and gas costs squeezing margins.",
+      "Stock and borrowings rising further (finance costs already +32% in the September quarter).",
+      "Paying about Rs 2.75bn for RCL's share of the Lanka Walltiles rights issue without a clear return.",
+      "A downturn in LB Finance's loan book."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, the price is a web quote rather than the CSE close, and the beta is provisional, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Royal Ceramics Lanka PLC (RCL.N0000, 'Rocell') is Sri Lanka's largest tile maker, with bathware, aluminium (Swisstek) and packaging businesses, mostly held through 55%-owned Lanka Walltiles, and a 26.08% stake in LB Finance. That stake matters more than it looks: LB Finance earned Rs 3.64bn of the group's Rs 6.97bn owners' profit last year (52%). Year to March 2026 was a record: revenue Rs 68.1bn (+14%), EPS Rs 6.29 (Rs 4.56), dividends Rs 2.00. The first half of this year continued it: EPS Rs 3.00 against Rs 2.41, with gross margin up to 35.8%, though the September quarter was flat (Rs 1.38 against Rs 1.37) as finance costs rose. At Rs 48.10 (12 November 2026, web quote; the CSE close wasn't available) the share is 7.0x trailing earnings and 0.93x NAV of Rs 51.91, which looks cheap. But the operating businesses earn only about 8–9% on the capital tied up in them, well below the 14.9% WACC that a beta of 1.12 gives, and owners' ROE is 13–14% even with LB Finance. On a 19.8% cost of equity the four methods give a fair value of about Rs 27.20, so the price is about 77% above it. I'd buy at up to about Rs 23.10 and treat under Rs 20.40 as a strong buy. The business passes 2 of the 4 tests (debt and steady profit; it fails on returns and on cash, with operating cash flow of −Rs 5.9bn this half-year), so it goes in category 3, avoid for now. The beta is provisional and the biggest uncertainty: the market's own 5-year beta is 0.32, and at a beta of 0.8 fair value would be roughly 30% higher, still well below the price.\n\nPrice and key figures\nPrice: Rs 48.10, last close on 12 November 2026 (Fiscal.ai, via web search). The CSE site couldn't be reached from this run and the share isn't yet in the site's daily price file, so check the price live; Rocell's investor page showed a later close of Rs 47.50 (undated). Trading ranges: Rs 39.70–54.00 in the year to March 2026 (closed Rs 43.00); Rs 42.60–50.00 in the June quarter; Rs 41.90–49.90 in the September quarter (Rs 45.40 at 30 September). Market value about Rs 53bn (1,107.9mn shares).\nYear to March 2026 (audited, group): revenue Rs 68.10bn (+14%): tiles Rs 41.07bn, aluminium Rs 12.14bn, packaging Rs 9.65bn, bathware Rs 5.15bn. Gross margin 33.7% (32.0%). Operating profit of the businesses, excluding associates, Rs 8.82bn (Rs 7.30bn). Share of associates Rs 3.93bn (LB Finance Rs 3.64bn, +29%; Delmege Rs 0.29bn). Finance costs Rs 2.64bn. Profit after tax Rs 8.27bn, of which owners Rs 6.97bn (+38%), EPS Rs 6.29. Owners' ROE 13.4% on average equity (the report gives 11.3% on equity including minorities). Dividends Rs 2.00 for the year (interim Rs 1.00 and final Rs 1.00), 32% of profit.\nSix months to 30 September 2026 (unaudited): revenue Rs 33.11bn (+9%; gross revenue +13%), gross profit Rs 11.85bn (+22%), associates Rs 2.00bn (+22%), profit to owners Rs 3.32bn (+24%), EPS Rs 3.00 (Rs 2.41). September quarter: revenue +3.6%, gross profit +16%, but distribution costs +23% and finance costs +32%, so EPS was flat at Rs 1.38. Tiles profit after tax +32% in the half; bathware Rs 0.12bn (from Rs 0.01bn); aluminium +10%; packaging −53%.\nCash and debt: operating cash flow Rs 9.64bn in 2025/26 after only Rs 0.33bn in 2024/25 (Rs 4.6bn into stock), and −Rs 5.87bn in this half-year (stock up Rs 5.0bn, payables and other liabilities down Rs 3.6bn). Net debt (borrowings and leases less cash) Rs 21.6bn in March, Rs 31.7bn in September: 0.55x owners' equity, about 2.5x operating EBITDA. Capex Rs 3.9bn in 2025/26 against depreciation and amortisation Rs 3.4bn, so mostly maintenance; Rs 1.8bn in the half.\nAfter the half-year: Lanka Walltiles (55% owned) plans a Rs 5bn rights issue at Rs 39 (8 for 17), then a merger with its plantation subsidiary. Following its rights would cost RCL roughly Rs 2.75bn, which isn't in the figures yet.\n\nHow to read the group\nTwo very different things sit in one share. (1) An industrial group with strong brands and the leading tile market share, but a lot of capital tied up in plant, revalued land and slow-moving stock (Rs 37.6bn of inventory at September, more than half of annual revenue). After tax it earns about 8–9% on that capital (after-tax operating profit Rs 6.3bn on about Rs 75bn of equity and net debt). (2) A 26% stake in LB Finance, a high-return finance company whose profit RCL books but mostly doesn't receive in cash (dividends Rs 0.80bn against a Rs 3.64bn share of profit). Group EPS therefore overstates the cash owners can be paid, and the P/E of 7x is lower than it looks.\n\nRequired return\nCost of equity = risk-free 8.24% (12.24% 10-year bond less a 4.0% default spread) + beta 1.12 × (4.2% mature premium + 6.08% country premium) = 19.8%; bear 21.3%, bull 18.3%. Beta 1.12 (provisional) weights a relevered building-materials beta (0.90 unlevered → 1.28 at net debt 0.59x market value) by the operating businesses' 48% share of owners' profit, and a finance-company beta of 0.97 by LB Finance's 52%. Damodaran's emerging-markets file couldn't be opened, so both are web-search stand-ins; only one local 5-year beta was found (0.32). Cost of debt 9.26% (interest paid Rs 2.65bn ÷ average borrowings and leases Rs 28.6bn), tax 29% (on profit excluding associates), debt weight 37.3%: WACC 14.9% (bear 15.8%, bull 13.9%).\n\nValuation (Rs per share; bear / base / bull, weighted 30 / 50 / 20)\n- Sum of the parts (operating DCF + associates): 17.66 / 21.39 / 30.52 → 22.10\n- P/E: 25.65 / 30.82 / 38.26 → 30.76\n- Justified price to book: 24.00 / 29.81 / 37.98 → 29.70\n- Residual income: 20.15 / 26.58 / 35.16 → 26.37\nScenario averages: 21.87 / 27.15 / 35.48 → fair value Rs 27.23, rounded to Rs 27.20. Buy price Rs 23.10 (15% below), strong buy Rs 20.40 (25% below).\nThe DCF is the harshest because the operating businesses earn less than their 14.9% WACC: at a 9% return on new capital, growth uses more value than it creates, and the firm value of about Rs 33bn barely covers the September net debt of Rs 31.7bn (which is seasonally high; at March's Rs 21.6bn the base case would be about Rs 9 a share higher before minorities). The book-based methods give more credit to the land and the LB Finance stake. The price of Rs 48.10 implies a cost of equity of about 14%, barely above the bond yield, or a long-run ROE of about 18%, which the group has not shown.\nGrowth check: assumed 2% / 4% / 6% for the operating businesses against 0.7% supported by 2025/26 reinvestment (8.4% of after-tax operating profit) × return on capital (8.3%). Base and bull are kept above it because 2025/26 reinvestment was unusually low after a heavy 2024/25 (capex Rs 4.3bn against depreciation Rs 2.9bn, and Rs 5.2bn into working capital) and this half-year has put about Rs 5bn more into stock; revenue grew 14% last year on existing capacity; and the DCF charges growth ÷ return on capital in reinvestment every year, so the extra growth adds almost no value. Profit kept × ROE gives 9.1%, but much of that is LB Finance's retained profit.\nEarnings run-rate: last 12 months EPS Rs 6.88; the base case (Rs 6.90 for the year to March 2027) is level with it.\nDividends: Rs 2.00 for 2025/26 is a 4.2% yield. Cash after maintenance capex covered owners' dividends 3.4x last year, but not in 2024/25 or this half-year. A dividend model isn't used as a method (payout about a third).\nRatio checks: cost of equity 19.8% is inside the 12–22% range; WACC below it; maintenance capex 1.08x depreciation; net debt/EBITDA about 1.8x (March) to 2.5x (September), under 3x; long-run growth below the bond yield and WACC. ROE below 15% fails the returns test.\n\nBusiness tests: 2 of 4 (weak) → category 3, avoid for now\n- Returns: fail. Owners' ROE 13.4% in 2025/26 and about 14% over the last 12 months (reported 11.3% and 9.3% on total equity), and over half of profit is LB Finance's.\n- Debt: pass. Net debt Rs 31.7bn is 0.55x owners' equity at September (0.39x in March); interest cover 5x.\n- Steady profit: pass, with a caveat. Profit in both group years read, and the parent company made a profit in each of the last ten years; the group's own figures before 2024/25 weren't in the reports read.\n- Cash: fail. Operating cash flow Rs 0.33bn (2024/25), Rs 9.64bn (2025/26) and −Rs 5.87bn (half-year): about Rs 4.1bn over two and a half years against roughly Rs 9bn of operating-business profit, because stock keeps growing.\n\nBuy plan for 500 shares\n200 shares up to Rs 27.20, 150 up to Rs 23.10, 150 up to Rs 20.40: average about Rs 23.90, Rs 11,970 in total (Rs 24,050 at today's price). Not realistic soon: the lowest price in the last two years was Rs 28.00 (September 2024), and the share has held Rs 39.70–54.00 since April 2025. Only a market fall like 2022, a sharp drop in LB Finance's profit, or a lower beta in January would bring the levels together.\n\nWhat would change the view\nHigher: a lower beta once Damodaran's emerging-markets figures and three local 5-year betas can be checked; return on capital in the operating businesses rising above 12% (stock coming down, margins holding at 35%+); net debt falling back towards March's Rs 21.6bn; LB Finance keeping ROE above 20% and paying more out; lower bond yields.\nLower: housing and construction demand slowing; gas and energy costs or cheap tile imports squeezing margins; stock and debt rising further; RCL paying about Rs 2.75bn for its share of the Lanka Walltiles rights issue without a clear return; a downturn in LB Finance's loan book.\n\nUncertain or missing\n- Price: web quote (Fiscal.ai, 12 Nov 2026), not the CSE close.\n- Beta: provisional (stand-ins, one local beta).\n- LB Finance's market value: the latest found is from early August 2026 (about Rs 87.7bn); used only in the bull case.\n- 2024/25 capex booked, group figures before 2024/25, and the interim split of leases from borrowings weren't available.\n- No R&D disclosure."
+}

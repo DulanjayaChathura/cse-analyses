@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 1,
+  "ticker": "RCL.N0000",
+  "localFolder": null,
+  "updated": "2026-11-16",
+  "reportsRead": [
+    {
+      "file": "reports/RCL.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-16",
+      "note": "337 PDF pages; printed page = PDF page − 2. Used: financial highlights (p. 15), financial review (pp. 88–97), statements (pp. 216–223), notes 3, 6, 15, 27, 28, 30, 39 and the company ten-year summary (p. 314). FY 2025 figures from the comparatives."
+    },
+    {
+      "file": "reports/RCL.N0000/2026-08-07_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-16",
+      "note": null
+    },
+    {
+      "file": "reports/RCL.N0000/2026-11-10_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-16",
+      "note": null
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 59.987,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Group, comparative"
+        },
+        "grossProfit": {
+          "value": 19.167,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)"
+        },
+        "grossMarginPct": {
+          "value": 32.0,
+          "unit": "%",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Calculated: 19.167 ÷ 59.987"
+        },
+        "operatingProfit": {
+          "value": 7.301,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Profit from the operating businesses before finance costs and tax, excluding the share of associates: profit before tax 8.256 + finance cost 2.269 − finance income 0.189 − share of associates 3.035"
+        },
+        "shareOfAssociates": {
+          "value": 3.035,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "LB Finance 2.832 + Delmege 0.202 (note 6.3, p. 255)"
+        },
+        "netProfit": {
+          "value": 5.054,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Attributable to owners; profit for the year 6.051 incl. minorities"
+        },
+        "eps": {
+          "value": 4.56,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Group basic EPS; 4.88 from continuing operations"
+        },
+        "dividendPerShare": {
+          "value": 1.6,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, note 27 (p. 287)",
+          "note": "For 2024/25: interim Rs 1.00 + final Rs 0.60 (the final paid in 2025/26)"
+        },
+        "navPerShare": {
+          "value": 43.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, financial highlights (p. 15)"
+        },
+        "roe": {
+          "value": 9.3,
+          "unit": "%",
+          "source": "Annual Report 2025/26, financial review (p. 95)",
+          "note": "As reported (profit after tax ÷ total equity incl. minorities)"
+        },
+        "operatingCashFlow": {
+          "value": 0.331,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Inventories up 4.63bn"
+        },
+        "capexPaid": {
+          "value": 4.331,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "PPE 4.196 + intangibles 0.135"
+        },
+        "depreciation": {
+          "value": 2.858,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "PPE 2.466 + right-of-use 0.345 + intangibles 0.047"
+        },
+        "workingCapitalChange": {
+          "value": 5.242,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Inventories +4.631, receivables +1.840, other non-financial assets −1.061, payables −0.282 as a use, other current liabilities −0.424 etc."
+        },
+        "acquisitions": {
+          "value": 0.059,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "Net cash outflow on acquiring a subsidiary"
+        },
+        "taxRate": {
+          "value": 35.5,
+          "unit": "%",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Tax 1.855 ÷ profit before tax excluding associates (8.256 − 3.035); associates' profit is already after their tax"
+        },
+        "totalEquity": {
+          "value": 48.652,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)",
+          "note": "Attributable to owners; 65.039 with minorities 16.387"
+        },
+        "minorityInterest": {
+          "value": 16.387,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)"
+        },
+        "interestPaid": {
+          "value": 2.29,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Finance costs paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 29.164,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15 (p. 266)",
+          "note": "Long-term loans 10.746 + short-term loans 15.502 + overdrafts 2.916"
+        },
+        "leaseLiabilities": {
+          "value": 1.515,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15 (p. 266)"
+        },
+        "cash": {
+          "value": 3.772,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)"
+        },
+        "netDebt": {
+          "value": 26.907,
+          "unit": "Rs bn",
+          "source": "Worked out from Annual Report 2025/26, note 15 (p. 266) and p. 216",
+          "note": "Borrowings and leases 30.679 − cash 3.772"
+        },
+        "dividendsPaid": {
+          "value": 2.136,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "To owners; 0.582 more to minorities"
+        },
+        "sharesOutstanding": {
+          "value": 1107.894,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, note 27 (p. 287)"
+        },
+        "capexBooked": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 3 (pp. 240–242)",
+          "note": "2024/25 asset-note additions not read (only the 2025/26 movement table was extracted)"
+        },
+        "contractedCapex": {
+          "value": 0.51,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 30.1 (p. 291)"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 68.096,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Group; tiles 41.07, aluminium 12.14, packaging 9.65, sanitaryware 5.15 (segment note 28, p. 288)"
+        },
+        "grossProfit": {
+          "value": 22.924,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)"
+        },
+        "grossMarginPct": {
+          "value": 33.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Calculated: 22.924 ÷ 68.096"
+        },
+        "operatingProfit": {
+          "value": 8.817,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Operating businesses only, excluding associates: profit before tax 10.302 + finance cost 2.643 − finance income 0.195 − share of associates 3.933. The report's EBIT of 12.75bn (p. 15) includes associates"
+        },
+        "shareOfAssociates": {
+          "value": 3.933,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "LB Finance 3.644 + Delmege 0.289 (note 6.3, p. 255); dividends received from them 0.835"
+        },
+        "ebitda": {
+          "value": 15.707,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, financial highlights (p. 15)",
+          "note": "Includes associates"
+        },
+        "netProfit": {
+          "value": 6.971,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Attributable to owners; profit for the year 8.274 incl. minorities 1.303; discontinued operations −0.180"
+        },
+        "eps": {
+          "value": 6.29,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Group basic EPS; 6.45 from continuing operations"
+        },
+        "dividendPerShare": {
+          "value": 2.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, financial highlights (p. 15)",
+          "note": "For 2025/26: interim Rs 1.00 (paid in the year) + final Rs 1.00 (booked in H1 2026/27, Rs 1,107.9mn). Note 27 (p. 287) shows Rs 1.60 paid in the year"
+        },
+        "navPerShare": {
+          "value": 49.86,
+          "unit": "Rs",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), statement of financial position (p. 1)",
+          "note": "Group, 31 March 2026 (highlights round to 49.9)"
+        },
+        "roe": {
+          "value": 13.4,
+          "unit": "%",
+          "source": "Calculated from Annual Report 2025/26, pp. 216 and 218",
+          "note": "Owners' profit 6.971 ÷ average owners' equity (48.652 + 55.235) ÷ 2. The report gives 11.33% on total equity incl. minorities (p. 95)"
+        },
+        "peYearEnd": {
+          "value": 6.8,
+          "unit": "x",
+          "source": "Annual Report 2025/26, financial highlights (p. 15)",
+          "note": "At Rs 43.00"
+        },
+        "operatingCashFlow": {
+          "value": 9.639,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Helped by payables +1.64bn and other current liabilities +2.03bn"
+        },
+        "capexPaid": {
+          "value": 3.884,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "PPE 3.853 + intangibles 0.032"
+        },
+        "capexBooked": {
+          "value": 3.933,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 3.6 (p. 241)",
+          "note": "PPE additions 5.921 + capital work in progress additions 9.422 − transfers out of work in progress 11.442 = 3.901, plus intangibles paid 0.032 (intangible additions note not read)"
+        },
+        "freeCashFlow": {
+          "value": 5.755,
+          "unit": "Rs bn",
+          "source": "Calculated",
+          "note": "Operating cash flow less capex paid"
+        },
+        "depreciation": {
+          "value": 3.371,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "PPE 2.908 + right-of-use 0.413 + intangibles 0.050"
+        },
+        "impairment": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 3 (pp. 241–242)",
+          "note": "No impairment charge found in the PPE note"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, financial review (p. 96) and note 30.1 (p. 291)",
+          "note": "Not disclosed: capex of Rs 3.85bn (Rs 2.5bn tiles, Rs 1.0bn packaging) without a growth/maintenance split; capital commitments only Rs 0.21bn"
+        },
+        "workingCapitalChange": {
+          "value": -0.039,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Inventories +1.552, receivables +1.040, other assets +0.029, against payables +1.637 and other current liabilities +2.032: roughly flat"
+        },
+        "acquisitions": {
+          "value": 0.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "None; Valley View Ceramics (USA) wound up, Lanka Swisstek held for sale"
+        },
+        "taxRate": {
+          "value": 29.0,
+          "unit": "%",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 218)",
+          "note": "Tax 1.849 ÷ profit before tax excluding associates (10.302 − 3.933). The report's 18% (p. 95) divides by profit including associates' after-tax share"
+        },
+        "totalEquity": {
+          "value": 55.235,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)",
+          "note": "Attributable to owners; 73.039 with minorities 17.804"
+        },
+        "minorityInterest": {
+          "value": 17.804,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)"
+        },
+        "investmentsInAssociates": {
+          "value": 21.746,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 6.2 (p. 255)",
+          "note": "LB Finance PLC 26.08%: 19.413; Delmege Ltd 21%: 2.333"
+        },
+        "interestPaid": {
+          "value": 2.652,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 222)",
+          "note": "Finance costs paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 24.94,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15 (p. 266)",
+          "note": "Long-term loans 9.400 + short-term loans 14.074 + overdrafts 1.466"
+        },
+        "leaseLiabilities": {
+          "value": 1.65,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15 (p. 266)"
+        },
+        "cash": {
+          "value": 4.965,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 216)"
+        },
+        "netDebt": {
+          "value": 21.625,
+          "unit": "Rs bn",
+          "source": "Worked out from Annual Report 2025/26, note 15 (p. 266) and p. 216",
+          "note": "Borrowings and leases 26.589 − cash 4.965"
+        },
+        "debtToEquity": {
+          "value": 0.39,
+          "unit": "x",
+          "source": "Calculated",
+          "note": "Net debt ÷ owners' equity"
+        },
+        "interestCover": {
+          "value": 5.0,
+          "unit": "x",
+          "source": "Annual Report 2025/26, financial highlights (p. 15)"
+        },
+        "dividendsPaid": {
+          "value": 1.759,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, statement of cash flow (p. 223)",
+          "note": "To owners; 0.274 more to minorities"
+        },
+        "sharesOutstanding": {
+          "value": 1107.894,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, note 27 (p. 287)"
+        },
+        "contractedCapex": {
+          "value": 0.212,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 30.1 (p. 291)"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 7 (p. 255)",
+          "note": "No capitalised development costs (intangibles are goodwill and software)"
+        },
+        "segmentProfitAfterTax": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, segment note 28 (p. 288)",
+          "note": "Continuing operations, before minorities: tiles 3.089, aluminium 0.636, packaging 0.572, sanitaryware 0.172; LB Finance share 3.644; other (incl. Delmege) the rest of 8.540"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 16.182,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 2",
+          "note": "Quarter; +15%"
+        },
+        "grossProfit": {
+          "value": 5.643,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 2",
+          "note": "Quarter"
+        },
+        "shareOfAssociates": {
+          "value": 1.022,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 2",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 1.798,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 2",
+          "note": "Quarter, attributable to owners; +56%"
+        },
+        "eps": {
+          "value": 1.62,
+          "unit": "Rs",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 2",
+          "note": "Quarter (Rs 1.04 a year earlier)"
+        },
+        "navPerShare": {
+          "value": 50.56,
+          "unit": "Rs",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 1"
+        },
+        "operatingCashFlow": {
+          "value": -1.968,
+          "unit": "Rs bn",
+          "source": "Interim Q1 FY2027 (to 30 Jun 2026), p. 5",
+          "note": "Quarter"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 16.931,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Quarter; +3.6%"
+        },
+        "grossProfit": {
+          "value": 6.203,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Quarter; +16%"
+        },
+        "shareOfAssociates": {
+          "value": 0.977,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 1.525,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Quarter, owners; flat (1.521). Finance expenses +32% to 0.874"
+        },
+        "eps": {
+          "value": 1.38,
+          "unit": "Rs",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Quarter (Rs 1.37)"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 33.113,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months; +9% (gross revenue +13%)"
+        },
+        "grossProfit": {
+          "value": 11.846,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months; +22%"
+        },
+        "grossMarginPct": {
+          "value": 35.8,
+          "unit": "%",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Calculated"
+        },
+        "operatingProfit": {
+          "value": 4.059,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months, excluding associates: PBT 4.636 + finance expenses 1.577 − finance income 0.155 − associates 1.999 (3.458 a year earlier)"
+        },
+        "shareOfAssociates": {
+          "value": 1.999,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months; LB Finance 1.914 (segment note, p. 9)"
+        },
+        "netProfit": {
+          "value": 3.323,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months, attributable to owners; +24%"
+        },
+        "eps": {
+          "value": 3.0,
+          "unit": "Rs",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 2",
+          "note": "Six months (Rs 2.41); September quarter Rs 1.38 (Rs 1.37)"
+        },
+        "navPerShare": {
+          "value": 51.91,
+          "unit": "Rs",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 1",
+          "note": "30 September 2026"
+        },
+        "totalEquity": {
+          "value": 57.514,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 1",
+          "note": "Owners; minorities 18.251"
+        },
+        "operatingCashFlow": {
+          "value": -5.871,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 5",
+          "note": "Six months: inventories +4.99bn, payables −1.64bn, other current liabilities −1.93bn"
+        },
+        "capexPaid": {
+          "value": 1.783,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 5",
+          "note": "PPE 1.774 + intangibles 0.009"
+        },
+        "depreciation": {
+          "value": 1.814,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 5",
+          "note": "PPE 1.572 + right-of-use 0.225 + intangibles 0.018"
+        },
+        "interestPaid": {
+          "value": 1.565,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 5",
+          "note": "Six months",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 33.651,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 1",
+          "note": "Interest-bearing loans and borrowings, non-current 6.638 + current 27.013 (includes leases; not split in the interim)"
+        },
+        "cash": {
+          "value": 1.981,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 1",
+          "note": "Plus short-term investments 1.739 (other financial assets)"
+        },
+        "netDebt": {
+          "value": 31.67,
+          "unit": "Rs bn",
+          "source": "Worked out from Interim Q2 FY2027 (to 30 Sep 2026), p. 1",
+          "note": "Borrowings incl. leases 33.651 − cash 1.981 (short-term investments of 1.739 not deducted). Up from 21.6bn in March on a seasonal stock build and the final dividend"
+        },
+        "investmentsInAssociates": {
+          "value": 23.022,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 1"
+        },
+        "sharesOutstanding": {
+          "value": 1107.894,
+          "unit": "mn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), note 3 (p. 6)"
+        }
+      }
+    },
+    {
+      "period": "12 months to Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 6.88,
+          "unit": "Rs",
+          "source": "Calculated: Annual Report 2025/26 EPS 6.29 + H1 FY2027 3.00 − H1 FY2026 2.41",
+          "note": "Last 12 months to 30 Sep 2026"
+        },
+        "netProfit": {
+          "value": 7.621,
+          "unit": "Rs bn",
+          "source": "Calculated: 6.971 + 3.323 − 2.673",
+          "note": "Last 12 months, owners"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "1.12 (provisional)",
+      "reason": "8 steps, 16 Nov 2026. (1) Business: two parts. Building materials (tiles, bathware, aluminium, packaging) and a 26.08% stake in LB Finance PLC, a finance company. Weighted by their share of 2025/26 owners' profit (Annual Report 2025/26, pp. 218, 255): LB Finance Rs 3.64bn of Rs 6.97bn = 52%; the operating businesses (after minorities, incl. Delmege) 48%. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins from web-search extracts: Building Materials global unlevered, cash-corrected 0.90 (date not shown in the extract); Financial Svcs. (Non-bank & Insurance) US levered 0.97 (176 firms, apparently January 2026). (3) Building materials relevered with net debt Rs 31.67bn (30 Sep 2026) ÷ market value Rs 53.29bn (Rs 48.10 × 1,107.9mn shares) = 0.59 and 29% tax: 0.90 × (1 + 0.71 × 0.59) = 1.28. The finance stake uses the sector's levered beta without relevering, as the brief says for finance companies. Weighted: 0.48 × 1.28 + 0.52 × 0.97 = 1.12. (4) Local 5-year betas: only one found, StockAnalysis 0.32 (5Y, about February 2026, web-search extract; the page couldn't be opened). Fewer than the 3 sources the rule asks for, so step 4 can't be completed. (5) Higher of 1.12 and 0.32 = 1.12. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified local 5-year betas. The low local beta (0.32) suggests the market treats RCL as less risky than the sector figures imply; at a beta of 0.8 fair value would be roughly 30% higher on the book-based methods.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 21.3% / Base 19.8% / Bull 18.3%",
+      "reason": "From scripts/reinvestment.py (16 Nov 2026): 8.24% + 1.12 × (4.2% + 6.08%) = 19.8%, ±1.5 points.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 15.8% / Base 14.9% / Bull 13.9%",
+      "reason": "From scripts/reinvestment.py (16 Nov 2026): cost of debt 9.26% (interest paid 2.652 ÷ average borrowings and leases 28.63, FY 2026), tax 29%, debt weight 37.3% (net debt Rs 31.67bn at Sep 2026, market cap Rs 53.29bn at Rs 48.10).",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 2% / 4% / 6% (operating businesses); supported 0.7% (reinvestment rate 8.4% × return on capital 8.3%, FY 2026). Base 3.3 and bull 5.3 pts above: kept because FY 2026 reinvestment was unusually low after a heavy FY 2025 (capex 4.3bn vs depreciation 2.9bn, 5.2bn into working capital) and H1 FY2027 has already put about 5bn more into stock; revenue grew 14% in FY 2026 on existing capacity; and the DCF charges growth ÷ return on capital (8–11%) in reinvestment every year, so growth adds almost no value. Profit kept × ROE gives 9.1%, but that includes LB Finance's retained profit.",
+      "reason": "From scripts/reinvestment.py on the FY 2026 figures.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Growth",
+      "value": "Bear 2% then 3% / Base 4% then 4% / Bull 6% then 5%",
+      "reason": "Operating businesses: five years, then long-run, below the 12.24% bond and WACC; long-run reinvestment 38% / 44% / 45% of after-tax operating profit.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Return on new capital",
+      "value": "Bear 8% / Base 9% / Bull 11%",
+      "reason": "FY 2026 return on capital 8.3% (calculator); trailing about 8.6%.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Cash after maintenance capex (start)",
+      "value": "Bear Rs 5.4bn / Base Rs 6.4bn / Bull Rs 7.0bn",
+      "reason": "Consolidated operating businesses: after-tax operating profit 6.0 / 6.7 / 7.0 + depreciation 3.37 − maintenance 3.93 / 3.65 / 3.37. The calculator's FY 2026 cash figure (7.6–8.2) was lifted by higher payables and other liabilities.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Bear Rs 6.0bn / Base Rs 6.7bn / Bull Rs 7.0bn",
+      "reason": "Trailing operating profit excluding associates Rs 9.42bn × (1 − 29%) = 6.69.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "calculator range: Rs 3.93bn / 3.65bn / 3.37bn",
+      "reason": "No company split. Bear = capex booked FY 2026; bull = depreciation and amortisation; base = middle.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Owners' share of operating businesses",
+      "value": "68%",
+      "reason": "Minorities: 17.80 of operating net assets 51.29 (35%) by book, 1.30 of 4.34 (30%) of profit, FY 2026.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Associates per share",
+      "value": "Rs 17.7 / 20.8 / 22.8",
+      "reason": "Book Rs 23.02bn at Sep 2026 (−15% in bear); bull LB Finance at about Rs 87.7bn market value (early August 2026 web figure) × 26.08% + Delmege at book.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "12% / 13.5% / 15%",
+      "reason": "Owners' ROE 13.4% FY 2026, about 14% trailing; 9–11% reported on total equity.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "6.40 × 4.0 / 6.90 × 4.5 / 7.40 × 5.2",
+      "reason": "H1 EPS Rs 3.00; H2 Rs 3.40 / 3.90 / 4.40 (last year 3.88). Justified forward P/E at the cost of equity. Base level with the Rs 6.88 run-rate.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Payout",
+      "value": "32% for five years",
+      "reason": "Rs 2.00 of Rs 6.29 for 2025/26.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Methods used",
+      "value": "Sum of the parts (operating DCF + associates), P/E, justified P/B, residual income",
+      "reason": "Over half of profit comes from an equity-accounted finance company, so the DCF covers only the operating businesses. Dividend model left out (payout a third).",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-16"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-16"
+    }
+  ],
+  "openQuestions": [
+    "Q3 results (to December 2026, due by mid-February 2027): does stock come down and operating cash flow turn positive?",
+    "Lanka Walltiles Rs 5bn rights issue (8 for 17 at Rs 39): does RCL take up its share (about Rs 2.75bn), and how is it funded?",
+    "Finance costs (+32% in the September quarter) and net debt (Rs 31.7bn at September): back towards Rs 22bn by March?",
+    "LB Finance's profit growth and dividends: over half of RCL's profit.",
+    "Gross margin above 35% and the packaging segment (profit −53% in H1).",
+    "Disposal of Lanka Swisstek (held for sale) and the Valley View wind-up.",
+    "Refresh the beta in January 2027 (Damodaran's emerging-markets file and three local 5-year betas); confirm the CSE close once the share is in the daily price file.",
+    "Read 2024/25 capex booked and group figures for 2021/22–2023/24 from an earlier annual report if one is downloaded."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-16",
+      "basedOn": "Annual Report 2025/26 and interims to 30 Jun and 30 Sep 2026 (CSE downloads)",
+      "summary": "Requested from Telegram (/add RCL.N0000). First analysis. Research record built from the three downloaded reports (FY 2025 and FY 2026 annual figures, reinvestment figures, Q1, Q2 and H1 FY2027). Beta 1.12 (provisional; Damodaran stand-ins from web search, one local 5-year beta of 0.32) gives cost of equity 19.8% and WACC 14.9%. Methods: sum of the parts (operating DCF at WACC less net debt, owners' 68%, plus associates at book) 22.1, P/E 30.8, justified P/B 29.7, residual income 26.4. Business tests 2 of 4 (fails returns and cash): category 3, avoid for now. Price Rs 48.10 is a web quote (Fiscal.ai, 12 Nov 2026), not the CSE close; LB Finance market value from early August 2026; 2024/25 capex booked and group figures before 2024/25 not available. Fair value Rs 27.20, buy Rs 23.10, strong buy Rs 20.40.",
+      "fairValue": 27.2,
+      "buyPrice": 23.1,
+      "strongBuyPrice": 20.4,
+      "priceAtTime": 48.1,
+      "archive": null
+    }
+  ]
+}
