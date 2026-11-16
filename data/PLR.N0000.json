@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PLR.N0000",
+  "analysisDate": "2026-11-16",
+  "company": {
+    "name": "Prime Lands Residencies PLC",
+    "sector": "Real estate (apartment and land development)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "PLR.N0000",
+      "label": "Voting"
+    }
+  ],
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26",
+      "Interim financial statements to 30 June 2026",
+      "Interim financial statements to 30 September 2026"
+    ]
+  },
+  "price": {
+    "value": 40.5,
+    "date": "2026-11-13",
+    "source": "Web snapshot (TradingView; StockAnalysis market cap Rs 37.97bn ÷ 937.5mn shares), not the CSE close",
+    "note": "The CSE close wasn't available to this run. April–September 2026 range Rs 38.40–49.00 (interim reports); closed March 2026 at Rs 46.80 and March 2025 at Rs 11.90; high Rs 60.70 in February 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A sound, low-debt developer, but the price is about four times what an 18% ROE supports at a 21% required return",
+    "text": "Prime Lands Residencies (PLR) is a well-run, growing apartment developer with almost no net debt, but at Rs 40.50 the share is priced far above what its profits support. It earns a return on equity of about 18%, while the return a shareholder should demand from it works out at 21.3% (beta 1.27, provisional). On that basis five methods put fair value at about Rs 10.50, below book value of Rs 12.50 plus the profit still to come on flats being built (about Rs 16.70). The price is 3.2 times book and 17.6 times trailing earnings, so the market is paying for growth from four new projects the company values at over Rs 100bn. Even with the sector's much lower beta (0.57), fair value would be only about Rs 18.50. I'd buy at up to about Rs 8.90 and treat under Rs 7.90 as a strong buy. A 'good' business (3 of 4 tests; profit hasn't turned into cash while it builds): watch list."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Good returns and very little net debt; profit is lumpy and has been going into land and construction rather than cash.",
+    "assessed": "2026-11-16",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "18%",
+        "note": "25%, 36%, 12%, 12%, 18% over 2021/22–2025/26 (average 21%); 18.4% over the last 12 months. The two 12% years show how cyclical it is."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.05x equity",
+        "note": "Net debt Rs 0.61bn at September (Rs 3.67bn at March). Customer advances of Rs 15.4bn are owed in flats, not cash, unless projects fail."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Lumpy: Rs 1.13bn to Rs 3.35bn over five years. In 2025/26 a Rs 0.12bn property revaluation and a Rs 0.12bn exchange gain were about 10% of pre-tax profit."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Operating cash −Rs 5.8bn (2025/26)",
+        "note": "Over 2024/25 to September 2026, operating cash was Rs 0.6bn against Rs 4.3bn of profit; the rest went into land and construction for new launches. Dividends (36% of profit) were paid throughout."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.27,
+    "betaBasis": "Provisional. Higher of (a) Damodaran's US Real Estate (Development) unlevered beta 0.56 (January 2026, web-search extract; his emerging-markets file couldn't be read) relevered at net debt ÷ market value 0.016: 0.57; and (b) the only local beta found, Simply Wall St 1.27 (period not stated). Fewer than three local sources. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 22.8,
+      "base": 21.3,
+      "bull": 19.8
+    },
+    "costOfDebt": 6.25,
+    "wacc": {
+      "bear": 22.5,
+      "base": 21.0,
+      "bull": 19.6
+    },
+    "debtWeight": 1.6,
+    "asOf": "2026-11-16",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 0.333bn ÷ average borrowings and leases Rs 5.32bn (Annual Report 2025/26, pp. 190–193, 213)",
+      "Weights: market cap Rs 37.97bn at Rs 40.50 (web snapshot 13 Nov 2026), net debt Rs 0.61bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.27 × (4.2% + 6.08%) = 21.3%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares, at the top end because of the single-source beta. The cost of debt (6.25%) is below the house range (bond − 4 points) because most loans were drawn late in 2025/26; the first half of 2026/27 suggests about 9%. With debt at 1.6% of value, WACC is almost the cost of equity."
+  },
+  "valuation": {
+    "fairValue": 10.5,
+    "buyPrice": 8.9,
+    "strongBuyPrice": 7.9,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 12.5,
+    "note": "Fair value weights the bear/base/bull averages of five methods (adjusted NAV, justified P/B, justified P/E, residual income, whole-company DCF) 30/50/20: Rs 7.88 / 10.54 / 14.47, giving Rs 10.53, rounded to Rs 10.50 (0.84x NAV). All use the cost of equity from the beta (21.3% base) or WACC (21.0%)."
+  },
+  "dividend": {
+    "perShare": 0.8,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, five-year summary (p. 251)",
+    "note": "Rs 750mn, declared 28 May 2026 and paid June 2026; Rs 0.60 for 2024/25"
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 12.5,
+      "unit": "Rs",
+      "note": "30 Sep 2026; flats and land held at cost"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 3.24,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 17.6,
+      "unit": "x",
+      "note": "Trailing EPS Rs 2.30"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 21.3,
+      "unit": "%",
+      "note": "Beta 1.27 (provisional); bear 22.8%, bull 19.8%"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 18,
+      "unit": "%",
+      "note": "2025/26; five-year average 21%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.0,
+      "unit": "%",
+      "note": "Rs 0.80 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 36,
+      "unit": "%"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 0.61,
+      "unit": "Rs bn",
+      "note": "30 Sep 2026; 0.05x equity"
+    },
+    {
+      "id": "advances",
+      "label": "Customer advances",
+      "value": 15.4,
+      "unit": "Rs bn",
+      "note": "Cash received for flats not yet recognised as sales"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 38.0,
+      "unit": "Rs bn",
+      "display": "~Rs 38bn",
+      "note": "75% held by Prime Lands (Pvt) Ltd"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 48% to Rs 7.60bn and operating profit 33% to Rs 1.47bn, but profit rose only 10% to Rs 1.03bn (EPS Rs 1.10 against Rs 1.00) as finance costs jumped to Rs 0.36bn from Rs 0.07bn. Gross margin 27.8% (31.3% a year earlier)."
+    },
+    {
+      "title": "Second quarter",
+      "text": "Revenue up 6% to Rs 3.01bn; profit down 31% to Rs 0.37bn (EPS Rs 0.40), with finance costs of Rs 0.16bn against Rs 0.03bn."
+    },
+    {
+      "title": "Cash and debt",
+      "text": "Operating cash flow Rs 4.15bn in the half, as building costs went to cost of sales and customer advances rose to Rs 15.4bn. Net debt fell from Rs 3.67bn in March to Rs 0.61bn."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Revenue Rs 11.03bn (up 34%; apartments Rs 9.69bn, land Rs 1.34bn), profit Rs 2.06bn (up 67%), EPS Rs 2.20, ROE 18%, NAV Rs 12.20. Stock of flats and land doubled to Rs 28.1bn as four projects with 1,201 units were launched. Dividend Rs 0.80."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.86,
+          3.57,
+          1.2,
+          1.31,
+          2.2,
+          2.3
+        ],
+        "notes": [
+          "Year to March",
+          "Boom year",
+          null,
+          null,
+          null,
+          "Trailing 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          25,
+          36,
+          12,
+          12,
+          18,
+          18.4
+        ],
+        "notes": [
+          "As reported",
+          "As reported",
+          "As reported",
+          "As reported",
+          "As reported",
+          "Trailing profit ÷ September equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          3.71,
+          2.24,
+          7.0,
+          9.08,
+          21.27,
+          17.6
+        ],
+        "notes": [
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Year-end",
+          "Trailing, at Rs 40.50"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          7.14,
+          10.01,
+          10.21,
+          10.6,
+          12.2,
+          12.5
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 12.50",
+      "reading": "Price 3.2x book. With the profit still to come on stock already built or bought, about Rs 16.70 (adjusted NAV)."
+    },
+    {
+      "method": "Return on equity",
+      "value": "18%",
+      "reading": "2025/26; 25%, 36%, 12%, 12% in the four years before. Below the 21.3% required return, so the earnings methods value the share below book."
+    },
+    {
+      "method": "P/E",
+      "value": "17.6x",
+      "reading": "On trailing EPS of Rs 2.30. Year-end P/E was 2–9x until 2025, then 21x in March 2026 after the share rose from Rs 11.90 to Rs 46.80. The justified forward P/E is about 4.4x."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.0% yield",
+      "reading": "Rs 0.80 for 2025/26, 36% of profit. A dividend model gives Rs 4.72 / 5.96 / 7.48; not averaged because most profit is kept."
+    },
+    {
+      "method": "Debt",
+      "value": "0.05x equity",
+      "reading": "Net debt Rs 0.61bn at September after Rs 6.4bn of loans in 2025/26 for land; Rs 15.4bn of customer advances fund most of the building."
+    },
+    {
+      "method": "Required return",
+      "value": "21.3%",
+      "reading": "Cost of equity from the beta (1.27, provisional): 8.24% + 1.27 × (4.2% + 6.08%). WACC 21.0%. At the sector's 0.57 beta it would be 14.1%."
+    }
+  ],
+  "models": [
+    {
+      "id": "adjnav",
+      "name": "Adjusted NAV (book plus profit still to come on stock)",
+      "bear": 15.11,
+      "base": 16.7,
+      "bull": 18.61,
+      "weighted": 16.61,
+      "comment": "NAV Rs 12.50 (30 Sep 2026) plus the after-tax profit on Rs 26.32bn of flats and land at cost: gross margin on sales 25% / 30% / 35%, selling and overheads 10% / 8% / 6% of sales, 30% tax, discounted two years at the cost of equity. Adds Rs 2.61 / 4.20 / 6.11 a share. Counts only stock already on the books, not the new launches still to be built."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 6.32,
+      "base": 9.8,
+      "bull": 14.65,
+      "weighted": 9.73,
+      "comment": "(ROE − g) ÷ (r − g) × NAV Rs 12.50: 0.51x / 0.78x / 1.17x, with long-run ROE 14% / 18% / 22% and growth 5% / 6% / 7%. Below book in the bear and base cases because ROE is under the 19.8–22.8% cost of equity."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method (justified P/E)",
+      "bear": 6.86,
+      "base": 9.59,
+      "bull": 13.32,
+      "weighted": 9.52,
+      "comment": "EPS to March 2027 Rs 1.90 / 2.20 / 2.50 × justified forward P/E 3.6x / 4.4x / 5.3x (payout 1 − g ÷ ROE, over r − g). Base EPS is 4% below the Rs 2.30 run-rate: second-half finance costs are now about Rs 0.16bn a quarter. The market's 17.6x implies far more growth than an 18% ROE supports at this required return."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 4.82,
+      "base": 8.11,
+      "bull": 13.23,
+      "weighted": 8.15,
+      "comment": "Book value Rs 12.50 plus profit earned above the required return; ROE 16%→12% / 19%→16% / 21%→20% over ten years, payout 35%, cost of equity 22.8% / 21.3% / 19.8%; after year ten the excess return grows at 5% / 6% / 7%."
+    },
+    {
+      "id": "dcf",
+      "name": "Whole-company DCF (WACC, less net debt)",
+      "bear": 6.29,
+      "base": 8.5,
+      "bull": 12.56,
+      "weighted": 8.65,
+      "comment": "After-tax operating profit Rs 1.80 / 2.05 / 2.30bn (start cash Rs 0.05bn less for maintenance capex), growing 3% / 7% / 10% for five years then 5% / 6% / 7%, less the land and construction each year's growth needs at a 12% / 16% / 20% return on capital, at WACC 22.5% / 21.0% / 19.6%, less net debt Rs 0.61bn. Value after year 5: 39% / 55% / 65%. Reported operating cash flow isn't used as the start: it swings with land buying (−Rs 5.8bn in 2025/26, +Rs 4.2bn in the half)."
+    }
+  ],
+  "modelsNote": "A developer's book value holds flats and land at cost, so an adjusted NAV (book plus the profit still to come on that stock) sits next to the earnings methods; together they put fair value at Rs 10.50. Growth check: assumed 3% / 7% / 10% against 11.5% supported by profit kept × ROE (64% × 18%); all below it. The capex-based figure (124%) isn't meaningful: 2025/26 reinvestment was Rs 8.1bn of land and construction, 412% of after-tax operating profit. Long-run growth (5–7%) stays below the 12.24% bond yield and needs a third of profit reinvested. Dividend model shown but not averaged (payout 36%). Every method is far below the price: at Rs 40.50 the market is valuing the four new projects (1,201 units, which the chairperson puts at over Rs 100bn of sales) and using a much lower required return.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 1.27)",
+        "bear": "22.8%",
+        "base": "21.3%",
+        "bull": "19.8%"
+      },
+      {
+        "label": "WACC",
+        "bear": "22.5%",
+        "base": "21.0%",
+        "bull": "19.6%"
+      },
+      {
+        "label": "Gross margin on stock (adjusted NAV)",
+        "bear": "25%",
+        "base": "30%",
+        "bull": "35%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "18%",
+        "bull": "22%"
+      },
+      {
+        "label": "Residual income ROE path",
+        "bear": "16% → 12%",
+        "base": "19% → 16%",
+        "bull": "21% → 20%"
+      },
+      {
+        "label": "EPS to March 2027 × justified P/E",
+        "bear": "1.90 × 3.6",
+        "base": "2.20 × 4.4",
+        "bull": "2.50 × 5.3"
+      },
+      {
+        "label": "Profit growth, next five years",
+        "bear": "3%",
+        "base": "7%",
+        "bull": "10%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Return on new capital (DCF)",
+        "bear": "12%",
+        "base": "16%",
+        "bull": "20%"
+      }
+    ],
+    "averages": {
+      "bear": 7.88,
+      "base": 10.54,
+      "bull": 14.47
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% 10-year bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.27 (provisional: the only local figure found; the sector beta relevered is 0.57). Long-term growth stays below the 12.24% bond yield. Net debt Rs 0.61bn and NAV Rs 12.50 at 30 September 2026; 937.5mn shares."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, base case, Rs per share",
+    "rowLabel": "Cost of equity (beta)",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "14.1% (beta 0.57)",
+      "17.7% (beta 0.92)",
+      "21.3% (beta 1.27)"
+    ],
+    "columns": [
+      "14%",
+      "18%",
+      "22%"
+    ],
+    "values": [
+      [
+        12.35,
+        18.52,
+        24.69
+      ],
+      [
+        8.55,
+        12.82,
+        17.09
+      ],
+      [
+        6.54,
+        9.8,
+        13.07
+      ]
+    ],
+    "base": {
+      "row": 2,
+      "column": 1
+    },
+    "note": "Long-term growth 6%, NAV Rs 12.50. Even at the sector beta (14.1% cost of equity), the Rs 40.50 price needs a long-run ROE of about 32%, a level reached only in the 2022/23 boom year."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 10.5
+      },
+      {
+        "shares": 150,
+        "maxPrice": 8.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 7.9
+      }
+    ],
+    "averagePrice": 9.24,
+    "totalCost": 4620,
+    "note": "About Rs 4,620 in total, against Rs 20,250 at Rs 40.50.",
+    "realism": "Not realistic soon. April–September 2026 the share traded between Rs 38.40 and Rs 49.00; it would need to fall about 74% to reach the first tier. It was at these levels (Rs 11.90) as recently as March 2025, so a reversal of the 2025 property rally would be needed."
+  },
+  "changeMyView": {
+    "higher": [
+      "Strong pre-sales of the four new launches, turning the Rs 100bn+ value the company claims into customer advances and reported profit.",
+      "Gross margins back towards 2025/26's 34.7%.",
+      "A verified lower beta: at 0.57 (the sector figure) fair value would be about Rs 18.50.",
+      "Lower interest rates cutting both the required return and finance costs.",
+      "A higher dividend payout once the land buying slows."
+    ],
+    "lower": [
+      "Finance costs rising faster than profit (Rs 0.16bn a quarter now, from Rs 0.03bn).",
+      "Slower sales or delays at The Colombo Border, J'adore Negombo or the new projects.",
+      "Rising construction costs or a weaker rupee squeezing margins on fixed-price flats.",
+      "Property prices falling or buyers' mortgage rates rising.",
+      "The 75% parent's interests differing from minority shareholders' (related-party construction, commissions and shared services)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the Annual Report 2025/26 and the interim reports to June and September 2026 (16 November 2026). The interim figures are unaudited, the beta is provisional and the price is a web snapshot, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Prime Lands Residencies (PLR) is a well-run, growing apartment developer with almost no net debt, but at Rs 40.50 the share is priced far above what its profits support. It earns a return on equity of about 18%, while the return a shareholder should demand from it works out at 21.3% (beta 1.27, provisional). On that basis five methods put fair value at about Rs 10.50, below book value of Rs 12.50 plus the profit still to come on flats being built (about Rs 16.70). The price is 3.2 times book and 17.6 times trailing earnings, so the market is paying for growth from four new projects the company values at over Rs 100bn. Even with the sector's much lower beta (0.57), fair value would be only about Rs 18.50. I'd buy at up to about Rs 8.90 and treat under Rs 7.90 as a strong buy. A 'good' business (3 of 4 tests; profit hasn't turned into cash while it builds): watch list.\n\nPrice and key figures\nPrice: Rs 40.50 (web snapshot, 13 November 2026; the CSE close wasn't available to this run, so please check it live). In April–September 2026 the share traded between Rs 38.40 and Rs 49.00. It closed March 2025 at Rs 11.90 and March 2026 at Rs 46.80, with a high of Rs 60.70 in February 2026. Market value about Rs 38bn; Prime Lands (Pvt) Ltd owns 75%.\nSix months to 30 September 2026 (unaudited): revenue up 48% to Rs 7.60bn, operating profit up 33% to Rs 1.47bn, profit up 10% to Rs 1.03bn (EPS Rs 1.10). Finance costs rose to Rs 0.36bn from Rs 0.07bn after Rs 6.4bn of loans were taken in 2025/26 to buy land. The second quarter alone was weaker: profit down 31% to Rs 0.37bn.\nYear to March 2026: revenue Rs 11.03bn, profit Rs 2.06bn, EPS Rs 2.20, ROE 18%, dividend Rs 0.80. NAV Rs 12.50 at September.\n\nThe business\nPLR buys land and builds apartments, mainly in and around Colombo, and sells land plots. Apartment revenue is recognised as building progresses (once a project is 25% built and 20% paid). In progress: The Colombo Border (three towers, 484 units), The Seasons (44) and J'adore Negombo (333), 22–58% complete and due between June 2027 and July 2028. Launched in 2025/26: The Golf (64), The Elizabeth (229), Mon Vie (349) and The Prime Colombo (559), due 2028–2030. Stock of flats and land at cost: Rs 26.3bn. Buyers had paid Rs 15.4bn in advance for flats not yet recognised as sales. Construction contracts signed: Rs 12.2bn.\n\nRequired return\nCost of equity 21.3% = 8.24% + 1.27 × (4.2% + 6.08%); bear 22.8%, bull 19.8%. WACC 21.0% (debt is only 1.6% of value). The beta of 1.27 is provisional: it is the only local figure found (Simply Wall St, period not stated); Damodaran's sector beta for real estate developers, relevered, is only 0.57, and the house rule takes the higher. This is the biggest uncertainty in the analysis: at 0.57 the cost of equity would be 14.1% and fair value about Rs 18.50 instead of Rs 10.50, still less than half the price.\n\nValuation methods (bear / base / bull, Rs a share)\n- Adjusted NAV: 15.11 / 16.70 / 18.61. Book Rs 12.50 plus the after-tax profit on the stock at cost (gross margin 25% / 30% / 35% of sales, less selling and overheads, 30% tax, discounted two years).\n- Justified price to book: 6.32 / 9.80 / 14.65 (0.51x / 0.78x / 1.17x, long-run ROE 14% / 18% / 22%).\n- Justified P/E: 6.86 / 9.59 / 13.32 (EPS Rs 1.90 / 2.20 / 2.50 × 3.6x / 4.4x / 5.3x).\n- Residual income: 4.82 / 8.11 / 13.23.\n- Whole-company DCF: 6.29 / 8.50 / 12.56 (after-tax operating profit Rs 1.80 / 2.05 / 2.30bn, at WACC, less net debt Rs 0.61bn; 39% / 55% / 65% of value after year five).\n- Dividend model (not averaged, payout 36%): 4.72 / 5.96 / 7.48.\nScenario averages Rs 7.88 / 10.54 / 14.47, weighted 30/50/20: fair value Rs 10.50. Buy price (15% below) Rs 8.90; strong buy (25% below) Rs 7.90.\n\nChecks\n- Growth: assumed 3% / 7% / 10% a year for five years, against 11.5% supported (64% of profit kept × 18% ROE). The capex-based check (124%) isn't meaningful for one year in which land and construction spending was 412% of after-tax operating profit.\n- Earnings run-rate: trailing EPS Rs 2.30; base Rs 2.20 for the year to March 2027 is 4% below, because finance costs are now about Rs 0.16bn a quarter.\n- Capex: fixed-asset spending is tiny (Rs 0.10bn, about depreciation); the real investment is land and buildings in inventory, which the DCF charges as reinvestment.\n- Calculator warnings: dividends exceeded cash after maintenance in 2025/26 and net debt rose, both because Rs 13.8bn went into land and construction; operating cash of Rs 4.15bn in the half more than covered the Rs 0.75bn dividend, so the dividend isn't at risk now. The calculator's 6.25% cost of debt is low because loans were drawn late in the year; about 9% in the latest half, which barely moves WACC.\n- Ratio ranges: cost of equity at the top of the 12–22% range (bear 22.8% just above, from the scenario spread), because of the single-source beta; ROE 18% passes; net debt to EBITDA about 0.2x.\n\nBusiness tests: 3 of 4, a 'good' business (watch list)\n- Returns: pass (18% in 2025/26; five-year average 21%, but 12% in two years).\n- Debt: pass (net debt 0.05x equity).\n- Steady profit: pass, with a caveat: no losses, but profit swung between Rs 1.13bn and Rs 3.35bn.\n- Cash: fail. Over 2024/25 to September 2026, operating cash was Rs 0.6bn against Rs 4.3bn of profit; the rest went into land and construction.\n\nBuy plan for 500 shares\n200 at up to Rs 10.50, 150 at up to Rs 8.90, 150 at up to Rs 7.90: about Rs 4,620 (average Rs 9.24). Not realistic soon: the share would need to fall about 74%. It traded at these levels as recently as March 2025, before the property rally.\n\nWhat would change the view\nHigher: strong pre-sales on the new launches, margins back near 35%, a verified lower beta, lower interest rates. Lower: rising finance costs, project delays or slow sales, construction cost inflation, falling property prices, related-party dealings with the 75% parent (construction by Prime Constructions, sales commissions to Prime Lands).\n\nUncertain or missing\nThe beta rests on one unverified figure; Damodaran's emerging-markets betas and the CSE close couldn't be reached from this run. The chairperson's Rs 48bn of customer receivables and Rs 100bn+ unsold inventory value are management figures, not audited. The interim balance sheets are scanned images and were read from the image. Interest capitalised into inventory isn't disclosed."
+}
