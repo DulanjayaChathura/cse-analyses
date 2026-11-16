@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "source": "HNB Stockbrokers",
+  "posts": 14,
+  "messageIds": [
+    162,
+    163,
+    171,
+    180,
+    187,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228
+  ],
+  "commands": [
+    229
+  ],
+  "callsPriceDate": "2026-11-13",
+  "note": "Messages 162 (empty), 163 and 171 ('update'), 180 ('update HAYL') and 187 ('redo dial.n000') are the owner's own posts from 14 Nov, not broker content, so nothing is summarised from them. Message 225 links to the broker's detailed Weekly HSB Universe for 13 Nov; the link (tinyurl.com) could not be opened from this run, so its contents are left out. The recommendation table (message 226) is priced at the 13 Nov close; RCL's target is shown as TBA, and MGT and TJL are marked as provisional targets. The table shows Sampath's beta as 2.9, copied as shown. The Hayleys card's 'Share Price' of Rs 225.50 for Q2 2026/27 is the 30 September price (the last close was Rs 236.25 on 13 Nov); its revenue chart labels the September quarter's q/q change as −0.36%, which does not match the bar heights, so the q/q change is left out. The Bloomberg world-indices screen (message 222) was taken at 08:49 Sri Lanka time on 16 Nov, so its US and European figures are the previous session's. In the foreign-flow chart, the 'Other' bar shows both buying and selling and is left out. Heat-map (message 227, 16 Nov close) percentages on the smallest tiles are too small to read and are left out.",
+  "highlights": [
+    "A broad sell-off on 16 Nov: the ASPI fell 1.32% (−291.81 points) to 21,732.37 and the S&P SL20 1.49%, on Rs 10.48bn turnover; Commercial Bank, Dialog, HNB, Tokyo Cement and LOLC Finance pulled the index down most, and foreigners were net sellers of Rs 13.18mn (Rs 28mn out of Cargills, Rs 9mn out of Dialog).",
+    "Hayleys' September quarter: revenue Rs 178.7bn (+28.9% year on year) and EPS Rs 5.02 (+57.8%); trailing P/E 10.2x and P/B 1.54x at Rs 236.25. HNB Stockbrokers rates it Moderate buy with a Rs 260 target, about 72% above this site's fair value of Rs 151 (buy below Rs 128).",
+    "The broker's 13 Nov recommendation table is far more optimistic than this site on most shared names: HNB target Rs 575 vs fair value Rs 351 (+64%), Commercial Bank Rs 253 vs Rs 182 (+39%), ACL Cables Rs 115 vs Rs 64.7 (+78%), Hemas Rs 39 vs Rs 16 (+144%), John Keells Rs 30 vs Rs 13.2 (+127%) and Access Engineering Rs 90 vs Rs 47 (+91%). Only Sampath agrees: target Rs 190 vs fair value Rs 186.",
+    "HNB Stockbrokers says Budget 2027's primary surplus just meets the IMF target but leaves little margin once the IMF programme ends; the 2027 borrowing plan has no international sovereign bond, relying on bilateral and multilateral loans.",
+    "Tourism earnings rose 3.5% year on year in October to $192.7mn on record monthly arrivals of 168,625, but the first ten months are still down 8.3% at $2.43bn."
+  ],
+  "market": {
+    "aspi": 21732.37,
+    "aspiChangePct": -1.32,
+    "aspiPoints": -291.81,
+    "sp20": 6199.84,
+    "sp20ChangePct": -1.49,
+    "turnoverBn": 10.48,
+    "marketPE": 11.14,
+    "marketPBV": 1.29,
+    "marketCapTn": 7.8,
+    "foreignBuyMn": 65.35,
+    "foreignSellMn": 78.54,
+    "foreignNetMn": -13.18,
+    "gainers": [
+      "CARS",
+      "BUKI",
+      "CDB",
+      "HASU",
+      "INME"
+    ],
+    "losers": [
+      "COMB",
+      "DIAL",
+      "HNB",
+      "TKYO",
+      "LOFC"
+    ],
+    "foreignFlows": [
+      {
+        "code": "CCS",
+        "mn": 10
+      },
+      {
+        "code": "SMOT",
+        "mn": 10
+      },
+      {
+        "code": "HHL",
+        "mn": 7
+      },
+      {
+        "code": "TAP",
+        "mn": 3
+      },
+      {
+        "code": "CSLK",
+        "mn": 2
+      },
+      {
+        "code": "GUAR",
+        "mn": -1
+      },
+      {
+        "code": "JKH",
+        "mn": -2
+      },
+      {
+        "code": "ATL",
+        "mn": -3
+      },
+      {
+        "code": "DIAL",
+        "mn": -9
+      },
+      {
+        "code": "CTHR",
+        "mn": -28
+      }
+    ],
+    "momentum": [
+      {
+        "code": "SHL",
+        "pct": 38
+      },
+      {
+        "code": "YORK",
+        "pct": 35
+      },
+      {
+        "code": "MDL",
+        "pct": 34
+      },
+      {
+        "code": "SEMB.X",
+        "pct": 33
+      },
+      {
+        "code": "HVA",
+        "pct": 27
+      }
+    ]
+  },
+  "calls": [
+    {
+      "code": "COMB.N0000",
+      "name": "Commercial Bank (voting)",
+      "sector": "Banks",
+      "price": 225.25,
+      "rating": "Moderate buy",
+      "target": 253
+    },
+    {
+      "code": "HNB.N0000",
+      "name": "Hatton National Bank (voting)",
+      "sector": "Banks",
+      "price": 403.75,
+      "rating": "Buy",
+      "target": 575
+    },
+    {
+      "code": "HNB.X0000",
+      "name": "Hatton National Bank (non-voting)",
+      "sector": "Banks",
+      "price": 351.0,
+      "rating": "Buy",
+      "target": 469
+    },
+    {
+      "code": "SAMP.N0000",
+      "name": "Sampath Bank",
+      "sector": "Banks",
+      "price": 154.0,
+      "rating": "Buy",
+      "target": 190
+    },
+    {
+      "code": "NTB.N0000",
+      "name": "Nations Trust Bank (voting)",
+      "sector": "Banks",
+      "price": 325.0,
+      "rating": "Buy",
+      "target": 400
+    },
+    {
+      "code": "ACL.N0000",
+      "name": "ACL Cables",
+      "sector": "Capital goods",
+      "price": 101.5,
+      "rating": "Moderate buy",
+      "target": 115
+    },
+    {
+      "code": "HAYL.N0000",
+      "name": "Hayleys",
+      "sector": "Capital goods",
+      "price": 236.25,
+      "rating": "Moderate buy",
+      "target": 260
+    },
+    {
+      "code": "HHL.N0000",
+      "name": "Hemas Holdings",
+      "sector": "Capital goods",
+      "price": 33.1,
+      "rating": "Moderate buy",
+      "target": 39
+    },
+    {
+      "code": "JKH.N0000",
+      "name": "John Keells Holdings",
+      "sector": "Capital goods",
+      "price": 19.4,
+      "rating": "Buy",
+      "target": 30
+    },
+    {
+      "code": "RCL.N0000",
+      "name": "Royal Ceramics Lanka",
+      "sector": "Capital goods",
+      "price": 47.5,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "CSLK.N0000",
+      "name": "Cable Solutions",
+      "sector": "Capital goods",
+      "price": 14.0,
+      "rating": "Hold",
+      "target": 13
+    },
+    {
+      "code": "AEL.N0000",
+      "name": "Access Engineering",
+      "sector": "Capital goods",
+      "price": 85.3,
+      "rating": "Hold",
+      "target": 90
+    },
+    {
+      "code": "MGT.N0000",
+      "name": "Hayleys Fabric",
+      "sector": "Consumer durables & apparel",
+      "price": 34.2,
+      "rating": "Hold",
+      "target": 32
+    },
+    {
+      "code": "TJL.N0000",
+      "name": "Teejay Lanka",
+      "sector": "Consumer durables & apparel",
+      "price": 34.0,
+      "rating": "Hold",
+      "target": 40
+    }
+  ],
+  "dividends": [],
+  "news": [
+    {
+      "title": "Hayleys: Q2 2026/27 results",
+      "text": "Revenue Rs 178,688mn against Rs 138,596mn a year earlier (+28.9%); EPS Rs 5.02 against Rs 3.18 (+57.8%), up from Rs 4.56 in the June quarter but below the Rs 8.21 of the March quarter. The broker's card shows a trailing P/E of 10.23x and P/B of 1.54x at the 13 Nov close of Rs 236.25."
+    },
+    {
+      "title": "Recommendation table, 13 Nov",
+      "text": "Banking sector on 5.2x trailing earnings and 0.8x book; capital goods on 18.5x and 1.1x. Trailing figures shown: COMB EPS Rs 38.75, NAV Rs 218.49, ROE 20%; HNB EPS Rs 80.56, NAV Rs 554.63, ROE 17%; SAMP EPS Rs 30.67, NAV Rs 173.18, ROE 17%; NTB EPS Rs 72.96, NAV Rs 326.48, ROE 22%; ACL EPS Rs 8.94, ROE 16%; HAYL EPS Rs 22.28, NAV Rs 153.11, ROE 15%; HHL EPS Rs 2.87, ROE 15%; JKH EPS Rs 1.02, NAV Rs 23.60, ROE 4% (earnings up 218% year on year); AEL EPS Rs 10.20, ROE 22% (earnings up 75%). Hayleys Fabric (earnings −76%) and Teejay (a trailing loss) carry provisional Hold ratings."
+    },
+    {
+      "title": "Market on 16 Nov",
+      "text": "Banks led the fall (COMB −1.55%, SAMP −1.46%, NTB −1.77%, NDB −1.74%, DFCC −3.60%, HNB −0.99%); Dialog −1.20%, John Keells −2.06%, Hayleys −0.85%, LOLC Finance −5.77%, Tokyo Cement −4.99%, Asiri −5.26%, AHPL −5.29%, JINS −5.21%. Few rose: Cargills +0.35%, Bukit Darah +0.53%, CDB +0.90%, Union Assurance +0.29%, CTC +0.08%."
+    },
+    {
+      "title": "Companies analysed on this site, 16 Nov",
+      "text": "Up: Union Assurance +0.29%, Ceylon Tobacco +0.08%. Down: PickMe −0.15%, Watawala −0.22%, AHUN −0.24%, Distilleries −0.34%, ACL Cables −0.49%, Ceylon Cold Stores −0.60%, Jat −0.77%, Hayleys −0.85%, Hemas −0.91%, HNB −0.99%, TAFL −1.07%, Dialog −1.20%, LOLC −1.23%, PARQ −1.30%, CIC −1.39%, CALH −1.40%, Sampath −1.46%, Vallibel Finance −1.46%, Access Engineering −1.52%, Commercial Bank −1.55%, PLC −1.60%, Singer −1.68%, NDB −1.74%, COCR −2.00%, John Keells −2.06%, CALT −2.33%, Lanka Milk Foods −2.67%, CFVF −2.92%, Central Finance −3.05%, Tokyo Cement −4.99%, Janashakthi −5.21%."
+    },
+    {
+      "title": "Budget 2027 and borrowing",
+      "text": "HNB Stockbrokers says the budget's primary surplus just meets the IMF target, but the margin for error narrows after the IMF programme ends and Sri Lanka returns to bond markets; continued fiscal discipline is key to rating upgrades, and the country's elevated term premium raises borrowing costs. The 2027 borrowing plan has no international sovereign bond, relying on bilateral and multilateral loans, though cheap concessional funding will shrink now that the World Bank classes Sri Lanka as upper-middle income."
+    },
+    {
+      "title": "Other local news",
+      "text": "The Consumer Affairs Authority summoned LAUGFS Gas over its domestic gas price rise, but cannot take legal action unless domestic gas is placed under a maximum retail price. October tourism earnings rose 3.5% to $192.7mn on record arrivals of 168,625; January–October earnings fell 8.3% to $2.43bn. Seafood exporters back the budget and see annual exports reaching $680mn by 2030."
+    },
+    {
+      "title": "Global",
+      "text": "Asian markets fell early on 16 Nov (Taiwan −3.90%, Kospi −2.66%, Nikkei −1.57%; Hang Seng +0.89%); the S&P 500 had closed 0.40% lower and the Dow 0.10% higher. The yen held near two-month lows (about 159.7 per dollar) after a surprise Japanese GDP contraction. US diesel fell below $6 a gallon, a two-month low, as geopolitical tensions eased and demand weakened."
+    }
+  ]
+}
