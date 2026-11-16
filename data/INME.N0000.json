@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "ticker": "INME.N0000",
+  "analysisDate": "2026-11-16",
+  "company": {
+    "name": "InsureMe Insurance Brokers PLC",
+    "sector": "Insurtech and broking intermediary (commission business, not an underwriter)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "INME.N0000",
+      "label": "Voting"
+    }
+  ],
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE download)",
+      "Interim financial statements to 30 September 2026 (CSE download)"
+    ]
+  },
+  "price": {
+    "value": 1749.75,
+    "date": "2026-09-30",
+    "source": "Last traded price at 30 September 2026, interim report note 9.3 (the CSE site couldn't be reached from this run and the share wasn't yet in the daily price file)",
+    "note": "July–September 2026 range Rs 1,499–1,990. A Simply Wall St page showed Rs 2,173.25 (undated). The daily CSE close will replace this once the price job picks up the share."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A fast-growing, cash-rich broker, but at about 65x underlying earnings the price is over five times a fair value of about Rs 323",
+    "text": "InsureMe Insurance Brokers PLC (INME.N0000) is a Colombo insurance broker that sells general, life and reinsurance cover online and through a call centre, with a software arm, DIGIS, that builds insurtech platforms for insurers and companies. It listed in December 2025; Dialog Axiata's digital fund owns 25.7% and the three founders most of the rest, so only 1.27% of the shares (26,179) are in public hands. The business is growing fast and earns high returns on very little capital: revenue rose 40% to Rs 503mn in 2025/26 and 38% in the six months to September 2026, and underlying profit is about Rs 55mn a year. But reported 2025/26 EPS of Rs 38.32 includes a one-off Rs 56.6mn gain from ending a revenue-share deal with Dialog; without it EPS was about Rs 19 and is about Rs 26.70 over the last 12 months. At Rs 1,749.75 (last trade at 30 September 2026, from the interim report) the share trades at about 65x underlying earnings and 14x NAV of Rs 122. On a 14.8% cost of equity the four methods give a fair value of about Rs 323. I'd buy at up to Rs 275 and treat under Rs 242 as a strong buy; the price is about 5.4 times fair value. The business passes 2 of the 4 tests (no debt, profit turns into cash; returns above 15% aren't proven over several years and profit relied on a one-off last year), so it goes in category 3, avoid for now."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "No debt and profit turns into cash, but returns above 15% rest on one clean year so far, and 2025/26 profit leaned on a one-off gain. First assessment, 16 November 2026.",
+    "assessed": "2026-11-16",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "21.5% (underlying FY2026)",
+        "note": "Reported ROE 43.3% in 2025/26 includes the one-off; underlying about 21.5%, and about 27% over the last 12 months. But 2024/25 was 9.4%, and earlier years aren't in the reports read, so 15% isn't yet proven over several years. Another year above 15% (2026/27 is on track) would pass it."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 136mn",
+        "note": "No bank debt; cash and deposits Rs 197.6mn against Rs 62.1mn of office lease at 30 September 2026. Part of the cash is client float (DIGIS OPD float Rs 32.5mn in March) and premiums or referral fees owed."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "One-off in 2025/26",
+        "note": "Profit Rs 12.1mn (2024/25) and Rs 78.8mn (2025/26), but Rs 56.6mn before tax of 2025/26 was a non-recurring reversal of Dialog revenue share. Quarterly profit is uneven (Rs 0.8mn in September 2025 quarter, Rs 9.0mn in September 2026 quarter). Five years of figures aren't in the reports read."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "OCF 131% of underlying profit",
+        "note": "Operating cash flow Rs 41.8mn (2024/25), Rs 51.2mn (2025/26, 131% of underlying profit) and Rs 85.1mn in the half to September 2026 (helped by Rs 43.7mn more owed to partners). No dividends yet: all profit is kept for growth."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.64,
+    "betaBasis": "Provisional. 80% broking (Damodaran Insurance (General), global, January 2026, unlevered cash-corrected 0.47) and 20% insurtech software (Software (Internet) global 1.34), by revenue; net cash, so no relevering. Web-search stand-ins (Damodaran's emerging-markets file couldn't be opened). No local 5-year beta: listed December 2025 and 1.27% public float. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 16.3,
+      "base": 14.8,
+      "bull": 13.3
+    },
+    "costOfDebt": 6.79,
+    "wacc": {
+      "bear": 16.3,
+      "base": 14.8,
+      "bull": 13.3
+    },
+    "debtWeight": 0.0,
+    "asOf": "2026-11-16",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: lease interest Rs 2.30mn ÷ average lease liability (Annual Report 2025/26, note 21, p. 91)",
+      "Weights: market cap about Rs 3.6bn at Rs 1,749.75; net cash Rs 135.5mn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.64 × (4.2% + 6.08%) = 14.8%; bear +1.5, bull −1.5 points. Inside the 12–22% range but low for a tiny, thinly traded company, because the stand-in sector beta comes from large insurers. With net cash and only a lease, WACC equals the cost of equity. The 6.8% cost of debt is lease interest for part of a year (the lease began during 2025/26) and carries no weight."
+  },
+  "valuation": {
+    "fairValue": 323.14,
+    "buyPrice": 274.67,
+    "strongBuyPrice": 242.35,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 122.25,
+    "note": "Fair value weights the bear/base/bull averages of four methods (whole-company DCF, P/E, justified P/B, residual income) 30/50/20: Rs 174 / 302 / 600, giving Rs 323.14 (2.6x NAV). All methods use underlying earnings, without the one-off 2025/26 gain. Discount rate 14.8% from a provisional beta of 0.64."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, dividend (p. 32): no dividend declared or paid; none for 2024/25 either",
+    "note": "The board keeps all profit for growth and reviews the policy each year. No interim declared for 2026/27 in the reports read."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 122.25,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 14.3,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing, underlying)",
+      "value": 65.5,
+      "unit": "x",
+      "note": "Underlying EPS Rs 26.71; 38.1x on reported Rs 45.98 incl. the one-off"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (underlying)",
+      "value": 21.5,
+      "unit": "%",
+      "note": "2025/26 without the one-off; reported 43.3%; about 27% trailing"
+    },
+    {
+      "id": "revgrowth",
+      "label": "Revenue growth",
+      "value": 38,
+      "unit": "%",
+      "note": "Six months to Sep 2026; +40% in 2025/26"
+    },
+    {
+      "id": "netcash",
+      "label": "Net cash",
+      "value": 135.5,
+      "unit": "Rs mn",
+      "note": "Cash and deposits less lease liability, 30 Sep 2026"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 14.8,
+      "unit": "%",
+      "note": "Beta 0.64 (provisional)"
+    },
+    {
+      "id": "float",
+      "label": "Public holding",
+      "value": 1.27,
+      "unit": "%",
+      "note": "26,179 shares; very thin trading"
+    },
+    {
+      "id": "fvx",
+      "label": "Price to fair value",
+      "value": 5.4,
+      "unit": "x"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue Rs 162.3mn (+43%), gross profit Rs 62.5mn (+64%), administration costs +46%. Profit Rs 9.0mn against Rs 0.8mn, EPS Rs 4.37 (Rs 0.40). The June quarter was stronger (EPS about Rs 10.42)."
+    },
+    {
+      "title": "Six months to 30 September 2026",
+      "text": "Revenue Rs 316.6mn (+38%): general broking Rs 195.9mn (+51%), life Rs 75.9mn (+13%), reinsurance Rs 4.4mn, DIGIS Rs 40.4mn (+34%). Gross margin 43.9% (40.1%) now that Dialog revenue share has ended. Profit Rs 30.4mn (+108%), EPS Rs 14.79 (Rs 7.13). Operating cash flow Rs 85.1mn after paying Rs 32.5mn of tax; capex Rs 17.7mn, mostly software. NAV Rs 122.25."
+    },
+    {
+      "title": "Tax dispute",
+      "text": "The tax department has assessed Rs 33.5mn of Social Security Contribution Levy and penalties on brokerage income for January 2023 to December 2025 (about Rs 16 a share). The company has appealed and made no provision."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Revenue Rs 503.2mn (+40%), profit Rs 78.8mn (Rs 12.1mn), EPS Rs 38.32 (Rs 5.96). Rs 56.6mn of that was a one-off reversal of accrued Dialog revenue share after the agreement was ended; underlying EPS about Rs 19. New 6-year head-office lease (Rs 73.3mn right-of-use asset). Software development capitalised Rs 21.8mn. No dividend."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          5.96,
+          38.32,
+          45.98
+        ],
+        "notes": [
+          null,
+          "Underlying about Rs 19.0 without the one-off",
+          "Trailing 12 months; underlying Rs 26.71"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          9.4,
+          43.3,
+          null
+        ],
+        "notes": [
+          "On average equity",
+          "Underlying about 21.5%",
+          "About 27% underlying, trailing"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          null,
+          33.9,
+          38.1
+        ],
+        "notes": [
+          "Not listed",
+          "Rs 1,300.50 at 31 Mar 2026; 68x underlying",
+          "At Rs 1,749.75; 65.5x underlying"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 122.25",
+      "reading": "The price is 14.3x NAV (30 September 2026). A broker needs little capital, so NAV is a floor, not a value."
+    },
+    {
+      "method": "Return on equity",
+      "value": "21.5% underlying",
+      "reading": "43.3% reported for 2025/26 with the one-off; about 27% over the last 12 months. High, but only one clean year so far."
+    },
+    {
+      "method": "P/E",
+      "value": "65.5x",
+      "reading": "On underlying trailing EPS of Rs 26.71. At a 14.8% cost of equity and 18% growth for five years the justified forward P/E is about 11x."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend in either year; all profit is reinvested. A dividend model isn't used."
+    },
+    {
+      "method": "DCF",
+      "value": "Rs 363 (base)",
+      "reading": "Whole company at WACC 14.8%, plus Rs 136mn net cash; needs 18% a year growth for five years."
+    },
+    {
+      "method": "Required return",
+      "value": "14.8%",
+      "reading": "CAPM with a country premium, beta 0.64 (provisional); WACC the same, as there's no debt."
+    },
+    {
+      "method": "Liquidity",
+      "value": "1.27% float",
+      "reading": "Only 26,179 shares are in public hands, so the price can move a lot on small trades."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "DCF (whole company, WACC, plus net cash)",
+      "bear": 202.58,
+      "base": 362.85,
+      "bull": 709.96,
+      "weighted": 384.19,
+      "comment": "Cash before interest after maintenance capex Rs 40 / 47 / 52mn and after-tax operating profit Rs 44 / 49 / 52mn (trailing underlying operating profit Rs 70.2mn × 70%), growing 10% / 18% / 25% for five years, then 5% / 6% / 7%, less the reinvestment growth needs at a 20% / 30% / 40% return on new capital, at WACC 16.3% / 14.8% / 13.3%, plus net cash Rs 135.5mn (30 Sep 2026). Value after year 5 is 73% / 84% / 90% of the total: most of the value depends on growth lasting well beyond five years."
+    },
+    {
+      "id": "pe",
+      "name": "P/E on 2026/27 EPS",
+      "bear": 173.6,
+      "base": 316.8,
+      "bull": 636.0,
+      "weighted": 337.68,
+      "comment": "EPS Rs 24.80 / 28.80 / 31.80 for the year to March 2027 (H1 Rs 14.79, H2 Rs 10.00 / 14.00 / 17.00) × justified forward P/E 7x / 11x / 20x (two-stage: 10% / 18% / 25% growth for five years at a return on equity of 20% / 30% / 40%, then 5% / 6% / 7%). The base is 37% below the Rs 45.98 trailing run-rate because that includes the Rs 19.27 a share one-off; it's 8% above the Rs 26.71 underlying figure."
+    },
+    {
+      "id": "pb",
+      "name": "Justified P/B",
+      "bear": 162.3,
+      "base": 250.1,
+      "bull": 446.3,
+      "weighted": 263.0,
+      "comment": "(ROE − g) ÷ (r − g) on NAV Rs 122.25: ROE 20% / 24% / 30%, long-run growth 5% / 6% / 7%, cost of equity 16.3% / 14.8% / 13.3%: 1.33x / 2.05x / 3.65x."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 156.5,
+      "base": 278.3,
+      "bull": 607.9,
+      "weighted": 307.68,
+      "comment": "Book Rs 122.25; ROE fading over ten years from 20% / 24% / 28% to 17% / 20% / 24%, 100% / 70% / 70% of profit kept (dividends assumed to start in base and bull), then residual income growing 5% / 6% / 7%, at 16.3% / 14.8% / 13.3%."
+    }
+  ],
+  "modelsNote": "Four methods suited to a cash-rich, asset-light service business. A broker carries no insurance risk, so it's valued like a service company (whole-company DCF), not like an insurer. All start from underlying earnings without the one-off 2025/26 gain. Growth check: the calculator prints a supported rate of 244% because 2025/26 profit includes the one-off and opening capital was tiny; on underlying figures reinvestment was 62% of after-tax operating profit and return on capital about 42%, so supported growth is about 26%, and the 10% / 18% / 25% assumptions are all within it. Dividend model not used (no dividend). NAV is shown but not weighted: book value says little about a broker.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity / WACC (beta 0.64)",
+        "bear": "16.3%",
+        "base": "14.8%",
+        "bull": "13.3%"
+      },
+      {
+        "label": "Growth, next five years",
+        "bear": "10%",
+        "base": "18%",
+        "bull": "25%"
+      },
+      {
+        "label": "Long-run growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "20%",
+        "base": "30%",
+        "bull": "40%"
+      },
+      {
+        "label": "After-tax operating profit, start",
+        "bear": "Rs 44mn",
+        "base": "Rs 49mn",
+        "bull": "Rs 52mn"
+      },
+      {
+        "label": "Cash after maintenance capex, start",
+        "bear": "Rs 40mn",
+        "base": "Rs 47mn",
+        "bull": "Rs 52mn"
+      },
+      {
+        "label": "EPS 2026/27",
+        "bear": "Rs 24.80",
+        "base": "Rs 28.80",
+        "bull": "Rs 31.80"
+      },
+      {
+        "label": "Justified forward P/E",
+        "bear": "7x",
+        "base": "11x",
+        "bull": "20x"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "17%",
+        "base": "20%",
+        "bull": "24%"
+      }
+    ],
+    "averages": {
+      "bear": 173.75,
+      "base": 302.01,
+      "bull": 600.04
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 0.64 (provisional). No borrowing, so WACC equals the cost of equity. Start cash sits between 2025/26 cash flow (the calculator's Rs 26–40mn, before Rs 32.5mn of 2025/26 tax was paid) and the last 12 months (about Rs 79mn after maintenance, lifted by payables). Maintenance capex Rs 11–25mn a year (depreciation and amortisation as reported to average capex booked); most of the capex is software development for DIGIS (Maji platform, about Rs 40mn more to come), which is growth spending. Scenario weights 30/50/20."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "13.3%",
+      "14.8%",
+      "16.3%"
+    ],
+    "columns": [
+      "17%",
+      "20%",
+      "23%"
+    ],
+    "values": [
+      [
+        273.5,
+        360.6,
+        461.2
+      ],
+      [
+        213.7,
+        278.3,
+        352.9
+      ],
+      [
+        172.8,
+        222.3,
+        279.3
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Even at a 13.3% cost of equity and a 23% long-run ROE, residual income gives about Rs 461, a quarter of the price. The price of Rs 1,750 needs something like 25% growth for well over a decade."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 323.14
+      },
+      {
+        "shares": 150,
+        "maxPrice": 274.67
+      },
+      {
+        "shares": 150,
+        "maxPrice": 242.35
+      }
+    ],
+    "averagePrice": 284.36,
+    "totalCost": 142181,
+    "note": "About Rs 142,181 in total, against Rs 874,875 at Rs 1,749.75. 500 shares is about 2% of all the shares in public hands, so orders may take time to fill.",
+    "realism": "Not realistic. Rs 323 is about 82% below the price; the share has traded Rs 1,273–1,990 since it listed (31 March 2026 annual report and September 2026 interim). Only a large fall after more shares reach the public, or several years of 25%+ growth, would bring the levels together."
+  },
+  "changeMyView": {
+    "higher": [
+      "Growth of 25% or more holding through 2026/27 and 2027/28 with margins steady, which would support the bull case (about Rs 600).",
+      "DIGIS earning real profit from Singapore and other overseas clients.",
+      "A second year of ROE above 15%, which would pass the returns test and move it to category 2 (watch list).",
+      "A higher-quality beta: if a proper broker beta came out lower than 0.64, value would rise a little."
+    ],
+    "lower": [
+      "Losing the SSCL appeal (Rs 33.5mn, about Rs 16 a share) or the levy being charged from now on.",
+      "Growth slowing towards 10% (bear case about Rs 175).",
+      "A share sale or placement to raise the 1.27% public holding, which could push the price down without changing the value.",
+      "A higher beta for a small, illiquid company: at a 16.3% cost of equity the base falls about a fifth."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim report to September 2026. The interim figures are unaudited, the price is the last trade at 30 September 2026 from the interim report rather than a current CSE close, and the beta is provisional, so check the price before ordering. The share trades very thinly. This is analysis, not personal financial advice."
+  },
+  "fullText": "InsureMe Insurance Brokers PLC (INME.N0000) is a Colombo insurance broker that sells general, life and reinsurance cover online and through a call centre, with a software arm, DIGIS, that builds insurtech platforms for insurers and companies. It listed in December 2025; Dialog Axiata's digital fund owns 25.7% and the three founders most of the rest, so only 1.27% of the shares (26,179) are in public hands. The business is growing fast and earns high returns on very little capital: revenue rose 40% to Rs 503mn in 2025/26 and 38% in the six months to September 2026, and underlying profit is about Rs 55mn a year. But reported 2025/26 EPS of Rs 38.32 includes a one-off Rs 56.6mn gain from ending a revenue-share deal with Dialog; without it EPS was about Rs 19 and is about Rs 26.70 over the last 12 months. At Rs 1,749.75 (last trade at 30 September 2026, from the interim report) the share trades at about 65x underlying earnings and 14x NAV of Rs 122. On a 14.8% cost of equity the four methods give a fair value of about Rs 323. I'd buy at up to Rs 275 and treat under Rs 242 as a strong buy; the price is about 5.4 times fair value. The business passes 2 of the 4 tests (no debt, profit turns into cash; returns above 15% aren't proven over several years and profit relied on a one-off last year), so it goes in category 3, avoid for now.\n\n**The business.** InsureMe Insurance Brokers is a licensed insurance broker: it arranges general (mostly motor), life and reinsurance cover for individuals and companies and earns commissions from insurers, without carrying insurance risk. Its subsidiary DIGIS sells software (claims and medical-claims automation, a mobile app, KYC) to insurers and companies in Sri Lanka and is starting in Singapore. In 2025/26 broking was 84% of revenue (general Rs 298mn, life Rs 123mn, reinsurance Rs 2mn) and DIGIS 16% (Rs 80mn), with DIGIS close to break-even.\n\n**Results.** Revenue Rs 503.2mn (+40%) and gross margin 44.3% (39.4%) in 2025/26. Profit Rs 78.8mn and EPS Rs 38.32, but Rs 56.6mn before tax came from reversing revenue share accrued for Dialog Axiata up to March 2025, after the 2018 agreement was ended; the company itself calls it non-recurring. Without it, operating profit was about Rs 52mn and EPS about Rs 19. In the six months to September 2026 revenue rose 38% to Rs 316.6mn and profit 108% to Rs 30.4mn (EPS Rs 14.79); gross margin is higher now that no revenue share is paid. The September quarter (EPS Rs 4.37) was weaker than June (about Rs 10.42) as administration costs rose 46%.\n\n**Balance sheet and cash.** No bank borrowing. Cash and deposits Rs 197.6mn against a Rs 62.1mn head-office lease at 30 September 2026: net cash about Rs 66 a share, though part of it is client float and amounts owed to insurers and referral partners. Operating cash flow was Rs 51.2mn in 2025/26 and Rs 85.1mn in the latest half. Capex is mostly software: Rs 21.8mn capitalised in 2025/26 and Rs 12.9mn in the half, with about Rs 40mn more planned for the Maji cloud platform. That's growth spending, judged on its return. Depreciation and amortisation was Rs 11.4mn in 2025/26 (about Rs 23mn a year now that the lease is in).\n\n**Required return.** Beta 0.64 (provisional): 80% broking at Damodaran's global general-insurance unlevered beta (0.47) and 20% internet software (1.34), with no relevering as there's net cash. His emerging-markets file couldn't be opened, and there's no local 5-year beta (listed December 2025, 1.27% float). Cost of equity 8.24% + 0.64 × 10.28% = 14.8% (bear 16.3%, bull 13.3%); WACC is the same. This is low for a company this small and illiquid, which is one reason the bear case matters.\n\n**Valuation.** Four methods, all from underlying earnings:\n- DCF (whole company at WACC, plus net cash): Rs 203 / 363 / 710. After-tax operating profit Rs 44 / 49 / 52mn growing 10% / 18% / 25% for five years, then 5% / 6% / 7%, with reinvestment at a 20% / 30% / 40% return on new capital. 73–90% of the value comes after year 5, so it rests on growth lasting.\n- P/E: 2026/27 EPS Rs 24.80 / 28.80 / 31.80 × 7x / 11x / 20x (justified by the growth and the cost of equity): Rs 174 / 317 / 636. The base EPS is 37% below the Rs 45.98 trailing figure because that includes the one-off (Rs 19.27 a share); it's 8% above the Rs 26.71 underlying run-rate.\n- Justified P/B: 1.33x / 2.05x / 3.65x NAV of Rs 122.25: Rs 162 / 250 / 446.\n- Residual income: ROE fading from 20–28% to 17–24% over ten years: Rs 156 / 278 / 608.\nAverages Rs 174 / 302 / 600, weighted 30/50/20: fair value Rs 323.14. Buy price Rs 274.67 (15% below), strong buy Rs 242.35 (25% below). NAV and a dividend model aren't weighted: book value says little about a broker, and there's no dividend.\n\n**Growth check.** The calculator prints a supported growth rate of 244%, which is meaningless here: 2025/26 profit includes the one-off and capital at March 2025 was tiny. On underlying figures, reinvestment (capex less depreciation, plus working capital) was about Rs 22mn, 62% of after-tax operating profit, at a return on capital of about 42%, which supports about 26% growth. The 10% / 18% / 25% assumptions are within that. Return on capital this high is normal for a broker, which needs little capital, but it is outside what most companies earn, so the long-run return on new capital is cut to 20–40%.\n\n**Ratio checks.** Beta 0.64 and cost of equity 14.8% are in range. P/B of 14.3x and P/E of 65x are far above anything the methods justify. The cost of debt (6.8%) is lease interest for part of a year and carries no weight. The calculator's warning that net debt rose with capex comes from the new office lease being counted as debt, not from borrowing.\n\n**Business tests.** 2 of 4: passes debt (net cash) and cash (operating cash flow above underlying profit); fails returns (21.5% underlying in 2025/26 and about 27% trailing, but 9.4% in 2024/25 and no earlier years in the reports read) and steady profit (2025/26 relied on a one-off; quarters are uneven). Category 3, avoid for now. One more year with ROE above 15% would pass the returns test and move it to category 2.\n\n**Risks.** The Rs 33.5mn SSCL assessment (about Rs 16 a share) is under appeal and not provided for. Insurance commissions depend on motor sales (helped by vehicle imports reopening) and on a few insurer partners. The public float is 1.27%: the price is set by very few trades, and a placement to widen the float could move it a lot.\n\n**Buy plan.** 200 shares up to Rs 323, 150 up to Rs 275 and 150 up to Rs 242: average Rs 284, about Rs 142,181 in all, against Rs 874,875 at today's price. Not realistic: the share has traded Rs 1,273–1,990 since it listed, about five to seven times the buy price. Even the bull case (about Rs 600) is a third of the price. It's a good small business at a price that assumes many years of very fast growth."
+}
