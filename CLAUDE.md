@@ -60,6 +60,12 @@ Investors want to know what management plans and where the money is going, in a 
 - **From a quarterly report**: update `track` only, with the new figures (quarterlies rarely have management commentary), and set `asOf`.
 - Say in the hand-over if a promise was missed or the plans changed.
 
+### Shareholders (every analysis)
+Keep the `shareholders` section (`docs/json-format.md`) up to date from the latest report's shareholder notes: the twenty largest shareholders, directors' holdings and the public holding (quarterly reports have them; annual reports too).
+- Copy names, share counts and percentages exactly. If a name or figure can't be read from the text, look at the page image; if it still can't be read, leave that holder out and say so in `source`.
+- Compare with the previous quarter: use the old `shareholders.top` (its `asOf` becomes `compareTo`), or the previous report's list if that's been read. Work out each holder's change in shares; mark holders new to the top 20 with `new: true` and list those that dropped out in `gone`. Treat a renamed holder as the same one only when it clearly is, and say so in `note`.
+- `takeaway`: who controls the company and the biggest moves, in one or two sentences. Mention in the hand-over if a big holder (1% or more) sold heavily or a parent's stake changed.
+
 ### Method values from code (every analysis)
 Don't work out the DCF, P/E, dividend, residual income or price-to-book values by hand. Write their inputs (bear/base/bull) to a file in the `modelInputs` format (`docs/json-format.md`), then run `python scripts/valuation.py <CODE> inputs.json --write`: it saves the inputs, fills those methods' bear/base/bull/weighted values in `models`, and prints the fair value, buy and strong-buy prices to copy into `valuation`. NAV, sum of the parts and other methods are still written by hand and are averaged in as they are. The site's "What if?" panel recalculates from `modelInputs`, so it must reproduce the published figures; the validator checks this. Include `maintenance` (the maintenance capex behind each DCF case's start cash) when there's a DCF.
 
@@ -71,7 +77,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 2. **Find what's new.** List the company's folder on the laptop (`localFolder` in the record). A PDF whose name isn't in `reportsRead[].file` is new. If nothing is new, say so and stop.
 3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date. From an annual report of a company that isn't a bank, finance company or insurer, also record the reinvestment figures (capex, depreciation, working capital change, acquisitions, operating profit, tax rate, total equity, interest paid and which section of the cash flow statement it's in, borrowings and lease liabilities, capex booked, impairment, licence amortisation, named growth projects, and R&D: see "Reinvestment figures" in `docs/research-format.md`).
 4. **Check restatements.** If the new report restates an earlier period's figure, correct it in `periods` and add a note saying it was restated and the old value.
-5. **Answer the open questions** in the record, using the new figures, and update `management` ("Management and plans" above).
+5. **Answer the open questions** in the record, using the new figures, and update `management` and `shareholders` ("Management and plans" and "Shareholders" above).
 6. **Re-run the valuation.**
    - Use every method in the current analysis: NAV, ROE, P/E, dividends, DCF or residual income, and so on, with bear, base and bull cases.
    - Keep `valuationInputs` unless the new data clearly justifies a change. For each change, update `value`, write the reason, and set `since` to today.
@@ -79,7 +85,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
    - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
-   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, `requiredReturn`, `modelInputs`, `management`, and `fullText`.
+   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, `requiredReturn`, `modelInputs`, `management`, `shareholders`, and `fullText`.
    - Keep the same writing style: short summary first, then tables, plain language.
 8. **Update the record.**
    - Add the new period to `periods`, and add the report to `reportsRead` (with `file`, `readOn`).

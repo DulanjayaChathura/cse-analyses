@@ -7,6 +7,8 @@
   App.init();
   const content = document.getElementById("content");
   if (App.Stars.enabled()) { App.Stars.wire(content); App.Stars.load(); }
+  content.addEventListener("click", (e) => { const b = e.target.closest("[data-sh-toggle]"); if (!b) return;
+    const l = b.previousElementSibling, open = l.dataset.open !== "true"; l.dataset.open = open; b.textContent = open ? "Show top 10" : `Show all ${l.children.length}`; });
   content.addEventListener("click", (e) => { const b = e.target.closest("[data-mg]"); if (!b) return;
     const box = b.closest(".mg"); box.querySelectorAll("[data-mg]").forEach((x) => x.setAttribute("aria-selected", x === b));
     box.querySelectorAll("[data-mgp]").forEach((p) => p.classList.toggle("on", p.dataset.mgp === b.dataset.mg)); });
@@ -56,6 +58,39 @@
       <div class="mg-grid">${parts.map(([k, t, body], i) => `<div class="mg-part ${i === 0 ? "on" : ""}" data-mgp="${k}"><h4>${t}</h4>${body}</div>`).join("")}</div>
     </div>`;
   }
+
+  function shareholdersHtml(s) {
+    const mn = (n) => (Math.abs(n) >= 1e6 ? `${(n / 1e6).toLocaleString("en-US", { maximumFractionDigits: 1 })}m` : Math.abs(n).toLocaleString("en-US"));
+    const chip = (x) => x.new ? `<span class="sh-chg new">New</span>`
+      : x.change > 0 ? `<span class="sh-chg up">▲ ${mn(x.change)}</span>` : x.change < 0 ? `<span class="sh-chg down">▼ ${mn(-x.change)}</span>` : `<span class="sh-chg same">–</span>`;
+    const COLORS = ["#2b4a8b", "#7a9bd6", "#d29a00"];
+    const bar = `<div class="sh-bar" role="img" aria-label="${App.esc(s.groups.map((g) => `${g.name} ${g.pct}%`).join(", "))}">${s.groups.map((g, i) =>
+      `<span style="width:${g.pct}%;background:${COLORS[i % 3]}"></span>`).join("")}</div>
+      <div class="sh-legend">${s.groups.map((g, i) => `<span><i style="background:${COLORS[i % 3]}"></i>${App.esc(g.name)} <b>${g.pct}%</b></span>`).join("")}</div>`;
+    const dir = (s.directors || []).reduce((a, x) => a + x.shares, 0);
+    const holderDiff = App.isNum(s.publicHoldersPrev) ? s.publicHolders - s.publicHoldersPrev : null;
+    const facts = `<div class="sh-facts">
+      <div><small>Public float</small><b>${s.publicFloat}%</b></div>
+      <div><small>Public shareholders</small><b>${s.publicHolders.toLocaleString("en-US")}</b>${holderDiff ? `<em class="${holderDiff > 0 ? "up" : "down"}">${holderDiff > 0 ? "▲" : "▼"} ${Math.abs(holderDiff).toLocaleString("en-US")} in the quarter</em>` : ""}</div>
+      <div><small>Directors own</small><b>${mn(dir)} shares</b><em>${(s.directors || []).map((x) => App.esc(x.name)).join(", ") || "none"}</em></div></div>`;
+    const moved = s.top.filter((x) => x.new || x.change);
+    const buyers = moved.filter((x) => x.new || x.change > 0).sort((a, b) => (b.new ? b.shares : b.change) - (a.new ? a.shares : a.change));
+    const sellers = moved.filter((x) => x.change < 0).sort((a, b) => a.change - b.change);
+    const mv = (x) => `<li><span>${App.esc(x.name)}</span>${x.new ? `<span class="sh-chg new">New, ${mn(x.shares)}</span>` : chip(x)}</li>`;
+    const TOP = 4, more = (list) => (list.length > TOP ? `<li class="sh-smaller">and ${list.length - TOP} smaller ${list.length - TOP === 1 ? "change" : "changes"}</li>` : "");
+    const moves = `<div class="sh-moves"><div><h4>Bought</h4><ul>${buyers.slice(0, TOP).map(mv).join("") || "<li>None</li>"}${more(buyers)}</ul></div>
+      <div><h4>Sold</h4><ul>${sellers.slice(0, TOP).map(mv).join("")}${more(sellers)}${(s.gone || []).map((g) => `<li><span>${App.esc(g.name)}</span><span class="sh-chg down">Left the top 20 (had ${mn(g.prevShares)})</span></li>`).join("") || (sellers.length ? "" : "<li>None</li>")}</ul></div></div>`;
+    const row = (x, i) => `<li class="${i >= 10 ? "sh-more" : ""}"><span class="sh-rank">${i + 1}</span><span class="sh-name">${App.esc(x.name)}${x.note ? ` <span class="sh-note" title="${App.esc(x.note)}">ⓘ</span>` : ""}</span>
+      <span class="sh-pct">${x.pct.toFixed(2)}%</span>${chip(x)}</li>`;
+    return `<h2>Shareholders</h2>
+      <p class="section-lead">${App.esc(s.takeaway)}</p>
+      ${bar}${facts}
+      <h3 class="sh-h">Biggest moves since ${App.date(s.compareTo)}</h3>${moves}
+      <h3 class="sh-h">Top 20 shareholders</h3>
+      <ol class="sh-list" data-open="false">${s.top.map(row).join("")}</ol>
+      ${s.top.length > 10 ? `<button type="button" class="sh-toggle" data-sh-toggle>Show all ${s.top.length}</button>` : ""}
+      <p class="sh-src">${App.esc(s.source)}. Change = shares bought or sold since the previous quarter.</p>`;
+  }
   const sections = [
     { id: "overview", title: "Overview", always: true, html: () => {
       const rows = classes.map((sc, i) => {
@@ -91,6 +126,8 @@
         targets: myTargets.filter((t) => t.symbol === classes[0].symbol) });
     } },
 
+    { id: "shareholders", title: "Shareholders", always: true, html: () => has("shareholders") ? shareholdersHtml(d.shareholders)
+        : `<h2>Shareholders</h2><p class="section-lead">The largest shareholders and who's buying or selling. Available for this company after its next update or full redo.</p>` },
     { id: "quality", title: "Business tests", key: "quality", html: () => {
       const q = d.quality, n = q.tests.filter((t) => t.pass).length;
       return `<h2>Business tests</h2>
@@ -253,7 +290,7 @@
 
   /* Sections the site doesn't know yet are listed at the end. */
   const knownKeys = new Set(["schemaVersion", "ticker", "analysisDate", "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
-    "keyMetrics", "highlights", "management", "history", "methodReadings", "models", "modelInputs", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
+    "keyMetrics", "highlights", "shareholders", "management", "history", "methodReadings", "models", "modelInputs", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
     "quality", "dividend", "requiredReturn"]);
   const unknown = Object.keys(d).filter((k) => !knownKeys.has(k));
   /* Latest dividend per share, as one more key-figure tile. */

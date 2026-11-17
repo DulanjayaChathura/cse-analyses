@@ -336,8 +336,32 @@ def chk_management(s):
     return p
 
 
+def chk_shareholders(s):
+    """Shareholders section (see docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    if not is_date(s.get("asOf")):
+        p.append("asOf must be a YYYY-MM-DD date")
+    if not is_str(s.get("source")):
+        p.append("source must name the report and page")
+    top = s.get("top")
+    if not isinstance(top, list) or not top or not all(isinstance(x, dict) and is_str(x.get("name")) and is_num(x.get("pct")) and is_num(x.get("shares")) for x in top):
+        p.append("top must be a list of {name, shares, pct, change}")
+    elif len(top) > 20:
+        p.append("top has more than 20 holders")
+    g = s.get("groups")
+    if g is not None and (not isinstance(g, list) or not all(is_num(x.get("pct")) for x in g) or sum(x["pct"] for x in g) > 100.5):
+        p.append("groups must be {name, pct} adding up to no more than 100%")
+    if not is_num(s.get("publicFloat")):
+        p.append("publicFloat must be a number")
+    if not is_num(s.get("publicHolders")):
+        p.append("publicHolders must be a number")
+    return p
+
+
 # Checked when present; no warning when missing (older analyses predate them).
-OPTIONAL_SECTIONS = {"requiredReturn": chk_required_return, "modelInputs": chk_model_inputs, "management": chk_management}
+OPTIONAL_SECTIONS = {"requiredReturn": chk_required_return, "modelInputs": chk_model_inputs, "management": chk_management, "shareholders": chk_shareholders}
 
 CHECKERS = {
     "company": chk_company, "shareClasses": chk_share_classes, "resultsCovered": chk_results,
