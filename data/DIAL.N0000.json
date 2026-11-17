@@ -692,5 +692,200 @@
       "Weights: market cap Rs 461.9bn at Rs 50.20 (CSE close 13 Nov 2026), net debt Rs 56.7bn (30 Sep 2026)"
     ],
     "note": "Cost of equity = 8.24% + 0.63 × (4.2% + 6.08%) = 14.7%; bear +1.5, bull −1.5 points. WACC weights equity 89.1% and after-tax debt (8.25% × (1 − 22.2%) = 6.4%) 10.9%. Cost of debt is near the bottom of the house range (bond − 4 points) because part of the debt was in dollars and short-term bank lines."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 16.2,
+      "base": 14.7,
+      "bull": 13.2
+    },
+    "wacc": {
+      "bear": 15.1,
+      "base": 13.8,
+      "bull": 12.5
+    },
+    "debtWeight": 10.9,
+    "shares": 9200.335,
+    "netDebt": 56.74,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 24,
+        "nopat": 32,
+        "growth": 2,
+        "longRun": 3.5,
+        "roc": 15,
+        "maintenance": 48.2
+      },
+      "base": {
+        "start": 36,
+        "nopat": 39,
+        "growth": 5,
+        "longRun": 4.5,
+        "roc": 20,
+        "maintenance": 46.3
+      },
+      "bull": {
+        "start": 42,
+        "nopat": 42,
+        "growth": 7,
+        "longRun": 5.5,
+        "roc": 25,
+        "maintenance": 31.9
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 3.3,
+        "roe": 20,
+        "longRun": 3.5
+      },
+      "base": {
+        "eps": 4.0,
+        "roe": 25,
+        "longRun": 4.5
+      },
+      "bull": {
+        "eps": 4.4,
+        "roe": 30,
+        "longRun": 5.5
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 2.4,
+        "growth": 2,
+        "longRun": 3.5
+      },
+      "base": {
+        "dividend": 2.8,
+        "growth": 5,
+        "longRun": 4.5
+      },
+      "bull": {
+        "dividend": 3.2,
+        "growth": 7,
+        "longRun": 5.5
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 9.99,
+      "payout": 75,
+      "roeStart": 40,
+      "bear": {
+        "roe": 20,
+        "longRun": 3.5
+      },
+      "base": {
+        "roe": 25,
+        "longRun": 4.5
+      },
+      "bull": {
+        "roe": 30,
+        "longRun": 5.5
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-18",
+    "source": "Annual Report 2025: Chairman's message (pp. 18–21) and Group CEO's review (pp. 22–26); progress from the interims to 30 Sep 2026",
+    "takeaway": "Profit, cash and debt all moving the right way; the next test is whether heavy 5G and network spending (about USD 350m committed over three years) earns a good return.",
+    "said": [
+      {
+        "text": "Record 2025: profit up 67% to Rs 20.8bn, EBITDA up 30% to Rs 86.0bn, revenue up 4.9% to Rs 179.6bn",
+        "ref": "p. 22"
+      },
+      {
+        "text": "Airtel Lanka merger finished; savings of Rs 13.3bn over 18 months, about 1.6× the plan",
+        "ref": "p. 23"
+      },
+      {
+        "text": "Debt cut from Rs 107.7bn to Rs 76.5bn; net debt only 0.64× EBITDA; dollar exposure down to USD 10.5m",
+        "ref": "p. 24"
+      },
+      {
+        "text": "Warns of higher energy costs, inflation and currency risk from the Middle East conflict",
+        "ref": "pp. 18, 26"
+      }
+    ],
+    "plans": [
+      {
+        "text": "“Win with 5G”: grow 5G from 1,000+ sites, aimed at home broadband and businesses",
+        "ref": "pp. 25–26"
+      },
+      {
+        "text": "Grow digital payments (eZ Cash, Genie), Dialog AI and business cloud/cyber services",
+        "ref": "p. 26"
+      },
+      {
+        "text": "Make the network storm-proof after Cyclone Ditwah cut 2,200 of 6,000 sites",
+        "ref": "pp. 25–26"
+      },
+      {
+        "text": "Keep costs down with a simpler, AI-driven operating model; keep paying dividends",
+        "ref": "pp. 24, 26"
+      }
+    ],
+    "investing": [
+      {
+        "text": "5G network",
+        "amount": "USD 100m over 2 years",
+        "ref": "p. 25"
+      },
+      {
+        "text": "Storm-resilient network",
+        "amount": "USD 250m over 3 years",
+        "ref": "p. 25"
+      },
+      {
+        "text": "Network and digital platforms in 2025",
+        "amount": "Rs 20.2bn (11% of revenue)",
+        "ref": "p. 24"
+      },
+      {
+        "text": "5G spectrum (3500 MHz and 27 GHz) bought December 2025",
+        "amount": null,
+        "ref": "p. 18"
+      },
+      {
+        "text": "Paid for from cash: operating free cash flow Rs 49.3bn in 2025",
+        "amount": null,
+        "ref": "p. 24"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Keep cutting debt",
+        "result": "Borrowings Rs 76.5bn → Rs 64.1bn by Sep 2026",
+        "status": "done",
+        "ref": "Interim Sep 2026, p. 2"
+      },
+      {
+        "promise": "Sustain earnings",
+        "result": "9-month profit Rs 28.5bn, already above all of 2025",
+        "status": "done",
+        "ref": "Interim Sep 2026, p. 3"
+      },
+      {
+        "promise": "Step up 5G investment",
+        "result": "Capex booked Rs 35.0bn in 9 months vs Rs 27.5bn in all of 2025",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, note 3"
+      },
+      {
+        "promise": "Sustainable dividends",
+        "result": "Rs 2.10 declared so far for 2026 vs Rs 1.50 for 2025",
+        "status": "done",
+        "ref": "Interims 2026"
+      },
+      {
+        "promise": "Grow 5G users",
+        "result": "Not in the quarterly reports; check the 2026 annual report",
+        "status": "too-early",
+        "ref": ""
+      }
+    ]
   }
 }

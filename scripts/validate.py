@@ -287,8 +287,57 @@ def chk_required_return(s):
     return p
 
 
+def chk_model_inputs(s):
+    """The numbers behind each adjustable method, used by the "What if?" panel (docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    ke = s.get("costOfEquity")
+    if not isinstance(ke, dict) or not all(is_num(ke.get(c)) for c in ("bear", "base", "bull")):
+        p.append("costOfEquity must be {bear, base, bull} numbers")
+    if "dcf" in s:
+        for k in ("shares", "netDebt"):
+            if not is_num(s.get(k)):
+                p.append(f"{k} must be a number when there's a DCF")
+        w = s.get("wacc")
+        if not isinstance(w, dict) or not all(is_num(w.get(c)) for c in ("bear", "base", "bull")):
+            p.append("wacc must be {bear, base, bull} numbers when there's a DCF")
+    for mid in ("dcf", "pe", "ddm", "ri", "pb"):
+        m = s.get(mid)
+        if m is not None and not (isinstance(m, dict) and all(isinstance(m.get(c), dict) for c in ("bear", "base", "bull"))):
+            p.append(f"{mid} needs bear, base and bull inputs")
+    return p
+
+
+MG_STATUS = ("done", "on-track", "missed", "too-early")
+
+
+def chk_management(s):
+    """Management and plans box in the Overview (see docs/json-format.md)."""
+    if not isinstance(s, dict):
+        return ["must be an object"]
+    p = []
+    if not is_str(s.get("source")):
+        p.append("source must name the report and pages")
+    for k in ("said", "plans", "investing"):
+        items = s.get(k)
+        if items is None:
+            continue
+        if not isinstance(items, list) or not all(isinstance(x, dict) and is_str(x.get("text")) for x in items):
+            p.append(f"{k} must be a list of {{text, ref}}")
+        elif len(items) > 5:
+            p.append(f"{k} has {len(items)} points; keep it to 5 at most")
+    t = s.get("track")
+    if t is not None:
+        if not isinstance(t, list) or not all(isinstance(x, dict) and is_str(x.get("promise")) and x.get("status") in MG_STATUS for x in t):
+            p.append("track must be a list of {promise, result, status: " + " / ".join(MG_STATUS) + ", ref}")
+        elif len(t) > 6:
+            p.append(f"track has {len(t)} points; keep it to 6 at most")
+    return p
+
+
 # Checked when present; no warning when missing (older analyses predate them).
-OPTIONAL_SECTIONS = {"requiredReturn": chk_required_return}
+OPTIONAL_SECTIONS = {"requiredReturn": chk_required_return, "modelInputs": chk_model_inputs, "management": chk_management}
 
 CHECKERS = {
     "company": chk_company, "shareClasses": chk_share_classes, "resultsCovered": chk_results,
@@ -338,6 +387,13 @@ def validate_text(text, filename):
             if problems:
                 bad.append(key)
                 warnings.append(f"Section '{key}' has problems and will be shown as not available: " + "; ".join(problems[:5]))
+    if "modelInputs" in data and "modelInputs" not in bad:
+        import valuation  # same folder
+        diffs = valuation.mismatches(data)
+        if diffs:
+            bad.append("modelInputs")
+            warnings.append("Section 'modelInputs' doesn't reproduce the published values, so the What if? panel is hidden: "
+                            + "; ".join(diffs[:4]) + " (run scripts/valuation.py CODE inputs.json --write).")
     for key in data:
         if key not in CORE and key not in CHECKERS and key not in OPTIONAL_SECTIONS and key not in FRAMEWORK_SECTIONS:
             warnings.append(f"Unknown section '{key}' (shown under 'Other details').")

@@ -7,6 +7,9 @@
   App.init();
   const content = document.getElementById("content");
   if (App.Stars.enabled()) { App.Stars.wire(content); App.Stars.load(); }
+  content.addEventListener("click", (e) => { const b = e.target.closest("[data-mg]"); if (!b) return;
+    const box = b.closest(".mg"); box.querySelectorAll("[data-mg]").forEach((x) => x.setAttribute("aria-selected", x === b));
+    box.querySelectorAll("[data-mgp]").forEach((p) => p.classList.toggle("on", p.dataset.mgp === b.dataset.mg)); });
   const toc = document.getElementById("toc");
   const ticker = new URLSearchParams(location.search).get("t");
   if (!ticker) { content.innerHTML = `<p>No company chosen. <a href="./">See all companies</a>.</p>`; return; }
@@ -38,6 +41,21 @@
   const status = App.priceStatus(mainPrice, v);
 
   /* ---------- Sections ---------- */
+
+  function mgmtHtml(m) {
+    const li = (x) => `<li>${App.esc(x.text)}${x.amount ? ` <b class="mg-amt">${App.esc(x.amount)}</b>` : ""}${x.ref ? ` <small class="mg-ref">${App.esc(x.ref)}</small>` : ""}</li>`;
+    const ST = { done: ["✓", "Delivered"], "on-track": ["◐", "On track"], missed: ["✗", "Missed"], "too-early": ["…", "Too early"] };
+    const track = (m.track || []).map((t) => `<li class="mg-t ${t.status}"><span class="mg-st" title="${ST[t.status][1]}">${ST[t.status][0]}</span>
+      <span><b>${App.esc(t.promise)}</b>: ${App.esc(t.result)}${t.ref ? ` <small class="mg-ref">${App.esc(t.ref)}</small>` : ""}</span></li>`).join("");
+    const parts = [["said", "What they said", `<ul>${(m.said || []).map(li).join("")}</ul>`], ["plans", "Plans", `<ul>${(m.plans || []).map(li).join("")}</ul>`],
+      ["investing", "Where the money goes", `<ul>${(m.investing || []).map(li).join("")}</ul>`], ["track", "Promises vs delivery", `<ul class="mg-track">${track}</ul>`]];
+    return `<div class="mg">
+      <div class="mg-head"><h3>Management and plans</h3><small>${App.esc(m.source)}</small></div>
+      ${m.takeaway ? `<p class="mg-take"><b>For investors:</b> ${App.esc(m.takeaway)}</p>` : ""}
+      <div class="mg-tabs" role="tablist">${parts.map(([k, t], i) => `<button type="button" role="tab" data-mg="${k}" aria-selected="${i === 0}">${t}</button>`).join("")}</div>
+      <div class="mg-grid">${parts.map(([k, t, body], i) => `<div class="mg-part ${i === 0 ? "on" : ""}" data-mgp="${k}"><h4>${t}</h4>${body}</div>`).join("")}</div>
+    </div>`;
+  }
   const sections = [
     { id: "overview", title: "Overview", always: true, html: () => {
       const rows = classes.map((sc, i) => {
@@ -64,6 +82,7 @@
           <div>${sum ? `<p class="verdict">${App.esc(sum.headline || "")}</p>${App.md(sum.text)}` : NA}</div>
           <div class="hero-prices">${rows}<div class="status-list">${statuses.join("")}</div></div>
         </div>
+        ${has("management") ? mgmtHtml(d.management) : ""}
         <div class="ladder"><div id="ladder"></div>
           <p class="ladder-caption">${App.term("Strong-buy price", "Strong-buy price")} ${App.rs(v.strongBuyPrice)} and ${App.term("buy price", "Buy price")} ${App.rs(v.buyPrice)} come from ${App.term("fair value", "Fair value")} ${App.rs(v.fairValue)} minus a ${App.term("margin of safety", "Margin of safety")}${v.marginOfSafety ? ` of ${v.marginOfSafety.strongBuy}% and ${v.marginOfSafety.buy}%` : ""}.</p></div>`;
     }, after: () => {
@@ -181,6 +200,9 @@
         ${s.note ? `<p style="margin-top:1rem">${App.esc(s.note)}</p>` : ""}`;
     } },
 
+    { id: "whatif", title: "What if?", always: true, html: () => has("modelInputs") ? `<h2>What if?</h2><div id="whatif"></div>`
+        : `<h2>What if?</h2><p class="section-lead">Change the valuation inputs and see the fair value move. Available for this company after its next update or redo.</p>`,
+      after: () => has("modelInputs") && window.WhatIf && WhatIf.mount(document.getElementById("whatif"), d, mainPrice && mainPrice.value) },
     { id: "alerts", title: "Your alerts", always: true, html: () => {
       if (!myTargets.length) return `<h2>Your alerts</h2><p class="section-lead">No price alerts set for this company. Add targets to <b>alerts.json</b> in the repository to get Telegram messages.</p>`;
       const rows = myTargets.map((t) => {
@@ -231,7 +253,7 @@
 
   /* Sections the site doesn't know yet are listed at the end. */
   const knownKeys = new Set(["schemaVersion", "ticker", "analysisDate", "company", "shareClasses", "resultsCovered", "price", "summary", "valuation",
-    "keyMetrics", "highlights", "history", "methodReadings", "models", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
+    "keyMetrics", "highlights", "management", "history", "methodReadings", "models", "modelInputs", "modelsNote", "scenarios", "sensitivity", "buyPlan", "changeMyView", "notes", "fullText", "_build",
     "quality", "dividend", "requiredReturn"]);
   const unknown = Object.keys(d).filter((k) => !knownKeys.has(k));
   /* Latest dividend per share, as one more key-figure tile. */

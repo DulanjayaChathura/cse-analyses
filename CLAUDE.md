@@ -53,6 +53,16 @@ The required return is the return a shareholder should demand. It's worked out t
 - **Use them consistently.** The DCF discounts at WACC and subtracts net debt. The P/E, dividend and residual income methods and the justified P/E and P/B use the cost of equity. Long-run growth stays below the bond yield and below WACC.
 - Copy the calculator's `requiredReturn` figures into the analysis's `requiredReturn` section and save `Cost of equity` (and `WACC`) as valuation inputs, with the date.
 
+### Management and plans (every analysis)
+Investors want to know what management plans and where the money is going, in a few lines, not a long paragraph. Keep the `management` section (`docs/json-format.md`), shown in the Overview:
+- **From an annual report** (first analysis, `/redo … full`, or a new annual report): rewrite it from the Chairman's message, the CEO's review and the strategy or outlook pages. One-sentence `takeaway`; at most 5 short points each for what they said, plans and where the money goes (amounts and periods exactly as stated); a page for every point. Paraphrase: don't copy sentences, and don't add anything the report doesn't say.
+- **Promises vs delivery** (`track`): take the previous annual report's promises (from the old `management` section, or the earlier report if it's been read) and check them against this year's figures. Mark each `done`, `on-track`, `missed` or `too-early`, with the figure that shows it and its source. A missed promise is worth more to the reader than a met one, so never leave one out.
+- **From a quarterly report**: update `track` only, with the new figures (quarterlies rarely have management commentary), and set `asOf`.
+- Say in the hand-over if a promise was missed or the plans changed.
+
+### Method values from code (every analysis)
+Don't work out the DCF, P/E, dividend, residual income or price-to-book values by hand. Write their inputs (bear/base/bull) to a file in the `modelInputs` format (`docs/json-format.md`), then run `python scripts/valuation.py <CODE> inputs.json --write`: it saves the inputs, fills those methods' bear/base/bull/weighted values in `models`, and prints the fair value, buy and strong-buy prices to copy into `valuation`. NAV, sum of the parts and other methods are still written by hand and are averaged in as they are. The site's "What if?" panel recalculates from `modelInputs`, so it must reproduce the published figures; the validator checks this. Include `maintenance` (the maintenance capex behind each DCF case's start cash) when there's a DCF.
+
 ## Updating a company from a new report
 
 Follow these steps whenever the owner says a new report was added to the laptop folder (or runs `/update <CODE>`).
@@ -61,7 +71,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
 2. **Find what's new.** List the company's folder on the laptop (`localFolder` in the record). A PDF whose name isn't in `reportsRead[].file` is new. If nothing is new, say so and stop.
 3. **Read only the new reports.** Extract the standard figures (`docs/research-format.md`) for the new period. Record each figure with its source as report name and page, e.g. "Interim Q3 2026, p. 4". For quarterly reports, note whether figures are for the quarter or year-to-date. From an annual report of a company that isn't a bank, finance company or insurer, also record the reinvestment figures (capex, depreciation, working capital change, acquisitions, operating profit, tax rate, total equity, interest paid and which section of the cash flow statement it's in, borrowings and lease liabilities, capex booked, impairment, licence amortisation, named growth projects, and R&D: see "Reinvestment figures" in `docs/research-format.md`).
 4. **Check restatements.** If the new report restates an earlier period's figure, correct it in `periods` and add a note saying it was restated and the old value.
-5. **Answer the open questions** in the record, using the new figures.
+5. **Answer the open questions** in the record, using the new figures, and update `management` ("Management and plans" above).
 6. **Re-run the valuation.**
    - Use every method in the current analysis: NAV, ROE, P/E, dividends, DCF or residual income, and so on, with bear, base and bull cases.
    - Keep `valuationInputs` unless the new data clearly justifies a change. For each change, update `value`, write the reason, and set `since` to today.
@@ -69,7 +79,7 @@ Follow these steps whenever the owner says a new report was added to the laptop 
    - Use the latest CSE close from `generated/prices.json` when it has the share; otherwise look up the price with web search and say where it's from and its date. Web price snapshots (e.g. Simply Wall St) can be weeks old, so prefer the CSE close.
 7. **Archive, then update the analysis.**
    - Copy the current `data/<CODE>.json` to `research/<CODE>/history/<its analysisDate>.json`, if not already there.
-   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, `requiredReturn`, and `fullText`.
+   - Then rewrite `data/<CODE>.json` in the same format: new `analysisDate`, `resultsCovered`, `price`, `summary`, `valuation`, `dividend` (latest dividend per share, plus any newer interim declared), `keyMetrics`, `highlights`, `history`, `models`, `scenarios`, `sensitivity`, `buyPlan`, `changeMyView`, `quality`, `requiredReturn`, `modelInputs`, `management`, and `fullText`.
    - Keep the same writing style: short summary first, then tables, plain language.
 8. **Update the record.**
    - Add the new period to `periods`, and add the report to `reportsRead` (with `file`, `readOn`).
