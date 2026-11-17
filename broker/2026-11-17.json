@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "source": "HNB Stockbrokers",
+  "posts": 8,
+  "messageIds": [263, 264, 265, 266, 267, 268, 269, 270],
+  "commands": [271],
+  "callsPriceDate": null,
+  "note": "No recommendation table or broker calls were posted in these messages, so there is nothing to compare with this site's fair values. Message 269 links to the detailed Daily Market Update for 17 Nov and message 270 to HNB Stockbrokers' 3Q 2026 earnings summary on Hatton National Bank; both links (tinyurl.com) could not be opened from this run (the host is not allowed in this session's network settings), so none of their figures, ratings or targets are included. Message 266's Instagram link was not opened; its text already describes the vehicle-market update. Message 267 is only the heat-map caption; the image posted with it (message 268) is the Daily Market Snapshot. Snapshot foreign buying (Rs 1.10bn) and net inflow (Rs 1.09bn) are shown rounded to two decimals in billions. In the foreign-flow chart the 'Other' bar (Rs 2mn) and PKME's 'Rs -0M' are left out. The Bloomberg world-indices screen (message 265) was taken at 08:47 Sri Lanka time on 17 Nov, so its figures are Monday 16 Nov's US and European sessions.",
+  "highlights": [
+    "A quiet day on 17 Nov after Monday's sell-off: the ASPI slipped 0.14% (−31.30 points) to 21,701.07 and the S&P SL20 0.25% to 6,184.47, on thin turnover of Rs 3.73bn; Commercial Bank was again the biggest drag, followed by Cargills, HNB, Dialog and LGL.",
+    "Foreigners turned big net buyers, Rs 1.09bn in, almost all of it Rs 1,086mn into JAT Holdings (JAT.N0000, a company analysed on this site); other flows were tiny (NDB −Rs 5mn, TAP +Rs 8mn).",
+    "Central bank PMIs show faster growth in October: services 62.5 (60.5 in September) and manufacturing 55.3 (53.0), with all manufacturing sub-indices above 50 ahead of the festive season.",
+    "Plenty Foods bought a controlling 71.38% of Convenience Foods (Lanka) from CBL Investments for Rs 3.98bn (Rs 2,025.75 a share, against net assets of Rs 1,578.86 a share).",
+    "Wall Street fell sharply on Monday (S&P 500 −1.9%, Nasdaq −2.5%, semiconductors −5.3%) on AI worries after Nvidia's CEO resigned, ahead of Nvidia's results and Anthropic's IPO."
+  ],
+  "market": {
+    "aspi": 21701.07,
+    "aspiChangePct": -0.14,
+    "aspiPoints": -31.30,
+    "sp20": 6184.47,
+    "sp20ChangePct": -0.25,
+    "turnoverBn": 3.73,
+    "marketPE": 11.17,
+    "marketPBV": 1.29,
+    "marketCapTn": 7.82,
+    "foreignBuyMn": 1100,
+    "foreignSellMn": 15.31,
+    "foreignNetMn": 1090,
+    "gainers": ["VONE", "CTHR", "LION", "LOLC", "GLAS"],
+    "losers": ["COMB", "CARS", "HNB", "DIAL", "LGL"],
+    "foreignFlows": [
+      {"code": "JAT", "mn": 1086},
+      {"code": "TAP", "mn": 8},
+      {"code": "COCR", "mn": 3},
+      {"code": "MELS", "mn": 2},
+      {"code": "HNBX", "mn": 1},
+      {"code": "SPEN", "mn": -2},
+      {"code": "CSLK", "mn": -2},
+      {"code": "BIL", "mn": -3},
+      {"code": "NDB", "mn": -5}
+    ],
+    "momentum": [
+      {"code": "SING", "pct": 28},
+      {"code": "MULL", "pct": 27},
+      {"code": "CABO", "pct": 26},
+      {"code": "YORK", "pct": 23},
+      {"code": "TKYO.X", "pct": 20}
+    ]
+  },
+  "calls": [],
+  "dividends": [],
+  "news": [
+    {"title": "October PMIs: faster growth", "text": "The central bank's services PMI rose to 62.5 from 60.5, led by personal services with help from financial services and goods transport. The manufacturing PMI rose to 55.3 from 53.0; the expansion was broad-based and the outlook is supported by festive-season demand."},
+    {"title": "People's Bank: nine months to September", "text": "Pre-tax profit Rs 52.1bn. Total operating income rose 18.7% to Rs 145.1bn and net interest income 21.5% to Rs 126.2bn."},
+    {"title": "Tea output steady in October", "text": "Production was 22.07mn kg, up 0.37% on October 2025 and 3.71% on October 2024; better high- and medium-grown output offset lower low-grown teas."},
+    {"title": "Plenty Foods takes control of Convenience Foods", "text": "Plenty Foods bought 1,962,977 shares (71.38%) of Convenience Foods (Lanka) in a crossing at Rs 2,025.75 each, Rs 3.98bn in all, from CBL Investments. The company's net assets were Rs 1,578.86 a share at end-September. Dawi Investment Trust (10.35%) and JB Cocoshell (6.03%) are the next largest holders."},
+    {"title": "Vehicle market: demand easing", "text": "HNB Stockbrokers says vehicle sales peaked in May as buyers rushed ahead of tighter loan-to-value limits and the import surcharge, and have eased since. Electric cars now lead car sales and hybrids are gaining among SUVs; commercial vehicles held up. With the surcharge extended to December and financing tight, the broker expects a subdued end to the year."},
+    {"title": "Wall Street sell-off on AI jitters", "text": "On Monday the S&P 500 fell 1.9%, the Dow 1.4% and the Nasdaq 2.5%, with the semiconductor index down 5.3%, after Jensen Huang's resignation as Nvidia CEO, ahead of Nvidia's results and Anthropic's IPO. Most Asian markets on the morning screen were also lower (Nikkei −1.2%, Hang Seng −0.9%), while India's Nifty rose 0.6%."},
+    {"title": "Xi, Trump and Putin to meet", "text": "China's foreign ministry called Thursday's three-way meeting of the Chinese, US and Russian leaders in Shenzhen, during the APEC summit, of 'groundbreaking significance'."}
+  ]
+}
