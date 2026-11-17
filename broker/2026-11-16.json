@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "date": "2026-11-16",
   "source": "HNB Stockbrokers",
-  "posts": 14,
+  "posts": 16,
   "messageIds": [
     162,
     163,
@@ -17,13 +17,16 @@
     225,
     226,
     227,
-    228
+    228,
+    238,
+    260
   ],
   "commands": [
-    229
+    229,
+    261
   ],
   "callsPriceDate": "2026-11-13",
-  "note": "Messages 162 (empty), 163 and 171 ('update'), 180 ('update HAYL') and 187 ('redo dial.n000') are the owner's own posts from 14 Nov, not broker content, so nothing is summarised from them. Message 225 links to the broker's detailed Weekly HSB Universe for 13 Nov; the link (tinyurl.com) could not be opened from this run, so its contents are left out. The recommendation table (message 226) is priced at the 13 Nov close; RCL's target is shown as TBA, and MGT and TJL are marked as provisional targets. The table shows Sampath's beta as 2.9, copied as shown. The Hayleys card's 'Share Price' of Rs 225.50 for Q2 2026/27 is the 30 September price (the last close was Rs 236.25 on 13 Nov); its revenue chart labels the September quarter's q/q change as −0.36%, which does not match the bar heights, so the q/q change is left out. The Bloomberg world-indices screen (message 222) was taken at 08:49 Sri Lanka time on 16 Nov, so its US and European figures are the previous session's. In the foreign-flow chart, the 'Other' bar shows both buying and selling and is left out. Heat-map (message 227, 16 Nov close) percentages on the smallest tiles are too small to read and are left out.",
+  "note": "Messages 162 (empty), 163 and 171 ('update'), 180 ('update HAYL') and 187 ('redo dial.n000') are the owner's own posts from 14 Nov, not broker content, so nothing is summarised from them. Message 225 links to the broker's detailed Weekly HSB Universe for 13 Nov; the link (tinyurl.com) could not be opened from this run, so its contents are left out. The recommendation table (message 226) is priced at the 13 Nov close; RCL's target is shown as TBA, and MGT and TJL are marked as provisional targets. The table shows Sampath's beta as 2.9, copied as shown. The Hayleys card's 'Share Price' of Rs 225.50 for Q2 2026/27 is the 30 September price (the last close was Rs 236.25 on 13 Nov); its revenue chart labels the September quarter's q/q change as −0.36%, which does not match the bar heights, so the q/q change is left out. The Bloomberg world-indices screen (message 222) was taken at 08:49 Sri Lanka time on 16 Nov, so its US and European figures are the previous session's. In the foreign-flow chart, the 'Other' bar shows both buying and selling and is left out. Heat-map (message 227, 16 Nov close) percentages on the smallest tiles are too small to read and are left out. Added with /summary16 (17 Nov): message 238 ('add INME.N0000') is the owner's own post, not broker content. Message 260 (17 Nov, 17:12) links to HNB Stockbrokers' 3Q 2026 earnings summary on Commercial Bank; the link (tinyurl.com) could not be opened from this run, so none of its figures, rating or target are included.",
   "highlights": [
     "A broad sell-off on 16 Nov: the ASPI fell 1.32% (−291.81 points) to 21,732.37 and the S&P SL20 1.49%, on Rs 10.48bn turnover; Commercial Bank, Dialog, HNB, Tokyo Cement and LOLC Finance pulled the index down most, and foreigners were net sellers of Rs 13.18mn (Rs 28mn out of Cargills, Rs 9mn out of Dialog).",
     "Hayleys' September quarter: revenue Rs 178.7bn (+28.9% year on year) and EPS Rs 5.02 (+57.8%); trailing P/E 10.2x and P/B 1.54x at Rs 236.25. HNB Stockbrokers rates it Moderate buy with a Rs 260 target, about 72% above this site's fair value of Rs 151 (buy below Rs 128).",
@@ -266,6 +269,10 @@
     {
       "title": "Global",
       "text": "Asian markets fell early on 16 Nov (Taiwan −3.90%, Kospi −2.66%, Nikkei −1.57%; Hang Seng +0.89%); the S&P 500 had closed 0.40% lower and the Dow 0.10% higher. The yen held near two-month lows (about 159.7 per dollar) after a surprise Japanese GDP contraction. US diesel fell below $6 a gallon, a two-month low, as geopolitical tensions eased and demand weakened."
+    },
+    {
+      "title": "Commercial Bank: 3Q 2026 earnings summary",
+      "text": "On 17 Nov HNB Stockbrokers Research published a 3Q 2026 earnings summary on Commercial Bank (COMB). Its contents could not be opened, so no figures are given here; the broker's last table (13 Nov) rated COMB Moderate buy with a Rs 253 target."
     }
   ]
 }
