@@ -22,9 +22,13 @@
         <h1>Companies</h1>
         <p id="updated">Loading…</p>
       </div>
-      <input class="search" id="search" type="search" placeholder="Search by name or code" aria-label="Search companies">
+      <div class="home-tools">
+        <label class="starred-only" hidden><input type="checkbox" id="starred-only"> Starred only</label>
+        <input class="search" id="search" type="search" placeholder="Search by name" aria-label="Search by company name">
+      </div>
     </div>
     <div id="notice"></div>
+    <p class="empty" id="no-match" hidden></p>
     <div id="cards"></div>
   </main>
 

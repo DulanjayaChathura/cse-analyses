@@ -366,3 +366,28 @@ details.more[open] > summary { margin-bottom: 0.6rem; }
 .test-value { font-weight: 600; font-size: 1.05rem; }
 .test-note { font-size: 0.86rem; color: var(--ink-soft); margin-top: 0.15rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Stars and search tools ---------- */
+.home-tools { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; justify-content: flex-end; }
+.starred-only { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: var(--ink-soft); cursor: pointer; white-space: nowrap; }
+.starred-only input { width: 1rem; height: 1rem; accent-color: #d29a00; }
+.card-wrap { position: relative; display: flex; }
+.card-wrap > .card { flex: 1; min-width: 0; }
+.card-wrap[hidden] { display: none; }
+.card-wrap > .star { position: absolute; top: 0.55rem; right: 0.55rem; z-index: 2; }
+.star { font: inherit; font-size: 1.3rem; line-height: 1; width: 2.2rem; height: 2.2rem; display: inline-grid; place-items: center;
+  border: 0; border-radius: 50%; background: transparent; color: var(--ink-soft); cursor: pointer; vertical-align: middle; }
+.star:hover { background: var(--rule); color: var(--ink); }
+.star:focus-visible { outline: 2px solid var(--accent, #2563eb); outline-offset: 1px; }
+.star.on { color: #d29a00; }
+h1 .star { font-size: 1.5rem; margin-left: 0.2rem; }
+.card-wrap.is-starred > .card { border-left: 5px solid #d29a00;
+  background: linear-gradient(0deg, rgba(210, 154, 0, 0.07), rgba(210, 154, 0, 0.07)), var(--surface); }
+[data-theme="dark"] .card-wrap.is-starred > .card { background: linear-gradient(0deg, rgba(232, 176, 30, 0.10), rgba(232, 176, 30, 0.10)), var(--surface); }
+#no-match { margin: 0 0 1.5rem; }
+.toast { position: fixed; left: 50%; bottom: 1.2rem; transform: translate(-50%, 1rem); opacity: 0; pointer-events: none;
+  background: var(--ink); color: var(--surface); padding: 0.6rem 1rem; border-radius: 6px; font-size: 0.9rem; max-width: 90vw;
+  transition: opacity 0.2s, transform 0.2s; z-index: 50; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+@media (max-width: 700px) { .home-tools { justify-content: stretch; } .home-tools .search { flex: 1; min-width: 0; } }
+.card-wrap .card-top { padding-right: 2rem; }

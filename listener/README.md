@@ -87,3 +87,15 @@ One-time setup:
    `RESEARCH_ROUTINE_URL` (the Fire URL) and `RESEARCH_ROUTINE_TOKEN` (the token).
 3. Cloudflare → the `cse-summary` worker → **Edit code** → replace the code with the
    latest `listener/worker.js` → **Deploy**. No new Cloudflare secrets are needed.
+
+## Stars (the ☆ buttons on the site)
+The worker also keeps the starred companies, so they're the same on every device. There's no key: only pages on the site's own address are answered, so anyone who opens the site can star or unstar. Stars only change the company list, never prices, alerts or analyses.
+
+One-time setup in Cloudflare:
+1. **Storage & Databases → KV → Create a namespace**, name it `cse-stars`.
+2. Open the worker → **Settings → Bindings → Add → KV namespace**. Variable name `STARS`, namespace `cse-stars`. Save.
+3. Only if your site isn't at `https://dulanjayachathura.github.io`: add a text variable `SITE_ORIGIN` with its address (no path, no trailing slash).
+4. **Edit code**, paste the new `worker.js`, **Deploy**.
+5. Check it: open `https://<worker address>/stars` in a browser. It should say `{"error":"Only the site can use this."}` (a direct visit isn't the site), which shows the route is live.
+
+The site finds the worker through `App.STARS_URL` in `assets/js/common.js` (the worker's address). Leave it empty to hide the stars.

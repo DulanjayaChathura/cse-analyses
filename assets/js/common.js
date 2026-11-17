@@ -286,3 +286,93 @@ App.researchLine = function (r) {
 };
 
 App.init = function () { App.initTheme(); App.initGlossary(); };
+
+/* ---------- Stars ----------
+   Starred companies are kept by the Cloudflare worker (listener/worker.js, GET/POST /stars),
+   so they're the same on every device. There's no key: anyone who opens the site can star.
+   Leave STARS_URL empty to hide the stars. The last list seen is kept in this browser so
+   stars show at once; the worker's list replaces it when it arrives. */
+App.STARS_URL = "";
+App.Stars = {
+  set: new Set(),
+  listeners: [],
+  enabled: () => Boolean(App.STARS_URL),
+  has: (t) => App.Stars.set.has(t),
+  onChange(fn) { this.listeners.push(fn); },
+  emit() { this.listeners.forEach((fn) => fn(this.set)); },
+  remember() { try { localStorage.setItem("stars", JSON.stringify([...this.set])); } catch (e) { /* storage off */ } },
+  async load() {
+    if (!this.enabled()) return this.set;
+    try { this.set = new Set(JSON.parse(localStorage.getItem("stars") || "[]")); } catch (e) { /* storage off */ }
+    this.emit();
+    try {
+      const r = await fetch(App.STARS_URL.replace(/\/$/, "") + "/stars", { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status);
+      this.set = new Set((await r.json()).stars || []);
+      this.remember();
+      this.emit();
+    } catch (e) { console.warn("Stars couldn't be loaded", e); }
+    return this.set;
+  },
+  /* Changes the star at once, then saves it; puts it back if saving fails. */
+  async toggle(ticker) {
+    const starred = !this.set.has(ticker);
+    starred ? this.set.add(ticker) : this.set.delete(ticker);
+    this.emit();
+    try {
+      const r = await fetch(App.STARS_URL.replace(/\/$/, "") + "/stars", {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ticker, starred }),
+      });
+      if (!r.ok) throw new Error(r.status);
+      this.set = new Set((await r.json()).stars || []);
+      this.remember();
+      this.emit();
+      return true;
+    } catch (e) {
+      starred ? this.set.delete(ticker) : this.set.add(ticker);
+      this.emit();
+      App.toast("Couldn't save the star. Check your connection and try again.");
+      return false;
+    }
+  },
+  button(ticker, name) {
+    if (!this.enabled()) return "";
+    const on = this.has(ticker);
+    return `<button type="button" class="star${on ? " on" : ""}" data-star="${App.esc(ticker)}" aria-pressed="${on}"
+      aria-label="${on ? "Unstar" : "Star"} ${App.esc(name || ticker)}" title="${on ? "Starred: tap to unstar" : "Star this company"}">${on ? "★" : "☆"}</button>`;
+  },
+  /* Keeps every star button inside `root` in step, and makes them work. */
+  wire(root) {
+    root.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-star]");
+      if (!b) return;
+      e.preventDefault();
+      e.stopPropagation();
+      this.toggle(b.dataset.star);
+    });
+    this.onChange(() => root.querySelectorAll("[data-star]").forEach((b) => {
+      const on = this.has(b.dataset.star);
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", on);
+      b.textContent = on ? "★" : "☆";
+      b.title = on ? "Starred: tap to unstar" : "Star this company";
+      b.setAttribute("aria-label", b.getAttribute("aria-label").replace(/^(Unstar|Star)/, on ? "Unstar" : "Star"));
+    }));
+  },
+};
+
+/* A short message at the bottom of the screen. */
+App.toast = function (text) {
+  let el = document.getElementById("toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    el.setAttribute("role", "status");
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.classList.add("show");
+  clearTimeout(App.toast.t);
+  App.toast.t = setTimeout(() => el.classList.remove("show"), 4000);
+};

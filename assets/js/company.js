@@ -6,6 +6,7 @@
 (async function () {
   App.init();
   const content = document.getElementById("content");
+  if (App.Stars.enabled()) { App.Stars.wire(content); App.Stars.load(); }
   const toc = document.getElementById("toc");
   const ticker = new URLSearchParams(location.search).get("t");
   if (!ticker) { content.innerHTML = `<p>No company chosen. <a href="./">See all companies</a>.</p>`; return; }
@@ -57,7 +58,7 @@
 
       const sum = has("summary") ? d.summary : null;
       return `
-        <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)}</h1>
+        <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)} ${App.Stars.button(d.ticker, meta.name)}</h1>
           <div class="hero-meta">${App.esc(d.ticker)}${meta.sector ? ", " + App.esc(meta.sector) : ""}. Analysis of ${App.date(d.analysisDate)}.</div></div></div>
         <div class="hero-grid">
           <div>${sum ? `<p class="verdict">${App.esc(sum.headline || "")}</p>${App.md(sum.text)}` : NA}</div>

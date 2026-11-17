@@ -51,14 +51,15 @@
     if (main && main.feedStale) badges.push(`<span class="badge warn">Price not updated recently</span>`);
     if (main && main.noTradeSince) badges.push(`<span class="badge muted">No trade since ${App.date(main.noTradeSince)}</span>`);
 
-    return `<a class="card" href="company.html?t=${encodeURIComponent(c.ticker)}" data-search="${App.esc((c.name + " " + c.ticker + " " + c.shareClasses.map((s) => s.symbol).join(" ")).toLowerCase())}">
+    // Search looks at the company name only: "dia" finds every name containing those letters.
+    return `<div class="card-wrap${App.Stars.has(c.ticker) ? " is-starred" : ""}" data-search="${App.esc(c.name.toLowerCase())}">${App.Stars.button(c.ticker, c.name)}<a class="card" href="company.html?t=${encodeURIComponent(c.ticker)}">
       <div class="card-top">${App.logo(c)}<div><div class="card-name">${App.esc(c.name)}</div><div class="card-sector">${App.esc(c.sector || "")}</div></div></div>
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
       <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span><span>Analysis ${App.date(c.analysisDate)}</span></div>
       ${dividendLine(c.dividend)}
       <div class="badges">${badges.join("")}</div>
-    </a>`;
+    </a></div>`;
   }
 
   /* "Dividend Rs 0.95 for 2025/26 · Rs 0.25 interim for 2026/27" (per share). */
@@ -81,8 +82,10 @@
       cardsEl.innerHTML = `<div class="empty">No companies yet. Add an analysis file to the <b>data</b> folder in GitHub and it will appear here about a minute later.</div>`;
       return;
     }
-    const groups = [1, 2, 3].map((n) => ({ cat: App.CATEGORIES[n], list: companies.filter((c) => (catOf(c) || {}).n === n) }));
-    const unrated = companies.filter((c) => !catOf(c));
+    // Starred companies go first in their category (keeping the usual order among them).
+    const ordered = companies.filter((c) => App.Stars.has(c.ticker)).concat(companies.filter((c) => !App.Stars.has(c.ticker)));
+    const groups = [1, 2, 3].map((n) => ({ cat: App.CATEGORIES[n], list: ordered.filter((c) => (catOf(c) || {}).n === n) }));
+    const unrated = ordered.filter((c) => !catOf(c));
     cardsEl.innerHTML = groups.map((g) => `<section class="cat-group">
         <h2><span class="cat-num ${g.cat.cls}">${g.cat.n}</span>${g.cat.name} <span class="cat-count">${g.list.length}</span></h2>
         <p class="cat-lead">${g.cat.lead}</p>
@@ -91,8 +94,37 @@
       </section>`).join("")
       + (unrated.length ? `<section class="cat-group"><h2>Not rated yet <span class="cat-count">${unrated.length}</span></h2><div class="cards">${unrated.map(card).join("")}</div></section>` : "");
   }
-  render();
-  document.addEventListener("themechange", render);
+  const onlyEl = document.getElementById("starred-only");
+  const searchEl = document.getElementById("search");
+  function renderAll() { render(); filter(); }
+
+  /* Search and "Starred only" hide cards, and any group left with none. */
+  function filter() {
+    const q = searchEl.value.trim().toLowerCase();
+    const only = Boolean(onlyEl && onlyEl.checked);
+    cardsEl.querySelectorAll(".card-wrap").forEach((el) => {
+      el.hidden = (Boolean(q) && !el.dataset.search.includes(q)) || (only && !el.classList.contains("is-starred"));
+    });
+    cardsEl.querySelectorAll(".cat-group").forEach((g) => {
+      g.hidden = (Boolean(q) || only) && !g.querySelector(".card-wrap:not([hidden])");
+    });
+    const none = document.getElementById("no-match");
+    const any = cardsEl.querySelector(".card-wrap:not([hidden])");
+    none.hidden = Boolean(any) || (!q && !only);
+    none.textContent = only && !q ? "No starred companies yet. Tap ☆ on a company to star it."
+      : only ? `No starred company's name contains "${searchEl.value.trim()}".`
+      : `No company's name contains "${searchEl.value.trim()}".`;
+  }
+
+  renderAll();
+  document.addEventListener("themechange", renderAll);
+  if (App.Stars.enabled()) {
+    App.Stars.wire(cardsEl);
+    App.Stars.onChange(renderAll);
+    App.Stars.load();
+    onlyEl.closest("label").hidden = false;
+    onlyEl.addEventListener("change", filter);
+  }
 
   // Banner listing research published in the last few days that this viewer hasn't dismissed.
   const fresh = companies.filter((c) => App.isRecentResearch(c.latestResearch) && !App.isDismissed(App.researchKey(c.ticker, c.latestResearch)))
@@ -108,10 +140,5 @@
     });
   }
 
-  document.getElementById("search").addEventListener("input", (e) => {
-    const q = e.target.value.trim().toLowerCase();
-    cardsEl.querySelectorAll(".card").forEach((el) => { el.hidden = q && !el.dataset.search.includes(q); });
-    // While searching, hide a category that has no matching card.
-    cardsEl.querySelectorAll(".cat-group").forEach((g) => { g.hidden = q && !g.querySelector(".card:not([hidden])"); });
-  });
+  searchEl.addEventListener("input", filter);
 })();

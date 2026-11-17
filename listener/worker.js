@@ -20,6 +20,11 @@
  * for that.
  * Every other post is ignored. The main bot keeps collecting posts as before.
  *
+ * Stars: the site's ☆ buttons read and save the starred companies here
+ * (GET /stars, POST /stars {"ticker": "DIAL.N0000", "starred": true}), kept in the
+ * STARS KV namespace. There's no key: only pages on the site's own address are
+ * answered (SITE_ORIGIN), so anyone who opens the site can star or unstar.
+ *
  * Settings (Cloudflare → the worker → Settings → Variables and Secrets):
  *   BOT_TOKEN       secret  the helper bot's token from @BotFather
  *   CHANNEL         text    optional: the channel id (-100…) or @username, to accept
@@ -30,6 +35,8 @@
  *   ROUTINE_URL     secret  the Claude task's Fire URL
  *   ROUTINE_TOKEN   secret  the Claude task's API token (sk-ant-oat01-…)
  *   REPO            text    optional, default DulanjayaChathura/cse-analyses
+ *   STARS           KV      binding to a KV namespace (e.g. "cse-stars") for the starred companies
+ *   SITE_ORIGIN     text    optional, default https://dulanjayachathura.github.io
  *
  * After saving the settings, open https://<this worker's address>/setup?key=<WEBHOOK_SECRET>
  * once in a browser. It connects the helper bot to this worker.
@@ -39,6 +46,8 @@ const RESEARCH = /^\/(update|add|redo)(?:@\w+)?\s+\S/i;
 const TICKER_IN_PARENS = /\(([A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4})\)/g;
 const REPLY_ACK = /^(all|please|pls|ok(ay)?|yes|go(\s+ahead)?|do\s*it|k|full)?$/i;
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
+const STAR_TICKER = /^[A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4}$/;
+const MAX_STARS = 200;
 
 export default {
   async fetch(request, env, ctx) {
@@ -55,6 +64,8 @@ export default {
       const info = await telegram(env, "getWebhookInfo", {});
       return json({ setWebhook: res, webhook: info });
     }
+
+    if (url.pathname === "/stars") return stars(request, env);
 
     if (request.method === "GET" && url.pathname === "/") {
       return new Response("CSE /summary listener is running.");
@@ -220,4 +231,43 @@ async function telegram(env, method, body) {
 
 function json(obj) {
   return new Response(JSON.stringify(obj, null, 2), { headers: { "Content-Type": "application/json" } });
+}
+
+/* ---------- Stars (the site's ☆ buttons) ---------- */
+async function stars(request, env) {
+  const site = (env.SITE_ORIGIN || "https://dulanjayachathura.github.io").replace(/\/$/, "");
+  const origin = request.headers.get("Origin") || "";
+  const cors = {
+    "Access-Control-Allow-Origin": site,
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "86400",
+    "Cache-Control": "no-store",
+    "Vary": "Origin",
+  };
+  const reply = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...cors, "Content-Type": "application/json" } });
+  if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
+  if (origin !== site) return reply({ error: "Only the site can use this." }, 403);
+  if (!env.STARS) return reply({ error: "STARS isn't set up on the worker." }, 503);
+
+  const load = async () => {
+    const list = await env.STARS.get("stars", "json");
+    return Array.isArray(list) ? list.filter((t) => STAR_TICKER.test(t)) : [];
+  };
+  if (request.method === "GET") return reply({ stars: await load() });
+  if (request.method !== "POST") return reply({ error: "GET or POST only." }, 405);
+
+  const body = await request.json().catch(() => ({}));
+  const ticker = String(body.ticker || "").toUpperCase();
+  if (!STAR_TICKER.test(ticker) || typeof body.starred !== "boolean") return reply({ error: "Send {ticker, starred}." }, 400);
+  let list = await load();
+  if (body.starred && !list.includes(ticker)) {
+    if (list.length >= MAX_STARS) return reply({ error: `At most ${MAX_STARS} stars.` }, 400);
+    list.push(ticker);
+  } else if (!body.starred) {
+    list = list.filter((t) => t !== ticker);
+  }
+  list.sort();
+  await env.STARS.put("stars", JSON.stringify(list));
+  return reply({ stars: list });
 }
