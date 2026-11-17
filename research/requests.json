@@ -605,6 +605,23 @@
       "status": "done",
       "result": "Fair value Rs 64.70 → 39.10 (cost of equity now 22.0% on the standard CAPM, was 16.5%), buy Rs 33.20, category 2 watch list (unchanged)",
       "finishedAt": "2026-11-17T18:13:09+00:00"
+    },
+    {
+      "id": "20261117213830-HHL",
+      "ticker": "HHL.N0000",
+      "name": "Hemas Holdings PLC",
+      "mode": "redo-full",
+      "command": "/redo HHL.N0000 full",
+      "note": null,
+      "files": [
+        "reports/HHL.N0000/2026-05-22_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/HHL.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/HHL.N0000/2026-11-05_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "277",
+      "requestedAt": "2026-11-17T21:38:30+00:00",
+      "status": "pending"
     }
   ]
 }
