@@ -292,7 +292,7 @@ App.init = function () { App.initTheme(); App.initGlossary(); };
    so they're the same on every device. There's no key: anyone who opens the site can star.
    Leave STARS_URL empty to hide the stars. The last list seen is kept in this browser so
    stars show at once; the worker's list replaces it when it arrives. */
-App.STARS_URL = "";
+App.STARS_URL = "https://cse-summary.sacdulanjayachathura.workers.dev";
 App.Stars = {
   set: new Set(),
   listeners: [],
