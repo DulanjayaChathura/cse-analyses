@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "HHL.N0000",
   "localFolder": "hemas",
-  "updated": "2026-11-15",
+  "updated": "2026-11-17",
   "reportsRead": [
     {
       "file": "Annual Report FY2024,25.pdf",
@@ -60,7 +60,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-15",
-      "note": "Re-read for /redo full: income statement (p. 154), balance sheet (p. 156), cash flow (p. 159), segments (p. 166), finance cost (p. 171), tax (p. 174), PPE (p. 180), leases (p. 188), intangibles (p. 191), borrowings (p. 208), commitments (p. 225), ten-year summary (p. 232). Printed page numbers (PDF page minus 2)."
+      "note": "Re-read for /redo full: income statement (p. 154), balance sheet (p. 156), cash flow (p. 159), segments (p. 166), finance cost (p. 171), tax (p. 174), PPE (p. 180), leases (p. 188), intangibles (p. 191), borrowings (p. 208), commitments (p. 225), ten-year summary (p. 232). Printed page numbers (PDF page minus 2). Read again on 2026-11-17 (/redo full): Chairman's message (pp. 7–8) and Group CEO's review (pp. 9–13) for the management section; key figures spot-checked."
     },
     {
       "file": "reports/HHL.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
@@ -78,7 +78,8 @@
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-15"
+      "readOn": "2026-11-15",
+      "note": "Read again on 2026-11-17: CEO commentary (pp. 1–7, including the Long Range Plan: mid-teen revenue and earnings growth, 15% of revenue from abroad by FY30, p. 7) and balance sheet (p. 10) re-checked."
     }
   ],
   "periods": [
@@ -875,14 +876,14 @@
     {
       "name": "WACC",
       "value": "Bear 18.1% / Base 16.8% / Bull 15.4%",
-      "reason": "From scripts/reinvestment.py (15 Nov 2026): cost of debt 9.77% (interest paid 0.753 ÷ average borrowings and leases 7.70, FY 2026), tax 32.3%, debt weight 10.7% (net debt Rs 11.9bn at Sep 2026, market cap Rs 99.2bn at Rs 33.10).",
-      "since": "2026-11-15"
+      "reason": "From scripts/reinvestment.py (17 Nov 2026): cost of debt 9.77% (interest paid 0.753 ÷ average borrowings and leases 7.70, FY 2026), tax 32.3%, debt weight 10.8% (net debt Rs 11.9bn at Sep 2026, market cap Rs 98.3bn at Rs 32.80).",
+      "since": "2026-11-17"
     },
     {
       "name": "Growth check",
-      "value": "Assumed 4% / 7% / 10%; supported 2.3% (reinvestment rate 10.7% × return on capital 21.2%, FY 2026). Base 4.7 and bull 7.7 pts above: kept because FY 2026 reinvestment was unusually low (cash built up for acquisitions) and FY 2027 reinvestment is already under way — Twiga bought for Rs 5.46bn, Rs 12.3bn into working capital and capex Rs 2.45bn against depreciation Rs 1.35bn in H1, Rs 2.0bn of capex contracted; profit kept × ROE gives 11.7%; and the DCF charges growth ÷ return on capital in reinvestment every year.",
-      "reason": "From scripts/reinvestment.py on the FY 2026 figures recorded in this redo.",
-      "since": "2026-11-15"
+      "value": "Assumed 4% / 7% / 10%; supported 2.3% (reinvestment rate 10.7% × return on capital 21.2%, FY 2026). Base 4.7 and bull 7.7 pts above: kept because FY 2026 reinvestment was unusually low (cash built up for acquisitions) and FY 2027 reinvestment is already under way — Twiga bought for Rs 5.46bn, Rs 12.3bn into working capital and capex Rs 2.45bn against depreciation Rs 1.35bn in H1, Rs 2.0bn of capex contracted; profit kept × ROE gives 11.7%; and the DCF charges growth ÷ return on capital in reinvestment every year. Management's Long Range Plan (Interim Sep 2026, p. 7) targets mid-teen revenue and earnings growth to FY30.",
+      "reason": "From scripts/reinvestment.py on the FY 2026 figures; re-run 17 Nov 2026 with the same result.",
+      "since": "2026-11-17"
     },
     {
       "name": "Growth",
@@ -917,26 +918,26 @@
     {
       "name": "Long-run ROE",
       "value": "14% / 17% / 19%",
-      "reason": "Ten-year average about 13%, five-year about 15.5%, last two years 17–18%; ROE path from 15 / 16 / 17%.",
-      "since": "2026-11-15"
+      "reason": "Ten-year average about 13%, five-year about 15.5%, last two years 17–18%. Residual income now starts every case from 16% (between last year's 17.2% and about 15% on the last 12 months), as the shared valuation script takes one starting ROE; was 15 / 16 / 17%.",
+      "since": "2026-11-17"
     },
     {
       "name": "EPS to March 2027 × P/E",
-      "value": "2.53 × 4.6 / 2.83 × 5.4 / 3.08 × 6.7",
-      "reason": "H1 EPS Rs 0.98; H2 Rs 1.55 / 1.85 / 2.10 (last year 1.89). P/E = two-stage forward P/E justified at the cost of equity (payout 1 − growth ÷ ROE). Base 5% below the Rs 2.98 run-rate.",
-      "since": "2026-11-15"
+      "value": "2.53 × 4.6 / 2.83 × 5.4 / 3.08 × 6.5",
+      "reason": "H1 EPS Rs 0.98; H2 Rs 1.55 / 1.85 / 2.10 (last year 1.89). P/E = forward P/E justified at the cost of equity (payout 1 − long-run growth ÷ ROE), from scripts/valuation.py; bull 6.5 (was 6.7 from a two-stage formula). Base 5% below the Rs 2.98 run-rate.",
+      "since": "2026-11-17"
     },
     {
       "name": "Payout",
-      "value": "32% for five years",
-      "reason": "2025/26 payout 31.8%; after year five, 1 − growth ÷ ROE.",
-      "since": "2026-11-10"
+      "value": "32% throughout (residual income)",
+      "reason": "2025/26 payout 31.8%. The shared valuation script keeps one payout for all ten years (was 32% for five years, then 1 − growth ÷ ROE).",
+      "since": "2026-11-17"
     },
     {
       "name": "Methods used",
       "value": "Justified P/B, residual income, P/E, whole-company DCF",
-      "reason": "Dividend model left out (payout a third); dividends shown as a reading.",
-      "since": "2026-11-15"
+      "reason": "Dividend model left out (payout a third); dividends shown as a reading. Inputs saved as modelInputs in data/HHL.N0000.json; values from scripts/valuation.py.",
+      "since": "2026-11-17"
     },
     {
       "name": "Scenario weights",
@@ -952,12 +953,12 @@
     }
   ],
   "openQuestions": [
-    "Beta (January 2027): replace the stand-ins with Damodaran's emerging-markets betas (household products, pharmaceuticals, hospitals, transportation) and three local 5-year betas; fair value moves about Rs 1.5–2 per 0.1 of beta.",
+    "Beta (January 2027): replace the stand-ins with Damodaran's emerging-markets betas (household products, pharmaceuticals, hospitals, transportation) and three local 5-year betas; fair value moves about Rs 1.5–2 per 0.1 of beta. Damodaran's site was still blocked on 17 Nov 2026.",
     "Q3 results (to December 2026, due by mid-February): does the September-quarter recovery hold, and does gross margin recover from 29.7%?",
-    "Does the Rs 12.3bn of working capital built up in H1 unwind after the school season, and does operating cash flow turn positive for the year?",
-    "Twiga's first school-season contribution, and the final purchase price allocation (provisional goodwill Rs 1.40bn; put/call liability Rs 1.81bn).",
+    "Does the Rs 12.3bn of working capital built up in H1 unwind after the school season, and does net debt fall back (management promised self-funding; net gearing 16.6% at September)?",
+    "Twiga's first school-season contribution, the overseas share of revenue (target about 10% after the deal), and the final purchase price allocation (provisional goodwill Rs 1.40bn; put/call liability Rs 1.81bn).",
     "NMRA pharma pricing (stay order on the pricing formula from 14 October): do price increases restore Life Sciences margins?",
-    "Use of the USD 100mn+ earmarked for new growth platforms: further acquisitions and their returns."
+    "Use of the USD 100mn+ earmarked for new growth platforms: further acquisitions, how they are funded, and their returns; Morison EU-GMP approval; Thalawathugoda hospital progress."
   ],
   "changeLog": [
     {
@@ -979,6 +980,16 @@
       "strongBuyPrice": 12.0,
       "priceAtTime": 33.1,
       "archive": "research/HHL.N0000/history/2026-11-10.json"
+    },
+    {
+      "date": "2026-11-17",
+      "basedOn": "Annual Report 2025/26 and interims to 30 Jun and 30 Sep 2026 (CSE downloads)",
+      "summary": "Requested from Telegram (/redo HHL.N0000 full). Same three reports as the 15 November redo; key figures spot-checked against them (balance sheet, borrowings, cash, NAV, Twiga) with no changes or restatements. Added the Management and plans section from the Chairman's message and Group CEO's review (pp. 7–13) and the September interim's Long Range Plan (mid-teen growth, 15% overseas revenue by FY30, USD 100m+ over four years); promises vs delivery: Kenya deal done, self-funding and passing on costs missed so far (net debt Rs 11.9bn, Q2 gross margin −3.1 points), hospitals on track. Added modelInputs; method values now from scripts/valuation.py: residual income starts all cases at a 16% ROE with a constant 32% payout (Rs 16.51 → 16.32 weighted), P/E bull multiple 6.7 → 6.5 (Rs 15.27 → 15.20); DCF and P/B unchanged. Beta 0.95 still provisional (Damodaran's site blocked again). Price Rs 32.80 (CSE close 17 Nov 2026); debt weight 10.8%, WACC unchanged. Business tests 4 of 4, category unchanged (watch list). Fair value Rs 16.00 → 15.90, buy Rs 13.60 → 13.52, strong buy Rs 12.00 → 11.93.",
+      "fairValue": 15.9,
+      "buyPrice": 13.52,
+      "strongBuyPrice": 11.93,
+      "priceAtTime": 32.8,
+      "archive": "research/HHL.N0000/history/2026-11-15.json"
     }
   ]
 }
