@@ -19,7 +19,9 @@ Usage:
 Methods (rates and growth in %, money in Rs; `shares` in millions, `netDebt` and DCF cash in Rs bn):
   dcf  whole company: start cash and after-tax operating profit grow at `growth` for `years`;
        each year's free cash = cash − growth ÷ roc × operating profit; after that, the same at
-       `longRun`; discounted at WACC; less net debt; per share.
+       `longRun`; discounted at WACC; less net debt; per share. With `addOn` {bear, base, bull}
+       (Rs a share: joint ventures, projects, investments valued separately), it's a sum of the
+       parts: the DCF plus the add-on, used for a method with id `sotp`. The add-on stays fixed.
   pe   next year's EPS × P/E. P/E = `pe` if given, else payout ÷ (cost of equity − longRun)
        with payout = 1 − longRun ÷ roe (forward justified P/E).
   ddm  next year's dividend, growing at `growth` for `years`, then `longRun`, at the cost of equity.
@@ -39,6 +41,14 @@ ROOT = Path(__file__).resolve().parent.parent
 CASES = ("bear", "base", "bull")
 ADJUSTABLE = ("dcf", "pe", "ddm", "ri", "pb")
 ALIASES = {"div": "ddm"}          # older analyses call the dividend model "div"
+
+
+def method_id(model_id, mi):
+    """Which formula a published method uses. A sum of the parts (`sotp`) that is a DCF of the
+    main business plus other pieces uses the DCF, with the pieces as `dcf.addOn` (Rs a share)."""
+    if model_id == "sotp" and isinstance((mi or {}).get("dcf"), dict) and (mi["dcf"].get("addOn") is not None):
+        return "dcf"
+    return ALIASES.get(model_id, model_id)
 TOLERANCE = 0.03                  # 3%, or Rs 0.10 for small values, counts as "matches"
 
 
@@ -104,7 +114,8 @@ def method_value(mid, mi, case, ke, wacc):
     m = mi[mid]
     c = m[case]
     if mid == "dcf":
-        return dcf(c, ke, wacc, mi["shares"], mi["netDebt"], m.get("years", 5))
+        add = (m.get("addOn") or {}).get(case, 0) or 0
+        return dcf(c, ke, wacc, mi["shares"], mi["netDebt"], m.get("years", 5)) + add
     if mid == "pe":
         return pe(c, ke)
     if mid == "ddm":
@@ -126,7 +137,7 @@ def recalc(data, mi=None):
     mos = v.get("marginOfSafety") or {"buy": 15, "strongBuy": 25}
     out = []
     for m in data.get("models") or []:
-        mid = ALIASES.get(m.get("id"), m.get("id"))
+        mid = method_id(m.get("id"), mi)
         row = {"id": m.get("id"), "name": m.get("name")}
         if mid in ADJUSTABLE and mid in mi:
             for case in CASES:

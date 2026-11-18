@@ -8,6 +8,9 @@
   const CASE_NAMES = { bear: "Bear", base: "Base", bull: "Bull" };
   const ADJUSTABLE = ["dcf", "pe", "ddm", "ri", "pb"];
   const ALIASES = { div: "ddm" };
+  /* Which formula a published method uses (same as method_id in scripts/valuation.py): a sum of
+     the parts that is a DCF plus other pieces uses the DCF, with the pieces fixed in dcf.addOn. */
+  const methodId = (id, mi) => (id === "sotp" && mi && mi.dcf && mi.dcf.addOn != null ? "dcf" : ALIASES[id] || id);
   const pct = (x) => x / 100;
   const isNum = (x) => typeof x === "number" && isFinite(x);
   const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -28,7 +31,8 @@
       }
       const after = (cash * (1 + gl) - (gl / roc) * profit * (1 + gl)) / (r - gl);
       value += after / Math.pow(1 + r, years);
-      return ((value - mi.netDebt) * 1000) / mi.shares;
+      const add = (m.addOn && m.addOn[this.caseName]) || 0;
+      return ((value - mi.netDebt) * 1000) / mi.shares + add;
     },
     pe(c, ke) {
       if (c.pe != null) return c.eps * c.pe;
@@ -151,12 +155,12 @@
 
   function compute(d, mi, weights) {
     const rows = d.models.map((m) => {
-      const mid = ALIASES[m.id] || m.id;
+      const mid = methodId(m.id, mi);
       const row = { id: m.id, mid, name: m.name, adjustable: false, pub: m, errors: [] };
       if (ADJUSTABLE.includes(mid) && mi[mid]) {
         row.adjustable = true;
         for (const c of CASES) {
-          try { row[c] = F[mid](mi[mid][c], mi.costOfEquity[c], mi.wacc && mi.wacc[c], mi, mi[mid]); }
+          try { F.caseName = c; row[c] = F[mid](mi[mid][c], mi.costOfEquity[c], mi.wacc && mi.wacc[c], mi, mi[mid]); }
           catch (e) { row[c] = null; row.errors.push(`${CASE_NAMES[c]}: ${e.message}`); }
         }
       } else {
@@ -175,7 +179,7 @@
     const v = d.valuation || {};
     const pubW = v.scenarioWeights || { bear: 30, base: 50, bull: 20 };
     const mos = v.marginOfSafety || { buy: 15, strongBuy: 25 };
-    const present = ADJUSTABLE.filter((mid) => pub[mid] && d.models.some((m) => (ALIASES[m.id] || m.id) === mid));
+    const present = ADJUSTABLE.filter((mid) => pub[mid] && d.models.some((m) => methodId(m.id, pub) === mid));
     const groups = GROUPS.map((g) => ({ ...g, items: g.items.filter((it) => it.uses.some((u) => present.includes(u)) && refOf(it, pub, present)) }))
       .filter((g) => g.items.length);
     const items = groups.flatMap((g) => g.items);
@@ -314,7 +318,9 @@
         const x = last.r.rows.find((row) => row.id === key.slice(2));
         if (x.adjustable) {
           const f = FORMULAS[x.mid === "pe" && last.mi.pe && last.mi.pe.base.pe != null ? "peFixed" : x.mid];
-          html = `<h4>${App.esc(x.name)}</h4><p class="wi-formula">${App.esc(f.f)}</p><ul>${f.notes.map((n) => `<li>${App.esc(n)}</li>`).join("")}</ul>
+          const add = x.mid === "dcf" && last.mi.dcf.addOn ? last.mi.dcf.addOn : null;
+          const notes = add ? [...f.notes, `Plus the other parts, fixed (they don't move with the controls): Rs ${CASES.map((c) => fmt(add[c])).join(" / ")} a share (bear / base / bull)${last.mi.dcf.addOnNote ? `: ${last.mi.dcf.addOnNote}` : ""}`] : f.notes;
+          html = `<h4>${App.esc(x.name)}</h4><p class="wi-formula">${App.esc(add ? f.f.replace(", ÷ shares", ", ÷ shares, + other parts") : f.f)}</p><ul>${notes.map((n) => `<li>${App.esc(n)}</li>`).join("")}</ul>
             <p class="wi-sheet-note">Worked out for bear, base and bull, then weighted ${CASES.map((c) => fmt(+state.w[c], 0)).join(" / ")}.</p>`;
         } else {
           html = `<h4>${App.esc(x.name)}</h4><p>Valued as in the analysis and not recalculated here, so the controls don't change it.</p>${

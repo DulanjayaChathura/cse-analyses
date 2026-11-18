@@ -302,6 +302,9 @@ def chk_model_inputs(s):
         w = s.get("wacc")
         if not isinstance(w, dict) or not all(is_num(w.get(c)) for c in ("bear", "base", "bull")):
             p.append("wacc must be {bear, base, bull} numbers when there's a DCF")
+    add = (s.get("dcf") or {}).get("addOn") if isinstance(s.get("dcf"), dict) else None
+    if add is not None and not (isinstance(add, dict) and all(is_num(add.get(c)) for c in ("bear", "base", "bull"))):
+        p.append("dcf.addOn must be {bear, base, bull} numbers (Rs a share)")
     for mid in ("dcf", "pe", "ddm", "ri", "pb"):
         m = s.get(mid)
         if m is not None and not (isinstance(m, dict) and all(isinstance(m.get(c), dict) for c in ("bear", "base", "bull"))):
