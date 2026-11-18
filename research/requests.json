@@ -642,6 +642,22 @@
       "status": "done",
       "result": "Fair value Rs 8.95 → 8.88, buy Rs 7.54, strong buy Rs 6.66; category 2 (watch list), unchanged",
       "finishedAt": "2026-11-18T18:05:57+00:00"
+    },
+    {
+      "id": "20261118181552-WIND",
+      "ticker": "WIND.N0000",
+      "name": "WindForce PLC",
+      "mode": "redo-full",
+      "command": "/redo WIND.N0000 full",
+      "note": null,
+      "files": [
+        "reports/WIND.N0000/2026-08-24_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/WIND.N0000/2026-11-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "283",
+      "requestedAt": "2026-11-18T18:15:52+00:00",
+      "status": "pending"
     }
   ]
 }
