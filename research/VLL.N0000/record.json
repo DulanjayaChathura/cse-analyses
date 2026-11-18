@@ -874,8 +874,8 @@
     {
       "name": "Methods used",
       "value": "Whole-company DCF + JVs and projects, P/E, justified P/B, residual income, dividends",
-      "reason": "A contracted power producer suits a DCF; equity-accounted JVs and the battery storage stake added separately. From 18 Nov 2026, P/E, P/B, residual income and dividends come from scripts/valuation.py (modelInputs); the DCF + stakes stays a hand-built sum of the parts using the reinvestment.py --dcf output.",
-      "since": "2026-11-17"
+      "reason": "A contracted power producer suits a DCF; equity-accounted JVs and the battery storage stake added separately. All five methods come from scripts/valuation.py (modelInputs). From 18 Nov 2026 (second redo) the DCF + stakes is saved as modelInputs.dcf with the stakes as dcf.addOn (Rs 3.44 / 4.22 / 6.10 a share), so the What if? panel can recalculate it.",
+      "since": "2026-11-18"
     },
     {
       "name": "Scenario weights",
@@ -922,6 +922,16 @@
       "strongBuyPrice": 6.66,
       "priceAtTime": 22.0,
       "archive": "research/VLL.N0000/history/2026-11-17.json"
+    },
+    {
+      "date": "2026-11-18",
+      "basedOn": "Research record (no new reports)",
+      "summary": "Requested from Telegram (/redo VLL.N0000). Redone from the saved record to the new format: the whole-company DCF plus joint ventures and projects is now saved in modelInputs (dcf, with the stakes as a fixed add-on of Rs 3.44 / 4.22 / 6.10 a share), so the What if? panel can move it; scripts/valuation.py reproduces Rs 3.41 / 9.26 / 19.05 exactly. Every assumption rechecked against the record and scripts/reinvestment.py: growth 3 / 6 / 9% within the 32.8% supported (inflated by the build year), base EPS 6.9% below the FY2026 run-rate, cost of equity 15.4% and WACC 13.5% unchanged; no changes. Price Rs 22.00 CSE close (unchanged). Beta still provisional 0.70. Business tests 4 of 4: category 2, watch list (unchanged). Fair value Rs 8.88, buy Rs 7.54, strong buy Rs 6.66 (unchanged). Still not found: the source of Rs 245mn of H1 other income, Muvumbe's contract term, whether Ranna is connected.",
+      "fairValue": 8.88,
+      "buyPrice": 7.54,
+      "strongBuyPrice": 6.66,
+      "priceAtTime": 22.0,
+      "archive": "research/VLL.N0000/history/2026-11-18.json"
     }
   ]
 }
