@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "WIND.N0000",
   "localFolder": null,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "reportsRead": [
     {
       "file": "reports/WIND.N0000/2026-08-24_annual_Annual-Report-as-at-31st-March-2026.pdf",
@@ -11,8 +11,8 @@
       "periodEnd": "2026-03-31",
       "type": "annual",
       "audited": true,
-      "readOn": "2026-11-17",
-      "note": "Page numbers are the printed ones (PDF page minus 2). FY2022-FY2024 from its five-year summary."
+      "readOn": "2026-11-18",
+      "note": "Page numbers are the printed ones (PDF page minus 2). FY2022-FY2024 from its five-year summary. First read 17 Nov 2026; re-read in full for /redo full on 18 Nov 2026."
     },
     {
       "file": "reports/WIND.N0000/2026-11-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
@@ -21,8 +21,8 @@
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-17",
-      "note": null
+      "readOn": "2026-11-18",
+      "note": "First read 17 Nov 2026; re-read 18 Nov 2026."
     }
   ],
   "periods": [
@@ -652,6 +652,18 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025/26",
           "note": "Not disclosed"
+        },
+        "windCommissioning": {
+          "value": null,
+          "unit": "",
+          "source": "Annual Report 2025/26, pp. 19-23 (plant pages), pp. 102-103, 240",
+          "note": "Wind farms commissioned May and July 2010 (9.6 MW each, 100%), July 2012 (three 10 MW farms: 49%, 95.83%, 100%), December 2014 (two 10 MW, 66.4%) and June 2023 (15 MW, 100%). Contracts are 20-year; the report says extending wind contracts is generally not feasible and plans repowering. Exact expiry dates not given."
+        },
+        "gearingPct": {
+          "value": 30.52,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 140",
+          "note": "Company's gearing: gross debt ÷ (gross debt + total equity); target 25-50% (p. 72)"
         }
       }
     },
@@ -802,10 +814,16 @@
           "note": null
         },
         "priceRange": {
-          "value": "38.50-41.90",
+          "value": null,
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, p. 12",
-          "note": "September quarter; close Rs 40.00 on 30 Sep 2026"
+          "note": "Rs 38.50-41.90 in the September quarter; close Rs 40.00 on 30 Sep 2026"
+        },
+        "publicHoldingPct": {
+          "value": 24.57,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12",
+          "note": "9,174 public shareholders; 9,195 in all (6,836 at 31 March 2026)"
         }
       }
     }
@@ -813,27 +831,27 @@
   "valuationInputs": [
     {
       "name": "Beta",
-      "value": "0.77 (provisional)",
-      "since": "2026-11-17",
-      "reason": "8 steps, 17 Nov 2026. (1) Business: renewable power generation (wind 84 MW, solar, hydro in Sri Lanka; solar in Uganda and Pakistan via subsidiaries and joint ventures) sold under long-term contracts to the CEB/NSO and UETCL, now adding grid battery storage (BESS) under 15-year contracts; engineering (EPC) and electric two-wheelers are small. One sector beta. (2) Damodaran's emerging-markets dataset (betaEmerg) couldn't be opened from this run; stand-in as used for Vidullanka: his global Green & Renewable Energy unlevered, cash-corrected beta 0.57 (January 2026, web-search extract). (3) Relevered with net debt Rs 24.89bn (30 Sep 2026) / market value Rs 54.22bn (1,355.4mn shares at Rs 40.00, 30 Sep 2026) = 0.46 and 25% tax: 0.57 x (1 + 0.75 x 0.46) = 0.77. (4) Local 5-year betas: none found by web search (fewer than 3 sources, so step 4 can't be completed). (5) Higher of steps 3 and 4: 0.77. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas. No extra premium for Uganda or Pakistan."
+      "value": "0.78 (provisional)",
+      "since": "2026-11-18",
+      "reason": "8 steps, 17 Nov 2026. (1) Business: renewable power generation (wind 84 MW, solar, hydro in Sri Lanka; solar in Uganda and Pakistan via subsidiaries and joint ventures) sold under long-term contracts to the CEB/NSO and UETCL, now adding grid battery storage (BESS) under 15-year contracts; engineering (EPC) and electric two-wheelers are small. One sector beta. (2) Damodaran's emerging-markets dataset (betaEmerg) couldn't be opened from this run; stand-in as used for Vidullanka: his global Green & Renewable Energy unlevered, cash-corrected beta 0.57 (January 2026, web-search extract). (3) Relevered with net debt Rs 24.89bn (30 Sep 2026) / market value Rs 54.22bn (1,355.4mn shares at Rs 40.00, 30 Sep 2026) = 0.46 and 25% tax: 0.57 x (1 + 0.75 x 0.46) = 0.77. (4) Local 5-year betas: none found by web search (fewer than 3 sources, so step 4 can't be completed). (5) Higher of steps 3 and 4: 0.77. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas. No extra premium for Uganda or Pakistan. 18 Nov 2026 (/redo full): Damodaran's site was blocked from this run again (HTTP 403) and a web search found no local 5-year beta for WIND.N0000; stand-in kept. Relevered at Rs 38.00 (CSE close 18 Nov 2026): net debt 24.89 / market value 51.51bn = 0.48, 0.57 x (1 + 0.75 x 0.48) = 0.78."
     },
     {
       "name": "Cost of equity",
-      "value": "Bear 17.7% / Base 16.2% / Bull 14.7%",
-      "reason": "From scripts/reinvestment.py (17 Nov 2026): 8.24% + 0.77 × (4.2% + 6.08%) = 16.2%, ±1.5 points.",
-      "since": "2026-11-17"
+      "value": "Bear 17.8% / Base 16.3% / Bull 14.8%",
+      "reason": "From scripts/reinvestment.py (18 Nov 2026): 8.24% + 0.78 × (4.2% + 6.08%) = 16.3%, ±1.5 points.",
+      "since": "2026-11-18"
     },
     {
       "name": "WACC",
       "value": "Bear 14.5% / Base 13.5% / Bull 12.5%",
-      "reason": "From scripts/reinvestment.py (17 Nov 2026): cost of debt 8.65% (interest paid 1.010 ÷ average borrowings and leases 11.67, FY2026), tax 12.3% (FY2026 effective), debt weight 31.5% (net debt Rs 24.89bn at Sep 2026, market cap Rs 54.22bn at Rs 40.00).",
-      "since": "2026-11-17"
+      "reason": "From scripts/reinvestment.py (18 Nov 2026): cost of debt 8.65% (interest paid 1.010 ÷ average borrowings and leases 11.67, FY2026), tax 12.3% (FY2026 effective), debt weight 32.6% (net debt Rs 24.89bn at Sep 2026, market cap Rs 51.51bn at Rs 38.00).",
+      "since": "2026-11-18"
     },
     {
       "name": "Growth check",
       "value": "Assumed 0% / 3% / 6%; supported 6.8% (reinvestment rate 83.9% × return on capital 8.2%, FY2026). All within 2 pts. Growth from the Rs 71bn project pipeline is valued separately (projects at cost), not through these rates.",
-      "reason": "From scripts/reinvestment.py on the FY2026 figures.",
-      "since": "2026-11-17"
+      "reason": "From scripts/reinvestment.py on the FY2026 figures (re-run 18 Nov 2026, unchanged).",
+      "since": "2026-11-18"
     },
     {
       "name": "Growth",
@@ -855,15 +873,15 @@
     },
     {
       "name": "Cash after maintenance capex (start)",
-      "value": "Bear Rs 1.6bn / Base Rs 2.3bn / Bull Rs 2.7bn",
-      "reason": "Cash from operations before working capital about 4.6 / 4.9 / 5.1bn (FY2026 4.93) less tax 0.6 / 0.5 / 0.45 less maintenance. The calculator's start (-0.8 / 0.4 / 0.5) uses FY2026 operating cash after Rs 1.85bn of working capital absorbed and isn't used.",
-      "since": "2026-11-17"
+      "value": "Bear Rs 1.6bn / Base Rs 2.35bn / Bull Rs 2.7bn",
+      "reason": "Cash from operations before working capital about 4.6 / 4.9 / 5.1bn (FY2026 4.93) less tax 0.6 / 0.5 / 0.45 less maintenance. The calculator's start (-0.8 / 0.4 / 0.5) uses FY2026 operating cash after Rs 1.85bn of working capital absorbed and isn't used. 18 Nov 2026: base rounded to 2.35 (4.93 − 0.55 tax and dividend tax − 2.0).",
+      "since": "2026-11-18"
     },
     {
       "name": "After-tax operating profit (start)",
-      "value": "Bear Rs 2.1bn / Base Rs 2.4bn / Bull Rs 2.6bn",
-      "reason": "Operating profit excluding JVs about 2.8 / 3.0 / 3.2bn (FY2026 2.86 before goodwill impairment; H1 FY2027 2.43) × (1 − 25% / 20% / 18%).",
-      "since": "2026-11-17"
+      "value": "Bear Rs 2.10bn / Base Rs 2.48bn / Bull Rs 2.71bn",
+      "reason": "Operating profit excluding JVs and goodwill impairment about 2.8 / 3.1 / 3.3bn (FY2026 2.86; H1 FY2027 2.50 against 2.21 a year earlier, with H2 FY2026 only 0.65) × (1 − 25% / 20% / 18%). Base raised from 2.4 for the stronger first half.",
+      "since": "2026-11-18"
     },
     {
       "name": "Projects and JVs",
@@ -873,37 +891,38 @@
     },
     {
       "name": "Long-run ROE",
-      "value": "6% / 7.5% / 10%",
+      "value": "6% / 7.5% / 10%, starting from 6.3% (last 12 months) in residual income, 35% paid out",
       "reason": "Owners' ROE 6.3-7.7% over FY2023-FY2026; bull assumes the new projects lift it.",
       "since": "2026-11-17"
     },
     {
       "name": "EPS to March 2027 × P/E",
-      "value": "1.20 × 4.25 / 1.35 × 4.55 / 1.55 × 5.6",
-      "reason": "H1 EPS Rs 1.19; H2 FY2026 earned Rs 0.03 (seasonal). Justified forward P/E at the cost of equity. Base 46% below the Q2 × 4 run-rate (Rs 2.52) because Q2 is the windy peak; 11% above trailing Rs 1.22.",
-      "since": "2026-11-17"
+      "value": "1.20 × 4.24 / 1.35 × 4.51 / 1.55 × 5.53",
+      "reason": "H1 EPS Rs 1.19; H2 FY2026 earned Rs 0.03 (seasonal). Justified forward P/E at the cost of equity (17.8 / 16.3 / 14.8%), from scripts/valuation.py. Base 46% below the Q2 × 4 run-rate (Rs 2.52) because Q2 is the windy peak; 11% above trailing Rs 1.22.",
+      "since": "2026-11-18"
     },
     {
       "name": "Dividend",
-      "value": "Rs 0.25 / 0.50 / 1.00 a year",
+      "value": "Rs 0.25 / 0.50 / 1.00 a year, growing 2 / 4 / 6% for five years then 2 / 3 / 4%",
       "reason": "None for FY2026 or H1 FY2027; Rs 1.00 for FY2025.",
-      "since": "2026-11-17"
+      "since": "2026-11-18"
     },
     {
       "name": "Methods used",
-      "value": "Whole-company DCF + projects and JVs, P/E, justified P/B, residual income, dividends; weights 30/50/20; margins 15% / 25%",
+      "value": "Whole-company DCF + projects and JVs (by hand, with scripts/reinvestment.py), P/E, justified P/B, residual income, dividends (scripts/valuation.py modelInputs); weights 30/50/20; margins 15% / 25%",
       "reason": "House rules.",
-      "since": "2026-11-17"
+      "since": "2026-11-18"
     }
   ],
   "openQuestions": [
-    "Battery storage: tariffs and earnings once all 13 sites run (due December 2026); first revenue from October 2026.",
+    "Battery storage: are all 13 sites running by December 2026, and what do they earn (tariff not disclosed)? First revenue from October 2026.",
     "Finance costs on Rs 28bn of borrowings: how much is capitalised during construction, and do new plants' earnings cover it?",
-    "Contract (SPPA) expiry dates for the 2010-2014 wind farms and repowering plans: not given in the reports read.",
+    "Older wind farms (2010-2014): exact contract end dates and repowering plans and cost.",
     "Rividhanavi 100 MW: construction progress, cost against US$133mn, tariff, commissioning (August 2027).",
     "Curtailment compensation (Rs 194mn lost in H1 FY2027): timing of payment.",
     "Dividend: when does it resume?",
     "Project advances (Rs 10.9bn): confirm they move into plant as projects finish.",
+    "Shareholders: did the Tundra funds keep selling (Shikari Global left the top 20 by September 2026)?",
     "Beta: refresh in January 2027 with Damodaran's emerging-markets file and local 5-year betas."
   ],
   "changeLog": [
@@ -916,6 +935,16 @@
       "strongBuyPrice": 5.75,
       "priceAtTime": 40.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-18",
+      "basedOn": "Annual Report 2025/26 and interim to 30 Sep 2026 (CSE downloads, re-read)",
+      "summary": "Requested from Telegram (/redo WIND.N0000 full). Research record rebuilt from the two downloaded reports: figures re-checked against the statements (no corrections needed); added the wind farms' commissioning dates and 20-year contract terms, company gearing and public holding. Analysis brought up to the current format: new management (plans, investment, promises vs delivery) and shareholders (top 20 vs March 2026) sections, and modelInputs so P/E, P/B, residual income and dividends come from scripts/valuation.py. Price Rs 38.00 (CSE close 18 Nov 2026; was Rs 40.00 from the interim). Beta 0.78 (relevered at the new price; Damodaran's site blocked and no local 5-year betas found) gives cost of equity 16.3%, WACC 13.5%. Residual income falls from 10.84 to 5.21 because the shared calculator keeps the negative excess return after year 10. Methods: DCF plus projects and JVs 9.58, P/E 6.29, P/B 7.10, residual income 5.21, dividends 4.38. Business tests unchanged at 3 of 4 (ROE fails): category 2, watch list. Not found: exact wind contract end dates, BESS and Rividhanavi tariffs, local betas. Fair value Rs 7.65 → 6.51, buy Rs 6.50 → 5.54, strong buy Rs 5.75 → 4.88.",
+      "fairValue": 6.51,
+      "buyPrice": 5.54,
+      "strongBuyPrice": 4.88,
+      "priceAtTime": 38.0,
+      "archive": "research/WIND.N0000/history/2026-11-17.json"
     }
   ]
 }
