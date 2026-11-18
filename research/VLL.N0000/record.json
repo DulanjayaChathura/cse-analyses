@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "VLL.N0000",
   "localFolder": null,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "reportsRead": [
     {
       "file": "reports/VLL.N0000/2026-08-28_annual_Annual-Report-as-at-31st-March-2026.pdf",
@@ -12,7 +12,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-17",
-      "note": "Page numbers are the printed ones (PDF page minus 2). FY2022-FY2024 figures from its ten-year summary."
+      "note": "Page numbers are the printed ones (PDF page minus 2). FY2022-FY2024 figures from its ten-year summary. Re-read in full on 2026-11-18 for /redo VLL.N0000 full (management, shareholders, figure check)."
     },
     {
       "file": "reports/VLL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
@@ -22,7 +22,7 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-17",
-      "note": null
+      "note": "Re-read in full on 2026-11-18 for /redo VLL.N0000 full (management, shareholders, figure check)."
     }
   ],
   "periods": [
@@ -386,10 +386,10 @@
           "note": "Not disclosed"
         },
         "sharesOutstanding": {
-          "value": null,
+          "value": 1027.193,
           "unit": "mn",
-          "source": "Annual Report 2025/26",
-          "note": "Year-end count not read; weighted average 979.3mn (p. 163)"
+          "source": "Annual Report 2025/26, p. 153, note 8.2",
+          "note": "Voting 945.080 + non-voting 82.114 at 31 March 2025 (found on 2026-11-18; was null)"
         }
       }
     },
@@ -604,6 +604,18 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025/26, p. 166",
           "note": "Equity commitment for new power projects (Medawachchiya dendro)"
+        },
+        "jvLoanGuarantees": {
+          "value": 1.644,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 166, note 23.2",
+          "note": "Loan balances guaranteed by Vidullanka: Vidul Biomass 0.399, Solar Universe 1.182, subsidiaries 0.063"
+        },
+        "priceRange": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 178",
+          "note": "Voting: high 31.00, low 12.90, close 20.80; non-voting: high 23.50, low 9.20, close 17.10"
         }
       }
     },
@@ -758,6 +770,18 @@
           "unit": "Rs",
           "source": "Interim Q2 FY2027 (to 30 Sep 2026), note 14",
           "note": "Voting: quarter high 23.40, low 19.90, last 22.10; non-voting high 20.40, low 16.50, last 20.30"
+        },
+        "dividendWithholdingTax": {
+          "value": 0.145,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), note 12",
+          "note": "Six months; included in income tax"
+        },
+        "solarRevenue": {
+          "value": 0.408,
+          "unit": "Rs bn",
+          "source": "Interim Q2 FY2027 (to 30 Sep 2026), p. 6",
+          "note": "Six months; 0.092 a year earlier. Overseas hydro 1.144 (1.298)"
         }
       }
     }
@@ -767,19 +791,19 @@
       "name": "Beta",
       "value": "0.70 (provisional)",
       "since": "2026-11-17",
-      "reason": "8 steps, 17 Nov 2026. (1) Business: one business in effect, renewable power generation (Uganda hydro, Sri Lankan mini-hydro, solar, dendro) sold under long-term contracts to the national grid operators; engineering and plantation are small. So one sector beta. (2) Damodaran's emerging-markets dataset (betaEmerg) couldn't be opened from this run. Stand-in from a web-search extract of his global table (January 2026): Green & Renewable Energy unlevered, cash-corrected 0.57 (258 firms); Power is 0.46. The renewable figure is used. (3) Relevered with net debt Rs 6.85bn (30 Sep 2026) / market value Rs 22.79bn (955.8mn voting at Rs 22.10 + 82.1mn non-voting at Rs 20.30, 30 Sep 2026) = 0.30 and 25% tax: 0.57 x (1 + 0.75 x 0.30) = 0.70. (4) Local 5-year betas: only one found, StockAnalysis 0.28 (5Y, web-search extract); Simply Wall St shows 0.27 for the non-voting share (period not shown); TradingView 0.30 is a 1-year beta and is ignored. Fewer than 3 sources, so step 4 can't be completed; the share also trades thinly. (5) Higher of 0.70 and 0.28 = 0.70. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified local 5-year betas. Uganda's own country risk isn't added, although about two-thirds of profit comes from there."
+      "reason": "8 steps, 17 Nov 2026. (1) Business: one business in effect, renewable power generation (Uganda hydro, Sri Lankan mini-hydro, solar, dendro) sold under long-term contracts to the national grid operators; engineering and plantation are small. So one sector beta. (2) Damodaran's emerging-markets dataset (betaEmerg) couldn't be opened from this run. Stand-in from a web-search extract of his global table (January 2026): Green & Renewable Energy unlevered, cash-corrected 0.57 (258 firms); Power is 0.46. The renewable figure is used. (3) Relevered with net debt Rs 6.85bn (30 Sep 2026) / market value Rs 22.79bn (955.8mn voting at Rs 22.10 + 82.1mn non-voting at Rs 20.30, 30 Sep 2026) = 0.30 and 25% tax: 0.57 x (1 + 0.75 x 0.30) = 0.70. (4) Local 5-year betas: only one found, StockAnalysis 0.28 (5Y, web-search extract); Simply Wall St shows 0.27 for the non-voting share (period not shown); TradingView 0.30 is a 1-year beta and is ignored. Fewer than 3 sources, so step 4 can't be completed; the share also trades thinly. (5) Higher of 0.70 and 0.28 = 0.70. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified local 5-year betas. Uganda's own country risk isn't added, although about two-thirds of profit comes from there. 18 Nov 2026 (/redo full): Damodaran's site was blocked from this run as well; inputs unchanged. Relevered at Rs 22.00 (CSE close 18 Nov 2026): net debt 6.85 / market value about 22.6bn = 0.30, still 0.70."
     },
     {
       "name": "Cost of equity",
       "value": "Bear 16.9% / Base 15.4% / Bull 13.9%",
-      "reason": "From scripts/reinvestment.py (17 Nov 2026): 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%, ±1.5 points.",
-      "since": "2026-11-17"
+      "reason": "From scripts/reinvestment.py (18 Nov 2026): 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%, ±1.5 points.",
+      "since": "2026-11-18"
     },
     {
       "name": "WACC",
       "value": "Bear 14.7% / Base 13.5% / Bull 12.3%",
-      "reason": "From scripts/reinvestment.py (17 Nov 2026): cost of debt 9.56% (interest paid 0.364 ÷ average borrowings and leases 3.81, FY2026), tax 25.1%, debt weight 23.0% (net debt Rs 6.85bn at Sep 2026, market cap about Rs 22.9bn at Rs 22.10).",
-      "since": "2026-11-17"
+      "reason": "From scripts/reinvestment.py (18 Nov 2026): cost of debt 9.56% (interest paid 0.364 ÷ average borrowings and leases 3.81, FY2026), tax 25.1%, debt weight 23.1% (net debt Rs 6.85bn at Sep 2026, market cap Rs 22.83bn at Rs 22.00).",
+      "since": "2026-11-18"
     },
     {
       "name": "Growth check",
@@ -825,21 +849,21 @@
     },
     {
       "name": "Long-run ROE",
-      "value": "14% / 16% / 17%",
-      "reason": "Reported ROE 15–19% over five years; 16.1% in FY2026.",
-      "since": "2026-11-17"
+      "value": "14% / 16% / 17% (residual income starts at 16%)",
+      "reason": "Reported ROE 15–19% over five years; 16.1% in FY2026. Residual income moves ROE from 16% to these levels over ten years (scripts/valuation.py), so the bear case fades rather than drops at once (changed 18 Nov).",
+      "since": "2026-11-18"
     },
     {
       "name": "EPS to March 2027 × P/E",
-      "value": "1.15 × 5.8 / 1.35 × 6.9 / 1.50 × 8.7",
-      "reason": "H1 EPS about Rs 0.65 on all shares. Justified forward P/E at the cost of equity. Base is 11% below the Rs 1.51 trailing EPS because that includes Rs 0.245bn of unexplained other income and finance costs have doubled.",
-      "since": "2026-11-17"
+      "value": "1.15 × 5.5 / 1.35 × 6.6 / 1.50 × 8.2",
+      "reason": "H1 EPS about Rs 0.65 on all shares. Forward justified P/E at the cost of equity as scripts/valuation.py computes it (payout ÷ (r − g), without the extra (1 + g) used by hand on 17 Nov). Base is 10.6% below the Rs 1.51 run-rate (last 12 months) because that includes Rs 0.245bn of unexplained other income and finance costs have doubled.",
+      "since": "2026-11-18"
     },
     {
       "name": "Dividend 2026/27",
-      "value": "Rs 0.50 / 0.60 / 0.70",
-      "reason": "Rs 0.20 interim so far (Rs 0.35 a year earlier); Rs 0.65 for 2025/26.",
-      "since": "2026-11-17"
+      "value": "Rs 0.50 / 0.60 / 0.70, growing 3% / 6% / 8% for 5 years, then 3% / 4% / 5%",
+      "reason": "Rs 0.20 interim so far (Rs 0.35 a year earlier); Rs 0.65 for 2025/26. Bull growth cut from 9% to 8% on 18 Nov to stay below the 8.9% supported by kept profit × ROE (55.2% × 16.1%).",
+      "since": "2026-11-18"
     },
     {
       "name": "Payout (residual income)",
@@ -850,7 +874,7 @@
     {
       "name": "Methods used",
       "value": "Whole-company DCF + JVs and projects, P/E, justified P/B, residual income, dividends",
-      "reason": "A contracted power producer suits a DCF; equity-accounted JVs and the battery storage stake added separately.",
+      "reason": "A contracted power producer suits a DCF; equity-accounted JVs and the battery storage stake added separately. From 18 Nov 2026, P/E, P/B, residual income and dividends come from scripts/valuation.py (modelInputs); the DCF + stakes stays a hand-built sum of the parts using the reinvestment.py --dcf output.",
       "since": "2026-11-17"
     },
     {
@@ -868,12 +892,14 @@
   ],
   "openQuestions": [
     "What is the Rs 245mn of non-cash 'other income' in H1 FY2027? Check the December 2026 interim and the 2026/27 annual report.",
-    "Interim EPS uses 954mn shares rather than about 1,038mn (voting plus non-voting): check whether later interims correct it.",
+    "Ranna 10 MW solar: was it connected by September 2026 as promised? The interim doesn't say.",
     "Storex battery storage: commissioning dates, tariffs and how the 49% stake is accounted for (now in 'other project investments').",
-    "Finance costs (Rs 210mn in the September quarter): do new plants' earnings catch up with the doubled debt?",
-    "Muvumbe (Uganda) contract term: not found in the reports read; Bukinda has 15 years left.",
-    "Payment delays and curtailment by the CEB/NSO; receivables Rs 1.60bn at September 2026.",
-    "Ranna 10 MW solar (due September 2026) and Medawachchiya dendro (mid-2027/28) progress; the 50 MW Mullikulam wind project and the Rs 5bn transmission line award.",
+    "Finance costs (Rs 210mn in the September quarter): do new plants' earnings catch up with the doubled debt? Is the full-year dividend below Rs 0.65?",
+    "Interim EPS uses 954mn shares rather than about 1,038mn (voting plus non-voting): check whether later interims correct it.",
+    "Muvumbe (Uganda) contract term: not found in the reports read; Bukinda has 15 years left (p. 147).",
+    "Payment delays and curtailment by the NSO; receivables Rs 1.60bn at September 2026.",
+    "Shareholders: further selling by Chairman Osman Kassim's Amana Bank account (−7.1m shares, March to September 2026); who Foss Ltd is.",
+    "Medawachchiya dendro (mid-2027/28), the 50 MW Mullikulam wind project and the Rs 5bn transmission line award.",
     "Beta: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas."
   ],
   "changeLog": [
@@ -886,6 +912,16 @@
       "strongBuyPrice": 6.7,
       "priceAtTime": 22.1,
       "archive": null
+    },
+    {
+      "date": "2026-11-18",
+      "basedOn": "Annual Report 2025/26 and interim to 30 Sep 2026 (CSE downloads, re-read)",
+      "summary": "Requested from Telegram (/redo VLL.N0000 full). Rebuilt from the same two reports. The figures were rechecked against the statements with no corrections; added the FY2025 share count (1,027.2mn), the JV loan guarantees, H1 withholding tax and solar revenue. Added the management (with promises vs delivery: one missed, the balance between dividends and debt) and shareholders sections, and the modelInputs; P/E, P/B, residual income and dividends now come from scripts/valuation.py (forward justified P/E 5.5 / 6.6 / 8.2x, residual income fading from 16% ROE, bull dividend growth 8% to stay below the 8.9% supported). Price Rs 22.00 CSE close (was Rs 22.10 from the interim). Beta still provisional 0.70 (Damodaran's site blocked). Business tests 4 of 4: category 2, watch list (unchanged). Fair value Rs 8.95 → 8.88, buy Rs 7.60 → 7.54, strong buy Rs 6.70 → 6.66. Still not found: the source of Rs 245mn of H1 other income, Muvumbe's contract term, whether Ranna is connected.",
+      "fairValue": 8.88,
+      "buyPrice": 7.54,
+      "strongBuyPrice": 6.66,
+      "priceAtTime": 22.0,
+      "archive": "research/VLL.N0000/history/2026-11-17.json"
     }
   ]
 }

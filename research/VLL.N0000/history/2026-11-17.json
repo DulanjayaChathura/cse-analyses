@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "ticker": "VLL.N0000",
+  "company": {
+    "name": "Vidullanka PLC",
+    "sector": "Renewable power (hydro, solar, dendro; Uganda and Sri Lanka)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "VLL.N0000",
+      "label": "Voting"
+    },
+    {
+      "symbol": "VLL.X0000",
+      "label": "Non-voting"
+    }
+  ],
+  "analysisDate": "2026-11-17",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26",
+      "Interim report to 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 22.1,
+    "date": "2026-09-30",
+    "source": "Last traded price (voting) in the interim report to 30 September 2026",
+    "note": "Non-voting Rs 20.30. September-quarter range Rs 19.90–23.40 (voting). The CSE couldn't be reached from this run; the site shows the latest CSE close once fetched."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A good renewable power business, but the price already counts on projects still being built",
+    "text": "Vidullanka PLC (VLL.N0000 voting, VLL.X0000 non-voting) runs 76 MW of hydro, solar and biomass plants, and most of its profit comes from two dollar-tariff hydro plants in Uganda. It passes all four business tests: ROE of 15–19% for five years, net debt 0.68x equity, a profit of over Rs 1bn for four years running, and a dividend paid every year. Results are softening, though. Owners' profit for the half to September 2026 rose 13% to Rs 671mn only because of Rs 245mn of unexplained other income. The September quarter fell 58% as finance costs doubled on borrowing for battery storage and new solar plants, and net debt doubled to Rs 6.85bn in six months. At Rs 22.10 (voting, 30 September; check the live price) the share is 2.26x NAV of Rs 9.76 and about 15x trailing EPS. Five methods put fair value at about Rs 8.95. I'd buy at up to Rs 7.60 and treat Rs 6.70 or less as a strong buy. The market is paying now for projects that haven't yet earned anything."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "reason": "Steady 15–19% returns on equity, moderate debt, five years of profits and cash-backed dividends.",
+    "assessed": "2026-11-17",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "16.1% (2025/26)",
+        "note": "15.1%, 14.8%, 18.0%, 18.6%, 16.1% for 2021/22–2025/26: about 16.5% on average."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.68x equity",
+        "note": "Net debt Rs 6.85bn at September 2026 against owners' equity Rs 10.13bn (0.36x in March). About 2.5x EBITDA. Plus Rs 1.64bn of joint-venture loans guaranteed."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year; over Rs 1bn for four years",
+        "note": "Passes, with a caution: half-year profit included Rs 245mn of unexplained other income, and the September quarter fell 58%."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Cash from operations Rs 2.64bn vs profit Rs 1.55bn (2025/26)",
+        "note": "Before interest and tax; Rs 1.34bn after them. Dividends paid every year (Rs 0.65 for 2025/26). Payment delays from the restructured CEB are a watch point."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.7,
+    "betaBasis": "Provisional. Damodaran's global Green & Renewable Energy unlevered beta 0.57 (cash-corrected, January 2026; web-search stand-in, as his emerging-markets file couldn't be opened), relevered at net debt 0.30x market value with 25% tax: 0.70. Only one local 5-year beta found (StockAnalysis 0.28). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 16.9,
+      "base": 15.4,
+      "bull": 13.9
+    },
+    "costOfDebt": 9.56,
+    "wacc": {
+      "bear": 14.7,
+      "base": 13.5,
+      "bull": 12.3
+    },
+    "debtWeight": 23.0,
+    "asOf": "2026-11-17",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 0.364bn ÷ average borrowings and leases Rs 3.81bn (Annual Report 2025/26, pp. 125, 128, 154)",
+      "Weights: market cap about Rs 22.9bn at Rs 22.10 (30 Sep 2026), net debt Rs 6.85bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares, at the lower end because contracted power is steady. No extra premium for Uganda, although most profit is earned there. WACC weights equity 77% and after-tax debt (9.56% × (1 − 25.1%) = 7.2%) 23%."
+  },
+  "valuation": {
+    "fairValue": 8.95,
+    "buyPrice": 7.6,
+    "strongBuyPrice": 6.7,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 9.76,
+    "note": "Fair value weights the bear/base/bull averages of five methods (whole-company DCF with joint ventures and projects, P/E, justified P/B, residual income, dividends) 30/50/20: Rs 5.66 / 9.00 / 13.82, giving Rs 8.96 (0.92x NAV). Discount rates come from the beta (cost of equity 15.4%, WACC 13.5%)."
+  },
+  "dividend": {
+    "perShare": 0.65,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, note 19 (p. 163)",
+    "note": "Interims of Rs 0.35 and Rs 0.30. For 2024/25 Rs 1.70, of which Rs 1.20 was paid in shares.",
+    "latest": {
+      "perShare": 0.2,
+      "label": "interim for 2026/27",
+      "source": "Interim report to 30 Sep 2026, note 13"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 9.76,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.26,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 14.6,
+      "unit": "x",
+      "note": "Trailing EPS Rs 1.51 (Rs 1.28 without the unexplained other income: 17x)"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 16.1,
+      "unit": "%",
+      "note": "2025/26; five-year average about 16.5%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.9,
+      "unit": "%",
+      "note": "Rs 0.65 for 2025/26"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 6.85,
+      "unit": "Rs bn",
+      "note": "Sep 2026, up from Rs 3.35bn in March"
+    },
+    {
+      "id": "evEbitda",
+      "label": "EV / EBITDA",
+      "value": 9.4,
+      "unit": "x",
+      "note": "Market cap plus net debt and minorities, less joint-venture and project stakes (Rs 4.6bn), over trailing EBITDA of about Rs 2.7bn excluding joint ventures"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 6,
+      "unit": "%",
+      "note": "Six months to Sep 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 22.8,
+      "unit": "Rs bn",
+      "display": "~Rs 22.8bn",
+      "note": "Both share classes, 30 Sep 2026 prices"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue Rs 2.04bn (+6%), owners' profit Rs 671mn (+13%), helped by Rs 300mn of other income (Rs 245mn non-cash and unexplained). September quarter profit Rs 131mn (−58%), with finance costs up 161%. EPS about Rs 0.65 on all shares (the report's Rs 0.70 uses only 954mn shares)."
+    },
+    {
+      "title": "Borrowing for the next stage",
+      "text": "Net debt doubled to Rs 6.85bn in six months: Rs 1.96bn of plant and Rs 2.2bn into Storex, a 49% stake building 120 MW / 480 MWh of battery storage at 12 sites. Interim dividend cut to Rs 0.20 from Rs 0.35."
+    },
+    {
+      "title": "2025/26: capacity up 50%",
+      "text": "Capacity rose to 76 MW (21 MW of solar plus the 4.5 MW Gurugoda hydro) and generation to 229 GWh (+15%). Profit after tax Rs 1.55bn and EPS Rs 1.45, against Rs 1.56 a year earlier, when an engineering contract in Guyana added Rs 2.1bn of revenue."
+    },
+    {
+      "title": "Uganda carries the group",
+      "text": "The two 6.5 MW Ugandan hydro plants earned Rs 1.21bn of the group's Rs 1.55bn profit in 2025/26, on a US-dollar tariff. Bukinda has 15 years of contract left."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          0.93,
+          1.02,
+          1.35,
+          1.56,
+          1.45,
+          1.51
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Incl. Guyana EPC",
+          null,
+          "Trailing 12 months, incl. Rs 0.24 unexplained other income"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          15.1,
+          14.8,
+          18.0,
+          18.6,
+          16.1,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0.3,
+          0.2,
+          0.36,
+          1.7,
+          0.65,
+          0.2
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Rs 1.20 paid in shares",
+          null,
+          "Interim for 2026/27 so far"
+        ]
+      },
+      {
+        "id": "ocf",
+        "label": "Cash generated from operations",
+        "unit": "Rs mn",
+        "values": [
+          1664,
+          2619,
+          2913,
+          3716,
+          2638,
+          1234
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Guyana receivable collected",
+          null,
+          "Six months"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 9.76",
+      "reading": "The price is 2.26x NAV. Plants are at depreciated cost, and the new projects are at cost."
+    },
+    {
+      "method": "Return on equity",
+      "value": "About 16%",
+      "reading": "Steady at 15–19% for five years, just above the 15.4% cost of equity, so worth about 1–1.1x book."
+    },
+    {
+      "method": "P/E",
+      "value": "14.6x trailing",
+      "reading": "About 17x without the unexplained other income. A justified P/E of 6–9x at a 15.4% cost of equity."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.9% yield",
+      "reading": "Rs 0.65 for 2025/26; the interim was cut to Rs 0.20 as cash goes to projects."
+    },
+    {
+      "method": "Cash flow",
+      "value": "About Rs 1.5bn a year",
+      "reading": "Cash before interest after upkeep, mostly from Uganda. Fully valued, it supports about Rs 9 a share including the stakes."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Whole-company DCF (WACC, less net debt) + joint ventures and projects",
+      "bear": 3.44,
+      "base": 9.26,
+      "bull": 19.05,
+      "weighted": 9.47,
+      "comment": "Consolidated plants valued as a whole company: cash before interest after maintenance capex Rs 1.10 / 1.48 / 1.80bn (after-tax operating profit Rs 1.30 / 1.48 / 1.69bn, excluding joint ventures, plus depreciation of about Rs 0.55bn, less maintenance Rs 0.75 / 0.55 / 0.44bn), growing 3% / 6% / 9% for five years then 3% / 4% / 5%, less the reinvestment that growth needs at a 12% / 15% / 17% return on capital, at WACC 14.7% / 13.5% / 12.3%, less net debt Rs 6.85bn at 30 September 2026. Firm value Rs 6.8 / 12.1 / 20.3bn gives Rs −0.03 / 5.04 / 12.95 a share (bear taken as nil). Value after year 5: 58% / 70% / 80%; the bull is over the 75% flag, so most of it rests on the long run. Plus joint ventures (Rs 2.43bn book) and project investments, mainly the Storex battery storage stake (Rs 2.21bn at cost), less minorities (Rs 0.26bn): 85% and 80% of book in the bear, book in the base, joint ventures at 1.35x and projects at 1.5x cost in the bull: Rs 3.44 / 4.22 / 6.10 a share."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 6.62,
+      "base": 9.37,
+      "bull": 13.02,
+      "weighted": 9.28,
+      "comment": "EPS for the year to March 2027 of Rs 1.15 / 1.35 / 1.50 times 5.8 / 6.9 / 8.7, the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE; ROE 14 / 16 / 17%, growth 4 / 5 / 6%). Base EPS is 11% below the Rs 1.51 last-12-months figure because that includes Rs 0.245bn of unexplained other income (about Rs 0.24 a share) and finance costs have doubled on new borrowing for projects not yet earning; without the item the run-rate is about Rs 1.28."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 7.57,
+      "base": 10.32,
+      "bull": 13.59,
+      "weighted": 10.15,
+      "comment": "(ROE − growth) ÷ (cost of equity − growth) × NAV Rs 9.76: ROE 14 / 16 / 17%, growth 4 / 5 / 6%, cost of equity 16.9 / 15.4 / 13.9%, giving 0.78 / 1.06 / 1.39x book. Rs 22.10 is 2.26x book, which would need a lasting ROE of about 28% at the base cost of equity."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 7.07,
+      "base": 10.47,
+      "bull": 14.53,
+      "weighted": 10.26,
+      "comment": "Book value Rs 9.76 (September 2026); ROE 14 / 16 / 17% for ten years with 45% paid out, cost of equity 16.9 / 15.4 / 13.9%, then the excess return grows at 4 / 5 / 6%. ROE sits close to the cost of equity, so little is added to book."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividends (two-stage)",
+      "bear": 3.6,
+      "base": 5.59,
+      "bull": 8.9,
+      "weighted": 5.66,
+      "comment": "Dividend for 2026/27 of Rs 0.50 / 0.60 / 0.70 (Rs 0.20 interim so far against Rs 0.35 a year earlier; Rs 0.65 for 2025/26), growing 3 / 6 / 9% for five years then 3 / 4 / 5%, at the cost of equity 16.9 / 15.4 / 13.9%. Growth is within the supported rate. Lowest of the methods because the company keeps more than half its profit for new plants."
+    }
+  ],
+  "modelsNote": "A contracted power producer suits a whole-company DCF; the joint ventures (equity-accounted) and the battery storage stake are added at book or cost. P/E, justified P/B, residual income and dividends use the cost of equity. Growth check: assumed 3% / 6% / 9% against 32.8% supported (reinvestment rate 198% × return on capital 16.6%, FY2026). All are within it, but the supported figure is inflated by one build year.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "After-tax operating profit (start, excl. JVs)",
+        "bear": "Rs 1.30bn",
+        "base": "Rs 1.48bn",
+        "bull": "Rs 1.69bn"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 0.75bn",
+        "base": "Rs 0.55bn",
+        "bull": "Rs 0.44bn"
+      },
+      {
+        "label": "Growth, years 1–5 / long run",
+        "bear": "3% / 3%",
+        "base": "6% / 4%",
+        "bull": "9% / 5%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "12%",
+        "base": "15%",
+        "bull": "17%"
+      },
+      {
+        "label": "WACC / cost of equity",
+        "bear": "14.7% / 16.9%",
+        "base": "13.5% / 15.4%",
+        "bull": "12.3% / 13.9%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "Rs 1.15 × 5.8",
+        "base": "Rs 1.35 × 6.9",
+        "bull": "Rs 1.50 × 8.7"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "16%",
+        "bull": "17%"
+      },
+      {
+        "label": "Dividend 2026/27",
+        "bear": "Rs 0.50",
+        "base": "Rs 0.60",
+        "bull": "Rs 0.70"
+      },
+      {
+        "label": "JVs and projects",
+        "bear": "85% / 80% of book",
+        "base": "Book",
+        "bull": "1.35x / 1.5x"
+      }
+    ],
+    "averages": {
+      "bear": 5.66,
+      "base": 9.0,
+      "bull": 13.82
+    },
+    "common": "Net debt Rs 6.85bn and NAV Rs 9.76 at 30 September 2026. 1,037.9 million shares (955.8mn voting, 82.1mn non-voting), valued the same. Minorities Rs 0.26bn. Tax 25–30%."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "13.9%",
+      "15.4%",
+      "16.9%"
+    ],
+    "columns": [
+      "14%",
+      "16%",
+      "17%"
+    ],
+    "values": [
+      [
+        9.87,
+        12.06,
+        13.16
+      ],
+      [
+        8.45,
+        10.32,
+        11.26
+      ],
+      [
+        7.38,
+        9.02,
+        9.84
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 5%, NAV Rs 9.76. Rs 22.10 would need a lasting ROE of about 28% at a 15.4% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 7.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 7.15
+      },
+      {
+        "shares": 150,
+        "maxPrice": 6.7
+      }
+    ],
+    "averagePrice": 7.2,
+    "totalCost": 3598,
+    "note": "About Rs 3,600 in total, against Rs 11,050 at Rs 22.10.",
+    "realism": "Rs 7.60 needs a fall of about 66%. The voting share traded at Rs 19.90–23.40 in the September quarter, and the lowest price found for the past year is about Rs 12.40, so this isn't likely soon. The non-voting share (Rs 20.30) is slightly cheaper for the same share of profit."
+  },
+  "changeMyView": {
+    "higher": [
+      "Battery storage sites commissioned and earning well above the cost of capital.",
+      "Medawachchiya dendro and the wind projects finished to budget.",
+      "The CEB/NSO paying on time and curtailment ending.",
+      "Uganda contracts extended, or the rupee weakening against the dollar."
+    ],
+    "lower": [
+      "More quarters like September 2026 (profit −58%).",
+      "Debt rising faster than new plants come on line.",
+      "Tariff cuts or more curtailment by the off-taker.",
+      "Poor rainfall at the hydro plants, or the rupee strengthening.",
+      "Problems at joint ventures whose loans Vidullanka guarantees."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the Annual Report 2025/26 and the interim report to 30 September 2026. The price is the last traded price at 30 September 2026; check it live. Beta inputs are provisional web-search figures. This is analysis, not personal financial advice."
+  },
+  "fullText": "VIDULLANKA PLC (VLL.N0000 voting, VLL.X0000 non-voting): long-term valuation, 2026-11-17\n\nSUMMARY\nVidullanka is a renewable power producer with 76 MW of hydro, solar and biomass (\"dendro\") plants in Sri Lanka and two hydro plants in Uganda, which earn most of its profit. It is a good business on all four tests: return on equity of 15–19% for five years, net debt 0.68x equity, a profit of more than Rs 1bn for four years running, and cash flow that pays a dividend each year. But at Rs 22.10 (voting, last trade 30 September 2026; check the live price) the share is 2.26x book value and about 15x trailing earnings. On five methods fair value is about Rs 8.95. I'd buy at up to Rs 7.60 and treat Rs 6.70 or less as a strong buy. The price assumes that the battery storage, wind and new solar projects will earn far more than the cost of capital. That may happen, but it isn't in the figures yet. Watch list (category 2).\n\nTHE BUSINESS\n- Overseas hydro (Muvumbe and Bukinda, 6.5 MW each, Uganda): revenue Rs 2.55bn and profit Rs 1.21bn in 2025/26, about three-quarters of group profit. The tariff is set in US dollars (Bukinda Rs 31.13, USD 0.0957 a unit, with 15 years of contract left). Profits sent home pay 15–20% withholding tax.\n- Local mini-hydro (12 plants including joint ventures): revenue Rs 0.53bn and profit Rs 0.42bn. Several contracts have been renewed (Batathota to 2041, Gurugoda to 2044, Bambarabatuoya to 2036); Lower Kotmale has 8 years left.\n- Solar: 21 MW added in 2025/26 through four projects, plus the Vavunathivu 10 MW plants held through Solar Universe, a joint venture with WindForce. The 10 MW Ranna plant was due on the grid in September 2026.\n- Dendro and plantation: Dehiattakandiya 3.3 MW (51% joint venture). Medawachchiya 6.6 MW is under construction (Rs 1.3bn equity commitment, Rs 0.5bn put in, commissioning mid-2027/28).\n- New lines: a 49% stake in Storex, building twelve 10 MW / 40 MWh battery storage sites (Rs 2.2bn invested in the half-year); a 30% stake in the 10 MW Alankuda wind plant; the 50 MW Mullikulam wind tender (with the David Peiris group); and lowest bidder, with Skipper, for a Rs 5bn transmission line for the CEB.\n- Buyers: the CEB and its new National System Operator in Sri Lanka, and UETCL in Uganda. The report mentions payment delays during the CEB's restructuring, and output curtailed by the grid: Rs 119mn of lost energy from March 2025 to September 2026.\n\nLATEST RESULTS\nSix months to 30 September 2026 (unaudited): revenue Rs 2.04bn (+6%), gross profit Rs 1.43bn (+2%), profit to owners Rs 671mn (+13%). The rise came from Rs 300mn of other income, Rs 245mn of which the cash flow statement removes as non-cash and the report doesn't explain. Finance costs more than doubled to Rs 357mn. The September quarter alone was weak: profit to owners Rs 131mn against Rs 311mn (−58%), with finance costs Rs 210mn (+161%) and cost of sales up 28%. EPS for the half is about Rs 0.65 on all 1,038mn shares; the report shows Rs 0.70 because it divides by 954mn shares (voting only, it seems), unlike the annual report, which counts both classes.\nBalance sheet: net debt (borrowings and leases less cash) rose from Rs 3.35bn in March to Rs 6.85bn in September, as Rs 1.96bn went on plant and Rs 1.89bn into new projects (mainly Storex). NAV per share Rs 9.76. Interim dividend Rs 0.20 (Rs 0.35 a year earlier).\nYear to March 2026 (audited): revenue Rs 3.83bn (Rs 5.42bn a year earlier, which included Rs 2.1bn from a finished engineering contract in Guyana). Profit after tax Rs 1.55bn (Rs 1.58bn), owners Rs 1.49bn, EPS Rs 1.45 (Rs 1.56). Generation 229 GWh (+15%), capacity 76 MW (51 MW). Dividends Rs 0.65 (Rs 1.70, of which Rs 1.20 was paid in shares).\n\nREINVESTMENT AND GROWTH\n2025/26 was a heavy build year: capex booked Rs 2.73bn (including Rs 1.64bn of solar plant for the four new projects and Rs 0.68bn of land) against depreciation of Rs 0.44bn, plus Rs 0.66bn into joint ventures and projects. That spending is mostly growth, judged on its return, not upkeep. Net debt rose by more than half the capex, so it was largely borrowed. The calculator gives a reinvestment rate of 198% of after-tax operating profit at a 16.6% return on capital: supported growth of 32.8%. That figure is inflated by one build year. I assume 3% / 6% / 9% for five years, well inside it, because each new project also needs new money. Long-run growth is 3 / 4 / 5%, below the 12.24% bond yield and WACC, with reinvestment of growth ÷ return on capital.\nMaintenance capex: the company gives no split. The calculator's range is Rs 1.43bn / 0.77bn / 0.44bn, but its top two figures are distorted by the build year. For plants on long contracts, depreciation (about Rs 0.55bn a year now) is a fair base. Bear Rs 0.75bn, base Rs 0.55bn, bull Rs 0.44bn.\nCash: FY2026 cash from operations was Rs 1.34bn after Rs 0.93bn of tax paid (including tax on Ugandan dividends), against dividends of Rs 0.75bn including minorities. On that year's cash after maintenance capex (Rs 0.57bn by the calculator) the dividend wasn't covered. On a more normal year (after-tax operating profit of about Rs 1.5bn plus depreciation, less upkeep and after-tax interest) it is covered about 1.5 times. The lower interim suggests the board is holding cash back for the projects.\n\nREQUIRED RETURN\nCost of equity = risk-free 8.24% (12.24% 10-year bond less a 4.0% default spread) + beta 0.70 × (4.2% mature premium + 6.08% country premium) = 15.4%; bear 16.9%, bull 13.9%. The beta (provisional) is Damodaran's global Green & Renewable Energy unlevered beta of 0.57 (a web-search figure, January 2026; his emerging-markets file couldn't be opened), relevered at net debt of 0.30x market value. Only one local 5-year beta was found (0.28), so step 4 is incomplete. This is inside the 12–22% range for CSE shares, at the lower end because contracted power is steady. No extra premium is added for Uganda, although most of the profit comes from there. Cost of debt 9.56% (interest paid ÷ average borrowings and leases, FY2026), after tax 7.2%. WACC 13.5% (debt weight 23%); bear 14.7%, bull 12.3%.\n\nVALUATION\nMethods: a whole-company DCF of the consolidated plants (at WACC, less net debt) plus the joint ventures and project stakes; P/E; justified price to book; residual income; and a two-stage dividend model. Fair value weights each scenario's average 30/50/20.\n- Whole-company DCF (WACC, less net debt) + joint ventures and projects: Rs 3.44 / 9.26 / 19.05 (weighted 9.47). Consolidated plants valued as a whole company: cash before interest after maintenance capex Rs 1.10 / 1.48 / 1.80bn (after-tax operating profit Rs 1.30 / 1.48 / 1.69bn, excluding joint ventures, plus depreciation of about Rs 0.55bn, less maintenance Rs 0.75 / 0.55 / 0.44bn), growing 3% / 6% / 9% for five years then 3% / 4% / 5%, less the reinvestment that growth needs at a 12% / 15% / 17% return on capital, at WACC 14.7% / 13.5% / 12.3%, less net debt Rs 6.85bn at 30 September 2026. Firm value Rs 6.8 / 12.1 / 20.3bn gives Rs −0.03 / 5.04 / 12.95 a share (bear taken as nil). Value after year 5: 58% / 70% / 80%; the bull is over the 75% flag, so most of it rests on the long run. Plus joint ventures (Rs 2.43bn book) and project investments, mainly the Storex battery storage stake (Rs 2.21bn at cost), less minorities (Rs 0.26bn): 85% and 80% of book in the bear, book in the base, joint ventures at 1.35x and projects at 1.5x cost in the bull: Rs 3.44 / 4.22 / 6.10 a share.\n- P/E method: Rs 6.62 / 9.37 / 13.02 (weighted 9.28). EPS for the year to March 2027 of Rs 1.15 / 1.35 / 1.50 times 5.8 / 6.9 / 8.7, the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE; ROE 14 / 16 / 17%, growth 4 / 5 / 6%). Base EPS is 11% below the Rs 1.51 last-12-months figure because that includes Rs 0.245bn of unexplained other income (about Rs 0.24 a share) and finance costs have doubled on new borrowing for projects not yet earning; without the item the run-rate is about Rs 1.28.\n- Justified price to book: Rs 7.57 / 10.32 / 13.59 (weighted 10.15). (ROE − growth) ÷ (cost of equity − growth) × NAV Rs 9.76: ROE 14 / 16 / 17%, growth 4 / 5 / 6%, cost of equity 16.9 / 15.4 / 13.9%, giving 0.78 / 1.06 / 1.39x book. Rs 22.10 is 2.26x book, which would need a lasting ROE of about 28% at the base cost of equity.\n- Residual income: Rs 7.07 / 10.47 / 14.53 (weighted 10.26). Book value Rs 9.76 (September 2026); ROE 14 / 16 / 17% for ten years with 45% paid out, cost of equity 16.9 / 15.4 / 13.9%, then the excess return grows at 4 / 5 / 6%. ROE sits close to the cost of equity, so little is added to book.\n- Dividends (two-stage): Rs 3.60 / 5.59 / 8.90 (weighted 5.66). Dividend for 2026/27 of Rs 0.50 / 0.60 / 0.70 (Rs 0.20 interim so far against Rs 0.35 a year earlier; Rs 0.65 for 2025/26), growing 3 / 6 / 9% for five years then 3 / 4 / 5%, at the cost of equity 16.9 / 15.4 / 13.9%. Growth is within the supported rate. Lowest of the methods because the company keeps more than half its profit for new plants.\nAverages: bear Rs 5.66, base Rs 9.00, bull Rs 13.82. Fair value Rs 8.95 (0.92x NAV). Buy price Rs 7.60 (15% below), strong buy Rs 6.70 (25% below).\nRatio checks: beta 0.70, cost of equity 15.4% and WACC 13.5% (below the cost of equity) are in range. Net debt/EBITDA is about 2.5x (trailing EBITDA about Rs 2.7bn, including the unexplained Rs 0.245bn), under 3x. Vidullanka also guarantees Rs 1.64bn of joint-venture loans. The chosen P/Es (5.8–8.7x) and P/Bs (0.78–1.39x) are the justified figures, so they imply no more growth than is supported.\n\nWHY THE MARKET PAYS MORE\nAt Rs 22.10 the market values the company at about Rs 22.8bn plus Rs 6.85bn of net debt, against trailing EBITDA of about Rs 2.7bn: about 9.4x after taking out the Rs 4.6bn of joint-venture and project stakes. Buyers are paying for the pipeline: battery storage at 12 sites, wind, more solar and the transmission line. If those earn well above the 13–15% cost of capital, the bull case rises. But most of them are still being built or bid for, the first effect has been higher debt and finance costs, and the existing solar contracts were cut in tariff by the off-taker. I value the new projects at cost (1.5x in the bull case) until they produce results.\n\nBUY PLAN (500 shares)\n200 shares up to Rs 7.60, 150 up to Rs 7.15, 150 up to Rs 6.70: average about Rs 7.20, total about Rs 3,600 (Rs 11,050 at Rs 22.10).\nRealism: Rs 7.60 needs a fall of about 66%. The voting share traded at Rs 19.90–23.40 in the September quarter, and the lowest figure I could find for the past year is about Rs 12.40 (Simply Wall St, December 2025 snapshot). It isn't likely soon. The non-voting share (Rs 20.30 at 30 September) is a little cheaper and has the same rights to profit.\n\nWHAT WOULD CHANGE THE VIEW\nHigher: battery storage sites commissioned and earning (Storex), with tariffs known; Medawachchiya and the wind projects running to budget; the CEB/NSO paying on time and curtailment ending; Uganda contracts extended.\nLower: further profit drops like the September quarter; debt rising faster than new plants come on line; the CEB cutting tariffs or curtailing more; poor rainfall in Uganda or Sri Lanka; the rupee strengthening against the dollar (lowering Ugandan profit in rupees); trouble at joint ventures whose loans Vidullanka guarantees.\n\nUNCERTAINTIES\n- The Rs 245mn of 'other income' in the half-year isn't explained in the interim report.\n- The interim EPS uses 954mn shares, not the 1,038mn in issue; I've recomputed it.\n- Muvumbe's remaining contract term isn't given in the reports read (Bukinda's is 15 years).\n- Prices are from the interim report (30 September 2026); the CSE couldn't be reached from this run. The site shows the latest CSE close once fetched.\n- Beta inputs come from web-search extracts and are provisional.\n- FY2022–FY2024 figures come from the ten-year summary only (no reinvestment figures for those years).\n"
+}
