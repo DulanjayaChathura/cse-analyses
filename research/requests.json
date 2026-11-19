@@ -675,6 +675,23 @@
       "status": "done",
       "result": "Fair value Rs 8.88 → 8.88 (unchanged), buy Rs 7.54 (strong buy 6.66), category 2 watch list",
       "finishedAt": "2026-11-18T21:17:30+00:00"
+    },
+    {
+      "id": "20261119210333-ALUM",
+      "ticker": "ALUM.N0000",
+      "name": "Alumex PLC",
+      "mode": "redo-full",
+      "command": "/redo ALUM.N0000 full",
+      "note": null,
+      "files": [
+        "reports/ALUM.N0000/2026-06-04_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/ALUM.N0000/2026-07-23_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/ALUM.N0000/2026-10-30_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "317",
+      "requestedAt": "2026-11-19T21:03:33+00:00",
+      "status": "pending"
     }
   ]
 }
