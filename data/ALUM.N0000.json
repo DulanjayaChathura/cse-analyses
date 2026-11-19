@@ -12,32 +12,98 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-09",
+  "analysisDate": "2026-11-19",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+      "Annual report 2025/26 (incl. ten-year summary and quarterly analysis)",
+      "Interim report to 30 June 2026",
+      "Interim report to 30 September 2026 (scanned; read from page images)"
     ]
   },
   "price": {
-    "value": 16.4,
-    "date": "2026-11-06",
+    "value": 17.6,
+    "date": "2026-11-19",
     "source": "CSE closing price",
-    "note": "July–September 2026 range Rs 15.70–17.90; year to March 2026 range Rs 13.50–22.70."
+    "note": "Traded Rs 16.00–19.90 in April–June 2026 and Rs 15.70–17.90 in July–September 2026; Rs 13.50–22.70 in the year to March 2026."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Profits recovered, but they swing with aluminium prices and the company carries heavy debt",
-    "text": "Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys company, is earning well again: profit for the six months to September 2026 nearly quadrupled. But at Rs 16.40 the share trades at 1.8x its NAV of Rs 8.98, and its trailing P/E of 9.3x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40). Alumex's profits swing widely with aluminium prices and demand (a loss in 2022/23, almost nothing in 2023/24), and its borrowings are nearly twice its equity. On normal earnings the methods put fair value at about Rs 8.40, so the price is about 95% above it. I'd buy at up to about Rs 7.20 and treat under Rs 6.30 as a strong buy."
+    "headline": "Profits are recovering, but they swing with aluminium prices and debt has climbed to nearly twice equity",
+    "text": "Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys subsidiary (52.6%), is earning more: profit for the six months to September 2026 was Rs 268mn against Rs 69mn, and the September quarter's operating profit rose 75%. But at Rs 17.60 the share trades at 2.0x its NAV of Rs 8.98, and its trailing P/E of 9.9x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40, lifted by rising aluminium prices and fire insurance). Profit swings with aluminium prices (a loss in 2022/23, almost nothing in 2023/24), and net debt has risen to Rs 10.0bn, 1.9x equity, as stock was built up against Middle East supply problems. That debt also makes the share risky, so the required return is high (23.7%). On normal earnings the methods put fair value at about Rs 4.20, a quarter of the price. I'd buy only at up to about Rs 3.60 and treat under Rs 3.20 as a strong buy: in practice, not a share to buy at today's price."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Cyclical and heavily borrowed; profit depends on aluminium prices and has rarely turned into cash.",
+    "assessed": "2026-11-19",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "17%",
+        "note": "2025/26; 15.3% average over five years and 16.6% over ten, but very uneven (−0.3% to 34%), and 2024/25's 21% was helped by fire insurance."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "1.9x equity",
+        "note": "Net debt Rs 10.0bn at September 2026 (incl. leases), mostly short-term loans; interest cover 2.2x in 2025/26."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Loss in 2022/23",
+        "note": "Profit relied on fire insurance in 2024/25 and 2025/26, and on one quarter in 2025/26."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No",
+        "note": "Operating cash over five years was −Rs 0.43bn against Rs 3.06bn of profit; −Rs 2.07bn in the half to September 2026 as stock rose Rs 2.8bn."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.5,
+    "betaBasis": "Provisional. Damodaran's global Building Materials unlevered beta 0.90 (cash-corrected; web-search stand-in, his emerging-markets file couldn't be opened), relevered at net debt 0.95x market value with 30% tax: 1.50. Only one local beta found (TradingView 0.84, window not stated). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 25.2,
+      "base": 23.7,
+      "bull": 22.2
+    },
+    "costOfDebt": 8.92,
+    "wacc": {
+      "bear": 16.5,
+      "base": 15.8,
+      "bull": 15.0
+    },
+    "debtWeight": 48.7,
+    "asOf": "2026-11-19",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Building Materials unlevered 0.90 (web-search extract); one local beta 0.84 (TradingView, window not stated)",
+      "Cost of debt: interest paid Rs 0.761bn ÷ average borrowings and leases Rs 8.53bn (Annual Report 2025/26, pp. 206, 208, 228)",
+      "Weights: market cap Rs 10.54bn at Rs 17.60 (CSE close 19 Nov 2026), net debt Rs 10.01bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.50 × (4.2% + 6.08%) = 23.7%; bear +1.5, bull −1.5 points. That's above the usual 12–22% range for CSE shares because borrowings are nearly as large as the share's market value, which makes the equity much riskier than the business. At March 2026 net debt the beta would be 1.34 and the cost of equity 22.0%. WACC weights debt at 48.7% after the 17% effective tax rate."
   },
   "valuation": {
-    "fairValue": 8.4,
-    "buyPrice": 7.2,
-    "strongBuyPrice": 6.3,
+    "fairValue": 4.23,
+    "buyPrice": 3.6,
+    "strongBuyPrice": 3.17,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -48,12 +114,12 @@
       "bull": 20
     },
     "nav": 8.98,
-    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 0.9x NAV)."
+    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20: Rs 2.69 / 4.27 / 6.47, giving Rs 4.23 (0.47x NAV). The methods are justified price to book, P/E and residual income, all from scripts/valuation.py at a cost of equity of 23.7%. A whole-company DCF and a dividend model were run but not weighted (see the methods note)."
   },
   "dividend": {
     "perShare": 0.47,
     "label": "for 2025/26",
-    "source": "Annual Report 2025/26, Ten-year summary (pp. 246–247)",
+    "source": "Annual Report 2025/26, p. 204",
     "latest": {
       "perShare": 0.2,
       "label": "interim for 2026/27",
@@ -71,27 +137,27 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 1.8,
+      "value": 1.96,
       "unit": "x"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 9.3,
+      "value": 9.9,
       "unit": "x",
-      "note": "Trailing EPS Rs 1.77, including one exceptional quarter"
+      "note": "Trailing EPS Rs 1.77, incl. the exceptional March 2026 quarter"
     },
     {
       "id": "roe",
       "label": "Return on equity",
       "value": 17,
       "unit": "%",
-      "note": "Year to March 2026; ten-year average about 16.5%"
+      "note": "2025/26; ten-year average about 16.6%"
     },
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 2.9,
+      "value": 2.7,
       "unit": "%",
       "note": "Rs 0.47 for 2025/26"
     },
@@ -104,41 +170,52 @@
     {
       "id": "netDebtEquity",
       "label": "Net debt / equity",
-      "value": 1.8,
+      "value": 1.86,
       "unit": "x",
-      "note": "September 2026"
+      "note": "30 Sep 2026, incl. leases"
     },
     {
       "id": "revenueGrowth",
       "label": "Revenue growth",
       "value": 13,
       "unit": "%",
-      "note": "Six months to Sep 2026; 18% in the year to March 2026"
+      "note": "Six months to Sep 2026; September quarter +28%"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 23.7,
+      "unit": "%",
+      "note": "Beta 1.50"
     },
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 9.8,
+      "value": 10.5,
       "unit": "Rs bn",
-      "display": "~Rs 9.8bn"
+      "display": "~Rs 10.5bn"
     }
   ],
   "highlights": [
     {
       "title": "Six months to 30 September 2026 (unaudited)",
-      "text": "Revenue rose 13% to Rs 8.60bn and profit rose to Rs 268mn from Rs 69mn. EPS was Rs 0.45 against Rs 0.12."
+      "text": "Revenue rose 13% to Rs 8.60bn, gross margin improved to 20.5% from 16.1%, and operating profit rose 51% to Rs 727mn. Profit was Rs 268mn (EPS Rs 0.45) against Rs 69mn. The September quarter alone: revenue +28%, operating profit +75%, but finance costs +56%, so profit was Rs 118mn (EPS Rs 0.20)."
     },
     {
-      "title": "One big quarter",
-      "text": "Almost all of 2025/26's profit (EPS Rs 1.44) came in January–March 2026 (EPS Rs 1.40), when aluminium prices jumped. The year also included Rs 229mn of fire insurance income."
+      "title": "Stock and debt up sharply",
+      "text": "Inventory rose from Rs 4.43bn to Rs 7.25bn in six months (management is holding bigger buffers against billet supply problems), paid for with short-term loans: borrowings Rs 10.1bn, net debt Rs 10.0bn (1.9x equity). Operating cash flow was −Rs 2.07bn."
     },
     {
-      "title": "Debt",
-      "text": "Net debt about Rs 9.6bn, 1.8x equity. Short-term loans rose Rs 2.4bn in the half as inventory grew Rs 2.8bn. Interest cover 2.2x last year."
+      "title": "2025/26: one big quarter",
+      "text": "Revenue Rs 16.94bn (+18%), profit Rs 863mn (flat), EPS Rs 1.44. January–March 2026 earned Rs 1.40 of it, helped by rising LME aluminium prices and Rs 211mn of business-interruption insurance from the 2024/25 Ekala fire. Operating profit without insurance rose 25% to Rs 1.59bn."
     },
     {
-      "title": "A cyclical record",
-      "text": "EPS over ten years ranged from a small loss (2022/23) to Rs 1.92 (2021/22), an average of about Rs 0.86."
+      "title": "Exports shifting away from the US",
+      "text": "US tariffs of 50% cut exports there by 28%, while Europe (+56%) and Australia (+47%) grew; exports were 35% of revenue. Only 39% of the 24,000 MT extrusion capacity was used."
+    },
+    {
+      "title": "Interim dividend",
+      "text": "Rs 0.20 a share declared for 2026/27 (none at this point last year); Rs 0.47 was paid for 2025/26."
     }
   ],
   "history": {
@@ -169,7 +246,7 @@
           null,
           "Fire insurance",
           null,
-          "Trailing"
+          "12 months to Sep 2026"
         ]
       },
       {
@@ -188,9 +265,30 @@
           null,
           null,
           null,
-          null,
+          "Fire insurance",
           null,
           null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year end)",
+        "unit": "x",
+        "values": [
+          4.0,
+          null,
+          31,
+          10,
+          12,
+          9.9
+        ],
+        "notes": [
+          null,
+          "Loss year",
+          null,
+          null,
+          null,
+          "Trailing, Rs 17.60"
         ]
       },
       {
@@ -203,7 +301,7 @@
           0.0,
           0.4,
           0.47,
-          null
+          0.2
         ],
         "notes": [
           null,
@@ -211,7 +309,7 @@
           "None paid",
           null,
           null,
-          null
+          "Interim 2026/27"
         ]
       }
     ]
@@ -220,66 +318,71 @@
     {
       "method": "NAV",
       "value": "Rs 8.98",
-      "reading": "The price is 1.8x NAV."
+      "reading": "The price is 2.0x NAV (30 Sep 2026)."
     },
     {
       "method": "Return on equity",
       "value": "17%",
-      "reading": "Year to March 2026 (21% in 2024/25), but 5% in 2023/24 and below zero in 2022/23. Ten-year average about 16.5%."
+      "reading": "2025/26 (21% in 2024/25 with fire insurance), but 5% in 2023/24 and below zero in 2022/23. Ten-year average about 16.6%, below the 23.7% required return."
     },
     {
       "method": "P/E",
-      "value": "9.3x",
-      "reading": "On trailing EPS of Rs 1.77, which includes the exceptional March 2026 quarter. Year-end P/E 11.5x (2026)."
+      "value": "9.9x",
+      "reading": "On trailing EPS of Rs 1.77, including the exceptional March 2026 quarter. Justified P/E at a 23.7% required return is only 3.6x."
     },
     {
       "method": "Dividends",
-      "value": "2.9% yield",
-      "reading": "Rs 0.47 for 2025/26, a third of profit; Rs 0.20 paid so far this year."
+      "value": "2.7% yield",
+      "reading": "Rs 0.47 for 2025/26, a third of profit; Rs 0.20 interim declared for 2026/27."
+    },
+    {
+      "method": "DCF (whole company)",
+      "value": "Below zero",
+      "reading": "Cash after maintenance capex (Rs 0.5–1.4bn) is too small, at a 15.8% WACC, to cover Rs 10bn of net debt. Not weighted: cash flow swings with stock levels."
     },
     {
       "method": "Debt",
-      "value": "Net debt 1.8x equity",
-      "reading": "About Rs 9.6bn at September 2026, mostly short-term loans; interest cover 2.2x."
+      "value": "Net debt 1.9x equity",
+      "reading": "Rs 10.0bn at September 2026, mostly short-term loans; interest cover 2.2x last year."
     }
   ],
   "models": [
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 4.0,
-      "base": 7.3,
-      "bull": 12.7,
-      "weighted": 7.4,
-      "comment": "Base-case long-run ROE of 15% is below the 17% cost of equity, so value is a little under book."
+      "bear": 2.97,
+      "base": 4.8,
+      "bull": 7.21,
+      "weighted": 4.73,
+      "comment": "NAV Rs 8.98 × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 11% / 15% / 19%, growth 4% / 5% / 6%, cost of equity 25.2% / 23.7% / 22.2%. Even the bull ROE is below the required return, so value is below book."
     },
     {
       "id": "pe",
-      "name": "P/E method",
-      "bear": 6.0,
-      "base": 10.8,
-      "bull": 17.1,
-      "weighted": 10.6,
-      "comment": "The most generous: EPS for the year to March 2027 times 7 / 9 / 11."
+      "name": "P/E method (justified P/E)",
+      "bear": 2.55,
+      "base": 4.28,
+      "bull": 6.55,
+      "weighted": 4.21,
+      "comment": "EPS for the year to March 2027 of Rs 0.85 / 1.20 / 1.55 × justified P/E of 3.0 / 3.6 / 4.2 (from ROE, growth and the cost of equity). Base EPS is 32% below the Rs 1.77 run-rate because that includes the March 2026 quarter's metal-price gains and Rs 211mn of one-off insurance; H1 EPS is Rs 0.45 and the base case assumes Rs 0.75 in the second half."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 3.5,
-      "base": 6.9,
-      "bull": 14.3,
-      "weighted": 7.4,
-      "comment": "ROE of 12% falling to 11% / 15% / 19% over 10 years."
+      "bear": 2.54,
+      "base": 3.74,
+      "bull": 5.65,
+      "weighted": 3.76,
+      "comment": "Book Rs 8.98, ROE moving from 15% to 11% / 15% / 19% over 10 years, 33% payout, then growth 4% / 5% / 6%, at a 25.2% / 23.7% / 22.2% cost of equity."
     }
   ],
-  "modelsNote": "Alumex pays out a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock levels, so a cash-flow DCF isn't reliable. The fair value uses three methods.",
+  "modelsNote": "Three methods are weighted: justified price to book, P/E and residual income. A whole-company DCF was run (scripts/reinvestment.py): start cash Rs 0.52 / 0.96 / 1.40bn (2025/26 operating cash plus after-tax interest, less maintenance capex of Rs 1.32 / 0.88 / 0.43bn), growth 3% / 6% / 8% for five years then 4% / 5% / 6%, return on new capital 9% / 11% / 13%, at WACC 16.5% / 15.8% / 15.0%. Firm values of Rs 0.4 / 3.2 / 8.4bn are all below net debt of Rs 10.0bn, giving Rs −16.1 / −11.4 / −2.7 a share (71–75% of the base and bull value comes after year 5). It isn't weighted because operating cash swings by billions with stock levels (−Rs 1.37bn in 2023/24, +Rs 1.20bn in 2025/26, −Rs 2.07bn in the half to September), but it is a warning: on its record the business hasn't produced enough cash to support its debt. A dividend model isn't weighted either: the payout is a third of profit, so it would understate value. Growth check: assumed 3% / 6% / 8% against 5.6% supported (49% of after-tax operating profit reinvested × 11.3% return on capital); the bull case is 2.4 points above because only 39% of extrusion capacity is used, so volumes can grow without new plant.",
   "scenarios": {
     "assumptions": [
       {
         "label": "Cost of equity",
-        "bear": "18.5%",
-        "base": "17%",
-        "bull": "15.5%"
+        "bear": "25.2%",
+        "base": "23.7%",
+        "bull": "22.2%"
       },
       {
         "label": "Long-run ROE",
@@ -289,32 +392,38 @@
       },
       {
         "label": "Long-term growth",
-        "bear": "5%",
-        "base": "6%",
-        "bull": "7%"
+        "bear": "4%",
+        "base": "5%",
+        "bull": "6%"
       },
       {
-        "label": "EPS to March 2027 × P/E",
-        "bear": "0.85 × 7",
-        "base": "1.20 × 9",
-        "bull": "1.55 × 11"
+        "label": "EPS to March 2027 × justified P/E",
+        "bear": "Rs 0.85 × 3.0",
+        "base": "Rs 1.20 × 3.6",
+        "bull": "Rs 1.55 × 4.2"
+      },
+      {
+        "label": "Growth, next five years (growth check)",
+        "bear": "3%",
+        "base": "6%",
+        "bull": "8%"
       }
     ],
     "averages": {
-      "bear": 4.5,
-      "base": 8.3,
-      "bull": 14.7
+      "bear": 2.69,
+      "base": 4.27,
+      "bull": 6.47
     },
-    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Base case: second half EPS about Rs 0.75, well below last year's exceptional Rs 1.32. Payout 33%."
+    "common": "NAV Rs 8.98 and net debt Rs 10.01bn at 30 September 2026; 598.6 million shares. Payout 33%. Residual income starts at 15% ROE. Price Rs 17.60 (CSE close, 19 November 2026)."
   },
   "sensitivity": {
     "title": "Residual income base case, Rs per share",
     "rowLabel": "Cost of equity",
-    "columnLabel": "Long-run ROE",
+    "columnLabel": "Long-run ROE (growth 5%)",
     "rows": [
-      "15.5%",
       "17%",
-      "18.5%"
+      "20%",
+      "23.7%"
     ],
     "columns": [
       "11%",
@@ -323,102 +432,418 @@
     ],
     "values": [
       [
-        4.4,
-        8.4,
-        14.0
+        4.59,
+        6.99,
+        9.93
       ],
       [
-        3.7,
-        6.9,
-        11.4
+        3.51,
+        5.11,
+        7.05
       ],
       [
-        3.2,
-        5.8,
-        9.5
+        2.7,
+        3.74,
+        4.98
       ]
     ],
     "base": {
-      "row": 1,
+      "row": 2,
       "column": 1
     },
-    "note": "Today's price needs ROE well over 20% for many years."
+    "note": "The required return matters most. At the 17% used in the first analysis the three methods would give a fair value of about Rs 7.10; at 20%, about Rs 5.50. Even then, today's Rs 17.60 needs ROE well above 20% for many years."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 8.4
+        "maxPrice": 4.23
       },
       {
         "shares": 150,
-        "maxPrice": 7.2
+        "maxPrice": 3.6
       },
       {
         "shares": 150,
-        "maxPrice": 6.3
+        "maxPrice": 3.17
       }
     ],
-    "averagePrice": 7.41,
-    "totalCost": 3705,
-    "note": "About Rs 3,705 in total, against Rs 8,200 at Rs 16.40.",
-    "realism": "Rs 8.40 needs about a 49% fall. The share was Rs 9.50 in April 2024 and Rs 7.20 in March 2020, so it has been there in bad years, but it isn't likely soon unless earnings fall back."
+    "averagePrice": 3.72,
+    "totalCost": 1862,
+    "note": "About Rs 1,860 in total, against Rs 8,800 at Rs 17.60.",
+    "realism": "Rs 4.23 needs a fall of about 76%. The lowest year-end price in ten years was Rs 7.20 (March 2020) and the low since April 2024 is Rs 9.50, so the buy price isn't realistic. This is a share to avoid at today's price rather than to wait for."
   },
   "changeMyView": {
     "higher": [
-      "Profits staying near the March 2026 quarter's level.",
-      "Borrowings falling as stock is sold.",
-      "Exports to Europe and Australia growing further.",
-      "A building boom in Sri Lanka."
+      "Profit holding near Rs 1.5–2 a share without insurance or metal-price gains.",
+      "Stock sold down and short-term loans repaid, bringing net debt below equity (that would also lower the beta and the required return).",
+      "Exports to Europe, Australia and India (now open after BIS certification) filling the idle 61% of extrusion capacity.",
+      "The EBIT margin reaching the 20% target."
     ],
     "lower": [
       "Aluminium prices falling, so stock bought at high prices loses value.",
-      "Construction slowing.",
-      "Interest rates rising on its large short-term loans.",
-      "A return to the losses of 2022–2024.",
-      "Competition from Swisstek and imports."
+      "Construction slowing, or BOI projects importing finished doors and windows again.",
+      "Interest rates rising on Rs 8.8bn of short-term loans.",
+      "Billet supply from the Middle East staying disrupted, raising costs.",
+      "A return to the losses of 2022/23."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The September 2026 interim is a scanned image read by text recognition, so check any figure that matters. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The September 2026 interim is a scanned image read from the page images, so check any figure that matters. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys company, is earning well again: profit for the six months to September 2026 nearly quadrupled. But at Rs 16.40 the share trades at 1.8x its NAV of Rs 8.98, and its trailing P/E of 9.3x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40). Alumex's profits swing widely with aluminium prices and demand (a loss in 2022/23, almost nothing in 2023/24), and its borrowings are nearly twice its equity. On normal earnings the methods put fair value at about Rs 8.40, so the price is about 95% above it. I'd buy at up to about Rs 7.20 and treat under Rs 6.30 as a strong buy.\n\nPrice and key figures\nPrice: Rs 16.40 (CSE closing price, 2026-11-06). Please check it live. In July–September 2026 it traded between Rs 15.70 and Rs 17.90. In the year to March 2026 it ranged from Rs 13.50 (April 2025) to Rs 22.70 (October 2025) and closed at Rs 16.60.\nSix months to 30 September 2026 (unaudited): revenue rose 13% to Rs 8.60bn and profit rose to Rs 268mn from Rs 69mn. EPS was Rs 0.45 against Rs 0.12. The September quarter earned Rs 118mn (EPS Rs 0.20), on a gross margin of 21%.\nYear to March 2026 (audited): revenue Rs 16.94bn (up 18%), profit Rs 863mn (flat), EPS Rs 1.44 (Rs 1.45), ROE 17%, dividends Rs 0.47. Almost all of that year's profit came in January–March 2026 (EPS Rs 1.40), when aluminium prices jumped. It also included Rs 229mn of insurance income from the 2024/25 fire at the Ekala plant.\nDebt: borrowings Rs 10.1bn and net debt about Rs 9.6bn at September 2026, about 1.8x equity. Short-term loans rose by Rs 2.4bn in the half as inventory grew by Rs 2.8bn. Interest cover was only 2.2x last year.\nCycle: EPS over ten years was Rs 1.26, 0.61, 0.21, 0.05, 1.40, 1.92, -0.02, 0.31, 1.45 and 1.44 (2016/17 to 2025/26), an average of about Rs 0.86. ROE averaged about 16.5%.\n\nMethods\nNAV (Rs 8.98): 1.8x.\nReturn on equity: 17% in 2025/26 and 21% in 2024/25 (the latter helped by fire insurance), but 5% in 2023/24 and below zero in 2022/23.\nP/E: 9.3x trailing EPS of Rs 1.77, including the exceptional March 2026 quarter. Year-end P/E: 11.5x (2026), 10.5x (2025).\nDividends: Rs 0.47 for 2025/26, a 2.9% yield, a third of profit; Rs 0.20 has been paid for this year.\nJustified price to book: Rs 4.0 / 7.3 / 12.7, weighted Rs 7.4.\nP/E method: Rs 6.0 / 10.8 / 17.1, weighted Rs 10.6.\nResidual income: Rs 3.5 / 6.9 / 14.3, weighted Rs 7.4.\n\nAlumex pays out a third of its profit, so a dividend model understates it, and its cash flow swings with aluminium stock levels, so a cash-flow DCF isn't reliable. Price to book and residual income are stricter because the base-case ROE (15%) is below the cost of equity (17%).\n\nAssumptions (bear / base / bull)\nCost of equity: 18.5% / 17% / 15.5% (a cyclical, highly geared manufacturer).\nLong-run ROE (price to book and residual income): 11% / 15% / 19%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 0.85 × 7 / 1.20 × 9 / 1.55 × 11.\nAverage of the three methods: Rs 4.5 / Rs 8.3 / Rs 14.7.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). The base case assumes the second half earns about Rs 0.75 a share, well below last year's exceptional Rs 1.32. Payout 33%.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 8.40 (0.9x NAV), so Rs 16.40 is about 95% above it.\nBuy price: a 15% margin of safety gives Rs 7.20, and 25% gives Rs 6.30.\nPlan for 500 shares: 200 at up to Rs 8.40, 150 at up to Rs 7.20 and 150 at up to Rs 6.30. That averages about Rs 7.41, about Rs 3,705, against Rs 8,200 at Rs 16.40.\nRealism: Rs 8.40 needs about a 49% fall. The share was Rs 9.50 in April 2024 and Rs 7.20 in March 2020, so it has been there in bad years, but it isn't likely soon unless earnings fall back.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 15.5%: 4.4 / 8.4 / 14.0 for long-run ROE of 11% / 15% / 19%.\nCost of equity 17%: 3.7 / 6.9 / 11.4.\nCost of equity 18.5%: 3.2 / 5.8 / 9.5.\nToday's price needs ROE of well over 20% for many years.\n\nWhat would change my view\nSupports a higher value: profits staying near the March 2026 quarter's level; borrowings falling as stock is sold; exports to Europe and Australia growing further; a building boom in Sri Lanka.\nSupports a lower value: aluminium prices falling (stock bought at high prices loses value); construction slowing; interest rates rising on its large short-term loans; more of the cyclical losses seen in 2019–2020 and 2022–2024; competition from Swisstek and imports.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The September 2026 interim report is a scanned image, so I read its figures by text recognition; check any figure that matters. This is analysis, not personal financial advice.",
-  "quality": {
-    "rating": "weak",
-    "passed": 1,
-    "outOf": 4,
-    "reason": "Cyclical and heavily borrowed; its profit depends on aluminium prices.",
-    "tests": [
+  "management": {
+    "asOf": "2026-11-19",
+    "source": "Annual Report 2025/26: Chairman's statement (pp. 14–17), Managing Director's review (pp. 18–23), financial and manufactured capital (pp. 98–108); progress from the interims to 30 June and 30 September 2026",
+    "takeaway": "Management wants to cut stock and debt and lift margins, but in the first half of 2026/27 stock and short-term loans rose sharply as it built buffers against Middle East billet supply problems.",
+    "said": [
       {
-        "id": "returns",
-        "label": "Return on equity of 15% or more",
-        "pass": true,
-        "value": "17%",
-        "note": "About 16.5% on average over ten years, but very uneven."
+        "text": "US aluminium tariffs rising to 50% by May 2025 upset an export plan built around the US; US sales fell 28% while Europe (+56%) and Australia (+47%) grew",
+        "ref": "pp. 19, 100"
       },
       {
-        "id": "debt",
-        "label": "Net debt no more than equity",
-        "pass": false,
-        "value": "1.8x equity",
-        "note": "Mostly short-term loans; interest cover 2.2x."
+        "text": "Prices were moved in step with LME aluminium, which rose from January 2026, helping margins",
+        "ref": "pp. 19–20"
       },
       {
-        "id": "steady",
-        "label": "Steady profit: no loss in five years, no one-offs",
-        "pass": false,
-        "value": "Loss in 2022/23",
-        "note": "Last year's profit came almost entirely from one quarter."
+        "text": "The Middle East crisis from February 2026 disrupted billet supply; buying elsewhere raised raw material costs and may hurt 2026/27",
+        "ref": "p. 21"
       },
       {
-        "id": "cash",
-        "label": "Profit turns into cash and dividends",
-        "pass": false,
-        "value": "No",
-        "note": "Stock rose Rs 2.8bn in six months, funded by short-term loans."
+        "text": "Duty-free imports of finished doors and windows for BOI projects hurt local makers until the policy was corrected in January 2026",
+        "ref": "pp. 19–20"
+      },
+      {
+        "text": "Without net insurance income, operating profit rose 25% to Rs 1,586mn",
+        "ref": "p. 101"
       }
     ],
-    "assessed": "2026-11-09"
+    "plans": [
+      {
+        "text": "Reorganise into three divisions: local dealer and project sales, industrial and lifestyle products (die-casting, tube bending, CNC), and exports",
+        "ref": "p. 23"
+      },
+      {
+        "text": "Within 1–2 years: stock down to 130 days, debtors 45 days, creditors 60 days, EBIT margin 20%",
+        "ref": "p. 99"
+      },
+      {
+        "text": "Within 2–4 years: EBIT margin 22% and gearing 5% lower",
+        "ref": "p. 99"
+      },
+      {
+        "text": "Swap short-term loans for fixed-rate long-term loans",
+        "ref": "p. 103"
+      },
+      {
+        "text": "Hold larger strategic stocks and spread purchases across more suppliers",
+        "ref": "p. 23"
+      }
+    ],
+    "investing": [
+      {
+        "text": "New Industry 4.0 extrusion line replacing an early-2000s press, a second die-casting plant (450 MT) and more powder coating",
+        "amount": "About Rs 740mn (2025/26)",
+        "ref": "pp. 20–21"
+      },
+      {
+        "text": "Total capex, incl. warehouses (Rs 231mn) and a new Nawala sales office (Rs 143mn)",
+        "amount": "Rs 909mn (2025/26)",
+        "ref": "pp. 98, 108"
+      },
+      {
+        "text": "Capital commitments at September 2026: buildings, plant and software",
+        "amount": "Rs 88mn",
+        "ref": "Interim to 30 Sep 2026, p. 6"
+      },
+      {
+        "text": "More on-site solar in the medium term; further capacity expansion in the long term",
+        "amount": null,
+        "ref": "p. 107"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Raise DPS and EPS every year",
+        "result": "2025/26: DPS up to Rs 0.47 from Rs 0.40, but EPS slipped to Rs 1.44 from Rs 1.45 (p. 204)",
+        "status": "missed",
+        "ref": "p. 99"
+      },
+      {
+        "promise": "Modernisation programme: new extrusion line and second die-casting plant",
+        "result": "Both commissioned in 2025/26 (about Rs 740mn)",
+        "status": "done",
+        "ref": "pp. 20–21"
+      },
+      {
+        "promise": "Stock down to 130 days within 1–2 years",
+        "result": "Going the wrong way: inventory Rs 7.25bn at September 2026 against Rs 4.43bn at March, about 194 days of first-half cost of sales (my calculation; about 132 days in 2025/26)",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, pp. 2–3"
+      },
+      {
+        "promise": "EBIT margin 20% within 1–2 years",
+        "result": "8.5% in the half to September 2026 (Rs 727mn on Rs 8.60bn), 10.5% in 2025/26",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      },
+      {
+        "promise": "Swap short-term loans for long-term fixed-rate loans; gearing 5% lower in 2–4 years",
+        "result": "Short-term loans rose to Rs 8.85bn from Rs 6.47bn and long-term fell to Rs 1.25bn from Rs 1.58bn; gearing 66% against 62% in March",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, pp. 3, 7"
+      },
+      {
+        "promise": "Keep paying dividends",
+        "result": "Rs 0.20 interim declared for 2026/27, against none at the same point last year",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, pp. 8 (top 20, public holding, directors), against the top 20 at 30 June 2026 in the interim to 30 Jun 2026. The September report's own 30 June column lists Union Assurance PLC/No-01A/C (1,798,873) in 20th place where the June report listed Hatton National Bank PLC/Almas Holdings (1,877,931), so that change may be a listing difference rather than a trade.",
+    "takeaway": "Hayleys PLC controls Alumex with 52.59%; MD Pramuk Dediwela holds 3.56%. The top 20 hardly changed in the September quarter; the big moves came earlier in 2025/26, when Lynear Wealth (5.29%), Union Assurance (3.24%) and Invenco (2.36%) bought in and the public holding rose to 39% from 26%.",
+    "groups": [
+      {
+        "name": "Hayleys PLC",
+        "pct": 52.59
+      },
+      {
+        "name": "Directors (mainly the MD)",
+        "pct": 3.65
+      },
+      {
+        "name": "Other holders not counted as public",
+        "pct": 4.76
+      },
+      {
+        "name": "Public",
+        "pct": 39.0
+      }
+    ],
+    "publicFloat": 39.0,
+    "publicHolders": 8630,
+    "publicHoldersPrev": 8457,
+    "directors": [
+      {
+        "name": "Mr. A.M. Pandithage (Chairman)",
+        "shares": 20000
+      },
+      {
+        "name": "Mr. S.C. Ganegoda",
+        "shares": 460000
+      },
+      {
+        "name": "Mr. D.W.P.N. Dediwela (Managing Director)",
+        "shares": 21338400
+      },
+      {
+        "name": "Mr. R.P.P.K. Rajapaksha",
+        "shares": 39814
+      },
+      {
+        "name": "Mr. W.D.R. Kumara",
+        "shares": 14022
+      }
+    ],
+    "top": [
+      {
+        "name": "Hayleys PLC",
+        "shares": 314826064,
+        "pct": 52.59,
+        "change": 0
+      },
+      {
+        "name": "Deutsche Bank AG Trustee to Lynear Wealth Dynamic Opportunities Fund",
+        "shares": 31642563,
+        "pct": 5.29,
+        "change": 0
+      },
+      {
+        "name": "Dean Foster (Pvt) Ltd A/C No.1",
+        "shares": 28427800,
+        "pct": 4.75,
+        "change": 0
+      },
+      {
+        "name": "Mr. Dediwela Widanaarachchcilage Pramuk Nishantha Dediwela",
+        "shares": 21338400,
+        "pct": 3.56,
+        "change": 0
+      },
+      {
+        "name": "Union Assurance PLC-Universal Life Fund",
+        "shares": 19370656,
+        "pct": 3.24,
+        "change": 0
+      },
+      {
+        "name": "Invenco Capital Private Limited",
+        "shares": 14112464,
+        "pct": 2.36,
+        "change": 0
+      },
+      {
+        "name": "Mr. Lansakara Jayasundara Mudiyanselage Abeyratne Jayasundara & Mrs. R.R. Jayasundara",
+        "shares": 6600000,
+        "pct": 1.1,
+        "change": 0
+      },
+      {
+        "name": "Lynear Wealth Management/Mr. Hanif Yusoof",
+        "shares": 6521584,
+        "pct": 1.09,
+        "change": 0
+      },
+      {
+        "name": "Thread Capital (Private) Limited",
+        "shares": 4530509,
+        "pct": 0.76,
+        "change": 0
+      },
+      {
+        "name": "Amaliya Private Limited",
+        "shares": 3933994,
+        "pct": 0.66,
+        "change": 0
+      },
+      {
+        "name": "Mr. Amarakoon Mudiyanselage Weerasinghe",
+        "shares": 3039810,
+        "pct": 0.51,
+        "change": 0
+      },
+      {
+        "name": "Mr. Kulappuarachchige Don Harindra Perera",
+        "shares": 2944907,
+        "pct": 0.49,
+        "change": 0
+      },
+      {
+        "name": "Bank of Ceylon A/C Ceybank Unit Trust",
+        "shares": 2838969,
+        "pct": 0.47,
+        "change": 0
+      },
+      {
+        "name": "Mr. Aruna Prasad Lekamge",
+        "shares": 2551216,
+        "pct": 0.43,
+        "change": 0
+      },
+      {
+        "name": "Deutsche Bank AG as Trustee to Assetline Income Plus Growth Fund",
+        "shares": 2500000,
+        "pct": 0.42,
+        "change": 0
+      },
+      {
+        "name": "East India Holding (Pvt) Ltd",
+        "shares": 2461049,
+        "pct": 0.41,
+        "change": 0
+      },
+      {
+        "name": "Hatton National Bank PLC / Weththinge Jinadasa",
+        "shares": 2357353,
+        "pct": 0.39,
+        "change": 0
+      },
+      {
+        "name": "Union Assurance PLC-Traditional Life Participating Fund",
+        "shares": 2234877,
+        "pct": 0.37,
+        "change": 0
+      },
+      {
+        "name": "People's Leasing & Finance PLC/Mr. D.M.P. Disanayake",
+        "shares": 1836008,
+        "pct": 0.31,
+        "change": 0
+      },
+      {
+        "name": "Union Assurance PLC/No-01A/C",
+        "shares": 1798873,
+        "pct": 0.3,
+        "change": null,
+        "new": true,
+        "note": "Shown at the same holding on 30 June in the September report's own comparison column"
+      }
+    ],
+    "gone": [
+      {
+        "name": "Hatton National Bank PLC/Almas Holdings (Private) Limited",
+        "prevShares": 1877931
+      }
+    ]
+  },
+  "fullText": "Summary: Alumex PLC (ALUM.N0000), Sri Lanka's largest aluminium extrusion maker and a Hayleys subsidiary (52.6%), is earning more: profit for the six months to September 2026 was Rs 268mn against Rs 69mn, and the September quarter's operating profit rose 75%. But at Rs 17.60 the share trades at 2.0x its NAV of Rs 8.98, and its trailing P/E of 9.9x rests on one exceptional quarter (January–March 2026, EPS Rs 1.40, lifted by rising aluminium prices and fire insurance). Profit swings with aluminium prices (a loss in 2022/23, almost nothing in 2023/24), and net debt has risen to Rs 10.0bn, 1.9x equity, as stock was built up against Middle East supply problems. That debt also makes the share risky, so the required return is high (23.7%). On normal earnings the methods put fair value at about Rs 4.20, a quarter of the price. I'd buy only at up to about Rs 3.60 and treat under Rs 3.20 as a strong buy: in practice, not a share to buy at today's price.\n\nPrice and key figures\nPrice: Rs 17.60 (CSE close, 19 November 2026). It traded at Rs 16.00–19.90 in April–June 2026 and Rs 15.70–17.90 in July–September 2026; Rs 13.50–22.70 in the year to March 2026.\nSix months to 30 September 2026 (unaudited): revenue Rs 8.60bn (+13%), gross margin 20.5% (16.1%), operating profit Rs 727mn (+51%), profit Rs 268mn (Rs 69mn), EPS Rs 0.45 (Rs 0.12). The September quarter: revenue Rs 5.02bn (+28%), operating profit Rs 456mn (+75%), finance costs Rs 331mn (+56%), profit Rs 118mn, EPS Rs 0.20. Interim dividend Rs 0.20.\nBalance sheet at September 2026: inventory Rs 7.25bn (Rs 4.43bn in March), borrowings Rs 10.10bn (short-term Rs 8.85bn), leases Rs 0.37bn, cash Rs 0.46bn, so net debt Rs 10.01bn, 1.86x equity of Rs 5.38bn. Operating cash flow for the half was −Rs 2.07bn.\nYear to March 2026 (audited): revenue Rs 16.94bn (+18%; exports 35%), operating profit Rs 1.77bn (Rs 1.59bn without Rs 184mn net insurance income), profit Rs 863mn (Rs 867mn), EPS Rs 1.44, ROE 17%, dividend Rs 0.47. January–March 2026 earned EPS Rs 1.40, helped by rising LME aluminium prices and Rs 211mn of business-interruption insurance from the 2024/25 Ekala fire. Operating cash flow Rs 1.20bn, mostly from selling down stock; capex Rs 909mn. Only 39% of the 24,000 MT extrusion capacity was used.\nCycle: EPS from 2016/17 to 2025/26 was Rs 1.26, 0.61, 0.21, 0.05, 1.40, 1.92, −0.02, 0.31, 1.45 and 1.44. ROE averaged about 16.6%. Operating cash over the last five years totalled −Rs 0.43bn against Rs 3.06bn of profit.\n\nRequired return\nBeta 1.50 (provisional): Damodaran's global Building Materials unlevered beta of 0.90, relevered for net debt of 0.95x market value. Cost of equity 8.24% + 1.50 × (4.2% + 6.08%) = 23.7% (bear 25.2%, bull 22.2%). That's above the usual 12–22% for CSE shares because the company's borrowings are nearly as large as its market value. Cost of debt 8.9%; WACC 15.8%.\n\nMethods\nNAV (Rs 8.98): the price is 2.0x.\nReturn on equity: 17% in 2025/26, below the 23.7% required return.\nP/E: 9.9x trailing EPS of Rs 1.77, which includes the exceptional March 2026 quarter.\nJustified price to book: Rs 2.97 / 4.80 / 7.21, weighted Rs 4.73.\nP/E method (justified P/E): Rs 2.55 / 4.28 / 6.55, weighted Rs 4.21.\nResidual income: Rs 2.54 / 3.74 / 5.65, weighted Rs 3.76.\nWhole-company DCF (not weighted): firm value Rs 0.4 / 3.2 / 8.4bn, all below net debt of Rs 10.0bn, so below zero a share. Cash flow swings too much with stock to rely on, but it shows that the business hasn't produced enough cash to carry its debt.\nDividend model: not weighted; the payout is a third of profit.\n\nAssumptions (bear / base / bull)\nCost of equity 25.2% / 23.7% / 22.2%. Long-run ROE 11% / 15% / 19%. Long-term growth 4% / 5% / 6%. EPS for the year to March 2027 Rs 0.85 / 1.20 / 1.55 (H1 Rs 0.45; base second half Rs 0.75, well below last year's Rs 1.32, which had insurance and metal-price gains), times a justified P/E of 3.0 / 3.6 / 4.2. Growth for five years 3% / 6% / 8% against 5.6% supported by reinvestment; the bull case can run above it because 61% of extrusion capacity is idle.\nAverages of the three methods: Rs 2.69 / 4.27 / 6.47.\n\nFair value and buy price\nFair value (30/50/20): Rs 4.23, about 0.47x NAV. The price is about four times that.\nBuy price (15% margin): Rs 3.60. Strong buy (25%): Rs 3.17.\nPlan for 500 shares: 200 at up to Rs 4.23, 150 at up to Rs 3.60, 150 at up to Rs 3.17: average about Rs 3.72, about Rs 1,860, against Rs 8,800 at Rs 17.60.\nRealism: a fall of about 76% is needed; the share's lowest year-end price in ten years was Rs 7.20 (2020). Not realistic: avoid at today's price.\n\nWhy the value fell from Rs 8.40 (9 November 2026)\nTwo reasons. The required return is now worked out from the beta (23.7%, against 17% chosen by hand before), and the P/E method now uses the P/E that the cost of equity, ROE and growth justify (3.0–4.2x) instead of the 7–11x used before. At a 17% cost of equity the methods would still give only about Rs 7.10.\n\nSensitivity (residual income base case, Rs per share; long-run ROE 11% / 15% / 19%)\nCost of equity 17%: 4.59 / 6.99 / 9.93. 20%: 3.51 / 5.11 / 7.05. 23.7%: 2.70 / 3.74 / 4.98.\n\nManagement and plans\nManagement plans to cut stock to 130 days, lift the EBIT margin to 20% within two years and 22% later, and swap short-term loans for long-term ones. So far stock, short-term loans and gearing have all gone up, as the company built buffers against Middle East billet supply problems. The Rs 740mn modernisation (new extrusion line, second die-casting plant) was completed. EPS slipped slightly in 2025/26, missing the promise to raise it every year.\n\nShareholders\nHayleys PLC holds 52.59%; the MD 3.56%. Public holding 39.00% (8,630 holders). The top 20 was unchanged in the September quarter apart from 20th place.\n\nWhat would change my view\nHigher: profit holding near Rs 1.5–2 a share without one-offs; stock and short-term loans coming down (net debt below equity would also lower the required return); exports filling idle capacity; the EBIT margin reaching 20%.\nLower: aluminium prices falling; construction slowing; higher interest rates on Rs 8.8bn of short-term loans; billet supply problems; a return to losses.\n\nThese are my estimates from the annual report to March 2026 and the interim reports to June and September 2026. The September interim is a scanned image, read from the page images; check any figure that matters. This is analysis, not personal financial advice.",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 25.2,
+      "base": 23.7,
+      "bull": 22.2
+    },
+    "wacc": {
+      "bear": 16.5,
+      "base": 15.8,
+      "bull": 15.0
+    },
+    "debtWeight": 48.7,
+    "shares": 598.606,
+    "netDebt": 10.011,
+    "pe": {
+      "bear": {
+        "eps": 0.85,
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 1.2,
+        "roe": 15,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 1.55,
+        "roe": 19,
+        "longRun": 6
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 8.98,
+      "payout": 33,
+      "roeStart": 15,
+      "bear": {
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 15,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 19,
+        "longRun": 6
+      }
+    },
+    "pb": {
+      "book": 8.98,
+      "bear": {
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 15,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 19,
+        "longRun": 6
+      }
+    }
   }
 }
