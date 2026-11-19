@@ -10,6 +10,11 @@ on:
     # 12:45 UTC = 15:45 in Saudi Arabia (18:15 in Sri Lanka), every day.
     - cron: "45 12 * * *"
   workflow_dispatch:
+    inputs:
+      links_since:
+        description: "Also fetch links again for posts saved from this day on (YYYY-MM-DD), e.g. to catch up"
+        required: false
+        default: ""
 
 permissions:
   contents: write   # save the messages into inbox/
@@ -33,6 +38,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/broker_collect.py
+
+      - name: Fetch links for earlier posts (catch-up)
+        if: ${{ github.event.inputs.links_since != '' }}
+        run: python scripts/broker_collect.py --links-since "${{ github.event.inputs.links_since }}"
 
       # "[skip ci]" stops this commit from rebuilding the site; the site is
       # rebuilt when the summary itself is added to broker/.

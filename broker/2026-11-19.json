@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-19",
+  "source": "HNB Stockbrokers",
+  "posts": 6,
+  "messageIds": [
+    307,
+    308,
+    309,
+    310,
+    311,
+    312
+  ],
+  "commands": [
+    313
+  ],
+  "callsPriceDate": "2026-11-17",
+  "note": "Filed under 19 Nov, the trading day the posts are about: they were forwarded and /summary sent at 00:33–00:38 Sri Lanka time on 20 Nov (first filed as 20 Nov and moved). Foreign buying and selling by share is read off the Daily Market Update's bar chart, which has no figures on its bars, so those values are approximate (≈, to about Rs 2M); shares with less than Rs 2M either way (MULL, LMF, ABL and 'Other') are left out. The Access Engineering price (Rs 82.90) in the broker's note is as of 17 Nov. The Bloomberg screen (message 309) was taken at 08:30 Sri Lanka time on 19 Nov, so its US and European figures are Wednesday 18 Nov's sessions. Heat-map tiles without a readable percentage are left out.",
+  "highlights": [
+    "The market recovered on 19 Nov: the ASPI rose 140 points (+0.66%) to 21,543.12 and the S&P SL20 rose 0.75% to 6,142.43, on thin turnover of Rs 1.73bn. Banks, LOLC-group financials and capital goods gained; SLT-Mobitel rose 4.94% and Ceylon Tea Services 10.95%, while Dialog was flat.",
+    "Foreigners were net sellers of Rs 95.85M ($287.9K): bought Rs 39M, sold Rs 135M. Almost all the selling was in Dialog (≈Rs 101M) and Hemas (≈Rs 23M); the buying was led by HNB (≈Rs 21M).",
+    "Big disagreement on Access Engineering (AEL.N0000): HNB Stockbrokers cut it to Hold from Moderate buy with a Rs 90 target (price Rs 82.90), while this site's fair value is Rs 47 (buy below Rs 40). The broker says 2Q FY27 profit to shareholders rose 158% to Rs 4.1bn, but mostly on Marina Square apartment handovers and a one-off tax credit; without the apartments, revenue fell about 7%.",
+    "Banks became much more cautious about lending in 3Q even as loan demand rose, a Central Bank survey showed, ahead of Friday's (20 Nov) monetary policy announcement. Fitch backed Budget 2027 as consistent with fiscal discipline.",
+    "Customs had collected Rs 2,456.8bn by 16 Nov, already above its full-year target of Rs 2,207bn, and Colombo Port transshipment volumes rose 10% in the first ten months of 2026."
+  ],
+  "market": {
+    "aspi": 21543.12,
+    "aspiChangePct": 0.66,
+    "aspiPoints": 140.36,
+    "sp20": 6142.43,
+    "sp20ChangePct": 0.75,
+    "turnoverBn": 1.73,
+    "marketPE": 11.1,
+    "marketPBV": 1.28,
+    "marketCapTn": 7.78,
+    "foreignBuyMn": 39,
+    "foreignSellMn": 135,
+    "foreignNetMn": -95.85,
+    "momentum": [
+      {
+        "code": "SING.N0000",
+        "pct": 22.9
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 21.1
+      },
+      {
+        "code": "MEL.N0000",
+        "pct": 20.4
+      },
+      {
+        "code": "AUTO.N0000",
+        "pct": 20.2
+      },
+      {
+        "code": "CABO.N0000",
+        "pct": 19.2
+      },
+      {
+        "code": "MRH.N0000",
+        "pct": 17.6
+      },
+      {
+        "code": "TJL.N0000",
+        "pct": 13.6
+      },
+      {
+        "code": "YORK.N0000",
+        "pct": 12.5
+      },
+      {
+        "code": "RGEM.N0000",
+        "pct": 12.4
+      },
+      {
+        "code": "SPEN.N0000",
+        "pct": 12.1
+      }
+    ],
+    "foreignFlows": [
+      {
+        "code": "DIAL.N0000",
+        "mn": -101,
+        "approx": true
+      },
+      {
+        "code": "HHL.N0000",
+        "mn": -23,
+        "approx": true
+      },
+      {
+        "code": "CTC.N0000",
+        "mn": -4,
+        "approx": true
+      },
+      {
+        "code": "HAYC.N0000",
+        "mn": 2,
+        "approx": true
+      },
+      {
+        "code": "DIPD.N0000",
+        "mn": 3,
+        "approx": true
+      },
+      {
+        "code": "CCS.N0000",
+        "mn": 6,
+        "approx": true
+      },
+      {
+        "code": "HNB.N0000",
+        "mn": 21,
+        "approx": true
+      }
+    ],
+    "other": [
+      {
+        "label": "S&P SL20 change",
+        "value": "+45.46",
+        "unit": "points"
+      },
+      {
+        "label": "Turnover change",
+        "value": "−0.10",
+        "unit": "%"
+      },
+      {
+        "label": "Market cap change",
+        "value": "+0.01",
+        "unit": "%"
+      },
+      {
+        "label": "Turnover to market cap",
+        "value": "0.02",
+        "unit": "%"
+      },
+      {
+        "label": "Market dividend yield",
+        "value": "3.10",
+        "unit": "% (unchanged)"
+      },
+      {
+        "label": "Market P/E",
+        "value": "11.10",
+        "unit": "× (11.03 before)"
+      },
+      {
+        "label": "Net foreign flow in dollars",
+        "value": "−287.93",
+        "unit": "$ thousand"
+      },
+      {
+        "label": "Dow Jones (18 Nov)",
+        "value": "−1.11",
+        "unit": "%"
+      },
+      {
+        "label": "S&P 500 (18 Nov)",
+        "value": "−0.23",
+        "unit": "%"
+      },
+      {
+        "label": "FTSE 100 (18 Nov)",
+        "value": "−1.30",
+        "unit": "%"
+      },
+      {
+        "label": "DAX (18 Nov)",
+        "value": "−1.19",
+        "unit": "%"
+      },
+      {
+        "label": "Nikkei (19 Nov morning)",
+        "value": "+0.20",
+        "unit": "%"
+      },
+      {
+        "label": "Hang Seng (19 Nov morning)",
+        "value": "−1.72",
+        "unit": "%"
+      },
+      {
+        "label": "Taiwan TAIEX (19 Nov morning)",
+        "value": "−3.67",
+        "unit": "%"
+      },
+      {
+        "label": "India Nifty (19 Nov morning)",
+        "value": "−0.63",
+        "unit": "%"
+      },
+      {
+        "label": "Bloomberg World index",
+        "value": "−0.26",
+        "unit": "%"
+      }
+    ]
+  },
+  "calls": [
+    {
+      "code": "AEL.N0000",
+      "name": "Access Engineering",
+      "sector": "Capital Goods",
+      "price": 82.9,
+      "rating": "Hold",
+      "target": 90.0
+    }
+  ],
+  "dividends": [],
+  "news": [
+    {
+      "title": "Banks' willingness to lend cools: CBSL survey",
+      "text": "The Central Bank's credit supply survey showed banks' overall willingness to lend slowing to 27.4 in 3Q from 40.4 in 2Q, across retail, corporate and SME lending, while loan demand picked up. Banks expect the gap to widen in 4Q. The monetary policy decision is due on Friday 20 Nov."
+    },
+    {
+      "title": "Customs already above its 2026 revenue target",
+      "text": "Sri Lanka Customs collected Rs 2,456.8bn by 16 November against a full-year target of Rs 2,207bn, and has beaten its monthly target for ten months running. Collections in the first half of November were over 59% of the month's target."
+    },
+    {
+      "title": "Colombo Port transshipment up 10%",
+      "text": "Transshipment volumes rose to about 6.41mn TEUs in January–October 2026 from about 5.83mn a year earlier. Colombo rose to 20th among the world's busiest container ports in the first half (Alphaliner), from 26th at the end of 2025."
+    },
+    {
+      "title": "SLT-Mobitel: profit up 59%, staff pay costs stay",
+      "text": "SLT-Mobitel's 9-month group profit after tax rose 59.4% to Rs 10.03bn on 11.1% revenue growth. The chair said the company will keep paying the recently matched salaries, costing a 'few billion' rupees a year."
+    },
+    {
+      "title": "Fitch backs Budget 2027",
+      "text": "Fitch said Budget 2027 shows continued commitment to fiscal discipline and debt reduction while allowing more spending on investment and cyclone rebuilding. It upgraded Sri Lanka to B-/Stable from CCC+ in September."
+    },
+    {
+      "title": "Global: Anthropic IPO; Trump meets Xi and Putin",
+      "text": "Anthropic raised $81bn in the largest IPO on record, upsized to 980mn shares, plus a $26bn private placement, valuing it at about $1.5tn fully diluted. US President Trump was to end his Asia trip with a meeting with Xi Jinping and Vladimir Putin focused on nuclear arms control. On 18 Nov the Dow fell 1.11% and the S&P 500 0.23%; Taiwan's TAIEX fell 3.67% on the morning screen."
+    }
+  ],
+  "research": [
+    {
+      "code": "AEL.N0000",
+      "company": "Access Engineering",
+      "report": "2Q FY27 earnings summary (HNB Stockbrokers)",
+      "date": "2026-11-19",
+      "rating": "Hold",
+      "prevRating": "Moderate buy",
+      "target": 90.0,
+      "price": 82.9,
+      "priceDate": "2026-11-17",
+      "post": 312,
+      "keyPoints": [
+        "Revenue +36% to Rs 20.4bn, but Rs 6.4bn (32%) came from Marina Square apartment handovers; without them revenue fell about 7%.",
+        "Vehicles −10% as pent-up demand fades; construction materials −26% after the West Container Terminal job ended; civil engineering only +7.3%, a slow order book.",
+        "Profit to shareholders +158% to Rs 4.1bn (EPS Rs 4.08), helped by a Rs 735mn one-off tax credit; about +130% without it. Net finance cost doubled as apartment borrowing costs are no longer capitalised.",
+        "Net debt flat at Rs 39.5bn; a Rs 3.1bn working-capital outflow, capex and dividends used up the operating cash.",
+        "Cut to Hold: about 9% upside to the Rs 90 target; short-term outlook Neutral. The P/E is near its historical average; ROE above its average."
+      ],
+      "forecasts": [
+        "FY27E EPS Rs 12.33 (profit Rs 12.3bn); FY28E EPS Rs 13.34",
+        "First-half EPS of about Rs 5.35 (excluding the one-off) is only 43% of the FY27E forecast, so the year depends on the second half",
+        "Apartment revenue must nearly double in the second half; net finance costs are already about 73% of the full-year estimate",
+        "Technicals: above its 50- and 200-day averages but momentum fading (RSI 64); needs to hold about Rs 80"
+      ],
+      "risks": [
+        "A long bitumen shortage could delay road works and slow order book conversion",
+        "High debt could keep finance costs up",
+        "Delays in Marina Square handovers could hurt second-half earnings"
+      ],
+      "catalysts": [
+        "Two Ruwanpura Expressway Phase I packages worth about Rs 45.6bn",
+        "Year-end government capex, and a 2027 capex budget about 40% higher at Rs 2.0tn",
+        "Radiopharmaceutical revenue growing as operations ramp up"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "post": 307,
+      "kind": "text",
+      "title": "News highlights, 19 Nov (part 1)",
+      "items": [
+        {
+          "item": "Colombo Port transshipment +10%",
+          "status": "included"
+        },
+        {
+          "item": "CBSL credit supply survey",
+          "status": "included"
+        },
+        {
+          "item": "Customs revenue above full-year target",
+          "status": "included"
+        },
+        {
+          "item": "SLT-Mobitel 9-month results and pay",
+          "status": "included"
+        },
+        {
+          "item": "Fitch on Budget 2027",
+          "status": "included"
+        },
+        {
+          "item": "Anthropic IPO (start)",
+          "status": "included"
+        },
+        {
+          "item": "'Reference' links under each item",
+          "status": "left-out",
+          "reason": "they link to the articles the text already summarises"
+        }
+      ]
+    },
+    {
+      "post": 308,
+      "kind": "text",
+      "title": "News highlights, 19 Nov (part 2)",
+      "items": [
+        {
+          "item": "Anthropic IPO (end)",
+          "status": "included"
+        },
+        {
+          "item": "Trump meets Xi and Putin",
+          "status": "included"
+        },
+        {
+          "item": "'Reference' links",
+          "status": "left-out",
+          "reason": "they link to the articles the text already summarises"
+        }
+      ]
+    },
+    {
+      "post": 309,
+      "kind": "image",
+      "title": "Bloomberg world equity indices (08:30, 19 Nov)",
+      "items": [
+        {
+          "item": "Americas: Dow, S&P 500",
+          "status": "included"
+        },
+        {
+          "item": "Americas: TSX −2.09%, Ibovespa −1.34%",
+          "status": "left-out",
+          "reason": "less relevant to CSE investors; the US indices stand for the Americas"
+        },
+        {
+          "item": "Europe: FTSE 100, DAX",
+          "status": "included"
+        },
+        {
+          "item": "Europe: Euro Stoxx 50 −0.93%, CAC 40 −0.85%",
+          "status": "left-out",
+          "reason": "covered by the FTSE and DAX lines"
+        },
+        {
+          "item": "Asia: Nikkei, Hang Seng, TAIEX, Nifty",
+          "status": "included"
+        },
+        {
+          "item": "Asia: CSI 300, ASX, KOSPI, Jakarta, KLCI, Straits Times",
+          "status": "left-out",
+          "reason": "smaller moves; the four largest regional markets are shown"
+        },
+        {
+          "item": "Bloomberg World index",
+          "status": "included"
+        },
+        {
+          "item": "Futures, P/E, forecast P/E, dividend yield and year-to-date columns",
+          "status": "left-out",
+          "reason": "valuations of foreign indices, not used for CSE shares"
+        }
+      ]
+    },
+    {
+      "post": 310,
+      "kind": "image",
+      "title": "CSE heat map (companies over Rs 5bn)",
+      "items": [
+        {
+          "item": "Sector picture: banks, LOLC group, capital goods up",
+          "status": "included"
+        },
+        {
+          "item": "Big moves: SLTL +4.94%, CTEA +10.95%, Dialog flat",
+          "status": "included"
+        },
+        {
+          "item": "Small tiles without a readable %",
+          "status": "left-out",
+          "reason": "unreadable"
+        }
+      ]
+    },
+    {
+      "post": 311,
+      "kind": "pdf",
+      "title": "Daily Market Update, 19 Nov",
+      "items": [
+        {
+          "item": "ASPI level, points and %",
+          "status": "included"
+        },
+        {
+          "item": "S&P SL20 level and %",
+          "status": "included"
+        },
+        {
+          "item": "S&P SL20 points (in Other figures)",
+          "status": "included"
+        },
+        {
+          "item": "Turnover and its % change",
+          "status": "included"
+        },
+        {
+          "item": "Market cap and its % change",
+          "status": "included"
+        },
+        {
+          "item": "Turnover to market cap",
+          "status": "included"
+        },
+        {
+          "item": "Metrics table: dividend yield, P/BV, P/E (current and previous)",
+          "status": "included"
+        },
+        {
+          "item": "Net foreign flow in rupees and dollars",
+          "status": "included"
+        },
+        {
+          "item": "Total foreign buying and selling",
+          "status": "included"
+        },
+        {
+          "item": "Foreign buying and selling by share",
+          "status": "approx",
+          "reason": "the bars have no figures; read against the Rs 50M gridlines"
+        },
+        {
+          "item": "Foreign flows under Rs 2M (MULL, LMF, ABL, Other)",
+          "status": "left-out",
+          "reason": "too small to read off the chart"
+        },
+        {
+          "item": "Top 10 momentum stocks (10 days)",
+          "status": "included"
+        },
+        {
+          "item": "Page 2 heat map (same as post 310)",
+          "status": "included"
+        }
+      ]
+    },
+    {
+      "post": 312,
+      "kind": "pdf",
+      "title": "Access Engineering 2Q FY27 earnings summary",
+      "items": [
+        {
+          "item": "Rating, previous rating, target, price, short-term outlook",
+          "status": "included"
+        },
+        {
+          "item": "Revenue by segment and what drove it",
+          "status": "included"
+        },
+        {
+          "item": "Margins and EBIT",
+          "status": "included"
+        },
+        {
+          "item": "Finance cost, tax credit, profit to shareholders",
+          "status": "included"
+        },
+        {
+          "item": "Net debt and cash flow",
+          "status": "included"
+        },
+        {
+          "item": "Forecasts FY27E and FY28E; first-half share of forecast",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 1–2: P/E near average, ROE above average",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 3: TTM EPS chart",
+          "status": "left-out",
+          "reason": "the trend is described in the text and forecasts"
+        },
+        {
+          "item": "Exhibit 4: summarised income statement (key lines)",
+          "status": "included"
+        },
+        {
+          "item": "Risks",
+          "status": "included"
+        },
+        {
+          "item": "Catalysts",
+          "status": "included"
+        },
+        {
+          "item": "Technicals",
+          "status": "included"
+        },
+        {
+          "item": "Company data: market cap Rs 82.9bn, 1,000mn shares, 52-week range Rs 63.5–89.4, beta 1.2",
+          "status": "left-out",
+          "reason": "reference data, available on the site's company page"
+        },
+        {
+          "item": "Exhibit 6: ASPI vs AEL chart",
+          "status": "left-out",
+          "reason": "price history, available elsewhere"
+        }
+      ]
+    }
+  ]
+}

@@ -17,12 +17,23 @@ The site's own posts (price alerts, research and broker summaries) are skipped.
 The owner's commands "/summary" and "/summary<day>" (e.g. "/summary12") are saved
 too, marked with "command": {"day": <day or null>}. They mark where each broker
 summary ends: see scripts/broker_pending.py.
+
+Links in a post (e.g. a tinyurl.com link to the broker's Daily Market Update or an earnings
+note) are followed here, because this job can reach the internet and the summary run can't:
+the PDF or page is saved to inbox/<date>/files/links/ and the post gets
+"links": [{url, finalUrl, file, textFile, type, status, error}]. Social media links are skipped.
+
+  python scripts/broker_collect.py                   collect new posts (and their links)
+  python scripts/broker_collect.py --links-since D   fetch links again for posts saved from day D
+                                                     (YYYY-MM-DD) on that don't have them yet
 """
 import datetime
+import html.parser
 import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 import cse
@@ -85,7 +96,142 @@ def download(file_id, dest_dir, name):
     return f"files/{target.name}"
 
 
+# ---------- Links ----------
+URL = re.compile(r"https?://[^\s<>\"')\]]+")
+SKIP_HOSTS = ("instagram.com", "facebook.com", "fb.com", "fb.watch", "youtube.com", "youtu.be", "twitter.com",
+              "x.com", "linkedin.com", "tiktok.com", "wa.me", "whatsapp.com", "t.me", "telegram.me")
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+
+def safe(url):
+    """Encode spaces and other characters urllib refuses (as cse.download does)."""
+    parts = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit(parts._replace(path=urllib.parse.quote(parts.path, safe="/%"),
+                                                  query=urllib.parse.quote(parts.query, safe="=&%")))
+
+
+def links_in(text, entities=None):
+    """Every URL in a post: written out in the text, or hidden behind linked words."""
+    found = [u.rstrip(".,;:") for u in URL.findall(text or "")]
+    for e in entities or []:
+        if e.get("type") == "text_link" and e.get("url"):
+            found.append(e["url"])
+    out = []
+    for u in found:
+        if u not in out:
+            out.append(u)
+    return out
+
+
+def direct_url(url):
+    """Google Drive / Docs share links → a direct download."""
+    m = re.search(r"drive\.google\.com/(?:file/d/|open\?id=|uc\?id=)([\w-]+)", url)
+    if m:
+        return f"https://drive.google.com/uc?export=download&id={m.group(1)}"
+    m = re.search(r"docs\.google\.com/(document|spreadsheets|presentation)/d/([\w-]+)", url)
+    if m:
+        return f"https://docs.google.com/{m.group(1)}/d/{m.group(2)}/export?format=pdf"
+    return url
+
+
+class _Text(html.parser.HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts, self.skip = [], 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style", "noscript", "svg"):
+            self.skip += 1
+        elif tag in ("p", "br", "div", "li", "tr", "h1", "h2", "h3", "h4"):
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "noscript", "svg") and self.skip:
+            self.skip -= 1
+
+    def handle_data(self, data):
+        if not self.skip:
+            self.parts.append(data)
+
+
+def page_text(raw):
+    p = _Text()
+    p.feed(raw.decode("utf-8", "replace"))
+    text = re.sub(r"[ \t]+", " ", "".join(p.parts))
+    return re.sub(r"\n\s*\n+", "\n\n", text).strip()
+
+
+def fetch_link(url, dest_dir, stem):
+    """Download one link. Returns the record saved on the post."""
+    rec = {"url": url}
+    host = re.sub(r"^www\.", "", urllib.parse.urlsplit(url).netloc.lower())
+    if any(host == h or host.endswith("." + h) for h in SKIP_HOSTS):
+        return dict(rec, status="skipped", error="social media link")
+    try:
+        req = urllib.request.Request(safe(direct_url(url)), headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            final, ctype = r.geturl(), (r.headers.get("Content-Type") or "").lower()
+            data = r.read(MAX_FILE + 1)
+        if len(data) > MAX_FILE:
+            return dict(rec, finalUrl=final, status="failed", error="larger than 20 MB")
+        # Google Drive answers big files with a "can't scan for viruses" page; follow its confirm link once.
+        if "drive.google.com" in final and b"confirm=" in data[:200000] and "html" in ctype:
+            m = re.search(rb'href="(/uc\?export=download[^"]+confirm=[^"]+)"', data)
+            if m:
+                link = "https://drive.google.com" + m.group(1).decode().replace("&amp;", "&")
+                with urllib.request.urlopen(urllib.request.Request(link, headers={"User-Agent": UA}), timeout=60) as r:
+                    final, ctype, data = r.geturl(), (r.headers.get("Content-Type") or "").lower(), r.read(MAX_FILE + 1)
+        rec["finalUrl"] = final
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        if data[:5] == b"%PDF-" or "pdf" in ctype:
+            target = dest_dir / f"{stem}.pdf"
+            target.write_bytes(data)
+            return dict(rec, file=f"files/links/{target.name}", type="pdf", status="saved")
+        if "html" in ctype or data.lstrip()[:15].lower().startswith((b"<!doctype", b"<html")):
+            target = dest_dir / f"{stem}.html"
+            target.write_bytes(data)
+            text = dest_dir / f"{stem}.txt"
+            text.write_text(page_text(data), encoding="utf-8")
+            return dict(rec, file=f"files/links/{target.name}", textFile=f"files/links/{text.name}", type="html", status="saved")
+        ext = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"}.get(ctype.split(";")[0].strip(), ".bin")
+        target = dest_dir / f"{stem}{ext}"
+        target.write_bytes(data)
+        return dict(rec, file=f"files/links/{target.name}", type=ctype.split(";")[0].strip() or "unknown", status="saved")
+    except Exception as e:
+        return dict(rec, status="failed", error=str(e)[:200])
+
+
+def fetch_links(entry, entities, day_dir):
+    urls = links_in(entry.get("text"), entities)
+    if not urls:
+        return
+    entry["links"] = [fetch_link(u, day_dir / "files" / "links", f"{entry['id']}-{i + 1}") for i, u in enumerate(urls)]
+    for l in entry["links"]:
+        print(f"  post {entry['id']}: {l['url']} → {l['status']}{' ' + l.get('file', '') if l.get('file') else ''}{' (' + l['error'] + ')' if l.get('error') else ''}")
+
+
+def links_since(day):
+    """Fetch links for posts saved on or after `day` that don't have them yet."""
+    n = 0
+    for path in sorted(INBOX.glob("*/messages.json")):
+        if path.parent.name < day:
+            continue
+        saved = read_json(path, {})
+        changed = False
+        for m in saved.get("messages", []):
+            if "links" in m or m.get("command") or not links_in(m.get("text")):
+                continue
+            fetch_links(m, None, path.parent)
+            changed, n = True, n + 1
+        if changed:
+            write_json(path, saved)
+    print(f"Fetched the links of {n} post(s) saved since {day}.")
+    return 0
+
+
 def main():
+    if len(sys.argv) == 3 and sys.argv[1] == "--links-since":
+        return links_since(sys.argv[2])
     if not telegram.configured():
         print("::error::TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set.")
         return 1
@@ -139,6 +285,8 @@ def main():
         cmd = command_of(text) if not files else None
         if cmd:
             entry["command"] = cmd
+        else:
+            fetch_links(entry, post.get("entities") or post.get("caption_entities"), day_dir)
         saved["messages"].append(entry)
         seen.add(post["message_id"])
         new += 1

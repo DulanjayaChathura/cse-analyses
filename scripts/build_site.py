@@ -5,6 +5,7 @@
 - Everything that needs your attention is written to the job summary, and
   `problems=true` is set so the workflow can email you.
 """
+import validate_broker
 import os
 import shutil
 import subprocess
@@ -178,9 +179,10 @@ def main():
     (SITE / "data" / "broker").mkdir(parents=True, exist_ok=True)
     for path in sorted((ROOT / "broker").glob("*.json"), reverse=True):
         day = read_json(path, None)
-        if not isinstance(day, dict) or not day.get("date"):
+        broker_probs = validate_broker.problems(day)
+        if broker_probs:
             problems = True
-            report.append(f"### ⚠️ broker/{path.name} is not a valid broker summary and was skipped")
+            report.append(f"### ⚠️ broker/{path.name} was not published: " + "; ".join(broker_probs[:5]))
             continue
         write_json(SITE / "data" / "broker" / path.name, day)
         days.append({"date": day["date"], "file": path.name, "source": day.get("source")})

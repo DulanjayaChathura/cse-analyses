@@ -13,6 +13,7 @@ import sys
 import alerts
 import cse
 import telegram
+import validate_broker
 from common import DATA, GENERATED, ROOT, read_json
 
 RECENT_DAYS = 7
@@ -37,6 +38,19 @@ def broker_message(day):
             tgt = f"target Rs {c['target']:g}" if isinstance(c.get("target"), (int, float)) else "no target"
             mine = f"; mine Rs {fv:g}" if isinstance(fv, (int, float)) else ""
             lines.append(f"• {html.escape((d.get('company') or {}).get('name') or c['code'])}: {html.escape(c.get('rating') or '?')}, {tgt}{mine}")
+    research = day.get("research") or []
+    if research:
+        lines.append("\n<b>Broker research</b>")
+        for r in research[:5]:
+            d = index.get(r.get("code"))
+            fv = ((d or {}).get("valuation") or {}).get("fairValue")
+            bits = [html.escape(r.get("rating") or "")] if r.get("rating") else []
+            if isinstance(r.get("target"), (int, float)):
+                bits.append(f"target Rs {r['target']:g}")
+            if isinstance(fv, (int, float)):
+                bits.append(f"mine Rs {fv:g}")
+            point = (r.get("keyPoints") or [""])[0]
+            lines.append(f"• <b>{html.escape(r.get('company') or '')}</b>" + (f" ({', '.join(bits)})" if bits else "") + (f": {html.escape(point)}" if point else ""))
     divs = day.get("dividends") or []
     if divs:
         lines.append("\n<b>Dividends</b>: " + "; ".join(
@@ -55,6 +69,9 @@ def announce_broker(state):
     if not files:
         return False, False
     day = read_json(files[-1], {})
+    if validate_broker.problems(day):
+        print(f"::warning::{files[-1].name} isn't publishable (see validate_broker.py), so it wasn't posted.")
+        return False, False
     date = day.get("date")
     try:
         age = (datetime.date.fromisoformat(cse.today_colombo()) - datetime.date.fromisoformat(date)).days

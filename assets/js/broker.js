@@ -63,6 +63,46 @@
     `<div class="tile"><div class="tile-label">${label}</div><div class="tile-value ${cls}">${value}</div><div class="tile-foot">${foot}</div></div>`;
   const newsCard = (n) => `<article class="bk-news-card"><h3>${App.esc(n.title)}</h3><p>${App.esc(n.text)}</p></article>`;
 
+  /* A broker research report (earnings note, market update…): rating, target, key points,
+     their forecasts, risks and catalysts, next to this site's own view when it covers the company. */
+  function researchCard(r) {
+    const co = r.code ? mine[r.code] : null;
+    const fv = co && co.valuation ? co.valuation.fairValue : null, buy = co && co.valuation ? co.valuation.buyPrice : null;
+    const up = App.isNum(r.target) && App.isNum(r.price) && r.price > 0 ? (r.target / r.price - 1) * 100 : null;
+    const gap = App.isNum(fv) && App.isNum(r.target) ? (r.target / fv - 1) * 100 : null;
+    const list = (title, items, cls) => (items || []).length
+      ? `<div class="rs-part ${cls}"><h4>${title}</h4><ul>${items.map((x) => `<li>${App.esc(typeof x === "string" ? x : `${x.label}: ${x.value}`)}</li>`).join("")}</ul></div>` : "";
+    return `<article class="rs-card">
+      <div class="rs-head">
+        <div><h3>${co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">★ ${App.esc(r.company)}</a>` : App.esc(r.company)}${r.code ? ` <span class="muted-s">${App.esc(r.code.split(".")[0])}</span>` : ""}</h3>
+          <div class="muted-s">${App.esc(r.report || "")}${r.date ? ` · ${App.date(r.date)}` : ""}</div></div>
+        ${r.rating ? `<div class="rs-rating">${chip(r.rating)}${r.prevRating ? `<div class="muted-s">was ${App.esc(r.prevRating)}</div>` : ""}</div>` : ""}
+      </div>
+      ${App.isNum(r.target) || App.isNum(r.price) ? `<div class="rs-nums">
+        ${App.isNum(r.target) ? `<div><small>Their target</small><b>${App.rs(r.target)}</b></div>` : ""}
+        ${App.isNum(r.price) ? `<div><small>Price${r.priceDate ? ` (${App.date(r.priceDate)})` : ""}</small><b>${App.price(r.price)}</b></div>` : ""}
+        ${App.isNum(up) ? `<div><small>Upside</small><b class="${up >= 0 ? "up" : "down"}">${pct(up)}</b></div>` : ""}
+        ${App.isNum(fv) ? `<div class="rs-mine"><small>This site</small><b>${App.rs(fv)}</b><em>buy below ${App.rs(buy)}</em></div>` : ""}
+      </div>` : ""}
+      ${App.isNum(gap) && Math.abs(gap) >= 25 ? `<p class="rs-flag">Big gap: their target is ${pct(gap)} vs this site's fair value.</p>` : ""}
+      ${list("Key points", r.keyPoints, "key")}
+      ${(r.forecasts || []).length || (r.risks || []).length || (r.catalysts || []).length ? `<details class="rs-more"><summary>Forecasts, risks and catalysts</summary>
+        ${list("Their forecasts", r.forecasts, "fc")}${list("Risks", r.risks, "risk")}${list("Catalysts", r.catalysts, "cat")}</details>` : ""}
+    </article>`;
+  }
+
+  /* "What was read": every item in every report, and whether it made it into the summary. */
+  function coverageHtml(cov) {
+    const ST = { included: ["✓", "In the summary"], approx: ["≈", "Approximate (read from a chart)"], "left-out": ["✗", "Left out"] };
+    const all = cov.flatMap((c) => c.items || []);
+    const n = (k) => all.filter((i) => i.status === k).length;
+    return `<details class="more cov"><summary>What was read: ${cov.length} report${cov.length === 1 ? "" : "s"} and images, ${all.length} items (${n("included")} ✓ · ${n("approx")} ≈ · ${n("left-out")} ✗)</summary>
+      ${cov.map((c) => `<div class="cov-post"><h4>${App.esc(c.title || "Post " + c.post)} <span class="muted-s">post ${App.esc(String(c.post))}${c.kind ? ` · ${App.esc(c.kind)}` : ""}</span></h4>
+        <ul>${(c.items || []).map((i) => `<li class="cov-${i.status}"><span class="cov-st" title="${(ST[i.status] || ["?", ""])[1]}">${(ST[i.status] || ["?"])[0]}</span>
+          <span>${App.esc(i.item)}${i.reason ? ` <em class="muted-s">(${App.esc(i.reason)})</em>` : ""}</span></li>`).join("")}</ul></div>`).join("")}
+    </details>`;
+  }
+
   /* One line per company on my site: price (dot), my fair value (green) and the
      broker's target (blue) on a shared scale, so the gap is visible at a glance. */
   function compareRow(call, co) {
@@ -95,6 +135,9 @@
     const ratings = [...new Set(calls.map((c) => c.rating).filter(Boolean))];
 
     const flows = (m.foreignFlows || []).slice().sort((a, b) => a.mn - b.mn);
+    const flowsApprox = flows.some((f) => f.approx);
+    const research = d.research || [];
+    const other = m.other || [];
     const maxFlow = Math.max(1, ...flows.map((f) => Math.abs(f.mn)));
     const news = d.news || [];
     const NEWS_SHOWN = 4;
@@ -103,10 +146,11 @@
     /* Jump nav: skip straight to a section on a long day. */
     const jump = [
       (d.highlights || []).length && ["#bk-highlights", "In short"],
+      research.length && ["#bk-research", "Research"],
       ownCalls.length && ["#bk-compare", "Your companies"],
       calls.length && ["#bk-calls", "All calls"],
       (d.dividends || []).length && ["#bk-dividends", "Dividends"],
-      (flows.length || (m.momentum || []).length) && ["#bk-market", "Market details"],
+      (flows.length || (m.momentum || []).length || other.length) && ["#bk-market", "Market details"],
       news.length && ["#bk-news", "News"],
     ].filter(Boolean);
 
@@ -115,12 +159,14 @@
         ${App.isNum(m.aspi) ? tile("ASPI", App.num(m.aspi, 0), pct(m.aspiChangePct, 2), m.aspiChangePct >= 0 ? "up" : "down") : ""}
         ${App.isNum(m.sp20) ? tile("S&amp;P SL20", App.num(m.sp20, 0), pct(m.sp20ChangePct, 2), m.sp20ChangePct >= 0 ? "up" : "down") : ""}
         ${App.isNum(m.turnoverBn) ? tile("Turnover", `Rs ${m.turnoverBn}bn`, App.isNum(m.marketPE) ? `Market P/E ${m.marketPE}x · P/B ${m.marketPBV}x` : "") : ""}
-        ${App.isNum(m.foreignNetMn) ? tile("Foreign investors", `${m.foreignNetMn < 0 ? "−" : "+"}Rs ${Math.abs(Math.round(m.foreignNetMn))}mn`, m.foreignNetMn < 0 ? "Net sellers" : "Net buyers", m.foreignNetMn < 0 ? "down" : "up") : ""}
+        ${App.isNum(m.foreignNetMn) ? tile("Foreign investors", `${m.foreignNetMn < 0 ? "−" : "+"}Rs ${Math.abs(Math.round(m.foreignNetMn))}mn`, (App.isNum(m.foreignBuyMn) && App.isNum(m.foreignSellMn) ? `Bought Rs ${App.num(m.foreignBuyMn, 0)}mn · sold Rs ${App.num(m.foreignSellMn, 0)}mn` : (m.foreignNetMn < 0 ? "Net sellers" : "Net buyers")), m.foreignNetMn < 0 ? "down" : "up") : ""}
       </div>
 
       ${jump.length > 2 ? `<nav class="more-jump">${jump.map(([href, label]) => `<a href="${href}">${App.esc(label)}</a>`).join("")}</nav>` : ""}
 
       ${(d.highlights || []).length ? `<section class="bk-card" id="bk-highlights"><h2>Today in short</h2><ul class="bk-list">${d.highlights.map((h) => `<li>${App.esc(h)}</li>`).join("")}</ul></section>` : ""}
+
+      ${research.length ? `<section class="bk-card" id="bk-research"><h2>Broker research</h2><div class="rs-grid">${research.map(researchCard).join("")}</div></section>` : ""}
 
       ${ownCalls.length ? `<section class="bk-card" id="bk-compare">
         <div class="bk-head"><h2>Your companies: broker vs my view</h2>
@@ -128,7 +174,7 @@
         ${ownCalls.map((c) => compareRow(c, mine[c.code])).join("")}
       </section>` : ""}
 
-      <section class="bk-card" id="bk-calls">
+      ${calls.length ? `<section class="bk-card" id="bk-calls">
         <div class="bk-head"><h2>All broker calls <span class="muted-s" id="count"></span></h2>
           <div class="filters">
             <input type="search" id="q" class="search" placeholder="Search company or code" aria-label="Search calls">
@@ -139,7 +185,7 @@
           <thead><tr><th>Company</th><th class="col-sector">Sector</th><th class="num">Price</th><th>Call</th><th class="num">Target</th><th>Upside</th></tr></thead>
           <tbody id="rows"></tbody></table></div>
         <p class="muted-s">Sorted by the broker's upside. ★ marks companies on this site.</p>
-      </section>
+      </section>` : ""}
 
       <div class="bk-grid">
         ${(d.dividends || []).length ? `<section class="bk-card" id="bk-dividends"><h2>Coming dividends</h2>
@@ -147,9 +193,11 @@
           ${d.dividends.map((v) => `<tr><td>${App.esc(v.name)} <span class="muted-s">${App.esc(v.code.split(".")[0])}</span></td><td class="num">${App.price(v.dps)}</td><td class="num">${App.isNum(v.yieldPct) ? v.yieldPct.toFixed(1) + "%" : "–"}</td><td class="nowrap">${App.date(v.xd)}</td><td class="nowrap">${App.date(v.pay)}</td></tr>`).join("")}
           </tbody></table></section>` : ""}
 
-        ${flows.length || (m.momentum || []).length ? `<section class="bk-card" id="bk-market"><h2>Market details</h2>
-          ${flows.length ? `<h3 class="bk-sub">Foreign buying and selling (Rs mn)</h3>
-          ${flows.map((f) => `<div class="flow"><span>${App.esc(f.code)}</span><div class="flow-bar"><div class="${f.mn < 0 ? "neg" : "pos"}" style="width:${(Math.abs(f.mn) / maxFlow * 50).toFixed(1)}%"></div></div><span class="num">${f.mn > 0 ? "+" : ""}${f.mn}</span></div>`).join("")}` : ""}
+        ${flows.length || (m.momentum || []).length || other.length ? `<section class="bk-card" id="bk-market"><h2>Market details</h2>
+          ${flows.length ? `<h3 class="bk-sub">Foreign buying and selling by share (Rs mn)</h3>
+          ${flows.map((f) => `<div class="flow"><span>${App.esc(f.code.split(".")[0])}</span><div class="flow-bar"><div class="${f.mn < 0 ? "neg" : "pos"}" style="width:${(Math.abs(f.mn) / maxFlow * 50).toFixed(1)}%"></div></div><span class="num">${f.approx ? "≈" : ""}${f.mn > 0 ? "+" : f.mn < 0 ? "−" : ""}${Math.abs(f.mn)}</span></div>`).join("")}
+          ${flowsApprox ? `<p class="muted-s">≈ read from the broker's chart, which has no figures on the bars.</p>` : ""}` : ""}
+          ${other.length ? `<h3 class="bk-sub">Other figures</h3><dl class="bk-other">${other.map((o) => `<div><dt>${App.esc(o.label)}</dt><dd>${App.esc(String(o.value))}${o.unit ? ` ${App.esc(o.unit)}` : ""}</dd></div>`).join("")}</dl>` : ""}
           ${(m.gainers || []).length ? `<div class="chip-line"><b>Lifted the index</b><div class="badges">${codeChips(m.gainers, "good")}</div></div>` : ""}
           ${(m.losers || []).length ? `<div class="chip-line"><b>Held it back</b><div class="badges">${codeChips(m.losers, "bad")}</div></div>` : ""}
           ${(m.momentum || []).length ? `<div class="chip-line"><b>Biggest 10-day rises</b><div class="badges">${m.momentum.map((x) => `<span class="badge good">${App.esc(x.code)} +${x.pct}%</span>`).join("")}</div></div>` : ""}
@@ -161,11 +209,14 @@
         ${news.length > NEWS_SHOWN ? `<details class="more-rest"><summary>Show all ${news.length} items</summary><div class="bk-news">${news.slice(NEWS_SHOWN).map(newsCard).join("")}</div></details>` : ""}
       </section>` : ""}
 
+      ${(d.coverage || []).length ? coverageHtml(d.coverage) : ""}
+
       ${d.note ? (d.note.length > 220
           ? `<details class="more"><summary>Notes on this summary</summary><p class="muted-s">${App.esc(d.note)}</p></details>`
           : `<p class="muted-s">${App.esc(d.note)}</p>`) : ""}`;
 
     /* Filterable, sorted table of every call. */
+    if (!calls.length) return;
     const rowsEl = document.getElementById("rows"), countEl = document.getElementById("count");
     const q = document.getElementById("q"), fr = document.getElementById("fr"), fs = document.getElementById("fs");
     const sorted = calls.slice().sort((a, b) => (upside(b) ?? -999) - (upside(a) ?? -999));

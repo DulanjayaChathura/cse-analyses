@@ -555,3 +555,38 @@ h1 .star { font-size: 1.5rem; margin-left: 0.2rem; }
   .sh-list li .sh-chg { grid-column: 2 / -1; text-align: left; font-size: 0.75rem; }
   .sh-list li .sh-chg.same { display: none; }
 }
+
+/* ---------- Broker research cards, other figures, "What was read" ---------- */
+.rs-grid { display: grid; gap: 0.8rem; }
+.rs-card { border: 1px solid var(--rule); border-radius: 10px; padding: 0.85rem 0.95rem; background: var(--surface); }
+.rs-head { display: flex; justify-content: space-between; gap: 0.75rem; align-items: flex-start; }
+.rs-head h3 { margin: 0; font-size: 1.02rem; }
+.rs-rating { text-align: right; flex: none; }
+.rs-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr)); gap: 0.5rem; margin: 0.75rem 0 0.5rem; }
+.rs-nums > div { display: grid; gap: 0.05rem; }
+.rs-nums small { font-size: 0.72rem; color: var(--ink-soft); }
+.rs-nums b { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.rs-nums b.up { color: var(--good, #1d7a46); }
+.rs-nums b.down { color: var(--bad, #b42318); }
+.rs-nums em { font-style: normal; font-size: 0.72rem; color: var(--ink-soft); }
+.rs-mine { border-left: 3px solid var(--good, #1d7a46); padding-left: 0.5rem; }
+.rs-flag { margin: 0.2rem 0 0.5rem; font-size: 0.85rem; font-weight: 600; color: #946200; }
+.rs-part h4 { margin: 0.6rem 0 0.3rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+.rs-part ul { margin: 0; padding-left: 1.05rem; display: grid; gap: 0.3rem; font-size: 0.9rem; line-height: 1.4; }
+.rs-part.risk h4 { color: var(--bad, #b42318); }
+.rs-part.cat h4 { color: var(--good, #1d7a46); }
+.rs-more { margin-top: 0.5rem; }
+.rs-more summary { cursor: pointer; font-size: 0.88rem; font-weight: 600; min-height: 2.2rem; display: flex; align-items: center; }
+.bk-other { display: grid; grid-template-columns: 1fr; gap: 0 1.2rem; margin: 0 0 0.6rem; }
+@media (min-width: 700px) { .bk-other { grid-template-columns: 1fr 1fr; } }
+.bk-other div { display: flex; justify-content: space-between; gap: 0.5rem; border-bottom: 1px solid var(--rule); padding: 0.25rem 0; font-size: 0.88rem; }
+.bk-other dt { color: var(--ink-soft); }
+.bk-other dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.cov-post h4 { margin: 0.8rem 0 0.3rem; font-size: 0.9rem; }
+.cov-post ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.2rem; font-size: 0.86rem; }
+.cov-post li { display: grid; grid-template-columns: 1.4rem 1fr; gap: 0.3rem; }
+.cov-st { width: 1.2rem; height: 1.2rem; border-radius: 50%; display: grid; place-items: center; font-size: 0.72rem; font-weight: 700; }
+.cov-included .cov-st { background: #dcf3e5; color: #1d7a46; }
+.cov-approx .cov-st { background: #fdf0cf; color: #946200; }
+.cov-left-out .cov-st { background: #fde2df; color: #b42318; }
+@media (min-width: 861px) { .rs-grid { grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); } }

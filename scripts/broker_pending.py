@@ -4,7 +4,11 @@ The owner posts "/summary" (or "/summary12", "/summary-12") in the Telegram chan
 when they want a summary. broker_collect.py saves those posts with a "command" mark.
 Each command covers the posts between the previous summary command and itself:
 
-  /summary      → summary filed under the command's own date (Sri Lanka time)
+  /summary      → summary filed under the command's own date (Sri Lanka time); a command
+                  sent between midnight and 08:00 Sri Lanka time files under the day before,
+                  since it's still about the previous trading day. The summary run then checks
+                  the reports' own date (e.g. "Market close as at 19 Nov") and uses that if
+                  it differs, saying so in the summary's note.
   /summary12    → summary filed under the 12th of the command's month
                   (or of the previous month, if the 12th is still to come)
 
@@ -54,10 +58,17 @@ def load_done():
     return summarised, commands
 
 
+EARLY_HOURS = 8   # a plain /summary sent before 08:00 Sri Lanka time is about the day before
+
+
 def target_date(cmd):
     when = datetime.date.fromisoformat(cmd["time"][:10])
     day = (cmd.get("command") or {}).get("day")
     if not day:
+        hour = int(cmd["time"][11:13]) if len(cmd["time"]) >= 13 else 12
+        if hour < EARLY_HOURS:
+            prev = when - datetime.timedelta(days=1)
+            return prev.isoformat(), f"Sent at {cmd['time'][11:16]} Sri Lanka time, so filed under the day before ({prev.isoformat()})."
         return when.isoformat(), None
     y, m = when.year, when.month
     for _ in range(2):
@@ -97,7 +108,10 @@ def pending():
             "afterCommandId": commands[i - 1]["id"] if i > 0 else None,
             "redo": redo,
             "messageIds": [p["id"] for p in window],
-            "posts": [{"id": p["id"], "folder": p["folder"], "time": p["time"]} for p in window],
+            "posts": [{"id": p["id"], "folder": p["folder"], "time": p["time"],
+                       "files": [f"inbox/{p['folder']}/{f}" for f in p.get("files") or []],
+                       "links": [dict(l, **{k: f"inbox/{p['folder']}/{l[k]}" for k in ("file", "textFile") if l.get(k)})
+                                 for l in p.get("links") or []]} for p in window],
         })
     return out
 
@@ -127,6 +141,11 @@ def main():
             print(("REDO (replace the day's summary with one made from these posts only) " if r["redo"] else "") +
                   f"{r['command']} (message {r['commandId']}, {r['commandTime']}) → broker/{r['date']}.json: "
                   f"{len(r['messageIds'])} post(s) {r['messageIds']}" + (f"  NOTE: {r['dateNote']}" if r["dateNote"] else ""))
+            for post in r["posts"]:
+                for f in post["files"]:
+                    print(f"    post {post['id']} file: {f}")
+                for l in post["links"]:
+                    print(f"    post {post['id']} link: {l['url']} → " + (l.get("textFile") or l.get("file") or f"{l['status']}: {l.get('error', '')}"))
         return 0
     print(json.dumps({"pending": result}, indent=2, ensure_ascii=False))
     return 0
