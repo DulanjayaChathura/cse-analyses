@@ -2,28 +2,140 @@
   "schemaVersion": 1,
   "date": "2026-11-18",
   "source": "HNB Stockbrokers",
-  "posts": 6,
-  "messageIds": [289, 290, 291, 292, 293, 294],
-  "commands": [295],
-  "callsPriceDate": null,
-  "note": "No recommendation table or broker calls were posted, so there is nothing to compare with this site's fair values. No Daily Market Snapshot was posted for 18 Nov, so the ASPI, S&P SL20, turnover and foreign-flow figures are not available; the market picture comes only from the heat map (message 294, 1-day % changes for companies worth over Rs 5bn). Message 293 links to the detailed Daily Market Update for 18 Nov, message 291 to HNB Stockbrokers' 2Q FY27 earnings summary on Hayleys (HAYL.N0000, analysed on this site) and message 292 to its 3Q 2026 earnings summary on Nations Trust Bank; none of these tinyurl.com links could be opened from this run (the host is not allowed in this session's network settings), so none of their figures, ratings or targets are included. The 'Reference' links under the news items were not opened; the text already describes them. The Bloomberg world-indices screen (message 290) was taken at 08:49 Sri Lanka time on 18 Nov, so its US and European figures are Tuesday 17 Nov's sessions. Some small heat-map tiles have no readable percentage and are left out.",
-  "highlights": [
-    "A broad sell-off on 18 Nov going by the heat map: almost every large share fell, led by banks (Commercial Bank −2.85%, Sampath −1.64%, HNB −1.19%, DFCC −2.04%) and diversified financials (LOLC Finance −2.04%, LFIN −3.44%, People's Leasing −3.23%, LOLC −1.43%). No ASPI figure was posted.",
-    "Other heavyweights analysed on this site also slipped: JKH −1.58%, Dialog −1.01%, Hemas −2.44%, ACL −2.77%, Royal Ceramics −2.35%, Hayleys −0.21%; only a few rose (Richard Pieris +1.10%, Capital Alliance +0.76%, CTC +0.19%, Lion Brewery +0.12%, PKME +0.15%).",
-    "Cargills Ceylon's Deputy Chairman/Group CEO Ranjit Page sold about 7mn more shares at Rs 637 (Rs 4.45bn) on 16 Nov, after selling 6mn at Rs 700 in August; his stake had already fallen from 7.9% at end-June to 5% at end-September.",
-    "The Inland Revenue Department passed its 2026 revenue target, collecting Rs 2,441.9bn by 16 Nov against Rs 2,402bn, while Cabinet approved nearly Rs 500bn of infrastructure projects amid criticism of unspent capital budgets.",
-    "Global shares fell again on 17 Nov as the AI trade unwound (Dow −1.64%, S&P 500 −1.03%, Euro Stoxx 50 −2.15%, DAX −2.08%), with the dollar near a 19-month high on expectations of a US rate hike."
+  "posts": 9,
+  "messageIds": [
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    302,
+    303,
+    304
   ],
-  "market": {},
-  "calls": [],
+  "commands": [
+    295,
+    305
+  ],
+  "callsPriceDate": "2026-11-17",
+  "note": "Broker calls come from two HNB Stockbrokers earnings summaries dated 18 Nov (messages 303 and 304, PDFs). The Nations Trust Bank price is as of 17 Nov; the Hayleys note uses the 13 Nov close (Rs 236.25). These are single-company notes, not a full recommendation table. Market figures come from the Daily Market Update PDF for 18 Nov (message 302). Its foreign buying/selling donut only shows rounded totals (about Rs 1bn bought, about Rs 0bn sold), so only the net figure (Rs 1.09bn) is given. The per-stock foreign-flow bars have no value labels, so foreignFlows is left out and the highlights name only the direction. The earlier heat map (message 294) gives 1-day % changes for companies worth over Rs 5bn. Some small tiles have no readable percentage and are left out. The 'Reference' links under the news items were not opened; the text already describes them. The Bloomberg world-indices screen (message 290) was taken at 08:49 Sri Lanka time on 18 Nov, so its US and European figures are Tuesday 17 Nov's sessions. Messages 291–293 (the tinyurl links) could not be opened in the first run; messages 302–304 are the same three documents, posted as PDFs, and are summarised here.",
+  "highlights": [
+    "A broad sell-off on 18 Nov: the ASPI fell 298 points (−1.37%) to 21,402.76 and the S&P SL20 fell 1.41% to 6,096.97. Turnover was thin at Rs 1.93bn. Banks led the fall (Commercial Bank −2.85%, Sampath −1.64%, DFCC −2.04%), along with LOLC-group financials.",
+    "Foreigners were still net buyers, at Rs 1.09bn ($3.27M). By stock, they sold most of Commercial Credit and Finance, Melstacorp, ACL, Dialog and LIOC, and bought small amounts of Distilleries, Hemas, HNB (non-voting), Kotagala and Ceylon Cold Stores.",
+    "Big disagreement on Hayleys (HAYL.N0000): HNB Stockbrokers keeps a Moderate buy with a Rs 260 target (price Rs 236.25), but this site's fair value is Rs 151 (buy below Rs 128). The broker cut its FY27 EPS estimate 3% to Rs 25.58 and flags debt-funded capex, working capital of Rs 258.5bn and net finance cost up 96% as risks.",
+    "Nations Trust Bank (not analysed on this site) is rated Buy with a Rs 400 target (price Rs 317). 3Q profit fell 59.8% Q/Q to Rs 4.4bn because of a trading loss and higher funding costs on the deposits taken over from HSBC. A Rs 13.9bn rights issue was approved on 16 Nov.",
+    "Cargills Ceylon's Group CEO Ranjit Page sold about 7mn more shares at Rs 637 (Rs 4.45bn) on 16 Nov. Separately, the IRD passed its 2026 revenue target and Cabinet approved nearly Rs 500bn of infrastructure projects."
+  ],
+  "market": {
+    "aspi": 21402.76,
+    "aspiChangePct": -1.37,
+    "aspiPoints": -298.31,
+    "sp20": 6096.97,
+    "sp20ChangePct": -1.41,
+    "turnoverBn": 1.93,
+    "marketPE": 11.03,
+    "marketPBV": 1.28,
+    "marketCapTn": 7.72,
+    "foreignNetMn": 1090,
+    "momentum": [
+      {
+        "code": "MRH.N0000",
+        "pct": 26.0
+      },
+      {
+        "code": "SING.N0000",
+        "pct": 25.8
+      },
+      {
+        "code": "MULL.N0000",
+        "pct": 20.6
+      },
+      {
+        "code": "AUTO.N0000",
+        "pct": 20.0
+      },
+      {
+        "code": "CABO.N0000",
+        "pct": 19.2
+      },
+      {
+        "code": "TJL.N0000",
+        "pct": 17.2
+      },
+      {
+        "code": "MEL.N0000",
+        "pct": 15.7
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 15.2
+      },
+      {
+        "code": "SMOT.N0000",
+        "pct": 12.4
+      },
+      {
+        "code": "CSLK.N0000",
+        "pct": 12.1
+      }
+    ]
+  },
+  "calls": [
+    {
+      "code": "NTB.N0000",
+      "name": "Nations Trust Bank",
+      "sector": "Banking",
+      "price": 317.0,
+      "rating": "Buy",
+      "target": 400.0
+    },
+    {
+      "code": "HAYL.N0000",
+      "name": "Hayleys",
+      "sector": "Capital Goods",
+      "price": 236.25,
+      "rating": "Moderate buy",
+      "target": 260.0
+    }
+  ],
   "dividends": [],
   "news": [
-    {"title": "IRD beats its 2026 revenue target", "text": "The Inland Revenue Department collected Rs 2,441.9bn by 16 November against a full-year target of Rs 2,402bn. It said collections for the period were Rs 491bn, 115% more than a year earlier."},
-    {"title": "Cabinet approves about Rs 500bn of projects", "text": "Projects worth nearly Rs 500bn were approved, including Rs 251.4bn for the road section of phase one of the Ruwanpura Expressway (Kahatuduwa to Ingiriya, with the system interchange). It comes amid criticism that 2026 capital spending allocations have gone unspent."},
-    {"title": "SLT-Mobitel pushes into AI, 5G and data centres", "text": "After strong profit growth in the first nine months of 2026, the state-run group is shifting from a traditional telecom operator towards a technology company, focusing on AI, targeted 5G roll-out and data centres to counter competition from global OTT platforms."},
-    {"title": "LAUGFS reverses its gas price rise", "text": "After raising prices from 13 November, LAUGFS Gas cut them on 17 November at the Trade Minister's request: the 12.5kg cylinder fell Rs 745 to Rs 5,995 and the 5kg cylinder to Rs 2,398."},
-    {"title": "Ranjit Page sells more Cargills Ceylon shares", "text": "The Deputy Chairman/Group CEO sold nearly 7mn shares at Rs 637 each (Rs 4.45bn) on 16 November, following 6mn sold at Rs 700 in August. His holding was 20.38mn shares (7.9%) at end-June and 13mn (5%) at end-September."},
-    {"title": "Dollar near a 19-month high", "text": "US retail sales rose moderately in October and Fed officials sounded hawkish, strengthening expectations of a US rate rise next month. The yen eased despite record Japanese exports in October, and the Australian dollar was near a 10-month low."},
-    {"title": "Global markets: AI trade unwind continues", "text": "World shares fell on 17 November ahead of Nvidia's results (which beat expectations) and Anthropic's market debut later in the week. On Bloomberg's screen: Dow −1.64%, S&P 500 −1.03%, FTSE 100 −1.76%, Euro Stoxx 50 −2.15%, DAX −2.08%, Nikkei −0.28%, Hang Seng −0.97%, Nifty +0.38%, KOSPI +0.63%."}
+    {
+      "title": "Hayleys 2Q FY27: sales and operating profit up, finance cost nearly doubles",
+      "text": "Revenue rose 28.9% Y/Y to Rs 178.7bn and operating profit 54.7% to Rs 17.0bn (margin 9.5%), led by Transportation & Logistics (shipping diversions), Purification and Consumer & Retail. Net finance cost rose 96% to Rs 5.6bn on higher borrowing (gearing 1.47x). A lower tax rate lifted profit to shareholders 65.7% Y/Y to Rs 3.96bn. HNB Stockbrokers trimmed FY27 EPS to Rs 25.58 and kept a Moderate buy, Rs 260 target. It says the shares are on 10.1x P/E against a 15.1x historical average, and that first-half capex of Rs 43.6bn already exceeds all of FY26."
+    },
+    {
+      "title": "Nations Trust Bank 3Q 2026: HSBC deposits squeeze margin",
+      "text": "NIM fell 18bp to 5.40% as the Rs 131.7bn of HSBC deposits added interest cost before being lent out. Loans grew 7.8% Q/Q, mostly in foreign currency, and LDR rose to 90%. Fee income rose 24.4%, but a Rs 2.1bn trading loss (versus a Rs 6.6bn gain in 2Q) and a normal 52% tax rate cut profit 59.8% Q/Q to Rs 4.4bn. NPL ratio 0.7%, Tier 1 12.7%. HNB Stockbrokers keeps a Buy rating and a Rs 400 target, with a Neutral short-term outlook; ROE is 24%, on 1.0x P/B and 4.3x P/E."
+    },
+    {
+      "title": "IRD beats its 2026 revenue target",
+      "text": "The Inland Revenue Department collected Rs 2,441.9bn by 16 November against a full-year target of Rs 2,402bn. It said collections for the period were Rs 491bn, 115% more than a year earlier."
+    },
+    {
+      "title": "Cabinet approves about Rs 500bn of projects",
+      "text": "Projects worth nearly Rs 500bn were approved, including Rs 251.4bn for the road section of phase one of the Ruwanpura Expressway (Kahatuduwa to Ingiriya, with the system interchange). It comes amid criticism that 2026 capital spending allocations have gone unspent."
+    },
+    {
+      "title": "SLT-Mobitel pushes into AI, 5G and data centres",
+      "text": "After strong profit growth in the first nine months of 2026, the state-run group is shifting from a traditional telecom operator towards a technology company, focusing on AI, targeted 5G roll-out and data centres to counter competition from global OTT platforms."
+    },
+    {
+      "title": "LAUGFS reverses its gas price rise",
+      "text": "After raising prices from 13 November, LAUGFS Gas cut them on 17 November at the Trade Minister's request: the 12.5kg cylinder fell Rs 745 to Rs 5,995 and the 5kg cylinder to Rs 2,398."
+    },
+    {
+      "title": "Ranjit Page sells more Cargills Ceylon shares",
+      "text": "The Deputy Chairman/Group CEO sold nearly 7mn shares at Rs 637 each (Rs 4.45bn) on 16 November, following 6mn sold at Rs 700 in August. His holding was 20.38mn shares (7.9%) at end-June and 13mn (5%) at end-September."
+    },
+    {
+      "title": "Dollar near a 19-month high",
+      "text": "US retail sales rose moderately in October and Fed officials sounded hawkish, strengthening expectations of a US rate rise next month. The yen eased despite record Japanese exports in October, and the Australian dollar was near a 10-month low."
+    },
+    {
+      "title": "Global markets: AI trade unwind continues",
+      "text": "World shares fell on 17 November ahead of Nvidia's results (which beat expectations) and Anthropic's market debut later in the week. On Bloomberg's screen: Dow −1.64%, S&P 500 −1.03%, FTSE 100 −1.76%, Euro Stoxx 50 −2.15%, DAX −2.08%, Nikkei −0.28%, Hang Seng −0.97%, Nifty +0.38%, KOSPI +0.63%."
+    }
   ]
 }
