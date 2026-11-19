@@ -16,69 +16,69 @@
       "label": "Non-voting"
     }
   ],
-  "analysisDate": "2026-11-11",
+  "analysisDate": "2026-11-19",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+      "Annual report 2025/26 (CSE download, read in full)",
+      "Interim report to 30 Sep 2026 (CSE download, scanned)",
+      "Earlier: annual report 2024/25 and interims to Mar and Jun 2026 (first analysis)"
     ]
   },
   "price": {
-    "value": 10.3,
-    "date": "2026-09-30",
-    "source": "Last traded price (voting) in the interim report to 30 September 2026",
-    "note": "Non-voting Rs 8.80. July–September 2026 range Rs 10.00–11.60 (voting). No newer CSE close was available when this was written; the site shows the latest CSE close once fetched."
+    "value": 10.2,
+    "date": "2026-11-19",
+    "source": "CSE close (generated/prices.json), voting share",
+    "note": "Non-voting LPL.X0000 Rs 8.30 on the same day. July–September 2026 range Rs 10.00–11.60 (voting); Rs 10.00–24.70 in the year to March 2026."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Last year's profit was an accounting reversal; the solar contracts are running down",
-    "text": "LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) owns solar plants at Hambantota and Embilipitiya and small hydro plants, selling all its power to the Ceylon Electricity Board (CEB). Its reported profit of Rs 461mn for the year to March 2026 (EPS Rs 1.19) came almost entirely from reversing Rs 544mn of earlier impairments; without that it lost money, as generation fell 14%. The six months to September 2026 were better: revenue up 17% and profit Rs 87mn (EPS Rs 0.23), helped by the hydro plants. But the main solar contracts have only about ten years left, the CEB owes it about Rs 1.07bn, and it pays no dividend. At Rs 10.30 (voting, 30 September; check the live price) the share is 1.4x its NAV of Rs 7.17. A cash-flow valuation of the remaining contracts and a NAV check put fair value at about Rs 5.00, so the price is about double that. I'd buy at up to about Rs 4.25 and treat under Rs 3.75 as a strong buy."
+    "headline": "Small, low-return power producer with ten years left on its solar contracts; worth about Rs 2.80, not Rs 10",
+    "text": "LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) sells all its power to the CEB from about 26 MW of solar plants (Hambantota and Embilipitiya) and mini hydro plants. Last year's Rs 461mn profit (EPS Rs 1.19) came from a Rs 544mn write-back of earlier impairments; without it the group made almost nothing. The six months to September 2026 were better (profit Rs 87mn, EPS Rs 0.23) thanks to the new 2 MW Pams hydro plant, but returns are still only about 4% of equity, the solar tax holiday has ended, the solar contracts run out in about ten years, and the parent, LAUGFS Holdings, owes the company Rs 521mn. No dividend is paid. At Rs 10.20 the share is 1.4x NAV of Rs 7.17. A whole-company DCF, P/E, price to book and a NAV check put fair value at about **Rs 2.83** (down from Rs 5.00, mainly because the brief's P/E and book-value methods are now applied to the low underlying returns). Buy at up to Rs 2.41; strong buy under Rs 2.13. The business fails three of four tests, so it stays in category 3 (avoid for now)."
   },
   "quality": {
     "rating": "weak",
     "passed": 1,
     "outOf": 4,
-    "reason": "Low underlying returns, losses in two of the last five years and slow payment by its only customer.",
-    "assessed": "2026-11-11",
+    "reason": "Low underlying returns, losses or near-losses in most of the last five years, and cash going to the parent rather than shareholders.",
+    "assessed": "2026-11-19",
     "tests": [
       {
         "id": "returns",
         "label": "Return on equity of 15% or more",
         "pass": false,
-        "value": "About minus 3% underlying",
-        "note": "Reported 19% in 2025/26 came from a Rs 544mn impairment reversal; 12% in 2024/25, 3% in 2023/24."
+        "value": "About 4% underlying",
+        "note": "Reported 18.7% for 2025/26 came from the Rs 544mn reversal; without it about −3%. 11.9% in 2024/25 was lifted by Rs 376mn of one-off tariff billing; 2.7% in 2023/24. First-half 2026/27 profit of Rs 87mn is about 6% a year, but the second half is seasonally weak."
       },
       {
         "id": "debt",
         "label": "Net debt no more than equity",
         "pass": true,
         "value": "0.56x equity",
-        "note": "Net debt about Rs 1.55bn at September 2026 against equity of Rs 2.78bn."
+        "note": "Net debt Rs 1.55bn at 30 September 2026 against equity of Rs 2.78bn. About 4x the last 12 months' underlying EBITDA (Rs 0.39bn), above the usual 3x comfort level."
       },
       {
         "id": "steady",
         "label": "Steady profit: no loss in five years, no one-offs",
         "pass": false,
         "value": "Losses in 2021/22 and 2022/23",
-        "note": "2025/26 profit depended on a one-off reversal."
+        "note": "2024/25 relied on one-off billing and 2025/26 on the impairment reversal; the underlying 2025/26 result was a loss."
       },
       {
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": false,
-        "value": "No dividends",
-        "note": "Cash flow is positive, but the CEB owes about Rs 1.07bn (more than a year's revenue) and no dividend was paid for 2025/26."
+        "value": "No dividends; Rs 521mn lent to the parent",
+        "note": "Cash from operations was Rs 492mn in 2025/26 (Rs 253mn in the first half of 2026/27), but no dividend has been paid and LAUGFS Holdings owed the company Rs 521mn at March 2026."
       }
     ]
   },
   "valuation": {
-    "fairValue": 5.0,
-    "buyPrice": 4.25,
-    "strongBuyPrice": 3.75,
+    "fairValue": 2.83,
+    "buyPrice": 2.41,
+    "strongBuyPrice": 2.13,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -89,13 +89,13 @@
       "bull": 20
     },
     "nav": 7.17,
-    "note": "Fair value weights the bear/base/bull averages of two methods 30/50/20 (about 0.7x NAV)."
+    "note": "Fair value weights the bear/base/bull averages of four methods (whole-company DCF plus the money owed by the parent, P/E, justified price to book, NAV multiple) 30/50/20: Rs 1.48 / 2.96 / 4.57, giving Rs 2.83 (0.39x NAV). DCF, P/E and price to book come from scripts/valuation.py; discount rates from the beta (cost of equity 15.7%, WACC 13.5%). Down from Rs 5.00 on 11 November because P/E and price to book are now included, the DCF discounts at WACC with the end of the tax holiday, and lower maintenance-adjusted cash is assumed."
   },
   "dividend": {
     "perShare": 0,
     "label": "for 2025/26 (none)",
     "source": "Annual Report 2025/26, Annual Report of the Board of Directors",
-    "note": "The company didn't declare or propose a dividend for 2025/26."
+    "note": "No dividend declared for 2025/26 or so far in 2026/27."
   },
   "keyMetrics": [
     {
@@ -108,8 +108,9 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 1.44,
-      "unit": "x"
+      "value": 1.42,
+      "unit": "x",
+      "note": "At Rs 10.20"
     },
     {
       "id": "pe",
@@ -117,22 +118,22 @@
       "value": null,
       "unit": "x",
       "display": "n/m",
-      "note": "Trailing EPS Rs 1.36 is almost all the impairment reversal; underlying about nil"
+      "note": "Trailing EPS Rs 1.36 is almost all the Rs 1.40 reversal; on the base case's Rs 0.28 for 2026/27 the P/E is 36x"
     },
     {
       "id": "evEbitda",
       "label": "EV / EBITDA",
-      "value": 8.3,
+      "value": 13.8,
       "unit": "x",
-      "note": "First-half EBITDA Rs 328mn doubled, with about ten years of solar contracts left"
+      "note": "EV Rs 5.40bn over last-12-months underlying EBITDA of Rs 0.39bn"
     },
     {
       "id": "roe",
       "label": "Return on equity",
       "value": null,
       "unit": "%",
-      "display": "~ -3% underlying",
-      "note": "19% reported for 2025/26, from the reversal"
+      "display": "~4% underlying",
+      "note": "18.7% reported for 2025/26, from the reversal"
     },
     {
       "id": "dividendYield",
@@ -146,40 +147,50 @@
       "label": "Net debt",
       "value": 1.55,
       "unit": "Rs bn",
-      "note": "September 2026"
+      "note": "30 Sep 2026, 0.56x equity"
     },
     {
       "id": "revenueGrowth",
       "label": "Revenue growth",
       "value": 17,
       "unit": "%",
-      "note": "Six months to Sep 2026; down 15% in the year to March 2026"
+      "note": "Six months to Sep 2026; down 15% in 2025/26 (excluding one-off billing)"
     },
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 3.9,
+      "value": 3.85,
       "unit": "Rs bn",
-      "display": "~Rs 3.9bn",
-      "note": "Both share classes"
+      "note": "335.0mn voting at Rs 10.20 plus 52.0mn non-voting at Rs 8.30"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 15.7,
+      "unit": "%",
+      "note": "Beta 0.73; WACC 13.5%"
     }
   ],
   "highlights": [
     {
       "title": "Six months to 30 September 2026 (unaudited)",
-      "text": "Revenue rose 17% to Rs 480mn and profit rose to Rs 87mn from Rs 23mn (EPS Rs 0.23 against Rs 0.06). Hydro revenue jumped to Rs 91mn from Rs 22mn; solar was flat at Rs 389mn. Administrative costs fell 24%."
+      "text": "Revenue up 17% to Rs 480mn and profit up to Rs 87mn from Rs 23mn (EPS Rs 0.23 against Rs 0.06). Hydro revenue rose to Rs 91mn from Rs 22mn with the new Pams Power plant; solar was flat at Rs 389mn. Administrative costs fell 24%. The September quarter alone earned Rs 64mn (EPS Rs 0.17), the seasonal peak."
     },
     {
-      "title": "2025/26: profit from a reversal",
-      "text": "Audited profit Rs 461mn (EPS Rs 1.19) included a Rs 544mn reversal of earlier impairments; the unaudited fourth-quarter report had shown only Rs 6mn. Generation fell 14% to 35.2 GWh and revenue 15% to Rs 765mn."
+      "title": "2025/26: profit from a write-back",
+      "text": "Profit Rs 461mn (EPS Rs 1.19) included a Rs 544mn reversal of earlier impairments (hydro Rs 291mn, solar Rs 253mn). Before it, operating profit was only Rs 31mn as generation fell 14% to 35.2 GWh and administrative costs rose to Rs 370mn. Revenue Rs 765mn against Rs 1,273mn, which had included Rs 376mn of one-off tariff billing."
     },
     {
-      "title": "One customer, slow to pay",
-      "text": "All power goes to the CEB. Trade and other receivables were Rs 1.07bn at September 2026, up Rs 200mn in six months, against half-year revenue of Rs 480mn."
+      "title": "Tax holiday over",
+      "text": "The two solar companies' 10-year BOI tax exemption covered 2025/26 (effective tax 3%). From 2026/27 their profit is taxed at 30%: first-half tax was 20% of profit before tax."
     },
     {
-      "title": "Contracts running down",
-      "text": "The annual report gives about ten years left on the two solar companies' power purchase contracts. Net debt is about Rs 1.55bn. No dividend for 2025/26."
+      "title": "Money with the parent",
+      "text": "LAUGFS Holdings owed the company Rs 521mn at March 2026 (Rs 563mn a year earlier), more than the CEB's Rs 204mn of trade receivables. Total receivables rose to Rs 1.07bn by September; the interim doesn't split them."
+    },
+    {
+      "title": "Growth plans cut back",
+      "text": "The 2 MW Pams hydro plant was finished, but the report's own plan table marks the 10 MW Hambantota solar expansion and the 50 MW Mannar wind project as cancelled (only Phase 1, 1.4 MW DC, was added). No capital commitments at March 2026."
     }
   ],
   "history": {
@@ -208,9 +219,9 @@
           "Loss",
           "Loss",
           null,
-          null,
+          "Includes one-off tariff billing",
           "Rs 1.40 from impairment reversal",
-          "Trailing, includes the reversal"
+          "Last 12 months, includes the reversal"
         ]
       },
       {
@@ -219,19 +230,19 @@
         "unit": "%",
         "values": [
           null,
-          -6,
-          3,
-          12,
-          19,
+          -5.7,
+          2.7,
+          11.9,
+          18.7,
           null
         ],
         "notes": [
           null,
           null,
           null,
-          null,
-          "Reversal; underlying negative",
-          null
+          "One-off billing",
+          "Reversal; underlying about −3%",
+          "About 4% underlying"
         ]
       },
       {
@@ -261,164 +272,656 @@
     {
       "method": "NAV",
       "value": "Rs 7.17",
-      "reading": "The price is 1.44x NAV. Book value rests on the company's own valuation of plants with about ten years of contracts left."
+      "reading": "The price is 1.42x NAV. Book value rests on plants with about ten years of solar contracts left; the company's own valuation (15.3–16.3% discount rates) supports roughly book."
     },
     {
       "method": "Return on equity",
-      "value": "Low",
-      "reading": "Underlying profit was about nil over the last year; the reported 19% came from a write-back."
+      "value": "About 4%",
+      "reading": "Far below the 15.7% cost of equity, so each rupee of book earns too little to be worth a rupee."
     },
     {
       "method": "P/E",
-      "value": "Not meaningful",
-      "reading": "Trailing EPS Rs 1.36 is almost entirely the Rs 544mn reversal (Rs 1.40 a share)."
+      "value": "Rs 1.05–2.40",
+      "reading": "Next year's EPS Rs 0.18 / 0.28 / 0.38 at a justified P/E of about 6."
     },
     {
       "method": "Dividends",
       "value": "None",
-      "reading": "No dividend for 2025/26."
+      "reading": "No dividend for 2025/26 or so far this year, so a dividend model can't be used."
     },
     {
       "method": "Cash flow",
-      "value": "EBITDA ~Rs 650mn a year",
-      "reading": "Based on the first half; about Rs 520mn a year after tax and upkeep, falling to little when the solar contracts end."
+      "value": "Rs 0.01–6.69",
+      "reading": "Cash before interest of Rs 0.20–0.43bn a year to about 2036, then shrinking, at WACC, less Rs 1.55bn net debt, plus the money owed by the parent."
     }
   ],
   "models": [
     {
-      "id": "dcf",
-      "name": "Cash-flow DCF (contract life)",
-      "bear": 2.3,
-      "base": 4.6,
-      "bull": 6.6,
-      "weighted": 4.3,
-      "comment": "Free cash flow of Rs 430 / 520 / 600mn a year for ten years at 17% / 15% / 13.5%, a small hydro tail, plus overdue CEB receivables, less Rs 1.55bn net debt."
+      "id": "sotp",
+      "name": "Whole-company DCF (WACC, less net debt) + money owed by the parent",
+      "bear": 0.01,
+      "base": 3.2,
+      "bull": 6.69,
+      "weighted": 2.94,
+      "comment": "Cash before interest after tax and maintenance capex of Rs 0.20 / 0.33 / 0.43bn (EBITDA about Rs 450 / 520 / 600mn, less tax at 30% on operating profit, less maintenance Rs 200 / 120 / 80mn), after-tax operating profit Rs 0.11 / 0.16 / 0.22bn, changing −1% / 0% / 1% a year for ten years while the solar contracts run, then −5% / −3% / +1% a year (lower tariffs after the contracts, ageing plants; the bull assumes contracts renewed or the plants repowered), at a 12% return on new capital, discounted at WACC 14.6% / 13.5% / 12.5% (scripts/reinvestment.py). Firm value Rs 1.30 / 2.37 / 3.62bn; 21–34% of it comes after year 10. Less net debt Rs 1.55bn (30 September 2026): Rs −0.66 / 2.12 / 5.34 a share. Plus Rs 0.521bn owed by LAUGFS Holdings at 50% / 80% / 100% (Rs 0.67 / 1.08 / 1.35). The shrinking long run in the bear and base frees a little capital in the formula (growth ÷ return on capital), which slightly flatters them."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 1.05,
+      "base": 1.78,
+      "bull": 2.4,
+      "weighted": 1.69,
+      "comment": "EPS for the year to March 2027 of Rs 0.18 / 0.28 / 0.38 times a justified forward P/E of 5.8 / 6.4 / 6.3 at the cost of equity (17.2 / 15.7 / 14.2%), with ROE 3 / 4 / 6% and long-run growth 0 / 0 / 1%. First-half EPS was Rs 0.23; the second half is the weak season (2025/26's second half lost money before the reversal) and now carries 30% tax. The base is 76% below the Rs 1.19 'run-rate', which is the reversal year; the Rs 0.68 'latest quarter × 4' is the monsoon peak quarter."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 1.25,
+      "base": 1.83,
+      "bull": 2.72,
+      "weighted": 1.83,
+      "comment": "Book value Rs 7.17 (30 September 2026) × (ROE − growth) ÷ (cost of equity − growth): ROE 3 / 4 / 6%, growth 0 / 0 / 1%, cost of equity 17.2 / 15.7 / 14.2%. An ROE far below the 15.7% cost of equity is outside the normal range, and right here: the plants earn fixed tariffs with high depreciation and finance costs."
     },
     {
       "id": "nav",
       "name": "NAV multiple",
-      "bear": 4.3,
-      "base": 5.7,
-      "bull": 7.2,
-      "weighted": 5.6,
-      "comment": "0.6 / 0.8 / 1.0 times NAV of Rs 7.17, because the plants are wasting assets with low returns."
+      "bear": 3.59,
+      "base": 5.02,
+      "bull": 6.45,
+      "weighted": 4.88,
+      "comment": "0.5 / 0.7 / 0.9 times NAV of Rs 7.17. Book value is close to the company's own DCF of its plants (Rs 6.51 a share at parent level, using 15.3–16.3% discount rates), but the plants are wasting assets earning about 4% on equity."
     }
   ],
-  "modelsNote": "A power producer with fixed-life contracts suits a cash-flow DCF. With underlying earnings near nil and no dividend, P/E, dividend and residual-income methods don't apply, so NAV is used as a cross-check.",
+  "modelsNote": "A small contracted power producer suits a whole-company DCF over the remaining contract life (ten growth years instead of five, because the solar contracts run about ten more years), plus the Rs 0.52bn owed by the parent. P/E and justified price to book use the cost of equity and show how little the low underlying ROE is worth; NAV is a cross-check. No dividend is paid, so there is no dividend model. Growth check: assumed −1% / 0% / 1% against −5.2% supported (reinvestment rate −757% × return on capital 0.7%, FY2026); the supported figure comes from a year with only Rs 31mn underlying operating profit and Rs 187mn of receivables collected, so it isn't a fair guide; fixed tariffs, a full year of the new Pams hydro plant and Phase 2 at Hambantota justify flat output, with the bull's 1% needing Phase 2 to be built.",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Free cash flow a year",
-        "bear": "Rs 430mn",
+        "label": "EBITDA a year",
+        "bear": "Rs 450mn",
         "base": "Rs 520mn",
         "bull": "Rs 600mn"
       },
       {
-        "label": "Discount rate",
-        "bear": "17%",
-        "base": "15%",
-        "bull": "13.5%"
+        "label": "Maintenance capex",
+        "bear": "Rs 200mn",
+        "base": "Rs 120mn",
+        "bull": "Rs 80mn"
       },
       {
-        "label": "Hydro after the solar contracts (years 11–20)",
-        "bear": "Rs 50mn a year",
-        "base": "Rs 100mn a year",
-        "bull": "Rs 100mn a year"
+        "label": "Cash before interest after maintenance (start)",
+        "bear": "Rs 0.20bn",
+        "base": "Rs 0.33bn",
+        "bull": "Rs 0.43bn"
       },
       {
-        "label": "Overdue CEB receivables counted",
-        "bear": "Rs 0.40bn",
-        "base": "Rs 0.60bn",
-        "bull": "Rs 0.75bn"
+        "label": "Growth, contract years 1–10 / after",
+        "bear": "−1% / −5%",
+        "base": "0% / −3%",
+        "bull": "1% / 1%"
+      },
+      {
+        "label": "WACC / cost of equity",
+        "bear": "14.6% / 17.2%",
+        "base": "13.5% / 15.7%",
+        "bull": "12.5% / 14.2%"
+      },
+      {
+        "label": "Money owed by parent counted",
+        "bear": "50%",
+        "base": "80%",
+        "bull": "100%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "Rs 0.18 × 5.8",
+        "base": "Rs 0.28 × 6.4",
+        "bull": "Rs 0.38 × 6.3"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "3%",
+        "base": "4%",
+        "bull": "6%"
       },
       {
         "label": "Price to NAV",
-        "bear": "0.6x",
-        "base": "0.8x",
-        "bull": "1.0x"
+        "bear": "0.5x",
+        "base": "0.7x",
+        "bull": "0.9x"
       }
     ],
     "averages": {
-      "bear": 3.3,
-      "base": 5.2,
-      "bull": 6.9
+      "bear": 1.48,
+      "base": 2.96,
+      "bull": 4.57
     },
-    "common": "Net debt Rs 1.55bn at September 2026. 387 million shares (335 million voting, 52 million non-voting), valued the same. The company's own plant valuations use 15.3–16.3% discount rates."
+    "common": "Net debt Rs 1.55bn and NAV Rs 7.17 at 30 September 2026. 387.0 million shares (335.0mn voting, 52.0mn non-voting), valued the same. Price Rs 10.20 (CSE close 19 Nov 2026). Solar contracts have about ten years left (note 7.1.6); the Pams hydro contract runs 20 years. Solar profit is taxed at 30% from 2026/27."
   },
   "sensitivity": {
-    "title": "DCF, Rs per share",
-    "rowLabel": "Discount rate",
-    "columnLabel": "Free cash flow a year",
+    "title": "Whole-company DCF + parent receivable, Rs per share",
+    "rowLabel": "WACC",
+    "columnLabel": "Cash before interest after maintenance (start)",
     "rows": [
+      "12.5%",
       "13.5%",
-      "15%",
-      "17%"
+      "14.6%"
     ],
     "columns": [
-      "Rs 430mn",
-      "Rs 520mn",
-      "Rs 600mn"
+      "Rs 0.25bn",
+      "Rs 0.33bn",
+      "Rs 0.41bn"
     ],
     "values": [
       [
-        3.8,
-        5.1,
-        6.2
+        2.05,
+        3.64,
+        5.23
       ],
       [
-        3.4,
-        4.6,
-        5.6
+        1.71,
+        3.2,
+        4.68
       ],
       [
-        3.0,
-        4.1,
-        5.0
+        1.39,
+        2.77,
+        4.15
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Rs 10.30 would need much more cash flow, or contracts extended well beyond their current terms."
+    "note": "Base-case growth (0% then −3%), parent receivable at 80%. Rs 10.20 would need cash of about Rs 0.8bn a year, roughly double the best year, or contracts extended well beyond their terms."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 5.0
+        "maxPrice": 2.83
       },
       {
         "shares": 150,
-        "maxPrice": 4.25
+        "maxPrice": 2.41
       },
       {
         "shares": 150,
-        "maxPrice": 3.75
+        "maxPrice": 2.13
       }
     ],
-    "averagePrice": 4.4,
-    "totalCost": 2200,
-    "note": "About Rs 2,200 in total, against Rs 5,150 at Rs 10.30.",
-    "realism": "Rs 4.25 needs a fall of about 59%. The voting share's low in the last year was about Rs 10 and it was last below Rs 5 around 2020, so this isn't likely soon."
+    "averagePrice": 2.49,
+    "totalCost": 1247,
+    "note": "About Rs 1,250 in total, against Rs 5,100 at Rs 10.20.",
+    "realism": "Rs 2.41 needs a fall of about 76%. The voting share hasn't traded below Rs 10.00 since 2024/25 (its low in that year was Rs 8.40, in April 2024), so the buy price isn't realistic soon. The non-voting share (Rs 8.30) has the same claim on profits and is 19% cheaper, but still far above the buy price."
   },
   "changeMyView": {
     "higher": [
-      "Contracts extended or renewed at good tariffs.",
-      "The CEB paying its overdue bills.",
-      "New plants added at good returns.",
-      "Hydro output staying at this year's higher level."
+      "The parent repaying the Rs 521mn it owes, or paying it out as a dividend.",
+      "Solar contracts extended at good tariffs, or the plants repowered on new contracts.",
+      "Phase 2 of the Hambantota expansion built and earning well.",
+      "Underlying ROE rising towards 10% with the new hydro plant."
     ],
     "lower": [
-      "Generation falling further (it fell 14% last year).",
-      "The CEB paying even later or cutting tariffs.",
-      "Another impairment once the contracts get closer to ending.",
-      "Money lent to or tied up with LAUGFS group companies."
+      "More money lent to LAUGFS group companies.",
+      "Lower output or tariff cuts by the CEB, or slower CEB payments.",
+      "Another impairment as the contracts near their end.",
+      "Higher interest rates on its floating-rate loans (AWPLR + 1–2%)."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim reports are scanned images read by text recognition, so check any figure that matters. The price is the last traded price at 30 September 2026; check it live. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim report to 30 September 2026 (a scanned document read from its page images, so check any figure that matters), with earlier years from the five-year summary. The price is the CSE close of 19 November 2026. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) owns solar plants at Hambantota and Embilipitiya and small hydro plants, selling all its power to the Ceylon Electricity Board (CEB). Its reported profit of Rs 461mn for the year to March 2026 (EPS Rs 1.19) came almost entirely from reversing Rs 544mn of earlier impairments; without that it lost money, as generation fell 14%. The six months to September 2026 were better: revenue up 17% and profit Rs 87mn (EPS Rs 0.23), helped by the hydro plants. But the main solar contracts have only about ten years left, the CEB owes it about Rs 1.07bn, and it pays no dividend. At Rs 10.30 (voting, 30 September; check the live price) the share is 1.4x its NAV of Rs 7.17. A cash-flow valuation of the remaining contracts and a NAV check put fair value at about Rs 5.00, so the price is about double that. I'd buy at up to about Rs 4.25 and treat under Rs 3.75 as a strong buy.\n\nPrice and key figures\nPrice: Rs 10.30 voting, Rs 8.80 non-voting (last traded, 30 September 2026). Please check them live. In July–September 2026 the voting share traded between Rs 10.00 and Rs 11.60; a year earlier it was Rs 15.80.\nSix months to 30 September 2026 (unaudited): revenue Rs 480mn (up 17%), operating profit Rs 184mn (Rs 99mn), profit Rs 87mn (Rs 23mn), EPS Rs 0.23 (Rs 0.06). Hydro revenue Rs 91mn (Rs 22mn), solar Rs 389mn (Rs 387mn). EBITDA about Rs 328mn.\nYear to March 2026 (audited): revenue Rs 765mn (down 15%), generation 35.2 GWh (down 14%), profit Rs 461mn including a Rs 544mn impairment reversal, EPS Rs 1.19. Without the reversal, a loss of about Rs 84mn.\nNAV Rs 7.17 a share (September 2026). Net debt about Rs 1.55bn. 387 million shares. LAUGFS Holdings owns 74% of the voting shares.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nCash-flow DCF | 2.3 | 4.6 | 6.6 | 4.3\nNAV multiple | 4.3 | 5.7 | 7.2 | 5.6\nAverage | 3.3 | 5.2 | 6.9 | 5.0\nFair value about Rs 5.00 (30% bear, 50% base, 20% bull). Buy at up to Rs 4.25 (15% below); strong buy under Rs 3.75 (25% below).\n\nAssumptions\nFree cash flow (EBITDA less tax and upkeep) of Rs 430 / 520 / 600mn a year for the roughly ten years left on the solar contracts, discounted at 17% / 15% / 13.5%. The hydro plants add Rs 50 / 100 / 100mn a year for years 11–20. Overdue CEB receivables count for Rs 0.40 / 0.60 / 0.75bn. NAV cross-check at 0.6 / 0.8 / 1.0 times.\n\nWhat stands out\n- Last year's profit was an accounting write-back, not cash.\n- The plants are wasting assets: once the contracts end, tariffs and output after that are unknown.\n- The CEB owes it more than a year's revenue.\n- Debt is moderate (net debt about half of equity).\n\n500-share plan\n200 shares up to Rs 5.00, 150 up to Rs 4.25, 150 up to Rs 3.75: average about Rs 4.40, about Rs 2,200 in total. Rs 4.25 needs a fall of about 59%, so it isn't likely soon.\n\nWhat would change my view\nHigher: contracts extended at good tariffs, the CEB paying up, new plants at good returns, hydro output staying high.\nLower: falling generation, later CEB payments or tariff cuts, another impairment, money tied up with group companies.\n\nBusiness tests: 1 of 4 passed (debt): avoid for now."
+  "fullText": "Summary: LAUGFS Power PLC (LPL.N0000 voting, LPL.X0000 non-voting) sells all its power to the CEB from about 26 MW of solar (Hambantota, Embilipitiya) and mini hydro plants. Last year's Rs 461mn profit (EPS Rs 1.19) came from a Rs 544mn write-back of earlier impairments; without it the group made almost nothing. The first half of 2026/27 was better (profit Rs 87mn, EPS Rs 0.23) thanks to the new 2 MW Pams hydro plant, but underlying return on equity is only about 4%, the solar tax holiday has ended, the solar contracts end in about ten years and the parent owes the company Rs 521mn. No dividend. At Rs 10.20 the share is 1.4x NAV of Rs 7.17. Fair value about Rs 2.83 (was Rs 5.00): buy at up to Rs 2.41, strong buy under Rs 2.13. Business tests: 1 of 4, category 3 (avoid for now), unchanged.\n\nPrice and key figures\nPrice Rs 10.20 voting, Rs 8.30 non-voting (CSE close, 19 November 2026). Market cap about Rs 3.85bn; net debt Rs 1.55bn; EV about Rs 5.40bn, 13.8x last-12-months underlying EBITDA of Rs 0.39bn.\nSix months to 30 September 2026 (unaudited): revenue Rs 480mn (up 17%), operating profit Rs 184mn (Rs 99mn), profit Rs 87mn (Rs 23mn), EPS Rs 0.23 (Rs 0.06). Hydro revenue Rs 91mn (Rs 22mn), solar Rs 389mn (Rs 387mn). Cash from operations Rs 253mn; capex Rs 67mn.\nYear to March 2026 (audited): revenue Rs 765mn, generation 35.2 GWh (down 14%), operating profit Rs 31mn before the Rs 544mn reversal, profit Rs 461mn, EPS Rs 1.19. Effective tax 3% (BOI holiday); 30% from now on.\nNAV Rs 7.17 a share. LAUGFS Holdings owns 74.0% of the voting shares and owed the company Rs 521mn at March.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nWhole-company DCF + parent receivable | 0.01 | 3.20 | 6.69 | 2.94\nP/E | 1.05 | 1.78 | 2.40 | 1.69\nJustified price to book | 1.25 | 1.83 | 2.72 | 1.83\nNAV multiple | 3.59 | 5.02 | 6.45 | 4.88\nAverage | 1.48 | 2.96 | 4.57 | 2.83\nFair value Rs 2.83 (30% bear, 50% base, 20% bull). Buy at up to Rs 2.41 (15% below); strong buy under Rs 2.13 (25% below).\n\nRequired return\nBeta 0.73 (renewable-energy sector beta relevered for LPL's debt; no local betas). Cost of equity 15.7% (bear 17.2%, bull 14.2%); cost of debt 8.3%; WACC 13.5% (14.6% / 12.5%).\n\nAssumptions\nDCF: EBITDA Rs 450 / 520 / 600mn a year, less 30% tax on operating profit and maintenance capex of Rs 200 / 120 / 80mn, gives cash of Rs 0.20 / 0.33 / 0.43bn; −1% / 0% / +1% a year for the ten contract years, then −5% / −3% / +1%. Maintenance is below depreciation (Rs 261mn) because solar panels aren't replaced during the contracts and repairs (Rs 62mn) are already expensed; that's outside the usual 0.8–1.3x range and is explained here. The parent's Rs 521mn debt counts at 50% / 80% / 100%.\nP/E: EPS Rs 0.18 / 0.28 / 0.38 for 2026/27 at justified P/Es of about 6. Price to book: ROE 3 / 4 / 6%. NAV: 0.5 / 0.7 / 0.9x.\nGrowth check: the calculator's supported growth is −5.2% from 2025/26, a year with almost no operating profit and a working-capital release; flat output on fixed tariffs is assumed instead.\nEarnings check: the base EPS is far below the 'run-rate' because that is the reversal year (Rs 1.19) or the monsoon-peak quarter × 4 (Rs 0.68).\n\nWhat stands out\n- Last year's profit was an accounting write-back; underlying returns are about 4%.\n- The parent owes the company Rs 521mn, more than the CEB does; nothing comes back as dividends.\n- The tax holiday has ended, so profit after tax will be lower for the same output.\n- The plan table cancels the 10 MW Hambantota expansion and the 50 MW Mannar wind project.\n- Debt is moderate against equity (0.56x) but about 4x EBITDA.\n\nManagement and plans\nManagement promises better output from existing plants, Phase 2 at Hambantota, storage studies, a possible merger of other LAUGFS renewable companies and a move into MEP contracting. Delivered: the Pams hydro plant. Missed: the 10 MW Hambantota expansion and the Mannar wind project; finance costs rose 16% in the first half.\n\nShareholders\nLAUGFS Holdings 74.0% of voting shares; EPF 12.3%. Almas Holdings sold about 0.6m voting and 0.9m non-voting shares in the half. 8,706 public holders.\n\n500-share plan\n200 shares up to Rs 2.83, 150 up to Rs 2.41, 150 up to Rs 2.13: average about Rs 2.49, about Rs 1,250 in total. Rs 2.41 needs a 76% fall; the voting share's lowest price since April 2024 is Rs 10.00.\n\nWhat would change my view\nHigher: the parent repaying or paying out its debt, contracts extended or plants repowered, Phase 2 earning well, ROE towards 10%.\nLower: more lending to the group, lower output or tariffs, another impairment, higher loan rates.\n\nBusiness tests: 1 of 4 passed (debt): avoid for now (category 3, unchanged).",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 17.2,
+      "base": 15.7,
+      "bull": 14.2
+    },
+    "wacc": {
+      "bear": 14.6,
+      "base": 13.5,
+      "bull": 12.5
+    },
+    "debtWeight": 28.2,
+    "shares": 387.0,
+    "netDebt": 1.55,
+    "dcf": {
+      "years": 10,
+      "bear": {
+        "start": 0.2,
+        "nopat": 0.11,
+        "growth": -1,
+        "longRun": -5,
+        "roc": 12,
+        "maintenance": 0.2
+      },
+      "base": {
+        "start": 0.33,
+        "nopat": 0.16,
+        "growth": 0,
+        "longRun": -3,
+        "roc": 12,
+        "maintenance": 0.12
+      },
+      "bull": {
+        "start": 0.43,
+        "nopat": 0.22,
+        "growth": 1,
+        "longRun": 1,
+        "roc": 12,
+        "maintenance": 0.08
+      },
+      "addOn": {
+        "bear": 0.67,
+        "base": 1.08,
+        "bull": 1.35
+      },
+      "addOnNote": "Rs 0.521bn owed by the parent, LAUGFS Holdings (31 March 2026), counted at 50% / 80% / 100%: Rs 0.67 / 1.08 / 1.35 a share"
+    },
+    "pe": {
+      "bear": {
+        "eps": 0.18,
+        "roe": 3,
+        "longRun": 0
+      },
+      "base": {
+        "eps": 0.28,
+        "roe": 4,
+        "longRun": 0
+      },
+      "bull": {
+        "eps": 0.38,
+        "roe": 6,
+        "longRun": 1
+      }
+    },
+    "pb": {
+      "book": 7.17,
+      "bear": {
+        "roe": 3,
+        "longRun": 0
+      },
+      "base": {
+        "roe": 4,
+        "longRun": 0
+      },
+      "bull": {
+        "roe": 6,
+        "longRun": 1
+      }
+    }
+  },
+  "requiredReturn": {
+    "beta": 0.73,
+    "betaBasis": "Provisional. Damodaran's global Green & Renewable Energy unlevered beta 0.57 (January 2026; stand-in, as his emerging-markets file couldn't be opened), relevered at net debt 0.40x market value (Rs 10.20 voting, Rs 8.30 non-voting) with 30% tax: 0.73. No local 5-year betas found. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 17.2,
+      "base": 15.7,
+      "bull": 14.2
+    },
+    "costOfDebt": 8.31,
+    "wacc": {
+      "bear": 14.6,
+      "base": 13.5,
+      "bull": 12.5
+    },
+    "debtWeight": 28.2,
+    "asOf": "2026-11-19",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 0.147bn ÷ average borrowings and leases Rs 1.77bn (Annual Report 2025/26, pp. 109, 134, 140)",
+      "Weights: Rs 3.95bn equity (387mn shares at Rs 10.20, CSE close 19 Nov 2026), net debt Rs 1.55bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.73 × (4.2% + 6.08%) = 15.7%; bear +1.5, bull −1.5 points. Inside the 12–22% range. WACC weights equity 71.8% and debt 28.2% at 8.31% less 3.3% tax (2025/26's effective rate, inside the tax holiday; at 30% tax WACC would be about 0.6 points lower). The calculator values both share classes at the voting price."
+  },
+  "management": {
+    "asOf": "2026-11-19",
+    "source": "Annual Report 2025/26: Group Chairman (pp. 10–11), Group Executive Vice Chairman (pp. 12–13), acting Group MD (pp. 14–15), MD/CEO (pp. 16–18), Review of Operations (p. 43), Manufactured Capital (p. 47), Future Direction (p. 51), notes 7, 12 and 19; progress from Interim to 30 Sep 2026",
+    "takeaway": "Management talks of growth in solar, wind and storage, but its own plan table cancels the two big projects; for now the story is squeezing more from small existing plants, while cash sits with the parent rather than reaching shareholders.",
+    "said": [
+      {
+        "text": "Profit of Rs 461mn was helped by a Rs 544mn impairment reversal; the company itself made a loss of Rs 129mn",
+        "ref": "pp. 13, 17"
+      },
+      {
+        "text": "Generation fell about 15% on weather; finance costs fell 24% to Rs 158mn",
+        "ref": "p. 13"
+      },
+      {
+        "text": "Debt service cover improved to 1.8 times from 1.4; return on capital employed 14.6%",
+        "ref": "pp. 15, 13"
+      },
+      {
+        "text": "The sector faces curtailment, grid limits, slow approvals and changing tariffs",
+        "ref": "pp. 11, 14"
+      },
+      {
+        "text": "Operating fixes have already lifted output at the Iris and Anorchi solar plants",
+        "ref": "p. 17"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Get more output and cash from existing plants and turn losses into profit",
+        "ref": "p. 17"
+      },
+      {
+        "text": "Phase 2 of the Hambantota solar expansion under way (Phase 1 added 1.4 MW DC)",
+        "ref": "pp. 11, 47"
+      },
+      {
+        "text": "Study battery storage and solar-hydro hybrids; pilots in the medium term",
+        "ref": "p. 51"
+      },
+      {
+        "text": "Possibly merge other LAUGFS renewable companies into LAUGFS Power",
+        "ref": "p. 17"
+      },
+      {
+        "text": "Expand into mechanical, electrical and plumbing (MEP) contracting",
+        "ref": "pp. 11, 43"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Capex in 2025/26, mainly finishing the 2 MW Pams hydro plant and Hambantota Phase 1",
+        "amount": "Rs 221mn",
+        "ref": "pp. 46, 124"
+      },
+      {
+        "text": "Capex in the first half of 2026/27",
+        "amount": "Rs 67mn",
+        "ref": "Interim to 30 Sep 2026, p. 6"
+      },
+      {
+        "text": "No capital commitments at 31 March 2026",
+        "amount": null,
+        "ref": "note 19.1, p. 147"
+      },
+      {
+        "text": "Rs 521mn lent to the parent, LAUGFS Holdings (on demand, unsecured)",
+        "amount": "Rs 521mn",
+        "ref": "note 12.2, p. 138"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Commission the 2 MW mini hydro plant by March 2026",
+        "result": "Done: plant transferred into service; hydro revenue Rs 91mn in the first half against Rs 22mn (Interim to 30 Sep 2026, p. 12)",
+        "status": "done",
+        "ref": "pp. 47, 51"
+      },
+      {
+        "promise": "Commission the 10 MW Hambantota solar expansion by March 2026",
+        "result": "Only Phase 1 (1.4 MW DC) was added; the plan table now marks the project cancelled, though the Chairman says Phase 2 is under way",
+        "status": "missed",
+        "ref": "pp. 11, 47, 51"
+      },
+      {
+        "promise": "Secure approvals for the 50 MW Mannar wind project",
+        "result": "Marked cancelled in the plan table",
+        "status": "missed",
+        "ref": "p. 51"
+      },
+      {
+        "promise": "Reverse losses into profits and improve cash generation",
+        "result": "First-half profit Rs 87mn (Rs 23mn); cash from operations Rs 253mn (Rs 267mn)",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, pp. 2, 6"
+      },
+      {
+        "promise": "Reduce financing costs",
+        "result": "First-half finance cost Rs 99mn, up 16% from Rs 85mn",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      },
+      {
+        "promise": "Battery storage feasibility studies and pilots",
+        "result": "No figures yet",
+        "status": "too-early",
+        "ref": "p. 51"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-03-31",
+    "source": "Interim to 30 Sep 2026, share information (pp. 14–16), voting shares, against the twenty largest voting shareholders at 31 March 2026 (Annual Report 2025/26, p. 158).",
+    "takeaway": "LAUGFS Holdings controls the company with 74.0% of the voting shares (64% of all shares); the EPF holds 12.3% of voting and 24.4% of non-voting shares and didn't trade in the half. Almas Holdings trimmed: about 0.60m voting shares directly and 0.87m non-voting through HNB (15.70m to 14.83m).",
+    "groups": [
+      {
+        "name": "LAUGFS Holdings",
+        "pct": 74.02
+      },
+      {
+        "name": "Employees' Provident Fund",
+        "pct": 12.34
+      },
+      {
+        "name": "Directors",
+        "pct": 0.42
+      },
+      {
+        "name": "Other public",
+        "pct": 13.22
+      }
+    ],
+    "publicFloat": 25.55,
+    "publicHolders": 8706,
+    "publicHoldersPrev": 8617,
+    "directors": [
+      {
+        "name": "Mr. W.K.H. Wegapitiya (Chairman)",
+        "shares": 1411536
+      },
+      {
+        "name": "Mr. P.M.B. Fernando",
+        "shares": 100
+      },
+      {
+        "name": "Mr. A.R. De Zilva (CEO)",
+        "shares": 0
+      },
+      {
+        "name": "Mr. K.R. Goonesinghe",
+        "shares": 0
+      },
+      {
+        "name": "Prof. S.P.P. Amaratunga",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M.A. Wegapitiya",
+        "shares": 0
+      },
+      {
+        "name": "Mr. P.D.H. Muthukumarana",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "LAUGFS HOLDINGS LTD",
+        "shares": 247980050,
+        "pct": 74.02,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "EMPLOYEES' PROVIDENT FUND",
+        "shares": 41331967,
+        "pct": 12.34,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "PEOPLE'S LEASING AND FINANCE PLC/SUHADA GAS DISTRIBUTORS (PVT) LTD",
+        "shares": 11379894,
+        "pct": 3.4,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "ALMAS HOLDINGS (PRIVATE) LIMITED",
+        "shares": 5947601,
+        "pct": 1.78,
+        "change": -602713,
+        "new": false,
+        "note": "Also held 625,068 through Hatton National Bank PLC/Almas Holdings in March; that account is no longer in the top 30"
+      },
+      {
+        "name": "MR. W.K.H. WEGAPITIYA",
+        "shares": 1411536,
+        "pct": 0.42,
+        "change": 0,
+        "new": false,
+        "note": "Chairman"
+      },
+      {
+        "name": "MR. W.A.S.P. DE SARAM",
+        "shares": 1149329,
+        "pct": 0.34,
+        "change": 517443,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "ASSETLINE FINANCE PLC/SUHADA GAS DISTRIBUTORS (PVT) LTD",
+        "shares": 845698,
+        "pct": 0.25,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. G.Y.N. MAHINKANDA",
+        "shares": 814575,
+        "pct": 0.24,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "DIALOG FINANCE PLC/S.A. DE SILVA AND D.R. DE SILVA",
+        "shares": 660743,
+        "pct": 0.2,
+        "change": 317812,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "SENKADAGALA FINANCE PLC/S. GOBINATH",
+        "shares": 466000,
+        "pct": 0.14,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "PEOPLE'S LEASING & FINANCE PLC/DR. H.S.D. SOYSA & MRS. G. SOYSA",
+        "shares": 425298,
+        "pct": 0.13,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MACKSONS HOLDINGS (PVT) LTD",
+        "shares": 414625,
+        "pct": 0.12,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "SENKADAGALA FINANCE PLC",
+        "shares": 393898,
+        "pct": 0.12,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. D.S.R. DARANAKUMBURA",
+        "shares": 340930,
+        "pct": 0.1,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. V. JEEVARATNAM",
+        "shares": 324090,
+        "pct": 0.1,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "MR. W.A.S.P. DE SARAM & MRS. W.A.N.M. DE SERAM",
+        "shares": 282209,
+        "pct": 0.08,
+        "change": null,
+        "new": true,
+        "note": "Joint account; Mr De Saram's own holding is listed separately"
+      },
+      {
+        "name": "MR. W.G.M.J. BRITO",
+        "shares": 250590,
+        "pct": 0.07,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "THREAD CAPITAL (PRIVATE) LIMITED",
+        "shares": 213857,
+        "pct": 0.06,
+        "change": -16243,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. M.D.S. GOONATILLEKE",
+        "shares": 211126,
+        "pct": 0.06,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "MR. C.P.C.C.S. PEIRIS",
+        "shares": 202291,
+        "pct": 0.06,
+        "change": 0,
+        "new": false,
+        "note": null
+      }
+    ],
+    "gone": [
+      {
+        "name": "HATTON NATIONAL BANK PLC/ALMAS HOLDINGS (PRIVATE) LIMITED",
+        "prevShares": 625068
+      },
+      {
+        "name": "MRS. H.N.R. BHARATI",
+        "prevShares": 269993
+      },
+      {
+        "name": "DR. A.R.S. FERNANDO",
+        "prevShares": 220000
+      }
+    ]
+  }
 }
