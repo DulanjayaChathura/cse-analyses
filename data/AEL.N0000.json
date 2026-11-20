@@ -12,32 +12,99 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-09",
+  "analysisDate": "2026-11-20",
   "resultsCovered": {
-    "label": "Three months to 30 June 2026",
-    "periodEnd": "2026-06-30",
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+      "Annual Report 2025/26 (audited, year to 31 March 2026)",
+      "Interim report to 30 June 2026",
+      "Interim report to 30 September 2026",
+      "Earlier figures from the research record (Annual Report 2024/25, interim to 31 Dec 2025)"
     ]
   },
   "price": {
-    "value": 78.8,
-    "date": "2026-11-06",
+    "value": 83.3,
+    "date": "2026-11-20",
     "source": "CSE closing price",
-    "note": "April–June 2026 range Rs 66.90–79.50; Rs 34.80 in April 2025."
+    "note": "Rs 74.00–80.60 in the September quarter and Rs 66.90–79.50 in the June quarter; Rs 34.80 in April 2025."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Profits are rising fast, but much of it is one-off Marina Square flat sales and revaluation gains",
-    "text": "Access Engineering PLC (AEL.N0000) has grown into a construction, vehicle, property and condominium group, and profits are rising fast: the first quarter of this year was up 78%. But at Rs 78.80 the share trades at 1.9x its NAV of Rs 41.95 and 13.4x earnings once a one-off property revaluation gain is taken out. Much of the near-term profit is the one-time sale of flats at Marina Square, and the group's normal return on equity is only about 13%, below what a Sri Lankan investor should demand. Counting the Marina Square profit still to come, the methods put fair value at about Rs 47, so the price is about 68% above it. I'd buy at up to about Rs 40 and treat under Rs 35 as a strong buy."
+    "headline": "Record profits, but mostly one-off Marina Square flat sales: the share prices in far more than the group normally earns",
+    "text": "Access Engineering's profit to owners more than doubled to Rs 5.79bn (EPS Rs 5.79) in the six months to September 2026, and the September quarter alone made Rs 4.08 a share. Almost half of it is Marina Square, the 1,088-flat harbour-front development now being handed over, which is sold once; a further Rs 0.44bn is a one-time tax credit. Without them the group earns about Rs 5.1 a share a year, around 9–11% on its equity, well below the 18.6% a shareholder should now demand (beta about 1.0 on Sri Lanka's current risk figures). Debt is high at Rs 39.5bn (0.85x equity) and the business turned little profit into cash over the last two years.\n\nCounting the Marina Square profit still to come (about Rs 9.6 a share in the base case) on top of NAV of Rs 46.70, the three methods give a fair value of about **Rs 34**, against a price of Rs 83.30. I'd buy at up to about **Rs 29** and treat under **Rs 26** as a strong buy. The fair value is lower than the Rs 47 of 9 November mainly because the required return is now worked out from beta (18.6% against 16.5% before) and the methods are tied to book value plus Marina Square. The business tests still fail on returns, one-offs and cash, so it stays in category 3 (avoid for now)."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "assessed": "2026-11-20",
+    "reason": "Debt is within the limit, but normal returns are below 15%, recent profit leans on one-offs, and profit hasn't turned into cash.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 12% normal",
+        "note": "Reported 16.7%, 7.6%, 17.9%, 14.7%, 18.1% over 2021/22–2025/26, but 2023/24 had a tax credit and 2025/26 a Rs 4.01bn revaluation gain (about 12.6% without it). The last 12 months' 24% is mostly Marina Square flat sales."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.85x equity",
+        "note": "Net debt Rs 39.52bn against owners' equity Rs 46.70bn (Sep 2026), up from Rs 25.2bn in March 2025. About 3.5x EBITDA without revaluation gains, above the usual 3x comfort level; should fall as flat buyers pay up."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Profit every year, but one-offs",
+        "note": "No loss in five years, but each recent year relies on something that won't repeat: a tax credit (2023/24), revaluation gains (2025/26), Marina Square sales and a Rs 0.74bn tax credit (2026/27)."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Negative over two years",
+        "note": "Operating cash −Rs 1.26bn and +Rs 0.60bn in 2024/25 and 2025/26 against profit of Rs 13.5bn, as Marina Square and vehicle stock were built; Rs 2.0bn of dividends a year were paid from borrowing. H1 2026/27 cash was Rs 2.75bn as stock fell."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.01,
+    "betaBasis": "Provisional. Segments weighted by H1 2026/27 operating profit: property 48% (Real Estate Development 0.56), construction 26% (Engineering/Construction global 0.76), vehicles 25% (Auto & Truck global 1.15), renewables 2% (0.57): unlevered 0.76, relevered at net debt 0.47x market value: 1.01. Damodaran's emerging-markets file and local betas couldn't be reached from this run. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 20.1,
+      "base": 18.6,
+      "bull": 17.1
+    },
+    "costOfDebt": 8.1,
+    "wacc": {
+      "bear": 15.4,
+      "base": 14.4,
+      "bull": 13.3
+    },
+    "debtWeight": 32.2,
+    "asOf": "2026-11-20",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Sector betas: Damodaran, web-search extracts (Engineering/Construction global 0.76, date not shown; Real Estate (Development) US 0.56 and Auto & Truck global 1.15, January 2026; Green & Renewable Energy global 0.57)",
+      "Cost of debt: interest paid Rs 2.85bn ÷ average borrowings and leases (Annual Report 2025/26, pp. 266, 268)",
+      "Weights: market cap Rs 83.3bn at Rs 83.30 (CSE close 20 Nov 2026), net debt Rs 39.52bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity 8.24% + 1.01 × (4.2% + 6.08%) = 18.6%, ±1.5 points for bear and bull. The cost of debt (8.1%) is about 4 points below the bond yield because most borrowing is bank loans priced off falling lending rates in 2025/26; it is the interest actually paid. Tax 32.9% is the 2025/26 effective rate. WACC is used only in the DCF cross-check."
   },
   "valuation": {
-    "fairValue": 47.0,
-    "buyPrice": 40.0,
-    "strongBuyPrice": 35.3,
+    "fairValue": 34.26,
+    "buyPrice": 29.12,
+    "strongBuyPrice": 25.7,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -47,95 +114,104 @@
       "base": 50,
       "bull": 20
     },
-    "nav": 41.95,
-    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 1.1x NAV). Each method includes the Marina Square profit still to come."
+    "nav": 46.7,
+    "note": "Average of three methods (adjusted NAV, justified price to book, residual income), each with the Marina Square profit still to come; bear/base/bull weighted 30/50/20."
   },
   "dividend": {
     "perShare": 2.0,
     "label": "for 2025/26",
-    "source": "Annual Report 2025/26, p. 57",
-    "note": "Rs 1.00 in Jan 2026 and Rs 1.00 declared 17 Jun 2026"
+    "source": "Annual Report 2025/26, p. 265",
+    "note": "Rs 1.00 interim (January 2026) and Rs 1.00 final (paid in the June 2026 quarter)"
   },
   "keyMetrics": [
     {
       "id": "nav",
       "label": "NAV per share",
-      "value": 41.95,
+      "value": 46.7,
       "unit": "Rs",
-      "note": "30 Jun 2026"
+      "note": "30 Sep 2026"
     },
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 1.9,
-      "unit": "x"
+      "value": 1.78,
+      "unit": "x",
+      "note": "At Rs 83.30"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 13.4,
+      "value": 8.0,
       "unit": "x",
-      "note": "Without the revaluation gain; 9.9x reported"
+      "note": "EPS Rs 10.42 (12 months to Sep 2026); about 16x on recurring EPS of about Rs 5.1"
     },
     {
       "id": "roe",
       "label": "Return on equity",
-      "value": 12.6,
+      "value": 12,
       "unit": "%",
-      "note": "2025/26 without the revaluation gain; 18% reported"
+      "display": "about 12% normal",
+      "note": "18.1% reported for 2025/26 with the revaluation gain; 24% over the last 12 months with Marina Square"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 18.6,
+      "unit": "%",
+      "note": "Beta 1.01 (provisional)"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth (H1)",
+      "value": 63,
+      "unit": "%",
+      "note": "Rs 36.97bn: Marina Square flats and vehicles"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 39.52,
+      "unit": "Rs bn",
+      "note": "0.85x owners' equity, Sep 2026"
     },
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 2.5,
+      "value": 2.4,
       "unit": "%",
       "note": "Rs 2.00 for 2025/26"
     },
     {
-      "id": "payout",
-      "label": "Payout ratio",
-      "value": 39,
-      "unit": "%",
-      "note": "Of profit without the revaluation gain; 28% reported"
-    },
-    {
-      "id": "netDebtEquity",
-      "label": "Net debt / equity",
-      "value": 0.9,
-      "unit": "x",
-      "note": "June 2026"
-    },
-    {
-      "id": "revenueGrowth",
-      "label": "Revenue growth",
-      "value": 115,
-      "unit": "%",
-      "note": "April–June 2026; 44% in the year to March 2026"
-    },
-    {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 79,
-      "unit": "Rs bn",
-      "display": "~Rs 79bn"
+      "value": 83.3,
+      "unit": "Rs bn"
     }
   ],
   "highlights": [
     {
-      "title": "Three months to 30 June 2026 (group, unaudited)",
-      "text": "Revenue more than doubled to Rs 16.6bn and profit attributable rose 78% to Rs 1.71bn. EPS was Rs 1.71 against Rs 0.96."
+      "title": "Six months to September 2026: profit up 128%",
+      "text": "Revenue Rs 36.97bn (+63%), operating profit Rs 8.92bn (+79%), profit to owners Rs 5.79bn (Rs 2.54bn), EPS Rs 5.79. The September quarter alone: revenue Rs 20.39bn, EPS Rs 4.08 (Rs 1.58)."
     },
     {
-      "title": "Where the growth came from",
-      "text": "Marina Square flat handovers earned Rs 0.79bn on Rs 2.57bn of revenue, and vehicle sales rose to Rs 8.06bn from Rs 2.26bn. Construction profit fell and finance costs nearly tripled to Rs 1.40bn."
+      "title": "Marina Square is doing the lifting",
+      "text": "Flat handovers brought Rs 8.99bn of revenue and Rs 3.25bn of operating profit (36%) in the half; segment profit Rs 2.81bn, almost untaxed under a BOI tax holiday. Group stock fell to Rs 35.71bn from Rs 43.39bn in March."
     },
     {
-      "title": "Year to March 2026",
-      "text": "Revenue Rs 49.7bn (up 44%) and EPS Rs 7.17, but that includes a Rs 4.01bn revaluation gain. Without it EPS was about Rs 5.12 and ROE about 12.6%."
+      "title": "One-offs on top",
+      "text": "A Rs 0.74bn deferred tax credit at 60%-owned Access Medical Tracers (tax losses from a 100% capital allowance) turned the quarter's tax into a credit. Without Marina Square and that credit, EPS was about Rs 2.54, the same as a year earlier."
     },
     {
-      "title": "Marina Square and debt",
-      "text": "Flats on the books cost Rs 34.4bn and customers had paid Rs 20.2bn in advances. Net debt was about Rs 38.8bn, 0.9x equity."
+      "title": "Vehicles strong, construction weak",
+      "text": "Vehicle revenue Rs 15.46bn (+47%) and segment profit Rs 1.59bn (Rs 0.87bn). Civil engineering profit fell to Rs 0.25bn (Rs 0.64bn) after Rs 1.21bn of allocated finance cost; construction materials fell to Rs 0.24bn (Rs 0.57bn)."
+    },
+    {
+      "title": "Debt still high; cash finally positive",
+      "text": "Finance costs more than doubled to Rs 2.57bn. Net debt Rs 39.52bn (Rs 38.87bn in March). Operating cash Rs 2.75bn (−Rs 5.51bn a year earlier) as flats were handed over. Interest cover 4.3x."
+    },
+    {
+      "title": "After the half-year",
+      "text": "The South Asia Commercial and Logistics Hub project (15% stake) is being ended, with about Rs 1.45bn expected back; a share buyback dispute was settled for Rs 225mn (provided for); the Court of Appeal partly upheld a 2011/12 PAYE tax claim of Rs 635mn plus penalties, which the company will appeal."
     }
   ],
   "history": {
@@ -149,27 +225,6 @@
     ],
     "series": [
       {
-        "id": "eps",
-        "label": "EPS",
-        "unit": "Rs",
-        "values": [
-          5.11,
-          2.48,
-          6.86,
-          6.31,
-          7.17,
-          7.92
-        ],
-        "notes": [
-          null,
-          null,
-          "Tax credit",
-          null,
-          "Revaluation",
-          "Trailing"
-        ]
-      },
-      {
         "id": "roe",
         "label": "Return on equity",
         "unit": "%",
@@ -179,15 +234,57 @@
           17.9,
           14.7,
           18.1,
-          null
+          23.7
         ],
         "notes": [
           null,
           null,
+          "Tax credit",
+          null,
+          "Revaluation gain; about 12.6% without",
+          "12 months to Sep 2026, with Marina Square"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year end)",
+        "unit": "x",
+        "values": [
           null,
           null,
           null,
-          null
+          6.1,
+          9.3,
+          8.0
+        ],
+        "notes": [
+          "Price not recorded",
+          "Price not recorded",
+          "Price not recorded",
+          null,
+          null,
+          "Trailing, Rs 83.30"
+        ]
+      },
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          5.11,
+          2.48,
+          6.86,
+          6.31,
+          7.17,
+          10.42
+        ],
+        "notes": [
+          null,
+          null,
+          "Tax credit",
+          null,
+          "Revaluation gain; about Rs 5.12 without",
+          "12 months to Sep 2026"
         ]
       },
       {
@@ -200,7 +297,7 @@
           35.83,
           40.13,
           41.15,
-          41.95
+          46.7
         ],
         "notes": [
           null,
@@ -208,7 +305,7 @@
           null,
           null,
           null,
-          "30 Jun 2026"
+          "30 Sep 2026"
         ]
       },
       {
@@ -229,7 +326,7 @@
           null,
           null,
           null,
-          null
+          "No 2026/27 dividend declared yet"
         ]
       }
     ]
@@ -237,224 +334,601 @@
   "methodReadings": [
     {
       "method": "NAV",
-      "value": "Rs 41.95",
-      "reading": "The price is 1.9x NAV. Rs 40.8bn of the book is investment property at valuers' prices and Rs 34.4bn is Marina Square flats at cost."
+      "value": "Rs 46.70",
+      "reading": "The price is 1.78x NAV (30 Sep 2026). NAV includes investment property at fair value (Rs 40.8bn) but Marina Square flats at cost, so the flats' profit still to come (about Rs 9.6 a share, base) is added."
     },
     {
       "method": "Return on equity",
-      "value": "About 12.6%",
-      "reading": "2025/26 without the revaluation gain (18% reported); 7.6% in 2022/23 and 14.7% in 2024/25."
+      "value": "about 12%",
+      "reading": "Normal ROE about 12% (12.6% in 2025/26 without the revaluation gain), below the 15% test and the 18.6% required return, so book value is worth less than book."
     },
     {
       "method": "P/E",
-      "value": "13.4x",
-      "reading": "On trailing EPS of Rs 5.87 without the revaluation gain; 9.9x on reported EPS of Rs 7.92."
+      "value": "8.0x trailing",
+      "reading": "Cheap on reported EPS of Rs 10.42, but about 16x recurring EPS of Rs 5.1. Cross-check: recurring EPS Rs 4.5 / 5.3 / 6.0 × the P/E the returns justify (3.3x / 4.0x / 5.0x) plus Marina Square gives Rs 19 / 31 / 42, close to price to book."
     },
     {
       "method": "Dividends",
-      "value": "2.5% yield",
-      "reading": "Rs 2.00 a year for the last two years, about 39% of profit without the revaluation gain."
+      "value": "2.4% yield",
+      "reading": "Rs 2.00 a share (Rs 2.0bn) paid in each of the last two years, more than cash after maintenance capex, so funded by borrowing. Not used as a method."
     },
     {
-      "method": "Marina Square",
-      "value": "Rs 7.7 a share (base)",
-      "reading": "After-tax profit still to come on Rs 34.4bn of flats at cost, discounted; Rs 2.8 bear, Rs 10.4 bull."
+      "method": "DCF (whole company)",
+      "value": "about Rs 0 before Marina Square",
+      "reading": "Operating businesses (after-tax operating profit Rs 6.0 / 7.1 / 8.0bn, growth 3/6/9%, return on capital 9–12%) at WACC 15.4/14.4/13.3%, less all net debt: Rs −9.9 / −1.1 / +16.1 a share (84% of the bull value after year 5). The debt also paid for the Marina Square stock (about Rs 28.7bn at cost) and commercial space (Rs 9.3bn), which aren't in the cash flow yet, so this isn't weighted."
     },
     {
       "method": "Debt",
-      "value": "Net debt 0.9x equity",
-      "reading": "About Rs 38.8bn at June 2026; interest cover fell to about 4x."
+      "value": "Net debt 0.85x equity",
+      "reading": "Rs 39.52bn at September 2026, interest cover 4.3x. Should fall as Marina Square buyers pay the balance of their flats."
     }
   ],
   "models": [
     {
       "id": "nav",
       "name": "Adjusted NAV",
-      "bear": 38.0,
-      "base": 49.7,
-      "bull": 57.6,
-      "weighted": 47.8,
-      "comment": "NAV plus the Marina Square profit still to come, at 0.85x / 1.0x / 1.1x."
+      "bear": 43.32,
+      "base": 56.29,
+      "bull": 65.2,
+      "weighted": 54.18,
+      "comment": "NAV Rs 46.70 plus the Marina Square profit still to come (Rs 4.27 / 9.59 / 12.57), at 0.85x / 1.0x / 1.1x."
     },
     {
-      "id": "pe",
-      "name": "P/E method",
-      "bear": 38.8,
-      "base": 62.7,
-      "bull": 88.4,
-      "weighted": 60.7,
-      "comment": "The most generous: normal earnings (without Marina Square or revaluation gains) times 8 / 10 / 12, plus Marina Square."
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 18.64,
+      "base": 26.8,
+      "bull": 39.01,
+      "weighted": 26.79,
+      "comment": "Adjusted book Rs 56.29 (NAV plus base-case Marina Square) × (ROE − growth) ÷ (required return − growth): ROE 10/12/14% against 20.1/18.6/17.1%, so about 0.3–0.7x."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 20.3,
-      "base": 34.1,
-      "bull": 53.2,
-      "weighted": 33.8,
-      "comment": "The strictest: the group's normal ROE of about 13% is below the cost of equity. Includes Marina Square."
+      "bear": 15.73,
+      "base": 21.68,
+      "bull": 31.28,
+      "weighted": 21.82,
+      "comment": "Adjusted book Rs 56.29 plus returns above the required return; ROE moves from 10% to 10/12/14% over ten years, payout 35%. Negative while ROE is below the required return."
     }
   ],
-  "modelsNote": "AEL pays out well under half its profit, so a dividend model (Rs 15.4 / 21.5 / 36.5) understates it, and Marina Square and vehicle stock swamp its cash flow, so a cash-flow DCF isn't reliable. The fair value uses three methods, each including the Marina Square profit still to come.",
+  "modelsNote": "Three methods, averaged; price to book and residual income from scripts/valuation.py. All three start from book value plus the Marina Square profit still to come, because that profit comes once and would be overstated by any earnings multiple. Growth check: assumed 3% / 6% / 9% a year for five years. The calculator's supported rate (18.4%) is inflated by the Marina Square stock build and the Rs 4.08bn Harbour Village buyout; on ordinary capex alone (Rs 3.24bn booked less Rs 1.26bn depreciation, 29% of after-tax operating profit × 10.5% return on capital) it is about 3%. The base 6% is 3 points above that: the FDG plant is built, the Marina Square commercial space is nearly finished and vehicle demand has reopened. Growth only enters the DCF and P/E cross-checks. The P/E cross-check (Rs 31 base) and the DCF (not meaningful before Marina Square cash comes in) are not weighted.",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Cost of equity",
-        "bear": "18%",
-        "base": "16.5%",
-        "bull": "15%"
+        "label": "Required return (cost of equity)",
+        "bear": "20.1%",
+        "base": "18.6%",
+        "bull": "17.1%"
       },
       {
-        "label": "Normal ROE (residual income)",
-        "bear": "12% falling to 11%",
-        "base": "13.5% falling to 13%",
-        "bull": "15.5% falling to 15%"
+        "label": "Marina Square profit margin (after finance cost)",
+        "bear": "20%",
+        "base": "30%",
+        "bull": "34%"
       },
       {
-        "label": "Long-term growth",
+        "label": "Marina Square tax and timing",
+        "bear": "15% tax, 4 years",
+        "base": "No tax, 3 years",
+        "bull": "No tax, 2 years"
+      },
+      {
+        "label": "Marina Square value a share",
+        "bear": "Rs 4.27",
+        "base": "Rs 9.59",
+        "bull": "Rs 12.57"
+      },
+      {
+        "label": "NAV multiple",
+        "bear": "0.85x",
+        "base": "1.0x",
+        "bull": "1.1x"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "10%",
+        "base": "12%",
+        "bull": "14%"
+      },
+      {
+        "label": "Long-run growth",
         "bear": "5%",
         "base": "6%",
         "bull": "7%"
       },
       {
-        "label": "EPS to March 2027 without Marina Square × P/E",
-        "bear": "4.5 × 8",
-        "base": "5.5 × 10",
-        "bull": "6.5 × 12"
+        "label": "Recurring EPS next year (P/E cross-check)",
+        "bear": "Rs 4.50",
+        "base": "Rs 5.30",
+        "bull": "Rs 6.00"
       },
       {
-        "label": "Marina Square margin (value a share)",
-        "bear": "15% (Rs 2.8)",
-        "base": "30% (Rs 7.7)",
-        "bull": "35% (Rs 10.4)"
-      },
-      {
-        "label": "Adjusted NAV multiple",
-        "bear": "0.85x",
-        "base": "1.0x",
-        "bull": "1.1x"
+        "label": "Growth, next five years (growth check)",
+        "bear": "3%",
+        "base": "6%",
+        "bull": "9%"
       }
     ],
     "averages": {
-      "bear": 32.4,
-      "base": 48.8,
-      "bull": 66.4
+      "bear": 25.9,
+      "base": 34.92,
+      "bull": 45.16
     },
-    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Tax 30%. Revaluation gains are left out of earnings. Marina Square flats sold over about three years."
+    "common": "NAV Rs 46.70 and net debt Rs 39.52bn at 30 September 2026; 1,000 million shares. Marina Square flats left about Rs 28.7bn at cost (own estimate: Rs 34.43bn in March less about Rs 5.7bn released with H1 sales). Payout 35%. Price Rs 83.30 (CSE close, 20 November 2026)."
   },
   "sensitivity": {
-    "title": "Residual income base case plus Marina Square, Rs per share",
-    "rowLabel": "Cost of equity",
-    "columnLabel": "Normal ROE",
+    "title": "Fair value (three methods), Rs per share",
+    "rowLabel": "Required return (base)",
+    "columnLabel": "Long-run ROE (base)",
     "rows": [
-      "15%",
-      "16.5%",
-      "18%"
+      "14%",
+      "16%",
+      "18.6%",
+      "20%",
+      "22%"
     ],
     "columns": [
-      "11%",
-      "13%",
+      "10%",
+      "12%",
+      "14%",
       "16%"
     ],
     "values": [
       [
-        30.2,
-        39.4,
-        56.7
+        37.2,
+        45.5,
+        54.2,
+        63.3
       ],
       [
-        26.6,
-        34.1,
-        47.8
+        33.0,
+        39.2,
+        45.7,
+        52.4
       ],
       [
-        24.0,
-        30.1,
-        41.3
+        29.7,
+        34.3,
+        39.1,
+        44.0
+      ],
+      [
+        28.4,
+        32.4,
+        36.6,
+        40.9
+      ],
+      [
+        27.1,
+        30.4,
+        34.0,
+        37.6
       ]
     ],
     "base": {
-      "row": 1,
+      "row": 2,
       "column": 1
     },
-    "note": "Today's price needs ROE well over 16% for many years, or a much larger Marina Square profit."
+    "note": "Bear and bull move with the base (±1.5 points of required return, ±2 points of ROE). Even at a 14% required return and 16% ROE for good, the methods give about Rs 63, below today's Rs 83.30. The price assumes Marina Square is worth far more than its remaining cost plus 30%, or that the group's returns jump well above anything it has earned without one-offs."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 47.0
+        "maxPrice": 34.26
       },
       {
         "shares": 150,
-        "maxPrice": 40.0
+        "maxPrice": 29.12
       },
       {
         "shares": 150,
-        "maxPrice": 35.3
+        "maxPrice": 25.7
       }
     ],
-    "averagePrice": 41.39,
-    "totalCost": 20695,
-    "note": "About Rs 20,695 in total, against Rs 39,400 at Rs 78.80.",
-    "realism": "Rs 47 needs about a 40% fall. The share hasn't been below Rs 66.90 since April 2026 and was last under Rs 47 in mid-2025, so these prices probably need a broad market fall or a Marina Square disappointment."
+    "averagePrice": 30.15,
+    "totalCost": 15075,
+    "note": "About Rs 15,075 in total, against Rs 41,650 at Rs 83.30.",
+    "realism": "Not realistic in normal markets: Rs 34.26 is 59% below the price. The share has traded between Rs 66.90 and Rs 80.60 since April 2026 and was last near Rs 34 in April 2025 (low Rs 34.80). Owning it at these prices would take a broad market fall or a Marina Square disappointment; otherwise it means waiting for normal returns to rise well above 15%."
   },
   "changeMyView": {
     "higher": [
-      "Marina Square flats selling quickly at good margins.",
-      "Marina Square's commercial space leasing well.",
-      "New government infrastructure contracts lifting construction profit.",
-      "Vehicle sales staying strong.",
-      "Debt falling as Marina Square cash comes in, or a higher dividend."
+      "Marina Square flats selling out within a year at H1's 31% margin or better, with the cash used to cut debt",
+      "The Marina Square commercial space let and revalued (Rs 9.3bn at cost)",
+      "New government road, port or housing contracts lifting construction profit back to 2024/25 levels",
+      "Recurring ROE above 15% once Marina Square is sold, or a lower required return (bond yield or default spread falling)"
     ],
     "lower": [
-      "Unsold Marina Square flats or price cuts.",
-      "Vehicle import rules tightening again.",
-      "Finance costs rising further.",
-      "More profit from revaluation gains rather than cash earnings.",
-      "Slow government payments for construction work."
+      "Unsold flats, price cuts, or the BOI tax holiday ending before the flats are sold",
+      "Vehicle imports tightened again or demand fading after the first rush",
+      "Debt not falling as Marina Square cash comes in, or more borrowing for new projects",
+      "The 2011/12 PAYE tax case lost in the Supreme Court (Rs 635mn plus Rs 317mn penalties claimed)"
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026 (unaudited), with earlier figures from the research record. The Marina Square value rests on an own estimate of the flats left, because the reports don't say how many are unsold. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: Access Engineering PLC (AEL.N0000) has grown into a construction, vehicle, property and condominium group, and profits are rising fast: the first quarter of this year was up 78%. But at Rs 78.80 the share trades at 1.9x its NAV of Rs 41.95 and 13.4x earnings once a one-off property revaluation gain is taken out. Much of the near-term profit is the one-time sale of flats at Marina Square, and the group's normal return on equity is only about 13%, below what a Sri Lankan investor should demand. Counting the Marina Square profit still to come, the methods put fair value at about Rs 47, so the price is about 68% above it. I'd buy at up to about Rs 40 and treat under Rs 35 as a strong buy.\n\nPrice and key figures\nPrice: Rs 78.80 (CSE closing price, 2026-11-06). Please check it live. In April–June 2026 it traded between Rs 66.90 and Rs 79.50. It closed the year to March 2026 at Rs 67.00, up from Rs 38.50 a year earlier; that year's high was Rs 80.50 (February 2026) and low Rs 34.80 (April 2025).\nThree months to 30 June 2026 (group, unaudited): revenue more than doubled to Rs 16.6bn and profit attributable rose 78% to Rs 1.71bn. EPS was Rs 1.71 against Rs 0.96. NAV per share was Rs 41.95.\nWhat drove it: Marina Square flat handovers brought Rs 2.57bn of revenue and Rs 0.79bn of profit (nothing a year earlier), and vehicle sales (Sathosa Motors and Access Motors) rose to Rs 8.06bn from Rs 2.26bn. Construction profit fell, and finance costs nearly tripled to Rs 1.40bn as borrowing rose.\nYear to March 2026 (group, audited): revenue Rs 49.7bn (up 44%), profit attributable Rs 7.17bn, EPS Rs 7.17 (Rs 6.31), reported ROE 18%, dividends Rs 2.00.\nOne-off: that year includes a Rs 4.01bn gain from revaluing investment property (mainly the Ekala logistics park), less about Rs 1.96bn of deferred tax on it. Without it, profit attributable was about Rs 5.12bn, or Rs 5.12 a share, an ROE of about 12.6%.\nDebt: borrowings Rs 43.9bn and net debt about Rs 38.8bn at June 2026, about 0.9x equity (debt to equity 99%). Interest cover fell to about 4x.\nHistory: EPS was Rs 5.11 (2021/22), Rs 2.48 (2022/23), Rs 6.86 (2023/24, helped by a Rs 2.55bn tax credit and a Rs 1.11bn revaluation gain), Rs 6.31 (2024/25) and Rs 7.17 (2025/26).\n\nMethods\nNAV (Rs 41.95): 1.9x. About Rs 40.8bn of the book is investment property at valuers' prices, and Rs 34.4bn is Marina Square flats held at cost.\nReturn on equity: 18% reported for 2025/26, about 12.6% without the revaluation gain. It was 7.6% in 2022/23 and 14.7% in 2024/25.\nP/E: 9.9x trailing reported EPS of Rs 7.92, but 13.4x trailing EPS of Rs 5.87 without the revaluation gain. Year-end P/E: 9.3x (2026), 6.1x (2025).\nDividends: Rs 2.00 a year for the last two years (two Rs 1.00 interim dividends), a 2.5% yield; about 39% of profit without the revaluation gain.\nMarina Square: the flats still on the books cost Rs 34.4bn (March 2026), and customers had paid about Rs 20.2bn in advances. In the first quarter the flats handed over earned a 34% operating margin. I count the profit still to come as extra value of Rs 2.8 / 7.7 / 10.4 a share (after tax, discounted for the time it takes to sell and hand over).\nAdjusted NAV (NAV plus Marina Square profit, times 0.85 / 1.0 / 1.1): Rs 38.0 / 49.7 / 57.6, weighted Rs 47.8.\nP/E method (EPS without Marina Square or revaluation gains, plus Marina Square value): Rs 38.8 / 62.7 / 88.4, weighted Rs 60.7.\nResidual income (plus Marina Square value): Rs 20.3 / 34.1 / 53.2, weighted Rs 33.8.\nDividend model: Rs 15.4 / 21.5 / 36.5 (not used in the fair value).\n\nAEL pays out well under half its profit, so a dividend model understates it. Its cash flow is dominated by Marina Square and vehicle stock, so a cash-flow DCF isn't reliable. Price to book is folded into the adjusted-NAV method. Residual income is the strictest because the group's normal ROE is below the cost of equity; the P/E method is the most generous.\n\nAssumptions (bear / base / bull)\nCost of equity: 18% / 16.5% / 15%.\nNormal ROE (residual income): 12% falling to 11% / 13.5% falling to 13% / 15.5% falling to 15%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 without Marina Square × P/E: 4.5 × 8 / 5.5 × 10 / 6.5 × 12.\nMarina Square margin on the remaining flats: 15% / 30% / 35% before tax, sold over about three years.\nAverage of the three methods: Rs 32.4 / Rs 48.8 / Rs 66.4.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026). Tax 30%. Revaluation gains are left out of earnings because they don't produce cash. Payout 35%.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 47 (1.1x NAV), so Rs 78.80 is about 68% above it.\nBuy price: a 15% margin of safety gives Rs 40.00, and 25% gives Rs 35.30.\nPlan for 500 shares: 200 at up to Rs 47.00, 150 at up to Rs 40.00 and 150 at up to Rs 35.30. That averages about Rs 41.39, about Rs 20,695, against Rs 39,400 at Rs 78.80.\nRealism: Rs 47 needs about a 40% fall. The share hasn't been below Rs 66.90 since the start of April 2026 and was last under Rs 47 in mid-2025, so these prices probably need a broad market fall or a disappointment on Marina Square sales.\n\nSensitivity (residual income base case plus Marina Square, Rs per share)\nCost of equity 15%: 30.2 / 39.4 / 56.7 for normal ROE of 11% / 13% / 16%.\nCost of equity 16.5%: 26.6 / 34.1 / 47.8.\nCost of equity 18%: 24.0 / 30.1 / 41.3.\nToday's price needs ROE of well over 16% for many years, or a much larger Marina Square profit.\n\nWhat would change my view\nSupports a higher value: Marina Square flats selling quickly at good margins; commercial space there leased well; new government infrastructure contracts lifting construction profit; vehicle sales staying strong; debt falling as Marina Square cash comes in; a higher dividend.\nSupports a lower value: unsold Marina Square flats or price cuts; vehicle import rules tightening again; finance costs rising further; more profit coming from revaluation gains rather than cash earnings; slow government payments for construction work.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to June 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice.",
-  "quality": {
-    "rating": "weak",
-    "passed": 1,
-    "outOf": 4,
-    "reason": "Profit is rising, but much of it is one-off, and normal returns are below what I require.",
-    "tests": [
+  "management": {
+    "asOf": "2026-11-20",
+    "source": "Annual Report 2025/26: Chairman's statement (pp. 25–26), Executive Vice Chairman and Managing Director's joint statement (pp. 28–33), Condominium Properties review (pp. 182–186); progress from the interims to 30 June and 30 September 2026. The 2024/25 annual report's promises weren't re-read in this run, so the track list follows this year's.",
+    "takeaway": "Management's plan is to finish and sell Marina Square and lean on recurring rent, vehicles and new ventures; the test is whether the Marina Square cash pays down the Rs 44bn of borrowing rather than funding the next project.",
+    "said": [
       {
-        "id": "returns",
-        "label": "Return on equity of 15% or more",
-        "pass": false,
-        "value": "About 12.6%",
-        "note": "Without the property revaluation gain; 18% reported."
+        "text": "Revenue rose 44% to Rs 49.7bn and profit after tax to Rs 7.75bn, with EBITDA of Rs 15.4bn (31% margin)",
+        "ref": "p. 28"
       },
       {
-        "id": "debt",
-        "label": "Net debt no more than equity",
-        "pass": true,
-        "value": "0.9x equity",
-        "note": "Close to the limit, and finance costs nearly tripled."
+        "text": "Construction demand stayed uneven and public projects slow; civil engineering revenue fell to Rs 13.0bn",
+        "ref": "pp. 28–29"
       },
       {
-        "id": "steady",
-        "label": "Steady profit: no loss in five years, no one-offs",
-        "pass": false,
-        "value": "One-offs",
-        "note": "Recent profit leans on a revaluation gain and one-time Marina Square flat sales."
+        "text": "Vehicles recovered strongly once imports reopened in early 2025: Sathosa Motors revenue about Rs 12.4bn, group vehicle revenue over Rs 24.7bn",
+        "ref": "pp. 30–31"
       },
       {
-        "id": "cash",
-        "label": "Profit turns into cash and dividends",
-        "pass": false,
-        "value": "Unclear",
-        "note": "Cash flow is swamped by flats and vehicle stock."
+        "text": "Marina Square (1,088 flats, 200,000+ sq ft of commercial space) was about 95% complete at March 2026 and handovers had begun",
+        "ref": "pp. 31, 184"
+      },
+      {
+        "text": "They describe funding as prudent, using internal cash where possible",
+        "ref": "p. 28"
       }
     ],
-    "assessed": "2026-11-09"
+    "plans": [
+      {
+        "text": "Finish Marina Square's remaining works in the June 2026 quarter, keep handing over flats and sell the remaining stock",
+        "ref": "p. 186"
+      },
+      {
+        "text": "Lease Marina Square's commercial and office space for recurring income",
+        "ref": "p. 186"
+      },
+      {
+        "text": "Build a new warehouse for Hellmann MAS Supply Chain and look at battery storage for the logistics-park solar",
+        "ref": "p. 30"
+      },
+      {
+        "text": "Start producing FDG cancer-scan isotopes at Access Medical Tracers' cyclotron plant",
+        "ref": "p. 31"
+      },
+      {
+        "text": "Grow mechanical engineering (port equipment) services, including overseas commissioning",
+        "ref": "pp. 30, 32"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Bought the remaining 33.33% of Harbour Village (Marina Square)",
+        "amount": "Rs 5.6bn",
+        "ref": "p. 185"
+      },
+      {
+        "text": "Marina Square commercial space (investment property under construction)",
+        "amount": "Rs 4.66bn in 2025/26",
+        "ref": "p. 269"
+      },
+      {
+        "text": "FDG radiopharmaceutical plant (Access Medical Tracers, 60% owned)",
+        "amount": "Rs 1.89bn of capex in 2025/26",
+        "ref": "p. 277"
+      },
+      {
+        "text": "Plant upgrades, construction equipment, property and digital systems",
+        "amount": "About Rs 1.4bn in 2025/26 (as stated; the cash flow shows Rs 3.13bn of PPE purchases)",
+        "ref": "pp. 28, 269"
+      },
+      {
+        "text": "Dividends",
+        "amount": "Rs 2.00 a share, Rs 2,000mn for 2025/26",
+        "ref": "p. 28"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Complete Marina Square in the June 2026 quarter and keep handing over flats",
+        "result": "Rs 8.99bn of flat revenue in H1 2026/27 (Rs 6.42bn in the September quarter); group stock down to Rs 35.71bn from Rs 43.39bn. Completion itself isn't confirmed in the interim.",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, pp. 4, 8"
+      },
+      {
+        "promise": "Fund growth with internally generated cash where possible",
+        "result": "Borrowings rose from Rs 27.6bn to Rs 42.5bn in 2025/26 while operating cash was Rs 0.60bn against Rs 2.0bn of dividends; Rs 43.9bn at September 2026.",
+        "status": "missed",
+        "ref": "Annual Report 2025/26, pp. 266, 268; Interim Sep 2026, p. 4"
+      },
+      {
+        "promise": "Start FDG radiopharmaceutical production",
+        "result": "First revenue of Rs 34mn in H1 2026/27, with an operating loss of Rs 35mn.",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, p. 8"
+      },
+      {
+        "promise": "New warehouse for Hellmann MAS Supply Chain",
+        "result": "Warehouse segment capex Rs 0.35bn in H1 2026/27; no completion figure yet.",
+        "status": "too-early",
+        "ref": "Interim Sep 2026, p. 8"
+      },
+      {
+        "promise": "Lease Marina Square's commercial space",
+        "result": "Still investment property under construction: Rs 9.28bn at cost at September 2026, no rent reported yet.",
+        "status": "too-early",
+        "ref": "Interim Sep 2026, p. 4"
+      },
+      {
+        "promise": "Logistics hub investment (South Asia Commercial and Logistics Hub, 15%)",
+        "result": "Project being terminated by agreement; about Rs 1,453mn expected back and a Rs 310mn loss in the company's accounts.",
+        "status": "missed",
+        "ref": "Interim Sep 2026, p. 7"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, PDF p. 10 (directors, top 20, public holding); 30 June 2026 list from the Interim to 30 Jun 2026, PDF p. 9.",
+    "takeaway": "The founders control Access Engineering: Chairman Sumal Perera's family holds about 30% and Executive Vice Chairman Christopher Joshua's about 19%, with three other founding directors at 3% each. The big move is the Employees' Provident Fund, which raised its stake from 3.2% in March to 5.7% in September (13.6mn shares bought in the September quarter).",
+    "groups": [
+      {
+        "name": "Perera family (Chairman)",
+        "pct": 30.12
+      },
+      {
+        "name": "Joshua family (Executive Vice Chairman)",
+        "pct": 18.74
+      },
+      {
+        "name": "Other directors",
+        "pct": 9.26
+      },
+      {
+        "name": "Other holders not counted as public",
+        "pct": 3.59
+      },
+      {
+        "name": "Public",
+        "pct": 38.29
+      }
+    ],
+    "publicFloat": 38.29,
+    "publicHolders": 14284,
+    "publicHoldersPrev": 14340,
+    "directors": [
+      {
+        "name": "Mr. S J S Perera (Chairman)",
+        "shares": 250000000
+      },
+      {
+        "name": "Mr. J C Joshua (Executive Vice Chairman)",
+        "shares": 102000000
+      },
+      {
+        "name": "Mr. Shamal J S Perera",
+        "shares": 51159365
+      },
+      {
+        "name": "Mr. S H S Mendis",
+        "shares": 30150000
+      },
+      {
+        "name": "Mr. D A R Fernando (Managing Director)",
+        "shares": 30150000
+      },
+      {
+        "name": "Mr. S D Munasinghe",
+        "shares": 30150000
+      },
+      {
+        "name": "Mr. S D Perera",
+        "shares": 2000000
+      },
+      {
+        "name": "C V Kulatilaka",
+        "shares": 0
+      },
+      {
+        "name": "M J S Rajakariar",
+        "shares": 0
+      },
+      {
+        "name": "R P Pathirana",
+        "shares": 500
+      }
+    ],
+    "top": [
+      {
+        "name": "Mr. S J S Perera",
+        "shares": 250000000,
+        "pct": 25.0,
+        "change": 0,
+        "new": false,
+        "note": "Listed as 'Mr Sumal.J.S. Perera' in the June 2026 report: the same holder (the Chairman)."
+      },
+      {
+        "name": "Mr J.C. Joshua",
+        "shares": 102000000,
+        "pct": 10.2,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs R.M.N. Joshua",
+        "shares": 70000000,
+        "pct": 7.0,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Employees' Provident Fund",
+        "shares": 56906496,
+        "pct": 5.69,
+        "change": 13637430,
+        "new": false,
+        "note": "Up from 32,144,990 (3.21%) in March 2026."
+      },
+      {
+        "name": "Mr Shamal J.S. Perera",
+        "shares": 51159365,
+        "pct": 5.12,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs D.R.S. Malalasekera",
+        "shares": 45000000,
+        "pct": 4.5,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Access International (Pvt) Limited",
+        "shares": 32200000,
+        "pct": 3.22,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. S.H.S. Mendis",
+        "shares": 30150000,
+        "pct": 3.02,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. D.A.R. Fernando",
+        "shares": 30150000,
+        "pct": 3.02,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. S.D. Munasinghe",
+        "shares": 30150000,
+        "pct": 3.02,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "J.B. Cocoshell (Pvt) Ltd",
+        "shares": 21952628,
+        "pct": 2.2,
+        "change": 500000,
+        "new": false
+      },
+      {
+        "name": "Deutsche Bank Ag Trustee To Lynear Wealth Dynamic Opportunities Fund",
+        "shares": 18400795,
+        "pct": 1.84,
+        "change": -300000,
+        "new": false
+      },
+      {
+        "name": "Access Medical (Pvt) Ltd",
+        "shares": 13000000,
+        "pct": 1.3,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Union Assurance Plc-Universal Life Fund",
+        "shares": 12458755,
+        "pct": 1.25,
+        "change": -511776,
+        "new": false
+      },
+      {
+        "name": "Invenco Capital Private Limited",
+        "shares": 10010187,
+        "pct": 1.0,
+        "change": -132929,
+        "new": false
+      },
+      {
+        "name": "Lynear Wealth Management/Mr. Hanif Yusoof",
+        "shares": 8021476,
+        "pct": 0.8,
+        "change": -101206,
+        "new": false
+      },
+      {
+        "name": "Mr. D.C. Fernando",
+        "shares": 7282870,
+        "pct": 0.73,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. D.C. Joshua",
+        "shares": 5180000,
+        "pct": 0.52,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. D.J. Joshua",
+        "shares": 5100000,
+        "pct": 0.51,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Miss D.M. Joshua",
+        "shares": 5100000,
+        "pct": 0.51,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": []
+  },
+  "fullText": "**Access Engineering PLC (AEL.N0000): analysis of 20 November 2026**\n\n**Summary.** Profit to owners for the six months to September 2026 was Rs 5.79bn (EPS Rs 5.79, up from Rs 2.54), and the September quarter alone made Rs 4.08 a share. Most of the jump is Marina Square, the 1,088-flat harbour-front development whose flats are now being handed over: Rs 8.99bn of revenue and Rs 2.81bn of profit in the half, almost untaxed under a BOI tax holiday. A one-time Rs 0.74bn deferred tax credit at Access Medical Tracers added more. Without them the group earned about Rs 2.54 a share, the same as a year earlier, or roughly Rs 5.1 a year: around 9–11% on equity, against a required return of 18.6%.\n\nAt Rs 83.30 the share trades at 1.78x NAV (Rs 46.70) and 8x trailing EPS, but about 16x recurring EPS. The three methods, each counting the Marina Square profit still to come, give a fair value of **Rs 34.26**, buy price **Rs 29.12** and strong-buy price **Rs 25.70**. Verdict: overpriced. Business tests: 1 of 4 passed (debt), so category 3, avoid for now (unchanged).\n\n**What changed since 9 November.** Fair value Rs 47.0 → Rs 34.26. The required return is now built from beta (1.01, provisional) and the shared market inputs: 18.6% base instead of 16.5%. The P/E method was dropped from the average because Marina Square's one-off profit can't be capitalised at a multiple; justified price to book and residual income now start from NAV plus the Marina Square value. NAV rose to Rs 46.70 with the half-year's profit.\n\n**The business.** Nine segments: civil engineering, construction materials, mechanical engineering (port equipment), commercial offices and warehouses (investment property at fair value, Rs 40.8bn), condominiums (Marina Square), renewable energy (15.85 MW rooftop solar), vehicles (Isuzu through 84%-owned Sathosa Motors, Jaguar Land Rover through Access Motors) and radiopharmaceuticals (60%-owned Access Medical Tracers, Sri Lanka's first FDG cyclotron plant). Harbour Village, which owns Marina Square, became 100% owned in 2025/26 for Rs 5.6bn.\n\n**Latest results (six months to 30 September 2026, unaudited).** Revenue Rs 36.97bn (+63%); operating profit Rs 8.92bn (+79%); finance costs Rs 2.57bn (Rs 1.09bn); profit to owners Rs 5.79bn. Vehicles: revenue Rs 15.46bn, segment profit Rs 1.59bn (Rs 0.87bn). Civil engineering: segment profit Rs 0.25bn (Rs 0.64bn) after Rs 1.21bn of allocated finance cost. Construction materials Rs 0.24bn (Rs 0.57bn). Operating cash Rs 2.75bn as stock fell to Rs 35.71bn from Rs 43.39bn. Net debt Rs 39.52bn. NAV Rs 46.70.\n\n**Year to March 2026 (audited).** Revenue Rs 49.66bn (+44%), profit to owners Rs 7.17bn (EPS Rs 7.17), including a Rs 4.01bn fair value gain on investment property; about Rs 5.12 a share without it. Operating cash only Rs 0.60bn as Rs 18.3bn more went into stock (mainly Marina Square). Borrowings rose to Rs 42.5bn from Rs 27.6bn. Dividend Rs 2.00 a share.\n\n**Marina Square.** Flats were on the books at Rs 34.43bn of cost in March 2026, and buyers had paid Rs 20.2bn of advances (group). About Rs 5.7bn of cost was released with the half-year's sales, so roughly Rs 28.7bn remains (own estimate; the reports don't give units sold or unsold). At a 30% margin after finance cost, untaxed, over about three years, the remaining profit is worth about Rs 9.6 a share today (bear Rs 4.3: 20% margin, some tax, four years; bull Rs 12.6: 34%, two years). The commercial space (Rs 9.3bn at cost, investment property under construction) isn't counted; it may bring a revaluation gain and rent once let.\n\n**Required return.** Cost of equity 8.24% + 1.01 × (4.2% + 6.08%) = 18.6% (bear 20.1%, bull 17.1%). Beta: segments weighted by operating profit (property 48%, construction 26%, vehicles 25%, renewables 2%), Damodaran sector betas from web-search extracts (his emerging-markets file couldn't be opened), unlevered 0.76, relevered at net debt 0.47x market value: 1.01. No local beta could be found. Cost of debt 8.1% (interest paid ÷ average debt), WACC 14.4%, used only in the DCF cross-check.\n\n**Methods (Rs a share, bear / base / bull → weighted 30/50/20).**\n- Adjusted NAV: 43.32 / 56.29 / 65.20 → 54.18. NAV plus Marina Square, at 0.85x / 1.0x / 1.1x.\n- Justified price to book: 18.64 / 26.80 / 39.01 → 26.79. Adjusted book Rs 56.29 × (ROE − g) ÷ (r − g), ROE 10/12/14%, growth 5/6/7%.\n- Residual income: 15.73 / 21.68 / 31.28 → 21.82. Starts at 10% ROE, payout 35%.\n- Fair value: average Rs 34.26.\nCross-checks, not weighted: P/E (recurring EPS Rs 4.5 / 5.3 / 6.0 × justified P/E 3.3x / 4.0x / 5.0x, plus Marina Square) Rs 19 / 31 / 42; whole-company DCF of the operating businesses Rs −9.9 / −1.1 / +16.1 before counting the Marina Square stock that the debt paid for (84% of the bull value after year 5).\n\n**Growth and reinvestment.** 2025/26 capex booked Rs 3.24bn against depreciation Rs 1.26bn; Rs 1.89bn of it was the FDG plant (growth), so maintenance spending is close to depreciation. The calculator's supported growth (18.4%) is inflated by the Marina Square stock build and the Harbour Village buyout; on ordinary capex it is about 3%. Assumed growth 3% / 6% / 9%; the base is 3 points above that, justified by the FDG plant, the Marina Square commercial space and vehicle demand. Dividends (Rs 2.0bn) were more than cash after maintenance capex in both years, so they were partly borrowed: at risk if Marina Square cash is slow.\n\n**Earnings run-rate.** Reported run-rate is far higher (12 months Rs 10.42; September quarter × 4 Rs 16.32) but includes Marina Square flat sales, which end when the flats are sold, and the one-time tax credit. Recurring EPS of about Rs 5.1 is the base for the P/E cross-check.\n\n**Ratios outside the normal range.** Net debt is about 3.5x EBITDA without revaluation gains (above 3x) because the debt also carries the Marina Square stock; it should fall as flats are paid for. Cost of debt (8.1%) is about 4 points below the bond yield: bank loans repriced as lending rates fell in 2025/26.\n\n**Business tests.** Returns: fail (normal ROE about 12%). Debt: pass (0.85x equity). Steady profit: fail (no loss, but one-offs every recent year). Cash: fail (operating cash negative over two years against Rs 13.5bn of profit). 1 of 4: weak, category 3.\n\n**Management.** The plan is to finish Marina Square, sell the remaining flats and lease the commercial space, while growing logistics warehousing, port engineering and radiopharmaceuticals. The stated prudent, internally funded approach wasn't borne out in 2025/26 (borrowings up Rs 14.9bn), and the 15% logistics-hub investment is being ended with about Rs 1.45bn expected back.\n\n**Shareholders.** Founders control the company: the Perera family about 30%, the Joshua family about 19%, three other founding directors 3% each. The Employees' Provident Fund raised its stake to 5.69% (from 3.21% in March and 4.33% in June). Public holding 38.29%.\n\n**Buy plan (500 shares).** 200 at up to Rs 34.26, 150 at up to Rs 29.12, 150 at up to Rs 25.70: about Rs 15,075 in all (average Rs 30.15). Not realistic at today's prices: the share hasn't been below Rs 66.90 since April 2026.\n\n**What to watch.** Marina Square sales, margins and how many flats remain; whether debt falls; construction order book and new contracts; vehicle demand; the PAYE tax appeal (Rs 635mn plus Rs 317mn penalties claimed); the end date of the BOI tax holiday.",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 20.1,
+      "base": 18.6,
+      "bull": 17.1
+    },
+    "wacc": {
+      "bear": 15.4,
+      "base": 14.4,
+      "bull": 13.3
+    },
+    "debtWeight": 32.2,
+    "shares": 1000,
+    "netDebt": 39.519,
+    "ri": {
+      "years": 10,
+      "book": 56.29,
+      "payout": 35,
+      "roeStart": 10,
+      "bear": {
+        "roe": 10,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 12,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 7
+      }
+    },
+    "pb": {
+      "book": 56.29,
+      "bear": {
+        "roe": 10,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 12,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 7
+      }
+    }
   }
 }

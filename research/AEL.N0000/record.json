@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "AEL.N0000",
   "localFolder": "access eng",
-  "updated": "2026-11-09",
+  "updated": "2026-11-20",
   "reportsRead": [
     {
       "file": "access eng Annual Report 2025.pdf",
@@ -51,6 +51,35 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-09"
+    },
+    {
+      "file": "reports/AEL.N0000/2026-07-01_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26 (CSE copy)",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-20",
+      "note": "Re-read for /redo full. Page numbers in sources are the printed numbers (PDF page − 2). Used: joint statement (PDF pp. 30–35), chairman (pp. 27–28), statements (pp. 265–269), segment note (pp. 276–277), notes 7, 9, 11, 13, 18, 28, 32; condominium review (pp. 182–186)."
+    },
+    {
+      "file": "reports/AEL.N0000/2026-08-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026 (CSE copy)",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20",
+      "note": "Re-read for the June shareholder list (p. 9)."
+    },
+    {
+      "file": "reports/AEL.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20"
     }
   ],
   "periods": [
@@ -194,6 +223,99 @@
           "value": 38.5,
           "unit": "Rs",
           "source": "Annual Report 2025/26, p. 56"
+        },
+        "operatingProfit": {
+          "value": 9.37,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 265 (2024/25 column)",
+          "note": "Includes a Rs 0.10bn fair value gain on investment property"
+        },
+        "taxRate": {
+          "value": 19.2,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 265",
+          "note": "Own calculation: tax Rs 1.49bn ÷ profit before tax Rs 7.78bn"
+        },
+        "totalEquity": {
+          "value": 40.127,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Equity attributable to owners"
+        },
+        "operatingCashFlow": {
+          "value": -1.262,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268"
+        },
+        "capexPaid": {
+          "value": 4.567,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269",
+          "note": "PPE Rs 4.464bn + intangibles Rs 0.103bn; investment property (Rs 0.24bn) and its work in progress (Rs 1.47bn) left out"
+        },
+        "depreciation": {
+          "value": 1.167,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "PPE Rs 1.067bn + right-of-use Rs 0.091bn + intangibles Rs 0.008bn"
+        },
+        "workingCapitalChange": {
+          "value": 9.231,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "Own sum of the working capital lines (stock up Rs 4.89bn, receivables up Rs 2.09bn, payables down Rs 2.07bn)"
+        },
+        "acquisitions": {
+          "value": 0.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269",
+          "note": "No cash paid for subsidiaries or non-controlling interests in 2024/25"
+        },
+        "capexBooked": {
+          "value": 4.701,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, pp. 290–291, 298",
+          "note": "PPE additions Rs 4.598bn + intangibles about Rs 0.103bn"
+        },
+        "interestPaid": {
+          "value": 1.917,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "Finance cost paid Rs 1.901bn + lease interest Rs 0.015bn",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 27.567,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Loans Rs 19.996bn + Rs 6.845bn and overdraft Rs 0.726bn"
+        },
+        "leaseLiabilities": {
+          "value": 0.206,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266"
+        },
+        "netDebt": {
+          "value": 25.159,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Borrowings and leases less cash Rs 2.456bn, deposits and short-term investments Rs 0.031bn + Rs 0.0002bn"
+        },
+        "dividendsPaid": {
+          "value": 2.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "—",
+          "note": "Not disclosed"
+        },
+        "sharesOutstanding": {
+          "value": 1000,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, p. 309"
         }
       }
     },
@@ -283,17 +405,11 @@
           "source": "Annual Report 2025/26, p. 266",
           "note": "Plus Rs 8.39bn work in progress at cost"
         },
-        "condoWorkInProgress": {
-          "value": 34.43,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, p. 307",
-          "note": "Marina Square flats at cost"
-        },
         "customerAdvances": {
           "value": 20.236,
           "unit": "Rs bn",
           "source": "Annual Report 2025/26, p. 318",
-          "note": "Advances received, in trade payables"
+          "note": "Advances received (group), in trade payables; company Rs 0.57bn"
         },
         "interestCover": {
           "value": 5.85,
@@ -309,6 +425,160 @@
           "value": 1000,
           "unit": "mn",
           "source": "Annual Report 2025/26, p. 53"
+        },
+        "grossProfit": {
+          "value": 12.85,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 265"
+        },
+        "operatingProfit": {
+          "value": 10.177,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 265",
+          "note": "Reported Rs 14.188bn less the Rs 4.011bn fair value gain on investment property (p. 280)"
+        },
+        "ebitda": {
+          "value": 15.434,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 28 (joint statement)",
+          "note": "Includes the revaluation gain; about Rs 11.4bn without it"
+        },
+        "taxRate": {
+          "value": 32.9,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 265",
+          "note": "Own calculation: tax Rs 3.80bn ÷ profit before tax Rs 11.54bn; includes deferred tax on the revaluation gain. Statutory 30%; Harbour Village (Marina Square) has a BOI tax holiday (p. 287)"
+        },
+        "totalEquity": {
+          "value": 41.148,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Equity attributable to owners"
+        },
+        "operatingCashFlow": {
+          "value": 0.596,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "After Rs 18.29bn more stock (mainly Marina Square flats)"
+        },
+        "capexPaid": {
+          "value": 3.158,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269",
+          "note": "PPE Rs 3.134bn + intangibles Rs 0.024bn; investment property Rs 0.085bn and Marina Square commercial work in progress Rs 4.658bn left out"
+        },
+        "depreciation": {
+          "value": 1.257,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "PPE Rs 1.139bn + right-of-use Rs 0.100bn + intangibles Rs 0.018bn"
+        },
+        "workingCapitalChange": {
+          "value": 5.967,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "Own sum: stock up Rs 18.29bn (Marina Square), receivables down Rs 3.89bn, other financial assets down Rs 1.15bn, payables up Rs 7.35bn (buyers' advances)"
+        },
+        "acquisitions": {
+          "value": 4.078,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269",
+          "note": "Buying the remaining 33.33% of Harbour Village (Marina Square) for Rs 5.6bn in all (p. 185)"
+        },
+        "capexBooked": {
+          "value": 3.244,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, pp. 290–291, 298",
+          "note": "PPE additions Rs 3.220bn + intangibles Rs 0.024bn"
+        },
+        "impairment": {
+          "value": 0.002,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "Goodwill"
+        },
+        "licenceAmortisation": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "—",
+          "note": "Not applicable"
+        },
+        "growthCapexNamed": {
+          "value": 1.89,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 277 (segment note)",
+          "note": "Radiopharmaceutical segment capex: Access Medical Tracers' FDG cyclotron plant (capital work in progress Rs 1.91bn, p. 290)"
+        },
+        "interestPaid": {
+          "value": 2.851,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 268",
+          "note": "Finance cost paid Rs 2.838bn + lease interest Rs 0.013bn",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 42.483,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Loans Rs 32.165bn + Rs 9.594bn and overdraft Rs 0.724bn"
+        },
+        "leaseLiabilities": {
+          "value": 0.173,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266"
+        },
+        "netDebt": {
+          "value": 38.866,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 266",
+          "note": "Borrowings and leases less cash Rs 3.788bn and short-term investments Rs 0.002bn"
+        },
+        "dividendsPaid": {
+          "value": 2.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 269"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "—",
+          "note": "Not disclosed (IdeaNest innovation programme mentioned, no amount)"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "—",
+          "note": "Not disclosed"
+        },
+        "condoInventory": {
+          "value": 34.43,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 307",
+          "note": "Inventory work in progress: Marina Square flats at cost"
+        },
+        "condoWorkInProgressIP": {
+          "value": 8.391,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 300",
+          "note": "Investment property work in progress: Marina Square commercial space at cost"
+        },
+        "taxLossesCarriedForward": {
+          "value": 19.957,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 285",
+          "note": "Mainly Access Logistic Park Ekala and WUS Logistics"
+        },
+        "segmentProfitAuto": {
+          "value": 2.378,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 277",
+          "note": "Revenue Rs 24.68bn after vehicle imports reopened (2.95bn a year earlier)"
+        },
+        "segmentProfitCivil": {
+          "value": 1.967,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 276",
+          "note": "Revenue Rs 12.97bn (20.13bn a year earlier)"
         }
       }
     },
@@ -379,15 +649,135 @@
           "note": "Q1 range Rs 66.90–79.50"
         }
       }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 36.974,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, up 63%; September quarter Rs 20.39bn (+36%)"
+        },
+        "operatingProfit": {
+          "value": 8.924,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, up 79%"
+        },
+        "financeCost": {
+          "value": 2.572,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months; Rs 1.09bn a year earlier"
+        },
+        "netProfit": {
+          "value": 5.791,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months, attributable (+128%); September quarter Rs 4.08bn. Includes Marina Square profit (segment profit Rs 2.81bn) and a Rs 0.74bn deferred tax credit at 60%-owned Access Medical Tracers (note 6.1)"
+        },
+        "eps": {
+          "value": 5.79,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Six months (Rs 2.54); September quarter Rs 4.08 (Rs 1.58)"
+        },
+        "recurringEps": {
+          "value": 2.54,
+          "unit": "Rs",
+          "source": "Own calculation from Interim Sep 2026, pp. 2, 8",
+          "note": "Six months without Marina Square's segment profit (Rs 2.81bn, 100% owned) and 60% of the Rs 0.74bn deferred tax credit; same as H1 2025/26 (Rs 2.54)"
+        },
+        "condoRevenue": {
+          "value": 8.989,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Six months; segment operating profit Rs 3.25bn (36%), segment profit Rs 2.81bn, almost no tax (BOI holiday)"
+        },
+        "vehicleRevenue": {
+          "value": 15.456,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Six months (Rs 10.48bn); segment profit Rs 1.59bn (Rs 0.87bn)"
+        },
+        "civilRevenue": {
+          "value": 7.424,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Six months external (Rs 6.76bn); segment profit Rs 0.25bn (Rs 0.64bn) after Rs 1.21bn allocated finance cost"
+        },
+        "navPerShare": {
+          "value": 46.7,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "totalEquity": {
+          "value": 46.699,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Owners; includes a Rs 0.99bn revaluation of construction equipment in other comprehensive income"
+        },
+        "borrowings": {
+          "value": 43.901,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Loans Rs 36.136bn + Rs 7.601bn and overdraft Rs 0.165bn"
+        },
+        "leaseLiabilities": {
+          "value": 0.19,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netDebt": {
+          "value": 39.519,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Borrowings and leases less cash Rs 3.355bn, short-term deposits Rs 1.215bn and investments Rs 0.003bn"
+        },
+        "inventories": {
+          "value": 35.707,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Rs 43.39bn in March: flats handed over"
+        },
+        "operatingCashFlow": {
+          "value": 2.75,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Six months (−Rs 5.51bn a year earlier); stock down Rs 7.67bn, payables (buyers' advances) down Rs 8.81bn"
+        },
+        "capexPaid": {
+          "value": 1.659,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Six months PPE + intangibles; plus Rs 0.88bn on Marina Square commercial work in progress"
+        },
+        "dividendsPaid": {
+          "value": 1.0,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Rs 1.00 a share, final for 2025/26"
+        },
+        "sharesOutstanding": {
+          "value": 1000,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, p. 11"
+        },
+        "priceQuarterEnd": {
+          "value": 80.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": "September quarter range Rs 74.00–80.60"
+        }
+      }
     }
   ],
   "valuationInputs": [
-    {
-      "name": "Cost of equity",
-      "value": "Bear 18% / Base 16.5% / Bull 15%",
-      "reason": "Bonds about 12% (Oct 2026) plus a premium for a geared construction and vehicle group.",
-      "since": "2026-11-09"
-    },
     {
       "name": "Scenario weights",
       "value": "Bear 30 / Base 50 / Bull 20",
@@ -395,55 +785,93 @@
       "since": "2026-11-09"
     },
     {
-      "name": "Normal ROE (residual income)",
-      "value": "12%→11% / 13.5%→13% / 15.5%→15%",
-      "reason": "About 12.6% in 2025/26 without the revaluation gain; payout 35%.",
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
       "since": "2026-11-09"
+    },
+    {
+      "name": "Beta",
+      "value": "1.01 (provisional)",
+      "reason": "8 steps, 20 Nov 2026. (1) Business: a group. Weighted by H1 FY2027 segment operating profit of the profitable segments (Interim Sep 2026, p. 8): property 48% (Marina Square flats Rs 3.25bn, offices and warehouses Rs 1.30bn), construction 26% (civil engineering, construction materials, mechanical: Rs 2.47bn), vehicles 25% (Rs 2.36bn), renewable energy 2% (Rs 0.22bn); radiopharmaceuticals (a small loss) left out. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins from web-search extracts: Engineering/Construction global unlevered, cash-corrected 0.76 (date not shown; his US figure for January 2026 is 1.14); Real Estate (Development) US, January 2026, 0.56 (as used for Prime Lands), also used for the rental property because no Real Estate (Operations) figure could be read; Auto & Truck global, January 2026, 1.15 (a manufacturer figure; Sathosa and Access Motors are distributors, so probably on the high side); Green & Renewable Energy global 0.57. Weighted: 0.76. (3) Relevered with net debt Rs 39.52bn (30 Sep 2026, incl. leases, less cash and deposits) ÷ market value Rs 83.30bn (1,000mn shares at Rs 83.30, CSE close 20 Nov 2026) = 0.47, at 30% tax: 0.76 × (1 + 0.70 × 0.47) = 1.01. (4) No local 5-year beta could be found by web search (none of the usual pages was reachable). (5) So 1.01 is used. (6) Within 0.3–2. (7) Cost of equity from scripts/reinvestment.py. (8) Shown in the Required return tile. Provisional: refresh in January 2027 with the emerging-markets file and local betas.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "depreciation",
+      "reason": "The company gives no maintenance/growth split. 2025/26 capex booked Rs 3.24bn included Rs 1.89bn for the FDG radiopharmaceutical plant (a named growth project); the rest (about Rs 1.35bn) is close to depreciation (Rs 1.26bn).",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Methods used",
+      "value": "Adjusted NAV, justified price to book, residual income (weighted); P/E and whole-company DCF as cross-checks",
+      "reason": "Marina Square is a one-off development whose remaining profit can't sit in a P/E multiple or a steady-growth DCF, so the weighted methods all start from book value plus the Marina Square profit still to come. The P/E (normal EPS × justified P/E + Marina Square) gives about the same as price to book, and the DCF is swamped by Marina Square stock swings and investment property under construction.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Marina Square value",
+      "value": "Rs 4.3 / 9.6 / 12.6 a share",
+      "reason": "Flats left at cost about Rs 28.7bn (Rs 34.43bn at March 2026 less about Rs 5.7bn of cost released with Rs 8.99bn of H1 sales: own estimate; the reports don't say how many units are unsold). Profit after allocated finance cost 20% / 30% / 34% of sales (H1 2026/27: 31%); tax 15% / 0 / 0 (BOI tax holiday, end date not stated); discounted 0.70 / 0.78 / 0.85 for 4 / 3 / 2 years of sales.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Adjusted book",
+      "value": "Rs 56.29 a share",
+      "reason": "NAV Rs 46.70 (30 Sep 2026) plus the base-case Marina Square value Rs 9.59. Used as book for price to book and residual income.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "10% / 12% / 14% (residual income starts at 10%)",
+      "reason": "Recurring EPS about Rs 5.1 a year (2025/26 without the revaluation gain; H1 2026/27 without Marina Square and the tax credit, ×2) is 9% of adjusted book. Debt repaid from Marina Square cash, rent from the Marina Square commercial space (Rs 9.3bn at cost) and the FDG plant should lift it toward 12%; 15% only in the bull case with a construction recovery.",
+      "since": "2026-11-20"
     },
     {
       "name": "Long-term growth",
       "value": "5% / 6% / 7%",
-      "reason": "Roughly nominal GDP growth.",
-      "since": "2026-11-09"
-    },
-    {
-      "name": "EPS to March 2027 without Marina Square × P/E",
-      "value": "4.5 × 8 / 5.5 × 10 / 6.5 × 12",
-      "reason": "Quarters of 2025/26 without the revaluation gain added to about Rs 5.1; Q1 is seasonally weak.",
-      "since": "2026-11-09"
-    },
-    {
-      "name": "Marina Square value",
-      "value": "Rs 2.8 / 7.7 / 10.4 a share",
-      "reason": "Rs 34.4bn of flats at cost; pre-tax margin 15% / 30% / 35% (Q1 FY2027 segment margin 34%), 30% tax, discounted 0.65 / 0.75 / 0.80 for about three years of sales.",
+      "reason": "Roughly nominal GDP growth; below the 12.24% bond yield and WACC.",
       "since": "2026-11-09"
     },
     {
       "name": "Adjusted NAV multiple",
       "value": "0.85x / 1.0x / 1.1x",
-      "reason": "Conglomerate discount in the bear case; operating businesses worth more than book in the bull case.",
+      "reason": "Conglomerate discount in the bear case; investment property is at fair value, so 1.0x in the base case.",
       "since": "2026-11-09"
     },
     {
-      "name": "Methods used",
-      "value": "Adjusted NAV, P/E, residual income",
-      "reason": "Dividend model left out (payout under half); DCF unreliable with Marina Square and vehicle stock swings.",
-      "since": "2026-11-09"
+      "name": "Normal EPS (P/E cross-check)",
+      "value": "Rs 4.5 / 5.3 / 6.0",
+      "reason": "Recurring EPS about Rs 5.1 over the last 12 months (without Marina Square, revaluation gains and the Access Medical Tracers tax credit). Far below the reported run-rate (12 months Rs 10.42; Sep quarter × 4 Rs 16.32) because those include one-offs.",
+      "since": "2026-11-20"
     },
     {
-      "name": "Margins of safety",
-      "value": "Buy 15% / Strong buy 25%",
-      "reason": "The owner's standard.",
-      "since": "2026-11-09"
+      "name": "Cost of equity",
+      "value": "Bear 20.1% / Base 18.6% / Bull 17.1%",
+      "reason": "scripts/reinvestment.py, 20 Nov 2026: 8.24% + 1.01 × (4.2% + 6.08%), ±1.5 points. Was 18 / 16.5 / 15% typed by hand.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 15.4% / Base 14.4% / Bull 13.3%",
+      "reason": "scripts/reinvestment.py, 20 Nov 2026: cost of debt 8.1% (interest paid ÷ average borrowings and leases, 2025/26), tax 32.9%, debt weight 32.2% (net debt Rs 39.52bn, market cap Rs 83.3bn). Used only in the DCF cross-check.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 3% / 6% / 9%; supported 18.4% reported, about 3% on ordinary capex",
+      "reason": "The calculator's 18.4% (reinvestment rate 176% × return on capital 10.5%, 2025/26) is inflated by the Rs 5.97bn working capital build (Marina Square flats) and the Rs 4.08bn Harbour Village buyout, neither repeatable. On capex alone (Rs 3.24bn booked less Rs 1.26bn depreciation = 29% of after-tax operating profit) × 10.5% it is about 3%. Base 6% is 3 points above that: the FDG plant is built, the Marina Square commercial space is nearly finished and vehicle imports have reopened. Bull 9% needs a construction recovery. Growth only enters the P/E and DCF cross-checks.",
+      "since": "2026-11-20"
     }
   ],
   "openQuestions": [
-    "Q2 results (to September 2026, due by mid-November): how much Marina Square revenue and profit, and at what margin?",
-    "How many Marina Square flats are still unsold, and at what prices? (The reports don't say.)",
-    "Are vehicle sales holding up after the first rush of imports?",
-    "Do finance costs keep rising faster than profit, and does debt start falling as flat buyers pay up?",
-    "Is construction profit recovering (it fell in Q1)?",
-    "Any more revaluation gains? These are left out of earnings."
+    "How many Marina Square flats are still unsold, and at what prices and margins? (No unit figures in the reports; the Rs 28.7bn of cost left is an own estimate.)",
+    "Does net debt (Rs 39.5bn at Sep 2026) fall as buyers pay the balance of their flats, or is the cash used for new projects?",
+    "When does Harbour Village's BOI tax holiday end?",
+    "Marina Square commercial space: completion, leasing, and any revaluation gain (Rs 9.3bn at cost).",
+    "Construction: new contracts and order book; civil engineering profit fell to Rs 0.25bn in H1.",
+    "Vehicle sales after the first rush of imports; any change to import rules.",
+    "PAYE tax case (Rs 635mn + Rs 317mn penalties) at the Supreme Court; recovery of about Rs 1.45bn from the ended logistics-hub project.",
+    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and local 5-year betas."
   ],
   "changeLog": [
     {
@@ -455,6 +883,16 @@
       "strongBuyPrice": 35.3,
       "priceAtTime": 78.8,
       "archive": null
+    },
+    {
+      "date": "2026-11-20",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/redo AEL.N0000 full). Rebuilt from the downloaded annual report 2025/26 and the interims to June and September 2026. Added reinvestment figures, required return from beta (1.01, provisional; cost of equity 18.6% instead of 16.5% by hand), management and shareholder sections. Methods now adjusted NAV, justified price to book and residual income, each with the Marina Square profit still to come (P/E and DCF as unweighted cross-checks). H1 EPS Rs 5.79 is mostly Marina Square and a one-time tax credit; recurring EPS about Rs 5.1. Unit sales at Marina Square aren't disclosed, so the remaining cost (Rs 28.7bn) is an own estimate; no local beta could be found. Category 3 unchanged.",
+      "fairValue": 34.26,
+      "buyPrice": 29.12,
+      "strongBuyPrice": 25.7,
+      "priceAtTime": 83.3,
+      "archive": "research/AEL.N0000/history/2026-11-09.json"
     }
   ]
 }
