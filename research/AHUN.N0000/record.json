@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "AHUN.N0000",
   "localFolder": "AHUN",
-  "updated": "2026-11-09",
+  "updated": "2026-11-20",
   "reportsRead": [
     {
       "file": "Annual Report 2025.pdf",
@@ -62,6 +62,16 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-09"
+    },
+    {
+      "file": "reports/AHUN.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20",
+      "note": "Downloaded from the CSE for a Telegram request. Quarter EPS Rs -1.92; six months Rs -4.81."
     }
   ],
   "periods": [
@@ -305,6 +315,49 @@
           "value": 336.29,
           "unit": "mn",
           "source": "Annual Report 2025/26 (amended), Financial highlights (p. 16)"
+        },
+        "totalEquity": {
+          "value": 29.804,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5 (31 March 2026 column)",
+          "note": "Equity attributable to the parent; group total equity Rs 43.15bn including non-controlling interests Rs 13.35bn"
+        },
+        "borrowings": {
+          "value": 32.975,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5 (31 March 2026 column)",
+          "note": "Bank loans Rs 24.126bn non-current + Rs 3.711bn current + overdrafts and short-term borrowings Rs 5.138bn"
+        },
+        "leaseLiabilities": {
+          "value": 21.823,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5 (31 March 2026 column)",
+          "note": "Rs 20.781bn non-current + Rs 1.042bn current"
+        },
+        "netDebt": {
+          "value": 41.824,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5 (31 March 2026 column)",
+          "note": "Borrowings Rs 32.975bn + leases Rs 21.823bn − cash Rs 6.929bn − current other financial assets (deposits) Rs 6.045bn"
+        },
+        "depreciation": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (not available in this run)",
+          "note": "Not in the reports available to this run (annual report on the laptop); H1 FY2027 depreciation Rs 1.651bn plus ROU and intangible amortisation Rs 0.907bn (Interim to 30 Sep 2026, p. 9)"
+        },
+        "operatingProfit": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (not available in this run)",
+          "note": "Not in the reports available to this run (annual report on the laptop)"
+        },
+        "interestPaid": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26 (not available in this run)",
+          "note": "Not in the reports available to this run; H1 FY2027 interest paid Rs 1.040bn, in operating activities (Interim to 30 Sep 2026, p. 9)",
+          "section": "operating"
         }
       }
     },
@@ -363,14 +416,148 @@
           "note": "Quarter range Rs 84.70–102.75"
         }
       }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 11.384,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Quarter; up 13% from Rs 10.117bn. Six months Rs 20.420bn, flat (Rs 20.412bn)"
+        },
+        "netProfit": {
+          "value": -0.645,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Quarter, attributable; Rs -0.622bn a year earlier. Six months Rs -1.617bn (Rs -0.973bn)"
+        },
+        "eps": {
+          "value": -1.92,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Quarter; Rs -1.85 a year earlier. Six months Rs -4.81 (Rs -2.89)"
+        },
+        "epsSixMonths": {
+          "value": -4.81,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Six months to 30 Sep 2026; Rs -2.89 a year earlier"
+        },
+        "profitFromOperationsSixMonths": {
+          "value": -0.531,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Rs +0.390bn a year earlier"
+        },
+        "financeExpenseSixMonths": {
+          "value": 2.007,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Up 21% from Rs 1.661bn"
+        },
+        "navPerShare": {
+          "value": 86.14,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Rs 88.13 at 31 March 2026"
+        },
+        "totalEquity": {
+          "value": 29.134,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Attributable to the parent; non-controlling interests Rs 12.877bn"
+        },
+        "borrowings": {
+          "value": 40.964,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Bank loans Rs 29.994bn non-current + Rs 4.172bn current + overdrafts and short-term Rs 6.798bn; includes the Rs 5bn debenture issued Sept 2026"
+        },
+        "leaseLiabilities": {
+          "value": 22.346,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Rs 21.214bn non-current + Rs 1.132bn current"
+        },
+        "cash": {
+          "value": 13.501,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Cash Rs 7.536bn + current other financial assets (deposits, short-term instruments) Rs 5.965bn"
+        },
+        "netDebt": {
+          "value": 49.809,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 5",
+          "note": "Borrowings + leases − cash and current deposits. Net debt ÷ group equity (Rs 42.01bn) 1.19x; ÷ parent equity 1.71x"
+        },
+        "operatingCashFlowSixMonths": {
+          "value": -4.788,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 9",
+          "note": "Rs +0.187bn a year earlier; includes Rs 2.83bn repaid to the holding company and Rs 2.17bn more owed by it"
+        },
+        "capexPaidSixMonths": {
+          "value": 0.853,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10",
+          "note": "PPE Rs 0.818bn + intangibles Rs 0.035bn"
+        },
+        "interestPaidSixMonths": {
+          "value": 1.04,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 9",
+          "note": "In operating activities"
+        },
+        "leaseRepaymentsSixMonths": {
+          "value": 1.258,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 10"
+        },
+        "dividendPerShare": {
+          "value": 0.28,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Final for 2025/26 (Rs 94.2mn) paid in the half; no interim declared"
+        },
+        "maldivesMiddleEastPBTSixMonths": {
+          "value": -1.995,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": "South Asian and Middle East sector; Rs -0.742bn a year earlier. Sri Lanka sector Rs -0.156bn (Rs -0.339bn)"
+        },
+        "priceQuarterEnd": {
+          "value": 80.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 13",
+          "note": "Quarter range Rs 80.00–94.80; Rs 120.50 a year earlier"
+        },
+        "publicHolding": {
+          "value": 25.45,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 13",
+          "note": "6,382 public shareholders"
+        },
+        "debentureIssue": {
+          "value": 5.0,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 13",
+          "note": "Listed senior unsecured, 5 and 7 years, 12.60–13.15%; Rs 4.2bn to repay parent-group and one long-term loan, Rs 0.8bn for hotel refurbishment within 36 months"
+        }
+      }
     }
   ],
   "valuationInputs": [
     {
       "name": "Cost of equity",
-      "value": "Bear 18% / Base 16.5% / Bull 15%",
-      "reason": "Bonds about 11–12% plus a premium for a geared, seasonal tourism business.",
-      "since": "2026-11-09"
+      "value": "Bear 22.3% / Base 20.8% / Bull 19.3% (20 Nov 2026)",
+      "reason": "CAPM from scripts/reinvestment.py: 8.24% + beta 1.22 × (4.2% + 6.08%), ±1.5 points. Replaces the hand-set 18/16.5/15%.",
+      "since": "2026-11-20"
     },
     {
       "name": "Scenario weights",
@@ -379,48 +566,61 @@
       "since": "2026-11-09"
     },
     {
-      "name": "Free cash flow this year",
-      "value": "Rs 6.0 / 8.5 / 11.0 a share",
-      "reason": "Operating cash flow Rs 11.2bn (2025/26), less capital spending of about Rs 3bn and lease payments of about Rs 4bn, times the parent's ~69% share.",
-      "since": "2026-11-09"
-    },
-    {
-      "name": "Growth path (DCF)",
-      "value": "3%→5% / 6%→6% / 9%→7% over 10 years",
-      "reason": "Tourism recovery, offset by higher lease costs.",
-      "since": "2026-11-09"
-    },
-    {
       "name": "EPS to March 2027 × P/E",
-      "value": "5.0 × 7 / 7.5 × 9 / 9.5 × 11",
-      "reason": "Q1 loss Rs 1.85 a share worse than last year.",
-      "since": "2026-11-09"
+      "value": "Rs 4.70 / 6.70 / 8.70 × justified P/E (ROE 9/11/13%, long-run growth 2/3/4%)",
+      "reason": "Half-year loss Rs 4.81 already booked (Rs 2.89 last year); second half Rs 9.50 / 11.50 / 13.50 against Rs 12.06 last year as finance costs rise. Base 27% below 2025/26 EPS for that reason; 7% below trailing Rs 7.24. P/E now from the formula at the cost of equity instead of a hand-set 7/9/11x.",
+      "since": "2026-11-20"
     },
     {
       "name": "NAV multiple",
       "value": "0.5x / 0.7x / 0.9x",
-      "reason": "ROE below the cost of equity for most of the last decade.",
-      "since": "2026-11-09"
+      "reason": "Unchanged: ROE below the cost of equity for a decade.",
+      "since": "2026-11-20"
     },
     {
       "name": "Methods used",
-      "value": "NAV, P/E, cash-flow DCF",
-      "reason": "Residual income left out (ignores asset value); dividend too small for a dividend model.",
-      "since": "2026-11-09"
+      "value": "NAV multiple, justified P/E, justified price to book",
+      "reason": "DCF dropped until the annual report's depreciation, operating profit and interest paid are recorded (whole-company DCF at WACC needs them). Residual income left out as before; dividend too small for a dividend model.",
+      "since": "2026-11-20"
     },
     {
       "name": "Margins of safety",
       "value": "Buy 15% / Strong buy 25%",
       "reason": "The owner's standard.",
       "since": "2026-11-09"
+    },
+    {
+      "name": "Beta",
+      "value": "1.22",
+      "reason": "8 steps, 20 Nov 2026. (1) Business: a hotel owner-operator (Maldives, Sri Lanka, Oman, India), one segment. (2) Damodaran's emerging-markets dataset (betaEmerg) could not be opened: his site is blocked by this run's network settings. Stand-in from a web-search extract of his global sector table (date not shown): Hotel/Gaming unlevered beta corrected for cash 0.66. (3) Relevered with net debt Rs 49.81bn (30 Sep 2026, borrowings Rs 40.96bn + leases Rs 22.35bn − cash and deposits Rs 13.50bn) ÷ equity at market value Rs 41.13bn (Rs 84.00 × 336.29mn shares = Rs 28.25bn, plus non-controlling interests at book Rs 12.88bn, because the group's debt carries the minorities' share too) = 1.21, tax 30% (standard rate; the half-year's effective rate is meaningless on a loss): 0.66 × (1 + 0.7 × 1.21) = 1.22. Without the minorities it would be 1.47. (4) Local 5-year betas: none found (web search 20 Nov 2026; TradingView shows only a 1-year beta of 0.87, ignored). Fewer than 3 sources, so step 4 can't be completed. (5) Higher of 1.22 and (no local figure) = 1.22. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified local 5-year betas.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 13.5% / Base 13.0% / Bull 12.5% (20 Nov 2026)",
+      "reason": "scripts/reinvestment.py: debt weight 63.8% (net debt Rs 49.81bn, market cap Rs 28.25bn), cost of debt 12.24% (bond yield; 2025/26 interest paid not recorded), tax 30%. Not used while there's no DCF.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 2% / 3% / 4% (long run); supported 11.3% (share of profit kept × ROE, 2025/26). All within 2 pts.",
+      "reason": "Capex-based check not possible: 2025/26 depreciation and operating profit not recorded (annual report not in this run).",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Long-run ROE (price to book)",
+      "value": "9% / 11% / 13%",
+      "reason": "Ten-year ROE mostly 2–6%, 10.2% and 11.6% in the last two years, about 8% trailing.",
+      "since": "2026-11-20"
     }
   ],
   "openQuestions": [
-    "Q2 results (to September 2026, due by mid-November): is the Maldives loss getting worse or recovering?",
-    "Why did lease liabilities double (new or renewed Maldives leases?), and what is the yearly lease cost now?",
-    "October–March peak season: occupancy and room rates in the Maldives and Sri Lanka.",
-    "Does the dividend grow from Rs 0.28?",
-    "The broker (HNB Stockbrokers, 9 Nov 2026) rates it Buy with a Rs 150 target, far above my Rs 69.50."
+    "Q3 (to December 2026): does the peak season pull the Maldives/Middle East segment back to profit, and does nine-month EPS beat last year's Rs 1.10?",
+    "How much do finance costs rise for a full year with the Rs 5bn debenture (12.6–13.15%) and Rs 22bn of leases?",
+    "Annual report 2026/27 (or /redo full with the 2025/26 annual report): record depreciation, operating profit, interest paid, capex booked and tax rate so the whole-company DCF can be rebuilt.",
+    "Does the Rs 0.8bn hotel refurbishment from the debenture get spent, and on which properties?",
+    "Does the amount due from the holding company (Rs 4.26bn at September, up from Rs 2.0bn) come back in cash?",
+    "Beta: refresh in January 2027 with Damodaran's emerging-markets Hotel/Gaming figure and three local 5-year betas."
   ],
   "changeLog": [
     {
@@ -432,6 +632,16 @@
       "strongBuyPrice": 52.1,
       "priceAtTime": 83.0,
       "archive": null
+    },
+    {
+      "date": "2026-11-20",
+      "basedOn": "Q2 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/add AHUN.N0000 SPEN.N0000; AHUN already covered, so handled as an update). Read the interim to 30 Sep 2026: half-year loss Rs 4.81 a share (Rs 2.89), Maldives/Middle East loss before tax Rs 1.99bn (Rs 0.74bn), net debt Rs 49.8bn (Rs 41.8bn in March), Rs 5bn debenture issued. Applied the current brief: beta 1.22 and CAPM cost of equity 20.8% (was a hand-set 16.5%); P/E and P/B from scripts/valuation.py; old shareholder-cash DCF dropped because the whole-company DCF needs 2025/26 annual-report figures not in this run (depreciation, operating profit, interest paid). Added requiredReturn, modelInputs, management (debenture plan only) and shareholders. Business tests still 1/4, category 3. Fair value Rs 69.50 → 41.31, buy 59.00 → 35.12, strong buy 52.10 → 30.98.",
+      "fairValue": 41.31,
+      "buyPrice": 35.12,
+      "strongBuyPrice": 30.98,
+      "priceAtTime": 84.0,
+      "archive": "research/AHUN.N0000/history/2026-11-09.json"
     }
   ]
 }
