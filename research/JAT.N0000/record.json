@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "JAT.N0000",
   "localFolder": "jat",
-  "updated": "2026-11-08",
+  "updated": "2026-11-20",
   "reportsRead": [
     {
       "file": "JAT Annual Report 2025.pdf",
@@ -12,7 +12,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-08",
-      "note": "Not read in detail: covered by the 2025/26 report's 10-year summary."
+      "note": "Not read in detail: covered by the 2025/26 report's 10-year summary. Superseded by the full rebuild of 20 Nov 2026 from the downloaded reports."
     },
     {
       "file": "jat Annual Report as at 31st March 2026.pdf",
@@ -22,7 +22,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-08",
-      "note": "Used: highlights (p. 18), 10-year summary (pp. 327–328)."
+      "note": "Used: highlights (p. 18), 10-year summary (pp. 327–328). Superseded by the full rebuild of 20 Nov 2026 from the downloaded reports."
     },
     {
       "file": "JAT Interim Financial Statements for the Quarter ended 31st March 2026.pdf",
@@ -32,7 +32,7 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-08",
-      "note": "Superseded by the annual report."
+      "note": "Superseded by the annual report. Superseded by the full rebuild of 20 Nov 2026 from the downloaded reports."
     },
     {
       "file": "JAT Interim Financial Statements for the Quarter ended 30th June 2026.pdf",
@@ -42,7 +42,7 @@
       "type": "interim",
       "audited": false,
       "readOn": "2026-11-08",
-      "note": "Covered by the September interim."
+      "note": "Covered by the September interim. Superseded by the full rebuild of 20 Nov 2026 from the downloaded reports."
     },
     {
       "file": "JAT Interim Financial Statements for the Quarter ended 30th September 2026.pdf",
@@ -51,10 +51,147 @@
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-08"
+      "readOn": "2026-11-08",
+      "note": "Superseded by the full rebuild of 20 Nov 2026 from the downloaded reports."
+    },
+    {
+      "file": "reports/JAT.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-20",
+      "note": "Read in full for the rebuild: statements pp. 243–248, notes, segments p. 255, ten-year summary p. 327, shareholders pp. 324–326, Chairman/MD/CEO pp. 28–33."
+    },
+    {
+      "file": "reports/JAT.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20"
+    },
+    {
+      "file": "reports/JAT.N0000/2026-10-26_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20"
     }
   ],
   "periods": [
+    {
+      "period": "FY 2019",
+      "periodEnd": "2019-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 6.547,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 1.053,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 0.941,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "netProfit": {
+          "value": 0.881,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
+        },
+        "roe": {
+          "value": 19,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2020",
+      "periodEnd": "2020-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 6.296,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 0.837,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 0.704,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "netProfit": {
+          "value": 0.66,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
+        },
+        "roe": {
+          "value": 13,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 5.36,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 0.685,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 0.644,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "netProfit": {
+          "value": 0.6,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
+        },
+        "roe": {
+          "value": 11,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        }
+      }
+    },
     {
       "period": "FY 2022",
       "periodEnd": "2022-03-31",
@@ -65,18 +202,35 @@
         "revenue": {
           "value": 8.897,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 1.186,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 1.258,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
         },
         "netProfit": {
           "value": 1.211,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)",
-          "note": "Profit for the year"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
         },
         "roe": {
           "value": 16,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "totalEquity": {
+          "value": 7.755,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Stated capital + retained earnings + reserves (owners)"
         }
       }
     },
@@ -90,18 +244,35 @@
         "revenue": {
           "value": 10.167,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 1.931,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 1.486,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
         },
         "netProfit": {
           "value": 1.301,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)",
-          "note": "Profit for the year"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
         },
         "roe": {
           "value": 15,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "totalEquity": {
+          "value": 8.642,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Stated capital + retained earnings + reserves (owners)"
         }
       }
     },
@@ -115,18 +286,35 @@
         "revenue": {
           "value": 11.556,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "operatingProfit": {
+          "value": 1.355,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 1.211,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
         },
         "netProfit": {
           "value": 1.023,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)",
-          "note": "Profit for the year"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Profit for the year (group, incl. minorities)"
         },
         "roe": {
           "value": 11,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)"
+        },
+        "totalEquity": {
+          "value": 9.128,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 327 (ten-year summary)",
+          "note": "Stated capital + retained earnings + reserves (owners)"
         }
       }
     },
@@ -140,18 +328,152 @@
         "revenue": {
           "value": 11.625,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "grossProfit": {
+          "value": 4.012,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "grossMarginPct": {
+          "value": 34.5,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "operatingProfit": {
+          "value": 1.823,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Results from operating activities"
         },
         "netProfit": {
           "value": 1.779,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)",
-          "note": "Profit for the year"
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Group profit for the year; owners Rs 1.788bn. Boosted by a Rs 0.17bn tax credit (deferred tax asset on losses)."
+        },
+        "netProfitOwners": {
+          "value": 1.788,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "eps": {
+          "value": 3.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "dividendPerShare": {
+          "value": 0.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, PDF p. 266 (note 12)",
+          "note": "Dividends paid in the year: final 2023/24 Rs 0.20 + first interim 2024/25 Rs 0.60"
+        },
+        "navPerShare": {
+          "value": 20.36,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
         },
         "roe": {
           "value": 17,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 327 (10-year summary)"
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "peYearEnd": {
+          "value": 7.7,
+          "unit": "x",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "priceYearEnd": {
+          "value": 26.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "taxRate": {
+          "value": -10.8,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Tax credit of Rs 0.173bn on profit before tax of Rs 1.606bn"
+        },
+        "totalEquity": {
+          "value": 10.413,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 244 (balance sheet)",
+          "note": "Owners"
+        },
+        "operatingCashFlow": {
+          "value": 0.323,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)"
+        },
+        "capexPaid": {
+          "value": 0.296,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "PPE 0.271 + intangibles 0.025"
+        },
+        "depreciation": {
+          "value": 0.299,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "PPE 0.229 + intangibles 0.033 + right-of-use 0.037"
+        },
+        "capexBooked": {
+          "value": 0.464,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 19 (performance highlights) and p. 279 (note 16.5)",
+          "note": "PPE capital expenditure Rs 0.439bn (p. 19) + intangible additions Rs 0.025bn"
+        },
+        "workingCapitalChange": {
+          "value": 1.008,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Receivables +0.53, advances +0.42, payables down 0.21, inventories down 0.19"
+        },
+        "acquisitions": {
+          "value": 0.07,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Increase in interest in equity-accounted investees (joint venture)"
+        },
+        "interestPaid": {
+          "value": 0.338,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Finance cost paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 3.233,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF pp. 244, 300 (note 29)",
+          "note": "Bank loans 2.587 + overdrafts 0.646"
+        },
+        "leaseLiabilities": {
+          "value": 0.115,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 277 (note 14.6)"
+        },
+        "netDebt": {
+          "value": 1.908,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)",
+          "note": "Company figure: total debt 3.348 less cash and short-term financial assets"
+        },
+        "dividendsPaid": {
+          "value": 0.408,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)"
+        },
+        "rdExpensed": {
+          "value": 0.055,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 19 (performance highlights)",
+          "note": "\"Investment in R&D\"; 0.5% of revenue"
+        },
+        "sharesOutstanding": {
+          "value": 510.408,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
         }
       }
     },
@@ -165,70 +487,319 @@
         "revenue": {
           "value": 12.642,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)",
-          "note": "Up 9%"
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Up 9%. Local 9.25, export 2.95, project 0.44 (p. 258)"
+        },
+        "grossProfit": {
+          "value": 4.794,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "grossMarginPct": {
+          "value": 37.9,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
+        },
+        "operatingProfit": {
+          "value": 1.846,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Results from operating activities; selling costs +31%, admin +44%"
+        },
+        "profitBeforeTax": {
+          "value": 1.694,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
         },
         "netProfit": {
           "value": 1.525,
           "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)",
-          "note": "Down 14%"
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Group profit for the year, down 14%"
+        },
+        "netProfitOwners": {
+          "value": 1.51,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
         },
         "eps": {
           "value": 2.92,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)",
-          "note": "FY2025 Rs 3.50"
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)"
         },
         "dividendPerShare": {
           "value": 0.44,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Annual Report 2025/26, PDF p. 266 (note 12)",
+          "note": "Paid in the year: final for 2024/25. No interim for 2025/26 was paid in the year. Rs 0.376bn (about Rs 0.72 a share, worked out) was paid in H1 FY2027, per-share figure not reported."
         },
         "navPerShare": {
-          "value": 23.13,
+          "value": 22.99,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Interim to 30 Sep 2026, PDF p. 2",
+          "note": "Owners equity ÷ shares; the annual report highlights show Rs 23.13"
         },
         "roe": {
           "value": 13,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
-        },
-        "gearing": {
-          "value": 21,
-          "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
-        },
-        "netDebt": {
-          "value": 2.189,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
-        },
-        "inventoryDays": {
-          "value": 154,
-          "unit": "",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
-        },
-        "debtorDays": {
-          "value": 139,
-          "unit": "",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)",
+          "note": "12.6% (Chairman, p. 29)"
         },
         "peYearEnd": {
           "value": 13.4,
           "unit": "x",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
         },
         "priceYearEnd": {
           "value": 39.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "taxRate": {
+          "value": 10.0,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 243 (income statement)",
+          "note": "Rs 0.169bn on PBT Rs 1.694bn. Low because Rs 0.84bn of brought-forward tax losses were used; Rs 1.2bn of losses remain (p. 267). Statutory 30% in Sri Lanka, 28% NZ, 27.5% Bangladesh."
+        },
+        "totalEquity": {
+          "value": 12.012,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 244 (balance sheet)",
+          "note": "Owners; includes Rs 0.325bn new shares (ESOP)"
+        },
+        "operatingCashFlow": {
+          "value": 1.315,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "After interest paid"
+        },
+        "capexPaid": {
+          "value": 0.448,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "PPE 0.424 + intangibles 0.024"
+        },
+        "depreciation": {
+          "value": 0.326,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "PPE 0.235 + intangibles 0.037 + right-of-use 0.054"
+        },
+        "capexBooked": {
+          "value": 0.424,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF pp. 270, 281 (notes 13.1, 16.5)",
+          "note": "PPE additions 0.398 + intangible additions 0.026; excludes Rs 0.39bn PPE and Rs 0.62bn intangibles that came with Mirotone"
+        },
+        "impairment": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF pp. 270, 281",
+          "note": "No impairment of PPE or intangibles reported"
+        },
+        "licenceAmortisation": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not applicable"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 31",
+          "note": "76% capacity expansion of the water-based acrylic binder plant named, amount not stated"
+        },
+        "workingCapitalChange": {
+          "value": 0.365,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Inventories +0.35, receivables +0.49, payables down 0.33, advances released 0.84"
+        },
+        "acquisitions": {
+          "value": 1.018,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Investment in subsidiaries: Mirotone (NZ) Ltd, bought 1 Nov 2025 (annual report p. 22 calls it an LKR 489mn investment; goodwill Rs 0.30bn, p. 280)"
+        },
+        "interestPaid": {
+          "value": 0.286,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)",
+          "note": "Finance cost paid",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 3.278,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF pp. 244, 300 (note 29)",
+          "note": "Bank loans 2.628 (incl. NZ term loan 0.058) + overdrafts 0.650"
+        },
+        "leaseLiabilities": {
+          "value": 0.369,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 277 (note 14.6)",
+          "note": "Up from 0.115 with Mirotone"
+        },
+        "cash": {
+          "value": 1.457,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 244 (balance sheet)",
+          "note": "Cash 0.279 + short-term financial assets (deposits, money market funds) 1.178"
+        },
+        "netDebt": {
+          "value": 2.189,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)",
+          "note": "Total debt 3.647 less cash and short-term financial assets 1.457"
+        },
+        "gearing": {
+          "value": 21,
+          "unit": "%",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "inventoryDays": {
+          "value": 154,
+          "unit": "",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "debtorDays": {
+          "value": 139,
+          "unit": "",
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "dividendsPaid": {
+          "value": 0.23,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 247 (cash flow statement)"
+        },
+        "rdExpensed": {
+          "value": 0.047,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 19 (performance highlights)",
+          "note": "\"Investment in R&D\"; 0.4% of revenue, below the 2% materiality line"
+        },
+        "rdCapitalised": {
+          "value": 0.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 280 (note 16.7)",
+          "note": "Development costs of Rs 0.123bn came with the Mirotone acquisition, none capitalised in the year"
+        },
+        "rdAsset": {
+          "value": 0.123,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 280 (note 16.7)"
+        },
+        "taxLossesCarriedForward": {
+          "value": 1.2,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 267 (note 10.6)",
+          "note": "Provisional"
         },
         "sharesOutstanding": {
           "value": 522.436,
           "unit": "mn",
-          "source": "Annual Report 2025/26, PDF p. 18 (Performance highlights)"
+          "source": "Annual Report 2025/26, PDF p. 18 (performance highlights)"
+        },
+        "revenueSriLanka": {
+          "value": 9.291,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 255 (segments)",
+          "note": "PBT 1.581"
+        },
+        "revenueBangladesh": {
+          "value": 1.927,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 255",
+          "note": "Down 19%; PBT 0.209"
+        },
+        "revenueDubai": {
+          "value": 0.378,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 255",
+          "note": "PBT 0.007"
+        },
+        "revenueOther": {
+          "value": 1.047,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, PDF p. 255",
+          "note": "Incl. Mirotone from Nov 2025; loss before tax 0.103"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 3.043,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "note": "Quarter; up 34%"
+        },
+        "operatingProfit": {
+          "value": 0.174,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "note": "Quarter; down 25%"
+        },
+        "netProfitOwners": {
+          "value": 0.153,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, PDF p. 3",
+          "note": "Quarter; flat"
+        },
+        "eps": {
+          "value": 0.29,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, PDF p. 4",
+          "note": "Quarter; Q1 FY2026 Rs 0.30"
+        },
+        "navPerShare": {
+          "value": 23.47,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, PDF p. 2"
+        },
+        "operatingCashFlow": {
+          "value": 0.499,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, PDF p. 8",
+          "note": "Quarter"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 3.964,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Quarter; up 37%"
+        },
+        "operatingProfit": {
+          "value": 0.479,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Quarter; up 42%"
+        },
+        "netProfitOwners": {
+          "value": 0.345,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Quarter; up 38%"
+        },
+        "eps": {
+          "value": 0.66,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, PDF p. 4",
+          "note": "Quarter; Q2 FY2026 Rs 0.48"
         }
       }
     },
@@ -243,70 +814,147 @@
           "value": 7.007,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 3",
-          "note": "Up 36%"
+          "note": "Six months; up 36%. Quarter Rs 3.964bn, up 37%"
+        },
+        "grossProfit": {
+          "value": 2.457,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Six months; margin 35.1% (H1 FY2026 35.0%)"
+        },
+        "operatingProfit": {
+          "value": 0.653,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Six months; up 15%. Quarter Rs 0.479bn, up 42%"
         },
         "netProfit": {
+          "value": 0.504,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Six months, group"
+        },
+        "netProfitOwners": {
           "value": 0.497,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 3",
-          "note": "Attributable; up 24%"
+          "note": "Six months; up 24%. Quarter Rs 0.345bn, up 38%"
         },
         "eps": {
           "value": 0.95,
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, PDF p. 4",
-          "note": "H1 FY2026 Rs 0.77"
+          "note": "Six months (Q2 Rs 0.66); H1 FY2026 Rs 0.77"
+        },
+        "taxRate": {
+          "value": 16.2,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, PDF p. 3",
+          "note": "Six months: Rs 0.098bn on PBT Rs 0.602bn"
         },
         "navPerShare": {
           "value": 23.48,
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, PDF p. 2"
         },
+        "totalEquity": {
+          "value": 12.268,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 2",
+          "note": "Owners"
+        },
         "operatingCashFlow": {
           "value": -0.046,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 9",
-          "note": "Inventory up Rs 1.13bn"
+          "note": "Six months; inventories up Rs 1.13bn, advances up Rs 0.65bn"
+        },
+        "capexPaid": {
+          "value": 0.234,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 9",
+          "note": "Six months: PPE 0.127 + intangibles 0.107; plus Rs 0.035bn on investment property"
+        },
+        "depreciation": {
+          "value": 0.194,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 9",
+          "note": "Six months: PPE 0.127 + intangibles 0.035 + right-of-use 0.031"
         },
         "borrowings": {
-          "value": 4.38,
+          "value": 4.012,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 2",
-          "note": "Loans Rs 3.90bn + overdrafts Rs 0.48bn"
+          "note": "Loans and leases 3.896 + overdrafts 0.485, less leases about 0.37 (lease split not given in the interim); total debt incl. leases Rs 4.380bn"
         },
-        "dividendPaid": {
+        "cash": {
+          "value": 1.46,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 2",
+          "note": "Cash 0.350 + short-term financial assets 1.109"
+        },
+        "netDebt": {
+          "value": 2.921,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 2",
+          "note": "Total debt incl. leases 4.380 less cash and short-term financial assets 1.460 (worked out the way the annual report does)"
+        },
+        "inventory": {
+          "value": 4.569,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 2",
+          "note": "Up from 3.480 at March"
+        },
+        "dividendsPaid": {
           "value": 0.376,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, PDF p. 7",
-          "note": "About Rs 0.72 a share"
+          "source": "Interim to 30 Sep 2026, PDF pp. 7, 9",
+          "note": "About Rs 0.72 a share (worked out; per-share figure not reported)"
         },
-        "revenueNewZealand": {
-          "value": 0.693,
+        "sharesOutstanding": {
+          "value": 522.436,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, PDF p. 11"
+        },
+        "revenueSriLanka": {
+          "value": 4.557,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 11",
-          "note": "New this year"
+          "note": "Six months; up 14%"
         },
         "revenueBangladesh": {
           "value": 1.559,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, PDF p. 11",
-          "note": "Up 49%"
+          "note": "Six months; up 49%"
+        },
+        "revenueNewZealand": {
+          "value": 0.693,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 11",
+          "note": "Six months; new (Mirotone)"
+        },
+        "revenueEvChargers": {
+          "value": 0.36,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, PDF p. 11",
+          "note": "Six months; down 5%"
         },
         "priceQuarterEnd": {
           "value": 32.5,
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, PDF p. 13",
-          "note": "Q2 range Rs 32.40–40.20"
+          "note": "Q2 range Rs 32.40–40.20; Q1 Rs 35.00–44.00"
         }
       }
     }
   ],
   "valuationInputs": [
     {
-      "name": "Cost of equity",
-      "value": "Bear 20% / Base 18% / Bull 16.5%",
-      "reason": "Bonds about 12% (Oct 2026) plus a premium for a small, export-exposed manufacturer.",
-      "since": "2026-11-08"
+      "name": "Beta",
+      "value": "1.14 (provisional)",
+      "since": "2026-11-20",
+      "reason": "8 steps, 20 Nov 2026. (1) Business: one business in effect, coatings (wood coatings 73% of H1 FY2027 revenue, decoratives 15%; furnishing, brushes and EV chargers the rest: Interim Sep 2026, p. 11), so one sector beta: specialty chemicals. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-in from a web-search extract of his global table (January 2026): Chemical (Specialty), 952 firms, unlevered beta corrected for cash 1.04. (3) Relevered with net debt Rs 2.92bn (30 Sep 2026, incl. leases, less cash and short-term deposits) ÷ market value Rs 20.48bn (522.4mn shares × Rs 39.20, CSE close 19 Nov 2026) = 0.14, at the 30% statutory rate (the effective rate is low only while tax losses last): 1.04 × (1 + 0.70 × 0.14) = 1.14. (4) Local 5-year betas: only one found, StockAnalysis 0.46 (5Y, undated web-search extract); TradingView 0.95 and Simply Wall St 0.20 give no period and are ignored. Fewer than the 3 sources the rule asks for. (5) Higher of 1.14 and 0.46 = 1.14. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. (8) Shown in the Required return tile. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas."
     },
     {
       "name": "Scenario weights",
@@ -315,48 +963,86 @@
       "since": "2026-11-08"
     },
     {
-      "name": "Long-run ROE (price to book)",
-      "value": "12% / 14% / 17%",
-      "reason": "ROE 11–17% over five years.",
-      "since": "2026-11-08"
-    },
-    {
-      "name": "ROE path (residual income)",
-      "value": "13%→11% / 14.5%→14% / 16%→17%",
-      "reason": "Over 10 years, then held. Payout 20%.",
-      "since": "2026-11-08"
-    },
-    {
-      "name": "Long-term growth",
-      "value": "5% / 6% / 7%",
-      "reason": "Roughly nominal GDP growth.",
-      "since": "2026-11-08"
-    },
-    {
-      "name": "EPS to March 2027 × P/E",
-      "value": "2.9 × 8 / 3.4 × 10 / 3.8 × 12",
-      "reason": "H1 EPS Rs 0.95; H2 about 15% above last year's Rs 2.15. P/E 7.7–13.4x at the last two year-ends.",
-      "since": "2026-11-08"
-    },
-    {
-      "name": "Methods used",
-      "value": "P/B, P/E, residual income",
-      "reason": "Dividend model left out (low payout); DCF unreliable with heavy working capital.",
-      "since": "2026-11-08"
-    },
-    {
       "name": "Margins of safety",
       "value": "Buy 15% / Strong buy 25%",
       "reason": "The owner's standard.",
       "since": "2026-11-08"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "depreciation",
+      "reason": "No company split. Calculator range used for the DCF start cash.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Normal tax rate",
+      "value": "25%",
+      "reason": "FY2026 effective rate 10% because Rs 0.84bn of tax losses were used; Rs 1.2bn remain, enough for roughly one to two more years. H1 FY2027 16%. Statutory 30% in Sri Lanka, 27.5% Bangladesh, 28% NZ; 25% allows for the remaining losses and the 9% UAE rate.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 21.5% / Base 20.0% / Bull 18.5%",
+      "reason": "From scripts/reinvestment.py (20 Nov 2026): 8.24% + 1.14 × (4.2% + 6.08%) = 20.0%, ±1.5 points. Replaces the hand-set 20 / 18 / 16.5%.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 19.7% / Base 18.4% / Bull 17.1%",
+      "reason": "From scripts/reinvestment.py (20 Nov 2026): cost of debt 8.18% (interest paid 0.286 ÷ average borrowings and leases, FY 2026), tax 10% (effective), debt weight 12.5% (net debt Rs 2.92bn at Sep 2026, market cap Rs 20.48bn at Rs 39.20). Cost of debt about 4 points under the bond yield: short-term import and working-capital loans, some in foreign currency. Used only for the DCF reading.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 4% / 8% / 12%; supported 12.0% (reinvestment rate 89.1% × return on capital 13.5%, FY 2026). All within 2 pts.",
+      "reason": "From scripts/reinvestment.py on FY 2026. The reinvestment includes the Rs 1.02bn Mirotone purchase; without it the reinvestment rate is about 28%, supporting about 4%, so the base case relies on Mirotone and Bangladesh. Profit kept × ROE gives 11.0%.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "12% / 14% / 16%",
+      "reason": "ROE 16, 15, 11, 17, 13% over FY2022–26 (average 14.4%); 13.2% on the last 12 months. Used for P/B, justified P/E and residual income.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Long-run growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Below the 12.24% bond yield; roughly nominal growth.",
+      "since": "2026-11-08"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "2.60 × 3.5 / 3.00 × 4.1 / 3.40 × 4.9",
+      "reason": "H1 EPS Rs 0.95; H2 Rs 1.65 / 2.05 / 2.45 against Rs 2.15 last year (tax rising as losses run out). P/E justified at the cost of equity (payout 1 − growth ÷ ROE), from scripts/valuation.py; was a chosen 8 / 10 / 12x. Base 3% below the Rs 3.10 run-rate (12 months to Sep 2026).",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Residual income",
+      "value": "ROE 13% → 12 / 14 / 16% over 10 years; payout 25%",
+      "reason": "Payout: Rs 0.376bn paid in Sep 2026 on 2025/26 owners profit of Rs 1.51bn.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "DCF reading (not weighted)",
+      "value": "Start cash 1.15 / 1.30 / 1.45; after-tax operating profit 1.30 / 1.45 / 1.60 (Rs bn); growth 4 / 8 / 12% then 5 / 6 / 7%; return on capital 10 / 12 / 14%",
+      "reason": "Trailing operating profit Rs 1.93bn × (1 − 25% normal tax) = 1.45; start cash less about 0.15 for non-cash gains (investment property revaluation). Calculator start from FY2026 operating cash: 1.13 / 1.19 / 1.25 (already net of that year's working-capital build). Gives Rs 1.83 / 2.79 / 5.62; left out of the average because cash swings with stock.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Methods used",
+      "value": "Justified P/B, P/E (justified), residual income",
+      "reason": "Dividend model left out (payout about a quarter); DCF shown as a reading only (working capital swings). Inputs saved as modelInputs in data/JAT.N0000.json; values from scripts/valuation.py.",
+      "since": "2026-11-20"
     }
   ],
   "openQuestions": [
-    "Do costs keep rising nearly as fast as sales (selling +48%, admin +32% in H1)?",
-    "Does inventory (up Rs 1.13bn in H1) come down, turning cash flow positive?",
-    "How profitable is the New Zealand business after integration?",
-    "Is the dividend Rs 0.44 or about Rs 0.72 a share for the year (reports differ)?",
-    "Does ROE recover above 15%?"
+    "Does stock come down from Rs 4.57bn in the second half (it usually falls in H2), turning operating cash positive for the year?",
+    "Does net debt fall back from Rs 2.92bn by March 2027?",
+    "What does Mirotone earn? Is the New Zealand business profitable, and how fast do Australian sales grow?",
+    "What is the tax rate in H2 2026/27, and when do the remaining Rs 1.2bn of tax losses run out?",
+    "Do selling and admin costs (+48% and +32% in H1) slow to the pace of sales?",
+    "What dividend per share is declared for 2026/27 (about Rs 0.72 was paid in Sep 2026)?",
+    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and three local 5-year betas."
   ],
   "changeLog": [
     {
@@ -368,6 +1054,16 @@
       "strongBuyPrice": 15.7,
       "priceAtTime": 37.1,
       "archive": null
+    },
+    {
+      "date": "2026-11-20",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/redo JAT.N0000 full). Research record and analysis rebuilt from the downloaded annual report 2025/26 and interims to June and September 2026: full statements, reinvestment figures, segments, ten-year summary, management and shareholders added. Required return now from the beta (1.14 → 20.0%, was a hand-set 18%), P/E method now uses the justified P/E (4.1x base, was a chosen 10x), so fair value fell from Rs 21.00 to Rs 11.98. Whole-company DCF added as a reading (about Rs 3), not weighted. Business tests 2 of 4 (unchanged): category 3, avoid for now. Beta provisional (stand-in sector beta, one local beta). The 2025/26 dividend per share isn't stated in the reports (about Rs 0.72 worked out).",
+      "fairValue": 11.98,
+      "buyPrice": 10.18,
+      "strongBuyPrice": 8.98,
+      "priceAtTime": 39.2,
+      "archive": "research/JAT.N0000/history/2026-11-08.json"
     }
   ]
 }

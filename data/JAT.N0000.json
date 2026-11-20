@@ -3,7 +3,7 @@
   "ticker": "JAT.N0000",
   "company": {
     "name": "JAT Holdings PLC",
-    "sector": "Paints and wood coatings",
+    "sector": "Coatings (wood coatings, paints), furnishing and EV chargers",
     "fiscalYearEnd": "03-31"
   },
   "shareClasses": [
@@ -12,32 +12,98 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-08",
+  "analysisDate": "2026-11-20",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026"
+      "Annual report 2025/26 (incl. ten-year summary)",
+      "Interim report to 30 June 2026",
+      "Interim report to 30 September 2026"
     ]
   },
   "price": {
-    "value": 37.1,
-    "date": "2026-11-06",
+    "value": 39.2,
+    "date": "2026-11-19",
     "source": "CSE closing price",
-    "note": "July–September 2026 range Rs 32.40–40.20; April–June Rs 35.00–44.00."
+    "note": "Traded Rs 35.00–44.00 in April–June 2026 and Rs 32.40–40.20 in July–September 2026; Rs 24.00–55.50 in the year to March 2026."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Fast-growing after overseas expansion, but priced well above what its returns support",
-    "text": "JAT Holdings (JAT.N0000) is growing fast after expanding into New Zealand and Bangladesh, but the price is well ahead of what its returns support. At Rs 37.10 it trades at 1.58x its NAV of Rs 23.48 and 12.0x trailing earnings, with a 1.9% dividend yield. Return on equity has been 11–17% (13% in the year to March 2026), below the 18% return I require, so the book-value methods value it below NAV, and only the P/E method supports today's price. Averaging the methods gives a fair value of about Rs 21, so the price is about 77% above it. I'd buy at up to about Rs 17.80 and treat under Rs 15.70 as a strong buy. Sales rose 36% in the first half, but costs rose almost as fast and the business used cash to build inventory."
+    "headline": "A growing coatings group, but it earns about 13% on equity against a 20% required return, so the price is far above value",
+    "text": "JAT Holdings (JAT.N0000), the wood-coatings maker behind Sayerlack in Sri Lanka, bought Mirotone of New Zealand in November 2025. Sales jumped 36% in the six months to September 2026 and profit to owners rose 24%. At Rs 39.20 the share trades at 1.67x its NAV of Rs 23.48 and 12.6x trailing earnings of Rs 3.10.\n\nThe problem is the return. Return on equity has been 11–17% for five years (13% last year, helped by tax losses), while a shareholder should require about 20% here. Growth also needs a lot of cash: stock and customer credit tie up about 64 cents of every rupee of sales, so operating cash flow was −Rs 46mn in the half year and net debt rose to Rs 2.9bn. On the three book-and-earnings methods the fair value is about **Rs 12.00**, about 31% of the price. I'd buy only up to about **Rs 10.20** and treat under **Rs 9.00** as a strong buy. In practice that means not buying at today's price. The fair value was Rs 21.00 in the first analysis (8 November 2026). It is lower now mainly because the required return is now worked out from the beta (20%, against 18% before) and the P/E method uses the P/E those returns justify."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "assessed": "2026-11-20",
+    "reason": "Low debt and a profit every year, but returns are below 15% and profit isn't turning into cash because growth ties up stock and receivables.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "13%",
+        "note": "16%, 15%, 11%, 17%, 13% over 2021/22–2025/26 (average 14.4%); 13.2% over the last 12 months. 2024/25 was lifted by a tax credit and 2025/26 by tax losses."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.24x equity",
+        "note": "Net debt Rs 2.92bn against equity Rs 12.27bn (Sep 2026), about 1.3x operating profit plus depreciation. Up from Rs 2.19bn in March as stock was built."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit in all ten years of the summary (Rs 0.60–1.78bn). Tax effects swing it: a Rs 0.17bn tax credit in 2024/25 and Rs 0.84bn of tax losses used in 2025/26."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "50%",
+        "note": "Operating cash Rs 0.32bn + Rs 1.31bn over two years against profit of Rs 3.30bn, and −Rs 0.05bn in H1 2026/27 (stock up Rs 1.13bn). Dividends are paid (Rs 0.38bn in Sep 2026) but partly from borrowing."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.14,
+    "betaBasis": "Provisional. Damodaran's global Chemical (Specialty) unlevered beta 1.04 (cash-corrected, January 2026; web-search stand-in, his emerging-markets file couldn't be opened), relevered at net debt 0.14x market value with 30% tax: 1.14. Only one local 5-year beta found (StockAnalysis 0.46). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 21.5,
+      "base": 20.0,
+      "bull": 18.5
+    },
+    "costOfDebt": 8.18,
+    "wacc": {
+      "bear": 19.7,
+      "base": 18.4,
+      "bull": 17.1
+    },
+    "debtWeight": 12.5,
+    "asOf": "2026-11-20",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Chemical (Specialty) unlevered, cash-corrected 1.04 (January 2026, web-search extract); one local 5-year beta 0.46 (StockAnalysis, undated)",
+      "Cost of debt: interest paid Rs 0.286bn ÷ average borrowings and leases (Annual Report 2025/26, PDF pp. 247, 300, 277)",
+      "Weights: market cap Rs 20.48bn at Rs 39.20 (CSE close 19 Nov 2026), net debt Rs 2.92bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity 8.24% + 1.14 × (4.2% + 6.08%) = 20.0%, ±1.5 points for bear and bull. The cost of debt (8.2%) is about 4 points under the bond yield: most borrowing is short-term import and working-capital loans, some in foreign currency, and that is the interest actually paid. The WACC is shown for reference only: the DCF isn't weighted (see the methods)."
   },
   "valuation": {
-    "fairValue": 21.0,
-    "buyPrice": 17.8,
-    "strongBuyPrice": 15.7,
+    "fairValue": 11.98,
+    "buyPrice": 10.18,
+    "strongBuyPrice": 8.98,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -48,13 +114,13 @@
       "bull": 20
     },
     "nav": 23.48,
-    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 0.89x NAV)."
+    "note": "Average of three methods (justified P/B, P/E and residual income), each weighting bear/base/bull 30/50/20; from scripts/valuation.py. About 0.51x NAV. The whole-company DCF gives about Rs 3 and is shown as a reading, not weighted."
   },
   "dividend": {
     "perShare": 0.44,
-    "label": "for 2025/26",
-    "source": "Annual Report 2025/26, PDF p. 18",
-    "note": "The interim to 30 Sep 2026 shows about Rs 0.72 a share paid in the half year (worked out from the total, not a reported figure)"
+    "label": "paid in 2025/26 (final for 2024/25)",
+    "source": "Annual Report 2025/26, PDF pp. 243, 266 (note 12)",
+    "note": "Rs 0.376bn was paid in September 2026 (the final for 2025/26), about Rs 0.72 a share worked out from the total; the reports don't give the per-share figure."
   },
   "keyMetrics": [
     {
@@ -67,76 +133,80 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 1.58,
+      "value": 1.67,
       "unit": "x",
-      "note": "Fails your NAV rule"
+      "note": "At Rs 39.20"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 12.0,
+      "value": 12.6,
       "unit": "x",
-      "note": "Trailing EPS Rs 3.10"
+      "note": "EPS Rs 3.10, 12 months to Sep 2026"
     },
     {
       "id": "roe",
       "label": "Return on equity",
       "value": 13,
       "unit": "%",
-      "note": "Year to March 2026"
+      "note": "2025/26; 13.2% over the last 12 months"
     },
     {
-      "id": "dividendYield",
-      "label": "Dividend yield",
-      "value": 1.9,
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 20.0,
       "unit": "%",
-      "note": "About Rs 0.72 paid this year"
+      "note": "Beta 1.14"
     },
     {
       "id": "revenueGrowth",
       "label": "Revenue growth (H1)",
       "value": 36,
       "unit": "%",
-      "note": "New Zealand and Bangladesh"
+      "note": "Mirotone (NZ) and Bangladesh"
     },
     {
-      "id": "gearing",
-      "label": "Gearing",
-      "value": 21,
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 2.92,
+      "unit": "Rs bn",
+      "note": "0.24x equity, Sep 2026"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.8,
       "unit": "%",
-      "note": "March 2026"
-    },
-    {
-      "id": "inventoryDays",
-      "label": "Inventory days",
-      "value": 154,
-      "unit": "",
-      "note": "Year to March 2026"
+      "display": "about 1.8%",
+      "note": "About Rs 0.72 paid Sep 2026"
     },
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 19.4,
-      "unit": "Rs bn",
-      "display": "~Rs 19bn"
+      "value": 20.5,
+      "unit": "Rs bn"
     }
   ],
   "highlights": [
     {
-      "title": "Six months to 30 September 2026 (group, unaudited)",
-      "text": "Revenue rose 36% to Rs 7.01bn and profit attributable rose 24% to Rs 497mn. EPS was Rs 0.95 against Rs 0.77."
+      "title": "Sales up 36% with New Zealand",
+      "text": "Revenue for the six months to September 2026 was Rs 7.01bn (+36%): Sri Lanka Rs 4.56bn (+14%), Bangladesh Rs 1.56bn (+49%), New Zealand (Mirotone) Rs 0.69bn (new). The September quarter alone was Rs 3.96bn (+37%)."
     },
     {
-      "title": "Where growth came from",
-      "text": "New Zealand (Mirotone) added Rs 693mn of sales, Bangladesh grew 49% and Sri Lanka 14%. Wood coatings rose 34% and decoratives 83%."
+      "title": "Profit up, but costs rise almost as fast",
+      "text": "Gross margin held at 35.1%. Selling costs rose 48% and admin 32%, so operating profit grew 15% to Rs 653mn. Exchange gains cut finance costs 30%. Profit to owners Rs 497mn (+24%), EPS Rs 0.95 (Rs 0.77); Q2 EPS Rs 0.66 (Rs 0.48)."
     },
     {
-      "title": "Costs and cash",
-      "text": "Selling costs rose 48% and administration 32%, so operating profit rose only 15%. Operating cash flow was negative as inventory rose Rs 1.13bn."
+      "title": "Cash went into stock",
+      "text": "Inventory rose to Rs 4.57bn from Rs 3.48bn in March and advances by Rs 0.65bn, so operating cash flow was −Rs 46mn. Total debt rose to Rs 4.38bn and net debt to Rs 2.92bn (Rs 2.19bn in March). Rs 376mn of dividends were paid."
     },
     {
-      "title": "Year to March 2026",
-      "text": "Revenue Rs 12.64bn (up 9%), profit Rs 1.52bn (down 14%), EPS Rs 2.92, ROE 13%, gearing 21%."
+      "title": "2025/26: the Mirotone year",
+      "text": "Revenue Rs 12.64bn (+9%), gross margin 37.9% (34.5%), operating profit Rs 1.85bn (+1%), profit Rs 1.52bn (−14%; the year before had a tax credit). EPS Rs 2.92, ROE 13%. Mirotone (NZ) was bought on 1 November 2025, with Rs 1.02bn paid for subsidiaries."
+    },
+    {
+      "title": "Tax will rise",
+      "text": "Tax was only 10% of profit in 2025/26 because Rs 0.84bn of tax losses were used; Rs 1.2bn remain. As they run out, tax should move toward 25–30%, taking roughly 15% off profit unless the business grows into it."
     }
   ],
   "history": {
@@ -159,20 +229,20 @@
           11,
           17,
           13,
-          null
+          13.2
         ],
         "notes": [
           null,
           null,
           null,
-          "Helped by a tax credit",
-          null,
-          null
+          "Tax credit",
+          "Tax losses used",
+          "12 months to Sep 2026"
         ]
       },
       {
         "id": "pe",
-        "label": "P/E",
+        "label": "P/E (year end)",
         "unit": "x",
         "values": [
           null,
@@ -180,27 +250,48 @@
           null,
           7.7,
           13.4,
-          12.0
+          12.6
         ],
         "notes": [
+          "Not in the reports read",
+          "Not in the reports read",
+          "Not in the reports read",
           null,
           null,
-          null,
-          "Year-end",
-          "Year-end",
-          "Trailing, at Rs 37.10"
+          "Trailing, Rs 39.20"
         ]
       },
       {
-        "id": "profit",
-        "label": "Profit for the year",
-        "unit": "Rs bn",
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
         "values": [
-          1.21,
-          1.3,
-          1.02,
-          1.78,
-          1.52,
+          null,
+          null,
+          null,
+          3.5,
+          2.92,
+          3.1
+        ],
+        "notes": [
+          "Not in the reports read",
+          "Not in the reports read",
+          "Not in the reports read",
+          null,
+          null,
+          "12 months to Sep 2026"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend paid per share",
+        "unit": "Rs",
+        "values": [
+          0.82,
+          0.83,
+          0.79,
+          0.8,
+          0.44,
           null
         ],
         "notes": [
@@ -208,8 +299,8 @@
           null,
           null,
           null,
-          null,
-          null
+          "Final for 2024/25",
+          "About Rs 0.72 paid Sep 2026; per-share figure not reported"
         ]
       }
     ]
@@ -218,212 +309,589 @@
     {
       "method": "NAV",
       "value": "Rs 23.48",
-      "reading": "The price is 1.58x NAV, so it fails your NAV rule."
+      "reading": "The price is 1.67x NAV (30 Sep 2026). Book value is worth less than book while ROE stays below the required return."
     },
     {
       "method": "Return on equity",
       "value": "13%",
-      "reading": "Year to March 2026; 11–17% over the last five years, below the 18% required return."
+      "reading": "11–17% over five years, average 14.4%; below the 15% test and well below the 20% required return."
     },
     {
       "method": "P/E",
-      "value": "12.0x",
-      "reading": "On trailing EPS of Rs 3.10. Year-end P/E 13.4x (2026), 7.7x (2025)."
+      "value": "12.6x",
+      "reading": "On trailing EPS of Rs 3.10. The P/E justified by 14% ROE, 6% long-run growth and a 20% required return is about 4.1x."
     },
     {
       "method": "Dividends",
-      "value": "1.9% yield",
-      "reading": "About Rs 0.72 paid this year; the payout is 15–25% of profit."
+      "value": "about 1.8% yield",
+      "reading": "About a quarter of profit is paid out (Rs 0.38bn in Sep 2026). Not used as a method: the payout is too low for a dividend model to say much."
     },
     {
-      "method": "Cash and debt",
-      "value": "Gearing 21%",
-      "reading": "Operating cash flow turned negative in the half as inventory grew; borrowings Rs 4.38bn."
+      "method": "DCF (whole company)",
+      "value": "about Rs 3",
+      "reading": "Bear Rs 1.83 / base Rs 2.79 / bull Rs 5.62. Each 8% of growth needs about 0.7 of after-tax operating profit reinvested (mostly stock and receivables), at a 12% return on capital against an 18.4% WACC, so growth adds little value. Not weighted: cash flow swings with stock levels."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt 0.24x equity",
+      "reading": "Rs 2.92bn at September 2026, mostly short-term import and bank loans; interest cover 5.8x in 2025/26."
     }
   ],
   "models": [
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 11.0,
-      "base": 15.7,
-      "bull": 24.7,
-      "weighted": 16.1,
-      "comment": "Below book value because ROE (about 14%) is under the 18% required return."
+      "bear": 9.96,
+      "base": 13.42,
+      "bull": 18.38,
+      "weighted": 13.37,
+      "comment": "NAV Rs 23.48 × (ROE − growth) ÷ (required return − growth): ROE 12/14/16% against 21.5/20/18.5%, so about 0.4–0.8x book."
     },
     {
       "id": "pe",
-      "name": "P/E method",
-      "bear": 23.2,
-      "base": 34.0,
-      "bull": 45.6,
-      "weighted": 33.1,
-      "comment": "The only method that supports today's price: assumes the market keeps paying about 10x earnings for growth."
+      "name": "P/E (justified)",
+      "bear": 9.19,
+      "base": 12.24,
+      "bull": 16.63,
+      "weighted": 12.2,
+      "comment": "EPS to March 2027 Rs 2.60 / 3.00 / 3.40 (H1 Rs 0.95 plus second half Rs 1.65 / 2.05 / 2.45; last year Rs 2.15) × the P/E the returns justify, 3.5x / 4.1x / 4.9x. Base Rs 3.00 is 3% below the Rs 3.10 run-rate (12 months to Sep 2026)."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 7.1,
-      "base": 13.3,
-      "bull": 24.4,
-      "weighted": 13.7,
-      "comment": "Book value plus profit earned above the required return; strict while ROE is below 18%."
+      "bear": 7.43,
+      "base": 10.3,
+      "bull": 14.9,
+      "weighted": 10.36,
+      "comment": "Book Rs 23.48 plus profit above the required return; ROE moves from 13% to 12/14/16% over ten years, payout 25%."
     }
   ],
-  "modelsNote": "A dividend model (Rs 2.9 / 6.4 / 10.4) understates a company that keeps most of its profit, and heavy working capital makes free cash flow too irregular for a reliable DCF, so the fair value uses three methods.",
+  "modelsNote": "Three methods, averaged; values from scripts/valuation.py. Growth check: assumed 4% / 8% / 12% a year for five years against supported growth of 12.0% (reinvestment rate 89% × return on capital 13.5%, 2025/26, including the Rs 1.02bn Mirotone purchase); all within 2 points. Without the acquisition, reinvestment supported only about 4%, so the base case leans on Mirotone and Bangladesh. Long-run growth 5/6/7% stays below the 12.24% bond yield. The DCF (about Rs 3) is left out of the average because operating cash swings with stock; with it, the fair value would be about Rs 9.75.",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Cost of equity",
-        "bear": "20%",
-        "base": "18%",
-        "bull": "16.5%"
+        "label": "Required return (cost of equity)",
+        "bear": "21.5%",
+        "base": "20.0%",
+        "bull": "18.5%"
       },
       {
-        "label": "Long-run ROE (price to book)",
+        "label": "Long-run ROE",
         "bear": "12%",
         "base": "14%",
-        "bull": "17%"
+        "bull": "16%"
       },
       {
-        "label": "Return on equity path",
-        "bear": "13% falling to 11%",
-        "base": "14.5% falling to 14%",
-        "bull": "16% rising to 17%"
-      },
-      {
-        "label": "Long-term growth",
+        "label": "Long-run growth",
         "bear": "5%",
         "base": "6%",
         "bull": "7%"
       },
       {
-        "label": "EPS to March 2027 × P/E",
-        "bear": "2.9 × 8",
-        "base": "3.4 × 10",
-        "bull": "3.8 × 12"
+        "label": "EPS to March 2027 × justified P/E",
+        "bear": "Rs 2.60 × 3.5",
+        "base": "Rs 3.00 × 4.1",
+        "bull": "Rs 3.40 × 4.9"
+      },
+      {
+        "label": "Growth, next five years (growth check)",
+        "bear": "4%",
+        "base": "8%",
+        "bull": "12%"
+      },
+      {
+        "label": "Return on capital (DCF reading)",
+        "bear": "10%",
+        "base": "12%",
+        "bull": "14%"
       }
     ],
     "averages": {
-      "bear": 13.8,
-      "base": 21.0,
-      "bull": 31.6
+      "bear": 8.86,
+      "base": 11.99,
+      "bull": 16.64
     },
-    "common": "Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a small, export-exposed manufacturer. In the base case, the second half grows about 15% on last year's, giving EPS of about Rs 3.40 for the year to March 2027."
+    "common": "NAV Rs 23.48 and net debt Rs 2.92bn at 30 September 2026; 522.4 million shares. Payout 25%. Residual income starts at 13% ROE. Tax assumed to normalise at about 25% as tax losses run out. Price Rs 39.20 (CSE close, 19 November 2026)."
   },
   "sensitivity": {
-    "title": "Residual income base case, Rs per share",
-    "rowLabel": "Cost of equity",
-    "columnLabel": "Long-run ROE",
+    "title": "Fair value (three methods), Rs per share",
+    "rowLabel": "Required return (base)",
+    "columnLabel": "Long-run ROE (base)",
     "rows": [
+      "14%",
       "16%",
       "18%",
-      "20%"
+      "20%",
+      "22%"
     ],
     "columns": [
-      "11%",
+      "12%",
       "14%",
-      "17%"
+      "16%",
+      "18%"
     ],
     "values": [
       [
-        11.3,
-        17.4,
-        24.7
+        18.4,
+        23.3,
+        28.2,
+        33.2
       ],
       [
-        8.9,
-        13.3,
-        18.5
+        14.1,
+        17.8,
+        21.4,
+        25.1
       ],
       [
-        7.2,
-        10.5,
-        14.3
+        11.5,
+        14.3,
+        17.2,
+        20.0
+      ],
+      [
+        9.6,
+        12.0,
+        14.3,
+        16.6
+      ],
+      [
+        8.3,
+        10.3,
+        12.2,
+        14.1
       ]
     ],
     "base": {
-      "row": 1,
+      "row": 3,
       "column": 1
     },
-    "note": "On book value, today's price would need ROE well above 17% for years."
+    "note": "Bear and bull move with the base. Even at a 14% required return and 18% ROE for good, the methods give about Rs 33, below today's Rs 39.20. The market price assumes either a much lower required return or returns well above anything JAT has earned in the last five years."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 21.0
+        "maxPrice": 11.98
       },
       {
         "shares": 150,
-        "maxPrice": 17.8
+        "maxPrice": 10.18
       },
       {
         "shares": 150,
-        "maxPrice": 15.7
+        "maxPrice": 8.98
       }
     ],
-    "averagePrice": 18.45,
-    "totalCost": 9225,
-    "note": "About Rs 9,225 in total, against Rs 18,550 at Rs 37.10.",
-    "realism": "Rs 21 needs about a 43% fall and Rs 17.80 about 52%. The share was Rs 26.90 in March 2025, so it has been close recently, but it would take a market sell-off or a profit disappointment."
+    "averagePrice": 10.54,
+    "totalCost": 5270,
+    "note": "About Rs 5,270 in total, against Rs 19,600 at Rs 39.20.",
+    "realism": "Not realistic in normal markets: Rs 10.18 is 74% below the price. This year the share has traded at Rs 32.40–44.00, and its lowest in the last two years was Rs 24.00 (April 2025). Waiting for these prices means, in practice, not owning it unless returns rise well above 15%."
   },
   "changeMyView": {
     "higher": [
-      "New Zealand and Bangladesh lifting ROE above 17%.",
-      "Costs growing slower than sales.",
-      "Inventory and receivables falling, turning cash flow positive.",
-      "A higher dividend payout.",
-      "Lower interest rates."
+      "ROE above 16% for two years with tax at a normal rate (Mirotone and Bangladesh earning well)",
+      "Operating cash flow close to profit: stock and receivable days falling from about 154 and 139",
+      "A lower required return: Sri Lanka's bond yield or default spread falling, or a lower beta on Damodaran's January 2027 figures",
+      "Australian sales under the Mirotone brand growing into a meaningful export line"
     ],
     "lower": [
-      "Costs continuing to rise as fast as sales.",
-      "More cash tied up in inventory (154 days) and receivables (139 days).",
-      "Integration problems with the overseas acquisitions.",
-      "A construction or furniture-export slowdown hitting wood coatings.",
-      "Currency swings in Bangladesh and New Zealand."
+      "Net debt rising further to fund stock, or another acquisition paid with debt",
+      "Margins squeezed as selling and admin costs keep rising faster than sales",
+      "Tax rising to 25–30% once the Rs 1.2bn of tax losses are used, without profit growth to offset it",
+      "Bangladesh falling back (revenue fell 19% in 2025/26) or Mirotone losing money"
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. Interim figures are unaudited. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: JAT Holdings (JAT.N0000) is growing fast after expanding into New Zealand and Bangladesh, but the price is well ahead of what its returns support. At Rs 37.10 it trades at 1.58x its NAV of Rs 23.48 and 12.0x trailing earnings, with a 1.9% dividend yield. Return on equity has been 11–17% (13% in the year to March 2026), below the 18% return I require, so the book-value methods value it below NAV, and only the P/E method supports today's price. Averaging the methods gives a fair value of about Rs 21, so the price is about 77% above it. I'd buy at up to about Rs 17.80 and treat under Rs 15.70 as a strong buy. Sales rose 36% in the first half, but costs rose almost as fast and the business used cash to build inventory.\n\nPrice and key figures\nPrice: Rs 37.10 (CSE closing price, 2026-11-06). Please check it live. In July–September 2026 it traded between Rs 32.40 and Rs 40.20, after Rs 35.00–44.00 in April–June, and it closed the year to March 2026 at Rs 39.00.\nSix months to 30 September 2026 (group, unaudited): revenue rose 36% to Rs 7.01bn and profit attributable to shareholders rose 24% to Rs 497mn. EPS was Rs 0.95 against Rs 0.77.\nWhat drove it: the new New Zealand business (Mirotone) added Rs 693mn of sales, Bangladesh grew 49% to Rs 1.56bn, and Sri Lanka grew 14% to Rs 4.56bn. Wood coatings rose 34% and decoratives 83%; EV chargers fell 5%. But selling costs rose 48% and administration 32%, so operating profit rose only 15%. Finance costs fell 30%.\nCash: operating cash flow was negative (Rs 46mn outflow) because inventory rose Rs 1.13bn and advances Rs 0.65bn. Borrowings (including overdrafts) were Rs 4.38bn against cash and short-term investments of Rs 1.46bn.\nYear to March 2026 (group): revenue Rs 12.64bn (up 9%), profit Rs 1.52bn (down 14%, after a tax credit the year before), EPS Rs 2.92 (Rs 3.50), ROE 13%, NAV Rs 23.13. Inventory took 154 days to sell and customers 139 days to pay.\nDividend: Rs 376mn was paid in the half (about Rs 0.72 a share); the annual report lists Rs 0.44 a share for 2025/26.\n\nMethods\nNAV (Rs 23.48): 1.58x, so it fails your NAV rule.\nReturn on equity: 13% (year to March 2026). Earlier years: 17% (2025), 11% (2024), 15% (2023), 16% (2022).\nP/E: 12.0x trailing EPS of Rs 3.10. Year-end P/E: 13.4x (2026), 7.7x (2025).\nDividends: about Rs 0.72 paid this year, a 1.9% yield; the company pays out 15–25% of profit.\nDebt: gearing 21% and net debt Rs 2.19bn at March 2026; borrowings rose in the half to fund inventory.\nJustified price to book: Rs 11.0 / 15.7 / 24.7 across the cases, weighted Rs 16.1.\nP/E method: Rs 23.2 / 34.0 / 45.6, weighted Rs 33.1.\nResidual income: Rs 7.1 / 13.3 / 24.4, weighted Rs 13.7.\nDividend model: Rs 2.9 / 6.4 / 10.4 (not used in the fair value).\n\nJAT keeps most of its profit, so a dividend model understates it, and with heavy working capital its free cash flow is too irregular for a reliable DCF, so I used three methods. The P/E method is far more generous than the book-value methods because the market pays about 10x earnings for growth, while ROE is below the 18% required return.\n\nAssumptions (bear / base / bull)\nCost of equity: 20% / 18% / 16.5%.\nLong-run ROE (price to book): 12% / 14% / 17%.\nROE path (residual income): 13% falling to 11% / 14.5% falling to 14% / 16% rising to 17%.\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: 2.9 × 8 / 3.4 × 10 / 3.8 × 12.\nAverage of the three methods: Rs 13.8 / Rs 21.0 / Rs 31.6.\nCommon: Sri Lankan 7–10-year government bonds yield about 12% (October 2026), plus a premium for a small, export-exposed manufacturer. In the base case, the second half grows about 15% on last year's (helped by New Zealand), giving EPS of about Rs 3.40 for the year to March 2027.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 21.00 (0.89x NAV), so Rs 37.10 is about 77% above it.\nBuy price: a 15% margin of safety gives Rs 17.80, and 25% gives Rs 15.70.\nPlan for 500 shares: 200 at up to Rs 21.00, 150 at up to Rs 17.80 and 150 at up to Rs 15.70. That averages about Rs 18.45, about Rs 9,225, against Rs 18,550 at Rs 37.10.\nRealism: Rs 21 needs about a 43% fall and Rs 17.80 about 52%. The share was Rs 26.90 in March 2025, so it has been there recently, but it would take a market sell-off or a profit disappointment.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 16%: 11.3 / 17.4 / 24.7 for long-run ROE of 11% / 14% / 17%.\nCost of equity 18%: 8.9 / 13.3 / 18.5.\nCost of equity 20%: 7.2 / 10.5 / 14.3.\nOn book value, today's price would need ROE well above 17% for years.\n\nWhat would change my view\nSupports a higher value: the New Zealand and Bangladesh businesses lifting ROE above 17%; costs growing slower than sales; inventory and receivables falling, turning cash flow positive; a higher dividend payout; lower interest rates.\nSupports a lower value: costs continuing to rise as fast as sales; more cash tied up in inventory (154 days) and receivables (139 days); integration problems with the overseas acquisitions; a construction or furniture-export slowdown hitting wood coatings; currency swings in Bangladesh and New Zealand.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice.",
-  "quality": {
-    "rating": "weak",
-    "passed": 2,
-    "outOf": 4,
-    "reason": "Low debt and steady, but returns are below what I require and profit isn't turning into cash.",
-    "tests": [
+  "management": {
+    "asOf": "2026-11-20",
+    "source": "Annual Report 2025/26: Chairman's reflections (PDF pp. 28–29), Managing Director's review (pp. 30–31), CEO's review (pp. 32–33), Mirotone and Volt pages (pp. 24–25); progress from the interims to 30 June and 30 September 2026. The 2024/25 annual report wasn't read, so last year's promises can't be checked; the track list follows this year's.",
+    "takeaway": "Management is turning JAT into a multinational coatings group through the Mirotone purchase; the test now is whether that growth earns more than it costs, as stock and debt rose in the first half.",
+    "said": [
       {
-        "id": "returns",
-        "label": "Return on equity of 15% or more",
-        "pass": false,
-        "value": "13%",
-        "note": "11–17% over five years."
+        "text": "Buying Mirotone (NZ), a 90-year-old industrial wood-coatings brand, was the year's defining step and opens Australia, New Zealand and South-East Asia",
+        "ref": "PDF pp. 28, 30"
       },
       {
-        "id": "debt",
-        "label": "Net debt no more than equity",
-        "pass": true,
-        "value": "Gearing 21%",
-        "note": "Borrowings rose to fund stock."
+        "text": "Revenue rose 9% despite Cyclone Ditwah; cost of sales rose only 3%, lifting gross margin to 37.9%",
+        "ref": "PDF p. 32"
       },
       {
-        "id": "steady",
-        "label": "Steady profit: no loss in five years, no one-offs",
-        "pass": true,
-        "value": "Profit every year",
-        "note": "But profit isn't growing."
+        "text": "Selling and admin costs rose 31% and 44% with international expansion and market development",
+        "ref": "PDF p. 32"
       },
       {
-        "id": "cash",
-        "label": "Profit turns into cash and dividends",
-        "pass": false,
-        "value": "Negative",
-        "note": "Operating cash flow turned negative as stock and receivables grew; 15–25% paid out."
+        "text": "Finance costs fell 17% to Rs 293mn on treasury management and exchange gains",
+        "ref": "PDF p. 32"
+      },
+      {
+        "text": "Bangladesh was hard (political change, inflation, currency) but stays a long-term market",
+        "ref": "PDF p. 28"
       }
     ],
-    "assessed": "2026-11-09"
+    "plans": [
+      {
+        "text": "Start supplying Australia under the Mirotone brand, with products developed and made in Sri Lanka",
+        "ref": "PDF p. 31"
+      },
+      {
+        "text": "Launch a key new product in Sri Lanka in 2026/27",
+        "ref": "PDF p. 31"
+      },
+      {
+        "text": "Move into retail (business-to-consumer) and architectural and exterior water-based coatings",
+        "ref": "PDF pp. 25, 30"
+      },
+      {
+        "text": "Grow Volt Charge, which it calls Sri Lanka's largest EV charger network (2,000+ chargers installed)",
+        "ref": "PDF pp. 25, 30"
+      },
+      {
+        "text": "Keep expansion board-approved and balanced against financial resilience",
+        "ref": "PDF p. 31"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Mirotone (NZ) Limited acquisition",
+        "amount": "LKR 489mn investment (Rs 1,018mn paid for subsidiaries in the cash-flow statement)",
+        "ref": "PDF pp. 24, 247"
+      },
+      {
+        "text": "76% more capacity at the Sri Lankan water-based acrylic binder plant, for exports including Australia",
+        "amount": null,
+        "ref": "PDF p. 31"
+      },
+      {
+        "text": "Alkyd resin plant in Bangladesh, for control of raw materials",
+        "amount": null,
+        "ref": "PDF pp. 30–31"
+      },
+      {
+        "text": "Capital expenditure on property, plant and equipment in 2025/26",
+        "amount": "Rs 398mn",
+        "ref": "PDF p. 19"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Supply Australia under the Mirotone brand",
+        "result": "AUD 103,002 of revenue in H1 2026/27: started, still small",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, PDF p. 11"
+      },
+      {
+        "promise": "Mirotone strengthens the group's international revenue",
+        "result": "New Zealand revenue Rs 693mn in H1 (10% of group); its profit isn't disclosed separately",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, PDF p. 11"
+      },
+      {
+        "promise": "Bangladesh remains a long-term growth market",
+        "result": "Revenue Rs 1.56bn in H1, up 49% after falling 19% in 2025/26",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, PDF p. 11"
+      },
+      {
+        "promise": "Grow the EV charger business",
+        "result": "EV charger revenue Rs 360mn in H1, down 5%",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, PDF p. 11"
+      },
+      {
+        "promise": "Balance growth with financial resilience",
+        "result": "Operating cash −Rs 46mn in H1, stock +Rs 1.13bn, net debt up to Rs 2.92bn from Rs 2.19bn",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 2, 9"
+      },
+      {
+        "promise": "Launch a key new product in Sri Lanka",
+        "result": "Not reported yet",
+        "status": "too-early",
+        "ref": null
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, PDF p. 11 (top 20, directors, public holding), with the report's own 30 June 2026 column; the 31 March 2026 list from the Annual Report 2025/26, PDF p. 326, for earlier moves.",
+    "takeaway": "Founder and Managing Director Aelian Gunawardene controls JAT with 63.63%, and his family holds about 7% more. The top 20 didn't change in the September quarter; earlier, between March and June, the Capital Alliance Quantitative Equity Fund cut its holding from 4.62mn to 2.09mn shares.",
+    "groups": [
+      {
+        "name": "A.W. Gunawardene (MD)",
+        "pct": 63.63
+      },
+      {
+        "name": "Gunawardene family",
+        "pct": 7.1
+      },
+      {
+        "name": "Falcon Trading",
+        "pct": 5.18
+      },
+      {
+        "name": "Other holders not counted as public",
+        "pct": 4.21
+      },
+      {
+        "name": "Public",
+        "pct": 19.88
+      }
+    ],
+    "publicFloat": 19.88,
+    "publicHolders": 8741,
+    "publicHoldersPrev": 8442,
+    "directors": [
+      {
+        "name": "Dr. S. Selliah (Chairman)",
+        "shares": 1320000
+      },
+      {
+        "name": "Mr. A. W. Gunawardene (Managing Director)",
+        "shares": 332408639
+      },
+      {
+        "name": "Mrs. J. Gunawardene",
+        "shares": 9637246
+      },
+      {
+        "name": "Mr. R. W. Gunawardene",
+        "shares": 13746832
+      },
+      {
+        "name": "Mrs. A. N. Willamson",
+        "shares": 13725137
+      },
+      {
+        "name": "Mr. H. Akbarally",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M. P. D. Cooray",
+        "shares": 550000
+      },
+      {
+        "name": "Eng. Manju Haththotuwa",
+        "shares": 0
+      },
+      {
+        "name": "Mr. D. C. N. Ferdinando (CEO)",
+        "shares": 571852
+      }
+    ],
+    "top": [
+      {
+        "name": "Mr. A.W. Gunawardene",
+        "shares": 332408639,
+        "pct": 63.63,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Falcon Trading (Pvt) Ltd",
+        "shares": 27077498,
+        "pct": 5.18,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. R.W. Gunawardene",
+        "shares": 13746832,
+        "pct": 2.63,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. A.N. Williamson",
+        "shares": 13725137,
+        "pct": 2.63,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Sri Lanka Insurance Corporation Ltd-Life Fund",
+        "shares": 11032733,
+        "pct": 2.11,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. J. Gunawardene",
+        "shares": 9637246,
+        "pct": 1.84,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. A. Selliah",
+        "shares": 6360000,
+        "pct": 1.22,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Arunodhaya (Private) Limited",
+        "shares": 3385000,
+        "pct": 0.65,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Arunodhaya Investments (Private) Limited",
+        "shares": 3360000,
+        "pct": 0.64,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Arunodhaya Industries (Private) Limited",
+        "shares": 3360000,
+        "pct": 0.64,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Standard Chartered Bank DIFC Branch S/A EFG Hermes UAE L.L.C",
+        "shares": 2217396,
+        "pct": 0.42,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Andysel Private Limited",
+        "shares": 2120000,
+        "pct": 0.41,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. K. Aravinthan",
+        "shares": 2120000,
+        "pct": 0.41,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Hatton National Bank PLC - Capital Alliance Quantitative Equity Fund",
+        "shares": 2093491,
+        "pct": 0.4,
+        "change": 0,
+        "new": false,
+        "note": "Held 4,623,958 at 31 March 2026 (Annual Report p. 326): sold about 2.5mn shares in April–June 2026"
+      },
+      {
+        "name": "ACIER TRADERS (PRIVATE) LIMITED",
+        "shares": 1822171,
+        "pct": 0.35,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Bansei Securities Capital (Pvt) Ltd/I.S.P. Perera",
+        "shares": 1714607,
+        "pct": 0.33,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. G.J. Fernando",
+        "shares": 1532181,
+        "pct": 0.29,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. A.P.L. Fernando",
+        "shares": 1461833,
+        "pct": 0.28,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC A/C NO.4 (HNB RETIREMENT PENSION FUND)",
+        "shares": 1380000,
+        "pct": 0.26,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Dr. Sivakumar Selliah",
+        "shares": 1320000,
+        "pct": 0.25,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": []
+  },
+  "fullText": "**Summary**\n\nJAT Holdings (JAT.N0000) makes and sells wood coatings (Sayerlack and its own brands), paints, brushes, furniture finishes and Volt EV chargers. It operates mainly in Sri Lanka and Bangladesh, and since November 2025 in New Zealand through Mirotone. Sales are growing fast: up 36% in the six months to September 2026. But the business earns about 13% on shareholders' money, against the roughly 20% a shareholder should demand here, and its growth ties up a lot of cash in stock and customer credit. At Rs 39.20 the share trades at 1.67x NAV and 12.6x trailing earnings. The methods put fair value at about **Rs 12.00**. I'd buy only up to **Rs 10.20** and treat under **Rs 9.00** as a strong buy. That is far below the price, so it's an avoid at today's price (category 3: it fails two of the four business tests).\n\n**Price and key figures**\n\n- Price: Rs 39.20 (CSE close, 19 November 2026). Range Rs 35.00–44.00 in April–June 2026 and Rs 32.40–40.20 in July–September; Rs 24.00–55.50 in the year to March 2026.\n- Six months to September 2026 (unaudited): revenue Rs 7.01bn (+36%), gross margin 35.1%, operating profit Rs 653mn (+15%), profit to owners Rs 497mn (+24%), EPS Rs 0.95 (Rs 0.77). September quarter: revenue Rs 3.96bn (+37%), EPS Rs 0.66 (Rs 0.48).\n- By country (H1): Sri Lanka Rs 4.56bn (+14%), Bangladesh Rs 1.56bn (+49%), New Zealand Rs 0.69bn (new), India, Maldives and others Rs 0.20bn. By product: wood coatings Rs 5.08bn (+34%), decoratives Rs 1.08bn (+83%), EV chargers Rs 0.36bn (−5%), furnishing Rs 0.25bn, brushes and rollers Rs 0.23bn.\n- Year to March 2026 (audited): revenue Rs 12.64bn (+9%), gross margin 37.9%, operating profit Rs 1.85bn (+1%), profit Rs 1.52bn (−14%), EPS Rs 2.92 (Rs 3.50), ROE 13%. Tax was only 10% of profit because Rs 0.84bn of tax losses were used; Rs 1.2bn of losses remain.\n- Balance sheet at September 2026: equity Rs 12.27bn (NAV Rs 23.48), inventory Rs 4.57bn (Rs 3.48bn in March), receivables Rs 5.17bn, total debt including leases Rs 4.38bn, cash and short-term deposits Rs 1.46bn, so net debt Rs 2.92bn (0.24x equity).\n- Cash: operating cash flow Rs 1.31bn in 2025/26 and Rs 0.32bn in 2024/25 against profit of Rs 1.52bn and Rs 1.78bn; −Rs 46mn in H1 2026/27. About Rs 0.38bn of dividends were paid in September 2026 (about Rs 0.72 a share, worked out from the total).\n\n**Required return**\n\nBeta 1.14: Damodaran's global specialty-chemicals beta (1.04 without debt, January 2026; his emerging-markets file couldn't be opened, so this is provisional) relevered for net debt of 0.14x market value. The only local 5-year beta found was 0.46 (StockAnalysis); the rule takes the higher figure. Cost of equity = 8.24% + 1.14 × (4.2% + 6.08%) = **20.0%** (bear 21.5%, bull 18.5%). That is in the usual 12–22% range for CSE shares. Cost of debt 8.2% (interest paid ÷ average borrowings): about 4 points under the 12.24% bond yield, because most borrowing is short-term import and working-capital loans, some in foreign currency. WACC 18.4%.\n\n**Methods (Rs a share: bear / base / bull → weighted)**\n\n- Justified price to book: 9.96 / 13.42 / 18.38 → 13.37. Book Rs 23.48 × (ROE − growth) ÷ (required return − growth), with long-run ROE 12/14/16% and growth 5/6/7%.\n- P/E (justified): 9.19 / 12.24 / 16.63 → 12.21. EPS to March 2027 Rs 2.60 / 3.00 / 3.40 (H1 Rs 0.95 plus a second half of Rs 1.65 / 2.05 / 2.45, against Rs 2.15 last year, with higher tax as losses run out) × 3.5x / 4.1x / 4.9x. The base EPS is 3% below the Rs 3.10 run-rate (12 months to September 2026).\n- Residual income: 7.43 / 10.30 / 14.90 → 10.36. ROE fades from 13% to 12/14/16% over ten years, payout 25%.\n- **Fair value: Rs 11.98** (average of the three). Buy Rs 10.18 (−15%), strong buy Rs 8.98 (−25%).\n- Whole-company DCF (reading only): bear Rs 1.83 / base Rs 2.79 / bull Rs 5.62. Start cash Rs 1.15 / 1.30 / 1.45bn (after-tax operating profit Rs 1.30 / 1.45 / 1.60bn at a normal 25% tax, less non-cash gains; maintenance capex Rs 0.44 / 0.39 / 0.33bn), growth 4 / 8 / 12% for five years, then 5 / 6 / 7%, return on capital 10 / 12 / 14%, WACC 19.7 / 18.4 / 17.1%, less net debt Rs 2.92bn. In the base case 72% of the value comes after year five, and 98% in the bull case. It isn't weighted because operating cash swings with stock levels from year to year, but it makes the main point clear: with a return on capital of about 12% against an 18% WACC, growth adds little value, because each rupee of extra sales needs about 64 cents of working capital. With the DCF included, the fair value would be about Rs 9.75.\n- Dividend model: not used, since the payout (about a quarter of profit) is too low for it to say much.\n\n**Growth check**\n\nSupported growth (reinvestment rate × return on capital, 2025/26) is 12.0%: reinvestment of Rs 1.48bn (capex above depreciation Rs 0.10bn, working capital Rs 0.37bn, Mirotone Rs 1.02bn) is 89% of after-tax operating profit, at a 13.5% return on capital. The scenarios assume 4% / 8% / 12% a year for five years, all within 2 points. Without the acquisition, reinvestment supported only about 4%, so the base case relies on Mirotone and Bangladesh. Profit kept × ROE gives 11%. Long-run growth (5–7%) stays below the 12.24% bond yield.\n\n**Capex, maintenance and R&D**\n\nCapex booked Rs 0.42bn in 2025/26 (Rs 0.46bn in 2024/25) against depreciation of Rs 0.33bn, so mostly maintenance; the growth spending went into Mirotone and working capital. The named growth project (a 76% larger acrylic binder plant) has no amount given. The maintenance range is Rs 0.33–0.44bn. R&D is Rs 47mn, 0.4% of revenue, below the 2% needed for an adjustment. Warning: net debt rose by more than half of the year's capex, so expansion has been partly borrowed. Dividends are covered 4x by cash after maintenance capex (2025/26), but in H1 2026/27 they were paid while operating cash was negative.\n\n**Business tests (2 of 4: weak, category 3, unchanged)**\n\n- Return on equity of 15% or more: fail (average 14.4% over five years; 13% last year).\n- Net debt no more than equity: pass (0.24x).\n- Steady profit: pass (profit every year for ten years, though tax effects swing it).\n- Profit turns into cash: fail (operating cash about half of profit over two years, negative in H1).\n\n**Management and plans**\n\nThe Chairman, MD and CEO present 2025/26 as the year JAT became a multinational coatings group through Mirotone. Plans: supply Australia under the Mirotone brand from Sri Lankan factories, launch a key new product in Sri Lanka, move into retail and exterior water-based coatings, and grow Volt EV chargers, while keeping expansion \"balanced\" with financial resilience. Early progress: Australia has started (AUD 0.1mn in H1), New Zealand added Rs 0.69bn of sales, and Bangladesh recovered (+49%). But EV charger sales fell 5%, and the half year's negative cash flow and higher debt cut against the promise of financial resilience.\n\n**Shareholders**\n\nThe founder and MD, Aelian Gunawardene, holds 63.63%, and his family about 7% more; Falcon Trading holds 5.18%. Public float is 19.9% (8,741 holders). The top 20 didn't change in the September quarter. Between March and June the Capital Alliance Quantitative Equity Fund cut its stake from 4.62mn to 2.09mn shares.\n\n**Buy plan (500 shares)**\n\n200 at up to Rs 11.98, 150 at up to Rs 10.18 and 150 at up to Rs 8.98: about Rs 5,270 in total (average Rs 10.54), against Rs 19,600 at today's price. This isn't realistic in normal markets: the buy price is 74% below the price, and the lowest in the last two years was Rs 24.00. In practice I'd only reconsider if returns move clearly above 15% with cash flow following profit, or if the required return falls.\n\n**What would change the view**\n\nHigher: ROE above 16% for two years at a normal tax rate; stock and receivable days coming down so cash follows profit; a lower required return (lower bond yields or beta); a growing Australian business. Lower: more debt-funded stock or acquisitions; costs outpacing sales; tax rising as losses run out without profit growth to match; Bangladesh or Mirotone losing money.\n\n**Uncertain or missing**\n\n- The beta is provisional (stand-in sector beta, only one local beta).\n- The per-share dividend for 2025/26 isn't stated in these reports; about Rs 0.72 is worked out from the Rs 376mn paid.\n- Mirotone's own profit isn't disclosed. The annual report calls it an LKR 489mn investment, while the cash-flow statement shows Rs 1,018mn paid for subsidiaries, which may include other payments.\n- EPS and P/E before 2024/25 aren't in the reports read.",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 21.5,
+      "base": 20.0,
+      "bull": 18.5
+    },
+    "wacc": {
+      "bear": 19.7,
+      "base": 18.4,
+      "bull": 17.1
+    },
+    "debtWeight": 12.5,
+    "shares": 522.436,
+    "netDebt": 2.921,
+    "pe": {
+      "bear": {
+        "eps": 2.6,
+        "roe": 12,
+        "longRun": 5
+      },
+      "base": {
+        "eps": 3.0,
+        "roe": 14,
+        "longRun": 6
+      },
+      "bull": {
+        "eps": 3.4,
+        "roe": 16,
+        "longRun": 7
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 23.48,
+      "payout": 25,
+      "roeStart": 13,
+      "bear": {
+        "roe": 12,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 14,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 7
+      }
+    },
+    "pb": {
+      "book": 23.48,
+      "bear": {
+        "roe": 12,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 14,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 7
+      }
+    }
   }
 }
