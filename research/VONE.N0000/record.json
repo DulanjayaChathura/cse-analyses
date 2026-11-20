@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "ticker": "VONE.N0000",
  "localFolder": null,
- "updated": "2026-11-16",
+ "updated": "2026-11-20",
  "reportsRead": [
   {
    "file": "reports/VONE.N0000/2026-06-11_annual_Annual-Report-as-at-31st-March-2026-Amended-Version.pdf",
@@ -11,8 +11,8 @@
    "periodEnd": "2026-03-31",
    "type": "annual",
    "audited": true,
-   "readOn": "2026-11-16",
-   "note": "417 PDF pages; printed page = PDF page - 3. Used: financial highlights (p. 34-35), group structure, statements (pp. 267-275), notes 4.2, 10, 11, 27 (pp. 288-301, 338-339), 37, ten-year summary (p. 382). FY 2025 figures from the comparatives."
+   "readOn": "2026-11-20",
+   "note": "417 PDF pages; printed page = PDF page - 3. Used: financial highlights (p. 34-35), group structure, statements (pp. 267-275), notes 4.2, 10, 11, 27 (pp. 288-301, 338-339), 37, ten-year summary (p. 382). FY 2025 figures from the comparatives. Re-read 20 Nov 2026 for /redo full (first read 16 Nov). Added: Chairman (pp. 20-21) and Managing Director (pp. 22-25), sector reviews (pp. 129, 137-140, 160), manufactured capital (p. 174), PPE note 15.2 (p. 312-313)."
   },
   {
    "file": "reports/VONE.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
@@ -21,8 +21,8 @@
    "periodEnd": "2026-06-30",
    "type": "interim",
    "audited": false,
-   "readOn": "2026-11-16",
-   "note": null
+   "readOn": "2026-11-20",
+   "note": "Re-read 20 Nov 2026 for /redo full (first read 16 Nov). Top 20 shareholders at 30 Jun 2026 (p. 13)."
   },
   {
    "file": "reports/VONE.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
@@ -31,8 +31,8 @@
    "periodEnd": "2026-09-30",
    "type": "interim",
    "audited": false,
-   "readOn": "2026-11-16",
-   "note": "Quarter and year-to-date figures; page numbers are PDF pages"
+   "readOn": "2026-11-20",
+   "note": "Quarter and year-to-date figures; page numbers are PDF pages Re-read 20 Nov 2026 for /redo full (first read 16 Nov). Added: segment note (pp. 12-13), share information and top 20 (p. 11)."
   }
  ],
  "periods": [
@@ -163,6 +163,12 @@
      "unit": "mn",
      "source": "Annual Report 2025/26, p. 353",
      "note": null
+    },
+    "capexBooked": {
+     "value": 5.825,
+     "unit": "Rs bn",
+     "source": "Annual Report 2025/26, p. 313 (note 15.2, comparative)",
+     "note": "PPE additions/transfers 12.874 less capital work in progress transferred out 7.049; p. 174 says Rs 5.9bn."
     }
    }
   },
@@ -258,10 +264,10 @@
      "note": "PPE 5.756 + intangibles 0.114"
     },
     "capexBooked": {
-     "value": null,
+     "value": 5.792,
      "unit": "Rs bn",
-     "source": "Annual Report 2025/26",
-     "note": "Group asset-note additions not extracted (the group's capex is mostly Royal Ceramics': see research/RCL.N0000)"
+     "source": "Annual Report 2025/26, p. 312 (note 15.2) and p. 174",
+     "note": "Group PPE additions/transfers 17.234 less capital work in progress transferred out 11.442 (net new PPE); the report's 'capital addition' is Rs 5.8bn (p. 174). Intangible additions not included."
     },
     "depreciation": {
      "value": 3.959,
@@ -585,6 +591,36 @@
      "unit": "mn",
      "source": "Interim Q2 2026/27, p. 8",
      "note": null
+    },
+    "segmentProfitPackaging": {
+     "value": 0.165,
+     "unit": "Rs bn",
+     "source": "Interim Q2 2026/27, p. 12",
+     "note": "0.351 a year earlier (-53%)"
+    },
+    "segmentProfitConsumer": {
+     "value": 0.078,
+     "unit": "Rs bn",
+     "source": "Interim Q2 2026/27, p. 13",
+     "note": "0.060 a year earlier"
+    },
+    "segmentProfitHealthcare": {
+     "value": 0.274,
+     "unit": "Rs bn",
+     "source": "Interim Q2 2026/27, p. 12",
+     "note": "0.327 a year earlier"
+    },
+    "segmentRevenueLifestyle": {
+     "value": 24.375,
+     "unit": "Rs bn",
+     "source": "Interim Q2 2026/27, p. 12",
+     "note": "21.532 a year earlier (+13%); gross margin 39.9% vs 36.8%"
+    },
+    "publicHolding": {
+     "value": 19.5024,
+     "unit": "%",
+     "source": "Interim Q2 2026/27, p. 11",
+     "note": "15,766 shareholders (15,587 at 30 Jun 2026)"
     }
    }
   },
@@ -614,7 +650,7 @@
   {
    "name": "Beta",
    "value": "0.98 (provisional)",
-   "reason": "8 steps, 16 Nov 2026. (1) Business: a holding company whose value sits in four places, weighted by their market value in mid-November 2026 (holding-company cash left out): LB Finance direct stake 286.73mn shares × Rs 159 = Rs 45.6bn (41%); Royal Ceramics 620.03mn × Rs 47.00 = Rs 29.1bn (26%); Sampath Bank 175.35mn × Rs 151.75 = Rs 26.6bn (24%); unlisted businesses (Delmege, Greener Water, Swisstek Aluminium) and The Fortress Resorts about Rs 11.0bn at cost or market (10%). (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened from this run; the same stand-ins as the site's Royal Ceramics and Sampath analyses: Financial Svcs. (Non-bank & Insurance) levered 0.97; Bank (Money Center) levered 0.70; Building Materials unlevered 0.90. (3) Finance and bank stakes use the sectors' levered betas without relevering (as the brief says for finance companies and banks). The Royal Ceramics stake uses the site's Royal Ceramics beta, 1.12 (relevered, and including its own LB Finance stake). The unlisted operating businesses use Royal Ceramics' relevered building-materials figure, 1.28, as a stand-in (their own debt isn't disclosed separately). Weighted: 0.41 × 0.97 + 0.26 × 1.12 + 0.24 × 0.70 + 0.10 × 1.28 = 0.98. (4) Local 5-year betas: only one found, StockAnalysis 0.87 (5Y, undated web-search extract; page not opened). TradingView's 1.10 is a 1-year beta and is ignored. Fewer than the 3 sources the rule asks for. (5) Higher of 0.98 and 0.87 = 0.98. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's file and three verified local 5-year betas.",
+   "reason": "8 steps, 16 Nov 2026. (1) Business: a holding company whose value sits in four places, weighted by their market value in mid-November 2026 (holding-company cash left out): LB Finance direct stake 286.73mn shares × Rs 159 = Rs 45.6bn (41%); Royal Ceramics 620.03mn × Rs 47.00 = Rs 29.1bn (26%); Sampath Bank 175.35mn × Rs 151.75 = Rs 26.6bn (24%); unlisted businesses (Delmege, Greener Water, Swisstek Aluminium) and The Fortress Resorts about Rs 11.0bn at cost or market (10%). (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened from this run; the same stand-ins as the site's Royal Ceramics and Sampath analyses: Financial Svcs. (Non-bank & Insurance) levered 0.97; Bank (Money Center) levered 0.70; Building Materials unlevered 0.90. (3) Finance and bank stakes use the sectors' levered betas without relevering (as the brief says for finance companies and banks). The Royal Ceramics stake uses the site's Royal Ceramics beta, 1.12 (relevered, and including its own LB Finance stake). The unlisted operating businesses use Royal Ceramics' relevered building-materials figure, 1.28, as a stand-in (their own debt isn't disclosed separately). Weighted: 0.41 × 0.97 + 0.26 × 1.12 + 0.24 × 0.70 + 0.10 × 1.28 = 0.98. (4) Local 5-year betas: only one found, StockAnalysis 0.87 (5Y, undated web-search extract; page not opened). TradingView's 1.10 is a 1-year beta and is ignored. Fewer than the 3 sources the rule asks for. (5) Higher of 0.98 and 0.87 = 0.98. (6) Within 0.3-2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's file and three verified local 5-year betas. Rechecked 20 Nov 2026 at that day's prices (RCL Rs 45.10, SAMP Rs 148.25): weights 41/25/24/10, still 0.98.",
    "since": "2026-11-16"
   },
   {
@@ -694,15 +730,23 @@
    "value": "Buy 15% / Strong buy 25%",
    "reason": "The owner's standard.",
    "since": "2026-11-16"
+  },
+  {
+   "name": "Residual income path",
+   "value": "ROE from 11.8% (last 12 months) to 10.5% / 12% / 13.5% in a straight line over 10 years; payout 26% throughout",
+   "reason": "Now calculated by scripts/valuation.py from modelInputs (the 16 Nov figure was hand-worked with the payout rising after year five). Result Rs 34.2 / 45.5 / 63.2 instead of 37.3 / 49.8 / 69.0.",
+   "since": "2026-11-20"
   }
  ],
  "openQuestions": [
   "Q3 results (to December 2026, due by mid-February 2027): is LB Finance's credit cost settling after the Rs 1.9bn receivables impairment, and does quarterly EPS get back above Rs 2.5?",
   "What did the October 2026 Fortress Resorts purchase (35.6mn shares) cost, and how will Fortress be consolidated?",
   "Lanka Walltiles Rs 5bn rights issue: how much flows up from Royal Ceramics, and does Vallibel One put in cash?",
-  "Greener Water hotel: new completion date, total cost, or any impairment of the Rs 7.35bn investment.",
+  "Greener Water hotel: new completion date, total cost, or any impairment of the Rs 7.35bn investment (completion 'further extended' in September; track marked missed).",
+  "Packaging: does profit recover from the 53% fall in the first half?",
+  "LB Finance's Philippines entry: any capital committed or licence obtained?",
   "Which year is the Rs 1.50 dividend paid in the June 2026 quarter for, and is a further dividend declared?",
-  "LB Finance's total share count and current book value (to replace the figure worked out from the 51.75% stake).",
+  "LB Finance's total share count, current book value and a CSE price newer than the 9 Nov broker table.",
   "Delmege's book value: the subsidiary summary and the minority-interest balance in the annual report don't agree.",
   "Refresh the beta in January 2027 (Damodaran's emerging-markets file, three local 5-year betas)."
  ],
@@ -716,6 +760,16 @@
    "strongBuyPrice": 45.4,
    "priceAtTime": 88.8,
    "archive": null
+  },
+  {
+   "date": "2026-11-20",
+   "basedOn": "Annual Report 2025/26 (amended) and interims to 30 Jun and 30 Sep 2026 (CSE downloads, re-read)",
+   "summary": "Requested from Telegram (/redo VONE.N0000 full). Research record and analysis rebuilt from the same three reports: figures re-checked (no corrections), group capex booked added (Rs 5.79bn FY 2026, Rs 5.83bn FY 2025) with H1 segment figures, and new management (Chairman's and MD's messages, plans, investment, track record against the half year: packaging and Greener Water missed) and shareholders sections (top 20 at 30 Sep vs 30 Jun: unchanged holders, two small fund sales). Price Rs 91.30 (CSE close 20 Nov 2026) replaces the 30 Sep close Rs 88.80. Residual income now from scripts/valuation.py (modelInputs added for P/E, P/B and residual income): Rs 45.7 instead of 49.9. Other assumptions unchanged; beta rechecked at 0.98. Business tests 2 of 4: category 3, avoid for now (unchanged). LB Finance price still the 9 Nov broker figure (CSE unreachable); Fortress purchase cost not in the reports. Fair value Rs 60.50 → 59.41, buy Rs 50.50, strong buy Rs 44.56.",
+   "fairValue": 59.41,
+   "buyPrice": 50.5,
+   "strongBuyPrice": 44.56,
+   "priceAtTime": 91.3,
+   "archive": "research/VONE.N0000/history/2026-11-16.json"
   }
  ]
 }
