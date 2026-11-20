@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "ticker": "HAYC.N0000",
+  "company": {
+    "name": "Haycarb PLC",
+    "sector": "Activated carbon (manufacturing)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "HAYC.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-20",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE download)",
+      "Interim reports to 30 June and 30 September 2026 (CSE downloads)"
+    ]
+  },
+  "price": {
+    "value": 224.0,
+    "date": "2026-11-20",
+    "source": "TradingView snapshot found by web search on 20 Nov 2026",
+    "note": "HAYC isn't yet in the site's CSE price file and the CSE site couldn't be reached from this run. The snapshot's trade date isn't shown (it notes an all-time high of Rs 225 on 11 Nov 2026). The daily CSE close will replace it. Rs 209.75 at 30 September; April–September range Rs 110.00–222.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A world leader in coconut-shell carbon having a boom year, but the price is over three times fair value and the boom is being paid for with debt",
+    "text": "Haycarb PLC (HAYC.N0000), 68% owned by Hayleys, makes activated carbon from coconut-shell charcoal in Sri Lanka, Thailand, Indonesia and soon the Philippines (58,500 tonnes a year, about 16% of the world market by its own count). Its carbons go into gold mining, water and air purification and, increasingly, batteries and supercapacitors. Demand is booming: revenue rose 55% to Rs 67.1bn in 2025/26 and another 42% in the six months to September 2026, when EPS doubled to Rs 8.41 (Rs 4.71 in the September quarter alone). It passes 3 of the 4 business tests (good returns over several years, debt under equity, profit every year), but fails the cash test: profit isn't turning into cash. Charcoal stocks and debtors absorbed Rs 13.4bn in 2025/26 and another Rs 8.5bn of stock in the half year, so operating cash was −Rs 5.6bn and −Rs 1.9bn, and net debt jumped from Rs 5.0bn to Rs 25.5bn in eighteen months, mostly short-term loans. On a provisional beta of 1.33 (cost of equity 21.9%), the P/E, price-to-book and residual-income methods give a fair value of about Rs 64.80. At Rs 224 (a mid-November web price) the share is 2.1x NAV of Rs 107.67 and 13.7x trailing EPS of Rs 16.35; the price implies a cost of equity of about 10–12%, below the 12.24% government bond. I'd buy at up to about Rs 55 and treat under Rs 48.60 as a strong buy. Category 2 (watch list): a good business, priced far above the buy level. The beta is the biggest uncertainty: at 1.05 (US sector figure) fair value would be about Rs 75–80, still a third of the price."
+  },
+  "valuation": {
+    "fairValue": 64.79,
+    "buyPrice": 55.07,
+    "strongBuyPrice": 48.59,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 107.67,
+    "note": "Fair value averages the 30/50/20-weighted values of three methods (P/E Rs 69.12, justified P/B Rs 67.80, residual income Rs 57.44), all from scripts/valuation.py using the saved modelInputs; 0.60x NAV. Discount rate: cost of equity 21.9% from beta 1.33 (provisional). A whole-company DCF was run as a cross-check but isn't weighted (see the methods note)."
+  },
+  "dividend": {
+    "perShare": 4.07,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, statement of profit or loss (p. 362)",
+    "latest": {
+      "perShare": 1.75,
+      "label": "two interims for 2026/27 (Rs 0.75 + Rs 1.00)",
+      "source": "Interim to 30 Sep 2026, p. 7"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 107.67,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.08,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 13.7,
+      "unit": "x",
+      "note": "Last 12 months' EPS Rs 16.35"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 15.8,
+      "unit": "%",
+      "note": "Last 12 months; 12.3% in 2025/26, 17% five-year average"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.8,
+      "unit": "%",
+      "note": "Rs 4.07 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 33,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.8,
+      "unit": "x",
+      "note": "Rs 25.5bn at Sep 2026 against owners' equity Rs 32.0bn; 0.15x in March 2025"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 42,
+      "unit": "%",
+      "note": "April–September 2026; +55% in 2025/26"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 21.9,
+      "unit": "%",
+      "note": "Beta 1.33 (provisional); WACC 17.2%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 66.6,
+      "unit": "Rs bn",
+      "display": "~Rs 67bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue up 40% to Rs 20.76bn; gross margin 23.8% (22.3%). Operating profit Rs 2.70bn (+82%); profit attributable Rs 1.40bn (+88%); EPS Rs 4.71 (Rs 2.50), the best quarter on record in these reports. Second interim dividend Rs 1.00 (Rs 0.82)."
+    },
+    {
+      "title": "Six months to 30 September 2026",
+      "text": "Revenue Rs 40.56bn (+42%), operating profit Rs 4.98bn (+92%, including Rs 0.42bn of currency gains), interest Rs 0.80bn (Rs 0.36bn) plus a Rs 0.31bn currency loss on loans, profit attributable Rs 2.50bn (+98%), EPS Rs 8.41 (Rs 4.24). Activated carbon made all the profit (Rs 4.06bn before tax); environmental engineering lost Rs 0.05bn."
+    },
+    {
+      "title": "Cash and debt",
+      "text": "Stock rose another Rs 8.48bn to Rs 31.5bn (Rs 15.2bn in March 2025), so operating cash was −Rs 1.88bn for the half after −Rs 5.58bn in 2025/26. Capex Rs 4.87bn (Philippines plant, energy-storage capacity). Net debt Rs 25.5bn including leases and the related-party loan (Rs 17.2bn in March, Rs 5.0bn a year before), almost all short-term."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Revenue Rs 67.08bn (+55%, over USD 200m), gross profit Rs 13.38bn (+11%; margin 19.9% against 27.9%), operating profit Rs 6.93bn, profit attributable Rs 3.62bn, EPS Rs 12.18 (Rs 12.10), ROE 12.3%, dividends Rs 4.07. Capex Rs 4.3bn against depreciation and amortisation Rs 1.2bn."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          11.06,
+          19.6,
+          12.6,
+          12.1,
+          12.18,
+          16.35
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          18,
+          26,
+          16,
+          14,
+          12.3,
+          15.8
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months, approx."
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          4.54,
+          2.87,
+          6.07,
+          6.78,
+          8.99,
+          13.7
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "At Rs 224"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          2.8,
+          5.65,
+          6.0,
+          3.8,
+          4.07,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 1.75 declared so far for 2026/27"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          60.8,
+          74.52,
+          77.09,
+          89.3,
+          98.83,
+          107.67
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 107.67",
+      "reading": "The price is 2.1x NAV (30 September 2026)."
+    },
+    {
+      "method": "Return on equity",
+      "value": "15.8%",
+      "reading": "Last 12 months. 12.3% in 2025/26 and 14% in 2024/25; 17% on average over five years and 16% over ten, with a 26% peak in 2022/23."
+    },
+    {
+      "method": "P/E",
+      "value": "13.7x",
+      "reading": "On trailing EPS of Rs 16.35. Year-end P/E was 2.9–9.0x over the last five years. At a 21.9% cost of equity the justified forward P/E is about 4x."
+    },
+    {
+      "method": "Dividends",
+      "value": "1.8% yield",
+      "reading": "Rs 4.07 for 2025/26, a third of profit, but paid while operating cash was negative: in effect paid from borrowing. Dividend at risk if stocks don't unwind."
+    },
+    {
+      "method": "Required return",
+      "value": "21.9% / WACC 17.2%",
+      "reading": "CAPM with a country premium, beta 1.33 (provisional, relevered for the new debt)."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt Rs 25.5bn",
+      "reading": "0.80x owners' equity at September 2026 (0.15x in March 2025); about 2.4x the last 12 months' EBITDA. Mostly short-term loans funding charcoal stocks."
+    },
+    {
+      "method": "Whole-company DCF (cross-check)",
+      "value": "Rs −45 / 13 / 66",
+      "reading": "Not weighted. On normalised cash, the business is worth about Rs 29bn at WACC in the base case, barely more than its net debt, because so much of today's debt funds stock that a DCF treats as permanent."
+    }
+  ],
+  "models": [
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 51.55,
+      "base": 71.19,
+      "bull": 90.28,
+      "weighted": 69.12,
+      "comment": "EPS for the year to March 2027 of Rs 15.0 / 17.5 / 19.0 (H1 Rs 8.41 plus a second half of Rs 6.6 / 9.1 / 10.6; the September quarter alone was Rs 4.71) times 3.4 / 4.1 / 4.8: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − long-run growth ÷ ROE; long-run ROE 12 / 16 / 19%, growth 4 / 5 / 6%). The run-rate is Rs 18.84 (September quarter × 4; last 12 months Rs 16.35): base is 7% below it because gold-carbon demand and charcoal prices are at a peak; bear is 20% below for margins slipping back towards 2025/26 levels. These P/Es are far below the market's 13.7x because a 21.9% cost of equity leaves little room for growth to add value."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 44.4,
+      "base": 70.08,
+      "bull": 97.2,
+      "weighted": 67.8,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 107.67 (30 Sep 2026): ROE 12% / 16% / 19%, growth 4% / 5% / 6%, cost of equity 23.4% / 21.9% / 20.4%. Haycarb's ROE averaged 17% over five years and 16% over ten (12% to 26%), so 16% is the base. Below 1x book in every case because even the bull ROE is under the cost of equity."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 38.68,
+      "base": 58.2,
+      "bull": 83.7,
+      "weighted": 57.44,
+      "comment": "Book value Rs 107.67 (September); ROE moving in a straight line from 16% (last 12 months, Rs 16.35 ÷ average NAV) to 12% / 16% / 19% over ten years; 33% payout (2025/26: Rs 4.07 of Rs 12.18); cost of equity 23.4% / 21.9% / 20.4%; after year ten the excess return grows at 4% / 5% / 6%. Lower than price to book because the excess return is negative from the start and book keeps growing."
+    }
+  ],
+  "modelsNote": "Haycarb is a manufacturer, so a whole-company DCF would normally lead. It is shown only as a cross-check here: operating cash was negative in 2025/26 and the half year (a Rs 13.4bn and Rs 8.5bn working-capital build), so the DCF had to start from normalised cash (after-tax operating profit less maintenance, owners' share: Rs 3.0 / 5.1 / 6.0bn), and with Rs 25.5bn of net debt to subtract it swings from Rs −45 to Rs 66 a share (base Rs 13; 64% of the value after year 5). The weighted methods are the P/E, justified price to book and residual income, all at the same 21.9% cost of equity. Growth check: assumed 3% / 7% / 10% a year for five years. The calculator's supported rate (52%, from 2025/26 reinvestment × 16.2% return on capital) is inflated by the stock build, so the share of profit kept × ROE (66.6% × 12.3% = 8.2%) is the fairer test: all three scenarios are within 2 points of it, and the Philippines plant (+13% capacity, 2027/28) supports the bull. Maintenance capex range Rs 1.21–3.51bn (the bear is the two-year average of capex booked, inflated by growth projects); the report names Rs 2.69bn of 2025/26 capex as expansion, so 2025/26 capex was mostly growth. Dividends exceeded cash after maintenance capex in 2025/26: dividend at risk if stocks don't unwind. Method values come from scripts/valuation.py, so the What if? panel reproduces them.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 1.33)",
+        "bear": "23.4%",
+        "base": "21.9%",
+        "bull": "20.4%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 15.0",
+        "base": "Rs 17.5",
+        "bull": "Rs 19.0"
+      },
+      {
+        "label": "Justified forward P/E",
+        "bear": "3.4x",
+        "base": "4.1x",
+        "bull": "4.8x"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "12%",
+        "base": "16%",
+        "bull": "19%"
+      },
+      {
+        "label": "ROE path (residual income, ten years)",
+        "bear": "16% → 12%",
+        "base": "16% → 16%",
+        "bull": "16% → 19%"
+      },
+      {
+        "label": "Growth: five years (DCF), then long-term",
+        "bear": "3%, then 4%",
+        "base": "7%, then 5%",
+        "bull": "10%, then 6%"
+      },
+      {
+        "label": "What it means",
+        "bear": "Gold-carbon boom fades, charcoal stays dear, margins back to 2025/26",
+        "base": "Margins hold near the H1 level; Philippines adds volume from 2027/28",
+        "bull": "Energy-storage carbons and the Philippines plant lift ROE back near 20%"
+      }
+    ],
+    "averages": {
+      "bear": 44.88,
+      "base": 66.49,
+      "bull": 90.39
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.33 (provisional). Book Rs 107.67 a share (30 Sep 2026), payout 33%, 297.12mn shares. WACC (DCF cross-check only): cost of debt 6.54% (interest paid ÷ average borrowings and leases, 2025/26), tax 26.3%, debt weight 27.7% at Rs 224."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "19.0%",
+      "20.4%",
+      "21.9%",
+      "23.4%"
+    ],
+    "columns": [
+      "13%",
+      "16%",
+      "19%",
+      "22%"
+    ],
+    "values": [
+      [
+        58.4,
+        76.4,
+        97.4,
+        121.5
+      ],
+      [
+        51.5,
+        66.6,
+        84.0,
+        104.1
+      ],
+      [
+        45.6,
+        58.2,
+        72.7,
+        89.3
+      ],
+      [
+        40.9,
+        51.4,
+        63.6,
+        77.6
+      ]
+    ],
+    "base": {
+      "row": 2,
+      "column": 1
+    },
+    "note": "Even at a 19.0% cost of equity (beta 1.05, the US sector figure) and a 22% long-run ROE, near the 2022/23 peak, residual income gives about Rs 122, half the price. The price implies a cost of equity of about 10% at a 16% ROE, or 13% at 22%, around or below the 12.24% government bond."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 64.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 55.05
+      },
+      {
+        "shares": 150,
+        "maxPrice": 48.55
+      }
+    ],
+    "averagePrice": 57.0,
+    "totalCost": 28500,
+    "note": "About Rs 28,500 in total, against Rs 112,000 at Rs 224.",
+    "realism": "Not realistic. The share traded Rs 110–225 this year and hasn't been near Rs 65 since 2022/23 (year-end Rs 56.30). These prices need the boom to end badly (gold and battery demand falling while the stock of costly charcoal has to be sold off) or the beta to be revised well down. Re-check after the March 2027 results and the January beta refresh."
+  },
+  "changeMyView": {
+    "higher": [
+      "A lower beta once Damodaran's emerging-markets file and local 5-year betas can be checked (1.05 instead of 1.33 adds roughly Rs 15 to fair value).",
+      "Stocks turning back into cash: net debt back under Rs 10bn would cut the beta and the risk.",
+      "ROE holding near 18–20% as energy-storage carbons and the Philippines plant grow.",
+      "Lower bond yields or a smaller Sri Lanka default spread."
+    ],
+    "lower": [
+      "Gold prices falling: gold-recovery carbons were a main driver of the jump in sales.",
+      "Charcoal prices staying high while carbon prices fall, squeezing margins back below 20%.",
+      "Losses on the Rs 31.5bn of stock if prices turn.",
+      "More short-term borrowing, or rising interest rates (interest already doubled).",
+      "Delays or cost overruns at the Philippines plant."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, the beta is provisional and the price is a web snapshot, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Good returns over several years, debt still under equity, and profit every year, but profit isn't turning into cash: stock and debtors are absorbing it and the dividend is being borrowed. First scored 20 November 2026.",
+    "assessed": "2026-11-20",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "17% five-year average",
+        "note": "18%, 26%, 16%, 14% and 12.3% for 2021/22–2025/26; about 16% on the last 12 months. The last two full years were below 15%, so this is a narrow pass."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.80x equity",
+        "note": "Net debt Rs 25.5bn at Sep 2026 (incl. leases and the Rs 1.8bn related-party loan) against owners' equity Rs 32.0bn; 0.15x in March 2025. About 2.4x EBITDA. Rising fast."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Profit in each of the last ten years, though EPS swings (Rs 19.60 in 2022/23, Rs 12.10–12.60 since). Currency gains were about 9% of 2025/26 operating profit."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No",
+        "note": "Operating cash Rs 9.7bn over five years (2021/22–2025/26) against Rs 23.2bn of profit, negative in 2025/26 (−Rs 5.6bn) and the six months to Sep 2026 (−Rs 1.9bn). Dividends of Rs 1.2bn were paid from borrowing."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.33,
+    "betaBasis": "Provisional. Damodaran's global Chemical (Specialty) unlevered, cash-corrected beta 1.04 (web-search extract, date not shown; his emerging-markets file couldn't be opened), relevered at net debt to market value 0.38 and 26.3% tax = 1.33. No local 5-year beta found (TradingView 1-year 1.08 and 0.95, ignored). With the US sector figure (0.82, Jan 2026) it would be 1.05. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 23.4,
+      "base": 21.9,
+      "bull": 20.4
+    },
+    "costOfDebt": 6.54,
+    "wacc": {
+      "bear": 18.2,
+      "base": 17.2,
+      "bull": 16.1
+    },
+    "debtWeight": 27.7,
+    "asOf": "2026-11-20",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 0.95bn ÷ average borrowings and leases Rs 14.6bn (Annual Report 2025/26, pp. 369, 418–419, 448)",
+      "Weights: market cap Rs 66.6bn at Rs 224 (web snapshot), net debt Rs 25.5bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.33 × (4.2% + 6.08%) = 21.9%; bear +1.5, bull −1.5 points. At the top of the 12–22% range for CSE shares, because the sector stand-in is a global specialty-chemicals beta and the new debt raises it. The 6.5% cost of debt is below the usual range (bond yield −4 points) because much of the borrowing is short-term and some is in dollars or baht at the overseas plants; it leaves out Rs 0.28bn of currency losses on loans. WACC is used only in the DCF cross-check."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 23.4,
+      "base": 21.9,
+      "bull": 20.4
+    },
+    "wacc": {
+      "bear": 18.2,
+      "base": 17.2,
+      "bull": 16.1
+    },
+    "debtWeight": 27.7,
+    "shares": 297.124,
+    "netDebt": 25.543,
+    "pe": {
+      "bear": {
+        "eps": 15.0,
+        "roe": 12,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 17.5,
+        "roe": 16,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 19.0,
+        "roe": 19,
+        "longRun": 6
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 107.67,
+      "payout": 33,
+      "roeStart": 16,
+      "bear": {
+        "roe": 12,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 19,
+        "longRun": 6
+      }
+    },
+    "pb": {
+      "book": 107.67,
+      "bear": {
+        "roe": 12,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 19,
+        "longRun": 6
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-20",
+    "source": "Annual Report 2025/26: Chairman's and Managing Director's joint statement (pp. 20–25), strategy and resource allocation (pp. 150–155), future outlook (pp. 156–158), manufactured capital (pp. 251–252); progress from the Interim to 30 Sep 2026",
+    "takeaway": "Demand for its carbons is booming and capacity is being added in Sri Lanka and the Philippines, but the growth is being paid for with short-term loans while costly charcoal stocks pile up; whether that stock turns back into cash is the thing to watch.",
+    "said": [
+      {
+        "text": "Revenue up 55% to Rs 67.1bn (over USD 200m), from gold-recovery, energy-storage and purification carbons and higher prices",
+        "ref": "p. 23"
+      },
+      {
+        "text": "Gross profit rose only 11%: coconut-shell charcoal prices kept climbing and were only partly passed on",
+        "ref": "p. 23"
+      },
+      {
+        "text": "Borrowed more to build buffer stocks of charcoal and to fund new capacity, so finance costs rose",
+        "ref": "p. 23"
+      },
+      {
+        "text": "US tariff increases were passed on to customers; Asia and China growing, Europe weak",
+        "ref": "pp. 21–22"
+      },
+      {
+        "text": "Charcoal supply pressure expected to last into the medium term",
+        "ref": "p. 25"
+      }
+    ],
+    "plans": [
+      {
+        "text": "2026/27 targets: revenue growth over 5%, ROE over 10%, gearing under 50%",
+        "ref": "p. 157"
+      },
+      {
+        "text": "Commission the Philippines plant: 7,500 tonnes in two phases, machinery in by the March 2027 quarter",
+        "ref": "pp. 151, 251"
+      },
+      {
+        "text": "Raise value-added carbons to 30% of revenue",
+        "ref": "pp. 151–152"
+      },
+      {
+        "text": "Keep expanding energy-storage carbon capacity (doubled in 2025/26)",
+        "ref": "pp. 22, 158"
+      },
+      {
+        "text": "Source over 75% of charcoal sustainably by 2030; more charcoaling of its own in Indonesia",
+        "ref": "p. 22"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Energy-storage carbon capacity in Sri Lanka",
+        "amount": "Rs 1,425mn in 2025/26",
+        "ref": "pp. 151, 251"
+      },
+      {
+        "text": "Value-added carbon capacity (Badalgama, Thailand) and a new kiln at Shizuka, Thailand",
+        "amount": "Rs 1,264mn in 2025/26",
+        "ref": "pp. 151, 252"
+      },
+      {
+        "text": "Philippines plant (eighth factory), phased operations from 2027/28",
+        "amount": null,
+        "ref": "pp. 151, 251"
+      },
+      {
+        "text": "Technology and digital platforms",
+        "amount": "Rs 70.5mn in 2025/26",
+        "ref": "p. 151"
+      },
+      {
+        "text": "Total capex 2025/26; Rs 4.87bn more in April–September 2026",
+        "amount": "Rs 4.2bn",
+        "ref": "p. 13; Interim to 30 Sep 2026, p. 6"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Revenue growth over 5% in 2026/27",
+        "result": "+42% in the six months to September 2026",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      },
+      {
+        "promise": "ROE over 10% in 2026/27",
+        "result": "About 16% annualised for the half year (EPS Rs 8.41 × 2 ÷ average NAV)",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, pp. 2, 4"
+      },
+      {
+        "promise": "Gearing under 50% in 2026/27",
+        "result": "About 44% at September (own estimate on the report's definition, with the March related-party loan): 37.5% in March, 23.4% a year earlier",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 4; Annual Report 2025/26, p. 448"
+      },
+      {
+        "promise": "Philippines plant machinery installed by Q4 2026/27, operations from 2027/28",
+        "result": "Capex Rs 4.87bn in the half; no progress note in the interim",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 6"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, p. 9 (top 20, directors, public holding); 30 June 2026 list from the Interim to 30 Jun 2026, PDF p. 9.",
+    "takeaway": "Hayleys PLC controls Haycarb with 67.73%, unchanged; the EPF holds 4.45%. The September quarter saw steady buying: GF Capital Global (+0.9mn), Dr Dilesh Jayanntha (+0.39mn), the Managing Director (+0.37mn) and HNB's Senfin Growth Fund (+0.30mn); no big holder sold.",
+    "groups": [
+      {
+        "name": "Hayleys PLC",
+        "pct": 67.73
+      },
+      {
+        "name": "Directors",
+        "pct": 1.54
+      },
+      {
+        "name": "Public",
+        "pct": 30.73
+      }
+    ],
+    "publicFloat": 30.73,
+    "publicHolders": 9255,
+    "publicHoldersPrev": 8671,
+    "directors": [
+      {
+        "name": "Mr. A.M. Pandithage (Chairman)",
+        "shares": 23790
+      },
+      {
+        "name": "Mr. H.S.R. Kariyawasan (Managing Director, jointly with Mrs. K. H. S. Kariyawasan)",
+        "shares": 4260664
+      },
+      {
+        "name": "Mr. B. Balaratnarajah",
+        "shares": 30040
+      },
+      {
+        "name": "Mr. S.C. Ganegoda",
+        "shares": 98150
+      },
+      {
+        "name": "Mr. A.M. Senaratna",
+        "shares": 0
+      },
+      {
+        "name": "Mrs. M.J.A.S. Abeyratne",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M.S.P. Udaya Kumara",
+        "shares": 4620
+      },
+      {
+        "name": "Mr. A.A.M. Caderbhoy",
+        "shares": 152863
+      },
+      {
+        "name": "Mrs. H.M.N.S. Gunawardana",
+        "shares": 0
+      },
+      {
+        "name": "Ms. K.A.D.B. Perera",
+        "shares": 0
+      },
+      {
+        "name": "Mrs. A.I. Wanigasekera",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M.N.R. Fernando",
+        "shares": 0
+      },
+      {
+        "name": "Mr. P.Y.S. Perera",
+        "shares": 2500
+      },
+      {
+        "name": "Mr. T.A.B. Speldewinde",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Hayleys PLC No 3 Share Investment Account",
+        "shares": 201251030,
+        "pct": 67.73,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Employee's Provident Fund",
+        "shares": 13230763,
+        "pct": 4.45,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Dr. Dilesh Jayanntha",
+        "shares": 5340000,
+        "pct": 1.8,
+        "change": 390000,
+        "new": false
+      },
+      {
+        "name": "Mr. Toshiya Ueda",
+        "shares": 5130200,
+        "pct": 1.73,
+        "change": 20000,
+        "new": false
+      },
+      {
+        "name": "Mr. Hegodagamage Senarath Rajitha Kariyawasan & Mrs. K.H.S. Kariyawasan",
+        "shares": 4260664,
+        "pct": 1.43,
+        "change": 373523,
+        "new": false,
+        "note": "The Managing Director"
+      },
+      {
+        "name": "GF Capital Global Limited",
+        "shares": 2186200,
+        "pct": 0.74,
+        "change": 900000,
+        "new": false
+      },
+      {
+        "name": "Mr. Sivagurunathan Rameshan",
+        "shares": 1649680,
+        "pct": 0.56,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. Jasbinderjit Kaur Piara Singh",
+        "shares": 1410000,
+        "pct": 0.47,
+        "change": -77194,
+        "new": false
+      },
+      {
+        "name": "Mr. Zoebaly Gulamabass Carimjee",
+        "shares": 1350000,
+        "pct": 0.45,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Hatton National Bank PLC-Senfin Growth Fund",
+        "shares": 1298449,
+        "pct": 0.44,
+        "change": 302176,
+        "new": false
+      },
+      {
+        "name": "Mr. Harjit Singh Gill",
+        "shares": 1230000,
+        "pct": 0.41,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Miss. Meenambigai Priyadarshini Radhakrishnan",
+        "shares": 1060244,
+        "pct": 0.36,
+        "change": 35000,
+        "new": false
+      },
+      {
+        "name": "Mrs. Sarasvathi Vasudevan & Mr. S. Vasudevan",
+        "shares": 912000,
+        "pct": 0.31,
+        "change": -88000,
+        "new": false
+      },
+      {
+        "name": "Miss. Andal Radhakrishnan",
+        "shares": 896290,
+        "pct": 0.3,
+        "change": 37000,
+        "new": false
+      },
+      {
+        "name": "Mr. Rasiah Ranjith Leon",
+        "shares": 763356,
+        "pct": 0.26,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "Mr. Arunachalam Arulthakshanan",
+        "shares": 710780,
+        "pct": 0.24,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Est.of Late Mr. Radhakrishnan Maheswaran",
+        "shares": 700010,
+        "pct": 0.24,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Thread Capital (Private) Limited",
+        "shares": 700000,
+        "pct": 0.24,
+        "change": 100000,
+        "new": false
+      },
+      {
+        "name": "Mr. Wijaywickrama Kotigalage Gihan Nissanka Perera",
+        "shares": 700000,
+        "pct": 0.24,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Dr. Carmel Cecilia Miranda",
+        "shares": 550000,
+        "pct": 0.19,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": [
+      {
+        "name": "Capital Alliance Holdings Ltd",
+        "prevShares": 646897
+      }
+    ]
+  },
+  "fullText": "**Summary**\n\nHaycarb PLC (HAYC.N0000), 68% owned by Hayleys, makes activated carbon from coconut-shell charcoal in Sri Lanka, Thailand, Indonesia and soon the Philippines (58,500 tonnes a year, about 16% of the world market by its own count). Its carbons go into gold mining, water and air purification and, increasingly, batteries and supercapacitors. Demand is booming: revenue rose 55% to Rs 67.1bn in 2025/26 and another 42% in the six months to September 2026, when EPS doubled to Rs 8.41 (Rs 4.71 in the September quarter alone). It passes 3 of the 4 business tests (good returns over several years, debt under equity, profit every year), but fails the cash test: profit isn't turning into cash. Charcoal stocks and debtors absorbed Rs 13.4bn in 2025/26 and another Rs 8.5bn of stock in the half year, so operating cash was −Rs 5.6bn and −Rs 1.9bn, and net debt jumped from Rs 5.0bn to Rs 25.5bn in eighteen months, mostly short-term loans. On a provisional beta of 1.33 (cost of equity 21.9%), the P/E, price-to-book and residual-income methods give a fair value of about Rs 64.80. At Rs 224 (a mid-November web price) the share is 2.1x NAV of Rs 107.67 and 13.7x trailing EPS of Rs 16.35; the price implies a cost of equity of about 10–12%, below the 12.24% government bond. I'd buy at up to about Rs 55 and treat under Rs 48.60 as a strong buy. Category 2 (watch list): a good business, priced far above the buy level. The beta is the biggest uncertainty: at 1.05 (US sector figure) fair value would be about Rs 75–80, still a third of the price.\n\n**The business**\n\nHaycarb turns coconut-shell charcoal into activated carbon: eight factories (Sri Lanka, Thailand, Indonesia, and the Philippines from 2027/28), 58,500 tonnes a year of capacity running at 91%, over 1,500 products and about 16% of the world market for this kind of carbon. Main uses: gold recovery, water and air purification, and now energy storage (silicon-carbon battery anodes and supercapacitors). A small environmental-engineering arm, Puritas, builds water and wastewater plants in Sri Lanka and the Maldives. Hayleys owns 67.73%.\n\n**What happened**\n\n2025/26 (audited): revenue Rs 67.08bn (+55%), but gross margin fell from 27.9% to 19.9% because charcoal prices rose faster than carbon prices. Operating profit Rs 6.93bn, profit attributable Rs 3.62bn, EPS Rs 12.18 (Rs 12.10), ROE 12.3%, dividend Rs 4.07.\n\nApril–September 2026: revenue Rs 40.56bn (+42%), gross margin back up to 21.9% (23.8% in the September quarter), operating profit Rs 4.98bn (+92%), EPS Rs 8.41 (Rs 4.24). The September quarter alone earned Rs 4.71 a share. Two interim dividends so far: Rs 0.75 and Rs 1.00.\n\nThe weak point is cash. Stock rose from Rs 15.2bn (March 2025) to Rs 31.5bn (September 2026), as management built buffer stocks of charcoal at high prices, and debtors grew with sales. Operating cash flow was −Rs 5.58bn in 2025/26 and −Rs 1.88bn in the half year, while capex was Rs 4.28bn and Rs 4.87bn. So net debt (with leases and a Rs 1.8bn loan from a related party) rose from Rs 5.0bn to Rs 17.2bn to Rs 25.5bn, almost all of it short-term. Interest doubled, and currency losses on loans added Rs 0.31bn in the half.\n\n**Business tests (3 of 4: good)**\n\n- Returns: pass, narrowly. ROE averaged 17% over five years and is about 16% on the last 12 months, but was 14% and 12.3% in the last two full years.\n- Debt: pass. Net debt 0.80x owners' equity and about 2.4x EBITDA, up from 0.15x in March 2025.\n- Steady profit: pass. Profit in every one of the last ten years.\n- Cash: fail. Five years of operating cash (Rs 9.7bn) against Rs 23.2bn of profit; negative for the last 18 months; dividends paid from borrowing.\n\n**Required return**\n\nBeta 1.33 (provisional): Damodaran's global specialty-chemicals unlevered beta 1.04, relevered for net debt of 38% of market value. Cost of equity 8.24% + 1.33 × 10.28% = 21.9% (bear 23.4%, bull 20.4%); WACC 17.2%. With the US sector beta it would be 1.05 and 19.0%.\n\n**Valuation**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| P/E | 51.55 | 71.19 | 90.28 | 69.12 |\n| Justified P/B | 44.40 | 70.08 | 97.20 | 67.80 |\n| Residual income | 38.68 | 58.20 | 83.70 | 57.44 |\n| **Fair value** | | | | **64.79** |\n\nBuy price Rs 55.07 (15% below), strong buy Rs 48.59 (25% below). Scenarios weighted 30/50/20.\n\n- P/E: EPS for 2026/27 of Rs 15.0 / 17.5 / 19.0 × justified P/E 3.4 / 4.1 / 4.8. Base is 7% below the September-quarter run-rate (Rs 18.84) because gold-carbon demand and charcoal prices look like a peak.\n- Price to book and residual income: long-run ROE 12% / 16% / 19% against a 21.9% cost of equity, so value stays below book (Rs 107.67).\n- Whole-company DCF (not weighted): on normalised cash of Rs 3.0 / 5.1 / 6.0bn, growth 3% / 7% / 10% for five years, at WACC, less Rs 25.5bn of net debt: Rs −45 / 13 / 66 a share. It shows how much of the business's value the debt now takes up.\n\nGrowth check: assumed 3% / 7% / 10%; profit kept × ROE supports about 8.2% (the calculator's 52% is distorted by the stock build). The Philippines plant adds about 13% to capacity from 2027/28.\n\n**Why the market price is so much higher**\n\nAt Rs 224 the market pays 2.1x book and 13.7x trailing earnings: it is pricing either a much lower risk (a cost of equity around 10–13%, at or below the government bond yield) or ROE staying well above 20% for years. Neither fits Haycarb's record (ROE 12–26%, cyclical with gold prices and charcoal costs) or its new debt.\n\n**Buy plan (500 shares)**\n\n200 shares up to Rs 64.80, 150 up to Rs 55.05, 150 up to Rs 48.55: about Rs 28,500, average Rs 57.00. Not realistic soon: the share traded Rs 110–225 this year and was last near these levels in 2022/23.\n\n**What would change the view**\n\nHigher: a lower beta after the January refresh; stocks turning back into cash and net debt falling; ROE holding near 18–20%. Lower: gold prices falling; charcoal staying dear while carbon prices fall; losses on the Rs 31.5bn of stock; more short-term debt; Philippines delays.\n\n**Management and plans**\n\nDemand for its carbons is booming and capacity is being added in Sri Lanka and the Philippines, but the growth is being paid for with short-term loans while costly charcoal stocks pile up; whether that stock turns back into cash is the thing to watch. 2026/27 targets: revenue growth over 5%, ROE over 10%, gearing under 50%; all on track at the half year (gearing about 44%). Spending in 2025/26: Rs 1,425mn on energy-storage carbon capacity, Rs 1,264mn on value-added capacity; the Philippines plant (7,500 tonnes) is due to start in phases from 2027/28.\n\n**Shareholders**\n\nHayleys PLC controls Haycarb with 67.73%, unchanged; the EPF holds 4.45%. The September quarter saw steady buying: GF Capital Global (+0.9mn), Dr Dilesh Jayanntha (+0.39mn), the Managing Director (+0.37mn) and HNB's Senfin Growth Fund (+0.30mn); no big holder sold. Public holding 30.73% (9,255 holders).\n\n**Uncertain**\n\nThe price is a web snapshot (Rs 224), not a CSE close. The beta uses a global sector figure because Damodaran's emerging-markets file couldn't be opened, and no local 5-year beta was found. The interim doesn't split out the related-party loan, so the March figure (Rs 1.8bn) is used for September. The September interim's cover page wrongly says 'three months ended 30th June 2026'; the statements inside are for six months to September."
+}
