@@ -837,6 +837,23 @@
       "messageId": "353",
       "requestedAt": "2026-11-20T19:00:17+00:00",
       "status": "pending"
+    },
+    {
+      "id": "20261120190512-VONE",
+      "ticker": "VONE.N0000",
+      "name": "Vallibel One PLC",
+      "mode": "redo-full",
+      "command": "/redo VONE.N0000 full",
+      "note": null,
+      "files": [
+        "reports/VONE.N0000/2026-06-11_annual_Annual-Report-as-at-31st-March-2026-Amended-Version.pdf",
+        "reports/VONE.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/VONE.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "356",
+      "requestedAt": "2026-11-20T19:05:12+00:00",
+      "status": "pending"
     }
   ]
 }
