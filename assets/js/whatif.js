@@ -70,16 +70,16 @@
 
   /* The formula shown behind each method's ⓘ. */
   const FORMULAS = {
-    dcf: { f: "Σ free cash ÷ (1 + WACC)^year + value after year 5, then − net debt, ÷ shares",
+    dcf: { q: "What cash will the whole business produce, and what is that worth today?", f: "Σ free cash ÷ (1 + WACC)^year + value after year 5, then − net debt, ÷ shares",
       notes: ["Free cash = cash × (1 + growth) − growth ÷ return on capital × operating profit", "Value after year 5 = next year's free cash ÷ (WACC − g)", "g = long-run growth"] },
-    pe: { f: "EPS × (1 − g ÷ ROE) ÷ (cost of equity − g)",
+    pe: { q: "What are next year's profits worth, at the P/E this growth and return justify?", f: "EPS × (1 − g ÷ ROE) ÷ (cost of equity − g)",
       notes: ["1 − g ÷ ROE = the share of profit that can be paid out while still funding growth", "g = long-run growth, ROE = long-run ROE"] },
-    peFixed: { f: "EPS × P/E", notes: ["The P/E is set in the analysis, so the cost of equity doesn't change it"] },
-    ddm: { f: "Σ dividend ÷ (1 + cost of equity)^year + last dividend × (1 + g) ÷ (cost of equity − g)",
+    peFixed: { q: "What are next year's profits worth at a set P/E?", f: "EPS × P/E", notes: ["The P/E is set in the analysis, so the cost of equity doesn't change it"] },
+    ddm: { q: "What will I actually receive in dividends, valued today?", f: "Σ dividend ÷ (1 + cost of equity)^year + last dividend × (1 + g) ÷ (cost of equity − g)",
       notes: ["Dividends grow at the years 1–5 rate, then at g", "g = long-run growth"] },
-    ri: { f: "Book + Σ (ROE − cost of equity) × book ÷ (1 + cost of equity)^year + value after year 10",
+    ri: { q: "How much more than shareholders require does it earn on its book value?", f: "Book + Σ (ROE − cost of equity) × book ÷ (1 + cost of equity)^year + value after year 10",
       notes: ["ROE moves in a straight line to its long-run level by year 10", "Value after year 10 = (ROE − cost of equity) × book ÷ (cost of equity − g)"] },
-    pb: { f: "Book × (ROE − g) ÷ (cost of equity − g)", notes: ["g = long-run growth, ROE = long-run ROE"] },
+    pb: { q: "What is the book value worth, given the return it earns?", f: "Book × (ROE − g) ÷ (cost of equity − g)", notes: ["g = long-run growth, ROE = long-run ROE"] },
   };
 
   /* Inputs per method, for the "change a single input" lists. */
@@ -89,6 +89,17 @@
     ddm: [["dividend", "Next-year dividend", "Rs"], ["growth", "Growth, years 1–5", "%"], ["longRun", "Long-run growth", "%"]],
     ri: [["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
     pb: [["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
+  };
+  /* The question a method answers, for methods the panel can't recalculate (by id). */
+  const FIXED_Q = {
+    nav: "What are its assets worth, less what it owes?",
+    adjnav: "What are its assets worth at today's values, less what it owes?",
+    parts: "What are the pieces worth separately, added together?",
+    sotp: "What are the pieces worth separately, added together?",
+    ev: "What would a buyer pay for the whole business, against its earnings before interest, tax and depreciation?",
+    evebitda: "What would a buyer pay for the whole business, against its earnings before interest, tax and depreciation?",
+    yield: "What price gives a fair dividend yield?",
+    dy: "What price gives a fair dividend yield?",
   };
   const NAMES = { dcf: "DCF", pe: "P/E", ddm: "Dividend model", ri: "Residual income", pb: "Price to book" };
 
@@ -320,10 +331,11 @@
           const f = FORMULAS[x.mid === "pe" && last.mi.pe && last.mi.pe.base.pe != null ? "peFixed" : x.mid];
           const add = x.mid === "dcf" && last.mi.dcf.addOn ? last.mi.dcf.addOn : null;
           const notes = add ? [...f.notes, `Plus the other parts, fixed (they don't move with the controls): Rs ${CASES.map((c) => fmt(add[c])).join(" / ")} a share (bear / base / bull)${last.mi.dcf.addOnNote ? `: ${last.mi.dcf.addOnNote}` : ""}`] : f.notes;
-          html = `<h4>${App.esc(x.name)}</h4><p class="wi-formula">${App.esc(add ? f.f.replace(", ÷ shares", ", ÷ shares, + other parts") : f.f)}</p><ul>${notes.map((n) => `<li>${App.esc(n)}</li>`).join("")}</ul>
+          html = `<h4>${App.esc(x.name)}</h4>${f.q ? `<p class="wi-q">${App.esc(f.q)}</p>` : ""}<p class="wi-formula">${App.esc(add ? f.f.replace(", ÷ shares", ", ÷ shares, + other parts") : f.f)}</p><ul>${notes.map((n) => `<li>${App.esc(n)}</li>`).join("")}</ul>
             <p class="wi-sheet-note">Worked out for bear, base and bull, then weighted ${CASES.map((c) => fmt(+state.w[c], 0)).join(" / ")}.</p>`;
         } else {
-          html = `<h4>${App.esc(x.name)}</h4><p>Valued as in the analysis and not recalculated here, so the controls don't change it.</p>${
+          const q = FIXED_Q[x.id] || (x.mid === "dcf" ? FORMULAS.dcf.q : "");
+          html = `<h4>${App.esc(x.name)}</h4>${q ? `<p class="wi-q">${App.esc(q)}</p>` : ""}<p>Valued as in the analysis and not recalculated here, so the controls don't change it.</p>${
             x.pub.comment ? `<p class="wi-sheet-note">${App.esc(x.pub.comment)}</p>` : ""}`;
         }
       }
