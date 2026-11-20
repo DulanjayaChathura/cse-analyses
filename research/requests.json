@@ -769,6 +769,38 @@
       "status": "done",
       "result": "Fair value Rs 47.0 → Rs 34.26, buy Rs 29.12, category 3 (avoid for now, unchanged)",
       "finishedAt": "2026-11-20T18:23:58+00:00"
+    },
+    {
+      "id": "20261120185349-AHUN",
+      "ticker": "AHUN.N0000",
+      "name": "Aitken Spence Hotel Holdings PLC",
+      "mode": "update",
+      "command": "/add AHUN.N0000 SPEN.N0000",
+      "note": null,
+      "files": [
+        "reports/AHUN.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "348",
+      "requestedAt": "2026-11-20T18:53:49+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "20261120185356-SPEN",
+      "ticker": "SPEN.N0000",
+      "name": "Aitken Spence PLC",
+      "mode": "add",
+      "command": "/add AHUN.N0000 SPEN.N0000",
+      "note": null,
+      "files": [
+        "reports/SPEN.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/SPEN.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/SPEN.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "348",
+      "requestedAt": "2026-11-20T18:53:56+00:00",
+      "status": "pending"
     }
   ]
 }
