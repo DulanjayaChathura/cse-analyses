@@ -1,0 +1,916 @@
+{
+  "schemaVersion": 1,
+  "ticker": "KHL.N0000",
+  "company": {
+    "name": "John Keells Hotels PLC",
+    "sector": "Hotels and resorts",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "KHL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-20",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Integrated Annual Report 2025/26",
+      "Interim reports to 30 Jun 2026 and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 16.3,
+    "date": "2026-09-30",
+    "source": "Last traded price on 30 Sep 2026, Interim to 30 Sep 2026, p. 13",
+    "note": "The CSE close wasn't available to this run (KHL isn't yet in the site's price feed, and the CSE and price sites were blocked); the site's daily CSE close replaces this figure once the share is added. July–September 2026 range Rs 15.80–18.20; April–June Rs 16.00–18.70; Rs 26.90 a year earlier."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A big drop in the first half and returns far below what a geared hotel owner should earn",
+    "text": "John Keells Hotels PLC (KHL.N0000), 80% owned by John Keells Holdings, runs nine Cinnamon resorts in Sri Lanka and four in the Maldives. 2025/26 was its best year in a decade (EPS Rs 1.33), but about Rs 0.79 of that came from selling Cinnamon Citadel Kandy and revaluing property. The six months to September 2026 lost Rs 1.64 a share against Rs 1.00, as the Middle East conflict cut long-haul travel to the Maldives. At Rs 16.30 the share is 0.72x its NAV of Rs 22.57. But the business has never earned more than about 8% on equity in ten years, and net debt including leases (Rs 33.3bn) is now slightly more than its equity. Against the site's standard required return (21.7% for a business this geared), the methods value it at about Rs 5.90; even the NAV method alone gives only Rs 12. I'd buy only at up to about Rs 5 and treat under Rs 4.50 as a strong buy, prices it hasn't seen in at least ten years."
+  },
+  "valuation": {
+    "fairValue": 5.94,
+    "buyPrice": 5.05,
+    "strongBuyPrice": 4.46,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 22.57,
+    "note": "Fair value weights the bear/base/bull averages of four methods (NAV multiple, whole-company DCF, justified P/E on normalised EPS, justified price to book) 30/50/20: about 0.26x NAV. DCF, P/E and price to book come from scripts/valuation.py."
+  },
+  "dividend": {
+    "perShare": 0.35,
+    "label": "final for 2025/26",
+    "source": "Annual Report 2025/26, Chairperson's message (p. 15); paid in the six months to Sep 2026 (Interim to 30 Sep 2026, p. 12)",
+    "note": "Rs 0.10 for 2024/25, the first since 2019. Partly paid from the Kandy sale; no interim for 2026/27."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 22.57,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.72,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 23.6,
+      "unit": "x",
+      "note": "Trailing EPS Rs 0.69 (Rs 1.33 for 2025/26 plus the extra Rs 0.64 half-year loss); about nil without the Kandy gain and revaluation"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 5.9,
+      "unit": "%",
+      "note": "2025/26 with one-offs, about 2.5% without them"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.1,
+      "unit": "%",
+      "note": "Rs 0.35 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 26,
+      "unit": "%",
+      "note": "Of 2025/26 EPS"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 1.01,
+      "unit": "x",
+      "note": "Including Rs 16.0bn of leases (0.53x without them), 30 Sep 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": -4,
+      "unit": "%",
+      "note": "Six months to Sep 2026 (Rs 12.58bn); July–September up 8%"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 21.7,
+      "unit": "%",
+      "note": "Beta 1.31"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 23.7,
+      "unit": "Rs bn",
+      "display": "~Rs 23.7bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue down 4% to Rs 12.58bn; operating loss Rs 1.49bn (Rs 0.19bn); loss attributable Rs 2.38bn, Rs 1.64 a share (Rs 1.45bn, Rs 1.00). April–June was the worst quarter (revenue down 17%); July–September recovered to revenue up 8% with a loss of Rs 0.47 a share (Rs 0.48)."
+    },
+    {
+      "title": "Maldives hit, Sri Lanka steady",
+      "text": "The Maldives lost Rs 2.37bn before tax in the half (Rs 1.14bn), as the Middle East conflict disrupted Gulf flights from Europe. Sri Lanka's loss narrowed to Rs 0.35bn (Rs 0.39bn) and it made a small profit in July–September."
+    },
+    {
+      "title": "2025/26: best year in a decade, helped by one-offs",
+      "text": "Revenue up 10% to Rs 32.29bn, recurring EBITDA up 19% to Rs 8.95bn, profit attributable Rs 1.93bn (Rs 1.33 a share) after a loss of Rs 0.23bn. It includes a Rs 1.14bn gain on selling Cinnamon Citadel Kandy for Rs 2.78bn (capital gains tax Rs 0.37bn) and a Rs 0.38bn investment-property gain."
+    },
+    {
+      "title": "Debt and dividend",
+      "text": "Net debt excluding leases fell 17% to Rs 15.86bn in 2025/26 but rose to Rs 17.26bn by September; with Rs 16.0bn of leases, Rs 33.3bn, about equal to equity. Final dividend Rs 0.35 (Rs 0.10), paid in the half."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -0.83,
+          -0.22,
+          -0.3,
+          -0.16,
+          1.33,
+          0.69
+        ],
+        "notes": [
+          "Loss year",
+          "Loss year",
+          "Loss year",
+          "Loss year",
+          "Includes about Rs 0.79 of one-offs",
+          "Trailing, to Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          -4.48,
+          -1.06,
+          -1.38,
+          -0.71,
+          5.88,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Includes the Kandy sale gain",
+          null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          null,
+          12.18,
+          23.6
+        ],
+        "notes": [
+          "Loss",
+          "Loss",
+          "Loss",
+          "Loss",
+          null,
+          "At Rs 16.30 on trailing EPS"
+        ]
+      },
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "Rs bn",
+        "values": [
+          13.35,
+          28.84,
+          30.74,
+          29.32,
+          32.29,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          20.63,
+          22.32,
+          21.41,
+          21.61,
+          23.95,
+          22.57
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 22.57",
+      "reading": "The price is 0.72x NAV. Most of it is hotel property: revalued land and buildings in Sri Lanka and leased islands in the Maldives."
+    },
+    {
+      "method": "Return on equity",
+      "value": "5.9%",
+      "reading": "2025/26, the best in a decade, but about 2.5% without the Kandy gain and revaluation, against a 21.7% required return."
+    },
+    {
+      "method": "P/E",
+      "value": "23.6x",
+      "reading": "On trailing EPS of Rs 0.69. A business earning this little justifies about 3x normalised earnings."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.1% yield",
+      "reading": "Rs 0.35 for 2025/26, well covered by cash (Rs 3.7bn after upkeep against Rs 0.51bn), but helped by the Kandy sale."
+    },
+    {
+      "method": "DCF",
+      "value": "Rs 5.09 (base)",
+      "reading": "Firm value about Rs 41bn against Rs 33bn of debt and leases: small changes in cash move the equity a lot."
+    },
+    {
+      "method": "Required return",
+      "value": "21.7%",
+      "reading": "Beta 1.31: a hotel business (0.66) relevered for net debt of 1.4x the share's market value."
+    }
+  ],
+  "models": [
+    {
+      "id": "nav",
+      "name": "NAV method",
+      "bear": 9.03,
+      "base": 12.41,
+      "bull": 15.8,
+      "weighted": 12.07,
+      "comment": "0.40x / 0.55x / 0.70x NAV of Rs 22.57 (30 Sep 2026). The hotels and land are revalued regularly, but have earned less than the required return for a decade; the share has traded at 0.34–0.93x NAV at past March year ends."
+    },
+    {
+      "id": "dcf",
+      "name": "Cash-flow DCF (whole company)",
+      "bear": -0.73,
+      "base": 5.09,
+      "bull": 20.85,
+      "weighted": 6.5,
+      "comment": "Whole company at WACC 12.1% / 11.5% / 10.8%, minus net debt Rs 33.28bn including Rs 16.02bn of leases. Start cash (operating cash before interest less upkeep capex) Rs 4.1bn / 4.6bn / 5.6bn, against Rs 5.2bn in 2025/26, cut for the weaker first half; growth 1% / 3% / 5% for five years, then 2% / 3% / 4%, with growth ÷ return on capital (5% / 7% / 9%) reinvested. In the bear case the debt and leases are worth more than the business, so equity is about nil (Rs -0.73). In the bull case 75% of the value comes after year 5."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method (normalised EPS)",
+      "bear": 0.94,
+      "base": 1.66,
+      "bull": 2.62,
+      "weighted": 1.64,
+      "comment": "Normalised EPS Rs 0.40 / 0.62 / 0.85 × justified P/E (ROE 4/6/8%, long-run growth 2/3/4%, at the cost of equity): about 2.4x / 2.7x / 3.1x. Base EPS is 53% below 2025/26's Rs 1.33 because that included about Rs 0.53 a share from selling Cinnamon Citadel Kandy (after capital gains tax) and Rs 0.26 of investment-property revaluation; next year's EPS itself will be near zero or negative after the Rs 1.64 half-year loss."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 2.13,
+      "base": 3.62,
+      "bull": 5.57,
+      "weighted": 3.56,
+      "comment": "NAV Rs 22.57 × (ROE − growth) ÷ (cost of equity − growth): ROE 4/6/8% against 23.2/21.7/20.2%, so about 0.09x / 0.16x / 0.25x book."
+    }
+  ],
+  "modelsNote": "Four methods, averaged; DCF, P/E and price to book from scripts/valuation.py. Growth check: assumed 1% / 3% / 5% for five years; supported -1.3% (capex has been below depreciation for two years, return on capital 5.0%). All three are more than 2 points above, because the growth is in rupees: about 60% of revenue is the Maldives, in dollars, so a weaker rupee and room-rate inflation lift rupee cash without new rooms, and the start cash is already cut for this year's shock; the DCF still charges growth ÷ return on capital as reinvestment. Cost of debt is 6.3% (interest paid ÷ debt and leases), below the 12.24% rupee bond yield because much of the Maldives debt and leases are in dollars at SOFR-linked rates; WACC (11.5%) is therefore on the low side for rupee cash flows.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "23.2%",
+        "base": "21.7%",
+        "bull": "20.2%"
+      },
+      {
+        "label": "WACC",
+        "bear": "12.1%",
+        "base": "11.5%",
+        "bull": "10.8%"
+      },
+      {
+        "label": "DCF start cash (before interest, after upkeep)",
+        "bear": "Rs 4.1bn",
+        "base": "Rs 4.6bn",
+        "bull": "Rs 5.6bn"
+      },
+      {
+        "label": "Growth, next 5 years / long run",
+        "bear": "1% / 2%",
+        "base": "3% / 3%",
+        "bull": "5% / 4%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "5%",
+        "base": "7%",
+        "bull": "9%"
+      },
+      {
+        "label": "Normalised EPS",
+        "bear": "Rs 0.40",
+        "base": "Rs 0.62",
+        "bull": "Rs 0.85"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "4%",
+        "base": "6%",
+        "bull": "8%"
+      },
+      {
+        "label": "NAV multiple",
+        "bear": "0.40x",
+        "base": "0.55x",
+        "bull": "0.70x"
+      }
+    ],
+    "averages": {
+      "bear": 2.84,
+      "base": 5.7,
+      "bull": 11.21
+    },
+    "common": "Cost of equity = 8.24% + 1.31 × (4.2% + 6.08%) = 21.7%, ±1.5 points. WACC weights it 41.6% against the after-tax cost of debt (6.31% × (1 − 33.8%)) at 58.4%. Net debt Rs 33.28bn and 1,456.15mn shares at 30 Sep 2026. Upkeep capex Rs 2.51bn (2025/26 depreciation excluding right-of-use assets) in bear and base, Rs 1.45bn (two-year average capex) in bull."
+  },
+  "sensitivity": {
+    "title": "DCF value, Rs per share",
+    "rowLabel": "WACC",
+    "columnLabel": "Start cash (Rs bn)",
+    "rows": [
+      "10.5%",
+      "11.5%",
+      "12.5%"
+    ],
+    "columns": [
+      "4.1",
+      "4.6",
+      "5.1",
+      "5.6"
+    ],
+    "values": [
+      [
+        4.1,
+        8.81,
+        13.53,
+        18.24
+      ],
+      [
+        0.92,
+        5.09,
+        9.25,
+        13.41
+      ],
+      [
+        -1.58,
+        2.15,
+        5.87,
+        9.59
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Base growth 3% / 3% and return on new capital 7%. Each Rs 0.5bn of yearly cash is worth about Rs 4 a share, because debt and leases take most of the firm's value."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 5.94
+      },
+      {
+        "shares": 150,
+        "maxPrice": 5.05
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.46
+      }
+    ],
+    "averagePrice": 5.23,
+    "totalCost": 2614.5,
+    "note": "About Rs 2,615 in total, against Rs 8,150 at Rs 16.30.",
+    "realism": "Unrealistic. Rs 5.05 is less than a third of today's Rs 16.30; the lowest prices in the last twelve months were about Rs 15.80, and the lowest March year-end price in ten years was Rs 6.70 (2020, before COVID closed the hotels). It would take a collapse in the business, or a rights issue at a deep discount, to reach these prices."
+  },
+  "changeMyView": {
+    "higher": [
+      "Return on equity above 10% without one-offs for two years.",
+      "Maldives occupancy and rates recovering in the October–March season, and the Middle East disruption ending.",
+      "Net debt including leases falling well below equity, e.g. from more asset sales like Kandy.",
+      "Cinnamon Wild Yala reopening as a Signature Selection resort and lifting Sri Lankan room rates.",
+      "Damodaran's emerging-markets hotel beta or local 5-year betas coming in lower."
+    ],
+    "lower": [
+      "Another loss-making year in the Maldives as resorts there multiply (91 in 2020, 175 in 2025).",
+      "Finance and lease costs rising faster than room revenue.",
+      "Capex staying below depreciation, so the hotels age.",
+      "A stronger rupee cutting dollar earnings.",
+      "A travel shock: conflict, health scare or fuel prices."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim reports to June and September 2026. The interim figures are unaudited, and the analysis price is from 30 Sep 2026, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: John Keells Hotels PLC (KHL.N0000), 80% owned by John Keells Holdings, runs nine Cinnamon resorts in Sri Lanka and four in the Maldives. 2025/26 was its best year in a decade (EPS Rs 1.33), but about Rs 0.79 of that came from selling Cinnamon Citadel Kandy and revaluing investment property. The six months to September 2026 lost Rs 1.64 a share against Rs 1.00, as the Middle East conflict cut long-haul travel to the Maldives. At Rs 16.30 the share is 0.72x its NAV of Rs 22.57. The business has never earned more than about 8% on equity in ten years, and net debt including leases (Rs 33.3bn) is now slightly more than its equity. Against the site's standard required return (21.7% for a business this geared), the methods value it at about Rs 5.90; the NAV method alone gives Rs 12. I'd buy only at up to about Rs 5 and treat under Rs 4.50 as a strong buy. Category 3: avoid for now.\n\nPrice and key figures\nPrice: Rs 16.30, the last trade on 30 Sep 2026 (interim report). The CSE close wasn't available to this run; please check it live. It traded between Rs 15.80 and Rs 18.20 in July–September 2026 and Rs 16.00–18.70 in April–June; it was Rs 26.90 a year earlier.\nSix months to 30 September 2026 (group, unaudited): revenue Rs 12.58bn, down 4%. Operating loss Rs 1.49bn (Rs 0.19bn); finance costs down 5% to Rs 1.16bn; loss attributable Rs 2.38bn, Rs 1.64 a share (Rs 1.45bn, Rs 1.00). April–June: revenue down 17%, loss Rs 1.17 a share (Rs 0.52). July–September: revenue up 8% to Rs 7.40bn, loss Rs 0.47 a share (Rs 0.48).\nSegments (half-year, before tax): the Maldives lost Rs 2.37bn (Rs 1.14bn); Sri Lanka lost Rs 0.35bn (Rs 0.39bn), and made a small profit in July–September.\nYear to March 2026 (audited): revenue Rs 32.29bn (+10%); EBITDA Rs 10.09bn, Rs 8.95bn without the Kandy gain (+19%); operating profit Rs 5.14bn (Rs 4.00bn without it); profit attributable Rs 1.93bn, Rs 1.33 a share (loss Rs 0.16). One-offs: Rs 1.14bn gain on selling Kandy Walk Inn (Cinnamon Citadel Kandy) for Rs 2.78bn, with Rs 0.37bn capital gains tax, and a Rs 0.38bn fair value gain on investment property. Without them, profit was about Rs 0.8–0.9bn, Rs 0.55–0.62 a share, and ROE about 2.5%.\nTrailing 12 months: EPS about Rs 0.69 (Rs 1.33 plus this half's Rs 1.64 loss less last year's Rs 1.00); about nil without the one-offs.\nBalance sheet (30 Sep 2026): NAV Rs 22.57 a share (Rs 23.95 in March). Borrowings Rs 19.23bn, of which Rs 12.87bn are overdrafts; leases Rs 16.02bn, mostly Maldives islands; cash and short-term investments Rs 1.97bn. Net debt Rs 33.28bn, 1.01x equity of Rs 32.87bn (Rs 17.26bn and 0.53x without leases).\nCash flow: 2025/26 operating cash flow Rs 6.19bn (Rs 4.80bn), capex Rs 1.71bn, lease principal Rs 1.55bn, Kandy proceeds Rs 0.91bn net of cash sold. Half-year: operating cash Rs 1.73bn (Rs 2.03bn), capex Rs 0.53bn, dividend Rs 0.51bn, lease principal Rs 1.55bn; overdrafts rose by Rs 2.3bn.\nDividend: Rs 0.35 for 2025/26 (Rs 0.10 for 2024/25), paid in the half; 2.1% yield.\n\nRequired return\nBeta 1.31: Damodaran's global hotel beta of 0.66 (unlevered, cash-corrected, January 2026) relevered for net debt of 1.40x the equity's market value. No local 5-year betas could be found and Damodaran's emerging-markets file couldn't be reached; refresh in January 2027. Cost of equity 8.24% + 1.31 × (4.2% + 6.08%) = 21.7% (bear 23.2%, bull 20.2%). Cost of debt 6.31% (interest paid ÷ average borrowings and leases), lower than the 12.24% rupee bond yield because much of the Maldives debt and the island leases are in dollars at SOFR-linked rates. WACC 11.5% (bear 12.1%, bull 10.8%) with 58.4% debt weight.\n\nReinvestment and growth\nCapex was Rs 1.71bn in 2025/26 and Rs 1.20bn in 2024/25, against depreciation (excluding right-of-use assets) of Rs 2.51bn and Rs 2.38bn: two years of spending below depreciation, so the hotels are being under-invested, or the depreciation of revalued buildings is high. The company calls its capex recurring (rooms, public areas, back of house), with named upgrades at Cinnamon Bey Beruwala (about 25% of rooms) and Hakuraa Huraa (five-star, adults only); no amounts are given for those. Reinvestment was negative (Rs -0.91bn), so supported growth is -1.3% (return on capital 5.0%). The scenarios assume 1% / 3% / 5% a year in rupees for five years: more than supported, because about 60% of revenue is earned in dollars in the Maldives, so rupee weakness and room-rate inflation raise rupee cash without new rooms; the DCF still charges growth ÷ return on capital as reinvestment. Cash after upkeep (Rs 3.7bn in 2025/26) covers the dividend (Rs 0.51bn) about seven times.\n\nValuation methods (Rs a share: bear / base / bull → weighted)\n- NAV multiple: 0.40x / 0.55x / 0.70x of Rs 22.57 = 9.03 / 12.41 / 15.80 → 12.07.\n- Whole-company DCF: start cash Rs 4.1bn / 4.6bn / 5.6bn (2025/26: Rs 5.2bn, cut for the weak first half), growth 1/3/5% then 2/3/4%, return on new capital 5/7/9%, at WACC, less net debt Rs 33.28bn = -0.73 / 5.09 / 20.85 → 6.50. In the bear case debt and leases exceed the business's value. In the bull case 75% of the value comes after year 5.\n- P/E on normalised EPS: Rs 0.40 / 0.62 / 0.85 × justified P/E 2.4x / 2.7x / 3.1x = 0.94 / 1.66 / 2.62 → 1.64. Base EPS is well below the Rs 1.33 run-rate because that included about Rs 0.79 of one-offs, and next year's EPS will be near zero after the half-year loss.\n- Justified price to book: ROE 4/6/8% = 2.13 / 3.62 / 5.57 → 3.56.\nScenario averages: 2.84 / 5.70 / 11.21. Fair value (30/50/20): Rs 5.94. Buy price (15% below): Rs 5.05. Strong buy (25% below): Rs 4.46.\nThe value is low because the hotels earn about 3–6% on equity against a 21.7% required return, and debt and leases take most of the firm's value: each Rs 0.5bn of yearly cash moves the DCF by about Rs 4 a share.\n\nBusiness tests: 1 of 4 (weak)\nReturn on equity: fail (5.9% in 2025/26 with one-offs; losses in the four years before). Net debt no more than equity: fail, narrowly (1.01x including leases). Steady profit: fail (losses 2021/22–2024/25; first half of 2026/27 a bigger loss). Profit into cash: pass (operating cash Rs 6.19bn; dividend resumed).\n\nManagement and plans\nManagement is following an asset-light strategy: Kandy was sold (still managed as a Cinnamon hotel for at least a year), Cinnamon Wild Yala is being refurbished into a Signature Selection resort to reopen by Q4 2026/27, and Maldives capex stays selective. It aims to grow the dividend every year and did (Rs 0.35 against Rs 0.10). Its May 2026 view that the first quarter was tracking in line with last year was missed: April–June revenue fell 17% and the loss more than doubled.\n\nShareholders\nJohn Keells Holdings holds 80.32%, unchanged; the public holds 19.68% (12,645 holders). Directors hold no shares. Small moves in July–September: J.B. Cocoshell (now 0.48%) and ARRC Capital (0.44%) bought; DFCC Bank A/C 2 (7.5mn shares) left the top 20.\n\nBuy plan (500 shares)\n200 shares up to Rs 5.94, 150 up to Rs 5.05, 150 up to Rs 4.46: average about Rs 5.23, about Rs 2,615 in all, against Rs 8,150 at Rs 16.30. Unrealistic: the share hasn't been below Rs 6.70 at a March year end in ten years, and traded at Rs 15.80–18.70 in the last six months.\n\nWhat would change the view\nHigher: ROE above 10% without one-offs for two years; a Maldives recovery in the October–March season; net debt well below equity, e.g. from more asset sales; Yala reopening at higher rates; a lower beta from verified sources.\nLower: another loss-making Maldives year as resorts multiply; finance and lease costs outpacing room revenue; capex staying below depreciation; a stronger rupee; a new travel shock.",
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Cash comes in, but returns are far below the required return, losses were common until 2025/26, and debt plus leases equals equity.",
+    "assessed": "2026-11-20",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "5.9%",
+        "note": "2025/26, its best in ten years, helped by the Kandy gain; losses in the four years before; best before COVID 7.8% (2016/17)."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "1.01x",
+        "note": "Net debt Rs 33.28bn including Rs 16.02bn of leases against equity Rs 32.87bn (30 Sep 2026). Narrow fail; 0.53x without leases."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses 2021/22–2024/25",
+        "note": "And 2025/26's profit leaned on the Kandy sale and a revaluation; the half to Sep 2026 lost Rs 1.64 a share."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Yes",
+        "note": "Operating cash flow Rs 6.19bn in 2025/26 (Rs 4.80bn in 2024/25) against capex Rs 1.71bn; dividend Rs 0.35 resumed."
+      }
+    ]
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 23.2,
+      "base": 21.7,
+      "bull": 20.2
+    },
+    "wacc": {
+      "bear": 12.1,
+      "base": 11.5,
+      "bull": 10.8
+    },
+    "debtWeight": 58.4,
+    "shares": 1456.15,
+    "netDebt": 33.275,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 4.1,
+        "nopat": 2.4,
+        "growth": 1,
+        "longRun": 2,
+        "roc": 5,
+        "maintenance": 2.514
+      },
+      "base": {
+        "start": 4.6,
+        "nopat": 2.9,
+        "growth": 3,
+        "longRun": 3,
+        "roc": 7,
+        "maintenance": 2.514
+      },
+      "bull": {
+        "start": 5.6,
+        "nopat": 3.4,
+        "growth": 5,
+        "longRun": 4,
+        "roc": 9,
+        "maintenance": 1.453
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 0.4,
+        "roe": 4,
+        "longRun": 2
+      },
+      "base": {
+        "eps": 0.62,
+        "roe": 6,
+        "longRun": 3
+      },
+      "bull": {
+        "eps": 0.85,
+        "roe": 8,
+        "longRun": 4
+      }
+    },
+    "pb": {
+      "book": 22.57,
+      "bear": {
+        "roe": 4,
+        "longRun": 2
+      },
+      "base": {
+        "roe": 6,
+        "longRun": 3
+      },
+      "bull": {
+        "roe": 8,
+        "longRun": 4
+      }
+    }
+  },
+  "requiredReturn": {
+    "beta": 1.31,
+    "betaBasis": "Provisional. Damodaran's global Hotel/Gaming unlevered beta (cash-corrected, January 2026) 0.66, relevered at net debt 1.40x equity at market value (net debt Rs 33.28bn including leases, market cap Rs 23.74bn), 30% tax: 1.31. No local 5-year betas found; Damodaran's emerging-markets file couldn't be reached from this run. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 23.2,
+      "base": 21.7,
+      "bull": 20.2
+    },
+    "costOfDebt": 6.31,
+    "wacc": {
+      "bear": 12.1,
+      "base": 11.5,
+      "bull": 10.8
+    },
+    "debtWeight": 58.4,
+    "asOf": "2026-11-20",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Hotel/Gaming beta: Damodaran global sector table, January 2026, web-search extract",
+      "Weights: market cap Rs 23.74bn at Rs 16.30 (last trade 30 Sep 2026), net debt Rs 33.28bn (30 Sep 2026)",
+      "Cost of debt: interest paid Rs 2.30bn ÷ average borrowings and leases, 2025/26 annual report"
+    ],
+    "note": "Cost of equity 8.24% + 1.31 × 10.28% = 21.7%, ±1.5 points; near the top of the usual 12–22% because debt and leases are 1.4x the share's market value. Cost of debt 6.31% is below the rupee bond yield because much of the Maldives debt and the island leases are in dollars at SOFR-linked rates (tax 33.8%, 2025/26 effective rate, raised by capital gains tax)."
+  },
+  "management": {
+    "asOf": "2026-11-20",
+    "source": "Annual Report 2025/26: Chairperson's message (pp. 10–15), strategy (pp. 44–45), cluster reviews (pp. 136–141), finance review (pp. 142–146); checked against the interims to June and September 2026. Printed page numbers.",
+    "takeaway": "Management is selling hotels that don't fit (Kandy, for Rs 2.78bn) and upgrading the rest selectively, but its hope that 2026/27 would start in line with last year was already missed: the Middle East conflict doubled the half-year loss.",
+    "said": [
+      {
+        "text": "Record year: revenue up 10% to Rs 32.3bn, EBITDA up 35% to Rs 10.1bn (19% to Rs 8.9bn without the Kandy gain).",
+        "ref": "Annual Report 2025/26, pp. 8 and 143"
+      },
+      {
+        "text": "Sri Lankan resorts grew revenue 17% and EBITDA 44% to Rs 3.3bn; Maldives revenue rose 6% and EBITDA 9% to Rs 5.7bn.",
+        "ref": "Annual Report 2025/26, p. 12"
+      },
+      {
+        "text": "Maldives competition is intensifying: 175 resorts in 2025 against 91 in 2020, and record arrivals went mostly to guesthouses while resort occupancy fell.",
+        "ref": "Annual Report 2025/26, p. 11"
+      },
+      {
+        "text": "The Middle East conflict from late February 2026 hurt long-haul travel and is expected to temper 2026/27 in the Maldives.",
+        "ref": "Annual Report 2025/26, pp. 10 and 15"
+      },
+      {
+        "text": "Net debt excluding leases was cut 17% to Rs 15.9bn; debt to equity 0.51x.",
+        "ref": "Annual Report 2025/26, p. 144"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Keep to an asset-light model: Cinnamon Citadel Kandy sold, but still managed under the Cinnamon brand for at least 12 months.",
+        "ref": "Annual Report 2025/26, pp. 12 and 44"
+      },
+      {
+        "text": "Refurbish Cinnamon Wild Yala in phases (luxury chalets, clubhouse, spa) into a Signature Selection resort, reopening by Q4 2026/27.",
+        "ref": "Annual Report 2025/26, p. 137"
+      },
+      {
+        "text": "Move Cinnamon Hakuraa Huraa to 100% renewable power with floating solar.",
+        "ref": "Annual Report 2025/26, pp. 13 and 15"
+      },
+      {
+        "text": "Grow India, Australia, Singapore and local guests, and extend the Cinnamon DISCOVERY loyalty programme to dining in 2026/27.",
+        "ref": "Annual Report 2025/26, pp. 14–15 and 44"
+      },
+      {
+        "text": "Aim to grow the ordinary dividend every year.",
+        "ref": "Annual Report 2025/26, p. 45"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Capex in 2025/26, including upgrading about a quarter of the rooms at Cinnamon Bey Beruwala and repositioning Hakuraa Huraa as a five-star adults-only resort",
+        "amount": "Rs 1.7bn in 2025/26",
+        "ref": "Annual Report 2025/26, p. 44"
+      },
+      {
+        "text": "Reinvest the Kandy sale proceeds in upgrading the remaining hotels",
+        "amount": null,
+        "ref": "Annual Report 2025/26, p. 12"
+      },
+      {
+        "text": "Maldives capex to stay selective, on product upgrades that lift revenue per room",
+        "amount": null,
+        "ref": "Annual Report 2025/26, p. 15"
+      }
+    ],
+    "track": [
+      {
+        "promise": "First quarter of 2026/27 tracking in line with the prior year (bookings on hand and forward occupancy)",
+        "result": "Revenue down 17% to Rs 5.18bn and loss Rs 1.70bn against Rs 0.76bn in April–June",
+        "status": "missed",
+        "ref": "Interim to 30 Jun 2026, p. 1"
+      },
+      {
+        "promise": "Grow the ordinary dividend annually",
+        "result": "Rs 0.35 for 2025/26 against Rs 0.10",
+        "status": "done",
+        "ref": "Interim to 30 Sep 2026, p. 12"
+      },
+      {
+        "promise": "Reinvest the Kandy proceeds in upgrading hotels",
+        "result": "Capex Rs 0.53bn in the half, less than Rs 0.79bn a year earlier",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 4"
+      },
+      {
+        "promise": "Reopen Cinnamon Wild Yala as Signature Selection by Q4 2026/27",
+        "result": "No update in the interim reports",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 10"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, pp. 13–14 (public holding, directors, top 25); 30 June list from Interim to 30 Jun 2026, p. 13. Top 20 shown. The June report gives 8,402 public shareholders at 30 June, the September report 12,278 for the same date; the September report's figure is used.",
+    "takeaway": "John Keells Holdings controls the company with 80.32%, unchanged; the Employees' Provident Fund (5.39%) and Sri Lanka Insurance (2.35%) are the next largest. Directors own no shares. Moves in the quarter were small: J.B. Cocoshell and ARRC Capital bought, and DFCC Bank A/C 2 left the top 20.",
+    "groups": [
+      {
+        "name": "John Keells Holdings PLC",
+        "pct": 80.32
+      },
+      {
+        "name": "Public",
+        "pct": 19.68
+      }
+    ],
+    "publicFloat": 19.68,
+    "publicHolders": 12645,
+    "publicHoldersPrev": 12278,
+    "directors": [
+      {
+        "name": "K N J Balendra (Chairperson)",
+        "shares": 0
+      },
+      {
+        "name": "J G A Cooray",
+        "shares": 0
+      },
+      {
+        "name": "N N Mawilmada",
+        "shares": 0
+      },
+      {
+        "name": "M H Singhawansa",
+        "shares": 0
+      },
+      {
+        "name": "H Premaratne",
+        "shares": 0
+      },
+      {
+        "name": "K A Gunasekera (Dr)",
+        "shares": 0
+      },
+      {
+        "name": "A Goonetilleke",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "John Keells Holdings PLC",
+        "shares": 1169598478,
+        "pct": 80.32,
+        "change": 0,
+        "new": false,
+        "note": "Parent"
+      },
+      {
+        "name": "Employees Provident Fund",
+        "shares": 78474454,
+        "pct": 5.39,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Sri Lanka Insurance Corporation Ltd - Life Fund",
+        "shares": 34214354,
+        "pct": 2.35,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. K.D.H. Perera",
+        "shares": 10881723,
+        "pct": 0.75,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "People's Leasing & Finance PLC/Mr L P Hapangama",
+        "shares": 7104001,
+        "pct": 0.49,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "J.B. Cocoshell (Pvt) Ltd",
+        "shares": 7006274,
+        "pct": 0.48,
+        "change": null,
+        "new": true,
+        "note": "788,402 shares at 30 Jun 2026"
+      },
+      {
+        "name": "Seylan Bank PLC/ARRC Capital (Pvt) Ltd",
+        "shares": 6387313,
+        "pct": 0.44,
+        "change": 3541705,
+        "new": false
+      },
+      {
+        "name": "People's Leasing & Finance PLC/Mr D M P Disanayake",
+        "shares": 5563314,
+        "pct": 0.38,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "DFCC Bank PLC A/C 1",
+        "shares": 4097446,
+        "pct": 0.28,
+        "change": -1161240,
+        "new": false
+      },
+      {
+        "name": "Mr R. T. Jinasena",
+        "shares": 2516765,
+        "pct": 0.17,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr K. D. A Perera",
+        "shares": 2195027,
+        "pct": 0.15,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. S.R. Perera",
+        "shares": 2087676,
+        "pct": 0.14,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr D. N. P. Rathnayake",
+        "shares": 2000000,
+        "pct": 0.14,
+        "change": 350000,
+        "new": false
+      },
+      {
+        "name": "Mr. H.Beruwalage",
+        "shares": 1909898,
+        "pct": 0.13,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. G.I.Vasunthara",
+        "shares": 1750000,
+        "pct": 0.12,
+        "change": 20000,
+        "new": false
+      },
+      {
+        "name": "Mr A. A. V. Amerasinghe",
+        "shares": 1287800,
+        "pct": 0.09,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr C. N. H. Liyanage",
+        "shares": 1250000,
+        "pct": 0.09,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs R. P. Jinasena",
+        "shares": 1222815,
+        "pct": 0.08,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "People's Leasing & Finance PLC/C.M. Dissanayake",
+        "shares": 1218874,
+        "pct": 0.08,
+        "change": null,
+        "new": true,
+        "note": "1,218,874 at 30 Jun 2026 (21st then): no change"
+      },
+      {
+        "name": "DFCC Bank PLC/S.S.Abeysinghe",
+        "shares": 1100000,
+        "pct": 0.08,
+        "change": null,
+        "new": true,
+        "note": "1,015,000 at 30 Jun 2026"
+      }
+    ],
+    "gone": [
+      {
+        "name": "DFCC Bank PLC A/C 2",
+        "prevShares": 7505422
+      },
+      {
+        "name": "Senkadagala Finance PLC /R.S.H. Nanayakkara & R.A. Nanayakkara",
+        "prevShares": 2000000
+      },
+      {
+        "name": "Seylan Bank PLC/JN Lanka Holdings Company (Pvt) Ltd",
+        "prevShares": 2000000
+      }
+    ]
+  }
+}
