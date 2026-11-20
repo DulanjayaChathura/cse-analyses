@@ -1,0 +1,981 @@
+{
+  "schemaVersion": 1,
+  "ticker": "SPEN.N0000",
+  "company": {
+    "name": "Aitken Spence PLC",
+    "sector": "Diversified group (hotels, maritime and logistics, power, services)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "SPEN.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-20",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025/26 (CSE download, read in full)",
+      "Interim report to 30 Jun 2026 (CSE download)",
+      "Interim report to 30 Sep 2026 (CSE download)"
+    ]
+  },
+  "price": {
+    "value": 150.0,
+    "date": "2026-11-19",
+    "source": "HNB Stockbrokers peer table (Hayleys 2Q FY27 note), not a CSE close",
+    "note": "Not yet in the site's CSE price file (SPEN is new to the site). Rs 150.00 is the price ('CMP') shown for SPEN in the peer table of HNB Stockbrokers' Hayleys 2Q FY27 note, forwarded on 19 November 2026; the Hayleys price in the same table is the CSE close of 13 November, so this may be a few days old. The daily CSE close will replace it. April–June 2026 range Rs 132.50–161.00, July–September Rs 137.25–154.00; Rs 137.50 at 30 September and Rs 139.00 at 31 March 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A sound, cash-generating group with low returns; at Rs 150 it's priced well above the Rs 103 its 8–9% ROE supports",
+    "text": "Aitken Spence PLC (SPEN.N0000) is a Sri Lankan group controlled by Melstacorp (51.3%), with four arms: hotels (through its 74.5% stake in the listed Aitken Spence Hotel Holdings, AHUN, mostly in the Maldives, Sri Lanka, Oman and India), ports, shipping and logistics (including Fiji's ports), strategic investments (power plants, printing and packaging, plantations; the loss-making apparel unit was sold in November 2026) and services. In the year to March 2026 profit attributable rose 27% to Rs 6.80bn (EPS Rs 16.74) and in the six months to September 2026 it doubled to Rs 1.83bn (EPS Rs 4.51), helped by higher other operating income and much higher profits from joint ventures, while the hotels lost more in their off-season. Return on equity is low, about 8–9% (8.2% last year), against a required return of 17.9%. At about Rs 150.00 the share is 0.68x its NAV of Rs 221.28 and 7.9x trailing earnings. Four methods (a whole-group DCF, a sum of the parts with the AHUN stake at its market price, P/E and price to book) put fair value at about **Rs 102.73**, so the price is about 46% above it. Buy at up to Rs 87.32; strong buy under Rs 77.05. The business passes three of the four tests (debt, steady profit, cash), so it's on the watch list (category 2): a sound group, but the price is too high for its returns."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "assessed": "2026-11-20",
+    "reason": "Moderate debt, profit every year for five years and strong cash generation, but return on equity has stayed well under 15%.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "8.2%",
+        "note": "2025/26. Five-year average 9.4% (18.3%, 9.5%, 4.0%, 7.1%, 8.2%); about 9.2% over the last 12 months."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.41x equity",
+        "note": "Net debt Rs 43.53bn including Rs 23.92bn of leases, against total equity of Rs 105.04bn (0.48x the shareholders' Rs 89.84bn), 30 September 2026. About 1.4x EBITDA (March 2026)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "EPS Rs 7.21 to Rs 25.96 over five years (the last loss was 2020/21). The latest half leaned on other operating income (Rs 1.59bn against Rs 0.24bn), which the interim doesn't explain."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Operating cash 1.6x profit",
+        "note": "Operating cash Rs 14.32bn in 2025/26 (Rs 13.23bn the year before) against profit of Rs 9.11bn; dividends covered 5.5x by cash after maintenance. The first half is seasonally negative (−Rs 1.94bn)."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 102.73,
+    "buyPrice": 87.32,
+    "strongBuyPrice": 77.05,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 221.28,
+    "note": "Fair value weights the bear/base/bull values of four methods 30/50/20 and averages them: Rs 66.7 / 102.74 / 156.76, giving Rs 102.73 (0.46x NAV). DCF, P/E and price to book come from scripts/valuation.py; the sum of the parts is worked out with the same justified price-to-book formula. Discount rates from the beta (cost of equity 17.9%, WACC 12.6%)."
+  },
+  "dividend": {
+    "perShare": 4.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, note 14 (p. 410); paid July 2026 (Interim Sep 2026, note 2)",
+    "note": "First and final dividend; no interim declared with the September 2026 results."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 221.28,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.68,
+      "unit": "x",
+      "note": "At Rs 150.00"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 7.9,
+      "unit": "x",
+      "note": "Last 12 months' EPS Rs 18.96"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 8.2,
+      "unit": "%",
+      "note": "Year to March 2026; five-year average 9.4%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.7,
+      "unit": "%",
+      "note": "Rs 4.00 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 24,
+      "unit": "%",
+      "note": "2025/26"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 0.41,
+      "unit": "x",
+      "note": "Sep 2026, leases included, total equity"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 2.6,
+      "unit": "%",
+      "note": "April–September 2026; 1.6% in the year to March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 60.9,
+      "unit": "Rs bn",
+      "display": "~Rs 60.9bn"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 17.9,
+      "unit": "%",
+      "note": "Beta 0.94; WACC 12.6%"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue up 2.6% to Rs 41.72bn; profit attributable doubled to Rs 1.83bn (EPS Rs 4.51 against Rs 2.29), helped by other operating income of Rs 1.59bn (Rs 0.24bn) and joint-venture profit of Rs 2.59bn (Rs 1.03bn)."
+    },
+    {
+      "title": "September quarter",
+      "text": "Revenue up 6.0% to Rs 22.76bn, but profit attributable was flat at Rs 0.38bn (Rs 0.40bn), EPS Rs 0.94 (Rs 0.98): other operating income swung to a Rs 0.39bn loss and finance costs rose."
+    },
+    {
+      "title": "Hotels weaker, ports and logistics stronger",
+      "text": "Half-year profit after tax: hotels and travel a loss of Rs 2.13bn (loss Rs 1.33bn), maritime and logistics Rs 2.73bn (Rs 1.66bn), services Rs 1.43bn (Rs 0.46bn), strategic investments a loss of Rs 0.64bn (loss Rs 0.37bn). October–March is the hotels' peak."
+    },
+    {
+      "title": "2025/26: best profit in three years",
+      "text": "Revenue Rs 96.59bn (up 1.6%), profit before tax Rs 12.81bn (up 18.3%) as net finance costs fell 22%, profit attributable Rs 6.80bn, EPS Rs 16.74, ROE 8.2%, dividend Rs 4.00, NAV Rs 218.90."
+    },
+    {
+      "title": "Leases, debentures and an exit",
+      "text": "Lease liabilities nearly doubled to Rs 23.42bn with Rs 11.9bn of new leased land; net debt Rs 43.53bn at September. AHUN issued Rs 5bn of debentures, and the loss-making apparel subsidiary was sold on 3 November 2026."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          25.96,
+          16.36,
+          7.21,
+          13.13,
+          16.74,
+          18.96
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months to Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          18.26,
+          9.47,
+          3.95,
+          7.06,
+          8.18,
+          9.2
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months, worked out"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          4.0,
+          4.0,
+          4.25,
+          4.0,
+          4.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "No interim yet"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          162.44,
+          183.26,
+          181.86,
+          190.23,
+          218.9,
+          221.28
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          "Includes land revaluation",
+          "30 Sep 2026"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          2.84,
+          8.01,
+          18.06,
+          9.73,
+          8.3,
+          7.9
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "At Rs 150"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 221.28",
+      "reading": "The price is 0.68x NAV; book value includes Rs 30.8bn of revalued land."
+    },
+    {
+      "method": "Return on equity",
+      "value": "8.2%",
+      "reading": "2025/26; 9.4% average over five years and about 9.2% over the last 12 months, against a 17.9% cost of equity."
+    },
+    {
+      "method": "P/E",
+      "value": "7.9x",
+      "reading": "On the last 12 months' EPS of Rs 18.96. Year-end P/E 8.3x (2026), 9.7x (2025)."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.7% yield",
+      "reading": "Rs 4.00 a year for five years (Rs 4.25 once), about a quarter of profit; covered 5.5x by cash after maintenance."
+    },
+    {
+      "method": "Cash flow",
+      "value": "Rs 77.43–287.95",
+      "reading": "Whole-group DCF at WACC less net debt, plus joint ventures and less minorities."
+    },
+    {
+      "method": "Listed hotel stake",
+      "value": "Rs 51.83",
+      "reading": "250.5mn AHUN shares at Rs 84.00: about a third of the share price."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Whole-group DCF (WACC, less net debt) + joint ventures − minorities",
+      "bear": 77.43,
+      "base": 158.25,
+      "bull": 287.95,
+      "weighted": 159.94,
+      "comment": "Cash before interest after maintenance capex of Rs 11.16 / 13.12 / 15.07bn (2025/26 operating cash Rs 14.32bn plus after-tax interest Rs 4.26bn, less maintenance of Rs 7.41 / 5.46 / 3.51bn), after-tax operating profit Rs 9.5 / 10.5 / 11.5bn, growing 2% / 4% / 6% for five years and 3% / 4% / 5% after, with 9% / 10% / 11% return on new capital, discounted at WACC 13.5% / 12.6% / 11.7% (scripts/reinvestment.py). Less net debt of Rs 43.53bn including leases (30 September 2026): Rs 87.81 / 158.48 / 278.03 a share. Plus joint ventures at 0.8 / 1.1 / 1.4x their Rs 13.74bn book value, less minorities at their Rs 15.21bn book value: Rs -10.38 / -0.23 / 9.92. 58% / 67% / 76% of the DCF value comes after year five; the bull's 76% is above the usual 75%, so the bull case rests heavily on the long run."
+    },
+    {
+      "id": "parts",
+      "name": "Sum of the parts: hotel stake (AHUN) at market + rest at justified P/B",
+      "bear": 86.63,
+      "base": 103.16,
+      "bull": 126.94,
+      "weighted": 102.96,
+      "comment": "The 250.5mn AHUN shares the group holds (74.49%) at AHUN's CSE close of Rs 84.00 (20 November 2026): Rs 21.04bn, Rs 51.83 a share. The rest of the group at its book value (equity Rs 88.87bn less AHUN's Rs 30.94bn share, March 2026: Rs 142.7 a share) times the justified price to book of 0.24 / 0.36 / 0.53x (ROE 7 / 9 / 11%, growth 3 / 4 / 5%, cost of equity 19.4 / 17.9 / 16.4%): Rs 34.8 / 51.33 / 75.11. The rest of the group earned about Rs 3.39bn in 2025/26, under 6% on its book value, with the apparel loss; apparel has since been sold."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method (justified P/E)",
+      "bear": 48.78,
+      "base": 69.94,
+      "bull": 95.69,
+      "weighted": 68.74,
+      "comment": "EPS for the year to March 2027 of Rs 14.0 / 17.5 / 20.0 times a justified P/E of 3.48 / 4.0 / 4.78 (ROE 7 / 9 / 11%, long-run growth 3 / 4 / 5%, cost of equity 19.4 / 17.9 / 16.4%). Rs 4.51 is already earned; the second half is the hotel peak (Rs 14.45 a share last year). The base is 7.7% below the Rs 18.96 earned in the last 12 months, because this half's other operating income was Rs 1.35bn higher than a year earlier (the interim doesn't say why, so it may not repeat) and the hotels are doing worse. A low justified P/E follows from an ROE far below the cost of equity: outside the usual range, and right for a group earning 8–9% on equity."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 53.97,
+      "base": 79.6,
+      "bull": 116.46,
+      "weighted": 79.28,
+      "comment": "Book value Rs 221.28 (30 September 2026) × (ROE − growth) ÷ (cost of equity − growth): 0.24 / 0.36 / 0.53x with ROE 7 / 9 / 11% and growth 3 / 4 / 5%. ROE has averaged 9.4% over five years (18.3% in 2021/22, 4.0% in 2023/24), well below the 17.9% cost of equity, so value is below book. Book value includes Rs 30.8bn of revalued land (Rs 8.0bn of it revalued this year)."
+    }
+  ],
+  "modelsNote": "A group with many businesses and big minority interests: the whole-group DCF values all of it at WACC, subtracts net debt including leases, adds the joint ventures (not in operating cash) and takes off the minorities' share. The sum of the parts uses the market price of the listed hotel subsidiary instead. P/E and price to book use the cost of equity. No dividend model: the payout is only about a quarter of profit (Rs 4.00 against EPS of Rs 16.74), so it would understate the value. Growth check: assumed 2% / 4% / 6% against a supported −3.1% (reinvestment rate −33% × return on capital 9.4%, 2025/26). All three are more than 2 points above, for a stated reason: 2025/26 capex booked (Rs 3.66bn) leaves out Rs 11.88bn of newly leased land, while depreciation includes Rs 1.64bn on leased assets. Counting the new leases as reinvestment (their liabilities are in net debt), reinvestment is Rs 8.39bn, 80% of after-tax operating profit, which supports about 7.5%; the equity route (76% of profit kept × 8.2% ROE) gives 6.2%. The 4% base sits below both.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity / WACC",
+        "bear": "19.4% / 13.5%",
+        "base": "17.9% / 12.6%",
+        "bull": "16.4% / 11.7%"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 7.41bn",
+        "base": "Rs 5.46bn",
+        "bull": "Rs 3.51bn"
+      },
+      {
+        "label": "Cash before interest after maintenance (start)",
+        "bear": "Rs 11.16bn",
+        "base": "Rs 13.12bn",
+        "bull": "Rs 15.07bn"
+      },
+      {
+        "label": "After-tax operating profit (start)",
+        "bear": "Rs 9.5bn",
+        "base": "Rs 10.5bn",
+        "bull": "Rs 11.5bn"
+      },
+      {
+        "label": "Growth, years 1–5 / after",
+        "bear": "2% / 3%",
+        "base": "4% / 4%",
+        "bull": "6% / 5%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "9%",
+        "base": "10%",
+        "bull": "11%"
+      },
+      {
+        "label": "Joint ventures (× book) / minorities",
+        "bear": "0.8x / at book",
+        "base": "1.1x / at book",
+        "bull": "1.4x / at book"
+      },
+      {
+        "label": "EPS to March 2027 × justified P/E",
+        "bear": "Rs 14.0 × 3.48",
+        "base": "Rs 17.5 × 4.0",
+        "bull": "Rs 20.0 × 4.78"
+      },
+      {
+        "label": "Long-run ROE / growth",
+        "bear": "7% / 3%",
+        "base": "9% / 4%",
+        "bull": "11% / 5%"
+      },
+      {
+        "label": "AHUN share price",
+        "bear": "Rs 84.00",
+        "base": "Rs 84.00",
+        "bull": "Rs 84.00"
+      }
+    ],
+    "averages": {
+      "bear": 66.7,
+      "base": 102.74,
+      "bull": 156.76
+    },
+    "common": "Net debt Rs 43.53bn (leases included) and NAV Rs 221.28 at 30 September 2026; 405.996mn shares. 10-year rupee bond yield 12.24%. Price Rs 150.00 (broker quote, 19 Nov 2026). AHUN Rs 84.00 (CSE close, 20 Nov 2026)."
+  },
+  "sensitivity": {
+    "title": "Whole-group DCF + joint ventures − minorities (base case), Rs per share",
+    "rowLabel": "WACC",
+    "columnLabel": "Cash before interest after maintenance (start)",
+    "rows": [
+      "11.7%",
+      "12.6%",
+      "13.5%"
+    ],
+    "columns": [
+      "Rs 11.16bn",
+      "Rs 13.12bn",
+      "Rs 15.07bn"
+    ],
+    "values": [
+      [
+        124.1,
+        189.3,
+        254.2
+      ],
+      [
+        99.9,
+        158.3,
+        216.3
+      ],
+      [
+        80.2,
+        133.1,
+        185.7
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 4% then 4%, 10% return on new capital, joint ventures at 1.1x book, minorities at book. The DCF alone roughly supports today's price; the methods based on the group's 8–9% ROE don't."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 102.73
+      },
+      {
+        "shares": 150,
+        "maxPrice": 87.32
+      },
+      {
+        "shares": 150,
+        "maxPrice": 77.05
+      }
+    ],
+    "averagePrice": 90.4,
+    "totalCost": 45202,
+    "note": "About Rs 45,202 in total, against Rs 75,000 at Rs 150.00.",
+    "realism": "Rs 87.32 needs a fall of about 42%. Since April 2026 the share has traded between Rs 132.50 and Rs 161.00 (Rs 130.25 at March 2024), so the buy price isn't realistic soon; it would take a market fall or a poor hotel season."
+  },
+  "changeMyView": {
+    "higher": [
+      "A strong hotel peak season (October–March) that matches last year's second half.",
+      "ROE rising towards 12% now that the loss-making apparel unit is sold.",
+      "Lower interest rates or cheaper dollar loans.",
+      "A higher AHUN share price: each Rs 10 adds about Rs 6 a share to the sum of the parts.",
+      "A higher payout than a quarter of profit."
+    ],
+    "lower": [
+      "Middle East tension, fuel prices or fewer flights hurting Maldives tourism and shipping.",
+      "Finance costs rising further (up 19.5% in the half).",
+      "The new leases adding cost to the hotels.",
+      "A stronger rupee shrinking overseas profit (61% of pre-tax profit).",
+      "The jump in joint-venture profit fading, or capex staying below depreciation."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report 2025/26 and the interim reports to June and September 2026 (unaudited), all downloaded from the CSE. The price is a broker's quote of about 19 November 2026, not the CSE close, so check it before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: Aitken Spence PLC (SPEN.N0000) is a Sri Lankan group controlled by Melstacorp (51.3%), with four arms: hotels (through its 74.5% stake in the listed Aitken Spence Hotel Holdings, AHUN, mostly in the Maldives, Sri Lanka, Oman and India), ports, shipping and logistics (including Fiji's ports), strategic investments (power plants, printing and packaging, plantations; the loss-making apparel unit was sold in November 2026) and services. In the year to March 2026 profit attributable rose 27% to Rs 6.80bn (EPS Rs 16.74) and in the six months to September 2026 it doubled to Rs 1.83bn (EPS Rs 4.51), helped by higher other operating income and much higher profits from joint ventures, while the hotels lost more in their off-season. Return on equity is low, about 8–9% (8.2% last year), against a required return of 17.9%. At about Rs 150.00 the share is 0.68x its NAV of Rs 221.28 and 7.9x trailing earnings. Four methods (a whole-group DCF, a sum of the parts with the AHUN stake at its market price, P/E and price to book) put fair value at about Rs 102.73, so the price is about 46% above it. Buy at up to Rs 87.32; strong buy under Rs 77.05. The business passes three of the four tests (debt, steady profit, cash), so it's on the watch list (category 2): a sound group, but the price is too high for its returns.\n\nPrice and key figures\nPrice: about Rs 150.00 (HNB Stockbrokers' peer table, forwarded 19 November 2026; SPEN isn't in the site's CSE price file yet, so please check it live). Since April 2026 it has traded between Rs 132.50 and Rs 161.00; it was Rs 137.50 at 30 September and Rs 139.00 at 31 March. Market cap about Rs 60.9bn (406.0mn shares).\nSix months to 30 September 2026 (unaudited): revenue Rs 41.72bn (up 2.6%), operating profit Rs 2.90bn (Rs 2.80bn), profit attributable Rs 1.83bn (Rs 0.93bn), EPS Rs 4.51 (Rs 2.29). Other operating income (not broken down in the interim) was Rs 1.59bn (Rs 0.24bn) and the share of joint-venture profit Rs 2.59bn (Rs 1.03bn); finance costs rose 19.5% to Rs 3.67bn. The September quarter alone: revenue Rs 22.76bn (up 6.0%), profit attributable Rs 0.38bn (Rs 0.40bn), EPS Rs 0.94 (Rs 0.98).\nBy segment (six months, profit after tax including minorities): hotels and travel a loss of Rs 2.13bn (loss Rs 1.33bn), maritime and logistics Rs 2.73bn (Rs 1.66bn), strategic investments a loss of Rs 0.64bn (loss Rs 0.37bn), services Rs 1.43bn (Rs 0.46bn). April–September is the hotels' off-season: last year the second half earned Rs 5.87bn of the year's Rs 6.80bn.\nYear to March 2026 (audited): revenue Rs 96.59bn (up 1.6%), operating profit Rs 14.81bn, profit before tax Rs 12.81bn (up 18.3%), profit attributable Rs 6.80bn (up 27.5%), EPS Rs 16.74, ROE 8.2%, dividend Rs 4.00 (24% of profit), NAV Rs 218.90. 61% of pre-tax profit came from outside Sri Lanka. A land revaluation added Rs 8.0bn (Rs 4.8bn to shareholders) to equity, not to profit.\nDebt: borrowings Rs 73.33bn and leases Rs 23.92bn, against cash Rs 24.76bn and deposits and treasury bills of about Rs 28.97bn: net debt Rs 43.53bn at 30 September (Rs 37.72bn in March), 0.41x total equity. Two-thirds of the term loans are in US dollars, so the average interest cost was only about 7.2% last year. Lease liabilities nearly doubled in 2025/26 with Rs 11.9bn of new leased land. AHUN issued Rs 5bn of debentures in September 2026.\nHistory: EPS Rs 25.96 (2021/22), 16.36, 7.21, 13.13 and 16.74 (2025/26); ROE 18.3%, 9.5%, 4.0%, 7.1% and 8.2%. Dividend Rs 4.00 a year (Rs 4.25 in 2023/24). NAV up from Rs 162.44 to Rs 218.90 in four years.\n\nMethods (Rs per share: bear / base / bull, weighted)\nWhole-group DCF + joint ventures − minorities: 77.43 / 158.25 / 287.95, weighted 159.94.\nSum of the parts (AHUN at market + rest at justified P/B): 86.63 / 103.16 / 126.94, weighted 102.96.\nP/E method: 48.78 / 69.94 / 95.69, weighted 68.74.\nJustified price to book: 53.97 / 79.6 / 116.46, weighted 79.28.\nAverage: 66.7 / 102.74 / 156.76.\nNAV Rs 221.28 (0.68x at Rs 150). ROE 8.2% last year, about 9.2% over the last 12 months. Trailing P/E 7.9x (EPS Rs 18.96). Dividend yield 2.7%.\n\nThe DCF is the most generous method because the group borrows cheaply in dollars (WACC 12.6%) and turns profit into cash well; the book-value methods are strict because ROE of 8–9% is far below the 17.9% cost of equity. The sum of the parts sits between: the AHUN stake alone is worth Rs 51.83 a share at today's AHUN price.\n\nRequired return\nBeta 0.94: the four segments' sector betas weighted by operating assets (hotels 59%, maritime 15%, strategic investments 22%, services 4%) give 0.67, relevered for net debt of 0.57x market value (minorities included). No local 5-year beta found. Cost of equity 8.24% + 0.94 × (4.2% + 6.08%) = 17.9% (bear 19.4%, bull 16.4%). Cost of debt 7.21% (interest paid ÷ average borrowings and leases, 2025/26), below the house range of the 12.24% bond yield minus 4 points because two-thirds of term loans and nearly all leases are in US dollars at SOFR-linked rates. WACC 12.6% (13.5% / 11.7%), with debt at 41.7% of market value.\n\nAssumptions (bear / base / bull)\nDCF start cash Rs 11.16 / 13.12 / 15.07bn: 2025/26 operating cash Rs 14.32bn plus after-tax interest Rs 4.26bn (interest is in operating cash), less maintenance capex of Rs 7.41bn (all depreciation, including Rs 1.64bn on leased assets) / Rs 5.46bn / Rs 3.51bn (the average booked over two years). There's no company split. Capex has been about half of depreciation for two years (Rs 3.36bn and Rs 3.66bn against Rs 6.98bn and Rs 7.41bn): mostly upkeep, with some under-investment, which the bear case corrects.\nAfter-tax operating profit Rs 9.5 / 10.5 / 11.5bn (2025/26: Rs 10.53bn at the 28.9% effective tax rate). Growth 2% / 4% / 6% for five years, then 3% / 4% / 5% (below WACC and the 12.24% bond yield), with 9% / 10% / 11% return on new capital (9.4% last year).\nJoint ventures 0.8 / 1.1 / 1.4x book (they earned Rs 2.30bn last year and Rs 2.59bn in the half, on Rs 13.74bn of book value); minorities at book (Rs 15.21bn).\nEPS to March 2027 Rs 14.0 / 17.5 / 20.0; ROE 7 / 9 / 11%; long-run growth 3 / 4 / 5%; AHUN at Rs 84.00 in all cases.\nGrowth check: assumed 2% / 4% / 6% against a supported −3.1% (reinvestment rate −33% × return on capital 9.4%, 2025/26). All three are more than 2 points above, for a stated reason: 2025/26 capex booked (Rs 3.66bn) leaves out Rs 11.88bn of newly leased land, while depreciation includes Rs 1.64bn on leased assets. Counting the new leases as reinvestment (their liabilities are in net debt), reinvestment is Rs 8.39bn, 80% of after-tax operating profit, which supports about 7.5%; the equity route (76% of profit kept × 8.2% ROE) gives 6.2%. The 4% base sits below both.\nEarnings run-rate: Rs 18.96 over the last 12 months; the base case is 7.7% below it (inside the 10% limit), for the unexplained jump in other operating income and the weaker hotels.\nDividends: Rs 4.00 is covered 5.5 times by cash after maintenance capex (Rs 8.86bn against Rs 1.62bn), so it isn't at risk.\nWarning from the calculator: net debt rose by more than half of capex in 2025/26. That came from the new leases (lease liabilities up Rs 10.7bn), not from borrowing for capex: borrowings fell by Rs 1.1bn.\n\nFair value and buy price\nFair value: weighting 30/50/20 and averaging the four methods gives Rs 102.73 (0.46x NAV). Rs 150.00 is about 46% above it.\nBuy price: 15% below fair value, Rs 87.32; strong buy 25% below, Rs 77.05.\nPlan for 500 shares: 200 at up to Rs 102.73, 150 at up to Rs 87.32 and 150 at up to Rs 77.05. That averages about Rs 90.40, about Rs 45,202, against Rs 75,000 at Rs 150.00.\nRealism: the buy price needs a fall of about 42%. Between April and September 2026 the share didn't trade below Rs 132.50 and was Rs 130.25 at March 2024, so it isn't likely soon; it would take a market fall or a bad hotel season.\n\nSensitivity (whole-group DCF + joint ventures − minorities, base case, Rs per share)\nWACC 11.7%: 124.1 / 189.3 / 254.2 for start cash of Rs 11.16 / 13.12 / 15.07bn.\nWACC 12.6%: 99.9 / 158.3 / 216.3.\nWACC 13.5%: 80.2 / 133.1 / 185.7.\n\nWhat would change my view\nSupports a higher value: a strong hotel peak season (October–March) that repeats last year's second half; ROE rising towards 12% now that apparel is sold; lower interest rates or cheaper dollar loans; a higher AHUN share price (each Rs 10 adds about Rs 6 a share to the sum of the parts); a higher payout than a quarter of profit.\nSupports a lower value: Middle East tension, fuel prices or fewer flights hurting Maldives tourism and shipping; finance costs rising further (up 19.5% this half); the new leases adding cost; a stronger rupee shrinking overseas profit (61% of the total); the jump in joint-venture profit fading; capex staying below depreciation.\n\nManagement and plans\nThe Chairperson (also interim managing director since April 2026) points to lower interest costs, overseas profit and pruning: the apparel subsidiary was sold on 3 November 2026 and the Embilipitiya thermal plant is for sale. Plans are asset-light hotel growth abroad, cold chain, bunkering, tugs and a Bangladesh cold store in logistics, renewables and more packaging capacity, with Rs 13.4bn of capex approved at March. Finance costs, which management said it had cut, rose 19.5% in the first half; the hotels' off-season loss widened.\n\nShareholders\nMelstacorp owns 51.33% and Rubicond Enterprises 16.25%; the EPF 5.07%. The public holds 47.52% (6,046 holders). Between June and September 2026 the Australian Retirement Trust (formerly listed as Sunsuper) sold about 1.62mn shares, while Mr J.J. Hosking bought 650,000.\n\nBusiness tests: 3 of 4 passed, so the business counts as good; the price is above the buy price, so it's on the watch list (category 2). Return on equity fails (8.2% last year, 9.4% five-year average); debt passes (net debt 0.41x equity); steady profit passes (no loss in five years); cash passes (operating cash Rs 14.32bn against profit of Rs 9.11bn last year).\n\nThese are my estimates from the annual report 2025/26 and the interim reports to June and September 2026 (unaudited). The price is a broker's quote rather than the CSE close, so check it before ordering. This is analysis, not personal financial advice.",
+  "requiredReturn": {
+    "beta": 0.94,
+    "betaBasis": "Provisional. Segment sector betas (Damodaran stand-ins: Hotel/Gaming 0.66, Transportation 0.71, renewable power and apparel 0.64, business services 0.91) weighted by operating assets, 0.67 unlevered, relevered at net debt 0.57x market value including minorities, 30% tax: 0.94. No local 5-year beta found (TradingView 0.87 is 1-year). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 19.4,
+      "base": 17.9,
+      "bull": 16.4
+    },
+    "costOfDebt": 7.21,
+    "wacc": {
+      "bear": 13.5,
+      "base": 12.6,
+      "bull": 11.7
+    },
+    "debtWeight": 41.7,
+    "asOf": "2026-11-20",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 5.99bn ÷ average borrowings and leases Rs 82.97bn (Annual Report 2025/26, pp. 375, 379)",
+      "Weights: Rs 60.9bn equity (406.0mn shares at Rs 150.00), net debt Rs 43.53bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.94 × (4.2% + 6.08%) = 17.9%; bear +1.5, bull −1.5 points. Inside the 12–22% range. WACC weights equity 58.3% and debt 41.7% at 7.21% less 28.9% tax. The cost of debt is below the usual range (bond yield − 4 points) because two-thirds of term loans and almost all leases are in US dollars at SOFR-linked rates."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 19.4,
+      "base": 17.9,
+      "bull": 16.4
+    },
+    "wacc": {
+      "bear": 13.5,
+      "base": 12.6,
+      "bull": 11.7
+    },
+    "debtWeight": 41.7,
+    "shares": 405.996,
+    "netDebt": 43.527,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 11.16,
+        "nopat": 9.5,
+        "growth": 2,
+        "longRun": 3,
+        "roc": 9,
+        "maintenance": 7.41
+      },
+      "base": {
+        "start": 13.12,
+        "nopat": 10.5,
+        "growth": 4,
+        "longRun": 4,
+        "roc": 10,
+        "maintenance": 5.46
+      },
+      "bull": {
+        "start": 15.07,
+        "nopat": 11.5,
+        "growth": 6,
+        "longRun": 5,
+        "roc": 11,
+        "maintenance": 3.51
+      },
+      "addOn": {
+        "bear": -10.38,
+        "base": -0.23,
+        "bull": 9.92
+      },
+      "addOnNote": "Joint ventures and associates at 0.8 / 1.1 / 1.4 times their Rs 13.74bn book value, less minority shareholders' interests at their Rs 15.21bn book value (30 September 2026): Rs -10.38 / -0.23 / 9.92 a share"
+    },
+    "pe": {
+      "bear": {
+        "eps": 14,
+        "roe": 7,
+        "longRun": 3
+      },
+      "base": {
+        "eps": 17.5,
+        "roe": 9,
+        "longRun": 4
+      },
+      "bull": {
+        "eps": 20,
+        "roe": 11,
+        "longRun": 5
+      }
+    },
+    "pb": {
+      "book": 221.28,
+      "bear": {
+        "roe": 7,
+        "longRun": 3
+      },
+      "base": {
+        "roe": 9,
+        "longRun": 4
+      },
+      "bull": {
+        "roe": 11,
+        "longRun": 5
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-20",
+    "source": "Annual Report 2025/26: Chairperson's message (pp. 40–46), year at a glance (pp. 32–33), sector outlooks (pp. 179, 190, 222), financial capital (pp. 252–255), notes 19 and 38; progress from the interims to June and September 2026",
+    "takeaway": "Management is pruning weak businesses (apparel sold, a thermal plant for sale) and steering growth to logistics, renewables and asset-light hotels, but returns are still only about 8–9% on equity and finance costs are rising again.",
+    "said": [
+      {
+        "text": "Profit before tax rose 18.3% to Rs 12.8bn, helped by lower rates and refinanced loans that cut net finance costs 22%",
+        "ref": "p. 40"
+      },
+      {
+        "text": "Overseas businesses made 61% of profit; hotels and travel had their best year (pre-tax Rs 7.9bn, up 31.6%)",
+        "ref": "p. 41"
+      },
+      {
+        "text": "Apparel losses caused a Rs 0.94bn pre-tax loss in strategic investments; printing and packaging did very well, power earned less",
+        "ref": "p. 43"
+      },
+      {
+        "text": "Freight volumes fell after the DB Schenker agency ended with DSV's takeover; new alliances replaced part of it",
+        "ref": "p. 42"
+      },
+      {
+        "text": "Middle East tension and fuel prices are expected to make 2026/27 more volatile for tourism and shipping",
+        "ref": "p. 46"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Review and exit businesses that no longer fit the group's direction",
+        "ref": "p. 46"
+      },
+      {
+        "text": "Sell the Embilipitiya thermal power plant; grow renewables and waste-to-energy selectively",
+        "ref": "p. 222"
+      },
+      {
+        "text": "Hotels: grow abroad with an asset-light approach, more digital and direct sales, solar at properties",
+        "ref": "p. 179"
+      },
+      {
+        "text": "Logistics: cold chain, more bunkering capacity, tugs and barges, a cold store and warehouse in Bangladesh",
+        "ref": "pp. 46, 190"
+      },
+      {
+        "text": "Printing and packaging: more factory space and new packaging lines",
+        "ref": "p. 222"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Capex booked in 2025/26 (property, plant, equipment and software)",
+        "amount": "Rs 3.66bn",
+        "ref": "p. 389"
+      },
+      {
+        "text": "Capital spending approved or contracted at March 2026, not split by project",
+        "amount": "Rs 13.39bn",
+        "ref": "note 38.1, p. 485"
+      },
+      {
+        "text": "New leased land (right-of-use additions) in 2025/26, mostly in US dollars",
+        "amount": "Rs 11.88bn",
+        "ref": "note 19.1, p. 424"
+      },
+      {
+        "text": "Capex paid in April–September 2026",
+        "amount": "Rs 2.33bn",
+        "ref": "Interim to 30 Sep 2026, p. 7"
+      },
+      {
+        "text": "Debentures issued by Aitken Spence Hotel Holdings in September 2026",
+        "amount": "Rs 5bn",
+        "ref": "Interim to 30 Sep 2026, note 5, p. 10"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Exit businesses no longer aligned with the group",
+        "result": "Done: the apparel subsidiary (the main source of 2025/26's strategic-investments loss) was sold on 3 November 2026 (Interim to 30 Sep 2026, note 6, p. 10)",
+        "status": "done",
+        "ref": "p. 46"
+      },
+      {
+        "promise": "Divest the Embilipitiya thermal power plant",
+        "result": "Still held for sale at Rs 0.86bn at 30 September 2026 (Interim to 30 Sep 2026, p. 4)",
+        "status": "too-early",
+        "ref": "p. 222"
+      },
+      {
+        "promise": "Keep funding costs down after cutting net finance costs 22%",
+        "result": "Finance costs Rs 3.67bn in the half, up 19.5% from Rs 3.07bn; net debt up to Rs 43.53bn from Rs 37.72bn (Interim to 30 Sep 2026, pp. 1, 4)",
+        "status": "missed",
+        "ref": "pp. 40, 253"
+      },
+      {
+        "promise": "Maritime and logistics to keep growing",
+        "result": "Half-year profit Rs 2.73bn against Rs 1.66bn (Interim to 30 Sep 2026, p. 9)",
+        "status": "on-track",
+        "ref": "p. 42"
+      },
+      {
+        "promise": "Services to improve gradually",
+        "result": "Half-year profit Rs 1.43bn against Rs 0.46bn, mostly joint-venture profit (Interim to 30 Sep 2026, p. 9)",
+        "status": "on-track",
+        "ref": "p. 43"
+      },
+      {
+        "promise": "Hotels to build on their best year",
+        "result": "Off-season half: loss Rs 2.13bn against Rs 1.33bn; the October–March peak will decide (Interim to 30 Sep 2026, p. 9)",
+        "status": "too-early",
+        "ref": "p. 41"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, non-financial information (p. 11), against the twenty largest shareholders at 30 June 2026 (Interim to 30 Jun 2026, p. 10).",
+    "takeaway": "Melstacorp (ultimately Milford Exports) controls the company with 51.33%; Rubicond Enterprises holds 16.25% and the EPF 5.07%, and none of them traded. The Australian Retirement Trust sold about 1.62mn shares and Hosking-related holders added about 0.62mn.",
+    "groups": [
+      {
+        "name": "Melstacorp PLC",
+        "pct": 51.33
+      },
+      {
+        "name": "Other non-public (incl. Milford Exports, directors)",
+        "pct": 1.15
+      },
+      {
+        "name": "Public (incl. Rubicond 16.25%, EPF 5.07%)",
+        "pct": 47.52
+      }
+    ],
+    "publicFloat": 47.52,
+    "publicHolders": 6046,
+    "publicHoldersPrev": 5908,
+    "directors": [
+      {
+        "name": "Ms. D.S.T. Jayawardena (Chairperson, interim Managing Director)",
+        "shares": 27839
+      },
+      {
+        "name": "Mr. J.M.S. Brito & Mrs. B.S. Brito",
+        "shares": 64126
+      },
+      {
+        "name": "People's Leasing & Finance PLC / Mr. J.M.S. Brito and Mrs. B.S. Brito",
+        "shares": 310000
+      },
+      {
+        "name": "Dr. R.M. Fernando",
+        "shares": 0
+      },
+      {
+        "name": "Mr. N. J. de S. Deva Aditya",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M.R. Mihular",
+        "shares": 0
+      },
+      {
+        "name": "Dr. R.A. Fernando",
+        "shares": 0
+      },
+      {
+        "name": "Mr. P. Englisch",
+        "shares": 0
+      },
+      {
+        "name": "Mr. C.J. Sevilla",
+        "shares": 0
+      },
+      {
+        "name": "Mr. C.H. Gomez",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Melstacorp PLC",
+        "shares": 208410213,
+        "pct": 51.33,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Rubicond Enterprises Limited",
+        "shares": 65990145,
+        "pct": 16.25,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Employees' Provident Fund",
+        "shares": 20590978,
+        "pct": 5.07,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Citibank Hong Kong S/A Hostplus Pooled Superannuation Trust",
+        "shares": 13442908,
+        "pct": 3.31,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "SSBT- Australian Retiremennt Trust Pty Ltd as Trustee for Australian Retirement Trust",
+        "shares": 7507143,
+        "pct": 1.85,
+        "change": -1624565,
+        "new": false,
+        "note": "Listed at 30 June as 'SSBT-Sunsuper Pty. Ltd. as Trustee for Sunsuper Superannuation Fund' (9,131,708 shares, 5th place); same custodian and place, and Sunsuper's trustee now trades as Australian Retirement Trust, so treated as the same holder. Name spelt as in the report."
+      },
+      {
+        "name": "Mrs. K. Fernando",
+        "shares": 5571150,
+        "pct": 1.37,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Placidrange Holdings Limited",
+        "shares": 5521500,
+        "pct": 1.36,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mrs. A.T. Wickremasinghe",
+        "shares": 4648055,
+        "pct": 1.15,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Hatton National Bank PLC - Capital Alliance Quantitative Equity Fund",
+        "shares": 3762569,
+        "pct": 0.93,
+        "change": 25000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. J.J. Hosking",
+        "shares": 3025000,
+        "pct": 0.75,
+        "change": 650000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr.R.P. Weerasooriya",
+        "shares": 2468582,
+        "pct": 0.61,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Finco Holdings (Private) Limited",
+        "shares": 2420130,
+        "pct": 0.6,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "JPMCB NA - Government Institutions Pension Fund",
+        "shares": 2381566,
+        "pct": 0.59,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Milford Exports (Ceylon) (Private) Limited",
+        "shares": 2232978,
+        "pct": 0.55,
+        "change": 0,
+        "new": false,
+        "note": "Ultimate parent of the group"
+      },
+      {
+        "name": "Mr. S.C. Weerasooriya",
+        "shares": 2187581,
+        "pct": 0.54,
+        "change": 335000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mrs. T.T.A. De Silva Weerasooriya",
+        "shares": 2099699,
+        "pct": 0.52,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Stassen Exports (Private) Limited",
+        "shares": 2029980,
+        "pct": 0.5,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "CACEIS Bank Ireland Branch S/A Bridge UCITS Funds ICAV - Hosking Global Equity Fund",
+        "shares": 1602597,
+        "pct": 0.4,
+        "change": -25612,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. D. G. Wijemanna",
+        "shares": 1600000,
+        "pct": 0.39,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "J.B. Cocoshell (Private) Limited",
+        "shares": 1482574,
+        "pct": 0.37,
+        "change": null,
+        "new": true,
+        "note": null
+      }
+    ],
+    "gone": [
+      {
+        "name": "Mr. M.A. Yaseen",
+        "prevShares": 2171288
+      }
+    ]
+  }
+}

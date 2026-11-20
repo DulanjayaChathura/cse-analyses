@@ -1,0 +1,1066 @@
+{
+  "schemaVersion": 1,
+  "ticker": "SPEN.N0000",
+  "localFolder": null,
+  "updated": "2026-11-20",
+  "reportsRead": [
+    {
+      "file": "reports/SPEN.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-20",
+      "note": "CSE download (542 PDF pages; printed page = PDF page − 2). Used: financial highlights (p. 14), year at a glance (pp. 32–33), Chairperson's message (pp. 40–46), strategy (pp. 57–60), sector outlooks (pp. 179, 190, 222), financial capital (pp. 248–255), financial statements and notes (pp. 373–491), ten-year summary (p. 496). FY2022–FY2024 figures from the ten-year summary."
+    },
+    {
+      "file": "reports/SPEN.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20",
+      "note": "Used: income statement, balance sheet, cash flow, segments, top 20 shareholders at 30 June (for the comparison)."
+    },
+    {
+      "file": "reports/SPEN.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-20",
+      "note": "Latest figures. Used: income statements (p. 1), balance sheet (p. 4), cash flow (pp. 7–8), segments (p. 9), notes on debentures and the apparel sale (p. 10), shareholders (p. 11)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 54.696,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "netProfit": {
+          "value": 10.54,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Attributable to equity holders of Aitken Spence PLC"
+        },
+        "eps": {
+          "value": 25.96,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 4.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 162.44,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "roe": {
+          "value": 18.26,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 21.797,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "sharePriceYearEnd": {
+          "value": 73.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Market value per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 2.84,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 98.104,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "netProfit": {
+          "value": 6.644,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Attributable to equity holders of Aitken Spence PLC"
+        },
+        "eps": {
+          "value": 16.36,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 4.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 183.26,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "roe": {
+          "value": 9.47,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 3.461,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "sharePriceYearEnd": {
+          "value": 131.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Market value per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 8.01,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 97.486,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "netProfit": {
+          "value": 2.928,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Attributable to equity holders of Aitken Spence PLC"
+        },
+        "eps": {
+          "value": 7.21,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 4.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 181.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "roe": {
+          "value": 3.95,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 11.916,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "sharePriceYearEnd": {
+          "value": 130.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Market value per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 18.06,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 95.095,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Income statements, p. 373",
+          "note": null
+        },
+        "netProfit": {
+          "value": 5.331,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Attributable to equity holders of Aitken Spence PLC"
+        },
+        "eps": {
+          "value": 13.13,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 4.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 190.23,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "roe": {
+          "value": 7.06,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 13.226,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "sharePriceYearEnd": {
+          "value": 127.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Market value per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 9.73,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "profitAfterTax": {
+          "value": 7.179,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Including non-controlling interests"
+        },
+        "operatingProfit": {
+          "value": 14.779,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Profit from operations"
+        },
+        "depreciation": {
+          "value": 6.979,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Cash flow statement, p. 379",
+          "note": "Depreciation and amortisation, including right-of-use assets (1.597)"
+        },
+        "capexPaid": {
+          "value": 3.334,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": "PPE 3.289 + intangibles 0.038 + biological assets 0.007"
+        },
+        "capexBooked": {
+          "value": 3.356,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, segment note 6.1.2.1, p. 389",
+          "note": "Additions to non-current assets"
+        },
+        "workingCapitalChange": {
+          "value": -1.678,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 379",
+          "note": "Working capital released cash"
+        },
+        "acquisitions": {
+          "value": 0.015,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": "Investment in equity-accounted investees"
+        },
+        "taxRate": {
+          "value": 33.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial capital, p. 252",
+          "note": "Effective rate as reported"
+        },
+        "totalEquity": {
+          "value": 77.234,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Statement of financial position, p. 375",
+          "note": "Attributable to equity holders; non-controlling interests a further 12.655"
+        },
+        "interestPaid": {
+          "value": 7.763,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 379",
+          "note": null,
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 65.424,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "Loans 33.908 non-current + 11.621 current + overdrafts and short-term 19.895"
+        },
+        "leaseLiabilities": {
+          "value": 12.75,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "11.216 + 1.534"
+        },
+        "netDebt": {
+          "value": 34.844,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, pp. 375, 443",
+          "note": "Borrowings 65.424 + leases 12.750 − cash 16.601 − other current financial assets (bank deposits, treasury bills) 26.729"
+        },
+        "dividendsPaid": {
+          "value": 1.714,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": "Paid to equity holders of the parent"
+        },
+        "sharesOutstanding": {
+          "value": 405.996,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 13, p. 409",
+          "note": "Millions"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 96.591,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Income statements, p. 373",
+          "note": null
+        },
+        "netProfit": {
+          "value": 6.796,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Income statements, p. 373",
+          "note": "Attributable to equity holders of Aitken Spence PLC"
+        },
+        "eps": {
+          "value": 16.74,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 4.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 218.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "roe": {
+          "value": 8.18,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 14.319,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "sharePriceYearEnd": {
+          "value": 139.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": "Market value per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 8.3,
+          "unit": "x",
+          "source": "Annual Report 2025/26, Ten year summary, p. 496",
+          "note": null
+        },
+        "revenueWithAssociates": {
+          "value": 122.335,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights, p. 14",
+          "note": "Including equity-accounted investees"
+        },
+        "profitAfterTax": {
+          "value": 9.107,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Including non-controlling interests (2.311)"
+        },
+        "operatingProfit": {
+          "value": 14.814,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Profit from operations, before finance costs and share of equity-accounted investees"
+        },
+        "ebitda": {
+          "value": 26.59,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Financial highlights, p. 14",
+          "note": null
+        },
+        "shareOfEquityAccounted": {
+          "value": 2.3,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Share of profit of equity-accounted investees, net of tax"
+        },
+        "financeCost": {
+          "value": 6.131,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373",
+          "note": "Finance expenses; net finance expense 4.302"
+        },
+        "fxGainLoss": {
+          "value": 1.0,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Chairperson's message, p. 41",
+          "note": "Foreign exchange gain in other operating income (loss of 0.503 the year before)"
+        },
+        "taxRate": {
+          "value": 28.9,
+          "unit": "%",
+          "source": "Annual Report 2025/26, Financial capital, p. 252",
+          "note": "Effective rate as reported (tax 3.705 ÷ profit before tax 12.812)"
+        },
+        "totalEquity": {
+          "value": 88.874,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "Attributable to equity holders; includes a Rs 4.82bn land revaluation surplus booked this year (p. 376)"
+        },
+        "nonControllingInterests": {
+          "value": 15.379,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": null
+        },
+        "depreciation": {
+          "value": 7.412,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Cash flow statement, p. 379",
+          "note": "Depreciation and amortisation: PPE 5.719 (note 15.1), right-of-use assets 1.639 (note 19.1), intangibles 0.047 (note 9)"
+        },
+        "impairment": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 379",
+          "note": "Not inside the 7.412 depreciation figure: impairment of intangibles (0.099) is a separate line, so nothing to take off"
+        },
+        "licenceAmortisation": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 17",
+          "note": "Not applicable: no licences; intangibles are software and goodwill"
+        },
+        "capexPaid": {
+          "value": 3.662,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, Cash flow statement, p. 380",
+          "note": "PPE 3.619 + intangibles 0.037 + biological assets 0.005"
+        },
+        "capexBooked": {
+          "value": 3.662,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, segment note 6.1.2.1, p. 389",
+          "note": "Additions to non-current assets (PPE additions 3.619, note 15.1, p. 412). Excludes right-of-use additions of 11.875 (note 19.1), mostly leased land (11.759), which add to lease liabilities"
+        },
+        "rightOfUseAdditions": {
+          "value": 11.875,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 19.1, p. 424",
+          "note": "Land 11.759, buildings 0.116; lease liabilities rose to 23.420 from 12.750, mostly in US dollars (note 31.3). The report doesn't say which lease"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 38, p. 485",
+          "note": "No growth project named with an amount; capital commitments of 13.389 (11.574 approved but not contracted) are not split by project"
+        },
+        "workingCapitalChange": {
+          "value": 0.084,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 379",
+          "note": "Working capital absorbed 0.084"
+        },
+        "acquisitions": {
+          "value": 0.182,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": "Investment in equity-accounted investees"
+        },
+        "interestPaid": {
+          "value": 5.986,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 379",
+          "note": "Includes lease interest 0.694 (note 19.3)",
+          "section": "operating"
+        },
+        "borrowings": {
+          "value": 64.34,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "Loans 36.562 non-current + 6.020 current + overdrafts and short-term borrowings 21.758. Term loans 66% US dollar, 22% rupee, 9% euro (note 30.5)"
+        },
+        "leaseLiabilities": {
+          "value": 23.42,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "21.845 + 1.575"
+        },
+        "cash": {
+          "value": 20.391,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": "Cash and short-term deposits"
+        },
+        "shortTermInvestments": {
+          "value": 29.645,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 26.1, p. 443",
+          "note": "Bank deposits 27.737, treasury bills 1.679, quoted shares 0.170, debt 0.064 (other current assets)"
+        },
+        "netDebt": {
+          "value": 37.724,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, pp. 375, 443",
+          "note": "Borrowings 64.340 + leases 23.420 − cash 20.391 − other current financial assets 29.645. Without leases 14.304"
+        },
+        "equityAccountedInvestees": {
+          "value": 12.451,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 375",
+          "note": null
+        },
+        "dividendsPaid": {
+          "value": 1.615,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": "Paid to equity holders of the parent (final for 2024/25)"
+        },
+        "dividendsToMinorities": {
+          "value": 1.087,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 380",
+          "note": null
+        },
+        "contractedCapex": {
+          "value": 13.389,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 38.1, p. 485",
+          "note": "Approved 11.574 + contracted 1.815; equity-accounted investees a further 0.606"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "rdAsset": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "sharesOutstanding": {
+          "value": 405.996,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 13, p. 409",
+          "note": "Millions"
+        },
+        "ahunStake": {
+          "value": 250.507,
+          "unit": "",
+          "source": "Annual Report 2025/26, notes 20.3 and 20.5, pp. 428, 430",
+          "note": "Millions of Aitken Spence Hotel Holdings PLC shares: 239.473 held directly (71.20%) and 11.035 through subsidiaries; group holding 74.49%. Market value of the direct stake Rs 21.936bn at 31 March 2026"
+        },
+        "ahunGroupProfitToSpen": {
+          "value": 3.406,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 20.8, p. 431",
+          "note": "Worked out: AHUN group profit 5.029 less the share allocated to non-controlling interests 1.623"
+        },
+        "ahunGroupNetAssetsToSpen": {
+          "value": 30.938,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 20.8, p. 431",
+          "note": "Worked out: AHUN group net assets 43.150 less non-controlling interests 12.212"
+        },
+        "segmentProfitTourism": {
+          "value": 5.928,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 6.1.1, p. 388",
+          "note": "Profit for the year incl. minorities; PBT 7.855"
+        },
+        "segmentProfitMaritime": {
+          "value": 3.5,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 6.1.1, p. 388",
+          "note": "PBT 4.667, incl. 1.128 share of equity-accounted investees"
+        },
+        "segmentProfitStrategic": {
+          "value": -1.358,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 6.1.1, p. 388",
+          "note": "Loss mainly from apparel; PBT −0.941"
+        },
+        "segmentProfitServices": {
+          "value": 1.036,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 6.1.1, p. 388",
+          "note": "PBT 1.231"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 18.957,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 1",
+          "note": "Quarter; 19.190 a year earlier"
+        },
+        "netProfit": {
+          "value": 1.452,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 1",
+          "note": "Quarter, attributable; 0.534 a year earlier"
+        },
+        "eps": {
+          "value": 3.58,
+          "unit": "Rs",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 1",
+          "note": "Quarter; Rs 1.31 a year earlier"
+        },
+        "otherOperatingIncome": {
+          "value": 1.976,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 1",
+          "note": "0.224 a year earlier; includes foreign exchange gains (0.785 in the cash flow adjustments)"
+        },
+        "navPerShare": {
+          "value": 223.61,
+          "unit": "Rs",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 3",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": -2.537,
+          "unit": "Rs bn",
+          "source": "Interim Q1 2026/27 (to 30 Jun 2026), p. 6",
+          "note": "Quarter; −1.158 a year earlier"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 22.763,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Quarter; 21.469 a year earlier"
+        },
+        "netProfit": {
+          "value": 0.381,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Quarter, attributable; 0.397 a year earlier"
+        },
+        "eps": {
+          "value": 0.94,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Quarter; Rs 0.98 a year earlier"
+        },
+        "otherOperatingIncome": {
+          "value": -0.387,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "A loss, against 0.021 income a year earlier"
+        },
+        "shareOfEquityAccounted": {
+          "value": 1.65,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "0.488 a year earlier"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 41.72,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Six months; 40.659 a year earlier"
+        },
+        "netProfit": {
+          "value": 1.833,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Six months, attributable; 0.931 a year earlier"
+        },
+        "profitAfterTax": {
+          "value": 1.386,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Six months incl. minorities (−0.447); 0.421 a year earlier"
+        },
+        "eps": {
+          "value": 4.51,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Six months; Rs 2.29 a year earlier"
+        },
+        "operatingProfit": {
+          "value": 2.9,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Six months; 2.796 a year earlier"
+        },
+        "otherOperatingIncome": {
+          "value": 1.59,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "0.245 a year earlier"
+        },
+        "shareOfEquityAccounted": {
+          "value": 2.591,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "1.029 a year earlier; services 1.290 (0.255), maritime 0.922 (0.502)"
+        },
+        "financeCost": {
+          "value": 3.665,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "3.067 a year earlier"
+        },
+        "depreciation": {
+          "value": 3.614,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 7",
+          "note": "Six months"
+        },
+        "capexPaid": {
+          "value": 2.325,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 7",
+          "note": "PPE 2.276 + intangibles 0.047 + biological 0.002; 1.784 a year earlier"
+        },
+        "operatingCashFlow": {
+          "value": -1.937,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 7",
+          "note": "Six months; 0.335 a year earlier. Seasonal: the hotel peak is October–March"
+        },
+        "interestPaid": {
+          "value": 3.695,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 7",
+          "note": "Six months",
+          "section": "operating"
+        },
+        "navPerShare": {
+          "value": 221.28,
+          "unit": "Rs",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 89.839,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": "Attributable; non-controlling interests 15.206"
+        },
+        "nonControllingInterests": {
+          "value": 15.206,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": null
+        },
+        "borrowings": {
+          "value": 73.331,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": "Loans 41.371 + 6.615 + overdrafts and short-term 25.345 (AHUN issued Rs 5bn of debentures in September, note 5)"
+        },
+        "leaseLiabilities": {
+          "value": 23.922,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": "22.288 + 1.634"
+        },
+        "netDebt": {
+          "value": 43.527,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": "Borrowings 73.331 + leases 23.922 − cash 24.759 − other current assets 28.967 (deposits and treasury bills at March)"
+        },
+        "equityAccountedInvestees": {
+          "value": 13.739,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 4",
+          "note": null
+        },
+        "sharesOutstanding": {
+          "value": 405.996,
+          "unit": "",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 11",
+          "note": "Millions"
+        },
+        "segmentProfitTourism": {
+          "value": -2.134,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 9",
+          "note": "Six months; −1.325 a year earlier"
+        },
+        "segmentProfitMaritime": {
+          "value": 2.728,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 9",
+          "note": "Six months; 1.657 a year earlier"
+        },
+        "segmentProfitStrategic": {
+          "value": -0.644,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 9",
+          "note": "Six months; −0.366 a year earlier"
+        },
+        "segmentProfitServices": {
+          "value": 1.435,
+          "unit": "Rs bn",
+          "source": "Interim Q2 2026/27 (to 30 Sep 2026), p. 9",
+          "note": "Six months; 0.456 a year earlier"
+        }
+      }
+    },
+    {
+      "period": "12 months to Sep 2026",
+      "periodEnd": "2026-09-30",
+      "months": 12,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "eps": {
+          "value": 18.96,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 373; Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Worked out: 16.74 − 2.29 + 4.51"
+        },
+        "netProfit": {
+          "value": 7.698,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 373; Interim Q2 2026/27 (to 30 Sep 2026), p. 1",
+          "note": "Worked out: 6.796 − 0.931 + 1.833"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "0.94 (provisional)",
+      "since": "2026-11-20",
+      "reason": "8 steps, 20 Nov 2026. (1) Business: a group of four segments, weighted by their operating assets at 31 March 2026 (segment assets less cash and short-term deposits and other current financial assets; Annual Report 2025/26, note 6.1.2.1, p. 389): tourism Rs 112.0bn (59%), maritime and freight logistics Rs 28.0bn (15%), strategic investments (power, apparel, printing and packaging, plantations) Rs 41.7bn (22%), services Rs 6.9bn (4%). Assets rather than profit, because strategic investments made a loss in 2025/26. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins from web-search extracts of his tables: Hotel/Gaming global unlevered, cash-corrected 0.66 (as used for AHUN.N0000); Transportation US 0.71 (January 2026, as used for PKME.N0000); strategic investments the average of Green & Renewable Energy 0.57 (global, January 2026) and Apparel 0.71 (global, January 2026) = 0.64; Business & Consumer Services 0.91 (global, January 2026). Weighted: 0.594 × 0.66 + 0.148 × 0.71 + 0.221 × 0.64 + 0.037 × 0.91 = 0.67. (3) Relevered with net debt Rs 43.53bn (30 Sep 2026: borrowings 73.33 + leases 23.92 − cash 24.76 − other current financial assets 28.97) ÷ equity at market value Rs 76.11bn (405.996mn shares × Rs 150.00 = Rs 60.90bn, plus non-controlling interests at book Rs 15.21bn, because the group's debt carries the minorities' share too, as for AHUN) = 0.57, at the 30% statutory rate: 0.67 × (1 + 0.70 × 0.57) = 0.94. Without the minorities it would be 1.01. (4) Local 5-year betas: none found by web search; TradingView shows 0.87, a 1-year figure (ignored). So step 4 can't be completed. (5) 0.94. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and local 5-year betas."
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 19.4% / Base 17.9% / Bull 16.4%",
+      "reason": "From scripts/reinvestment.py (20 Nov 2026): 8.24% + 0.94 × (4.2% + 6.08%) = 17.9%, ±1.5 points.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 13.5% / Base 12.6% / Bull 11.7%",
+      "reason": "From scripts/reinvestment.py (20 Nov 2026, price Rs 150.00 given): cost of debt 7.21% (interest paid 5.986 ÷ average borrowings and leases 82.97, FY2026; below the usual range because two-thirds of term loans and almost all leases are in US dollars at SOFR-linked rates), tax 28.9% (FY2026 effective), debt weight 41.7% (net debt Rs 43.53bn at Sep 2026, equity Rs 60.9bn).",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 2% / 4% / 6%; supported −3.1% (reinvestment rate −33.1% × return on capital 9.4%, FY2026). All more than 2 pts above, for a stated reason: FY2026 capex booked (3.662) excludes 11.875 of new right-of-use assets (leased land), while depreciation (7.412) includes 1.639 of right-of-use depreciation. Counting the lease additions as reinvestment (lease liabilities are in net debt), reinvestment is 8.391, 79.7% of after-tax operating profit, supporting about 7.5%; equity route 76.1% kept × 8.2% ROE = 6.2%. The 4% base is below both.",
+      "reason": "From scripts/reinvestment.py on the FY2026 figures, 20 Nov 2026.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Methods used",
+      "value": "Whole-group DCF + joint ventures − minorities (sotp, dcf.addOn), P/E and justified P/B (scripts/valuation.py); sum of the parts with AHUN at market and the rest at justified P/B (by hand, same formula); no dividend model (payout about 24%)",
+      "reason": "First analysis.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "Range Rs 7.41 / 5.46 / 3.51bn (calculator)",
+      "reason": "No company split. Bear = depreciation as reported (includes 1.64 right-of-use depreciation); bull = average capex booked over FY2025–FY2026; base the middle (close to PPE depreciation 5.72 plus amortisation). Capex has been about half of depreciation for two years.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Cash before interest after maintenance (start)",
+      "value": "Bear Rs 11.16bn / Base Rs 13.12bn / Bull Rs 15.07bn",
+      "reason": "FY2026 operating cash 14.319 + after-tax interest 4.256 (interest in operating) = 18.575, less maintenance (calculator).",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Rs 9.5 / 10.5 / 11.5bn",
+      "reason": "FY2026 operating profit 14.814 × (1 − 28.9%) = 10.53; bear allows for weaker hotels.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "DCF growth and return on new capital",
+      "value": "2% / 4% / 6% for five years, then 3% / 4% / 5%; return on new capital 9% / 10% / 11%",
+      "reason": "Revenue roughly flat since FY2023 (98.1 → 96.6); return on capital 9.4% (FY2026). Long run below WACC and the 12.24% bond yield.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Joint ventures and minorities (DCF add-on)",
+      "value": "JVs 0.8 / 1.1 / 1.4x book Rs 13.739bn; minorities at book Rs 15.206bn (30 Sep 2026): Rs −10.38 / −0.23 / +9.92 a share",
+      "reason": "JV profit is not in operating cash (dividends received are in investing); the DCF values 100% of the subsidiaries, so the minorities' share is taken off at book. JVs earned 2.30 in FY2026 and 2.59 in H1 FY2027.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "EPS to March 2027",
+      "value": "Rs 14.0 / 17.5 / 20.0",
+      "reason": "H1 EPS 4.51 already earned; H2 FY2026 was 14.45 a share. Run-rate check: base 7.7% below the 12-month Rs 18.96 because H1 other operating income was 1.35 higher than a year earlier (not explained) and the hotels lost more.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Long-run ROE / growth",
+      "value": "7% / 9% / 11%, growth 3% / 4% / 5%",
+      "reason": "ROE 8.2% FY2026, five-year average 9.4%, about 9.2% over the last 12 months. Used in P/E, justified P/B and the sum of the parts.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "AHUN stake (sum of the parts)",
+      "value": "250.507mn AHUN shares at Rs 84.00 = Rs 21.04bn (Rs 51.83 a share); rest of group book Rs 57.94bn (Rs 142.70 a share) at justified P/B",
+      "reason": "Group holding 74.49% (notes 20.3, 20.5); AHUN CSE close 20 Nov 2026 (generated/prices.json). Rest = equity attributable 88.874 less AHUN group net assets to SPEN 30.938 (note 20.8), March 2026.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Share price used",
+      "value": "Rs 150.00",
+      "reason": "SPEN is not yet in generated/prices.json and cse.lk couldn't be reached from this run; Rs 150.00 is the 'CMP' in the peer table of HNB Stockbrokers' Hayleys 2Q FY27 note (inbox, forwarded 19 Nov 2026), probably the 13 Nov close. Replace with the CSE close next time.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-20"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-20"
+    }
+  ],
+  "openQuestions": [
+    "Q3 2026/27 (to December 2026, due by mid-February): how does the hotels' peak season go after the off-season half's Rs 2.13bn loss, with Middle East tension and fuel prices?",
+    "What was the Rs 1.59bn of other operating income in April–September 2026 (Rs 0.24bn a year earlier)? Q2 alone was a Rs 0.39bn loss.",
+    "Why did the joint ventures' profit jump (Rs 2.59bn against Rs 1.03bn; services Rs 1.29bn, maritime Rs 0.92bn), and will it last?",
+    "What did the apparel sale (3 November 2026) bring in, and was there a gain or loss? Has the Embilipitiya thermal plant been sold?",
+    "Which lease added Rs 11.9bn of right-of-use land in 2025/26, and how much does it add to hotel costs?",
+    "Finance costs rose 19.5% in the half and net debt to Rs 43.5bn: does that continue?",
+    "Use the CSE close once SPEN is in generated/prices.json (this analysis used a broker's quote of Rs 150.00).",
+    "Refresh the beta in January 2027 (Damodaran's emerging-markets file and local 5-year betas)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-20",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/add AHUN.N0000 SPEN.N0000). First analysis from the CSE downloads of the annual report 2025/26 (read in full) and the interims to June and September 2026. Beta 0.94 (provisional, segment-weighted), cost of equity 17.9%, WACC 12.6%. Methods: whole-group DCF plus joint ventures less minorities, sum of the parts with the AHUN stake at its Rs 84.00 market price, justified P/E and price to book. Fair value Rs 102.73, buy Rs 87.32, strong buy Rs 77.05, at a price of about Rs 150.00 (a broker's quote of 19 Nov 2026; SPEN isn't in the CSE price file yet). Business tests 3 of 4 (ROE fails): category 2, watch list.",
+      "fairValue": 102.73,
+      "buyPrice": 87.32,
+      "strongBuyPrice": 77.05,
+      "priceAtTime": 150.0,
+      "archive": null
+    }
+  ]
+}
