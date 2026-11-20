@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-20",
+  "source": "HNB Stockbrokers",
+  "posts": 6,
+  "messageIds": [
+    331,
+    332,
+    333,
+    334,
+    335,
+    336
+  ],
+  "commands": [
+    337
+  ],
+  "callsPriceDate": null,
+  "note": "No recommendation table or new broker calls in these posts. The day's ASPI and S&P SL20 changes are worked out from the Weekly Update's Friday close (21,369.72 and 6,075.28) and the 19 Nov close in the previous summary (21,543.12 and 6,142.43); Friday's turnover (Rs 2.3bn) is the label on the Weekly Update's daily turnover chart. The Weekly Update contradicts itself on foreign flows: its chart page shows a net foreign flow of Rs −791.88M, but its doughnut (inflow Rs 1.17bn, outflow Rs 0.30bn) and its text (purchases Rs 1,227M, sales Rs 351.6M, net inflow Rs 0.88bn) show net buying, mostly the Hosking purchase of JAT; the text figures are used. Weekly foreign buying and selling by share is from the chart's bar labels, rounded to Rs 0.01bn. The insider-trading chart has no figures on its bars, so its values are approximate. The Bloomberg screen (message 333) was taken at 09:01 Sri Lanka time on 20 Nov, so its US and European figures are Thursday 19 Nov's sessions. Small heat-map tiles without a readable percentage are left out.",
+  "highlights": [
+    "Surprise rate hike: the Central Bank raised the overnight policy rate 25bps to 9.00% and the banks' reserve ratio (SRR) 1 point to 3.00% from 9 Dec, as inflation rose to 8.3% in October. HNB Stockbrokers expects higher lending rates and slower credit growth, but only limited further mark-to-market losses on banks' government securities.",
+    "The market fell on 20 Nov: the ASPI closed at 21,369.72 (about −0.80% on the day) and the S&P SL20 at 6,075.28 (about −1.09%), on Rs 2.3bn turnover. Telecoms led the fall (SLT-Mobitel −3.10%, Dialog −2.04%), with banks, JKH and LIOC also lower. For the week the ASPI lost 2.97% (−654 points) and the S&P SL20 3.47%.",
+    "Foreigners were net buyers of Rs 0.88bn this week (bought Rs 1,227M, sold Rs 351.6M), almost all from Hosking Partners buying 5.18% of JAT Holdings (Rs 1.09bn of foreign buying in JAT). Dialog had the most foreign selling (about Rs 0.15bn).",
+    "Hosking Partners paid Rs 38.8 a share for its JAT Holdings (JAT.N0000) stake, well above this site's JAT fair value of Rs 21 (buy below Rs 17.80). Hosking says it will stay invested in Sri Lanka but commit much more only if the recovery proves lasting.",
+    "Global sell-off: on 19 Nov the Dow fell 2.19% and the S&P 500 2.02%, and on Friday morning Taiwan's TAIEX fell 6.16%, Korea's KOSPI 4.72% and Japan's Nikkei 4.49%."
+  ],
+  "research": [
+    {
+      "code": null,
+      "company": "Monetary policy (CBSL)",
+      "report": "Policy rate note (HNB Stockbrokers Research)",
+      "date": "2026-11-20",
+      "rating": null,
+      "prevRating": null,
+      "target": null,
+      "price": null,
+      "priceDate": null,
+      "post": 334,
+      "keyPoints": [
+        "CBSL raised the OPR 25bps to 9.00% and the SRR 1pp to 3.00%, as the long Middle East conflict kept energy and food prices high.",
+        "Inflation rose to 8.3% in October and is now expected to stay above the 5% target until the second half of 2027.",
+        "The SRR hike also soaks up the extra rupee liquidity created by the Central Bank's dollar purchases.",
+        "Despite May's 100bps hike, loan demand rose in 3Q26 (demand index 42.8 vs 35.1) while banks' willingness to lend fell (27.4 vs 40.4)."
+      ],
+      "forecasts": [
+        "Higher lending rates and slower credit growth ahead",
+        "Limited additional mark-to-market losses on banks' government securities portfolios, given the small size of the hike"
+      ],
+      "risks": [],
+      "catalysts": []
+    },
+    {
+      "code": null,
+      "company": "Market",
+      "report": "Weekly Market Update, 20 Nov 2026 (HNB Stockbrokers)",
+      "date": "2026-11-20",
+      "rating": null,
+      "prevRating": null,
+      "target": null,
+      "price": null,
+      "priceDate": null,
+      "post": 336,
+      "keyPoints": [
+        "ASPI −2.97% for the week to 21,369.72 and S&P SL20 −3.47% to 6,075.28; market cap −2.5% to Rs 7,712bn.",
+        "Weekly turnover Rs 20.21bn (−9.25%), a daily average of Rs 4.04bn; Monday alone traded Rs 10.5bn.",
+        "Food & beverage was the most traded sector (23.8%, Rs 4.81bn), ahead of food & staples retail (about Rs 5bn on the chart) and capital goods (about Rs 3bn).",
+        "Foreigners net bought Rs 0.88bn, after net selling Rs 1.29bn the week before; JAT drew Rs 1.09bn of foreign buying and Dialog Rs 0.15bn of selling.",
+        "Ten-day momentum leaders: Singer (+31.8%), Carsons (+22.5%), Ceylon Tea Services (+22.3%); the ASPI's 14-day RSI eased back to the mid-50s from above 70 a week earlier."
+      ],
+      "forecasts": [],
+      "risks": [],
+      "catalysts": []
+    }
+  ],
+  "market": {
+    "aspi": 21369.72,
+    "aspiChangePct": -0.8,
+    "aspiPoints": -173.4,
+    "sp20": 6075.28,
+    "sp20ChangePct": -1.09,
+    "turnoverBn": 2.3,
+    "marketCapTn": 7.71,
+    "momentum": [
+      {
+        "code": "SING.N0000",
+        "pct": 31.8
+      },
+      {
+        "code": "CABO.N0000",
+        "pct": 22.5
+      },
+      {
+        "code": "CTEA.N0000",
+        "pct": 22.3
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 19.7
+      },
+      {
+        "code": "AUTO.N0000",
+        "pct": 19.3
+      },
+      {
+        "code": "MRH.N0000",
+        "pct": 17.6
+      },
+      {
+        "code": "SINH.N0000",
+        "pct": 12.4
+      },
+      {
+        "code": "PARA.N0000",
+        "pct": 11.2
+      },
+      {
+        "code": "PINS.N0000",
+        "pct": 11.2
+      },
+      {
+        "code": "LALU.N0000",
+        "pct": 10.2
+      }
+    ],
+    "foreignFlows": [
+      {
+        "code": "JAT.N0000",
+        "mn": 1090
+      },
+      {
+        "code": "HNB.N0000",
+        "mn": 20
+      },
+      {
+        "code": "CCS.N0000",
+        "mn": 10
+      },
+      {
+        "code": "TAP.N0000",
+        "mn": 10
+      },
+      {
+        "code": "SMOT.N0000",
+        "mn": 10
+      },
+      {
+        "code": "PARA.N0000",
+        "mn": -20
+      },
+      {
+        "code": "CTHR.N0000",
+        "mn": -30
+      },
+      {
+        "code": "DIAL.N0000",
+        "mn": -150
+      }
+    ],
+    "other": [
+      {
+        "label": "Heat map, 20 Nov: notable moves",
+        "value": "SLTL −3.10, ASIR −3.50, RIL −3.59, LIOC −2.91, DOCK −2.54, KHL −2.37, GREG −2.33, CFIN −2.22, BIL −2.08, DIAL −2.04, LOFC −2.04, DFCC −1.87, SAMP −1.17, JKH −1.06, HNB −0.82, COMB −0.58; CTEA +4.91, UAL +1.75, CFVF +1.19, RICH +0.74",
+        "unit": "%"
+      },
+      {
+        "label": "Week: ASPI change",
+        "value": "−654 (−2.97%)",
+        "unit": "points (22,024.18 last week)"
+      },
+      {
+        "label": "Week: S&P SL20 change",
+        "value": "−218 (−3.47%)",
+        "unit": "points (6,293.72 last week)"
+      },
+      {
+        "label": "Week: turnover",
+        "value": "20.21",
+        "unit": "Rs bn (22.27 last week, −9.25%)"
+      },
+      {
+        "label": "Week: daily average turnover",
+        "value": "4.04",
+        "unit": "Rs bn (4.45 last week, −9.3%)"
+      },
+      {
+        "label": "Daily turnover Mon–Fri",
+        "value": "10.5 / 3.7 / 1.9 / 1.7 / 2.3",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Tuesday foreign turnover",
+        "value": "2.2",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Week: market cap",
+        "value": "7,712 (−2.5%)",
+        "unit": "Rs bn (7,907 last week)"
+      },
+      {
+        "label": "Week: foreign purchases",
+        "value": "1,227 (+235% w-o-w)",
+        "unit": "Rs mn (366.4 last week)"
+      },
+      {
+        "label": "Week: foreign sales",
+        "value": "351.6",
+        "unit": "Rs mn (1,662.5 last week)"
+      },
+      {
+        "label": "Week: net foreign flow",
+        "value": "+880",
+        "unit": "Rs mn (−1,290 last week); the chart page shows −791.88"
+      },
+      {
+        "label": "Week: food & beverage share of turnover",
+        "value": "23.8 (4.81)",
+        "unit": "% (Rs bn)"
+      },
+      {
+        "label": "Week: sector turnover (chart labels)",
+        "value": "F&B 5, food & staples retail 5, capital goods 3, materials 2, banks 2, health care 1, diversified financials 1, telecoms 1",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Insider purchases, trailing 90 days (≈, chart)",
+        "value": "RHTL ≈0.75, DIMO ≈0.27, CINV ≈0.25, CWL ≈0.08, WATA ≈0.07",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "ASPI 14-day RSI (≈, chart)",
+        "value": "≈56",
+        "unit": "(peak ≈79 on 11 Nov)"
+      },
+      {
+        "label": "ASPI vs moving averages (≈, chart)",
+        "value": "close ≈21,400, 200-day ≈21,750, 50-day ≈20,750",
+        "unit": "points"
+      },
+      {
+        "label": "Overnight policy rate",
+        "value": "9.00 (+0.25)",
+        "unit": "%"
+      },
+      {
+        "label": "Statutory reserve ratio (from 9 Dec)",
+        "value": "3.00 (+1.00)",
+        "unit": "%"
+      },
+      {
+        "label": "CCPI headline inflation, Oct",
+        "value": "8.30",
+        "unit": "% y/y"
+      },
+      {
+        "label": "CCPI core inflation (latest, chart label)",
+        "value": "5.60",
+        "unit": "% y/y"
+      },
+      {
+        "label": "12-month T-bill",
+        "value": "9.95",
+        "unit": "%"
+      },
+      {
+        "label": "3-month T-bill (chart label)",
+        "value": "9.35",
+        "unit": "%"
+      },
+      {
+        "label": "Real interest rate (12M TB − core CCPI)",
+        "value": "4.35",
+        "unit": "%"
+      },
+      {
+        "label": "Reserve money growth (latest label)",
+        "value": "15.22",
+        "unit": "% y/y"
+      },
+      {
+        "label": "CBSL foreign reserves / currency and deposit liabilities",
+        "value": "75.81",
+        "unit": "%"
+      },
+      {
+        "label": "Gross official reserves, end Oct (CBSL)",
+        "value": "7.1",
+        "unit": "$ bn"
+      },
+      {
+        "label": "Dow Jones (19 Nov)",
+        "value": "−2.19",
+        "unit": "%"
+      },
+      {
+        "label": "S&P 500 (19 Nov)",
+        "value": "−2.02",
+        "unit": "%"
+      },
+      {
+        "label": "FTSE 100 (19 Nov)",
+        "value": "−0.93",
+        "unit": "%"
+      },
+      {
+        "label": "DAX (19 Nov)",
+        "value": "−1.06",
+        "unit": "%"
+      },
+      {
+        "label": "Nikkei (20 Nov morning)",
+        "value": "−4.49",
+        "unit": "%"
+      },
+      {
+        "label": "Hang Seng (20 Nov morning)",
+        "value": "−2.08",
+        "unit": "%"
+      },
+      {
+        "label": "KOSPI (20 Nov morning)",
+        "value": "−4.72",
+        "unit": "%"
+      },
+      {
+        "label": "Taiwan TAIEX (20 Nov morning)",
+        "value": "−6.16",
+        "unit": "%"
+      },
+      {
+        "label": "India Nifty (20 Nov morning)",
+        "value": "+1.14",
+        "unit": "%"
+      },
+      {
+        "label": "Bloomberg World index",
+        "value": "−0.52",
+        "unit": "%"
+      }
+    ]
+  },
+  "calls": [],
+  "dividends": [],
+  "news": [
+    {
+      "title": "Central Bank hikes policy rate to 9.00% and SRR to 3.00%",
+      "text": "In a move markets did not expect, the Monetary Policy Board raised the OPR by 25bps to 9.00% and the SRR by 1 point to 3.00% (from the reserve period starting 9 Dec). Inflation reached 8.3% in October with core inflation also up; the Bank now expects inflation to stay above target for longer, returning to 5% in the second half of 2027. Reserves rose to about $7.1bn by end October through dollar purchases, which also flooded the money market with rupees. Separately, the Governor said total credit is still growing by more than 20% and the Bank has no credit target."
+    },
+    {
+      "title": "Hosking Partners buys 5.18% of JAT Holdings for Rs 1.05bn",
+      "text": "Funds managed by UK-based Hosking Partners bought 27,077,498 JAT shares at Rs 38.8 each, the whole stake of the second-largest shareholder, Falcon Trading. Aelian Gunawardene keeps control with 63.63%. Hosking is also a top-20 holder in JKH, Aitken Spence, CT Holdings, Richard Pieris, Bukit Darah, Dialog, Tokyo Cement, Ceylon Guardian, Teejay and Lion Brewery; its Sri Lankan portfolio is reported to exceed $60mn."
+    },
+    {
+      "title": "Hosking: Sri Lanka must prove its recovery is lasting",
+      "text": "Founder Jeremy Hosking called Budget 2027 encouraging and said the fund will stay invested (Sri Lanka is about 2% of its portfolio, across about 12 companies). It would commit much more only if the turnaround proves structural rather than cyclical, which resistance to change makes hard. He backed a currency board or even dollarisation and the removal of FX controls."
+    },
+    {
+      "title": "Budget 2027 needs more detail on trade and IMF: ODI",
+      "text": "Think-tank ODI Global said the budget prioritises stability, productivity, exports, investment and digitalisation, but needs more specifics on trade integration, labour-market reform and future IMF work. It urged faster FTA negotiations, citing RCEP, a China FTA and deals with the UAE and Oman."
+    },
+    {
+      "title": "Analysts favour a follow-up IMF programme",
+      "text": "The $2.9bn IMF programme ends in March 2027. Foreign debt repayments are nearly $3bn next year and $3.6bn in 2028. Fitch and Citi said a follow-on arrangement would anchor policy and support ratings; a committee is studying whether one is needed."
+    },
+    {
+      "title": "NSB Group 9M 2026: profit flat",
+      "text": "National Savings Bank Group's net interest income rose 7.4% to Rs 69.1bn and pre-tax profit was Rs 34.7bn (Rs 34.8bn a year earlier); profit after tax was Rs 20.7bn. The bank had a Rs 4.1bn impairment reversal, offset partly by a Rs 744mn trading loss. Group equity rose 8.7% to Rs 139.05bn and assets to Rs 1.92tn."
+    },
+    {
+      "title": "Global: Anthropic's market debut; Japan inflation",
+      "text": "Anthropic's Nasdaq debut valued it at about $1.76tn: shares priced at $83 rose as high as $111.53 and closed at $97.17, while the Nasdaq fell nearly 2.3%. Japan's October headline inflation rose to 2.3% as energy subsidies expired; core-core inflation eased to 2.2%."
+    }
+  ],
+  "coverage": [
+    {
+      "post": 331,
+      "kind": "text",
+      "title": "News highlights, 20 Nov (part 1)",
+      "items": [
+        {
+          "item": "CBSL raises OPR and SRR (with linked article: inflation outlook, reserves, liquidity)",
+          "status": "included"
+        },
+        {
+          "item": "ODI review of Budget 2027",
+          "status": "included"
+        },
+        {
+          "item": "Analysts on a follow-up IMF programme",
+          "status": "included"
+        },
+        {
+          "item": "Hosking: recovery must be more than a cycle",
+          "status": "included"
+        },
+        {
+          "item": "Hosking buys JAT stake",
+          "status": "included"
+        },
+        {
+          "item": "NSB Group 9M 2026 (start)",
+          "status": "included"
+        },
+        {
+          "item": "'Reference' links under each item",
+          "status": "left-out",
+          "reason": "they link to the articles the text already summarises; extra detail from them is folded into the news items"
+        }
+      ]
+    },
+    {
+      "post": 332,
+      "kind": "text",
+      "title": "News highlights, 20 Nov (part 2)",
+      "items": [
+        {
+          "item": "NSB Group 9M 2026 (end)",
+          "status": "included"
+        },
+        {
+          "item": "Anthropic stock market debut",
+          "status": "included"
+        },
+        {
+          "item": "Japan inflation",
+          "status": "included"
+        },
+        {
+          "item": "'Reference' links",
+          "status": "left-out",
+          "reason": "they link to the articles the text already summarises"
+        }
+      ]
+    },
+    {
+      "post": 333,
+      "kind": "image",
+      "title": "Bloomberg world equity indices (20 Nov, 09:01)",
+      "items": [
+        {
+          "item": "Americas (Dow, S&P 500)",
+          "status": "included"
+        },
+        {
+          "item": "Americas (S&P/TSX, Ibovespa)",
+          "status": "left-out",
+          "reason": "less relevant to the CSE; main US indices kept"
+        },
+        {
+          "item": "EMEA (FTSE 100, DAX)",
+          "status": "included"
+        },
+        {
+          "item": "EMEA (Euro Stoxx 50, CAC 40)",
+          "status": "left-out",
+          "reason": "FTSE and DAX kept as representative"
+        },
+        {
+          "item": "Asia/Pacific (Nikkei, Hang Seng, KOSPI, TAIEX, Nifty)",
+          "status": "included"
+        },
+        {
+          "item": "Asia/Pacific (CSI 300, ASX 200, Jakarta, KLCI, STI)",
+          "status": "left-out",
+          "reason": "main Asian moves kept"
+        },
+        {
+          "item": "BBG World index",
+          "status": "included"
+        },
+        {
+          "item": "P/E, forward P/E, dividend yield and YTD columns",
+          "status": "left-out",
+          "reason": "valuation columns for foreign indices, not needed for the CSE summary"
+        }
+      ]
+    },
+    {
+      "post": 334,
+      "kind": "image",
+      "title": "HNB Stockbrokers Research: CBSL hikes OPR to 9.00%",
+      "items": [
+        {
+          "item": "Rate and SRR decision",
+          "status": "included"
+        },
+        {
+          "item": "Inflation outlook",
+          "status": "included"
+        },
+        {
+          "item": "Credit demand and willingness-to-lend indices",
+          "status": "included"
+        },
+        {
+          "item": "View on banks' securities portfolios",
+          "status": "included"
+        }
+      ]
+    },
+    {
+      "post": 335,
+      "kind": "image",
+      "title": "Market heat map, close 20 Nov",
+      "items": [
+        {
+          "item": "Telecom, bank, capital goods and energy decliners",
+          "status": "included"
+        },
+        {
+          "item": "Gainers (CTEA +4.91%, UAL +1.75%, CFVF +1.19%, RICH +0.74%)",
+          "status": "included"
+        },
+        {
+          "item": "Other tiles",
+          "status": "left-out",
+          "reason": "small tiles without a readable percentage; the rest are minor moves"
+        }
+      ]
+    },
+    {
+      "post": 336,
+      "kind": "pdf",
+      "title": "Weekly Market Update, 20 Nov 2026",
+      "items": [
+        {
+          "item": "Index table (ASPI, S&P SL20, week on week)",
+          "status": "included"
+        },
+        {
+          "item": "Weekly turnover tiles",
+          "status": "included"
+        },
+        {
+          "item": "Daily turnover chart (total and foreign)",
+          "status": "included"
+        },
+        {
+          "item": "ASPI and S&P 20 by date chart",
+          "status": "approx",
+          "reason": "line chart without figures; only the week's start and end, given in the table, are used"
+        },
+        {
+          "item": "Top foreign buying/selling by share",
+          "status": "included"
+        },
+        {
+          "item": "Net foreign flow doughnut",
+          "status": "included"
+        },
+        {
+          "item": "Weekly sector turnover",
+          "status": "included"
+        },
+        {
+          "item": "Insider purchases/sales, trailing 90 days",
+          "status": "approx"
+        },
+        {
+          "item": "Top momentum stocks (10 days)",
+          "status": "included"
+        },
+        {
+          "item": "ASPI technical chart with moving averages",
+          "status": "approx"
+        },
+        {
+          "item": "ASPI 14-day RSI",
+          "status": "approx"
+        },
+        {
+          "item": "Overnight liquidity chart",
+          "status": "left-out",
+          "reason": "long history chart; latest bar has no readable figure"
+        },
+        {
+          "item": "Reserve money and money supply trend",
+          "status": "included"
+        },
+        {
+          "item": "Inflation chart",
+          "status": "included"
+        },
+        {
+          "item": "CBSL foreign reserves vs liabilities",
+          "status": "included"
+        },
+        {
+          "item": "Treasury bill rates",
+          "status": "included"
+        },
+        {
+          "item": "Real interest rates",
+          "status": "included"
+        },
+        {
+          "item": "Market highlights text (turnover, market cap, sectors, net foreign position)",
+          "status": "included"
+        }
+      ]
+    }
+  ]
+}
