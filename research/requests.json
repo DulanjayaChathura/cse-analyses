@@ -712,6 +712,23 @@
       "status": "done",
       "result": "Fair value Rs 5.00 → 2.83, buy Rs 2.41, strong buy Rs 2.13; category 3 (avoid for now), unchanged",
       "finishedAt": "2026-11-19T21:14:25+00:00"
+    },
+    {
+      "id": "20261120125707-JAT",
+      "ticker": "JAT.N0000",
+      "name": "JAT Holdings PLC",
+      "mode": "redo-full",
+      "command": "/redo JAT.N0000 full",
+      "note": null,
+      "files": [
+        "reports/JAT.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/JAT.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/JAT.N0000/2026-10-26_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "329",
+      "requestedAt": "2026-11-20T12:57:07+00:00",
+      "status": "pending"
     }
   ]
 }
