@@ -43,7 +43,7 @@ from common import ROOT, read_json, write_json
 INBOX = ROOT / "inbox"
 LAST_ID = INBOX / "last_update_id.txt"
 MAX_FILE = 20 * 1024 * 1024        # the Bot API can't download larger files
-OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳", "⚠️")   # messages this site (and the listener) posts itself
+OWN_PREFIXES = ("🔔", "📊", "📋", "📄", "✅ Test", "⏳", "⚠️", "ℹ️")   # messages this site (and the listener) posts itself
 # "/summary", "/summary12", "/summary-12", "/summary 12", "/summary@SomeBot": a summary command.
 # Add " redo" ("/summary12 redo") to rewrite that day's summary from all its posts.
 COMMAND = re.compile(r"^/summary(?:[-\s]?(\d{1,2}))?(?:@\w+)?(?:\s+(redo))?$", re.IGNORECASE)
