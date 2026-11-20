@@ -731,6 +731,23 @@
       "status": "done",
       "result": "Fair value Rs 21.00 → 11.98, buy Rs 10.18 (strong buy 8.98), avoid for now (category 3, unchanged)",
       "finishedAt": "2026-11-20T13:05:43+00:00"
+    },
+    {
+      "id": "20261120131833-PARQ",
+      "ticker": "PARQ.N0000",
+      "name": "Swisstek (Ceylon) PLC",
+      "mode": "redo-full",
+      "command": "/redo PARQ.N0000 full",
+      "note": null,
+      "files": [
+        "reports/PARQ.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/PARQ.N0000/2026-08-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/PARQ.N0000/2026-11-06_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "341",
+      "requestedAt": "2026-11-20T13:18:33+00:00",
+      "status": "pending"
     }
   ]
 }
