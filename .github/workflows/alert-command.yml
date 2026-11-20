@@ -1,0 +1,50 @@
+# Handles /alert, /unalert and /alerts posted in the Telegram channel.
+# The listener (listener/worker.js) starts this workflow with the command text.
+# scripts/alert_command.py edits alerts.json and replies in the channel; no Claude involved.
+name: Alert command
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Command, e.g. /alert DIAL below 45, /unalert DIAL or /alerts"
+        required: true
+      message_id:
+        description: "Telegram message id of the command (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alert-command      # one at a time, so two quick commands don't overwrite each other
+  cancel-in-progress: false
+
+jobs:
+  command:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run the command and reply
+        id: run
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          COMMAND_TEXT: ${{ inputs.text }}
+        run: python scripts/alert_command.py "$COMMAND_TEXT" "${{ inputs.message_id }}"
+      - name: Save alerts.json
+        if: steps.run.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add alerts.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Price alert: ${COMMAND_TEXT:0:80}"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
+        env:
+          COMMAND_TEXT: ${{ inputs.text }}

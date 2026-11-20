@@ -99,3 +99,15 @@ One-time setup in Cloudflare:
 5. Check it: open `https://<worker address>/stars` in a browser. It should say `{"error":"Only the site can use this."}` (a direct visit isn't the site), which shows the route is live.
 
 The site finds the worker through `App.STARS_URL` in `assets/js/common.js` (the worker's address). Leave it empty to hide the stars.
+
+## Price alerts and the command list
+The worker also handles these channel commands (no Claude involved):
+
+| Command | What happens |
+|---|---|
+| `/alert DIAL below 45 [note]` | Starts the "Alert command" workflow (`alert-command.yml`), which runs `scripts/alert_command.py`: it checks the code with the CSE, sets the target in `alerts.json` (replacing the same share and direction), commits it and replies with today's price and the gap. `above` works the same; with no direction it's worked out from today's price; `under`/`over` also work. |
+| `/unalert DIAL [below\|above]` | Removes the share's targets (or one direction) from `alerts.json`. |
+| `/alerts` | Replies with your targets, today's prices and how far each is. |
+| `/command` (or `/commands`) | The worker replies straight away with every command the channel understands (`COMMAND_LIST` in `worker.js`; keep it up to date when a command is added). |
+
+The price checks themselves are unchanged: `alerts.yml` every 30 minutes during trading and `site.yml` after the close read `alerts.json`. After changing `worker.js`, paste it into the Cloudflare worker and deploy again.

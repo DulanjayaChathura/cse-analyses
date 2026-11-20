@@ -7,7 +7,7 @@ This repository is a static website (GitHub Pages) that shows long-term valuatio
 - `research/<CODE>/record.json`: the research record (figures per period, valuation inputs, open questions, change log). Format: `docs/research-format.md`.
 - Report PDFs for requests made from Telegram (`/update`, `/add`, `/redo … full`) are downloaded from the CSE into `reports/<CODE>/` (see "Research requests from Telegram"). Otherwise report PDFs are **not** in this repository: they live on the owner's laptop in `cse-research\<folder>\` (one folder per company, e.g. `dialog`, `sampath bank`), reached through the Claude desktop app's folder connection. The folder name for each company is saved as `localFolder` in its `record.json`; ask the owner if a new company's folder isn't clear.
 - `research/<CODE>/history/<analysisDate>.json`: archived earlier analyses.
-- `alerts.json`: the owner's Telegram price targets. Don't change it unless asked.
+- `alerts.json`: the owner's Telegram price targets. Don't change it unless asked. The owner edits it with the Telegram commands `/alert`, `/unalert` and `/alerts` (`scripts/alert_command.py`, `alert-command.yml`); `/command` lists every channel command (`COMMAND_LIST` in `listener/worker.js`: add any new command there).
 - `generated/`: written by GitHub Actions. Never edit by hand.
 
 ## The analysis brief (use for every first analysis and update)

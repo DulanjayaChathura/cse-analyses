@@ -46,6 +46,37 @@ const RESEARCH = /^\/(update|add|redo)(?:@\w+)?\s+\S/i;
 const TICKER_IN_PARENS = /\(([A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4})\)/g;
 const REPLY_ACK = /^(all|please|pls|ok(ay)?|yes|go(\s+ahead)?|do\s*it|k|full)?$/i;
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
+const ALERT = /^\/(alert|unalert|alerts)(?:@\w+)?(?:\s|$)/i;
+const COMMANDS = /^\/commands?(?:@\w+)?\s*$/i;
+
+// The reply to /command: every command the channel understands. Keep it in step with
+// listener/README.md when a command is added or changed.
+const COMMAND_LIST = [
+  "ℹ️ <b>Commands you can post here</b>",
+  "",
+  "<b>Broker summary</b> (uses Claude)",
+  "/summary: summarise the broker posts since the last summary",
+  "/summary12: the same, filed under the 12th (any day number)",
+  "/summary redo: rewrite that day's summary from the same posts",
+  "",
+  "<b>Company research</b> (uses Claude; several codes at once is still one run)",
+  "/update DIAL: update from a new report (reports downloaded from the CSE)",
+  "/add COMB: first analysis of a new company (/add COMB 2: last 2 annual reports)",
+  "/redo DIAL: redo the valuation from the saved figures, no reports",
+  "/redo DIAL full: rebuild everything from the reports",
+  "Add a note after the codes, e.g. /redo DIAL use 13% discount rate",
+  "Reply \"ok\" (or \"redo full\") to a <i>New report on the CSE</i> message to update every company in it",
+  "",
+  "<b>Price alerts</b> (no Claude)",
+  "/alert DIAL below 45: alert when the price falls to Rs 45 or lower",
+  "/alert COMB above 220 take profit: alert when it rises to Rs 220 (text after the price is a note)",
+  "/alert DIAL 45: below or above, worked out from today's price",
+  "/unalert DIAL: remove Dialog's alerts (/unalert DIAL below: just that one)",
+  "/alerts: list your alerts with today's prices",
+  "Buy and strong-buy prices of watch-list companies alert automatically.",
+  "",
+  "/command: this list",
+].join("\n");
 const STAR_TICKER = /^[A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4}$/;
 const MAX_STARS = 200;
 
@@ -78,6 +109,18 @@ export default {
     const post = update.channel_post;
     if (!post || !sameChat(post.chat || {}, env.CHANNEL)) return new Response("ignored");
     const text = (post.text || "").trim();
+
+    if (COMMANDS.test(text)) {
+      ctx.waitUntil(telegram(env, "sendMessage", {
+        chat_id: post.chat.id, text: COMMAND_LIST, parse_mode: "HTML",
+        reply_to_message_id: post.message_id, disable_notification: true,
+      }));
+      return new Response("ok");
+    }
+    if (ALERT.test(text)) {
+      ctx.waitUntil(dispatch(env, post, "alert-command.yml", text, "alert"));
+      return new Response("ok");
+    }
 
     const replyText = replyCommand(post);
     if (replyText) {
@@ -179,6 +222,35 @@ async function research(env, post, text) {
     await telegram(env, "sendMessage", {
       chat_id: post.chat.id,
       text: `⚠️ Couldn't start the request (${problem}). Nothing was started; try again later.`,
+      reply_to_message_id: post.message_id,
+      disable_notification: true,
+    });
+  }
+}
+
+// Starts a GitHub workflow that takes the command text; tells the channel if it can't.
+async function dispatch(env, post, workflow, text, what) {
+  const repo = env.REPO || "DulanjayaChathura/cse-analyses";
+  let problem = null;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "cse-summary-listener",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({ ref: "main", inputs: { text: text.slice(0, 500), message_id: String(post.message_id) } }),
+    });
+    if (!r.ok) problem = `GitHub ${r.status}`;
+  } catch (e) {
+    problem = "GitHub unreachable";
+  }
+  if (problem) {
+    await telegram(env, "sendMessage", {
+      chat_id: post.chat.id,
+      text: `⚠️ Couldn't start the ${what} command (${problem}). Nothing changed; try again later.`,
       reply_to_message_id: post.message_id,
       disable_notification: true,
     });
