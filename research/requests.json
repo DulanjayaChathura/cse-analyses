@@ -750,6 +750,23 @@
       "status": "done",
       "result": "Fair value Rs 46.00 → 27.55, buy Rs 23.41, strong buy Rs 20.66; category 3 (avoid for now), unchanged",
       "finishedAt": "2026-11-20T13:25:26+00:00"
+    },
+    {
+      "id": "20261120181407-AEL",
+      "ticker": "AEL.N0000",
+      "name": "Access Engineering PLC",
+      "mode": "redo-full",
+      "command": "/redo AEL.N0000 full",
+      "note": null,
+      "files": [
+        "reports/AEL.N0000/2026-07-01_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/AEL.N0000/2026-08-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/AEL.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "344",
+      "requestedAt": "2026-11-20T18:14:07+00:00",
+      "status": "pending"
     }
   ]
 }
