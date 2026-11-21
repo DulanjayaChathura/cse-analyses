@@ -1,0 +1,61 @@
+# Checks the 10-year government bond rate every Monday (with a retry on Tuesday) from the Public
+# Debt Management Office's daily trade summaries, and updates research/market-inputs.json when it
+# has moved by 0.25 point or more (scripts/bond_rate.py). Posts the new rate to Telegram.
+# No Claude involved. The site build at 14:00 Saudi time the same day picks up the new rate.
+name: Bond rate
+
+on:
+  schedule:
+    # 09:37 UTC = 12:37 Saudi time = 15:07 Sri Lanka time. Monday (1) and Tuesday (2).
+    - cron: "37 9 * * 1,2"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only show what it reads; change nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # save the new rate
+
+concurrency:
+  group: bond-rate
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install a PDF reader
+        run: |
+          command -v pdftotext || (sudo apt-get update -q && sudo apt-get install -y -q poppler-utils) || pip install pypdf
+
+      - name: Read the latest bond rate
+        id: rate
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          args=""
+          if [ "$DRY_RUN" = "true" ]; then args="--dry-run"; fi
+          # Monday's run stays quiet if it can't get a rate; Tuesday's retry warns in Telegram.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%u)" = "2" ]; then args="$args --warn"; fi
+          python scripts/bond_rate.py $args
+
+      - name: Save the new rate
+        if: steps.rate.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/market-inputs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "10-year bond rate: ${{ steps.rate.outputs.rate }}%"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
