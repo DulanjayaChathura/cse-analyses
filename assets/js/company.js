@@ -37,6 +37,35 @@
 
   const v = has("valuation") ? d.valuation : {};
   const classes = has("shareClasses") ? d.shareClasses : [{ symbol: d.ticker, label: "Voting" }];
+  let figGrid = null;
+  App.initFigInfo();
+  /* Saved figures: tabs of a few figures each, and a few periods at a time (◀ ▶), names always shown. */
+  function figGridMount(box, g) {
+    const st = { tab: 0, all: false, page: 0 };
+    const perPage = () => (box.clientWidth < 560 ? 2 : box.clientWidth < 900 ? 4 : 6);
+    function draw() {
+      const cols = g.newest.filter((p) => st.all || g.recent.has(p));
+      const n = perPage(), pages = Math.max(1, Math.ceil(cols.length / n));
+      st.page = Math.min(st.page, pages - 1);
+      const shown = cols.slice(st.page * n, st.page * n + n);
+      const [, rows] = g.groups[st.tab];
+      box.innerHTML = `<div class="fg-tabs" role="tablist">${g.groups.map(([l], i) => `<button type="button" role="tab" data-tab="${i}" class="${i === st.tab ? "on" : ""}">${App.esc(l)}</button>`).join("")}</div>
+        <div class="fg-bar"><div class="grid-toggle"><button type="button" data-all="0" class="${st.all ? "" : "on"}">Recent</button><button type="button" data-all="1" class="${st.all ? "on" : ""}">All periods (${g.newest.length})</button></div>
+          ${pages > 1 ? `<div class="fg-pager"><button type="button" data-page="-1" aria-label="Earlier periods" ${st.page ? "" : "disabled"}>◀</button><span>${st.page + 1} / ${pages}</span><button type="button" data-page="1" aria-label="Older periods" ${st.page < pages - 1 ? "" : "disabled"}>▶</button></div>` : ""}</div>
+        <div class="table-wrap grid-wrap"><table class="grid"><thead><tr><th>Figure</th>${shown.map((p) => `<th class="num">${App.esc(p.period)}${p.audited === false ? "<br><span class='sub'>unaudited</span>" : ""}</th>`).join("")}</tr></thead>
+        <tbody>${rows.map((r) => `<tr><td>${App.figInfo(r, g.LABELS[r] || (App.FIGURES[r] || [])[0] || r)}</td>${shown.map((p) => g.cell((p.figures || {})[r])).join("")}</tr>`).join("")}</tbody></table></div>`;
+    }
+    box.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.dataset.tab) st.tab = +b.dataset.tab;
+      else if (b.dataset.all) { st.all = b.dataset.all === "1"; st.page = 0; }
+      else if (b.dataset.page) st.page += +b.dataset.page;
+      draw();
+    });
+    let w = 0; window.addEventListener("resize", () => { if (box.clientWidth !== w) { w = box.clientWidth; draw(); } });
+    draw();
+  }
+
   const mainPrice = App.resolvePrice(classes[0].symbol, has("price") ? d.price : null, prices);
   const classSymbols = new Set(classes.map((c) => c.symbol));
   const myTargets = (alertData.targets || []).filter((t) => classSymbols.has(t.symbol));
@@ -171,18 +200,43 @@
         dividendPerShare: "Dividend per share", navPerShare: "NAV per share", roe: "Return on equity", peYearEnd: "P/E at year-end",
         operatingCashFlow: "Operating cash flow", capexPaid: "Capex paid", capexCommitted: "Capex committed", freeCashFlow: "Free cash flow",
         netDebt: "Net debt", netDebtToEbitda: "Net debt / EBITDA", debtToEquity: "Debt to equity", sharesOutstanding: "Shares outstanding",
-        fxGainLoss: "Exchange gain (loss)", contractedCapex: "Contracted capex", priceYearEnd: "Share price at year-end" };
+        fxGainLoss: "Exchange gain (loss)", contractedCapex: "Contracted capex", priceYearEnd: "Share price at year-end",
+        operatingProfit: "Operating profit", profitBeforeTax: "Profit before tax", incomeTax: "Income tax", netProfitOwners: "Profit, owners' share",
+        financeCosts: "Finance costs", interestPaid: "Interest paid", purchasePPE: "Capex: plant and equipment", purchaseIntangibles: "Capex: intangibles",
+        capexBooked: "Capex booked", depreciation: "Depreciation", depreciationAmortisation: "Depreciation and amortisation", leasePrincipal: "Lease payments",
+        dividendsPaid: "Dividends paid", ebitda: "EBITDA", totalEquity: "Owners' equity", borrowings: "Borrowings", leaseLiabilities: "Lease liabilities",
+        cash: "Cash", nonControllingInterest: "Minorities", taxRate: "Tax rate" };
       const order = Object.keys(LABELS);
       const names = allNames.slice().sort((a, b) => (order.indexOf(a) + 1 || 999) - (order.indexOf(b) + 1 || 999));
-      const cell = (f) => {
-        if (!f) return `<td class="num"></td>`;
+      const cell = (f, extra) => {
+        const cls = `num${extra ? " extra" : ""}`;
+        if (!f) return `<td class="${cls}"></td>`;
         const txt = App.isNum(f.value) ? App.withUnit(f.value, f.unit) : "–";
         const tip = [f.note, f.source].filter(Boolean).join(". ");
-        return `<td class="num" title="${App.esc(tip)}">${txt}${f.note ? " *" : ""}</td>`;
+        return `<td class="${cls}" title="${App.esc(tip)}">${txt}${f.note ? " *" : ""}</td>`;
       };
-      const figTable = names.length ? `<div class="table-wrap"><table><thead><tr><th></th>${periods.map((p) => `<th class="num">${App.esc(p.period)}${p.audited === false ? "<br><span style='font-weight:400'>unaudited</span>" : ""}</th>`).join("")}</tr></thead>
-        <tbody>${names.map((n) => `<tr><td>${App.term(LABELS[n] || n)}</td>${periods.map((p) => cell((p.figures || {})[n])).join("")}</tr>`).join("")}</tbody></table></div>
-        <p class="section-lead" style="margin-top:.5rem">Hover over a figure to see its source. * means there's a note.</p>` : `<p class="na">No figures saved yet.</p>`;
+      // Newest first; the latest year-to-date with last year's same period beside it, then the years.
+      const newest = periods.slice().sort((x, y) => (y.periodEnd || "").localeCompare(x.periodEnd || "") || (y.months || 0) - (x.months || 0));
+      const lastAnnual = newest.find((p) => p.type === "annual");
+      const ytd = newest.find((p) => p.type !== "annual" && lastAnnual && (p.periodEnd || "") > (lastAnnual.periodEnd || ""));
+      const comp = ytd && newest.find((p) => p !== ytd && p.months === ytd.months && p.type === ytd.type &&
+        (p.periodEnd || "").slice(5) === (ytd.periodEnd || "").slice(5) && +(p.periodEnd || "").slice(0, 4) === +(ytd.periodEnd || "").slice(0, 4) - 1);
+      if (comp) { newest.splice(newest.indexOf(comp), 1); newest.splice(newest.indexOf(ytd) + 1, 0, comp); }
+      const recent = new Set([ytd, comp, ...newest.filter((p) => p.type === "annual").slice(0, 3)].filter(Boolean));
+      // Rows in tabs of a few figures each.
+      const GROUPS = [
+        ["Results", ["revenue", "grossProfit", "operatingProfit", "profitBeforeTax", "incomeTax", "netProfit", "netProfitOwners", "eps", "dividendPerShare", "financeCosts", "fxGainLoss"]],
+        ["Cash and capex", ["operatingCashFlow", "interestPaid", "capexPaid", "purchasePPE", "purchaseIntangibles", "capexBooked", "capexCommitted", "contractedCapex", "depreciation", "depreciationAmortisation", "leasePrincipal", "dividendsPaid", "freeCashFlow", "ebitda"]],
+        ["Balance sheet", ["totalEquity", "navPerShare", "borrowings", "leaseLiabilities", "cash", "netDebt", "nonControllingInterest", "sharesOutstanding"]],
+        ["Ratios", ["roe", "grossMarginPct", "peYearEnd", "priceYearEnd", "debtToEquity", "netDebtToEbitda", "taxRate"]],
+      ];
+      const placed = new Set(GROUPS.flatMap((g) => g[1]));
+      const groups = GROUPS.map(([label, keys]) => [label, keys.filter((k) => names.includes(k))]).filter((g) => g[1].length);
+      const rest = names.filter((n) => !placed.has(n));
+      if (rest.length) groups.push(["Other", rest]);
+      figGrid = { newest, recent, groups, LABELS, cell };
+      const figTable = names.length ? `<div class="figgrid" id="figgrid"></div>
+        <p class="section-lead" style="margin-top:.5rem">Tap or hover over a figure to see its source. * means there's a note.</p>` : `<p class="na">No figures saved yet.</p>`;
       const inputs = (research.valuationInputs || []).map((v) => `<tr><td>${App.term(v.name)}</td><td>${App.esc(v.value)}</td><td>${App.esc(v.reason || "")}</td><td style="white-space:nowrap">${App.date(v.since)}</td></tr>`).join("");
       const reports = (research.reportsRead || []).map((r) => `<li>${App.esc(r.title || r.file)}${r.audited === false ? " (unaudited)" : ""}, read ${App.date(r.readOn)}</li>`).join("");
       return `<h2>What changed</h2>
@@ -195,7 +249,11 @@
         <details class="more"><summary>Saved figures by period</summary>${figTable}</details>
         ${inputs ? `<details class="more"><summary>Valuation inputs and reasons</summary><div class="table-wrap"><table><thead><tr><th>Input</th><th>Value</th><th>Reason</th><th>Since</th></tr></thead><tbody>${inputs}</tbody></table></div></details>` : ""}
         ${reports ? `<details class="more"><summary>Reports read</summary><ul>${reports}</ul></details>` : ""}`;
-    }, after: () => { const el = document.getElementById("timeline"); if (el) Charts.timeline(el, research.changeLog || []); } },
+    }, after: () => {
+      const el = document.getElementById("timeline"); if (el) Charts.timeline(el, research.changeLog || []);
+      const box = document.getElementById("figgrid");
+      if (box && figGrid) figGridMount(box, figGrid);
+    } },
     { id: "methods", title: "Valuation methods", key: "models", html: () => `<h2>Valuation methods</h2>
       <p class="section-lead">Value per share under each method, from the pessimistic (${App.term("bear", "Bear")}) to the optimistic (${App.term("bull", "Bull")}) case.</p>
       <div class="chart"><div id="models-chart"></div>

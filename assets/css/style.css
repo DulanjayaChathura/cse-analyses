@@ -188,6 +188,28 @@ td.num, th.num { text-align: right; white-space: nowrap; }
 .table-wrap { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: 0.3rem 0.6rem; overflow-x: auto; }
 tr.total td { font-weight: 600; border-bottom: none; }
 
+/* Wide grids (saved figures by period): first column stays put, compact cells, fewer columns by default. */
+.grid-wrap { padding: 0; }
+table.grid { font-size: 0.82rem; width: auto; min-width: 100%; }
+table.grid th, table.grid td { padding: 0.38rem 0.55rem; }
+table.grid th .sub { font-weight: 400; font-size: 0.72rem; }
+table.grid th:first-child, table.grid td:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface);
+  min-width: 7.2rem; max-width: 9.5rem; white-space: normal; box-shadow: inset -1px 0 0 var(--rule); }
+table.grid thead th:first-child { z-index: 2; }
+.fg-tabs { display: flex; gap: 0.3rem; overflow-x: auto; margin-bottom: 0.5rem; scrollbar-width: none; }
+.fg-tabs button { flex: none; font: inherit; font-size: 0.85rem; padding: 0.4rem 0.85rem; min-height: 2.4rem; border: none; border-bottom: 2px solid transparent;
+  background: none; color: var(--ink-soft); cursor: pointer; }
+.fg-tabs button.on { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.fg-bar { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.fg-bar .grid-toggle { margin: 0; }
+.fg-pager { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--ink-soft); }
+.fg-pager button { font: inherit; width: 2.4rem; height: 2.4rem; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; }
+.fg-pager button:disabled { opacity: 0.35; cursor: default; }
+.grid-toggle { display: inline-flex; gap: 0.3rem; margin-bottom: 0.5rem; }
+.grid-toggle button { font: inherit; font-size: 0.82rem; padding: 0.3rem 0.8rem; min-height: 2.2rem; border-radius: 999px;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink-soft); cursor: pointer; }
+.grid-toggle button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
 details.more { margin-top: 1rem; }
 details.more > summary { cursor: pointer; color: var(--accent); font-weight: 500; padding: 0.3rem 0; }
 details.more[open] > summary { margin-bottom: 0.6rem; }
@@ -596,3 +618,12 @@ h1 .star { font-size: 1.5rem; margin-left: 0.2rem; }
 .cov-approx .cov-st { background: #fdf0cf; color: #946200; }
 .cov-left-out .cov-st { background: #fde2df; color: #b42318; }
 @media (min-width: 861px) { .rs-grid { grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); } }
+
+/* ⓘ beside a saved figure's name */
+.fi { font: inherit; font-size: 0.9rem; line-height: 1; margin-left: 0.25rem; padding: 0.2rem 0.25rem; border: none; background: none; color: var(--accent); cursor: pointer; vertical-align: baseline; }
+.tip.fig { max-width: min(22rem, calc(100vw - 16px)); line-height: 1.45; }
+.tip.fig .kind { font-size: 0.72rem; padding: 0.05rem 0.45rem; border-radius: 999px; margin-left: 0.3rem; white-space: nowrap; }
+.tip.fig .kind.printed { background: rgba(29, 122, 70, 0.15); }
+.tip.fig .kind.calc { background: rgba(210, 154, 0, 0.18); }
+.tip.fig .kind.ratio { background: rgba(80, 120, 220, 0.2); }
+.tip.fig .eq { margin-top: 0.4rem; padding: 0.35rem 0.5rem; border-radius: 6px; background: rgba(127, 127, 127, 0.15); font-variant-numeric: tabular-nums; }
