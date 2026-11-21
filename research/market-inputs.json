@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "updated": "2026-11-15",
-  "note": "Shared inputs for the required return (CAPM) of every company. Refresh each January, and sooner if the 10-year bond yield moves by more than 1 point. scripts/reinvestment.py reads this file; never type these figures into an analysis by hand.",
+  "note": "Shared inputs for the required return (CAPM) of every company. bondYield10y is updated automatically by scripts/bond_rate.py (Mondays, when it moves 0.25 point or more); refresh the rest each January. scripts/reinvestment.py reads this file; never type these figures into an analysis by hand.",
   "bondYield10y": {
     "value": 12.24,
     "unit": "%",
     "date": "2026-10-13",
     "source": "Cbonds, yield to maturity on 10-year Sri Lanka government bonds (rupee)",
-    "note": "The rupee 10-year yield. Long-run growth must stay below this."
+    "note": "The rupee 10-year yield. Long-run growth must stay below this. Updated automatically by scripts/bond_rate.py from the Public Debt Management Office's daily trade summaries."
   },
   "defaultSpread": {
     "value": 4.0,

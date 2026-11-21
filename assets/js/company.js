@@ -109,6 +109,12 @@
       const cat = has("quality") ? App.category(d.quality, v, classes.map((sc, i) => (i === 0 ? mainPrice : App.resolvePrice(sc.symbol, null, prices)))) : null;
       if (cat) statuses.unshift(`<div class="status ${cat.n === 3 ? "bad" : cat.n === 1 ? "good" : "warn"}"><b>Category ${cat.n}: ${cat.name}.</b> ${App.esc(d.quality.reason || "")} <a href="#quality">See the tests</a></div>`);
 
+      const rt = d._rate;
+      if (rt) statuses.unshift(`<div class="status warn"><b>Updated for the latest bond rate.</b> ${
+        App.isNum(rt.published.fairValue) && App.isNum(v.fairValue) ? `Fair value ${App.rs(v.fairValue)} (was ${App.rs(rt.published.fairValue)}), buy price ${App.rs(v.buyPrice)} (was ${App.rs(rt.published.buyPrice)}): ` : ""
+      }the 10-year bond moved from ${rt.wasBond}% to ${rt.bond}%${rt.bondDate ? ` (trades on ${App.date(rt.bondDate)})` : ""}. The written analysis of ${App.date(d.analysisDate)} still uses the old figures.${
+        rt.warnings.length ? `<br>${rt.warnings.map(App.esc).join("<br>")}` : ""}</div>`);
+
       const sum = has("summary") ? d.summary : null;
       return `
         <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)} ${App.Stars.button(d.ticker, meta.name)}</h1>

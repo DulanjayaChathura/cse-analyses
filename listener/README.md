@@ -79,6 +79,11 @@ each company's code in parentheses) with just a short reply — nothing at all, 
 to type them out. A reply that says anything else (a real note) is left alone; use an
 explicit `/update CODE1 CODE2 ...` for that.
 
+**Replying to an "Older research template" post.** `/update` and a plain `/redo` hold back a
+company whose research lacks the Management and plans or Shareholders section (or the annual
+report's capex, depreciation or interest paid) and ask first. Reply **full** to rebuild it from
+the reports (`/redo CODE full`), or **ok** to go ahead as asked. Anything else is ignored.
+
 One-time setup:
 1. Create a Claude task "Research on request (CSE site)" with an **API** trigger
    (instructions in CLAUDE.md's "Research requests from Telegram"); copy its Fire URL and token.

@@ -66,6 +66,7 @@ const COMMAND_LIST = [
   "/redo DIAL full: rebuild everything from the reports",
   "Add a note after the codes, e.g. /redo DIAL use 13% discount rate",
   "Reply \"ok\" (or \"redo full\") to a <i>New report on the CSE</i> message to update every company in it",
+  "Reply \"full\" or \"ok\" to an <i>Older research template</i> message: rebuild from the reports, or go ahead as asked",
   "",
   "<b>Price alerts</b> (no Claude)",
   "/alert DIAL below 45: alert when the price falls to Rs 45 or lower",
@@ -265,6 +266,20 @@ async function dispatch(env, post, workflow, text, what) {
 function replyCommand(post) {
   const orig = post.reply_to_message;
   if (!orig || !orig.text) return null;
+
+  // A reply to an "Older research template" question (research_request.py): "full" rebuilds
+  // those companies from the reports; "ok" runs the command as asked, skipping the check.
+  const asked = orig.text.match(/^Asked: (\/(?:update|redo)\b.*)$/m);
+  if (asked) {
+    const reply = (post.text || "").trim().replace(/^(please|pls)\s+/i, "");
+    const [, verb, rest] = asked[1].match(/^\/(\w+)\s+(.*)$/);
+    const codes = rest.split(/\s+/).filter((x) => /^[A-Z][A-Z0-9&]{0,9}\.[A-Z]\d{4}$/.test(x));
+    const note = rest.split(/\s+/).slice(codes.length).join(" ");
+    if (/^(\/?redo\s+)?full$/i.test(reply)) return `/redo ${codes.join(" ")} full${note ? " " + note : ""}`;
+    if (/^(ok(ay)?|yes|go(\s+ahead)?|do\s*it|k)$/i.test(reply)) return `${asked[1]} --as-is`;
+    return null;
+  }
+
   const codes = [...new Set([...orig.text.matchAll(TICKER_IN_PARENS)].map((m) => m[1]))];
   if (!codes.length) return null;
 

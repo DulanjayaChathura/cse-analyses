@@ -16,6 +16,11 @@ comma-separated; anything after the last code is a note for Claude, shared by al
   /redo DIAL [COMB ...] [note]        redo the valuation from the saved research record; no reports
   /redo DIAL [COMB ...] full [note]   redo everything from the reports (as /add)
 
+A company whose research is on an older template (no Management and plans or Shareholders
+section, or the annual report's capex, depreciation or interest paid missing from the record)
+isn't queued for /update or a plain /redo: the channel asks first. A reply "full" to that message
+becomes /redo CODE full; "ok" becomes the original command with --as-is, which skips this check.
+
 Each code is queued and its reports downloaded separately; one Claude run then works through
 every queued request (see CLAUDE.md), so a multi-code command costs one run, not one per code.
 
@@ -216,6 +221,39 @@ def download(ticker, reports, have):
     return saved, problems
 
 
+def old_template(ticker):
+    """What's missing that only the reports can fill, or [] if the research is on the current template."""
+    data = read_json(DATA / f"{ticker}.json", {})
+    missing = [label for key, label in (("management", "Management and plans"), ("shareholders", "Shareholders"))
+               if not data.get(key)]
+    try:
+        import validate
+        rec = validate.record_warnings(data)
+    except Exception:
+        rec = []
+    figs = [w for w in ("capex", "depreciation", "interestPaid") if any(f"{w} missing" in x for x in rec)]
+    if figs:
+        missing.append("annual report figures (" + ", ".join("interest paid" if f == "interestPaid" else f for f in figs) + ")")
+    return missing
+
+
+def hold_old(verb, codes, note, message_id):
+    """Codes on an older template, held back with one question to the channel; returns the rest."""
+    held, rest = [], []
+    for code in codes:
+        ticker, name, on_site = resolve(code)
+        missing = old_template(ticker) if ticker and on_site else []
+        (held if missing else rest).append((code, ticker, name, missing))
+    if held:
+        lines = [f"• {html.escape(name)} ({ticker}): no {html.escape(' or '.join(missing))}" for _, ticker, name, missing in held]
+        asked = f"/{verb} " + " ".join(t for _, t, _, _ in held) + (f" {note}" if note else "")
+        what = "update" if verb == "update" else "redo from the saved research"
+        say("⚠️ Older research template, not started yet:\n" + "\n".join(lines) +
+            f"\nReply <b>full</b> to rebuild {'it' if len(held) == 1 else 'them'} from the reports (/redo … full), "
+            f"or <b>ok</b> to {what} as asked.\nAsked: {html.escape(asked)}", message_id)
+    return [c for c, *_ in rest]
+
+
 def handle_code(verb, code, annuals, redo_full, note, text, message_id):
     """Queue one code's request. Returns (started, request id or None); posts its own reply."""
     ticker, name, on_site = resolve(code)
@@ -288,6 +326,8 @@ def handle_code(verb, code, annuals, redo_full, note, text, message_id):
 
 
 def check(text, message_id=None):
+    as_is = bool(re.search(r"(^|\s)--as-is(\s|$)", text))
+    text = re.sub(r"\s*--as-is\b", "", text).strip()
     m = COMMAND.match(text.strip())
     if not m:
         say(f"⚠️ I didn't understand <code>{html.escape(text[:60])}</code>. Use /update CODE, /add CODE or /redo CODE.", message_id)
@@ -311,6 +351,9 @@ def check(text, message_id=None):
         if fm:
             redo_full, rest = True, fm.group(1).strip()
     note = rest.strip() or None
+
+    if not as_is and (verb == "update" or (verb == "redo" and not redo_full)):
+        codes = hold_old(verb, codes, note, message_id)
 
     started_any, first_id = False, None
     for code in codes:
