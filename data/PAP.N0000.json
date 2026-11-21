@@ -1,0 +1,953 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PAP.N0000",
+  "company": {
+    "name": "Panasian Power PLC",
+    "sector": "Renewable power (solar and mini-hydro)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "PAP.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-21",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE copy, incl. ten-year summary)",
+      "Interim report to 30 June 2026 (CSE copy)",
+      "Interim report to 30 September 2026 (CSE copy, scanned)"
+    ]
+  },
+  "price": {
+    "value": 12.5,
+    "date": "2026-09-30",
+    "source": "Closing price on 30 Sep 2026, Interim to 30 Sep 2026, note 6 (p. 8)",
+    "note": "PAP isn't yet in the site's CSE price file and the CSE and price sites couldn't be reached from this run; the daily CSE close will replace this figure. July–September 2026 range Rs 12.00–17.40; April–June Rs 15.70–21.50; 2025/26 range Rs 6.40–33.30 (closed Rs 19.60 in March 2026)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Capacity more than doubled, but debt-funded, 39% owned by minorities, and the price is about three times fair value",
+    "text": "Panasian Power PLC (PAP.N0000), 75% owned by RIL Property, grew from 23.3 MW to 58.3 MW in 2025/26 by building seven 5 MW ground-mounted solar plants, and April–September 2026 revenue rose 90% to Rs 1.50bn. But the plants were paid for with borrowing (Rs 5.74bn, up from Rs 2.84bn), minority partners own 49% of most of the new solar, and 2025/26's Rs 1.61bn profit was mostly a one-off Rs 1.29bn deferred tax credit. Underlying earnings are about Rs 0.70 a share a year; at a 16.9% required return the four methods give a fair value of **Rs 3.75**. At Rs 12.50 (30 September 2026 close) the share is about 3.3× that. Buy price Rs 3.19; strong buy Rs 2.82. It fails all four business tests, so it is in category 3 (avoid for now)."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 0,
+    "outOf": 4,
+    "reason": "Losses in 2021/22 and 2022/23, net debt 1.7× total equity after the solar build, last year's profit mostly a deferred tax credit, and operating cash negative in 2025/26 as the grid operator paid three months late.",
+    "assessed": "2026-11-21",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 20% now; 36% reported",
+        "note": "Twelve months to September 2026: 36% (code-calculated), and 46% in 2025/26, both inflated by the Rs 1.29bn deferred tax credit. Underlying about 20% (April–September 2026 annualised) and 19.6% in 2024/25, but losses in 2021/22 and 2022/23 and about 7% in 2023/24, so not 15% over several years."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "Net debt Rs 5.61bn (1.7× total equity)",
+        "note": "Borrowings Rs 5.74bn and leases Rs 0.10bn less Rs 0.23bn cash at 30 Sep 2026, against owners' equity Rs 2.41bn (2.3×) or total equity Rs 3.37bn (1.7×). Net debt ÷ EBITDA about 2.8× (twelve months, Rs 1.99bn). Loans at AWPLR + 0.25–2%, repaid over 5–11 years."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2021/22 and 2022/23",
+        "note": "Group losses of Rs 184mn and Rs 461mn (ten-year summary); 2025/26 profit of Rs 1.61bn includes a Rs 1.29bn deferred tax credit; hydro output halved in 2025/26 with poor rain and Cyclone Ditwah."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Not yet",
+        "note": "Operating cash −Rs 0.29bn in 2025/26 (Rs 0.96bn tied up as the NSO paid about three months late) against Rs 1.01bn in 2024/25; +Rs 0.32bn in April–September 2026. The 2025/26 dividend (Rs 125mn) was paid while borrowing Rs 3.5bn."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 3.75,
+    "buyPrice": 3.19,
+    "strongBuyPrice": 2.82,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 3.85,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (Rs 2.35 / 3.63 / 6.16), giving Rs 3.75 (0.97× NAV). Methods: a DCF of the owners' 61% share plus the tax-loss asset, justified P/E, justified P/B and residual income, all from scripts/valuation.py at a 16.9% cost of equity (WACC 12.6%)."
+  },
+  "dividend": {
+    "perShare": 0.2,
+    "label": "for 2025/26 (interim, paid June 2025)",
+    "source": "Annual Report 2025/26, note 14 (p. 235)",
+    "note": "Rs 125mn. None for 2024/25; none declared yet for 2026/27."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 3.85,
+      "unit": "Rs",
+      "note": "30 Sep 2026; includes the Rs 0.96bn deferred tax asset"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 3.25,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 10.6,
+      "unit": "x",
+      "note": "Trailing EPS Rs 1.18 includes the deferred tax credit; 17.4× on base EPS Rs 0.72 to March 2027"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 20,
+      "unit": "%",
+      "display": "≈20% (36% reported)",
+      "note": "April–September 2026 annualised; reported twelve-month 36% includes the tax credit"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 5.61,
+      "unit": "Rs bn",
+      "note": "30 Sep 2026; 1.7× total equity"
+    },
+    {
+      "id": "capacity",
+      "label": "Installed capacity",
+      "value": 58.3,
+      "unit": "",
+      "display": "58.3 MW",
+      "note": "Ground solar 41, hydro 9.8, rooftop 7.5 MW"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 1.6,
+      "unit": "%",
+      "note": "Rs 0.20 for 2025/26"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 16.9,
+      "unit": "%",
+      "note": "Beta 0.84; WACC 12.6%"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 90% to Rs 1.50bn (electricity Rs 1.27bn, EPC Rs 0.23bn) as the seven new solar plants ran all half. Operating profit Rs 942mn against Rs 281mn, but finance costs doubled to Rs 374mn. Profit attributable Rs 240mn (EPS Rs 0.38) against Rs 337mn a year earlier, when a Rs 410mn deferred tax credit was booked."
+    },
+    {
+      "title": "September quarter",
+      "text": "Revenue Rs 766mn (+62%), with solar at Rs 599mn. Operating profit Rs 534mn includes Rs 129mn of unexplained other income (all Cyclone Ditwah insurance claims had been received by September) and Rs 11mn of impairment reversals. EPS Rs 0.24 against Rs 0.43, which included a Rs 373mn tax credit."
+    },
+    {
+      "title": "2025/26: a build year",
+      "text": "Seven 5 MW solar plants (Rs 3.05bn of work in progress) were commissioned between June and December 2025, taking capacity to 58.3 MW. Revenue +45% to Rs 2.01bn; hydro revenue halved to Rs 242mn on poor rain and Cyclone Ditwah damage. Profit Rs 1.61bn, of which Rs 1.29bn was deferred tax recognised on Rs 8.5bn of capital-allowance tax losses; minorities took Rs 778mn."
+    },
+    {
+      "title": "Debt and late payments",
+      "text": "Borrowings rose to Rs 5.94bn at March 2026 (from Rs 2.84bn) and Rs 5.74bn at September. The NSO and EDL owed Rs 617mn at September, two to three months in arrears against 30–45-day terms; the NSO curtailed about 7.8 GWh in April–September 2026."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "TTM Sep 2026"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -0.31,
+          -0.77,
+          0.16,
+          0.4,
+          1.34,
+          1.18
+        ],
+        "notes": [
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Restated",
+          null,
+          "Trailing, code-calculated; includes deferred tax credits"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          null,
+          null,
+          19.6,
+          46.2,
+          36.3
+        ],
+        "notes": [
+          "Loss year",
+          "Loss year",
+          "Equity before 2024 not restated to the cost model",
+          "Profit over average owners' equity",
+          "Includes the Rs 1.29bn deferred tax credit",
+          "Code-calculated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          19.18,
+          17.27,
+          14.64,
+          10.59
+        ],
+        "notes": [
+          "Loss",
+          "Loss",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Rs 12.50 ÷ trailing EPS Rs 1.18"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 3.85",
+      "reading": "The price is 3.25× NAV, and Rs 1.54 a share of NAV is the deferred tax asset."
+    },
+    {
+      "method": "Return on equity",
+      "value": "≈20%",
+      "reading": "Reasonable on the new plants' first half, but the reported 36–46% comes from a one-off tax credit and the history includes two loss years."
+    },
+    {
+      "method": "P/E",
+      "value": "17× forward",
+      "reading": "On base EPS of Rs 0.72; the justified P/E at a 16.9% required return is about 6×."
+    },
+    {
+      "method": "DCF (owners' share)",
+      "value": "Rs 2.02 base",
+      "reading": "Owners' 61% of the cash flows (WACC 12.6%) is only just above their share of net debt; most value comes from growth after year 5."
+    },
+    {
+      "method": "Dividends",
+      "value": "1.6% yield",
+      "reading": "Rs 0.20 for 2025/26, paid while borrowing; debt repayments come first, so no dividend model."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "DCF of the owners' share (WACC, less net debt) + tax-loss asset",
+      "bear": 0.65,
+      "base": 2.02,
+      "bull": 6.22,
+      "weighted": 2.45,
+      "comment": "Owners' 61% of group operating profit (gross profit less administrative costs, 34% tax): Rs 0.548bn (twelve months to Sep 2026) in bear and base, Rs 0.644bn (Sep 2026 quarter × 4) in bull; start cash adds 61% of depreciation less maintenance capex (Rs 0.50 / 0.40 / 0.30bn group). Growth 1% / 3% / 6% for five years then 2% / 3% / 4%, reinvesting growth ÷ 8% / 10% / 12% return on new capital, at WACC 13.4% / 12.6% / 11.7%, less 61% of net debt (Rs 3.42bn); plus Rs 0.94 a share for 61% of the deferred tax asset. 54% / 64% / 76% of the DCF value comes after year 5; in the bull case that is over 75%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E (justified, EPS to March 2027)",
+      "bear": 3.24,
+      "base": 4.27,
+      "bull": 5.75,
+      "weighted": 4.26,
+      "comment": "EPS to March 2027 Rs 0.62 / 0.72 / 0.82 (H1 Rs 0.38 plus a second half of Rs 0.24 / 0.34 / 0.44) × justified P/E at the cost of equity (about 5.2× / 5.9× / 7.0×). Base is 39% below the Rs 1.18 run-rate because that includes the 2025/26 deferred tax credit."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 2.82,
+      "base": 3.88,
+      "bull": 5.4,
+      "weighted": 3.87,
+      "comment": "Book Rs 3.85 × (ROE − g) ÷ (cost of equity − g), long-run ROE 14% / 17% / 20%, growth 2% / 3% / 4%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 2.69,
+      "base": 4.35,
+      "bull": 7.27,
+      "weighted": 4.44,
+      "comment": "Book Rs 3.85; ROE moves from 20% (April–September 2026 annualised) to 14% / 17% / 20% over ten years; payout 15%."
+    }
+  ],
+  "modelsNote": "All four methods come from scripts/valuation.py and are weighted equally; NAV is shown but not averaged. Growth check: assumed 1% / 3% / 6% against a calculator figure of 113% (reinvestment rate 618% × return on capital 18.3% in 2025/26), which only reflects the build year; the assumptions rest on the project pipeline instead. Because minorities own 49% of most new solar, the DCF takes the owners' 61% share of operating profit, cash, net debt and the tax-loss asset (proportionate consolidation). The calculator's maintenance range (2.32 / 0.28 / 0.09) is distorted by the build year; Rs 0.50 / 0.40 / 0.30bn is used. Cost of debt 9.9% (interest paid ÷ average borrowings, 2025/26).",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18.4%",
+        "base": "16.9%",
+        "bull": "15.4%"
+      },
+      {
+        "label": "WACC",
+        "bear": "13.4%",
+        "base": "12.6%",
+        "bull": "11.7%"
+      },
+      {
+        "label": "Growth, five years then long-run",
+        "bear": "1% then 2%",
+        "base": "3% then 3%",
+        "bull": "6% then 4%"
+      },
+      {
+        "label": "After-tax operating profit, owners' 61% (start)",
+        "bear": "Rs 548mn (12 months)",
+        "base": "Rs 548mn (12 months)",
+        "bull": "Rs 644mn (Sep quarter × 4)"
+      },
+      {
+        "label": "Maintenance capex (group)",
+        "bear": "Rs 0.50bn",
+        "base": "Rs 0.40bn",
+        "bull": "Rs 0.30bn"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "8%",
+        "base": "10%",
+        "bull": "12%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "17%",
+        "bull": "20%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 0.62",
+        "base": "Rs 0.72",
+        "bull": "Rs 0.82"
+      }
+    ],
+    "averages": {
+      "bear": 2.35,
+      "base": 3.63,
+      "bull": 6.16
+    },
+    "common": "10-year rupee bond 12.24%, risk-free rate 8.24%, beta 0.84. Net debt Rs 5.61bn (owners' share Rs 3.42bn) and deferred tax asset Rs 0.96bn at September 2026. Tax 34% (2025/26 current tax ÷ profit before tax). Payout 15%."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15.4%",
+      "16.9%",
+      "18.4%"
+    ],
+    "columns": [
+      "14%",
+      "17%",
+      "20%"
+    ],
+    "values": [
+      [
+        3.42,
+        4.35,
+        5.28
+      ],
+      [
+        3.05,
+        3.88,
+        4.71
+      ],
+      [
+        2.75,
+        3.5,
+        4.25
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 3%, book Rs 3.85. Even ROE of 20% at a 15.4% cost of equity gives Rs 5.28, well under Rs 12.50."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 3.19
+      },
+      {
+        "shares": 150,
+        "maxPrice": 3.0
+      },
+      {
+        "shares": 150,
+        "maxPrice": 2.82
+      }
+    ],
+    "averagePrice": 3.02,
+    "totalCost": 1511,
+    "note": "About Rs 1,511 in total, against Rs 6,250 at Rs 12.50.",
+    "realism": "Rs 3.19 needs a 74% fall. The share traded at Rs 3.00 in March 2024 and Rs 6.40 at its 2025/26 low, but Rs 12.00–17.40 in July–September 2026; the buy price is very unlikely without a collapse in sentiment or a profit setback."
+  },
+  "changeMyView": {
+    "higher": [
+      "Full-year 2026/27 profit attributable above Rs 0.90 a share without one-off income.",
+      "Debt falling quickly (over Rs 0.7bn a year) and the NSO paying within 45 days.",
+      "New projects (the two hydro schemes, 5 MW solar, battery storage) at returns above 15% on capital.",
+      "A steady dividend paid from operating cash."
+    ],
+    "lower": [
+      "More curtailment or tariff cuts by the NSO, or further delays in payment.",
+      "Inland Revenue rejecting the enhanced capital allowance claim (half of Rs 435.7mn already provided).",
+      "Another flood or drought hitting the hydro plants.",
+      "Further expansion funded by debt at AWPLR + 1–2%."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The price used is the 30 September 2026 close because the current CSE price wasn't available to this run. This is analysis, not personal financial advice."
+  },
+  "requiredReturn": {
+    "beta": 0.84,
+    "betaBasis": "Provisional. Damodaran's global Green & Renewable Energy unlevered beta 0.57 (January 2026; web-search stand-in, his emerging-markets file couldn't be opened), relevered at net debt Rs 5.61bn to market value Rs 7.81bn (D/E 0.72) and 34% tax: 0.84. No local 5-year betas could be opened from this run. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 18.4,
+      "base": 16.9,
+      "bull": 15.4
+    },
+    "costOfDebt": 9.88,
+    "wacc": {
+      "bear": 13.4,
+      "base": 12.6,
+      "bull": 11.7
+    },
+    "debtWeight": 41.8,
+    "asOf": "2026-11-21",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0% (14 Nov 2026); mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Green & Renewable Energy, January 2026, via web search (as for Vidullanka and WindForce)",
+      "Weights: market cap Rs 7.81bn at Rs 12.50 (close 30 Sep 2026), net debt Rs 5.61bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.84 × (4.2% + 6.08%) = 16.9%; bear +1.5, bull −1.5 points. Cost of debt 9.88% = interest paid Rs 443mn ÷ average borrowings and leases (2025/26), after 34% tax."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 18.4,
+      "base": 16.9,
+      "bull": 15.4
+    },
+    "wacc": {
+      "bear": 13.4,
+      "base": 12.6,
+      "bull": 11.7
+    },
+    "debtWeight": 41.8,
+    "shares": 625.0,
+    "netDebt": 3.421,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 0.485,
+        "nopat": 0.548,
+        "growth": 1,
+        "longRun": 2,
+        "roc": 8,
+        "maintenance": 0.5
+      },
+      "base": {
+        "start": 0.546,
+        "nopat": 0.548,
+        "growth": 3,
+        "longRun": 3,
+        "roc": 10,
+        "maintenance": 0.4
+      },
+      "bull": {
+        "start": 0.704,
+        "nopat": 0.644,
+        "growth": 6,
+        "longRun": 4,
+        "roc": 12,
+        "maintenance": 0.3
+      },
+      "addOn": {
+        "bear": 0.941,
+        "base": 0.941,
+        "bull": 0.941
+      },
+      "addOnNote": "Owners' 61% of the Rs 964mn deferred tax asset (30 Sep 2026): the tax the Rs 8.5bn of capital-allowance losses will save, at book, Rs 0.95 a share in every case"
+    },
+    "pe": {
+      "bear": {
+        "eps": 0.62,
+        "roe": 14,
+        "longRun": 2
+      },
+      "base": {
+        "eps": 0.72,
+        "roe": 17,
+        "longRun": 3
+      },
+      "bull": {
+        "eps": 0.82,
+        "roe": 20,
+        "longRun": 4
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027 × P/E",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "pb": {
+      "book": 3.85,
+      "bear": {
+        "roe": 14,
+        "longRun": 2
+      },
+      "base": {
+        "roe": 17,
+        "longRun": 3
+      },
+      "bull": {
+        "roe": 20,
+        "longRun": 4
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 3.85,
+      "payout": 15,
+      "roeStart": 20,
+      "bear": {
+        "roe": 14,
+        "longRun": 2
+      },
+      "base": {
+        "roe": 17,
+        "longRun": 3
+      },
+      "bull": {
+        "roe": 20,
+        "longRun": 4
+      },
+      "basis": {
+        "payout": "valuationInputs: Residual income start",
+        "roeStart": "valuationInputs: Residual income start",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": {
+        "calc": "latest.netDebt * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "dcf.bear.maintenance": {
+        "calc": "0.5",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.base.maintenance": {
+        "calc": "0.4",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bull.maintenance": {
+        "calc": "0.3",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bear.nopat": {
+        "calc": "(ttm.grossProfit - ttm.administrativeCosts) * (1 - annual.taxRate / 100) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.base.nopat": {
+        "calc": "(ttm.grossProfit - ttm.administrativeCosts) * (1 - annual.taxRate / 100) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.bull.nopat": {
+        "calc": "(quarterX4.grossProfit - quarterX4.administrativeCosts) * (1 - annual.taxRate / 100) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.bear.start": {
+        "calc": "nopat + (ttm.depreciationAmortisation - maintenance) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.base.start": {
+        "calc": "nopat + (ttm.depreciationAmortisation - maintenance) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.bull.start": {
+        "calc": "nopat + (ttm.depreciationAmortisation - maintenance) * 0.61",
+        "basis": "valuationInputs: Owners' share of group cash flows"
+      },
+      "dcf.addOn.bear": {
+        "calc": "latest.deferredTaxAsset * 0.61 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Tax-loss asset (add-on)"
+      },
+      "dcf.addOn.base": {
+        "calc": "latest.deferredTaxAsset * 0.61 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Tax-loss asset (add-on)"
+      },
+      "dcf.addOn.bull": {
+        "calc": "latest.deferredTaxAsset * 0.61 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Tax-loss asset (add-on)"
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-21",
+    "source": "Annual Report 2025/26: Chairman's statement (pp. 28–30), CEO's review (pp. 32–34), financial and manufactured capital (pp. 79–90), note 40 (p. 276); progress from the interim to 30 September 2026",
+    "takeaway": "Management has delivered the 35 MW solar build and says the next steps are two hydro projects, 5 MW more solar and battery storage, but the first job for shareholders is paying down Rs 5.7bn of debt from plants whose tariffs are fixed while the grid curtails them.",
+    "said": [
+      {
+        "text": "Seven ground-mounted solar plants (about 35 MW), secured in 2022–24 and delayed by the economy, were commissioned by late 2025, the biggest expansion in the company's history",
+        "ref": "pp. 29, 33"
+      },
+      {
+        "text": "Demand on the grid has fallen behind supply, so output is curtailed at midday and rooftop solar is eating into demand for grid power",
+        "ref": "pp. 33, 90"
+      },
+      {
+        "text": "Cyclone Ditwah damaged two hill-country hydro plants and the Pannala solar plant; insurance covered the repairs",
+        "ref": "pp. 29, 81, 90"
+      },
+      {
+        "text": "Panel prices rose about 9%, battery costs about 3%, and tariffs aren't linked to the dollar, so currency and interest rates squeeze new projects",
+        "ref": "p. 33"
+      },
+      {
+        "text": "The NSO paid about three months late, which strained cash flow",
+        "ref": "pp. 84–85"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Keep adding renewable capacity to 2030, mainly solar, with hydro where viable",
+        "ref": "pp. 29–30"
+      },
+      {
+        "text": "Develop two hydro projects and a 5 MW ground-mounted solar plant in the medium term",
+        "ref": "p. 34"
+      },
+      {
+        "text": "Bid in battery storage (BESS) tenders and feed-in-tariff rounds, including solar + storage hybrids, and look at markets outside Sri Lanka",
+        "ref": "p. 34"
+      },
+      {
+        "text": "Look for alternative funding and an international credit rating",
+        "ref": "p. 30"
+      },
+      {
+        "text": "Expect liquidity to improve as the new plants earn under long-term power purchase agreements",
+        "ref": "p. 85"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Seven ground-mounted solar plants (35 MW), added to work in progress",
+        "amount": "Rs 3.05bn in 2025/26",
+        "ref": "pp. 33, 237"
+      },
+      {
+        "text": "Pre-development pipeline of 120 MW of solar and 15.4 MW of hydro",
+        "amount": null,
+        "ref": "p. 90"
+      },
+      {
+        "text": "Medakumbura mini-hydro project, to be bought once the NSO issues a letter of intent",
+        "amount": "Rs 10mn (Rs 2mn paid)",
+        "ref": "p. 276"
+      },
+      {
+        "text": "No capital commitments at 31 March 2026",
+        "amount": null,
+        "ref": "p. 276"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Full-year earnings from the new solar plants in 2026/27",
+        "result": "Revenue +90% to Rs 1,499mn in April–September 2026; solar segment Rs 599mn in the September quarter against Rs 360mn (Interim to 30 Sep 2026, pp. 3, 6)",
+        "status": "on-track",
+        "ref": "p. 33"
+      },
+      {
+        "promise": "Liquidity to improve as the plants earn",
+        "result": "Operating cash +Rs 317mn in the half; current assets Rs 1,834mn against current liabilities Rs 1,920mn (Rs 1,358mn against Rs 1,543mn in March); but the NSO and EDL still owed Rs 617mn, two to three months late (Interim, pp. 2, 5, note 11)",
+        "status": "on-track",
+        "ref": "pp. 84–85"
+      },
+      {
+        "promise": "Get the cyclone-hit plants back with insurance",
+        "result": "All Cyclone Ditwah insurance claims, including business interruption, received by 30 Sep 2026; hydro revenue Rs 51mn in the September quarter against Rs 53mn (Interim, note 12, p. 6)",
+        "status": "done",
+        "ref": "pp. 29, 90"
+      },
+      {
+        "promise": "Two hydro projects and a 5 MW solar plant",
+        "result": "Work in progress only Rs 99mn at September 2026 (Rs 83mn in March); Rs 32mn spent on it in the half (Interim, pp. 2, 5)",
+        "status": "too-early",
+        "ref": "p. 34"
+      },
+      {
+        "promise": "Battery storage and new markets",
+        "result": "No project or spending reported in the interims",
+        "status": "too-early",
+        "ref": "p. 34"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, notes 7, 17–19 (pp. 8, 10, scanned page images), against the list at 30 June 2026 in the Interim to 30 Jun 2026 (p. 9). Names as printed.",
+    "takeaway": "RIL Property PLC controls the company with 75.00%, unchanged; directors own almost nothing. Moves among the small holders were minor: CDB/S. Vasudevan added 725,000 shares and two margin-account names replaced similar direct holdings; public holders rose to 9,111 from 8,942.",
+    "groups": [
+      {
+        "name": "RIL Property PLC",
+        "pct": 75.0
+      },
+      {
+        "name": "Directors",
+        "pct": 0.01
+      },
+      {
+        "name": "Public",
+        "pct": 24.99
+      }
+    ],
+    "publicFloat": 24.99,
+    "publicHolders": 9111,
+    "publicHoldersPrev": 8942,
+    "directors": [
+      {
+        "name": "Mr. L.H.A.L Silva (Chairman)",
+        "shares": 0
+      },
+      {
+        "name": "Ms. L.K.A.H. Fernando",
+        "shares": 80000
+      },
+      {
+        "name": "Mr. D. Sooriyaarachchi",
+        "shares": 0
+      },
+      {
+        "name": "Mr. W.W.M.S.B.K.G. Kamburudeniya",
+        "shares": 0
+      },
+      {
+        "name": "Mr. P.K. Pathmanatha",
+        "shares": 0
+      },
+      {
+        "name": "Ms. M.C. Pietersz",
+        "shares": 0
+      },
+      {
+        "name": "Ms. N. Ranatunga",
+        "shares": 0
+      },
+      {
+        "name": "Mr. I.R. Perera",
+        "shares": 100
+      },
+      {
+        "name": "Mr. N. Weerasinghe",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "R I L Property PLC",
+        "shares": 468750000,
+        "pct": 75.0,
+        "change": 0
+      },
+      {
+        "name": "Mr.P.G.Piyasiri",
+        "shares": 9952836,
+        "pct": 1.59,
+        "change": 180403
+      },
+      {
+        "name": "Mr.A.M.Weerasinghe",
+        "shares": 7292270,
+        "pct": 1.17,
+        "change": 0
+      },
+      {
+        "name": "Senkadagala Finance PLC/S.M.D.N.P. Banda",
+        "shares": 6300000,
+        "pct": 1.01,
+        "change": 0
+      },
+      {
+        "name": "Mr.A.I.Edirisinghe",
+        "shares": 3309892,
+        "pct": 0.53,
+        "change": -300000
+      },
+      {
+        "name": "Assetline Finance Limited/S.M.D.N.P. Banda",
+        "shares": 3111620,
+        "pct": 0.5,
+        "change": -2
+      },
+      {
+        "name": "Assetline Finance PLC/C.Dissanayake",
+        "shares": 2853100,
+        "pct": 0.46,
+        "change": null,
+        "new": true,
+        "note": "Probably the 2,850,000 held directly as 'Mr.C.Dissanayake' in June (gone), now through a margin account, but the report doesn't say so"
+      },
+      {
+        "name": "People's Leasing and Finance PLC/Verite Research (Pvt) Ltd",
+        "shares": 2550000,
+        "pct": 0.41,
+        "change": null,
+        "new": true,
+        "note": "Verite Research (Pvt) Ltd held 2,000,000 directly in June (gone); possibly the same holder through a margin account"
+      },
+      {
+        "name": "Mr.S.D.Widanagama",
+        "shares": 2516634,
+        "pct": 0.4,
+        "change": 0
+      },
+      {
+        "name": "Mr.A.D.Edussuriya",
+        "shares": 2316857,
+        "pct": 0.37,
+        "change": 0
+      },
+      {
+        "name": "Mr.H.S.Dissanayake",
+        "shares": 2050116,
+        "pct": 0.33,
+        "change": -115101
+      },
+      {
+        "name": "Mr.A.S.Jayasinghe",
+        "shares": 2028130,
+        "pct": 0.32,
+        "change": 0
+      },
+      {
+        "name": "Citizens Development Business Finance PLC/S.Vasudevan",
+        "shares": 2000000,
+        "pct": 0.32,
+        "change": 725000
+      },
+      {
+        "name": "People's Leasing and Finance PLC/D.D.M.Mataraarachchi",
+        "shares": 1264526,
+        "pct": 0.2,
+        "change": 0
+      },
+      {
+        "name": "Commercial Bank of Ceylon PLC/ H.S.Dissanayake",
+        "shares": 1250000,
+        "pct": 0.2,
+        "change": 55101
+      },
+      {
+        "name": "People's Leasing and Finance PLC/Nagoya Ceylon Trading (Pvt) Ltd",
+        "shares": 1200000,
+        "pct": 0.19,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "Mr.Y.K.Rajapaksa",
+        "shares": 1200000,
+        "pct": 0.19,
+        "change": 0
+      },
+      {
+        "name": "Assetline Finance PLC/C.Dissanayake",
+        "shares": 1195000,
+        "pct": 0.19,
+        "change": 0,
+        "note": "A second account under the same name"
+      },
+      {
+        "name": "Mrs.R.D.M.Perera",
+        "shares": 1100000,
+        "pct": 0.18,
+        "change": 0
+      },
+      {
+        "name": "Mr. S. Palihawadana",
+        "shares": 891948,
+        "pct": 0.14,
+        "change": null,
+        "new": true
+      }
+    ],
+    "gone": [
+      {
+        "name": "Mr.C.Dissanayake",
+        "prevShares": 2850000
+      },
+      {
+        "name": "Verite Research (Pvt) Ltd",
+        "prevShares": 2000000
+      },
+      {
+        "name": "Mr.G.A.Priyashantha",
+        "prevShares": 1600000
+      },
+      {
+        "name": "Dr.P.D.N.S.P.Gunawardhana",
+        "prevShares": 1376689
+      }
+    ]
+  },
+  "fullText": "**Summary**\n\nPanasian Power PLC (PAP.N0000) runs 29 small renewable power plants (58.3 MW: ground-mounted solar 41 MW, mini-hydro 9.8 MW, rooftop solar 7.5 MW) and sells the power to the National System Operator (formerly the CEB) under long-term contracts. It also sells solar equipment and builds plants for others (EPC, about 15% of revenue). RIL Property PLC owns 75%.\n\n2025/26 was a build year: seven 5 MW solar plants were commissioned between June and December 2025, taking capacity from 23.3 MW to 58.3 MW. April–September 2026 shows the effect: revenue +90% to Rs 1.50bn and operating profit Rs 942mn. But the plants were paid for with debt (borrowings Rs 5.74bn, from Rs 2.84bn), minority partners own 49% of the company that holds most of the new solar, and last year's Rs 1.61bn profit was mostly a one-off Rs 1.29bn deferred tax credit.\n\nOn underlying earnings of about Rs 0.70 a share and a 16.9% required return, my fair value is **Rs 3.75**. Buy price **Rs 3.19** (fair value less 15%), strong buy **Rs 2.82** (less 25%). At Rs 12.50 (close on 30 September 2026; the current CSE price wasn't available to this run) the share is about 3.3× fair value. It fails all four business tests: **category 3, avoid for now**.\n\n**Latest results**\n\n| | Apr–Sep 2026 | Apr–Sep 2025 | 2025/26 | 2024/25 |\n|---|---|---|---|---|\n| Revenue | Rs 1,499mn | Rs 788mn | Rs 2,008mn | Rs 1,383mn |\n| Operating profit | Rs 942mn | Rs 281mn | Rs 932mn | Rs 593mn |\n| Finance costs | Rs 374mn | Rs 139mn | Rs 478mn | Rs 235mn |\n| Tax | −Rs 191mn | +Rs 410mn credit | +Rs 1,119mn credit | −Rs 133mn |\n| Profit to shareholders | Rs 240mn | Rs 337mn | Rs 837mn | Rs 250mn |\n| EPS | Rs 0.38 | Rs 0.54 | Rs 1.34 | Rs 0.40 |\n\n- The September 2026 quarter's operating profit (Rs 534mn) includes Rs 129mn of other income the interim doesn't explain (all Cyclone Ditwah insurance claims had been received) and Rs 11mn of impairment reversals.\n- Minorities took 39% of profit in April–September 2026 (Rs 151mn of Rs 391mn).\n- The tax credits come from Rs 8.5bn of tax losses created by enhanced capital allowances on the new plants; the deferred tax asset (Rs 0.96bn at September) is Rs 1.54 of the Rs 3.85 NAV. Half of one claim (Rs 217.8mn) is uncertain and not recognised.\n- The NSO and EDL owed Rs 617mn at September, two to three months late, and the NSO curtailed about 7.8 GWh in the half.\n\n**Business tests (0 of 4)**\n\n| Test | Result |\n|---|---|\n| ROE 15%+ over several years | Fail: about 20% now, but losses in 2021/22 and 2022/23; reported 36–46% is the tax credit |\n| Net debt no more than equity | Fail: Rs 5.61bn, 1.7× total equity, 2.3× owners' equity |\n| Steady profit | Fail: two loss years in five; one-off tax credit |\n| Profit into cash | Fail: operating cash −Rs 0.29bn in 2025/26 as the NSO paid late |\n\n**Valuation (Rs a share)**\n\n| Method | Bear | Base | Bull |\n|---|---|---|---|\n| DCF of the owners' 61% + tax-loss asset | 0.65 | 2.02 | 6.22 |\n| Justified P/E (EPS to March 2027) | 3.24 | 4.27 | 5.75 |\n| Justified price to book | 2.82 | 3.88 | 5.40 |\n| Residual income | 2.69 | 4.35 | 7.27 |\n| Average | 2.35 | 3.63 | 6.16 |\n\nWeighted 30/50/20: **Rs 3.75**. NAV Rs 3.85.\n\n**Assumptions and why**\n\n- Required return: cost of equity 16.9% (8.24% risk-free + beta 0.84 × 10.28% premium); WACC 12.6% with a 9.9% cost of debt and 42% debt weight. The beta is a stand-in (Damodaran's global renewable energy beta 0.57, relevered for PAP's debt), because his emerging-markets file and local betas couldn't be reached.\n- Owners' share: 61% of profit goes to shareholders, so the DCF takes 61% of operating profit, cash, net debt and the tax-loss asset.\n- Growth: 1% / 3% / 6% for five years. The new capacity is already in the twelve-month figures; further growth needs the two hydro projects, the 5 MW solar plant and battery storage, none of which has started in earnest (work in progress only Rs 99mn). Tariffs are fixed in rupees and the grid is curtailing solar. The calculator's \"supported growth\" of 113% only reflects the build year.\n- Maintenance capex Rs 0.40bn base (depreciation run-rate); the new plants need little upkeep.\n- EPS to March 2027 Rs 0.62 / 0.72 / 0.82: H1 Rs 0.38 plus a weaker second half (dry season for hydro, no repeat of the September quarter's other income). This is 39% below the reported twelve-month Rs 1.18 because that figure includes the deferred tax credit.\n- Long-run ROE 14% / 17% / 20%; long-run growth 2% / 3% / 4%, below the 12.24% bond yield.\n\nWarnings: the 2025/26 capex was funded mainly by new borrowing (Rs 3.5bn raised), and the Rs 125mn dividend was paid while operating cash after maintenance was negative, so the dividend is at risk until debt falls. Most of the 2025/26 capex (Rs 3.05bn of Rs 3.14bn) was growth, to be judged on its return: about 10% after tax on capital so far, below the 12.6% WACC.\n\n**Buy plan (500 shares)**\n\n| Shares | Up to |\n|---|---|\n| 200 | Rs 3.19 |\n| 150 | Rs 3.00 |\n| 150 | Rs 2.82 |\n\nAverage about Rs 3.02, Rs 1,511 in total (Rs 6,250 at Rs 12.50). The buy price needs a 74% fall; the share traded at Rs 3.00 in March 2024 but Rs 12.00–17.40 in July–September 2026, so it is very unlikely soon.\n\n**What would change my view**\n\nHigher: full-year 2026/27 EPS above Rs 0.90 without one-offs; debt falling by more than Rs 0.7bn a year; the NSO paying on time; new projects earning more than 15% on capital; a dividend paid from operating cash.\n\nLower: more curtailment or tariff cuts; Inland Revenue rejecting the capital allowance claim; more flood or drought damage to the hydro plants; more expansion on debt.\n\n**Management and shareholders**\n\nManagement delivered the 35 MW build and plans two hydro projects, 5 MW of solar and battery storage, plus a 120 MW solar / 15.4 MW hydro pre-development pipeline, but has named no amounts. RIL Property holds 75.00%; directors hold 80,100 shares; the public holds 24.99% (9,111 holders)."
+}

@@ -1,0 +1,1398 @@
+{
+  "schemaVersion": 1,
+  "ticker": "PAP.N0000",
+  "localFolder": null,
+  "updated": "2026-11-21",
+  "reportsRead": [
+    {
+      "file": "reports/PAP.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-21",
+      "note": "CSE copy. Printed page = PDF page − 2. Read: Chairman's statement, CEO's review, financial and manufactured capital, statements, notes 12–18, 32, 40, investor information, ten-year summary. FY2025 figures are the restated comparative column (change from revaluation to cost model)."
+    },
+    {
+      "file": "reports/PAP.N0000/2026-08-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-21",
+      "note": "Text layer jumbles some income statement columns; quarter figures checked against the September interim."
+    },
+    {
+      "file": "reports/PAP.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-21",
+      "note": "Scanned (no text layer); read from page images. All figures used were legible."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "note": "Ten-year summary as printed; years before 2023/24 not restated for the 2025/26 switch from revaluation to cost model",
+      "figures": {
+        "revenue": {
+          "value": 935.513,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Includes billing under the standardised power purchase agreement"
+        },
+        "profitAfterTax": {
+          "value": -184.051,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Group, including non-controlling interests"
+        },
+        "eps": {
+          "value": -0.31,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "navPerShare": {
+          "value": 4.37,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "dividendPerShare": {
+          "value": 0.34,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "priceYearEnd": {
+          "value": 3.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "peYearEnd": {
+          "value": -11.81,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        }
+      }
+    },
+    {
+      "period": "FY2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "note": "Ten-year summary as printed; years before 2023/24 not restated for the 2025/26 switch from revaluation to cost model",
+      "figures": {
+        "revenue": {
+          "value": 1014.079,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Includes billing under the standardised power purchase agreement"
+        },
+        "profitAfterTax": {
+          "value": -460.799,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Group, including non-controlling interests"
+        },
+        "eps": {
+          "value": -0.77,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "navPerShare": {
+          "value": 3.11,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "'–' (none) in the summary"
+        },
+        "priceYearEnd": {
+          "value": 3.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "peYearEnd": {
+          "value": -4.43,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        }
+      }
+    },
+    {
+      "period": "FY2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "note": "Ten-year summary; equity restated in the 2025/26 report",
+      "figures": {
+        "revenue": {
+          "value": 1490.347,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Includes billing under the standardised power purchase agreement"
+        },
+        "profitAfterTax": {
+          "value": 127.311,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Group, including non-controlling interests"
+        },
+        "eps": {
+          "value": 0.16,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "navPerShare": {
+          "value": 1.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "dividendPerShare": {
+          "value": 0.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "priceYearEnd": {
+          "value": 3.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "peYearEnd": {
+          "value": 19.18,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "totalEquity": {
+          "value": 1096.386,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (p. 198)",
+          "note": "Owners' equity at 31 March 2024, restated (cost model)"
+        },
+        "borrowings": {
+          "value": 1848.8,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Non-current and current"
+        }
+      }
+    },
+    {
+      "period": "FY2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "note": "Comparative column (restated) in the 2025/26 annual report",
+      "figures": {
+        "revenue": {
+          "value": 1382.656,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "Revenue from contracts with customers, restated; plus Rs 160.1mn billing under the standardised PPA (Rs 1,542.7mn in the ten-year summary)"
+        },
+        "sppaBilling": {
+          "value": 160.072,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "Billing under the standardised power purchase agreement (NSO arrears)"
+        },
+        "grossProfit": {
+          "value": 858.876,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "operatingProfit": {
+          "value": 593.283,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "financeCosts": {
+          "value": 234.677,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "profitBeforeTax": {
+          "value": 404.879,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "incomeTax": {
+          "value": 132.523,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "profitAfterTax": {
+          "value": 272.355,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "netProfitOwners": {
+          "value": 249.738,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "eps": {
+          "value": 0.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, note 14 (p. 235)",
+          "note": "No dividend for 2024/25 ('–')"
+        },
+        "navPerShare": {
+          "value": 2.33,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Restated"
+        },
+        "priceYearEnd": {
+          "value": 6.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "peYearEnd": {
+          "value": 17.27,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "totalEquity": {
+          "value": 1454.617,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Owners' equity, restated"
+        },
+        "nonControllingInterest": {
+          "value": 111.218,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)"
+        },
+        "borrowings": {
+          "value": 2837.471,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 32 (p. 259)",
+          "note": "Interest-bearing loans; a further Rs 250mn loan from the parent's group (repaid in 2025/26) is shown separately"
+        },
+        "relatedPartyLoan": {
+          "value": 250.0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Loan due to related company, current"
+        },
+        "leaseLiabilities": {
+          "value": 109.612,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Non-current and current"
+        },
+        "cash": {
+          "value": 1049.149,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "Cash and cash equivalents net of overdraft, as in the cash flow statement"
+        },
+        "operatingCashFlow": {
+          "value": 1013.441,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)"
+        },
+        "interestPaid": {
+          "value": 228.916,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 1484.866,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "PPE 222.875 + capital work in progress 1,260.798 + intangibles 1.193"
+        },
+        "capexBooked": {
+          "value": 1495.413,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, notes 15–16 (pp. 236–237)",
+          "note": "PPE additions 222.875 + work-in-progress additions 1,272.538"
+        },
+        "depreciation": {
+          "value": 168.558,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "PPE 150.623 + right-of-use 12.580 + intangibles 5.355"
+        },
+        "workingCapitalChange": {
+          "value": -589.66,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "Cash released: inventories −83.563, receivables +48.780, related parties +17.888, payables +572.772"
+        },
+        "acquisitions": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "None at group level"
+        },
+        "dividendsPaid": {
+          "value": 125.0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)"
+        },
+        "leasePrincipal": {
+          "value": 18.929,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)"
+        },
+        "sharesOutstanding": {
+          "value": 625.0,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 13 (p. 235)",
+          "note": "Millions"
+        }
+      }
+    },
+    {
+      "period": "FY2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 2008.277,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "Revenue from contracts with customers; ground solar 1,293.7, EPC 280.0, hydro 242.2, rooftop solar 192.4 (financial capital, p. 80)"
+        },
+        "sppaBilling": {
+          "value": 0.237,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "grossProfit": {
+          "value": 1316.569,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "otherOperatingIncome": {
+          "value": 114.506,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "Note 8"
+        },
+        "administrativeCosts": {
+          "value": 446.092,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "impairment": {
+          "value": 32.594,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "PPE impairment after Cyclone Ditwah damage (note 15.7)"
+        },
+        "operatingProfit": {
+          "value": 931.697,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "financeIncome": {
+          "value": 43.028,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "financeCosts": {
+          "value": 478.16,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "profitBeforeTax": {
+          "value": 495.685,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "incomeTax": {
+          "value": 168.583,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 232)",
+          "note": "Current tax only (incl. Rs 70.2mn tax on subsidiaries' dividends). The statement of profit or loss shows a net tax credit of Rs 1,118.7mn after a Rs 1,287.2mn deferred tax credit (deferredTax)"
+        },
+        "deferredTax": {
+          "value": -1287.246,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 232)",
+          "note": "Deferred tax credit, mainly Rs 1,372.5mn on tax losses from enhanced capital allowances on the new solar plants (note 12.4)"
+        },
+        "taxReported": {
+          "value": -1118.663,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)",
+          "note": "Income tax line (a credit)"
+        },
+        "profitAfterTax": {
+          "value": 1614.349,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "netProfitOwners": {
+          "value": 836.726,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "nonControllingProfit": {
+          "value": 777.623,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "eps": {
+          "value": 1.34,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 200)"
+        },
+        "dividendPerShare": {
+          "value": 0.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, note 14 (p. 235)",
+          "note": "Interim, Rs 125mn, paid June 2025"
+        },
+        "navPerShare": {
+          "value": 3.47,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)"
+        },
+        "priceYearEnd": {
+          "value": 19.6,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, investor information (p. 291)"
+        },
+        "priceHighYear": {
+          "value": 33.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, investor information (p. 291)"
+        },
+        "priceLowYear": {
+          "value": 6.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, investor information (p. 291)"
+        },
+        "peYearEnd": {
+          "value": 14.64,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)"
+        },
+        "roe": {
+          "value": 54,
+          "unit": "%",
+          "source": "Annual Report 2025/26, financial capital (p. 79)",
+          "note": "Company's own figure"
+        },
+        "totalEquity": {
+          "value": 2166.974,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": 808.673,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Mainly 49% of R-E-D Capital Asia (ground solar) and 17% of Padiyapelella Hydropower"
+        },
+        "deferredTaxAsset": {
+          "value": 1124.818,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)"
+        },
+        "investmentFund": {
+          "value": 168.38,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Financial assets at FVTPL (investment fund)"
+        },
+        "fixedDeposits": {
+          "value": 57.756,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 198–199)",
+          "note": "Other financial asset"
+        },
+        "borrowings": {
+          "value": 5939.348,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 32 (p. 259)",
+          "note": "Non-current 4,819.4 + current 1,119.9; AWPLR + 0.25–2% (note 32.1)"
+        },
+        "leaseLiabilities": {
+          "value": 95.377,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year summary (p. 288)",
+          "note": "Non-current and current"
+        },
+        "cash": {
+          "value": 150.681,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "Cash and cash equivalents net of Rs 11.4mn overdraft"
+        },
+        "operatingCashFlow": {
+          "value": -285.625,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "After Rs 959.7mn tied up in working capital, mostly NSO paying about three months late"
+        },
+        "interestPaid": {
+          "value": 443.481,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 3140.176,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "PPE 64.146 + capital work in progress 3,072.304 + intangibles 3.726"
+        },
+        "capexBooked": {
+          "value": 3140.176,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, notes 15–16, 18 (pp. 236–237)",
+          "note": "PPE additions 64.146 + work-in-progress additions 3,046.784 + Lower Kotmale Oya Power Two 25.520 + intangibles 3.726"
+        },
+        "growthCapexNamed": {
+          "value": 3046.784,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 16 (p. 237); Chairman's statement (p. 29)",
+          "note": "Work-in-progress additions: seven ground-mounted solar plants, 35 MW (Anuradhapura, Maho, Kurunegala, Hiyare, Ampara, Matara, Baddegama), commissioned June–December 2025"
+        },
+        "depreciation": {
+          "value": 301.537,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "PPE 280.495 + right-of-use 15.293 + intangibles 5.749"
+        },
+        "licenceAmortisation": {
+          "value": 5.749,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 18.4",
+          "note": "Amortisation of intangibles, mainly the right to generate hydropower"
+        },
+        "workingCapitalChange": {
+          "value": 959.715,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "Cash tied up: inventories +40.755, receivables +457.163, related parties −10.009, payables −471.806"
+        },
+        "acquisitions": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "None"
+        },
+        "dividendsPaid": {
+          "value": 205.24,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)",
+          "note": "Rs 125.0mn to shareholders, the rest to minority holders"
+        },
+        "leasePrincipal": {
+          "value": 25.048,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 203–204)"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "contractedCapex": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 40.1 (p. 276)",
+          "note": "No capital commitments at 31 March 2026"
+        },
+        "taxLossesCarriedForward": {
+          "value": 8540.838,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.5 (p. 234)"
+        },
+        "installedCapacityMW": {
+          "value": 58.3,
+          "unit": "",
+          "source": "Annual Report 2025/26, manufactured capital (p. 88)",
+          "note": "Hydro 9.8, ground solar 41, rooftop 3.5, greenhouse rooftop 4; 29 plants"
+        },
+        "sharesOutstanding": {
+          "value": 625.0,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 13 (p. 235)",
+          "note": "Millions"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2026",
+      "periodEnd": "2025-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "note": "Comparative column",
+      "figures": {
+        "revenue": {
+          "value": 314.956,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Quarter; restated comparative column"
+        },
+        "grossProfit": {
+          "value": 172.078,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "operatingProfit": {
+          "value": 60.589,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitBeforeTax": {
+          "value": 35.449,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "incomeTax": {
+          "value": -36.662,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Tax credit"
+        },
+        "profitAfterTax": {
+          "value": 72.111,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "netProfitOwners": {
+          "value": 65.513,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "eps": {
+          "value": 0.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 733.023,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Quarter (the text layer of this page jumbles columns; checked against the September interim's six-month figures)"
+        },
+        "grossProfit": {
+          "value": 481.425,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "otherOperatingIncome": {
+          "value": 32.972,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Includes Rs 13.05mn profit on selling a vehicle (p. 5)"
+        },
+        "administrativeCosts": {
+          "value": 104.667,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "operatingProfit": {
+          "value": 408.704,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "financeCosts": {
+          "value": 183.334,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitBeforeTax": {
+          "value": 229.617,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "incomeTax": {
+          "value": 77.989,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitAfterTax": {
+          "value": 151.627,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "netProfitOwners": {
+          "value": 87.174,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "eps": {
+          "value": 0.14,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "totalEquity": {
+          "value": 2254.148,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2"
+        },
+        "navPerShare": {
+          "value": 3.61,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 2"
+        },
+        "borrowings": {
+          "value": 5806.036,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, note 14 (p. 8)"
+        },
+        "leaseLiabilities": {
+          "value": 93.203,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, note 14 (p. 8)"
+        },
+        "cash": {
+          "value": 319.196,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 5",
+          "note": "Net of overdraft"
+        },
+        "priceHighQuarter": {
+          "value": 21.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 6 (p. 7)"
+        },
+        "priceLowQuarter": {
+          "value": 15.7,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 6 (p. 7)"
+        },
+        "priceCloseQuarter": {
+          "value": 17.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 6 (p. 7)"
+        },
+        "curtailmentKWh": {
+          "value": 3701204,
+          "unit": "",
+          "source": "Interim to 30 Jun 2026, note 9 (p. 7)",
+          "note": "Estimated energy curtailed by the NSO, April–June 2026"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "note": "Comparative column",
+      "figures": {
+        "revenue": {
+          "value": 473.093,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Quarter; restated comparative column"
+        },
+        "grossProfit": {
+          "value": 329.648,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "otherOperatingIncome": {
+          "value": 0.255,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "administrativeCosts": {
+          "value": 105.096,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "operatingProfit": {
+          "value": 220.89,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeCosts": {
+          "value": 97.166,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitBeforeTax": {
+          "value": 134.78,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "incomeTax": {
+          "value": -373.191,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Tax credit (deferred tax on the solar plants' capital allowances)"
+        },
+        "profitAfterTax": {
+          "value": 507.971,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "netProfitOwners": {
+          "value": 271.635,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "eps": {
+          "value": 0.43,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "note": "Comparative column",
+      "figures": {
+        "revenue": {
+          "value": 788.048,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Six months; restated comparative column"
+        },
+        "grossProfit": {
+          "value": 501.726,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "otherOperatingIncome": {
+          "value": 0.51,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "administrativeCosts": {
+          "value": 214.5,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "operatingProfit": {
+          "value": 281.479,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeCosts": {
+          "value": 139.228,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitBeforeTax": {
+          "value": 170.229,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "incomeTax": {
+          "value": -409.853,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Tax credit"
+        },
+        "profitAfterTax": {
+          "value": 580.082,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "netProfitOwners": {
+          "value": 337.148,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "eps": {
+          "value": 0.54,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "totalEquity": {
+          "value": 1666.765,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (scanned)",
+          "note": "Owners' equity at 30 Sep 2025: stated capital 1,030.000 + retained earnings 636.765 (statement of changes in equity)"
+        },
+        "operatingCashFlow": {
+          "value": -544.411,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)"
+        },
+        "interestPaid": {
+          "value": 114.882,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 2806.388,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "PPE 27.094 + capital work in progress 2,775.487 + intangibles 3.807"
+        },
+        "depreciation": {
+          "value": 107.205,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "PPE 97.914 + right-of-use 6.612 + intangibles 2.679"
+        },
+        "dividendsPaid": {
+          "value": 125.0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)"
+        },
+        "leasePrincipal": {
+          "value": 9.76,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 765.587,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Quarter, up 62%: solar 598.6, EPC 115.7, hydro 51.3 (segments, p. 6)"
+        },
+        "grossProfit": {
+          "value": 513.133,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "otherOperatingIncome": {
+          "value": 128.685,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Not explained; note 12 says all Cyclone Ditwah insurance claims, including business interruption, had been received by 30 Sep 2026"
+        },
+        "administrativeCosts": {
+          "value": 112.856,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "otherExpenseReversal": {
+          "value": 11.077,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Impairment reversals on PPE and inventory (note 10)"
+        },
+        "operatingProfit": {
+          "value": 533.581,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeIncome": {
+          "value": 8.752,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeCosts": {
+          "value": 190.428,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitBeforeTax": {
+          "value": 352.509,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "incomeTax": {
+          "value": 112.874,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitAfterTax": {
+          "value": 239.635,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "netProfitOwners": {
+          "value": 152.7,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "eps": {
+          "value": 0.24,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 1498.61,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)",
+          "note": "Six months, up 90%: electricity 1,270.8, EPC 227.8 (note 15)"
+        },
+        "grossProfit": {
+          "value": 994.558,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "otherOperatingIncome": {
+          "value": 161.657,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "administrativeCosts": {
+          "value": 217.523,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "operatingProfit": {
+          "value": 942.306,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeIncome": {
+          "value": 12.662,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "financeCosts": {
+          "value": 373.762,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitBeforeTax": {
+          "value": 582.145,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "incomeTax": {
+          "value": 190.863,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "profitAfterTax": {
+          "value": 391.282,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "netProfitOwners": {
+          "value": 239.894,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "nonControllingProfit": {
+          "value": 151.389,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "eps": {
+          "value": 0.38,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (scanned)"
+        },
+        "totalEquity": {
+          "value": 2406.868,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": 960.062,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)"
+        },
+        "navPerShare": {
+          "value": 3.85,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)"
+        },
+        "deferredTaxAsset": {
+          "value": 964.131,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)"
+        },
+        "investmentFund": {
+          "value": 42.28,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)"
+        },
+        "fixedDeposits": {
+          "value": 136.218,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)",
+          "note": "Other financial asset"
+        },
+        "receivables": {
+          "value": 874.002,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)",
+          "note": "Trade and other receivables; Rs 617mn owed by NSO and EDL, two to three months in arrears (note 11)"
+        },
+        "inventory": {
+          "value": 481.52,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (scanned)"
+        },
+        "borrowings": {
+          "value": 5739.108,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 16 (p. 9, scanned)",
+          "note": "Non-current 4,282.228 + current 1,456.879 (p. 2)"
+        },
+        "leaseLiabilities": {
+          "value": 99.24,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 16 (p. 9, scanned)"
+        },
+        "cash": {
+          "value": 230.871,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "Net of Rs 61.3mn overdraft"
+        },
+        "operatingCashFlow": {
+          "value": 317.233,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "After Rs 342.1mn more inventory (EPC stock)"
+        },
+        "interestPaid": {
+          "value": 366.749,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 89.891,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "PPE 48.350 + capital work in progress 32.135 + intangibles 9.406; right-of-use assets 14.132 more"
+        },
+        "depreciation": {
+          "value": 202.094,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "PPE 190.897 + right-of-use 7.647 + intangibles 3.550"
+        },
+        "dividendsPaid": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)",
+          "note": "None"
+        },
+        "leasePrincipal": {
+          "value": 9.822,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (scanned)"
+        },
+        "sharesOutstanding": {
+          "value": 625.0,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 5 (p. 8)",
+          "note": "Millions"
+        },
+        "priceHighQuarter": {
+          "value": 17.4,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 6 (p. 8)"
+        },
+        "priceLowQuarter": {
+          "value": 12.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 6 (p. 8)"
+        },
+        "priceCloseQuarter": {
+          "value": 12.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 6 (p. 8)"
+        },
+        "publicFloatPct": {
+          "value": 24.99,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, note 7 (p. 8)",
+          "note": "9,111 public shareholders"
+        },
+        "curtailmentKWh": {
+          "value": 7798715,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 9 (p. 8)",
+          "note": "Estimated energy curtailed by the NSO, April–September 2026"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "0.84 (provisional)",
+      "reason": "8 steps, 21 Nov 2026. (1) Business: one business, renewable power generation (ground-mounted solar 41 MW, mini-hydro 9.8 MW, rooftop solar 7.5 MW) sold to the National System Operator under long-term power purchase agreements; EPC/solar equipment sales are about 15% of revenue. One sector beta. (2) Damodaran's emerging-markets dataset (betaEmerg) can't be reached from this run (pages.stern.nyu.edu and other finance sites blocked); the same stand-in as Vidullanka and WindForce: his global Green & Renewable Energy unlevered, cash-corrected beta 0.57 (January 2026, web-search extract). (3) Relevered with net debt Rs 5.61bn (30 Sep 2026: borrowings 5.739 + leases 0.099 − cash 0.231) / market value Rs 7.81bn (625mn shares at Rs 12.50, 30 Sep 2026) = 0.72 and the 34% tax rate: 0.57 × (1 + 0.66 × 0.72) = 0.84. (4) Local 5-year betas: none could be opened (StockAnalysis and TradingView blocked from this run); fewer than 3 sources, so step 4 can't be completed. (5) Higher of steps 3 and 4: 0.84. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. (8) Shown as the Required return tile. Refresh in January 2027 with the emerging-markets file and three local 5-year betas.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Share price used",
+      "value": "Rs 12.50 (closing price, 30 Sep 2026)",
+      "reason": "PAP.N0000 isn't yet in the site's CSE price file and the CSE and price sites can't be reached from this run. Rs 12.50 is the 30 September 2026 close printed in the Interim to 30 Sep 2026 (note 6, p. 8). A web-search snippet of a TradingView page showed Rs 16.50 around July 2026, which is older. The daily CSE close will replace it.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Owners' share of group cash flows",
+      "value": "61%",
+      "reason": "Profit attributable to shareholders Rs 239.9mn of Rs 391.3mn group profit in April–September 2026 (Interim to 30 Sep 2026, p. 3) = 61%; 57% in the June quarter, 64% in the September quarter. Minority holders own 49% of R-E-D Capital Asia (most of the new ground-mounted solar) and 17% of Padiyapelella Hydropower (Annual Report 2025/26, p. 84), and the new solar debt sits in those companies (90% of borrowings are ground-mounted solar, p. 85). So the DCF takes 61% of group operating profit, cash, net debt and the tax-loss asset (proportionate consolidation), rather than all of it.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Growth",
+      "value": "Bear 1% then 2% / Base 3% then 3% / Bull 6% then 4%",
+      "reason": "Five years, then long-run, below the 12.24% bond yield. Capacity rose from 23.3 MW to 58.3 MW in 2025/26 (p. 90) and the twelve months to September 2026 already include almost all of it, so growth from here needs new projects: two hydro projects and a 5 MW solar plant in the medium term, BESS tenders and a 120 MW solar / 15.4 MW hydro pre-development pipeline (pp. 34, 92). Tariffs are fixed in rupees, rooftop solar is cutting grid demand and the NSO curtailed 7.8 GWh in April–September 2026 (interim note 9).",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Return on new capital",
+      "value": "Bear 8% / Base 10% / Bull 12%",
+      "reason": "Group after-tax operating profit about Rs 0.90bn (twelve months to Sep 2026, gross profit less administrative costs, 34% tax) on capital of about Rs 9.0bn (total equity 3.37 + net debt 5.61, 30 Sep 2026) ≈ 10%.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "After-tax operating profit (start)",
+      "value": "Bear and base: twelve months to Sep 2026; bull: Sep 2026 quarter × 4 (calculated), × owners' share",
+      "reason": "Gross profit less administrative costs (other operating income left out: Rs 128.7mn in the September 2026 quarter looks like insurance on Cyclone Ditwah damage, and Rs 114.5mn in 2025/26), after the 2025/26 tax rate of 34% (current tax ÷ profit before tax; the reported Rs 1.12bn tax credit is deferred tax). Twelve months: Rs 1.36bn before tax; the September quarter × 4: Rs 1.60bn, with all 58 MW running.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Cash after maintenance capex (start)",
+      "value": "After-tax operating profit + depreciation − maintenance capex, × owners' share (calculated)",
+      "reason": "Not the calculator's operating cash, which swings with the NSO's late payments (−Rs 0.29bn in 2025/26, +Rs 0.32bn in April–September 2026); the DCF charges working capital through reinvestment instead.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "Rs 0.50bn / 0.40bn / 0.30bn (own range)",
+      "reason": "No company split. The calculator's range (2.32 / 0.28 / 0.09) is distorted by the 2025/26 build year (Rs 3.14bn capex, Rs 3.05bn of it the seven solar plants). Base = depreciation run-rate (April–September 2026 × 2 = Rs 0.40bn), bull = 2025/26 depreciation (Rs 0.30bn), bear 1.25× the run-rate for inverter replacements and hydro repairs after Cyclone Ditwah. New solar plants need little upkeep (O&M costs fell 22% in 2025/26, p. 82).",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Tax-loss asset (add-on)",
+      "value": "Deferred tax asset × owners' share, per share (Rs 0.95 at 30 Sep 2026)",
+      "reason": "Rs 964.1mn deferred tax asset at 30 Sep 2026 (Interim, p. 2), mainly from Rs 8.54bn of tax losses created by enhanced capital allowances on the new solar plants (Annual Report 2025/26, notes 12.5 and 33). The DCF charges full tax, so the tax the losses will save is added separately, at book, × 61%. Half of one claim (Rs 217.8mn) is uncertain under IFRIC 23 (p. 209).",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "14% / 17% / 20%",
+      "reason": "ROE on owners' equity: 19.6% in 2024/25 and about 20% on April–September 2026 profit annualised (Rs 480mn on Rs 2.41bn); 46% in 2025/26 and 36% in the twelve months to Sep 2026 only because of the Rs 1.29bn deferred tax credit. Equity includes the Rs 0.96bn deferred tax asset.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "2% / 3% / 4%",
+      "reason": "Same in every method; below the 12.24% bond yield and WACC. Power purchase agreements fix rupee tariffs for about 20 years, so growth after the build-out is slow.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "EPS to March 2027 × P/E",
+      "value": "0.62 / 0.72 / 0.82 × justified P/E",
+      "reason": "H1 EPS Rs 0.38 (Interim to 30 Sep 2026); second half Rs 0.24 / 0.34 / 0.44 (September quarter Rs 0.24 included about Rs 140mn of other income and impairment reversals; the second half is the dry season for hydro and the NSO curtails solar). Base is 39% below the twelve-month run-rate of Rs 1.18 because that includes the 2025/26 deferred tax credit (Rs 0.43 a share in the September 2025 quarter alone); against the September quarter × 4 (Rs 0.96) it is 25% lower, for the one-off other income. P/E justified at the cost of equity: (1 − g ÷ ROE) ÷ (cost of equity − g).",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Residual income start",
+      "value": "ROE 20% (April–September 2026 annualised); payout 15%",
+      "reason": "Starting ROE from H1 profit attributable Rs 239.9mn × 2 on owners' equity Rs 2.41bn, not the 36% twelve-month figure inflated by deferred tax. Payout: Rs 0.20 dividend on 2025/26 EPS Rs 1.34 (15%, the company's own payout figure, p. 86); no dividend yet for 2026/27.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Methods used",
+      "value": "DCF of the owners' share + tax-loss asset, justified P/E, justified P/B, residual income",
+      "reason": "A contracted power producer suits a whole-company DCF; with 39% of profit going to minority holders it is valued on the owners' share. Dividend model left out: one Rs 0.20 dividend in three years and new debt to repay first, so its value would rest on a payout assumed after year five. NAV (Rs 3.85, including the deferred tax asset) is shown but not averaged.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18.4% / Base 16.9% / Bull 15.4%",
+      "reason": "From scripts/reinvestment.py (21 Nov 2026): 8.24% + 0.84 × (4.2% + 6.08%) = 16.9%, ±1.5 points.",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 13.4% / Base 12.6% / Bull 11.7%",
+      "reason": "From scripts/reinvestment.py (21 Nov 2026): cost of debt 9.88% (interest paid 0.443 ÷ average borrowings and leases, FY2026), tax 34.0% (FY2026 current tax ÷ profit before tax), debt weight 41.8% (net debt Rs 5.61bn at Sep 2026, market cap Rs 7.81bn at Rs 12.50).",
+      "since": "2026-11-21"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 1% / 3% / 6%; calculator 113.3% (reinvestment rate 617.8% × return on capital 18.3%, FY2026). All within 2 pts.",
+      "reason": "From scripts/reinvestment.py on FY2026. The calculator figure only reflects the build year (Rs 3.14bn capex, 91% growth, against Rs 0.30bn depreciation) and an operating profit inflated by new capacity on opening capital, so the assumptions rest on the project pipeline instead (see Growth). The new plants earn about 10% after tax on capital so far.",
+      "since": "2026-11-21"
+    }
+  ],
+  "openQuestions": [
+    "What is the Rs 128.7mn of 'other operating income' in the September 2026 quarter (insurance, a one-off gain)? Check the December 2026 interim.",
+    "NSO and EDL arrears (Rs 617mn at Sep 2026, two to three months late): do they come down? Curtailment (7.8 GWh in April–September 2026) in the second half.",
+    "Debt: Rs 5.74bn at Sep 2026; is it repaid at more than Rs 0.7bn a year? Any new borrowing for the hydro, 5 MW solar or battery projects?",
+    "Inland Revenue's view on the enhanced capital allowance claim of the amalgamated PAP PTS / SPGM solar company (Rs 217.8mn deferred tax asset not recognised).",
+    "Dividend for 2026/27 (none declared by November 2026).",
+    "Owners' share of profit (61% in April–September 2026) and whether minorities' share changes.",
+    "Price: add PAP.N0000 to the site's CSE price feed; this analysis used the 30 Sep 2026 close.",
+    "Beta: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-21",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/add VPEL.N0000 PAP.N0000). First analysis from the CSE copies of the 2025/26 annual report and the June and September 2026 interims (the September one is scanned and was read from page images). Printed figures only, comparatives as their own periods; FY2022–FY2024 from the ten-year summary (not restated to the cost model before 2023/24). 2025/26 income tax stored as current tax (Rs 168.6mn) with the Rs 1.29bn deferred tax credit separate. Methods: DCF of the owners' 61% share plus the tax-loss asset, justified P/E, P/B and residual income (scripts/valuation.py), cost of equity 16.9%, WACC 12.6%. Business tests 0/4: category 3. Price is the 30 Sep 2026 close (Rs 12.50) because the CSE price wasn't available to this run.",
+      "fairValue": 3.75,
+      "buyPrice": 3.19,
+      "strongBuyPrice": 2.82,
+      "priceAtTime": 12.5,
+      "archive": null
+    }
+  ]
+}
