@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "SAMP.N0000",
   "localFolder": "sampath bank",
-  "updated": "2026-11-14",
+  "updated": "2026-11-21",
   "reportsRead": [
     {
       "file": "Sampath bank Annual Report as at 31st December 2025.pdf",
@@ -863,9 +863,9 @@
     },
     {
       "name": "ROE path (residual income)",
-      "value": "15%→14% / 17%→16% / 18.5%→18%",
-      "reason": "Over 10 years from normalised 2026 ROE; then the excess return grows at the long-run rate.",
-      "since": "2026-11-14"
+      "value": "16.5%→14% / 16.5%→16% / 16.5%→18%",
+      "reason": "One starting ROE for every case (scripts/valuation.py takes a single roeStart): 16.5%, the 2026 bank ROE with a normal tax rate (18.4% reported). Moves in a straight line to the long-run ROE over 10 years; then the excess return grows at the long-run rate.",
+      "since": "2026-11-21"
     },
     {
       "name": "Long-term growth",
@@ -881,9 +881,9 @@
     },
     {
       "name": "Dividends",
-      "value": "37% of EPS for five years, then 1 − growth ÷ ROE (64% / 63% / 61%)",
-      "reason": "Replaces a fixed dividend growing for ever at 4 / 7 / 9%: dividend growth now follows profit growth (capped at the 11.3% supported) and the long-run payout matches the reinvestment growth needs.",
-      "since": "2026-11-14"
+      "value": "Next year Rs 10.0 / 11.3 / 12.4 (37% of 2027 EPS), growing 6% / 9% / 11% for five years, then 5% / 6% / 7%; payout stays 37%",
+      "reason": "Now worked by scripts/valuation.py, whose dividend model can't raise the payout after five years, so the 1 − growth ÷ ROE step-up of 14 November is dropped. Conservative: retained profit beyond growth needs isn't counted (with the step-up the method gave about Rs 194). Dividend growth stays within the 11.3% supported.",
+      "since": "2026-11-21"
     },
     {
       "name": "Margins of safety",
@@ -893,6 +893,7 @@
     }
   ],
   "openQuestions": [
+    "Management and shareholders sections are still missing: a /redo SAMP full would add them from the annual report and the September interim.",
     "Full-year 2026 (due February 2027): final dividend, and whether it stays in cash with CET1 at 12.3%.",
     "Does the tax rate return to about 38% in 2027, or is part of the 2026 saving lasting?",
     "Pre-tax profit growth: flat in nine months of 2026; does it return in Q4 and 2027?",
@@ -931,6 +932,16 @@
       "strongBuyPrice": 139,
       "priceAtTime": 154.0,
       "archive": "research/SAMP.N0000/history/2026-11-13.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/redo SAMP.N0000). No new report; record figures re-checked and the current brief re-applied. All four methods (price to book, P/E, dividends, residual income) now worked by scripts/valuation.py and saved as modelInputs, so the What if? panel works. That changed two methods: the dividend model now keeps the 37% payout throughout (Rs 194 → Rs 133 weighted) and residual income starts every case at 16.5% ROE. Bond rate unchanged at 12.24%, cost of equity still 15.4% (beta 0.70 provisional). Price Rs 154 → Rs 148.25 (CSE close 20 Nov). Business tests 4 of 4; category buy now → watch list (price above the new Rs 144 buy price). Management and shareholders sections not added: no reports in a plain redo.",
+      "fairValue": 169,
+      "buyPrice": 144,
+      "strongBuyPrice": 127,
+      "priceAtTime": 148.25,
+      "archive": "research/SAMP.N0000/history/2026-11-14.json"
     }
   ]
 }

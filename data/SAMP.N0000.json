@@ -12,7 +12,7 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-14",
+  "analysisDate": "2026-11-21",
   "resultsCovered": {
     "label": "Nine months to 30 September 2026",
     "periodEnd": "2026-09-30",
@@ -23,22 +23,22 @@
     ]
   },
   "price": {
-    "value": 154.0,
-    "date": "2026-11-13",
+    "value": 148.25,
+    "date": "2026-11-20",
     "source": "CSE closing price",
-    "note": "Closed Rs 140.00 on 30 September 2026. 2026 range so far Rs 135.50 (July–September low) to Rs 167.00 (January–March high)."
+    "note": "Rs 154.00 on 13 November; closed Rs 140.00 on 30 September 2026. 2026 range to September Rs 135.50 (July–September low) to Rs 167.00 (January–March high), from the interim reports."
   },
   "summary": {
-    "verdict": "buy",
-    "headline": "A good bank at a fair price: at Rs 154 it is just below the Rs 158 buy price, though 2026's profit growth is mostly a tax saving",
-    "text": "Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, and at Rs 154 it is now just below my buy price. Nine-month group profit rose 15% to Rs 26.5bn (EPS Rs 22.63 against Rs 19.74), loans grew 22% to Rs 1.5tn and Stage 3 loans fell to 6.07%. But profit before tax was flat (−1%): the growth came from a lower tax charge after prior-year assessments were settled, and the third quarter's pre-tax profit fell 7% as impairments and costs (+22%) rose. It trades at 0.89x group NAV of Rs 173.18, 5.0x trailing earnings (5.6x with a normal tax rate) and a 6.7% dividend yield. This full rebuild uses the site's standard required return: a 15.4% cost of equity from the bank's beta (0.70, provisional) instead of the 18% I set by hand before. On that basis four methods put fair value at about Rs 186 (Rs 144 before), so I'd buy at up to Rs 158 and treat Rs 139 or less as a strong buy. The main risks are capital (CET1 down to 12.27% from 14.75% in nine months), impairments rising as the new loans season, and the beta, which needs checking in January."
+    "verdict": "fair",
+    "headline": "A good bank just above the buy price: Rs 148 against a Rs 144 buy price, after the dividend model was moved onto the shared code",
+    "text": "Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, and at Rs 148.25 it sits about 3% above my new buy price of Rs 144. Nothing in the business has changed since the 14 November rebuild: nine-month group profit rose 15% to Rs 26.5bn (EPS Rs 22.63), but profit before tax was flat (−1%) because the growth came from a one-off lower tax charge; loans grew 22% and Stage 3 loans fell to 6.07%. It trades at 0.86x group NAV of Rs 173.18, 4.8x trailing earnings (5.4x with a normal tax rate) and a 6.9% dividend yield. Fair value falls to about Rs 169 (Rs 186 before) because all four methods are now worked by the site's shared formulas: the dividend model now keeps today's 37% payout instead of raising it to about 63% after five years, which the formula can't do, so it gives Rs 133 instead of Rs 194. Buy up to Rs 144; Rs 127 or less is a strong buy. Main risks: capital (CET1 12.27%), impairments as the new loans season, and a provisional beta to check in January."
   },
   "quality": {
     "rating": "good",
     "passed": 4,
     "outOf": 4,
     "reason": "A strong bank: ROE near 18% for three years, capital above minimums, profit every year and a steady cash dividend.",
-    "assessed": "2026-11-14",
+    "assessed": "2026-11-21",
     "tests": [
       {
         "id": "returns",
@@ -65,7 +65,7 @@
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": true,
-        "value": "6.7% yield",
+        "value": "6.9% yield",
         "note": "All-cash dividends of about 40% of bank profit since 2023 (Rs 10.30 for 2025)."
       }
     ]
@@ -94,9 +94,9 @@
     "note": "Cost of equity = 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%; bear +1.5, bull −1.5 points. No WACC: a bank's debt is its raw material, so it is valued on equity (P/B, P/E, dividends, residual income)."
   },
   "valuation": {
-    "fairValue": 186,
-    "buyPrice": 158,
-    "strongBuyPrice": 139,
+    "fairValue": 169,
+    "buyPrice": 144,
+    "strongBuyPrice": 127,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -107,7 +107,7 @@
       "bull": 20
     },
     "nav": 173.18,
-    "note": "Fair value weights the bear/base/bull averages of the four methods 30/50/20 (Rs 185.7, about 1.07x group NAV)."
+    "note": "Fair value weights the bear/base/bull values of the four methods 30/50/20 and averages them (Rs 169.4, about 0.98x group NAV). All four are now worked by scripts/valuation.py from modelInputs."
   },
   "dividend": {
     "perShare": 10.3,
@@ -126,16 +126,16 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 0.89,
+      "value": 0.86,
       "unit": "x",
-      "note": "Group NAV; 0.97x bank NAV"
+      "note": "Group NAV; 0.93x bank NAV"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 5.0,
+      "value": 4.8,
       "unit": "x",
-      "note": "Group EPS Rs 30.66; 5.6x on Rs 27.6 with a normal tax rate"
+      "note": "Group EPS Rs 30.66; 5.4x on Rs 27.6 with a normal tax rate"
     },
     {
       "id": "roe",
@@ -147,7 +147,7 @@
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 6.7,
+      "value": 6.9,
       "unit": "%",
       "note": "Rs 10.30 for 2025"
     },
@@ -189,10 +189,10 @@
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 181,
+      "value": 174,
       "unit": "Rs bn",
-      "display": "~Rs 181bn",
-      "note": "1,172.7m shares at Rs 154"
+      "display": "~Rs 174bn",
+      "note": "1,172.7m shares at Rs 148.25"
     }
   ],
   "highlights": [
@@ -289,7 +289,7 @@
     {
       "method": "NAV",
       "value": "Rs 173.18",
-      "reading": "Group NAV per share at 30 September 2026. The price is 0.89x NAV, so it passes your NAV rule."
+      "reading": "Group NAV per share at 30 September 2026. The price is 0.86x NAV, so it passes your NAV rule."
     },
     {
       "method": "Return on equity",
@@ -298,12 +298,12 @@
     },
     {
       "method": "P/E",
-      "value": "5.0x",
-      "reading": "On trailing group EPS of Rs 30.66 (5.6x on Rs 27.6 with a normal tax rate). Bank year-end P/E 3.0–5.7x in 2022–2025."
+      "value": "4.8x",
+      "reading": "On trailing group EPS of Rs 30.66 (5.4x on Rs 27.6 with a normal tax rate). Bank year-end P/E 3.0–5.7x in 2022–2025."
     },
     {
       "method": "Dividends",
-      "value": "6.7% yield",
+      "value": "6.9% yield",
       "reading": "Rs 10.30 cash for 2025 (40% of bank profit), paid once a year."
     },
     {
@@ -326,41 +326,41 @@
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 131.0,
-      "base": 184.2,
-      "bull": 276.1,
-      "weighted": 186.6,
+      "bear": 130.98,
+      "base": 184.23,
+      "bull": 276.08,
+      "weighted": 186.62,
       "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 173.18: 0.76x / 1.06x / 1.59x book, with ROE 14% / 16% / 18%, growth 5% / 6% / 7%."
     },
     {
       "id": "pe",
       "name": "P/E method",
       "bear": 121.5,
-      "base": 167.8,
-      "bull": 217.8,
-      "weighted": 163.9,
+      "base": 167.75,
+      "bull": 217.75,
+      "weighted": 163.88,
       "comment": "2027 EPS Rs 27 / 30.5 / 33.5 × 4.5 / 5.5 / 6.5. EPS assumes a normal ~38% tax rate again, so the bear case is 12% below the Rs 30.66 run-rate, which is flattered by the 2026 tax settlement. The P/Es are within the bank's 2022–2025 range and below the justified 5.7x / 7.1x / 9.5x."
     },
     {
       "id": "ddm",
       "name": "Dividend model",
-      "bear": 124.0,
-      "base": 192.0,
-      "bull": 303.1,
-      "weighted": 193.8,
-      "comment": "37% of EPS paid for five years while profit grows 6% / 9% / 11% (supported 11.3%), then the payout rises to 1 − growth ÷ ROE (64% / 63% / 61%) at 5% / 6% / 7% growth."
+      "bear": 86.53,
+      "base": 131.71,
+      "bull": 204.01,
+      "weighted": 132.62,
+      "comment": "Next year's dividend Rs 10.0 / 11.3 / 12.4 (37% of 2027 EPS, as now: 40% of bank profit), growing with profit at 6% / 9% / 11% for five years (capped at the 11.3% supported), then 5% / 6% / 7%, at the cost of equity. The payout stays at 37%, so profit kept beyond what growth needs isn't counted: a conservative, dividends-as-paid view. If the payout rose to 1 − growth ÷ ROE (about 63%) after five years, as the 14 November version assumed, this method would give about Rs 194 and fair value about Rs 185."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 125.9,
-      "base": 194.5,
-      "bull": 316.8,
-      "weighted": 198.4,
-      "comment": "Used instead of a cash-flow DCF, which doesn't suit a bank. Book Rs 173.18 plus profit above the cost of equity: ROE 15%→14% / 17%→16% / 18.5%→18% over ten years, 37% payout, then the excess return grows at the long-run rate."
+      "bear": 132.48,
+      "base": 190.58,
+      "bull": 297.65,
+      "weighted": 194.56,
+      "comment": "Used instead of a cash-flow DCF, which doesn't suit a bank. Book Rs 173.18 plus profit above the cost of equity: ROE moves in a straight line from 16.5% (2026 with a normal tax rate) to 14% / 16% / 18% over ten years, 37% payout, then the excess return grows at 5% / 6% / 7%."
     }
   ],
-  "modelsNote": "A bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends, all at the 15.4% cost of equity (16.9% / 13.9% bear / bull). Growth check: assumed 6% / 9% / 11% a year for the next five years against 11.3% supported (63% of profit kept × 17.9% ROE); all within 2 points. Long-run growth 5–7% stays below the 12.24% bond yield, and needs 33–39% of profit kept.",
+  "modelsNote": "A bank's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends, all at the 15.4% cost of equity (16.9% / 13.9% bear / bull) and all worked by scripts/valuation.py. Growth check: assumed 6% / 9% / 11% a year for the next five years against 11.3% supported (63% of profit kept × 17.9% ROE); all within 2 points. Long-run growth 5–7% stays below the 12.24% bond yield, and needs 33–39% of profit kept. The dividend model is the lowest because it keeps today's 37% payout.",
   "scenarios": {
     "assumptions": [
       {
@@ -377,12 +377,12 @@
       },
       {
         "label": "Return on equity path (residual income)",
-        "bear": "15% falling to 14%",
-        "base": "17% falling to 16%",
-        "bull": "18.5% falling to 18%"
+        "bear": "16.5% falling to 14%",
+        "base": "16.5% falling to 16%",
+        "bull": "16.5% rising to 18%"
       },
       {
-        "label": "Profit growth, next five years",
+        "label": "Profit and dividend growth, next five years",
         "bear": "6%",
         "base": "9%",
         "bull": "11%"
@@ -401,15 +401,21 @@
       },
       {
         "label": "Payout",
-        "bear": "37%, then 64%",
-        "base": "37%, then 63%",
-        "bull": "37%, then 61%"
+        "bear": "37%",
+        "base": "37%",
+        "bull": "37%"
+      },
+      {
+        "label": "Next year's dividend",
+        "bear": "Rs 10.0",
+        "base": "Rs 11.3",
+        "bull": "Rs 12.4"
       }
     ],
     "averages": {
-      "bear": 125.6,
-      "base": 184.6,
-      "bull": 278.4
+      "bear": 117.9,
+      "base": 168.6,
+      "bull": 248.9
     },
     "common": "Cost of equity from the house formula (risk-free 8.24% + beta 0.70 × 10.28% equity premium). 2027 EPS assumes the tax rate returns to about 38% (2025: 38.6%) and pre-tax profit grows about 10% from a flat 2026 (bear: flat; bull: +18%). Shares 1,172.7m, none issued in 2024–2025."
   },
@@ -429,47 +435,47 @@
     ],
     "values": [
       [
-        197.0,
-        241.9,
-        291.1
+        191.6,
+        237.2,
+        287.7
       ],
       [
-        160.4,
-        194.5,
-        231.8
+        155.8,
+        190.6,
+        228.9
       ],
       [
-        134.5,
-        161.1,
-        190.1
+        130.5,
+        157.7,
+        187.7
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Today's Rs 154 is close to a 16.9% cost of equity with a 14% long-run ROE. Under the 18% cost of equity used before, fair value would be about Rs 145–150."
+    "note": "Today's Rs 148.25 is close to a 16.9% cost of equity with a 14% long-run ROE (residual income), and on price to book it implies a long-run ROE of about 14%, below the 16–18% of the last three years."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 158
+        "maxPrice": 144
       },
       {
         "shares": 150,
-        "maxPrice": 148
+        "maxPrice": 136
       },
       {
         "shares": 150,
-        "maxPrice": 139
+        "maxPrice": 127
       }
     ],
-    "averagePrice": 149.3,
-    "totalCost": 74650,
-    "note": "About Rs 74,650 in total, against Rs 77,000 for 500 shares at Rs 154.",
-    "realism": "The first tier is available now (Rs 154). Rs 148 needs a 4% fall and Rs 139 a 10% fall; the 2026 low so far is Rs 135.50 (July–September), so both have traded this year."
+    "averagePrice": 136.5,
+    "totalCost": 68250,
+    "note": "About Rs 68,250 in total, against Rs 74,125 for 500 shares at Rs 148.25.",
+    "realism": "Rs 144 needs a 3% fall from Rs 148.25 and has traded this year; Rs 136 (an 8% fall) is just above the 2026 low of Rs 135.50 (July–September). Rs 127 (a 14% fall) is below anything traded in 2026, so the last tier may not fill."
   },
   "changeMyView": {
     "higher": [
@@ -489,16 +495,16 @@
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the 2025 annual report and the 2026 interim reports to September 2026. The interim figures are unaudited, the beta is provisional, and the price is the CSE close of 13 November 2026, so check it before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the 2025 annual report and the 2026 interim reports to September 2026. The interim figures are unaudited, the beta is provisional, and the price is the CSE close of 20 November 2026, so check it before ordering. This is analysis, not personal financial advice."
   },
   "Decision box": {
-    "Verdict": "Buy: Rs 154 is 17% below fair value of Rs 186 and just under the Rs 158 buy price.",
-    "Expected yearly return at Rs 154": "About 16% a year if the price stays near 0.9x book: dividend 6.7% plus book growth of about 9–10%. More if the price moves towards fair value.",
+    "Verdict": "Watch list: Rs 148.25 is 12% below fair value of Rs 169 but about 3% above the Rs 144 buy price.",
+    "Expected yearly return at Rs 148.25": "About 17% a year if the price stays near 0.86x book: dividend 6.9% plus book growth of about 10%. More if the price moves towards fair value.",
     "Compared with": "10-year government bond 12.24%; cost of equity 15.4%.",
-    "Downside / upside": "Bear case Rs 126 (−18%); bull case Rs 278 (+81%).",
-    "What the price assumes": "At 0.89x NAV, with 6% long-run growth and a 15.4% cost of equity, a long-run ROE of about 14.4%: below the 16–18% of the last three years.",
-    "Confidence": "Medium: the four methods agree (Rs 168–195 base), but the beta is provisional and 2026 profit growth is mostly a tax saving.",
-    "Margin of safety": "Thin at today's price (2.5% below the buy price); better below Rs 148."
+    "Downside / upside": "Bear case Rs 118 (−20%); bull case Rs 249 (+68%).",
+    "What the price assumes": "At 0.86x NAV, with 6% long-run growth and a 15.4% cost of equity, a long-run ROE of about 14%: below the 16–18% of the last three years.",
+    "Confidence": "Medium: price to book, P/E and residual income agree (Rs 168–191 base); the dividend model is lower (Rs 132) because it keeps today's payout. The beta is provisional and 2026 profit growth is mostly a tax saving.",
+    "Margin of safety": "Not yet: wait for Rs 144 or lower."
   },
   "Business and moat": {
     "What it does": "A Sri Lankan commercial bank with 230 branches, Rs 1.5tn of loans and Rs 1.83tn of deposits (bank, September 2026). Subsidiaries include Siyapatha Finance (leasing), Sampath Centre (property), Sampath Securities and Sampath Information Solutions; a wealth-management company is being set up.",
@@ -524,12 +530,12 @@
   "Investment case and sell rules": {
     "Why own it": "A well-run bank with ROE near 18%, falling bad loans, a 6.7% cash dividend, at below book value.",
     "The case is broken if": "ROE falls below 14% for a full year, Stage 3 rises back above 8%, or capital forces a rights issue at a low price.",
-    "Sell triggers": "Price more than 30% above fair value (above Rs 242); the case breaks; or a clearly better opportunity appears."
+    "Sell triggers": "Price more than 30% above fair value (above Rs 220); the case breaks; or a clearly better opportunity appears."
   },
   "Suggested Telegram alerts (not set; needs your approval)": {
-    "Buy": "Rs 158 or lower (already met)",
-    "Strong buy": "Rs 139 or lower",
-    "Sell trigger": "Rs 242 or higher"
+    "Buy": "Rs 144 or lower",
+    "Strong buy": "Rs 127 or lower",
+    "Sell trigger": "Rs 220 or higher"
   },
   "Key ratios (five-year trend)": {
     "Return on equity (bank)": "2021 11.1% · 2022 11.0% · 2023 12.7% · 2024 17.7% · 2025 17.9% · 9M 2026 18.4%",
@@ -546,5 +552,81 @@
     "Peer banks (COMB, HNB) weren't compared in this run.",
     "Sampath's own 2027 guidance (none in the reports read)."
   ],
-  "fullText": "Summary: Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, and at Rs 154 it is now just below my buy price. Nine-month group profit rose 15% to Rs 26.5bn (EPS Rs 22.63 against Rs 19.74), loans grew 22% to Rs 1.5tn and Stage 3 loans fell to 6.07%. But profit before tax was flat (−1%): the growth came from a lower tax charge after prior-year assessments were settled, and the third quarter's pre-tax profit fell 7% as impairments and costs (+22%) rose. It trades at 0.89x group NAV of Rs 173.18, 5.0x trailing earnings (5.6x with a normal tax rate) and a 6.7% dividend yield. This full rebuild uses the site's standard required return: a 15.4% cost of equity from the bank's beta (0.70, provisional) instead of the 18% I set by hand before. On that basis four methods put fair value at about Rs 186 (Rs 144 before), so I'd buy at up to Rs 158 and treat Rs 139 or less as a strong buy. The main risks are capital (CET1 down to 12.27% from 14.75% in nine months), impairments rising as the new loans season, and the beta, which needs checking in January.\n\nPrice and key figures\nPrice: Rs 154.00, the CSE close on 13 November 2026. It closed September at Rs 140.00; the 2026 range so far is Rs 135.50–167.00.\nNine months to September 2026 (group, unaudited): profit before tax Rs 37.8bn (−1%); income tax Rs 11.3bn (−24%); profit after tax Rs 26.5bn (+15%); EPS Rs 22.63 against Rs 19.74. Third quarter: pre-tax −7%, after-tax +15%.\nDrivers: net interest income +15% (margin 4.22%), fees +21%, exchange income +67%; bond-sale gains down; costs +22% (cost-to-income 44.3%); loan impairments Rs 8.1bn against Rs 2.3bn.\nBalance sheet: gross loans Rs 1.50tn (+22%), deposits Rs 1.83tn, gross Stage 3 6.07% (coverage 68.7%), CET1 12.27%, total capital 15.32%. Rs 10bn green bonds (July) and Rs 10bn Basel III debentures (October).\n2025 (group): profit Rs 32.6bn, EPS Rs 27.77, dividend Rs 10.30, NAV Rs 165.23; bank ROE 17.9%.\n\nRequired return\nCost of equity = 8.24% risk-free + 0.70 beta × (4.2% + 6.08%) = 15.4%; bear 16.9%, bull 13.9%. The beta is provisional (web-search extracts; Damodaran's site couldn't be opened).\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 131.0 | 184.2 | 276.1 | 186.6\nP/E method | 121.5 | 167.8 | 217.8 | 163.9\nDividend model | 124.0 | 192.0 | 303.1 | 193.8\nResidual income | 125.9 | 194.5 | 316.8 | 198.4\nAverage | 125.6 | 184.6 | 278.4 | 186\n\nWhat changed in this rebuild\nThe research record was rebuilt from the four downloaded reports. The cost of equity now comes from the house formula (15.4%, from 18% set by hand), which is most of the rise in fair value. Long-run ROE was cut a point (to 14% / 16% / 18%) and 2027 EPS assumes a normal tax rate again. The dividend model now raises the payout to 1 − growth ÷ ROE after five years instead of keeping 37% for ever. Fair value Rs 144 → Rs 186, buy Rs 122 → Rs 158, strong buy Rs 108 → Rs 139.\n\nAssumptions (bear / base / bull)\nCost of equity 16.9% / 15.4% / 13.9%; long-run ROE 14% / 16% / 18%; ROE path 15%→14% / 17%→16% / 18.5%→18%; growth for five years 6% / 9% / 11% (supported 11.3%); long-run growth 5% / 6% / 7%; 2027 EPS 27 × 4.5 / 30.5 × 5.5 / 33.5 × 6.5.\n\nBusiness tests: 4 of 4 passed; a good business at or below the buy price: buy now (category 1, from watch list).\n\n500-share plan\n200 shares up to Rs 158, 150 up to Rs 148, 150 up to Rs 139: about Rs 74,650 in total."
+  "fullText": "Summary: Sampath Bank (SAMP.N0000) is a well-run, well-capitalised bank, and at Rs 148.25 it sits about 3% above my new buy price of Rs 144. Nothing in the business has changed since the 14 November rebuild: nine-month group profit rose 15% to Rs 26.5bn (EPS Rs 22.63), but profit before tax was flat (−1%) because the growth came from a one-off lower tax charge; loans grew 22% and Stage 3 loans fell to 6.07%. It trades at 0.86x group NAV of Rs 173.18, 4.8x trailing earnings (5.4x with a normal tax rate) and a 6.9% dividend yield. Fair value falls to about Rs 169 (Rs 186 before) because all four methods are now worked by the site's shared formulas: the dividend model now keeps today's 37% payout instead of raising it to about 63% after five years, which the formula can't do, so it gives Rs 133 instead of Rs 194. Buy up to Rs 144; Rs 127 or less is a strong buy. Main risks: capital (CET1 12.27%), impairments as the new loans season, and a provisional beta to check in January.\n\nPrice and key figures\nPrice: Rs 148.25, the CSE close on 20 November 2026 (Rs 154.00 on 13 November). It closed September at Rs 140.00; the 2026 range to September is Rs 135.50–167.00.\nNine months to September 2026 (group, unaudited): profit before tax Rs 37.8bn (−1%); income tax Rs 11.3bn (−24%); profit after tax Rs 26.5bn (+15%); EPS Rs 22.63 against Rs 19.74. Third quarter: pre-tax −7%, after-tax +15%.\nDrivers: net interest income +15% (margin 4.22%), fees +21%, exchange income +67%; bond-sale gains down; costs +22% (cost-to-income 44.3%); loan impairments Rs 8.1bn against Rs 2.3bn.\nBalance sheet: gross loans Rs 1.50tn (+22%), deposits Rs 1.83tn, gross Stage 3 6.07% (coverage 68.7%), CET1 12.27%, total capital 15.32%. Rs 10bn green bonds (July) and Rs 10bn Basel III debentures (October).\n2025 (group): profit Rs 32.6bn, EPS Rs 27.77, dividend Rs 10.30, NAV Rs 165.23; bank ROE 17.9%.\n\nRequired return\nCost of equity = 8.24% risk-free (12.24% bond less 4.0% default spread) + 0.70 beta × (4.2% + 6.08%) = 15.4%; bear 16.9%, bull 13.9%. The bond rate hasn't moved since 14 November. The beta is provisional (web-search extracts; Damodaran's site couldn't be opened): refresh in January.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 131.0 | 184.2 | 276.1 | 186.6\nP/E method | 121.5 | 167.8 | 217.8 | 163.9\nDividend model | 86.5 | 131.7 | 204.0 | 132.6\nResidual income | 132.5 | 190.6 | 297.7 | 194.6\nAverage | 117.9 | 168.6 | 248.9 | 169\n\nWhat changed in this redo (21 November)\nNo new report; the record's figures were re-checked and the brief re-applied. All four methods are now worked by scripts/valuation.py, so the site's What if? panel can redo them. Two changes follow from that. The dividend model keeps the 37% payout throughout (the formula can't raise it after five years), which cuts it from Rs 194 to Rs 133; with the payout rising to about 63%, fair value would be about Rs 185. Residual income now starts every case at the same 16.5% ROE (2026 with a normal tax rate) instead of 15% / 17% / 18.5%. Price Rs 154 → Rs 148.25. Fair value Rs 186 → Rs 169, buy Rs 158 → Rs 144, strong buy Rs 139 → Rs 127.\n\nAssumptions (bear / base / bull)\nCost of equity 16.9% / 15.4% / 13.9%; long-run ROE 14% / 16% / 18%; ROE path from 16.5% to 14% / 16% / 18%; growth for five years 6% / 9% / 11% (supported 11.3%); long-run growth 5% / 6% / 7%; 2027 EPS 27 × 4.5 / 30.5 × 5.5 / 33.5 × 6.5; next year's dividend Rs 10.0 / 11.3 / 12.4, 37% payout.\n\nBusiness tests: 4 of 4 passed; a good business but above the buy price: watch list (category 2, from buy now).\n\n500-share plan\n200 shares up to Rs 144, 150 up to Rs 136, 150 up to Rs 127: about Rs 68,250 in total. Rs 127 is below the 2026 low so far.\n\nManagement plans and shareholders: not yet in this analysis (no report was read in this redo); a /redo SAMP full would add them from the annual report and the September interim.",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 16.9,
+      "base": 15.4,
+      "bull": 13.9
+    },
+    "wacc": null,
+    "debtWeight": null,
+    "shares": 1172.7,
+    "netDebt": null,
+    "pb": {
+      "book": 173.18,
+      "bear": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 18,
+        "longRun": 7
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 27,
+        "pe": 4.5
+      },
+      "base": {
+        "eps": 30.5,
+        "pe": 5.5
+      },
+      "bull": {
+        "eps": 33.5,
+        "pe": 6.5
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 10.0,
+        "growth": 6,
+        "longRun": 5
+      },
+      "base": {
+        "dividend": 11.3,
+        "growth": 9,
+        "longRun": 6
+      },
+      "bull": {
+        "dividend": 12.4,
+        "growth": 11,
+        "longRun": 7
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 173.18,
+      "payout": 37,
+      "roeStart": 16.5,
+      "bear": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 18,
+        "longRun": 7
+      }
+    }
+  }
 }
