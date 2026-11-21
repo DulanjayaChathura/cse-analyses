@@ -933,6 +933,23 @@
       "status": "failed",
       "result": "The CSE download labelled 'annual' is only the 10-page Errata (amended AGM notice), not the 2025/26 annual report, and the CSE site can't be reached from the research run to fetch the real one. A full rebuild needs the annual report (management and plans, depreciation, interest paid). Analysis left unchanged (fair value Rs 12.60, buy 10.70, category 3). Fix: re-download the full annual report, or reply ok to /redo COCO.N0000 as-is.",
       "finishedAt": "2026-11-21T11:59:13+00:00"
+    },
+    {
+      "id": "20261121120017-CFVF",
+      "ticker": "CFVF.N0000",
+      "name": "First Capital Holdings PLC",
+      "mode": "redo-full",
+      "command": "/redo CFVF.N0000 full",
+      "note": null,
+      "files": [
+        "reports/CFVF.N0000/2026-06-08_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/CFVF.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/CFVF.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "376",
+      "requestedAt": "2026-11-21T12:00:17+00:00",
+      "status": "pending"
     }
   ]
 }
