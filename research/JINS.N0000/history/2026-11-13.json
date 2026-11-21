@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "ticker": "JINS.N0000",
+  "company": {
+    "name": "Janashakthi Insurance PLC",
+    "sector": "Insurance",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "JINS.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 June 2026",
+    "periodEnd": "2026-06-30",
+    "audited": false,
+    "sources": [
+      "Annual reports 2024 and 2025",
+      "Interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 41.6,
+    "date": "2026-11-12",
+    "source": "CSE closing price (cse.lk)",
+    "note": "After the 3-for-1 split (April 2026): January–June 2026 range Rs 42.50–56.00, closed June at Rs 45.00; 12-month low Rs 31.80. Closed 2025 at Rs 129.50 before the split (Rs 43.17 after)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Fast premium growth and strong capital, but profit swings with investment gains",
+    "text": "Janashakthi Insurance (JINS.N0000) is a fast-growing life insurer, 74% owned by Janashakthi Ltd, that also holds 25% of First Capital Holdings, a sister company in the same group. Premiums are growing fast (up 31% in 2025 and 36% in the first half of 2026), capital is very strong (CAR 284% against a 120% minimum), and it paid out almost all of 2025's profit (Rs 5.00 a share after the April 2026 3-for-1 split). But profit is volatile and depends on investment gains: EPS fell from Rs 6.64 (2024) to Rs 5.10 (2025) and was only Rs 0.19 in the first half of 2026, against Rs 1.94, because last year's share-sale gains didn't repeat and First Capital swung to a loss. The year-end transfer from the life fund will lift the full year. At Rs 41.60 (CSE, 12 November 2026) it trades at 1.69x its NAV of Rs 24.68 and 12.4x trailing earnings. Four methods put fair value at about Rs 24.60, roughly its book value, so the price is about 69% above it: it prices in a lasting 25% return on equity, which the business has only reached with large one-off gains. I'd buy at up to Rs 20.90 and treat under Rs 18.50 as a strong buy."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "High recent returns, very strong capital and generous dividends; profit depends on one-off gains.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "28% (2025)",
+        "note": "27% in 2024 (company figures), helped by share-sale gains and the associate; only about 1.5% annualised in the first half of 2026."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (insurer)",
+        "pass": true,
+        "value": "CAR 284%",
+        "note": "Minimum 120% (December 2025). Borrowings Rs 1.35bn, secured on the First Capital Holdings shares."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Volatile",
+        "note": "Profit relies on realised gains (Rs 1.76bn in H1 2025, Rs 0.04bn in H1 2026), life-fund surplus transfers (Rs 1.79bn in 2024, Rs 0.48bn in 2025) and the associate's results."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "98% payout (2025)",
+        "note": "Rs 3.40bn paid for 2025 (Rs 5.00 a share after the split) against profit of Rs 3.47bn."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 24.6,
+    "buyPrice": 20.9,
+    "strongBuyPrice": 18.5,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 24.68,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 1.00x NAV). No embedded value is published, so book value and normalised earnings are the anchors."
+  },
+  "dividend": {
+    "perShare": 5.0,
+    "label": "for 2025 (Rs 15.00 before the 3-for-1 split)",
+    "source": "Annual Report 2025, note 36",
+    "note": "Two interims (Rs 5.00 + Rs 10.00 before the split). None declared yet for 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 24.68,
+      "unit": "Rs",
+      "note": "30 June 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.69,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 12.4,
+      "unit": "x",
+      "note": "EPS Rs 3.35, 12 months to June 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 28,
+      "unit": "%",
+      "note": "2025; about 1.5% annualised in H1 2026"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 12.0,
+      "unit": "%",
+      "note": "Rs 5.00 for 2025; unlikely to repeat at 2026 profit levels"
+    },
+    {
+      "id": "car",
+      "label": "Capital adequacy ratio",
+      "value": 284,
+      "unit": "%",
+      "note": "Minimum 120%"
+    },
+    {
+      "id": "gwpGrowth",
+      "label": "Premium growth",
+      "value": 36,
+      "unit": "%",
+      "note": "H1 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 28.3,
+      "unit": "Rs bn",
+      "display": "~Rs 28bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "First half of 2026 (unaudited)",
+      "text": "Gross written premium up 36% to Rs 5.11bn (first-year premium up 41%). Profit Rs 130m against Rs 1.32bn (EPS Rs 0.19 against Rs 1.94): realised gains fell to Rs 41m from Rs 1.76bn, fair-value losses of Rs 335m, and the share of First Capital Holdings swung to a Rs 289m loss from a Rs 660m profit. No life-fund surplus has been transferred yet this year."
+    },
+    {
+      "title": "2025 (audited)",
+      "text": "Premium Rs 8.65bn (up 31%); profit Rs 3.47bn (Rs 4.51bn in 2024), EPS Rs 15.30 before the split (Rs 5.10 after). Rs 3.40bn paid in dividends. CAR 284%."
+    },
+    {
+      "title": "Share split and new accounting standard",
+      "text": "Each share became three in April 2026 (679.6m shares). SLFRS 17 (new insurance accounting) is coming; the interim includes a mapping of how the accounts will change, but no restated figures yet."
+    },
+    {
+      "title": "Group links",
+      "text": "Janashakthi Ltd owns 74.24% and First Capital Ltd 5.77%; Janashakthi Insurance owns 25% of First Capital Holdings (101.2m shares, bought at Rs 37.10; Rs 46.50 now), which is pledged against its Rs 1.35bn loan."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2023",
+      "2024",
+      "2025",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (after the 2026 split)",
+        "unit": "Rs",
+        "values": [
+          6.08,
+          6.64,
+          5.1,
+          3.35
+        ],
+        "notes": [
+          "Rs 18.25 before the split",
+          "Rs 19.92 before the split",
+          "Rs 15.30 before the split",
+          "To Jun 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          27,
+          28,
+          13.5
+        ],
+        "notes": [
+          "Not read",
+          "Company figure",
+          "Company figure",
+          "Estimated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          2.8,
+          8.5,
+          12.4
+        ],
+        "notes": [
+          "Not read",
+          null,
+          null,
+          "At Rs 41.60"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share (after the split)",
+        "unit": "Rs",
+        "values": [
+          0.88,
+          4.41,
+          5.0,
+          null
+        ],
+        "notes": [
+          "Rs 2.65 before the split",
+          "Rs 13.24 before the split",
+          "Rs 15.00 before the split",
+          "None declared yet"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 24.68",
+      "reading": "1.69x book. Life insurers can be worth more than book if future profits from existing policies are large, but Janashakthi doesn't publish an embedded value."
+    },
+    {
+      "method": "Return on equity",
+      "value": "28% (2025)",
+      "reading": "High in 2024–2025 thanks to gains; about 1.5% annualised in H1 2026. I assume 16% in a normal year."
+    },
+    {
+      "method": "P/E",
+      "value": "12.4x",
+      "reading": "On trailing EPS of Rs 3.35; 2.8x and 8.5x at the last two year-ends."
+    },
+    {
+      "method": "Dividends",
+      "value": "12% yield",
+      "reading": "Rs 5.00 for 2025 was almost all of profit; 2026 profit can't support that."
+    },
+    {
+      "method": "Capital",
+      "value": "CAR 284%",
+      "reading": "Very strong; room to keep growing premiums."
+    },
+    {
+      "method": "First Capital stake",
+      "value": "Rs 6.93 a share",
+      "reading": "At market (Rs 46.50); carried at Rs 3.85bn (Rs 5.67 a share)."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 10.6,
+      "base": 21.5,
+      "bull": 35.6,
+      "weighted": 21.1,
+      "comment": "Book value Rs 24.68 × (ROE − growth) ÷ (cost of equity − growth): ROE 11% / 16% / 20%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 18.0,
+      "base": 32.0,
+      "bull": 48.0,
+      "weighted": 31.0,
+      "comment": "Normal EPS of Rs 3.00 / 4.00 / 4.80 at 6 / 8 / 10 times."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 16.2,
+      "base": 28.8,
+      "bull": 47.8,
+      "weighted": 28.8,
+      "comment": "Rs 2.50 / 3.50 / 4.50 a share, growing 3% / 6% / 8% for five years, then 4% / 5% / 6%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 11.8,
+      "base": 17.5,
+      "bull": 25.3,
+      "weighted": 17.4,
+      "comment": "ROE moving from 10% to 11% / 16% / 20% over ten years; 80% payout."
+    }
+  ],
+  "modelsNote": "An insurer, so like a bank: justified price-to-book, residual income, P/E and dividends instead of a cash-flow DCF. Normal earnings assume a regular life-fund transfer and investment income, not 2024–2025's large gains.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "19%",
+        "base": "17.5%",
+        "bull": "16%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "11%",
+        "base": "16%",
+        "bull": "20%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Normal EPS × P/E",
+        "bear": "3.00 × 6",
+        "base": "4.00 × 8",
+        "bull": "4.80 × 10"
+      },
+      {
+        "label": "Dividend per share",
+        "bear": "Rs 2.50",
+        "base": "Rs 3.50",
+        "bull": "Rs 4.50"
+      }
+    ],
+    "averages": {
+      "bear": 14.2,
+      "base": 24.9,
+      "bull": 39.2
+    },
+    "common": "10-year government bond about 12.4% plus about 5 points for an insurer with volatile, investment-driven profit and related-party exposure. Normal EPS of Rs 4.00 is about Rs 2.7bn of profit."
+  },
+  "sensitivity": {
+    "title": "Residual income, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16%",
+      "17.5%",
+      "19%"
+    ],
+    "columns": [
+      "11%",
+      "16%",
+      "20%"
+    ],
+    "values": [
+      [
+        14.1,
+        20.0,
+        25.0
+      ],
+      [
+        12.7,
+        17.5,
+        21.6
+      ],
+      [
+        11.5,
+        15.6,
+        19.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Today's Rs 41.60 needs a lasting ROE of about 25% on the price-to-book method."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 24.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 20.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 18.5
+      }
+    ],
+    "averagePrice": 21.66,
+    "totalCost": 10830,
+    "note": "About Rs 10,830 in total, against Rs 20,800 at Rs 41.60.",
+    "realism": "The 12-month low was Rs 31.80, so Rs 20.90 needs a fall well below this year's range; the share was around Rs 18 (after the split) at the end of 2024."
+  },
+  "changeMyView": {
+    "higher": [
+      "Profit back above Rs 3bn without large one-off gains.",
+      "An embedded value showing large future profits on existing policies.",
+      "First Capital Holdings returning to profit."
+    ],
+    "lower": [
+      "Dividends cut sharply because 2026 profit is low.",
+      "More losses at First Capital Holdings.",
+      "SLFRS 17 reducing reported equity.",
+      "Lapse rates rising on the fast-grown policy book."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2024 and 2025 annual reports and the interim reports to June 2026 (unaudited). The September 2026 quarter wasn't in the folder. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 69% above fair value of Rs 24.60.",
+    "Downside / upside": "Bear case -66% (Rs 14.2); bull case -6% (Rs 39.2).",
+    "What the price assumes": "A lasting return on equity of about 25%.",
+    "Confidence": "Low to medium: profit is volatile and no embedded value is published.",
+    "Margin of safety": "Buy 15% below fair value (Rs 20.90), strong buy 25% below (Rs 18.50)."
+  },
+  "Business and moat": {
+    "What it does": "Life insurance only (it sold its general insurance business), plus a 25% stake in First Capital Holdings, a sister company in the Janashakthi group.",
+    "Moat": "Moderate: a growing agency network and strong capital; competes with larger life insurers."
+  },
+  "Management and governance": {
+    "Ownership": "Janashakthi Ltd 74.24%, First Capital Ltd 5.77%, Y.S.H.I. Silva 3.21%; public float about 20%.",
+    "Related parties": "First Capital Holdings is a fellow subsidiary; its shares are pledged for Janashakthi Insurance's loan.",
+    "Rating": "Watch"
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "Watch: bond yields drive both investment income and fair-value gains.",
+    "Share market": "Risk: equity gains drove 2024–2025 profit.",
+    "Liquidity": "Moderate: about 20% free float."
+  },
+  "Investment case and sell rules": {
+    "Why own it": "A fast-growing life insurer with strong capital, bought near book value.",
+    "Sell triggers": "Price more than 30% above fair value (above Rs 31.98); CAR below 180%."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 20.90 or lower",
+    "Strong buy": "Rs 18.50 or lower",
+    "Sell trigger": "Rs 31.98 or higher (already exceeded)"
+  },
+  "What this analysis doesn't cover": [
+    "Embedded value or value of new business (not published).",
+    "First Capital Holdings' own results.",
+    "The September 2026 quarter."
+  ],
+  "fullText": "Summary: Janashakthi Insurance (JINS.N0000) is a fast-growing life insurer, 74% owned by Janashakthi Ltd, that also holds 25% of First Capital Holdings, a sister company in the same group. Premiums are growing fast (up 31% in 2025 and 36% in the first half of 2026), capital is very strong (CAR 284% against a 120% minimum), and it paid out almost all of 2025's profit (Rs 5.00 a share after the April 2026 3-for-1 split). But profit is volatile and depends on investment gains: EPS fell from Rs 6.64 (2024) to Rs 5.10 (2025) and was only Rs 0.19 in the first half of 2026, against Rs 1.94, because last year's share-sale gains didn't repeat and First Capital swung to a loss. The year-end transfer from the life fund will lift the full year. At Rs 41.60 (CSE, 12 November 2026) it trades at 1.69x its NAV of Rs 24.68 and 12.4x trailing earnings. Four methods put fair value at about Rs 24.60, roughly its book value, so the price is about 69% above it: it prices in a lasting 25% return on equity, which the business has only reached with large one-off gains. I'd buy at up to Rs 20.90 and treat under Rs 18.50 as a strong buy.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 10.6 | 21.5 | 35.6 | 21.1\nP/E method | 18.0 | 32.0 | 48.0 | 31.0\nDividend model | 16.2 | 28.8 | 47.8 | 28.8\nResidual income | 11.8 | 17.5 | 25.3 | 17.4\nAverage | 14.2 | 24.9 | 39.2 | 24.6\n\nBusiness tests: 3 of 4 passed (returns, capital, dividends; fails steady profit), so it's a good business at a high price: watch list."
+}
