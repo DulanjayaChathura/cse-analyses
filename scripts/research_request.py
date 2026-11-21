@@ -161,6 +161,8 @@ def choose_reports(ticker, mode, annuals, analysis_date):
     reports = [r for r in cse.financial_reports(ticker) if r.get("url")]
     have = {r["id"] for r in downloaded(ticker)["reports"]}
     date = lambda r: r.get("date") or ""
+    # An errata or corrigendum is filed as an "annual" report on the CSE but isn't the report itself.
+    reports = [r for r in reports if not re.match(r"\s*(errata|corrigendum)\b", r.get("title") or "", re.I)]
     annual = sorted([r for r in reports if r["kind"] == "annual"], key=date)
     quarterly = sorted([r for r in reports if r["kind"] == "quarterly"], key=date)
     if mode == "update":
