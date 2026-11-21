@@ -408,6 +408,11 @@ h1 .star { font-size: 1.5rem; margin-left: 0.2rem; }
 .wi-reset { grid-column: 2 / 3; justify-self: end; font: inherit; font-size: 0.85rem; padding: 0.4rem 1rem; min-height: 2.2rem;
   border-radius: 999px; border: 1px solid var(--rule); background: var(--bg); color: var(--ink); cursor: pointer; }
 .wi-reset:disabled { opacity: 0.45; cursor: default; }
+.wi-ret { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; margin-top: 0.35rem; padding-top: 0.5rem; border-top: 1px solid var(--rule); font-size: 0.85rem; line-height: 1.35; }
+.wi-ret span { flex: 1 1 14rem; }
+.wi-ret b.good { color: var(--good, #1d7a46); }
+.wi-ret b.bad { color: var(--bad, #b42318); }
+.wi-match { font: inherit; font-size: 0.82rem; padding: 0.35rem 0.85rem; min-height: 2.2rem; border-radius: 999px; border: 1px solid #d29a00; background: rgba(210, 154, 0, 0.1); color: var(--ink); cursor: pointer; }
 .wi-chg { font-size: 0.78rem; font-weight: 600; }
 .wi-chg.up { color: var(--good, #1d7a46); }
 .wi-chg.down { color: var(--bad, #b42318); }

@@ -267,7 +267,25 @@
       }).join("");
     }
 
-    let last = null;
+    /* The cost of equity (base case, bear and bull keeping their gap) at which the fair value equals
+       today's price: the return you'd earn buying at this price if these cases happen. */
+    function impliedReturn(sh, weights) {
+      if (!isNum(price) || price <= 0) return null;
+      const fairAt = (d0) => { const r = compute(d, applyQuick(state.edits, { ...sh, ke: d0 }), weights); return r.rows.every((x) => !x.errors.length) ? r.fair : null; };
+      const p0 = pub.costOfEquity.base;
+      let lo = sh.ke, hi = sh.ke;
+      if (fairAt(lo) == null) return null;
+      // lower return -> higher fair value: step down until fair is above the price (or the formulas stop working)
+      for (let i = 0; i < 200 && fairAt(lo) <= price && fairAt(lo - 0.25) != null; i++) lo -= 0.25;
+      // higher return -> lower fair value: step up until fair is below the price
+      for (let i = 0; i < 120 && fairAt(hi) != null && fairAt(hi) > price; i++) hi += 0.5;
+      if (fairAt(lo) <= price) return { below: p0 + lo };
+      if (fairAt(hi) == null || fairAt(hi) > price) return { above: p0 + hi };
+      for (let i = 0; i < 50; i++) { const mid = (lo + hi) / 2, f = fairAt(mid); if (f != null && f > price) lo = mid; else hi = mid; }
+      return { value: p0 + (lo + hi) / 2 };
+    }
+
+    let last = null, last_imp = null;
     function render() {
       const mi = applyQuick(state.edits, shifts());
       const wsum = CASES.reduce((s, c) => s + (+state.w[c] || 0), 0);
@@ -280,11 +298,25 @@
       const gap = isNum(price) && isNum(buy) ? (price / buy - 1) * 100 : null;
       const changed = items.some((it) => Math.abs(state.base[it.key] - refOf(it, pub, present).base) > 1e-9)
         || CASES.some((c) => +state.w[c] !== pubW[c]) || JSON.stringify(state.edits) !== JSON.stringify(pub);
+      const imp = impliedReturn(shifts(), weights);
+      const ke = mi.costOfEquity.base, bond = (d._build && d._build.market && d._build.market.bondYield) || null;
+      let ret = "";
+      if (imp && isNum(price)) {
+        const y = imp.value;
+        const same = isNum(y) && Math.abs(y - ke) < 0.1;
+        const verdict = !isNum(y) ? "" : same ? `the same as the cost of equity you've set, so fair value is about today's price`
+          : y >= ke ? `<b class="good">above the ${fmt(ke, 1)}% required</b>, so it's cheaper than fair value`
+          : isNum(bond) && y >= bond ? `below the ${fmt(ke, 1)}% required, but above the ${fmt(bond, 2)}% government bond`
+          : `below the ${fmt(ke, 1)}% required${isNum(bond) ? ` <b class="bad">and below the ${fmt(bond, 2)}% government bond</b>` : ""}`;
+        ret = `<div class="wi-ret"><span>At today's Rs ${fmt(price)} you'd earn about <b>${isNum(y) ? fmt(y, 1) + "%" : imp.below ? `less than ${fmt(imp.below, 1)}%` : `more than ${fmt(imp.above, 1)}%`}</b> a year if these cases happen: ${verdict || "outside the range the formulas can check"}.</span>
+          ${isNum(y) && !same ? `<button type="button" class="wi-match">Match today's price</button>` : ""}</div>`;
+      }
+      last_imp = imp;
       bar.innerHTML = `
         <div class="wi-bar-item"><span>Fair value</span><b>Rs ${fmt(fair)}</b>${chg(fair, v.fairValue)}<small>was Rs ${fmt(v.fairValue)}</small></div>
         <div class="wi-bar-item"><span>Buy price</span><b>Rs ${fmt(buy)}</b>${chg(buy, v.buyPrice)}<small>strong buy Rs ${fmt(strong)}</small></div>
         <div class="wi-bar-gap ${isNum(gap) && gap <= 0 ? "good" : ""}">${isNum(gap) ? `Price Rs ${fmt(price)} is <b>${fmt(Math.abs(gap), 1)}% ${gap <= 0 ? "below" : "above"}</b> this buy price` : ""}</div>
-        <button type="button" class="wi-reset" ${changed ? "" : "disabled"}>Reset</button>`;
+        <button type="button" class="wi-reset" ${changed ? "" : "disabled"}>Reset</button>${ret}`;
       const errs = r.rows.flatMap((x) => x.errors.map((e) => `${x.name} (${e})`));
       methodsEl.innerHTML = `${wsum !== 100 ? `<p class="wi-warn">The weights add up to ${fmt(wsum, 0)}%, so they've been scaled to 100%.</p>` : ""}
         ${errs.length ? `<p class="wi-warn">${errs.map(App.esc).join("<br>")}</p>` : ""}
@@ -365,6 +397,7 @@
       } else if (t.dataset.info) openInfo(t.dataset.info);
       else if (t.classList.contains("wi-sheet-x")) closeInfo();
       else if (t.dataset.tab) { state.tab = t.dataset.tab; renderFields(); }
+      else if (t.classList.contains("wi-match") && last_imp && isNum(last_imp.value)) setBase("ke", round(last_imp.value, 0.1));
       else if (t.classList.contains("wi-reset")) {
         state.edits = clone(pub);
         state.w = { ...pubW };

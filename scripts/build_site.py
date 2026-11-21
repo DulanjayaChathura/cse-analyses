@@ -96,6 +96,16 @@ def summarize(data, warnings, bad, previous, companies):
     }
 
 
+def market_figures():
+    """The shared market figures the What if? panel shows (the 10-year bond yield)."""
+    m = read_json(ROOT / "research" / "market-inputs.json", {})
+    b = m.get("bondYield10y") or {}
+    return {"bondYield": b.get("value"), "bondDate": b.get("date")} if isinstance(b.get("value"), (int, float)) else {}
+
+
+MARKET = market_figures()
+
+
 def main():
     report, problems = [], False
     if SITE.exists():
@@ -124,7 +134,7 @@ def main():
             problems = True
             report.append(f"### ⚠️ {path.name} was accepted with warnings")
             report += [f"- {w}" for w in warnings]
-        data["_build"] = {"warnings": warnings, "badSections": bad, "previousVersion": previous}
+        data["_build"] = {"warnings": warnings, "badSections": bad, "previousVersion": previous, "market": MARKET}
         write_json(SITE / "data" / "tickers" / f"{data['ticker']}.json", data)
         manifest.append(summarize(data, warnings, bad, previous, companies))
 
