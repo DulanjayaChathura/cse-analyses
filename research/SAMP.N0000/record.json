@@ -71,8 +71,8 @@
       "periodEnd": "2025-12-31",
       "type": "annual",
       "audited": true,
-      "readOn": "2026-11-14",
-      "note": "Redo full: performance highlights (PDF p. 15), ten years at a glance (pp. 524–525), EPS note (p. 410), directors' report (p. 356)."
+      "readOn": "2026-11-21",
+      "note": "Redo full: performance highlights (PDF p. 15), ten years at a glance (pp. 524–525), EPS note (p. 410), directors' report (p. 356). Re-read 21 Nov 2026: Chairman's message (PDF pp. 24–27), MD/CEO's review (PDF pp. 28–34) and strategy (PDF pp. 36–37) for the management section."
     },
     {
       "file": "reports/SAMP.N0000/2026-05-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
@@ -81,7 +81,7 @@
       "periodEnd": "2026-03-31",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-14",
+      "readOn": "2026-11-21",
       "note": "Commentary, income statement p. 6, balance sheet p. 9, ratios p. 25, note 5."
     },
     {
@@ -91,8 +91,8 @@
       "periodEnd": "2026-06-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-14",
-      "note": "Commentary pp. 1–4, income statement p. 6, balance sheet p. 9, ratios p. 25, note 5."
+      "readOn": "2026-11-21",
+      "note": "Commentary pp. 1–4, income statement p. 6, balance sheet p. 9, ratios p. 25, note 5. Top 20 at 30 Jun 2026 (PDF p. 17) used as the comparison for the shareholder changes."
     },
     {
       "file": "reports/SAMP.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
@@ -101,8 +101,8 @@
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-14",
-      "note": "Commentary pp. 2–4, income statement p. 5, balance sheet pp. 7–8, notes pp. 15–16, ratios p. 26."
+      "readOn": "2026-11-21",
+      "note": "Commentary pp. 2–4, income statement p. 5, balance sheet pp. 7–8, notes pp. 15–16, ratios p. 26. Re-read 21 Nov 2026: top 20 shareholders (PDF p. 17), directors' holdings (PDF p. 18)."
     }
   ],
   "periods": [
@@ -762,7 +762,8 @@
         "costToIncome": {
           "value": 44.33,
           "unit": "%",
-          "source": "Interim Q3 2026 (9M), PDF p. 26"
+          "source": "Interim Q3 2026 (9M), PDF p. 26",
+          "note": null
         },
         "cet1": {
           "value": 12.27,
@@ -805,6 +806,12 @@
           "unit": "Rs bn",
           "source": "Interim Q3 2026 (9M), PDF p. 15 (note 8.1)",
           "note": "Basel III debentures allotted 28 Oct 2026, 12.80–13.00%; plus Rs 10bn green bonds in July"
+        },
+        "publicHolding": {
+          "value": 98.85,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, PDF p. 17",
+          "note": "55,388 public shareholders (52,082 at 30 Jun 2026)"
         }
       }
     },
@@ -893,14 +900,15 @@
     }
   ],
   "openQuestions": [
-    "Management and shareholders sections are still missing: a /redo SAMP full would add them from the annual report and the September interim.",
     "Full-year 2026 (due February 2027): final dividend, and whether it stays in cash with CET1 at 12.3%.",
     "Does the tax rate return to about 38% in 2027, or is part of the 2026 saving lasting?",
     "Pre-tax profit growth: flat in nine months of 2026; does it return in Q4 and 2027?",
     "Impairments as the 2026 loan growth (22%) seasons.",
     "Cost growth (22%) vs income growth (14%).",
     "Beta: recheck in January 2027 with Damodaran's emerging-markets bank beta and three verified local 5-year betas.",
-    "Any new taxes on banks in the 2027 budget."
+    "Any new taxes on banks in the 2027 budget.",
+    "Cost-to-income: management promises below the industry average in the medium term; 44.3% in nine months of 2026 and rising.",
+    "Shareholders: any change in the four big holders (Vallibel One, Phantom Investments, Mr Y S H I Silva, EPF, about 45% together)."
   ],
   "changeLog": [
     {
@@ -942,6 +950,16 @@
       "strongBuyPrice": 127,
       "priceAtTime": 148.25,
       "archive": "research/SAMP.N0000/history/2026-11-14.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/redo SAMP.N0000 full). Rebuilt from the four downloaded CSE reports (Annual Report 2025 and the Q1, H1 and 9M 2026 interims), keeping the change log and earlier reports read. Key record figures (9M profit, EPS, NAV, ROE, CET1) spot-checked against the reports: no corrections. Added the management section (Chairman's and CEO's messages, EvolveX plan; promises vs delivery: loan growth and the Rs 20bn Tier 2/green bonds done, capital on track, cost-to-income moving the wrong way) and the shareholders section (top 20 at 30 Sep vs 30 Jun 2026). Price unchanged (Rs 148.25, 20 Nov), calculator gives the same cost of equity and growth check, so the valuation is unchanged. Business tests 4/4; category 2 (watch list), unchanged.",
+      "fairValue": 169,
+      "buyPrice": 144,
+      "strongBuyPrice": 127,
+      "priceAtTime": 148.25,
+      "archive": "research/SAMP.N0000/history/2026-11-21.json"
     }
   ]
 }
