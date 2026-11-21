@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ACL.N0000",
+  "company": {
+    "name": "ACL Cables PLC",
+    "sector": "Cables and conductors",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "ACL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-17",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual report 2025/26 (CSE copy, re-read in full)",
+      "Interim report to 30 Sep 2026",
+      "Earlier: annual report 2024/25 and interim reports to 31 Dec 2025, 31 Mar 2026 and 30 Jun 2026"
+    ]
+  },
+  "price": {
+    "value": 101.0,
+    "date": "2026-11-17",
+    "source": "CSE closing price (cse.lk)",
+    "note": "July–September 2026 range Rs 91.10–100.50 (closed the quarter at Rs 92.00); April–June Rs 85.00–103.50; January–March Rs 81.00–107.75."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Still a good, cash-rich business, but on the standard 22% required return the price is about 2.6 times fair value",
+    "text": "ACL Cables PLC (ACL.N0000), Sri Lanka's largest cable maker, is a well-run, cash-rich business: return on equity was about 19% in 2025/26 and 18% over the last twelve months, it holds about Rs 10.4bn more cash and investments than debt, and it hasn't made a loss in ten years. This is a full rebuild from the 2025/26 annual report and the September 2026 interim, now using the site's standard required return and a whole-company DCF. The latest quarter was flat: revenue up 26% to Rs 14.30bn but a gross margin of 24% (26.5%) and a Rs 144mn exchange loss left EPS at Rs 2.04 (Rs 2.06); six-month EPS is Rs 4.61 (Rs 4.30) and twelve-month EPS Rs 9.13. Copper stock still ties up cash: inventory Rs 19.1bn (Rs 14.1bn in March), operating cash flow minus Rs 4.66bn for the half. The big change is the required return. On the standard CAPM method a cable maker's beta is about 1.34 (Damodaran's global electrical-equipment figure; no local 5-year beta found), giving a cost of equity of 22.0% against the 16.5% used before. At that rate ACL's 17–19% return on equity is worth a little under book value, so the four methods put fair value at about Rs 39.10 (Rs 64.70 before). At Rs 101.00 (CSE close, 17 November 2026) the share trades at 11x twelve-month earnings and 1.82x NAV of Rs 55.46: the price assumes a much lower required return or a lasting copper boom. I'd buy at up to about Rs 33.20 and treat under Rs 29.30 as a strong buy. The business still passes 3 of 4 tests, so it stays on the watch list."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "High returns, net cash and an unbroken profit record; still weak at turning profit into cash and dividends.",
+    "assessed": "2026-11-17",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "18%",
+        "note": "Profit to owners over average equity: 18.7% in 2025/26 and about 18% over the twelve months to September 2026; about 21% on average over five years (11% in 2023/24). Diluted by the cash pile."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net cash Rs 10.4bn",
+        "note": "September 2026: Rs 15.4bn of unit trusts, deposits and cash against Rs 5.1bn of borrowings, overdraft and leases (net cash was Rs 14.8bn in March)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "No loss in ten years",
+        "note": "But profit swings with copper prices (down 49% in 2023/24), and exchange gains and losses move single quarters by Rs 150–600mn."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No",
+        "note": "Operating cash flow was minus Rs 4.66bn in April–September 2026 against Rs 3.88bn of profit (Rs 1.4bn against Rs 7.3bn in 2025/26); dividends under 7% of profit."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 39.1,
+    "buyPrice": 33.2,
+    "strongBuyPrice": 29.3,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 55.46,
+    "note": "Fair value weights the bear/base/bull results of four methods (whole-company DCF, P/E, justified P/B, residual income) 30/50/20, about 0.70x NAV. Down from Rs 64.70 mainly because the cost of equity is now the site-wide CAPM figure, 22.0% (16.5% before)."
+  },
+  "dividend": {
+    "perShare": 0.6,
+    "label": "for 2025/26, paid October 2026",
+    "source": "Interim Q2 2026/27, note 5 (p. 9)",
+    "note": "Declared 28 September 2026 (Rs 431mn) and paid 26 October 2026. The year before, Rs 0.50 (Rs 1.50 before the 1-for-3 split) was paid in October 2025 for 2024/25."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 55.46,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.82,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 11.1,
+      "unit": "x",
+      "note": "Twelve-month EPS Rs 9.13 to September 2026"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 18,
+      "unit": "%",
+      "note": "Twelve months to Sep 2026 (18.7% in 2025/26); five-year average about 21%"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return (cost of equity)",
+      "value": 22.0,
+      "unit": "%",
+      "note": "Beta 1.34; bear 23.5%, bull 20.5%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0.6,
+      "unit": "%",
+      "note": "Rs 0.60 paid Oct 2026"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 7,
+      "unit": "%",
+      "note": "Rs 0.60 against 2025/26 EPS of Rs 8.82"
+    },
+    {
+      "id": "netCash",
+      "label": "Net cash",
+      "value": 10.4,
+      "unit": "Rs bn",
+      "note": "Sep 2026, about Rs 14 a share"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 22,
+      "unit": "%",
+      "note": "April–September 2026; 26% in July–September"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 72.6,
+      "unit": "Rs bn",
+      "display": "~Rs 73bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 26% to Rs 14.30bn, but profit to owners slipped 1% to Rs 1.47bn (EPS Rs 2.04 against Rs 2.06). The gross margin was 23.8% (26.5% a year earlier) and finance income fell to almost nothing because of a Rs 144mn exchange loss. Operating profit was up 13%."
+    },
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue Rs 25.79bn (up 22%), gross margin 24.0% (28.0%), profit to owners Rs 3.31bn (up 7%), EPS Rs 4.61 (Rs 4.30). Net exchange gain for the half Rs 447mn. Export sales Rs 6.23bn, up 46%, now 24% of revenue."
+    },
+    {
+      "title": "Cash still tied up in copper stock",
+      "text": "Inventory is Rs 19.08bn, up Rs 4.95bn since March (only Rs 0.3bn more in July–September). Operating cash flow for the half was minus Rs 4.66bn. ACL sold Rs 2.84bn of unit trusts and short-term loans rose to Rs 4.43bn (Rs 1.95bn in March). Net cash fell to about Rs 10.4bn from Rs 14.8bn."
+    },
+    {
+      "title": "Dividend up to Rs 0.60",
+      "text": "Rs 0.60 a share for 2025/26 (Rs 431mn) was declared on 28 September and paid on 26 October 2026, up from Rs 0.50 split-adjusted a year earlier. That is still under 7% of last year's profit."
+    },
+    {
+      "title": "2025/26 annual report: what the rebuild added",
+      "text": "Capex is small: Rs 0.40bn booked against Rs 0.37bn of depreciation, with no growth project named and no capital commitments. Nearly all reinvestment was working capital: Rs 4.34bn more tied up in stock and receivables as copper prices and sales rose. Operating profit of Rs 9.18bn included a one-off Rs 0.70bn gain on revaluing investment property; finance income included Rs 0.49bn of exchange gains and Rs 0.58bn of unit-trust gains. Minorities (Kelani Cables, ACL Plastics, Cable Solutions) take about 13–15% of group profit."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS (split-adjusted)",
+        "unit": "Rs",
+        "values": [
+          5.99,
+          8.28,
+          3.98,
+          6.37,
+          8.82,
+          9.13
+        ],
+        "notes": [
+          null,
+          null,
+          "Copper prices fell",
+          null,
+          null,
+          "Twelve months to Sep 2026"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          28,
+          29,
+          11,
+          16,
+          19,
+          18
+        ],
+        "notes": [
+          "Profit to owners over average equity",
+          null,
+          null,
+          null,
+          null,
+          "Twelve months to Sep 2026"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          3.2,
+          3.3,
+          7.1,
+          6.4,
+          9.6,
+          11.1
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 101.00, twelve-month EPS Rs 9.13"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend paid (split-adjusted)",
+        "unit": "Rs",
+        "values": [
+          0.33,
+          0.33,
+          0.42,
+          0.42,
+          0.5,
+          0.6
+        ],
+        "notes": [
+          "Paid in the year",
+          null,
+          null,
+          null,
+          null,
+          "Paid Oct 2026, for 2025/26"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 55.46",
+      "reading": "The price is 1.82x NAV; about Rs 14 of NAV is net cash and Rs 3.5 is investment property."
+    },
+    {
+      "method": "Return on equity",
+      "value": "18%",
+      "reading": "About 21% on average over five years, from 11% (2023/24) to 29% (2022/23). Good, but below the 22% required return, which is why value comes out under book."
+    },
+    {
+      "method": "P/E",
+      "value": "11.1x",
+      "reading": "On twelve-month EPS Rs 9.13. Justified forward P/E at a 22% cost of equity is about 4x; the ten-year year-end average was about 5.5x."
+    },
+    {
+      "method": "Dividends",
+      "value": "0.6% yield",
+      "reading": "Rs 0.60 a share is under 7% of profit; cash after maintenance capex covered 2025/26 dividends about 3 times, so the dividend is safe but small."
+    },
+    {
+      "method": "DCF",
+      "value": "Rs 46.20 base",
+      "reading": "Operating business at WACC 22% plus net cash and investments, less minorities. Value after year 5 is 57% of the total."
+    },
+    {
+      "method": "Cash",
+      "value": "Net cash Rs 10.4bn",
+      "reading": "A real cushion, but copper stock and receivables swallowed Rs 4.4bn of it in six months."
+    }
+  ],
+  "models": [
+    {
+      "id": "dcf",
+      "name": "Whole-company DCF (WACC, plus net cash)",
+      "bear": 37.91,
+      "base": 46.21,
+      "bull": 57.04,
+      "weighted": 45.89,
+      "comment": "Cash before interest after maintenance capex Rs 4.8 / 5.9 / 6.4bn a year (equal to after-tax operating profit, since maintenance capex is about depreciation; trailing operating profit Rs 8.50bn without the one-off property gain × (1 − 30.8%) = Rs 5.9bn), growing 4% / 8% / 11% for five years, then 4% / 5% / 6%, less the reinvestment growth needs at a 12% / 16% / 20% return on new capital, at WACC 23.5% / 22.0% / 20.5%. Firm value Rs 17.1 / 24.0 / 33.1bn, plus net cash Rs 10.37bn (30 September 2026) and investment property, associates and listed shares at book Rs 4.24bn, times the owners' 86% (minorities hold about 14% of equity): Rs 37.91 / 46.21 / 57.04 a share. Value after year 5: 42% / 57% / 66%, under the 75% flag. The starting point is operating profit, not one year's cash flow, because copper stock swings cash flow (Rs 1.4bn in 2025/26, minus Rs 4.7bn in the last six months)."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 28.12,
+      "base": 38.22,
+      "bull": 49.44,
+      "weighted": 37.43,
+      "comment": "EPS for the year to March 2027 of Rs 7.60 / 9.10 / 10.30 (six months so far Rs 4.61, so a second half of Rs 2.99 / 4.49 / 5.69 against Rs 4.52 a year earlier) times 3.7 / 4.2 / 4.8: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE). Base EPS equals the Rs 9.13 run-rate; the bear assumes copper prices fall and stock loses value, as in 2023/24."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 28.44,
+      "base": 39.15,
+      "bull": 53.55,
+      "weighted": 38.82,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 55.46: ROE 14% / 17% / 20%, growth 4% / 5% / 6%, cost of equity 23.5% / 22.0% / 20.5%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 23.75,
+      "base": 33.74,
+      "bull": 50.69,
+      "weighted": 34.13,
+      "comment": "Book value Rs 55.46 (September 2026); ROE moving from 18% (19% bull) to 14% / 17% / 20% over ten years; 8% payout for five years, then the payout growth allows; after year ten the excess return grows at 4% / 5% / 6%. Because ROE stays below the cost of equity, keeping 92% of profit lowers value per rupee kept."
+    }
+  ],
+  "modelsNote": "ACL is a steady cash generator over a cycle but its yearly cash flow swings with copper stock, so the whole-company DCF starts from after-tax operating profit and charges growth ÷ return on capital as reinvestment each year, rather than using one year's cash flow. It pays out under 7% of profit, so a dividend model would say little; dividends are shown as a reading. Growth check: assumed 4% / 8% / 11% for five years against 23.9% supported by 2025/26 reinvestment (68.8% of after-tax operating profit) × return on capital (34.7%), all within. The supported figure is flattered: almost all reinvestment was stock and receivables built up as copper prices rose, which is price, not volume. Profit kept × ROE gives 17.6%. All four methods use the same 22.0% cost of equity (WACC is the same, as ACL has net cash). That rate, not the business, is what moved fair value from Rs 64.70 to Rs 39.10.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity = WACC (beta 1.34)",
+        "bear": "23.5%",
+        "base": "22.0%",
+        "bull": "20.5%"
+      },
+      {
+        "label": "Cash before interest after maintenance capex, start",
+        "bear": "Rs 4.8bn",
+        "base": "Rs 5.9bn",
+        "bull": "Rs 6.4bn"
+      },
+      {
+        "label": "Growth: five years, then long-term",
+        "bear": "4%, then 4%",
+        "base": "8%, then 5%",
+        "bull": "11%, then 6%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "12%",
+        "base": "16%",
+        "bull": "20%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "17%",
+        "bull": "20%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "7.60 × 3.7",
+        "base": "9.10 × 4.2",
+        "bull": "10.30 × 4.8"
+      },
+      {
+        "label": "Second-half EPS this implies",
+        "bear": "Rs 2.99 (copper falls)",
+        "base": "Rs 4.49 (about last year's Rs 4.52)",
+        "bull": "Rs 5.69"
+      }
+    ],
+    "averages": {
+      "bear": 29.55,
+      "base": 39.33,
+      "bull": 52.68
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.34 (provisional). Net cash, so WACC = cost of equity. Tax 30.8% (2025/26 effective). Net cash Rs 10.37bn and investment property, associates and listed shares Rs 4.24bn at 30 September 2026; owners' share 86%. Long-run reinvestment = growth ÷ return on capital (4/12 = 33%, 5/16 = 31%, 6/20 = 30%). Payout 8% for five years. Book value Rs 55.46; 718.72mn shares."
+  },
+  "sensitivity": {
+    "title": "Residual income, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "20.5%",
+      "22.0%",
+      "23.5%"
+    ],
+    "columns": [
+      "14%",
+      "17%",
+      "20%"
+    ],
+    "values": [
+      [
+        29.7,
+        39.1,
+        49.0
+      ],
+      [
+        25.8,
+        33.7,
+        42.2
+      ],
+      [
+        22.6,
+        29.4,
+        36.7
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Starting ROE 18%, growth 5%. Even a 20% long-run ROE at a 20.5% cost of equity gives under Rs 50; Rs 101 needs a cost of equity of about 15% with ROE staying near 20%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 39.1
+      },
+      {
+        "shares": 150,
+        "maxPrice": 33.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 29.3
+      }
+    ],
+    "averagePrice": 34.39,
+    "totalCost": 17195,
+    "note": "About Rs 17,195 in total, against Rs 50,500 at Rs 101.00.",
+    "realism": "Rs 33.20 needs about a 67% fall from Rs 101.00. This year the share has traded between Rs 81.00 and Rs 107.75. Allowing for the 1-for-3 split it was about Rs 41 in March 2025 and Rs 28 in March 2024, so these prices are only two years old, but getting back there would need a copper slump or a market-wide sell-off. Realistically this is a share to watch, not to buy, unless the required return falls (lower bond yields or country risk) or the price drops sharply."
+  },
+  "changeMyView": {
+    "higher": [
+      "A lower required return: rupee bond yields or Sri Lanka's default spread falling, or a verified local 5-year beta well below 1.34 (at 1.15, fair value would be about Rs 44.50).",
+      "Copper prices staying high without hurting demand, and exports keeping up 40%+ growth.",
+      "The gross margin recovering towards 27–28% and stock falling back, releasing cash.",
+      "A much bigger dividend, or using the cash pile for a well-priced expansion.",
+      "ROE staying above 20% without help from exchange gains or property revaluations."
+    ],
+    "lower": [
+      "Copper prices falling, so stock bought at high prices loses value (as in 2023/24).",
+      "Less spending on power lines and construction (the CEB buys over 20% of group sales).",
+      "Short-term loans keep rising to carry stock (Rs 4.4bn now).",
+      "The rupee strengthening, turning exchange gains into losses (as in July–September).",
+      "Bond yields rising again, lifting the required return."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. Per-share figures before 2025/26 have been divided by three for the share split. The beta is provisional (web-search stand-in for Damodaran's data). The price is the CSE close on 17 November 2026; check it live. This is analysis, not personal financial advice."
+  },
+  "fullText": "Summary: ACL Cables PLC (ACL.N0000), Sri Lanka's largest cable maker, is a well-run, cash-rich business: return on equity was about 19% in 2025/26 and 18% over the last twelve months, it holds about Rs 10.4bn more cash and investments than debt, and it hasn't made a loss in ten years. This is a full rebuild from the 2025/26 annual report and the September 2026 interim, now using the site's standard required return and a whole-company DCF. The latest quarter was flat: revenue up 26% to Rs 14.30bn but a gross margin of 24% (26.5%) and a Rs 144mn exchange loss left EPS at Rs 2.04 (Rs 2.06); six-month EPS is Rs 4.61 (Rs 4.30) and twelve-month EPS Rs 9.13. Copper stock still ties up cash: inventory Rs 19.1bn (Rs 14.1bn in March), operating cash flow minus Rs 4.66bn for the half. The big change is the required return. On the standard CAPM method a cable maker's beta is about 1.34 (Damodaran's global electrical-equipment figure; no local 5-year beta found), giving a cost of equity of 22.0% against the 16.5% used before. At that rate ACL's 17–19% return on equity is worth a little under book value, so the four methods put fair value at about Rs 39.10 (Rs 64.70 before). At Rs 101.00 (CSE close, 17 November 2026) the share trades at 11x twelve-month earnings and 1.82x NAV of Rs 55.46: the price assumes a much lower required return or a lasting copper boom. I'd buy at up to about Rs 33.20 and treat under Rs 29.30 as a strong buy. The business still passes 3 of 4 tests, so it stays on the watch list.\n\nPrice and key figures\nPrice: Rs 101.00 (CSE close, 17 November 2026). In July–September 2026 it traded between Rs 91.10 and Rs 100.50; April–June Rs 85.00–103.50; January–March Rs 81.00–107.75.\nYear to March 2026 (audited): revenue Rs 45.51bn (up 21%), gross margin 25.2%, operating profit Rs 9.18bn (including a Rs 0.70bn investment property revaluation gain), profit to owners Rs 6.34bn, EPS Rs 8.82, ROE about 19%. Exports Rs 8.72bn (19% of revenue).\nThree months to 30 September 2026 (unaudited): revenue Rs 14.30bn (up 26%), gross margin 23.8% (26.5%), operating profit Rs 2.57bn (up 13%), Rs 144mn exchange loss, profit to owners Rs 1.47bn, EPS Rs 2.04 (Rs 2.06).\nSix months: revenue Rs 25.79bn (up 22%), profit to owners Rs 3.31bn (up 7%), EPS Rs 4.61 (Rs 4.30). Twelve-month EPS Rs 9.13.\nNAV Rs 55.46 a share (September 2026). Net cash Rs 10.37bn. 718.7 million shares; the Madanayake family owns 62.1% and the EPF 10.0%.\n\nRequired return\nRisk-free 8.24% (10-year bond 12.24% less a 4.0% default spread) + beta 1.34 × (4.2% mature premium + 6.08% country premium) = 22.0% (bear 23.5%, bull 20.5%). The beta is Damodaran's global electrical-equipment figure, corrected for cash (January 2026, from a web-search extract; his emerging-markets file and local 5-year betas couldn't be obtained). ACL has net cash, so WACC equals the cost of equity. This replaces the 16.5% used before and is the main reason fair value fell.\n\nReinvestment and growth\nCapex Rs 0.40bn booked in 2025/26 against depreciation Rs 0.37bn: almost all maintenance; no growth project named and no capital commitments. Reinvestment was Rs 4.37bn, nearly all working capital (stock and receivables up Rs 4.34bn), driven by copper prices and sales. Supported growth on the calculator is 23.9% (68.8% reinvestment × 34.7% return on capital), flattered by that price-driven stock build; the scenarios assume 4% / 8% / 11%. Cash after maintenance capex (Rs 1.07bn) covered dividends about 3 times. Warning signs checked: capex is not being cut, not funded by borrowing, and roughly matches depreciation.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nWhole-company DCF | 37.91 | 46.21 | 57.04 | 45.89\nP/E | 28.12 | 38.22 | 49.44 | 37.43\nJustified P/B | 28.44 | 39.15 | 53.55 | 38.82\nResidual income | 23.75 | 33.74 | 50.69 | 34.13\nAverage | 29.55 | 39.33 | 52.68 | 39.07\nFair value about Rs 39.10 (30% bear, 50% base, 20% bull), down from Rs 64.70. Buy at up to Rs 33.20 (15% below); strong buy under Rs 29.30 (25% below).\n\nAssumptions\nDCF: start cash Rs 4.8 / 5.9 / 6.4bn (after-tax operating profit without the one-off property gain), growth 4% / 8% / 11% for five years then 4% / 5% / 6%, return on new capital 12% / 16% / 20%, WACC 23.5% / 22.0% / 20.5%, plus net cash and investments, times the owners' 86%. Value after year 5: 42–66% of the total. Long-run ROE 14% / 17% / 20% (five-year average about 21%, including an unusually strong 2022/23). EPS to March 2027 Rs 7.60 / 9.10 / 10.30 at 3.7 / 4.2 / 4.8 times, the P/E justified at the cost of equity; base EPS equals the run-rate. Changed since 14 November: cost of equity (16.5% → 22.0%), long-term growth (6.5% → 5% base, kept the same across all methods), P/E multiples (8x base → 4.2x, now justified at the cost of equity), and a DCF added.\n\nWhat stands out\n- Sales are growing fast (exports up 46% in six months), but margins are thinner: 24% gross margin against 28% a year ago.\n- The exchange line swings: a Rs 590mn gain in April–June, a Rs 144mn loss in July–September.\n- Weak cash conversion: inventory up Rs 4.95bn in six months to Rs 19.08bn; operating cash flow minus Rs 4.66bn; short-term loans Rs 4.43bn; net cash down to Rs 10.4bn from Rs 14.8bn in March.\n- Small payout: Rs 0.60 a share (Rs 431mn) paid October 2026 against Rs 6.3bn of profit to owners in 2025/26.\n\n500-share plan\n200 shares up to Rs 39.10, 150 up to Rs 33.20, 150 up to Rs 29.30: average about Rs 34.40, about Rs 17,195 in total. Rs 33.20 needs about a 67% fall from Rs 101.00, far below this year's Rs 81.00–107.75 range; split-adjusted, the share was about Rs 41 in March 2025 and Rs 28 in March 2024.\n\nWhat would change my view\nHigher: a lower required return (falling bond yields or country risk, or a verified local beta well below 1.34), copper staying high without hurting demand, exports growing 40%+, the gross margin recovering and stock releasing cash, a bigger dividend, ROE above 20% without one-off gains.\nLower: a copper price fall, less power and construction spending, short-term loans rising further, a stronger rupee, bond yields rising.\n\nBusiness tests: 3 of 4 passed (returns, debt, steady profit; fails on cash conversion), so it's a good business at a high price: watch list (unchanged).",
+  "requiredReturn": {
+    "beta": 1.34,
+    "betaBasis": "Provisional. Damodaran's global Electrical Equipment beta (January 2026, web-search extract): unlevered and corrected for cash 1.34. ACL has net cash, so no relevering. His emerging-markets file couldn't be opened from this run and no local 5-year beta was found. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 23.5,
+      "base": 22.0,
+      "bull": 20.5
+    },
+    "costOfDebt": 7.11,
+    "wacc": {
+      "bear": 23.5,
+      "base": 22.0,
+      "bull": 20.5
+    },
+    "debtWeight": 0.0,
+    "asOf": "2026-11-17",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta 1.34: Damodaran global industry betas, Electrical Equipment, January 2026 (web-search extract)",
+      "Cost of debt: interest paid Rs 0.128bn ÷ average borrowings and leases Rs 1.80bn (Annual Report 2025/26, pp. 125, 170)",
+      "Weights: market cap Rs 72.6bn at Rs 101.00 (CSE close 17 Nov 2026), net cash Rs 10.37bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.34 × (4.2% + 6.08%) = 22.0%; bear +1.5, bull −1.5 points. At the top of the 12–22% range for CSE shares because the global sector beta is high; weighting ACL's cash pile at a beta of zero would give about 1.15 (cost of equity 20.1%, fair value roughly Rs 44.50). ACL has net cash, so debt weighs 0% and WACC equals the cost of equity. The cost of debt (7.1%) is below the usual range because the loans are short-term and linked to the banks' prime rate; it doesn't affect WACC here."
+  }
+}
