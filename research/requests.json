@@ -1021,6 +1021,40 @@
       "messageId": "383",
       "requestedAt": "2026-11-21T12:06:13+00:00",
       "status": "pending"
+    },
+    {
+      "id": "20261121130729-VPEL",
+      "ticker": "VPEL.N0000",
+      "name": "Vallibel Power Erathna PLC",
+      "mode": "add",
+      "command": "/add VPEL.N0000 PAP.N0000",
+      "note": null,
+      "files": [
+        "reports/VPEL.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/VPEL.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/VPEL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "387",
+      "requestedAt": "2026-11-21T13:07:29+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "20261121130736-PAP",
+      "ticker": "PAP.N0000",
+      "name": "Panasian Power PLC",
+      "mode": "add",
+      "command": "/add VPEL.N0000 PAP.N0000",
+      "note": null,
+      "files": [
+        "reports/PAP.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/PAP.N0000/2026-08-11_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/PAP.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "387",
+      "requestedAt": "2026-11-21T13:07:36+00:00",
+      "status": "pending"
     }
   ]
 }
