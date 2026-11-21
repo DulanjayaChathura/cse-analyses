@@ -923,7 +923,8 @@
     "Dividend: when does it resume?",
     "Project advances (Rs 10.9bn): confirm they move into plant as projects finish.",
     "Shareholders: did the Tundra funds keep selling (Shikari Global left the top 20 by September 2026)?",
-    "Beta: refresh in January 2027 with Damodaran's emerging-markets file and local 5-year betas."
+    "Beta: refresh in January 2027 with Damodaran's emerging-markets file and local 5-year betas.",
+    "Save the DCF's inputs in modelInputs (dcf, with the projects, joint ventures and minorities as dcf.addOn, id sotp) so the What if? panel and the bond-rate recalculation can move it; today it's only in the method's text."
   ],
   "changeLog": [
     {

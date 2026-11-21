@@ -900,7 +900,8 @@
     "Payment delays and curtailment by the NSO; receivables Rs 1.60bn at September 2026.",
     "Shareholders: further selling by Chairman Osman Kassim's Amana Bank account (−7.1m shares, March to September 2026); who Foss Ltd is.",
     "Medawachchiya dendro (mid-2027/28), the 50 MW Mullikulam wind project and the Rs 5bn transmission line award.",
-    "Beta: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas."
+    "Beta: refresh in January 2027 with Damodaran's emerging-markets file and three local 5-year betas.",
+    "Save the DCF's inputs in modelInputs (dcf, with the projects, joint ventures and minorities as dcf.addOn, id sotp) so the What if? panel and the bond-rate recalculation can move it; today it's only in the method's text."
   ],
   "changeLog": [
     {
