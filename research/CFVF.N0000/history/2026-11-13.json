@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CFVF.N0000",
+  "company": {
+    "name": "First Capital Holdings PLC",
+    "sector": "Diversified financials",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "CFVF.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (audited, includes ten-year summary)",
+      "Interim reports to 30 June and 30 September 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 39.6,
+    "date": "2026-09-30",
+    "source": "Closing price on 30 September 2026, Interim to 30 Sep 2026, p. 25",
+    "note": "The CSE data feed couldn't be reached and the share isn't yet in the site's price file, so this is the latest confirmed close. An undated TradingView quote seen on 13 November 2026 showed about Rs 36.60. The site replaces this with the daily CSE close when available. Range: July–September 2026 Rs 38.00–54.10; April–June 2026 Rs 49.80–63.00; January–March 2026 Rs 48.40–66.80."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A rate-cycle trading business now making losses, priced for boom-year returns",
+    "text": "First Capital Holdings (CFVF.N0000) is the listed holding company of the First Capital group, about 83% owned by Janashakthi: a government-securities primary dealer (First Capital Treasuries, 89.4% owned), corporate debt and equity trading, unit trusts (Rs 92.4bn under management), stockbroking and corporate advice. Its profit depends mostly on interest-rate moves: falling rates in 2023–2025 produced huge trading gains (EPS Rs 22.15 in 2023/24, Rs 11.58 in 2024/25, ROE 136% and 59%), but rising yields have reversed this. 2025/26 EPS fell to Rs 4.77 (after about Rs 1.05bn of catch-up VAT provisions), and after the 100-basis-point policy rate rise in May 2026 the group lost Rs 1.21bn in the six months to September 2026 (EPS −Rs 2.99; Q2 −Rs 1.39). NAV fell to Rs 16.42 from Rs 21.71 in March 2025, because it also paid out Rs 7.00 in dividends (147% of 2025/26 profit). It is very leveraged: total liabilities are 12.6 times equity (mostly repos funding government securities) and other borrowings are about 2.9 times equity.\n\nAt Rs 39.60 (closing price on 30 September 2026, from the interim report; a current CSE close wasn't available) it trades at 2.4x NAV, which needs a long-run ROE of about 36%: roughly its boom-years average. Four methods, using a through-the-cycle ROE of 24% in the base case, put fair value at about Rs 22.20, so the price is about 78% above it: overpriced. I'd buy only at up to Rs 18.90 and treat under Rs 16.60 as a strong buy, about 1.0–1.15x NAV. It passes only two of the four business tests (losses and heavy leverage), so it's \"avoid for now\". The upside case is a fall in interest rates, which would bring trading gains back quickly."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "Very high returns in good years and generous dividends, but losses in 2021/22 and again now, and heavy leverage.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "Five-year average about 50%",
+        "note": "ROE −14% (2021/22), 46%, 136%, 59%, 23% (2025/26); last 12 months about −27% (worked out). Passes over several years, but only because of the 2023–2025 rate-cut boom."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "Borrowings 2.9x equity",
+        "note": "Excluding repos, borrowings less cash were Rs 21.8bn against equity of Rs 7.4bn at 30 Sep 2026 (1.9x in March 2026). Total liabilities 12.6x equity. The primary dealer's capital ratio was 24.2% in March 2026 (not given for September)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2021/22 and H1 2026/27",
+        "note": "EPS −1.50, 5.78, 22.15, 11.58, 4.77 over five years, then −2.99 in the half year. Profit swings with interest rates."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Rs 34 paid on Rs 43 earned",
+        "note": "Dividends of Rs 34.00 a share over 2021/22–2025/26 against EPS of Rs 42.78; but 2025/26's Rs 7.00 was 147% of profit and nothing has been declared for 2026/27."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 22.2,
+    "buyPrice": 18.9,
+    "strongBuyPrice": 16.6,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 16.42,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 1.35x NAV). No cash-flow DCF: this is a leveraged trading and financial-services group, so book value and return on equity drive the value."
+  },
+  "dividend": {
+    "perShare": 7.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, Note 15 (p. 416)",
+    "note": "One interim dividend; Rs 7.50 for 2024/25 and Rs 17.25 for 2023/24. Nothing declared for 2026/27 by 30 September 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 16.42,
+      "unit": "Rs",
+      "note": "30 Sep 2026; Rs 19.40 in March 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.41,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": null,
+      "unit": "x",
+      "display": "n/m (loss)",
+      "note": "EPS −Rs 6.28 for the 12 months to Sep 2026 (worked out)"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 23.22,
+      "unit": "%",
+      "note": "2025/26; about −27% over the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield (last year)",
+      "value": 17.7,
+      "unit": "%",
+      "note": "Rs 7.00 for 2025/26; unlikely to be repeated soon"
+    },
+    {
+      "id": "leverage",
+      "label": "Liabilities to equity",
+      "value": 12.6,
+      "unit": "x",
+      "note": "30 Sep 2026; 7.6x in March 2026"
+    },
+    {
+      "id": "car",
+      "label": "Primary dealer capital ratio",
+      "value": 24.22,
+      "unit": "%",
+      "note": "March 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 16.04,
+      "unit": "Rs bn",
+      "display": "~Rs 16bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to September 2026 (unaudited)",
+      "text": "Loss to shareholders Rs 1.21bn (EPS −Rs 2.99) against a profit of Rs 3.26bn a year earlier; Q2 loss Rs 563mn (−Rs 1.39). Fair-value losses on securities were Rs 1.27bn and net trading income fell to Rs 0.73bn from Rs 3.95bn. The primary dealer lost Rs 537mn (a Rs 1.69bn trading loss on government securities) and corporate debt and equity dealing lost Rs 834mn."
+    },
+    {
+      "title": "Rates went the wrong way",
+      "text": "The Central Bank raised its policy rate by 100 basis points in May 2026 because of Middle East-driven inflation. Higher yields cut the value of the group's bond and debt holdings. The same sensitivity works in reverse: a fall in yields would bring gains back quickly."
+    },
+    {
+      "title": "Bigger balance sheet, smaller equity",
+      "text": "Total assets grew to Rs 101.0bn from Rs 74.2bn in six months, funded mainly by repos (Rs 69.3bn) and short-term borrowings (Rs 12.1bn), while equity fell to Rs 7.41bn. NAV per share dropped to Rs 16.42 from Rs 19.40."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Profit to shareholders Rs 1.93bn (EPS Rs 4.77) against Rs 4.69bn, after Rs 1.22bn of VAT on financial services, including about Rs 1.05bn of provisions to settle past years' assessments at First Capital Limited. Dividend Rs 7.00, 147% of profit. ROE 23.2%."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          -1.5,
+          5.78,
+          22.15,
+          11.58,
+          4.77,
+          -6.28
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026, worked out"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          -14.11,
+          46.16,
+          135.77,
+          58.97,
+          23.22,
+          -27.2
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Worked out on average equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          5.5,
+          1.55,
+          3.01,
+          11.1,
+          null
+        ],
+        "notes": [
+          "Loss",
+          "Worked out",
+          "Worked out",
+          "Annual report",
+          "Annual report",
+          "Loss"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          0,
+          2.25,
+          17.25,
+          7.5,
+          7.0,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Nothing declared yet"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          10.0,
+          15.05,
+          17.58,
+          21.71,
+          19.4,
+          16.42
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 16.42",
+      "reading": "30 September 2026; 2.4x at Rs 39.60. NAV fell 24% in 18 months: losses plus dividends above profit."
+    },
+    {
+      "method": "Return on equity",
+      "value": "−27% to 136%",
+      "reading": "Ten-year range; median about 37% but driven by the 2023–2025 rate cuts. Base case assumes 24% through the cycle."
+    },
+    {
+      "method": "P/E",
+      "value": "n/m",
+      "reading": "Loss over the last 12 months. Year-end P/E was 1.6–11x in the last four years: the market pays little for peak trading profits."
+    },
+    {
+      "method": "Dividends",
+      "value": "17.7% on last year",
+      "reading": "Rs 7.00 for 2025/26 was paid from earlier profits; a normalised dividend is about Rs 3."
+    },
+    {
+      "method": "Residual income",
+      "value": "Rs 18.8",
+      "reading": "Lowest method because it counts the current loss year before returns recover."
+    },
+    {
+      "method": "Leverage",
+      "value": "12.6x liabilities to equity",
+      "reading": "Normal for a primary dealer funded by repos, but small rate moves have large effects on equity."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 9.9,
+      "base": 23.6,
+      "bull": 46.0,
+      "weighted": 24.0,
+      "comment": "NAV Rs 16.42 × (ROE − growth) ÷ (cost of equity − growth); long-run ROE 14% / 24% / 35%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E on normalised earnings",
+      "bear": 11.5,
+      "base": 23.6,
+      "bull": 46.0,
+      "weighted": 24.5,
+      "comment": "Normalised EPS (long-run ROE × NAV) of Rs 2.30 / 3.94 / 5.75 at 5 / 6 / 8 times."
+    },
+    {
+      "id": "div",
+      "name": "Dividend model",
+      "bear": 8.9,
+      "base": 20.8,
+      "bull": 41.9,
+      "weighted": 21.5,
+      "comment": "Rs 0 / 1.00 / 3.00 in the next year, then 70% / 75% / 80% of normalised EPS, growing 5% / 6% / 7%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 6.3,
+      "base": 18.3,
+      "bull": 38.9,
+      "weighted": 18.8,
+      "comment": "ROE −5% / 5% / 15% in the next 12 months, recovering to 14% / 24% / 35% over three years; 70–80% payout."
+    }
+  ],
+  "modelsNote": "A trading and financial-services group, so instead of a cash-flow DCF I used book value methods (justified P/B and residual income), P/E on normalised earnings and a dividend model. All four depend mainly on the long-run ROE assumption.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20%",
+        "base": "18.5%",
+        "bull": "17%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "14%",
+        "base": "24%",
+        "bull": "35%"
+      },
+      {
+        "label": "Next 12 months ROE",
+        "bear": "−5%",
+        "base": "5%",
+        "bull": "15%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Normalised EPS × P/E",
+        "bear": "2.30 × 5",
+        "base": "3.94 × 6",
+        "bull": "5.75 × 8"
+      },
+      {
+        "label": "Payout",
+        "bear": "70%",
+        "base": "75%",
+        "bull": "80%"
+      }
+    ],
+    "averages": {
+      "bear": 9.1,
+      "base": 21.6,
+      "bull": 43.2
+    },
+    "common": "10-year government bond about 12.4% (9 Nov 2026) plus about 6 points for a highly leveraged, rate-sensitive business. Starting NAV Rs 16.42 (30 Sep 2026)."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "17%",
+      "18.5%",
+      "20%"
+    ],
+    "columns": [
+      "14%",
+      "24%",
+      "35%"
+    ],
+    "values": [
+      [
+        10.4,
+        21.2,
+        36.6
+      ],
+      [
+        9.2,
+        18.3,
+        31.2
+      ],
+      [
+        8.2,
+        16.1,
+        27.0
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Rs 39.60 needs a long-run ROE of about 36% at an 18.5% cost of equity on the justified P/B, the average of the boom years."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 22.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 18.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 16.6
+      }
+    ],
+    "averagePrice": 19.53,
+    "totalCost": 9765.0,
+    "note": "About Rs 9,765 in total, against Rs 19,800 at Rs 39.60.",
+    "realism": "Unrealistic for now: Rs 18.90 is about 52% below Rs 39.60 and far below 2026's low of Rs 38.00. It traded near these levels only in 2021/22 (about Rs 7.75 after the share split). More losses could bring the price down, but don't chase it."
+  },
+  "changeMyView": {
+    "higher": [
+      "Falling government-security yields (a policy rate cut), bringing trading gains back.",
+      "ROE back above 25% for two or more years without bigger leverage.",
+      "NAV growing again and dividends paid from current profit.",
+      "Lower leverage or a capital increase that strengthens the primary dealer."
+    ],
+    "lower": [
+      "Further rate rises or a sharp rise in bond yields.",
+      "Losses continuing into the second half of 2026/27, cutting NAV below Rs 15.",
+      "More tax or VAT assessments.",
+      "Funding stress in the repo market, or a cut in the primary dealer's capital ratio."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the Annual Report 2025/26 and the interim reports to 30 June and 30 September 2026 (unaudited). This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 78% above fair value of Rs 22.20.",
+    "Downside / upside": "Bear case Rs 9.10; bull case Rs 43.20, both below Rs 39.60.",
+    "Confidence": "Low: profit depends on interest-rate moves nobody can forecast.",
+    "Margin of safety": "Buy 15% below fair value (Rs 18.90), strong buy 25% below (Rs 16.60)."
+  },
+  "Business and moat": {
+    "What it does": "Primary dealer in government securities (First Capital Treasuries PLC, 89.44%), corporate debt and equity trading, unit trusts and private wealth (First Capital Asset Management, 98.70%; Rs 92.4bn under management), stockbroking (First Capital Equities, 100%), corporate advisory and trustee services.",
+    "Moat": "Moderate: a large, long-established dealer and fund manager with strong ratings (group A+), but profit depends on market moves.",
+    "Parent": "Janashakthi group holds about 83%; the public holds 16.98%."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "The main driver: higher yields cause losses, falling yields big gains.",
+    "Tax": "VAT on financial services assessments cost about Rs 1.05bn of provisions in 2025/26.",
+    "Liquidity": "Only 17% of shares are in public hands; 500 shares (about Rs 19,800) trade easily."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 18.90 or lower",
+    "Strong buy": "Rs 16.60 or lower"
+  },
+  "What this analysis doesn't cover": [
+    "Subsidiary reports (First Capital Treasuries' own accounts).",
+    "The primary dealer's capital ratio at September 2026 (not in the interim report).",
+    "A current CSE price: the latest confirmed close is 30 September 2026.",
+    "The annual report's investor-information page (p. 524) shows 2025/26 EPS Rs 6.47 and NAV Rs 21.10, which differ from the audited statements (Rs 4.77 and Rs 19.40); the audited figures are used."
+  ],
+  "fullText": "First Capital Holdings (CFVF.N0000) is the listed holding company of the First Capital group, about 83% owned by Janashakthi: a government-securities primary dealer (First Capital Treasuries, 89.4% owned), corporate debt and equity trading, unit trusts (Rs 92.4bn under management), stockbroking and corporate advice. Its profit depends mostly on interest-rate moves: falling rates in 2023–2025 produced huge trading gains (EPS Rs 22.15 in 2023/24, Rs 11.58 in 2024/25, ROE 136% and 59%), but rising yields have reversed this. 2025/26 EPS fell to Rs 4.77 (after about Rs 1.05bn of catch-up VAT provisions), and after the 100-basis-point policy rate rise in May 2026 the group lost Rs 1.21bn in the six months to September 2026 (EPS −Rs 2.99; Q2 −Rs 1.39). NAV fell to Rs 16.42 from Rs 21.71 in March 2025, because it also paid out Rs 7.00 in dividends (147% of 2025/26 profit). It is very leveraged: total liabilities are 12.6 times equity (mostly repos funding government securities) and other borrowings are about 2.9 times equity.\n\nAt Rs 39.60 (closing price on 30 September 2026, from the interim report; a current CSE close wasn't available) it trades at 2.4x NAV, which needs a long-run ROE of about 36%: roughly its boom-years average. Four methods, using a through-the-cycle ROE of 24% in the base case, put fair value at about Rs 22.20, so the price is about 78% above it: overpriced. I'd buy only at up to Rs 18.90 and treat under Rs 16.60 as a strong buy, about 1.0–1.15x NAV. It passes only two of the four business tests (losses and heavy leverage), so it's \"avoid for now\". The upside case is a fall in interest rates, which would bring trading gains back quickly.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 9.9 | 23.6 | 46.0 | 24.0\nP/E on normalised earnings | 11.5 | 23.6 | 46.0 | 24.5\nDividend model | 8.9 | 20.8 | 41.9 | 21.5\nResidual income | 6.3 | 18.3 | 38.9 | 18.8\nAverage | 9.1 | 21.6 | 43.2 | 22.2\n\nAssumptions\nCost of equity 20% / 18.5% / 17%; long-run ROE 14% / 24% / 35%; next 12 months ROE −5% / 5% / 15%; growth 5% / 6% / 7%; normalised EPS Rs 2.30 / 3.94 / 5.75 at 5 / 6 / 8 times; payout 70% / 75% / 80%.\n\nBusiness tests: 2 of 4 passed (returns over several years and dividends; fails on leverage and steady profit), so it's avoid for now (category 3).\n\n500-share plan\n200 shares up to Rs 22.20, 150 up to Rs 18.90, 150 up to Rs 16.60: about Rs 9,765 in total. The buy price is far below 2026's low of Rs 38.00, so it's unlikely to be reached soon.\n\nWhat would change my view\nHigher: falling bond yields, ROE back above 25% for two years, NAV growing again. Lower: further rate rises, continued losses, more tax assessments, funding stress."
+}
