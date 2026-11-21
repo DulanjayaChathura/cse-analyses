@@ -73,9 +73,9 @@
     ]
   },
   "valuation": {
-    "fairValue": 29.35,
-    "buyPrice": 24.95,
-    "strongBuyPrice": 22.01,
+    "fairValue": 29.05,
+    "buyPrice": 24.69,
+    "strongBuyPrice": 21.79,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -86,13 +86,13 @@
       "bull": 20
     },
     "nav": 9.99,
-    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Full redo on 14 November 2026: discount rates now come from the beta (cost of equity 14.7%, WACC 13.8%), and the DCF values the whole company at WACC less net debt. Corrected 2026-11-21: the dividend model now uses Damodaran's stable payout (1 − g ÷ ROE) after year 5, with EPS from the P/E method and the long-run ROE the other methods use; fair value Rs 28.7 → Rs 29.35.",
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Full redo on 14 November 2026: discount rates now come from the beta (cost of equity 14.7%, WACC 13.8%), and the DCF values the whole company at WACC less net debt. Corrected 2026-11-21: the dividend model now uses Damodaran's stable payout (1 − g ÷ ROE) after year 5, with EPS from the P/E method and the long-run ROE the other methods use; fair value Rs 28.7 → Rs 29.35. Recalculated 2026-11-21: DCF start cash, after-tax operating profit, maintenance, net debt and the residual income starting ROE now come from scripts/derived.py; fair value Rs 29.35 → Rs 29.05.",
     "textFigures": {
       "fairValue": 28.7,
       "buyPrice": 24.4,
       "strongBuyPrice": 21.5,
       "asOf": "2026-11-14",
-      "why": "the dividend model was corrected to Damodaran's two-stage form (after year 5 the payout becomes 1 − long-run growth ÷ ROE)"
+      "why": "the dividend model was corrected to Damodaran's two-stage form, and the DCF and residual income inputs are now calculated by code from the report figures in the research record instead of typed and rounded"
     }
   },
   "dividend": {
@@ -365,10 +365,10 @@
     {
       "id": "dcf",
       "name": "Whole-company DCF (WACC, less net debt)",
-      "bear": 10.17,
-      "base": 27.35,
-      "bull": 49.78,
-      "weighted": 26.68,
+      "bear": 9.64,
+      "base": 27.33,
+      "bull": 46.65,
+      "weighted": 25.89,
       "comment": "Cash before interest after maintenance capex Rs 24 / 36 / 42bn, growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%, less the reinvestment growth needs at a 15% / 20% / 25% return on capital (after-tax operating profit Rs 32 / 39 / 42bn), at WACC 15.1% / 13.8% / 12.5%, less net debt Rs 56.7bn. Value after year 5: 54% / 66% / 75% (bull just under the 75% flag)."
     },
     {
@@ -392,10 +392,10 @@
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 20.3,
-      "base": 27.77,
-      "bull": 40.68,
-      "weighted": 28.11,
+      "bear": 19.97,
+      "base": 27.37,
+      "bull": 40.16,
+      "weighted": 27.71,
       "comment": "Book value Rs 9.99 (September); ROE falling from 40% to 20% / 25% / 30% over ten years; 75% payout; cost of equity 16.2% / 14.7% / 13.2%; after year ten the excess return grows at the long-run rate."
     }
   ],
@@ -713,32 +713,32 @@
     },
     "debtWeight": 10.9,
     "shares": 9200.335,
-    "netDebt": 56.74,
+    "netDebt": 56.742,
     "dcf": {
       "years": 5,
       "bear": {
-        "start": 24,
-        "nopat": 32,
+        "start": 24.037,
+        "nopat": 35.209,
         "growth": 2,
         "longRun": 3.5,
         "roc": 15,
-        "maintenance": 48.2
+        "maintenance": 48.164
       },
       "base": {
-        "start": 36,
-        "nopat": 39,
+        "start": 36.022,
+        "nopat": 39.153,
         "growth": 5,
         "longRun": 4.5,
         "roc": 20,
-        "maintenance": 46.3
+        "maintenance": 46.302
       },
       "bull": {
-        "start": 42,
-        "nopat": 42,
+        "start": 40.269,
+        "nopat": 42.251,
         "growth": 7,
         "longRun": 5.5,
         "roc": 25,
-        "maintenance": 31.9
+        "maintenance": 31.932
       }
     },
     "pe": {
@@ -790,7 +790,7 @@
       "years": 10,
       "book": 9.99,
       "payout": 75,
-      "roeStart": 40,
+      "roeStart": 39.139,
       "bear": {
         "roe": 20,
         "longRun": 3.5
@@ -802,6 +802,32 @@
       "bull": {
         "roe": 30,
         "longRun": 5.5
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "ri.book": "latest.navPerShare",
+      "ri.roeStart": "ttm.roe",
+      "pe.base.eps": "quarterX4.eps",
+      "ddm.base.eps": "quarterX4.eps",
+      "dcf.bear.maintenance": "maintenance.bear",
+      "dcf.base.maintenance": "maintenance.base",
+      "dcf.bull.maintenance": "maintenance.bull",
+      "dcf.bear.start": "annual.cashBeforeInterest - maintenance",
+      "dcf.base.start": {
+        "calc": "ttm.cashBeforeInterest - maintenance - 4.5",
+        "basis": "valuationInputs: Cash after maintenance capex (start)"
+      },
+      "dcf.bull.start": "annual.cashBeforeInterest - maintenance",
+      "dcf.bear.nopat": {
+        "calc": "ttm.operatingProfit * (1 - 30 / 100)",
+        "basis": "valuationInputs: After-tax operating profit (start)"
+      },
+      "dcf.base.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bull.nopat": {
+        "calc": "ttm.operatingProfit * (1 - 16 / 100)",
+        "basis": "valuationInputs: After-tax operating profit (start)"
       }
     }
   },

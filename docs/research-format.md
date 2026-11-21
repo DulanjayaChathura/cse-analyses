@@ -14,6 +14,15 @@ The research record keeps everything worth carrying forward between analyses, so
 | `openQuestions` | Things to check in the next report. |
 | `changeLog` | One entry per analysis, oldest first: `{date, basedOn, summary, fairValue, buyPrice, strongBuyPrice, priceAtTime, archive}`. |
 
+## Report figures only
+
+`periods` keeps only what the reports print, each with its report and page. Never store a figure you worked out (a total of two lines, a ratio, a twelve-month figure, net debt, a tax rate): store the printed lines it comes from, and `scripts/derived.py` works it out, from one definition each. The validator flags any figure whose source or note says "worked out".
+
+- **Comparatives are their own period.** An interim report prints last year's same period beside this year's: store that column as its own period (e.g. `9M 2025`, from the Interim to 30 Sep 2026), with `"note": "Comparative column"`. That's how the code gets the twelve months to the latest quarter (latest annual + this year's year-to-date − last year's year-to-date).
+- **Lines, not totals or ratios:** `purchasePPE` and `purchaseIntangibles` (not `capexPaid`), `incomeTax` and `profitBeforeTax` (not `taxRate`), `borrowings`, `leaseLiabilities` and `cash` (not `netDebt`), `leasePrincipal`, `netProfitOwners` (profit attributable to owners), `totalEquity` (owners') at every period end the report prints, including the comparative column's (the statement of changes in equity gives it).
+- Ratios the company itself prints (its `roe`, `grossMarginPct`, `ebitda`) may be kept for reference, but the code uses its own definitions.
+- `python scripts/derived.py <CODE>` lists every derived figure and what's missing.
+
 ## Standard figure names
 
 Use these names where they apply, so periods can be compared:

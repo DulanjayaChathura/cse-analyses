@@ -464,9 +464,14 @@ def record_warnings(data):
     if not path.exists():
         return [f"No research record at research/{ticker}/record.json."]
     try:
-        record = json.loads(path.read_text(encoding="utf-8"))
+        raw = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         return [f"Research record is not valid JSON (line {e.lineno}): {e.msg}"]
+    import derived
+    try:
+        record = derived.augment(raw)   # with the figures code works out (capex paid from its two lines, etc.)
+    except Exception:
+        record = raw
     out = []
     sector = ((data.get("company") or {}).get("sector") or "").lower()
     annuals = sorted([p for p in record.get("periods") or [] if p.get("type") == "annual"],
@@ -489,9 +494,27 @@ def record_warnings(data):
             out.append(f"Research record: interestPaid missing for {annuals[-1].get('period')} (needed for WACC and the DCF).")
         elif f.get("section") not in ("operating", "financing"):
             out.append("Research record: interestPaid needs \"section\": \"operating\" or \"financing\".")
+    # The record keeps report figures only; worked-out figures come from scripts/derived.py.
+    worked = [f"{p.get('period')} {k}" for p in raw.get("periods") or [] for k, f in (p.get("figures") or {}).items()
+              if isinstance(f, dict) and "worked out" in f"{f.get('source') or ''} {f.get('note') or ''}".lower()]
+    if worked:
+        out.append("Research record: worked-out figures stored (keep the report figures they come from; "
+                   "scripts/derived.py works them out): " + ", ".join(worked[:8]) + (" …" if len(worked) > 8 else ""))
+    # modelInputs.derive: every derived field must equal what the code works out from the record.
+    if isinstance((data.get("modelInputs") or {}).get("derive"), dict):
+        import derived
+        vals, missing, problems = derived.resolve(data, raw)
+        for path, (v, calc) in vals.items():
+            try:
+                typed = derived._getp(data["modelInputs"], path)
+            except (KeyError, TypeError):
+                typed = None
+            if not isinstance(typed, (int, float)) or abs(typed - v) > max(0.0015, abs(v) * 0.0005):
+                out.append(f"modelInputs.{path} is {typed}, but {calc} gives {round(v, 3)} (run scripts/derived.py {ticker} --write).")
+        out += [f"modelInputs.derive: missing {m}" for m in missing] + [f"modelInputs.derive: {x}" for x in problems]
     # Every modelInputs `basis` must point at something stored in the record (no unrecorded assumptions).
-    names = {v.get("name") for v in record.get("valuationInputs") or []}
-    periods = {(p.get("period"), k) for p in record.get("periods") or [] for k in (p.get("figures") or {})}
+    names = {v.get("name") for v in raw.get("valuationInputs") or []}
+    periods = {(p.get("period"), k) for p in raw.get("periods") or [] for k in (p.get("figures") or {})}
     for mid, m in (data.get("modelInputs") or {}).items():
         if not isinstance(m, dict) or not isinstance(m.get("basis"), dict):
             continue

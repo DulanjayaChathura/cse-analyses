@@ -63,7 +63,8 @@ def find_record(code):
     code = code.upper()
     for d in sorted((ROOT / "research").glob(f"{code.split('.')[0]}*")):
         if (d / "record.json").exists() and (d.name == code or d.name.split(".")[0] == code.split(".")[0]):
-            return d.name, json.loads((d / "record.json").read_text(encoding="utf-8"))
+            import derived  # worked-out figures come from code, not from the record (derived.py)
+            return d.name, derived.augment(json.loads((d / "record.json").read_text(encoding="utf-8")))
     return None, None
 
 

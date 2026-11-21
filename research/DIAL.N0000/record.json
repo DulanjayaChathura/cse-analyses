@@ -212,6 +212,27 @@
       }
     },
     {
+      "period": "Q4 2024",
+      "periodEnd": "2024-12-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 45.795,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 4",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 6.765,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 4",
+          "note": "Quarter"
+        }
+      }
+    },
+    {
       "period": "FY 2024",
       "periodEnd": "2024-12-31",
       "months": 12,
@@ -279,12 +300,6 @@
           "unit": "Rs",
           "source": "Annual Report 2025, financial highlights (p. 15)"
         },
-        "capexPaid": {
-          "value": 34.395,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025, statement of cash flows (p. 209)",
-          "note": "PPE 30.12 + intangibles 4.28"
-        },
         "netDebtToEbitda": {
           "value": 1.0,
           "unit": "x",
@@ -332,12 +347,6 @@
           "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
           "note": null
         },
-        "taxRate": {
-          "value": 23.0,
-          "unit": "%",
-          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
-          "note": "Worked out: 3.705 ÷ 16.140"
-        },
         "totalEquity": {
           "value": 78.354,
           "unit": "Rs bn",
@@ -362,12 +371,6 @@
           "source": "Annual Report 2025, statement of financial position (p. 204)",
           "note": null
         },
-        "netDebt": {
-          "value": 86.428,
-          "unit": "Rs bn",
-          "source": "Worked out from Annual Report 2025, pp. 204–205",
-          "note": "Borrowings and leases less cash"
-        },
         "interestPaid": {
           "value": 9.471,
           "unit": "Rs bn",
@@ -380,6 +383,263 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025, statement of cash flows (p. 209)",
           "note": null
+        },
+        "incomeTax": {
+          "value": 3.705,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": "Comparative (restated)"
+        },
+        "profitBeforeTax": {
+          "value": 16.14,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": "Comparative (restated)"
+        },
+        "purchasePPE": {
+          "value": 30.12,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)"
+        },
+        "purchaseIntangibles": {
+          "value": 4.28,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)"
+        },
+        "leasePrincipal": {
+          "value": 4.167,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Principal element of lease payment; comparative column"
+        }
+      }
+    },
+    {
+      "period": "Q1 2025",
+      "periodEnd": "2025-03-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 43.294,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, p. 3",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 4.129,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Mar 2026, p. 3",
+          "note": "Quarter"
+        }
+      }
+    },
+    {
+      "period": "Q2 2025",
+      "periodEnd": "2025-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 44.126,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 5.064,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 4",
+          "note": "Quarter"
+        },
+        "eps": {
+          "value": 0.55,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 4"
+        }
+      }
+    },
+    {
+      "period": "Q3 2025",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 45.69,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; comparative"
+        },
+        "netProfit": {
+          "value": 5.693,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; comparative column (replaces 5.696, which had been calculated by hand from the year less the other quarters)"
+        },
+        "eps": {
+          "value": 0.62,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "financeCosts": {
+          "value": 3.294,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Quarter; comparative column"
+        }
+      }
+    },
+    {
+      "period": "9M 2025",
+      "periodEnd": "2025-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 133.109,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "grossProfit": {
+          "value": 69.762,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "operatingProfit": {
+          "value": 27.64,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "financeCosts": {
+          "value": 8.23,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "fxGainLoss": {
+          "value": -1.04,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "profitBeforeTax": {
+          "value": 19.027,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 4.142,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 14.885,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column; group profit for the period"
+        },
+        "netProfitOwners": {
+          "value": 14.891,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column; attributable to owners"
+        },
+        "eps": {
+          "value": 1.62,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "operatingCashFlow": {
+          "value": 50.643,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "interestPaid": {
+          "value": 6.582,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 16.437,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "purchaseIntangibles": {
+          "value": 3.402,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "leasePrincipal": {
+          "value": 2.938,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "dividendsPaid": {
+          "value": 17.785,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "depreciationAmortisation": {
+          "value": 36.006,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 9)",
+          "note": "Comparative segment note; includes impairment"
+        },
+        "capexBooked": {
+          "value": 16.962,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 10)",
+          "note": "Comparative segment note"
+        },
+        "totalEquity": {
+          "value": 84.024,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, statement of changes in equity (p. 5)",
+          "note": "Owners: stated capital 39.906 + reserves 44.118 at 30 Sep 2025 (both printed)"
+        }
+      }
+    },
+    {
+      "period": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 46.531,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 4",
+          "note": "Quarter"
+        },
+        "netProfit": {
+          "value": 5.875,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 4",
+          "note": "Quarter"
+        },
+        "fxGainLoss": {
+          "value": -0.34,
+          "unit": "Rs bn",
+          "source": "Interim to 31 Dec 2025, p. 4"
         }
       }
     },
@@ -461,17 +721,6 @@
           "value": 0.64,
           "unit": "x",
           "source": "Annual Report 2025, financial capital (p. 76)"
-        },
-        "capexPaid": {
-          "value": 27.692,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025, statement of cash flows (p. 209)",
-          "note": "PPE 23.486 + intangibles 4.206 (page reference corrected from p. 208)"
-        },
-        "freeCashFlow": {
-          "value": 33.66,
-          "unit": "Rs bn",
-          "source": "Worked out: operating cash flow less capex and lease principal (p. 208)"
         },
         "fxGainLoss": {
           "value": -1.38,
@@ -559,12 +808,6 @@
           "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
           "note": null
         },
-        "taxRate": {
-          "value": 22.2,
-          "unit": "%",
-          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
-          "note": "Worked out: tax 5.910 ÷ profit before tax 26.670. The company pays a 2% revenue-based tax under its BOI agreement (tax note, p. 277); subsidiaries 15–30%"
-        },
         "totalEquity": {
           "value": 90.13,
           "unit": "Rs bn",
@@ -588,12 +831,6 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025, statement of financial position (p. 204)",
           "note": null
-        },
-        "netDebt": {
-          "value": 68.675,
-          "unit": "Rs bn",
-          "source": "Worked out from Annual Report 2025, pp. 204–205",
-          "note": "Borrowings and leases less cash"
         },
         "interestPaid": {
           "value": 8.574,
@@ -619,126 +856,33 @@
           "unit": "Rs bn",
           "source": "Annual Report 2025, note 7 (p. 237)",
           "note": "No capitalised development costs in the intangible note"
-        }
-      }
-    },
-    {
-      "period": "Q4 2024",
-      "periodEnd": "2024-12-31",
-      "months": 3,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 45.795,
-          "unit": "Rs bn",
-          "source": "Interim to 31 Dec 2025, p. 4",
-          "note": "Quarter"
         },
-        "netProfit": {
-          "value": 6.765,
+        "incomeTax": {
+          "value": 5.91,
           "unit": "Rs bn",
-          "source": "Interim to 31 Dec 2025, p. 4",
-          "note": "Quarter"
-        }
-      }
-    },
-    {
-      "period": "Q1 2025",
-      "periodEnd": "2025-03-31",
-      "months": 3,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 43.294,
-          "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026, p. 3",
-          "note": "Quarter"
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)",
+          "note": "The company pays a 2% revenue-based tax under its BOI agreement (tax note, p. 277); subsidiaries 15–30%"
         },
-        "netProfit": {
-          "value": 4.129,
+        "profitBeforeTax": {
+          "value": 26.67,
           "unit": "Rs bn",
-          "source": "Interim to 31 Mar 2026, p. 3",
-          "note": "Quarter"
-        }
-      }
-    },
-    {
-      "period": "Q2 2025",
-      "periodEnd": "2025-06-30",
-      "months": 3,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 44.126,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, p. 4",
-          "note": "Quarter"
+          "source": "Annual Report 2025, statement of comprehensive income (p. 206)"
         },
-        "netProfit": {
-          "value": 5.064,
+        "purchasePPE": {
+          "value": 23.486,
           "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, p. 4",
-          "note": "Quarter"
+          "source": "Annual Report 2025, statement of cash flows (p. 209)"
         },
-        "eps": {
-          "value": 0.55,
-          "unit": "Rs",
-          "source": "Interim to 30 Jun 2026, p. 4"
-        }
-      }
-    },
-    {
-      "period": "Q3 2025",
-      "periodEnd": "2025-09-30",
-      "months": 3,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 45.69,
+        "purchaseIntangibles": {
+          "value": 4.206,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 4",
-          "note": "Quarter; comparative"
+          "source": "Annual Report 2025, statement of cash flows (p. 209)"
         },
-        "netProfit": {
-          "value": 5.693,
+        "leasePrincipal": {
+          "value": 4.165,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 4",
-          "note": "Quarter; comparative. Was 5.696, worked out from the year less other quarters (not a restatement)"
-        },
-        "eps": {
-          "value": 0.62,
-          "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 4"
-        }
-      }
-    },
-    {
-      "period": "Q4 2025",
-      "periodEnd": "2025-12-31",
-      "months": 3,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 46.531,
-          "unit": "Rs bn",
-          "source": "Interim to 31 Dec 2025, p. 4",
-          "note": "Quarter"
-        },
-        "netProfit": {
-          "value": 5.875,
-          "unit": "Rs bn",
-          "source": "Interim to 31 Dec 2025, p. 4",
-          "note": "Quarter"
-        },
-        "fxGainLoss": {
-          "value": -0.34,
-          "unit": "Rs bn",
-          "source": "Interim to 31 Dec 2025, p. 4"
+          "source": "Annual Report 2025, statement of cash flows (p. 209)",
+          "note": "Principal element of lease payment"
         }
       }
     },
@@ -760,11 +904,6 @@
           "unit": "Rs bn",
           "source": "Interim to 31 Mar 2026, p. 3",
           "note": "Quarter"
-        },
-        "eps": {
-          "value": 1.0,
-          "unit": "Rs",
-          "source": "Worked out: H1 2.10 less Q2 1.10"
         },
         "fxGainLoss": {
           "value": -0.011,
@@ -846,21 +985,10 @@
           "unit": "Rs bn",
           "source": "Interim to 30 Jun 2026, note 3"
         },
-        "ebitda": {
-          "value": 50.271,
-          "unit": "Rs bn",
-          "source": "Worked out: operating profit + depreciation and amortisation"
-        },
         "operatingCashFlow": {
           "value": 46.387,
           "unit": "Rs bn",
           "source": "Interim to 30 Jun 2026, p. 7"
-        },
-        "capexPaid": {
-          "value": 12.115,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, p. 7",
-          "note": "PPE 10.69 + intangibles 1.43"
         },
         "capexCommitted": {
           "value": 24.556,
@@ -871,11 +999,6 @@
           "value": 16.898,
           "unit": "Rs bn",
           "source": "Interim to 30 Jun 2026, note 19"
-        },
-        "freeCashFlow": {
-          "value": 32.36,
-          "unit": "Rs bn",
-          "source": "Worked out: operating cash flow less capex and lease principal (p. 7)"
         },
         "fxGainLoss": {
           "value": 0.505,
@@ -897,12 +1020,6 @@
           "value": 12.679,
           "unit": "Rs bn",
           "source": "Interim to 30 Jun 2026, p. 2"
-        },
-        "netDebt": {
-          "value": 63.97,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Jun 2026, p. 2",
-          "note": "Borrowings and leases less cash of 20.0; 51.3 without leases"
         },
         "provisionOtherLiabilities": {
           "value": 8.929,
@@ -926,6 +1043,16 @@
           "value": 15.85,
           "unit": "%",
           "source": "Interim to 30 Jun 2026, note 11"
+        },
+        "purchasePPE": {
+          "value": 10.69,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 7"
+        },
+        "purchaseIntangibles": {
+          "value": 1.43,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Jun 2026, p. 7"
         }
       }
     },
@@ -964,7 +1091,7 @@
           "value": 1.91,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 4",
-          "note": "Quarter; 3.294 a year earlier"
+          "note": "Quarter"
         },
         "netProfit": {
           "value": 9.245,
@@ -988,16 +1115,6 @@
           "unit": "Rs",
           "source": "Interim to 30 Sep 2026, note 20 (p. 14)",
           "note": "Third interim for 2026, declared after the quarter; ex-dividend 20 Nov, paid 10 Dec (HNB broker summary)"
-        },
-        "operatingCashFlow": {
-          "value": 20.697,
-          "unit": "Rs bn",
-          "source": "Worked out: nine months (p. 7) less H1"
-        },
-        "freeCashFlow": {
-          "value": 12.54,
-          "unit": "Rs bn",
-          "source": "Worked out: nine months less H1"
         }
       }
     },
@@ -1012,7 +1129,7 @@
           "value": 144.052,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Nine months; 133.109 a year earlier"
+          "note": "Nine months"
         },
         "grossProfit": {
           "value": 82.606,
@@ -1027,43 +1144,34 @@
         "operatingProfit": {
           "value": 39.331,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "27.640 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
         "depreciationAmortisation": {
           "value": 36.863,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, note 3 (p. 8)",
-          "note": "Includes impairment; 36.006 a year earlier"
-        },
-        "ebitda": {
-          "value": 76.193,
-          "unit": "Rs bn",
-          "source": "Worked out: operating profit + depreciation, amortisation and impairment"
+          "note": "Includes impairment"
         },
         "financeCosts": {
           "value": 6.117,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "8.230 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
         "netProfit": {
           "value": 28.546,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "28.543 to owners; 14.885 a year earlier"
+          "note": "Group profit for the period"
         },
         "eps": {
           "value": 3.1,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "1.62 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
         "fxGainLoss": {
           "value": -0.412,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "-1.040 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
         "dividendPerShare": {
           "value": 2.9,
@@ -1074,30 +1182,19 @@
         "operatingCashFlow": {
           "value": 67.084,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 7",
-          "note": "50.643 a year earlier"
-        },
-        "capexPaid": {
-          "value": 19.019,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 7",
-          "note": "PPE 15.37 + intangibles 3.65; 19.838 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 7"
         },
         "capexBooked": {
           "value": 34.987,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, note 3 (p. 9)",
-          "note": "Segment capital expenditure; 16.962 a year earlier"
+          "note": "Segment capital expenditure"
         },
         "leasePrincipal": {
           "value": 3.164,
           "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 7"
-        },
-        "freeCashFlow": {
-          "value": 44.9,
-          "unit": "Rs bn",
-          "source": "Worked out: operating cash flow less capex paid and lease principal (p. 7); 27.86 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Principal element of lease payment"
         },
         "contractedCapex": {
           "value": 15.707,
@@ -1130,17 +1227,6 @@
           "value": 20.575,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 2"
-        },
-        "netDebt": {
-          "value": 56.74,
-          "unit": "Rs bn",
-          "source": "Worked out from p. 2",
-          "note": "Borrowings and leases less cash; 43.54 without leases"
-        },
-        "debtToEquity": {
-          "value": 0.62,
-          "unit": "x",
-          "source": "Worked out: net debt including leases ÷ equity"
         },
         "provisionOtherLiabilities": {
           "value": 8.979,
@@ -1175,7 +1261,6 @@
           "value": 4.246,
           "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 7",
-          "note": "6.582 a year earlier",
           "section": "operating"
         },
         "dividendsPaid": {
@@ -1184,87 +1269,31 @@
           "source": "Interim to 30 Sep 2026, p. 7",
           "note": "The company statement of changes in equity shows Rs 26.68bn of dividends for the period (p. 6); the difference isn't explained"
         },
-        "taxRate": {
-          "value": 14.4,
-          "unit": "%",
+        "netProfitOwners": {
+          "value": 28.543,
+          "unit": "Rs bn",
           "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Worked out: 4.801 ÷ 33.347"
-        }
-      }
-    },
-    {
-      "period": "TTM Sep 2026",
-      "periodEnd": "2026-09-30",
-      "months": 12,
-      "type": "interim",
-      "audited": false,
-      "figures": {
-        "revenue": {
-          "value": 190.58,
+          "note": "Attributable to owners of the company"
+        },
+        "profitBeforeTax": {
+          "value": 33.347,
           "unit": "Rs bn",
-          "source": "Worked out: 2025 + 9M 2026 − 9M 2025"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
-        "netProfit": {
-          "value": 34.42,
+        "incomeTax": {
+          "value": 4.801,
           "unit": "Rs bn",
-          "source": "Worked out: 2025 + 9M 2026 − 9M 2025",
-          "note": "Owners"
+          "source": "Interim to 30 Sep 2026, p. 3"
         },
-        "eps": {
-          "value": 3.74,
-          "unit": "Rs",
-          "source": "Worked out: 2.26 + 3.10 − 1.62"
-        },
-        "roe": {
-          "value": 39.2,
-          "unit": "%",
-          "source": "Worked out: profit ÷ average of Sep 2025 and Sep 2026 equity"
-        },
-        "ebitda": {
-          "value": 98.54,
+        "purchasePPE": {
+          "value": 15.367,
           "unit": "Rs bn",
-          "source": "Worked out: 2025 EBITDA 86.0 + 9M 2026 76.19 − 9M 2025 63.65"
+          "source": "Interim to 30 Sep 2026, p. 7"
         },
-        "netDebtToEbitda": {
-          "value": 0.58,
-          "unit": "x",
-          "source": "Worked out"
-        },
-        "freeCashFlow": {
-          "value": 50.7,
+        "purchaseIntangibles": {
+          "value": 3.652,
           "unit": "Rs bn",
-          "source": "Worked out: 33.66 + 44.90 − 27.86",
-          "note": "Flattered: capex booked exceeds capex paid"
-        },
-        "grossMarginPct": {
-          "value": 57.1,
-          "unit": "%",
-          "source": "Worked out"
-        },
-        "operatingProfit": {
-          "value": 50.3,
-          "unit": "Rs bn",
-          "source": "Worked out: 2025 38.61 + 9M 2026 39.33 − 9M 2025 27.64",
-          "note": null
-        },
-        "operatingCashFlow": {
-          "value": 81.97,
-          "unit": "Rs bn",
-          "source": "Worked out: 65.53 + 67.08 − 50.64",
-          "note": null
-        },
-        "interestPaid": {
-          "value": 6.238,
-          "unit": "Rs bn",
-          "source": "Worked out: 8.574 + 4.246 − 6.582",
-          "note": null,
-          "section": "operating"
-        },
-        "depreciationAmortisation": {
-          "value": 49.02,
-          "unit": "Rs bn",
-          "source": "Worked out: 48.16 + 36.86 − 36.01",
-          "note": null
+          "source": "Interim to 30 Sep 2026, p. 7"
         }
       }
     }
@@ -1290,9 +1319,9 @@
     },
     {
       "name": "ROE path",
-      "value": "40% → 20% / 25% / 30% over ten years",
-      "reason": "Unchanged; discounted at the new cost of equity.",
-      "since": "2026-11-14"
+      "value": "39.1% (twelve months to Sep 2026, calculated) → 20% / 25% / 30% over ten years",
+      "reason": "Start = twelve months' profit ÷ average owners' equity at 30 Sep 2025 (84.02) and 30 Sep 2026 (91.87), scripts/derived.py; was typed as 40%. Long-run ROE unchanged.",
+      "since": "2026-11-21"
     },
     {
       "name": "2027 EPS × P/E",
@@ -1314,9 +1343,9 @@
     },
     {
       "name": "Cash after maintenance capex (start)",
-      "value": "Bear Rs 24bn / Base Rs 36bn / Bull Rs 42bn",
-      "reason": "Cash before interest. Bear = calculator FY 2025 (operating cash 65.53 + after-tax interest 6.67 − depreciation 48.16). Base = 12 months to Sep 2026 (81.97 + 4.85 − base maintenance 46.30 = 40.5) less about 4.5 for capex payables still to be paid. Bull ≈ calculator FY 2025 at bull maintenance (40.3) and the trailing figure.",
-      "since": "2026-11-14"
+      "value": "Bear Rs 24.04bn / Base Rs 36.02bn / Bull Rs 40.27bn (calculated)",
+      "reason": "Cash before interest = operating cash + interest paid × (1 − tax), less maintenance (scripts/derived.py). Bear = FY 2025 basis at bear maintenance; base = twelve months to Sep 2026 at base maintenance, less Rs 4.5bn for capex booked but still to be paid (capex booked 34.99 against 19.02 paid in the nine months, Interim to 30 Sep 2026, pp. 7 and 9); bull = FY 2025 basis at bull maintenance. The Rs 4.5bn is the only assumption. Was typed as 24 / 36 / 42; bull 42 sat between two figures, now 40.27 as defined.",
+      "since": "2026-11-21"
     },
     {
       "name": "Maintenance capex basis",
@@ -1332,9 +1361,9 @@
     },
     {
       "name": "After-tax operating profit (start)",
-      "value": "Bear Rs 32bn / Base Rs 39bn / Bull Rs 42bn",
-      "reason": "Trailing operating profit Rs 50.3bn taxed at 22% (base, the 2025 rate); bear at 30% with some fade, for the risk that the BOI revenue-tax deal ends (goodwill note, AR 2025 p. 241); bull 16%, near the 2026 rate. Was Rs 36 / 40 / 44bn worked out from net profit.",
-      "since": "2026-11-14"
+      "value": "Bear Rs 35.21bn / Base Rs 39.15bn / Bull Rs 42.25bn (calculated)",
+      "reason": "Twelve months' operating profit to Sep 2026 (Rs 50.30bn, scripts/derived.py) × (1 − tax). Tax: bear 30% (the standard rate, in case the BOI revenue-tax deal ends: goodwill note, AR 2025 p. 241); base the FY 2025 effective rate (22.16% = 5.910 ÷ 26.670, AR 2025 p. 206); bull 16%, near the nine-month 2026 rate (4.801 ÷ 33.347 = 14.4%). Was typed as 32 / 39 / 42: bear 32 included an unquantified 'fade', now dropped.",
+      "since": "2026-11-21"
     },
     {
       "name": "Growth check",
@@ -1422,6 +1451,16 @@
       "fairValue": 29.35,
       "buyPrice": 24.95,
       "strongBuyPrice": 22.01,
+      "priceAtTime": 50.2,
+      "archive": "research/DIAL.N0000/history/2026-11-14.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Owner's request in chat: keep only report figures in the record and let code work out the rest. Record: tax rates, net debt, free cash flow, EBITDA, capex paid totals and the whole trailing-twelve-months period replaced by the printed figures they come from; the nine months to Sep 2025 (comparative column, Interim to 30 Sep 2026) and equity at 30 Sep 2025 (p. 5) and 2024–25 lease principal (AR 2025 p. 209) added. Model inputs now filled by scripts/derived.py from modelInputs.derive: start cash bull 42 → 40.27 (as its definition says), bear after-tax operating profit 32 → 35.21 (unquantified fade dropped), residual income start ROE 40% → 39.14%, other inputs unchanged to the rounding. Not changed, as there's no recorded basis yet: bear and bull 2027 EPS (3.30 / 4.40) and the residual income payout (75%).",
+      "fairValue": 29.05,
+      "buyPrice": 24.69,
+      "strongBuyPrice": 21.79,
       "priceAtTime": 50.2,
       "archive": "research/DIAL.N0000/history/2026-11-14.json"
     }
