@@ -12,32 +12,32 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-15",
+  "analysisDate": "2026-11-21",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual Report 2025/26 (CSE download, re-read in full)",
+      "Annual Report 2025/26 (CSE download, read in full)",
       "Interim reports to 30 June and 30 September 2026 (CSE downloads)",
       "Annual Report 2024/25 (earlier read; FY 2024 figures)"
     ]
   },
   "price": {
-    "value": 171.75,
-    "date": "2026-11-13",
+    "value": 176.0,
+    "date": "2026-11-20",
     "source": "CSE closing price",
     "note": "July–September 2026 range Rs 152.00–173.00; April–June Rs 134.75–175.25; year to March 2026 Rs 69.10–175.00."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "An outstanding debt-free app business, but at an 18.8% required return the price is well above fair value",
-    "text": "Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000) runs Sri Lanka's leading ride-hailing and delivery app. It is an outstanding business: net cash of Rs 3.7bn, return on equity of 69% last year, and profit up 49% in the six months to September 2026, with a record September quarter (EPS Rs 2.35). This full redo (requested as /redo PKME full) re-read the three reports, recorded capex, software development, depreciation and working-capital figures, and applies the new required-return rule. A provisional beta of 1.03 gives a cost of equity of 18.8%, against 16% set by hand before, and that is why fair value falls from Rs 131 to about Rs 97. At Rs 171.75 (CSE close, 13 November 2026) the share is 21.5x trailing earnings and implies about 30% growth a year for seven years, or a required return near 14.7%. I'd buy at up to about Rs 83 and treat under Rs 73 as a strong buy. The business tests now pass 3 of 4 (an operating loss in 2021/22 fails the five-year steady-profit test), so it is still 'good' and stays on the watch list. The beta rests on web-search stand-ins and is the biggest uncertainty: at the old 16% cost of equity the new models give about Rs 131, the same as before."
+    "headline": "An outstanding debt-free app business, but at Rs 176 the price is about twice fair value",
+    "text": "Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000) runs Sri Lanka's leading ride-hailing and delivery app. It is an outstanding business: no borrowings, Rs 4.0bn of cash and deposits, return on equity of 71% over the last twelve months, and profit up 49% in the six months to September 2026, with a record September quarter (EPS Rs 2.35). This full redo (requested as /redo PKME full) rebuilt the research record from the three CSE reports using printed figures only, and moved every method into the site's valuation code. Fair value is now about Rs 83 (was Rs 97). The two main reasons: the P/E method now uses the stable-growth justified P/E rather than a hand-worked two-stage P/E, because the growth premium is already counted in the DCF and the dividend model; and the DCF's starting cash is taken from recorded figures rather than lifted by hand. At Rs 176 (CSE close, 20 November 2026) the share trades at 22x trailing earnings. To be worth that price, PickMe would need about 33% growth a year for seven years, or a required return near 13.7% against the 18.8% used here. I'd buy at up to about Rs 71 and treat under Rs 62 as a strong buy. The business tests still pass 3 of 4: an operating loss in 2021/22 fails the five-year steady-profit test. So it stays 'good' and on the watch list. The beta (1.03, from web-search stand-ins) is the biggest uncertainty: at a 16% cost of equity the base DCF alone gives about Rs 135."
   },
   "valuation": {
-    "fairValue": 97.2,
-    "buyPrice": 82.6,
-    "strongBuyPrice": 72.9,
+    "fairValue": 83.25,
+    "buyPrice": 70.76,
+    "strongBuyPrice": 62.44,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -48,17 +48,17 @@
       "bull": 20
     },
     "nav": 13.34,
-    "note": "Fair value weights the bear/base/bull averages of three methods (whole-company DCF, justified P/E, dividend model) 30/50/20: Rs 58.7 / 95.2 / 159.9, giving Rs 97.2 (about 12x trailing EPS). Discount rates come from the beta (cost of equity 18.8%; WACC the same, as there is no debt)."
+    "note": "Fair value averages three methods, each weighted bear/base/bull 30/50/20: the whole-company DCF plus fixed deposits (Rs 105.23), the justified P/E (Rs 57.92) and the dividend model (Rs 86.60). That gives Rs 83.25, about 10x trailing EPS. All values come from scripts/valuation.py. The cost of equity (18.8%) comes from the beta; WACC is the same because there is no debt."
   },
   "dividend": {
     "perShare": 4.3,
     "label": "for 2025/26",
-    "source": "Annual Report 2025/26, note 11",
+    "source": "Annual Report 2025/26, Chairman's message (p. 14) and note 11",
     "note": "Rs 1.70 interim and Rs 2.60 final",
     "latest": {
       "perShare": 2.75,
       "label": "interim for 2026/27",
-      "source": "Interim to 30 Sep 2026, p. 11"
+      "source": "Interim to 30 Sep 2026, p. 3"
     }
   },
   "keyMetrics": [
@@ -72,27 +72,27 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 12.9,
+      "value": 13.2,
       "unit": "x"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 21.5,
+      "value": 22.0,
       "unit": "x",
-      "note": "Trailing EPS Rs 8.00"
+      "note": "Trailing EPS Rs 8.00 (twelve months to Sep 2026)"
     },
     {
       "id": "roe",
       "label": "Return on equity",
-      "value": 68.7,
+      "value": 70.6,
       "unit": "%",
-      "note": "Year to March 2026"
+      "note": "Twelve months to Sep 2026, on average equity (68.7% for 2025/26, company figure)"
     },
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 2.5,
+      "value": 2.4,
       "unit": "%",
       "note": "Rs 4.30 for 2025/26"
     },
@@ -100,7 +100,8 @@
       "id": "payout",
       "label": "Payout ratio",
       "value": 65,
-      "unit": "%"
+      "unit": "%",
+      "note": "2025/26 and the 2026/27 interim"
     },
     {
       "id": "netDebtEquity",
@@ -108,7 +109,7 @@
       "value": -0.83,
       "unit": "x",
       "display": "Net cash",
-      "note": "Rs 4.0bn cash and deposits, Rs 0.32bn leases, no borrowings (Sep 2026)"
+      "note": "Cash Rs 1.72bn and fixed deposits Rs 2.28bn against leases Rs 0.32bn; no borrowings (Sep 2026)"
     },
     {
       "id": "revenueGrowth",
@@ -127,27 +128,27 @@
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 57.3,
+      "value": 58.75,
       "unit": "Rs bn",
-      "display": "~Rs 57bn"
+      "display": "~Rs 59bn"
     }
   ],
   "highlights": [
     {
       "title": "Three months to 30 September 2026 (unaudited)",
-      "text": "Revenue Rs 2.87bn (+37%), operating profit Rs 1.04bn (+48%), profit Rs 784mn (+53%), the best quarter so far; EPS Rs 2.35 (Rs 1.54). Monthly users about 2.1mn (+38%) and driver earners +58%. Trips and deliveries worth Rs 28.5bn."
+      "text": "Revenue Rs 2.87bn (+37%; +14% on the June quarter), operating profit Rs 1.04bn (+48%), profit Rs 784mn (+53%), the best quarter so far. EPS Rs 2.35 (Rs 1.54 a year earlier). Monthly users about 2.1mn (+38%) and driver earners +58%. Trips and deliveries worth Rs 28.5bn."
     },
     {
       "title": "Six months to 30 September 2026",
-      "text": "Revenue Rs 5.38bn (+38%), operating profit Rs 1.88bn (+44%), profit Rs 1.41bn (+49%), EPS Rs 4.24 (Rs 2.85). The June quarter was held back by fuel rationing. Interim dividend Rs 2.75 declared (65% payout)."
+      "text": "Revenue Rs 5.38bn (+38%), operating profit Rs 1.88bn (+44%), profit Rs 1.41bn (+49%), EPS Rs 4.24 (Rs 2.85). Fuel rationing held back the June quarter. An interim dividend of Rs 2.75 was declared (65% payout)."
     },
     {
       "title": "Cash and spending",
-      "text": "Operating cash flow Rs 1.95bn in the half; capex Rs 0.54bn (mostly own software development) against depreciation and amortisation Rs 0.46bn. Net cash Rs 3.68bn (cash and deposits Rs 4.0bn less leases Rs 0.32bn); no borrowings."
+      "text": "Operating cash flow Rs 1.95bn in the half. Capex was Rs 0.54bn (Rs 0.43bn of it own software development), against depreciation and software amortisation of Rs 0.40bn. The Rs 2.60 final dividend (Rs 0.87bn) was paid and Rs 1.06bn moved into deposits. Cash Rs 1.72bn plus deposits Rs 2.28bn, against leases Rs 0.32bn; no borrowings."
     },
     {
       "title": "Year to March 2026 (audited)",
-      "text": "Revenue Rs 8.68bn (+49%), operating profit Rs 3.05bn (+90%), profit Rs 2.20bn (+88%), EPS Rs 6.61, ROE 68.7%, dividends Rs 4.30. Operating cash flow Rs 3.41bn; capex Rs 0.96bn (Rs 0.81bn capitalised software development) against depreciation and amortisation Rs 0.80bn."
+      "text": "Revenue Rs 8.68bn (+49%), operating profit Rs 3.05bn (+90%, margin 35%), profit Rs 2.20bn (+88%), EPS Rs 6.61, dividends Rs 4.30. Operating cash flow Rs 3.41bn. Capex Rs 0.96bn (Rs 0.81bn capitalised software) against depreciation and amortisation of Rs 0.69bn. Disputed tax and VAT assessments under appeal: contingent liabilities Rs 0.84bn and Rs 1.66bn."
     }
   ],
   "history": {
@@ -172,7 +173,7 @@
           null,
           null,
           null,
-          "Trailing"
+          "Twelve months to Sep 2026"
         ]
       },
       {
@@ -189,7 +190,7 @@
           null,
           null,
           null,
-          "Trailing"
+          "Twelve months to Sep 2026"
         ]
       },
       {
@@ -198,15 +199,15 @@
         "unit": "%",
         "values": [
           48.5,
-          54.1,
+          54.0,
           68.7,
-          null
+          70.6
         ],
         "notes": [
-          null,
-          null,
-          null,
-          null
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Twelve months, on average equity"
         ]
       },
       {
@@ -217,13 +218,13 @@
           null,
           20.8,
           20.8,
-          21.5
+          22.0
         ],
         "notes": [
           "Not listed",
-          null,
-          null,
-          "At Rs 171.75"
+          "At Rs 73.10",
+          "At Rs 137.25",
+          "At Rs 176.00"
         ]
       },
       {
@@ -240,7 +241,7 @@
           "Before listing",
           null,
           null,
-          null
+          "Rs 2.75 interim declared for 2026/27"
         ]
       }
     ]
@@ -249,64 +250,64 @@
     {
       "method": "NAV",
       "value": "Rs 13.34",
-      "reading": "The price is 12.9x NAV (30 September 2026). Not a useful guide: the business needs very little capital."
+      "reading": "The price is 13.2x NAV (30 September 2026). Not a useful guide: the business needs very little capital."
     },
     {
       "method": "Return on equity",
-      "value": "68.7%",
-      "reading": "Year to March 2026 (54% and 49% in the two years before). Very high because equity is small and payables to drivers fund working capital."
+      "value": "70.6%",
+      "reading": "Twelve months to September 2026 (company figures: 49%, 54% and 69% for the last three years). Very high because equity is small and payables to drivers fund working capital."
     },
     {
       "method": "P/E",
-      "value": "21.5x",
-      "reading": "On trailing EPS of Rs 8.00 (18.3x the September quarter × 4). Year-end P/E 20.8x in 2025 and 2026. At an 18.8% cost of equity the justified forward P/E is about 9.4x in the base case."
+      "value": "22.0x",
+      "reading": "On trailing EPS of Rs 8.00 (18.7x the September quarter × 4). At an 18.8% cost of equity, the stable-growth justified P/E is 6.3x in the base case. The two-stage value of growth is in the DCF and the dividend model."
     },
     {
       "method": "Dividends",
-      "value": "2.5% yield",
-      "reading": "Rs 4.30 for 2025/26 (65% payout); Rs 2.75 interim declared for 2026/27. Cash after maintenance capex covered dividends 2.6x."
+      "value": "2.4% yield",
+      "reading": "Rs 4.30 for 2025/26 (65% payout); Rs 2.75 interim declared for 2026/27. Cash after maintenance capex covered 2025/26 dividends 3.2x."
     },
     {
       "method": "Required return",
       "value": "18.8% (WACC the same)",
-      "reading": "CAPM with a country premium, beta 1.03 (provisional). The old hand-set cost of equity was 16%."
+      "reading": "CAPM with a country premium, beta 1.03 (provisional)."
     },
     {
       "method": "Cash and debt",
       "value": "Net cash Rs 3.68bn",
-      "reading": "About Rs 11 a share at September 2026; no borrowings, only office leases."
+      "reading": "Cash Rs 1.72bn and deposits Rs 2.28bn less leases Rs 0.32bn, about Rs 11 a share at September 2026. Part of it is matched by Rs 1.23bn owed, mostly to drivers."
     }
   ],
   "models": [
     {
-      "id": "dcf",
-      "name": "Whole-company DCF (WACC, less net debt)",
-      "bear": 66.79,
-      "base": 113.22,
-      "bull": 196.81,
-      "weighted": 116.01,
-      "comment": "Cash before interest after maintenance capex Rs 2.5 / 2.8 / 3.0bn (2025/26: operating cash Rs 3.41bn less maintenance Rs 0.89 / 0.80 / 0.80bn; the last 12 months ran higher), after-tax operating profit Rs 2.4 / 2.5 / 2.6bn (trailing operating profit Rs 3.62bn at 30.9% tax), growing 12% / 18% / 24% a year for seven years, then 5% / 6% / 7%, less the reinvestment growth needs at a 40% / 60% / 80% return on new capital, at WACC 20.3% / 18.8% / 17.3% (equal to the cost of equity: no debt), plus net cash Rs 3.68bn at 30 September 2026. Value after year 7: 49% / 59% / 69%, under the 75% flag."
+      "id": "sotp",
+      "name": "Whole-company DCF + fixed deposits (WACC, less net debt)",
+      "bear": 49.94,
+      "base": 103.96,
+      "bull": 191.36,
+      "weighted": 105.23,
+      "comment": "Starting cash before interest, after maintenance capex, is Rs 1.91 / 2.73 / 3.18bn. Bear is after-tax operating profit plus depreciation; base is 2025/26 operating cash; bull is operating cash for the twelve months to September 2026. Each takes off maintenance capex of Rs 0.89 / 0.69 / 0.69bn. After-tax operating profit starts at Rs 2.11 / 2.50 / 2.88bn: 2025/26, the last twelve months, and the September quarter × 4, at the 30.9% tax rate. Both grow 12% / 18% / 24% a year for seven years, then 5% / 6% / 7%. Each year the DCF takes off the reinvestment that growth needs, at a 40% / 60% / 80% return on new capital, falling to 25% / 30% / 35% after year seven. Discounted at WACC 20.3% / 18.8% / 17.3%. Net cash of Rs 1.40bn is added back, plus the Rs 2.28bn of fixed deposits (Rs 6.83 a share). The value from after year seven is 48% / 57% / 66% of the total, under the 75% flag."
     },
     {
       "id": "pe",
-      "name": "P/E method (justified P/E)",
-      "bear": 56.4,
-      "base": 87.6,
-      "bull": 142.5,
-      "weighted": 89.22,
-      "comment": "EPS for the year to March 2027 of Rs 8.75 / 9.32 / 9.69 (H1 Rs 4.24 plus a second half 20% / 35% / 45% above last year's Rs 3.76) times 6.5 / 9.4 / 14.7: the two-stage forward P/E justified at the cost of equity when growth is paid for (12% / 18% / 24% for seven years with ROE 45% / 60% / 75%, then 5% / 6% / 7% with ROE 25% / 30% / 35%; payout = 1 − growth ÷ ROE). Base EPS is 1% below the run-rate (September quarter × 4 = Rs 9.40); bear is 7% below, allowing for fuel or competition setbacks."
+      "name": "P/E method (stable justified P/E)",
+      "bear": 45.75,
+      "base": 58.25,
+      "bull": 75.34,
+      "weighted": 57.92,
+      "comment": "EPS for the year to March 2027 is Rs 8.75 / 9.32 / 9.70: H1 Rs 4.24 plus a second half 20% / 35% / 45% above last year's Rs 3.76. The P/E is 5.2x / 6.3x / 7.8x, the stable-growth P/E justified at the cost of equity: (1 − growth ÷ ROE) ÷ (cost of equity − growth), with growth 5% / 6% / 7% and long-run ROE 25% / 30% / 35%. That growth is close to the 5.8% that reinvestment supports, so this is the value with no premium for the fast-growth years. Base EPS is 0.9% below the run-rate (September quarter × 4 = Rs 9.40); bear is 6.9% below, allowing for fuel or competition setbacks."
     },
     {
       "id": "ddm",
-      "name": "Dividend model",
-      "bear": 53.0,
-      "base": 84.9,
-      "bull": 140.5,
-      "weighted": 86.45,
-      "comment": "Dividends at the current 65% payout of the same EPS (Rs 5.7 / 6.1 / 6.3 this year), growing 12% / 18% / 24% for seven years, then 5% / 6% / 7% at an 80% payout, discounted at 20.3% / 18.8% / 17.3%. Dividend growth is within profit kept × ROE (24%); cash after maintenance capex covered 2025/26 dividends 2.6x."
+      "name": "Dividend model (two-stage)",
+      "bear": 53.04,
+      "base": 85.13,
+      "bull": 140.6,
+      "weighted": 86.6,
+      "comment": "Dividends start at the current 65% payout of the same EPS (Rs 5.7 / 6.1 / 6.3 this year). They grow 12% / 18% / 24% for seven years. After that, profit grows 5% / 6% / 7% with an 80% payout (1 − growth ÷ ROE). Discounted at 20.3% / 18.8% / 17.3%. Dividend growth is within profit kept × ROE (24%). Cash after maintenance capex covered 2025/26 dividends 3.2x, so the dividend isn't at risk."
     }
   ],
-  "modelsNote": "PickMe turns its profit into cash, so a whole-company DCF suits it, with a justified P/E and a dividend model alongside. NAV, P/B and residual income are left out: book value (Rs 13) is tiny next to earnings. Growth check: assumed 12% / 18% / 24% a year for seven years against −0.4% supported by 2025/26 capex-based reinvestment (−0.2% of after-tax operating profit) × return on capital (204%). All three are far above it, kept because this asset-light platform grows without much capital: most growth costs (driver and rider incentives, marketing, part of engineering pay) are already charged against profit, drivers own the cars, and payables to drivers fund working capital, so reinvestment was nil while revenue grew 49%. Profit kept × ROE gives 24%, above all three, and the DCF still charges growth ÷ 40–80% return on capital in reinvestment every year. R&D: development is already capitalised (Rs 0.81bn in 2025/26, amortised over 4 years) and research expensed isn't disclosed, so there's no separate R&D-adjusted row.",
+  "modelsNote": "PickMe turns its profit into cash, so a whole-company DCF suits it, with a justified P/E and a dividend model alongside. NAV, P/B and residual income are left out because book value (Rs 13) is tiny next to earnings. All three methods are calculated by scripts/valuation.py from the inputs saved in the analysis.\n\n**Growth check:** 12% / 18% / 24% a year is assumed for seven years. The growth supported by 2025/26 reinvestment is only 5.8%: reinvestment of 5.0% of after-tax operating profit × a 116% return on capital. All three cases are far above it. They are kept because the growth is already happening without capital: revenue rose 49% in 2025/26 and 38% in the first half of 2026/27, while reinvestment was only Rs 0.11bn. Most growth costs (incentives, marketing, most engineering pay) are charged against profit, drivers own the vehicles, and driver payables fund working capital. Profit kept × ROE gives 24%, above all three. The DCF also charges 20–30% of profit a year as reinvestment, far more than the business has needed. The P/E method uses only long-run growth of 5–7%, close to the supported rate.\n\n**Ratio checks:** beta 1.03, cost of equity 18.8% and WACC (equal to it, with net cash) are within the normal ranges. ROE of 70% is far above the 15% test. It is right for this company: equity is small, it holds no plant, and payables to drivers fund working capital. Lease cost of debt is 13.7%, within range of the 12.24% bond yield.",
   "scenarios": {
     "assumptions": [
       {
@@ -323,15 +324,15 @@
       },
       {
         "label": "Cash before interest after maintenance capex, start",
-        "bear": "Rs 2.5bn",
-        "base": "Rs 2.8bn",
-        "bull": "Rs 3.0bn"
+        "bear": "Rs 1.91bn",
+        "base": "Rs 2.73bn",
+        "bull": "Rs 3.18bn"
       },
       {
         "label": "After-tax operating profit, start",
-        "bear": "Rs 2.4bn",
-        "base": "Rs 2.5bn",
-        "bull": "Rs 2.6bn"
+        "bear": "Rs 2.11bn",
+        "base": "Rs 2.50bn",
+        "bull": "Rs 2.88bn"
       },
       {
         "label": "Growth: seven years, then long-term",
@@ -340,10 +341,10 @@
         "bull": "24%, then 7%"
       },
       {
-        "label": "Return on new capital (sets the reinvestment)",
-        "bear": "40%",
-        "base": "60%",
-        "bull": "80%"
+        "label": "Return on new capital: growth years, then after",
+        "bear": "40%, then 25%",
+        "base": "60%, then 30%",
+        "bull": "80%, then 35%"
       },
       {
         "label": "ROE: growth years, then long-term",
@@ -353,9 +354,9 @@
       },
       {
         "label": "EPS to March 2027 × justified P/E",
-        "bear": "8.75 × 6.5",
-        "base": "9.32 × 9.4",
-        "bull": "9.69 × 14.7"
+        "bear": "8.75 × 5.2",
+        "base": "9.32 × 6.3",
+        "bull": "9.70 × 7.8"
       },
       {
         "label": "Dividend this year (65% payout)",
@@ -365,14 +366,14 @@
       }
     ],
     "averages": {
-      "bear": 58.73,
-      "base": 95.24,
-      "bull": 159.94
+      "bear": 49.58,
+      "base": 82.45,
+      "bull": 135.77
     },
-    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% 10-year bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.03 (provisional). No borrowings, so WACC equals the cost of equity (lease cost of debt 13.8% has no weight with net cash). Tax 30.9% (2025/26 effective rate). Start cash: the calculator's 2025/26 figures (operating cash Rs 3.41bn, interest is in financing so nothing added back, less maintenance capex Rs 0.89 / 0.80 / 0.80bn = Rs 2.53 / 2.62 / 2.62bn); base and bull lifted towards the last 12 months (operating cash Rs 3.87bn). Long-run reinvestment = growth ÷ return on capital (5/40 = 13%, 6/60 = 10%, 7/80 = 9%). Per-share figures use 333.8mn shares."
+    "common": "The required return comes from CAPM with a country premium: risk-free 8.24% (the 12.24% 10-year bond less a 4.0% default spread), mature-market premium 4.2% plus country premium 6.08%, beta 1.03 (provisional). There are no borrowings, so WACC equals the cost of equity. The lease cost of debt (13.7%) has no weight because of the net cash. Tax is 30.9%, the 2025/26 effective rate. Maintenance capex is depreciation plus software amortisation (Rs 0.69bn), or in the bear case the two-year average capex booked (Rs 0.89bn). Long-run reinvestment = growth ÷ return on capital (5/25 = 20%, 6/30 = 20%, 7/35 = 20%). Per-share figures use 333.8mn shares. The fixed deposits (Rs 2.28bn) are added to the DCF at book."
   },
   "sensitivity": {
-    "title": "Whole-company DCF base case, Rs per share",
+    "title": "Whole-company DCF + deposits, base case, Rs per share",
     "rowLabel": "WACC",
     "columnLabel": "Growth for seven years",
     "rows": [
@@ -387,106 +388,106 @@
     ],
     "values": [
       [
-        103.1,
-        129.8,
-        164.2
+        95.2,
+        118.6,
+        148.7
       ],
       [
-        91.3,
-        113.2,
-        141.4
+        84.7,
+        104.0,
+        128.6
       ],
       [
-        82.0,
-        100.3,
-        123.7
+        76.4,
+        92.5,
+        113.0
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Even at a 17.3% WACC and 24% growth for seven years, the DCF gives about Rs 164, below Rs 171.75. The price needs about 30% growth a year for seven years at 18.8%, or a WACC near 14.7% with base growth."
+    "note": "Even at a 17.3% WACC and 24% growth for seven years, the DCF gives about Rs 149, below Rs 176. The price needs about 33% growth a year for seven years at 18.8%, or a WACC near 13.7% with base growth (calculated with scripts/valuation.py)."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 97.2
+        "maxPrice": 83.25
       },
       {
         "shares": 150,
-        "maxPrice": 82.6
+        "maxPrice": 70.76
       },
       {
         "shares": 150,
-        "maxPrice": 72.9
+        "maxPrice": 62.44
       }
     ],
-    "averagePrice": 85.53,
-    "totalCost": 42765,
-    "note": "About Rs 42,765 in total, against Rs 85,875 at Rs 171.75.",
-    "realism": "Not realistic in the near term. Rs 97 needs a fall of over 40%. Since April 2026 the share has held Rs 134.75–175.25; it last traded below Rs 97 in mid-2025 (Rs 69.10–81.40 in April–June 2025). Only a growth scare (a price war, fuel shortages, new regulation) or a market sell-off would bring these prices. If the beta is revised down in January, the buy levels will rise."
+    "averagePrice": 73.26,
+    "totalCost": 36630,
+    "note": "About Rs 36,630 in total, against Rs 88,000 at Rs 176.",
+    "realism": "Not realistic in the near term. Rs 83 needs a fall of about 53%. Since April 2026 the share has traded at Rs 134.75–175.25, and it closed at Rs 176 on 20 November 2026. It last traded near these levels in April–June 2025 (Rs 69.10–81.40). Only a growth scare (a price war, fuel shortages, a tax ruling, new regulation) or a market sell-off would bring them. A lower beta in January would raise the buy levels."
   },
   "changeMyView": {
     "higher": [
-      "A lower beta once Damodaran's emerging-markets figures can be checked (each 0.1 off the beta adds roughly Rs 10 to fair value).",
-      "Growth staying above 30% for longer, or delivery and new markets adding profit.",
+      "A lower beta once Damodaran's emerging-markets figures can be checked: each 0.1 off the beta takes about 1 point off the required return and adds roughly Rs 10 to fair value.",
+      "Growth staying above 30% for longer, or delivery, courier and events adding profit.",
       "Lower bond yields or a smaller Sri Lanka default spread.",
       "A higher payout or special dividends from the Rs 4bn cash pile."
     ],
     "lower": [
-      "A strong competitor cutting prices (the take rate held at 10.3% last year).",
-      "Fuel shortages or rationing coming back (they hit the June quarter).",
+      "A strong competitor cutting prices (the take rate held at 10.3% in 2025/26).",
+      "Fuel shortages or rationing coming back (they hit the June 2026 quarter).",
+      "Tax and VAT appeals lost: contingent liabilities Rs 0.84bn and Rs 1.66bn at March 2026, about Rs 7.50 a share together.",
       "New rules on ride-hailing, driver pay or digital taxes.",
-      "Software spending rising much faster than revenue, or capitalised development being written off.",
-      "Growth slowing sharply as the app matures."
+      "Software spending rising much faster than revenue, or capitalised development being written off."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, and the beta is provisional, so check the price before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited and the beta is provisional, so check the price before ordering. This is analysis, not personal financial advice."
   },
   "quality": {
     "rating": "good",
     "passed": 3,
     "outOf": 4,
-    "reason": "Very high returns, no debt and profit that turns into cash. Re-scored 15 November 2026 from the re-read reports: the steady-profit test now fails, because the annual report's chart shows an operating loss in 2021/22, inside five years. Still 'good' (3 of 4).",
-    "assessed": "2026-11-15",
+    "reason": "Very high returns, no debt and profit that turns into cash. Re-scored on 21 November 2026 from the rebuilt record, and unchanged at 3 of 4. The steady-profit test fails because of an operating loss in 2021/22, inside five years. Still 'good' (category 2, watch list).",
+    "assessed": "2026-11-21",
     "tests": [
       {
         "id": "returns",
         "label": "Return on equity of 15% or more",
         "pass": true,
-        "value": "68.7%",
-        "note": "48.5%, 54.1% and 68.7% in the last three years."
+        "value": "70.6%",
+        "note": "Company figures 49%, 54% and 68.7% for 2023/24 to 2025/26; 70.6% over the twelve months to September 2026 on average equity."
       },
       {
         "id": "debt",
         "label": "Net debt no more than equity",
         "pass": true,
         "value": "Net cash",
-        "note": "No borrowings; cash and deposits Rs 4.0bn against leases Rs 0.32bn (Sep 2026)."
+        "note": "No borrowings. Cash Rs 1.72bn and deposits Rs 2.28bn against leases Rs 0.32bn (September 2026)."
       },
       {
         "id": "steady",
         "label": "Steady profit: no loss in five years, no one-offs",
         "pass": false,
         "value": "Loss in 2021/22",
-        "note": "Profit rising fast for three years (EPS Rs 2.05, 3.51, 6.61), but the operating profit chart in the 2025/26 annual report (p. 42) shows an operating loss in 2021/22 and about break-even in 2020/21 and 2022/23. The exact figures aren't given in the reports read."
+        "note": "Profit is rising fast (EPS Rs 2.05, 3.51, 6.61; Rs 8.00 for the last twelve months). The operating profit chart in the 2025/26 annual report (p. 42) shows an operating loss in 2021/22 and about break-even in 2020/21 and 2022/23. The exact figures aren't printed."
       },
       {
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": true,
         "value": "Yes",
-        "note": "Operating cash flow Rs 3.41bn against profit Rs 2.20bn in 2025/26 (Rs 1.84bn vs 1.17bn the year before); cash after maintenance capex covered dividends 2.6x."
+        "note": "Operating cash flow Rs 3.41bn against profit Rs 2.20bn in 2025/26 (Rs 1.84bn against Rs 1.17bn the year before). Cash after maintenance capex covered dividends 3.2x."
       }
     ]
   },
   "requiredReturn": {
     "beta": 1.03,
-    "betaBasis": "Provisional. Half Damodaran's Software (Internet) global unlevered, cash-corrected beta 1.34 and half his US Transportation unlevered beta 0.71 (web-search extracts; his emerging-markets file couldn't be opened in this run) = 1.03; net cash, so no relevering. No local 5-year beta exists (listed October 2024); 1-year betas 0.51–0.65 ignored. Refresh in January 2027.",
+    "betaBasis": "Provisional. Half Damodaran's global Software (Internet) unlevered beta (1.34, cash-corrected) and half US Transportation (0.71, January 2026), both web-search stand-ins because his emerging-markets file couldn't be opened. Not relevered, because the company has net cash. No local 5-year beta exists: the share listed in October 2024. Refresh in January 2027.",
     "riskFree": 8.24,
     "matureERP": 4.2,
     "countryPremium": 6.08,
@@ -495,22 +496,473 @@
       "base": 18.8,
       "bull": 17.3
     },
-    "costOfDebt": 13.78,
+    "costOfDebt": 13.66,
     "wacc": {
       "bear": 20.3,
       "base": 18.8,
       "bull": 17.3
     },
     "debtWeight": 0.0,
-    "asOf": "2026-11-15",
+    "asOf": "2026-11-21",
     "sources": [
-      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
-      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
-      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
-      "Cost of debt: lease interest paid Rs 0.047bn ÷ average lease liabilities Rs 0.34bn (Annual Report 2025/26, pp. 125, 143); no weight, as there is no net debt",
-      "Weights: market cap Rs 57.3bn at Rs 171.75 (CSE close 13 Nov 2026), net cash Rs 3.68bn (30 Sep 2026)"
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0% (14 Nov 2026); mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Software (Internet) and US Transportation, via web search (15 Nov 2026)",
+      "Weights: market cap Rs 58.75bn at Rs 176 (CSE close 20 Nov 2026), net cash Rs 1.40bn (30 Sep 2026)"
     ],
-    "note": "Cost of equity = 8.24% + 1.03 × (4.2% + 6.08%) = 18.8%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares, towards the high end because the internet-software stand-in beta (1.34) is a global figure. WACC equals the cost of equity because the company has net cash. The 13.8% lease cost of debt is inside the house range (bond yield −4 / +8 points) and has no weight."
+    "note": "Cost of equity = 8.24% + 1.03 × (4.2% + 6.08%) = 18.8%; bear +1.5, bull −1.5 points. Net cash, so the debt weight is 0 and WACC equals the cost of equity. Cost of debt is lease interest ÷ average leases (2025/26) and carries no weight."
   },
-  "fullText": "Summary: Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000) runs Sri Lanka's leading ride-hailing and delivery app. It is an outstanding business: net cash of Rs 3.7bn, return on equity of 69% last year, and profit up 49% in the six months to September 2026, with a record September quarter (EPS Rs 2.35). This full redo (requested as /redo PKME full) re-read the three reports, recorded capex, software development, depreciation and working-capital figures, and applies the new required-return rule. A provisional beta of 1.03 gives a cost of equity of 18.8%, against 16% set by hand before, and that is why fair value falls from Rs 131 to about Rs 97. At Rs 171.75 (CSE close, 13 November 2026) the share is 21.5x trailing earnings and implies about 30% growth a year for seven years, or a required return near 14.7%. I'd buy at up to about Rs 83 and treat under Rs 73 as a strong buy. The business tests now pass 3 of 4 (an operating loss in 2021/22 fails the five-year steady-profit test), so it is still 'good' and stays on the watch list. The beta rests on web-search stand-ins and is the biggest uncertainty: at the old 16% cost of equity the new models give about Rs 131, the same as before.\n\nPrice and key figures\nPrice: Rs 171.75 (CSE closing price, 13 November 2026). Please check it live. In July–September 2026 it traded between Rs 152.00 and Rs 173.00, and in April–June between Rs 134.75 and Rs 175.25. It closed the year to March 2026 at Rs 137.25 (range Rs 69.10–175.00), up from Rs 73.10 a year earlier.\nSeptember quarter 2026 (unaudited): revenue Rs 2.87bn (up 37%), operating profit Rs 1.04bn (up 48%), profit Rs 784mn (up 53%), EPS Rs 2.35 against Rs 1.54. The best quarter so far.\nSix months to 30 September 2026: revenue Rs 5.38bn (up 38%), operating profit Rs 1.88bn (up 44%), profit Rs 1.41bn (up 49%), EPS Rs 4.24 against Rs 2.85. Fuel rationing held back the June quarter. Trips and deliveries worth Rs 53.8bn (GTV, up 43%); about 2.1mn monthly users in the September quarter (up 38%) and 58% more drivers earning.\nYear to March 2026 (audited): revenue Rs 8.68bn (up 49%), operating profit Rs 3.05bn (up 90%), profit Rs 2.20bn (up 88%), EPS Rs 6.61, ROE 68.7%, dividends Rs 4.30 (65% of profit). Take rate 10.3% of GTV, the same as the year before.\nCash and spending: operating cash flow Rs 3.41bn in 2025/26 and Rs 1.95bn in the half year. Capex Rs 0.96bn in 2025/26, of which Rs 0.81bn was the company's own software development (engineering pay capitalised and amortised over four years), against depreciation and amortisation of Rs 0.80bn. So most capex keeps the platform running and current; only about Rs 0.16bn was growth. Working capital released Rs 0.16bn, because money owed to drivers and merchants grows with the business.\nBalance sheet: no borrowings, only office leases (Rs 0.32bn). Cash and deposits Rs 4.0bn at September 2026, so net cash Rs 3.68bn (about Rs 11 a share). NAV Rs 13.34.\nDividend: Rs 4.30 for 2025/26 (Rs 1.70 interim and Rs 2.60 final); an interim of Rs 2.75 declared for 2026/27 (65% payout).\nHistory: EPS Rs 2.05 (2023/24), Rs 3.51 (2024/25), Rs 6.61 (2025/26), Rs 8.00 for the last 12 months. Listed on the CSE in October 2024. The annual report's chart shows an operating loss in 2021/22.\n\nRequired return\nCost of equity = risk-free 8.24% (12.24% 10-year bond less a 4.0% default spread) + beta 1.03 × (mature premium 4.2% + country premium 6.08%) = 18.8%; bear 20.3%, bull 17.3%. The beta (provisional) is half Damodaran's internet-software beta (1.34, global) and half his transportation beta (0.71, US), because PickMe is a software platform whose demand is transport. His emerging-markets file couldn't be opened, and no local 5-year beta exists yet (listed October 2024). There are no borrowings, so WACC equals the cost of equity. The old analysis used 16% set by hand.\n\nMethods\nNAV (Rs 13.34): 12.9x. Not useful: the business needs very little capital.\nReturn on equity: 68.7% in 2025/26 (54% and 49% before). Very high because equity is small and drivers' payables fund working capital.\nP/E: 21.5x trailing EPS of Rs 8.00; 18.3x the September quarter × 4.\nDividends: 2.5% yield; cash after maintenance capex covered 2025/26 dividends 2.6x.\nWhole-company DCF: Rs 66.8 / 113.2 / 196.8, weighted Rs 116.0. Cash before interest after maintenance capex Rs 2.5 / 2.8 / 3.0bn (2025/26: operating cash Rs 3.41bn less maintenance Rs 0.89 / 0.80 / 0.80bn; the last 12 months ran higher), after-tax operating profit Rs 2.4 / 2.5 / 2.6bn (trailing operating profit Rs 3.62bn at 30.9% tax), growing 12% / 18% / 24% a year for seven years, then 5% / 6% / 7%, less the reinvestment growth needs at a 40% / 60% / 80% return on new capital, at WACC 20.3% / 18.8% / 17.3% (equal to the cost of equity: no debt), plus net cash Rs 3.68bn at 30 September 2026. Value after year 7: 49% / 59% / 69%, under the 75% flag.\nP/E method: Rs 56.4 / 87.6 / 142.5, weighted Rs 89.2. EPS for the year to March 2027 of Rs 8.75 / 9.32 / 9.69 (H1 Rs 4.24 plus a second half 20% / 35% / 45% above last year's Rs 3.76) times 6.5 / 9.4 / 14.7: the two-stage forward P/E justified at the cost of equity when growth is paid for (12% / 18% / 24% for seven years with ROE 45% / 60% / 75%, then 5% / 6% / 7% with ROE 25% / 30% / 35%; payout = 1 − growth ÷ ROE). Base EPS is 1% below the run-rate (September quarter × 4 = Rs 9.40); bear is 7% below, allowing for fuel or competition setbacks.\nDividend model: Rs 53.0 / 84.9 / 140.5, weighted Rs 86.5. Dividends at the current 65% payout of the same EPS (Rs 5.7 / 6.1 / 6.3 this year), growing 12% / 18% / 24% for seven years, then 5% / 6% / 7% at an 80% payout, discounted at 20.3% / 18.8% / 17.3%. Dividend growth is within profit kept × ROE (24%); cash after maintenance capex covered 2025/26 dividends 2.6x.\n\nPickMe turns its profit into cash, so a whole-company DCF suits it, with a justified P/E and a dividend model alongside. NAV, P/B and residual income are left out: book value (Rs 13) is tiny next to earnings. Growth check: assumed 12% / 18% / 24% a year for seven years against −0.4% supported by 2025/26 capex-based reinvestment (−0.2% of after-tax operating profit) × return on capital (204%). All three are far above it, kept because this asset-light platform grows without much capital: most growth costs (driver and rider incentives, marketing, part of engineering pay) are already charged against profit, drivers own the cars, and payables to drivers fund working capital, so reinvestment was nil while revenue grew 49%. Profit kept × ROE gives 24%, above all three, and the DCF still charges growth ÷ 40–80% return on capital in reinvestment every year. R&D: development is already capitalised (Rs 0.81bn in 2025/26, amortised over 4 years) and research expensed isn't disclosed, so there's no separate R&D-adjusted row.\n\nAssumptions (bear / base / bull)\nCost of equity (beta 1.03): 20.3% / 18.8% / 17.3%.\nWACC: 20.3% / 18.8% / 17.3%.\nCash before interest after maintenance capex, start: Rs 2.5bn / Rs 2.8bn / Rs 3.0bn.\nAfter-tax operating profit, start: Rs 2.4bn / Rs 2.5bn / Rs 2.6bn.\nGrowth: seven years, then long-term: 12%, then 5% / 18%, then 6% / 24%, then 7%.\nReturn on new capital (sets the reinvestment): 40% / 60% / 80%.\nROE: growth years, then long-term: 45% → 25% / 60% → 30% / 75% → 35%.\nEPS to March 2027 × justified P/E: 8.75 × 6.5 / 9.32 × 9.4 / 9.69 × 14.7.\nDividend this year (65% payout): Rs 5.7 / Rs 6.1 / Rs 6.3.\nRequired return from CAPM with a country premium: risk-free 8.24% (12.24% 10-year bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.03 (provisional). No borrowings, so WACC equals the cost of equity (lease cost of debt 13.8% has no weight with net cash). Tax 30.9% (2025/26 effective rate). Start cash: the calculator's 2025/26 figures (operating cash Rs 3.41bn, interest is in financing so nothing added back, less maintenance capex Rs 0.89 / 0.80 / 0.80bn = Rs 2.53 / 2.62 / 2.62bn); base and bull lifted towards the last 12 months (operating cash Rs 3.87bn). Long-run reinvestment = growth ÷ return on capital (5/40 = 13%, 6/60 = 10%, 7/80 = 9%). Per-share figures use 333.8mn shares.\nRatio checks: ROE of 69% and return on capital of 204% are far above normal ranges, explained by an asset-light platform with negative working capital; the models fade ROE to 25–35% over time. Cost of equity 18.8% is inside the 12–22% range. Long-run growth (5–7%) is below the 12.24% bond yield and WACC. The bear EPS is 7% below the run-rate and the base 1% below, within the 10% rule.\n\nFair value\nScenario averages: Rs 58.7 / 95.2 / 159.9. Weighted 30/50/20: fair value Rs 97.2. Buy price (15% below): Rs 82.6. Strong buy (25% below): Rs 72.9. At Rs 171.75 the share is about 77% above fair value.\nSensitivity: Even at a 17.3% WACC and 24% growth for seven years, the DCF gives about Rs 164, below Rs 171.75. The price needs about 30% growth a year for seven years at 18.8%, or a WACC near 14.7% with base growth.\n\nBusiness tests (3 of 4, 'good')\n- Return on equity of 15% or more: pass (68.7%). 48.5%, 54.1% and 68.7% in the last three years.\n- Net debt no more than equity: pass (Net cash). No borrowings; cash and deposits Rs 4.0bn against leases Rs 0.32bn (Sep 2026).\n- Steady profit: no loss in five years, no one-offs: fail (Loss in 2021/22). Profit rising fast for three years (EPS Rs 2.05, 3.51, 6.61), but the operating profit chart in the 2025/26 annual report (p. 42) shows an operating loss in 2021/22 and about break-even in 2020/21 and 2022/23. The exact figures aren't given in the reports read.\n- Profit turns into cash and dividends: pass (Yes). Operating cash flow Rs 3.41bn against profit Rs 2.20bn in 2025/26 (Rs 1.84bn vs 1.17bn the year before); cash after maintenance capex covered dividends 2.6x.\nCategory: watch list (good business, price above the buy price). Unchanged, although the steady-profit test has moved from pass to fail.\n\nBuy plan for 500 shares\n- 200 shares at up to Rs 97.2\n- 150 shares at up to Rs 82.6\n- 150 shares at up to Rs 72.9\nAverage Rs 85.53; About Rs 42,765 in total, against Rs 85,875 at Rs 171.75.\nHow realistic: Not realistic in the near term. Rs 97 needs a fall of over 40%. Since April 2026 the share has held Rs 134.75–175.25; it last traded below Rs 97 in mid-2025 (Rs 69.10–81.40 in April–June 2025). Only a growth scare (a price war, fuel shortages, new regulation) or a market sell-off would bring these prices. If the beta is revised down in January, the buy levels will rise.\n\nWhat would change the view\nHigher: A lower beta once Damodaran's emerging-markets figures can be checked (each 0.1 off the beta adds roughly Rs 10 to fair value). Growth staying above 30% for longer, or delivery and new markets adding profit. Lower bond yields or a smaller Sri Lanka default spread. A higher payout or special dividends from the Rs 4bn cash pile.\nLower: A strong competitor cutting prices (the take rate held at 10.3% last year). Fuel shortages or rationing coming back (they hit the June quarter). New rules on ride-hailing, driver pay or digital taxes. Software spending rising much faster than revenue, or capitalised development being written off. Growth slowing sharply as the app matures.\n\nUncertain: the beta rests on web-search stand-ins (Damodaran's site was blocked in this run); research costs that are expensed aren't disclosed; the 2021/22 operating loss is read from a chart, with no figure given."
+  "fullText": "**Digital Mobility Solutions Lanka PLC (PickMe, PKME.N0000): full redo, 21 November 2026**\n\n**Summary**\nPickMe runs Sri Lanka's leading ride-hailing, delivery and trucking app. It is an outstanding business: it has no borrowings, Rs 4.0bn of cash and deposits, a 71% return on equity over the last twelve months, and profit up 49% in the first half of 2026/27. The September quarter was its best so far (EPS Rs 2.35). The share price already reflects much of this. At Rs 176 (CSE close, 20 November 2026) it trades at 22x trailing earnings and 13x book value. Fair value comes out at about Rs 83, using a required return of 18.8% from a provisional beta of 1.03.\n\n- Fair value: **Rs 83.25** (was Rs 97.20)\n- Buy price (15% below fair value): **Rs 70.76** (was Rs 82.60)\n- Strong-buy price (25% below): **Rs 62.44** (was Rs 72.90)\n- Business tests: 3 of 4, 'good'. Category 2, watch list (unchanged).\n\nThis redo (asked for as /redo PKME full) rebuilt the research record from the three CSE reports. It keeps only printed lines, stores each comparative column as its own period, and has the code work out the twelve-month figures, net debt and tax rate. All three methods now come from the site's valuation code. The code reproduces the old hand-worked DCF and dividend model exactly with the old inputs, so the fall in fair value comes from the inputs, not the formulas:\n- The P/E method now uses the stable-growth justified P/E (5.2x / 6.3x / 7.8x) instead of a hand-worked two-stage P/E (6.5x / 9.4x / 14.7x). Reinvestment supports only 5.8% growth, and the fast-growth years are already valued in the DCF and the dividend model. This moves the P/E method from Rs 89 to Rs 58.\n- The DCF's starting cash is now taken from recorded figures (Rs 1.91 / 2.73 / 3.18bn) instead of being set by hand at Rs 2.5 / 2.8 / 3.0bn.\n- The return on new capital after the growth years now falls to 25% / 30% / 35%, as Damodaran recommends, instead of staying at 40% / 60% / 80% for ever. Together with the new starting cash, this moves the DCF from Rs 116 to Rs 105.\n- The fixed deposits (Rs 2.28bn) are now valued as a separate add-on instead of being counted in net cash. The total is the same.\n\n**Latest results**\n- September 2026 quarter: revenue Rs 2.87bn (+37%), operating profit Rs 1.04bn (+48%), profit Rs 784mn (+53%). Monthly users about 2.1mn (+38%), driver earners +58%.\n- Six months to September 2026: revenue Rs 5.38bn (+38%), operating profit Rs 1.88bn (+44%), profit Rs 1.41bn (+49%), EPS Rs 4.24 (Rs 2.85). Fuel rationing held back the June quarter.\n- Twelve months to September 2026 (calculated): revenue Rs 10.17bn, profit Rs 2.67bn, EPS Rs 8.00, ROE 70.6% on average equity.\n- Year to March 2026 (audited): revenue Rs 8.68bn (+49%), operating profit Rs 3.05bn (margin 35%), profit Rs 2.20bn (+88%), EPS Rs 6.61. Dividends Rs 4.30 (Rs 1.70 interim + Rs 2.60 final).\n- Dividend: Rs 2.75 interim declared for 2026/27, at a 65% payout.\n\n**Capex and reinvestment**\nCapex booked in 2025/26 was Rs 0.96bn. Of that, Rs 0.81bn was the engineering pay capitalised as software, written off over four years; the rest was office fit-out and computers. Depreciation plus software amortisation was Rs 0.69bn. Right-of-use amortisation is left out, because leases are counted as debt. With no company split, maintenance capex is taken as Rs 0.69bn, or in the bear case the two-year average capex booked (Rs 0.89bn). The Rs 0.27bn above that is growth spending on the platform, so this was mostly a growth year, not a costly-to-run business. Working capital released Rs 0.16bn, because payables to drivers grow with volume. Net reinvestment was only Rs 0.11bn (5% of after-tax operating profit). There are no acquisitions and no named projects. R&D charged to profit isn't disclosed, and development is already capitalised, so no R&D adjustment is made. No warning signs: capex is paid from cash, not borrowing, and is above depreciation.\n\n**Growth check**\nReinvestment supports only 5.8% growth (5.0% × a 116% return on capital). The scenarios assume 12% / 18% / 24% for seven years. They are kept for a specific reason: the growth is already happening without capital. Revenue rose 49% in 2025/26 and 38% in the first half of 2026/27, because incentives, marketing and most engineering pay are charged against profit, drivers own the cars, and payables fund working capital. Profit kept × ROE gives 24%, above all three cases. The DCF also charges reinvestment of growth ÷ 40% / 60% / 80% each year, far more than the business has needed.\n\n**Valuation (Rs per share)**\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| DCF + fixed deposits | 49.94 | 103.96 | 191.36 | 105.23 |\n| Justified P/E | 45.75 | 58.25 | 75.34 | 57.92 |\n| Dividend model | 53.04 | 85.13 | 140.60 | 86.60 |\n| Average | 49.58 | 82.45 | 135.77 | **83.25** |\n\n- **Required return:** risk-free 8.24% (12.24% bond less 4.0% default spread) + beta 1.03 × (4.2% + 6.08%) = 18.8% (bear 20.3%, bull 17.3%). With net cash, WACC equals the cost of equity.\n- **DCF:** whole company, cash before interest after maintenance capex. Bear starts from after-tax operating profit plus depreciation (Rs 1.91bn), base from 2025/26 operating cash (Rs 2.73bn), bull from the last twelve months' operating cash (Rs 3.18bn). Growth is 12% / 18% / 24% for seven years, then 5% / 6% / 7%, less the reinvestment growth needs. The DCF then adds net cash of Rs 1.40bn and the deposits (Rs 6.83 a share). Value after year seven is 48% / 57% / 66% of the total.\n- **P/E:** EPS to March 2027 of Rs 8.75 / 9.32 / 9.70 (base 0.9% below the Rs 9.40 run-rate) × the stable justified P/E.\n- **Dividend model:** Rs 5.7 / 6.1 / 6.3 this year (65% payout), growing with profit for seven years, then an 80% payout.\n- **Not used:** NAV, P/B and residual income, because book value (Rs 13.34) says little about an app business.\n\n**Sensitivity:** even at a 17.3% WACC and 24% growth, the DCF gives about Rs 149. The price needs about 33% growth a year for seven years at 18.8%, or a WACC near 13.7% with base growth. Each 0.1 off the beta adds roughly Rs 10 to fair value.\n\n**Buy plan for 500 shares**\n- 200 shares at up to Rs 83.25\n- 150 shares at up to Rs 70.76\n- 150 shares at up to Rs 62.44\n- Average about Rs 73.26, about Rs 36,630 in total (Rs 88,000 at today's price)\n\nThis isn't realistic soon. It needs a fall of more than half: the share has traded at Rs 134.75–175.25 since April 2026, and last traded near these levels in April–June 2025.\n\n**Management and plans**\nManagement wants to expand every vertical across the island within two years, grow events, courier and bike-hailing, and push EVs and digital payments. It plans to use AI throughout and to keep minimal debt while paying out about 65% of profit. Technology spending is over Rs 1.6bn a year. Six months in, that is on track: revenue is up 38%, operating margin is improving, and the 65% payout has been kept.\n\n**Shareholders**\nFounder and CEO Zulfer Hassen holds 35.8% and Chairman Ajit Gunewardene 9.4%. In the September quarter, frontier funds and Capital Alliance added shares; director Ruchi Gunewardene sold 350,000. The public holds 50.2% across 6,548 holders.\n\n**Risks**\n- Price competition: the take rate was 10.3% in 2025/26.\n- Fuel shortages.\n- Regulation of ride-hailing and digital taxes.\n- Tax disputes: income tax and VAT assessments under appeal, with contingent liabilities of Rs 0.84bn and Rs 1.66bn at March 2026, about Rs 7.50 a share together.\n- Capitalised software running ahead of revenue.\n- The beta, which rests on web-search stand-ins and is the biggest uncertainty in the valuation.\n\n**What would change the view**\n- Higher: a lower beta, faster growth for longer, lower rates, or a higher payout.\n- Lower: a price war, fuel problems, losing the tax appeals, new rules, or a sharp slowdown.",
+  "management": {
+    "asOf": "2026-11-21",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 14–16), CEO's review (pp. 17–19), segmental review (pp. 38–39), investors and outlook (pp. 40–43), note 23 (p. 149); progress from the interims to 30 June and 30 September 2026",
+    "takeaway": "Management's plan is to keep the platform growing across Sri Lanka without debt, paying out about 65% of profit. Six months into 2026/27 that is on track: profit is up 49% with a 65% payout, though Rs 2.5bn of disputed tax and VAT is the risk to watch.",
+    "said": [
+      {
+        "text": "2025/26 was a year of scale: GTV +49% to Rs 84.5bn, revenue +49% to Rs 8.7bn, profit +88% to Rs 2.2bn, ROE 69%",
+        "ref": "p. 14"
+      },
+      {
+        "text": "Operating margin rose to 35% from 27.5%, mainly from cheaper cloud servers and operating leverage",
+        "ref": "pp. 40–41"
+      },
+      {
+        "text": "Driver earners grew over 60% and monthly unique consumers over 40%; driver net earnings up over 14%",
+        "ref": "p. 17"
+      },
+      {
+        "text": "Food delivery turned around (16 districts, up from 5), trucks had a record year, and PickMe Courier and Events were launched",
+        "ref": "pp. 17–18, 38–39"
+      },
+      {
+        "text": "The Chairman says labour rules, unequal tax treatment of foreign digital firms and cash payments hold the sector back",
+        "ref": "p. 15"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Expand all service verticals across the island over the next two years",
+        "ref": "p. 43"
+      },
+      {
+        "text": "Grow newer verticals (events, specialised courier) and low-cost options such as bike-hailing",
+        "ref": "p. 43"
+      },
+      {
+        "text": "Push electric vehicles on the platform and more digital payments to cut transaction costs",
+        "ref": "pp. 15, 43"
+      },
+      {
+        "text": "Use AI across pricing, routing and fraud detection; the new multi-tenant platform is built to scale into new markets and verticals",
+        "ref": "pp. 14, 18"
+      },
+      {
+        "text": "Keep strong liquidity and minimal debt while paying dividends",
+        "ref": "pp. 40–41"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Technology spend and own platform development",
+        "amount": "over Rs 1.6bn a year (2025/26)",
+        "ref": "pp. 14, 40"
+      },
+      {
+        "text": "Capitalised software development (engineering pay)",
+        "amount": "Rs 809mn in 2025/26; Rs 434mn in H1 2026/27",
+        "ref": "p. 142; Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "text": "Office fit-out, computers and equipment",
+        "amount": "Rs 147mn in 2025/26",
+        "ref": "p. 140"
+      },
+      {
+        "text": "Dividends: Rs 1.70 interim and Rs 2.60 final for 2025/26, and a Rs 2.75 interim for 2026/27",
+        "amount": "Rs 1.43bn for 2025/26",
+        "ref": "pp. 14, 139; Interim to 30 Sep 2026, p. 3"
+      },
+      {
+        "text": "Surplus cash put into fixed deposits",
+        "amount": "Rs 1.06bn in H1 2026/27",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Keep growing all verticals across the island",
+        "result": "H1 2026/27 revenue +38% and GTV +43%; platform movements +39% despite fuel rationing in the June quarter",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      },
+      {
+        "promise": "Turn scale into higher profit (operating leverage)",
+        "result": "Operating profit +44% against revenue +38% in H1; September quarter margin 36%",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, pp. 3–4"
+      },
+      {
+        "promise": "Keep paying shareholders about two-thirds of profit",
+        "result": "Rs 2.75 interim for 2026/27 at a 65% payout, against Rs 1.70 a year earlier",
+        "status": "done",
+        "ref": "Interim to 30 Sep 2026, p. 3"
+      },
+      {
+        "promise": "Grow with minimal debt and strong liquidity",
+        "result": "No borrowings; cash and deposits Rs 4.0bn at September 2026, up from Rs 3.37bn in March after the final dividend",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 6"
+      },
+      {
+        "promise": "Tighten the working capital cycle",
+        "result": "Receivables fell slightly to Rs 0.42bn; payables rose to Rs 1.23bn, so working capital still releases cash",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, pp. 6, 8"
+      },
+      {
+        "promise": "Faster EV adoption and island-wide expansion over two years",
+        "result": "No figures given in the interims",
+        "status": "too-early",
+        "ref": "p. 43"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, notes 5.2, 5.5 and 5.6 (pp. 10–11), which print each holder's 30 June 2026 figure alongside; the same 20 holders as in the Interim to 30 June 2026 (p. 11). Where the report lists a second account under the same rank, it is given in that holder's note.",
+    "takeaway": "Founder and CEO Zulfer Hassen controls the company with 35.8% (two accounts), and Chairman Ajit Gunewardene holds 9.4%. In the September quarter, frontier funds (Tundra +1.6mn shares, Lynear +0.4mn) and Capital Alliance bought, while Ruchi Gunewardene sold 0.35mn. Public holders rose to 6,548 from 6,099.",
+    "groups": [
+      {
+        "name": "J.Z. Hassen (CEO, founder)",
+        "pct": 35.76
+      },
+      {
+        "name": "A.D. Gunewardene (Chairman)",
+        "pct": 9.43
+      },
+      {
+        "name": "Other directors and non-public",
+        "pct": 4.57
+      },
+      {
+        "name": "Public",
+        "pct": 50.24
+      }
+    ],
+    "publicFloat": 50.24,
+    "publicHolders": 6548,
+    "publicHoldersPrev": 6099,
+    "directors": [
+      {
+        "name": "J.Z. Hassen",
+        "shares": 114180555
+      },
+      {
+        "name": "J.Z. Hassen (Nations Trust Bank PLC / Jiffry Zulfer Hassen)",
+        "shares": 5200000
+      },
+      {
+        "name": "A.D. Gunewardene (Nations Trust Bank PLC / Ajit Damon Gunewardene)",
+        "shares": 25000000
+      },
+      {
+        "name": "A.D. Gunewardene",
+        "shares": 6465717
+      },
+      {
+        "name": "R.H. Gunewardene",
+        "shares": 6274469
+      },
+      {
+        "name": "K.T. Salie",
+        "shares": 4845200
+      },
+      {
+        "name": "R.K. Modder",
+        "shares": 2957778
+      },
+      {
+        "name": "J.G.T. Roche",
+        "shares": 300300
+      },
+      {
+        "name": "M.J.S. Rajakariar",
+        "shares": 100000
+      },
+      {
+        "name": "K.A.S. Kumarage",
+        "shares": 0
+      },
+      {
+        "name": "Priyanthini McNair (Nee M. P. Wijeratne)",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "J.Z. Hassen",
+        "shares": 114180555,
+        "pct": 34.2,
+        "change": 80555,
+        "note": "Rank 1 also includes a second account, Nations Trust Bank PLC / Jiffry Zulfer Hassen: 5,200,000 shares (1.56%), unchanged"
+      },
+      {
+        "name": "Nations Trust Bank / Ajit Damon Gunewardene",
+        "shares": 25000000,
+        "pct": 7.49,
+        "change": 0,
+        "note": "Rank 2 also includes A.D. Gunewardene: 6,465,717 shares (1.94%), unchanged"
+      },
+      {
+        "name": "BNYM RE-Frontaura Global Frontier Fund LLC",
+        "shares": 13766000,
+        "pct": 4.12,
+        "change": 0
+      },
+      {
+        "name": "Asia Securities (Pvt) Ltd (Trading Account)",
+        "shares": 12000000,
+        "pct": 3.59,
+        "change": 0
+      },
+      {
+        "name": "BBH-Tundra Sustainable Frontier Fund",
+        "shares": 11014772,
+        "pct": 3.3,
+        "change": 1614772
+      },
+      {
+        "name": "H Capital (Private) Limited",
+        "shares": 6763901,
+        "pct": 2.03,
+        "change": 0
+      },
+      {
+        "name": "Pemberton Asian Opportunities Fund",
+        "shares": 6500000,
+        "pct": 1.95,
+        "change": 200000
+      },
+      {
+        "name": "R.H. Gunewardene JOINT: K.Y.T Gunewardene",
+        "shares": 6274469,
+        "pct": 1.88,
+        "change": -350000
+      },
+      {
+        "name": "Hatton National Bank PLC - Capital Alliance Quantitative Equity Fund",
+        "shares": 6072729,
+        "pct": 1.82,
+        "change": 212771
+      },
+      {
+        "name": "M.S. Riyaz",
+        "shares": 5272917,
+        "pct": 1.58,
+        "change": -70702
+      },
+      {
+        "name": "K.T. Salie",
+        "shares": 4845200,
+        "pct": 1.45,
+        "change": 42500,
+        "note": "Printed as 'T.K. Salie' in the June interim"
+      },
+      {
+        "name": "Hatton National Bank PLC - Shiran Harsha Amarasekera",
+        "shares": 4388604,
+        "pct": 1.31,
+        "change": 0
+      },
+      {
+        "name": "Deutsche Bank AG Trustee To Lynear Wealth Dynamic Opportunities Fund",
+        "shares": 4212500,
+        "pct": 1.26,
+        "change": 383010
+      },
+      {
+        "name": "J.B. Cocoshell (Pvt) Ltd",
+        "shares": 3662244,
+        "pct": 1.1,
+        "change": 0
+      },
+      {
+        "name": "Ranavav Holdings (Pvt) Ltd",
+        "shares": 2663945,
+        "pct": 0.8,
+        "change": 100000,
+        "note": "Rank 15 also includes Ranavav Holdings (Pvt) Ltd Account No.02: 513,787 shares (0.15%), unchanged"
+      },
+      {
+        "name": "L.W.A. De Soysa",
+        "shares": 3000000,
+        "pct": 0.9,
+        "change": 0
+      },
+      {
+        "name": "R.K. Modder",
+        "shares": 2957778,
+        "pct": 0.89,
+        "change": 0
+      },
+      {
+        "name": "JPMSE LUX-T Rowe Price Funds Sicav",
+        "shares": 2927227,
+        "pct": 0.88,
+        "change": 35236
+      },
+      {
+        "name": "Serendip Investments Limited",
+        "shares": 2733900,
+        "pct": 0.82,
+        "change": 0
+      },
+      {
+        "name": "Invenco capital private limited",
+        "shares": 2681180,
+        "pct": 0.8,
+        "change": 77765
+      }
+    ],
+    "gone": []
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 20.3,
+      "base": 18.8,
+      "bull": 17.3
+    },
+    "wacc": {
+      "bear": 20.3,
+      "base": 18.8,
+      "bull": 17.3
+    },
+    "debtWeight": 0.0,
+    "shares": 333.823,
+    "netDebt": -1.403,
+    "dcf": {
+      "years": 7,
+      "bear": {
+        "start": 1.911,
+        "nopat": 2.109,
+        "growth": 12,
+        "longRun": 5,
+        "roc": 40,
+        "stableRoc": 25,
+        "maintenance": 0.887
+      },
+      "base": {
+        "start": 2.725,
+        "nopat": 2.503,
+        "growth": 18,
+        "longRun": 6,
+        "roc": 60,
+        "stableRoc": 30,
+        "maintenance": 0.689
+      },
+      "bull": {
+        "start": 3.177,
+        "nopat": 2.882,
+        "growth": 24,
+        "longRun": 7,
+        "roc": 80,
+        "stableRoc": 35,
+        "maintenance": 0.689
+      },
+      "addOn": {
+        "bear": 6.833,
+        "base": 6.833,
+        "bull": 6.833
+      },
+      "addOnNote": "Fixed deposits ('other investments') at book, Rs 2,281mn at 30 September 2026, Rs 6.83 a share in every case",
+      "basis": {
+        "growth": "valuationInputs: Growth",
+        "roc": "valuationInputs: Return on new capital",
+        "stableRoc": "valuationInputs: Return on new capital",
+        "longRun": "valuationInputs: Long-term growth",
+        "start": "valuationInputs: Cash after maintenance capex (start)",
+        "nopat": "valuationInputs: After-tax operating profit (start)",
+        "addOn": "valuationInputs: Fixed deposits (add-on)"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 8.75,
+        "roe": 25,
+        "longRun": 5
+      },
+      "base": {
+        "eps": 9.32,
+        "roe": 30,
+        "longRun": 6
+      },
+      "bull": {
+        "eps": 9.7,
+        "roe": 35,
+        "longRun": 7
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027 × P/E",
+        "roe": "valuationInputs: ROE path",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ddm": {
+      "years": 7,
+      "bear": {
+        "dividend": 5.7,
+        "eps": 8.75,
+        "growth": 12,
+        "roe": 25,
+        "longRun": 5
+      },
+      "base": {
+        "dividend": 6.1,
+        "eps": 9.32,
+        "growth": 18,
+        "roe": 30,
+        "longRun": 6
+      },
+      "bull": {
+        "dividend": 6.3,
+        "eps": 9.7,
+        "growth": 24,
+        "roe": 35,
+        "longRun": 7
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend this year",
+        "eps": "valuationInputs: EPS to March 2027 × P/E",
+        "growth": "valuationInputs: Growth",
+        "roe": "valuationInputs: ROE path",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "dcf.bear.maintenance": "maintenance.bear",
+      "dcf.base.maintenance": "maintenance.base",
+      "dcf.bull.maintenance": "maintenance.bull",
+      "dcf.bear.nopat": "annual.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.base.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bull.nopat": "quarterX4.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bear.start": "nopat + annual.depreciation - maintenance",
+      "dcf.base.start": "annual.cashBeforeInterest - maintenance",
+      "dcf.bull.start": "ttm.cashBeforeInterest - maintenance",
+      "dcf.addOn.bear": {
+        "calc": "latest.otherInvestments * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Fixed deposits (add-on)"
+      },
+      "dcf.addOn.base": {
+        "calc": "latest.otherInvestments * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Fixed deposits (add-on)"
+      },
+      "dcf.addOn.bull": {
+        "calc": "latest.otherInvestments * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Fixed deposits (add-on)"
+      }
+    }
+  }
 }
