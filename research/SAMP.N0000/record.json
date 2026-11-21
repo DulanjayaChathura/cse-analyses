@@ -889,7 +889,7 @@
     {
       "name": "Dividends",
       "value": "Next year Rs 10.0 / 11.3 / 12.4 (37% of 2027 EPS), growing 6% / 9% / 11% for five years, then 5% / 6% / 7%; payout stays 37%",
-      "reason": "Now worked by scripts/valuation.py, whose dividend model can't raise the payout after five years, so the 1 − growth ÷ ROE step-up of 14 November is dropped. Conservative: retained profit beyond growth needs isn't counted (with the step-up the method gave about Rs 194). Dividend growth stays within the 11.3% supported.",
+      "reason": "After the five growth years the payout becomes 1 − long-run growth ÷ ROE (Damodaran's two-stage dividend model): 64.3% / 62.5% / 61.1%, from long-run growth 5/6/7% and long-run ROE 14/16/18% (the 'Long-run ROE (price to book)' input), on EPS 27/30.5/33.5 (the '2027 EPS × P/E' input). Corrected 2026-11-21: before, the code kept the high-growth payout forever. Earlier reason: Now worked by scripts/valuation.py, whose dividend model can't raise the payout after five years, so the 1 − growth ÷ ROE step-up of 14 November is dropped. Conservative: retained profit beyond growth needs isn't counted (with the step-up the method gave about Rs 194). Dividend growth stays within the 11.3% supported.",
       "since": "2026-11-21"
     },
     {
@@ -958,6 +958,16 @@
       "fairValue": 169,
       "buyPrice": 144,
       "strongBuyPrice": 127,
+      "priceAtTime": 148.25,
+      "archive": "research/SAMP.N0000/history/2026-11-21.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Formula correction (asked by the owner in chat), no new report. scripts/valuation.py's dividend model kept the high-growth payout forever after year 5; it now follows Damodaran's two-stage model (stable payout = 1 − g ÷ ROE). Added eps (from the P/E method) and roe (the long-run ROE the other methods use) to modelInputs.ddm. Only the dividend model changed. The written text still quotes the earlier figures (valuation.textFigures); the page says so until the next update or redo.",
+      "fairValue": 184.74,
+      "buyPrice": 157.03,
+      "strongBuyPrice": 138.55,
       "priceAtTime": 148.25,
       "archive": "research/SAMP.N0000/history/2026-11-21.json"
     }

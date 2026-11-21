@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "DIAL.N0000",
   "localFolder": "dialog",
-  "updated": "2026-11-14",
+  "updated": "2026-11-21",
   "reportsRead": [
     {
       "file": "Dialog Annual Report 2024.pdf",
@@ -1303,8 +1303,8 @@
     {
       "name": "Dividend per share, growth",
       "value": "Rs 2.40, 2% / Rs 2.80, 5% / Rs 3.20, 7%; then 3.5% / 4.5% / 5.5%",
-      "reason": "Growth lowered with the growth input; above the −1.4% capex-based supported rate for the reasons in the Growth check, below the 7.8% equity-route rate. Cash after maintenance covers dividends 1.08x (2025) to 1.4x (12 months to Sep 2026).",
-      "since": "2026-11-14"
+      "reason": "After the five growth years the payout becomes 1 − long-run growth ÷ ROE (Damodaran's two-stage dividend model): 82.5% / 82.0% / 81.7%, from long-run growth 3.5/4.5/5.5% and long-run ROE 20/25/30% (the '2027 EPS × P/E' input), on EPS 3.3/4.0/4.4 (the '2027 EPS × P/E' input). Corrected 2026-11-21: before, the code kept the high-growth payout forever. Earlier reason: Growth lowered with the growth input; above the −1.4% capex-based supported rate for the reasons in the Growth check, below the 7.8% equity-route rate. Cash after maintenance covers dividends 1.08x (2025) to 1.4x (12 months to Sep 2026).",
+      "since": "2026-11-21"
     },
     {
       "name": "Margins of safety",
@@ -1412,6 +1412,16 @@
       "fairValue": 28.7,
       "buyPrice": 24.4,
       "strongBuyPrice": 21.5,
+      "priceAtTime": 50.2,
+      "archive": "research/DIAL.N0000/history/2026-11-14.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Annual Report 2025 and interims to 30 Jun and 30 Sep 2026 (CSE downloads), re-read in full",
+      "summary": "Formula correction (asked by the owner in chat), no new report. scripts/valuation.py's dividend model kept the high-growth payout forever after year 5; it now follows Damodaran's two-stage model (stable payout = 1 − g ÷ ROE). Added eps (from the P/E method) and roe (the long-run ROE the other methods use) to modelInputs.ddm. Only the dividend model changed. The written text still quotes the earlier figures (valuation.textFigures); the page says so until the next update or redo.",
+      "fairValue": 29.35,
+      "buyPrice": 24.95,
+      "strongBuyPrice": 22.01,
       "priceAtTime": 50.2,
       "archive": "research/DIAL.N0000/history/2026-11-14.json"
     }

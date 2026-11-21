@@ -104,9 +104,9 @@
     "note": "Cost of equity = 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%; bear +1.5, bull −1.5 points. That's inside the 12–22% range for CSE shares, at the low end because contracted power is steady. No extra premium is added for Uganda, although most profit is earned there. WACC weights equity 77% and after-tax debt 23% (9.56% × (1 − 25.1%) = 7.2%). Damodaran's site couldn't be reached from this run either, so the beta stays provisional."
   },
   "valuation": {
-    "fairValue": 8.88,
-    "buyPrice": 7.54,
-    "strongBuyPrice": 6.66,
+    "fairValue": 9.32,
+    "buyPrice": 7.92,
+    "strongBuyPrice": 6.99,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -117,7 +117,14 @@
       "bull": 20
     },
     "nav": 9.76,
-    "note": "Fair value weights the bear/base/bull averages of five methods 30/50/20: Rs 5.71 / 8.91 / 13.53, giving Rs 8.88 (0.91x NAV). The methods are a whole-company DCF plus the joint ventures and projects, P/E, justified P/B, residual income and dividends. All five come from scripts/valuation.py; the joint ventures and projects are a fixed add-on of Rs 3.44 / 4.22 / 6.10 a share to the DCF. Discount rates come from the beta: cost of equity 15.4%, WACC 13.5%."
+    "note": "Fair value weights the bear/base/bull averages of five methods 30/50/20: Rs 5.71 / 8.91 / 13.53, giving Rs 8.88 (0.91x NAV). The methods are a whole-company DCF plus the joint ventures and projects, P/E, justified P/B, residual income and dividends. All five come from scripts/valuation.py; the joint ventures and projects are a fixed add-on of Rs 3.44 / 4.22 / 6.10 a share to the DCF. Discount rates come from the beta: cost of equity 15.4%, WACC 13.5%. Corrected 2026-11-21: the dividend model now uses Damodaran's stable payout (1 − g ÷ ROE) after year 5, with EPS from the P/E method and the long-run ROE the other methods use; fair value Rs 8.88 → Rs 9.32.",
+    "textFigures": {
+      "fairValue": 8.88,
+      "buyPrice": 7.54,
+      "strongBuyPrice": 6.66,
+      "asOf": "2026-11-18",
+      "why": "the dividend model was corrected to Damodaran's two-stage form (after year 5 the payout becomes 1 − long-run growth ÷ ROE)"
+    }
   },
   "dividend": {
     "perShare": 0.65,
@@ -377,10 +384,10 @@
     {
       "id": "ddm",
       "name": "Dividends (two-stage)",
-      "bear": 3.6,
-      "base": 5.59,
-      "bull": 8.63,
-      "weighted": 5.6,
+      "bear": 5.14,
+      "base": 7.91,
+      "bull": 11.64,
+      "weighted": 7.83,
       "comment": "The 2026/27 dividend is Rs 0.50 / 0.60 / 0.70 (Rs 0.20 interim so far, against Rs 0.35 a year earlier; Rs 0.65 for 2025/26). It grows 3 / 6 / 8% for five years, then 3 / 4 / 5%, at a cost of equity of 16.9 / 15.4 / 13.9%. Bull growth is capped below the 8.9% the company's kept profit and ROE support. This is the lowest method because the company keeps more than half its profit for new plants, and the dividend is only thinly covered by cash after maintenance."
     }
   ],
@@ -562,17 +569,27 @@
       "bear": {
         "dividend": 0.5,
         "growth": 3,
-        "longRun": 3
+        "longRun": 3,
+        "eps": 1.15,
+        "roe": 14
       },
       "base": {
         "dividend": 0.6,
         "growth": 6,
-        "longRun": 4
+        "longRun": 4,
+        "eps": 1.35,
+        "roe": 16
       },
       "bull": {
         "dividend": 0.7,
         "growth": 8,
-        "longRun": 5
+        "longRun": 5,
+        "eps": 1.5,
+        "roe": 17
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027 × P/E",
+        "roe": "valuationInputs: Long-run ROE"
       }
     },
     "ri": {

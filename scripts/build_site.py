@@ -106,41 +106,68 @@ def market_figures():
 MARKET = market_figures()
 
 
-def rate_adjust(data):
-    """Bring a company's figures up to today's bond rate, without a redo.
+def live_recalc(data):
+    """Recalculate a company's code-computed methods at every build, so the site always shows
+    them with the current formulas (scripts/valuation.py) and the latest saved bond rate.
 
-    The analysis records the risk-free rate it used (requiredReturn.riskFree). If today's
-    (bond yield less the default spread) differs, every case's cost of equity moves by the
-    difference, WACC by its equity share of it, and valuation.py recalculates the methods it
-    can (DCF, P/E, dividend, residual income, P/B). NAV and other hand-written methods stay.
-    Only the copy on the site changes; data/<CODE>.json keeps the published analysis.
-    Returns what changed (shown on the company page), or None.
+    If the bond rate has moved since the analysis (requiredReturn.riskFree vs today's bond yield
+    less the default spread), every case's cost of equity moves by the difference and WACC by its
+    equity share of it. NAV and other hand-written methods stay as written. Only the site's copy
+    changes; data/<CODE>.json keeps the analysis. Returns what changed (shown on the page) or None.
     """
-    rr, mi = data.get("requiredReturn"), data.get("modelInputs")
+    import copy
+    import valuation
+    from validate import chk_model_inputs
+    mi = data.get("modelInputs")
+    if not isinstance(mi, dict) or chk_model_inputs(mi) or not isinstance(data.get("valuation"), dict):
+        return None
+    rr = data.get("requiredReturn") or {}
     m = read_json(ROOT / "research" / "market-inputs.json", {})
     bond = (m.get("bondYield10y") or {}).get("value")
     spread = (m.get("defaultSpread") or {}).get("value")
-    if not (rr and mi and all(isinstance(x, (int, float)) for x in (bond, spread, rr.get("riskFree")))):
-        return None
-    delta = round(bond - spread - rr["riskFree"], 2)
-    if abs(delta) < 0.005:
-        return None
-    import copy
-    import valuation
+    delta = 0.0
+    if all(isinstance(x, (int, float)) for x in (bond, spread, rr.get("riskFree"))):
+        delta = round(bond - spread - rr["riskFree"], 2)
+        if abs(delta) < 0.005:
+            delta = 0.0
     new = copy.deepcopy(mi)
     eq = 1 - (mi.get("debtWeight") or 0) / 100
     for c in ("bear", "base", "bull"):
         new["costOfEquity"][c] = round(new["costOfEquity"][c] + delta, 2)
         if new.get("wacc"):
             new["wacc"][c] = round(new["wacc"][c] + eq * delta, 2)
-    info = {"bond": bond, "bondDate": (m.get("bondYield10y") or {}).get("date"), "wasBond": round(rr["riskFree"] + spread, 2),
-            "delta": delta, "published": {k: (data.get("valuation") or {}).get(k) for k in ("fairValue", "buyPrice", "strongBuyPrice")},
-            "warnings": []}
+    v = data["valuation"]
+    info = {"published": {k: v.get(k) for k in ("fairValue", "buyPrice", "strongBuyPrice")}, "warnings": []}
+    if delta:
+        info.update(bond=bond, bondDate=(m.get("bondYield10y") or {}).get("date"), wasBond=round(rr["riskFree"] + spread, 2), delta=delta)
     try:
         res = valuation.recalc(data, new)
     except Exception as e:  # a case the formulas can't value (e.g. cost of equity at or below growth)
-        info["warnings"].append(f"Couldn't recalculate at the new rate ({e}); figures are as published.")
+        info["warnings"].append(f"Couldn't recalculate ({e}); figures are as published.")
         return info
+    if not isinstance(res.get("fairValue"), (int, float)):
+        return None
+    if isinstance(bond, (int, float)):
+        for mid in ("dcf", "pe", "ddm", "ri", "pb"):
+            for c in ("bear", "base", "bull"):
+                g = ((new.get(mid) or {}).get(c) or {}).get("longRun")
+                if isinstance(g, (int, float)) and g >= bond:
+                    info["warnings"].append(f"Long-run growth {g}% ({c} case) is no longer below the {bond}% bond rate; a redo should lower it.")
+    rows = {r["id"]: r for r in res["models"]}
+    for mod in data.get("models") or []:
+        r = rows.get(mod.get("id"))
+        if r and r.get("adjustable"):
+            for k in ("bear", "base", "bull", "weighted"):
+                mod[k] = r[k]
+    for k in ("fairValue", "buyPrice", "strongBuyPrice"):
+        v[k] = res[k]
+    data["modelInputs"] = new
+    if delta:
+        data["requiredReturn"] = {**rr, "riskFree": round(rr["riskFree"] + delta, 2),
+                                  "costOfEquity": new["costOfEquity"], "wacc": new.get("wacc") or rr.get("wacc")}
+    pubf = info["published"]["fairValue"]
+    changed = isinstance(pubf, (int, float)) and pubf and abs(res["fairValue"] / pubf - 1) >= 0.005
+    return info if (changed or delta or info["warnings"]) else None
     if not isinstance(res.get("fairValue"), (int, float)):
         return None
     for mid in ("dcf", "pe", "ddm", "ri", "pb"):
@@ -190,10 +217,12 @@ def main():
             problems = True
             report.append(f"### ⚠️ {path.name} was accepted with warnings")
             report += [f"- {w}" for w in warnings]
-        if not bad:
-            rate = rate_adjust(data)
-            if rate:
-                data["_rate"] = rate
+        if "modelInputs" in data and all(k not in bad for k in ("valuation", "models")):
+            live = live_recalc(data)
+            if live is not None and not any("Couldn't recalculate" in w for w in live["warnings"]):
+                bad = [k for k in bad if k != "modelInputs"]  # the site's copy now matches its inputs
+            if live:
+                data["_rate"] = live
         data["_build"] = {"warnings": warnings, "badSections": bad, "previousVersion": previous, "market": MARKET}
         write_json(SITE / "data" / "tickers" / f"{data['ticker']}.json", data)
         manifest.append(summarize(data, warnings, bad, previous, companies))

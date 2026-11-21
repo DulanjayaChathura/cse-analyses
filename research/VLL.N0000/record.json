@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "VLL.N0000",
   "localFolder": null,
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "reportsRead": [
     {
       "file": "reports/VLL.N0000/2026-08-28_annual_Annual-Report-as-at-31st-March-2026.pdf",
@@ -862,8 +862,8 @@
     {
       "name": "Dividend 2026/27",
       "value": "Rs 0.50 / 0.60 / 0.70, growing 3% / 6% / 8% for 5 years, then 3% / 4% / 5%",
-      "reason": "Rs 0.20 interim so far (Rs 0.35 a year earlier); Rs 0.65 for 2025/26. Bull growth cut from 9% to 8% on 18 Nov to stay below the 8.9% supported by kept profit × ROE (55.2% × 16.1%).",
-      "since": "2026-11-18"
+      "reason": "After the five growth years the payout becomes 1 − long-run growth ÷ ROE (Damodaran's two-stage dividend model): 78.6% / 75.0% / 70.6%, from long-run growth 3/4/5% and long-run ROE 14/16/17% (the 'Long-run ROE' input), on EPS 1.15/1.35/1.5 (the 'EPS to March 2027 × P/E' input). Corrected 2026-11-21: before, the code kept the high-growth payout forever. Earlier reason: Rs 0.20 interim so far (Rs 0.35 a year earlier); Rs 0.65 for 2025/26. Bull growth cut from 9% to 8% on 18 Nov to stay below the 8.9% supported by kept profit × ROE (55.2% × 16.1%).",
+      "since": "2026-11-21"
     },
     {
       "name": "Payout (residual income)",
@@ -930,6 +930,16 @@
       "fairValue": 8.88,
       "buyPrice": 7.54,
       "strongBuyPrice": 6.66,
+      "priceAtTime": 22.0,
+      "archive": "research/VLL.N0000/history/2026-11-18.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Research record (no new reports)",
+      "summary": "Formula correction (asked by the owner in chat), no new report. scripts/valuation.py's dividend model kept the high-growth payout forever after year 5; it now follows Damodaran's two-stage model (stable payout = 1 − g ÷ ROE). Added eps (from the P/E method) and roe (the long-run ROE the other methods use) to modelInputs.ddm. Only the dividend model changed. The written text still quotes the earlier figures (valuation.textFigures); the page says so until the next update or redo.",
+      "fairValue": 9.32,
+      "buyPrice": 7.92,
+      "strongBuyPrice": 6.99,
       "priceAtTime": 22.0,
       "archive": "research/VLL.N0000/history/2026-11-18.json"
     }

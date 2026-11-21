@@ -73,9 +73,9 @@
     ]
   },
   "valuation": {
-    "fairValue": 28.7,
-    "buyPrice": 24.4,
-    "strongBuyPrice": 21.5,
+    "fairValue": 29.35,
+    "buyPrice": 24.95,
+    "strongBuyPrice": 22.01,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -86,7 +86,14 @@
       "bull": 20
     },
     "nav": 9.99,
-    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Full redo on 14 November 2026: discount rates now come from the beta (cost of equity 14.7%, WACC 13.8%), and the DCF values the whole company at WACC less net debt."
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20. Confidence is medium, so the standard 15% / 25% margins apply. Full redo on 14 November 2026: discount rates now come from the beta (cost of equity 14.7%, WACC 13.8%), and the DCF values the whole company at WACC less net debt. Corrected 2026-11-21: the dividend model now uses Damodaran's stable payout (1 − g ÷ ROE) after year 5, with EPS from the P/E method and the long-run ROE the other methods use; fair value Rs 28.7 → Rs 29.35.",
+    "textFigures": {
+      "fairValue": 28.7,
+      "buyPrice": 24.4,
+      "strongBuyPrice": 21.5,
+      "asOf": "2026-11-14",
+      "why": "the dividend model was corrected to Damodaran's two-stage form (after year 5 the payout becomes 1 − long-run growth ÷ ROE)"
+    }
   },
   "dividend": {
     "perShare": 1.5,
@@ -361,34 +368,34 @@
       "bear": 10.17,
       "base": 27.35,
       "bull": 49.78,
-      "weighted": 26.7,
+      "weighted": 26.68,
       "comment": "Cash before interest after maintenance capex Rs 24 / 36 / 42bn, growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%, less the reinvestment growth needs at a 15% / 20% / 25% return on capital (after-tax operating profit Rs 32 / 39 / 42bn), at WACC 15.1% / 13.8% / 12.5%, less net debt Rs 56.7bn. Value after year 5: 54% / 66% / 75% (bull just under the 75% flag)."
     },
     {
       "id": "pe",
       "name": "P/E method",
-      "bear": 21.4,
-      "base": 32.0,
-      "bull": 46.6,
-      "weighted": 31.7,
+      "bear": 21.44,
+      "base": 32.16,
+      "bull": 46.67,
+      "weighted": 31.85,
       "comment": "2027 EPS of Rs 3.30 / 4.00 / 4.40 times 6.5 / 8 / 10.6: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE, long-run ROE 20 / 25 / 30%). Base EPS equals the run-rate (latest quarter × 4 = Rs 4.00); bear 17.5% below it allows for exchange losses and a higher tax rate."
     },
     {
       "id": "ddm",
       "name": "Dividend model",
-      "bear": 18.1,
-      "base": 27.9,
-      "bull": 43.6,
-      "weighted": 28.1,
+      "bear": 19.43,
+      "base": 30.88,
+      "bull": 47.39,
+      "weighted": 30.75,
       "comment": "Rs 2.40 / 2.80 / 3.20 a share, growing 2% / 5% / 7% for five years, then 3.5% / 4.5% / 5.5%, at the cost of equity 16.2% / 14.7% / 13.2%."
     },
     {
       "id": "ri",
       "name": "Residual income",
       "bear": 20.3,
-      "base": 27.8,
-      "bull": 40.7,
-      "weighted": 28.1,
+      "base": 27.77,
+      "bull": 40.68,
+      "weighted": 28.11,
       "comment": "Book value Rs 9.99 (September); ROE falling from 40% to 20% / 25% / 30% over ten years; 75% payout; cost of equity 16.2% / 14.7% / 13.2%; after year ten the excess return grows at the long-run rate."
     }
   ],
@@ -756,17 +763,27 @@
       "bear": {
         "dividend": 2.4,
         "growth": 2,
-        "longRun": 3.5
+        "longRun": 3.5,
+        "eps": 3.3,
+        "roe": 20
       },
       "base": {
         "dividend": 2.8,
         "growth": 5,
-        "longRun": 4.5
+        "longRun": 4.5,
+        "eps": 4.0,
+        "roe": 25
       },
       "bull": {
         "dividend": 3.2,
         "growth": 7,
-        "longRun": 5.5
+        "longRun": 5.5,
+        "eps": 4.4,
+        "roe": 30
+      },
+      "basis": {
+        "eps": "valuationInputs: 2027 EPS × P/E",
+        "roe": "valuationInputs: 2027 EPS × P/E"
       }
     },
     "ri": {

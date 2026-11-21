@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "WIND.N0000",
   "localFolder": null,
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "reportsRead": [
     {
       "file": "reports/WIND.N0000/2026-08-24_annual_Annual-Report-as-at-31st-March-2026.pdf",
@@ -904,8 +904,8 @@
     {
       "name": "Dividend",
       "value": "Rs 0.25 / 0.50 / 1.00 a year, growing 2 / 4 / 6% for five years then 2 / 3 / 4%",
-      "reason": "None for FY2026 or H1 FY2027; Rs 1.00 for FY2025.",
-      "since": "2026-11-18"
+      "reason": "After the five growth years the payout becomes 1 − long-run growth ÷ ROE (Damodaran's two-stage dividend model): 66.7% / 60.0% / 60.0%, from long-run growth 2/3/4% and long-run ROE 6/7.5/10% (the 'Long-run ROE' input), on EPS 1.2/1.35/1.55 (the 'EPS to March 2027 × P/E' input). Corrected 2026-11-21: before, the code kept the high-growth payout forever. Earlier reason: None for FY2026 or H1 FY2027; Rs 1.00 for FY2025.",
+      "since": "2026-11-21"
     },
     {
       "name": "Methods used",
@@ -945,6 +945,16 @@
       "strongBuyPrice": 4.88,
       "priceAtTime": 38.0,
       "archive": "research/WIND.N0000/history/2026-11-17.json"
+    },
+    {
+      "date": "2026-11-21",
+      "basedOn": "Annual Report 2025/26 and interim to 30 Sep 2026 (CSE downloads, re-read)",
+      "summary": "Formula correction (asked by the owner in chat), no new report. scripts/valuation.py's dividend model kept the high-growth payout forever after year 5; it now follows Damodaran's two-stage model (stable payout = 1 − g ÷ ROE). Added eps (from the P/E method) and roe (the long-run ROE the other methods use) to modelInputs.ddm. Only the dividend model changed. The written text still quotes the earlier figures (valuation.textFigures); the page says so until the next update or redo.",
+      "fairValue": 6.73,
+      "buyPrice": 5.72,
+      "strongBuyPrice": 5.05,
+      "priceAtTime": 38.0,
+      "archive": "research/WIND.N0000/history/2026-11-18.json"
     }
   ]
 }

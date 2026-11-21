@@ -17,19 +17,21 @@
   const fmt = (x, dp = 2) => (isNum(x) ? x.toLocaleString("en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp }) : "–");
   const round = (x, step) => { const dp = Math.max(0, (String(step).split(".")[1] || "").length); return +x.toFixed(dp); };
 
-  /* ---------- Formulas (same as scripts/valuation.py) ---------- */
+  /* ---------- Formulas (same as scripts/valuation.py, which lists the sources: Damodaran's
+     two-stage DDM and FCFF models, CFA Institute residual income) ---------- */
   function need(r, gl, what) { if (!(r > gl)) throw new Error(`${what} must be above long-run growth`); }
   const F = {
     dcf(c, ke, wacc, mi, m) {
       const r = pct(wacc), g = pct(c.growth), gl = pct(c.longRun), roc = pct(c.roc), years = m.years || 5;
+      const rocSt = c.stableRoc != null ? pct(c.stableRoc) : roc;
       need(r, gl, "WACC");
-      if (!(roc > 0)) throw new Error("return on capital must be above 0");
+      if (!(roc > 0) || !(rocSt > 0)) throw new Error("return on capital must be above 0");
       let cash = c.start, profit = c.nopat, value = 0;
       for (let t = 1; t <= years; t++) {
         cash *= 1 + g; profit *= 1 + g;
         value += (cash - (g / roc) * profit) / Math.pow(1 + r, t);
       }
-      const after = (cash * (1 + gl) - (gl / roc) * profit * (1 + gl)) / (r - gl);
+      const after = (cash * (1 + gl) - (gl / rocSt) * profit * (1 + gl)) / (r - gl);
       value += after / Math.pow(1 + r, years);
       const add = (m.addOn && m.addOn[this.caseName]) || 0;
       return ((value - mi.netDebt) * 1000) / mi.shares + add;
@@ -47,6 +49,12 @@
       for (let t = 1; t <= years; t++) {
         value += d / Math.pow(1 + r, t);
         if (t < years) d *= 1 + g;
+      }
+      if (c.eps != null && c.roe != null) {
+        const roe = pct(c.roe);
+        if (!(roe > gl)) throw new Error("long-run ROE must be above long-run growth");
+        const epsNext = c.eps * Math.pow(1 + g, years - 1) * (1 + gl);
+        return value + (epsNext * (1 - gl / roe)) / (r - gl) / Math.pow(1 + r, years);
       }
       return value + (d * (1 + gl)) / (r - gl) / Math.pow(1 + r, years);
     },
@@ -71,12 +79,12 @@
   /* The formula shown behind each method's ⓘ. */
   const FORMULAS = {
     dcf: { q: "What cash will the whole business produce, and what is that worth today?", f: "Σ free cash ÷ (1 + WACC)^year + value after year 5, then − net debt, ÷ shares",
-      notes: ["Free cash = cash × (1 + growth) − growth ÷ return on capital × operating profit", "Value after year 5 = next year's free cash ÷ (WACC − g)", "g = long-run growth"] },
+      notes: ["Free cash = cash × (1 + growth) − growth ÷ return on capital × operating profit", "Value after year 5 = next year's free cash ÷ (WACC − g), with reinvestment = g ÷ the long-run return on capital", "g = long-run growth", "Source: Damodaran's FCFF model"] },
     pe: { q: "What are next year's profits worth, at the P/E this growth and return justify?", f: "EPS × (1 − g ÷ ROE) ÷ (cost of equity − g)",
       notes: ["1 − g ÷ ROE = the share of profit that can be paid out while still funding growth", "g = long-run growth, ROE = long-run ROE"] },
     peFixed: { q: "What are next year's profits worth at a set P/E?", f: "EPS × P/E", notes: ["The P/E is set in the analysis, so the cost of equity doesn't change it"] },
-    ddm: { q: "What will I actually receive in dividends, valued today?", f: "Σ dividend ÷ (1 + cost of equity)^year + last dividend × (1 + g) ÷ (cost of equity − g)",
-      notes: ["Dividends grow at the years 1–5 rate, then at g", "g = long-run growth"] },
+    ddm: { q: "What will I actually receive in dividends, valued today?", f: "Σ dividend ÷ (1 + cost of equity)^year + EPS after year 5 × (1 − g ÷ ROE) ÷ (cost of equity − g)",
+      notes: ["Dividends grow at the years 1–5 rate", "After year 5 the payout becomes 1 − g ÷ ROE: what can be paid while funding growth g", "g = long-run growth, ROE = long-run ROE", "Source: Damodaran's two-stage dividend model"] },
     ri: { q: "How much more than shareholders require does it earn on its book value?", f: "Book + Σ (ROE − cost of equity) × book ÷ (1 + cost of equity)^year + value after year 10",
       notes: ["ROE moves in a straight line to its long-run level by year 10", "Value after year 10 = (ROE − cost of equity) × book ÷ (cost of equity − g)"] },
     pb: { q: "What is the book value worth, given the return it earns?", f: "Book × (ROE − g) ÷ (cost of equity − g)", notes: ["g = long-run growth, ROE = long-run ROE"] },
@@ -84,9 +92,9 @@
 
   /* Inputs per method, for the "change a single input" lists. */
   const FIELDS = {
-    dcf: [["start", "Start cash", "Rs bn"], ["nopat", "After-tax operating profit", "Rs bn"], ["growth", "Growth, years 1–5", "%"], ["longRun", "Long-run growth", "%"], ["roc", "Return on new capital", "%"]],
+    dcf: [["start", "Start cash", "Rs bn"], ["nopat", "After-tax operating profit", "Rs bn"], ["growth", "Growth, years 1–5", "%"], ["longRun", "Long-run growth", "%"], ["roc", "Return on new capital", "%"], ["stableRoc", "Return on capital after year 5", "%"]],
     pe: [["eps", "Next-year EPS", "Rs"], ["pe", "P/E (fixed)", "×"], ["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
-    ddm: [["dividend", "Next-year dividend", "Rs"], ["growth", "Growth, years 1–5", "%"], ["longRun", "Long-run growth", "%"]],
+    ddm: [["dividend", "Next-year dividend", "Rs"], ["eps", "Next-year EPS", "Rs"], ["growth", "Growth, years 1–5", "%"], ["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
     ri: [["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
     pb: [["roe", "Long-run ROE", "%"], ["longRun", "Long-run growth", "%"]],
   };
@@ -116,9 +124,9 @@
       { key: "growth", label: "Growth, years 1–5", unit: "%", step: 0.5, span: 5, kind: "add", uses: ["dcf", "ddm"], field: "growth" },
     ] },
     { title: "Earnings and dividends", items: [
-      { key: "eps", label: "Next-year EPS", unit: "Rs", step: 0.05, spanPct: 30, kind: "mul", uses: ["pe"], field: "eps", only: "pe" },
+      { key: "eps", label: "Next-year EPS", unit: "Rs", step: 0.05, spanPct: 30, kind: "mul", uses: ["pe", "ddm"], field: "eps", only: "pe" },
       { key: "dividend", label: "Next-year dividend", unit: "Rs", step: 0.05, spanPct: 30, kind: "mul", uses: ["ddm"], field: "dividend", only: "ddm" },
-      { key: "roe", label: "Long-run ROE", unit: "%", step: 0.5, span: 10, kind: "add", uses: ["pe", "ri", "pb"], field: "roe" },
+      { key: "roe", label: "Long-run ROE", unit: "%", step: 0.5, span: 10, kind: "add", uses: ["pe", "ddm", "ri", "pb"], field: "roe" },
     ] },
     { title: "Cash (DCF)", items: [
       { key: "maint", label: "Maintenance capex", unit: "Rs bn", step: 0.5, span: 15, kind: "add", uses: ["dcf"], field: "maintenance", only: "dcf",
@@ -152,7 +160,7 @@
         if (s.longRun != null) s.longRun += shift.longRun;
         if (s.growth != null) s.growth += shift.growth;
         if (s.roe != null) s.roe += shift.roe;
-        if (mid === "pe") s.eps *= shift.eps;
+        if ((mid === "pe" || mid === "ddm") && s.eps != null) s.eps *= shift.eps;
         if (mid === "ddm") s.dividend *= shift.dividend;
         if (mid === "dcf") {
           s.start -= shift.maint;

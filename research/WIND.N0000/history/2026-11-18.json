@@ -1,0 +1,957 @@
+{
+  "schemaVersion": 1,
+  "ticker": "WIND.N0000",
+  "company": {
+    "name": "WindForce PLC",
+    "sector": "Renewable power (wind, solar, hydro, battery storage; Sri Lanka, Uganda, Pakistan)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "WIND.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-18",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26",
+      "Interim report to 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 38.0,
+    "date": "2026-11-18",
+    "source": "CSE close, 18 November 2026 (generated/prices.json)",
+    "note": "Previous close Rs 38.30. September-quarter range Rs 38.50–41.90."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Sri Lanka's biggest private wind producer, building fast on borrowed money, at 1.9x book for a 6–8% return",
+    "text": "WindForce PLC (WIND.N0000) owns 253 MW of wind, solar and hydro plants (152 MW its own share) and is more than doubling that with 130 MW of battery storage, a 100 MW solar park and a 10 MW wind farm, about Rs 71bn of projects. It passes three of the four business tests (debt, steady profit, cash) but fails the most important one: return on equity has been only 6–8% a year for five years, well below the 16.3% a shareholder should demand. Owners' profit for the half to September 2026 rose 7% to Rs 1.61bn (EPS Rs 1.19), but net debt jumped from Rs 6.6bn to Rs 24.9bn in six months to pay for projects that earn nothing yet, and no dividend has been paid since 2024/25. Most of the older wind farms were built in 2010–2014 on 20-year contracts that the company says generally can't be extended for wind. At Rs 38.00 the share is 1.9x NAV of Rs 19.92 and 31x the last 12 months' EPS. Five methods put fair value at about Rs 6.50. I'd buy at up to Rs 5.54 and treat Rs 4.88 or less as a strong buy. Watch list (category 2)."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Moderate debt, five years of profits and good cash generation, but returns on equity of only 6–8%.",
+    "assessed": "2026-11-18",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "6.3% (2025/26)",
+        "note": "About 6.8%, 6.8%, 7.7% and 6.3% for 2022/23–2025/26 (owners' profit ÷ average owners' equity, worked out); about 6.3% for the last 12 months. Well below 15% and below the 16.3% cost of equity."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.92x owners' equity",
+        "note": "Net debt Rs 24.89bn at 30 September 2026 against owners' equity Rs 27.0bn (0.26x in March; 0.76x total equity including minorities). Close to the limit, and about 5x 2025/26 EBITDA while the new plants are being built (the company's own figure was 1.39x in March)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Owners' profit Rs 1.48–1.79bn every year",
+        "note": "No loss in five years. 2024/25 was lifted by Rs 1.19bn of one-offs (tariff arrears and a gain on selling rooftop solar); on the company's normalised basis group profit rose to Rs 2.14bn in 2025/26 from Rs 1.32bn."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Cash before working capital Rs 4.93bn vs profit Rs 2.15bn (2025/26)",
+        "note": "Depreciation-heavy plants turn profit into cash: cash generated from operations Rs 5.12bn (2024/25) and Rs 3.08bn (2025/26, after Rs 1.85bn tied up in receivables). Rs 1.00 dividend for 2024/25, but none for 2025/26 or so far in 2026/27 while cash goes into projects."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.78,
+    "betaBasis": "Provisional. Damodaran's global Green & Renewable Energy unlevered beta 0.57 (cash-corrected, January 2026; web-search stand-in, as his emerging-markets file couldn't be opened), relevered at net debt 0.48x market value (Rs 38.00) with 25% tax: 0.78. No local 5-year betas found. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 17.8,
+      "base": 16.3,
+      "bull": 14.8
+    },
+    "costOfDebt": 8.65,
+    "wacc": {
+      "bear": 14.5,
+      "base": 13.5,
+      "bull": 12.5
+    },
+    "debtWeight": 32.6,
+    "asOf": "2026-11-18",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 1.010bn ÷ average borrowings and leases Rs 11.67bn (Annual Report 2025/26, pp. 274-277)",
+      "Weights: market cap Rs 51.51bn at Rs 38.00 (CSE close 18 Nov 2026), net debt Rs 24.89bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.78 × (4.2% + 6.08%) = 16.3%; bear +1.5, bull −1.5 points. Inside the 12–22% range for CSE shares. No extra premium for Uganda or Pakistan. WACC weights equity 67.4% and after-tax debt (8.65% × (1 − 12.3%) = 7.6%) 32.6%; the 12.3% tax rate is 2025/26's effective rate, lowered by capital allowances."
+  },
+  "valuation": {
+    "fairValue": 6.51,
+    "buyPrice": 5.54,
+    "strongBuyPrice": 4.88,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 19.92,
+    "note": "Fair value weights the bear/base/bull averages of five methods (whole-company DCF plus projects at cost and joint ventures, P/E, justified P/B, residual income, dividends) 30/50/20: Rs 3.64 / 6.31 / 11.30, giving Rs 6.51 (0.33x NAV). P/E, P/B, residual income and dividends come from scripts/valuation.py. Discount rates come from the beta: cost of equity 16.3%, WACC 13.5%. Down from Rs 7.65 on 17 November mainly because residual income is now worked out by the shared calculator, which keeps ROE below the cost of equity after year 10 instead of stopping there."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, p. 272 and note 13 (p. 301)",
+    "note": "No dividend declared for 2025/26, to fund the project pipeline. Rs 1.00 for 2024/25. None declared in the six months to September 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 19.92,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.91,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 31.1,
+      "unit": "x",
+      "note": "Last 12 months' EPS Rs 1.22, at Rs 38.00"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 6.3,
+      "unit": "%",
+      "note": "2025/26; 6–8% for five years"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "No dividend for 2025/26 (Rs 1.00 for 2024/25)"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 24.89,
+      "unit": "Rs bn",
+      "note": "Sep 2026, up from Rs 6.63bn in March"
+    },
+    {
+      "id": "evEbitda",
+      "label": "EV / EBITDA",
+      "value": 15.5,
+      "unit": "x",
+      "note": "Market cap Rs 51.5bn plus net debt Rs 24.9bn and minorities Rs 5.9bn, less joint ventures Rs 6.6bn, over 2025/26 EBITDA of about Rs 4.86bn; the projects being built earn nothing yet"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 20,
+      "unit": "%",
+      "note": "Six months to Sep 2026"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 51.5,
+      "unit": "Rs bn",
+      "note": "At Rs 38.00, 18 Nov 2026"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue Rs 5.61bn (+20%), gross profit Rs 3.21bn (+12%), owners' profit Rs 1.61bn (+7%), EPS Rs 1.19. September quarter EPS Rs 0.63 (+11%). Finance costs up 43% to Rs 634mn. Curtailment by the grid cost Rs 194mn of revenue; compensation has been approved in principle but its timing is uncertain."
+    },
+    {
+      "title": "Borrowing for the next stage",
+      "text": "Net debt rose from Rs 6.63bn to Rs 24.89bn in six months: Rs 12.7bn of plant and a Rs 9.2bn rise in project advances, mainly the 13-site, 130 MW / 520 MWh battery storage programme (Rs 22.5bn, 51% owned with Vidullanka). The first 10 MW battery site and the 5 MW Diya Janani floating solar plant were commissioned in September 2026; the other 12 battery sites are due by December 2026."
+    },
+    {
+      "title": "100 MW Rividhanavi solar park",
+      "text": "A 50/50 joint venture costing about US$133mn reached financial close in September 2026 (Rs 22.7bn plus US$33mn of bank facilities led by Sampath Bank). Due in August 2027. The 10 MW Safe Power wind farm (Rs 4.2bn, 51%) is due by May 2027 after cyclone delays."
+    },
+    {
+      "title": "2025/26: steady but no dividend",
+      "text": "Revenue Rs 8.04bn (+16%), owners' profit Rs 1.54bn (−14%, as 2024/25 had Rs 1.19bn of one-offs). Generation 569 GWh. Receivables rose as the CEB paid late, so cash from operations fell to Rs 1.52bn after interest and tax. No dividend, against Rs 1.00 a year earlier."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          1.17,
+          1.1,
+          1.15,
+          1.32,
+          1.14,
+          1.22
+        ],
+        "notes": [
+          "Worked out from owners' profit",
+          "Worked out",
+          "Worked out",
+          "Incl. Rs 1.19bn one-offs (group)",
+          null,
+          "Trailing 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          6.8,
+          6.8,
+          7.7,
+          6.3,
+          null
+        ],
+        "notes": [
+          "Opening equity not available",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          "Worked out",
+          null
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          18.9,
+          39.51,
+          31.1
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Company figure",
+          "Company figure",
+          "At Rs 38.00, 18 Nov 2026"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          null,
+          1.0,
+          0,
+          null
+        ],
+        "notes": [
+          "Not in the reports read",
+          "Not in the reports read",
+          "Not in the reports read",
+          null,
+          "None declared",
+          "None declared so far"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 19.92",
+      "reading": "The price is 1.9x NAV. Plants are at depreciated cost; the new projects are at cost and earn nothing yet."
+    },
+    {
+      "method": "Return on equity",
+      "value": "About 6–8%",
+      "reading": "Low for five years and well below the 16.3% cost of equity, so on today's returns the business is worth less than book."
+    },
+    {
+      "method": "P/E",
+      "value": "31.1x trailing",
+      "reading": "A justified forward P/E of about 4–6x at a 16.3% cost of equity and 6–10% ROE."
+    },
+    {
+      "method": "Dividends",
+      "value": "Nil",
+      "reading": "Rs 1.00 for 2024/25, then nothing while cash goes into projects."
+    },
+    {
+      "method": "Cash flow",
+      "value": "About Rs 2.35bn a year",
+      "reading": "Cash before interest after upkeep from today's plants. With the projects at cost and net debt of Rs 24.9bn taken off, about Rs 9.9 a share."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Whole-company DCF (WACC, less net debt) + projects and joint ventures",
+      "bear": 2.86,
+      "base": 9.88,
+      "bull": 18.91,
+      "weighted": 9.58,
+      "comment": "Existing consolidated plants valued as a whole company: cash before interest after maintenance capex Rs 1.6 / 2.35 / 2.7bn (cash from operations before working capital of about Rs 4.6 / 4.9 / 5.1bn, less tax of Rs 0.6 / 0.5 / 0.45bn, less maintenance Rs 2.4 / 2.0 / 1.88bn), after-tax operating profit Rs 2.10 / 2.48 / 2.71bn (operating profit excluding joint ventures and goodwill impairment of about Rs 2.8 / 3.1 / 3.3bn, taxed at 25 / 20 / 18%), growing 0% / 3% / 6% for five years then 1% / 3% / 4%, less the reinvestment that growth needs at an 8% / 10% / 12% return on capital, discounted at WACC 14.5% / 13.5% / 12.5% (scripts/reinvestment.py). Firm value Rs 10.5 / 15.8 / 22.0bn; value after year 5 is 48% / 62% / 74%. Less net debt Rs 24.89bn at 30 September 2026, which already includes the borrowing for projects still being built, so those are added back at cost: Rs 21.9bn (half-year capex Rs 12.7bn plus the Rs 9.2bn rise in project advances, mainly the 130 MW battery storage programme and the 10 MW Safe Power wind farm) at 85% / 100% / 120% of cost, and joint ventures (Rs 6.57bn book, including the 100 MW Rividhanavi solar park) at 85% / 100% / 125% of book. Less minorities at book (Rs 5.94bn). Equity Rs 3.9 / 13.4 / 25.6bn, or Rs 2.86 / 9.88 / 18.91 a share. The calculator's own start cash (Rs −0.8 / 0.4 / 0.5bn from 2025/26 operating cash) isn't used because Rs 1.85bn was tied up in late CEB payments and project advances that year. The perpetuity assumes the older wind farms are repowered when their contracts end (2030–2034 if the 20-year terms run from commissioning); the bear's 0% growth allows for that cost."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 5.06,
+      "base": 6.09,
+      "bull": 8.61,
+      "weighted": 6.29,
+      "comment": "EPS for the year to March 2027 of Rs 1.20 / 1.35 / 1.55 times 4.24 / 4.51 / 5.53, the forward P/E justified at the cost of equity (17.8 / 16.3 / 14.8%) when growth is paid for (payout = 1 − growth ÷ ROE; ROE 6 / 7.5 / 10%, growth 2 / 3 / 4%). Base EPS is 46% below the Rs 2.52 'latest quarter × 4' run-rate because the September quarter is the windy peak (south-west monsoon): in 2025/26 the first half earned Rs 1.11 and the second half only Rs 0.03. It is 11% above the Rs 1.22 earned in the last 12 months. The base allows Rs 0.16 for the second half, including the first battery sites (from October 2026) against higher finance costs."
+    },
+    {
+      "id": "pb",
+      "name": "Justified P/B",
+      "bear": 5.04,
+      "base": 6.74,
+      "bull": 11.07,
+      "weighted": 7.1,
+      "comment": "(ROE − growth) ÷ (cost of equity − growth) × NAV Rs 19.92: ROE 6 / 7.5 / 10%, growth 2 / 3 / 4%, cost of equity 17.8 / 16.3 / 14.8%. ROE has been 6–8% for five years, well below the cost of equity, so the business is worth less than its book value until new projects lift returns. Rs 38.00 would need a lasting ROE of about 28%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 3.67,
+      "base": 4.97,
+      "bull": 8.1,
+      "weighted": 5.21,
+      "comment": "Book value Rs 19.92 (September 2026). ROE moves from 6.3% (last 12 months) to 6 / 7.5 / 10% over ten years, with 35% paid out, at a cost of equity of 17.8 / 16.3 / 14.8%; after that the (negative) excess return grows at 2 / 3 / 4%. Every year subtracts value because ROE stays below the cost of equity; the lowest method after dividends. (On 17 November this was worked by hand with no excess return after year 10, giving Rs 10.84.)"
+    },
+    {
+      "id": "ddm",
+      "name": "Dividends (two-stage)",
+      "bear": 1.58,
+      "base": 3.87,
+      "bull": 9.83,
+      "weighted": 4.38,
+      "comment": "No dividend for 2025/26 or so far in 2026/27 (Rs 1.00 for 2024/25). Assumes Rs 0.25 / 0.50 / 1.00 a year from next year, growing 2 / 4 / 6% for five years (below the 6.3% supported by ROE with all profit kept) then 2 / 3 / 4%, at the cost of equity. The dividend is at risk while cash and new debt go into projects."
+    }
+  ],
+  "modelsNote": "A contracted power producer suits a whole-company DCF; projects still being built are added at cost (their debt is already in net debt) and joint ventures at book. P/E, justified P/B, residual income and dividends use the cost of equity and come from scripts/valuation.py. Growth check: assumed 0% / 3% / 6% against 6.8% supported (reinvestment rate 83.9% × return on capital 8.2%, FY2026); all within it. The bigger growth from the Rs 71bn pipeline is valued through the projects at cost, not by raising the growth rate.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cash before interest after maintenance (start)",
+        "bear": "Rs 1.6bn",
+        "base": "Rs 2.35bn",
+        "bull": "Rs 2.7bn"
+      },
+      {
+        "label": "After-tax operating profit (excl. JVs)",
+        "bear": "Rs 2.10bn",
+        "base": "Rs 2.48bn",
+        "bull": "Rs 2.71bn"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 2.4bn",
+        "base": "Rs 2.0bn",
+        "bull": "Rs 1.88bn"
+      },
+      {
+        "label": "Growth, years 1–5 / long run",
+        "bear": "0% / 1%",
+        "base": "3% / 3%",
+        "bull": "6% / 4%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "8%",
+        "base": "10%",
+        "bull": "12%"
+      },
+      {
+        "label": "WACC / cost of equity",
+        "bear": "14.5% / 17.8%",
+        "base": "13.5% / 16.3%",
+        "bull": "12.5% / 14.8%"
+      },
+      {
+        "label": "Projects being built / JVs",
+        "bear": "85% of cost / 85% of book",
+        "base": "Cost / book",
+        "bull": "120% / 125%"
+      },
+      {
+        "label": "EPS to March 2027 × P/E",
+        "bear": "Rs 1.20 × 4.24",
+        "base": "Rs 1.35 × 4.51",
+        "bull": "Rs 1.55 × 5.53"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "6%",
+        "base": "7.5%",
+        "bull": "10%"
+      },
+      {
+        "label": "Dividend a year",
+        "bear": "Rs 0.25, +2%",
+        "base": "Rs 0.50, +4%",
+        "bull": "Rs 1.00, +6%"
+      }
+    ],
+    "averages": {
+      "bear": 3.64,
+      "base": 6.31,
+      "bull": 11.3
+    },
+    "common": "Net debt Rs 24.89bn, NAV Rs 19.92 and minorities Rs 5.94bn at 30 September 2026. 1,355.4 million shares. Price Rs 38.00 (18 Nov 2026). Older wind plants (2010–2014) are on 20-year contracts; the bear assumes no growth from today's plants."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "14.8%",
+      "16.3%",
+      "17.8%"
+    ],
+    "columns": [
+      "6%",
+      "7.5%",
+      "10%"
+    ],
+    "values": [
+      [
+        5.06,
+        7.6,
+        11.82
+      ],
+      [
+        4.49,
+        6.74,
+        10.48
+      ],
+      [
+        4.04,
+        6.06,
+        9.42
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 3%, NAV Rs 19.92. Rs 38.00 would need a lasting ROE of about 28% at a 16.3% cost of equity."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 5.54
+      },
+      {
+        "shares": 150,
+        "maxPrice": 5.2
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.88
+      }
+    ],
+    "averagePrice": 5.24,
+    "totalCost": 2620,
+    "note": "About Rs 2,620 in total, against Rs 19,000 at Rs 38.00.",
+    "realism": "Rs 5.54 needs a fall of about 85%. The share traded at Rs 38.50–41.90 in the September quarter and Rs 22.90–56.10 in the year to March 2026, so it isn't likely. Even the lowest price of the past 18 months is about four times the buy price."
+  },
+  "changeMyView": {
+    "higher": [
+      "Battery storage sites earning well above the cost of capital once all 13 are running (from December 2026).",
+      "Rividhanavi and Safe Power finished on time and budget, lifting group ROE towards 12% or more.",
+      "Older wind farms (2010–2014, on 20-year contracts) repowered or re-contracted on good terms.",
+      "The CEB/NSO paying on time and paying curtailment compensation."
+    ],
+    "lower": [
+      "ROE staying at 6–8% after the new plants start.",
+      "Debt rising further, or finance costs outgrowing new revenue.",
+      "Wind contracts expiring without renewal, or tariff cuts.",
+      "More curtailment, or poor wind and rain.",
+      "Cost overruns on Rividhanavi (a US$133mn project held 50%)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the Annual Report 2025/26 and the interim report to 30 September 2026, at the CSE close of 18 November 2026. Beta inputs are provisional web-search figures. This is analysis, not personal financial advice."
+  },
+  "fullText": "WINDFORCE PLC (WIND.N0000): long-term valuation, 2026-11-18 (full redo)\n\nSUMMARY\nWindForce is Sri Lanka's largest private wind power producer, with 253 MW of wind, solar and hydro plants (152 MW its own share) in Sri Lanka, Uganda and Pakistan. It is building fast: 130 MW of grid battery storage, a 100 MW solar park and a 10 MW wind farm, about Rs 71bn of projects. It passes three of the four business tests (debt, steady profit, cash), so it counts as \"good\", but it fails the most important one: return on equity has been only 6–8% a year for five years, against a 16.3% cost of equity. At Rs 38.00 (CSE close, 18 November 2026) the share is 1.9x NAV of Rs 19.92 and 31x the last 12 months' EPS of Rs 1.22. On five methods fair value is about Rs 6.50 (Rs 6.51). I'd buy at up to Rs 5.54 and treat Rs 4.88 or less as a strong buy. The price assumes the new projects will earn far more than WindForce's plants have so far. Watch list (category 2).\n\nTHE BUSINESS\n- Wind (84 MW in Sri Lanka, about half the country's private wind capacity): revenue Rs 3.18bn in 2025/26. Seven farms: Seguwantivu and Vidatamunai (2010), Daily Life, Powergen and Nirmalapura (49%, 2012), Joule and Beta (66.4%, 2014), and Hiruras (15 MW, 2023). The report names the \"impending expiry of power purchase agreements for select assets\" as a weakness, says extending wind contracts is generally not feasible, and plans to repower older farms. Contracts are 20-year; if they run from commissioning, the 2010 farms end around 2030, the 2012 farms around 2032 and the 2014 farms around 2034 (the report doesn't give the dates).\n- Solar (13 plants, including the 10 MW Sooryashakthi plant added in 2025/26 and the 5 MW Diya Janani floating plant in September 2026): revenue Rs 2.02bn, the most profitable segment.\n- Hydro: revenue Rs 0.39bn. All expiring hydro contracts were renewed for 20 years in 2024/25.\n- Overseas: Tororo solar in Uganda (subsidiary) Rs 1.05bn revenue; joint ventures Gharo Solar in Pakistan (30%) and Ziba in Uganda (25.5%).\n- New: 13 battery storage (BESS) sites, 130 MW / 520 MWh, under 15-year build-own-operate contracts with the National System Operator, Rs 22.5bn, mostly through Storex (51% WindForce, 49% Vidullanka). Rividhanavi, a 100 MW solar park (50/50 joint venture, about US$133mn). Safe Power, a 10 MW wind farm (51%, Rs 4.2bn). Lowest bidder for the 50 MW Mullikulam wind project.\n- Small lines: engineering (EPC) and electric two-wheelers.\n- Buyers: the CEB and its National System Operator. Payments were late in 2025/26, and the grid curtailed output at weekends (Rs 194mn of revenue lost in the half to September 2026; compensation approved in principle but not yet paid).\n\nLATEST RESULTS\nSix months to 30 September 2026 (unaudited): revenue Rs 5.61bn (+20%), gross profit Rs 3.21bn (+12%), operating profit Rs 2.43bn (+13%), finance costs Rs 634mn (+43%), joint ventures Rs 348mn (+25%), owners' profit Rs 1.61bn (+7%), EPS Rs 1.19 (Rs 1.11). September quarter: revenue Rs 2.99bn (+17%), owners' profit Rs 848mn (+11%), EPS Rs 0.63.\nThe balance sheet changed a lot. Plant rose from Rs 24.8bn to Rs 36.4bn and project advances from Rs 1.7bn to Rs 10.9bn, paid for by Rs 19.0bn of new loans and Rs 2.23bn from Storex's partner. Net debt went from Rs 6.63bn to Rs 24.89bn. Cash from operations was −Rs 6.99bn because the project advances pass through receivables.\nResults are seasonal: the south-west monsoon makes April–September the windy half. In 2025/26 the first half earned EPS Rs 1.11 and the second half only Rs 0.03.\n\n2025/26 (audited): revenue Rs 8.04bn (+16%), operating profit Rs 2.75bn, owners' profit Rs 1.54bn (−14%), EPS Rs 1.14. 2024/25 had Rs 1.19bn of one-offs (Rs 708mn tariff arrears and Rs 486mn gain on selling rooftop solar); on the company's normalised basis, group profit rose 62% to Rs 2.14bn. No dividend (Rs 1.00 a year earlier). Effective tax 12.3%, helped by capital allowances.\n\nBUSINESS TESTS (3 of 4: good; unchanged)\n- Return on equity 15% or more: FAIL. About 6.8%, 6.8%, 7.7% and 6.3% for 2022/23–2025/26; about 6.3% for the last 12 months.\n- Net debt no more than equity: PASS, just. 0.92x owners' equity at September 2026 (0.26x in March). About 5x EBITDA while the projects are being built, well above the usual 3x comfort level.\n- Steady profit: PASS. Owners' profit Rs 1.48–1.79bn every year for five years, no losses.\n- Profit into cash: PASS. Cash before working capital Rs 4.93bn against profit Rs 2.15bn in 2025/26, but no dividend for 2025/26.\n\nMANAGEMENT AND PLANS\nManagement is turning a steady wind, solar and hydro owner into a battery-storage and large-solar developer, mostly on debt. So far it is delivering on time: Diya Janani floating solar and the first battery site were commissioned in September 2026, the other 12 battery sites are due by December 2026, Rividhanavi reached financial close for August 2027, and Safe Power wind is under construction for May 2027. Gearing (gross debt ÷ debt plus equity) is about 46%, near the top of the 25–50% target.\n\nSHAREHOLDERS\nAkbar Brothers (36.4%), the Hirdaramani group (23.0%) and Mona Exports (9.4%) control the company; related companies hold about 71% and the public 24.6%. Between March and September 2026, BBH-Tundra Shikari Global (39.0m shares, 2.9%) left the top 20 while BBH-Tundra Sustainable Frontier added 12.5m; the Managing Director added 0.5m. Shareholders rose from 6,836 to 9,195.\n\nREQUIRED RETURN\nBeta 0.78 (provisional): Damodaran's global renewable energy unlevered beta of 0.57, relevered for net debt at 0.48x market value. No local 5-year beta was found. Cost of equity = 8.24% + 0.78 × (4.2% + 6.08%) = 16.3% (bear 17.8%, bull 14.8%). Cost of debt 8.65% (interest paid Rs 1.01bn ÷ average debt Rs 11.67bn), 7.6% after tax. WACC 13.5% (bear 14.5%, bull 12.5%), with debt 32.6% of the total.\n\nREINVESTMENT AND GROWTH\n- 2025/26 capex booked Rs 1.72bn against depreciation Rs 2.00bn; reinvestment Rs 2.02bn including working capital and the Rs 0.46bn put into Rividhanavi. Reinvestment rate 83.9% × return on capital 8.2% = 6.8% supported growth. Assumed growth 0% / 3% / 6% for today's plants is within it.\n- 2026/27 is a build year: Rs 12.7bn of capex and Rs 9.2bn of project advances in six months. This is growth capex (new battery, solar and wind capacity), judged on its return, and is valued at cost in the DCF, not by raising the growth rate.\n- Maintenance capex: the company doesn't split it. Range Rs 2.4bn (bear; the calculator's Rs 3.2bn two-year average includes the Hiruras and Sooryashakthi builds) / Rs 2.0bn (depreciation) / Rs 1.88bn (depreciation less goodwill impairment and licence amortisation).\n- R&D: not disclosed.\n- Warnings: the projects are funded mainly by new borrowing (Rs 19bn in six months). Older turbines need repowering when contracts end.\n\nVALUATION (Rs per share; bear / base / bull, weighted 30/50/20)\n- Whole-company DCF plus projects and joint ventures: 2.86 / 9.88 / 18.91 (weighted 9.58). Today's plants: Rs 1.6 / 2.35 / 2.7bn a year of cash before interest after maintenance, after-tax operating profit Rs 2.10 / 2.48 / 2.71bn, growth 0/3/6% then 1/3/4%, WACC 14.5 / 13.5 / 12.5%: firm value Rs 10.5 / 15.8 / 22.0bn (48% / 62% / 74% from after year 5). Less net debt Rs 24.89bn; plus projects being built at 85% / 100% / 120% of their Rs 21.9bn cost and joint ventures at 85% / 100% / 125% of Rs 6.57bn book; less minorities Rs 5.94bn.\n- P/E: 5.06 / 6.09 / 8.61 (weighted 6.29). EPS to March 2027 Rs 1.20 / 1.35 / 1.55 × justified P/E 4.24 / 4.51 / 5.53. The base EPS is far below the September quarter × 4 (Rs 2.52) because of the windy-season peak; it is 11% above the last 12 months' Rs 1.22.\n- Justified P/B: 5.04 / 6.74 / 11.07 (weighted 7.10). ROE 6 / 7.5 / 10%, growth 2 / 3 / 4%.\n- Residual income: 3.67 / 4.97 / 8.10 (weighted 5.21). ROE from 6.3% to 6 / 7.5 / 10%, below the cost of equity throughout; now from the shared calculator (on 17 November it was worked by hand and stopped after year 10, giving 10.84).\n- Dividends: 1.58 / 3.87 / 9.83 (weighted 4.38). Rs 0.25 / 0.50 / 1.00 a year from now on, growing 2 / 4 / 6%. The dividend is at risk while cash goes into projects.\n- Scenario averages: 3.64 / 6.31 / 11.30. Fair value Rs 6.51.\n\nRatio checks: beta 0.78, cost of equity 16.3% and WACC 13.5% are inside their normal ranges. Net debt/EBITDA of about 5x is above the usual 3x: the debt is for plants not yet earning, and should fall towards 3x if the battery and solar projects earn as planned. Maintenance capex is 1.0x depreciation in the base. Value after year 5 is under 75% in all cases. Long-run growth (1–4%) is below the 12.24% bond yield and WACC. ROE of 6–8% is below the 15% test; the justified P/E and P/B follow from it.\n\nBUY PRICE\nFair value Rs 6.51. Buy at Rs 5.54 or less (15% margin), strong buy at Rs 4.88 or less (25%).\n500-share plan: 200 at up to Rs 5.54, 150 at up to Rs 5.20, 150 at up to Rs 4.88; average about Rs 5.24, about Rs 2,620 in total (Rs 19,000 at Rs 38.00).\nRealism: Rs 5.54 needs a fall of about 85%. The share traded at Rs 38.50–41.90 in the September quarter and Rs 22.90–56.10 in the year to March 2026. Not likely.\n\nWHAT WOULD CHANGE MY VIEW\nHigher: battery sites earning well above the cost of capital; Rividhanavi and Safe Power on time and budget, lifting ROE to 12% or more; older wind farms repowered or re-contracted on good terms; the CEB paying on time and paying curtailment compensation.\nLower: ROE staying at 6–8% after the new plants start; more debt or rising finance costs; wind contracts ending without replacement; more curtailment; cost overruns on Rividhanavi.\n\nUNCERTAIN OR NOT FOUND\n- Exact contract expiry dates for the older wind farms, battery storage tariffs and Rividhanavi's tariff aren't in the reports read.\n- Beta is provisional (Damodaran's emerging-markets file blocked; no local 5-year betas found).\n- Dividends before 2024/25 and opening equity for 2021/22 aren't in the reports read; EPS and ROE for 2021/22–2023/24 are worked out from the five-year summary.\n",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 17.8,
+      "base": 16.3,
+      "bull": 14.8
+    },
+    "wacc": {
+      "bear": 14.5,
+      "base": 13.5,
+      "bull": 12.5
+    },
+    "debtWeight": 32.6,
+    "shares": 1355.409,
+    "netDebt": 24.891,
+    "pe": {
+      "bear": {
+        "eps": 1.2,
+        "roe": 6,
+        "longRun": 2
+      },
+      "base": {
+        "eps": 1.35,
+        "roe": 7.5,
+        "longRun": 3
+      },
+      "bull": {
+        "eps": 1.55,
+        "roe": 10,
+        "longRun": 4
+      }
+    },
+    "pb": {
+      "book": 19.92,
+      "bear": {
+        "roe": 6,
+        "longRun": 2
+      },
+      "base": {
+        "roe": 7.5,
+        "longRun": 3
+      },
+      "bull": {
+        "roe": 10,
+        "longRun": 4
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 19.92,
+      "payout": 35,
+      "roeStart": 6.3,
+      "bear": {
+        "roe": 6,
+        "longRun": 2
+      },
+      "base": {
+        "roe": 7.5,
+        "longRun": 3
+      },
+      "bull": {
+        "roe": 10,
+        "longRun": 4
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 0.25,
+        "growth": 2,
+        "longRun": 2
+      },
+      "base": {
+        "dividend": 0.5,
+        "growth": 4,
+        "longRun": 3
+      },
+      "bull": {
+        "dividend": 1.0,
+        "growth": 6,
+        "longRun": 4
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-18",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 49–50), Managing Director's message (pp. 53–56), strategy (p. 72), projects (pp. 40–41), wind review (pp. 126–127), financial capital (pp. 139–143), risk (p. 240); progress from the interim to 30 Sep 2026 (MD's message, p. 1)",
+    "takeaway": "Management is turning a steady wind, solar and hydro owner into a battery-storage and large-solar developer, paid for largely with debt; the test is whether these projects earn well above the 6–8% the existing plants return.",
+    "said": [
+      {
+        "text": "Revenue up 16% to a record Rs 8.04bn on Sooryashakthi solar and a full year of Kebitigollewa; profit hit by weekend curtailment and the absence of last year's one-offs",
+        "ref": "pp. 49, 54, 140"
+      },
+      {
+        "text": "Normalised group profit up 62% to Rs 2.14bn, normalised return on capital 6.6% (4.9%)",
+        "ref": "pp. 140, 143"
+      },
+      {
+        "text": "The new Electricity Act and the CEB's break-up caused short-term disruption but should make the sector sounder",
+        "ref": "pp. 49, 53"
+      },
+      {
+        "text": "Fitch kept the A+(lka) rating, stable; a US$18mn IFC loan was signed",
+        "ref": "pp. 49, 139"
+      },
+      {
+        "text": "Older turbines are less efficient and their power purchase agreements are nearing expiry; extending wind contracts is generally not feasible",
+        "ref": "pp. 126, 240"
+      }
+    ],
+    "plans": [
+      {
+        "text": "13 battery storage sites (130 MW / 520 MWh) on 15-year build-own-operate contracts, 12 through Storex (51%)",
+        "ref": "pp. 41, 56"
+      },
+      {
+        "text": "Rividhanavi 100 MW solar park (50% joint venture) by August 2027",
+        "ref": "pp. 40, 55"
+      },
+      {
+        "text": "Safe Power 10 MW wind farm (51%) by May 2027 after cyclone delays",
+        "ref": "pp. 41, 55"
+      },
+      {
+        "text": "Repower older wind farms with larger turbines as their contracts end",
+        "ref": "p. 127"
+      },
+      {
+        "text": "Keep gearing between 25% and 50%; lowest bidder for 50 MW Mullikulam wind (contract not yet signed)",
+        "ref": "pp. 72, 56"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Battery storage programme (13 sites), 80:20 debt to equity",
+        "amount": "About Rs 22.52bn",
+        "ref": "p. 41"
+      },
+      {
+        "text": "Rividhanavi 100 MW solar park (50%)",
+        "amount": "About US$133mn project cost",
+        "ref": "p. 40"
+      },
+      {
+        "text": "Safe Power 10 MW wind farm, 75:25 debt to equity",
+        "amount": "Rs 4.2bn",
+        "ref": "p. 41"
+      },
+      {
+        "text": "Diya Janani 5 MW floating solar",
+        "amount": "Rs 1.176bn",
+        "ref": "p. 40"
+      },
+      {
+        "text": "Plant bought in the half to September 2026",
+        "amount": "Rs 12.69bn",
+        "ref": "Interim Sep 2026, p. 4"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Diya Janani 5 MW floating solar completed by September 2026",
+        "result": "Commissioned in September 2026",
+        "status": "done",
+        "ref": "Interim Sep 2026, p. 1"
+      },
+      {
+        "promise": "13 battery storage sites built",
+        "result": "First 10 MW site (Anuradhapura) commissioned September 2026, earning from 1 October; other 12 due by December 2026",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, pp. 1–2"
+      },
+      {
+        "promise": "Rividhanavi 100 MW solar by August 2027",
+        "result": "Financial close September 2026 (Rs 22.7bn plus US$33mn of facilities); civil and transmission works under way",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, p. 1"
+      },
+      {
+        "promise": "Safe Power 10 MW wind by May 2027",
+        "result": "Major equipment ordered and civil works started",
+        "status": "on-track",
+        "ref": "Interim Sep 2026, p. 1"
+      },
+      {
+        "promise": "Gearing kept between 25% and 50%",
+        "result": "About 46% at September 2026 (gross debt Rs 28.3bn ÷ debt plus total equity), up from 30.5% in March; near the top of the range",
+        "status": "on-track",
+        "ref": "p. 72; Interim Sep 2026, p. 3 (worked out)"
+      },
+      {
+        "promise": "Win the 50 MW Mullikulam wind contract",
+        "result": "Lowest bidder; no signed agreement reported yet",
+        "status": "too-early",
+        "ref": "p. 56"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-03-31",
+    "source": "Interim to 30 Sep 2026, share information (pp. 12–13), against the twenty largest shareholders at 31 March 2026 (Annual Report 2025/26, pp. 346–347).",
+    "takeaway": "Three groups control WindForce: Akbar Brothers (36.4%, with related companies about 38%), the Hirdaramani group (23.0%) and Mona Exports (9.4%); related companies hold about 71%. In the half the Tundra funds trimmed their combined stake (Shikari Global's 39.0m left the top 20 while Sustainable Frontier added 12.5m), and the number of shareholders rose from 6,836 to 9,195.",
+    "groups": [
+      {
+        "name": "Akbar Brothers and related",
+        "pct": 38.0
+      },
+      {
+        "name": "Hirdaramani group",
+        "pct": 22.95
+      },
+      {
+        "name": "Mona Exports and Mouldex",
+        "pct": 9.91
+      },
+      {
+        "name": "Directors and CEO",
+        "pct": 4.53
+      },
+      {
+        "name": "Public",
+        "pct": 24.57
+      }
+    ],
+    "publicFloat": 24.57,
+    "publicHolders": 9174,
+    "publicHoldersPrev": null,
+    "directors": [
+      {
+        "name": "Mr. R. P. Pathirana (Chairman)",
+        "shares": 1963323
+      },
+      {
+        "name": "Mr. A. A. Akbarally",
+        "shares": 166145
+      },
+      {
+        "name": "Mr. K. B. M. I. Perera (Managing Director)",
+        "shares": 43625052
+      },
+      {
+        "name": "Mr. Huzefa Akbarally",
+        "shares": 166145
+      },
+      {
+        "name": "Mr. Hussain Akbarally",
+        "shares": 166145
+      },
+      {
+        "name": "Mr. V. K. Hirdaramani",
+        "shares": 186145
+      },
+      {
+        "name": "Mr. H.M. Udeshi",
+        "shares": 14550000
+      },
+      {
+        "name": "Mr. J. B. S. L. Wimalasena (CEO)",
+        "shares": 500000
+      }
+    ],
+    "top": [
+      {
+        "name": "Akbar Brothers Pvt Ltd",
+        "shares": 492754404,
+        "pct": 36.35,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Hirdaramani Private Limited",
+        "shares": 279211864,
+        "pct": 20.6,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mona Exports (Pvt) Limited",
+        "shares": 126920666,
+        "pct": 9.36,
+        "change": 282000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "BBH-Tundra Sustainable Frontier Fund",
+        "shares": 83018987,
+        "pct": 6.13,
+        "change": 12518987,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Amaliya Private Limited",
+        "shares": 44676827,
+        "pct": 3.3,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. K.B.M.I. Perera",
+        "shares": 43625052,
+        "pct": 3.22,
+        "change": 500000,
+        "new": false,
+        "note": "Managing Director"
+      },
+      {
+        "name": "Hirdaramani Power Private Limited",
+        "shares": 31827927,
+        "pct": 2.35,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Quick Tea Pvt Ltd",
+        "shares": 16568003,
+        "pct": 1.22,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. H.M. Udeshi",
+        "shares": 14550000,
+        "pct": 1.07,
+        "change": 0,
+        "new": false,
+        "note": "Director"
+      },
+      {
+        "name": "Tea House (Pvt) Ltd",
+        "shares": 13092218,
+        "pct": 0.97,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "J.B. Cocoshell (Pvt) Ltd",
+        "shares": 12804500,
+        "pct": 0.94,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Cocoshell Activated Carbon Company (Pvt) Ltd",
+        "shares": 12440000,
+        "pct": 0.92,
+        "change": -100000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Saboor Chatoor (Pvt) Ltd",
+        "shares": 8300000,
+        "pct": 0.61,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. M.K.T. Darwazeh",
+        "shares": 7413761,
+        "pct": 0.55,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. S.K.T. Darwazeh",
+        "shares": 7413761,
+        "pct": 0.55,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mouldex (Pvt) Ltd",
+        "shares": 7401648,
+        "pct": 0.55,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Marina Blue (Private) Limited",
+        "shares": 6969184,
+        "pct": 0.51,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Employees Trust Fund Board",
+        "shares": 4601894,
+        "pct": 0.34,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "DFCC Bank PLC A/C No.02",
+        "shares": 4573742,
+        "pct": 0.34,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "Mr. F.M.T. Darwazeh",
+        "shares": 4444446,
+        "pct": 0.33,
+        "change": null,
+        "new": true,
+        "note": null
+      }
+    ],
+    "gone": [
+      {
+        "name": "BBH -Tundra Shikari Global",
+        "prevShares": 39019719
+      },
+      {
+        "name": "Falcon Trading (Pvt) Ltd",
+        "prevShares": 4325314
+      }
+    ]
+  }
+}

@@ -56,16 +56,32 @@ def pct(x):
     return x / 100.0
 
 
+# Formula sources (check any change against them; don't improvise):
+#   Damodaran, "The Dividend Discount Model" (pages.stern.nyu.edu/~adamodar/pdfiles/eqnotes/ddm.pdf) and
+#     Corporate Finance session 25 slides: two-stage DDM, terminal = EPS(n+1) x stable payout / (r - g),
+#     stable payout = 1 - g / ROE.
+#   Damodaran, valuation sessions 12-19: FCFF = EBIT(1-t) - (g / ROC) x EBIT(1-t); reinvestment rate =
+#     g / ROC; terminal = FCFF(n+1) / (WACC - g), with the stable-period ROC often set near WACC;
+#     stable P/E = payout / (r - g) on next year's EPS; P/BV = (ROE - g) / (r - g).
+#   CFA Institute, Residual Income Valuation (Level II): value = book + PV of (ROE - r) x opening book,
+#     continuing residual income growing at g after the forecast years.
+
+
 def dcf(c, ke, wacc, shares, net_debt, years=5):
+    """Whole-company DCF (Damodaran FCFF). Optional `stableRoc`: return on capital after the
+    growth years (Damodaran usually lowers it toward WACC); without it the growth-period ROC stays."""
     r, g, gl, roc = pct(wacc), pct(c["growth"]), pct(c["longRun"]), pct(c["roc"])
+    roc_st = pct(c["stableRoc"]) if c.get("stableRoc") is not None else roc
     if r <= gl:
         raise ValueError("WACC must be above long-run growth")
+    if roc <= 0 or roc_st <= 0:
+        raise ValueError("return on capital must be above 0")
     cash, profit, value = c["start"], c["nopat"], 0.0
     for t in range(1, years + 1):
         cash *= 1 + g
         profit *= 1 + g
         value += (cash - g / roc * profit) / (1 + r) ** t
-    after = (cash * (1 + gl) - gl / roc * profit * (1 + gl)) / (r - gl)
+    after = (cash * (1 + gl) - gl / roc_st * profit * (1 + gl)) / (r - gl)
     value += after / (1 + r) ** years
     return (value - net_debt) * 1000 / shares
 
@@ -80,6 +96,11 @@ def pe(c, ke, *_):
 
 
 def ddm(c, ke, years=5):
+    """Two-stage dividend model (Damodaran). Dividends grow at `growth` for `years` years; after
+    that EPS grows at `longRun` and the payout becomes 1 - longRun / ROE (`roe`, the long-run ROE),
+    so the dividend is what the business can pay while funding that growth.
+    Without `eps` and `roe` (analyses saved before this fix) the last dividend simply grows at
+    `longRun`, which keeps the high-growth payout forever; validate.py warns about those."""
     r, g, gl = pct(ke), pct(c["growth"]), pct(c["longRun"])
     if r <= gl:
         raise ValueError("cost of equity must be above long-run growth")
@@ -88,6 +109,12 @@ def ddm(c, ke, years=5):
         value += d / (1 + r) ** t
         if t < years:
             d *= 1 + g
+    if c.get("eps") is not None and c.get("roe") is not None:
+        roe = pct(c["roe"])
+        if roe <= gl:
+            raise ValueError("long-run ROE must be above long-run growth")
+        eps_next = c["eps"] * (1 + g) ** (years - 1) * (1 + gl)   # EPS in the first year after the growth years
+        return value + eps_next * (1 - gl / roe) / (r - gl) / (1 + r) ** years
     return value + d * (1 + gl) / (r - gl) / (1 + r) ** years
 
 

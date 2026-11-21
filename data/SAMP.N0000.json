@@ -94,9 +94,9 @@
     "note": "Cost of equity = 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%; bear +1.5, bull −1.5 points. No WACC: a bank's debt is its raw material, so it is valued on equity (P/B, P/E, dividends, residual income)."
   },
   "valuation": {
-    "fairValue": 169,
-    "buyPrice": 144,
-    "strongBuyPrice": 127,
+    "fairValue": 184.74,
+    "buyPrice": 157.03,
+    "strongBuyPrice": 138.55,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -107,7 +107,14 @@
       "bull": 20
     },
     "nav": 173.18,
-    "note": "Fair value weights the bear/base/bull values of the four methods 30/50/20 and averages them (Rs 169.4, about 0.98x group NAV). All four are now worked by scripts/valuation.py from modelInputs."
+    "note": "Fair value weights the bear/base/bull values of the four methods 30/50/20 and averages them (Rs 169.4, about 0.98x group NAV). All four are now worked by scripts/valuation.py from modelInputs. Corrected 2026-11-21: the dividend model now uses Damodaran's stable payout (1 − g ÷ ROE) after year 5, with EPS from the P/E method and the long-run ROE the other methods use; fair value Rs 169 → Rs 184.74.",
+    "textFigures": {
+      "fairValue": 169,
+      "buyPrice": 144,
+      "strongBuyPrice": 127,
+      "asOf": "2026-11-21",
+      "why": "the dividend model was corrected to Damodaran's two-stage form (after year 5 the payout becomes 1 − long-run growth ÷ ROE)"
+    }
   },
   "dividend": {
     "perShare": 10.3,
@@ -344,10 +351,10 @@
     {
       "id": "ddm",
       "name": "Dividend model",
-      "bear": 86.53,
-      "base": 131.71,
-      "bull": 204.01,
-      "weighted": 132.62,
+      "bear": 124.07,
+      "base": 192.09,
+      "bull": 303.14,
+      "weighted": 193.89,
       "comment": "Next year's dividend Rs 10.0 / 11.3 / 12.4 (37% of 2027 EPS, as now: 40% of bank profit), growing with profit at 6% / 9% / 11% for five years (capped at the 11.3% supported), then 5% / 6% / 7%, at the cost of equity. The payout stays at 37%, so profit kept beyond what growth needs isn't counted: a conservative, dividends-as-paid view. If the payout rose to 1 − growth ÷ ROE (about 63%) after five years, as the 14 November version assumed, this method would give about Rs 194 and fair value about Rs 185."
     },
     {
@@ -599,17 +606,27 @@
       "bear": {
         "dividend": 10.0,
         "growth": 6,
-        "longRun": 5
+        "longRun": 5,
+        "eps": 27,
+        "roe": 14
       },
       "base": {
         "dividend": 11.3,
         "growth": 9,
-        "longRun": 6
+        "longRun": 6,
+        "eps": 30.5,
+        "roe": 16
       },
       "bull": {
         "dividend": 12.4,
         "growth": 11,
-        "longRun": 7
+        "longRun": 7,
+        "eps": 33.5,
+        "roe": 18
+      },
+      "basis": {
+        "eps": "valuationInputs: 2027 EPS × P/E",
+        "roe": "valuationInputs: Long-run ROE (price to book)"
       }
     },
     "ri": {

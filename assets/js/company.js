@@ -109,11 +109,14 @@
       const cat = has("quality") ? App.category(d.quality, v, classes.map((sc, i) => (i === 0 ? mainPrice : App.resolvePrice(sc.symbol, null, prices)))) : null;
       if (cat) statuses.unshift(`<div class="status ${cat.n === 3 ? "bad" : cat.n === 1 ? "good" : "warn"}"><b>Category ${cat.n}: ${cat.name}.</b> ${App.esc(d.quality.reason || "")} <a href="#quality">See the tests</a></div>`);
 
-      const rt = d._rate;
-      if (rt) statuses.unshift(`<div class="status warn"><b>Updated for the latest bond rate.</b> ${
-        App.isNum(rt.published.fairValue) && App.isNum(v.fairValue) ? `Fair value ${App.rs(v.fairValue)} (was ${App.rs(rt.published.fairValue)}), buy price ${App.rs(v.buyPrice)} (was ${App.rs(rt.published.buyPrice)}): ` : ""
-      }the 10-year bond moved from ${rt.wasBond}% to ${rt.bond}%${rt.bondDate ? ` (trades on ${App.date(rt.bondDate)})` : ""}. The written analysis of ${App.date(d.analysisDate)} still uses the old figures.${
-        rt.warnings.length ? `<br>${rt.warnings.map(App.esc).join("<br>")}` : ""}</div>`);
+      const rt = d._rate, tf = v && v.textFigures;
+      if (rt && App.isNum(rt.published.fairValue) && App.isNum(v.fairValue) && Math.abs(v.fairValue / rt.published.fairValue - 1) >= 0.005 || (rt && rt.warnings.length)) {
+        const why = rt.delta ? `the 10-year bond moved from ${rt.wasBond}% to ${rt.bond}%${rt.bondDate ? ` (trades on ${App.date(rt.bondDate)})` : ""}` : "the valuation formulas have been corrected since this analysis";
+        statuses.unshift(`<div class="status warn"><b>Recalculated.</b> ${
+          App.isNum(rt.published.fairValue) ? `Fair value ${App.rs(v.fairValue)} (was ${App.rs(rt.published.fairValue)}), buy price ${App.rs(v.buyPrice)} (was ${App.rs(rt.published.buyPrice)}): ` : ""
+        }${why}.${rt.warnings.length ? `<br>${rt.warnings.map(App.esc).join("<br>")}` : ""}</div>`);
+      }
+      if (tf && App.isNum(tf.fairValue) && Math.abs(tf.fairValue - v.fairValue) >= 0.005) statuses.unshift(`<div class="status warn"><b>The written analysis has older figures.</b> It quotes fair value ${App.rs(tf.fairValue)}, buy ${App.rs(tf.buyPrice)} and strong buy ${App.rs(tf.strongBuyPrice)}; the figures here are ${App.rs(v.fairValue)}, ${App.rs(v.buyPrice)} and ${App.rs(v.strongBuyPrice)} because ${App.esc(tf.why || "they were recalculated")}. The text is rewritten at the next update or redo.</div>`);
 
       const sum = has("summary") ? d.summary : null;
       return `

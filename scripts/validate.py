@@ -312,6 +312,32 @@ def chk_model_inputs(s):
     return p
 
 
+def model_soundness(mi):
+    """Checks against the formula sources listed in scripts/valuation.py (Damodaran, CFA Institute)."""
+    out = []
+    market = json.loads((Path(__file__).resolve().parent.parent / "research" / "market-inputs.json").read_text(encoding="utf-8"))
+    bond = (market.get("bondYield10y") or {}).get("value")
+    ke = mi.get("costOfEquity") or {}
+    for mid in ("dcf", "pe", "ddm", "ri", "pb"):
+        m = mi.get(mid)
+        if not isinstance(m, dict):
+            continue
+        for c in ("bear", "base", "bull"):
+            x = m.get(c) or {}
+            gl = x.get("longRun")
+            if is_num(gl) and is_num(bond) and gl >= bond:
+                out.append(f"{mid} {c}: long-run growth {gl}% isn't below the {bond}% 10-year bond rate.")
+            if mid == "ddm":
+                if x.get("eps") is None or x.get("roe") is None:
+                    out.append(f"ddm {c}: no eps and roe, so after year {m.get('years', 5)} the dividend keeps the "
+                               "high-growth payout; Damodaran's stable payout is 1 − g ÷ ROE. Add them and redo.")
+                elif is_num(gl) and is_num(x.get("roe")) and x["roe"] <= gl:
+                    out.append(f"ddm {c}: long-run ROE {x['roe']}% must be above long-run growth {gl}%.")
+            if mid == "dcf" and is_num(x.get("stableRoc")) and is_num((mi.get("wacc") or {}).get(c)) and x["stableRoc"] < mi["wacc"][c]:
+                out.append(f"dcf {c}: return on capital after year 5 ({x['stableRoc']}%) is below WACC; growth would then destroy value.")
+    return out
+
+
 MG_STATUS = ("done", "on-track", "missed", "too-early")
 
 
@@ -421,6 +447,8 @@ def validate_text(text, filename):
             bad.append("modelInputs")
             warnings.append("Section 'modelInputs' doesn't reproduce the published values, so the What if? panel is hidden: "
                             + "; ".join(diffs[:4]) + " (run scripts/valuation.py CODE inputs.json --write).")
+    if isinstance(data.get("modelInputs"), dict) and "modelInputs" not in bad:
+        warnings += [f"modelInputs: {w}" for w in model_soundness(data["modelInputs"])]
     for key in data:
         if key not in CORE and key not in CHECKERS and key not in OPTIONAL_SECTIONS and key not in FRAMEWORK_SECTIONS:
             warnings.append(f"Unknown section '{key}' (shown under 'Other details').")
@@ -461,6 +489,21 @@ def record_warnings(data):
             out.append(f"Research record: interestPaid missing for {annuals[-1].get('period')} (needed for WACC and the DCF).")
         elif f.get("section") not in ("operating", "financing"):
             out.append("Research record: interestPaid needs \"section\": \"operating\" or \"financing\".")
+    # Every modelInputs `basis` must point at something stored in the record (no unrecorded assumptions).
+    names = {v.get("name") for v in record.get("valuationInputs") or []}
+    periods = {(p.get("period"), k) for p in record.get("periods") or [] for k in (p.get("figures") or {})}
+    for mid, m in (data.get("modelInputs") or {}).items():
+        if not isinstance(m, dict) or not isinstance(m.get("basis"), dict):
+            continue
+        for field, ref in m["basis"].items():
+            kind, _, what = str(ref).partition(": ")
+            ok = (kind == "valuationInputs" and what in names) or \
+                 (kind == "periods" and tuple(what.rsplit(".", 1)) in periods)
+            if not ok:
+                out.append(f"modelInputs.{mid}.basis.{field} points at '{ref}', which isn't in the research record.")
+    ddm = (data.get("modelInputs") or {}).get("ddm")
+    if isinstance(ddm, dict) and not isinstance(ddm.get("basis"), dict):
+        out.append("modelInputs.ddm has no basis: name the record entries its eps and roe come from.")
     rr = data.get("requiredReturn")
     if rr is None:
         out.append("No 'requiredReturn' section (beta, cost of equity, WACC): copy it from scripts/reinvestment.py.")
