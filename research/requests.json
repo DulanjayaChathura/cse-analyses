@@ -912,7 +912,9 @@
       "problems": [],
       "messageId": "372",
       "requestedAt": "2026-11-21T11:57:34+00:00",
-      "status": "pending"
+      "status": "failed",
+      "result": "The CSE download labelled 'annual' is only the 9-page Errata (amended AGM notice, Rs 0.212 scrip dividend), not the 2025/26 annual report, and the CSE site can't be reached from the research run to fetch the real one. A full rebuild needs the annual report (management and plans, depreciation, interest paid). Analysis left unchanged (fair value Rs 26.40, buy 22.40, category 3). Fix: re-download the full annual report, or reply ok to /redo RHL.N0000 as-is.",
+      "finishedAt": "2026-11-21T11:59:04+00:00"
     },
     {
       "id": "20261121115824-COCO",
@@ -928,7 +930,9 @@
       "problems": [],
       "messageId": "374",
       "requestedAt": "2026-11-21T11:58:24+00:00",
-      "status": "pending"
+      "status": "failed",
+      "result": "The CSE download labelled 'annual' is only the 10-page Errata (amended AGM notice), not the 2025/26 annual report, and the CSE site can't be reached from the research run to fetch the real one. A full rebuild needs the annual report (management and plans, depreciation, interest paid). Analysis left unchanged (fair value Rs 12.60, buy 10.70, category 3). Fix: re-download the full annual report, or reply ok to /redo COCO.N0000 as-is.",
+      "finishedAt": "2026-11-21T11:59:13+00:00"
     }
   ]
 }
