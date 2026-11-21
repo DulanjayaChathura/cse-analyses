@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "ticker": "VPEL.N0000",
+  "company": {
+    "name": "Vallibel Power Erathna PLC",
+    "sector": "Renewable power (mini-hydro and solar)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "VPEL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-21",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Integrated Annual Report 2025/26 (CSE copy, incl. Ten Years Financial Summary)",
+      "Interim report to 30 June 2026 (CSE copy)",
+      "Interim report to 30 September 2026 (CSE copy)"
+    ]
+  },
+  "price": {
+    "value": 15.0,
+    "date": "2026-09-30",
+    "source": "Last traded price, Interim to 30 Sep 2026 (p. 9)",
+    "note": "The share had no CSE close in the site's price file yet, and web quotes (TradingView Rs 15.40, Simply Wall St Rs 15.70) are undated, so the last price the company reported is used; the daily CSE close replaces it on the site. Traded Rs 14.70-15.90 in July-September 2026 and Rs 11.60-18.40 in 2025/26."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Good, debt-light power producer, but contracts behind 60% of revenue expire within months: at Rs 15 the price assumes they renew at today's tariff",
+    "text": "Vallibel Power Erathna (VPEL.N0000) runs three mini-hydro plants (21.75 MW) and, since September 2025, a 10 MW solar farm, all selling to the state grid. It passes all four business tests: ROE has been 20-45%, net debt is only Rs 0.32bn, it has not made a loss in ten years and profit turns into cash. The problem is timing. The 15-year contracts of its two subsidiary plants, Kiriwaneliya (December 2026) and Denawaka (February 2027), earned Rs 921mn, 60% of 2025/26 revenue, at about Rs 25 a kWh, and their renewal tariff is not disclosed. The group's own renewed plant, Erathna, earns Rs 8.26 a kWh. Recent profit also looks better than it is: 2025/26 included a Rs 421mn one-off tax credit and 2024/25 Rs 479mn of late-payment interest from the CEB. On a first full year after renewal, with the tariff at Erathna's level (bear), halfway (base) or unchanged (bull), EPS is Rs 0.45 / 0.83 / 1.13. At a 14.2% cost of equity (beta 0.58) the five methods give a fair value of about Rs 5.73; buy below Rs 4.87, strong buy below Rs 4.29. At Rs 15.00 the share is well above even the bull case (Rs 9.64). Category: watch list (good business, price too high)."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 4,
+    "outOf": 4,
+    "assessed": "2026-11-21",
+    "reason": "High returns, little debt, no loss in ten years and profit turned into cash, but the two contracts behind 60% of revenue expire within four months.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "40.6%",
+        "note": "Twelve months to September 2026 (code-calculated); 44.8% in 2025/26 and 44.0% in 2024/25, both flattered by one-offs; 20-35% in 2017/18-2023/24 (EPS over average NAV). After the renewals it is about 9 / 16 / 22% in the three cases."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net debt Rs 0.32bn (0.09x)",
+        "note": "Rs 1.32bn of solar-project term loans against Rs 1.03bn of cash at 30 September 2026; no borrowings before 2025/26."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "No loss in ten years",
+        "note": "Profit after tax Rs 516mn-1,345mn a year since 2016/17 (p. 187). The last two years include one-offs (Rs 479mn CEB late-payment interest in 2024/25, Rs 421mn deferred tax credit in 2025/26), but profit before them was still about Rs 1bn before tax."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash",
+        "pass": true,
+        "value": "Operating cash 91% of underlying profit",
+        "note": "2025/26: operating cash Rs 839mn against profit of Rs 924mn before the deferred tax credit; 2024/25 Rs 1,015mn against Rs 1,110mn. Dividends are paid from cash. Weak in H1 2026/27 (Rs 84mn) as the CEB paid late."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.58,
+    "betaBasis": "Provisional. Damodaran's global Green & Renewable Energy unlevered beta 0.57 (cash-corrected, January 2026; web-search stand-in, as his emerging-markets file couldn't be opened), relevered at net debt 0.03x market value with 28% tax: 0.58. No local 5-year betas verified. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 15.7,
+      "base": 14.2,
+      "bull": 12.7
+    },
+    "costOfDebt": 9.03,
+    "wacc": {
+      "bear": 15.6,
+      "base": 14.1,
+      "bull": 12.7
+    },
+    "debtWeight": 2.8,
+    "asOf": "2026-11-21",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Green & Renewable Energy unlevered 0.57 (January 2026, web-search extract)",
+      "Cost of debt: interest paid Rs 62.0mn over average borrowings and leases (Annual Report 2025/26, pp. 144, 146, 169); the loans are at 10.75-11.00%",
+      "Weights: market cap Rs 11.21bn at Rs 15.00 (last traded, 30 Sep 2026), net debt Rs 0.32bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.58 x (4.2% + 6.08%) = 14.2%; bear +1.5, bull -1.5 points. That's inside the 12-22% range for CSE shares, near the low end because contracted power is steady and debt is small. The calculator used 2025/26's effective tax rate (-28.5%, a one-off deferred tax credit) for the after-tax cost of debt; with debt at 2.8% of value, that adds about 0.15 point to WACC."
+  },
+  "valuation": {
+    "fairValue": 5.73,
+    "buyPrice": 4.87,
+    "strongBuyPrice": 4.29,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 5.01,
+    "note": "Fair value weights the bear/base/bull averages of five methods 30/50/20: Rs 2.77 / 5.94 / 9.64, giving Rs 5.73 (1.14x NAV). The methods are a whole-company DCF of the plants plus the deferred tax asset and the last months of the old tariffs, P/E, justified P/B, residual income and dividends, all from scripts/valuation.py. Discount rates come from the beta: cost of equity 14.2%, WACC 14.1%. Everything hinges on the renewal tariff for Denawaka and Kiriwaneliya (bear Rs 8.26, base Rs 16.8, bull Rs 25.4 a kWh)."
+  },
+  "dividend": {
+    "perShare": 0.6,
+    "label": "for 2025/26 (one interim, paid in the year)",
+    "source": "Annual Report 2025/26, pp. 142, 179 (note 28)",
+    "note": "Rs 448.3mn in total; Rs 0.75 for 2024/25 and Rs 1.75 for 2023/24. No dividend to shareholders yet for 2026/27."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 5.01,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.99,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 8.4,
+      "unit": "x",
+      "note": "Trailing EPS Rs 1.79 (code-calculated), which includes a one-off tax credit of about Rs 0.56"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 40.6,
+      "unit": "%",
+      "note": "Twelve months to Sep 2026 (code-calculated); flattered by one-offs"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 4.0,
+      "unit": "%",
+      "note": "Rs 0.60 for 2025/26"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 0.32,
+      "unit": "Rs bn",
+      "note": "Solar loans Rs 1.32bn less cash Rs 1.03bn, 30 Sep 2026"
+    },
+    {
+      "id": "expiring",
+      "label": "Revenue under contracts expiring Dec 2026-Feb 2027",
+      "value": 60,
+      "unit": "%",
+      "note": "Denawaka and Kiriwaneliya, Rs 921mn of Rs 1,538mn in 2025/26"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 14.2,
+      "unit": "%",
+      "note": "Beta 0.58"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue rose 43% to Rs 1,107mn, with Rs 231mn from the new solar farm and better rain at the subsidiary plants; owners' profit rose 17% to Rs 497mn (EPS Rs 0.66 against Rs 0.57). Finance cost on the solar loans was Rs 75mn (Rs 2mn a year earlier)."
+    },
+    {
+      "title": "September quarter",
+      "text": "Revenue +62% to Rs 571mn, but tax jumped to Rs 168mn (Rs 58mn) after the subsidiary paid the company a Rs 430mn net dividend in July, so owners' profit rose only 21% to Rs 225mn (EPS Rs 0.30 against Rs 0.25)."
+    },
+    {
+      "title": "The CEB is paying more slowly",
+      "text": "Money owed by the CEB rose to Rs 709mn at 30 September from Rs 214mn in March, Rs 140mn of it 60-180 days old. Operating cash in the half was only Rs 84mn (Rs 270mn)."
+    },
+    {
+      "title": "2025/26: one-offs on both sides",
+      "text": "Revenue +12% to Rs 1,538mn and profit +21% to Rs 1,345mn, but profit before tax fell 32% to Rs 1,046mn: 2024/25 had Rs 479mn of CEB late-payment interest, and 2025/26 had a Rs 421mn deferred tax credit from the solar plant's 100% capital allowance. Capex Rs 1.58bn, mostly borrowed (Rs 1.30bn of term loans)."
+    },
+    {
+      "title": "Two contracts end within four months",
+      "text": "Kiriwaneliya's power purchase agreement expires in December 2026 and Denawaka's in February 2027. Renewal is subject to agreement with the CEB and the tariff is not disclosed; they earn about Rs 25 a kWh today against Rs 8.26 at Erathna, renewed in 2019."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2017",
+      "FY2018",
+      "FY2019",
+      "FY2020",
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "TTM Sep 2026"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          0.66,
+          0.96,
+          1.12,
+          0.87,
+          0.74,
+          1.02,
+          0.78,
+          0.9,
+          1.31,
+          1.7,
+          1.79
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Includes Rs 479mn CEB late-payment interest",
+          "Includes a Rs 421mn deferred tax credit",
+          "Trailing, code-calculated"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          33.2,
+          34.8,
+          23.5,
+          20.2,
+          30.7,
+          21.1,
+          26.6,
+          44.0,
+          44.8,
+          40.6
+        ],
+        "notes": [
+          "No opening NAV in the summary",
+          "EPS over average NAV per share (Ten Years Financial Summary)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Code-calculated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          10.74,
+          7.59,
+          5.27,
+          6.22,
+          10.01,
+          7.06,
+          8.58,
+          8.22,
+          9.84,
+          8.76,
+          8.38
+        ],
+        "notes": [
+          "As printed (Ten Years Financial Summary)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 15.00 on trailing EPS"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 5.01",
+      "reading": "The price is 3.0x book; the hydro plants are largely depreciated, so book understates them, but only while they keep good tariffs."
+    },
+    {
+      "method": "Return on equity",
+      "value": "40.6%",
+      "reading": "High, but flattered by one-offs and high payouts; after renewal it is about 9 / 16 / 22% in the three cases."
+    },
+    {
+      "method": "P/E",
+      "value": "8.4x",
+      "reading": "Low on trailing EPS, but about 18x base-case EPS after renewal (Rs 0.83) and 13x even if today's tariffs are kept."
+    },
+    {
+      "method": "DCF + add-ons",
+      "value": "Rs 6.64 base",
+      "reading": "Plants worth Rs 3.10-10.22 a share at 12.7-15.6% WACC, including Rs 0.23 of deferred tax asset."
+    },
+    {
+      "method": "Dividends",
+      "value": "4.0% yield",
+      "reading": "Rs 0.60 for 2025/26; cash covers it, but the dividend falls with the tariff."
+    },
+    {
+      "method": "Contract risk",
+      "value": "60% of revenue",
+      "reading": "Denawaka and Kiriwaneliya contracts expire December 2026 and February 2027; the new tariff decides the value."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Whole-company DCF (WACC, less net debt) + deferred tax and old-tariff months",
+      "bear": 3.1,
+      "base": 6.64,
+      "bull": 10.22,
+      "weighted": 6.29,
+      "comment": "The plants are valued as a whole company on the first full year after both renewals. Cash after maintenance capex is Rs 0.38 / 0.71 / 0.93bn: owners' share of after-tax operating profit of Rs 0.38 / 0.67 / 0.89bn, plus depreciation of Rs 0.17bn, less maintenance capex of Rs 0.17 / 0.13 / 0.13bn. Growth 0 / 1.5 / 2% for five years, then 1.5 / 2 / 2.5%, paid for at a 10 / 13 / 15% return on new capital, discounted at WACC 15.6 / 14.1 / 12.7%, less net debt of Rs 0.32bn. Value after year 5 is 47-61% of the total. Add Rs 0.23 a share for the deferred tax asset and Rs 0.08 / 0.04 / 0 for the months left at the old tariff."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 2.64,
+      "base": 5.95,
+      "bull": 9.78,
+      "weighted": 5.72,
+      "comment": "EPS of the first full year after renewal of Rs 0.45 / 0.83 / 1.125 times 5.9 / 7.2 / 8.7, the forward P/E justified at the cost of equity when growth is paid for: payout = 1 - growth / ROE, with ROE 9 / 16 / 22% and growth 1.5 / 2 / 2.5%. Base EPS is 54% below the Rs 1.79 run-rate for two specific reasons: the run-rate includes a one-off Rs 421mn tax credit (about Rs 0.56 a share), and the subsidiary contracts that earn 60% of revenue expire in December 2026 and February 2027."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 2.65,
+      "base": 5.75,
+      "bull": 9.58,
+      "weighted": 5.59,
+      "comment": "(ROE - growth) / (cost of equity - growth) x NAV of Rs 5.01, with ROE 9 / 16 / 22%, growth 1.5 / 2 / 2.5% and cost of equity 15.7 / 14.2 / 12.7%: 0.53 / 1.15 / 1.91x book. Rs 15.00 is 3.0x book, which would need a lasting ROE of about 38% at the base cost of equity."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 2.84,
+      "base": 5.92,
+      "bull": 9.9,
+      "weighted": 5.79,
+      "comment": "Book value Rs 5.01 (September 2026). ROE moves from 22% (today's tariffs) to 9 / 16 / 22% within two years, as the tariff change comes within months, with 70% paid out, at a cost of equity of 15.7 / 14.2 / 12.7%. After that the excess return grows at 1.5 / 2 / 2.5%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividends (two-stage)",
+      "bear": 2.61,
+      "base": 5.42,
+      "bull": 8.72,
+      "weighted": 5.24,
+      "comment": "The 2026/27 dividend is Rs 0.40 / 0.60 / 0.75 (Rs 0.60 for 2025/26, none declared yet for 2026/27). It grows 0 / 1.5 / 2% for five years, then 1.5 / 2 / 2.5%, at a cost of equity of 15.7 / 14.2 / 12.7%; after year 5 the payout becomes 1 - growth / ROE. Cash after maintenance covered 2025/26's dividend 1.6 times."
+    }
+  ],
+  "modelsNote": "Five methods, equal weight, all from scripts/valuation.py. Growth check: the plants support about 0% growth (capex outside the solar project was Rs 4mn in 2025/26 against Rs 128mn depreciation, and there are no capital commitments); the calculator's 109% reflects the one-off solar build, and the assumed 0 / 1.5 / 2% are within 2 points. NAV (Rs 5.01) is shown for reference only. The bear case is not a disaster case: if a contract were not renewed at all, that plant would earn nothing.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Renewal tariff, Denawaka and Kiriwaneliya",
+        "bear": "Rs 8.26 a kWh (Erathna's)",
+        "base": "Rs 16.8 (halfway)",
+        "bull": "Rs 25.4 (today's)"
+      },
+      {
+        "label": "Generation",
+        "bear": "Dry year for the subsidiaries (36 GWh), solar 18 GWh",
+        "base": "Average: 83 GWh hydro, 20 GWh solar",
+        "bull": "Average"
+      },
+      {
+        "label": "Cash costs",
+        "bear": "Rs 380mn",
+        "base": "Rs 365mn",
+        "bull": "Rs 358mn"
+      },
+      {
+        "label": "After-tax operating profit (owners)",
+        "bear": "Rs 384mn",
+        "base": "Rs 668mn",
+        "bull": "Rs 889mn"
+      },
+      {
+        "label": "EPS, first full year after renewal",
+        "bear": "Rs 0.45",
+        "base": "Rs 0.83",
+        "bull": "Rs 1.125"
+      },
+      {
+        "label": "Cost of equity",
+        "bear": "15.7%",
+        "base": "14.2%",
+        "bull": "12.7%"
+      },
+      {
+        "label": "WACC",
+        "bear": "15.6%",
+        "base": "14.1%",
+        "bull": "12.7%"
+      },
+      {
+        "label": "Growth, five years then long-run",
+        "bear": "0% then 1.5%",
+        "base": "1.5% then 2%",
+        "bull": "2% then 2.5%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "10%",
+        "base": "13%",
+        "bull": "15%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "9%",
+        "base": "16%",
+        "bull": "22%"
+      },
+      {
+        "label": "Dividend 2026/27",
+        "bear": "Rs 0.40",
+        "base": "Rs 0.60",
+        "bull": "Rs 0.75"
+      }
+    ],
+    "averages": {
+      "bear": 2.77,
+      "base": 5.94,
+      "bull": 9.64
+    },
+    "common": "10-year rupee bond 12.24%, risk-free rate 8.24%, beta 0.58. Erathna Rs 8.26 a kWh on 42 GWh and solar Rs 25.39 a kWh (fixed to 2045) in every case. Tax about 29% (company 30%, subsidiary 15% plus 15% dividend withholding); minorities own 12.8% of the subsidiary. Net debt Rs 0.32bn and NAV Rs 5.01 at September 2026."
+  },
+  "sensitivity": {
+    "title": "P/E method value by renewal tariff, Rs per share",
+    "rowLabel": "Renewal tariff (Rs a kWh)",
+    "columnLabel": "Cost of equity",
+    "rows": [
+      "8.26",
+      "12.5",
+      "16.8",
+      "21.1",
+      "25.4"
+    ],
+    "columns": [
+      "12.7%",
+      "14.2%",
+      "15.7%"
+    ],
+    "values": [
+      [
+        4.12,
+        3.62,
+        3.22
+      ],
+      [
+        5.46,
+        4.79,
+        4.26
+      ],
+      [
+        6.81,
+        5.97,
+        5.32
+      ],
+      [
+        8.16,
+        7.16,
+        6.38
+      ],
+      [
+        9.52,
+        8.35,
+        7.43
+      ]
+    ],
+    "base": {
+      "row": 2,
+      "column": 1
+    },
+    "note": "Average generation, long-run growth 2%, ROE from each tariff's profit. Today's Rs 15.00 needs today's tariff kept and a cost of equity of about 9%, or a lasting P/E of about 13x on Rs 1.12."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 4.87
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.6
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.29
+      }
+    ],
+    "averagePrice": 4.62,
+    "totalCost": 2307.5,
+    "note": "About Rs 2,310 in total, against Rs 7,500 at Rs 15.00.",
+    "realism": "Rs 4.87 needs a 68% fall. That is below every year-end price in the ten-year summary (lowest Rs 5.40 in March 2020) and far below the recent range (low Rs 11.60 in 2025/26, Rs 14.70 in July-September 2026), so the buy price is very unlikely to be reached unless the renewals go badly. A better trigger is the renewal announcement: if the tariff is at or near today's, fair value rises towards Rs 9-10."
+  },
+  "changeMyView": {
+    "higher": [
+      "Kiriwaneliya and Denawaka renewed at or near today's Rs 25 a kWh (the bull case: about Rs 9.60 a share).",
+      "A new contract or tender win (battery storage, more solar) at a return clearly above 14%.",
+      "The CEB paying on time again, bringing the Rs 709mn of receivables back down.",
+      "A lower required return across the market (a falling bond yield)."
+    ],
+    "lower": [
+      "Renewal at Erathna's Rs 8.26 a kWh or lower, or a gap between expiry and renewal with no revenue.",
+      "Further solar curtailment by the grid operator, or a dry year for the hydro plants.",
+      "CEB arrears growing, turning profit into receivables rather than cash.",
+      "Borrowing for a new project at a low return, or cash paid out above what the plants earn."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The renewal tariff for the two subsidiary plants is an assumption, not a disclosed figure. This is analysis, not personal financial advice."
+  },
+  "fullText": "**Summary**\n\nVallibel Power Erathna PLC (VPEL.N0000) owns three mini-hydro plants (Erathna 9.9 MW; and, through its 87.2% subsidiary Country Energy, Denawaka 7.2 MW and Kiriwaneliya 4.65 MW) and a 10 MW solar farm at Dolahena, Matara, opened in September 2025. All the power goes to the state grid under standardised power purchase agreements (SPPAs). Vallibel Power Limited owns 40.08%.\n\nIt is a good business on the four tests: ROE 20-45%, net debt only Rs 0.32bn, no loss in ten years, and profit turns into cash. But at Rs 15.00 (last traded, 30 September 2026) the share is about 2.6 times my fair value of Rs 5.73. Buy price Rs 4.87 (fair value less 15%); strong buy Rs 4.29 (less 25%). Category: watch list (good business, price too high).\n\n**The one thing that matters: two contracts expire within four months**\n\n- Kiriwaneliya's 15-year SPPA ends in December 2026 and Denawaka's in February 2027. Together they earned Rs 921mn, 60% of 2025/26 revenue, on the avoided-cost tariff of about Rs 25 a kWh.\n- Renewal is \"subject to agreement\" with the CEB, and management expects to renew \"in line with prevailing regulatory provisions\". No new tariff is disclosed, in the annual report or the September interim.\n- The only evidence in the reports is the group's own Erathna plant, renewed in 2019 to 2039: it earns a plant-factor tariff of Rs 8.26 a kWh (Rs 353.5mn for 42.8 GWh).\n- I value the first full year after renewal with the tariff at Erathna's level (bear, Rs 8.26), halfway (base, Rs 16.8) or unchanged (bull, Rs 25.4). EPS is then Rs 0.45 / 0.83 / 1.13, against a reported Rs 1.79 for the last twelve months.\n\n**Latest results**\n\n- Six months to September 2026: revenue Rs 1,107mn (+43%), owners' profit Rs 497mn (+17%), EPS Rs 0.66 (Rs 0.57). Solar brought Rs 231mn; hydro output was up at all three plants.\n- September quarter: revenue Rs 571mn (+62%) but tax Rs 168mn (Rs 58mn), after the subsidiary paid the company a Rs 430mn net dividend; EPS Rs 0.30 (Rs 0.25).\n- The CEB owed Rs 709mn at 30 September (Rs 214mn in March), Rs 140mn of it 60-180 days old; operating cash in the half was only Rs 84mn.\n- 2025/26: revenue Rs 1,538mn (+12%), profit Rs 1,345mn (+21%) but profit before tax Rs 1,046mn (-32%). 2024/25 had Rs 479mn of CEB late-payment interest; 2025/26 had a Rs 421mn deferred tax credit from the solar plant's 100% capital allowance. Both flatter the trend.\n- Solar farm: Rs 1,733mn, financed by Rs 1,296mn of Commercial Bank loans at 10.75-11.00% over seven years. Net debt Rs 0.32bn at September; NAV Rs 5.01.\n\n**Valuation (Rs per share)**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| DCF of the plants + deferred tax and old-tariff months | 3.10 | 6.64 | 10.22 | 6.29 |\n| P/E (first year after renewal) | 2.64 | 5.95 | 9.78 | 5.72 |\n| Justified price to book | 2.65 | 5.75 | 9.58 | 5.59 |\n| Residual income | 2.84 | 5.92 | 9.90 | 5.79 |\n| Dividends (two-stage) | 2.61 | 5.42 | 8.72 | 5.24 |\n| **Average** | **2.77** | **5.94** | **9.64** | **5.73** |\n\nWeights 30 / 50 / 20. Cost of equity 15.7 / 14.2 / 12.7% (beta 0.58), WACC 15.6 / 14.1 / 12.7%.\n\n**Key assumptions**\n\n- Generation: Erathna 42 GWh, solar 20 GWh (18 in the bear case for grid curtailment), Denawaka and Kiriwaneliya 41 GWh (36 GWh, 2025/26's dry year, in the bear case).\n- Solar tariff Rs 25.39 a kWh, fixed to 2045. Erathna Rs 8.26 to 2039.\n- Cash costs about Rs 365mn a year, as in 2025/26 plus a full year of solar; depreciation Rs 167mn.\n- Tax about 29%: 30% at the company, 15% plus 15% dividend withholding at the subsidiary. Minorities own 12.8% of the subsidiary.\n- Growth 0 / 1.5 / 2% for five years, then 1.5 / 2 / 2.5%. The existing plants support about 0% growth (capex outside the solar project was Rs 4mn in 2025/26 against Rs 128mn depreciation; no capital commitments), so growth needs new projects, which the DCF charges at a 10 / 13 / 15% return on new capital.\n- Long-run ROE 9 / 16 / 22%; dividend for 2026/27 Rs 0.40 / 0.60 / 0.75.\n- Add-on: the Rs 171mn deferred tax asset (Rs 0.23 a share) and the few months left at the old tariff (Rs 0.08 / 0.04 / 0).\n\n**What the price implies**\n\nRs 15.00 is 18 times base-case EPS after renewal and 13 times EPS even if today's tariff is kept. At a 14.2% cost of equity and 2% growth, no ROE justifies a P/E of 13 (the most is about 8). The market seems to expect renewal at today's tariff and a lower required return.\n\n**Buy plan (500 shares)**\n\n- 200 shares up to Rs 4.87, 150 up to Rs 4.60, 150 up to Rs 4.29: average about Rs 4.62, about Rs 2,310 in total (Rs 7,500 at today's price).\n- Realism: Rs 4.87 needs a 68% fall, below every year-end price in the last ten years (lowest Rs 5.40 in March 2020). It is unlikely unless the renewals go badly. Watch the renewal announcement instead: at today's tariff, fair value is nearer Rs 9-10.\n\n**What would change my view**\n\n- Higher: renewal at or near Rs 25 a kWh; a battery-storage or new solar contract at a good return; the CEB paying on time.\n- Lower: renewal at Erathna's Rs 8.26 or lower, or a gap with no revenue; more curtailment or a dry year; CEB arrears growing; a new project at a poor return.\n\n**Management and plans**\n\nThe solar farm was built in the planned six months and is on track for more than Rs 500mn a year. Management plans to renew the two contracts, look at battery storage (it took part in a tender) and keep a \"balanced\" dividend. One of the two Joint CEOs resigned at the end of May 2026. Nothing has been said about the renewal terms.\n\n**Shareholders**\n\nVallibel Power Limited 40.08% and Mr K.D.D. Perera 19.38% (printed K.A.D. Perera in March), unchanged. Public holding 40.52% with 8,863 holders (8,198 in March). Small buying by P.P. Subasinghe (+0.52mn) and Sampath Bank/Dr Dewolage (+0.45mn); DFCC Bank sold 0.62mn. SLIC's two holdings were renamed and total 38.0mn, as before.\n\n**Uncertain or not found**\n\n- The renewal tariff for Denawaka and Kiriwaneliya: not disclosed; the single biggest unknown.\n- Share price: no CSE close in the site's price file for this share yet; Rs 15.00 is the last traded price the company reported for 30 September 2026.\n- Beta: Damodaran's emerging-markets file couldn't be opened and no local 5-year betas were verified (provisional 0.58).\n- The calculator's tax rate for 2025/26 is negative (one-off deferred tax credit), which slightly overstates the after-tax cost of debt.\n",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 15.7,
+      "base": 14.2,
+      "bull": 12.7
+    },
+    "wacc": {
+      "bear": 15.6,
+      "base": 14.1,
+      "bull": 12.7
+    },
+    "debtWeight": 2.8,
+    "shares": 747.11,
+    "netDebt": 0.325,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 0.384,
+        "nopat": 0.384,
+        "growth": 0,
+        "longRun": 1.5,
+        "roc": 10,
+        "maintenance": 0.167
+      },
+      "base": {
+        "start": 0.707,
+        "nopat": 0.668,
+        "growth": 1.5,
+        "longRun": 2,
+        "roc": 13,
+        "maintenance": 0.128
+      },
+      "bull": {
+        "start": 0.928,
+        "nopat": 0.889,
+        "growth": 2,
+        "longRun": 2.5,
+        "roc": 15,
+        "maintenance": 0.128
+      },
+      "addOn": {
+        "bear": 0.309,
+        "base": 0.269,
+        "bull": 0.229
+      },
+      "addOnNote": "Deferred tax asset Rs 170.9mn (30 Sep 2026), Rs 0.23 a share in every case, plus the extra profit from today's tariffs until the two subsidiary contracts expire (December 2026, February 2027): Rs 0.08 bear, 0.04 base, none bull.",
+      "basis": {
+        "start": "valuationInputs: Cash after maintenance capex (start)",
+        "nopat": "valuationInputs: Normalised after-tax operating profit (start)",
+        "roc": "valuationInputs: Return on new capital",
+        "growth": "valuationInputs: Growth",
+        "maintenance": "valuationInputs: Maintenance capex basis",
+        "addOn": "valuationInputs: Old tariffs until expiry and deferred tax (add-on)"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 0.45,
+        "roe": 9,
+        "longRun": 1.5
+      },
+      "base": {
+        "eps": 0.83,
+        "roe": 16,
+        "longRun": 2
+      },
+      "bull": {
+        "eps": 1.125,
+        "roe": 22,
+        "longRun": 2.5
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS after renewal x P/E",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "pb": {
+      "book": 5.01,
+      "bear": {
+        "roe": 9,
+        "longRun": 1.5
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 2
+      },
+      "bull": {
+        "roe": 22,
+        "longRun": 2.5
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ri": {
+      "years": 2,
+      "book": 5.01,
+      "payout": 70,
+      "roeStart": 22,
+      "bear": {
+        "roe": 9,
+        "longRun": 1.5
+      },
+      "base": {
+        "roe": 16,
+        "longRun": 2
+      },
+      "bull": {
+        "roe": 22,
+        "longRun": 2.5
+      },
+      "basis": {
+        "payout": "valuationInputs: Residual income start",
+        "roeStart": "valuationInputs: Residual income start",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 0.4,
+        "eps": 0.45,
+        "growth": 0,
+        "roe": 9,
+        "longRun": 1.5
+      },
+      "base": {
+        "dividend": 0.6,
+        "eps": 0.83,
+        "growth": 1.5,
+        "roe": 16,
+        "longRun": 2
+      },
+      "bull": {
+        "dividend": 0.75,
+        "eps": 1.125,
+        "growth": 2,
+        "roe": 22,
+        "longRun": 2.5
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend to March 2027",
+        "eps": "valuationInputs: EPS after renewal x P/E",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "dcf.addOn.bear": {
+        "calc": "latest.deferredTaxAsset * 1000 / latest.sharesOutstanding + 0.08",
+        "basis": "valuationInputs: Old tariffs until expiry and deferred tax (add-on)"
+      },
+      "dcf.addOn.base": {
+        "calc": "latest.deferredTaxAsset * 1000 / latest.sharesOutstanding + 0.04",
+        "basis": "valuationInputs: Old tariffs until expiry and deferred tax (add-on)"
+      },
+      "dcf.addOn.bull": {
+        "calc": "latest.deferredTaxAsset * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Old tariffs until expiry and deferred tax (add-on)"
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-21",
+    "source": "Annual Report 2025/26: Chairman's statement (pp. 23-24), Joint CEOs' review (pp. 26-28), operating environment and plant pages (pp. 39-43), financial capital (p. 59), notes 14 and 29 (pp. 168, 179); progress from the interims to June and September 2026",
+    "takeaway": "Management delivered its one project, the 10 MW solar farm, on time, but has not said on what tariff the two hydro contracts that earn most of the profit will be renewed in the next few months.",
+    "said": [
+      {
+        "text": "2025/26 revenue rose 12% to Rs 1,538mn and profit 21% to Rs 1,345mn, helped by the solar farm from September 2025",
+        "ref": "pp. 23, 26"
+      },
+      {
+        "text": "The solar farm was built in the planned six months and earned Rs 264mn in its first seven months; a full year should bring more than Rs 500mn",
+        "ref": "pp. 23, 26"
+      },
+      {
+        "text": "Denawaka and Kiriwaneliya generated less than the year before because of weaker rain",
+        "ref": "p. 26"
+      },
+      {
+        "text": "The grid curtailed output at low-demand times, hurting solar, and tariff-based tenders are getting more competitive",
+        "ref": "p. 27"
+      },
+      {
+        "text": "One of the two Joint CEOs, Aruna Dheerasinghe, resigned from 31 May 2026",
+        "ref": "p. 28"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Renew the first-term contracts of the two subsidiary hydro plants, which expire in the coming year, under the prevailing regulations",
+        "ref": "p. 39"
+      },
+      {
+        "text": "Look for battery storage (BESS) projects; took part in a competitive tender during the year",
+        "ref": "pp. 24, 27-28"
+      },
+      {
+        "text": "Weigh further renewable projects while keeping financial discipline",
+        "ref": "p. 28"
+      },
+      {
+        "text": "Keep a balanced dividend: steady returns while keeping capital for renewable investment",
+        "ref": "p. 24"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Capital expenditure in 2025/26, almost all on the Dolahena ground-mounted solar projects (Rs 1,733mn)",
+        "amount": "Rs 1,737mn in 2025/26",
+        "ref": "p. 59"
+      },
+      {
+        "text": "Commercial Bank term loans to part-finance the solar farm, at 10.75-11.00%, 84 monthly instalments including 12 months' grace",
+        "amount": "Rs 1,372mn facility (Rs 1,296mn drawn at March 2026)",
+        "ref": "p. 168"
+      },
+      {
+        "text": "No capital commitments at 31 March 2026",
+        "amount": null,
+        "ref": "p. 179"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Build the 10 MW solar farm within six months and finance it as planned",
+        "result": "Commercial operation from 10 September 2025; Rs 1,296mn of loans drawn",
+        "status": "done",
+        "ref": "Annual Report 2025/26, pp. 26, 150, 168"
+      },
+      {
+        "promise": "Solar revenue above Rs 500mn in a full year",
+        "result": "Rs 231.5mn in April-September 2026 (9.1 GWh at Rs 25.5 a kWh)",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, note 8 (p. 6)"
+      },
+      {
+        "promise": "Renew the two subsidiary hydro contracts",
+        "result": "Kiriwaneliya expires December 2026, Denawaka February 2027; the September interim says nothing about renewal or tariff",
+        "status": "too-early",
+        "ref": "Annual Report 2025/26, pp. 39, 42-43; Interim to 30 Sep 2026"
+      },
+      {
+        "promise": "Battery storage projects",
+        "result": "No award or investment shown in the interims to September 2026",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026"
+      },
+      {
+        "promise": "Balanced, consistent dividend",
+        "result": "No dividend to shareholders in April-September 2026 (Rs 74mn paid to the subsidiary's minorities); Rs 591mn cash at the company",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, pp. 1, 4"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-03-31",
+    "source": "Interim to 30 Sep 2026, p. 9 (major shareholders, directors) and note 12.1 (public holding, p. 8), against the twenty major shareholders at 31 March 2026 in the Annual Report 2025/26 (p. 193) and its public-holder count (p. 192). The September list has 21 names; the 21st, Mrs. A.R.N. Perera (2,092,211, 0.280%), is left out of the top 20.",
+    "takeaway": "Vallibel Power Limited (40.08%) and Mr K.D.D. Perera (19.38%) hold almost 60%, unchanged since March. Moves were small: P.P. Subasinghe +0.52mn shares and Sampath Bank/Dr Dewolage +0.45mn, DFCC Bank -0.62mn; SLIC's two holdings were renamed after its Life/General split and still total 38.0mn. Public holders rose to 8,863 from 8,198.",
+    "groups": [
+      {
+        "name": "Vallibel Power Limited",
+        "pct": 40.078
+      },
+      {
+        "name": "Mr. K.D.D. Perera",
+        "pct": 19.383
+      },
+      {
+        "name": "Public",
+        "pct": 40.517
+      }
+    ],
+    "publicFloat": 40.517,
+    "publicHolders": 8863,
+    "publicHoldersPrev": 8198,
+    "directors": [
+      {
+        "name": "Mr. Harsha Amarasekera (Chairman)",
+        "shares": 30
+      },
+      {
+        "name": "Mr. Prabodha Sumanasekera",
+        "shares": 150000
+      },
+      {
+        "name": "Mr. Haresh Somashantha",
+        "shares": 15000
+      },
+      {
+        "name": "Ms. Dinusha Bhaskaran",
+        "shares": 0
+      },
+      {
+        "name": "Ms. Devika Weerasinghe",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Dinesh Mendis",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Gamini Gunaratne",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Vallibel Power Limited",
+        "shares": 299425830,
+        "pct": 40.078,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. K.D.D. Perera",
+        "shares": 144812225,
+        "pct": 19.383,
+        "change": 0,
+        "new": false,
+        "note": "Printed 'Mr. K.A.D. Perera' in the March 2026 list, with the same 144,812,225 shares: the same holder"
+      },
+      {
+        "name": "Sri Lanka Insurance Corporation Life Ltd Participating Portfolio A/C 01",
+        "shares": 35501345,
+        "pct": 4.752,
+        "change": null,
+        "new": false,
+        "note": "Renamed: in March the two SLIC holdings were 'Life Fund' (25,922,543) and 'General Fund' (12,081,306). The two accounts now hold 38,003,849 together, exactly as before, so no net change"
+      },
+      {
+        "name": "Mr K.D.H. Perera",
+        "shares": 18750000,
+        "pct": 2.51,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr K.D.A. Perera",
+        "shares": 18750000,
+        "pct": 2.51,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. P.P. Subasinghe",
+        "shares": 16423737,
+        "pct": 2.198,
+        "change": 518099,
+        "new": false
+      },
+      {
+        "name": "Mackenzie Capital Ltd",
+        "shares": 15850000,
+        "pct": 2.122,
+        "change": 250000,
+        "new": false
+      },
+      {
+        "name": "Perera and Sons Bakers Pvt Limited",
+        "shares": 10000000,
+        "pct": 1.338,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Ms K.D.C. Samanthi",
+        "shares": 9375000,
+        "pct": 1.255,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "N P Capital Ltd",
+        "shares": 9000000,
+        "pct": 1.205,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "DFCC Bank PLC A/C 1",
+        "shares": 8704215,
+        "pct": 1.165,
+        "change": -621041,
+        "new": false
+      },
+      {
+        "name": "Employees Trust Fund Board",
+        "shares": 7482091,
+        "pct": 1.001,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. S.M. Jayasooriya",
+        "shares": 5593056,
+        "pct": 0.749,
+        "change": 98702,
+        "new": false
+      },
+      {
+        "name": "Mr. M.F. Hashim",
+        "shares": 5318387,
+        "pct": 0.712,
+        "change": 121530,
+        "new": false
+      },
+      {
+        "name": "Sampath Bank PLC/Dr.Mayuramana Dewolage",
+        "shares": 4125904,
+        "pct": 0.552,
+        "change": 445048,
+        "new": false
+      },
+      {
+        "name": "Dr. S.P. Jayawardena",
+        "shares": 3503945,
+        "pct": 0.469,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. D.D. Gunaratne",
+        "shares": 3400000,
+        "pct": 0.455,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. D.D.K. Rajapaksa",
+        "shares": 3002800,
+        "pct": 0.402,
+        "change": 102800,
+        "new": false
+      },
+      {
+        "name": "Mr. B.C. Tay",
+        "shares": 3000000,
+        "pct": 0.402,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Sri Lanka Insurance Corporation Life Ltd Participating Portfolio A/C 04",
+        "shares": 2502504,
+        "pct": 0.335,
+        "change": null,
+        "new": false,
+        "note": "See A/C 01: renamed SLIC holding"
+      }
+    ],
+    "gone": []
+  }
+}
