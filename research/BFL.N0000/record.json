@@ -1,0 +1,1697 @@
+{
+  "schemaVersion": 1,
+  "ticker": "BFL.N0000",
+  "localFolder": null,
+  "updated": "2026-11-22",
+  "reportsRead": [
+    {
+      "file": "reports/BFL.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-22",
+      "note": "CSE copy. Printed page = PDF page − 2. Read: Chairman's message, MD's and CFO's reviews, share information, directors' report, statements, notes 3–4, 7–9, 12, 15, 17, 27–28, ten-year summary. Text layer readable. FY2021–FY2024 come from the ten-year summary only (per-share figures other than EPS are before the 1:5 split)."
+    },
+    {
+      "file": "reports/BFL.N0000/2026-07-31_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim financial statements to 30 June 2026",
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-22",
+      "note": "Unaudited; top 30 shareholders and directors' holdings at 30 June 2026."
+    },
+    {
+      "file": "reports/BFL.N0000/2026-10-29_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim financial statements to 30 September 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-22",
+      "note": "Unaudited; MD's comment p. 2; top 30 shareholders p. 9."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY2021",
+      "periodEnd": "2021-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 5057,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "grossProfit": {
+          "value": 819,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "operatingProfit": {
+          "value": 256,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "'Profit from operations': before finance cost and the share of joint ventures"
+        },
+        "shareOfJointVentures": {
+          "value": 167,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Share of joint ventures' profit, net of tax"
+        },
+        "profitBeforeTax": {
+          "value": 359,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Includes the share of joint ventures"
+        },
+        "incomeTax": {
+          "value": 12,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "profitAfterTax": {
+          "value": 347,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "eps": {
+          "value": 3.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Restated for the 1:5 share split (December 2025)"
+        },
+        "roe": {
+          "value": 8.9,
+          "unit": "%",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Company's own figure (return on average equity)"
+        },
+        "navPerSharePreSplit": {
+          "value": 257.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "priceYearEndPreSplit": {
+          "value": 137.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "peYearEnd": {
+          "value": 6.3,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "totalEquity": {
+          "value": 4114,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Total equity (no minority interest before 2024/25)"
+        }
+      }
+    },
+    {
+      "period": "FY2022",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 6742,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "grossProfit": {
+          "value": 1336,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "operatingProfit": {
+          "value": 663,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "'Profit from operations': before finance cost and the share of joint ventures"
+        },
+        "shareOfJointVentures": {
+          "value": 171,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Share of joint ventures' profit, net of tax"
+        },
+        "profitBeforeTax": {
+          "value": 793,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Includes the share of joint ventures"
+        },
+        "incomeTax": {
+          "value": 28,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "profitAfterTax": {
+          "value": 765,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "eps": {
+          "value": 8.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Restated for the 1:5 share split (December 2025)"
+        },
+        "roe": {
+          "value": 17.2,
+          "unit": "%",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Company's own figure (return on average equity)"
+        },
+        "dividendPerSharePreSplit": {
+          "value": 6.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split (divide by 5 for today's shares)"
+        },
+        "navPerSharePreSplit": {
+          "value": 299.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "priceYearEndPreSplit": {
+          "value": 151.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "peYearEnd": {
+          "value": 3.2,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "totalEquity": {
+          "value": 4785,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Total equity (no minority interest before 2024/25)"
+        }
+      }
+    },
+    {
+      "period": "FY2023",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 11868,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "grossProfit": {
+          "value": 1601,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "operatingProfit": {
+          "value": 367,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "'Profit from operations': before finance cost and the share of joint ventures"
+        },
+        "shareOfJointVentures": {
+          "value": 330,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Share of joint ventures' profit, net of tax"
+        },
+        "profitBeforeTax": {
+          "value": 468,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Includes the share of joint ventures"
+        },
+        "incomeTax": {
+          "value": 185,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "profitAfterTax": {
+          "value": 283,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "eps": {
+          "value": 3.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Restated for the 1:5 share split (December 2025)"
+        },
+        "roe": {
+          "value": 5.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Company's own figure (return on average equity)"
+        },
+        "dividendPerSharePreSplit": {
+          "value": 6.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split (divide by 5 for today's shares)"
+        },
+        "navPerSharePreSplit": {
+          "value": 295.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "priceYearEndPreSplit": {
+          "value": 145.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "peYearEnd": {
+          "value": 9.0,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "totalEquity": {
+          "value": 5208,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Total equity (no minority interest before 2024/25)"
+        }
+      }
+    },
+    {
+      "period": "FY2024",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 13291,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "grossProfit": {
+          "value": 2156,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "operatingProfit": {
+          "value": 559,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "'Profit from operations': before finance cost and the share of joint ventures"
+        },
+        "shareOfJointVentures": {
+          "value": 262,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Share of joint ventures' profit, net of tax"
+        },
+        "profitBeforeTax": {
+          "value": 430,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Includes the share of joint ventures"
+        },
+        "incomeTax": {
+          "value": -6,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "A tax credit of Rs 6mn"
+        },
+        "profitAfterTax": {
+          "value": 436,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "eps": {
+          "value": 5.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Restated for the 1:5 share split (December 2025)"
+        },
+        "roe": {
+          "value": 7.9,
+          "unit": "%",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Company's own figure (return on average equity)"
+        },
+        "dividendPerSharePreSplit": {
+          "value": 7.3,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split (divide by 5 for today's shares)"
+        },
+        "navPerSharePreSplit": {
+          "value": 330.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "priceYearEndPreSplit": {
+          "value": 173.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split"
+        },
+        "peYearEnd": {
+          "value": 7.0,
+          "unit": "x",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)"
+        },
+        "totalEquity": {
+          "value": 5808.495,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of changes in equity (p. 173)",
+          "note": "Owners' equity at 1 April 2024"
+        }
+      }
+    },
+    {
+      "period": "FY2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 13916.401,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Comparative column"
+        },
+        "grossProfit": {
+          "value": 1732.829,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Comparative column"
+        },
+        "otherOperatingIncome": {
+          "value": 30.571,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "distributionCosts": {
+          "value": 876.047,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "administrativeCosts": {
+          "value": 770.981,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "otherOperatingExpenses": {
+          "value": 11.151,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "operatingProfit": {
+          "value": 105,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, CFO's review (p. 23) and ten-year summary (p. 244)",
+          "note": "Operating profit, before finance cost and the share of joint ventures"
+        },
+        "financeCosts": {
+          "value": 258.423,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "shareOfJointVentures": {
+          "value": 286.353,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "profitBeforeTax": {
+          "value": 133.15,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Includes the share of joint ventures (net of tax)"
+        },
+        "incomeTax": {
+          "value": 10.994,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "profitAfterTax": {
+          "value": 122.156,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "netProfitOwners": {
+          "value": 125.166,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "eps": {
+          "value": 1.42,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Restated for the 1:5 split"
+        },
+        "dividendPerSharePreSplit": {
+          "value": 5.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, ten-year financial summary (pp. 244–245)",
+          "note": "Before the 1:5 split (Rs 88mn paid)"
+        },
+        "navPerSharePreSplit": {
+          "value": 332.02,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, CFO's review (p. 27)",
+          "note": "Before the 1:5 split"
+        },
+        "priceYearEndPreSplit": {
+          "value": 164.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, share information (p. 100)",
+          "note": "Before the 1:5 split"
+        },
+        "peYearEnd": {
+          "value": 23.17,
+          "unit": "x",
+          "source": "Annual Report 2025/26, CFO's review (p. 27)"
+        },
+        "roe": {
+          "value": 2.1,
+          "unit": "%",
+          "source": "Annual Report 2025/26, CFO's review (p. 23)",
+          "note": "Company's own figure"
+        },
+        "totalEquity": {
+          "value": 5846.582,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)",
+          "note": "Owners' equity"
+        },
+        "borrowings": {
+          "value": 2234.006,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 17.1 (p. 211)",
+          "note": "Bank loans 1,996.648 + bank overdrafts 237.358 (Islamic financing)"
+        },
+        "leaseLiabilities": {
+          "value": 24.151,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 17.1 (p. 211)"
+        },
+        "cash": {
+          "value": 381.797,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)",
+          "note": "Cash and bank balances"
+        },
+        "operatingCashFlow": {
+          "value": 1747.043,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Annual format: adds back the breeder birds charged to cost of sales; bird purchases are in investing"
+        },
+        "interestPaid": {
+          "value": 258.423,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Finance costs paid, inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 457.375,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "purchaseIntangibles": {
+          "value": 0.93,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "purchaseBiologicalAssets": {
+          "value": 1055.212,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Breeder (parent) birds bought: the flock is replaced every year (note 12.1, p. 207)"
+        },
+        "biologicalTransferredToCost": {
+          "value": 1053.795,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 207)"
+        },
+        "biologicalFairValueGain": {
+          "value": 13.326,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 207)",
+          "note": "Fair value gain on breeder birds, in profit"
+        },
+        "depreciation": {
+          "value": 334.693,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "PPE; right-of-use depreciation 5.718 and software amortisation 5.268 are separate lines"
+        },
+        "workingCapitalChange": {
+          "value": -557.853,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Cash released: inventories +85.076 tied up, biological assets −8.845, receivables −107.170, related companies −8.521, payables −518.395"
+        },
+        "acquisitions": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "None at group level"
+        },
+        "dividendsPaid": {
+          "value": 82.315,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "dividendsFromJointVentures": {
+          "value": 139.3,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 9.4 (p. 205)"
+        },
+        "sharesOutstanding": {
+          "value": 88.0,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 15 (p. 210)",
+          "note": "Millions, restated for the split (17.6mn before)"
+        }
+      }
+    },
+    {
+      "period": "FY2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 15291.341,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Chicken and portions 7,962, day-old chicks 2,442, value-added 2,033, live broilers 1,908 (MD's review, p. 19)"
+        },
+        "grossProfit": {
+          "value": 2883.493,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "otherOperatingIncome": {
+          "value": 36.686,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "distributionCosts": {
+          "value": 910.247,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "administrativeCosts": {
+          "value": 927.887,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "operatingProfit": {
+          "value": 1082,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, CFO's review (p. 23)",
+          "note": "Operating profit, before finance cost and the share of joint ventures (Rs 1,081mn in the ten-year summary, p. 244). Includes the Rs 400mn breeder-bird fair value gain"
+        },
+        "financeCosts": {
+          "value": 208.613,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "shareOfJointVentures": {
+          "value": 351.029,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Fortune Agro Industries (feed mill) 236.3, Fortune G-P Farms (grandparent birds) 113.8, land companies 0.9 (note 9.3, p. 205)"
+        },
+        "profitBeforeTax": {
+          "value": 1224.461,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Includes the share of joint ventures (net of tax)"
+        },
+        "incomeTax": {
+          "value": 223.535,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)",
+          "note": "Current 142, deferred 81.5 (CFO's review, p. 25)"
+        },
+        "profitAfterTax": {
+          "value": 1000.926,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "netProfitOwners": {
+          "value": 1030.583,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "eps": {
+          "value": 11.71,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, statement of profit or loss (p. 172)"
+        },
+        "dividendPerShare": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, CFO's review (p. 27)",
+          "note": "First interim for 2025/26: Rs 5 before the split, Rs 88mn. A second interim of Rs 0.82 was paid on 25 June 2026 (Interim to 30 Jun 2026, note 7)"
+        },
+        "navPerShare": {
+          "value": 78.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, CFO's review (p. 27)",
+          "note": "Total equity incl. minority ÷ 88mn shares"
+        },
+        "priceYearEnd": {
+          "value": 71.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, share information (p. 100)"
+        },
+        "priceHighYearPreSplit": {
+          "value": 470.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, share information (p. 100)",
+          "note": "24 Oct 2025, before the split (Rs 94 on today's shares)"
+        },
+        "priceLowYear": {
+          "value": 66.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, share information (p. 100)",
+          "note": "17 Mar 2026, after the split"
+        },
+        "peYearEnd": {
+          "value": 6.06,
+          "unit": "x",
+          "source": "Annual Report 2025/26, CFO's review (p. 27)"
+        },
+        "roe": {
+          "value": 15.74,
+          "unit": "%",
+          "source": "Annual Report 2025/26, CFO's review (p. 23)",
+          "note": "Company's own figure"
+        },
+        "totalEquity": {
+          "value": 6905.052,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": -32.666,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)"
+        },
+        "investmentsInJointVentures": {
+          "value": 2310.389,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)",
+          "note": "Equity-accounted, 50% each: Fortune Agro 1,462.0, Fortune G-P Farms 717.2, three land companies 131.2 (note 9, p. 204)"
+        },
+        "bearerBiologicalAssets": {
+          "value": 1496.099,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12 (p. 207)",
+          "note": "Breeder birds, current 1,386.7 + non-current 109.4"
+        },
+        "borrowings": {
+          "value": 2791.11,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 17.1 (p. 211)",
+          "note": "Bank loans 2,600.880 + bank overdrafts 190.231 (Islamic financing)"
+        },
+        "leaseLiabilities": {
+          "value": 17.33,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 17.1 (p. 211)"
+        },
+        "cash": {
+          "value": 514.818,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of financial position (pp. 170–171)",
+          "note": "Cash and bank balances"
+        },
+        "operatingCashFlow": {
+          "value": 1924.02,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Annual format: adds back Rs 712mn of breeder birds charged to cost of sales net of their fair value gain; bird purchases are in investing"
+        },
+        "interestPaid": {
+          "value": 208.613,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Finance costs paid, inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 1229.626,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "purchaseIntangibles": {
+          "value": 2.006,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "purchaseBiologicalAssets": {
+          "value": 1162.387,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Breeder (parent) birds bought (note 12.1, p. 207)"
+        },
+        "biologicalTransferredToCost": {
+          "value": 1112.361,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 207)"
+        },
+        "biologicalFairValueGain": {
+          "value": 400.316,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 12.1 (p. 207)",
+          "note": "Fair value gain on breeder birds, in profit (higher day-old chick prices); non-cash"
+        },
+        "depreciation": {
+          "value": 373.207,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "PPE; right-of-use depreciation 5.718 and software amortisation 5.138 are separate lines"
+        },
+        "capexBooked": {
+          "value": 1237.784,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, notes 4.1.1–4.1.2 and 7.1 (pp. 190–191, 202)",
+          "note": "PPE additions/transfers 1,610.890 less transfers out of work in progress 375.114, plus software 2.006"
+        },
+        "growthCapexNamed": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, CFO's review (p. 28) and Chairman's message (p. 15)",
+          "note": "Named but not priced: Kurunegala broiler farm, expanded hatchery, 500 MT cold store (USD 1mn), processing upgrades. Work in progress Rs 588mn at year end"
+        },
+        "contractedCapex": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 28 (p. 224)",
+          "note": "Capital commitments nil"
+        },
+        "guaranteesForJointVenture": {
+          "value": 3360,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 28 (p. 224)",
+          "note": "Corporate guarantees for Fortune Agro Industries' working-capital loans: Amana 400, MCB 650, Commercial 810, Seylan 250, NDB 500, HNB 750"
+        },
+        "workingCapitalChange": {
+          "value": 53.172,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "Cash tied up: inventories −5.387, biological assets −36.660, receivables +143.773, related companies −0.381, payables −48.166"
+        },
+        "acquisitions": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "None"
+        },
+        "impairment": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "None reported"
+        },
+        "licenceAmortisation": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)",
+          "note": "None (no licences)"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "rdCapitalised": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "dividendsPaid": {
+          "value": 90.706,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, statement of cash flows (pp. 174–175)"
+        },
+        "dividendsFromJointVentures": {
+          "value": 137.25,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 9.4 (p. 205)"
+        },
+        "sharesOutstanding": {
+          "value": 88.0,
+          "unit": "",
+          "source": "Annual Report 2025/26, note 15 (p. 210)",
+          "note": "Millions, after the 1:5 split"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2026",
+      "periodEnd": "2025-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 3454.716,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Comparative column"
+        },
+        "grossProfit": {
+          "value": 440.337,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "financeCosts": {
+          "value": 51.683,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 23.226,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 74.909,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Profit before tax (before joint ventures) 23.226 + finance cost 51.683, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": -44.871,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "incomeTax": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitAfterTax": {
+          "value": -21.646,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "netProfitOwners": {
+          "value": -20.766,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "eps": {
+          "value": -1.18,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "On the 17.6mn shares before the split (−Rs 0.24 on today's shares)"
+        },
+        "totalEquity": {
+          "value": 5826.268,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Owners' equity"
+        },
+        "operatingCashFlow": {
+          "value": 279.445,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "interestPaid": {
+          "value": 51.683,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 167.383,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "purchaseBiologicalAssets": {
+          "value": -50.458,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6",
+          "note": "Interim format: net of birds transferred to cost of sales (an inflow of 50.458)"
+        },
+        "depreciation": {
+          "value": 88.032,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        }
+      }
+    },
+    {
+      "period": "Q1 FY2027",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 4165.378,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "grossProfit": {
+          "value": 858.203,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "financeCosts": {
+          "value": 51.846,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 323.475,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 375.321,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3",
+          "note": "Profit before tax (before joint ventures) 323.475 + finance cost 51.846, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": 15.948,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "incomeTax": {
+          "value": 97.447,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "profitAfterTax": {
+          "value": 241.976,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "netProfitOwners": {
+          "value": 244.402,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "eps": {
+          "value": 2.78,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "distributionCosts": {
+          "value": 261.407,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "administrativeCosts": {
+          "value": 230.821,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3"
+        },
+        "totalEquity": {
+          "value": 7080.101,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Owners' equity"
+        },
+        "investmentsInJointVentures": {
+          "value": 2326.336,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2"
+        },
+        "borrowings": {
+          "value": 2833.05,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Financing & lease (Ijara) payable: non-current 875.133 + current 1,957.917 (includes overdraft and leases)"
+        },
+        "leaseLiabilities": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2",
+          "note": "Not shown separately in the interim: inside the borrowings line"
+        },
+        "cash": {
+          "value": 605.284,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2"
+        },
+        "operatingCashFlow": {
+          "value": 289.612,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "interestPaid": {
+          "value": 51.846,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 160.039,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "purchaseIntangibles": {
+          "value": 3.861,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "purchaseBiologicalAssets": {
+          "value": -10.837,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6",
+          "note": "Interim format: net of birds transferred to cost of sales (an inflow)"
+        },
+        "depreciation": {
+          "value": 93.725,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "dividendsPaid": {
+          "value": 68.733,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 6"
+        },
+        "navPerShare": {
+          "value": 80.06,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 2 (p. 7)"
+        },
+        "priceHighQuarter": {
+          "value": 95.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 3 (p. 7)"
+        },
+        "priceLowQuarter": {
+          "value": 71.6,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 3 (p. 7)"
+        },
+        "priceCloseQuarter": {
+          "value": 91.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 3 (p. 7)"
+        },
+        "dividendPerShare": {
+          "value": 0.82,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 7 (p. 7)",
+          "note": "Second interim for 2025/26, declared and paid 25 June 2026"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 4233.805,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Comparative column"
+        },
+        "grossProfit": {
+          "value": 942.588,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "financeCosts": {
+          "value": 33.943,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 436.469,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 470.412,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Profit before tax (before joint ventures) 436.469 + finance cost 33.943, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": 32.865,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "incomeTax": {
+          "value": 44.777,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitAfterTax": {
+          "value": 424.557,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netProfitOwners": {
+          "value": 427.997,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "eps": {
+          "value": 4.86,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 4411.042,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "grossProfit": {
+          "value": 975.31,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "financeCosts": {
+          "value": 58.489,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 417.043,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 475.532,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Profit before tax (before joint ventures) 417.043 + finance cost 58.489, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": -75.316,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "incomeTax": {
+          "value": 128.055,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitAfterTax": {
+          "value": 213.672,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netProfitOwners": {
+          "value": 219.011,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "eps": {
+          "value": 2.49,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 7688.521,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Comparative column"
+        },
+        "grossProfit": {
+          "value": 1382.925,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "financeCosts": {
+          "value": 85.626,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 459.694,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 545.32,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Profit before tax (before joint ventures) 459.694 + finance cost 85.626, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": -12.006,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "incomeTax": {
+          "value": 44.777,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitAfterTax": {
+          "value": 402.911,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netProfitOwners": {
+          "value": 407.231,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "eps": {
+          "value": 4.63,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "otherOperatingIncome": {
+          "value": 20.891,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "distributionCosts": {
+          "value": 428.325,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "administrativeCosts": {
+          "value": 430.171,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "totalEquity": {
+          "value": 6254.563,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Owners' equity"
+        },
+        "investmentsInJointVentures": {
+          "value": 2069.184,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "borrowings": {
+          "value": 2159.172,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Financing & lease (Ijara) payable: non-current 422.514 + current 1,736.658 (includes overdraft and leases)"
+        },
+        "leaseLiabilities": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Not shown separately in the interim: inside the borrowings line"
+        },
+        "cash": {
+          "value": 408.025,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "operatingCashFlow": {
+          "value": 462.592,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "interestPaid": {
+          "value": 87.415,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Finance costs paid (the income statement shows 85.626)",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 358.036,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "purchaseBiologicalAssets": {
+          "value": -18.922,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Interim format: 'net acquisition', net of birds transferred to cost of sales (an inflow)"
+        },
+        "depreciation": {
+          "value": 175.759,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "dividendsPaid": {
+          "value": 4.415,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "navPerSharePreSplit": {
+          "value": 354.96,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 2 (p. 8)",
+          "note": "Before the split"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 8576.42,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "grossProfit": {
+          "value": 1833.513,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "financeCosts": {
+          "value": 110.335,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitBeforeTaxBeforeJV": {
+          "value": 740.519,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "The interim prints profit before tax before the share of joint ventures"
+        },
+        "operatingProfit": {
+          "value": 850.854,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Profit before tax (before joint ventures) 740.519 + finance cost 110.335, to match the annual 'operating profit'"
+        },
+        "shareOfJointVentures": {
+          "value": -59.369,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "incomeTax": {
+          "value": 225.502,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "profitAfterTax": {
+          "value": 455.648,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "netProfitOwners": {
+          "value": 463.413,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "eps": {
+          "value": 5.27,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "otherOperatingIncome": {
+          "value": 21.351,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "distributionCosts": {
+          "value": 542.028,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "administrativeCosts": {
+          "value": 461.982,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4"
+        },
+        "totalEquity": {
+          "value": 7298.299,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": -40.431,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "investmentsInJointVentures": {
+          "value": 2251.02,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "bearerBiologicalAssets": {
+          "value": 1501.931,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Non-current 121.484 + current 1,380.447"
+        },
+        "borrowings": {
+          "value": 2860.798,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Financing & lease (Ijara) payable: non-current 983.837 + current 1,876.961 (includes overdraft 193.090 and leases)"
+        },
+        "leaseLiabilities": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Not shown separately in the interim: inside the borrowings line"
+        },
+        "cash": {
+          "value": 600.829,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3"
+        },
+        "operatingCashFlow": {
+          "value": 699.175,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "interestPaid": {
+          "value": 110.335,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 582.323,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "purchaseIntangibles": {
+          "value": 4.928,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "purchaseBiologicalAssets": {
+          "value": 12.11,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6",
+          "note": "Interim format: 'net acquisition', net of birds transferred to cost of sales"
+        },
+        "depreciation": {
+          "value": 206.337,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "dividendsPaid": {
+          "value": 70.61,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 6"
+        },
+        "navPerShare": {
+          "value": 82.48,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 2 (p. 8)",
+          "note": "Total equity incl. minority ÷ 88mn shares"
+        },
+        "priceHighQuarter": {
+          "value": 94.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 8)"
+        },
+        "priceLowQuarter": {
+          "value": 84.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 8)"
+        },
+        "priceCloseQuarter": {
+          "value": 86.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 3 (p. 8)"
+        },
+        "sharesOutstanding": {
+          "value": 88.0,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, note 4 (p. 8)",
+          "note": "Millions"
+        },
+        "publicFloatPct": {
+          "value": 63.6021,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, additional note 3 (p. 9)",
+          "note": "6,378 public shareholders"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "0.63 (provisional)",
+      "reason": "8 steps, 22 Nov 2026. (1) Business: one integrated poultry business (breeder farms, hatcheries, broiler farming, processing and value-added chicken products), with 50% joint ventures in feed milling and grandparent birds that are valued separately. Weighted half farming, half food processing. (2) Damodaran's emerging-markets dataset (betaEmerg) can't be reached from this run; the same stand-ins as Chemical Industries (CIC): his global unlevered, cash-corrected Farming/Agriculture 0.49 and Food Processing 0.56 (web-search extracts) → 0.525. (3) Relevered with net debt Rs 2.26bn at 30 Sep 2026 (financing and lease payables 2.861 − cash 0.601, Interim to 30 Sep 2026, p. 3) ÷ market value Rs 7.65bn (88mn shares × Rs 86.90, 30 Sep 2026 close) = 0.30, and the 30% tax rate: 0.525 × (1 + 0.7 × 0.30) = 0.63. (4) Local 5-year betas: none could be opened (CSE, StockAnalysis and similar sites are blocked from this run); fewer than 3 sources, so step 4 can't be completed. (5) Higher of steps 3 and 4: 0.63. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. (8) Shown as the Required return tile. Refresh in January 2027 with the emerging-markets file and three local 5-year betas.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Share price used",
+      "value": "Rs 86.90 (closing price, 30 Sep 2026)",
+      "reason": "BFL.N0000 isn't yet in the site's CSE price file, and the CSE and price sites can't be reached from this run. Rs 86.90 is the 30 September 2026 close printed in the Interim to 30 Sep 2026 (note 3, p. 8); the quarter's range was Rs 84.00–94.00. The daily CSE close replaces it on the site.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Tax rate ahead",
+      "value": "30%",
+      "reason": "The 2025/26 group rate was 18.3% (tax 223.5 ÷ profit before tax 1,224.5, which includes the joint ventures' after-tax profit and the use of brought-forward losses). In April–September 2026 tax was 225.5 on profit before joint ventures of 740.5 = 30.5% (Interim to 30 Sep 2026, p. 4), and the MD says the whole profit is now taxed (p. 2). The corporate rate is 30% (CFO's review, p. 25). Used for NOPAT.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Breeder flock purchases",
+      "value": "Deducted from start cash every year",
+      "reason": "Bairaha buys parent (breeder) birds every year: Rs 1,162mn in 2025/26 and Rs 1,055mn in 2024/25 (cash flow statement, p. 175), and the annual operating cash flow adds back the birds charged to cost of sales (Rs 1,112mn, note 12.1). The flock wears out within about a year, so buying it is a running cost, not growth. The DCF start cash therefore takes off the twelve-month bird purchases (annual gross purchases, plus the interims' net acquisitions, which are already net of birds charged to cost). Operating cash after birds: 2025/26 Rs 762mn; twelve months to Sep 2026 Rs 967mn.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Breeder bird fair value gain",
+      "value": "Excluded from NOPAT",
+      "reason": "2025/26 operating profit includes a Rs 400mn non-cash fair value gain on breeder birds (Rs 13mn in 2024/25; note 12.1, p. 207), from higher day-old chick prices. It isn't cash and reverses if chick prices fall, so NOPAT uses twelve-month operating profit less this gain. The interims show no such gain.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "Rs 0.70bn / 0.50bn / 0.40bn (bear / base / bull)",
+      "reason": "The company doesn't split maintenance from growth capex. 2025/26 capex booked of Rs 1.24bn was mostly growth (Kurunegala broiler farm, expanded hatchery, 500 MT cold store, processing upgrades: CFO's review p. 28, Chairman p. 15; work in progress Rs 588mn at March 2026), against Rs 0.46bn paid in 2024/25. The calculator's range is bear Rs 1.24bn (one year of capex booked, mostly growth), base Rs 0.81bn, bull Rs 0.37bn (2025/26 depreciation). PPE depreciation was Rs 0.40bn over the twelve months to Sep 2026 (derived.py) and will rise as the new farm and cold store are depreciated, so the DCF uses Rs 0.40bn (bull, depreciation), Rs 0.50bn (base) and Rs 0.70bn (bear, closer to recent capex).",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Joint ventures",
+      "value": "0.6× / 0.9× / 1.1× book",
+      "reason": "The 50% stakes in Fortune Agro Industries (feed mill) and Fortune G-P Farms (grandparent birds) plus three land companies are carried at Rs 2.25bn (30 Sep 2026, Interim p. 3), Rs 25.6 a share. They earned Rs 351mn in 2025/26 (15% of opening book) and paid Rs 137mn of dividends (note 9.4), but lost Rs 59mn in April–September 2026 on corn import limits and a higher corn levy (MD, Interim p. 2). Bairaha also guarantees Rs 3.36bn of Fortune Agro's bank loans (note 28, p. 224). Valued outside the DCF (which excludes them) at 0.6× book in the bear case (losses persist, guarantee risk), 0.9× base, 1.1× bull (back to 2025/26 returns).",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "EPS to March 2027",
+      "value": "Rs 7.50 / 10.50 / 12.50",
+      "reason": "Run-rate: twelve months to Sep 2026 Rs 12.35, September quarter × 4 Rs 9.96 (Interim p. 4). The twelve-month figure includes the Rs 400mn breeder-bird fair value gain (about Rs 3.2 a share after 30% tax) and lower tax from old losses, so base Rs 10.50 starts 15% below the twelve-month run-rate for that specific reason; it is close to April–September 2026 annualised (Rs 5.27 × 2 = 10.54). Bear Rs 7.50: chick and chicken prices fall back as in 2024/25 and joint-venture losses continue. Bull Rs 12.50: CFO's 20% revenue target and joint ventures recover.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "10% / 13% / 16%",
+      "reason": "Return on equity: 15.7% in 2025/26 (with the Rs 400mn bird gain; about 11% without it), 2.1% in 2024/25, 7.9% in 2023/24, 5.7% in 2022/23, 17.2% in 2021/22, 8.9% in 2020/21 (ten-year summary, p. 245): a cyclical business averaging about 9–10%. Base 13% assumes part of the new capacity and value-added mix sticks; bull 16% is the good years; bear 10% the long average.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Residual income start",
+      "value": "ROE 13%, payout 15%",
+      "reason": "Starting ROE 13%: twelve-month ROE 16.0% (derived.py) less the bird fair value gain. Payout 15%: dividends of Rs 1.00 + 0.82 for 2025/26 against EPS Rs 11.71 = 16%; 8.5% printed for the first interim alone (p. 27); the board ties dividends to capex needs (p. 27).",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Dividend model",
+      "value": "Rs 1.80 next year; growth 3% / 7% / 10%",
+      "reason": "Dividends declared for 2025/26: Rs 1.00 (first interim, Rs 5 before the split) + Rs 0.82 (second interim, paid June 2026) = Rs 1.82, against Rs 5.0 pre-split (Rs 1.00) for 2024/25 and Rs 7.3 (Rs 1.46) for 2023/24. Next year held at Rs 1.80 while capex continues. Growth equals the scenario's earnings growth; then the payout rises to 1 − g ÷ ROE.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 3% / 7% / 10%; supported 11.9%",
+      "reason": "scripts/reinvestment.py, 22 Nov 2026: reinvestment rate 103.8% (2025/26: capex booked 1.238 − depreciation 0.373 + working capital 0.053, ÷ NOPAT) × return on capital 11.5% (opening) = 11.9%. All scenarios within 2 points. The 2025/26 rate reflects one heavy build year (Kurunegala farm, hatchery, cold store); the bull case's 10% needs that capacity filled. Breeder-bird purchases are treated as a running cost, not reinvestment.",
+      "since": "2026-11-22"
+    },
+    {
+      "name": "Cost of equity",
+      "value": "16.2% / 14.7% / 13.2%; WACC 14.0% / 12.9% / 11.7%",
+      "reason": "scripts/reinvestment.py, 22 Nov 2026: 8.24% + 0.63 × (4.2% + 6.08%); bear +1.5, bull −1.5 points. WACC with debt weight 22.8% (net debt Rs 2.26bn, market value Rs 7.65bn at Rs 86.90) and cost of debt 8.23% (interest paid ÷ average borrowings and leases, 2025/26) after 18.3% tax.",
+      "since": "2026-11-22"
+    }
+  ],
+  "openQuestions": [
+    "Does the second half of 2026/27 hold the 21% gross margin, and is any breeder-bird fair value gain booked again at March 2027 (Rs 400mn in 2025/26)?",
+    "Joint ventures: does the feed mill (Fortune Agro) return to profit once corn imports are allowed, and do the Rs 3.36bn of guarantees for its loans change?",
+    "Kurunegala broiler farm and hatchery expansion: when do they start producing, and what do they add to volumes and return on capital?",
+    "Annual report 2026/27: check breeder-bird purchases (gross) against the interims' net figures, maintenance vs growth capex, and the dividend for 2026/27.",
+    "Revenue growth against the CFO's ~20% target for 2026/27 (11.5% in the first half)."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-22",
+      "basedOn": "H1 FY2027 (to Sep 2026)",
+      "summary": "Requested from Telegram (/add BFL.N0000). First analysis from the CSE copies of the 2025/26 annual report and the June and September 2026 interims. Printed figures only, comparatives as their own periods; FY2021–FY2024 from the ten-year summary (per-share figures other than EPS are before the 1:5 split of December 2025 and stored as '…PreSplit'). Interim operating profit stored as profit before tax (before joint ventures) + finance cost, to match the annual 'operating profit'. Breeder-bird purchases recorded separately and deducted from DCF start cash; the Rs 400mn bird fair value gain excluded from NOPAT. Methods: DCF of the poultry business plus joint ventures at 0.6–1.1× book, justified P/E, P/B, residual income and two-stage dividends (scripts/valuation.py), and adjusted NAV; cost of equity 14.7% (beta 0.63, provisional), WACC 12.9%. Business tests 2/4 (debt, cash pass): category 3. Price is the 30 Sep 2026 close (Rs 86.90) because the CSE price wasn't available to this run; local 5-year betas couldn't be reached.",
+      "fairValue": 63.44,
+      "buyPrice": 53.92,
+      "strongBuyPrice": 47.58,
+      "priceAtTime": 86.9,
+      "archive": null
+    }
+  ]
+}

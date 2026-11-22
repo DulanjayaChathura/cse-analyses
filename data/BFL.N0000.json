@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 1,
+  "ticker": "BFL.N0000",
+  "company": {
+    "name": "Bairaha Farms PLC",
+    "sector": "Food: integrated poultry (breeding, broilers, processed chicken)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "BFL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-22",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE copy, incl. ten-year summary)",
+      "Interim report to 30 June 2026 (CSE copy)",
+      "Interim report to 30 September 2026 (CSE copy)"
+    ]
+  },
+  "price": {
+    "value": 86.9,
+    "date": "2026-09-30",
+    "source": "Closing price on 30 Sep 2026, Interim to 30 Sep 2026, note 3 (p. 8)",
+    "note": "BFL isn't yet in the site's CSE price file and the CSE and price sites couldn't be reached from this run; the daily CSE close will replace this figure. July–September 2026 range Rs 84.00–94.00; April–June Rs 71.60–95.90; 2025/26 low Rs 66.50 (17 March 2026, after the 1:5 split) and high Rs 470 before the split (Rs 94 on today's shares)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Poultry profits have recovered strongly, but the price already assumes the good part of the cycle lasts",
+    "text": "Bairaha Farms PLC (BFL.N0000) is one of Sri Lanka's oldest integrated poultry businesses: breeder farms, hatcheries, broilers, processing and value-added chicken, with 50% joint ventures in a feed mill and a grandparent farm. After a poor 2024/25 (profit Rs 122mn), 2025/26 profit jumped to Rs 1,001mn and April–September 2026 profit rose 13% to Rs 456mn on higher chick and chicken prices. But Rs 400mn of 2025/26 profit was a non-cash gain on revaluing breeder birds, the joint ventures have swung to losses on corn import limits, and return on equity has averaged only about 9–10% over the cycle. Once the breeder flock is replaced each year, little cash is left after capex. Six methods at a 14.7% required return give a fair value of **Rs 63.44**. At Rs 86.90 (30 September 2026 close) the share is about 37% above that. Buy price Rs 53.92; strong buy Rs 47.58. It passes two of the four business tests (debt and cash), so it is in category 3 (avoid for now)."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 2,
+    "outOf": 4,
+    "reason": "Debt is modest and profit turns into cash, but return on equity has been under 15% in most years and profit swings with chick and feed prices; 40% of 2025/26 profit was a non-cash breeder-bird valuation gain.",
+    "assessed": "2026-11-22",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "16% now; about 9–10% over the cycle",
+        "note": "Twelve months to Sep 2026: 16.0% (code-calculated), but that includes the Rs 400mn bird fair value gain (about 11% without it). Company figures: 15.7% (2025/26), 2.1%, 7.9%, 5.7%, 17.2%, 8.9% (2020/21): only 2 of 6 years at 15%+."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Net debt Rs 2.26bn (0.31× equity)",
+        "note": "Financing and lease (Ijara) payables Rs 2.86bn less cash Rs 0.60bn at 30 Sep 2026, against owners' equity Rs 7.30bn; about 1.3× twelve-month EBITDA (Rs 1.79bn). But Bairaha guarantees Rs 3.36bn of its joint-venture feed mill's bank loans (note 28), which isn't in net debt."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "No loss since 2019/20, but big swings",
+        "note": "Profit Rs 765mn (2021/22), 283mn, 436mn, 122mn (2024/25), 1,001mn (2025/26). No group loss in five years (a loss of Rs 196mn in 2019/20), but profit fell 72% in 2024/25 on chick oversupply, and 2025/26 relied on a Rs 400mn non-cash breeder-bird fair value gain (Rs 13mn a year earlier) and Rs 351mn from joint ventures."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash",
+        "pass": true,
+        "value": "Operating cash after bird purchases Rs 1.45bn vs profit Rs 1.12bn (two years)",
+        "note": "2024/25 and 2025/26: operating cash Rs 3.67bn less breeder birds bought Rs 2.22bn = Rs 1.45bn, against profit of Rs 1.12bn (of which Rs 0.64bn joint-venture share; Rs 0.28bn came back as dividends). After Rs 1.69bn of PPE capex, mostly growth, free cash was negative and dividends were covered by borrowing."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 63.44,
+    "buyPrice": 53.92,
+    "strongBuyPrice": 47.58,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 82.48,
+    "note": "Fair value is the equal average of six methods, each weighted bear 30 / base 50 / bull 20 (scenario averages Rs 35.89 / 62.99 / 105.89), giving Rs 63.44 (0.77× NAV). Five methods come from scripts/valuation.py at a 14.7% cost of equity (WACC 12.9%): DCF of the poultry business plus the joint ventures, justified P/E, justified P/B, residual income and a two-stage dividend model; the adjusted NAV is written by hand."
+  },
+  "dividend": {
+    "perShare": 1.0,
+    "label": "first interim for 2025/26 (Rs 5 before the 1:5 split)",
+    "source": "Annual Report 2025/26, CFO's review (p. 27)",
+    "note": "Rs 88mn. Rs 5.00 before the split for 2024/25 (Rs 1.00 on today's shares).",
+    "latest": {
+      "perShare": 0.82,
+      "label": "second interim for 2025/26, paid 25 June 2026",
+      "source": "Interim to 30 Jun 2026, note 7 (p. 7)"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 82.48,
+      "unit": "Rs",
+      "note": "30 Sep 2026 (total equity ÷ 88mn shares); includes Rs 25.6 of joint ventures"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.05,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 7.0,
+      "unit": "x",
+      "note": "Trailing EPS Rs 12.35 includes the breeder-bird gain; 8.3× on base EPS Rs 10.50 to March 2027"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 16.0,
+      "unit": "%",
+      "display": "16% (≈11% underlying)",
+      "note": "Twelve months to Sep 2026, code-calculated; about 11% without the Rs 400mn bird fair value gain"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 2.26,
+      "unit": "Rs bn",
+      "note": "30 Sep 2026; 0.31× equity. Plus Rs 3.36bn of guarantees for the feed-mill joint venture"
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue (12 months)",
+      "value": 16.18,
+      "unit": "Rs bn",
+      "note": "To Sep 2026; +11.5% in April–September 2026"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 2.1,
+      "unit": "%",
+      "note": "Rs 1.00 + Rs 0.82 for 2025/26"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 14.7,
+      "unit": "%",
+      "note": "Beta 0.63; WACC 12.9%"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue +11.5% to Rs 8.58bn; gross margin 21.4% (18.0% a year earlier). Profit before tax and joint ventures +61% to Rs 741mn, but the joint ventures lost Rs 59mn (loss Rs 12mn a year earlier) and tax rose to Rs 226mn as old tax losses ran out. Profit attributable Rs 463mn (+14%), EPS Rs 5.27."
+    },
+    {
+      "title": "September quarter",
+      "text": "Revenue Rs 4.41bn (+4%), gross profit Rs 975mn (+3%). Profit before joint ventures Rs 417mn (−4%); the joint ventures lost Rs 75mn as corn import limits forced the feed mill onto dearer local rice and the corn levy doubled to Rs 50/kg. EPS Rs 2.49 against Rs 4.86 (which had almost no tax)."
+    },
+    {
+      "title": "2025/26: recovery year",
+      "text": "Revenue +9.9% to Rs 15.29bn (chicken Rs 7.96bn, day-old chicks Rs 2.44bn, value-added Rs 2.03bn, live broilers Rs 1.91bn). Chick prices +25%, live broiler volumes +42%. Profit Rs 1,001mn after Rs 122mn, helped by a Rs 400mn breeder-bird fair value gain and Rs 351mn from joint ventures, despite Cyclone Ditwah in November 2025."
+    },
+    {
+      "title": "Investment and debt",
+      "text": "PPE capex Rs 1.23bn in 2025/26 (Rs 0.46bn the year before) for the Kurunegala broiler farm, a hatchery expansion and a USD 1mn 500 MT cold store; Rs 582mn more in April–September 2026. Borrowings rose Rs 550mn in 2025/26 but net debt is flat at Rs 2.26bn since March. Shares split 1:5 in December 2025 (88mn shares)."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2021",
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "TTM Sep 2026"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          3.9,
+          8.7,
+          3.2,
+          5.0,
+          1.42,
+          11.71,
+          12.35
+        ],
+        "notes": [
+          "Ten-year summary, split-adjusted",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Restated for the split",
+          null,
+          "Trailing, code-calculated; includes the bird gain"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          8.9,
+          17.2,
+          5.7,
+          7.9,
+          2.1,
+          15.74,
+          16.04
+        ],
+        "notes": [
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure",
+          "Company figure; includes the Rs 400mn bird gain",
+          "Code-calculated"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          6.3,
+          3.2,
+          9.0,
+          7.0,
+          23.17,
+          6.06,
+          7.04
+        ],
+        "notes": [
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "Ten-year summary",
+          "CFO's review",
+          "CFO's review",
+          "Rs 86.90 ÷ trailing EPS Rs 12.35"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 82.48",
+      "reading": "The price is 1.05× NAV. NAV includes Rs 25.6 of joint ventures that are now loss-making and Rs 3.2 of after-tax bird revaluation; land was revalued in March 2026."
+    },
+    {
+      "method": "Return on equity",
+      "value": "16% (≈11% underlying)",
+      "reading": "Good on the twelve-month figures, but those include the bird gain; over six years ROE averaged about 9–10%, below the 14.7% required return."
+    },
+    {
+      "method": "P/E",
+      "value": "8.3× forward",
+      "reading": "On base EPS of Rs 10.50; the justified P/E at a 14.7% required return and 13% long-run ROE is about 6.3×."
+    },
+    {
+      "method": "DCF (poultry business)",
+      "value": "Rs 29 base, plus Rs 23 joint ventures",
+      "reading": "After buying the breeder flock (about Rs 1.2bn a year) and maintenance capex, the business generates about Rs 0.66bn of cash before interest; growth at 12% on capital barely beats the 12.9% WACC."
+    },
+    {
+      "method": "Dividends",
+      "value": "2.1% yield",
+      "reading": "Rs 1.82 for 2025/26 is only 16% of earnings; the board puts capex first, so the dividend model gives Rs 53."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "DCF of the poultry business (WACC, less net debt) + joint ventures",
+      "bear": 9.82,
+      "base": 52.12,
+      "bull": 106.71,
+      "weighted": 50.35,
+      "comment": "Poultry business only: twelve-month cash before interest Rs 2.35bn less breeder birds bought Rs 1.19bn and maintenance capex Rs 0.70 / 0.50 / 0.40bn (start Rs 0.46 / 0.66 / 0.76bn); NOPAT Rs 691mn (operating profit less the Rs 400mn bird gain, 30% tax). Growth 3% / 7% / 10% for five years, then 4% / 5% / 6%, reinvesting growth ÷ 9% / 12% / 14% return on capital, at WACC 14.0% / 12.9% / 11.7%, less net debt Rs 2.26bn: −Rs 5.5 / 29.1 / 78.6 a share. Plus the joint ventures at 0.6× / 0.9× / 1.1× book (Rs 15.3 / 23.0 / 28.1). 53% / 78% / 86% of the DCF value comes after year 5: over 75% in the base and bull cases."
+    },
+    {
+      "id": "pe",
+      "name": "P/E (justified, EPS to March 2027)",
+      "bear": 36.89,
+      "base": 66.61,
+      "bull": 108.51,
+      "weighted": 66.07,
+      "comment": "EPS to March 2027 Rs 7.50 / 10.50 / 12.50 × justified P/E 4.9× / 6.3× / 8.7× (payout 1 − g ÷ ROE, long-run ROE 10% / 13% / 16%, growth 4% / 5% / 6%). Base is 15% below the Rs 12.35 run-rate because that includes the Rs 400mn bird fair value gain and low tax; it equals April–September 2026 annualised."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 40.56,
+      "base": 68.02,
+      "bull": 114.56,
+      "weighted": 69.09,
+      "comment": "Book Rs 82.48 × (ROE − g) ÷ (cost of equity − g), long-run ROE 10% / 13% / 16%, growth 4% / 5% / 6%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 32.43,
+      "base": 61.4,
+      "bull": 122.42,
+      "weighted": 64.91,
+      "comment": "Book Rs 82.48; ROE fades from 13% (twelve-month 16% less the bird gain) to 10% / 13% / 16% over ten years; payout 15%; then residual income grows at 4% / 5% / 6%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividends (two-stage)",
+      "bear": 26.55,
+      "base": 53.04,
+      "bull": 98.11,
+      "weighted": 54.11,
+      "comment": "Dividend Rs 1.80 next year (Rs 1.82 for 2025/26) growing 3% / 7% / 10% for five years, then EPS grows 4% / 5% / 6% with payout 1 − g ÷ ROE (ROE 10% / 13% / 16%). Dividends are covered by operating cash after bird purchases (Rs 0.97bn against Rs 0.16bn), not after growth capex."
+    },
+    {
+      "id": "nav",
+      "name": "NAV (adjusted)",
+      "bear": 69.06,
+      "base": 76.74,
+      "bull": 85.04,
+      "comment": "Rs 82.48 (30 Sep 2026) less the after-tax breeder-bird revaluation (Rs 3.18) and 40% / 10% of the Rs 25.58 joint-venture book value; bull adds 10%. Land was revalued in March 2026."
+    }
+  ],
+  "modelsNote": "All six methods are averaged equally. Growth check: assumed 3% / 7% / 10% against a supported 11.9% (reinvestment rate 104% × return on capital 11.5%, 2025/26), all within the limit. The DCF covers the poultry business only (the cash flow excludes the joint ventures, whose dividends sit in investing) and takes off the breeder birds bought each year (Rs 1.19bn over the twelve months) as a running cost; the joint ventures are added at 0.6× / 0.9× / 1.1× book. NOPAT excludes the Rs 400mn bird fair value gain and uses 30% tax. Maintenance capex Rs 0.70 / 0.50 / 0.40bn: the calculator's range (1.24 / 0.81 / 0.37) is pushed up by the 2025/26 growth projects. Cost of debt 8.2% (interest paid ÷ average borrowings, 2025/26) is just over 4 points under the bond yield because the Islamic financing is short-term and priced off AWPLR, which fell during 2025/26 (CFO's review, p. 24).",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "16.2%",
+        "base": "14.7%",
+        "bull": "13.2%"
+      },
+      {
+        "label": "WACC",
+        "bear": "14.0%",
+        "base": "12.9%",
+        "bull": "11.7%"
+      },
+      {
+        "label": "Growth, five years then long-run",
+        "bear": "3% then 4%",
+        "base": "7% then 5%",
+        "bull": "10% then 6%"
+      },
+      {
+        "label": "After-tax operating profit (start)",
+        "bear": "Rs 691mn",
+        "base": "Rs 691mn",
+        "bull": "Rs 691mn"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 0.70bn",
+        "base": "Rs 0.50bn",
+        "bull": "Rs 0.40bn"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "9%",
+        "base": "12%",
+        "bull": "14%"
+      },
+      {
+        "label": "Joint ventures",
+        "bear": "0.6× book (Rs 15.3)",
+        "base": "0.9× book (Rs 23.0)",
+        "bull": "1.1× book (Rs 28.1)"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "10%",
+        "base": "13%",
+        "bull": "16%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 7.50",
+        "base": "Rs 10.50",
+        "bull": "Rs 12.50"
+      }
+    ],
+    "averages": {
+      "bear": 35.89,
+      "base": 62.99,
+      "bull": 105.89
+    },
+    "common": "10-year rupee bond 12.24%, risk-free rate 8.24%, beta 0.63. Net debt Rs 2.26bn and joint ventures Rs 2.25bn at 30 Sep 2026. NOPAT = twelve-month operating profit Rs 1,387mn less the Rs 400mn bird gain, at 30% tax. Next dividend Rs 1.80; residual income payout 15%, starting ROE 13%."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "13.2%",
+      "14.7%",
+      "16.2%"
+    ],
+    "columns": [
+      "10%",
+      "13%",
+      "16%"
+    ],
+    "values": [
+      [
+        50.29,
+        80.47,
+        110.64
+      ],
+      [
+        42.52,
+        68.02,
+        93.53
+      ],
+      [
+        36.82,
+        58.91,
+        81.01
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Growth 5%, book Rs 82.48. The Rs 86.90 price needs a long-run ROE of about 16% at the base required return, which Bairaha has reached in only two of the last six years."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 53.92
+      },
+      {
+        "shares": 150,
+        "maxPrice": 50.75
+      },
+      {
+        "shares": 150,
+        "maxPrice": 47.58
+      }
+    ],
+    "averagePrice": 51.07,
+    "totalCost": 25534,
+    "note": "About Rs 25,534 in total, against Rs 43,450 at Rs 86.90.",
+    "realism": "Rs 53.92 needs a 38% fall. Since the split the share has traded at Rs 66.50–95.90 (March–September 2026). In the 2024/25 chick glut it fell to Rs 150 before the split (Rs 30 on today's shares, November 2024), so the buy price is possible in a poultry downturn, but not likely while chick prices stay high."
+  },
+  "changeMyView": {
+    "higher": [
+      "Full-year 2026/27 EPS above Rs 11 with no bird revaluation gain.",
+      "The joint-venture feed mill back to steady profit (corn imports allowed again) and paying dividends.",
+      "The Kurunegala farm and hatchery expansion lifting return on equity to 15%+ through a weaker chick-price year.",
+      "A higher, steady payout (over 30%) funded from operating cash."
+    ],
+    "lower": [
+      "Chick or chicken prices falling back as in 2024/25 (industry oversupply).",
+      "Feed-mill losses continuing, or a call on the Rs 3.36bn of guarantees for its bank loans.",
+      "Another disease outbreak (avian influenza) or cyclone hitting the breeder farms.",
+      "Capex continuing to be funded by short-term borrowing."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The price used is the 30 September 2026 close because the current CSE price wasn't available to this run. This is analysis, not personal financial advice."
+  },
+  "requiredReturn": {
+    "beta": 0.63,
+    "betaBasis": "Provisional. Damodaran's global Farming/Agriculture (0.49) and Food Processing (0.56) unlevered betas, averaged to 0.525 (web-search stand-ins, his emerging-markets file couldn't be opened), relevered at net debt Rs 2.26bn to market value Rs 7.65bn (D/E 0.30) and 30% tax: 0.63. No local 5-year betas could be opened from this run. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 16.2,
+      "base": 14.7,
+      "bull": 13.2
+    },
+    "costOfDebt": 8.23,
+    "wacc": {
+      "bear": 14.0,
+      "base": 12.9,
+      "bull": 11.7
+    },
+    "debtWeight": 22.8,
+    "asOf": "2026-11-22",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0% (14 Nov 2026); mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global Farming/Agriculture and Food Processing, via web search (as for Chemical Industries)",
+      "Weights: market cap Rs 7.65bn at Rs 86.90 (close 30 Sep 2026), net debt Rs 2.26bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.63 × (4.2% + 6.08%) = 14.7%; bear +1.5, bull −1.5 points. Cost of debt 8.23% = interest paid Rs 209mn ÷ average borrowings and leases (2025/26), after the 18.3% effective tax."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 16.2,
+      "base": 14.7,
+      "bull": 13.2
+    },
+    "wacc": {
+      "bear": 14.0,
+      "base": 12.9,
+      "bull": 11.7
+    },
+    "debtWeight": 22.8,
+    "shares": 88.0,
+    "netDebt": 2.26,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 0.456,
+        "nopat": 0.691,
+        "growth": 3,
+        "longRun": 4,
+        "roc": 9,
+        "maintenance": 0.7
+      },
+      "base": {
+        "start": 0.656,
+        "nopat": 0.691,
+        "growth": 7,
+        "longRun": 5,
+        "roc": 12,
+        "maintenance": 0.5
+      },
+      "bull": {
+        "start": 0.756,
+        "nopat": 0.691,
+        "growth": 10,
+        "longRun": 6,
+        "roc": 14,
+        "maintenance": 0.4
+      },
+      "addOn": {
+        "bear": 15.348,
+        "base": 23.022,
+        "bull": 28.138
+      },
+      "addOnNote": "Joint ventures (50% of Fortune Agro Industries, Fortune G-P Farms and three land companies), carried at Rs 2.25bn at 30 Sep 2026: 0.6× / 0.9× / 1.1× book, Rs 15.3 / 23.0 / 28.1 a share",
+      "basis": {
+        "roc": "valuationInputs: Long-run ROE",
+        "maintenance": "valuationInputs: Maintenance capex basis",
+        "addOn": "valuationInputs: Joint ventures"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 7.5,
+        "roe": 10,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 10.5,
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 12.5,
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "pb": {
+      "book": 82.48,
+      "bear": {
+        "roe": 10,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 82.48,
+      "payout": 15,
+      "roeStart": 13,
+      "bear": {
+        "roe": 10,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "payout": "valuationInputs: Residual income start",
+        "roeStart": "valuationInputs: Residual income start",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 1.8,
+        "eps": 7.5,
+        "growth": 3,
+        "roe": 10,
+        "longRun": 4
+      },
+      "base": {
+        "dividend": 1.8,
+        "eps": 10.5,
+        "growth": 7,
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "dividend": 1.8,
+        "eps": 12.5,
+        "growth": 10,
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend model",
+        "growth": "valuationInputs: Dividend model",
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "dcf.bear.maintenance": {
+        "calc": "0.7",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bear.nopat": {
+        "calc": "(ttm.operatingProfit - annual.biologicalFairValueGain) * (1 - 30 / 100)",
+        "basis": "valuationInputs: Tax rate ahead"
+      },
+      "dcf.bear.start": {
+        "calc": "ttm.cashBeforeInterest - ttm.purchaseBiologicalAssets - maintenance",
+        "basis": "valuationInputs: Breeder flock purchases"
+      },
+      "dcf.addOn.bear": {
+        "calc": "latest.investmentsInJointVentures * 0.6 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Joint ventures"
+      },
+      "dcf.base.maintenance": {
+        "calc": "0.5",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.base.nopat": {
+        "calc": "(ttm.operatingProfit - annual.biologicalFairValueGain) * (1 - 30 / 100)",
+        "basis": "valuationInputs: Tax rate ahead"
+      },
+      "dcf.base.start": {
+        "calc": "ttm.cashBeforeInterest - ttm.purchaseBiologicalAssets - maintenance",
+        "basis": "valuationInputs: Breeder flock purchases"
+      },
+      "dcf.addOn.base": {
+        "calc": "latest.investmentsInJointVentures * 0.9 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Joint ventures"
+      },
+      "dcf.bull.maintenance": {
+        "calc": "0.4",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bull.nopat": {
+        "calc": "(ttm.operatingProfit - annual.biologicalFairValueGain) * (1 - 30 / 100)",
+        "basis": "valuationInputs: Tax rate ahead"
+      },
+      "dcf.bull.start": {
+        "calc": "ttm.cashBeforeInterest - ttm.purchaseBiologicalAssets - maintenance",
+        "basis": "valuationInputs: Breeder flock purchases"
+      },
+      "dcf.addOn.bull": {
+        "calc": "latest.investmentsInJointVentures * 1.1 * 1000 / latest.sharesOutstanding",
+        "basis": "valuationInputs: Joint ventures"
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-22",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 15–16), MD/CEO's review (pp. 18–20), CFO's review (pp. 22–29); progress from the interims to 30 June and 30 September 2026",
+    "takeaway": "Management promises about 20% revenue growth and better margins from new capacity in 2026/27, but the first half delivered 11.5% growth and the joint-venture feed mill slid into losses, so earnings still depend on chick and feed prices.",
+    "said": [
+      {
+        "text": "2025/26 was a recovery year after the 2024/25 chick and chicken oversupply; profit rose from Rs 122mn to Rs 1,001mn on better prices, mix and volumes",
+        "ref": "pp. 22–23"
+      },
+      {
+        "text": "Cyclone Ditwah hit breeder, processing and export operations late in the third quarter; chick output and hatchability fell",
+        "ref": "pp. 18–19"
+      },
+      {
+        "text": "Chick prices rose about 25% and chicken prices about 7%; live broiler volumes rose 42% and value-added volumes 28%",
+        "ref": "pp. 23–24"
+      },
+      {
+        "text": "Feed (maize, soybean) is the biggest cost; government corn import permits helped in 2025/26",
+        "ref": "pp. 18, 24"
+      },
+      {
+        "text": "Market reach grew 31% through network re-engineering and better route planning",
+        "ref": "p. 19"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Revenue growth of about 20% in 2026/27 from volumes and new capacity",
+        "ref": "p. 29"
+      },
+      {
+        "text": "Meaningful margin recovery as pricing improves and higher volumes spread fixed costs",
+        "ref": "p. 29"
+      },
+      {
+        "text": "Keep reducing net borrowings as a share of capital while finishing the investment programme",
+        "ref": "p. 29"
+      },
+      {
+        "text": "Grow value-added products and exports; improved Cobb genetics from the Fortune G-P Farms joint venture",
+        "ref": "pp. 19–20"
+      },
+      {
+        "text": "Dividends balanced against capex, gearing and liquidity",
+        "ref": "p. 27"
+      }
+    ],
+    "investing": [
+      {
+        "text": "500 MT cold storage for chicken meat, commissioned in 2025/26",
+        "amount": "USD 1mn",
+        "ref": "p. 15"
+      },
+      {
+        "text": "Property, plant and equipment in 2025/26: Kurunegala broiler farm, cold storage, hatchery and processing upgrades",
+        "amount": "LKR 1.23bn in 2025/26",
+        "ref": "pp. 26, 28"
+      },
+      {
+        "text": "Expanded hatchery and further processing investment to support 2026/27 growth",
+        "amount": null,
+        "ref": "p. 29"
+      },
+      {
+        "text": "Corn cooling and drying unit for feed quality",
+        "amount": null,
+        "ref": "p. 19"
+      }
+    ],
+    "track": [
+      {
+        "promise": "About 20% revenue growth in 2026/27 (CFO, p. 29)",
+        "result": "April–September 2026 revenue +11.5% to Rs 8.58bn; September quarter only +4% (Interim to 30 Sep 2026, p. 4). Behind pace.",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 4"
+      },
+      {
+        "promise": "Meaningful margin recovery (CFO, p. 29)",
+        "result": "Gross margin 21.4% in April–September 2026 against 18.0% a year earlier and 18.9% for 2025/26.",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 4"
+      },
+      {
+        "promise": "Reduce net borrowings as a share of capital (CFO, p. 29)",
+        "result": "Net debt Rs 2.26bn at Sep 2026 against Rs 2.29bn at March, while owners' equity rose to Rs 7.30bn from Rs 6.91bn.",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 3"
+      },
+      {
+        "promise": "Further enhance returns from the joint ventures (CFO, p. 25)",
+        "result": "Share of joint ventures a loss of Rs 59mn in April–September 2026 (loss Rs 12mn a year earlier; Rs 351mn profit in 2025/26), on corn import limits and a higher corn levy.",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, pp. 2, 4"
+      },
+      {
+        "promise": "Capital investments reaching production readiness (CFO, p. 29)",
+        "result": "Rs 582mn more PPE capex in April–September 2026; PPE Rs 5.28bn against Rs 4.90bn in March. Output from the new farm isn't reported separately.",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, pp. 3, 6"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, additional notes 1–3 (p. 9), against the list at 30 June 2026 in the Interim to 30 Jun 2026 (p. 8). Names as printed in the September list.",
+    "takeaway": "Four executive directors (Yakooth, Mubarak, Kamil and Riyal) hold 36.2% between them and no one holds more than 10.7%; their stakes didn't change. The main buyer in the quarter was Deutsche Bank AG – National Equity Fund (+808,711 shares, to 4.78%); the chairman bought 114,000.",
+    "groups": [
+      {
+        "name": "Directors and CEO",
+        "pct": 36.4
+      },
+      {
+        "name": "Public",
+        "pct": 63.6
+      }
+    ],
+    "publicFloat": 63.6,
+    "publicHolders": 6378,
+    "publicHoldersPrev": 6033,
+    "directors": [
+      {
+        "name": "Mr. Reyaz Mihular (Chairman)",
+        "shares": 166430
+      },
+      {
+        "name": "Mr. M.N.M. Yakooth (Managing Director / CEO)",
+        "shares": 9360265
+      },
+      {
+        "name": "Mr. M.Y.M. Riyal (Executive Director)",
+        "shares": 4533675
+      },
+      {
+        "name": "Mr. M.N.M. Kamil",
+        "shares": 8821580
+      },
+      {
+        "name": "Mr. M.N.M. Mubarak",
+        "shares": 9134990
+      },
+      {
+        "name": "Mr. M.I Wahid",
+        "shares": 11000
+      },
+      {
+        "name": "Mr. O. A. Herath",
+        "shares": 0
+      },
+      {
+        "name": "Ms. R. M. R. V. Ratnayake",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "MR. M.N.M. YAKOOTH",
+        "shares": 9360265,
+        "pct": 10.64,
+        "change": 0
+      },
+      {
+        "name": "MR. M.N.M. MUBARAK",
+        "shares": 9134990,
+        "pct": 10.38,
+        "change": 0
+      },
+      {
+        "name": "MR. M.N.M. KAMIL",
+        "shares": 8821580,
+        "pct": 10.02,
+        "change": 0
+      },
+      {
+        "name": "MRS. F.S. IMRAN",
+        "shares": 4836255,
+        "pct": 5.5,
+        "change": 0
+      },
+      {
+        "name": "MR. M.Y.M. RIYAL",
+        "shares": 4533675,
+        "pct": 5.15,
+        "change": 0
+      },
+      {
+        "name": "DEUTSCHE BANK AG-NATIONAL EQUITY FUND",
+        "shares": 4208711,
+        "pct": 4.78,
+        "change": 808711
+      },
+      {
+        "name": "MR. M.E.N. MOHAMED ILYAS",
+        "shares": 3294575,
+        "pct": 3.74,
+        "change": 0
+      },
+      {
+        "name": "MR. M.I. ILYAS NALEEM",
+        "shares": 3246630,
+        "pct": 3.69,
+        "change": 0
+      },
+      {
+        "name": "SEYLAN BANK PLC/R.A.RISHARD",
+        "shares": 2251702,
+        "pct": 2.56,
+        "change": -18298
+      },
+      {
+        "name": "AMANA BANK PLC/HI-LINE TRADING PVT LTD",
+        "shares": 1925380,
+        "pct": 2.19,
+        "change": 0
+      },
+      {
+        "name": "MRS. F.F. ILYAS NALEEM",
+        "shares": 1610805,
+        "pct": 1.83,
+        "change": 0
+      },
+      {
+        "name": "SEYLAN BANK PLC/MOHAMED MUSHTAQ FUAD",
+        "shares": 1014953,
+        "pct": 1.15,
+        "change": -51436
+      },
+      {
+        "name": "PEOPLE'S LEASING & FINANCE PLC/HI LINE TRADING (PVT) LTD",
+        "shares": 778980,
+        "pct": 0.89,
+        "change": 0
+      },
+      {
+        "name": "DEUTSCHE BANK AG-NAMAL GROWTH FUND",
+        "shares": 550001,
+        "pct": 0.63,
+        "change": null,
+        "new": true,
+        "note": "400,001 shares (21st) at 30 June: +150,000"
+      },
+      {
+        "name": "PEOPLE S LEASING AND FINANCE PLC/NAGOYA CEYLON TRADING (PVT) LTD",
+        "shares": 546906,
+        "pct": 0.62,
+        "change": null,
+        "new": true,
+        "note": "337,046 shares (25th) at 30 June: +209,860"
+      },
+      {
+        "name": "MR. R. PESTONJEE",
+        "shares": 544690,
+        "pct": 0.62,
+        "change": 0
+      },
+      {
+        "name": "SENKADAGALA FINANCE PLC/M.M.FUAD",
+        "shares": 539031,
+        "pct": 0.61,
+        "change": 0
+      },
+      {
+        "name": "M.T.A. FURKHAN FOUNDATION",
+        "shares": 503175,
+        "pct": 0.57,
+        "change": 0
+      },
+      {
+        "name": "MR. N.S. AHAMED & MRS. K.A.SHIFFER",
+        "shares": 468212,
+        "pct": 0.53,
+        "change": 0
+      },
+      {
+        "name": "PEOPLE S LEASING AND FINANCE PLC/HI-LINE TOWERS (PVT) LTD",
+        "shares": 424214,
+        "pct": 0.48,
+        "change": 0
+      }
+    ],
+    "gone": [
+      {
+        "name": "Seylan Bank Plc/K.L.G.Udayananda",
+        "prevShares": 798038
+      },
+      {
+        "name": "Mr. M.Z. Rasheed",
+        "prevShares": 471800
+      }
+    ]
+  },
+  "fullText": "**Summary**\n\nBairaha Farms PLC (BFL.N0000), founded in 1975, is an integrated poultry business: breeder farms, hatcheries selling day-old chicks, broiler farming (own and out-grower), processing of whole chicken and portions, and value-added products (sausages, cold cuts, pre-cooked meat through Bairaha Foods). It owns 50% of Fortune Agro Industries (a feed mill) and Fortune G-P Farms (grandparent birds), which are equity-accounted. The founding family's executive directors hold about 36%.\n\nPoultry is cyclical. In 2024/25 an industry glut of chicks and chicken cut profit to Rs 122mn. In 2025/26 prices recovered (chicks +25%, chicken +7%) and profit rose to Rs 1,001mn (EPS Rs 11.71), and April–September 2026 profit rose 13% to Rs 456mn. But Rs 400mn of 2025/26 profit was a non-cash gain on revaluing breeder birds, Rs 351mn came from the joint ventures (now loss-making), and over six years return on equity has averaged only about 9–10%.\n\nMy fair value is **Rs 63.44**. Buy price **Rs 53.92** (fair value less 15%), strong buy **Rs 47.58** (less 25%). At Rs 86.90 (close on 30 September 2026; the current CSE price wasn't available to this run) the share is about 37% above fair value. It passes two of the four business tests (debt and cash) and fails returns and steady profit: **category 3, avoid for now**.\n\n**Latest results**\n\n| | Apr–Sep 2026 | Apr–Sep 2025 | 2025/26 | 2024/25 |\n|---|---|---|---|---|\n| Revenue | Rs 8,576mn | Rs 7,689mn | Rs 15,291mn | Rs 13,916mn |\n| Gross margin | 21.4% | 18.0% | 18.9% | 12.5% |\n| Operating profit (before JVs) | Rs 851mn | Rs 545mn | Rs 1,082mn | Rs 105mn |\n| Share of joint ventures | −Rs 59mn | −Rs 12mn | Rs 351mn | Rs 286mn |\n| Profit attributable | Rs 463mn | Rs 407mn | Rs 1,031mn | Rs 125mn |\n| EPS | Rs 5.27 | Rs 4.63 | Rs 11.71 | Rs 1.42 |\n\n- 2025/26 operating profit includes a Rs 400mn fair value gain on breeder birds (Rs 13mn in 2024/25). It is non-cash and reverses if chick prices fall.\n- Tax is now a full 30%: in April–September 2025 old tax losses kept tax to Rs 45mn; this year it was Rs 226mn.\n- The September quarter was weaker: profit before joint ventures −4% and a Rs 75mn joint-venture loss, because the feed mill could import only 20% of its approved corn and the corn levy doubled to Rs 50/kg (MD's comment).\n- Shares were split 1:5 in December 2025; there are 88mn shares. All per-share figures here are on today's shares unless marked.\n\n**The cash question**\n\nBairaha must replace its breeder (parent) flock every year: it bought Rs 1,162mn of birds in 2025/26 and Rs 1,055mn in 2024/25. The annual cash flow statement shows these purchases under investing and adds the birds used back into operating cash, so headline operating cash (Rs 1.92bn) overstates what the business really generates. After bird purchases, operating cash was Rs 762mn in 2025/26 and Rs 967mn in the twelve months to September 2026. PPE capex was Rs 1.23bn in 2025/26 (mostly growth: the Kurunegala broiler farm, hatchery, a USD 1mn cold store) and Rs 582mn in April–September 2026, so free cash has been negative and the gap was borrowed. Net debt is moderate at Rs 2.26bn (0.31× equity), but Bairaha also guarantees Rs 3.36bn of the feed-mill joint venture's bank loans.\n\n**Valuation**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| DCF of the poultry business + joint ventures | 9.82 | 52.12 | 106.71 | 50.35 |\n| P/E (justified, EPS to March 2027) | 36.89 | 66.61 | 108.51 | 66.07 |\n| Justified price to book | 40.56 | 68.02 | 114.56 | 69.09 |\n| Residual income | 32.43 | 61.40 | 122.42 | 64.91 |\n| Dividends (two-stage) | 26.55 | 53.04 | 98.11 | 54.11 |\n| NAV (adjusted) | 69.06 | 76.74 | 85.04 | 76.10 |\n| **Average** | **35.89** | **62.99** | **105.89** | **63.44** |\n\nWeights bear 30 / base 50 / bull 20. Cost of equity 14.7% (beta 0.63, provisional), WACC 12.9%.\n\n- **DCF.** Start: twelve-month cash before interest Rs 2.35bn, less breeder birds Rs 1.19bn, less maintenance capex Rs 0.70 / 0.50 / 0.40bn = Rs 0.46 / 0.66 / 0.76bn. NOPAT Rs 691mn (twelve-month operating profit Rs 1,387mn less the bird gain, at 30% tax). Growth 3% / 7% / 10% for five years, then 4% / 5% / 6%, reinvesting growth ÷ 9% / 12% / 14% return on capital; less net debt Rs 2.26bn. The poultry business alone is worth −Rs 5.5 / 29.1 / 78.6 a share; the joint ventures add Rs 15.3 / 23.0 / 28.1 (0.6× / 0.9× / 1.1× book). In the base and bull cases 78% and 86% of the DCF value comes after year 5, so the result leans on the long run. Returns on new capital close to WACC mean growth adds little value.\n- **P/E.** EPS to March 2027 Rs 7.50 / 10.50 / 12.50 × justified P/E 4.9× / 6.3× / 8.7× (payout 1 − g ÷ ROE at long-run ROE 10% / 13% / 16%). Base EPS is 15% below the Rs 12.35 twelve-month run-rate because that includes the bird gain (about Rs 3.2 a share after tax) and low tax; it matches April–September 2026 annualised (Rs 10.54).\n- **P/B and residual income.** Book Rs 82.48. ROE of 10% / 13% / 16% against a 16.2% / 14.7% / 13.2% required return: only the bull case earns more than the cost of equity.\n- **Dividends.** Rs 1.80 next year, growing 3% / 7% / 10%, then the payout rises to 1 − g ÷ ROE. The current payout (16%) is low because capex comes first.\n- **NAV.** Rs 82.48 less the after-tax bird revaluation (Rs 3.2) and a 40% / 10% / 0% discount on the joint ventures (bull adds 10%).\n\nGrowth check: assumed 3% / 7% / 10%; supported 11.9% (2025/26 reinvestment 104% of NOPAT × 11.5% return on capital). All scenarios are within it, and the bull case's 10% needs the new farm and hatchery to run full.\n\n**What the price implies**\n\nAt Rs 86.90 the market pays 1.05× book and 8.3× base EPS. At a 14.7% required return that needs a long-run ROE of about 16%, a level Bairaha reached only in 2021/22 and 2025/26, both peak-price years.\n\n**Business tests**\n\n- Return on equity 15%+: **fail** (16% now with the bird gain, about 11% without; 9–10% over six years).\n- Net debt no more than equity: **pass** (0.31×; but Rs 3.36bn of joint-venture guarantees).\n- Steady profit: **fail** (no loss since 2019/20, but profit swung from Rs 1,001mn to Rs 122mn and back; 2025/26 relied on the bird gain and joint ventures).\n- Profit turns into cash: **pass** (operating cash after bird purchases exceeded profit over two years).\n\nTwo passes: weak, **category 3 (avoid for now)**.\n\n**Buy plan (500 shares)**\n\n| Tranche | Shares | Up to |\n|---|---|---|\n| 1 | 200 | Rs 53.92 |\n| 2 | 150 | Rs 50.75 |\n| 3 | 150 | Rs 47.58 |\n\nAverage about Rs 51.07, Rs 25,534 in total. Rs 53.92 needs a 38% fall. Since the split the share has traded at Rs 66.50–95.90; in the 2024/25 glut it reached Rs 150 before the split (Rs 30 today), so the buy price is plausible only in a poultry downturn. Given the weak business tests, wait for a downturn and a year of steady joint-venture profit.\n\n**Management and plans**\n\nThe CFO targets about 20% revenue growth in 2026/27 with margin recovery from new capacity, and lower gearing. First-half revenue grew 11.5%, margins improved and net debt was flat, but the joint ventures, which management expected to keep improving, lost Rs 59mn.\n\n**What would change my view**\n\nHigher: 2026/27 EPS above Rs 11 without bird gains; the feed mill back in steady profit; ROE of 15%+ through a weaker price year; a higher payout funded from operating cash.\n\nLower: chick or chicken prices falling back; continued feed-mill losses or a call on the guarantees; avian influenza or another cyclone; more capex funded with short-term debt.\n\n**Uncertain or missing**\n\n- The share price is the 30 September 2026 close; the current CSE price couldn't be fetched.\n- The beta is provisional (Damodaran's global sector betas as stand-ins; no local 5-year betas reachable).\n- Interim cash flows show breeder-bird purchases net of birds used, while the annual one shows them gross; the twelve-month figure combines the two, which gives the same cash after birds but should be checked against the next annual report.\n- The interim reports don't say whether any breeder-bird fair value change is in the half-year profit.\n- 2020/21–2023/24 figures come only from the ten-year summary."
+}
