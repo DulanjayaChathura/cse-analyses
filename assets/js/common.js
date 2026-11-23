@@ -445,3 +445,63 @@ App.toast = function (text) {
   clearTimeout(App.toast.t);
   App.toast.t = setTimeout(() => el.classList.remove("show"), 4000);
 };
+
+/* ---------- Keeping chart labels apart ----------
+   All in SVG units. Text width is estimated from its length and font size. */
+App.textW = (text, size = 12) => String(text).length * size * 0.62;
+
+/* Labels on one line (axis labels, value labels): keep the most important ones and drop any
+   that would overlap a label already kept. items: [{x, w, prio, anchor}] (x = centre unless
+   anchor "start"/"end"). Returns the set of indexes to draw. */
+App.fitLabels = function (items, gap = 4) {
+  const span = (it) => it.anchor === "start" ? [it.x, it.x + it.w] : it.anchor === "end" ? [it.x - it.w, it.x] : [it.x - it.w / 2, it.x + it.w / 2];
+  const order = items.map((_, i) => i).sort((a, b) => (items[b].prio || 0) - (items[a].prio || 0) || a - b);
+  const kept = [], show = new Set();
+  for (const i of order) {
+    const [a, b] = span(items[i]);
+    if (kept.every(([c, d]) => b + gap <= c || a >= d + gap)) { kept.push([a, b]); show.add(i); }
+  }
+  return show;
+};
+
+/* Labels that must all show (price levels): give each a row so labels in the same row don't
+   overlap. Returns the row number for each item (0 = first row). */
+App.stackLabels = function (items, gap = 6) {
+  const rowsEnd = [], out = new Array(items.length);
+  items.map((it, i) => [it, i]).sort((p, q) => p[0].x - q[0].x).forEach(([it, i]) => {
+    const a = it.x - it.w / 2;
+    let r = rowsEnd.findIndex((end) => a >= end + gap);
+    if (r < 0) { r = rowsEnd.length; rowsEnd.push(0); }
+    rowsEnd[r] = it.x + it.w / 2; out[i] = r;
+  });
+  return out;
+};
+
+/* Labels next to points (scatter, line values): try each candidate box in turn and use the
+   first that doesn't hit a label already placed, a point, or the chart edge. cands: per label
+   a list of {x, y, w, h} boxes (x, y = top-left). Returns the chosen box index per label, or -1. */
+App.placeBoxes = function (cands, { avoid = [], W = Infinity, H = Infinity } = {}) {
+  const placed = avoid.slice();
+  const hit = (b) => b.x < 0 || b.y < 0 || b.x + b.w > W || b.y + b.h > H ||
+    placed.some((p) => b.x < p.x + p.w && b.x + b.w > p.x && b.y < p.y + p.h && b.y + b.h > p.y);
+  return cands.map((list) => {
+    const k = list.findIndex((b) => !hit(b));
+    if (k >= 0) placed.push(list[k]);
+    return k;
+  });
+};
+
+/* Labels that must stay on one line: slide them sideways just enough that none overlap,
+   keeping each as close to its own point as possible and inside 0..W. Returns the new centres,
+   or null if they can't all fit on one line. items: [{x, w}] (x = centre). */
+App.dodge = function (items, W, gap = 8) {
+  const order = items.map((_, i) => i).sort((a, b) => items[a].x - items[b].x);
+  const total = items.reduce((a, it) => a + it.w + gap, -gap);
+  if (total > W) return null;
+  const pos = new Array(items.length);
+  let prevEnd = -Infinity;
+  order.forEach((i) => { const it = items[i]; let c = Math.max(it.x, it.w / 2, prevEnd + gap + it.w / 2); pos[i] = c; prevEnd = c + it.w / 2; });
+  let nextStart = Infinity;
+  order.slice().reverse().forEach((i) => { const it = items[i]; let c = Math.min(pos[i], W - it.w / 2, nextStart - gap - it.w / 2); pos[i] = c; nextStart = c - it.w / 2; });
+  return pos;
+};

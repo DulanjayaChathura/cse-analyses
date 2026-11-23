@@ -627,3 +627,159 @@ h1 .star { font-size: 1.5rem; margin-left: 0.2rem; }
 .tip.fig .kind.calc { background: rgba(210, 154, 0, 0.18); }
 .tip.fig .kind.ratio { background: rgba(80, 120, 220, 0.2); }
 .tip.fig .eq { margin-top: 0.4rem; padding: 0.35rem 0.5rem; border-radius: 6px; background: rgba(127, 127, 127, 0.15); font-variant-numeric: tabular-nums; }
+
+/* ---- Broker page, phone-first ---- */
+@media (max-width: 600px) {
+  .tiles { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .tile { padding: 0.6rem 0.75rem; }
+  .tile .tile-value { font-size: 1.25rem; }
+  .tile .tile-foot { font-size: 0.75rem; }
+  .bk-card { padding: 0.9rem 0.85rem; }
+  .col-sector { display: none; }
+}
+.bk-other dd { white-space: normal; overflow-wrap: anywhere; }
+.bk-other div { align-items: baseline; }
+/* Today in short: each point shows 3 lines; tap to read it all */
+.bk-list.hl li { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; margin-bottom: 0.55rem; }
+.bk-list.hl li.open { display: list-item; -webkit-line-clamp: unset; }
+.hl-hint { margin-top: -0.2rem; }
+/* Research: at a glance, then a fold per section of the report */
+.rs-glance { margin: 0.6rem 0 0.4rem; padding-left: 1.1rem; }
+.rs-glance li { margin-bottom: 0.4rem; line-height: 1.45; }
+.rs-full { margin-top: 0.6rem; border-top: 1px solid var(--rule); padding-top: 0.5rem; }
+.rs-full-h { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.3rem; }
+.rs-sec { border-bottom: 1px solid var(--rule); }
+.rs-sec > summary { cursor: pointer; padding: 0.6rem 0.1rem; min-height: 2.6rem; font-weight: 600; font-size: 0.92rem; list-style: none; display: flex; justify-content: space-between; gap: 0.5rem; align-items: baseline; }
+.rs-sec > summary::-webkit-details-marker { display: none; }
+.rs-sec > summary::after { content: "＋"; color: var(--accent); font-weight: 400; }
+.rs-sec[open] > summary::after { content: "−"; }
+.rs-sec > summary .muted-s { font-weight: 400; margin-left: auto; white-space: nowrap; }
+.rs-sec ul { padding-left: 1.1rem; margin: 0 0 0.6rem; font-size: 0.9rem; }
+.rs-sec li { margin-bottom: 0.35rem; line-height: 1.45; }
+.rs-sec .rs-part h4 { display: none; }
+.rs-tbl { margin: 0.4rem 0 0.8rem; }
+.rs-tbl-h { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 0.25rem; }
+/* Your companies: one line each */
+.cmp1-head, .cmp1 > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto 5.6rem; gap: 0.5rem; align-items: center; }
+.cmp1-head { font-size: 0.72rem; color: var(--ink-soft); padding: 0 0.1rem 0.3rem; border-bottom: 1px solid var(--rule); }
+.cmp1 { border-bottom: 1px solid var(--rule); }
+.cmp1 > summary { list-style: none; cursor: pointer; padding: 0.55rem 0.1rem; min-height: 2.6rem; font-size: 0.88rem; }
+.cmp1 > summary::-webkit-details-marker { display: none; }
+.cmp1-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.cmp1-nums { display: grid; grid-template-columns: 3.6rem 3.6rem 3.6rem; gap: 0.25rem; text-align: right; font-variant-numeric: tabular-nums; }
+.cmp1-head .cmp1-nums { line-height: 1.15; }
+.cmp1-nums .tg { color: #2f6fd6; } .cmp1-nums .fv { color: var(--good, #1d7a46); }
+.cmp1 > summary .rchip { justify-self: end; font-size: 0.72rem; text-align: center; }
+.cmp1-head > span:last-child { text-align: right; }
+.cmp1-body { padding: 0.2rem 0.1rem 0.7rem; }
+.cmp1-body .cmp-bar { margin: 0.6rem 0 0.4rem; }
+/* All calls */
+.rate-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.rate-chips button { font: inherit; font-size: 0.8rem; padding: 0.3rem 0.7rem; min-height: 2.2rem; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-soft); cursor: pointer; }
+.rate-chips button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+table.calls td:first-child { max-width: 9.5rem; }
+table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: var(--bad, #b42318); }
+.show-all { font: inherit; font-size: 0.85rem; margin: 0.6rem 0 0.2rem; padding: 0.45rem 1rem; min-height: 2.4rem; border-radius: 999px; border: 1px solid var(--accent); background: none; color: var(--accent); cursor: pointer; }
+/* Dividends as short lines */
+.div-list { list-style: none; margin: 0; padding: 0; }
+.div-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
+.div-list li div { color: var(--ink-soft); font-size: 0.85rem; margin-top: 0.15rem; }
+/* Folds: market details, news */
+.bk-fold > summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.6rem; }
+.bk-fold > summary::-webkit-details-marker { display: none; }
+.bk-fold > summary h2 { margin: 0; display: inline; }
+.bk-fold > summary::after { content: "＋ open"; margin-left: auto; color: var(--accent); font-size: 0.85rem; }
+.bk-fold[open] > summary::after { content: "− close"; }
+.bk-fold[open] > summary { margin-bottom: 0.7rem; }
+.news1 { border-bottom: 1px solid var(--rule); }
+.news1 > summary { cursor: pointer; padding: 0.6rem 0.1rem; min-height: 2.6rem; font-weight: 600; font-size: 0.9rem; line-height: 1.35; }
+.news1 p { margin: 0 0 0.7rem; font-size: 0.9rem; line-height: 1.5; }
+.rs-grid > *, .rs-card, .rs-sec, .rs-tbl { min-width: 0; }
+.rs-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+
+/* v2: two short lines per company and per call */
+.cmp1-head, .cmp1 > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.15rem 0.5rem; align-items: center; }
+.cmp1-head { display: block; }
+.cmp1-head .cmp1-nums, .cmp1 > summary .cmp1-nums { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.3rem; text-align: right; }
+.cmp1 > summary .cmp1-name { white-space: normal; }
+.cmp1-nums .gap.down { color: var(--bad, #b42318); } .cmp1-nums .gap.up { color: var(--good, #1d7a46); }
+.cmp1 > summary .cmp1-nums { font-size: 0.88rem; color: var(--ink); }
+.call-head, .call1-nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.3rem; text-align: right; font-variant-numeric: tabular-nums; }
+.call-head { font-size: 0.72rem; color: var(--ink-soft); padding: 0.6rem 0.1rem 0.3rem; border-bottom: 1px solid var(--rule); }
+.call1 { padding: 0.5rem 0.1rem; border-bottom: 1px solid var(--rule); }
+.call1-top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
+.call1-name { min-width: 0; }
+.call1-nums { font-size: 0.88rem; margin-top: 0.15rem; }
+.call1-nums .up { color: var(--good, #1d7a46); } .call1-nums .down { color: var(--bad, #b42318); }
+.rs-sec .rs-part { margin: 0; } .rs-sec .rs-part ul { margin-top: 0; }
+
+/* ---------- Broker page: charts for report exhibits, highlight rows, dot lines ---------- */
+.rs-blk { margin: 0.9rem 0 1.1rem; min-width: 0; }
+.rs-blk .rs-tbl-h { font-weight: 600; color: var(--ink); font-size: 0.85rem; }
+.ch-note { font-size: 0.85rem; color: var(--ink-soft); margin: 0.35rem 0 0; }
+.ch-nums { margin-top: 0.3rem; font-size: 0.8rem; }
+.ch-nums summary { cursor: pointer; color: var(--accent); }
+.ch-svg { width: 100%; height: auto; display: block; max-width: 560px; }
+.ch-t { font-size: 10px; fill: var(--ink-soft); }
+.ch-leg { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; font-size: 0.75rem; color: var(--ink-soft); margin: 0.2rem 0 0.35rem; }
+.ch-leg i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+.ch-leg i.ln { height: 2px; vertical-align: 3px; background: var(--ink); }
+.ch-h { display: grid; gap: 0.3rem; max-width: 560px; }
+.ch-hrow { display: grid; grid-template-columns: minmax(4.5rem, 34%) minmax(0, 1fr); gap: 0.5rem; align-items: center; font-size: 0.8rem; }
+.ch-lab { overflow-wrap: anywhere; line-height: 1.2; }
+.ch-bars { display: grid; gap: 2px; min-width: 0; }
+.ch-b { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.35rem; align-items: center; }
+.ch-trk { position: relative; height: 10px; }
+.ch-trk.mid { background: linear-gradient(var(--rule), var(--rule)) center / 1px 100% no-repeat; }
+.ch-trk div { position: absolute; top: 0; height: 100%; border-radius: 2px; }
+.ch-v { font-size: 0.75rem; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ink-soft); }
+.ch-heat td, .ch-heat th { text-align: center; }
+.ch-range { max-width: 560px; }
+.ch-rrow { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) 5.5rem; gap: 0.5rem; align-items: center; font-size: 0.8rem; margin: 0.35rem 0; }
+.ch-rtrk { position: relative; height: 16px; background: var(--bg); border-radius: 3px; }
+.ch-rbar { position: absolute; top: 3px; height: 10px; background: #85b7eb; border-radius: 2px; }
+.ch-rmk { position: absolute; top: -2px; width: 2px; height: 20px; transform: translateX(-1px); }
+.ch-rmk.price, .ch-rk.price { background: var(--ink); } .ch-rmk.fv, .ch-rk.fv { background: var(--good); } .ch-rmk.tg, .ch-rk.tg { background: #3b7dd8; }
+.ch-rk { display: inline-block; width: 3px; height: 12px; margin-right: 5px; vertical-align: -2px; }
+.ch-risk { display: grid; grid-template-columns: 4.2rem repeat(4, minmax(0, 1fr)); gap: 3px; font-size: 0.75rem; text-align: center; max-width: 460px; }
+.ch-risk span { padding: 0.45rem 0.1rem; border-radius: 4px; min-height: 1.6rem; color: #18283a; font-weight: 600; }
+.ch-risk span.muted-s { font-weight: 400; color: var(--ink-soft); padding: 0.3rem 0; }
+.ch-risk-l { font-size: 0.85rem; padding-left: 1.1rem; }
+/* dot line: price (black), this site (green), their target (blue) */
+.dl { position: relative; height: 54px; margin: 0.6rem 0.9rem 0.4rem; }
+.dl.sm { height: 14px; margin: 0.25rem 0.4rem; }
+.dl-trk { position: absolute; left: -0.5rem; right: -0.5rem; top: 12px; height: 4px; background: var(--rule); border-radius: 2px; }
+.dl.sm .dl-trk { top: 5px; height: 3px; }
+.dl-pt { position: absolute; top: 6px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; }
+.dl.sm .dl-pt { top: 1px; }
+.dl-pt i { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--surface); }
+.dl.sm .dl-pt i { width: 11px; height: 11px; border-width: 1px; }
+.dl-pt span { font-size: 0.7rem; color: var(--ink-soft); white-space: nowrap; text-align: center; line-height: 1.15; margin-top: 2px; }
+.dl-pt span b { display: block; color: var(--ink); font-size: 0.8rem; }
+.dl-pt.price i { background: var(--ink); } .dl-pt.fv i { background: var(--good); } .dl-pt.tg i { background: #3b7dd8; }
+.call1-dl { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.5rem; }
+/* highlight rows */
+.hl2-row { border-bottom: 1px solid var(--rule); }
+.hl2-row:last-child { border-bottom: 0; }
+.hl2-row summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: center; padding: 0.55rem 0; }
+.hl2-row summary::-webkit-details-marker { display: none; }
+.hl2-ic { width: 2rem; height: 2rem; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; background: var(--bg); }
+.hl2-ic.up { background: var(--zone-buy); } .hl2-ic.down { background: var(--zone-over); } .hl2-ic.warn { background: var(--zone-fair); }
+.hl2-t { font-weight: 500; line-height: 1.25; }
+.hl2-f { font-variant-numeric: tabular-nums; white-space: nowrap; font-size: 0.9rem; }
+.hl2-row p { margin: 0 0 0.7rem 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+.heat { display: flex; flex-wrap: wrap; gap: 4px; }
+.heat span { font-size: 0.75rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-variant-numeric: tabular-nums; }
+.flow small { color: var(--ink-soft); font-size: 0.7rem; }
+.flow-w .flow { grid-template-columns: 7.5rem minmax(0, 1fr) 3.2rem; }
+.rs-sec-t small { display: block; font-weight: 400; color: var(--ink-soft); font-size: 0.75rem; }
+.ch-heat { width: 100%; table-layout: fixed; font-size: 0.8rem; }
+.ch-heat th, .ch-heat td { padding: 0.35rem 0.2rem; }
+.rs-wide { grid-column: 1 / -1; }
+.rs-wide .rs-full { max-width: 760px; }
+.ch-svg { max-width: 480px; }
+.dl.two { height: 92px; }
+.dl.two .dl-trk { top: 50px; }
+.dl.two .dl-pt { top: 44px; }
+.dl-pt.up span { position: absolute; bottom: calc(100% + 2px); margin: 0; }
+.ch-t { paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }

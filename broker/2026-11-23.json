@@ -23,11 +23,41 @@
   "callsPriceDate": "2026-11-20",
   "note": "Messages 347 ('add SPEN.N0000'), 363 and 364 ('ok') and 367 ('full') are the owner's own replies from 21 Nov, not broker content, so nothing is summarised from them. The Weekly Universe table's footnote still says prices are as of 13 Nov, but its prices match the CSE close of 20 Nov and its upsides are worked from them, so the calls are dated 20 Nov. The table still shows Dialog at Moderate buy with a Rs 55 target; the broker's new Dialog report (message 404, also 20 Nov prices) raises this to Buy with Rs 59.40. The link in message 402 (the detailed Weekly Universe) only opened a SharePoint sign-in page; the same table came as the PDF in message 405. One news link (the US futures / AI sell-off item) could not be downloaded (HTTP 401), so that item is from the post text only. The daily update's foreign buying/selling by share chart has no figures on its bars, so those values are approximate (≈). The Bloomberg screen was taken at 08:59 Sri Lanka time on 23 Nov, so its US and European figures are Friday 20 Nov's sessions and its Asian figures are Monday morning's. The Dialog report says it 'reiterates' Buy, so its previous rating is shown as Buy, although the broker's weekly tables have listed Dialog as Moderate buy at Rs 55.",
   "highlights": [
-    "HNB Stockbrokers raised its Dialog Axiata (DIAL.N0000) target to Rs 59.40 from Rs 55 and rates it Buy (24% upside from Rs 48, about 31% with dividends; its weekly table still shows Moderate buy at Rs 55), on a DCF at a 12.97% WACC and 5% terminal growth; it sees DPS rising from Rs 2.80 (FY26E) to Rs 3.80 (FY28E). That is about twice this site's Dialog fair value of Rs 29.05 (buy below Rs 24.69), a big disagreement.",
-    "The market slipped on 23 Nov: the ASPI fell 0.60% (−127.20 points) to 21,242.52 and the S&P SL20 0.48% to 6,046.17 on thin turnover of Rs 1.05bn. Foreigners were net buyers of Rs 29.94M (bought Rs 64M, sold Rs 34M), though Dialog saw about Rs 29M of foreign selling. Ceylon Tea Services fell 10.39% and Capital Alliance Holdings 5.38%, while PickMe rose 5.11%.",
-    "The broker's 20 Nov recommendation table keeps its targets and remains far above this site on most shared names: John Keells Hotels Rs 25 vs fair value Rs 5.94, JAT Rs 49 vs Rs 11.98, Aitken Spence Hotels Rs 150 vs Rs 41.31, ACL Cables Rs 115 vs Rs 37.64, Access Engineering Rs 90 vs Rs 34.26, Hemas Rs 39 vs Rs 15.9 and John Keells Rs 30 vs Rs 13.2. Sampath (Rs 190 vs Rs 184.74) is the only close match. Hemas moved up to Buy and Jetwing Symphony down to Hold on price moves.",
-    "Distilleries (Rs 1.00) and Melstacorp (Rs 2.75) declared first interim dividends, both going XD on 2 Dec and paid on 18 Dec.",
-    "The IMF board meets on 2 Dec on Sri Lanka's seventh review, which could release about $345mn. Asian markets slumped on Monday morning after last week's AI and chip sell-off (Nikkei −5.06%, KOSPI −4.07%), while US futures bounced."
+    {
+      "icon": "🎯",
+      "tone": "up",
+      "title": "Dialog target raised, Buy",
+      "figure": "Rs 55 → 59.40",
+      "text": "HNB Stockbrokers raised its Dialog Axiata (DIAL.N0000) target to Rs 59.40 from Rs 55 and rates it Buy (24% upside from Rs 48, about 31% with dividends; its weekly table still shows Moderate buy at Rs 55), on a DCF at a 12.97% WACC and 5% terminal growth; it sees DPS rising from Rs 2.80 (FY26E) to Rs 3.80 (FY28E). That is about twice this site's Dialog fair value of Rs 29.05 (buy below Rs 24.69), a big disagreement."
+    },
+    {
+      "icon": "📉",
+      "tone": "down",
+      "title": "Market slipped on thin trade",
+      "figure": "ASPI −0.60%",
+      "text": "The market slipped on 23 Nov: the ASPI fell 0.60% (−127.20 points) to 21,242.52 and the S&P SL20 0.48% to 6,046.17 on thin turnover of Rs 1.05bn. Foreigners were net buyers of Rs 29.94M (bought Rs 64M, sold Rs 34M), though Dialog saw about Rs 29M of foreign selling. Ceylon Tea Services fell 10.39% and Capital Alliance Holdings 5.38%, while PickMe rose 5.11%."
+    },
+    {
+      "icon": "⚖️",
+      "tone": "info",
+      "title": "Broker targets far above this site",
+      "figure": "38 calls",
+      "text": "The broker's 20 Nov recommendation table keeps its targets and remains far above this site on most shared names: John Keells Hotels Rs 25 vs fair value Rs 5.94, JAT Rs 49 vs Rs 11.98, Aitken Spence Hotels Rs 150 vs Rs 41.31, ACL Cables Rs 115 vs Rs 37.64, Access Engineering Rs 90 vs Rs 34.26, Hemas Rs 39 vs Rs 15.9 and John Keells Rs 30 vs Rs 13.2. Sampath (Rs 190 vs Rs 184.74) is the only close match. Hemas moved up to Buy and Jetwing Symphony down to Hold on price moves."
+    },
+    {
+      "icon": "💰",
+      "tone": "warn",
+      "title": "Two interim dividends",
+      "figure": "XD 2 Dec",
+      "text": "Distilleries (Rs 1.00) and Melstacorp (Rs 2.75) declared first interim dividends, both going XD on 2 Dec and paid on 18 Dec."
+    },
+    {
+      "icon": "🌐",
+      "tone": "info",
+      "title": "IMF review; Asia sold off",
+      "figure": "2 Dec",
+      "text": "The IMF board meets on 2 Dec on Sri Lanka's seventh review, which could release about $345mn. Asian markets slumped on Monday morning after last week's AI and chip sell-off (Nikkei −5.06%, KOSPI −4.07%), while US futures bounced."
+    }
   ],
   "research": [
     {
@@ -65,7 +95,3792 @@
         "A decisive break above the Rs 50 resistance on stronger volume (technical view; the 50-day EMA is support)",
         "New ESOP (2% of new shares over 10 years, about Rs 8.7bn) aligning management with shareholders"
       ],
-      "post": 404
+      "post": 404,
+      "glance": [
+        "Buy, target raised to Rs 59.40 from Rs 55: about 24% above Rs 48, about 31% with the Rs 3.25 of dividends they expect in the next 12 months.",
+        "Why: three mobile operators instead of four, Dialog with over 60% of mobile, so prices and margins hold; dividends to rise as 5G capex peaks in FY28E and then eases.",
+        "Their DCF: WACC 12.97%, terminal growth 5%, cash flow after actual cash capex (Rs 27–44bn a year in FY26E–FY28E)."
+      ],
+      "details": [
+        {
+          "title": "Overview and share details",
+          "pages": "4–5",
+          "points": [
+            "Sri Lanka's leading mobile, broadband and pay-TV provider; over 60% of the core mobile market after buying Airtel Lanka in 2024 for shares.",
+            "Axiata Group (Malaysia) owns about 74% and Bharti Airtel about 10%.",
+            "Market value about Rs 437bn, the largest company on the CSE; about Rs 66bn after adjusting for the free float.",
+            "Directors' and managers' net share sales were only about Rs 6.7mn over 8 years.",
+            "A new employee share plan (May 2026): 2% new shares over 10 years, about Rs 8.7bn at today's price, which they say aligns management with shareholders.",
+            "Also owns a finance company it plans to use for fintech products."
+          ],
+          "tables": [
+            {
+              "title": "Share price vs ASPI, indexed (2016 = 100) (Exhibit 1a, p. 4)",
+              "text": "Dialog lagged the ASPI for most of 2016–2024, then re-rated from 2025 and crossed above it in 2026, ending near 450 (≈) against the ASPI's ≈330.",
+              "approx": true
+            },
+            {
+              "title": "Trailing 12-month EPS by quarter (Rs) (Exhibit 1b, p. 4)",
+              "head": [
+                "Quarter",
+                "EPS (≈)"
+              ],
+              "rows": [
+                [
+                  "Q3 FY23",
+                  "0.7"
+                ],
+                [
+                  "Q4 FY23",
+                  "2.4"
+                ],
+                [
+                  "Q1 FY24",
+                  "1.7"
+                ],
+                [
+                  "Q2 FY24",
+                  "1.1"
+                ],
+                [
+                  "Q3 FY24",
+                  "1.25"
+                ],
+                [
+                  "Q4 FY24",
+                  "1.35"
+                ],
+                [
+                  "Q1 FY25",
+                  "1.45"
+                ],
+                [
+                  "Q2 FY25",
+                  "2.2"
+                ],
+                [
+                  "Q3 FY25",
+                  "2.35"
+                ],
+                [
+                  "Q4 FY25",
+                  "2.25"
+                ],
+                [
+                  "Q1 FY26",
+                  "2.8"
+                ],
+                [
+                  "Q2 FY26",
+                  "3.35"
+                ],
+                [
+                  "Q3 FY26",
+                  "3.5"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "plot": {
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Key share data (p. 4)",
+              "head": [
+                "Item",
+                "Value"
+              ],
+              "rows": [
+                [
+                  "Rating",
+                  "Buy"
+                ],
+                [
+                  "12-month target",
+                  "Rs 59.40"
+                ],
+                [
+                  "Previous target",
+                  "Rs 55.00"
+                ],
+                [
+                  "Price (20 Nov 2026)",
+                  "Rs 48.00"
+                ],
+                [
+                  "Dividend, last 12 months",
+                  "Rs 3.60"
+                ],
+                [
+                  "Upside",
+                  "24%"
+                ],
+                [
+                  "Sector rating (telecom)",
+                  "Attractive"
+                ],
+                [
+                  "Market cap",
+                  "Rs 441.6bn ($1.3bn)"
+                ],
+                [
+                  "Shares",
+                  "9.2bn"
+                ],
+                [
+                  "Free float value",
+                  "Rs 65.9bn"
+                ],
+                [
+                  "Average daily volume, 3 months",
+                  "1,379,951"
+                ],
+                [
+                  "52-week high / low",
+                  "Rs 50.50 / 26.90"
+                ],
+                [
+                  "Beta / Sharpe ratio",
+                  "0.9 / 0.2"
+                ]
+              ],
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Five-year summary (p. 4)",
+              "head": [
+                "",
+                "FY21",
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25"
+              ],
+              "rows": [
+                [
+                  "Revenue (Rs mn)",
+                  "141,915",
+                  "178,131",
+                  "187,813",
+                  "171,170",
+                  "179,641"
+                ],
+                [
+                  "Revenue growth",
+                  "",
+                  "25.5%",
+                  "5.4%",
+                  "−8.9%",
+                  "5.0%"
+                ],
+                [
+                  "Operating profit (Rs mn)",
+                  "23,440",
+                  "2,568",
+                  "20,874",
+                  "20,779",
+                  "38,608"
+                ],
+                [
+                  "Operating profit growth",
+                  "",
+                  "−89.0%",
+                  "712.7%",
+                  "−0.5%",
+                  "85.8%"
+                ],
+                [
+                  "Recurring profit (Rs mn)",
+                  "17,061",
+                  "−33,388",
+                  "20,124",
+                  "12,459",
+                  "20,770"
+                ],
+                [
+                  "EPS (Rs)",
+                  "2.08",
+                  "−4.06",
+                  "2.44",
+                  "1.43",
+                  "2.26"
+                ],
+                [
+                  "DPS (Rs)",
+                  "1.24",
+                  "–",
+                  "1.34",
+                  "1.00",
+                  "1.50"
+                ],
+                [
+                  "P/E (x)",
+                  "5.2",
+                  "–",
+                  "3.7",
+                  "8.2",
+                  "13.2"
+                ]
+              ],
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Top 10 shareholders (%) (Exhibit 2a, p. 5)",
+              "head": [
+                "Shareholder",
+                "%"
+              ],
+              "rows": [
+                [
+                  "Axiata Investments (Labuan)",
+                  "73.75"
+                ],
+                [
+                  "Bharti Airtel",
+                  "10.36"
+                ],
+                [
+                  "Employees' Provident Fund",
+                  "3.08"
+                ],
+                [
+                  "Citibank HK / Hostplus Pooled Superannuation Trust",
+                  "1.80"
+                ],
+                [
+                  "BBH Luxfidelity Funds – Pacific Fund",
+                  "1.40"
+                ],
+                [
+                  "SSBT – Australian Retirement Trust",
+                  "1.03"
+                ],
+                [
+                  "J.B. Cocoshell",
+                  "0.81"
+                ],
+                [
+                  "BBH – Fidelity Funds",
+                  "0.58"
+                ],
+                [
+                  "Deutsche Bank trustee – Lynear Wealth Dynamic Opportunities Fund",
+                  "0.53"
+                ],
+                [
+                  "CACEIS Bank Luxembourg – NEF",
+                  "0.36"
+                ]
+              ],
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Shareholding structure (public float) (Exhibit 2b, p. 5)",
+              "head": [
+                "Holder",
+                "%"
+              ],
+              "rows": [
+                [
+                  "Institutions",
+                  "84"
+                ],
+                [
+                  "Individuals",
+                  "16"
+                ]
+              ],
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Insider net purchases / (sales), Rs mn (Exhibit 2c, p. 5)",
+              "text": "One large purchase of ≈Rs 140mn in Q1 FY19, small sales of ≈Rs 10–40mn through FY19–Q2 FY20, then near zero to Q4 FY23. Net sales over 8 years ≈Rs 6.7mn (text).",
+              "approx": true
+            },
+            {
+              "title": "Trading volume and turnover, 30-day averages (Exhibit 2d, p. 5)",
+              "text": "Volume peaked ≈6mn shares a day in mid-2025 and ≈6.8mn in Feb 2026; turnover peaked ≈Rs 125mn a day in Feb 2026 and rose again to ≈Rs 125mn in Nov 2026 after a low near Rs 20mn in Oct.",
+              "approx": true
+            },
+            {
+              "title": "Share details: other points (p. 5)",
+              "points": [
+                "Public float about 84% (institutions incl. Fidelity and the superannuation fund); largest company on the CSE at about Rs 437bn, free-float value about Rs 66bn.",
+                "Insider net sales only about Rs 6.7mn over 8 years.",
+                "New ESOP (May 2026): 2% of new shares over 10 years, about Rs 8.7bn at today's price, to align management with shareholders."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Investment thesis",
+          "pages": "7–10",
+          "points": [
+            "Consolidation: mobile operators down from four to three; market concentration (HHI) up from 3,142 in 2020 to 4,629 (above 2,500 counts as highly concentrated).",
+            "EBITDA margin up 570 bps; future gains come from spreading a mostly fixed network cost over more revenue, not from cutting variable costs.",
+            "Defensive cash flows: subscription-based, demand for connectivity barely moves with the economy; little exposure to AI and data-centre spending.",
+            "Capex rises with 5G to a peak of about 21% of revenue in FY28E, then eases.",
+            "Payout to rise from about 70% (FY26E) to over 80%; dividend from Rs 2.80 (FY26E) to over Rs 4.00 within the forecast period.",
+            "Net debt / EBITDA about 0.7x now, among the lowest of regional peers, falling to about 0.4x by FY27E; dividends seen as a floor for the share price."
+          ],
+          "tables": [
+            {
+              "title": "Mobile market concentration (HHI) (Exhibit 3a, p. 7)",
+              "head": [
+                "Year",
+                "HHI"
+              ],
+              "rows": [
+                [
+                  "2020",
+                  "3,142"
+                ],
+                [
+                  "2022",
+                  "≈4,350"
+                ],
+                [
+                  "2025",
+                  "4,629"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Above 2,500 = highly concentrated; 1,500–2,500 moderately.",
+              "plot": {
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "EBITDA margin, Dialog vs 13 peers, 2005–2025 (Exhibit 3b, p. 7)",
+              "text": "Dialog ≈52% in 2005, collapsed to ≈0% in 2009, ≈35% through the 2010s, dipped to ≈21% in 2022, then rose to ≈47% in 2025, now at the top of the peer band (peers mostly 30–55%) and above SLT (≈37%). Text: margin up 570 bps over 5 years; gains now from spreading fixed cost, not cutting variable cost.",
+              "approx": true
+            },
+            {
+              "title": "Free cash flow to the firm and its parts, FY20–FY30E (Rs bn) (Exhibit 4a, p. 8)",
+              "head": [
+                "Year",
+                "FCFF",
+                "Capex"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈25",
+                  "≈−22"
+                ],
+                [
+                  "FY21",
+                  "≈20",
+                  "≈−40"
+                ],
+                [
+                  "FY22",
+                  "≈−15",
+                  "≈−60"
+                ],
+                [
+                  "FY23",
+                  "≈−2",
+                  "≈−45"
+                ],
+                [
+                  "FY24",
+                  "42.9",
+                  "−34.3"
+                ],
+                [
+                  "FY25",
+                  "54.4",
+                  "−27.7"
+                ],
+                [
+                  "FY26E",
+                  "72.5",
+                  "−27.4"
+                ],
+                [
+                  "FY27E",
+                  "60.9",
+                  "−35.4"
+                ],
+                [
+                  "FY28E",
+                  "60.5",
+                  "−44.3"
+                ],
+                [
+                  "FY29E",
+                  "≈61",
+                  "≈−44"
+                ],
+                [
+                  "FY30E",
+                  "≈63",
+                  "≈−42"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "note": "FY24–FY28E from their forecast table (p. 47); other years read from the chart. Capex peaks at about 21% of revenue in FY28E. Little AI or data-centre capex exposure: no AI upside, but no heavy AI spending either.",
+              "plot": {
+                "cols": [
+                  1,
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Dividend per share and payout (Exhibit 4b, p. 8)",
+              "head": [
+                "Year",
+                "DPS (Rs)",
+                "Payout (≈)"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "0.00",
+                  "0%"
+                ],
+                [
+                  "FY21",
+                  "1.24",
+                  "≈67%"
+                ],
+                [
+                  "FY22",
+                  "0.00",
+                  "0%"
+                ],
+                [
+                  "FY23",
+                  "1.34",
+                  "≈61%"
+                ],
+                [
+                  "FY24",
+                  "1.00",
+                  "≈73%"
+                ],
+                [
+                  "FY25",
+                  "1.50",
+                  "≈66%"
+                ],
+                [
+                  "FY26E",
+                  "2.80",
+                  "≈68%"
+                ],
+                [
+                  "FY27E",
+                  "3.40",
+                  "≈71%"
+                ],
+                [
+                  "FY28E",
+                  "3.80",
+                  "≈74%"
+                ],
+                [
+                  "FY29E",
+                  "4.40",
+                  "≈84%"
+                ],
+                [
+                  "FY30E",
+                  "4.50",
+                  "≈86%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "DPS figures are printed on the bars; payout read from the line.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "line": [
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Net debt to EBITDA, regional peers (x) (Exhibit 5a, p. 9)",
+              "head": [
+                "Company",
+                "2025A",
+                "2026E",
+                "2027E"
+              ],
+              "rows": [
+                [
+                  "Dialog",
+                  "0.7",
+                  "0.5",
+                  "0.4"
+                ],
+                [
+                  "Singtel",
+                  "2.1",
+                  "2.1",
+                  "2.05"
+                ],
+                [
+                  "Starhub",
+                  "2.3",
+                  "2.5",
+                  "2.55"
+                ],
+                [
+                  "Airtel",
+                  "1.4",
+                  "0.85",
+                  "0.55"
+                ],
+                [
+                  "Axiata",
+                  "2.4",
+                  "2.15",
+                  "1.9"
+                ],
+                [
+                  "Maxis",
+                  "1.95",
+                  "1.75",
+                  "1.55"
+                ],
+                [
+                  "CelcomDigi",
+                  "2.3",
+                  "2.1",
+                  "1.9"
+                ],
+                [
+                  "Indosat",
+                  "1.85",
+                  "1.9",
+                  "1.35"
+                ],
+                [
+                  "Telkom Indonesia",
+                  "0.55",
+                  "0.55",
+                  "0.35"
+                ],
+                [
+                  "True",
+                  "3.95",
+                  "3.5",
+                  "3.25"
+                ],
+                [
+                  "Advanced Info",
+                  "1.35",
+                  "1.4",
+                  "1.3"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Dialog's 0.7x and 0.4x by FY27E are from the text; the rest read from the chart.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Forward dividend yield vs forecast dividend growth (Exhibit 5b, p. 9)",
+              "head": [
+                "Company",
+                "Yield %",
+                "Dividend growth %"
+              ],
+              "rows": [
+                [
+                  "Dialog",
+                  "≈8.8",
+                  "≈13"
+                ],
+                [
+                  "Telkom Indonesia",
+                  "≈9.3",
+                  "≈1"
+                ],
+                [
+                  "Indosat",
+                  "≈7.0",
+                  "≈17"
+                ],
+                [
+                  "True",
+                  "≈5.0",
+                  "≈14"
+                ],
+                [
+                  "Axiata",
+                  "≈6.8",
+                  "≈5"
+                ],
+                [
+                  "CelcomDigi",
+                  "≈6.0",
+                  "≈7"
+                ],
+                [
+                  "Starhub",
+                  "≈5.5",
+                  "≈5"
+                ],
+                [
+                  "Maxis",
+                  "≈5.3",
+                  "≈2"
+                ],
+                [
+                  "Singtel",
+                  "≈4.7",
+                  "≈7"
+                ],
+                [
+                  "Advanced Info",
+                  "≈5.9",
+                  "≈3"
+                ],
+                [
+                  "SLT Mobitel",
+                  "≈1.4",
+                  "≈6"
+                ],
+                [
+                  "Airtel",
+                  "≈1.8",
+                  "≈38"
+                ]
+              ],
+              "chart": "scatter",
+              "approx": true,
+              "note": "Bubble size is net debt/EBITDA. Dialog combines one of the highest yields with double-digit dividend growth and the lowest leverage.",
+              "plot": {
+                "kind": "scatter"
+              }
+            },
+            {
+              "title": "Dividend yield at Rs 48 (Exhibit 6, p. 10)",
+              "head": [
+                "Year",
+                "Yield"
+              ],
+              "rows": [
+                [
+                  "FY25",
+                  "3.1%"
+                ],
+                [
+                  "FY26E",
+                  "5.8%"
+                ],
+                [
+                  "FY27E",
+                  "7.1%"
+                ],
+                [
+                  "FY28E",
+                  "7.9%"
+                ],
+                [
+                  "FY29E",
+                  "9.2%"
+                ],
+                [
+                  "FY30E",
+                  "9.4%"
+                ]
+              ],
+              "chart": "line",
+              "note": "Read from the chart; matches their DPS ÷ Rs 48. They see the rising yield as a floor under the price.",
+              "plot": {
+                "kind": "line"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Segments and competition",
+          "pages": "12–21",
+          "points": [
+            "Mobile: about 78% of revenue and 74% of EBITDA (12 months to Q3 FY26); 19.6mn of 22.3mn subscribers; 64% of the mobile market.",
+            "Group EBITDA up 17% to Rs 99.3bn in the 12 months to Q3; mobile gave about 59% of the increase.",
+            "Closing the low-margin international hubbing business lifted the fixed segment's margin from about 31% (FY24) to 55% (FY25) and 60% (9M FY26).",
+            "Price leader: prepaid data about 9–12% dearer per GB than SLT and Hutch, postpaid 60–90% dearer; mobile ARPU still rose 12% in FY25 (Rs 402 to 449) while subscribers grew 3%.",
+            "Infrastructure lead: 98.9% population coverage, 57% of all assigned spectrum and 75% of 5G spectrum, over 1,000 5G sites.",
+            "Main competitive risk they name: mobile number portability, which would make switching easier."
+          ],
+          "tables": [
+            {
+              "title": "Segments at a glance (p. 12)",
+              "head": [
+                "Segment",
+                "Share of revenue",
+                "Subscribers",
+                "Market share",
+                "What happened",
+                "Their outlook"
+              ],
+              "rows": [
+                [
+                  "Mobile",
+                  "≈77%",
+                  "19.6mn",
+                  "62%",
+                  "Airtel integration done, Rs 13.3bn synergies over 18 months to Dec 2025; ARPU +12%; 5G on 1,000+ sites in all 25 districts",
+                  "Pricing and synergies keep EBITDA growing; 5G lifts spend per customer"
+                ],
+                [
+                  "Fixed and broadband",
+                  "≈16%",
+                  "1.1mn",
+                  "46%",
+                  "Left low-margin international hubbing (DBN revenue −28%, margins much higher); home broadband +5%, data and leased lines +16%; Air Fibre (5G home) launched",
+                  "Revenue stabilises, margins hold; growth from 5G home broadband and enterprise"
+                ],
+                [
+                  "Pay TV",
+                  "≈7%",
+                  "1.6mn",
+                  "–",
+                  "Base held at about 1.6mn; exclusive ICC rights 2026–2028; back to an operating profit in 9M FY26",
+                  "ICC rights help, from a small base"
+                ],
+                [
+                  "Digital and financial",
+                  "in mobile",
+                  "–",
+                  "–",
+                  "Dialog AI (trilingual), Dialog Pay (July 2026), Tap to Pay taxis",
+                  "eZ Cash, Dialog Pay and Dialog Finance (99.05%) scaling; not reported separately"
+                ]
+              ],
+              "note": "Network: 22.3mn subscribers, 5,509 sites, 6,872 km of fibre, 3 submarine cables.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Share of revenue and EBITDA by segment (12 months to Q3 FY26) (Exhibit 7a, p. 13)",
+              "head": [
+                "Segment",
+                "Revenue",
+                "EBITDA"
+              ],
+              "rows": [
+                [
+                  "Mobile",
+                  "78%",
+                  "74%"
+                ],
+                [
+                  "Fixed and broadband",
+                  "15%",
+                  "22%"
+                ],
+                [
+                  "Pay TV",
+                  "7%",
+                  "4%"
+                ]
+              ],
+              "chart": "bar",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "EBITDA bridge, 12 months to Q3 FY25 → Q3 FY26 (Rs bn) (Exhibit 7b, p. 13)",
+              "head": [
+                "Step",
+                "Rs bn"
+              ],
+              "rows": [
+                [
+                  "12 months to Q3 FY25",
+                  "84.9"
+                ],
+                [
+                  "Mobile",
+                  "+8.4"
+                ],
+                [
+                  "Fixed and broadband",
+                  "+4.8"
+                ],
+                [
+                  "Pay TV",
+                  "+1.1"
+                ],
+                [
+                  "Other",
+                  "0.0"
+                ],
+                [
+                  "12 months to Q3 FY26",
+                  "99.3"
+                ]
+              ],
+              "chart": "waterfall",
+              "note": "EBITDA +17% to Rs 99.3bn; mobile EBITDA +12.9% on revenue +9.0% (pricing). Group revenue +5% (9% without the hubbing business). They expect the EBITDA margin to rise from 52.1% to about 54.3% by FY27E: EBITDA Rs 101.4bn FY26E, Rs 109.6bn FY27E.",
+              "plot": {
+                "kind": "waterfall"
+              }
+            },
+            {
+              "title": "Five forces in developed markets (text table) (Exhibit 5F-DM, p. 15)",
+              "points": [
+                "New entrants: moderate. Low-cost resellers renting networks (US cable firms took 76% of North American net mobile additions in 1Q 2026); new networks very costly (EchoStar quit, Rakuten took 5 years to break even).",
+                "Suppliers: moderate to high. Costly spectrum (US C-band ≈$81bn), fewer vendors after Huawei/ZTE phase-out, handset makers pass on costs.",
+                "Buyers: moderate to high. Number portability makes switching easy (SK Telecom lost ≈650,000 in 2 months); Europe's GDP-adjusted ARPU €14.9 in 2024 vs €15.3 in 2015; regulators cap price rises.",
+                "Substitutes: moderate. OTT apps already took voice/SMS; satellite-to-phone (SpaceX bought $17bn of spectrum) not yet a big threat; private 5G for enterprises.",
+                "Rivalry: moderate to high. Saturated (US penetration ≈98%), Europe fragmented (44 operators vs 8 US, 4 Japan); consolidation (VodafoneThree, M1) is the fix."
+              ]
+            },
+            {
+              "title": "Five forces in Sri Lanka (text table) (Exhibit 5F-SL, p. 16)",
+              "points": [
+                "New entrants: low. Dialog has invested over $3.45bn; only Dialog and SLT bid in the first 5G auction (Dec 2025); penetration ≈127%, so a newcomer must take customers.",
+                "Suppliers: moderate. Government controls spectrum and tariff approvals; dollar-priced equipment from few vendors; scale gives Dialog better terms.",
+                "Buyers: moderate to low. No number portability yet (delayed several times); multi-SIM use common, but 2025 tariff rises held and Dialog's ARPU rose 12%.",
+                "Substitutes: moderate. OTT apps (smartphone penetration over 70%) still use operators' data; Starlink launched July 2025, not a near-term threat; streaming pressures pay TV.",
+                "Rivalry: moderate to low. Three operators, Dialog 64%; SLT the only other 5G holder, Hutch a value brand; competition on quality, not price.",
+                "Watch: number portability, a change in SLT's ownership, Hutch entering 5G."
+              ]
+            },
+            {
+              "title": "Five forces score, Sri Lanka vs developed markets (1 low – 5 high) (Exhibit 8, p. 17)",
+              "head": [
+                "Force",
+                "Sri Lanka",
+                "Developed"
+              ],
+              "rows": [
+                [
+                  "New entrants",
+                  "1",
+                  "3"
+                ],
+                [
+                  "Suppliers",
+                  "3",
+                  "4"
+                ],
+                [
+                  "Buyers",
+                  "2",
+                  "4"
+                ],
+                [
+                  "Substitutes",
+                  "3",
+                  "3"
+                ],
+                [
+                  "Rivalry",
+                  "2",
+                  "4"
+                ]
+              ],
+              "chart": "radar",
+              "note": "Scores follow their ratings on pp. 15–16. The text says Sri Lanka scores lower on every force, but substitutes are equal (moderate) in both.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Pricing power and cost (text) (p. 17)",
+              "points": [
+                "Dialog costs 9–12% more per GB than SLT and Hutch on a typical prepaid pack, and about 60–90% more on entry postpaid plans.",
+                "Mobile ARPU still rose 12% in FY25 (Rs 402 → Rs 449) with subscribers +3%.",
+                "Coverage 98.9% of the population; holds 75% of Sri Lanka's 5G spectrum; keeps Airtel as a separate value brand.",
+                "Operating cost per connection well below SLT's. Main risk: number portability."
+              ]
+            },
+            {
+              "title": "Price per GB: Dialog vs SLT Mobitel vs Hutch (taxes included for mobile) (p. 18)",
+              "head": [
+                "Plan",
+                "Dialog",
+                "SLT Mobitel",
+                "Hutch"
+              ],
+              "rows": [
+                [
+                  "Prepaid, cheapest 30-day pack ≥10GB",
+                  "Rs 76 (915 for 12GB)",
+                  "Rs 70 (697 for 10GB)",
+                  "Rs 68 (715 for 10.5GB)"
+                ],
+                [
+                  "Postpaid, cheapest unlimited-call plan ≥25GB",
+                  "Rs 64 (1,605 for 25GB)",
+                  "Rs 40 (1,598 for 40GB)",
+                  "Rs 33 (998 for 30GB)"
+                ],
+                [
+                  "Home broadband, entry 4G",
+                  "Rs 20 (1,290 for 65GB, 20 Mbps)",
+                  "Rs 26 (1,290 for 50GB, 20 Mbps)",
+                  "no home service"
+                ],
+                [
+                  "Home, 5G Air Fibre vs SLT fibre starter",
+                  "Rs 23 (2,263 for 100GB, 126 Mbps)",
+                  "Rs 34 (2,690 for 80GB, 260 Mbps)",
+                  "–"
+                ]
+              ],
+              "chart": "bar",
+              "note": "Dialog is the price leader in mobile but cheaper in home broadband; SLT leads in unlimited fibre, where Dialog has no wide equivalent. Number portability is the main risk to the mobile premium.",
+              "plot": {
+                "kind": "hbar",
+                "num": "first"
+              }
+            },
+            {
+              "title": "Spectrum held (MHz) (Exhibit 9a, p. 19)",
+              "head": [
+                "Band",
+                "Used for",
+                "Dialog",
+                "SLT",
+                "Hutch"
+              ],
+              "rows": [
+                [
+                  "850 MHz",
+                  "4G",
+                  "10",
+                  "20",
+                  "–"
+                ],
+                [
+                  "900 MHz",
+                  "2G, 4G",
+                  "20",
+                  "10",
+                  "25"
+                ],
+                [
+                  "1800 MHz",
+                  "2G, 4G",
+                  "65",
+                  "55",
+                  "30"
+                ],
+                [
+                  "2100 MHz",
+                  "3G, 4G",
+                  "50",
+                  "30",
+                  "40"
+                ],
+                [
+                  "2300 MHz",
+                  "4G (incl. fixed)",
+                  "75",
+                  "25",
+                  "–"
+                ],
+                [
+                  "2600 MHz",
+                  "4G (incl. fixed)",
+                  "60",
+                  "100",
+                  "–"
+                ],
+                [
+                  "3500 MHz",
+                  "5G",
+                  "100",
+                  "100",
+                  "–"
+                ],
+                [
+                  "27 GHz",
+                  "5G",
+                  "200",
+                  "–",
+                  "–"
+                ],
+                [
+                  "Total",
+                  "",
+                  "580",
+                  "340",
+                  "95"
+                ],
+                [
+                  "Share of all spectrum",
+                  "",
+                  "57%",
+                  "34%",
+                  "9%"
+                ],
+                [
+                  "Share of 5G spectrum",
+                  "",
+                  "75%",
+                  "25%",
+                  "0%"
+                ]
+              ],
+              "chart": "bar",
+              "note": "Of the 838 MHz assigned for mobile Dialog holds ≈60% vs SLT ≈28%; 2G/3G holdings balanced (Dialog ≈44%, Hutch ≈36%), but Dialog has ≈64% of 4G/5G. DBN also holds 75 MHz for fixed use, which network sharing could open to mobile.",
+              "plot": {
+                "rows": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "cols": [
+                  2,
+                  3,
+                  4
+                ],
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "4G coverage (Exhibit 9b, p. 19)",
+              "head": [
+                "",
+                "Dialog",
+                "SLT",
+                "Hutch"
+              ],
+              "rows": [
+                [
+                  "Population covered",
+                  "99%",
+                  "98%",
+                  "94%"
+                ],
+                [
+                  "Land area covered",
+                  "91%",
+                  "79%",
+                  "67%"
+                ]
+              ],
+              "chart": "bar",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Base stations and towers by operator (Exhibit 9c, p. 19)",
+              "head": [
+                "",
+                "Dialog",
+                "SLT",
+                "Hutch",
+                "Total"
+              ],
+              "rows": [
+                [
+                  "Base stations operated",
+                  "5,468 (43.5%)",
+                  "4,256 (33.9%)",
+                  "2,843 (22.6%)",
+                  "12,567"
+                ],
+                [
+                  "Towers owned",
+                  "3,581 (47.3%)",
+                  "2,353 (31.1%)",
+                  "1,632 (21.6%)",
+                  "7,566"
+                ]
+              ],
+              "chart": "bar",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Scale flywheel: Dialog vs SLT, 2015 → 2025 (Exhibit 10, p. 20)",
+              "head": [
+                "Stage",
+                "Measure",
+                "Dialog 2015",
+                "Dialog 2025",
+                "SLT 2015",
+                "SLT 2025",
+                "Stronger in 2025"
+              ],
+              "rows": [
+                [
+                  "1. Scale",
+                  "Mobile share",
+                  "44.7%",
+                  "62.0%",
+                  "24.2%",
+                  "25.0%",
+                  "Dialog"
+                ],
+                [
+                  "1. Scale",
+                  "Fixed broadband share",
+                  "46.2%",
+                  "45.8%",
+                  "38.5%",
+                  "54.2%",
+                  "SLT"
+                ],
+                [
+                  "2. Economies of scale",
+                  "Opex / revenue",
+                  "87.2%",
+                  "78.5%",
+                  "90.0%",
+                  "87.6%",
+                  "Dialog"
+                ],
+                [
+                  "2. Economies of scale",
+                  "Opex per connection (Rs a year)",
+                  "5,302",
+                  "6,324",
+                  "9,278",
+                  "11,108",
+                  "Dialog"
+                ],
+                [
+                  "3. Cash",
+                  "EBITDA margin",
+                  "32.1%",
+                  "47.7%",
+                  "29.4%",
+                  "37.0%",
+                  "Dialog"
+                ],
+                [
+                  "3. Cash",
+                  "Net debt / EBITDA",
+                  "0.78x",
+                  "0.67x",
+                  "0.94x",
+                  "1.39x",
+                  "Dialog"
+                ],
+                [
+                  "4. Reinvestment",
+                  "Capex / revenue",
+                  "30.9%",
+                  "15.0%",
+                  "30.0%",
+                  "15.1%",
+                  "Dialog"
+                ],
+                [
+                  "4. Reinvestment",
+                  "Capex (Rs bn)",
+                  "22.9",
+                  "27.0",
+                  "20.4",
+                  "17.2",
+                  "Dialog"
+                ],
+                [
+                  "5. Network",
+                  "Mobile speed (Mbps)",
+                  "2.4",
+                  "20.0",
+                  "0.9",
+                  "54.0",
+                  "SLT"
+                ],
+                [
+                  "5. Network",
+                  "Fixed speed (Mbps)",
+                  "4.0",
+                  "24.2",
+                  "4.0",
+                  "31.0",
+                  "SLT"
+                ],
+                [
+                  "6. Money",
+                  "Mobile ARPU (Rs a year)",
+                  "5,691",
+                  "7,027",
+                  "5,118",
+                  "6,683",
+                  "Dialog"
+                ]
+              ],
+              "note": "SLT is ahead on fixed broadband share and on both network speeds.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Flywheel test by two-year period (✓ = improved) (Exhibit 11, p. 21)",
+              "head": [
+                "",
+                "Measure",
+                "2015–17",
+                "2017–19",
+                "2019–21",
+                "2021–23",
+                "2023–25",
+                "Total"
+              ],
+              "rows": [
+                [
+                  "Dialog",
+                  "Market share up",
+                  "✓",
+                  "✓",
+                  "✓",
+                  "✓",
+                  "✓",
+                  "5/5"
+                ],
+                [
+                  "Dialog",
+                  "Mobile ARPU up",
+                  "✓",
+                  "–",
+                  "–",
+                  "✓",
+                  "✓",
+                  "3/5"
+                ],
+                [
+                  "Dialog",
+                  "EBITDA margin up",
+                  "✓",
+                  "✓",
+                  "✓",
+                  "–",
+                  "✓",
+                  "4/5"
+                ],
+                [
+                  "Dialog",
+                  "Improving (of 3)",
+                  "3",
+                  "2",
+                  "2",
+                  "2",
+                  "3",
+                  "12/15"
+                ],
+                [
+                  "SLT",
+                  "Market share up",
+                  "–",
+                  "–",
+                  "✓",
+                  "✓",
+                  "–",
+                  "2/5"
+                ],
+                [
+                  "SLT",
+                  "Mobile ARPU up",
+                  "–",
+                  "–",
+                  "✓",
+                  "–",
+                  "✓",
+                  "2/5"
+                ],
+                [
+                  "SLT",
+                  "EBITDA margin up",
+                  "–",
+                  "✓",
+                  "✓",
+                  "–",
+                  "✓",
+                  "3/5"
+                ],
+                [
+                  "SLT",
+                  "Improving (of 3)",
+                  "0",
+                  "1",
+                  "3",
+                  "1",
+                  "2",
+                  "7/15"
+                ]
+              ],
+              "note": "Airtel deal added ≈9 points of mobile share and ≈9.4 points of EBITDA margin. Bundles raise switching costs; fintech (eZ Cash, Dialog Pay, the finance company bought in 2017) not yet scaled but a possible future push.",
+              "plot": {
+                "kind": "none"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Market potential",
+          "pages": "23–26",
+          "points": [],
+          "tables": [
+            {
+              "title": "Mobile connections per 100 people (Exhibit 12a, p. 23)",
+              "head": [
+                "Country",
+                "Connections per 100"
+              ],
+              "rows": [
+                [
+                  "Pakistan",
+                  "≈80"
+                ],
+                [
+                  "India",
+                  "≈85"
+                ],
+                [
+                  "Bangladesh",
+                  "≈88"
+                ],
+                [
+                  "United States",
+                  "≈125"
+                ],
+                [
+                  "Australia",
+                  "≈125"
+                ],
+                [
+                  "Sri Lanka",
+                  "≈127"
+                ],
+                [
+                  "United Kingdom",
+                  "≈128"
+                ],
+                [
+                  "China",
+                  "≈130"
+                ],
+                [
+                  "Thailand",
+                  "≈132"
+                ],
+                [
+                  "Japan",
+                  "≈190"
+                ],
+                [
+                  "Hong Kong",
+                  "≈380"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Sri Lanka ≈127 (text), partly multi-SIM: little room left for subscriber growth. Other countries read from a 24-country chart; selection shown.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Internet and social media use (% of population) (Exhibit 12b, p. 23)",
+              "head": [
+                "",
+                "Sri Lanka",
+                "Lower-middle income",
+                "Upper-middle income",
+                "High income"
+              ],
+              "rows": [
+                [
+                  "Internet users",
+                  "59.7%",
+                  "56.0%",
+                  "92.5%",
+                  "95.8%"
+                ],
+                [
+                  "Social media users",
+                  "38.7%",
+                  "36.3%",
+                  "80.0%",
+                  "80.1%"
+                ]
+              ],
+              "chart": "bar",
+              "note": "About 9.4mn Sri Lankans offline; Vietnam 84% and Indonesia 81% online at similar income. Only India, Bangladesh and Pakistan rank lower on social media. Coverage 98.9%, so bringing people online is the main data opportunity.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Social media reach by platform (% of population) (Exhibit 13a, p. 24)",
+              "head": [
+                "Country",
+                "Facebook",
+                "YouTube",
+                "Instagram"
+              ],
+              "rows": [
+                [
+                  "Sri Lanka",
+                  "≈38",
+                  "≈38",
+                  "≈10"
+                ],
+                [
+                  "India",
+                  "≈28",
+                  "≈34",
+                  "≈33"
+                ],
+                [
+                  "Indonesia",
+                  "≈42",
+                  "≈52",
+                  "≈45"
+                ],
+                [
+                  "Thailand",
+                  "≈71",
+                  "≈65",
+                  "≈29"
+                ],
+                [
+                  "Malaysia",
+                  "≈63",
+                  "≈65",
+                  "≈45"
+                ],
+                [
+                  "Vietnam",
+                  "≈77",
+                  "≈61",
+                  "≈11"
+                ],
+                [
+                  "Singapore",
+                  "≈64",
+                  "≈90",
+                  "≈57"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Instagram, the most data-heavy, reaches only ≈10% in Sri Lanka vs 29–45% in Thailand, India, Indonesia, Malaysia.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Smartphone ownership (% of population) (Exhibit 13b, p. 24)",
+              "head": [
+                "Country",
+                "%"
+              ],
+              "rows": [
+                [
+                  "India",
+                  "≈46"
+                ],
+                [
+                  "Pakistan",
+                  "≈52"
+                ],
+                [
+                  "Bangladesh",
+                  "≈59"
+                ],
+                [
+                  "Vietnam",
+                  "≈67"
+                ],
+                [
+                  "Malaysia",
+                  "≈68"
+                ],
+                [
+                  "Indonesia",
+                  "≈70"
+                ],
+                [
+                  "Sri Lanka",
+                  "72"
+                ],
+                [
+                  "Thailand",
+                  "≈74"
+                ],
+                [
+                  "United States",
+                  "≈79"
+                ],
+                [
+                  "South Korea",
+                  "≈93"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Devices are in place; usage lags. Share of 5G-capable handsets likely still low.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Growth in social media users, 2025 (Exhibit 13c, p. 24)",
+              "head": [
+                "Country",
+                "Change"
+              ],
+              "rows": [
+                [
+                  "Pakistan",
+                  "≈+25%"
+                ],
+                [
+                  "Indonesia",
+                  "≈+26%"
+                ],
+                [
+                  "Malaysia",
+                  "≈+22%"
+                ],
+                [
+                  "Sri Lanka",
+                  "+10.7%"
+                ],
+                [
+                  "India",
+                  "≈+2%"
+                ],
+                [
+                  "United States",
+                  "≈0%"
+                ],
+                [
+                  "Germany",
+                  "≈−1%"
+                ],
+                [
+                  "Italy",
+                  "≈−2%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "High-income markets flat or falling; Sri Lanka still growing.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Data use per person vs income (Exhibit 14, p. 25)",
+              "head": [
+                "",
+                "GB per person a year"
+              ],
+              "rows": [
+                [
+                  "Sri Lanka",
+                  "≈200"
+                ],
+                [
+                  "Upper-middle income median",
+                  "≈1,000"
+                ],
+                [
+                  "Vietnam (similar income)",
+                  "≈1,570"
+                ]
+              ],
+              "note": "Sri Lanka joined upper-middle income in July 2026. Most users connect by mobile, not home broadband. Higher usage, not new subscribers, to drive revenue and ARPU even without price rises.",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Cost of a high-use mobile voice and data basket (Exhibit 15, p. 26)",
+              "head": [
+                "",
+                "US$ a month"
+              ],
+              "rows": [
+                [
+                  "Sri Lanka",
+                  "2.41 (lowest of 24; ≈0.6% of monthly GDP per person)"
+                ],
+                [
+                  "Upper-middle income median",
+                  "5.94"
+                ]
+              ],
+              "note": "Cheaper than India, Pakistan and Bangladesh. Room for gradual price rises; they forecast mobile and fixed broadband ARPU +3–4% a year. Three operators and the lowest prices limit the risk of a price war.",
+              "plot": {
+                "kind": "none"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Revenue and margin drivers",
+          "pages": "28–33",
+          "points": [
+            "Revenue growth slows to about 5% a year (FY25–FY28E), from 8% over the last five years, as one-off drivers fade.",
+            "Mobile subscribers about +1% a year; fixed broadband subscribers +2–3%.",
+            "Mobile ARPU about +7% in FY26E, then about +3% a year from FY27E; fixed broadband ARPU flat in FY26E, then +2% rising to +4%; pay-TV ARPU under +2% as streaming bites.",
+            "Over 44% of network costs are fixed: historically a 1% revenue change has moved operating profit about 2.3%.",
+            "Depreciation to fall from 27% of revenue (FY25) to about 25% (FY27E); EBITDA margin from 52.1% to about 54.3% by FY27E; EBITDA growth about 10% a year (FY25–FY28E), about 7% from FY26E.",
+            "Long run: margins converge to slightly above the regional median."
+          ],
+          "tables": [
+            {
+              "title": "Revenue by segment (Rs bn) (Exhibit 16a, p. 28)",
+              "head": [
+                "Year",
+                "Total",
+                "Mobile (≈)"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈118",
+                  "≈80"
+                ],
+                [
+                  "FY21",
+                  "141.9",
+                  "≈90"
+                ],
+                [
+                  "FY22",
+                  "178.1",
+                  "≈100"
+                ],
+                [
+                  "FY23",
+                  "187.8",
+                  "≈105"
+                ],
+                [
+                  "FY24",
+                  "171.2",
+                  "≈115"
+                ],
+                [
+                  "FY25",
+                  "179.6",
+                  "≈137"
+                ],
+                [
+                  "12 months to Q3 FY26",
+                  "≈186",
+                  "≈145"
+                ],
+                [
+                  "FY26E",
+                  "192.3",
+                  "≈150"
+                ],
+                [
+                  "FY27E",
+                  "201.8",
+                  "≈157"
+                ],
+                [
+                  "FY28E",
+                  "210.8",
+                  "≈163"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Growth slows from 8% a year (FY20–FY25) to about 5% (FY25–FY28E): past growth helped by one-offs, the Airtel deal and inflation-era price rises. Totals from their tables; segment split read from the chart.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Subscriber growth (Exhibit 16b, p. 28)",
+              "points": [
+                "Mobile subscribers about +1% a year in the forecast, in line with recent years; fixed broadband +2–3% (less penetrated).",
+                "Total subscriber growth was 8–12% a year in FY12–FY19, near zero or negative in FY21–FY22 and about 0–5% since."
+              ]
+            },
+            {
+              "title": "Blended ARPU (Rs a year) (Exhibit 16c, p. 28)",
+              "text": "Flat at ≈6,000–6,700 in FY12–FY20, jumped to ≈9,000 in FY22–FY23 (crisis-era price rises), ≈7,500 in FY24, then rising to ≈9,000 by FY28E. Year-on-year change swung between −19% and +28%; they expect low single-digit growth from now.",
+              "approx": true
+            },
+            {
+              "title": "Mobile ARPU (Rs a year) and growth (Exhibit 17a, p. 29)",
+              "head": [
+                "Year",
+                "Mobile ARPU",
+                "Change"
+              ],
+              "rows": [
+                [
+                  "FY12",
+                  "≈6,300",
+                  ""
+                ],
+                [
+                  "FY20",
+                  "≈4,900",
+                  "≈−10%"
+                ],
+                [
+                  "FY22",
+                  "≈5,900",
+                  "≈+15%"
+                ],
+                [
+                  "FY24",
+                  "≈6,000",
+                  "≈−5%"
+                ],
+                [
+                  "FY25",
+                  "≈6,800",
+                  "+12%"
+                ],
+                [
+                  "FY26E",
+                  "≈7,600",
+                  "≈+7%"
+                ],
+                [
+                  "FY27E",
+                  "≈7,800",
+                  "≈+3%"
+                ],
+                [
+                  "FY28E",
+                  "≈8,000",
+                  "≈+3%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Settles at about +3% a year from FY27E: Dialog is already the price leader, and data use moves people to bigger packs.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "line": [
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Fixed broadband ARPU (Exhibit 17b, p. 29)",
+              "text": "Rose from ≈Rs 7,000 a year (FY12) to ≈Rs 61,000 (FY23), then fell to ≈Rs 26,000 (FY25) as the low-margin international wholesale business was cut (a mix effect). Forecast: flat in FY26E, then +2% rising to +4% a year. Held back by the fight for home broadband share, low Air Fibre launch prices and SLT's faster urban fibre.",
+              "approx": true
+            },
+            {
+              "title": "Pay-TV ARPU (Exhibit 17c, p. 29)",
+              "text": "Fell from ≈Rs 11,000 a year (FY12) to ≈Rs 6,000 (FY17), rising steadily since FY20 to ≈Rs 9,000 (FY26E). Growth below 2% a year in the forecast because of streaming and cord-cutting.",
+              "approx": true
+            },
+            {
+              "title": "Operating costs as % of revenue (Exhibit 18, p. 30)",
+              "head": [
+                "Type",
+                "Cost",
+                "FY19",
+                "FY24",
+                "FY25"
+              ],
+              "rows": [
+                [
+                  "Fixed",
+                  "Depreciation, impairment and amortisation",
+                  "26.9%",
+                  "26.7%",
+                  "26.8%"
+                ],
+                [
+                  "Fixed",
+                  "Annual maintenance",
+                  "4.0%",
+                  "6.2%",
+                  "7.3%"
+                ],
+                [
+                  "Fixed",
+                  "Employee benefits",
+                  "7.7%",
+                  "7.6%",
+                  "8.3%"
+                ],
+                [
+                  "Fixed",
+                  "Site and office rental",
+                  "2.4%",
+                  "2.1%",
+                  "1.9%"
+                ],
+                [
+                  "Fixed",
+                  "Other fixed",
+                  "0.3%",
+                  "0.4%",
+                  "0.3%"
+                ],
+                [
+                  "",
+                  "Total fixed",
+                  "41.3%",
+                  "43.1%",
+                  "44.6%"
+                ],
+                [
+                  "Semi-variable",
+                  "Marketing and promotion",
+                  "10.3%",
+                  "8.0%",
+                  "8.8%"
+                ],
+                [
+                  "Semi-variable",
+                  "Electricity",
+                  "3.4%",
+                  "6.1%",
+                  "5.0%"
+                ],
+                [
+                  "Semi-variable",
+                  "Channel rental",
+                  "n/a",
+                  "2.9%",
+                  "3.0%"
+                ],
+                [
+                  "Semi-variable",
+                  "Other",
+                  "1.9%",
+                  "1.5%",
+                  "1.3%"
+                ],
+                [
+                  "",
+                  "Total semi-variable",
+                  "15.5%",
+                  "18.5%",
+                  "18.1%"
+                ],
+                [
+                  "Variable",
+                  "Interconnection and international origination",
+                  "12.8%",
+                  "11.7%",
+                  "2.1%"
+                ],
+                [
+                  "Variable",
+                  "Telecom development charge",
+                  "2.3%",
+                  "1.1%",
+                  "0.7%"
+                ],
+                [
+                  "Variable",
+                  "Regulatory charges",
+                  "1.4%",
+                  "1.9%",
+                  "1.9%"
+                ],
+                [
+                  "Variable",
+                  "Other variable",
+                  "12.2%",
+                  "10.7%",
+                  "9.7%"
+                ],
+                [
+                  "",
+                  "Total variable",
+                  "28.7%",
+                  "25.4%",
+                  "14.5%"
+                ],
+                [
+                  "",
+                  "Total operating cost",
+                  "85.5%",
+                  "87.0%",
+                  "77.2%"
+                ]
+              ],
+              "note": "Costs fell 8.3 points FY19–FY25, almost all in FY25 (−9.8 points) from interconnection (Airtel synergies and dropping international wholesale). Not repeatable. Fixed costs rose 3.3 points on post-crisis wages and maintenance (+3.9 points); with inflation back near target they expect the fixed-cost ratio to fall.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Operating leverage and EBIT margin (Exhibit 19a, p. 31)",
+              "head": [
+                "Year",
+                "Operating leverage (x)",
+                "EBIT margin"
+              ],
+              "rows": [
+                [
+                  "FY21",
+                  "≈2.2",
+                  "≈16%"
+                ],
+                [
+                  "FY22",
+                  "≈−3",
+                  "≈1%"
+                ],
+                [
+                  "FY23",
+                  "≈0",
+                  "≈11%"
+                ],
+                [
+                  "FY24",
+                  "≈0.1",
+                  "≈12%"
+                ],
+                [
+                  "FY25",
+                  "≈17",
+                  "≈21%"
+                ],
+                [
+                  "FY26E",
+                  "≈5",
+                  "≈27%"
+                ],
+                [
+                  "FY27E",
+                  "≈2.8",
+                  "≈30%"
+                ],
+                [
+                  "FY28E",
+                  "≈1.7",
+                  "≈31%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Historical median 2.33x: a 1% revenue change has meant about 2.3% in operating profit. Over 44% of costs are fixed.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "line": [
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Depreciation as % of revenue, Dialog vs peers, 2005–2025 (Exhibit 19b, p. 31)",
+              "text": "Dialog ≈11% in 2005, ≈26% in 2009, ≈18–24% through 2010–2024, ≈26% in 2025; most peers 10–35% (Vodafone ≈50–65% after 2019). They expect Dialog's to fall from 27% (FY25) to about 25% (FY27E). Note: the page heading says this gives roughly half of the FY27E EBIT margin uplift, the text says over 20%.",
+              "approx": true
+            },
+            {
+              "title": "EBITDA by segment (Rs bn) (Exhibit 20a, p. 32)",
+              "head": [
+                "Year",
+                "EBITDA",
+                "Mobile (≈)"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈50",
+                  "≈38"
+                ],
+                [
+                  "FY21",
+                  "≈57",
+                  "≈40"
+                ],
+                [
+                  "FY22",
+                  "≈40",
+                  "≈25"
+                ],
+                [
+                  "FY23",
+                  "≈59",
+                  "≈40"
+                ],
+                [
+                  "FY24",
+                  "66.6",
+                  "≈49"
+                ],
+                [
+                  "FY25",
+                  "86.8",
+                  "≈64"
+                ],
+                [
+                  "12 months to Q3 FY26",
+                  "99.3",
+                  "≈71"
+                ],
+                [
+                  "FY26E",
+                  "101.4",
+                  "≈75"
+                ],
+                [
+                  "FY27E",
+                  "109.6",
+                  "≈80"
+                ],
+                [
+                  "FY28E",
+                  "115.2",
+                  "≈84"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "15% a year FY20–FY25, then about 10% FY25–FY28E and about 7% FY26E–FY28E, as the FY25 cost step-down won't repeat. FY24 onwards from their tables.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "EBITDA margin by segment (Exhibit 20b, p. 32)",
+              "head": [
+                "Year",
+                "Mobile",
+                "Fixed broadband",
+                "TV",
+                "Blended"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈46%",
+                  "≈36%",
+                  "≈28%",
+                  "≈42%"
+                ],
+                [
+                  "FY22",
+                  "≈23%",
+                  "≈25%",
+                  "≈7%",
+                  "≈23%"
+                ],
+                [
+                  "FY24",
+                  "≈43%",
+                  "≈42%",
+                  "≈17%",
+                  "≈39%"
+                ],
+                [
+                  "FY25",
+                  "≈47%",
+                  "≈67%",
+                  "≈20%",
+                  "≈48%"
+                ],
+                [
+                  "12 months to Q3 FY26",
+                  "≈49%",
+                  "≈72%",
+                  "≈27%",
+                  "≈51%"
+                ],
+                [
+                  "FY28E",
+                  "≈52%",
+                  "≈82%",
+                  "≈27%",
+                  "≈54%"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "note": "Fixed broadband margin ≈81% in the latest quarter, expected to hold (high ARPU on shared infrastructure; wireless cheaper to run than fibre). They note this may partly reflect how shared costs are split with DBN. Mobile +2 points; TV slightly down.",
+              "plot": {
+                "kind": "line"
+              }
+            },
+            {
+              "title": "Margins vs peers and their long-run assumption (Exhibit 21, p. 33)",
+              "head": [
+                "",
+                "Developed peers: highest",
+                "Developed peers: median",
+                "Regional peers: highest",
+                "Regional peers: median",
+                "Dialog FY25",
+                "Dialog FY27E",
+                "Dialog FY30E"
+              ],
+              "rows": [
+                [
+                  "EBITDA margin",
+                  "46.1%",
+                  "38.4%",
+                  "56.7%",
+                  "48.0%",
+                  "47.7%",
+                  "54.3%",
+                  "50.4%"
+                ],
+                [
+                  "EBIT margin",
+                  "23.8%",
+                  "16.0%",
+                  "32.1%",
+                  "20.6%",
+                  "21.5%",
+                  "29.8%",
+                  "28.4%"
+                ]
+              ],
+              "chart": "bar",
+              "note": "Margins rise near term, then ease to a small premium over the regional median, reflecting Sri Lanka's concentrated market.",
+              "plot": {
+                "kind": "hbar"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Financial profile and dividends",
+          "pages": "35–39",
+          "points": [
+            "Capex intensity rises to slightly above 20% of revenue with 5G, then returns to today's level; regional peer median was 18% in 2025.",
+            "Free cash flow to equity stays about Rs 50bn a year through the capex peak, funding both debt reduction and higher dividends.",
+            "Low effective tax rate (capital allowances), modelled to rise towards the full rate by the end of their 10-year forecast.",
+            "Borrowings moved from US dollars to rupees, cutting earnings swings from the exchange rate.",
+            "ROE about 37% in FY26E and above 35% through the forecast."
+          ],
+          "tables": [
+            {
+              "title": "Capex as % of revenue, Dialog vs peers, 2005–2025 (Exhibit 22a, p. 35)",
+              "text": "Dialog ≈74% in 2007, ≈16–33% since 2010, ≈15% in 2025. Peer median 18% in 2025, which they say overstates a pure mobile-broadband operator's need (some peers started 5G earlier or own data centres).",
+              "approx": true
+            },
+            {
+              "title": "Capex and capex/revenue, FY12–FY30E (Exhibit 22b, p. 35)",
+              "head": [
+                "Year",
+                "Capex (Rs bn)",
+                "Capex / revenue"
+              ],
+              "rows": [
+                [
+                  "FY12",
+                  "≈17",
+                  "≈31%"
+                ],
+                [
+                  "FY13",
+                  "≈28",
+                  "≈44%"
+                ],
+                [
+                  "FY14",
+                  "≈16.5",
+                  "≈25%"
+                ],
+                [
+                  "FY15",
+                  "≈16",
+                  "≈22%"
+                ],
+                [
+                  "FY16",
+                  "≈28",
+                  "≈33%"
+                ],
+                [
+                  "FY17",
+                  "≈30",
+                  "≈32%"
+                ],
+                [
+                  "FY18",
+                  "≈31.5",
+                  "≈29%"
+                ],
+                [
+                  "FY19",
+                  "≈30",
+                  "≈26%"
+                ],
+                [
+                  "FY20",
+                  "≈21",
+                  "≈17%"
+                ],
+                [
+                  "FY21",
+                  "≈39",
+                  "≈27%"
+                ],
+                [
+                  "FY22",
+                  "≈60",
+                  "≈33%"
+                ],
+                [
+                  "FY23",
+                  "≈43.5",
+                  "≈24%"
+                ],
+                [
+                  "FY24",
+                  "34.3",
+                  "≈20%"
+                ],
+                [
+                  "FY25",
+                  "27.7",
+                  "≈15%"
+                ],
+                [
+                  "FY26E",
+                  "27.4",
+                  "≈14%"
+                ],
+                [
+                  "FY27E",
+                  "35.4",
+                  "≈18%"
+                ],
+                [
+                  "FY28E",
+                  "44.3",
+                  "≈21%"
+                ],
+                [
+                  "FY29E",
+                  "≈43.5",
+                  "≈20%"
+                ],
+                [
+                  "FY30E",
+                  "≈41",
+                  "≈18%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "FY24–FY28E capex from their forecast table. They expect a shallower 5G cycle than past upgrades, phased with 5G handset uptake.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "line": [
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Free cash flow build-up, FY20–FY30E (Exhibit 23a, p. 36)",
+              "text": "Same FCFF line as p. 8 (≈Rs 60bn a year in FY27E–FY30E), shown as EBIT + depreciation − tax − capex ± working capital. EBIT ≈Rs 65bn by FY30E.",
+              "approx": true
+            },
+            {
+              "title": "Leverage: net debt to EBITDA and to equity (Exhibit 23b, p. 36)",
+              "head": [
+                "Year",
+                "Net debt / EBITDA",
+                "Net debt / equity"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈0.53x",
+                  "≈33%"
+                ],
+                [
+                  "FY21",
+                  "≈0.43x",
+                  "≈27%"
+                ],
+                [
+                  "FY22",
+                  "≈1.6x",
+                  "≈157%"
+                ],
+                [
+                  "FY23",
+                  "≈1.4x",
+                  "≈130%"
+                ],
+                [
+                  "FY24",
+                  "≈1.2x",
+                  "≈105%"
+                ],
+                [
+                  "FY25",
+                  "≈0.7x",
+                  "≈67%"
+                ],
+                [
+                  "FY26E",
+                  "≈0.45x",
+                  "≈45%"
+                ],
+                [
+                  "FY27E",
+                  "≈0.37x",
+                  "≈35%"
+                ],
+                [
+                  "FY28E",
+                  "≈0.32x",
+                  "≈28%"
+                ],
+                [
+                  "FY29E",
+                  "≈0.30x",
+                  "≈25%"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "kind": "line"
+              }
+            },
+            {
+              "title": "Free cash flow to equity and dividends paid (Exhibit 24, p. 37)",
+              "head": [
+                "Year",
+                "FCFE (Rs bn)",
+                "Dividends paid / FCFE"
+              ],
+              "rows": [
+                [
+                  "FY21",
+                  "≈23",
+                  "≈25%"
+                ],
+                [
+                  "FY22",
+                  "≈46",
+                  "≈22%"
+                ],
+                [
+                  "FY23",
+                  "≈5",
+                  "≈2%"
+                ],
+                [
+                  "FY24",
+                  "22.6",
+                  "≈16%"
+                ],
+                [
+                  "FY25",
+                  "13.8",
+                  "≈128%"
+                ],
+                [
+                  "FY26E",
+                  "50.5",
+                  "≈50%"
+                ],
+                [
+                  "FY27E",
+                  "50.7",
+                  "≈61%"
+                ],
+                [
+                  "FY28E",
+                  "50.3",
+                  "≈68%"
+                ],
+                [
+                  "FY29E",
+                  "≈53",
+                  "≈74%"
+                ],
+                [
+                  "FY30E",
+                  "≈52",
+                  "≈78%"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "In FY25 dividends paid were larger than FCFE. Debt to fall from Rs 88bn (FY25) to about Rs 60bn by FY30E; dividends up to about 80% of FCFE, the rest kept for 5G phasing and debt repayment. FY24–FY28E FCFE from their table.",
+              "plot": {
+                "cols": [
+                  1
+                ],
+                "line": [
+                  2
+                ],
+                "kind": "vbar"
+              }
+            },
+            {
+              "title": "Effective tax rate (Exhibit 25a, p. 38)",
+              "head": [
+                "Year",
+                "Tax / PBT (excl. deferred)"
+              ],
+              "rows": [
+                [
+                  "FY13",
+                  "≈17%"
+                ],
+                [
+                  "FY15",
+                  "≈22%"
+                ],
+                [
+                  "FY18",
+                  "≈22%"
+                ],
+                [
+                  "FY21",
+                  "≈11%"
+                ],
+                [
+                  "FY22",
+                  "≈9%"
+                ],
+                [
+                  "FY25",
+                  "≈12%"
+                ],
+                [
+                  "FY26E",
+                  "≈14%"
+                ],
+                [
+                  "FY27E onwards",
+                  "≈20%"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "note": "Capital allowances keep tax low; they move it towards the full rate by the end of their 10-year forecast. Cash tax spiked to ≈45% of PBT in FY15.",
+              "plot": {
+                "kind": "line"
+              }
+            },
+            {
+              "title": "Borrowings by currency (Rs bn) (Exhibit 25b, p. 38)",
+              "head": [
+                "Year",
+                "Rupee",
+                "Dollar",
+                "Total",
+                "USD/LKR"
+              ],
+              "rows": [
+                [
+                  "FY21",
+                  "≈22",
+                  "≈19",
+                  "≈41",
+                  "≈200"
+                ],
+                [
+                  "FY22",
+                  "≈17",
+                  "≈86",
+                  "≈103",
+                  "≈320"
+                ],
+                [
+                  "FY23",
+                  "≈67",
+                  "≈55",
+                  "≈122",
+                  "≈325"
+                ],
+                [
+                  "FY24",
+                  "≈72",
+                  "≈36",
+                  "≈108",
+                  "≈300"
+                ],
+                [
+                  "FY25",
+                  "≈70",
+                  "≈6",
+                  "≈76",
+                  "≈300"
+                ]
+              ],
+              "chart": "bar",
+              "approx": true,
+              "note": "Now almost all rupee debt, so currency moves no longer swing reported profit. Note: the chart total (≈Rs 76bn) differs from the Rs 88bn debt quoted on p. 37, which probably includes leases.",
+              "plot": {
+                "rows": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "cols": [
+                  1,
+                  2
+                ],
+                "kind": "vbar",
+                "stack": true
+              }
+            },
+            {
+              "title": "ROE broken down (DuPont) (Exhibits 26a–f, p. 39)",
+              "head": [
+                "Year",
+                "Net income / EBT",
+                "EBIT / sales",
+                "Sales / assets",
+                "Assets / equity",
+                "ROE"
+              ],
+              "rows": [
+                [
+                  "FY20",
+                  "≈87%",
+                  "≈14%",
+                  "≈64%",
+                  "≈230%",
+                  "≈15%"
+                ],
+                [
+                  "FY22",
+                  "≈107%",
+                  "≈1%",
+                  "≈67%",
+                  "≈590%",
+                  "≈−75%"
+                ],
+                [
+                  "FY23",
+                  "≈88%",
+                  "≈11%",
+                  "≈66%",
+                  "≈430%",
+                  "≈30%"
+                ],
+                [
+                  "FY24",
+                  "≈77%",
+                  "≈12%",
+                  "≈55%",
+                  "≈390%",
+                  "≈16%"
+                ],
+                [
+                  "FY25",
+                  "≈77%",
+                  "≈21%",
+                  "≈65%",
+                  "≈310%",
+                  "≈23%"
+                ],
+                [
+                  "FY26E",
+                  "≈84%",
+                  "≈27%",
+                  "≈68%",
+                  "≈280%",
+                  "≈37%"
+                ],
+                [
+                  "FY28E",
+                  "≈84%",
+                  "≈31%",
+                  "≈71%",
+                  "≈245%",
+                  "≈37%"
+                ],
+                [
+                  "FY30E",
+                  "≈84%",
+                  "≈28%",
+                  "≈73%",
+                  "≈220%",
+                  "≈34%"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "note": "ROE above 35% through the forecast despite lower leverage, from higher margins and asset turnover; a high payout stops equity piling up. EBT/EBIT fell to ≈−1,250% in FY22 (currency losses).",
+              "plot": {
+                "cols": [
+                  5
+                ],
+                "kind": "line"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Valuation",
+          "pages": "41–44",
+          "points": [
+            "10-year DCF, which they consider the best method for telecom operators.",
+            "Firm value Rs 598.9bn, about Rs 65.09 a share, then the bridge below to Rs 59.49 a share; 12-month target Rs 59.40.",
+            "Their cost of equity is 16.0% from an 11.0% five-year bond yield, beta 1.0 and a 5.0% premium; the WACC uses a 35:65 long-term debt:equity mix, not today's.",
+            "Sensitivity (WACC ±1 point, terminal growth 4–6%): Rs 55.51–63.80, so the rating doesn't change.",
+            "Peer multiples give wide ranges that include the target: EV/EBITDA Rs 47.91–106.15, EV/Sales Rs 26.67–81.11, P/E Rs 31.18–95.17; 52-week range Rs 26.90–50.50.",
+            "Their intrinsic value rises to about Rs 67.21 by November 2027 and Rs 75.93 by November 2028."
+          ],
+          "tables": [
+            {
+              "title": "DCF assumptions (Exhibit 27a, p. 41)",
+              "head": [
+                "Input",
+                "Theirs",
+                "Basis they give"
+              ],
+              "rows": [
+                [
+                  "Risk-free rate",
+                  "11.0%",
+                  "5-year treasury bond yield"
+                ],
+                [
+                  "Equity risk premium",
+                  "5.0%",
+                  "Higher of 5.0% or the actual 2014–2025 premium"
+                ],
+                [
+                  "Beta",
+                  "1.0",
+                  "24-month rolling beta"
+                ],
+                [
+                  "Cost of equity",
+                  "16.0%",
+                  ""
+                ],
+                [
+                  "Cost of debt (before tax)",
+                  "10.5%",
+                  "Average AWPLR about 10% (2014–25, excl. crisis) + 0.5%"
+                ],
+                [
+                  "Debt : equity",
+                  "35 : 65",
+                  "Long-term structure for a capital-heavy industry"
+                ],
+                [
+                  "WACC",
+                  "12.97%",
+                  ""
+                ],
+                [
+                  "Terminal growth",
+                  "5.0%",
+                  "Equal to the inflation target; long runway from low data use"
+                ]
+              ],
+              "note": "10-year forecast DCF, which they consider the best method for telecom.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "24-month rolling beta, 2016–2026 (Exhibit 27b, p. 41)",
+              "head": [
+                "Date",
+                "Beta"
+              ],
+              "rows": [
+                [
+                  "Oct 2016",
+                  "≈1.25"
+                ],
+                [
+                  "Oct 2019",
+                  "≈1.8"
+                ],
+                [
+                  "Oct 2020",
+                  "≈1.4"
+                ],
+                [
+                  "Apr 2021",
+                  "≈0.65"
+                ],
+                [
+                  "Oct 2022",
+                  "≈0.2"
+                ],
+                [
+                  "Apr 2024",
+                  "≈0.35"
+                ],
+                [
+                  "Oct 2025",
+                  "≈1.1"
+                ],
+                [
+                  "Jun 2026",
+                  "≈0.95"
+                ],
+                [
+                  "Average",
+                  "≈0.82"
+                ]
+              ],
+              "chart": "line",
+              "approx": true,
+              "note": "They use 1.0, above the ≈0.82 average line on the chart; p. 4 shows beta 0.9.",
+              "plot": {
+                "rows": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "kind": "line"
+              }
+            },
+            {
+              "title": "From firm value to the share (Exhibit 28, p. 42)",
+              "head": [
+                "Item",
+                "Rs mn",
+                "Rs a share"
+              ],
+              "rows": [
+                [
+                  "Firm value (DCF)",
+                  "598,886",
+                  "65.09"
+                ],
+                [
+                  "− Debt",
+                  "77,317",
+                  "8.40"
+                ],
+                [
+                  "+ Cash",
+                  "30,082",
+                  "3.27"
+                ],
+                [
+                  "− Minorities",
+                  "9",
+                  "0.00"
+                ],
+                [
+                  "− Employee benefits",
+                  "2,458",
+                  "0.27"
+                ],
+                [
+                  "+ Non-operating assets",
+                  "3,855",
+                  "0.42"
+                ],
+                [
+                  "= Equity value",
+                  "553,040",
+                  "60.11"
+                ],
+                [
+                  "− Share options (Black-Scholes)",
+                  "5,703",
+                  "0.62"
+                ],
+                [
+                  "= Value of the shares",
+                  "547,337",
+                  "59.49"
+                ]
+              ],
+              "chart": "waterfall",
+              "note": "9,200.3mn shares. Target Rs 59.40; dividends next 12 months Rs 3.25; price Rs 48.00 (20 Nov); upside with dividends 31%.",
+              "plot": {
+                "kind": "waterfall",
+                "cols": [
+                  2
+                ]
+              }
+            },
+            {
+              "title": "Sensitivity: value a share (Rs) (Exhibit 29a, p. 43)",
+              "head": [
+                "Terminal growth",
+                "WACC 11.97%",
+                "12.97%",
+                "13.97%"
+              ],
+              "rows": [
+                [
+                  "4%",
+                  "61.48",
+                  "58.40",
+                  "55.51"
+                ],
+                [
+                  "5%",
+                  "62.65",
+                  "59.49",
+                  "56.54"
+                ],
+                [
+                  "6%",
+                  "63.80",
+                  "60.58",
+                  "57.55"
+                ]
+              ],
+              "chart": "heatmap",
+              "plot": {
+                "kind": "heatmap"
+              }
+            },
+            {
+              "title": "Price, target and their value path (Exhibit 29b, p. 43)",
+              "head": [
+                "Point",
+                "Rs"
+              ],
+              "rows": [
+                [
+                  "Previous target marker (around May 2026)",
+                  "50.00"
+                ],
+                [
+                  "Value, Nov 2026",
+                  "59.49"
+                ],
+                [
+                  "Target",
+                  "59.40"
+                ],
+                [
+                  "Value, Nov 2027",
+                  "67.21"
+                ],
+                [
+                  "Value, Nov 2028",
+                  "75.93"
+                ]
+              ],
+              "chart": "line",
+              "note": "Price rose from ≈Rs 12 (Jan 2025) to ≈Rs 48. The chart marks an earlier target of Rs 50.00, while p. 4 gives the previous target as Rs 55.00.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Peers, trailing 12 months (Exhibit 30a, p. 44)",
+              "head": [
+                "",
+                "Dialog",
+                "Regional peers (South and Southeast Asia)",
+                "Developed-market peers (US, Europe, Japan, Australia, Hong Kong, China)"
+              ],
+              "rows": [
+                [
+                  "P/E",
+                  "13.1x",
+                  "18.2x",
+                  "14.4x"
+                ],
+                [
+                  "EV / sales",
+                  "2.7x",
+                  "3.2x",
+                  "2.5x"
+                ],
+                [
+                  "EV / EBITDA",
+                  "5.2x",
+                  "7.9x",
+                  "7.3x"
+                ],
+                [
+                  "EBITDA margin",
+                  "51.9%",
+                  "42.0%",
+                  "34.7%"
+                ],
+                [
+                  "ROE",
+                  "39.1%",
+                  "19.0%",
+                  "14.5%"
+                ]
+              ],
+              "chart": "bar",
+              "plot": {
+                "kind": "hbar"
+              }
+            },
+            {
+              "title": "Valuation range by method (Rs a share) (Exhibit 30b, p. 44)",
+              "head": [
+                "Method",
+                "Low",
+                "High",
+                "Basis they give"
+              ],
+              "rows": [
+                [
+                  "DCF",
+                  "56.54",
+                  "62.65",
+                  "WACC sensitivity range"
+                ],
+                [
+                  "EV / EBITDA",
+                  "47.91",
+                  "106.15",
+                  "Peer average 7.7x ± 1 standard deviation"
+                ],
+                [
+                  "EV / sales",
+                  "26.67",
+                  "81.11",
+                  "Peer average 2.9x ± 1 standard deviation"
+                ],
+                [
+                  "P/E",
+                  "31.18",
+                  "95.17",
+                  "Peer average 16.9x ± 1 standard deviation"
+                ],
+                [
+                  "52-week range",
+                  "26.90",
+                  "50.50",
+                  "Last 12 months' trading"
+                ]
+              ],
+              "chart": "range",
+              "plot": {
+                "kind": "range"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Their forecasts",
+          "pages": "45–47",
+          "points": [],
+          "tables": [
+            {
+              "title": "Income statement forecast (Rs mn) (p. 45)",
+              "head": [
+                "",
+                "FY21",
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26E",
+                "FY27E",
+                "FY28E"
+              ],
+              "rows": [
+                [
+                  "Revenue",
+                  "141,915",
+                  "178,131",
+                  "187,813",
+                  "171,170",
+                  "179,641",
+                  "192,349",
+                  "201,768",
+                  "210,800"
+                ],
+                [
+                  "Cost of sales",
+                  "80,262",
+                  "117,948",
+                  "−122,054",
+                  "−98,476",
+                  "−83,763",
+                  "−81,171",
+                  "−81,918",
+                  "−84,952"
+                ],
+                [
+                  "Gross profit",
+                  "61,653",
+                  "60,183",
+                  "65,759",
+                  "72,695",
+                  "95,878",
+                  "111,178",
+                  "119,850",
+                  "125,847"
+                ],
+                [
+                  "Admin and other overheads",
+                  "−38,213",
+                  "−57,615",
+                  "−44,885",
+                  "−51,916",
+                  "−57,270",
+                  "−58,467",
+                  "−59,691",
+                  "−60,985"
+                ],
+                [
+                  "EBIT",
+                  "23,440",
+                  "2,568",
+                  "20,874",
+                  "20,779",
+                  "38,608",
+                  "52,712",
+                  "60,159",
+                  "64,863"
+                ],
+                [
+                  "Finance income",
+                  "457",
+                  "2,396",
+                  "1,980",
+                  "1,464",
+                  "803",
+                  "684",
+                  "676",
+                  "703"
+                ],
+                [
+                  "Finance cost",
+                  "−4,815",
+                  "−35,589",
+                  "162",
+                  "−6,068",
+                  "−12,694",
+                  "−8,632",
+                  "−7,317",
+                  "−6,857"
+                ],
+                [
+                  "Net finance cost",
+                  "−4,358",
+                  "−33,193",
+                  "−2,142",
+                  "−4,604",
+                  "−11,891",
+                  "−7,948",
+                  "−6,641",
+                  "−6,155"
+                ],
+                [
+                  "Share of associates",
+                  "",
+                  "−29",
+                  "−78",
+                  "−70",
+                  "−35",
+                  "−47",
+                  "",
+                  ""
+                ],
+                [
+                  "Profit before tax",
+                  "19,053",
+                  "30,703",
+                  "22,945",
+                  "16,140",
+                  "26,670",
+                  "44,764",
+                  "53,518",
+                  "58,708"
+                ],
+                [
+                  "Tax",
+                  "−2,034",
+                  "−2,706",
+                  "−2,832",
+                  "−3,706",
+                  "−5,910",
+                  "−7,162",
+                  "−9,366",
+                  "−11,155"
+                ],
+                [
+                  "Profit after tax",
+                  "17,019",
+                  "33,409",
+                  "20,113",
+                  "12,435",
+                  "20,760",
+                  "37,602",
+                  "44,152",
+                  "47,554"
+                ],
+                [
+                  "Minority interest",
+                  "42",
+                  "21",
+                  "11",
+                  "24",
+                  "10",
+                  "38",
+                  "44",
+                  "48"
+                ],
+                [
+                  "Profit to shareholders",
+                  "17,061",
+                  "−33,388",
+                  "20,124",
+                  "12,459",
+                  "20,770",
+                  "37,639",
+                  "44,197",
+                  "47,601"
+                ],
+                [
+                  "EPS (Rs)",
+                  "2.08",
+                  "−4.06",
+                  "2.44",
+                  "1.43",
+                  "2.26",
+                  "4.09",
+                  "4.80",
+                  "5.17"
+                ],
+                [
+                  "EBITDA",
+                  "59,222",
+                  "44,092",
+                  "61,918",
+                  "66,565",
+                  "86,773",
+                  "101,434",
+                  "109,634",
+                  "115,160"
+                ],
+                [
+                  "DPS (Rs)",
+                  "1.24",
+                  "n.a.",
+                  "1.34",
+                  "1.00",
+                  "1.50",
+                  "2.80",
+                  "3.40",
+                  "3.80"
+                ],
+                [
+                  "Price used (Rs)",
+                  "10.90",
+                  "8.50",
+                  "9.00",
+                  "11.70",
+                  "29.80",
+                  "48.00",
+                  "48.00",
+                  "48.00"
+                ],
+                [
+                  "P/B (x)",
+                  "1.0",
+                  "1.6",
+                  "1.1",
+                  "1.4",
+                  "3.0",
+                  "4.4",
+                  "3.9",
+                  "3.5"
+                ],
+                [
+                  "P/E (x)",
+                  "5.2",
+                  "n.a.",
+                  "3.7",
+                  "8.2",
+                  "13.2",
+                  "11.7",
+                  "10.0",
+                  "9.3"
+                ]
+              ],
+              "note": "Copied as printed. Some signs look wrong in their table: FY21 cost of sales is positive, FY23 finance cost +162, and FY22 profit before and after tax are positive although profit to shareholders is a loss of Rs 33.4bn.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Balance sheet forecast (Rs mn) (p. 46)",
+              "head": [
+                "",
+                "FY21",
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26E",
+                "FY27E",
+                "FY28E"
+              ],
+              "rows": [
+                [
+                  "PPE, intangibles and right-of-use",
+                  "162,566",
+                  "188,659",
+                  "189,287",
+                  "217,992",
+                  "205,105",
+                  "206,495",
+                  "211,950",
+                  "221,963"
+                ],
+                [
+                  "Associates",
+                  "183",
+                  "105",
+                  "35",
+                  "–",
+                  "–",
+                  "–",
+                  "",
+                  ""
+                ],
+                [
+                  "Non-current financial assets",
+                  "1,469",
+                  "2,228",
+                  "2,968",
+                  "4,016",
+                  "3,533",
+                  "4,000",
+                  "4,000",
+                  "4,000"
+                ],
+                [
+                  "Deferred tax assets",
+                  "182",
+                  "220",
+                  "305",
+                  "249",
+                  "226",
+                  "250",
+                  "250",
+                  "250"
+                ],
+                [
+                  "Inventories",
+                  "3,712",
+                  "2,871",
+                  "3,036",
+                  "1,773",
+                  "1,793",
+                  "1,923",
+                  "2,018",
+                  "2,108"
+                ],
+                [
+                  "Trade receivables",
+                  "26,994",
+                  "30,921",
+                  "47,534",
+                  "47,411",
+                  "37,788",
+                  "40,393",
+                  "42,371",
+                  "44,268"
+                ],
+                [
+                  "Cash and short-term investments",
+                  "23,893",
+                  "42,147",
+                  "43,083",
+                  "37,707",
+                  "27,029",
+                  "27,029",
+                  "27,029",
+                  "27,029"
+                ],
+                [
+                  "Total assets",
+                  "219,000",
+                  "267,151",
+                  "286,247",
+                  "309,147",
+                  "275,475",
+                  "280,092",
+                  "287,618",
+                  "299,618"
+                ],
+                [
+                  "Shareholders' equity",
+                  "93,587",
+                  "45,216",
+                  "66,381",
+                  "78,354",
+                  "90,130",
+                  "100,942",
+                  "113,858",
+                  "126,498"
+                ],
+                [
+                  "Minority interest",
+                  "−72",
+                  "−66",
+                  "−44",
+                  "−74",
+                  "−118",
+                  "−155",
+                  "−199",
+                  "−247"
+                ],
+                [
+                  "Total equity",
+                  "93,515",
+                  "45,150",
+                  "66,337",
+                  "78,280",
+                  "90,013",
+                  "100,787",
+                  "113,659",
+                  "126,251"
+                ],
+                [
+                  "Long-term debt",
+                  "10,478",
+                  "66,581",
+                  "67,674",
+                  "35,750",
+                  "15,482",
+                  "17,827",
+                  "16,301",
+                  "14,911"
+                ],
+                [
+                  "Long-term leases",
+                  "6,256",
+                  "7,797",
+                  "7,871",
+                  "10,384",
+                  "9,427",
+                  "10,370",
+                  "9,333",
+                  "8,400"
+                ],
+                [
+                  "Deferred tax liability",
+                  "22",
+                  "20",
+                  "202",
+                  "1,158",
+                  "3,661",
+                  "4,188",
+                  "2,725",
+                  "2,204"
+                ],
+                [
+                  "Other non-current liabilities",
+                  "6,236",
+                  "13,991",
+                  "11,747",
+                  "13,460",
+                  "13,813",
+                  "14,005",
+                  "14,381",
+                  "14,981"
+                ],
+                [
+                  "Trade payables",
+                  "56,985",
+                  "80,518",
+                  "66,787",
+                  "78,646",
+                  "67,114",
+                  "75,016",
+                  "74,654",
+                  "77,996"
+                ],
+                [
+                  "Short-term debt",
+                  "32,816",
+                  "38,933",
+                  "55,091",
+                  "73,630",
+                  "62,816",
+                  "44,529",
+                  "42,837",
+                  "40,574"
+                ],
+                [
+                  "Other current liabilities",
+                  "12,692",
+                  "14,160",
+                  "10,539",
+                  "17,841",
+                  "13,149",
+                  "13,370",
+                  "13,729",
+                  "14,302"
+                ],
+                [
+                  "Total equity and liabilities",
+                  "219,001",
+                  "267,151",
+                  "286,247",
+                  "309,147",
+                  "275,475",
+                  "280,092",
+                  "287,618",
+                  "299,618"
+                ]
+              ],
+              "note": "Copied as printed. Cash held flat at Rs 27.0bn throughout the forecast.",
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Cash flow forecast (Rs mn) (p. 47)",
+              "head": [
+                "",
+                "FY21",
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26E",
+                "FY27E",
+                "FY28E"
+              ],
+              "rows": [
+                [
+                  "EBIT",
+                  "23,440",
+                  "2,568",
+                  "20,874",
+                  "20,779",
+                  "38,608",
+                  "52,712",
+                  "60,159",
+                  "64,863"
+                ],
+                [
+                  "Depreciation and amortisation",
+                  "35,782",
+                  "41,524",
+                  "41,044",
+                  "45,787",
+                  "48,164",
+                  "48,722",
+                  "49,475",
+                  "50,298"
+                ],
+                [
+                  "Change in working capital",
+                  "2,221",
+                  "6,511",
+                  "−16,573",
+                  "13,245",
+                  "−1,928",
+                  "5,166",
+                  "−2,434",
+                  "1,355"
+                ],
+                [
+                  "Cash tax paid",
+                  "−1,664",
+                  "−5,976",
+                  "−3,125",
+                  "−2,536",
+                  "−2,819",
+                  "−6,635",
+                  "−10,829",
+                  "−11,675"
+                ],
+                [
+                  "Cash capex",
+                  "−39,167",
+                  "−59,834",
+                  "−43,862",
+                  "−34,349",
+                  "−27,653",
+                  "−27,435",
+                  "−35,429",
+                  "−44,310"
+                ],
+                [
+                  "FCFF",
+                  "20,611",
+                  "−15,208",
+                  "−1,641",
+                  "42,926",
+                  "54,372",
+                  "72,530",
+                  "60,941",
+                  "60,530"
+                ],
+                [
+                  "Interest and net borrowing",
+                  "2,864",
+                  "61,274",
+                  "6,860",
+                  "−20,344",
+                  "−40,612",
+                  "−22,077",
+                  "−10,255",
+                  "−10,210"
+                ],
+                [
+                  "FCFE",
+                  "23,476",
+                  "46,066",
+                  "5,218",
+                  "22,581",
+                  "13,760",
+                  "50,452",
+                  "50,687",
+                  "50,320"
+                ]
+              ],
+              "plot": {
+                "kind": "none"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Risks",
+          "pages": "49",
+          "points": [],
+          "tables": [
+            {
+              "title": "Risk matrix (p. 49)",
+              "head": [
+                "",
+                "Risk",
+                "Likelihood",
+                "Impact"
+              ],
+              "rows": [
+                [
+                  "R1",
+                  "Competition or a weak economy holding revenue growth below forecast",
+                  "Medium",
+                  "High"
+                ],
+                [
+                  "R2",
+                  "Competition or higher costs pushing margins below forecast",
+                  "Medium",
+                  "High"
+                ],
+                [
+                  "R3",
+                  "Higher capex than expected over the next few years",
+                  "Medium",
+                  "High"
+                ],
+                [
+                  "R4",
+                  "Adverse regulation: more competition, or costs that can't be passed on in prices",
+                  "Low",
+                  "High"
+                ],
+                [
+                  "R5",
+                  "Lasting loss of market share in key segments",
+                  "Low",
+                  "Medium"
+                ]
+              ],
+              "chart": "riskgrid",
+              "plot": {
+                "kind": "riskgrid"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Technical view",
+          "pages": "51",
+          "points": [],
+          "tables": [
+            {
+              "title": "Technical view (charts 31a and 31b) (Exhibits 31a–b, p. 51)",
+              "points": [
+                "Firm uptrend over the past year from late-2025 lows; above both the 50-day and 200-day EMAs, with the 50-day well above the 200-day.",
+                "September–October correction, then a rebound on higher volume; resistance near Rs 50 in early November.",
+                "MACD still above its signal line but the histogram has narrowed: buying pressure easing.",
+                "RSI 58 after being overbought.",
+                "May consolidate; 50-day EMA is key support. A break above Rs 50 on stronger volume would signal the uptrend continuing."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ESG and governance",
+          "pages": "53–55",
+          "points": [],
+          "tables": [
+            {
+              "title": "Environment (FY25) (Exhibits 32a–d, p. 53)",
+              "points": [
+                "Energy use +10.4%, energy intensity +5.2%; 1,067 solar sites, renewables 2.5% of energy.",
+                "Scope 1 and 2 emissions +2.3%, carbon footprint −2.5%; target −42% by 2030 from 2022 (Axiata's SBTi target), net zero by 2050.",
+                "Water use +3.6%, intensity −1.3%.",
+                "Waste +9.1%, intensity +4.0%; e-waste ≈93% of waste, all internal e-waste recycled."
+              ]
+            },
+            {
+              "title": "Social (FY25) (Exhibits 33a–b, p. 54)",
+              "points": [
+                "Women 29.5% of the workforce; 25% of senior management, 19% of middle management, 29% of executives, 39% of non-executive staff.",
+                "Up to 100 days' paid maternity and 10 days' paternity leave; ISO 45001 safety system (the report's sentence on injuries in 2025 appears to be missing a word).",
+                "No data breaches or data-protection actions reported in 2025; ISO 27001 and 27701.",
+                "Community investment Rs 446mn in 2025 (Rs 100mn in 2024), incl. over Rs 420mn after Cyclone Ditwah; Nenasa, Govi Mithuru, Sayuru programmes.",
+                "ISO 37001 anti-bribery certification in 2025; ISO 9001."
+              ]
+            },
+            {
+              "title": "Governance checklist (p. 55)",
+              "points": [
+                "All checks met: 12/12 mandatory policies, Chairman and CEO separate, non-executive Chairman, 4/4 board committees, compliant board, audit committee, risk policy, annual director elections, IR team, quarterly updates, materiality disclosures, 4/4 extra disclosures.",
+                "Auditor Deloitte: true and fair view.",
+                "Board (≈, from chart): about 9 directors, mostly non-independent non-executives, 2 women, most over 50, most serving under 5 years.",
+                "They do not include ESG in the valuation."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Checks on the report",
+          "pages": "4–55",
+          "points": [
+            "Their asset base grows faster than their cash capex explains. Fixed assets (p. 46) less depreciation plus cash capex (p. 47) leave about Rs 22.7bn (FY26E), Rs 19.5bn (FY27E) and Rs 16.0bn (FY28E) of extra additions each year (worked out by this site from their printed figures). Leases explain only part of it. Their FCFF deducts only the cash capex.",
+            "Previous target: p. 4 says Rs 55.00, the chart on p. 43 marks Rs 50.00.",
+            "Beta: p. 4 shows 0.9; the DCF uses 1.0; the average on their beta chart is about 0.82.",
+            "Five forces: the text says Sri Lanka scores lower on every force, but substitutes are rated moderate in both (pp. 15–17).",
+            "Depreciation's share of the FY27E EBIT margin rise: 'roughly half' in the heading, 'over 20%' in the text (p. 31).",
+            "Debt: Rs 88bn at FY25 on p. 37; the currency chart (p. 38) shows about Rs 76bn, probably without leases; the balance sheet shows Rs 87.7bn incl. leases.",
+            "Sign errors in the income statement (p. 45): FY21 cost of sales positive, FY23 finance cost +162, FY22 profit before and after tax positive although shareholders' profit is a Rs 33.4bn loss.",
+            "Upside: 31% with dividends on p. 42, 'about 30%' in the text on p. 43."
+          ],
+          "tables": []
+        }
+      ],
+      "exhibits": [
+        "1a",
+        "1b",
+        "2a",
+        "2b",
+        "2c",
+        "2d",
+        "3a",
+        "3b",
+        "4a",
+        "4b",
+        "5a",
+        "5b",
+        "6",
+        "7a",
+        "7b",
+        "8",
+        "9a",
+        "9b",
+        "9c",
+        "10",
+        "11",
+        "12a",
+        "12b",
+        "13a",
+        "13b",
+        "13c",
+        "14",
+        "15",
+        "16a",
+        "16b",
+        "16c",
+        "17a",
+        "17b",
+        "17c",
+        "18",
+        "19a",
+        "19b",
+        "20a",
+        "20b",
+        "21",
+        "22a",
+        "22b",
+        "23a",
+        "23b",
+        "24",
+        "25a",
+        "25b",
+        "26a",
+        "26b",
+        "26c",
+        "26d",
+        "26e",
+        "26f",
+        "27a",
+        "27b",
+        "28",
+        "29a",
+        "29b",
+        "30a",
+        "30b",
+        "31a",
+        "31b",
+        "32a",
+        "32b",
+        "32c",
+        "32d",
+        "33a",
+        "33b"
+      ]
     },
     {
       "code": null,
@@ -233,69 +4048,220 @@
         "unit": ""
       },
       {
-        "label": "Heat map, 23 Nov: notable moves",
-        "value": "CTEA −10.39, CALH −5.38, ASIR −4.29, CFVF −3.53, UML −3.51, WLTH −2.78, RCL −2.44, KHL −2.42, CTHR −2.16, DOCK −2.13, LOFC −2.08, CARS −2.05, LMF −1.98, AHUN −1.90, CFIN −1.59, PLC −1.65, JKH −1.60, AEL −1.56, CTC −1.27, DIAL −1.04, LOLC −0.99, HAYL −0.98, SLTL −0.55, COMB −0.23; PKME +5.11, CFLB +3.59, JINS +3.17, GREG +2.99, BIL +2.13, DFCC +2.10, SEYB.X +2.06, AHPL +1.44, SFIN +1.40, SINS +1.08, JXG +1.08, MELS +0.52, HAYC +0.46, HNB +0.19",
-        "unit": "%"
-      },
-      {
-        "label": "Dow Jones (20 Nov)",
-        "value": -1.93,
-        "unit": "%"
-      },
-      {
-        "label": "S&P 500 (20 Nov)",
-        "value": -3.7,
-        "unit": "%"
-      },
-      {
-        "label": "S&P 500 futures (23 Nov morning)",
-        "value": 2.377,
-        "unit": "%"
-      },
-      {
-        "label": "FTSE 100 (20 Nov)",
-        "value": -1.02,
-        "unit": "%"
-      },
-      {
-        "label": "DAX (20 Nov)",
-        "value": -2.6,
-        "unit": "%"
-      },
-      {
-        "label": "Nikkei (23 Nov morning)",
-        "value": -5.06,
-        "unit": "%"
-      },
-      {
-        "label": "Hang Seng (23 Nov morning)",
-        "value": -1.15,
-        "unit": "%"
-      },
-      {
-        "label": "KOSPI (23 Nov morning)",
-        "value": -4.07,
-        "unit": "%"
-      },
-      {
-        "label": "Taiwan TAIEX (23 Nov morning)",
-        "value": 0.46,
-        "unit": "%"
-      },
-      {
-        "label": "India Nifty (23 Nov morning)",
-        "value": 1.12,
-        "unit": "%"
-      },
-      {
-        "label": "Bloomberg World index",
-        "value": -0.05,
-        "unit": "%"
-      },
-      {
         "label": "Private sector credit growth (CBSL)",
         "value": 21.8,
         "unit": "% y/y"
+      }
+    ],
+    "heatmap": [
+      {
+        "code": "CTEA",
+        "pct": -10.39
+      },
+      {
+        "code": "CALH",
+        "pct": -5.38
+      },
+      {
+        "code": "ASIR",
+        "pct": -4.29
+      },
+      {
+        "code": "CFVF",
+        "pct": -3.53
+      },
+      {
+        "code": "UML",
+        "pct": -3.51
+      },
+      {
+        "code": "WLTH",
+        "pct": -2.78
+      },
+      {
+        "code": "RCL",
+        "pct": -2.44
+      },
+      {
+        "code": "KHL",
+        "pct": -2.42
+      },
+      {
+        "code": "CTHR",
+        "pct": -2.16
+      },
+      {
+        "code": "DOCK",
+        "pct": -2.13
+      },
+      {
+        "code": "LOFC",
+        "pct": -2.08
+      },
+      {
+        "code": "CARS",
+        "pct": -2.05
+      },
+      {
+        "code": "LMF",
+        "pct": -1.98
+      },
+      {
+        "code": "AHUN",
+        "pct": -1.9
+      },
+      {
+        "code": "CFIN",
+        "pct": -1.59
+      },
+      {
+        "code": "PLC",
+        "pct": -1.65
+      },
+      {
+        "code": "JKH",
+        "pct": -1.6
+      },
+      {
+        "code": "AEL",
+        "pct": -1.56
+      },
+      {
+        "code": "CTC",
+        "pct": -1.27
+      },
+      {
+        "code": "DIAL",
+        "pct": -1.04
+      },
+      {
+        "code": "LOLC",
+        "pct": -0.99
+      },
+      {
+        "code": "HAYL",
+        "pct": -0.98
+      },
+      {
+        "code": "SLTL",
+        "pct": -0.55
+      },
+      {
+        "code": "COMB",
+        "pct": -0.23
+      },
+      {
+        "code": "PKME",
+        "pct": 5.11
+      },
+      {
+        "code": "CFLB",
+        "pct": 3.59
+      },
+      {
+        "code": "JINS",
+        "pct": 3.17
+      },
+      {
+        "code": "GREG",
+        "pct": 2.99
+      },
+      {
+        "code": "BIL",
+        "pct": 2.13
+      },
+      {
+        "code": "DFCC",
+        "pct": 2.1
+      },
+      {
+        "code": "SEYB.X",
+        "pct": 2.06
+      },
+      {
+        "code": "AHPL",
+        "pct": 1.44
+      },
+      {
+        "code": "SFIN",
+        "pct": 1.4
+      },
+      {
+        "code": "SINS",
+        "pct": 1.08
+      },
+      {
+        "code": "JXG",
+        "pct": 1.08
+      },
+      {
+        "code": "MELS",
+        "pct": 0.52
+      },
+      {
+        "code": "HAYC",
+        "pct": 0.46
+      },
+      {
+        "code": "HNB",
+        "pct": 0.19
+      }
+    ],
+    "world": [
+      {
+        "name": "Dow Jones",
+        "pct": -1.93,
+        "asOf": "20 Nov"
+      },
+      {
+        "name": "S&P 500",
+        "pct": -3.7,
+        "asOf": "20 Nov"
+      },
+      {
+        "name": "S&P 500 futures",
+        "pct": 2.377,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "FTSE 100",
+        "pct": -1.02,
+        "asOf": "20 Nov"
+      },
+      {
+        "name": "DAX",
+        "pct": -2.6,
+        "asOf": "20 Nov"
+      },
+      {
+        "name": "Nikkei",
+        "pct": -5.06,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "Hang Seng",
+        "pct": -1.15,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "KOSPI",
+        "pct": -4.07,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "Taiwan TAIEX",
+        "pct": 0.46,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "India Nifty",
+        "pct": 1.12,
+        "asOf": "23 Nov morning"
+      },
+      {
+        "name": "Bloomberg World index",
+        "pct": -0.05,
+        "asOf": null
       }
     ]
   },
@@ -890,59 +4856,298 @@
       "title": "Dialog Axiata research report (59 pages)",
       "items": [
         {
-          "item": "Overview: rating, target, previous target, price, upside, share data, FY21–FY25 summary",
+          "item": "Exhibit 1a (p. 4): Share price vs ASPI, indexed (2016 = 100)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 1b (p. 4): Trailing 12-month EPS by quarter (Rs)",
+          "status": "approx"
+        },
+        {
+          "item": "Key share data (p. 4)",
           "status": "included"
         },
         {
-          "item": "Share details: shareholders, insider sales, ESOP, trading volumes",
+          "item": "Five-year summary (p. 4)",
           "status": "included"
         },
         {
-          "item": "Investment thesis: consolidation, margins, free cash flow, dividend outlook, peer leverage and yield",
+          "item": "Exhibit 2a (p. 5): Top 10 shareholders (%)",
           "status": "included"
         },
         {
-          "item": "Group overview, competitive positioning (Porter's five forces, spectrum, network coverage, flywheel)",
+          "item": "Exhibit 2b (p. 5): Shareholding structure (public float)",
           "status": "included"
         },
         {
-          "item": "Addressable market (mobile penetration, smartphones, data usage, affordability)",
+          "item": "Exhibit 2c (p. 5): Insider net purchases / (sales), Rs mn",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 2d (p. 5): Trading volume and turnover, 30-day averages",
+          "status": "approx"
+        },
+        {
+          "item": "Share details: other points (p. 5)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 3a (p. 7): Mobile market concentration (HHI)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 3b (p. 7): EBITDA margin, Dialog vs 13 peers, 2005–2025",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 4a (p. 8): Free cash flow to the firm and its parts, FY20–FY30E (Rs bn)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 4b (p. 8): Dividend per share and payout",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 5a (p. 9): Net debt to EBITDA, regional peers (x)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 5b (p. 9): Forward dividend yield vs forecast dividend growth",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 6 (p. 10): Dividend yield at Rs 48",
+          "status": "included"
+        },
+        {
+          "item": "Segments at a glance (p. 12)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 7a (p. 13): Share of revenue and EBITDA by segment (12 months to Q3 FY26)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 7b (p. 13): EBITDA bridge, 12 months to Q3 FY25 → Q3 FY26 (Rs bn)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 5F-DM (p. 15): Five forces in developed markets (text table)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 5F-SL (p. 16): Five forces in Sri Lanka (text table)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 8 (p. 17): Five forces score, Sri Lanka vs developed markets (1 low – 5 high)",
+          "status": "included"
+        },
+        {
+          "item": "Pricing power and cost (text) (p. 17)",
+          "status": "included"
+        },
+        {
+          "item": "Price per GB: Dialog vs SLT Mobitel vs Hutch (taxes included for mobile) (p. 18)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 9a (p. 19): Spectrum held (MHz)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 9b (p. 19): 4G coverage",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 9c (p. 19): Base stations and towers by operator",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 10 (p. 20): Scale flywheel: Dialog vs SLT, 2015 → 2025",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 11 (p. 21): Flywheel test by two-year period (✓ = improved)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 12a (p. 23): Mobile connections per 100 people",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 12b (p. 23): Internet and social media use (% of population)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 13a (p. 24): Social media reach by platform (% of population)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 13b (p. 24): Smartphone ownership (% of population)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 13c (p. 24): Growth in social media users, 2025",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 14 (p. 25): Data use per person vs income",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 15 (p. 26): Cost of a high-use mobile voice and data basket",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 16a (p. 28): Revenue by segment (Rs bn)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 16b (p. 28): Subscriber growth",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 16c (p. 28): Blended ARPU (Rs a year)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 17a (p. 29): Mobile ARPU (Rs a year) and growth",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 17b (p. 29): Fixed broadband ARPU",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 17c (p. 29): Pay-TV ARPU",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 18 (p. 30): Operating costs as % of revenue",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 19a (p. 31): Operating leverage and EBIT margin",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 19b (p. 31): Depreciation as % of revenue, Dialog vs peers, 2005–2025",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 20a (p. 32): EBITDA by segment (Rs bn)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 20b (p. 32): EBITDA margin by segment",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 21 (p. 33): Margins vs peers and their long-run assumption",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 22a (p. 35): Capex as % of revenue, Dialog vs peers, 2005–2025",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 22b (p. 35): Capex and capex/revenue, FY12–FY30E",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 23a (p. 36): Free cash flow build-up, FY20–FY30E",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 23b (p. 36): Leverage: net debt to EBITDA and to equity",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 24 (p. 37): Free cash flow to equity and dividends paid",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 25a (p. 38): Effective tax rate",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 25b (p. 38): Borrowings by currency (Rs bn)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 26 (p. 39): ROE broken down (DuPont)",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 27a (p. 41): DCF assumptions",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 27b (p. 41): 24-month rolling beta, 2016–2026",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 28 (p. 42): From firm value to the share",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 29a (p. 43): Sensitivity: value a share (Rs)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 29b (p. 43): Price, target and their value path",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 30a (p. 44): Peers, trailing 12 months",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 30b (p. 44): Valuation range by method (Rs a share)",
+          "status": "included"
+        },
+        {
+          "item": "Income statement forecast (Rs mn) (p. 45)",
+          "status": "included"
+        },
+        {
+          "item": "Balance sheet forecast (Rs mn) (p. 46)",
+          "status": "included"
+        },
+        {
+          "item": "Cash flow forecast (Rs mn) (p. 47)",
+          "status": "included"
+        },
+        {
+          "item": "Risk matrix (p. 49)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 31 (p. 51): Technical view (charts 31a and 31b)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 32 (p. 53): Environment (FY25)",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 33 (p. 54): Social (FY25)",
+          "status": "included"
+        },
+        {
+          "item": "Governance checklist (p. 55)",
+          "status": "included"
+        },
+        {
+          "item": "Cover, contents, rating scale and section dividers (pp. 1–3, 6, 11, 14, 22, 27, 34, 40, 48, 50, 52, 56)",
           "status": "left-out",
-          "reason": "background industry charts; the growth assumptions drawn from them are included"
+          "reason": "no content"
         },
         {
-          "item": "Revenue and margin drivers (subscribers, ARPU by segment, operating leverage, depreciation, EBITDA by segment)",
-          "status": "included"
-        },
-        {
-          "item": "Financial profile (capex cycle, free cash flow, FCFE, tax rate, borrowings, DuPont ROE)",
-          "status": "included"
-        },
-        {
-          "item": "DCF assumptions, valuation summary, sensitivity and peer cross-check",
-          "status": "included"
-        },
-        {
-          "item": "Income statement, balance sheet and cash flow forecasts",
-          "status": "included"
-        },
-        {
-          "item": "Risk matrix (R1–R5)",
-          "status": "included"
-        },
-        {
-          "item": "Technical charts and commentary",
-          "status": "included"
-        },
-        {
-          "item": "ESG considerations (emissions, water, waste, governance, community)",
+          "item": "Glossary, research team and disclaimer (pp. 57–59)",
           "status": "left-out",
-          "reason": "not about the valuation or the call"
-        },
-        {
-          "item": "Annexures and disclaimers",
-          "status": "left-out",
-          "reason": "rating definitions and legal text"
+          "reason": "definitions and legal text"
         }
       ]
     },
