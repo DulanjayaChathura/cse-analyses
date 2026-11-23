@@ -1,0 +1,971 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-23",
+  "source": "HNB Stockbrokers",
+  "posts": 12,
+  "messageIds": [
+    347,
+    363,
+    364,
+    367,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405
+  ],
+  "commands": [
+    406
+  ],
+  "callsPriceDate": "2026-11-20",
+  "note": "Messages 347 ('add SPEN.N0000'), 363 and 364 ('ok') and 367 ('full') are the owner's own replies from 21 Nov, not broker content, so nothing is summarised from them. The Weekly Universe table's footnote still says prices are as of 13 Nov, but its prices match the CSE close of 20 Nov and its upsides are worked from them, so the calls are dated 20 Nov. The table still shows Dialog at Moderate buy with a Rs 55 target; the broker's new Dialog report (message 404, also 20 Nov prices) raises this to Buy with Rs 59.40. The link in message 402 (the detailed Weekly Universe) only opened a SharePoint sign-in page; the same table came as the PDF in message 405. One news link (the US futures / AI sell-off item) could not be downloaded (HTTP 401), so that item is from the post text only. The daily update's foreign buying/selling by share chart has no figures on its bars, so those values are approximate (≈). The Bloomberg screen was taken at 08:59 Sri Lanka time on 23 Nov, so its US and European figures are Friday 20 Nov's sessions and its Asian figures are Monday morning's. The Dialog report says it 'reiterates' Buy, so its previous rating is shown as Buy, although the broker's weekly tables have listed Dialog as Moderate buy at Rs 55.",
+  "highlights": [
+    "HNB Stockbrokers raised its Dialog Axiata (DIAL.N0000) target to Rs 59.40 from Rs 55 and rates it Buy (24% upside from Rs 48, about 31% with dividends; its weekly table still shows Moderate buy at Rs 55), on a DCF at a 12.97% WACC and 5% terminal growth; it sees DPS rising from Rs 2.80 (FY26E) to Rs 3.80 (FY28E). That is about twice this site's Dialog fair value of Rs 29.05 (buy below Rs 24.69), a big disagreement.",
+    "The market slipped on 23 Nov: the ASPI fell 0.60% (−127.20 points) to 21,242.52 and the S&P SL20 0.48% to 6,046.17 on thin turnover of Rs 1.05bn. Foreigners were net buyers of Rs 29.94M (bought Rs 64M, sold Rs 34M), though Dialog saw about Rs 29M of foreign selling. Ceylon Tea Services fell 10.39% and Capital Alliance Holdings 5.38%, while PickMe rose 5.11%.",
+    "The broker's 20 Nov recommendation table keeps its targets and remains far above this site on most shared names: John Keells Hotels Rs 25 vs fair value Rs 5.94, JAT Rs 49 vs Rs 11.98, Aitken Spence Hotels Rs 150 vs Rs 41.31, ACL Cables Rs 115 vs Rs 37.64, Access Engineering Rs 90 vs Rs 34.26, Hemas Rs 39 vs Rs 15.9 and John Keells Rs 30 vs Rs 13.2. Sampath (Rs 190 vs Rs 184.74) is the only close match. Hemas moved up to Buy and Jetwing Symphony down to Hold on price moves.",
+    "Distilleries (Rs 1.00) and Melstacorp (Rs 2.75) declared first interim dividends, both going XD on 2 Dec and paid on 18 Dec.",
+    "The IMF board meets on 2 Dec on Sri Lanka's seventh review, which could release about $345mn. Asian markets slumped on Monday morning after last week's AI and chip sell-off (Nikkei −5.06%, KOSPI −4.07%), while US futures bounced."
+  ],
+  "research": [
+    {
+      "code": "DIAL.N0000",
+      "company": "Dialog Axiata",
+      "report": "Research report: 'The Potential Dividend Compounder: Rising Yield, Defensible Earnings' (HNB Stockbrokers, November 2026)",
+      "date": "2026-11-20",
+      "rating": "Buy",
+      "prevRating": "Buy",
+      "target": 59.4,
+      "price": 48.0,
+      "priceDate": "2026-11-20",
+      "keyPoints": [
+        "Consolidation (Airtel Lanka bought in 2024; three mobile operators instead of four, mobile HHI up from 3,142 in 2020 to 4,629) gives Dialog, with over 60% of mobile, pricing power and scale; EBITDA margin was 51.9% on a trailing basis vs 42.0% for regional peers.",
+        "Margin gains now come from spreading a largely fixed network cost over more revenue rather than cutting variable costs; lower depreciation (27% of revenue in FY25 to about 25% in FY27E) adds to EBIT margin.",
+        "Revenue growth slows to about 5% a year (FY25–FY28E) and is ARPU-led: mobile subscribers about +1% a year, mobile ARPU about +3% a year from FY27E, fixed broadband ARPU +2% rising to +4%, pay-TV ARPU below +2% as streaming bites. EBITDA grows about 10% a year.",
+        "Capex rises with 5G to a peak of about 21% of revenue in FY28E, then eases; free cash flow to equity stays around Rs 50bn a year, so the payout rises from about 70% to over 80% and net debt/EBITDA falls from about 0.7x to about 0.4x by FY27E.",
+        "Valuation: 10-year DCF gives Rs 59.49 a share (enterprise value Rs 598.9bn, less debt Rs 77.3bn plus cash Rs 30.1bn); cost of equity 16.0% (11.0% five-year bond yield, beta 1.0, 5.0% premium), pre-tax cost of debt 10.5%, 35:65 debt:equity, WACC 12.97%, terminal growth 5.0%. Sensitivity range Rs 55.51–63.80 (±1 point on WACC and terminal growth); peer multiples (P/E, EV/EBITDA, EV/sales) give higher ranges."
+      ],
+      "forecasts": [
+        "Revenue Rs 192.3bn FY26E, Rs 201.8bn FY27E, Rs 210.8bn FY28E",
+        "EBITDA Rs 101.4bn FY26E, Rs 109.6bn FY27E, Rs 115.2bn FY28E",
+        "Recurrent EPS Rs 4.09 FY26E, Rs 4.80 FY27E, Rs 5.17 FY28E (P/E 11.7x, 10.0x, 9.3x at Rs 48)",
+        "DPS Rs 2.80 FY26E, Rs 3.40 FY27E, Rs 3.80 FY28E; dividends over the next 12 months Rs 3.25",
+        "Capex Rs 27.4bn FY26E, Rs 35.4bn FY27E, Rs 44.3bn FY28E; FCFE about Rs 50.3–50.7bn a year",
+        "DCF intrinsic value rising to about Rs 67.21 by Nov 2027 and Rs 75.93 by Nov 2028"
+      ],
+      "risks": [
+        "Competition or a weak economy holding revenue growth below forecast, or squeezing margins",
+        "Higher capex than expected over the next few years",
+        "Adverse regulation (more competition, or cost increases that can't be passed on in prices)"
+      ],
+      "catalysts": [
+        "Rising dividend payout as capex intensity falls after FY28E",
+        "A decisive break above the Rs 50 resistance on stronger volume (technical view; the 50-day EMA is support)",
+        "New ESOP (2% of new shares over 10 years, about Rs 8.7bn) aligning management with shareholders"
+      ],
+      "post": 404
+    },
+    {
+      "code": null,
+      "company": "Market",
+      "report": "Daily Market Update, 23 Nov 2026 (HNB Stockbrokers Research)",
+      "date": "2026-11-23",
+      "rating": null,
+      "prevRating": null,
+      "target": null,
+      "price": null,
+      "priceDate": null,
+      "keyPoints": [
+        "ASPI −0.60% to 21,242.52 and S&P SL20 −0.48% to 6,046.17; turnover Rs 1.05bn; market cap Rs 7.66tn.",
+        "Market P/E 10.95x (11.01x before), P/BV 1.27x, dividend yield 3.10%.",
+        "Foreigners net bought Rs 29.94M ($90.02K): Access Engineering drew the most foreign buying (about Rs 21M) and Dialog the most selling (about Rs 29M).",
+        "Ten-day momentum leaders: Singer (+29.7%), PHAR (+15.4%), Ceylon Tea Services (+10.8%) and PickMe (+9.8%); most large caps closed lower (JKH −1.60%, Dialog −1.04%, Commercial Bank −0.23%)."
+      ],
+      "forecasts": [],
+      "risks": [],
+      "catalysts": [],
+      "post": 403
+    }
+  ],
+  "market": {
+    "aspi": 21242.52,
+    "aspiChangePct": -0.6,
+    "aspiPoints": -127.2,
+    "sp20": 6046.17,
+    "sp20ChangePct": -0.48,
+    "turnoverBn": 1.05,
+    "marketPE": 10.95,
+    "marketPBV": 1.27,
+    "marketCapTn": 7.66,
+    "foreignBuyMn": 64,
+    "foreignSellMn": 34,
+    "foreignNetMn": 29.94,
+    "foreignFlows": [
+      {
+        "code": "AEL.N0000",
+        "mn": 21,
+        "approx": true
+      },
+      {
+        "code": "PKME.N0000",
+        "mn": 9,
+        "approx": true
+      },
+      {
+        "code": "HAYL.N0000",
+        "mn": 8,
+        "approx": true
+      },
+      {
+        "code": "TAP.N0000",
+        "mn": 5,
+        "approx": true
+      },
+      {
+        "code": "SAMP.N0000",
+        "mn": 4,
+        "approx": true
+      },
+      {
+        "code": "HAYC.N0000",
+        "mn": -0.5,
+        "approx": true
+      },
+      {
+        "code": "ABL.N0000",
+        "mn": -1,
+        "approx": true
+      },
+      {
+        "code": "DIAL.N0000",
+        "mn": -29,
+        "approx": true
+      }
+    ],
+    "momentum": [
+      {
+        "code": "SING.N0000",
+        "pct": 29.7
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 15.4
+      },
+      {
+        "code": "CTEA.N0000",
+        "pct": 10.8
+      },
+      {
+        "code": "PKME.N0000",
+        "pct": 9.8
+      },
+      {
+        "code": "SINH.N0000",
+        "pct": 9.2
+      },
+      {
+        "code": "PARA.N0000",
+        "pct": 8.3
+      },
+      {
+        "code": "YORK.N0000",
+        "pct": 7.2
+      },
+      {
+        "code": "CSLK.N0000",
+        "pct": 5.8
+      },
+      {
+        "code": "SPEN.N0000",
+        "pct": 5.6
+      },
+      {
+        "code": "MSL.N0000",
+        "pct": 5.2
+      }
+    ],
+    "other": [
+      {
+        "label": "S&P SL20 points change",
+        "value": -29.11,
+        "unit": "points"
+      },
+      {
+        "label": "Turnover change",
+        "value": -0.55,
+        "unit": "% (as shown)"
+      },
+      {
+        "label": "Market cap change",
+        "value": -0.01,
+        "unit": "%"
+      },
+      {
+        "label": "Turnover to market cap",
+        "value": 0.01,
+        "unit": "%"
+      },
+      {
+        "label": "Market dividend yield",
+        "value": 3.1,
+        "unit": "% (3.10 before)"
+      },
+      {
+        "label": "Market P/E, previous",
+        "value": 11.01,
+        "unit": "x"
+      },
+      {
+        "label": "Net foreign inflow in dollars",
+        "value": 90.02,
+        "unit": "$ thousand"
+      },
+      {
+        "label": "Foreign buying, other shares together (≈, chart)",
+        "value": "≈15",
+        "unit": "Rs mn"
+      },
+      {
+        "label": "Foreign flows near zero (chart)",
+        "value": "KCAB, LHCL",
+        "unit": ""
+      },
+      {
+        "label": "Heat map, 23 Nov: notable moves",
+        "value": "CTEA −10.39, CALH −5.38, ASIR −4.29, CFVF −3.53, UML −3.51, WLTH −2.78, RCL −2.44, KHL −2.42, CTHR −2.16, DOCK −2.13, LOFC −2.08, CARS −2.05, LMF −1.98, AHUN −1.90, CFIN −1.59, PLC −1.65, JKH −1.60, AEL −1.56, CTC −1.27, DIAL −1.04, LOLC −0.99, HAYL −0.98, SLTL −0.55, COMB −0.23; PKME +5.11, CFLB +3.59, JINS +3.17, GREG +2.99, BIL +2.13, DFCC +2.10, SEYB.X +2.06, AHPL +1.44, SFIN +1.40, SINS +1.08, JXG +1.08, MELS +0.52, HAYC +0.46, HNB +0.19",
+        "unit": "%"
+      },
+      {
+        "label": "Dow Jones (20 Nov)",
+        "value": -1.93,
+        "unit": "%"
+      },
+      {
+        "label": "S&P 500 (20 Nov)",
+        "value": -3.7,
+        "unit": "%"
+      },
+      {
+        "label": "S&P 500 futures (23 Nov morning)",
+        "value": 2.377,
+        "unit": "%"
+      },
+      {
+        "label": "FTSE 100 (20 Nov)",
+        "value": -1.02,
+        "unit": "%"
+      },
+      {
+        "label": "DAX (20 Nov)",
+        "value": -2.6,
+        "unit": "%"
+      },
+      {
+        "label": "Nikkei (23 Nov morning)",
+        "value": -5.06,
+        "unit": "%"
+      },
+      {
+        "label": "Hang Seng (23 Nov morning)",
+        "value": -1.15,
+        "unit": "%"
+      },
+      {
+        "label": "KOSPI (23 Nov morning)",
+        "value": -4.07,
+        "unit": "%"
+      },
+      {
+        "label": "Taiwan TAIEX (23 Nov morning)",
+        "value": 0.46,
+        "unit": "%"
+      },
+      {
+        "label": "India Nifty (23 Nov morning)",
+        "value": 1.12,
+        "unit": "%"
+      },
+      {
+        "label": "Bloomberg World index",
+        "value": -0.05,
+        "unit": "%"
+      },
+      {
+        "label": "Private sector credit growth (CBSL)",
+        "value": 21.8,
+        "unit": "% y/y"
+      }
+    ]
+  },
+  "calls": [
+    {
+      "code": "COMB.N0000",
+      "name": "Commercial Bank (voting)",
+      "sector": "Banks",
+      "price": 214.0,
+      "rating": "Moderate buy",
+      "target": 253
+    },
+    {
+      "code": "HNB.N0000",
+      "name": "Hatton National Bank (voting)",
+      "sector": "Banks",
+      "price": 393.75,
+      "rating": "Buy",
+      "target": 575
+    },
+    {
+      "code": "HNB.X0000",
+      "name": "Hatton National Bank (non-voting)",
+      "sector": "Banks",
+      "price": 341.75,
+      "rating": "Buy",
+      "target": 469
+    },
+    {
+      "code": "SAMP.N0000",
+      "name": "Sampath Bank",
+      "sector": "Banks",
+      "price": 148.25,
+      "rating": "Buy",
+      "target": 190
+    },
+    {
+      "code": "NTB.N0000",
+      "name": "Nations Trust Bank (voting)",
+      "sector": "Banks",
+      "price": 310.0,
+      "rating": "Buy",
+      "target": 400
+    },
+    {
+      "code": "ACL.N0000",
+      "name": "ACL Cables",
+      "sector": "Capital goods",
+      "price": 97.8,
+      "rating": "Moderate buy",
+      "target": 115
+    },
+    {
+      "code": "HAYL.N0000",
+      "name": "Hayleys",
+      "sector": "Capital goods",
+      "price": 230.25,
+      "rating": "Moderate buy",
+      "target": 260
+    },
+    {
+      "code": "HHL.N0000",
+      "name": "Hemas Holdings",
+      "sector": "Capital goods",
+      "price": 32.0,
+      "rating": "Buy",
+      "target": 39
+    },
+    {
+      "code": "JKH.N0000",
+      "name": "John Keells Holdings",
+      "sector": "Capital goods",
+      "price": 18.7,
+      "rating": "Buy",
+      "target": 30
+    },
+    {
+      "code": "RCL.N0000",
+      "name": "Royal Ceramics Lanka",
+      "sector": "Capital goods",
+      "price": 45.1,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "CSLK.N0000",
+      "name": "Cable Solutions",
+      "sector": "Capital goods",
+      "price": 14.6,
+      "rating": "Hold",
+      "target": 13
+    },
+    {
+      "code": "AEL.N0000",
+      "name": "Access Engineering",
+      "sector": "Capital goods",
+      "price": 83.3,
+      "rating": "Hold",
+      "target": 90
+    },
+    {
+      "code": "MGT.N0000",
+      "name": "Hayleys Fabric",
+      "sector": "Consumer durables & apparel",
+      "price": 33.0,
+      "rating": "Hold",
+      "target": 32
+    },
+    {
+      "code": "TJL.N0000",
+      "name": "Teejay Lanka",
+      "sector": "Consumer durables & apparel",
+      "price": 33.0,
+      "rating": "Hold",
+      "target": 40
+    },
+    {
+      "code": "KHL.N0000",
+      "name": "John Keells Hotels",
+      "sector": "Consumer services",
+      "price": 16.5,
+      "rating": "Buy",
+      "target": 25
+    },
+    {
+      "code": "AHUN.N0000",
+      "name": "Aitken Spence Hotel Holdings",
+      "sector": "Consumer services",
+      "price": 84.0,
+      "rating": "Buy",
+      "target": 150
+    },
+    {
+      "code": "JETS.N0000",
+      "name": "Jetwing Symphony",
+      "sector": "Consumer services",
+      "price": 14.6,
+      "rating": "Hold",
+      "target": 16
+    },
+    {
+      "code": "DIAL.N0000",
+      "name": "Dialog Axiata",
+      "sector": "Telecommunication",
+      "price": 48.0,
+      "rating": "Moderate buy",
+      "target": 55
+    },
+    {
+      "code": "SLTL.N0000",
+      "name": "Sri Lanka Telecom",
+      "sector": "Telecommunication",
+      "price": 90.6,
+      "rating": "Hold",
+      "target": 90
+    },
+    {
+      "code": "MELS.N0000",
+      "name": "Melstacorp",
+      "sector": "Food, beverage and tobacco",
+      "price": 192.0,
+      "rating": "Buy",
+      "target": 260
+    },
+    {
+      "code": "DIST.N0000",
+      "name": "Distilleries",
+      "sector": "Food, beverage and tobacco",
+      "price": 58.3,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "SUN.N0000",
+      "name": "Sunshine Holdings",
+      "sector": "Food, beverage and tobacco",
+      "price": 30.1,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "CCS.N0000",
+      "name": "Ceylon Cold Stores",
+      "sector": "Food, beverage and tobacco",
+      "price": 124.0,
+      "rating": "Buy",
+      "target": 160
+    },
+    {
+      "code": "LION.N0000",
+      "name": "Lion Brewery (Ceylon)",
+      "sector": "Food, beverage and tobacco",
+      "price": 1930.0,
+      "rating": "Buy",
+      "target": 2320
+    },
+    {
+      "code": "UAL.N0000",
+      "name": "Union Assurance",
+      "sector": "Insurance",
+      "price": 69.7,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "OSEA.N0000",
+      "name": "Overseas Realty (Ceylon)",
+      "sector": "Real estate",
+      "price": 52.6,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "CIC.N0000",
+      "name": "CIC Holdings (voting)",
+      "sector": "Materials",
+      "price": 27.9,
+      "rating": "Hold",
+      "target": null
+    },
+    {
+      "code": "DIPD.N0000",
+      "name": "Dipped Products",
+      "sector": "Materials",
+      "price": 69.8,
+      "rating": "Hold",
+      "target": 65
+    },
+    {
+      "code": "HAYC.N0000",
+      "name": "Haycarb",
+      "sector": "Materials",
+      "price": 216.75,
+      "rating": "Hold",
+      "target": 165
+    },
+    {
+      "code": "TKYO.N0000",
+      "name": "Tokyo Cement (voting)",
+      "sector": "Materials",
+      "price": 83.0,
+      "rating": "Buy",
+      "target": 120
+    },
+    {
+      "code": "TKYO.X0000",
+      "name": "Tokyo Cement (non-voting)",
+      "sector": "Materials",
+      "price": 68.3,
+      "rating": "Buy",
+      "target": 104
+    },
+    {
+      "code": "JAT.N0000",
+      "name": "JAT Holdings",
+      "sector": "Materials",
+      "price": 38.6,
+      "rating": "Buy",
+      "target": 49
+    },
+    {
+      "code": "CFIN.N0000",
+      "name": "Central Finance",
+      "sector": "Diversified financials",
+      "price": 219.75,
+      "rating": "Buy",
+      "target": 310
+    },
+    {
+      "code": "LFIN.N0000",
+      "name": "LB Finance",
+      "sector": "Diversified financials",
+      "price": 154.0,
+      "rating": "Buy",
+      "target": 200
+    },
+    {
+      "code": "VFIN.N0000",
+      "name": "Vallibel Finance",
+      "sector": "Diversified financials",
+      "price": 84.9,
+      "rating": "Buy",
+      "target": 120
+    },
+    {
+      "code": "COCR.N0000",
+      "name": "Commercial Credit and Finance",
+      "sector": "Diversified financials",
+      "price": 96.5,
+      "rating": "Buy",
+      "target": 153.5
+    },
+    {
+      "code": "PKME.N0000",
+      "name": "Digital Mobility Solutions (PickMe)",
+      "sector": "Transportation",
+      "price": 176.0,
+      "rating": "Hold",
+      "target": 180
+    },
+    {
+      "code": "SINS.N0000",
+      "name": "Singer (Sri Lanka)",
+      "sector": "Retailing",
+      "price": 74.1,
+      "rating": "Moderate buy",
+      "target": 85
+    }
+  ],
+  "dividends": [
+    {
+      "code": "DIST.N0000",
+      "name": "Distilleries Company of Sri Lanka",
+      "dps": 1.0,
+      "type": "First interim",
+      "price": 58.3,
+      "yieldPct": 6.9,
+      "xd": "2026-12-02",
+      "pay": "2026-12-18"
+    },
+    {
+      "code": "MELS.N0000",
+      "name": "Melstacorp",
+      "dps": 2.75,
+      "type": "First interim",
+      "price": 192.0,
+      "yieldPct": 5.7,
+      "xd": "2026-12-02",
+      "pay": "2026-12-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "IMF board to take up Sri Lanka's seventh review on 2 Dec",
+      "text": "Approval would release about $345mn under the $2.9bn programme, which ends in March 2027; the review includes waivers and changes to performance criteria. A committee is studying a follow-up arrangement (a funded Stand-By Arrangement or a Policy Coordination Instrument are options). Foreign debt service is about $3bn in 2027 and $3.6bn in 2028; reserves are about $7bn, and growth is projected at 4% in 2027."
+    },
+    {
+      "title": "Credit growth slows to 21.8% but stays high",
+      "text": "Since May's 100bps hike, the call money rate is up 108bps, the one-year T-bill 146bps and the weekly prime lending rate 166bps, yet private credit still grows about 21.8% a year, which helped prompt last week's second hike. The Governor named personal loans, pawning and financial services as the fastest-growing areas, defended the 70% loan-to-value cap on gold loans, and said the deposit-rate cap on finance companies stays."
+    },
+    {
+      "title": "Central Bank to get tradeable bonds to soak up liquidity",
+      "text": "From March 2027 the step-down coupons on the Central Bank's restructured government bonds end and they become ordinary 5% fixed-rate bonds, which it can sell at a discount to drain excess rupees from banks instead of issuing its own securities or raising reserve requirements."
+    },
+    {
+      "title": "Sinopec's Hambantota refinery stalls",
+      "text": "The proposed $3.7bn, 200,000-barrel-a-day refinery has stalled after Sinopec withdrew over market access and tax relief; there is no penalty as no letter of intent was signed. Options include a joint venture with Lanka IOC, a PPP tender, and the Sapugaskanda refinery upgrade (expressions of interest shortlisted). The Energy Minister wants two more months to decide."
+    },
+    {
+      "title": "Construction support centre ahead of Rs 2tn development budget",
+      "text": "The 'Builders' Gateway' centre, under the Presidential Secretariat, will help contractors and suppliers resolve tender, contract and administrative problems free of charge as the Government prepares a Rs 2tn development budget for 2027; about 95% of public project work is done by the private sector."
+    },
+    {
+      "title": "Minimum export prices planned for coconut charcoal and fresh nuts",
+      "text": "The Coconut Development Authority will set minimum declared export prices rather than ban exports: fresh nuts from about $0.40 to $0.70–0.80 a nut, and a floor (not yet announced) for shell charcoal, now exported at $300–330/t while local activated carbon makers import it at about $380/t. Government approval is pending."
+    },
+    {
+      "title": "Tourist arrivals pass 2 million for the third year",
+      "text": "Arrivals crossed 2 million on 20 Nov, three days later than in 2025, after a slump in March and April, so the year is still behind last year's pace despite strong growth from India. A Rs 1.5bn interim promotion drive is rolling out late: UK and Germany campaigns (Rs 100mn each) are awarded, Australia has run since August, and India, China and Russia are in final procurement."
+    },
+    {
+      "title": "Asia braces after AI sell-off; US futures bounce",
+      "text": "US stock futures recovered on Monday while Asian markets fell and regional authorities prepared support after last week's sell-off in tech and chip stocks."
+    },
+    {
+      "title": "Middle East: new attacks on Saudi Arabia and Bahrain",
+      "text": "Saudi Arabia intercepted a Houthi drone and missile and Bahrain reported an Iranian strike on an industrial site; Iran's foreign minister said the June Islamabad memorandum is off the table but Iran is open to a deal with the US. Tankers were hit near Oman, though oil prices have fallen for three weeks."
+    }
+  ],
+  "coverage": [
+    {
+      "post": 347,
+      "kind": "text",
+      "title": "Owner reply 'add SPEN.N0000' (21 Nov)",
+      "items": [
+        {
+          "item": "Owner's reply to a research prompt",
+          "status": "left-out",
+          "reason": "the owner's own post, not broker content"
+        }
+      ]
+    },
+    {
+      "post": 363,
+      "kind": "text",
+      "title": "Owner reply 'ok' (21 Nov)",
+      "items": [
+        {
+          "item": "Owner's reply to a research prompt",
+          "status": "left-out",
+          "reason": "the owner's own post, not broker content"
+        }
+      ]
+    },
+    {
+      "post": 364,
+      "kind": "text",
+      "title": "Owner reply 'ok' (21 Nov)",
+      "items": [
+        {
+          "item": "Owner's reply to a research prompt",
+          "status": "left-out",
+          "reason": "the owner's own post, not broker content"
+        }
+      ]
+    },
+    {
+      "post": 367,
+      "kind": "text",
+      "title": "Owner reply 'full' (21 Nov)",
+      "items": [
+        {
+          "item": "Owner's reply to a research prompt",
+          "status": "left-out",
+          "reason": "the owner's own post, not broker content"
+        }
+      ]
+    },
+    {
+      "post": 398,
+      "kind": "text",
+      "title": "News highlights, 23 Nov",
+      "items": [
+        {
+          "item": "IMF seventh review on 2 Dec (with linked article: follow-up programme, debt service, reserves)",
+          "status": "included"
+        },
+        {
+          "item": "Private credit growth 21.8% (with linked article: rate moves, gold loan LTV, NBFI deposit cap)",
+          "status": "included"
+        },
+        {
+          "item": "Central Bank to get marketable bonds (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "Sinopec refinery stalls (with linked article: alternatives)",
+          "status": "included"
+        },
+        {
+          "item": "Construction Support Centre and Rs 2tn development budget (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "CDA minimum export prices for coconut products (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "2 million tourists for the third year (linked article covers the tourism promotion drive)",
+          "status": "included"
+        },
+        {
+          "item": "US futures bounce / Asia braces for AI wipeout",
+          "status": "included"
+        },
+        {
+          "item": "Saudi Arabia and Bahrain attacks, Iran open to a deal (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "Linked article for the US futures item",
+          "status": "left-out",
+          "reason": "download failed: HTTP Error 401: HTTP Forbidden"
+        },
+        {
+          "item": "Other stories shown beside the linked EconomyNext article (NCPI inflation, rupee and bond yields, foreign bond outflows)",
+          "status": "left-out",
+          "reason": "sidebar items on the linked page, not part of the broker's news item"
+        }
+      ]
+    },
+    {
+      "post": 399,
+      "kind": "image",
+      "title": "Bloomberg world equity indices (23 Nov, 08:59)",
+      "items": [
+        {
+          "item": "Americas (Dow, S&P 500, futures)",
+          "status": "included"
+        },
+        {
+          "item": "Americas (S&P/TSX, Ibovespa)",
+          "status": "left-out",
+          "reason": "less relevant to the CSE; main US indices kept"
+        },
+        {
+          "item": "EMEA (FTSE 100, DAX)",
+          "status": "included"
+        },
+        {
+          "item": "EMEA (Euro Stoxx 50, CAC 40)",
+          "status": "left-out",
+          "reason": "FTSE and DAX kept as representative"
+        },
+        {
+          "item": "Asia/Pacific (Nikkei, Hang Seng, KOSPI, TAIEX, Nifty)",
+          "status": "included"
+        },
+        {
+          "item": "Asia/Pacific (CSI 300, ASX 200, Jakarta, KLCI, STI)",
+          "status": "left-out",
+          "reason": "main Asian moves kept"
+        },
+        {
+          "item": "BBG World index",
+          "status": "included"
+        },
+        {
+          "item": "P/E, forward P/E, dividend yield, AVAT and YTD columns",
+          "status": "left-out",
+          "reason": "valuation columns for foreign indices, not needed for the CSE summary"
+        }
+      ]
+    },
+    {
+      "post": 400,
+      "kind": "image",
+      "title": "Dividend card: Distilleries",
+      "items": [
+        {
+          "item": "DPS, type, price, XD and payment dates, TTM yield",
+          "status": "included"
+        }
+      ]
+    },
+    {
+      "post": 401,
+      "kind": "image",
+      "title": "Dividend card: Melstacorp",
+      "items": [
+        {
+          "item": "DPS, type, price, XD and payment dates, TTM yield",
+          "status": "included"
+        }
+      ]
+    },
+    {
+      "post": 402,
+      "kind": "link",
+      "title": "Link to the detailed Weekly HSB Universe, 20 Nov",
+      "items": [
+        {
+          "item": "Weekly HSB Universe (SharePoint link)",
+          "status": "left-out",
+          "reason": "the link only opened a Microsoft sign-in page; the recommendation table itself came as the PDF in message 405"
+        }
+      ]
+    },
+    {
+      "post": 403,
+      "kind": "pdf",
+      "title": "Daily Market Update, 23 Nov",
+      "items": [
+        {
+          "item": "ASPI and S&P SL20 tiles",
+          "status": "included"
+        },
+        {
+          "item": "Turnover, market cap, turnover to market cap",
+          "status": "included"
+        },
+        {
+          "item": "Net foreign flow (Rs and $) and buying/selling doughnut",
+          "status": "included"
+        },
+        {
+          "item": "Metrics table (dividend yield, P/BV, P/E)",
+          "status": "included"
+        },
+        {
+          "item": "Top 10 momentum stocks (10 days)",
+          "status": "included"
+        },
+        {
+          "item": "Foreign buying/selling by share (chart without figures)",
+          "status": "approx"
+        },
+        {
+          "item": "Heat map by sector (page 2)",
+          "status": "included"
+        },
+        {
+          "item": "Heat map tiles too small to show a percentage",
+          "status": "left-out",
+          "reason": "no readable figure on the tile"
+        }
+      ]
+    },
+    {
+      "post": 404,
+      "kind": "pdf",
+      "title": "Dialog Axiata research report (59 pages)",
+      "items": [
+        {
+          "item": "Overview: rating, target, previous target, price, upside, share data, FY21–FY25 summary",
+          "status": "included"
+        },
+        {
+          "item": "Share details: shareholders, insider sales, ESOP, trading volumes",
+          "status": "included"
+        },
+        {
+          "item": "Investment thesis: consolidation, margins, free cash flow, dividend outlook, peer leverage and yield",
+          "status": "included"
+        },
+        {
+          "item": "Group overview, competitive positioning (Porter's five forces, spectrum, network coverage, flywheel)",
+          "status": "included"
+        },
+        {
+          "item": "Addressable market (mobile penetration, smartphones, data usage, affordability)",
+          "status": "left-out",
+          "reason": "background industry charts; the growth assumptions drawn from them are included"
+        },
+        {
+          "item": "Revenue and margin drivers (subscribers, ARPU by segment, operating leverage, depreciation, EBITDA by segment)",
+          "status": "included"
+        },
+        {
+          "item": "Financial profile (capex cycle, free cash flow, FCFE, tax rate, borrowings, DuPont ROE)",
+          "status": "included"
+        },
+        {
+          "item": "DCF assumptions, valuation summary, sensitivity and peer cross-check",
+          "status": "included"
+        },
+        {
+          "item": "Income statement, balance sheet and cash flow forecasts",
+          "status": "included"
+        },
+        {
+          "item": "Risk matrix (R1–R5)",
+          "status": "included"
+        },
+        {
+          "item": "Technical charts and commentary",
+          "status": "included"
+        },
+        {
+          "item": "ESG considerations (emissions, water, waste, governance, community)",
+          "status": "left-out",
+          "reason": "not about the valuation or the call"
+        },
+        {
+          "item": "Annexures and disclaimers",
+          "status": "left-out",
+          "reason": "rating definitions and legal text"
+        }
+      ]
+    },
+    {
+      "post": 405,
+      "kind": "pdf",
+      "title": "HNB Stockbrokers recommendations, 20 Nov (3 pages)",
+      "items": [
+        {
+          "item": "Price, rating and 12-month target for all 38 shares",
+          "status": "included"
+        },
+        {
+          "item": "Beta, trailing EPS, NAVPS, P/E, P/BV, ROE, EPS growth, 52-week high/low and upside columns",
+          "status": "left-out",
+          "reason": "the summary's calls table keeps price, rating and target; upside follows from them"
+        },
+        {
+          "item": "Sector P/E and P/BV rows",
+          "status": "left-out",
+          "reason": "sector averages, not needed for the calls"
+        }
+      ]
+    }
+  ]
+}
