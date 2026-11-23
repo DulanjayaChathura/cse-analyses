@@ -314,36 +314,12 @@
     </details>`;
   }
 
-  /* One line per company on my site: price (dot), my fair value (green) and the
-     broker's target (blue) on a shared scale, so the gap is visible at a glance. */
-  function compareRow(call, co) {
-    const fv = co.valuation && co.valuation.fairValue;
-    const pts = [call.price, fv, call.target].filter(App.isNum);
-    const lo = Math.min(...pts) * 0.85, hi = Math.max(...pts) * 1.08;
-    const x = (v) => ((v - lo) / (hi - lo) * 100).toFixed(1);
-    const g = App.isNum(fv) ? (call.price / fv - 1) * 100 : null;
-    const n = (v) => (App.isNum(v) ? (v >= 100 ? App.num(v, 0) : v.toFixed(2)) : "–");
-    return `<details class="cmp1"><summary>
-        <span class="cmp1-name">${App.esc(co.name.replace(/ (PLC|Limited)$/i, ""))}</span>${chip(call.rating)}
-        <span class="cmp1-nums"><span>${n(call.price)}</span><span class="tg">${n(call.target)}</span><span class="fv">${n(fv)}</span><span class="gap ${g !== null && g > 0 ? "down" : "up"}">${g !== null ? pct(g) : "–"}</span></span></summary>
-      <div class="cmp1-body">
-        <div class="cmp-bar" role="img" aria-label="Price ${call.price}, my fair value ${fv}, broker target ${call.target ?? "not set"}">
-          <div class="cmp-track"></div>
-          ${App.isNum(fv) ? `<div class="cmp-mk fv" style="left:${x(fv)}%"></div>` : ""}
-          ${App.isNum(call.target) ? `<div class="cmp-mk tg" style="left:${x(call.target)}%"></div>` : ""}
-          <div class="cmp-dot" style="left:${x(call.price)}%"></div>
-        </div>
-        <p class="muted-s">Price ${App.price(call.price)}${g !== null ? ` is ${pct(g)} vs my fair value ${App.rs(fv)}` : ""}${App.isNum(call.target) ? `; their target ${App.rs(call.target)} (${pct(upside(call))})` : "; no target"}. <a href="company.html?t=${encodeURIComponent(co.ticker)}">Open the analysis</a></p>
-      </div></details>`;
-  }
-
   /* ---------- page ---------- */
   function render(d) {
     const m = d.market || {};
     const calls = d.calls || [];
     sub.textContent = `${d.source || "Broker"} · ${d.posts ? d.posts + " messages" : ""}${d.callsPriceDate ? ` · call prices as of ${App.date(d.callsPriceDate)}` : ""}`;
 
-    const ownCalls = calls.filter((c) => mine[c.code]);
     const sectors = [...new Set(calls.map((c) => c.sector).filter(Boolean))].sort();
     const ratings = [...new Set(calls.map((c) => c.rating).filter(Boolean))];
 
@@ -362,7 +338,6 @@
     const jump = [
       (d.highlights || []).length && ["#bk-highlights", "In short"],
       research.length && ["#bk-research", "Research"],
-      ownCalls.length && ["#bk-compare", "Your companies"],
       calls.length && ["#bk-calls", "All calls"],
       (d.dividends || []).length && ["#bk-dividends", "Dividends"],
       (flows.length || (m.momentum || []).length || other.length) && ["#bk-market", "Market details"],
@@ -388,14 +363,6 @@
               <p>${App.esc(h.text || "")}</p></details>`).join("")}</div><p class="muted-s hl-hint">Tap a line for the detail.</p>`}</section>` : ""}
 
       ${research.length ? `<section class="bk-card" id="bk-research"><h2>Broker research</h2><div class="rs-grid">${research.map(researchCard).join("")}</div></section>` : ""}
-
-      ${ownCalls.length ? `<section class="bk-card" id="bk-compare">
-        <div class="bk-head"><h2>Your companies: broker vs my view</h2>
-          <div class="legend"><span><i class="lg-dot"></i>Price</span><span><i class="lg-fv"></i>My fair value</span><span><i class="lg-tg"></i>Broker target</span></div></div>
-        <div class="cmp1-head"><span class="cmp1-nums"><span>Price</span><span class="tg">Their target</span><span class="fv">My value</span><span>Price vs mine</span></span></div>
-        ${ownCalls.slice().sort((a, b) => Math.abs((b.price / (mine[b.code].valuation || {}).fairValue) || 0) - Math.abs((a.price / (mine[a.code].valuation || {}).fairValue) || 0)).map((c) => compareRow(c, mine[c.code])).join("")}
-        <p class="muted-s">Sorted by how far the price is above my fair value. Tap a company for the picture.</p>
-      </section>` : ""}
 
       ${calls.length ? `<section class="bk-card" id="bk-calls">
         <div class="bk-head"><h2>All broker calls <span class="muted-s" id="count"></span></h2>
