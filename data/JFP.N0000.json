@@ -1,0 +1,963 @@
+{
+ "schemaVersion": 1,
+ "ticker": "JFP.N0000",
+ "company": {
+  "name": "J.F. Packaging PLC",
+  "sector": "Packaging",
+  "fiscalYearEnd": "03-31"
+ },
+ "shareClasses": [
+  {
+   "symbol": "JFP.N0000",
+   "label": "Voting"
+  }
+ ],
+ "analysisDate": "2026-11-23",
+ "resultsCovered": {
+  "label": "Six months to 30 September 2026",
+  "periodEnd": "2026-09-30",
+  "audited": false,
+  "sources": [
+   "Annual Report 2025/26 (CSE copy)",
+   "Interim report to 30 Sep 2026 (CSE copy)"
+  ]
+ },
+ "price": {
+  "value": 16.3,
+  "date": "2026-09-30",
+  "source": "Last traded price at 30 September 2026, interim report p. 12",
+  "note": "The CSE site couldn't be reached from this run, so the latest close wasn't available; the site's daily CSE close replaces this price. July–September 2026 range Rs 14.00–17.30; since listing (19 Nov 2025, IPO at Rs 11.60) Rs 12.50–17.90."
+ },
+ "summary": {
+  "verdict": "fair",
+  "headline": "A recovering packaging maker with a much better 2026, but at Rs 16.30 the price is about 8% above fair value, and the business tests aren't passed yet",
+  "text": "J.F. Packaging PLC (JFP.N0000), 70% owned by Lankem Ceylon, makes flexible packaging, adhesive tapes and paper tubes, PET bottles and injection-moulded products. It listed in November 2025, raising Rs 600mn at Rs 11.60 to repay loans. Profit has jumped: Rs 246mn in April–September 2026 against Rs 74mn a year earlier, on 26% higher sales and a gross margin of 31% (24.5%).\n\nFair value is about **Rs 15.13** (buy below **Rs 12.86**, strong buy below **Rs 11.35**). The share trades at about 7.4 times twelve-month earnings, which already prices in most of the improvement. Debt is still high (net debt Rs 1.73bn, almost equal to equity) and rose again in the half, so value is very sensitive to whether the new margins last.\n\nOnly 2 of the 4 business tests pass (debt and cash). Return on equity was 9–12% in the three years before the IPO, and profit has swung from break-even to Rs 911mn and back. Category 3: avoid for now. Watch for two or three more quarters at 20%+ ROE before buying."
+ },
+ "quality": {
+  "rating": "weak",
+  "passed": 2,
+  "outOf": 4,
+  "reason": "Debt is just inside the limit and cash flow covers profit, but returns were low until this year and the profit record is far from steady.",
+  "assessed": "2026-11-23",
+  "tests": [
+   {
+    "id": "returns",
+    "label": "Return on equity of 15% or more",
+    "pass": false,
+    "value": "12% (24% latest)",
+    "note": "Company ROE 9% (2023/24), 12% (2024/25) and 12% (2025/26) (p. 151). Twelve months to Sep 2026: 24% (profit Rs 0.362bn over average equity), helped by lower debt costs and a 31% gross margin, and flattered by pre-IPO equity in the average. One strong half isn't yet a record; would pass if 2026/27 holds about 20%."
+   },
+   {
+    "id": "debt",
+    "label": "Net debt no more than equity",
+    "pass": true,
+    "value": "0.96×",
+    "note": "30 Sep 2026: borrowings, leases and overdraft Rs 1.864bn less cash Rs 0.136bn = Rs 1.728bn against equity Rs 1.803bn (0.92× at March 2026). Net debt is about 1.9× twelve-month EBITDA (Rs 0.93bn). Only just inside: borrowings rose Rs 0.26bn in the half to carry stock."
+   },
+   {
+    "id": "steady",
+    "label": "Steady profit: no loss in five years, no one-offs",
+    "pass": false,
+    "value": "No",
+    "note": "No loss in five years, but profit was Rs 0.3mn in 2021/22 (equity was negative), Rs 911mn in 2022/23, then Rs 72mn, Rs 131mn and Rs 190mn (p. 151). Too uneven to call steady."
+   },
+   {
+    "id": "cash",
+    "label": "Profit turns into cash and dividends",
+    "pass": true,
+    "value": "1.2× over two years",
+    "note": "Operating cash flow (after interest and tax) Rs 0.212bn + Rs 0.174bn in 2024/25–2025/26 against profit Rs 0.131bn + Rs 0.190bn. But after capex (Rs 0.23–0.25bn a year) and lease payments, free cash was negative both years, so the Rs 86mn dividends were in effect paid from the IPO and borrowing; April–September 2026 operating cash Rs 0.141bn against profit Rs 0.246bn as stock rose."
+   }
+  ]
+ },
+ "dividend": {
+  "perShare": 0.5,
+  "label": "interim for 2025/26, paid March 2026",
+  "source": "Annual Report 2025/26, p. 121",
+  "note": "Rs 86.1mn. A further interim of Rs 86.1mn (the same total) was declared and paid in September 2026 (interim pp. 1, 9); the interim doesn't print the per-share amount."
+ },
+ "keyMetrics": [
+  {
+   "id": "price",
+   "label": "Price",
+   "value": 16.3,
+   "unit": "Rs",
+   "note": "Last trade 30 Sep 2026 (interim p. 12)"
+  },
+  {
+   "id": "nav",
+   "label": "NAV per share",
+   "value": 10.48,
+   "unit": "Rs",
+   "note": "30 Sep 2026"
+  },
+  {
+   "id": "pnav",
+   "label": "Price to NAV",
+   "value": 1.56,
+   "unit": "x"
+  },
+  {
+   "id": "pe",
+   "label": "P/E (trailing)",
+   "value": 7.4,
+   "unit": "x",
+   "note": "Twelve-month EPS Rs 2.19 to Sep 2026 (on the reported EPS; Rs 2.11 on today's 172.1mn shares)"
+  },
+  {
+   "id": "roe",
+   "label": "Return on equity",
+   "value": 24.2,
+   "unit": "%",
+   "note": "Twelve months to Sep 2026; 9–12% in the three years before"
+  },
+  {
+   "id": "netdebt",
+   "label": "Net debt",
+   "value": 1.73,
+   "unit": "Rs bn",
+   "note": "30 Sep 2026, incl. leases and overdraft; 0.96× equity"
+  },
+  {
+   "id": "yield",
+   "label": "Dividend yield",
+   "value": 3.1,
+   "unit": "%",
+   "note": "Rs 0.50 a year"
+  },
+  {
+   "id": "mcap",
+   "label": "Market value",
+   "value": 2.81,
+   "unit": "Rs bn",
+   "note": "172.13mn shares × Rs 16.30"
+  },
+  {
+   "id": "gm",
+   "label": "Gross margin",
+   "value": 31.2,
+   "unit": "%",
+   "note": "April–September 2026 (24.5% a year earlier; 26% in 2025/26)"
+  },
+  {
+   "id": "coe",
+   "label": "Cost of equity",
+   "value": 16.8,
+   "unit": "%",
+   "note": "Beta 0.83"
+  }
+ ],
+ "highlights": [
+  {
+   "title": "Three months to 30 September 2026 (unaudited)",
+   "text": "Revenue up 17% to Rs 1.39bn, gross margin 28.8% (24.9%), profit after tax up 45% to Rs 103.7mn. EPS Rs 0.60 against Rs 0.59, on 43% more shares since the IPO. Profit was lower than the June quarter's Rs 142.5mn."
+  },
+  {
+   "title": "Six months to 30 September 2026 (unaudited)",
+   "text": "Revenue Rs 2.68bn (up 26%), gross profit Rs 837mn (up 60%), profit before tax Rs 372.6mn (Rs 121.1mn), profit after tax Rs 246.2mn (Rs 73.7mn), EPS Rs 1.43 (Rs 0.61). Packaging made Rs 243mn before tax (Rs 21mn); injection and blow moulding Rs 129mn (Rs 100mn). Net finance cost flat at Rs 114mn."
+  },
+  {
+   "title": "Debt back up to carry stock",
+   "text": "Inventories rose Rs 362mn to Rs 1.23bn. Borrowings, leases and overdraft are Rs 1.86bn against Rs 1.60bn in March; Rs 354mn of new long-term loans were taken. Operating cash flow Rs 141mn, capex Rs 124mn."
+  },
+  {
+   "title": "Dividend and certification",
+   "text": "A second Rs 86mn interim dividend was paid in September 2026. The company gained BRCGS packaging-materials certification, which helps with export and food customers."
+  },
+  {
+   "title": "Year to March 2026 (audited)",
+   "text": "Revenue Rs 4.50bn (up 3%), profit after tax Rs 190mn (up 45%) after Rs 36mn of IPO costs, EPS Rs 1.37. The IPO's Rs 600mn repaid term and import loans; finance expenses fell 28% to Rs 231mn."
+  }
+ ],
+ "history": {
+  "periods": [
+   "FY2022",
+   "FY2023",
+   "FY2024",
+   "FY2025",
+   "FY2026",
+   "TTM Sep 2026"
+  ],
+  "series": [
+   {
+    "id": "eps",
+    "label": "EPS",
+    "unit": "Rs",
+    "values": [
+     null,
+     null,
+     0.6,
+     1.08,
+     1.37,
+     2.19
+    ],
+    "notes": [
+     "Printed Rs 0.22 on the share count before a later sub-division; not comparable",
+     "Printed Rs 756.31 on the share count before a later sub-division; not comparable",
+     null,
+     null,
+     "On 139.1mn weighted shares (IPO in November 2025)",
+     "Latest annual + six months − six months a year earlier"
+    ]
+   },
+   {
+    "id": "roe",
+    "label": "Return on equity",
+    "unit": "%",
+    "values": [
+     null,
+     126,
+     9,
+     12,
+     12,
+     24.2
+    ],
+    "notes": [
+     "Equity was negative",
+     "Company's ratio; profit Rs 911mn",
+     "Company's ratio",
+     "Company's ratio",
+     "Company's ratio",
+     "Twelve months to Sep 2026, on average equity"
+    ]
+   },
+   {
+    "id": "pe",
+    "label": "P/E at year end",
+    "unit": "x",
+    "values": [
+     null,
+     null,
+     null,
+     null,
+     10.6,
+     7.4
+    ],
+    "notes": [
+     "Not listed",
+     "Not listed",
+     "Not listed",
+     "Not listed",
+     "Rs 14.50 ÷ EPS Rs 1.37",
+     "Rs 16.30 ÷ Rs 2.19"
+    ]
+   },
+   {
+    "id": "dps",
+    "label": "Dividend per share",
+    "unit": "Rs",
+    "values": [
+     null,
+     null,
+     0,
+     0,
+     0.5,
+     null
+    ],
+    "notes": [
+     null,
+     null,
+     null,
+     null,
+     "Interim, Rs 86.1mn",
+     "Rs 86.1mn more paid Sep 2026; per-share figure not printed"
+    ]
+   }
+  ]
+ },
+ "methodReadings": [
+  {
+   "method": "NAV",
+   "value": "Rs 10.48",
+   "reading": "Price is 1.56× NAV. Goodwill on the three subsidiaries is Rs 1.22 a share and the tea-plantation shares Rs 1.85; land is at a 2025 valuation."
+  },
+  {
+   "method": "Return on equity",
+   "value": "24% (12% before)",
+   "reading": "The jump comes from the IPO cutting interest and a 31% gross margin. If ROE settles near 18%, the share is worth about its NAV × 1.1."
+  },
+  {
+   "method": "P/E",
+   "value": "7.4×",
+   "reading": "On twelve-month EPS Rs 2.19. Justified forward P/E is about 6× at a 16.8% cost of equity and 18% long-run ROE; 7.4× is near the bull case."
+  },
+  {
+   "method": "Dividends",
+   "value": "3.1% yield",
+   "reading": "Rs 86mn a year is about a quarter of profit, but free cash after capex was negative in 2024/25 and 2025/26, so the dividend depends on the new margins holding."
+  },
+  {
+   "method": "DCF",
+   "value": "Rs 21.76 base",
+   "reading": "Whole-company DCF plus investments: Rs 3.39 / 21.76 / 35.05. Debt makes the equity value swing widely; 81% of the base value is after year 5."
+  }
+ ],
+ "models": [
+  {
+   "id": "sotp",
+   "name": "Whole-company DCF plus investments",
+   "bear": 3.39,
+   "base": 21.76,
+   "bull": 35.05,
+   "weighted": 18.91,
+   "comment": "Whole-company DCF at WACC 13.8% / 12.8% / 11.9%: after-tax operating profit Rs 0.458 / 0.538 / 0.538bn (twelve months to Sep 2026 plus the one-off IPO costs, taxed at 33.9%; bear 15% lower in case margins fall back), start cash after maintenance capex Rs 0.371 / 0.561 / 0.561bn, growth 4% / 9% / 11% for five years then 4% / 5% / 6%, return on new capital 10% / 14% / 17%; less net debt Rs 1.728bn; plus the tea plantation shares at book, Rs 1.85 a share. Debt is 38% of the company's value, so small changes in cash flow move the equity a lot (bear Rs 3.39). In the base and bull cases about 81% and 86% of the value comes after year 5."
+  },
+  {
+   "id": "pe",
+   "name": "P/E method",
+   "bear": 10.99,
+   "base": 15.3,
+   "bull": 21.12,
+   "weighted": 15.17,
+   "comment": "EPS to March 2027 Rs 2.20 / 2.50 / 2.75 (six months Rs 1.43; run-rate Rs 2.40 from the September quarter × 4; bear 8% below it, in case the gross margin falls back towards 26%) × justified P/E 5.0 / 6.1 / 7.7 (payout 1 − growth ÷ ROE at long-run ROE 14% / 18% / 21%, growth 4% / 5% / 6%, cost of equity 18.3% / 16.8% / 15.3%). Today's 7.4× trailing P/E is about the bull case."
+  },
+  {
+   "id": "pb",
+   "name": "Justified price to book",
+   "bear": 7.33,
+   "base": 11.55,
+   "bull": 16.9,
+   "weighted": 11.35,
+   "comment": "NAV Rs 10.48 (30 Sep 2026) × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 14% / 18% / 21%, growth 4% / 5% / 6%. Justified P/B 0.70 / 1.10 / 1.61 against 1.56 today."
+  },
+  {
+   "id": "ri",
+   "name": "Residual income",
+   "bear": 8.77,
+   "base": 15.01,
+   "bull": 24.78,
+   "weighted": 15.09,
+   "comment": "Book Rs 10.48; ROE moving from 24.2% (twelve months to Sep 2026, flattered by pre-IPO equity in the average) to 14% / 18% / 21% over ten years; 25% payout; then excess returns grow at 4% / 5% / 6%."
+  }
+ ],
+ "modelsNote": "Four methods are averaged in each scenario: a whole-company DCF plus the tea-plantation shares, P/E, justified price to book and residual income. No dividend model: the company has paid two dividends since listing and hasn't stated a policy. Growth check: the base case's 9% and bull's 11% compare with 9.9% supported by 2025/26 reinvestment (98% of after-tax operating profit) at a 10.1% return on capital; bull was cut from 13%. Maintenance capex: no company split, so bear treats all capex as maintenance (Rs 0.24bn) and base/bull use depreciation (Rs 0.13bn); 2025/26 capex was about half growth (new machinery at Kiffs and Alliance Five). Ratio notes: the 40.7% tax rate of 2025/26 is above normal because of withholding tax on subsidiary dividends and deferred tax; the DCF uses 33.9% from the latest half. Dividends were more than cash after maintenance capex in 2025/26 (cover 0.5×): flagged as at risk.",
+ "scenarios": {
+  "assumptions": [
+   {
+    "label": "Cost of equity (beta 0.83)",
+    "bear": "18.3%",
+    "base": "16.8%",
+    "bull": "15.3%"
+   },
+   {
+    "label": "WACC (debt weight 38%)",
+    "bear": "13.8%",
+    "base": "12.8%",
+    "bull": "11.9%"
+   },
+   {
+    "label": "After-tax operating profit, start",
+    "bear": "Rs 0.46bn",
+    "base": "Rs 0.54bn",
+    "bull": "Rs 0.54bn"
+   },
+   {
+    "label": "Maintenance capex",
+    "bear": "Rs 0.24bn",
+    "base": "Rs 0.13bn",
+    "bull": "Rs 0.13bn"
+   },
+   {
+    "label": "Growth: five years, then long-term",
+    "bear": "4%, then 4%",
+    "base": "9%, then 5%",
+    "bull": "11%, then 6%"
+   },
+   {
+    "label": "Return on new capital",
+    "bear": "10%",
+    "base": "14%",
+    "bull": "17%"
+   },
+   {
+    "label": "EPS to March 2027",
+    "bear": "Rs 2.20",
+    "base": "Rs 2.50",
+    "bull": "Rs 2.75"
+   },
+   {
+    "label": "Long-run ROE",
+    "bear": "14%",
+    "base": "18%",
+    "bull": "21%"
+   }
+  ],
+  "averages": {
+   "bear": 7.62,
+   "base": 15.9,
+   "bull": 24.46
+  },
+  "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 0.83. Weights bear 30 / base 50 / bull 20. Net debt Rs 1.728bn and NAV Rs 10.48 at 30 Sep 2026; 172.13mn shares."
+ },
+ "sensitivity": {
+  "title": "Residual income, Rs per share",
+  "rowLabel": "Cost of equity",
+  "columnLabel": "Long-run ROE",
+  "rows": [
+   "15.3%",
+   "16.8%",
+   "18.3%"
+  ],
+  "columns": [
+   "14%",
+   "18%",
+   "21%"
+  ],
+  "values": [
+   [
+    12.37,
+    18.49,
+    24.07
+   ],
+   [
+    10.21,
+    15.01,
+    19.37
+   ],
+   [
+    8.61,
+    12.44,
+    15.91
+   ]
+  ],
+  "base": {
+   "row": 1,
+   "column": 1
+  },
+  "note": "Starting ROE 24.2%, growth 5%, payout 25%. Rs 16.30 needs a long-run ROE near 19% at the base cost of equity."
+ },
+ "buyPlan": {
+  "totalShares": 500,
+  "tiers": [
+   {
+    "shares": 200,
+    "maxPrice": 15.13
+   },
+   {
+    "shares": 150,
+    "maxPrice": 12.86
+   },
+   {
+    "shares": 150,
+    "maxPrice": 11.35
+   }
+  ],
+  "averagePrice": 13.32,
+  "totalCost": 6658,
+  "note": "About Rs 6,658 in total, against Rs 8,150 at Rs 16.30. Buy only once the business tests improve (category 3 now); the tiers show where value would be.",
+  "realism": "The buy price Rs 12.86 is 21% below Rs 16.30. The share hit Rs 12.50 in December 2025 and traded Rs 14.00–17.30 in July–September 2026, so the first tier is near the recent range and Rs 12.86 needs a market dip; Rs 11.35 is below the Rs 11.60 IPO price."
+ },
+ "changeMyView": {
+  "higher": [
+   "Two or three more quarters with a gross margin near 30% and ROE above 20%, which would pass the returns test.",
+   "Borrowings falling back below Rs 1.5bn as stock is run down, cutting interest.",
+   "A stated dividend policy covered by free cash.",
+   "Clear export growth from the BRCGS certification and paper packaging."
+  ],
+  "lower": [
+   "Imported polymer prices or the rupee squeezing margins back to the 24–26% of earlier years.",
+   "Debt rising further to fund stock or machinery.",
+   "Price wars in flexible packaging and PET bottles (the report names both).",
+   "Rules on single-use plastics hurting demand."
+  ]
+ },
+ "notes": {
+  "disclaimer": "These are estimates from the annual report to March 2026 and the interim report to September 2026. This is analysis, not personal financial advice."
+ },
+ "requiredReturn": {
+  "beta": 0.83,
+  "betaBasis": "Provisional. Damodaran's global Packaging & Container unlevered beta corrected for cash (0.58, January 2026; his emerging-markets file couldn't be opened), relevered at net debt ÷ market value 0.62 and 30% tax. No local 5-year beta: the share listed in November 2025.",
+  "riskFree": 8.24,
+  "matureERP": 4.2,
+  "countryPremium": 6.08,
+  "costOfEquity": {
+   "bear": 18.3,
+   "base": 16.8,
+   "bull": 15.3
+  },
+  "costOfDebt": 10.8,
+  "wacc": {
+   "bear": 13.8,
+   "base": 12.8,
+   "bull": 11.9
+  },
+  "debtWeight": 38.1,
+  "asOf": "2026-11-23",
+  "sources": [
+   "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+   "Default spread 4.0%: market-based (14 Nov 2026)",
+   "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+   "Cost of debt: interest paid Rs 0.199bn ÷ average borrowings and leases (Annual Report 2025/26, pp. 104, 129–130)",
+   "Beta: Damodaran global sector betas, January 2026 (web-search extract)"
+  ],
+  "note": "Cost of equity = 8.24% + 0.83 × (4.2% + 6.08%) = 16.8%; bear +1.5, bull −1.5 points. WACC weights equity 61.9% and after-tax debt (10.8% × (1 − 40.7%)) 38.1%, at Rs 16.30."
+ },
+ "modelInputs": {
+  "costOfEquity": {
+   "bear": 18.3,
+   "base": 16.8,
+   "bull": 15.3
+  },
+  "wacc": {
+   "bear": 13.8,
+   "base": 12.8,
+   "bull": 11.9
+  },
+  "debtWeight": 38.1,
+  "shares": 172.131,
+  "netDebt": 1.728,
+  "dcf": {
+   "years": 5,
+   "bear": {
+    "start": 0.371,
+    "nopat": 0.458,
+    "growth": 4,
+    "longRun": 4,
+    "roc": 10,
+    "maintenance": 0.24
+   },
+   "base": {
+    "start": 0.561,
+    "nopat": 0.538,
+    "growth": 9,
+    "longRun": 5,
+    "roc": 14,
+    "maintenance": 0.131
+   },
+   "bull": {
+    "start": 0.561,
+    "nopat": 0.538,
+    "growth": 11,
+    "longRun": 6,
+    "roc": 17,
+    "maintenance": 0.131
+   },
+   "addOn": {
+    "bear": 1.852,
+    "base": 1.852,
+    "bull": 1.852
+   },
+   "addOnNote": "Equity investments at fair value through OCI, Rs 0.319bn at 30 Sep 2026 (almost all Consolidated Tea Plantations Ltd, unquoted), at book value: Rs 1.85 a share.",
+   "basis": {
+    "addOn": "valuationInputs: Investments (add-on)",
+    "roc": "valuationInputs: Return on new capital",
+    "growth": "valuationInputs: Growth"
+   }
+  },
+  "pe": {
+   "bear": {
+    "eps": 2.2,
+    "roe": 14,
+    "longRun": 4
+   },
+   "base": {
+    "eps": 2.5,
+    "roe": 18,
+    "longRun": 5
+   },
+   "bull": {
+    "eps": 2.75,
+    "roe": 21,
+    "longRun": 6
+   },
+   "basis": {
+    "eps": "valuationInputs: EPS to March 2027 × P/E",
+    "roe": "valuationInputs: Long-run ROE"
+   }
+  },
+  "pb": {
+   "book": 10.48,
+   "bear": {
+    "roe": 14,
+    "longRun": 4
+   },
+   "base": {
+    "roe": 18,
+    "longRun": 5
+   },
+   "bull": {
+    "roe": 21,
+    "longRun": 6
+   },
+   "basis": {
+    "roe": "valuationInputs: Long-run ROE"
+   }
+  },
+  "ri": {
+   "years": 10,
+   "book": 10.48,
+   "payout": 25,
+   "roeStart": 24.198,
+   "bear": {
+    "roe": 14,
+    "longRun": 4
+   },
+   "base": {
+    "roe": 18,
+    "longRun": 5
+   },
+   "bull": {
+    "roe": 21,
+    "longRun": 6
+   },
+   "basis": {
+    "payout": "valuationInputs: Residual income start ROE",
+    "roe": "valuationInputs: Long-run ROE"
+   }
+  },
+  "derive": {
+   "shares": "latest.sharesOutstanding",
+   "netDebt": "latest.netDebt",
+   "pb.book": "latest.navPerShare",
+   "ri.book": "latest.navPerShare",
+   "ri.roeStart": "ttm.roe",
+   "dcf.bear.maintenance": "maintenance.bear",
+   "dcf.base.maintenance": "maintenance.base",
+   "dcf.bull.maintenance": "maintenance.bull",
+   "dcf.bear.nopat": {
+    "calc": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100) * 0.85",
+    "basis": "valuationInputs: After-tax operating profit (start)"
+   },
+   "dcf.base.nopat": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100)",
+   "dcf.bull.nopat": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100)",
+   "dcf.bear.start": {
+    "calc": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100) * 0.85 + ttm.depreciationAmortisation - maintenance",
+    "basis": "valuationInputs: After-tax operating profit (start)"
+   },
+   "dcf.base.start": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100) + ttm.depreciationAmortisation - maintenance",
+   "dcf.bull.start": "(ttm.operatingProfit + annual.ipoExpenses) * (1 - latest.taxRate / 100) + ttm.depreciationAmortisation - maintenance",
+   "dcf.addOn.bear": {
+    "calc": "latest.fvociInvestments / latest.sharesOutstanding * 1000",
+    "basis": "valuationInputs: Investments (add-on)"
+   },
+   "dcf.addOn.base": {
+    "calc": "latest.fvociInvestments / latest.sharesOutstanding * 1000",
+    "basis": "valuationInputs: Investments (add-on)"
+   },
+   "dcf.addOn.bull": {
+    "calc": "latest.fvociInvestments / latest.sharesOutstanding * 1000",
+    "basis": "valuationInputs: Investments (add-on)"
+   }
+  }
+ },
+ "valuation": {
+  "fairValue": 15.13,
+  "buyPrice": 12.86,
+  "strongBuyPrice": 11.35,
+  "marginOfSafety": {
+   "buy": 15,
+   "strongBuy": 25
+  },
+  "scenarioWeights": {
+   "bear": 30,
+   "base": 50,
+   "bull": 20
+  },
+  "nav": 10.48,
+  "note": "Fair value weights the bear/base/bull averages (Rs 7.62 / 15.90 / 24.46) of four methods: whole-company DCF plus investments, P/E, justified P/B and residual income."
+ },
+ "management": {
+  "asOf": "2026-11-23",
+  "source": "Annual Report 2025/26: Chairman's review (pp. 20–22), Managing Director's review (pp. 23–25), operating environment (pp. 32–33), business units (pp. 40–48), strategy (pp. 50–55), IPO note (p. 149); interim to 30 Sep 2026.",
+  "takeaway": "Management used the IPO to repay Rs 600mn of loans and promises growth from new capacity, paper packaging and exports, but gives no capex amounts or targets, and debt has already risen again.",
+  "said": [
+   {
+    "text": "Revenue rose 3% to Rs 4.5bn and profit after tax 45% to Rs 190mn, from efficiency, better product mix and lower finance costs",
+    "ref": "pp. 21, 24"
+   },
+   {
+    "text": "The IPO was oversubscribed 6.3 times; all Rs 600mn went to repay term and import loans, cutting gearing from 65% to 49%",
+    "ref": "pp. 18, 21, 149"
+   },
+   {
+    "text": "Markets are highly competitive, with price wars, strong customer bargaining power and lower-grade products entering",
+    "ref": "pp. 40, 42, 46"
+   },
+   {
+    "text": "Imported polymer and chemical costs are expected to rise again with inflation, and single-use plastic rules will need investment",
+    "ref": "p. 32"
+   },
+   {
+    "text": "Alliance Five's export demand was hurt by global uncertainty and higher freight",
+    "ref": "p. 48"
+   }
+  ],
+  "plans": [
+   {
+    "text": "Expand manufacturing capacity with new machinery and better plant layouts, in phases",
+    "ref": "pp. 25, 52"
+   },
+   {
+    "text": "Grow paper-based and recyclable packaging, including paper drums for food exporters",
+    "ref": "pp. 25, 45"
+   },
+   {
+    "text": "Enter new export markets and more export-linked customers (apparel, tea, coir)",
+    "ref": "pp. 48, 50"
+   },
+   {
+    "text": "Launch new PET and PP blow-moulded products for FMCG, agrochemical and cosmetics buyers",
+    "ref": "p. 46"
+   },
+   {
+    "text": "Consider further acquisitions and partnerships",
+    "ref": "p. 53"
+   }
+  ],
+  "investing": [
+   {
+    "text": "Capex in 2025/26, mainly machinery and buildings",
+    "amount": "Rs 248mn in 2025/26",
+    "ref": "p. 118"
+   },
+   {
+    "text": "New injection-moulding and bottle machinery at Alliance Five and Kiffs",
+    "amount": null,
+    "ref": "pp. 46, 48"
+   },
+   {
+    "text": "Asset buy-out of the Iceman paper canister and tube business by Ceylon Tapes",
+    "amount": null,
+    "ref": "p. 44"
+   },
+   {
+    "text": "Capex in April–September 2026",
+    "amount": "Rs 124mn in six months",
+    "ref": "Interim p. 10"
+   }
+  ],
+  "track": [
+   {
+    "promise": "Keep growing profit through efficiency and product mix",
+    "result": "Six-month profit after tax Rs 246mn against Rs 74mn; gross margin 31.2% against 24.5%",
+    "status": "on-track",
+    "ref": "Interim to 30 Sep 2026, pp. 2, 6"
+   },
+   {
+    "promise": "A stronger balance sheet after the IPO (gearing 49% at March 2026)",
+    "result": "Borrowings, leases and overdraft Rs 1.86bn at Sep 2026 against Rs 1.60bn in March; Rs 354mn of new long-term loans; net finance cost flat at Rs 114mn",
+    "status": "missed",
+    "ref": "Interim to 30 Sep 2026, pp. 8, 10"
+   },
+   {
+    "promise": "Expand capacity",
+    "result": "Capex Rs 124mn in six months (Rs 102mn a year earlier); PPE Rs 1.08bn from Rs 1.03bn",
+    "status": "on-track",
+    "ref": "Interim to 30 Sep 2026, pp. 4, 10"
+   },
+   {
+    "promise": "Pay dividends while funding growth",
+    "result": "Rs 86mn interim paid in September 2026, partly from new borrowing",
+    "status": "on-track",
+    "ref": "Interim to 30 Sep 2026, pp. 1, 10"
+   },
+   {
+    "promise": "Grow exports",
+    "result": "The interim gives no export figure; BRCGS certification gained",
+    "status": "too-early",
+    "ref": "Interim to 30 Sep 2026, p. 4"
+   }
+  ]
+ },
+ "shareholders": {
+  "asOf": "2026-09-30",
+  "compareTo": "2026-03-31",
+  "source": "Interim to 30 Sep 2026, pp. 12–13 (top 20, directors, public holding), against the top 20 at 31 March 2026 in Annual Report 2025/26, p. 153.",
+  "takeaway": "Lankem Ceylon PLC controls the company with 69.95%, unchanged. Since March the Deutsche Bank-held National Equity Fund (1.88%) and EMFI Capital (0.74%) entered the top 20, while A.S. Marapana sold 0.5mn shares and the number of public holders fell from 3,924 to 3,593.",
+  "groups": [
+   {
+    "name": "Lankem Ceylon PLC",
+    "pct": 69.95
+   },
+   {
+    "name": "Directors and others",
+    "pct": 1.83
+   },
+   {
+    "name": "Public",
+    "pct": 28.22
+   }
+  ],
+  "publicFloat": 28.22,
+  "publicHolders": 3593,
+  "publicHoldersPrev": 3924,
+  "directors": [
+   {
+    "name": "Mr. K.P. David (Managing Director)",
+    "shares": 1356200
+   },
+   {
+    "name": "Mr. Anushman Rajaratnam",
+    "shares": 31100
+   }
+  ],
+  "top": [
+   {
+    "name": "Hatton National Bank PLC/ Lankem Ceylon PLC",
+    "shares": 120406800,
+    "pct": 69.95,
+    "change": 0
+   },
+   {
+    "name": "Sampath Bank PLC/Senthilverl Holdings (Pvt) Ltd",
+    "shares": 5500000,
+    "pct": 3.2,
+    "change": 2
+   },
+   {
+    "name": "Seylan Bank PLC/Mohamed Mushtaq Fuad",
+    "shares": 3249839,
+    "pct": 1.89,
+    "change": 751680
+   },
+   {
+    "name": "Deutsche Bank Ag-National Equity Fund",
+    "shares": 3236134,
+    "pct": 1.88,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Senkadagala Finance PLC/A.S.Marapana",
+    "shares": 2492776,
+    "pct": 1.45,
+    "change": -500463
+   },
+   {
+    "name": "Corporate Managers & Secretaries (Pvt) Ltd",
+    "shares": 2155173,
+    "pct": 1.25,
+    "change": 0
+   },
+   {
+    "name": "Senkadagala Finance PLC/F.F.Haniffa",
+    "shares": 2145526,
+    "pct": 1.25,
+    "change": null,
+    "new": true,
+    "note": "Possibly the same person as Mrs. Fathima Farzana Haniffa (2,090,000 in March, now out of the top 20), now through Senkadagala Finance; not clear enough to treat as the same holder"
+   },
+   {
+    "name": "Commercial Bank Of Ceylon PLC/K.D.S.R. Kulatunga",
+    "shares": 2115000,
+    "pct": 1.23,
+    "change": -75998
+   },
+   {
+    "name": "Hatton National Bank PLC/Anushman Rajaratnam",
+    "shares": 1715676,
+    "pct": 1.0,
+    "change": -68638,
+    "note": "A director; his direct holding is a further 31,100"
+   },
+   {
+    "name": "Ranavav Holdings (Pvt) Ltd",
+    "shares": 1500000,
+    "pct": 0.87,
+    "change": 0
+   },
+   {
+    "name": "Mr. K.P. David",
+    "shares": 1356200,
+    "pct": 0.79,
+    "change": 0
+   },
+   {
+    "name": "EMFI Capital Limited",
+    "shares": 1265836,
+    "pct": 0.74,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Mr. Amrith Rajaratnam",
+    "shares": 928100,
+    "pct": 0.54,
+    "change": 0,
+    "note": "Spelt 'Amrit' in March"
+   },
+   {
+    "name": "Hatton National Bank PLC-Arpico Ataraxia Equity Income Fund",
+    "shares": 882402,
+    "pct": 0.51,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Hatton National Bank PLC/Mushtaq Mohamed Fuad",
+    "shares": 795087,
+    "pct": 0.46,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Mrs. Nirmala Sanjivi Dharshika Perera",
+    "shares": 780549,
+    "pct": 0.45,
+    "change": 0
+   },
+   {
+    "name": "Mr. Gangatharan Suthaharan",
+    "shares": 600000,
+    "pct": 0.35,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Senkadagala Finance PLC/M.M.Fuad",
+    "shares": 549500,
+    "pct": 0.32,
+    "change": -13178
+   },
+   {
+    "name": "Miss. Oshadhini Upulika Kumari Jayasundara",
+    "shares": 524697,
+    "pct": 0.3,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Miss. Fathima Rishana Haniffa",
+    "shares": 452511,
+    "pct": 0.26,
+    "change": null,
+    "new": true
+   }
+  ],
+  "gone": [
+   {
+    "name": "Mrs. Fathima Farzana Haniffa",
+    "prevShares": 2090000
+   },
+   {
+    "name": "People's Leasing and Finance PLC/Nagoya Ceylon Trading (Pvt) Ltd",
+    "prevShares": 860489
+   },
+   {
+    "name": "Mr. Kangadaran Mathivanan",
+    "prevShares": 750000
+   },
+   {
+    "name": "PMF Finance PLC/M.S.Hamzadeen",
+    "prevShares": 525447
+   },
+   {
+    "name": "Mr. Herath Pathiranalage Surath Poojitha Herath",
+    "prevShares": 512279
+   },
+   {
+    "name": "Senkadagala Finance PLC/A.M.Ilyas",
+    "prevShares": 501500
+   },
+   {
+    "name": "Mr. Iranjan Duminda Bandarigodage",
+    "prevShares": 500000
+   },
+   {
+    "name": "Mr. Mohamed Razni Ziard",
+    "prevShares": 414290
+   }
+  ]
+ },
+ "fullText": "**J.F. Packaging PLC (JFP.N0000): first analysis, 23 November 2026**\n\n**Summary.** A packaging maker whose profits have jumped since its November 2025 listing, at a price that already reflects most of that. Fair value is about **Rs 15.13**, buy price **Rs 12.86**, strong buy **Rs 11.35**, against Rs 16.30 (last trade, 30 September 2026). Only 2 of the 4 business tests pass, so the category is **3: avoid for now**. The case to buy later is that the new margins last and return on equity stays near 20%. The risk is that debt is still almost equal to equity and is rising again.\n\n**The business.** Lankem Ceylon PLC owns 69.95%. The group has four parts: flexible packaging (the listed company itself, about half of revenue), Ceylon Tapes (adhesive tapes, plus a paper canister and tube business bought from Iceman as an asset buy-out in 2025), Kiffs (PET bottles, jars and lids) and Alliance Five (injection-moulded thread cones and coir products, all exported). Almost all sales are in Sri Lanka, to FMCG, apparel, tea and other exporters. Revenue outside Sri Lanka was Rs 97mn in 2025/26, but the report says much more is sold to exporters.\n\n**The IPO.** In October 2025 the company sold 51.7mn new shares at Rs 11.60 (Rs 600mn), 6.3 times oversubscribed, and listed on 19 November 2025. All the money repaid term loans and Bank of Ceylon import loans (p. 149). There are now 172.13mn shares.\n\n**Results.**\n\n| | 2023/24 | 2024/25 | 2025/26 | Apr–Sep 2025 | Apr–Sep 2026 |\n|---|---|---|---|---|---|\n| Revenue, Rs bn | 3.79 | 4.39 | 4.50 | 2.13 | 2.68 |\n| Gross margin | 27% | 26% | 26% | 24.5% | 31.2% |\n| Operating profit, Rs mn | 566 | 608 | 524 | 233 | 487 |\n| Profit after tax, Rs mn | 72 | 131 | 190 | 74 | 246 |\n| EPS, Rs | 0.60 | 1.08 | 1.37 | 0.61 | 1.43 |\n\nThe 2025/26 operating profit includes Rs 36mn of one-off IPO costs. The 2025/26 tax charge (41% of profit before tax) includes withholding tax on subsidiaries' dividends and deferred tax. Earlier years were very uneven: profit was Rs 0.3mn in 2021/22, when equity was negative, and Rs 911mn in 2022/23. In April–September 2026, packaging's profit before tax rose to Rs 243mn from Rs 21mn, on new customers, fuller capacity and better mix. The September quarter (Rs 104mn) was below the June quarter (Rs 143mn).\n\n**Balance sheet.** At 30 September 2026, borrowings, leases and overdraft were Rs 1.86bn, cash Rs 0.14bn, so net debt was Rs 1.73bn against equity of Rs 1.80bn (0.96×). Inventories rose Rs 362mn in the half, and the company borrowed Rs 354mn of new long-term loans. The interim doesn't show lease liabilities separately, so they are counted inside borrowings. The group also holds Rs 319mn of unquoted shares in Consolidated Tea Plantations (Rs 1.85 a share) and Rs 211mn of goodwill.\n\n**Required return.** The beta is 0.83: Damodaran's global packaging unlevered beta (0.58) relevered for JFP's debt. It is provisional, because his emerging-markets file couldn't be opened and the share has no 5-year trading history. Cost of equity is 8.24% + 0.83 × (4.2% + 6.08%) = 16.8% (bear 18.3%, bull 15.3%). Debt is 38% of the company's value at a 10.8% cost before tax, so WACC is 12.8% (13.8% / 11.9%).\n\n**Methods (Rs a share).**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| Whole-company DCF + investments | 3.39 | 21.76 | 35.05 | 18.91 |\n| P/E | 10.99 | 15.30 | 21.12 | 15.17 |\n| Justified P/B | 7.33 | 11.55 | 16.90 | 11.35 |\n| Residual income | 8.77 | 15.01 | 24.78 | 15.09 |\n| Average | 7.62 | 15.90 | 24.46 | **15.13** |\n\n- **DCF**: starts from twelve-month operating profit to September 2026 (Rs 0.78bn, plus the IPO costs added back), taxed at 33.9%. The bear case is 15% lower in case the gross margin falls back. Growth is 4% / 9% / 11% for five years, then 4% / 5% / 6%. Because debt is large, the equity value swings from Rs 3 to Rs 35. About 81% of the base value and 86% of the bull value come after year 5.\n- **P/E**: EPS to March 2027 of Rs 2.20 / 2.50 / 2.75 (Rs 1.43 already earned; run-rate Rs 2.40), at justified P/Es of 5.0 / 6.1 / 7.7.\n- **P/B and residual income**: book Rs 10.48, with ROE settling at 14% / 18% / 21% from today's 24%.\n- **Growth check**: 2025/26 reinvestment (98% of after-tax operating profit, mostly capex and working capital) at a 10.1% return on capital supports 9.9% growth. Base (9%) and bull (11%, cut from 13%) are within the limit.\n- **Maintenance capex**: the company gives no split. About half of the Rs 248mn spent in 2025/26 was above depreciation (Rs 131mn), going on new machinery at Kiffs and Alliance Five. So the high capex is mostly growth, judged on its return.\n- **Dividends**: Rs 86mn was paid in March 2026 and again in September 2026, about a quarter of profit. Cash after maintenance capex covered it only 0.5× in 2025/26, so the dividend is at risk if margins fall.\n\n**Business tests (2 of 4).** Debt: pass, but only just (0.96×). Cash: pass, since operating cash covered profit 1.2× over two years, though free cash after capex was negative. Returns: fail, with ROE 9–12% in the three years before the IPO and 24% only over the latest twelve months. Steady profit: fail, given the swings above.\n\n**Buy plan (500 shares).** 200 at up to Rs 15.13, 150 at up to Rs 12.86, 150 at up to Rs 11.35: about Rs 6,658, an average of Rs 13.32. The share traded Rs 14.00–17.30 in July–September 2026 and fell to Rs 12.50 in December 2025, so the buy price needs a market dip. Wait for the business tests to improve before starting.\n\n**Management.** Management promises capacity expansion, more paper and recyclable packaging, exports and possibly acquisitions, but names no amounts. Profit and capacity are on track. The stronger balance sheet is not: debt rose again within six months.\n\n**What would change the view.** Higher: two or three more quarters at a 30% gross margin and 20%+ ROE, debt falling, a stated dividend policy. Lower: polymer costs or the rupee squeezing margins, more borrowing, price wars, or plastic rules.\n\n**Uncertain.** The price is the 30 September 2026 last trade, because the CSE site couldn't be reached. The September 2026 dividend's per-share amount isn't printed. The beta is a global stand-in. Per-share figures for 2021/22 and 2022/23 were printed before a share sub-division and aren't comparable."
+}
