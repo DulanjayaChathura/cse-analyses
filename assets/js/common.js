@@ -515,7 +515,7 @@ App.reveal = function (root, selector) {
   const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const els = [...root.querySelectorAll(selector)];
   if (reduce) { els.forEach((el) => el.classList.add("in")); return; }
-  const STAGGER = ".rs-tiles > .rs-sec, .news-grid > .news2, .stat-grid > .stat, .divc-grid > .divc, .alert-cards > .alert-card, .call-list .call1, .tiles > .tile, .hl2 > .hl2-row, .flow, .rs-glance li";
+  const STAGGER = ".rs-tiles > .rs-sec, .news-grid > .news2, .stat-grid > .stat, .divc-grid > .divc, .alert-cards > .alert-card, .call-list .call1, .tiles > .tile, .hl2 > .hl2-row, .flow, .rs-glance li, .figures > .figure, .tests > .test, .hcards > .hcard, .tiers > .tier, .cmv2 li, .vstrip > *, .st2 > .status, .tscore i, .mtiles > .mtile, .cases > .case";
   const obs = new IntersectionObserver((entries) => entries.forEach((e) => {
     if (!e.isIntersecting) return;
     const el = e.target;

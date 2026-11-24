@@ -71,6 +71,23 @@
     `<div class="tile"><div class="tile-label">${label}</div><div class="tile-value ${cls}">${value}</div><div class="tile-foot">${foot}</div></div>`;
   const newsCard = (n) => `<article class="bk-news-card"><h3>${App.esc(n.title)}</h3><p>${App.esc(n.text)}</p></article>`;
 
+  /* A call as a bar: today's price to the broker's target (green if up, red if down), with this
+     site's fair value as a teal marker; each labelled under it, labels slid apart if close. */
+  function callBar(price, target, site) {
+    if (!App.isNum(price)) return "";
+    const vals = [price, target, site].filter(App.isNum), lo = Math.min(...vals) * 0.94, hi = Math.max(...vals) * 1.04;
+    const x = (v) => (v - lo) / (hi - lo) * 100;
+    const fmtv = (v) => v >= 100 ? App.num(v, 0) : v.toFixed(2);
+    const marks = [["p", "Price", price], ["t", "Target", target], ["s", "This site", site]].filter((m) => App.isNum(m[2]));
+    // label centres in %, kept at least 24% apart and inside the bar
+    const items = marks.map((m) => ({ x: x(m[2]), w: 24 })), pos = App.dodge(items, 100, 0) || items.map((it) => it.x);
+    const up = App.isNum(target) && target >= price;
+    return `<div class="cbar" role="img" aria-label="${marks.map((m) => `${m[1]} ${fmtv(m[2])}`).join(", ")}">
+      <div class="cbar-trk">${App.isNum(target) ? `<div class="cbar-fill ${up ? "up" : "down"}" style="left:${Math.min(x(price), x(target)).toFixed(1)}%;width:${Math.abs(x(target) - x(price)).toFixed(1)}%"></div>` : ""}
+        ${marks.map((m) => `<i class="cbar-m ${m[0]}" style="left:${x(m[2]).toFixed(1)}%"></i>`).join("")}</div>
+      <div class="cbar-l">${marks.map((m, k) => `<span class="${m[0]}" style="left:${Math.max(12, Math.min(88, pos[k])).toFixed(1)}%">${m[1]}<b>${fmtv(m[2])}</b></span>`).join("")}</div></div>`;
+  }
+
   /* Price, this site's value and the broker's target as dots on one line, labelled. */
   function dotLine(marks, small) {
     const m = marks.filter((x) => App.isNum(x[2]));
@@ -552,9 +569,14 @@
         const u = upside(c), co = mine[c.code];
         const nm = c.name.replace(/ (PLC|Limited)$/i, "");
         const name = co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">${App.esc(nm)}</a>` : App.esc(nm);
-        return `<div class="call1${co ? " mine" : ""}"><div class="call1-top"><span class="call1-name">${logoFor(c.code, nm, "sm")}<span class="c1-n">${name}<small>${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " · non-voting" : ""}${c.sector ? ` · ${App.esc(c.sector)}` : ""}</small></span></span>${chip(c.rating)}</div>
-          <div class="call1-nums"><span class="c1-pt"><small>Price</small> ${n(c.price)} <i>→</i> <small>Target</small> ${App.isNum(c.target) ? n(c.target) : "not set"}</span><b class="c1-up ${u !== null && u < 0 ? "down" : "up"}">${pct(u)}</b></div>
-          ${co && co.valuation && App.isNum(co.valuation.fairValue) ? `<div class="call1-dl">${dotLine([["price", "Price", c.price], ["fv", "This site", co.valuation.fairValue], ["tg", "Target", c.target]], true)}<span class="muted-s">this site ${n(co.valuation.fairValue)}</span></div>` : ""}</div>`;
+        const site = co && co.valuation && App.isNum(co.valuation.fairValue) ? co.valuation.fairValue : null;
+        return `<div class="call1 c2 ${ratingCls(c.rating)}${co ? " mine" : ""}">
+          <div class="c2-top">${logoFor(c.code, nm, "sm")}
+            <div class="c2-name">${co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">${App.esc(nm)}</a>` : `<span>${App.esc(nm)}</span>`}
+              <small>${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " · non-voting" : ""}${c.sector ? ` · ${App.esc(c.sector)}` : ""}</small></div>
+            <div class="c2-up ${u !== null && u < 0 ? "down" : "up"}"><b>${pct(u)}</b><small>upside</small></div></div>
+          ${callBar(c.price, c.target, site)}
+          <div class="c2-foot">${chip(c.rating)}${co ? `<a class="c2-open" href="company.html?t=${encodeURIComponent(co.ticker)}">This site's analysis →</a>` : ""}</div></div>`;
       }).join("") || `<p class="muted-s">No calls match.</p>`;
     }
     [q, fs].forEach((el) => el.addEventListener("input", draw));

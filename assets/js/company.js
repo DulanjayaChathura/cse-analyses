@@ -120,6 +120,36 @@
       ${s.top.length > 10 ? `<button type="button" class="sh-toggle" data-sh-toggle>Show all ${s.top.length}</button>` : ""}
       <p class="sh-src">${App.esc(s.source)}. Change = shares bought or sold since the previous quarter.</p>`;
   }
+  /* ---------- Graphic helpers for the company page ---------- */
+  /* Price against fair value as a half-circle gauge, then fair, buy and strong-buy price tiles,
+     each with how far today's price is from it. */
+  function valueStrip() {
+    const price = mainPrice && mainPrice.value;
+    if (!App.isNum(price) || !App.isNum(v.fairValue)) return "";
+    const gap = (price / v.fairValue - 1) * 100, clamp = Math.max(-60, Math.min(100, gap));
+    const ang = (clamp + 60) / 160 * 180;                       // −60% (left) … +100% (right)
+    const R = 46, cx = 60, cy = 56, rad = (a) => Math.PI - a * Math.PI / 180;
+    const nx = cx + R * Math.cos(rad(ang)), ny = cy - R * Math.sin(rad(ang));
+    const arc = (a0, a1, c) => { const x0 = cx + R * Math.cos(rad(a0)), y0 = cy - R * Math.sin(rad(a0)), x1 = cx + R * Math.cos(rad(a1)), y1 = cy - R * Math.sin(rad(a1));
+      return `<path d="M${x0.toFixed(1)} ${y0.toFixed(1)} A${R} ${R} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}" stroke="${c}" stroke-width="12" fill="none"/>`; };
+    const fairA = 60 / 160 * 180;
+    const tile = (ic, label, val, cls) => { if (!App.isNum(val)) return "";
+      const g = (price / val - 1) * 100, below = g <= 0;
+      return `<div class="vs-tile ${cls}"><span class="vs-ic" aria-hidden="true">${ic}</span><span class="vs-l">${label}</span><b>${App.rs(val)}</b>
+        <span class="gap ${below ? "below" : "above"}"><i>${below ? "▼" : "▲"}</i>${Math.abs(g).toFixed(0)}%<span class="gw"> ${below ? "below" : "above"}</span></span></div>`; };
+    return `<div class="vstrip">
+      <div class="vs-gauge" role="img" aria-label="Price ${Math.abs(gap).toFixed(0)}% ${gap > 0 ? "above" : "below"} fair value">
+        <svg viewBox="0 0 120 66">${arc(0, fairA * 0.55, "var(--zone-strong)")}${arc(fairA * 0.55, fairA, "var(--zone-buy)")}${arc(fairA, fairA + 25, "var(--zone-fair)")}${arc(fairA + 25, 180, "var(--zone-over)")}
+          <line class="vs-needle" x1="${cx}" y1="${cy}" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="5" fill="var(--ink)"/></svg>
+        <div class="vs-gt"><b class="${gap > 0 ? "down" : "up"}">${Math.abs(gap).toFixed(0)}%</b> ${gap > 0 ? "above" : "below"} fair value</div></div>
+      ${tile("🎯", "Fair value", v.fairValue, "fv")}${tile("🛒", "Buy price", v.buyPrice, "bp")}${tile("💎", "Strong buy", v.strongBuyPrice, "sb")}</div>`;
+  }
+  const ICON_RULES = [[/roe|return on equity|return on capital|roce/i, "📈"], [/debt|borrow|lever/i, "🏦"], [/cash|fcf|flow/i, "💵"], [/dividend|yield|payout/i, "💰"],
+    [/p\/e|pe\b|earnings|eps|profit/i, "🧮"], [/nav|book|p\/b/i, "📘"], [/market cap|ev\b|ev \//i, "🏢"], [/wacc|cost of equity|required|beta|bond/i, "⚖️"],
+    [/growth|reinvest/i, "🌱"], [/revenue|sales|margin/i, "📊"], [/capex|depreciat|maintenance|invest/i, "🏗️"], [/quarter|month|interim|result/i, "🗓️"],
+    [/balance|equity/i, "🧱"], [/group|merger|subsidiar|sold|acquir/i, "🔀"], [/tax/i, "🧾"], [/price|share/i, "💹"]];
+  const iconFor = (t) => (ICON_RULES.find(([re]) => re.test(String(t || ""))) || [0, "🔹"])[1];
+
   /* Your price alerts (set with /alert in Telegram), shown under the price ladder as cards:
      bell, the target in large type, a "how close" meter from today's price to the target, and
      a status pill (waiting, or sent with its date). */
@@ -182,9 +212,10 @@
       return `
         <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)} ${App.Stars.button(d.ticker, meta.name)}</h1>
           <div class="hero-meta">${App.esc(d.ticker)}${meta.sector ? ", " + App.esc(meta.sector) : ""}. Analysis of ${App.date(d.analysisDate)}.</div></div></div>
+        ${valueStrip()}
         <div class="hero-grid">
-          <div>${sum ? `<p class="verdict">${App.esc(sum.headline || "")}</p>${App.md(sum.text)}` : NA}</div>
-          <div class="hero-prices">${rows}<div class="status-list">${statuses.join("")}</div></div>
+          <div>${sum ? `<p class="verdict">${App.esc(sum.headline || "")}</p><div class="clamp" data-lines="7">${App.md(sum.text)}</div>` : NA}</div>
+          <div class="hero-prices">${rows}<div class="status-list st2">${statuses.join("")}</div></div>
         </div>
         ${has("management") ? mgmtHtml(d.management) : ""}
         <div class="ladder"><div id="ladder"></div>
@@ -202,6 +233,8 @@
       const q = d.quality, n = q.tests.filter((t) => t.pass).length;
       return `<h2>Business tests</h2>
       <p class="section-lead">Is this a business worth owning for years? It passes ${n} of ${q.tests.length} tests; it needs 3 to count as a good business. A good business goes on the watch list, and becomes "Buy now" when a share class is at or below the buy price.</p>
+      <div class="tscore" role="img" aria-label="${n} of ${q.tests.length} tests passed">${q.tests.map((t, k) => `<i class="${t.pass ? "on" : "off"}" style="--k:${k}">${t.pass ? "✓" : "✗"}</i>`).join("")}
+        <b>${n}/${q.tests.length}</b><span>${n >= 3 ? "A good business" : "Not good enough yet"}</span></div>
       <div class="tests">${q.tests.map((t) => `<div class="test ${t.pass ? "pass" : "fail"}">
         <div class="test-mark" aria-hidden="true">${t.pass ? "✓" : "✗"}</div>
         <div><div class="test-label">${App.esc(t.label)} <span class="sr-only">${t.pass ? "(passed)" : "(failed)"}</span></div>
@@ -210,11 +243,11 @@
     } },
 
     { id: "figures", title: "Key figures", key: "keyMetrics", html: () => `<h2>Key figures</h2>
-      <div class="figures">${d.keyMetrics.map((m) => `<div class="figure"><div class="lbl">${App.term(m.label)}</div>
+      <div class="figures">${d.keyMetrics.map((m) => `<div class="figure"><div class="lbl"><span class="fig-ic" aria-hidden="true">${iconFor(m.label)}</span>${App.term(m.label)}</div>
         <div class="num">${App.esc(m.display || App.withUnit(m.value, m.unit))}</div>${m.note ? `<div class="note">${App.esc(m.note)}</div>` : ""}</div>`).join("")}${dividendFigure()}${requiredReturnFigure()}</div>` },
 
     { id: "results", title: "Latest results", key: "highlights", html: () => `<h2>Latest results</h2>
-      <div class="highlights">${d.highlights.map((h) => `<div><h3>${App.esc(h.title || "")}</h3>${App.md(h.text)}</div>`).join("")}</div>` },
+      <div class="highlights hcards">${d.highlights.map((h) => `<div class="hcard"><h3><span class="h-ic" aria-hidden="true">${iconFor(h.title)}</span>${App.esc(h.title || "")}</h3><div class="clamp" data-lines="5">${App.md(h.text)}</div></div>`).join("")}</div>` },
 
     { id: "changes", title: "What changed", always: true, html: () => {
       if (!research) return `<h2>What changed</h2><p class="section-lead">No research record yet for this company.</p>`;
@@ -299,13 +332,19 @@
     { id: "scenarios", title: "Assumptions", key: "scenarios", html: () => {
       const s = d.scenarios, w = v.scenarioWeights || {};
       const head = ["bear", "base", "bull"].map((k) => `<th>${App.term(k[0].toUpperCase() + k.slice(1), k[0].toUpperCase() + k.slice(1))}${App.isNum(w[k]) ? ` (${w[k]}% weight)` : ""}</th>`).join("");
+      const avg = s.averages || {}, mx = Math.max(...["bear", "base", "bull"].map((k) => avg[k]).filter(App.isNum), 1), pr = mainPrice && mainPrice.value;
+      const caseCard = (k, ic, label) => !App.isNum(avg[k]) ? "" : `<div class="case ${k}"><div class="case-h"><span aria-hidden="true">${ic}</span>${label}${App.isNum(w[k]) ? `<em>${w[k]}%</em>` : ""}</div>
+          <div class="case-bar"><div style="height:${(avg[k] / Math.max(mx, pr || 0) * 100).toFixed(0)}%"></div>${App.isNum(pr) ? `<i style="bottom:${(pr / Math.max(mx, pr) * 100).toFixed(0)}%"></i>` : ""}</div>
+          <b>${App.rs(avg[k])}</b><small>average of the methods</small></div>`;
       return `<h2>Assumptions</h2>
+        ${s.averages ? `<div class="cases">${caseCard("bear", "🐻", "Bear")}${caseCard("base", "⚖️", "Base")}${caseCard("bull", "🐂", "Bull")}
+          ${App.isNum(pr) ? `<p class="cases-note"><i></i> today's price ${App.price(pr)}</p>` : ""}</div>` : ""}
         <div class="table-wrap"><table><thead><tr><th></th>${head}</tr></thead><tbody>
           ${(s.assumptions || []).map((a) => `<tr><td>${App.term(a.label)}</td><td>${App.esc(a.bear ?? "")}</td><td>${App.esc(a.base ?? "")}</td><td>${App.esc(a.bull ?? "")}</td></tr>`).join("")}
           ${s.averages ? `<tr class="total"><td>Average of the methods</td><td>${App.rs(s.averages.bear)}</td><td>${App.rs(s.averages.base)}</td><td>${App.rs(s.averages.bull)}</td></tr>` : ""}
         </tbody></table></div>
-        ${s.common ? `<div style="margin-top:1rem"><h3 style="margin-bottom:.3rem">Shared by all cases</h3>${App.md(s.common)}</div>` : ""}
-        ${v.note ? `<p class="section-lead" style="margin-top:.6rem">${App.esc(v.note)}</p>` : ""}`;
+        ${s.common ? `<div style="margin-top:1rem"><h3 style="margin-bottom:.3rem">Shared by all cases</h3><div class="clamp" data-lines="4">${App.md(s.common)}</div></div>` : ""}
+        ${v.note ? `<div class="clamp section-lead" data-lines="3" style="margin-top:.6rem">${App.esc(v.note)}</div>` : ""}`;
     } },
 
     { id: "sensitivity", title: "Sensitivity", key: "sensitivity", html: () => {
@@ -337,15 +376,17 @@
       const tiers = b.tiers.map((t) => {
         const hit = App.isNum(price) && price <= t.maxPrice;
         const gap = App.isNum(price) ? ((price - t.maxPrice) / price) * 100 : null;
+        const fill = hit ? 100 : gap !== null ? Math.max(3, 100 - gap / 60 * 100) : 0;   // 60% or more away = nearly empty
         return `<div class="tier ${hit ? "hit" : ""}"><span class="shares">${App.num(t.shares)} shares</span><span>at up to <b>${App.rs(t.maxPrice)}</b></span>
-          <span class="state">${hit ? "Price is in range now" : gap !== null ? `Needs a ${gap.toFixed(0)}% fall` : ""}</span></div>`;
+          <span class="state">${hit ? "✓ Price is in range now" : gap !== null ? `Needs a ${gap.toFixed(0)}% fall` : ""}</span>
+          ${gap !== null ? `<div class="tier-bar" aria-hidden="true"><div style="width:${fill.toFixed(0)}%"></div></div>` : ""}</div>`;
       }).join("");
       return `<h2>Buy plan</h2>
         <div class="plan-sum">
-          ${App.isNum(b.totalShares) ? `<div><span>Total</span><b>${App.num(b.totalShares)} shares</b></div>` : ""}
-          ${App.isNum(b.averagePrice) ? `<div><span>Average price</span><b>${App.price(b.averagePrice)}</b></div>` : ""}
-          ${App.isNum(b.totalCost) ? `<div><span>Total cost</span><b>Rs ${App.num(b.totalCost, 0)}</b></div>` : ""}
-          ${App.isNum(price) && App.isNum(b.totalShares) ? `<div><span>Cost at today's price</span><b>Rs ${App.num(Math.round(price * b.totalShares), 0)}</b></div>` : ""}
+          ${App.isNum(b.totalShares) ? `<div><span><i aria-hidden="true">📦</i> Total</span><b>${App.num(b.totalShares)} shares</b></div>` : ""}
+          ${App.isNum(b.averagePrice) ? `<div><span><i aria-hidden="true">⚖️</i> Average price</span><b>${App.price(b.averagePrice)}</b></div>` : ""}
+          ${App.isNum(b.totalCost) ? `<div><span><i aria-hidden="true">💵</i> Total cost</span><b>Rs ${App.num(b.totalCost, 0)}</b></div>` : ""}
+          ${App.isNum(price) && App.isNum(b.totalShares) ? `<div><span><i aria-hidden="true">💹</i> Cost at today's price</span><b>Rs ${App.num(Math.round(price * b.totalShares), 0)}</b></div>` : ""}
         </div>
         <div class="tiers">${tiers}</div>
         ${b.note ? `<p style="margin-top:1rem">${App.esc(b.note)}</p>` : ""}
@@ -353,8 +394,8 @@
     } },
 
     { id: "change", title: "What would change the view", key: "changeMyView", html: () => `<h2>What would change the view</h2>
-      <div class="cmv"><div class="higher"><h3>Supports a higher value</h3><ul>${(d.changeMyView.higher || []).map((x) => `<li>${App.esc(x)}</li>`).join("")}</ul></div>
-      <div class="lower"><h3>Supports a lower value</h3><ul>${(d.changeMyView.lower || []).map((x) => `<li>${App.esc(x)}</li>`).join("")}</ul></div></div>` },
+      <div class="cmv cmv2"><div class="higher"><h3><span class="cmv-ic up" aria-hidden="true">▲</span>Supports a higher value</h3><ul>${(d.changeMyView.higher || []).map((x) => `<li><i aria-hidden="true">${iconFor(x)}</i><span>${App.esc(x)}</span></li>`).join("")}</ul></div>
+      <div class="lower"><h3><span class="cmv-ic down" aria-hidden="true">▼</span>Supports a lower value</h3><ul>${(d.changeMyView.lower || []).map((x) => `<li><i aria-hidden="true">${iconFor(x)}</i><span>${App.esc(x)}</span></li>`).join("")}</ul></div></div>` },
 
     { id: "full", title: "Full analysis", key: "fullText", html: () => `<h2>Full analysis</h2>
       ${has("notes") && d.notes.disclaimer ? `<p class="disclaimer">${App.esc(d.notes.disclaimer)}</p>` : ""}
@@ -427,6 +468,8 @@
     return `<div class="more-row"><div class="more-key">${App.esc(k)}</div><div class="more-val">${moreValue(x)}</div></div>`;
   }
   const SHOW_ROWS = 8;
+  const MORE_IC = [[/moat|business/i, "🏰"], [/management|governance/i, "👔"], [/alert/i, "🔔"], [/accounting/i, "🧾"], [/peer|comparison/i, "🆚"],
+    [/decision/i, "🧭"], [/portfolio/i, "🧺"], [/ratio|trend/i, "📊"], [/case|sell rule/i, "📝"], [/sri lanka|country/i, "🇱🇰"], [/crisis|stress/i, "🌪️"], [/broker/i, "🗞️"]];
   function moreCard(k, i) {
     const val = d[k];
     const warn = /doesn.t cover|not covered|limitations/i.test(k);
@@ -438,11 +481,13 @@
     } else {
       body = `<div class="more-val">${moreValue(val)}</div>`;
     }
-    return `<div class="more-card${warn ? " warn" : ""}" id="more-${i}"><h3>${App.esc(k)}</h3>${body}</div>`;
+    const ic = warn ? "⚠️" : (MORE_IC.find(([re]) => re.test(k)) || [0, "📄"])[1];
+    const n = val && typeof val === "object" ? (Array.isArray(val) ? val.length : Object.keys(val).length) : 0;
+    return `<details class="more-card mtile${warn ? " warn" : ""}" id="more-${i}"><summary><span class="mt-ic2" aria-hidden="true">${ic}</span>
+      <span><b>${App.esc(k.replace(/\s*\(.*\)$/, ""))}</b>${n ? `<small>${n} item${n === 1 ? "" : "s"}</small>` : ""}</span></summary>${body}</details>`;
   }
   if (unknown.length) sections.push({ id: "other", title: "More research", always: true, html: () => `<h2>More research</h2>
-    <nav class="more-jump" aria-label="More research sections">${unknown.map((k, i) => `<a href="#more-${i}">${App.esc(k.replace(/\s*\(.*\)$/, ""))}</a>`).join("")}</nav>
-    ${unknown.map(moreCard).join("")}` });
+    <p class="section-lead">Tap a topic to open it.</p><div class="mtiles">${unknown.map(moreCard).join("")}</div>` });
 
   /* ---------- Render ---------- */
   function render() {
@@ -464,9 +509,29 @@
       if (!s.after || !(s.always || has(s.key))) return;
       try { s.after(); } catch (e) { console.error(s.id, e); }
     });
+    /* an icon before each section heading (same as in the side list) */
+    content.querySelectorAll("section.section > h2:first-of-type").forEach((h) => {
+      const ic = (window.SEC_IC || {})[h.parentElement.id]; if (ic && !h.querySelector(".h2-ic")) h.insertAdjacentHTML("afterbegin", `<span class="h2-ic" aria-hidden="true">${ic}</span>`);
+    });
     if (App.reveal) App.reveal(content, ".section");
+    content.addEventListener("toggle", (e) => {
+      const el = e.target; if (!el.open || !el.matches(".mtiles > .mtile")) return;
+      el.parentElement.querySelectorAll(":scope > details[open]").forEach((o) => { if (o !== el) o.open = false; });
+      if (el.getBoundingClientRect().top < 0) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, true);
+    /* Long paragraphs show their first few lines with "Read more". */
+    content.querySelectorAll(".clamp").forEach((el) => {
+      el.style.setProperty("--lines", el.dataset.lines || 6);
+      if (el.scrollHeight <= el.clientHeight + 4) { el.classList.add("fits"); return; }
+      const btn = document.createElement("button"); btn.type = "button"; btn.className = "clamp-btn"; btn.textContent = "Read more";
+      btn.onclick = () => { const open = el.classList.toggle("open"); btn.textContent = open ? "Show less" : "Read more"; };
+      el.after(btn);
+    });
   }
-  toc.innerHTML = sections.map((s) => `<a href="#${s.id}">${App.esc(s.title)}</a>`).join("");
+  const SEC_IC = window.SEC_IC = { overview: "🏠", shareholders: "👥", quality: "✅", figures: "🔢", results: "🗓️", changes: "🔄", methods: "🧮", history: "📈",
+    scenarios: "🎲", sensitivity: "🌡️", whatif: "🎛️", "buy-plan": "🛒", change: "⚖️", full: "📄", other: "🔎" };
+  toc.innerHTML = sections.map((s) => `<a href="#${s.id}"><span class="toc-ic" aria-hidden="true">${SEC_IC[s.id] || "•"}</span>${App.esc(s.title)}</a>`).join("");
+
   const links = [...toc.querySelectorAll("a")];
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id)); });
