@@ -184,7 +184,7 @@ App.initTheme = function () {
   if (saved === "dark") document.documentElement.dataset.theme = "dark";
   const btn = document.querySelector(".theme-toggle");
   if (!btn) return;
-  const label = () => (btn.textContent = document.documentElement.dataset.theme === "dark" ? "Light mode" : "Dark mode");
+  const label = () => (btn.innerHTML = document.documentElement.dataset.theme === "dark" ? '<span class="tt-ic" aria-hidden="true">☀️</span><span class="tt-t">Light mode</span>' : '<span class="tt-ic" aria-hidden="true">🌙</span><span class="tt-t">Dark mode</span>');
   label();
   btn.addEventListener("click", () => {
     const dark = document.documentElement.dataset.theme !== "dark";

@@ -11,8 +11,8 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="./">CSE share analyses <span>Colombo Stock Exchange</span></a>
-    <nav class="topnav"><a href="./" class="active">Companies</a><a href="broker.html">Broker updates</a></nav>
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="3,17 9,11 13,14 21,6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15,6 21,6 21,12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>CSE share analyses <span>Colombo Stock Exchange</span></a>
+    <nav class="topnav"><a href="./" class="active"><span class="nav-ic" aria-hidden="true">🏢</span>Companies</a><a href="broker.html"><span class="nav-ic" aria-hidden="true">🗞️</span>Broker updates</a></nav>
     <button class="theme-toggle" type="button">Dark mode</button>
   </header>
 
@@ -23,10 +23,11 @@
         <p id="updated">Loading…</p>
       </div>
       <div class="home-tools">
-        <label class="starred-only" hidden><input type="checkbox" id="starred-only"> Starred only</label>
-        <input class="search" id="search" type="search" placeholder="Search by name" aria-label="Search by company name">
+        <label class="starred-only" hidden><input type="checkbox" id="starred-only"><span class="so-star" aria-hidden="true">★</span> Starred only</label>
+        <span class="search-wrap"><span class="search-ic" aria-hidden="true">🔍</span><input class="search" id="search" type="search" placeholder="Search by name" aria-label="Search by company name"></span>
       </div>
     </div>
+    <div class="cat-overview" id="cat-overview"></div>
     <div id="notice"></div>
     <p class="empty" id="no-match" hidden></p>
     <div id="cards"></div>

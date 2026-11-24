@@ -26,9 +26,10 @@
     .map((c) => ({ c, g: gap(c) }))
     .sort((a, b) => (a.g === null) - (b.g === null) || (a.g ?? 0) - (b.g ?? 0) || a.c.name.localeCompare(b.c.name))
     .map((x) => x.c);
-  updatedEl.textContent = prices.updatedAt
-    ? `${companies.length} ${companies.length === 1 ? "company" : "companies"}. Prices last updated ${App.date(prices.updatedAt.slice(0, 10))}.`
-    : `${companies.length} ${companies.length === 1 ? "company" : "companies"}`;
+  // "57 companies" and when prices were last updated, as two chips; a live dot when prices are from today.
+  const pricesToday = prices.updatedAt && prices.updatedAt.slice(0, 10) === new Date().toISOString().slice(0, 10);
+  updatedEl.innerHTML = `<span class="hchip"><span aria-hidden="true">🏢</span>${companies.length} ${companies.length === 1 ? "company" : "companies"}</span>` +
+    (prices.updatedAt ? `<span class="hchip"><span class="live${pricesToday ? " on" : ""}" aria-hidden="true"></span>Prices updated ${App.date(prices.updatedAt.slice(0, 10))}</span>` : "");
 
   function card(c) {
     const lines = c.shareClasses.map((sc) => {
@@ -104,6 +105,18 @@
       </section>`).join("")
       + (unrated.length ? `<section class="cat-group"><h2>Not rated yet <span class="cat-count">${unrated.length}</span></h2><div class="cards">${unrated.map(card).join("")}</div></section>` : "");
     if (App.reveal) App.reveal(cardsEl, ".card-wrap");
+    // Overview above the cards: one tile per category with its count and share of all companies;
+    // tap a tile to jump to that group.
+    const ov = document.getElementById("cat-overview");
+    if (ov) {
+      const all = groups.reduce((a, g) => a + g.list.length, 0) + unrated.length || 1;
+      const IC = { 1: "🛒", 2: "👀", 3: "⛔" };
+      cardsEl.querySelectorAll(".cat-group").forEach((sec, k) => { sec.id = sec.id || `cat-${k + 1}`; });
+      ov.innerHTML = groups.map((g, k) => `<a class="cov ${g.cat.cls}" href="#cat-${k + 1}"><span class="cov-ic" aria-hidden="true">${IC[g.cat.n]}</span>
+          <span class="cov-t"><small>Category ${g.cat.n}</small>${g.cat.name}</span><b>${g.list.length}</b>
+          <span class="cov-bar"><i style="width:${(g.list.length / all * 100).toFixed(1)}%"></i></span></a>`).join("");
+      if (App.reveal) App.reveal(ov.parentElement, ".cat-overview");
+    }
   }
   const onlyEl = document.getElementById("starred-only");
   const searchEl = document.getElementById("search");
