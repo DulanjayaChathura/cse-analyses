@@ -300,6 +300,55 @@
       ${pick.some((k) => k < 0) ? `<p class="muted-s">Some names are left off where dots crowd together; tap Numbers for all of them.</p>` : ""}`;
   }
 
+  /* Spider (radar) chart: one spoke per row, one shape per column, for scores on the same scale
+     (e.g. five-forces ratings 1–5). The shapes grow out from the centre and the points pulse. */
+  function radar(t, pl) {
+    const rows = pickRows(t, pl), cols = pickCols(t, pl, rows), n = rows.length;
+    if (n < 3 || !cols.length) return "";
+    const vals = rows.flatMap((r) => cols.map((j) => numOf(r[j]))).filter((v) => v !== null);
+    const max = pl.max || Math.ceil(Math.max(...vals, 1e-9)), min = pl.min || 0;
+    const W = 360, H = 290, cx = W / 2, cy = 150, rad = 88, fs = 11.5;
+    const ang = (i) => -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    const pt = (i, v) => { const f = (Math.max(min, Math.min(max, v)) - min) / (max - min) * rad; return [cx + Math.cos(ang(i)) * f, cy + Math.sin(ang(i)) * f]; };
+    const ring = (lv) => rows.map((_, i) => pt(i, lv).map((z) => z.toFixed(1)).join(",")).join(" ");
+    let s = `<svg class="ch-svg ch-radar" viewBox="0 0 ${W} ${H}" role="img" aria-label="${App.esc(t.title)}">`;
+    for (let lv = min + 1; lv <= max; lv++) s += `<polygon points="${ring(lv)}" fill="${lv % 2 ? "none" : "color-mix(in srgb, var(--ink) 3%, transparent)"}" stroke="var(--rule)"/>` +
+      `<text x="${cx + 3}" y="${(pt(0, lv)[1] + 3).toFixed(1)}" class="ch-t" font-size="8.5" opacity="0.7">${lv}</text>`;
+    rows.forEach((r, i) => { const [ex, ey] = pt(i, max), c = Math.cos(ang(i)), sn = Math.sin(ang(i));
+      s += `<line x1="${cx}" y1="${cy}" x2="${ex.toFixed(1)}" y2="${ey.toFixed(1)}" stroke="var(--rule)"/>`;
+      const lx = cx + c * (rad + 12), ly = cy + sn * (rad + 12) + (sn > 0.3 ? 9 : sn < -0.3 ? -3 : 4);
+      const an = c > 0.3 ? "start" : c < -0.3 ? "end" : "middle", up = sn < -0.3 ? -13 : 0;
+      s += `<text x="${lx.toFixed(1)}" y="${(ly + up).toFixed(1)}" text-anchor="${an}" class="ch-t" font-size="${fs}" font-weight="600">${App.esc(String(r[0]))}</text>` +
+        `<text x="${lx.toFixed(1)}" y="${(ly + up + 13).toFixed(1)}" text-anchor="${an}" font-size="11" font-weight="700">${cols.map((j, k) => `<tspan fill="${PAL[k % 6]}">${App.esc(String(r[j]))}</tspan>`).join(`<tspan fill="var(--ink-soft)" font-weight="400"> vs </tspan>`)}</text>`; });
+    cols.forEach((j, k) => { const col = PAL[k % 6], ps = rows.map((r, i) => { const v = numOf(r[j]); return v === null ? null : pt(i, v); });
+      if (ps.some((p) => p === null)) return;
+      s += `<g class="rd-shape" style="--d:${k * 0.25}s;transform-origin:${cx}px ${cy}px"><polygon points="${ps.map((p) => p.map((z) => z.toFixed(1)).join(",")).join(" ")}" fill="${col}" fill-opacity="0.16" stroke="${col}" stroke-width="2.5" stroke-linejoin="round"/>
+        ${ps.map((p, i) => `<circle class="rd-pt" cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="4" fill="${col}" style="--k:${i}"><title>${App.esc(t.head[j])}, ${App.esc(String(rows[i][0]))}: ${App.esc(String(rows[i][j]))}</title></circle>`).join("")}</g>`; });
+    // the rating scale as chips, and a card per spoke: its score in each column as a five-step
+    // meter with the word for it, and the reason the report gives
+    const sc = t.scale || [], word = (v) => sc[Math.round(v) - 1 - (min > 0 ? min - 1 : 0)] || "";
+    const scale = sc.length ? `<div class="rd-scale">${sc.map((w, i) => `<span style="--l:${i}"><b>${i + 1}</b>${App.esc(w)}</span>`).join("")}</div>` : "";
+    const cards = t.rowNotes ? `<div class="rd-cards">${rows.map((r, i) => `<div class="rd-card" style="--i:${i}">
+        <div class="rd-card-h"><i aria-hidden="true">${(t.icons || [])[i] || "🔹"}</i><b>${App.esc(String(r[0]))}</b></div>
+        ${cols.map((j, k) => { const v = numOf(r[j]); return `<div class="rd-m"><span class="rd-who" style="color:${PAL[k % 6]}">${App.esc(t.head[j])}</span>
+          <span class="rd-steps">${Array.from({ length: max - min }, (_, q) => `<i style="${v !== null && q < v - min ? `background:${PAL[k % 6]}` : ""}"></i>`).join("")}</span>
+          <span class="rd-word">${App.esc(v === null ? String(r[j]) : word(v))}</span>
+          ${(t.rowNotes[i] || [])[j - 1] ? `<p>${App.esc(t.rowNotes[i][j - 1])}</p>` : ""}</div>`; }).join("")}</div>`).join("")}</div>` : "";
+    const lead = t.headline ? `<p class="rd-lead"><i aria-hidden="true">🛡️</i><span>${App.esc(t.headline)}</span></p>` : "";
+    const watch = t.watch ? `<p class="rd-watch"><i aria-hidden="true">👀</i><span><b>Watch:</b> ${App.esc(t.watch.replace(/^Watch:\s*/, ""))}</span></p>` : "";
+    return `${lead}${legend(t, cols)}<div class="rd-top">${s}</svg>${scale}</div>${cards}${watch}`;
+  }
+
+  /* Stat tiles: a big figure, what it is, a line of context; a ring for a share, before → after bars. */
+  function statsHtml(b) {
+    const ring = (pc) => { const c = 2 * Math.PI * 15; return `<svg class="st-ring" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="none" stroke="var(--rule)" stroke-width="4"/>
+      <circle class="st-arc" cx="18" cy="18" r="15" fill="none" stroke="var(--good)" stroke-width="4" stroke-linecap="round" stroke-dasharray="${(pc / 100 * c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 18 18)"/></svg>`; };
+    const pair = (a, z) => { const m = Math.max(a, z); return `<div class="st-pair" aria-hidden="true"><span style="width:${(a / m * 100).toFixed(0)}%"><em>${App.num(a, 0)}</em></span><span class="to" style="width:${(z / m * 100).toFixed(0)}%"><em>${App.num(z, 0)}</em></span></div>`; };
+    return `<div class="st-grid">${b.stats.map((x, i) => `<div class="st-tile ${x.tone || ""}" style="--i:${i}">
+      <div class="st-top"><i aria-hidden="true">${x.icon || "🔹"}</i>${App.isNum(x.pct) ? ring(x.pct) : ""}</div>
+      <b>${App.esc(x.value)}</b><span>${App.esc(x.label)}</span>${App.isNum(x.from) && App.isNum(x.to) ? pair(x.from, x.to) : ""}${x.sub ? `<small>${App.esc(x.sub)}</small>` : ""}</div>`).join("")}</div>`;
+  }
+
   function numbersTable(t) {
     return `<div class="table-wrap grid-wrap"><table class="grid"><thead><tr>${t.head.map((h, i) => `<th${i ? ' class="num"' : ""}>${App.esc(h)}</th>`).join("")}</tr></thead>
       <tbody>${t.rows.map((row) => `<tr>${row.map((c, i) => `<td${i && /^[≈~]?\s*(Rs\s)?[−+\-]?[\d.,]+\s?(x|%|bn|mn)?(\s\(.*\))?$|^[\d.,]+ : [\d.,]+$/.test(String(c)) ? ' class="num"' : ""}>${App.esc(String(c))}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
@@ -308,12 +357,13 @@
   function blockHtml(b, ctx) {
     const head = `<div class="rs-tbl-h">${App.esc(b.title || "")}</div>`;
     const foot = `${b.note ? `<p class="ch-note">${App.esc(b.note)}</p>` : ""}${b.approx ? `<p class="muted-s">≈ read from the report's chart.</p>` : ""}`;
+    if (b.stats) return `<div class="rs-blk">${head}${statsHtml(b)}${foot}</div>`;
     if (b.points) return `<div class="rs-blk">${head}<ul>${b.points.map((x) => `<li>${App.esc(x)}</li>`).join("")}</ul></div>`;
     if (!b.rows) return `<div class="rs-blk">${head}<p class="ch-note">${App.esc(b.text || "")}</p>${b.approx ? `<p class="muted-s">≈ read from the report's chart.</p>` : ""}</div>`;
     const pl = b.plot || { kind: "none" };
     let chart = "";
     try {
-      chart = { hbar: hbar, vbar: vchart, line: vchart, waterfall: waterfall, heatmap: heatmap, range: (t) => rangeChart(t, ctx), riskgrid: riskgrid, scatter: scatter }[pl.kind]?.(b, pl) || "";
+      chart = { hbar: hbar, vbar: vchart, line: vchart, waterfall: waterfall, heatmap: heatmap, range: (t) => rangeChart(t, ctx), riskgrid: riskgrid, scatter: scatter, radar: radar }[pl.kind]?.(b, pl) || "";
     } catch (e) { chart = ""; }
     const own = pl.kind === "heatmap" || pl.kind === "riskgrid";
     return `<div class="rs-blk">${head}${chart || numbersTable(b)}${foot}${chart && !own ? `<details class="ch-nums"><summary>Numbers</summary>${numbersTable(b)}</details>` : ""}</div>`;

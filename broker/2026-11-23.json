@@ -945,28 +945,7 @@
               }
             },
             {
-              "title": "Five forces in developed markets (text table) (Exhibit 5F-DM, p. 15)",
-              "points": [
-                "New entrants: moderate. Low-cost resellers renting networks (US cable firms took 76% of North American net mobile additions in 1Q 2026); new networks very costly (EchoStar quit, Rakuten took 5 years to break even).",
-                "Suppliers: moderate to high. Costly spectrum (US C-band ≈$81bn), fewer vendors after Huawei/ZTE phase-out, handset makers pass on costs.",
-                "Buyers: moderate to high. Number portability makes switching easy (SK Telecom lost ≈650,000 in 2 months); Europe's GDP-adjusted ARPU €14.9 in 2024 vs €15.3 in 2015; regulators cap price rises.",
-                "Substitutes: moderate. OTT apps already took voice/SMS; satellite-to-phone (SpaceX bought $17bn of spectrum) not yet a big threat; private 5G for enterprises.",
-                "Rivalry: moderate to high. Saturated (US penetration ≈98%), Europe fragmented (44 operators vs 8 US, 4 Japan); consolidation (VodafoneThree, M1) is the fix."
-              ]
-            },
-            {
-              "title": "Five forces in Sri Lanka (text table) (Exhibit 5F-SL, p. 16)",
-              "points": [
-                "New entrants: low. Dialog has invested over $3.45bn; only Dialog and SLT bid in the first 5G auction (Dec 2025); penetration ≈127%, so a newcomer must take customers.",
-                "Suppliers: moderate. Government controls spectrum and tariff approvals; dollar-priced equipment from few vendors; scale gives Dialog better terms.",
-                "Buyers: moderate to low. No number portability yet (delayed several times); multi-SIM use common, but 2025 tariff rises held and Dialog's ARPU rose 12%.",
-                "Substitutes: moderate. OTT apps (smartphone penetration over 70%) still use operators' data; Starlink launched July 2025, not a near-term threat; streaming pressures pay TV.",
-                "Rivalry: moderate to low. Three operators, Dialog 64%; SLT the only other 5G holder, Hutch a value brand; competition on quality, not price.",
-                "Watch: number portability, a change in SLT's ownership, Hutch entering 5G."
-              ]
-            },
-            {
-              "title": "Five forces score, Sri Lanka vs developed markets (1 low – 5 high) (Exhibit 8, p. 17)",
+              "title": "Five forces: Sri Lanka vs developed markets (Exhibit 8, with the text tables 5F-SL and 5F-DM, pp. 15–17)",
               "head": [
                 "Force",
                 "Sri Lanka",
@@ -999,19 +978,109 @@
                   "4"
                 ]
               ],
-              "chart": "radar",
-              "note": "Scores follow their ratings on pp. 15–16. The text says Sri Lanka scores lower on every force, but substitutes are equal (moderate) in both.",
               "plot": {
-                "kind": "hbar"
-              }
+                "kind": "radar",
+                "min": 0,
+                "max": 5
+              },
+              "scale": [
+                "Low",
+                "Moderate to low",
+                "Moderate",
+                "Moderate to high",
+                "High"
+              ],
+              "headline": "Sri Lanka's operators face less pressure than developed-market ones on four of the five forces; substitutes are moderate in both.",
+              "icons": [
+                "🚪",
+                "🏭",
+                "🛒",
+                "🔁",
+                "⚔️"
+              ],
+              "rowNotes": [
+                [
+                  "Dialog has invested over $3.45bn; only Dialog and SLT bid in the first 5G auction (Dec 2025); with penetration ≈127% a newcomer must take customers.",
+                  "Low-cost resellers renting networks (US cable firms took 76% of North American net mobile additions in 1Q 2026); new networks very costly."
+                ],
+                [
+                  "Government controls spectrum and tariff approvals; dollar-priced equipment from few vendors; scale gives Dialog better terms.",
+                  "Costly spectrum (US C-band ≈$81bn), fewer vendors after the Huawei/ZTE phase-out, handset makers pass on costs."
+                ],
+                [
+                  "No number portability yet (delayed several times); multi-SIM use is common, but 2025 tariff rises held and Dialog's ARPU rose 12%.",
+                  "Number portability makes switching easy (SK Telecom lost ≈650,000 in 2 months); regulators cap price rises."
+                ],
+                [
+                  "OTT apps (smartphone penetration over 70%) still use operators' data; Starlink launched July 2025, not a near-term threat.",
+                  "OTT apps already took voice and SMS; satellite-to-phone not yet a big threat; private 5G for enterprises."
+                ],
+                [
+                  "Three operators, Dialog 64%; SLT the only other 5G holder, Hutch a value brand; competition on quality, not price.",
+                  "Saturated (US penetration ≈98%), Europe fragmented (44 operators vs 8 in the US, 4 in Japan); consolidation is the fix."
+                ]
+              ],
+              "watch": "Watch: number portability, a change in SLT's ownership, Hutch entering 5G.",
+              "note": "Scores follow their ratings on pp. 15–16. The text says Sri Lanka scores lower on every force, but substitutes are equal (moderate) in both."
             },
             {
-              "title": "Pricing power and cost (text) (p. 17)",
-              "points": [
-                "Dialog costs 9–12% more per GB than SLT and Hutch on a typical prepaid pack, and about 60–90% more on entry postpaid plans.",
-                "Mobile ARPU still rose 12% in FY25 (Rs 402 → Rs 449) with subscribers +3%.",
-                "Coverage 98.9% of the population; holds 75% of Sri Lanka's 5G spectrum; keeps Airtel as a separate value brand.",
-                "Operating cost per connection well below SLT's. Main risk: number portability."
+              "title": "Pricing power and cost (p. 17)",
+              "stats": [
+                {
+                  "icon": "🏷️",
+                  "value": "9–12%",
+                  "label": "Prepaid premium",
+                  "sub": "more per GB than SLT and Hutch on a typical prepaid pack",
+                  "tone": "good"
+                },
+                {
+                  "icon": "💳",
+                  "value": "60–90%",
+                  "label": "Postpaid premium",
+                  "sub": "more per GB on entry postpaid plans",
+                  "tone": "good"
+                },
+                {
+                  "icon": "📈",
+                  "value": "+12%",
+                  "label": "Mobile ARPU, FY25",
+                  "sub": "Rs 402 → Rs 449, while subscribers grew 3%",
+                  "tone": "good",
+                  "from": 402,
+                  "to": 449
+                },
+                {
+                  "icon": "📶",
+                  "value": "98.9%",
+                  "label": "Population coverage",
+                  "pct": 98.9
+                },
+                {
+                  "icon": "🛰️",
+                  "value": "75%",
+                  "label": "Share of Sri Lanka's 5G spectrum",
+                  "pct": 75
+                },
+                {
+                  "icon": "🥇",
+                  "value": "64%",
+                  "label": "Mobile market share",
+                  "pct": 64
+                },
+                {
+                  "icon": "💡",
+                  "value": "Lower",
+                  "label": "Operating cost per connection",
+                  "sub": "well below SLT's: supports cost leadership and higher margins",
+                  "tone": "good"
+                },
+                {
+                  "icon": "⚠️",
+                  "value": "Risk",
+                  "label": "Number portability",
+                  "sub": "would make switching easier; Airtel kept as a separate value brand for price-sensitive users",
+                  "tone": "bad"
+                }
               ]
             },
             {

@@ -300,7 +300,7 @@
       return `<h2>What changed</h2>
         <p class="section-lead">Each update builds on the saved research record, reading only new reports.</p>
         ${log.length >= 2 ? `<div class="chart"><h3>Fair value over time</h3><div id="timeline"></div>
-          <div class="legend"><span><i style="background:var(--ink)"></i>Fair value</span><span><i style="background:var(--good)"></i>Buy price</span><span><i style="background:var(--accent)"></i>Share price at the time</span></div></div>`
+          <div class="legend"><span><i style="background:var(--accent)"></i>Share price at the update</span><span><i style="background:var(--ink)"></i>Fair value</span><span><i style="background:var(--good)"></i>Buy price</span><span><i style="background:color-mix(in srgb,var(--bad) 25%,transparent)"></i>Price above fair value</span></div></div>`
           : `<p class="section-lead">A fair-value history chart appears after the next update.</p>`}
         ${(research.openQuestions || []).length ? `<details class="more"><summary>To check in the next report (${research.openQuestions.length})</summary><ul>${research.openQuestions.map((q) => `<li>${App.esc(q)}</li>`).join("")}</ul></details>` : ""}
         <details class="more"><summary>Saved figures by period</summary>${figTable}</details>
@@ -331,18 +331,21 @@
 
     { id: "scenarios", title: "Assumptions", key: "scenarios", html: () => {
       const s = d.scenarios, w = v.scenarioWeights || {};
-      const head = ["bear", "base", "bull"].map((k) => `<th>${App.term(k[0].toUpperCase() + k.slice(1), k[0].toUpperCase() + k.slice(1))}${App.isNum(w[k]) ? ` (${w[k]}% weight)` : ""}</th>`).join("");
-      const avg = s.averages || {}, mx = Math.max(...["bear", "base", "bull"].map((k) => avg[k]).filter(App.isNum), 1), pr = mainPrice && mainPrice.value;
+            const avg = s.averages || {}, mx = Math.max(...["bear", "base", "bull"].map((k) => avg[k]).filter(App.isNum), 1), pr = mainPrice && mainPrice.value;
       const caseCard = (k, ic, label) => !App.isNum(avg[k]) ? "" : `<div class="case ${k}"><div class="case-h"><span aria-hidden="true">${ic}</span>${label}${App.isNum(w[k]) ? `<em>${w[k]}%</em>` : ""}</div>
           <div class="case-bar"><div style="height:${(avg[k] / Math.max(mx, pr || 0) * 100).toFixed(0)}%"></div>${App.isNum(pr) ? `<i style="bottom:${(pr / Math.max(mx, pr) * 100).toFixed(0)}%"></i>` : ""}</div>
           <b>${App.rs(avg[k])}</b><small>average of the methods</small></div>`;
       return `<h2>Assumptions</h2>
         ${s.averages ? `<div class="cases">${caseCard("bear", "🐻", "Bear")}${caseCard("base", "⚖️", "Base")}${caseCard("bull", "🐂", "Bull")}
           ${App.isNum(pr) ? `<p class="cases-note"><i></i> today's price ${App.price(pr)}</p>` : ""}</div>` : ""}
-        <div class="table-wrap"><table><thead><tr><th></th>${head}</tr></thead><tbody>
-          ${(s.assumptions || []).map((a) => `<tr><td>${App.term(a.label)}</td><td>${App.esc(a.bear ?? "")}</td><td>${App.esc(a.base ?? "")}</td><td>${App.esc(a.bull ?? "")}</td></tr>`).join("")}
-          ${s.averages ? `<tr class="total"><td>Average of the methods</td><td>${App.rs(s.averages.bear)}</td><td>${App.rs(s.averages.base)}</td><td>${App.rs(s.averages.bull)}</td></tr>` : ""}
-        </tbody></table></div>
+        <div class="arows">${(s.assumptions || []).map((a) => {
+          // a fill under each case when all three start with a number, so the spread is visible at a glance
+          const n = ["bear", "base", "bull"].map((k) => { const t = String(a[k] ?? "").replace(/,(?=\d{3})/g, ""), m = (/→/.test(t) ? t.split("→").pop() : t).match(/-?\d+(\.\d+)?/); return m ? Math.abs(+m[0]) : null; });
+          const top = n.every(App.isNum) ? Math.max(...n) : null;
+          return `<div class="arow"><div class="arow-h"><i aria-hidden="true">${iconFor(a.label)}</i>${App.term(a.label)}</div>
+            <div class="arow-v">${["bear", "base", "bull"].map((k, j) => `<div class="av ${k}"><small>${k[0].toUpperCase() + k.slice(1)}</small><b>${App.esc(a[k] ?? "–")}</b>${
+              top ? `<span class="av-bar"><span style="width:${Math.max(4, n[j] / top * 100).toFixed(0)}%"></span></span>` : ""}</div>`).join("")}</div></div>`;
+        }).join("")}</div>
         ${s.common ? `<div style="margin-top:1rem"><h3 style="margin-bottom:.3rem">Shared by all cases</h3><div class="clamp" data-lines="4">${App.md(s.common)}</div></div>` : ""}
         ${v.note ? `<div class="clamp section-lead" data-lines="3" style="margin-top:.6rem">${App.esc(v.note)}</div>` : ""}`;
     } },

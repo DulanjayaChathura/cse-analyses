@@ -241,10 +241,11 @@
       <div class="wi-bar" role="status" aria-live="polite"></div>
       <div class="wi-grid">
         <div class="wi-controls">
-          ${groups.map((g) => `<fieldset class="wi-group"><legend>${App.esc(g.title)}</legend>${g.items.map(ctlHtml).join("")}</fieldset>`).join("")}
-          <fieldset class="wi-group"><legend>Scenario weights</legend>
+          ${groups.map((g) => `<fieldset class="wi-group"><legend><i class="wi-g-ic" aria-hidden="true">${/return/i.test(g.title) ? "⚖️" : /growth/i.test(g.title) ? "🌱" : /earn|p\/e/i.test(g.title) ? "🧮" : /divid/i.test(g.title) ? "💰" : "🎛️"}</i>${App.esc(g.title)}</legend>${g.items.map(ctlHtml).join("")}</fieldset>`).join("")}
+          <fieldset class="wi-group"><legend><i class="wi-g-ic" aria-hidden="true">⚖️</i>Scenario weights</legend>
             <div class="wi-weights">${CASES.map((c) => `<label class="wi-w"><span>${CASE_NAMES[c]}</span>
               <input type="number" inputmode="numeric" min="0" max="100" step="5" data-w="${c}" value="${pubW[c]}"><small>%</small></label>`).join("")}</div>
+            <div class="wi-wbar" aria-hidden="true"></div>
             <div class="wi-cases" data-cases="w"></div>
           </fieldset>
         </div>
@@ -316,7 +317,11 @@
           : y >= ke ? `<b class="good">above the ${fmt(ke, 1)}% required</b>, so it's cheaper than fair value`
           : isNum(bond) && y >= bond ? `below the ${fmt(ke, 1)}% required, but above the ${fmt(bond, 2)}% government bond`
           : `below the ${fmt(ke, 1)}% required${isNum(bond) ? ` <b class="bad">and below the ${fmt(bond, 2)}% government bond</b>` : ""}`;
-        ret = `<div class="wi-ret"><span>At today's Rs ${fmt(price)} you'd earn about <b>${isNum(y) ? fmt(y, 1) + "%" : imp.below ? `less than ${fmt(imp.below, 1)}%` : `more than ${fmt(imp.above, 1)}%`}</b> a year if these cases happen: ${verdict || "outside the range the formulas can check"}.</span>
+        const mx = Math.max(...[y, ke, bond].filter(isNum)) * 1.15, mp = (val) => Math.min(100, Math.max(0, val / mx * 100)).toFixed(1);
+        const meter = !isNum(y) ? "" : `<div class="wi-meter" aria-hidden="true"><span class="wi-meter-fill ${y >= ke ? "good" : isNum(bond) && y < bond ? "bad" : "mid"}" style="width:${mp(y)}%"><em>${fmt(y, 1)}%</em></span>
+          <span class="wi-meter-tick" style="left:${mp(ke)}%"><em>required ${fmt(ke, 1)}%</em></span>
+          ${isNum(bond) ? `<span class="wi-meter-tick bond" style="left:${mp(bond)}%"><em>bond ${fmt(bond, 2)}%</em></span>` : ""}</div>`;
+        ret = `${meter}<div class="wi-ret"><span>At today's Rs ${fmt(price)} you'd earn about <b>${isNum(y) ? fmt(y, 1) + "%" : imp.below ? `less than ${fmt(imp.below, 1)}%` : `more than ${fmt(imp.above, 1)}%`}</b> a year if these cases happen: ${verdict || "outside the range the formulas can check"}.</span>
           ${isNum(y) && !same ? `<button type="button" class="wi-match">Match today's price</button>` : ""}</div>`;
       }
       last_imp = imp;
@@ -324,19 +329,31 @@
         <div class="wi-bar-item"><span>Fair value</span><b>Rs ${fmt(fair)}</b>${chg(fair, v.fairValue)}<small>was Rs ${fmt(v.fairValue)}</small></div>
         <div class="wi-bar-item"><span>Buy price</span><b>Rs ${fmt(buy)}</b>${chg(buy, v.buyPrice)}<small>strong buy Rs ${fmt(strong)}</small></div>
         <div class="wi-bar-gap ${isNum(gap) && gap <= 0 ? "good" : ""}">${isNum(gap) ? `Price Rs ${fmt(price)} is <b>${fmt(Math.abs(gap), 1)}% ${gap <= 0 ? "below" : "above"}</b> this buy price` : ""}</div>
-        <button type="button" class="wi-reset" ${changed ? "" : "disabled"}>Reset</button>${ret}`;
+        <button type="button" class="wi-reset" ${changed ? "" : "disabled"}>Reset</button>${ret.replace("<div class=\"wi-ret\">", "<div class=\"wi-ret\">")}`;
       const errs = r.rows.flatMap((x) => x.errors.map((e) => `${x.name} (${e})`));
+      // one shared scale for every method's bear–bull range, with today's price and the buy price on it
+      const all = r.rows.flatMap((x) => CASES.map((c) => x[c])).concat([price, buy]).filter(isNum);
+      const lo = Math.min(...all) * 0.92, hi = Math.max(...all) * 1.04, at = (val) => ((val - lo) / (hi - lo) * 100).toFixed(1);
+      const M_IC = { dcf: "💵", sotp: "🧩", pe: "🧮", ddm: "💰", dividend: "💰", ri: "📘", residual: "📘", pb: "📗", nav: "🧱" };
+      const mIcon = (x) => M_IC[x.id] || M_IC[Object.keys(M_IC).find((k) => String(x.id).includes(k))] || "🔹";
+      const range = (x) => !CASES.every((c) => isNum(x[c])) || !(hi > lo) ? "" : `<div class="wi-rng" aria-hidden="true">
+        <span class="wi-rng-span" style="left:${at(x.bear)}%;width:${(at(x.bull) - at(x.bear)).toFixed(1)}%"></span>
+        ${isNum(buy) ? `<span class="wi-rng-buy" style="left:${at(buy)}%"></span>` : ""}
+        ${isNum(price) ? `<span class="wi-rng-px" style="left:${at(price)}%"></span>` : ""}
+        <span class="wi-rng-dot" style="left:${at(x.base)}%"></span>
+        ${isNum(x.weighted) ? `<span class="wi-rng-w" style="left:${at(x.weighted)}%"></span>` : ""}</div>`;
       methodsEl.innerHTML = `${wsum !== 100 ? `<p class="wi-warn">The weights add up to ${fmt(wsum, 0)}%, so they've been scaled to 100%.</p>` : ""}
         ${errs.length ? `<p class="wi-warn">${errs.map(App.esc).join("<br>")}</p>` : ""}
         ${r.rows.map((x) => `<div class="wi-m ${x.adjustable ? "" : "fixed"}">
-          <div class="wi-m-head"><span class="wi-m-name">${App.esc(x.name)}</span>
+          <div class="wi-m-head"><i class="wi-m-ic" aria-hidden="true">${mIcon(x)}</i><span class="wi-m-name">${App.esc(x.name)}</span>
             <button type="button" class="wi-i" data-info="m:${App.esc(x.id)}" aria-label="Formula for ${App.esc(x.name)}">ⓘ</button>
             ${x.adjustable ? "" : `<span class="wi-fixed">fixed</span>`}</div>
           <div class="wi-m-vals">
             <div class="wi-m-main"><small>Weighted</small><b>${isNum(x.weighted) ? "Rs " + fmt(x.weighted) : "–"}</b>${chg(x.weighted, x.pub.weighted)}</div>
             ${CASES.map((c) => `<div class="wi-m-case ${c}"><small>${CASE_NAMES[c]}</small><span>${fmt(x[c])}</span>${
               isNum(x[c]) && isNum(x.pub[c]) && Math.abs(x[c] - x.pub[c]) >= 0.005 ? `<em>was ${fmt(x.pub[c])}</em>` : ""}</div>`).join("")}
-          </div></div>`).join("")}`;
+          </div>${range(x)}</div>`).join("")}
+        ${r.rows.length && isNum(price) ? `<p class="wi-rng-key"><span class="k-span"></span>bear to bull <span class="k-dot"></span>base <span class="k-w"></span>weighted <span class="k-px"></span>today ${fmt(price)}${isNum(buy) ? ` <span class="k-buy"></span>buy ${fmt(buy)}` : ""}</p>` : ""}`;
       // The line under each control: all three cases, plus the published base once changed.
       for (const it of items) {
         const p = refOf(it, pub, present), now = refOf(it, mi, present);
@@ -349,6 +366,9 @@
         el.querySelector(`[data-ctl="${it.key}"]`).classList.toggle("moved", moved);
       }
       const wbox = el.querySelector('[data-cases="w"]');
+      const wsumNow = CASES.reduce((a, c) => a + Math.max(0, +state.w[c] || 0), 0);
+      const wbar = el.querySelector(".wi-wbar");
+      if (wbar) wbar.innerHTML = wsumNow > 0 ? CASES.map((c) => { const f = Math.max(0, +state.w[c] || 0) / wsumNow * 100; return f ? `<span class="${c}" style="width:${f.toFixed(1)}%">${f >= 12 ? `${fmt(f, 0)}%` : ""}</span>` : ""; }).join("") : "";
       if (wbox) wbox.innerHTML = CASES.some((c) => +state.w[c] !== pubW[c]) ? `<span class="wi-pub">published ${CASES.map((c) => pubW[c]).join(" / ")}</span>` : "";
     }
 

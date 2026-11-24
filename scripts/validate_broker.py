@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 STATUSES = ("included", "approx", "left-out")
-PLOTS = ("hbar", "vbar", "line", "waterfall", "heatmap", "range", "riskgrid", "scatter", "none")
+PLOTS = ("hbar", "vbar", "line", "waterfall", "heatmap", "range", "riskgrid", "scatter", "radar", "none")
 
 
 def labels_in(text):
@@ -46,9 +46,15 @@ def detail_problems(r):
                 head = b.get("head") or []
                 if any(len(row) != len(head) for row in b["rows"]):
                     p.append(f"{who}: '{b['title']}' has rows that don't match its {len(head)} columns")
+                notes = b.get("rowNotes")
+                if notes is not None and (len(notes) != len(b["rows"]) or any(len(n) != len(head) - 1 for n in notes)):
+                    p.append(f"{who}: '{b['title']}' rowNotes need one note per row and value column")
                 kind = (b.get("plot") or {}).get("kind", "none")
                 if kind not in PLOTS:
                     p.append(f"{who}: '{b['title']}' has an unknown plot kind '{kind}'")
+            elif "stats" in b:
+                if not isinstance(b["stats"], list) or not all(isinstance(x, dict) and x.get("value") and x.get("label") for x in b["stats"]):
+                    p.append(f"{who}: '{b['title']}' stats need a value and a label each")
             elif not b.get("points") and not b.get("text"):
                 p.append(f"{who}: '{b['title']}' needs rows, points or text")
     if r.get("exhibits"):

@@ -87,7 +87,12 @@ Charts.mini = function ({ price, strongBuy, buy, fair }) {
   const zone = price <= sb ? "strong" : price <= b ? "buy" : price <= fair ? "fair" : "over";
   return `<div class="mini-wrap m2" aria-hidden="true"><div class="mini">${seg(lo, sb, "--zone-strong")}${seg(sb, b, "--zone-buy")}${seg(b, fair, "--zone-fair")}${seg(fair, hi, "--zone-over")}</div>` +
     `<span class="mini-dot ${zone}" style="left:${pc(price)}%"></span>` +
-    `<div class="mini-ticks">${ticks.map(([x, t]) => `<span style="left:${pc(x)}%"><i></i>${t} <b>${App.num(x, x >= 100 ? 0 : 2)}</b></span>`).join("")}</div></div>`;
+    `<div class="mini-ticks">${ticks.map(([x, t], k) => {
+      // When Buy and Fair sit close together their labels splay outwards (Buy to the left of its
+      // tick, Fair to the right) so they never overlap; labels near an edge hug that edge.
+      const close = ticks.length === 2 && Math.abs(pc(ticks[1][0]) - pc(ticks[0][0])) < 26;
+      const p = pc(x), side = close ? (k === 0 ? "l" : "r") : p < 12 ? "r" : p > 88 ? "l" : "";
+      return `<span class="${side}" style="left:${p}%"><i></i>${t} <b>${App.num(x, x >= 100 ? 0 : 2)}</b></span>`; }).join("")}</div></div>`;
 };
 
 /* ---------- Valuation methods: bear–bull range per method ----------
@@ -114,23 +119,39 @@ Charts.models = function (el, models, { price, fair }) {
     s += `<line x1="${x(t)}" x2="${x(t)}" y1="${top - 4}" y2="${H - 22}" stroke="${rule}"/>` +
       (tk.has(i) ? `<text x="${x(t)}" y="${H - 6}" text-anchor="middle" font-size="${fs}" fill="${soft}">${App.num(t)}</text>` : "");
   });
+  // Labels: the base value goes just above its dot; the bear and bull values sit, smaller, outside
+  // the two ends of the range. Each tries a few spots and is left off rather than drawn over
+  // another label, a dot or the method's name (the values are also in the table and on hover).
+  const placed = [];
+  const box = (x0, y0, w, h) => ({ x: x0, y: y0, w, h });
+  const put = (cands) => { const k = App.placeBoxes([cands], { avoid: placed, W, H })[0]; if (k < 0) return null; placed.push(cands[k]); return cands[k]; };
   rows.forEach((m, i) => {
     const y = top + i * rowH + (narrow ? 34 : rowH / 2);
+    const nameW = App.textW(m.name, 13);
     s += narrow ? `<text x="0" y="${y - 16}" font-size="13" fill="${ink}" ${HALO}>${App.esc(m.name)}</text>`
       : `<text x="0" y="${y + 5}" font-size="13" fill="${ink}">${App.esc(m.name)}</text>`;
+    placed.push(narrow ? box(0, y - 29, nameW, 16) : box(0, y - 8, nameW, 16));
     s += `<line x1="${x(m.bear)}" x2="${x(m.bull)}" y1="${y}" y2="${y}" stroke="${soft}" stroke-width="6" stroke-linecap="round" opacity="0.35"/>`;
     s += `<circle cx="${x(m.bear)}" cy="${y}" r="5.5" fill="${css("--bad")}"><title>Bear ${App.rs(m.bear)}</title></circle>`;
     s += `<circle cx="${x(m.bull)}" cy="${y}" r="5.5" fill="${css("--good")}"><title>Bull ${App.rs(m.bull)}</title></circle>`;
+    [m.bear, m.bull, m.base].filter(App.isNum).forEach((v) => placed.push(box(x(v) - 8, y - 8, 16, 16)));
     if (App.isNum(m.weighted)) {
       const wx = x(m.weighted);
       s += `<path d="M${wx} ${y + 8} l6 7 l-6 7 l-6 -7 z" fill="${css("--accent")}"><title>Weighted ${App.rs(m.weighted)}</title></path>`;
+      placed.push(box(wx - 7, y + 7, 14, 16));
     }
     if (App.isNum(m.base)) {
-      const t = App.num(m.base), tw = App.textW(t, fs), right = x(Math.max(m.bull, m.bear)) + 10;
-      const tx = right + tw <= W ? right : x(Math.min(m.bull, m.bear)) - 10 - tw;
-      s += `<circle cx="${x(m.base)}" cy="${y}" r="7.5" fill="${ink}"><title>Base ${App.rs(m.base)}</title></circle>` +
-        `<text x="${tx}" y="${y + 4}" font-size="${fs}" font-weight="600" fill="${ink}" ${HALO}>${t}</text>`;
+      s += `<circle cx="${x(m.base)}" cy="${y}" r="7.5" fill="${ink}"><title>Base ${App.rs(m.base)}</title></circle>`;
+      const t = App.num(m.base), tw = App.textW(t, fs), bx = x(m.base);
+      const b = put([box(bx - tw / 2, y - 24, tw, 14), box(bx + 11, y - 21, tw, 14), box(bx - 11 - tw, y - 21, tw, 14), box(bx + 11, y + 6, tw, 14)]);
+      if (b) s += `<text x="${(b.x + b.w / 2).toFixed(1)}" y="${(b.y + 11).toFixed(1)}" text-anchor="middle" font-size="${fs}" font-weight="700" fill="${ink}" ${HALO}>${t}</text>`;
     }
+    const ends = [[Math.min(m.bear, m.bull), m.bear <= m.bull ? "--bad" : "--good", "end"], [Math.max(m.bear, m.bull), m.bear <= m.bull ? "--good" : "--bad", "start"]];
+    ends.forEach(([v, col, side]) => {
+      const t = App.num(v), tw = App.textW(t, 11), ex = x(v);
+      const b = put(side === "end" ? [box(ex - 10 - tw, y - 7, tw, 13)] : [box(ex + 10, y - 7, tw, 13)]);
+      if (b) s += `<text x="${(b.x + b.w / 2).toFixed(1)}" y="${(b.y + 10).toFixed(1)}" text-anchor="middle" font-size="11" fill="${css(col)}" ${HALO}>${t}</text>`;
+    });
   });
   lines.forEach(([v, label, color], i) => {
     s += `<line x1="${x(v)}" x2="${x(v)}" y1="${top - 4}" y2="${H - 22}" stroke="${color}" stroke-width="1.8" stroke-dasharray="5 4"/>` +
@@ -200,37 +221,70 @@ Charts.bars = function (el, periods, series) {
 /* ---------- Fair value, buy price and share price across updates ----------
    Dates that would overlap are thinned out (first and latest always shown). */
 Charts.timeline = function (el, entries) {
-  const pts = entries.filter((e) => App.parseDate(e.date));
+  // Several updates on one day (a redo and a correction, say) would stack as a vertical jump:
+  // keep only the last update of each day.
+  const byDay = new Map();
+  entries.filter((e) => App.parseDate(e.date)).forEach((e) => byDay.set(String(e.date).slice(0, 10), e));
+  const pts = [...byDay.values()];
   const series = [
-    ["fairValue", "Fair value", "--ink"],
-    ["buyPrice", "Buy price", "--good"],
-    ["priceAtTime", "Share price at the time", "--accent"],
+    ["priceAtTime", "Price", "--accent"],
+    ["fairValue", "Fair", "--ink"],
+    ["buyPrice", "Buy", "--good"],
   ];
   const vals = pts.flatMap((e) => series.map(([k]) => e[k])).filter(App.isNum);
   if (pts.length < 2 || !vals.length) { el.innerHTML = ""; return; }
-  const W = widthOf(el), H = 240, L = 40, R = W - 12, top = 16, bottom = H - 36, fs = 12;
-  const t0 = App.parseDate(pts[0].date).getTime(), t1 = App.parseDate(pts[pts.length - 1].date).getTime();
-  const x = (d) => L + ((App.parseDate(d).getTime() - t0) / Math.max(1, t1 - t0)) * (R - L);
-  const lo = Math.min(...vals) * 0.85, hi = Math.max(...vals) * 1.1;
+  const first = pts[0], last = pts[pts.length - 1];
+  // tiles: where each line ended, and how it moved since the first update
+  const tile = ([k, label, c]) => { if (!App.isNum(last[k])) return "";
+    const f = pts.find((e) => App.isNum(e[k])), ch = f && f !== last && f[k] ? (last[k] / f[k] - 1) * 100 : null;
+    return `<div class="tl-t" style="--c:var(${c})"><span>${label === "Price" ? "Price" : label === "Fair" ? "Fair value" : "Buy price"}</span><b>${App.num(last[k], 2)}</b>${
+      App.isNum(ch) ? `<em class="${ch >= 0 ? "up" : "down"}">${ch >= 0 ? "▲" : "▼"} ${App.num(Math.abs(ch), 1)}%<span> since ${App.date(f.date).replace(/ \d{4}$/, "")}</span></em>` : ""}</div>`; };
+  const gap = App.isNum(last.priceAtTime) && App.isNum(last.fairValue) && last.fairValue ? (last.priceAtTime / last.fairValue - 1) * 100 : null;
+  // updates evenly spaced, so close dates don't bunch up on a phone
+  const W = widthOf(el), H = 230, L = 34, R = W - 74, top = 22, bottom = H - 34, fs = 11.5;
+  const n = pts.length, x = (i) => L + (n === 1 ? 0 : (i / (n - 1)) * (R - L));
+  const lo = Math.min(...vals) * 0.85, hi = Math.max(...vals) * 1.08;
   const y = scale(lo, hi, bottom, top);
-  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fair value, buy price and share price at each update">`;
-  niceTicks(lo, hi, 5).forEach((t) => {
-    s += `<line x1="${L}" x2="${R}" y1="${y(t)}" y2="${y(t)}" stroke="${css("--rule")}"/>` +
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fair value, buy price and share price at each update">
+    <defs><linearGradient id="tl-over" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${css("--bad")}" stop-opacity="0.28"/><stop offset="1" stop-color="${css("--bad")}" stop-opacity="0.06"/></linearGradient>
+    <linearGradient id="tl-under" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${css("--good")}" stop-opacity="0.06"/><stop offset="1" stop-color="${css("--good")}" stop-opacity="0.28"/></linearGradient></defs>`;
+  niceTicks(lo, hi, 4).forEach((t) => {
+    s += `<line x1="${L}" x2="${R}" y1="${y(t)}" y2="${y(t)}" stroke="${css("--rule")}" stroke-dasharray="2 4"/>` +
       `<text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="${fs}" fill="${css("--ink-soft")}">${App.num(t)}</text>`;
   });
-  // One date label per distinct day; then drop any that would collide.
-  const days = [...new Map(pts.map((e) => [e.date.slice(0, 10), e])).values()];
-  const items = days.map((e, i) => { const last = i === days.length - 1, first = i === 0;
-    return { x: x(e.date), w: App.textW(App.date(e.date), fs), anchor: first ? "start" : last ? "end" : "middle", prio: last ? 3 : first ? 2 : 1 }; });
-  const show = App.fitLabels(items, 8);
-  days.forEach((e, i) => { if (show.has(i)) s += `<text x="${items[i].x}" y="${H - 12}" text-anchor="${items[i].anchor}" font-size="${fs}" fill="${css("--ink-soft")}">${App.date(e.date)}</text>`; });
-  series.forEach(([k, label, c]) => {
-    const p = pts.filter((e) => App.isNum(e[k]));
-    if (!p.length) return;
-    s += `<polyline pathLength="1" fill="none" stroke="${css(c)}" stroke-width="2.5" points="${p.map((e) => `${x(e.date)},${y(e[k])}`).join(" ")}"/>`;
-    p.forEach((e) => { s += `<circle cx="${x(e.date)}" cy="${y(e[k])}" r="4.5" fill="${css(c)}"><title>${label} ${App.rs(e[k])}, ${App.date(e.date)}</title></circle>`; });
+  // the gap between share price and fair value, red where the price was above it, green where below
+  for (let i = 0; i < n - 1; i++) {
+    const a = pts[i], b2 = pts[i + 1];
+    if (![a.priceAtTime, a.fairValue, b2.priceAtTime, b2.fairValue].every(App.isNum)) continue;
+    const over = a.priceAtTime + b2.priceAtTime >= a.fairValue + b2.fairValue;
+    s += `<polygon class="tl-gap" fill="url(#tl-${over ? "over" : "under"})" points="${x(i)},${y(a.priceAtTime)} ${x(i + 1)},${y(b2.priceAtTime)} ${x(i + 1)},${y(b2.fairValue)} ${x(i)},${y(a.fairValue)}"/>`;
+  }
+  // a faint column and date for every update
+  const items = pts.map((e, i) => ({ x: x(i), w: App.textW(App.date(e.date).replace(/ \d{4}$/, ""), fs), anchor: i === 0 ? "start" : i === n - 1 ? "end" : "middle", prio: i === n - 1 ? 3 : i === 0 ? 2 : 1 }));
+  const show = App.fitLabels(items, 6);
+  pts.forEach((e, i) => {
+    s += `<line x1="${x(i)}" x2="${x(i)}" y1="${top}" y2="${bottom}" stroke="${css("--rule")}" opacity="0.6"/>`;
+    if (show.has(i)) s += `<text x="${x(i)}" y="${H - 12}" text-anchor="${items[i].anchor}" font-size="${fs}" fill="${css("--ink-soft")}">${App.date(e.date).replace(/ \d{4}$/, "")}</text>`;
   });
-  el.innerHTML = s + "</svg>";
+  const ends = [];
+  series.forEach(([k, label, c]) => {
+    const idx = pts.map((e, i) => i).filter((i) => App.isNum(pts[i][k]));
+    if (!idx.length) return;
+    s += `<polyline pathLength="1" class="tl-line" fill="none" stroke="${css(c)}" stroke-width="${k === "fairValue" ? 3 : 2.5}" stroke-linejoin="round" stroke-linecap="round" points="${idx.map((i) => `${x(i)},${y(pts[i][k])}`).join(" ")}"/>`;
+    idx.forEach((i) => { const end = i === n - 1;
+      s += `${end ? `<circle class="tl-pulse" cx="${x(i)}" cy="${y(pts[i][k])}" r="5" fill="${css(c)}"/>` : ""}<circle cx="${x(i)}" cy="${y(pts[i][k])}" r="${end ? 5 : 3.5}" fill="${end ? css(c) : css("--surface")}" stroke="${css(c)}" stroke-width="2"><title>${label} ${App.rs(pts[i][k])}, ${App.date(pts[i].date)}</title></circle>`; });
+    const li = idx[idx.length - 1]; ends.push({ y: y(pts[li][k]), v: pts[li][k], c: css(c), label });
+  });
+  // name and latest value of each line at the right edge, nudged apart if they're close
+  ends.sort((a, b) => a.y - b.y).forEach((e, i, arr) => { if (i && e.y - arr[i - 1].y < 16) e.y = arr[i - 1].y + 16; });
+  ends.forEach((e) => { s += `<text x="${R + 9}" y="${(e.y + 4).toFixed(1)}" font-size="12" fill="${e.c}" ${HALO}><tspan font-weight="400" opacity="0.8">${e.label} </tspan><tspan font-weight="700">${App.num(e.v, e.v >= 100 ? 0 : 2)}</tspan></text>`; });
+  // the gap at the latest update, as a pill between the two lines
+  if (App.isNum(gap)) {
+    const gy = (y(last.priceAtTime) + y(last.fairValue)) / 2, txt = `${gap >= 0 ? "+" : "−"}${App.num(Math.abs(gap), 0)}%`, pw = App.textW(txt, 11) + 12;
+    s += `<g class="tl-pill"><rect x="${x(n - 1) - pw - 10}" y="${gy - 10}" width="${pw}" height="20" rx="10" fill="${css(gap >= 0 ? "--bad" : "--good")}"/><text x="${x(n - 1) - 10 - pw / 2}" y="${gy + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" style="fill:#fff">${txt}</text></g>`;
+  }
+  const verdict = App.isNum(gap) ? `<div class="tl-verdict ${gap >= 0 ? "over" : "under"}"><i aria-hidden="true">${gap >= 0 ? "🔺" : "🟢"}</i> At the last update the price was <b>${App.num(Math.abs(gap), 0)}% ${gap >= 0 ? "above" : "below"}</b> fair value</div>` : "";
+  el.innerHTML = `<div class="tl-tiles">${series.map(tile).join("")}</div>${verdict}${s}</svg>`;
 };
 
 /* Charts are drawn at their shown width, so redraw them when the width changes (phone turned,
