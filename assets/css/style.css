@@ -783,3 +783,29 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
 .dl.two .dl-pt { top: 44px; }
 .dl-pt.up span { position: absolute; bottom: calc(100% + 2px); margin: 0; }
 .ch-t { paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+
+/* Your price alerts, under the price ladder */
+.alert-cards { margin-top: 0.8rem; display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.alert-card { position: relative; border-radius: 12px; padding: 0.8rem 0.9rem 0.75rem; overflow: hidden;
+  background: linear-gradient(135deg, var(--zone-fair), var(--surface)); border: 1px solid var(--warn); border-left-width: 5px; }
+.alert-card.sent { border-color: var(--good); background: linear-gradient(135deg, var(--zone-buy), var(--surface)); }
+.al-top { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.6rem; align-items: center; }
+.al-bell { width: 2.4rem; height: 2.4rem; border-radius: 50%; display: grid; place-items: center; color: #fff; background: var(--warn);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--warn) 22%, transparent); animation: al-ring 2.6s ease-in-out infinite; transform-origin: 50% 10%; }
+.alert-card.sent .al-bell { background: var(--good); box-shadow: 0 0 0 4px color-mix(in srgb, var(--good) 22%, transparent); animation: none; }
+@keyframes al-ring { 0%, 80%, 100% { transform: rotate(0); } 84% { transform: rotate(14deg); } 88% { transform: rotate(-12deg); } 92% { transform: rotate(8deg); } 96% { transform: rotate(-4deg); } }
+@media (prefers-reduced-motion: reduce) { .al-bell { animation: none; } }
+.al-what small { color: var(--ink-soft); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.al-target { font-size: 1.45rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; color: var(--ink); }
+.al-target small { font-size: 0.8rem; font-weight: 400; color: var(--ink-soft); margin-left: 0.35rem; text-transform: none; letter-spacing: 0; }
+.al-dir { font-size: 0.95rem; margin-right: 0.3rem; vertical-align: 0.15em; }
+.al-dir.down { color: var(--bad); } .al-dir.up { color: var(--good); }
+.al-pill { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap; }
+.al-pill.wait { background: var(--warn); color: #fff; }
+.al-pill.sent { background: var(--good); color: #fff; white-space: normal; text-align: center; }
+.al-meter { margin-top: 0.7rem; }
+.al-track { height: 8px; border-radius: 999px; background: color-mix(in srgb, var(--ink-soft) 18%, transparent); overflow: hidden; }
+.al-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, color-mix(in srgb, var(--warn) 45%, transparent), var(--warn)); }
+.al-meter-t { display: flex; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.3rem; font-variant-numeric: tabular-nums; }
+.al-meter-t b { color: var(--ink); }
+.al-note { margin-top: 0.45rem; font-size: 0.85rem; color: var(--ink-soft); }

@@ -120,6 +120,37 @@
       ${s.top.length > 10 ? `<button type="button" class="sh-toggle" data-sh-toggle>Show all ${s.top.length}</button>` : ""}
       <p class="sh-src">${App.esc(s.source)}. Change = shares bought or sold since the previous quarter.</p>`;
   }
+  /* Your price alerts (set with /alert in Telegram), shown under the price ladder as cards:
+     bell, the target in large type, a "how close" meter from today's price to the target, and
+     a status pill (waiting, or sent with its date). */
+  const BELL = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg>`;
+  function alertLines() {
+    if (!myTargets.length) return "";
+    return `<div class="alert-cards">${myTargets.map((t) => {
+      const pr = App.resolvePrice(t.symbol, t.symbol === classes[0].symbol && has("price") ? d.price : null, prices);
+      const down = t.direction === "below";
+      let meter = "", pill;
+      if (t.fired) pill = `<span class="al-pill sent">✓ Sent ${App.date(t.fired.at.slice(0, 10))} at ${App.price(t.fired.price)}</span>`;
+      else {
+        pill = `<span class="al-pill wait">Waiting</span>`;
+        if (pr) {
+          const gapPct = ((t.price - pr.value) / pr.value) * 100;          // negative: target below today
+          const reached = down ? pr.value <= t.price : pr.value >= t.price;
+          const close = reached ? 100 : Math.max(4, 100 - Math.abs(gapPct) / 25 * 100);   // 25% away or more = empty
+          meter = `<div class="al-meter" role="img" aria-label="Today ${App.price(pr.value)}, ${Math.abs(gapPct).toFixed(1)}% from the alert">
+              <div class="al-track"><div class="al-fill" style="width:${close.toFixed(0)}%"></div></div>
+              <div class="al-meter-t"><span>Today <b>${App.price(pr.value)}</b></span><span><b>${reached ? "reached" : `${Math.abs(gapPct).toFixed(1)}% to go`}</b>${reached ? "" : ` · ${App.rs(Math.abs(t.price - pr.value))} ${down ? "fall" : "rise"}`}</span></div></div>`;
+        }
+      }
+      return `<div class="alert-card${t.fired ? " sent" : ""}">
+          <div class="al-top"><span class="al-bell">${BELL}</span>
+            <div class="al-what"><small>${classes.length > 1 ? `${App.esc(t.symbol)} · ` : ""}Your price alert</small>
+              <div class="al-target"><span class="al-dir ${down ? "down" : "up"}">${down ? "▼" : "▲"}</span>${App.rs(t.price)}<small>${down ? "or lower" : "or higher"}</small></div></div>
+            ${pill}</div>
+          ${meter}${t.note ? `<div class="al-note">${App.esc(t.note)}</div>` : ""}</div>`;
+    }).join("")}</div>`;
+  }
+
   const sections = [
     { id: "overview", title: "Overview", always: true, html: () => {
       const rows = classes.map((sc, i) => {
@@ -157,7 +188,8 @@
         </div>
         ${has("management") ? mgmtHtml(d.management) : ""}
         <div class="ladder"><div id="ladder"></div>
-          <p class="ladder-caption">${App.term("Strong-buy price", "Strong-buy price")} ${App.rs(v.strongBuyPrice)} and ${App.term("buy price", "Buy price")} ${App.rs(v.buyPrice)} come from ${App.term("fair value", "Fair value")} ${App.rs(v.fairValue)} minus a ${App.term("margin of safety", "Margin of safety")}${v.marginOfSafety ? ` of ${v.marginOfSafety.strongBuy}% and ${v.marginOfSafety.buy}%` : ""}.</p></div>`;
+          <p class="ladder-caption">${App.term("Strong-buy price", "Strong-buy price")} ${App.rs(v.strongBuyPrice)} and ${App.term("buy price", "Buy price")} ${App.rs(v.buyPrice)} come from ${App.term("fair value", "Fair value")} ${App.rs(v.fairValue)} minus a ${App.term("margin of safety", "Margin of safety")}${v.marginOfSafety ? ` of ${v.marginOfSafety.strongBuy}% and ${v.marginOfSafety.buy}%` : ""}.</p>
+          ${alertLines()}</div>`;
     }, after: () => {
       const ex = has("scenarios") && d.scenarios.averages ? [d.scenarios.averages.bull] : [];
       Charts.ladder(document.getElementById("ladder"), { price: mainPrice && mainPrice.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue, extra: ex,
@@ -187,13 +219,6 @@
     { id: "changes", title: "What changed", always: true, html: () => {
       if (!research) return `<h2>What changed</h2><p class="section-lead">No research record yet for this company.</p>`;
       const log = (research.changeLog || []).slice().reverse();
-      const entries = log.map((e, i) => {
-        const prev = log[i + 1];
-        const fv = prev && App.isNum(prev.fairValue) && App.isNum(e.fairValue) && prev.fairValue !== e.fairValue
-          ? `Fair value ${App.rs(prev.fairValue)} → <b>${App.rs(e.fairValue)}</b>` : App.isNum(e.fairValue) ? `Fair value <b>${App.rs(e.fairValue)}</b>` : "";
-        return `<div class="status"><b>${App.date(e.date)}</b>${e.basedOn ? `, based on ${App.esc(e.basedOn)}` : ""}. ${fv}${App.isNum(e.buyPrice) ? `, buy price ${App.rs(e.buyPrice)}` : ""}.
-          <div>${App.esc(e.summary || "")}</div></div>`;
-      }).join("");
       const periods = (research.periods || []).slice().sort((a, b) => String(a.periodEnd).localeCompare(String(b.periodEnd)));
       const allNames = [...new Set(periods.flatMap((p) => Object.keys(p.figures || {})))];
       const LABELS = { revenue: "Revenue", grossProfit: "Gross profit", grossMarginPct: "Gross margin", netProfit: "Net profit", eps: "EPS",
@@ -241,11 +266,10 @@
       const reports = (research.reportsRead || []).map((r) => `<li>${App.esc(r.title || r.file)}${r.audited === false ? " (unaudited)" : ""}, read ${App.date(r.readOn)}</li>`).join("");
       return `<h2>What changed</h2>
         <p class="section-lead">Each update builds on the saved research record, reading only new reports.</p>
-        <div class="status-list" style="margin-bottom:1rem">${entries || '<p class="na">No updates logged yet.</p>'}</div>
         ${log.length >= 2 ? `<div class="chart"><h3>Fair value over time</h3><div id="timeline"></div>
           <div class="legend"><span><i style="background:var(--ink)"></i>Fair value</span><span><i style="background:var(--good)"></i>Buy price</span><span><i style="background:var(--accent)"></i>Share price at the time</span></div></div>`
           : `<p class="section-lead">A fair-value history chart appears after the next update.</p>`}
-        ${(research.openQuestions || []).length ? `<h3 style="margin:1.2rem 0 .4rem">To check in the next report</h3><ul>${research.openQuestions.map((q) => `<li>${App.esc(q)}</li>`).join("")}</ul>` : ""}
+        ${(research.openQuestions || []).length ? `<details class="more"><summary>To check in the next report (${research.openQuestions.length})</summary><ul>${research.openQuestions.map((q) => `<li>${App.esc(q)}</li>`).join("")}</ul></details>` : ""}
         <details class="more"><summary>Saved figures by period</summary>${figTable}</details>
         ${inputs ? `<details class="more"><summary>Valuation inputs and reasons</summary><div class="table-wrap"><table><thead><tr><th>Input</th><th>Value</th><th>Reason</th><th>Since</th></tr></thead><tbody>${inputs}</tbody></table></div></details>` : ""}
         ${reports ? `<details class="more"><summary>Reports read</summary><ul>${reports}</ul></details>` : ""}`;
@@ -307,23 +331,6 @@
     { id: "whatif", title: "What if?", always: true, html: () => has("modelInputs") ? `<h2>What if?</h2><div id="whatif"></div>`
         : `<h2>What if?</h2><p class="section-lead">Change the valuation inputs and see the fair value move. Available for this company after its next update or redo.</p>`,
       after: () => has("modelInputs") && window.WhatIf && WhatIf.mount(document.getElementById("whatif"), d, mainPrice && mainPrice.value) },
-    { id: "alerts", title: "Your alerts", always: true, html: () => {
-      if (!myTargets.length) return `<h2>Your alerts</h2><p class="section-lead">No price alerts set for this company. Post <b>/alert ${App.esc(classes[0].symbol.split(".")[0])} below 45</b> (your price) in the Telegram channel to set one; it shows here and on the price ladder a few minutes later.</p>`;
-      const rows = myTargets.map((t) => {
-        const pr = App.resolvePrice(t.symbol, t.symbol === classes[0].symbol && has("price") ? d.price : null, prices);
-        let state;
-        if (t.fired) state = `Sent on ${App.date(t.fired.at.slice(0, 10))} at ${App.price(t.fired.price)}`;
-        else if (pr) {
-          const away = ((t.price - pr.value) / pr.value) * 100;
-          state = `Waiting: ${Math.abs(away).toFixed(1)}% ${away < 0 ? "below" : "above"} the latest price`;
-        } else state = "Waiting";
-        return `<tr><td>${App.esc(t.symbol)}</td><td>${t.direction === "below" ? "At or below" : "At or above"} <b>${App.rs(t.price)}</b></td>
-          <td>${App.esc(t.note || "")}</td><td>${App.esc(state)}</td></tr>`;
-      }).join("");
-      return `<h2>Your alerts</h2>
-        <p class="section-lead">Checked about every 30 minutes during trading and after the close. Each alert is sent to Telegram once. Set or remove one with <b>/alert</b> and <b>/unalert</b> in the Telegram channel (<b>/alerts</b> lists them); the page updates a few minutes later.</p>
-        <div class="table-wrap"><table><thead><tr><th>Share</th><th>Target</th><th>Note</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-    } },
 
     { id: "buy-plan", title: "Buy plan", key: "buyPlan", html: () => {
       const b = d.buyPlan, price = mainPrice && mainPrice.value;
