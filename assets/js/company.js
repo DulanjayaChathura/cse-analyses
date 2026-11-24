@@ -332,8 +332,10 @@
     { id: "scenarios", title: "Assumptions", key: "scenarios", html: () => {
       const s = d.scenarios, w = v.scenarioWeights || {};
             const avg = s.averages || {}, mx = Math.max(...["bear", "base", "bull"].map((k) => avg[k]).filter(App.isNum), 1), pr = mainPrice && mainPrice.value;
+      // headroom above the tallest of the bars and today's price, so the price line is always inside the bar area
+      const top = Math.max(mx, App.isNum(pr) ? pr : 0) * 1.1;
       const caseCard = (k, ic, label) => !App.isNum(avg[k]) ? "" : `<div class="case ${k}"><div class="case-h"><span aria-hidden="true">${ic}</span>${label}${App.isNum(w[k]) ? `<em>${w[k]}%</em>` : ""}</div>
-          <div class="case-bar"><div style="height:${(avg[k] / Math.max(mx, pr || 0) * 100).toFixed(0)}%"></div>${App.isNum(pr) ? `<i style="bottom:${(pr / Math.max(mx, pr) * 100).toFixed(0)}%"></i>` : ""}</div>
+          <div class="case-bar"><div style="height:${(avg[k] / top * 100).toFixed(0)}%"></div>${App.isNum(pr) ? `<i style="bottom:${(pr / top * 100).toFixed(0)}%"></i>` : ""}</div>
           <b>${App.rs(avg[k])}</b>${App.isNum(pr) && pr ? (() => { const g = (avg[k] / pr - 1) * 100;
             return `<span class="case-vs ${g >= 0 ? "up" : "down"}">${g >= 0 ? "▲" : "▼"} ${App.num(Math.abs(g), 0)}% ${g >= 0 ? "above" : "below"}</span>`; })() : ""}<small>average of the methods</small></div>`;
       return `<h2>Assumptions</h2>

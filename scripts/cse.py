@@ -32,15 +32,17 @@ MARKET_CLOSE = datetime.time(14, 30)
 def last_session_date(now=None):
     """Date of the most recent CSE trading session that has closed.
 
-    Weekends roll back to Friday; before 14:30 on a weekday the latest closed
-    session is the previous weekday. Public holidays aren't known here, so
-    callers also prefer a trade date reported by the CSE itself when present.
+    Weekends and market holidays (research/market-holidays.json, via market_day.py)
+    roll back to the previous trading day; before 14:30 on a trading day the latest
+    closed session is the one before. Callers still prefer a trade date reported by
+    the CSE itself when present (a special holiday may not be in the list).
     """
+    from market_day import check
     now = now or datetime.datetime.now(COLOMBO)
     d = now.date()
-    if now.weekday() < 5 and now.time() < MARKET_CLOSE:
+    if check(d)[0] and now.time() < MARKET_CLOSE:
         d -= datetime.timedelta(days=1)
-    while d.weekday() >= 5:
+    while not check(d)[0]:
         d -= datetime.timedelta(days=1)
     return d.isoformat()
 

@@ -9,6 +9,7 @@ This repository is a static website (GitHub Pages) that shows long-term valuatio
 - `research/<CODE>/history/<analysisDate>.json`: archived earlier analyses.
 - `alerts.json`: the owner's Telegram price targets. Don't change it unless asked. The owner edits it with the Telegram commands `/alert`, `/unalert` and `/alerts` (`scripts/alert_command.py`, `alert-command.yml`); `/command` lists every channel command (`COMMAND_LIST` in `listener/worker.js`: add any new command there).
 - `generated/`: written by GitHub Actions. Never edit by hand.
+- `research/market-holidays.json`: the days the CSE is closed besides weekends (Sri Lanka's bank holidays from the year's government gazette). `scripts/market_day.py` reads it, and the price workflows (site build, intraday alerts, the backup price check `price-check.yml`) skip those days; `scripts/cse.py` also uses it to know the latest trading session. Add the new year's list each January, with the gazette as the source, and any special market holiday the CSE declares.
 
 ## The analysis brief (use for every first analysis and update)
 The owner's standard request is: "I'm a long-term investor planning to buy 500 shares. Use all methods (NAV, ROE, P/E, dividends, DCF or residual income, etc.), give bear/base/bull, show assumptions and what would change them, and tell me the buy price. Start with a short summary, then a table."

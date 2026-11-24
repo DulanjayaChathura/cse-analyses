@@ -1,0 +1,55 @@
+# Backup for the daily price fetch. GitHub sometimes runs the 14:00 Saudi-time
+# "Build and publish site" job late or skips it. Three times each weekday afternoon this
+# checks whether the saved prices are from the latest CSE close, and reruns that job only
+# if they aren't. Weekends and market holidays (research/market-holidays.json) are skipped.
+# Runs entirely on GitHub: no Claude, no cost. (It replaces the Claude "Daily price check" task.)
+name: Price check (backup)
+
+on:
+  schedule:
+    # 12:17, 13:47 and 16:17 UTC = 15:17, 16:47 and 19:17 Saudi time (17:47, 19:17, 21:47 in Sri Lanka).
+    # Odd minutes, because runs on the hour are the ones GitHub most often delays.
+    - cron: "17 12 * * 1-5"
+    - cron: "47 13 * * 1-5"
+    - cron: "17 16 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write   # start "Build and publish site"
+
+concurrency:
+  group: price-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Is the market open today?
+        id: day
+        run: python scripts/market_day.py --github
+
+      - name: Are the prices from the latest close?
+        id: prices
+        if: steps.day.outputs.open == 'true'
+        run: python scripts/prices_stale.py --github
+
+      - name: Rerun the price fetch if they aren't
+        if: steps.day.outputs.open == 'true' && steps.prices.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          busy=$(gh run list --workflow site.yml --limit 5 --json status -q '[.[] | select(.status != "completed")] | length')
+          if [ "$busy" != "0" ]; then
+            echo "A site build is already queued or running; it will fetch the prices."
+          else
+            gh workflow run site.yml --ref main
+            echo "Started \"Build and publish site\" to fetch today's closing prices."
+          fi

@@ -1,5 +1,6 @@
 # Checks your price targets (alerts.json) every 30 minutes during CSE trading
-# hours and posts to your Telegram channel when one is crossed.
+# hours and posts to your Telegram channel when one is crossed. Skipped on weekends and
+# market holidays (research/market-holidays.json).
 # Never commits: which targets have fired is kept in the Actions cache.
 name: Price alerts
 
@@ -28,7 +29,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Is the market open today?
+        id: day
+        run: python scripts/market_day.py --github
+
       - name: Load which alerts have already been sent
+        if: steps.day.outputs.open == 'true'
         uses: actions/cache/restore@v5
         with:
           path: .alert-state
@@ -37,6 +43,7 @@ jobs:
 
       - name: Check targets and send alerts
         id: alerts
+        if: steps.day.outputs.open == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
