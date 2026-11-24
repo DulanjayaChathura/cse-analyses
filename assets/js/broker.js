@@ -427,24 +427,49 @@
     const codeChips = (codes, cls) => (codes || []).map((c) => `<span class="badge ${cls}" title="${App.esc(c)}">${App.esc(nameOf(c))}</span>`).join("");
 
     /* Jump nav: skip straight to a section on a long day. */
+    /* Small trend lines for the top tiles, from the figures saved for each broker day up to this one. */
+    const hist = days.slice(pos).reverse().map((x) => x.m || {});
+    const spark = (key, bars) => {
+      const v = hist.map((h) => h[key]).filter(App.isNum).slice(-20);
+      if (v.length < 2) return "";
+      const W = 120, H = 30, lo = Math.min(...v), hi = Math.max(...v), y = (x) => H - 3 - (x - (bars ? 0 : lo)) / ((hi - (bars ? 0 : lo)) || 1) * (H - 6);
+      if (bars) { const bw = W / v.length;
+        return `<svg class="mt-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${v.map((x, i) => `<rect x="${(i * bw + 1).toFixed(1)}" y="${y(x).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${(H - 3 - y(x)).toFixed(1)}" rx="1" fill="${i === v.length - 1 ? "var(--accent)" : "var(--rule)"}"/>`).join("")}</svg>`; }
+      const up = v[v.length - 1] >= v[0], c = up ? "var(--good)" : "var(--bad)", pts = v.map((x, i) => `${(i * (W - 4) / (v.length - 1) + 2).toFixed(1)},${y(x).toFixed(1)}`);
+      return `<svg class="mt-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polyline pathLength="1" fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke" points="${pts.join(" ")}"/>
+        <circle class="mt-dot" cx="${pts[pts.length - 1].split(",")[0]}" cy="${pts[pts.length - 1].split(",")[1]}" r="3" fill="${c}" vector-effect="non-scaling-stroke"/></svg>`;
+    };
+    const mktTile = (ic, label, value, chg, pts, key) => {
+      const dn = App.isNum(chg) && chg < 0;
+      return `<div class="tile mt"><div class="mt-h"><span class="mt-ic" aria-hidden="true">${ic}</span><span class="tile-label">${label}</span>
+          ${App.isNum(chg) ? `<span class="mt-pill ${dn ? "down" : "up"}">${dn ? "▼" : "▲"} ${Math.abs(chg).toFixed(2)}%</span>` : ""}</div>
+        <div class="tile-value">${value}</div>${spark(key)}
+        <div class="tile-foot">${App.isNum(pts) ? `${pts < 0 ? "−" : "+"}${App.num(Math.abs(pts), 2)} points today` : hist.length > 1 ? `last ${Math.min(hist.length, 20)} broker days` : ""}</div></div>`;
+    };
     const jump = [
-      (d.highlights || []).length && ["#bk-highlights", "In short"],
-      research.length && ["#bk-research", "Research"],
-      calls.length && ["#bk-calls", "All calls"],
-      (d.dividends || []).length && ["#bk-dividends", "Dividends"],
-      (flows.length || (m.momentum || []).length || other.length) && ["#bk-market", "Market details"],
-      news.length && ["#bk-news", "News"],
+      (d.highlights || []).length && ["#bk-highlights", "In short", "📌"],
+      research.length && ["#bk-research", "Research", "🔬", research.length],
+      calls.length && ["#bk-calls", "All calls", "📋", calls.length],
+      (d.dividends || []).length && ["#bk-dividends", "Dividends", "💰", d.dividends.length],
+      (flows.length || (m.momentum || []).length || other.length) && ["#bk-market", "Market details", "📊"],
+      news.length && ["#bk-news", "News", "📰", news.length],
     ].filter(Boolean);
 
     content.innerHTML = `
-      <div class="tiles">
-        ${App.isNum(m.aspi) ? tile("ASPI", App.num(m.aspi, 0), pct(m.aspiChangePct, 2), m.aspiChangePct >= 0 ? "up" : "down") : ""}
-        ${App.isNum(m.sp20) ? tile("S&amp;P SL20", App.num(m.sp20, 0), pct(m.sp20ChangePct, 2), m.sp20ChangePct >= 0 ? "up" : "down") : ""}
-        ${App.isNum(m.turnoverBn) ? tile("Turnover", `Rs ${m.turnoverBn}bn`, App.isNum(m.marketPE) ? `Market P/E ${m.marketPE}x · P/B ${m.marketPBV}x` : "") : ""}
-        ${App.isNum(m.foreignNetMn) ? tile("Foreign investors", `${m.foreignNetMn < 0 ? "−" : "+"}Rs ${Math.abs(Math.round(m.foreignNetMn))}mn`, (App.isNum(m.foreignBuyMn) && App.isNum(m.foreignSellMn) ? `Bought Rs ${App.num(m.foreignBuyMn, 0)}mn · sold Rs ${App.num(m.foreignSellMn, 0)}mn` : (m.foreignNetMn < 0 ? "Net sellers" : "Net buyers")), m.foreignNetMn < 0 ? "down" : "up") : ""}
+      <div class="tiles mkt">
+        ${App.isNum(m.aspi) ? mktTile("📈", "ASPI", App.num(m.aspi, 0), m.aspiChangePct, m.aspiPoints, "aspi") : ""}
+        ${App.isNum(m.sp20) ? mktTile("🏆", "S&amp;P SL20", App.num(m.sp20, 0), m.sp20ChangePct, null, "sp20") : ""}
+        ${App.isNum(m.turnoverBn) ? `<div class="tile mt"><div class="mt-h"><span class="mt-ic" aria-hidden="true">🔄</span><span class="tile-label">Turnover</span></div>
+            <div class="tile-value">Rs ${m.turnoverBn}bn</div>${spark("turnoverBn", true)}
+            <div class="tile-foot">${App.isNum(m.marketPE) ? `P/E <b>${m.marketPE}x</b> · P/B <b>${m.marketPBV}x</b>` : ""}</div></div>` : ""}
+        ${App.isNum(m.foreignNetMn) ? (() => { const b = m.foreignBuyMn, sl = m.foreignSellMn, ok = App.isNum(b) && App.isNum(sl) && b + sl > 0;
+            return `<div class="tile mt"><div class="mt-h"><span class="mt-ic" aria-hidden="true">🌍</span><span class="tile-label">Foreign investors</span></div>
+            <div class="tile-value ${m.foreignNetMn < 0 ? "down" : "up"}">${m.foreignNetMn < 0 ? "−" : "+"}Rs ${Math.abs(Math.round(m.foreignNetMn))}mn</div>
+            ${ok ? `<div class="fx-split" role="img" aria-label="Bought Rs ${App.num(b, 0)}mn, sold Rs ${App.num(sl, 0)}mn"><div class="fx-b" style="width:${(b / (b + sl) * 100).toFixed(1)}%"></div><div class="fx-s"></div></div>
+              <div class="tile-foot fx-l"><span><i class="up">●</i> bought Rs ${App.num(b, 0)}mn</span><span><i class="down">●</i> sold Rs ${App.num(sl, 0)}mn</span></div>` : ""}</div>`; })() : ""}
       </div>
 
-      ${jump.length > 2 ? `<nav class="more-jump">${jump.map(([href, label]) => `<a href="${href}">${App.esc(label)}</a>`).join("")}</nav>` : ""}
+      ${jump.length > 2 ? `<nav class="more-jump jump2">${jump.map(([href, label, ic, n]) => `<a href="${href}"><span class="j-ic" aria-hidden="true">${ic}</span>${App.esc(label)}${n ? `<b>${n}</b>` : ""}</a>`).join("")}</nav>` : ""}
 
       ${(d.highlights || []).length ? `<section class="bk-card" id="bk-highlights"><h2>Today in short</h2>
         ${typeof d.highlights[0] === "string"
@@ -462,7 +487,6 @@
             <div class="rate-chips" id="frc" role="group" aria-label="Filter by call"><button type="button" class="on" data-r="">All</button>${ratings.map((r) => `<button type="button" data-r="${App.esc(r)}">${App.esc(r)}</button>`).join("")}</div>
             <select id="fs" aria-label="Filter by sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${App.esc(s)}</option>`).join("")}</select>
           </div></div>
-        <div class="call-head"><span>Price</span><span>Target</span><span>Upside</span></div>
         <div class="call-list" id="rows"></div>
         <button type="button" class="show-all" id="callsAll" hidden></button>
         <p class="muted-s">Sorted by the broker's upside. Underlined names have an analysis on this site, with its fair value on the line below; tap a name to open it.</p>
@@ -495,6 +519,16 @@
 
     content.querySelectorAll(".bk-list.hl li").forEach((li) => li.addEventListener("click", () => li.classList.toggle("open")));
     if (App.reveal) App.reveal(content, ".bk-card, .tiles");
+    /* One open at a time: opening a Full report tile (or a news card) closes the others in its
+       group, and the opened one is brought into view if closing the others moved it. */
+    content.addEventListener("toggle", (e) => {
+      const el = e.target;
+      if (!el.open || !el.matches(".rs-tiles > .rs-sec, .news-grid > .news2")) return;
+      const before = el.getBoundingClientRect().top;
+      el.parentElement.querySelectorAll(":scope > details[open]").forEach((o) => { if (o !== el) o.open = false; });
+      const top = el.getBoundingClientRect().top;
+      if (Math.abs(top - before) > 4 || top < 0) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, true);
     /* Filterable, sorted table of every call. */
     if (!calls.length) return;
     const rowsEl = document.getElementById("rows"), countEl = document.getElementById("count");
@@ -518,8 +552,8 @@
         const u = upside(c), co = mine[c.code];
         const nm = c.name.replace(/ (PLC|Limited)$/i, "");
         const name = co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">${App.esc(nm)}</a>` : App.esc(nm);
-        return `<div class="call1${co ? " mine" : ""}"><div class="call1-top"><span class="call1-name">${logoFor(c.code, nm, "sm")}<span>${name} <span class="muted-s">${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " NV" : ""}</span></span></span>${chip(c.rating)}</div>
-          <div class="call1-nums"><span>${n(c.price)}</span><span>${App.isNum(c.target) ? n(c.target) : "not set"}</span><span class="${u !== null && u < 0 ? "down" : "up"}">${pct(u)}</span></div>
+        return `<div class="call1${co ? " mine" : ""}"><div class="call1-top"><span class="call1-name">${logoFor(c.code, nm, "sm")}<span class="c1-n">${name}<small>${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " · non-voting" : ""}${c.sector ? ` · ${App.esc(c.sector)}` : ""}</small></span></span>${chip(c.rating)}</div>
+          <div class="call1-nums"><span class="c1-pt"><small>Price</small> ${n(c.price)} <i>→</i> <small>Target</small> ${App.isNum(c.target) ? n(c.target) : "not set"}</span><b class="c1-up ${u !== null && u < 0 ? "down" : "up"}">${pct(u)}</b></div>
           ${co && co.valuation && App.isNum(co.valuation.fairValue) ? `<div class="call1-dl">${dotLine([["price", "Price", c.price], ["fv", "This site", co.valuation.fairValue], ["tg", "Target", c.target]], true)}<span class="muted-s">this site ${n(co.valuation.fairValue)}</span></div>` : ""}</div>`;
       }).join("") || `<p class="muted-s">No calls match.</p>`;
     }

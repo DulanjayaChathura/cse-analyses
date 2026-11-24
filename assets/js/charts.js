@@ -82,8 +82,12 @@ Charts.mini = function ({ price, strongBuy, buy, fair }) {
   const pc = (v) => ((v - lo) / (hi - lo)) * 100;
   const sb = App.isNum(strongBuy) ? strongBuy : lo, b = App.isNum(buy) ? buy : sb;
   const seg = (a, z, c) => `<span style="width:${pc(z) - pc(a)}%;background:var(${c})"></span>`;
-  return `<div class="mini-wrap" aria-hidden="true"><div class="mini">${seg(lo, sb, "--zone-strong")}${seg(sb, b, "--zone-buy")}${seg(b, fair, "--zone-fair")}${seg(fair, hi, "--zone-over")}</div>` +
-    `<span class="mini-marker" style="left:${pc(price)}%"></span></div>`;
+  // Buy and fair value as labelled ticks under the bar; today's price as a pulsing dot on it.
+  const ticks = [[b, "Buy"], [fair, "Fair"]].filter(([x]) => App.isNum(x));
+  const zone = price <= sb ? "strong" : price <= b ? "buy" : price <= fair ? "fair" : "over";
+  return `<div class="mini-wrap m2" aria-hidden="true"><div class="mini">${seg(lo, sb, "--zone-strong")}${seg(sb, b, "--zone-buy")}${seg(b, fair, "--zone-fair")}${seg(fair, hi, "--zone-over")}</div>` +
+    `<span class="mini-dot ${zone}" style="left:${pc(price)}%"></span>` +
+    `<div class="mini-ticks">${ticks.map(([x, t]) => `<span style="left:${pc(x)}%"><i></i>${t} <b>${App.num(x, x >= 100 ? 0 : 2)}</b></span>`).join("")}</div></div>`;
 };
 
 /* ---------- Valuation methods: bear–bull range per method ----------

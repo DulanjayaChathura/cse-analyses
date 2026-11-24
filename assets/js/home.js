@@ -44,7 +44,7 @@
     const cat = catOf(c);
     if (cat) badges.push(`<span class="badge ${cat.cls}" title="${App.esc((c.quality && c.quality.reason) || "")}">Category ${cat.n}: ${cat.name}</span>`);
     if (App.isRecentResearch(c.latestResearch)) badges.push(`<span class="badge new">${c.latestResearch.kind === "updated" ? "Updated" : "New research"} ${App.date(c.latestResearch.date)}</span>`);
-    if (st) badges.push(`<span class="badge ${st.cls}">${App.esc(st.label)}</span>`);
+    // (where the price sits against buy and fair value is now shown by the pills under the price bar)
     const rs = App.resultsStatus(c.resultsCovered, c.fiscalYearEnd);
     if (rs && rs.level !== "ok") badges.push(`<span class="badge ${rs.level}">Analysis may be out of date</span>`);
     if (main && main.source === "analysis") badges.push(`<span class="badge muted">Price from analysis</span>`);
@@ -56,10 +56,20 @@
       <div class="card-top">${App.logo(c)}<div><div class="card-name">${App.esc(c.name)}</div><div class="card-sector">${App.esc(c.sector || "")}</div></div></div>
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
-      <div class="card-levels"><span>Buy <b>${App.rs(v.buyPrice)}</b></span><span>Fair value <b>${App.rs(v.fairValue)}</b></span><span>Analysis ${App.date(c.analysisDate)}</span></div>
+      ${gapPills(main && main.value, v)}
+      <div class="card-levels"><span>Analysis ${App.date(c.analysisDate)}</span></div>
       ${dividendLine(c.dividend)}
       <div class="badges">${badges.join("")}</div>
     </a></div>`;
+  }
+
+  /* How far today's price is from the buy price and the fair value, as two pills. */
+  function gapPills(price, v) {
+    if (!App.isNum(price)) return "";
+    const pill = (lvl, label) => { if (!App.isNum(lvl) || lvl <= 0) return "";
+      const g = (price / lvl - 1) * 100, below = g <= 0;
+      return `<span class="gap ${below ? "below" : "above"}"><i>${below ? "▼" : "▲"}</i>${Math.abs(g).toFixed(1)}% ${below ? "below" : "above"} ${label}</span>`; };
+    return `<div class="gaps">${pill(v.buyPrice, "buy")}${pill(v.fairValue, "fair value")}</div>`;
   }
 
   /* "Dividend Rs 0.95 for 2025/26 · Rs 0.25 interim for 2026/27" (per share). */
@@ -93,6 +103,7 @@
           : `<p class="cat-empty">${g.cat.n === 1 ? "No company is at or below its buy price today." : "None."}</p>`}
       </section>`).join("")
       + (unrated.length ? `<section class="cat-group"><h2>Not rated yet <span class="cat-count">${unrated.length}</span></h2><div class="cards">${unrated.map(card).join("")}</div></section>` : "");
+    if (App.reveal) App.reveal(cardsEl, ".card-wrap");
   }
   const onlyEl = document.getElementById("starred-only");
   const searchEl = document.getElementById("search");

@@ -948,3 +948,103 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
     animation: ic-wiggle 0.5s ease-in-out; }
   @keyframes ic-wiggle { 25% { transform: rotate(-10deg) scale(1.12); } 50% { transform: rotate(8deg) scale(1.12); } 75% { transform: rotate(-4deg) scale(1.05); } }
 }
+
+/* Broker page: market tiles at the top, with icons, a change pill and a small trend line */
+.tiles.mkt .tile.mt { display: grid; gap: 0.25rem; align-content: start; position: relative; overflow: hidden; }
+.mt-h { display: flex; align-items: center; gap: 0.45rem; }
+.mt-ic { width: 1.9rem; height: 1.9rem; border-radius: 8px; display: grid; place-items: center; background: var(--bg); font-size: 1rem; }
+.mt-pill { margin-left: auto; font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 999px; white-space: nowrap; }
+.mt-pill.up { background: var(--zone-buy); color: var(--good); } .mt-pill.down { background: var(--zone-over); color: var(--bad); }
+.tiles.mkt .tile-value { color: var(--ink); }
+.tiles.mkt .tile-value.up { color: var(--good); } .tiles.mkt .tile-value.down { color: var(--bad); }
+.mt-spark { width: 100%; height: 30px; display: block; }
+.fx-split { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--bad); margin: 0.35rem 0 0.1rem; }
+.fx-b { background: var(--good); height: 100%; } .fx-s { flex: 1; }
+.fx-l { display: flex; justify-content: space-between; gap: 0.4rem; flex-wrap: wrap; }
+.fx-l i { font-style: normal; } .fx-l i.up { color: var(--good); } .fx-l i.down { color: var(--bad); }
+/* section links with icons and counts */
+.more-jump.jump2 a { display: inline-flex; align-items: center; gap: 0.35rem; }
+.more-jump.jump2 .j-ic { font-size: 0.95rem; }
+.more-jump.jump2 b { font-size: 0.7rem; background: var(--accent); color: #fff; border-radius: 999px; padding: 0.05rem 0.4rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal.in .fx-b { animation: rv-grow-x 1s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: left; animation-delay: 0.2s; }
+  .reveal.in .mt-ic { animation: ic-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both, ic-idle 2.6s ease-in-out infinite; animation-delay: calc(var(--i, 0) * 60ms + 200ms), calc(var(--i, 0) * -0.5s); }
+  .reveal.in .mt-pill { animation: ic-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both; animation-delay: 0.45s; }
+  .jump2 .j-ic { display: inline-block; animation: ic-idle 2.6s ease-in-out infinite; }
+  .jump2 a:nth-child(2) .j-ic { animation-delay: -0.5s; } .jump2 a:nth-child(3) .j-ic { animation-delay: -1s; } .jump2 a:nth-child(4) .j-ic { animation-delay: -1.5s; }
+  .jump2 a:nth-child(5) .j-ic { animation-delay: -2s; } .jump2 a:nth-child(6) .j-ic { animation-delay: -0.8s; }
+}
+
+/* Rating chips: "Buy" keeps a live pulse and a light sweeping across it; "Moderate buy" a
+   softer pulse; "Hold" and "Sell" stay still */
+.rchip.buy, .rchip.mbuy { position: relative; overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .rchip.buy { animation: buy-pulse 1.8s ease-in-out infinite; }
+  .rchip.buy::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.75) 50%, transparent 70%);
+    transform: translateX(-120%); animation: buy-shine 2.6s ease-in-out infinite; }
+  .rchip.mbuy { animation: mbuy-pulse 2.6s ease-in-out infinite; }
+  @keyframes buy-pulse { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 45%, transparent); transform: scale(1); }
+    50% { box-shadow: 0 0 0 5px color-mix(in srgb, var(--good) 0%, transparent); transform: scale(1.06); } }
+  @keyframes buy-shine { 0%, 35% { transform: translateX(-120%); } 75%, 100% { transform: translateX(120%); } }
+  @keyframes mbuy-pulse { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, #3b7dd8 35%, transparent); } 50% { box-shadow: 0 0 0 4px color-mix(in srgb, #3b7dd8 0%, transparent); } }
+}
+.mt-spark { height: 34px; }
+@media (prefers-reduced-motion: no-preference) { .mt-dot { animation: mt-blink 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes mt-blink { 50% { transform: scale(1.6); opacity: 0.6; } } }
+
+/* Home page cards: price bar with labelled ticks and a pulsing dot, gap pills, test dots, yield ring */
+.mini-wrap.m2 { padding: 10px 0 0; margin-top: 0.4rem; }
+.m2 .mini { height: 10px; border-radius: 999px; }
+.mini-dot { position: absolute; top: 7px; width: 16px; height: 16px; border-radius: 50%; transform: translateX(-50%); background: var(--ink); border: 3px solid var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,0.25); z-index: 1; }
+.mini-dot.strong, .mini-dot.buy { background: var(--good); } .mini-dot.fair { background: var(--warn); } .mini-dot.over { background: var(--bad); }
+.mini-ticks { position: relative; height: 1.5rem; margin-top: 3px; font-size: 0.72rem; color: var(--ink-soft); }
+.mini-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; display: flex; flex-direction: column; align-items: center; line-height: 1.15; }
+.mini-ticks span:last-child { transform: translateX(-70%); }
+.mini-ticks i { width: 2px; height: 5px; background: var(--ink-soft); margin-bottom: 1px; }
+.mini-ticks b { color: var(--ink); font-weight: 600; }
+.gaps { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+.gap { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 999px; display: inline-flex; gap: 0.3rem; align-items: center; }
+.gap.below { background: var(--zone-buy); color: var(--good-strong); } .gap.above { background: var(--zone-over); color: var(--bad); }
+.gap i { font-style: normal; font-size: 0.65rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .mini-dot { animation: dot-pulse 1.8s ease-in-out infinite; }
+  .mini-dot.strong, .mini-dot.buy { --pc: var(--good); } .mini-dot.fair { --pc: var(--warn); } .mini-dot.over { --pc: var(--bad); }
+  @keyframes dot-pulse { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--pc, var(--ink)) 50%, transparent), 0 1px 4px rgba(0,0,0,0.25); }
+    60% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--pc, var(--ink)) 0%, transparent), 0 1px 4px rgba(0,0,0,0.25); } }
+  .reveal.in .m2 .mini span { animation: rv-grow-x 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: left; }
+  .reveal.in .mini-dot { animation: dot-in 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both, dot-pulse 1.8s ease-in-out 1s infinite; }
+  @keyframes dot-in { from { left: 0; opacity: 0; } }
+  .reveal.in .gap { animation: ic-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both; animation-delay: 0.35s; }
+  .reveal.in .card-top .logo { animation: ic-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both, ic-float 3.2s ease-in-out 0.8s infinite; }
+  .badge.cat1 { animation: buy-pulse 1.8s ease-in-out infinite; position: relative; overflow: hidden; }
+  .badge.cat1::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.75) 50%, transparent 70%); transform: translateX(-120%); animation: buy-shine 2.6s ease-in-out infinite; }
+}
+
+/* Broker calls as compact cards: one column on a phone, two or three across on a computer */
+.call-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 0.5rem; margin-top: 0.6rem; }
+.call-list .call1 { border: 1px solid var(--rule); border-radius: 10px; padding: 0.55rem 0.7rem; background: var(--surface); }
+.call-list .call1.mine { border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); }
+.c1-n { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
+.c1-n small { color: var(--ink-soft); font-size: 0.72rem; margin-top: 0.1rem; }
+.call-list .call1-nums { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; text-align: left; margin-top: 0.35rem; }
+.c1-pt { font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.c1-pt small { color: var(--ink-soft); font-size: 0.7rem; } .c1-pt i { font-style: normal; color: var(--ink-soft); margin: 0 0.15rem; }
+.c1-up { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.call-list .call1-dl { margin-top: 0.15rem; }
+
+/* Starred companies: a gold light runs round the card's border without stopping, and the star
+   twinkles. (Browsers without @property get a steady gold border.) */
+@property --sa { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.card-wrap.is-starred > .card { border: 2px solid transparent; border-left-width: 2px;
+  background: linear-gradient(0deg, rgba(210, 154, 0, 0.07), rgba(210, 154, 0, 0.07)) padding-box, linear-gradient(var(--surface), var(--surface)) padding-box,
+    conic-gradient(from var(--sa), #d29a00, #ffe28a 8%, #d29a00 16%, rgba(210, 154, 0, 0.35) 40%, rgba(210, 154, 0, 0.35) 60%, #d29a00 84%, #ffe28a 92%, #d29a00) border-box; }
+[data-theme="dark"] .card-wrap.is-starred > .card {
+  background: linear-gradient(0deg, rgba(232, 176, 30, 0.10), rgba(232, 176, 30, 0.10)) padding-box, linear-gradient(var(--surface), var(--surface)) padding-box,
+    conic-gradient(from var(--sa), #e8b01e, #ffe9a6 8%, #e8b01e 16%, rgba(232, 176, 30, 0.3) 40%, rgba(232, 176, 30, 0.3) 60%, #e8b01e 84%, #ffe9a6 92%, #e8b01e) border-box; }
+@media (prefers-reduced-motion: no-preference) {
+  .card-wrap.is-starred > .card { animation: star-run 3.5s linear infinite; }
+  @keyframes star-run { to { --sa: 360deg; } }
+  .star.on { animation: star-twinkle 2.2s ease-in-out infinite; text-shadow: 0 0 6px rgba(255, 210, 80, 0.6); }
+  @keyframes star-twinkle { 0%, 100% { transform: scale(1) rotate(0); } 20% { transform: scale(1.25) rotate(-12deg); text-shadow: 0 0 12px rgba(255, 200, 40, 0.95); }
+    40% { transform: scale(1) rotate(8deg); } 60% { transform: scale(1.08) rotate(0); } }
+}

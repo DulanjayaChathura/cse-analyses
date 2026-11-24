@@ -303,7 +303,10 @@ def main():
             report.append(f"### ⚠️ broker/{path.name} was not published: " + "; ".join(broker_probs[:5]))
             continue
         write_json(SITE / "data" / "broker" / path.name, day)
-        days.append({"date": day["date"], "file": path.name, "source": day.get("source")})
+        m = day.get("market") or {}
+        days.append({"date": day["date"], "file": path.name, "source": day.get("source"),
+                     # a few market figures per day, so the page can draw small trend lines
+                     "m": {k: m.get(k) for k in ("aspi", "sp20", "turnoverBn", "foreignNetMn") if isinstance(m.get(k), (int, float))}})
     write_json(SITE / "data" / "broker" / "index.json", {"days": days})
 
     write_json(SITE / "data" / "index.json", {"companies": manifest})
