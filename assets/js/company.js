@@ -334,10 +334,11 @@
             const avg = s.averages || {}, mx = Math.max(...["bear", "base", "bull"].map((k) => avg[k]).filter(App.isNum), 1), pr = mainPrice && mainPrice.value;
       const caseCard = (k, ic, label) => !App.isNum(avg[k]) ? "" : `<div class="case ${k}"><div class="case-h"><span aria-hidden="true">${ic}</span>${label}${App.isNum(w[k]) ? `<em>${w[k]}%</em>` : ""}</div>
           <div class="case-bar"><div style="height:${(avg[k] / Math.max(mx, pr || 0) * 100).toFixed(0)}%"></div>${App.isNum(pr) ? `<i style="bottom:${(pr / Math.max(mx, pr) * 100).toFixed(0)}%"></i>` : ""}</div>
-          <b>${App.rs(avg[k])}</b><small>average of the methods</small></div>`;
+          <b>${App.rs(avg[k])}</b>${App.isNum(pr) && pr ? (() => { const g = (avg[k] / pr - 1) * 100;
+            return `<span class="case-vs ${g >= 0 ? "up" : "down"}">${g >= 0 ? "▲" : "▼"} ${App.num(Math.abs(g), 0)}% ${g >= 0 ? "above" : "below"}</span>`; })() : ""}<small>average of the methods</small></div>`;
       return `<h2>Assumptions</h2>
         ${s.averages ? `<div class="cases">${caseCard("bear", "🐻", "Bear")}${caseCard("base", "⚖️", "Base")}${caseCard("bull", "🐂", "Bull")}
-          ${App.isNum(pr) ? `<p class="cases-note"><i></i> today's price ${App.price(pr)}</p>` : ""}</div>` : ""}
+          ${App.isNum(pr) ? `<p class="cases-note"><i></i><span>Today's price <b>${App.price(pr)}</b>: the dashed line on each bar; the chips compare each case with it</span></p>` : ""}</div>` : ""}
         <div class="arows">${(s.assumptions || []).map((a) => {
           // a fill under each case when all three start with a number, so the spread is visible at a glance
           const n = ["bear", "base", "bull"].map((k) => { const t = String(a[k] ?? "").replace(/,(?=\d{3})/g, ""), m = (/→/.test(t) ? t.split("→").pop() : t).match(/-?\d+(\.\d+)?/); return m ? Math.abs(+m[0]) : null; });

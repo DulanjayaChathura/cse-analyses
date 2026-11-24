@@ -1368,3 +1368,13 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
   .rd-steps i[style*="background"] { animation: rd-step 2.8s ease-in-out infinite; }
   @keyframes rd-step { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
 }
+
+/* Assumption case bars: today's price drawn over the bars, and each case against it */
+.case-bar i { z-index: 2; border-top: 2px dashed #d08b00; box-shadow: 0 0 0 1px color-mix(in srgb, var(--surface) 70%, transparent); }
+.cases-note i { border-top: 2px dashed #d08b00; }
+.case-vs { font-size: 0.74rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 99px; }
+.case-vs.up { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+.case-vs.down { color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, transparent); }
+.cases-note b { color: var(--ink); }
+.case-vs, .case b { white-space: nowrap; }
+@media (max-width: 560px) { .case b { font-size: 0.98rem; } .case-vs { font-size: 0.7rem; padding: 0.1rem 0.35rem; } .case small { display: none; } }
