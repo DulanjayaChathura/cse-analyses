@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  actions: write     # start the site build, so the alert shows on the company page
 
 concurrency:
   group: alert-command      # one at a time, so two quick commands don't overwrite each other
@@ -48,3 +49,11 @@ jobs:
           fi
         env:
           COMMAND_TEXT: ${{ inputs.text }}
+      # A push made by this workflow doesn't start other workflows (GitHub's rule for its own
+      # token), so start the site build directly: the new or removed alert then shows on the
+      # company page's price ladder and "Your alerts" table within a few minutes.
+      - name: Rebuild the site
+        if: steps.run.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run "Build and publish site" --ref main --repo "${{ github.repository }}"

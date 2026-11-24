@@ -308,7 +308,7 @@
         : `<h2>What if?</h2><p class="section-lead">Change the valuation inputs and see the fair value move. Available for this company after its next update or redo.</p>`,
       after: () => has("modelInputs") && window.WhatIf && WhatIf.mount(document.getElementById("whatif"), d, mainPrice && mainPrice.value) },
     { id: "alerts", title: "Your alerts", always: true, html: () => {
-      if (!myTargets.length) return `<h2>Your alerts</h2><p class="section-lead">No price alerts set for this company. Add targets to <b>alerts.json</b> in the repository to get Telegram messages.</p>`;
+      if (!myTargets.length) return `<h2>Your alerts</h2><p class="section-lead">No price alerts set for this company. Post <b>/alert ${App.esc(classes[0].symbol.split(".")[0])} below 45</b> (your price) in the Telegram channel to set one; it shows here and on the price ladder a few minutes later.</p>`;
       const rows = myTargets.map((t) => {
         const pr = App.resolvePrice(t.symbol, t.symbol === classes[0].symbol && has("price") ? d.price : null, prices);
         let state;
@@ -321,7 +321,7 @@
           <td>${App.esc(t.note || "")}</td><td>${App.esc(state)}</td></tr>`;
       }).join("");
       return `<h2>Your alerts</h2>
-        <p class="section-lead">Checked about every 30 minutes during trading and after the close. Each alert is sent to Telegram once; change the target in alerts.json to set it again.</p>
+        <p class="section-lead">Checked about every 30 minutes during trading and after the close. Each alert is sent to Telegram once. Set or remove one with <b>/alert</b> and <b>/unalert</b> in the Telegram channel (<b>/alerts</b> lists them); the page updates a few minutes later.</p>
         <div class="table-wrap"><table><thead><tr><th>Share</th><th>Target</th><th>Note</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     } },
 

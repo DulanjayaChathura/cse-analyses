@@ -86,7 +86,9 @@ Every company in category 2 (watch list: a good business on the four business te
 
 ### Setting your targets
 
-Edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
+The easy way is the Telegram channel: `/alert DIAL below 45`, `/alert COMB above 220 take profit`, `/unalert DIAL`, and `/alerts` to list them. Each change is saved to `alerts.json` and the site is rebuilt, so the alert shows on the company page's price ladder and in "Your alerts" a few minutes later.
+
+You can also edit `alerts.json` in the repository (open it on GitHub and click the pencil icon):
 
 ```json
 {
