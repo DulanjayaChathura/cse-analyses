@@ -13,10 +13,12 @@ from common import GENERATED, ROOT, note_problem, read_json, tickers_and_symbols
 EXT = {"image/png": ".png", "image/jpeg": ".jpg", "image/jpg": ".jpg", "image/svg+xml": ".svg", "image/webp": ".webp", "image/gif": ".gif"}
 
 
-def save_logo(code, logo_path):
-    """Download a company's CSE logo to generated/logos/<code>.<ext>; returns its site path or None."""
+def save_logo(code, logo_path, quiet=False):
+    """Download a company's CSE logo to generated/logos/<code>.<ext>; returns its site path or None.
+    quiet: a missing logo is only printed, not reported as a problem (shares only seen on the
+    broker pages; the page shows initials and nothing needs fixing)."""
     if not logo_path:
-        note_problem(f"{code}: the CSE has no logo for this company; initials are shown instead.")
+        (print if quiet else note_problem)(f"{code}: the CSE has no logo for this company; initials are shown instead.")
         return None
     try:
         content, ctype = cse.download(cse.LOGO_BASE + logo_path.lstrip("/"))
@@ -92,20 +94,30 @@ def share_names():
     changed = False
     for code in broker_codes():
         have = names.get(code)
-        if isinstance(have, dict) and have.get("name") and "logo" in have:
+        if isinstance(have, dict) and "logo" in have:   # done (name None = not a CSE code)
             continue
         known = companies.get(code) or {}
         if known.get("name"):
             entry = {"name": known["name"], "logo": known.get("logo")}
         else:
-            try:
-                raw, logo_path, _, _ = cse.company_info(code)
-            except Exception as e:
-                note_problem(f"{code}: could not fetch its company name from the CSE ({e}). Will retry on the next run.")
-                continue
+            raw = logo_path = err = None
+            # A short code like "HNBX" in the broker's charts means the non-voting share (HNB.X0000).
+            tries = [code] + ([code.split(".")[0][:-1] + ".X0000"] if code.endswith(".N0000") and code.split(".")[0].endswith("X") else [])
+            for c in tries:
+                try:
+                    raw, logo_path, _, _ = cse.company_info(c)
+                    break
+                except Exception as e:
+                    err = e
             if not raw:
+                if "404" in str(err):
+                    print(f"{code}: not a CSE share code; left as it is.")
+                    names[code] = {"name": None, "logo": None}
+                    changed = True
+                else:
+                    note_problem(f"{code}: could not fetch its company name from the CSE ({err}). Will retry on the next run.")
                 continue
-            entry = {"name": cse.nice_name(raw), "logo": save_logo(code, logo_path)}
+            entry = {"name": cse.nice_name(raw), "logo": save_logo(code, logo_path, quiet=True)}
         names[code] = entry
         changed = True
         print(f"{code}: {entry['name']} logo={entry['logo']}")

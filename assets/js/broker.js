@@ -375,10 +375,12 @@
     for (const x of [...calls, ...(d.dividends || [])]) if (x.code && x.name) dayNames[x.code] = x.name;
     const full = (c) => { c = String(c || "").toUpperCase(); return /\.[A-Z]\d{4}$/.test(c) ? c : /\.[NX]$/.test(c) ? c + "0000" : c.includes(".") ? c : c + ".N0000"; };
     const sn = (k) => { const x = (shareNames || {})[k]; return typeof x === "string" ? { name: x } : x || {}; };
-    const nameOf = (c) => { const k = full(c); const n = (mine[k] && mine[k].name) || dayNames[k] || sn(k).name;
+    const resolve = (c) => { const k = full(c);
+      return !(mine[k] || dayNames[k] || sn(k).name) && /^[A-Z]+X\.N0000$/.test(k) ? k.replace(/X\.N0000$/, ".X0000") : k; };
+    const nameOf = (c) => { const k = resolve(c); const n = (mine[k] && mine[k].name) || dayNames[k] || sn(k).name;
       return n ? n.replace(/\s+PLC\.?$/i, "").replace(/\s+Limited$/i, "") + (/\.X\d{4}$/.test(k) ? " (non-voting)" : "") : String(c).split(".")[0]; };
     /* Small logo (or initials) and the company name, for rows of shares. */
-    const withLogo = (c) => { const k = full(c), nm = nameOf(c);
+    const withLogo = (c) => { const k = resolve(c), nm = nameOf(c);
       return `<span class="co-n" title="${App.esc(c)}">${logoFor(k, nm)}<span>${App.esc(nm)}</span></span>`; };
     /* A coming dividend as a card: logo and name, the amount large, a yield ring, and a
        timeline from today to the XD date (with a countdown) and the payment date. */
