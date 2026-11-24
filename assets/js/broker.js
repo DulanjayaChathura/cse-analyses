@@ -375,7 +375,12 @@
     sub.textContent = `${d.source || "Broker"} · ${d.posts ? d.posts + " messages" : ""}${d.callsPriceDate ? ` · call prices as of ${App.date(d.callsPriceDate)}` : ""}`;
 
     const sectors = [...new Set(calls.map((c) => c.sector).filter(Boolean))].sort();
-    const ratings = [...new Set(calls.map((c) => c.rating).filter(Boolean))];
+    // Ratings strongest first: Buy, Moderate buy, Hold, Sell (anything else after them)
+    const R_ORDER = ["buy", "moderate buy", "accumulate", "hold", "neutral", "reduce", "sell"];
+    const ratings = [...new Set(calls.map((c) => c.rating).filter(Boolean))]
+      .sort((a, b) => ((R_ORDER.indexOf(a.toLowerCase()) + 1) || 99) - ((R_ORDER.indexOf(b.toLowerCase()) + 1) || 99));
+    const rCount = (r) => calls.filter((c) => !r || c.rating === r).length;
+    const R_IC = { buy: "🟢", mbuy: "🔵", hold: "🟠", sell: "🔴" };
 
     const flows = (m.foreignFlows || []).slice().sort((a, b) => a.mn - b.mn);
     const flowsApprox = flows.some((f) => f.approx);
@@ -500,9 +505,9 @@
       ${calls.length ? `<section class="bk-card" id="bk-calls">
         <div class="bk-head"><h2>All broker calls <span class="muted-s" id="count"></span></h2>
           <div class="filters">
-            <input type="search" id="q" class="search" placeholder="Search company or code" aria-label="Search calls">
-            <div class="rate-chips" id="frc" role="group" aria-label="Filter by call"><button type="button" class="on" data-r="">All</button>${ratings.map((r) => `<button type="button" data-r="${App.esc(r)}">${App.esc(r)}</button>`).join("")}</div>
-            <select id="fs" aria-label="Filter by sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${App.esc(s)}</option>`).join("")}</select>
+            <span class="search-wrap"><span class="search-ic" aria-hidden="true">🔍</span><input type="search" id="q" class="search" placeholder="Search company or code" aria-label="Search calls"></span>
+            <div class="rate-chips rc2" id="frc" role="group" aria-label="Filter by call"><button type="button" class="on all" data-r="">All <b>${rCount("")}</b></button>${ratings.map((r) => `<button type="button" class="${ratingCls(r)}" data-r="${App.esc(r)}"><span aria-hidden="true">${R_IC[ratingCls(r)] || "⚪"}</span>${App.esc(r)} <b>${rCount(r)}</b></button>`).join("")}</div>
+            <span class="sel-wrap"><span aria-hidden="true">🏷️</span><select id="fs" aria-label="Filter by sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${App.esc(s)}</option>`).join("")}</select></span>
           </div></div>
         <div class="call-list" id="rows"></div>
         <button type="button" class="show-all" id="callsAll" hidden></button>

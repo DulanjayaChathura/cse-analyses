@@ -1173,7 +1173,7 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
 
 /* ---------- Top bar and home page header ---------- */
 .brand { display: inline-flex; align-items: center; gap: 0.5rem; }
-.brand-mark { width: 1.9rem; height: 1.9rem; border-radius: 8px; display: grid; place-items: center; color: #fff; background: linear-gradient(135deg, var(--accent), var(--good)); flex: none; }
+.brand-mark { width: 1.9rem; height: 1.9rem; border-radius: 8px; display: grid; place-items: center; color: #fff; background: linear-gradient(135deg, #12a67c, #0b6b78); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15); flex: none; }
 .brand-mark svg { width: 1.2rem; height: 1.2rem; }
 .nav-ic, .tt-ic { margin-right: 0.35rem; }
 .home-head #updated { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
@@ -1205,8 +1205,8 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
 @media (prefers-reduced-motion: no-preference) {
   .brand-mark { animation: brand-glow 3s ease-in-out infinite; }
   @keyframes brand-glow { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent); } 50% { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 0%, transparent); } }
-  .brand-mark polyline { stroke-dasharray: 40; animation: brand-draw 3s ease-in-out infinite; }
-  @keyframes brand-draw { 0% { stroke-dashoffset: 40; } 40%, 100% { stroke-dashoffset: 0; } }
+  .brand-mark polyline { stroke-dasharray: 1; animation: brand-draw 4s ease-in-out infinite; }
+  @keyframes brand-draw { 0% { stroke-dashoffset: 1; } 20%, 100% { stroke-dashoffset: 0; } }
   .nav-ic, .tt-ic, .hchip > span:first-child:not(.live) { display: inline-block; animation: ic-idle 2.8s ease-in-out infinite; }
   .live.on { animation: mt-blink 1.4s ease-in-out infinite; }
   .reveal.in .cov { animation: rv-pop 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
@@ -1227,3 +1227,19 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
 }
 @media (max-width: 640px) { .theme-toggle .tt-t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .theme-toggle .tt-ic { margin: 0; } .brand-mark { width: 1.6rem; height: 1.6rem; } }
 .brand > .brand-mark { display: grid !important; }
+@media (min-width: 900px) { .brand { white-space: nowrap; } }
+
+/* Broker calls filters: rating chips in their own colours with counts, strongest first */
+.rc2 button { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-soft); }
+.rc2 button span { font-size: 0.7rem; }
+.rc2 button b { font-size: 0.7rem; padding: 0.05rem 0.4rem; border-radius: 999px; background: var(--bg); color: var(--ink-soft); }
+.rc2 button.buy { color: var(--good-strong, var(--good)); } .rc2 button.mbuy { color: #1f4f91; } .rc2 button.hold { color: var(--warn); } .rc2 button.sell { color: var(--bad); }
+.rc2 button.on { color: #fff; border-color: transparent; }
+.rc2 button.on b { background: rgba(255,255,255,0.25); color: #fff; }
+.rc2 button.all.on { background: var(--ink); } .rc2 button.buy.on { background: var(--good); } .rc2 button.mbuy.on { background: #3b7dd8; }
+.rc2 button.hold.on { background: var(--warn); } .rc2 button.sell.on { background: var(--bad); }
+[data-theme="dark"] .rc2 button.mbuy { color: #9cc3f2; } [data-theme="dark"] .rc2 button.all.on { background: var(--accent); }
+.sel-wrap { position: relative; display: inline-flex; align-items: center; }
+.sel-wrap > span { position: absolute; left: 0.65rem; pointer-events: none; font-size: 0.9rem; }
+.sel-wrap select { padding-left: 2.1rem; }
+@media (prefers-reduced-motion: no-preference) { .rc2 button.buy.on, .rc2 button.buy:not(.on) span { animation: buy-pulse 1.8s ease-in-out infinite; } .rc2 button { transition: background 0.2s, color 0.2s, transform 0.15s; } .rc2 button:active { transform: scale(0.95); } }
