@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "ticker": "MELS.N0000",
+  "localFolder": null,
+  "updated": "2026-11-24",
+  "reportsRead": [
+    {
+      "file": "reports/MELS.N0000/2026-08-21_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-24",
+      "note": "444 PDF pages; printed page = PDF page − 2 (page numbers in sources are the printed ones). Used: financial highlights (p. 4), Chairman's message (pp. 11–13), strategy 2026/27 (p. 79), financial capital review (pp. 160–166), manufactured capital (pp. 183–184), statements (pp. 254–263), segments (pp. 290–291), EPS and dividends (p. 307), PPE (p. 308), subsidiaries (pp. 343–346), other financial investments (pp. 357–360), borrowings (p. 367), contingent liabilities (note 41), company summary (p. 414), shareholders (pp. 416–417). FY 2025 figures from the comparatives. No group five- or ten-year summary is printed (only the company's, p. 414). No separate CEO's review."
+    },
+    {
+      "file": "reports/MELS.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim Financial Statements to 30 September 2026",
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-24",
+      "note": "14 pages. Six months (p. 1) and quarter (p. 2), balance sheet (p. 3), equity (pp. 4–6), cash flow (p. 7), segments (p. 8), notes incl. the tax assessment (note 8, p. 10), share price and shares (p. 11), top 25 shareholders and directors (p. 12)."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 260.931408,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Gross revenue, continuing operations (restated for discontinued operations); excise duty Rs 91.32bn"
+        },
+        "grossProfit": {
+          "value": 81.510198,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "operatingProfit": {
+          "value": 44.677139,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Results from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 40.274862,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Continuing operations"
+        },
+        "incomeTax": {
+          "value": 18.045681,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "netProfit": {
+          "value": 22.271382,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Including discontinued operations (Rs 0.04bn)"
+        },
+        "netProfitOwners": {
+          "value": 17.094144,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "eps": {
+          "value": 14.67,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": 7.32,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": "Three interims for 2024/25 (Rs 3.00 + 2.60 + 1.72, p. 307)"
+        },
+        "navPerShare": {
+          "value": 113.51,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 132.279055,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": "Attributable to owners"
+        },
+        "minorityInterest": {
+          "value": 62.902231,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": null
+        },
+        "borrowings": {
+          "value": 75.081453,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": "Interest-bearing loans non-current 35.899 + current 11.859 + bank overdrafts and other short-term borrowings 27.323"
+        },
+        "leaseLiabilities": {
+          "value": 14.345914,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": "Non-current 12.490 + current 1.856"
+        },
+        "cash": {
+          "value": 21.908504,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": "Cash and cash equivalents (balance sheet)"
+        },
+        "operatingCashFlow": {
+          "value": 30.228881,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 7.326261,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null,
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 4.273648,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": null
+        },
+        "purchaseIntangibles": {
+          "value": 0.040481,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": null
+        },
+        "depreciation": {
+          "value": 8.522984,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Depreciation of property, plant and equipment; right-of-use amortisation (rouAmortisation) separate"
+        },
+        "rouAmortisation": {
+          "value": 2.107792,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null
+        },
+        "workingCapitalChange": {
+          "value": -0.558478,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Inventories −0.421, receivables −0.892, payables +0.469, related parties +1.402 (cash released, so negative)"
+        },
+        "acquisitions": {
+          "value": 0.200089,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "Investment in joint ventures"
+        },
+        "dividendsPaid": {
+          "value": 8.857018,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "To Melstacorp shareholders"
+        },
+        "roe": {
+          "value": 11.41,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": "Company's own ratio, for reference"
+        },
+        "peYearEnd": {
+          "value": 8.66,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": "At Rs 127.00"
+        },
+        "sharesOutstanding": {
+          "value": 1165.397072,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, p. 307",
+          "note": null
+        },
+        "companyProfit": {
+          "value": 11.331521,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Melstacorp PLC (holding company) profit after tax"
+        },
+        "companyDividendIncome": {
+          "value": 12.190676,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Holding company dividend income"
+        },
+        "leasePrincipal": {
+          "value": 3.056501,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "Lease payments made"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 130.182595,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column; re-presented for discontinued operations"
+        },
+        "grossProfit": {
+          "value": 37.781966,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "operatingProfit": {
+          "value": 19.266257,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "profitBeforeTax": {
+          "value": 18.761681,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column; continuing"
+        },
+        "incomeTax": {
+          "value": 9.369653,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 9.691169,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 9.269474,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 7.95,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Comparative column"
+        },
+        "totalEquity": {
+          "value": 150.790999,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 4",
+          "note": "Comparative: owners' equity at 30 Sep 2025 (statement of changes in equity)"
+        },
+        "navPerShare": {
+          "value": 129.39,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": "Comparative column"
+        },
+        "operatingCashFlow": {
+          "value": 12.456074,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        },
+        "interestPaid": {
+          "value": 2.860793,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column",
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 4.586165,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative; one line: acquisition of PPE, investment property and intangible assets"
+        },
+        "depreciationAmortisation": {
+          "value": 5.116063,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative; PPE, biological, right-of-use and intangibles"
+        },
+        "dividendsPaid": {
+          "value": 2.004483,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Comparative column"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2026",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 67.66825,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Comparative column (quarter)"
+        },
+        "operatingProfit": {
+          "value": 9.508946,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 4.032249,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 3.46,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "Comparative column"
+        }
+      }
+    },
+    {
+      "period": "FY 2026",
+      "periodEnd": "2026-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "revenue": {
+          "value": 286.015259,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Gross revenue, continuing operations; excise duty Rs 112.15bn, net revenue Rs 173.86bn (p. 290)"
+        },
+        "grossProfit": {
+          "value": 85.950845,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "operatingProfit": {
+          "value": 45.343808,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Results from operating activities"
+        },
+        "profitBeforeTax": {
+          "value": 45.466905,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Continuing operations"
+        },
+        "incomeTax": {
+          "value": 20.232686,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": null
+        },
+        "netProfit": {
+          "value": 26.262177,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Including discontinued operations Rs 1.03bn"
+        },
+        "netProfitOwners": {
+          "value": 19.685794,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Continuing Rs 18.67bn, discontinued Rs 1.01bn (p. 307)"
+        },
+        "netProfitOwnersContinuing": {
+          "value": 18.674552,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 307",
+          "note": null
+        },
+        "eps": {
+          "value": 16.89,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Continuing Rs 16.02, discontinued Rs 0.87 (p. 307)"
+        },
+        "dividendPerShare": {
+          "value": 8.15,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 4, 307",
+          "note": "First interim Rs 2.15, second Rs 2.75, third Rs 3.25 (approved 26 June 2026, paid in the September 2026 half)"
+        },
+        "navPerShare": {
+          "value": 134.81,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 157.11103,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": "Attributable to owners"
+        },
+        "minorityInterest": {
+          "value": 72.644171,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": null
+        },
+        "borrowings": {
+          "value": 69.111461,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": "Interest-bearing loans non-current 37.931 + current 6.321 + bank overdrafts and other short-term borrowings 24.859; term loans 63.9% in US dollars (note 31.3, p. 367)"
+        },
+        "leaseLiabilities": {
+          "value": 27.583275,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 257",
+          "note": "Non-current 25.155 + current 2.428"
+        },
+        "cash": {
+          "value": 25.911056,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": "Cash and cash equivalents; other current financial investments a further Rs 32.01bn, mostly the insurer's and Aitken Spence's deposits"
+        },
+        "operatingCashFlow": {
+          "value": 32.360514,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 5.325886,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null,
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 9.625839,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": null
+        },
+        "purchaseIntangibles": {
+          "value": 0.048909,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": null
+        },
+        "capexBooked": {
+          "value": 9.625839,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 15, p. 308",
+          "note": "Additions to property, plant and equipment (including Rs 4.29bn to capital work in progress); intangible additions Rs 0.049bn"
+        },
+        "depreciation": {
+          "value": 8.528093,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Depreciation of property, plant and equipment; right-of-use amortisation separate"
+        },
+        "rouAmortisation": {
+          "value": 1.799132,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": null
+        },
+        "impairment": {
+          "value": 0.051543,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Impairment of PPE, investment property and intangibles (goodwill impairment a further Rs 0.099bn)"
+        },
+        "growthCapexNamed": {
+          "value": 1.3,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 183",
+          "note": "New Seeduwa bottling facility (Krones line, about 36,000 bottles an hour) at Distilleries: 'approximately Rs 1.3 Bn'"
+        },
+        "workingCapitalChange": {
+          "value": -2.116778,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Inventories −3.352, receivables −0.833, payables +6.421, related parties −0.120 (cash released, so negative)"
+        },
+        "acquisitions": {
+          "value": 0.364432,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "Investment in associates"
+        },
+        "dividendsPaid": {
+          "value": 7.714931,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "To Melstacorp shareholders; subsidiaries paid minorities a further Rs 2.94bn"
+        },
+        "rdExpensed": {
+          "value": null,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26",
+          "note": "Not disclosed"
+        },
+        "roe": {
+          "value": 10.98,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": "Company's own ratio, for reference"
+        },
+        "interestCover": {
+          "value": 6.6,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": null
+        },
+        "peYearEnd": {
+          "value": 9.95,
+          "unit": "x",
+          "source": "Annual Report 2025/26, p. 4",
+          "note": "At Rs 168.00"
+        },
+        "sharesOutstanding": {
+          "value": 1165.397072,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, p. 307",
+          "note": null
+        },
+        "companyProfit": {
+          "value": 13.428305,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 254",
+          "note": "Melstacorp PLC (holding company) profit after tax; EPS Rs 11.52"
+        },
+        "companyDividendIncome": {
+          "value": 13.239116,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 262",
+          "note": "Holding company dividend income (subsidiaries Rs 12.28bn, other investments Rs 0.96bn, p. 414)"
+        },
+        "companyNetAssets": {
+          "value": 129.75822,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 256",
+          "note": null
+        },
+        "companyListedSubsidiariesCost": {
+          "value": 57.214236,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 20.1, p. 344",
+          "note": "Cost of the quoted subsidiaries (DIST, SPEN, Balangoda, Madulsima, Browns Beach); market value Rs 265.09bn"
+        },
+        "distShares": {
+          "value": 4248.259664,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, note 20.1, p. 344",
+          "note": "Distilleries Company of Sri Lanka PLC, 92.35%; cost Rs 31.50bn, market value Rs 231.53bn"
+        },
+        "spenShares": {
+          "value": 208.410213,
+          "unit": "mn",
+          "source": "Annual Report 2025/26, note 20.1, p. 344",
+          "note": "Aitken Spence PLC, 51.33%; cost Rs 21.86bn, market value Rs 28.97bn"
+        },
+        "otherListedSubsidiariesMarket": {
+          "value": 4.587002,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 20.1, p. 344",
+          "note": "Market value at 31 March 2026: Balangoda Plantations 72.21% Rs 2.048bn + Madulsima Plantations 55.17% Rs 1.019bn + Browns Beach Hotel 41.88% Rs 1.520bn"
+        },
+        "jkhStakeFairValue": {
+          "value": 26.092823,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 23.1.1, p. 359",
+          "note": "John Keells Holdings, 1,418.09mn shares (company)"
+        },
+        "combStakeFairValue": {
+          "value": 13.009495,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 23.1.1, p. 359",
+          "note": "Commercial Bank, 63.69mn shares (company)"
+        },
+        "lmfStakeFairValue": {
+          "value": 10.441895,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 23.1.1, p. 359",
+          "note": "Lanka Milk Foods, 130.36mn shares (company)"
+        },
+        "dfccStakeFairValue": {
+          "value": 3.821813,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, note 23.1.1, p. 359",
+          "note": "DFCC Bank, 26.99mn shares (company)"
+        },
+        "segmentPbtBeverages": {
+          "value": 31.192598,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtTourism": {
+          "value": 7.010189,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtMaritime": {
+          "value": 4.875122,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtPlantation": {
+          "value": 1.988143,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtServices": {
+          "value": 1.567498,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtStrategic": {
+          "value": -0.520496,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentPbtFinancial": {
+          "value": -0.646149,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": null
+        },
+        "segmentRevenueBeverages": {
+          "value": 170.248666,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 290",
+          "note": "Gross of excise duty"
+        },
+        "leasePrincipal": {
+          "value": 3.023379,
+          "unit": "Rs bn",
+          "source": "Annual Report 2025/26, p. 263",
+          "note": "Lease payments made"
+        }
+      }
+    },
+    {
+      "period": "H1 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 141.315433,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Excise duty Rs 57.67bn (+13.1%)"
+        },
+        "grossProfit": {
+          "value": 37.485568,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "operatingProfit": {
+          "value": 16.593909,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "profitBeforeTax": {
+          "value": 18.31697,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Continuing; includes share of equity-accounted investees Rs 2.59bn (Rs 1.03bn)"
+        },
+        "incomeTax": {
+          "value": 9.377536,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "netProfit": {
+          "value": 9.182258,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": "Including discontinued Rs 0.24bn"
+        },
+        "netProfitOwners": {
+          "value": 8.435589,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "eps": {
+          "value": 7.24,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 161.515089,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Attributable to owners"
+        },
+        "minorityInterest": {
+          "value": 74.133443,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 138.59,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": null
+        },
+        "borrowings": {
+          "value": 82.173545,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Loans non-current 44.120 + current 7.097 + bank overdrafts and short-term 30.957 (includes Aitken Spence Hotel Holdings' Rs 5bn debentures, note 13)"
+        },
+        "leaseLiabilities": {
+          "value": 28.954033,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "26.280 + 2.674"
+        },
+        "cash": {
+          "value": 30.259776,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Other current financial investments a further Rs 31.37bn"
+        },
+        "operatingCashFlow": {
+          "value": 5.804748,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Payables fell Rs 5.37bn and tax paid Rs 11.30bn"
+        },
+        "interestPaid": {
+          "value": 3.183487,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": null,
+          "section": "operating"
+        },
+        "capexPaid": {
+          "value": 9.274111,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "One line: acquisition of PPE, investment property and intangible assets (includes the BMW premises, about Rs 2.68bn, AR p. 183)"
+        },
+        "depreciationAmortisation": {
+          "value": 5.448731,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": null
+        },
+        "dividendsPaid": {
+          "value": 3.78754,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 7",
+          "note": "Rs 3.25 a share, third interim for 2025/26"
+        },
+        "sharesOutstanding": {
+          "value": 1165.397072,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": null
+        },
+        "companyNetAssets": {
+          "value": 131.798309,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Melstacorp PLC (holding company); NAV Rs 113.09 a share"
+        },
+        "companyInvestmentsInSubsidiaries": {
+          "value": 65.440346,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "At cost less impairment (Rs 63.85bn in March; Rs 1.59bn invested in subsidiaries in the half, p. 7)"
+        },
+        "companyOtherFinancialInvestments": {
+          "value": 54.625294,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Non-current: mainly the JKH, Commercial Bank, Lanka Milk Foods and DFCC stakes at fair value"
+        },
+        "companyInvestmentProperty": {
+          "value": 12.404162,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": null
+        },
+        "companyShortTermBorrowings": {
+          "value": 3.970667,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 3",
+          "note": "Holding company bank overdrafts and short-term borrowings"
+        },
+        "shareOfEquityAccounted": {
+          "value": 2.591423,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 1",
+          "note": null
+        },
+        "segmentPbtBeverages": {
+          "value": 14.829238,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Rs 16.23bn a year earlier"
+        },
+        "segmentPbtTourism": {
+          "value": -2.191489,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Rs −1.35bn a year earlier (off-season half)"
+        },
+        "segmentPbtMaritime": {
+          "value": 3.445722,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Rs 2.16bn a year earlier"
+        },
+        "segmentPbtServices": {
+          "value": 1.824105,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Rs 0.65bn a year earlier"
+        },
+        "segmentRevenueBeverages": {
+          "value": 89.064746,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 8",
+          "note": "Rs 78.51bn a year earlier (+13.4%)"
+        },
+        "publicHolding": {
+          "value": 41.48,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12",
+          "note": "15,178 holders"
+        },
+        "priceLast": {
+          "value": 185.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 11",
+          "note": "Last traded 30 Sep 2026; quarter high 192.50, low 178.00"
+        }
+      }
+    },
+    {
+      "period": "Q2 FY2027",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "revenue": {
+          "value": 73.842945,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": null
+        },
+        "operatingProfit": {
+          "value": 8.284129,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": null
+        },
+        "profitBeforeTax": {
+          "value": 8.397748,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 5.154538,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": "61% of profit before tax"
+        },
+        "netProfitOwners": {
+          "value": 3.066713,
+          "unit": "Rs bn",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": null
+        },
+        "eps": {
+          "value": 2.63,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2",
+          "note": null
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "0.70 (provisional)",
+      "since": "2026-11-24",
+      "reason": "8 steps, 24 Nov 2026. (1) Business: a holding company; its value is mostly its listed stakes, weighted by market value (CSE closes 23 Nov 2026; Melstacorp's own cash and property left in 'other'): Distilleries 4,248.26mn shares × Rs 58.00 = Rs 246.4bn (69%); Aitken Spence 208.41mn × Rs 150.00 = Rs 31.3bn (9%); John Keells 1,418.09mn × Rs 18.40 = Rs 26.1bn (7%); Commercial Bank and DFCC about Rs 17.4bn (5%); Lanka Milk Foods 130.36mn × Rs 84.10 = Rs 11.0bn (3%); other (plantations, Browns Beach, unlisted subsidiaries, investment property) about Rs 25bn (7%). (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: pages.stern.nyu.edu is blocked by this run's network settings. Stand-ins: Beverage (Alcoholic) unlevered, cash-corrected 0.63 (web-search extract of a Damodaran table, 14 firms; market label unconfirmed); Aitken Spence at this site's SPEN beta 0.94; John Keells and 'other' at the same diversified 0.94; banks at the money-centre bank beta 0.70 (as for SAMP); Lanka Milk Foods (food) at 0.63, as for BFL. (3) Distilleries has no net debt to speak of (Rs 1.0bn of borrowings against more cash), so its beta isn't relevered; the holding company's own net debt is about Rs 3.9bn of overdraft against a Rs 200bn+ equity value, so no relevering at that level. Weighted: 0.69 × 0.63 + 0.09 × 0.94 + 0.07 × 0.94 + 0.05 × 0.70 + 0.03 × 0.63 + 0.07 × 0.94 = 0.70. (4) Local 5-year betas: none could be checked (stockanalysis.com blocked; web search gave no dated 5-year figure). Step 4 can't be completed. (5) 0.70. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's file and three local 5-year betas."
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 16.9% / Base 15.4% / Bull 13.9%",
+      "reason": "From scripts/reinvestment.py (24 Nov 2026): 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%, ±1.5 points.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "WACC",
+      "value": "Bear 13.2% / Base 12.1% / Bull 11.0%",
+      "reason": "From scripts/reinvestment.py (24 Nov 2026, price Rs 185 given): cost of debt 5.72% (interest paid 5.33 ÷ average borrowings and leases, FY 2026; low because about two-thirds of term loans are US-dollar SOFR loans, note 31.3), tax 44.5% (FY 2026 effective), debt weight 27.3% (net debt Rs 80.87bn at Sep 2026). For reference only: no whole-company DCF.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Methods used",
+      "value": "Sum of the parts, P/E, justified P/B, residual income, dividend model",
+      "reason": "Holding company: Distilleries and Aitken Spence are valued in their own analyses (with DCFs), and minorities own about a third of group equity (Rs 74.1bn of Rs 235.6bn, Sep 2026), so no whole-company DCF. Dividend model included: payout about 48% (FY 2026 company figure 48.25%), paid from Rs 13.24bn of dividends received.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 3% / 4% / 5%; supported −0.3% (reinvestment rate −2.6% × return on capital 12.6%, FY 2026); 5.7% on profit kept 51.7% × ROE 11.0%",
+      "reason": "From scripts/reinvestment.py. All three more than 2 points above the reinvestment-based rate: kept because FY 2026 reinvestment was held down by Rs 2.1bn of working capital released, while H1 FY2027 capex reached Rs 9.27bn (Rs 4.59bn a year earlier), including the BMW premises (Rs 2.68bn, AR p. 183) and the Seeduwa bottling plant (about Rs 1.3bn). All within the 5.7% retention-based rate and below the 12.24% bond yield. Used as long-run growth and the dividend model's five-year growth.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Long-run growth",
+      "value": "3% / 4% / 5%",
+      "reason": "See Growth check.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "11% / 12.5% / 14%",
+      "reason": "Owners' ROE 13.6% in FY 2026 (19.69 on average equity 144.7) and 12.1% over the 12 months to Sep 2026 (derived.py); company's own figure 10.98% / 11.41%. Residual income starts at 12.1%.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "EPS to March 2027",
+      "value": "Rs 14.00 / 15.60 / 17.00",
+      "reason": "H1 EPS Rs 7.24; H2 Rs 6.8 / 8.4 / 9.8 against Rs 8.94 in H2 FY 2026 (which included discontinued Rs 0.87 for the year; tourism earns in H2). Base 3.6% below the Rs 16.18 run-rate; bear 13.5% below because Q2 (Rs 2.63, tax 61% of profit) annualises to Rs 10.52.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Payout",
+      "value": "48%",
+      "reason": "FY 2026 dividend payout 48.25% (AR p. 4); Rs 8.15 on EPS Rs 16.89.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Dividend next year",
+      "value": "Rs 7.60 / 8.30 / 9.00",
+      "reason": "Rs 8.15 for FY 2026 (Rs 7.32 FY 2025); about 48% of next year's EPS 14.0 / 15.6 / 17.0 (Rs 6.7 / 7.5 / 8.2) rounded up slightly for the record of rising dividends; growth then 3 / 4 / 5% for five years.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Sum of the parts: DIST and SPEN values",
+      "value": "DIST Rs 24.50 / 32.80 / 44.90; SPEN Rs 66.70 / 102.74 / 156.76 per share",
+      "reason": "This site's own scenario averages (DIST analysis 13 Nov 2026, SPEN 20 Nov 2026), so the views stay consistent. Shares held: DIST 4,248.26mn, SPEN 208.41mn (AR note 20.1). Update when those analyses change.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Sum of the parts: base",
+      "value": "Company net assets Rs 131.80bn (Sep 2026) − listed subsidiaries at cost Rs 57.21bn + Balangoda, Madulsima, Browns Beach at March market Rs 4.59bn",
+      "reason": "Unlisted subsidiaries and the Rs 1.59bn invested in subsidiaries in H1 FY2027 stay at book (the report doesn't say which subsidiary). Listed portfolio (JKH, COMB, LMF, DFCC) at its fair value inside company net assets.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Restructuring tax deduction",
+      "value": "All Rs 22.7bn / half / none",
+      "reason": "Company Rs 17.1bn plus 92.35% of Distilleries' Rs 6.1bn (group Rs 23.2bn less company Rs 17.1bn), interim note 8. Court of Appeal dismissed the writs on 9 Oct 2026; Supreme Court appeal pending; directors expect no liability on legal advice. No basis to judge the odds, so the base takes half.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Holding-company discount",
+      "value": "20% / 10% / 0%",
+      "reason": "Control by Milford Exports and Lanka Milk Foods (58.5% not public), cross-holdings (Lanka Milk Foods owns 13% of Melstacorp and Melstacorp owns Lanka Milk Foods shares), and holding costs; the market itself prices about a 40% discount to the parts at market.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Maintenance capex basis",
+      "value": "depreciation",
+      "reason": "No company split; scripts/reinvestment.py range Rs 9.63 / 8.50 / 8.33bn (depreciation Rs 8.53bn). Capex FY 2026 mostly upkeep plus about Rs 1.3bn named growth (Seeduwa).",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "The owner's standard weighting.",
+      "since": "2026-11-24"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "The owner's standard.",
+      "since": "2026-11-24"
+    }
+  ],
+  "openQuestions": [
+    "Supreme Court appeal on the Rs 23.2bn restructuring tax assessments (Rs 17.1bn Melstacorp): any hearing date, ruling or provision?",
+    "Q3 (to December 2026, due mid-February 2027): does beverage profit recover after the excise rise, and does tourism's peak season make up the first-half loss?",
+    "Why was the September 2026 quarter's tax 61% of profit before tax, and is it a one-off?",
+    "Which subsidiary received the Rs 1.59bn Melstacorp invested in the first half (BMW / Mels Automobiles?), and what the BMW business earns.",
+    "Dividend for 2026/27: first interim size against Rs 2.15 a year earlier.",
+    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and three local 5-year betas.",
+    "Group five-year profit history (2021/22–2023/24) for the steady-profit test: not in the reports read."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-24",
+      "basedOn": "Annual Report 2025/26 and interim to 30 Sep 2026 (CSE downloads)",
+      "summary": "Requested from Telegram (/add MELS.N0000). First analysis. Sum of the parts using this site's DIST and SPEN values, less half the disputed Rs 22.7bn restructuring tax and a 10% holding discount (base Rs 176.5), alongside P/E, justified P/B, residual income and a dividend model at a 15.4% cost of equity (beta 0.70, provisional). 3 of 4 business tests (fails ROE): category 2, watch list. Price Rs 185.00 is the 30 Sep 2026 last trade (CSE not reachable from this run). Missing: Damodaran's betaEmerg file and local 5-year betas (sites blocked); group figures before FY 2025; FY 2025 capex booked; R&D not disclosed.",
+      "fairValue": 110.88,
+      "buyPrice": 94.25,
+      "strongBuyPrice": 83.16,
+      "priceAtTime": 185.0,
+      "archive": null
+    }
+  ]
+}

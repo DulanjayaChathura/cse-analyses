@@ -1,0 +1,970 @@
+{
+  "schemaVersion": 1,
+  "ticker": "MELS.N0000",
+  "analysisDate": "2026-11-24",
+  "company": {
+    "name": "Melstacorp PLC",
+    "sector": "Diversified holding company (beverages, leisure, logistics, plantations, insurance)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "MELS.N0000",
+      "label": "Voting"
+    }
+  ],
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE download)",
+      "Interim financial statements to 30 September 2026 (CSE download)"
+    ]
+  },
+  "price": {
+    "value": 185.0,
+    "date": "2026-09-30",
+    "source": "Last traded price at 30 September 2026, interim report p. 11",
+    "note": "MELS isn't yet in the site's CSE price file and the CSE site couldn't be reached from this run; the daily CSE close will replace this figure. MarketScreener showed Rs 183 (undated) in a web search on 24 Nov 2026. July–September 2026 range Rs 178.00–192.50; 2025/26 range Rs 158.50–186.50."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A well-run, AAA-rated holding company, but the price already pays for Distilleries at its market price: fair value about Rs 110.90",
+    "text": "Melstacorp PLC (MELS.N0000) is the Jayawardena group's holding company. Its value is mostly 92.35% of Distilleries (arrack, beer, foreign liquor) and 51.33% of Aitken Spence (hotels, ports, logistics), plus listed stakes in John Keells, Commercial Bank, Lanka Milk Foods and DFCC worth about Rs 54bn, two plantation companies and an insurer.\n\n2025/26 was a record year: revenue Rs 286.0bn (+10%), profit to owners Rs 19.69bn (+15%), EPS Rs 16.89, dividends Rs 8.15. The first half of 2026/27 was weaker: EPS Rs 7.24 against Rs 7.95 (−9%) as excise duty rose faster than liquor sales, the insurer lost money and the September quarter's tax charge was 61% of profit.\n\nAt Rs 185 (last trade 30 September) the share is 11.4x trailing EPS of Rs 16.18 and 1.33x NAV of Rs 138.59. The listed parts at market prices come to about Rs 306 a share, so the market already gives it a 40% holding discount. But this site values Distilleries well below its own price (fair value Rs 32.70 against Rs 58), and the group earns only about 12–14% on owners' equity against a 15.4% cost of equity. On five methods the fair value is about **Rs 110.90**. I'd buy at up to **Rs 94.30** and treat under **Rs 83.20** as a strong buy.\n\nThe business passes 3 of 4 tests (fails on return on equity), so it's a **watch list** share (category 2). Watch the Rs 23.2bn tax dispute: the Court of Appeal dismissed the group's challenge on 9 October 2026 and it is going to the Supreme Court; nothing is provided."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Low debt for its size, profit every year and strong operating cash, but owners' return on equity is 12–14%, below the 15% bar.",
+    "assessed": "2026-11-24",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "13.6%",
+        "note": "Owners' ROE 13.6% in 2025/26 (Rs 19.69bn on average equity Rs 144.7bn) and 12.1% over the last 12 months; the company's own figure (on a different base) was 10.98% and 11.41% in 2024/25. Distilleries earns far more; the hotels, insurer, apparel and the JKH and bank stakes held at market pull it down."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.50x",
+        "note": "Net debt Rs 80.87bn at 30 Sep 2026 (borrowings 82.17 + leases 28.95 − cash 30.26) against owners' equity Rs 161.5bn; about 1.6x EBITDA. Most of the debt sits in Aitken Spence (hotels, in US dollars). The holding company owes only a Rs 3.97bn overdraft. Fitch AAA (lka), Stable."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Profit every year",
+        "note": "Group profit Rs 22.27bn (2024/25) and Rs 26.26bn (2025/26), Rs 9.18bn in the latest half; the holding company has made a profit in each of the seven years shown (2019/20–2025/26, p. 414). 2025/26 includes Rs 1.03bn from discontinued businesses (Lanka Bell, labs, Texpro), about 5% of profit. Group figures before 2024/25 aren't in the reports read."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "123%",
+        "note": "Operating cash Rs 32.36bn against profit Rs 26.26bn in 2025/26; the holding company received Rs 13.24bn of dividends and paid Rs 7.71bn out. The first half of 2026/27 was weak (Rs 5.80bn: tax paid Rs 11.30bn and payables down Rs 5.37bn)."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.7,
+    "betaBasis": "Provisional. Value-weighted look-through at CSE closes of 23 Nov 2026: Distilleries (69%) at the alcoholic-beverage unlevered beta 0.63 (no net debt, not relevered), Aitken Spence (9%) at this site's SPEN beta 0.94, John Keells and other holdings (14%) at 0.94, bank stakes (5%) at 0.70, Lanka Milk Foods (3%) at 0.63. Web-search stand-ins (Damodaran's emerging-markets file couldn't be opened); no local 5-year beta could be checked. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 16.9,
+      "base": 15.4,
+      "bull": 13.9
+    },
+    "costOfDebt": 5.72,
+    "wacc": {
+      "bear": 13.2,
+      "base": 12.1,
+      "bull": 11.0
+    },
+    "debtWeight": 27.3,
+    "asOf": "2026-11-24",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (13 Oct 2026)",
+      "Default spread 4.0%: market-based (research/market-inputs.json, 14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk July 2026",
+      "Cost of debt: interest paid Rs 5.33bn ÷ average borrowings and leases, 2025/26 (Annual Report pp. 257, 262)"
+    ],
+    "note": "Cost of equity 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%, ±1.5 points. The 5.7% cost of debt is below the usual range because about two-thirds of term loans are US-dollar loans at SOFR-linked rates (note 31, p. 367). WACC is shown for reference; no whole-company DCF is used (see methods)."
+  },
+  "valuation": {
+    "fairValue": 110.88,
+    "buyPrice": 94.25,
+    "strongBuyPrice": 83.16,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 138.59,
+    "note": "Fair value averages five methods (sum of the parts, P/E, justified P/B, residual income, dividend model), each weighted bear/base/bull 30/50/20: scenario averages Rs 82.3 / 110.8 / 153.9. Cost of equity 15.4% from a beta of 0.70. P/E, P/B, residual income and the dividend model are calculated by scripts/valuation.py from modelInputs; the sum of the parts is worked by hand."
+  },
+  "dividend": {
+    "perShare": 8.15,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, pp. 4 and 307",
+    "note": "Three interims: Rs 2.15, 2.75 and 3.25 (the last approved 26 June 2026 and paid in the September 2026 half). No dividend for 2026/27 had been declared by 30 September 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 138.59,
+      "unit": "Rs",
+      "note": "Group, 30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.33,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 11.4,
+      "unit": "x",
+      "note": "Trailing EPS Rs 16.18"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 13.6,
+      "unit": "%",
+      "note": "Owners, 2025/26; 12.1% over the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 4.4,
+      "unit": "%",
+      "note": "Rs 8.15 for 2025/26"
+    },
+    {
+      "id": "payout",
+      "label": "Payout ratio",
+      "value": 48,
+      "unit": "%",
+      "note": "Company figure 48.25% (p. 4)"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 80.87,
+      "unit": "Rs bn",
+      "note": "0.50x owners' equity, 30 Sep 2026"
+    },
+    {
+      "id": "partsMarket",
+      "label": "Parts at market prices",
+      "value": 306,
+      "unit": "Rs",
+      "note": "Per share, DIST Rs 58 and SPEN Rs 150, no discount or tax; price about 40% below"
+    },
+    {
+      "id": "taxDispute",
+      "label": "Disputed tax (group)",
+      "value": 23.2,
+      "unit": "Rs bn",
+      "note": "Rs 19.9 a share; not provided"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Six months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue Rs 141.32bn (+9%) but excise duty +13%, so gross profit Rs 37.49bn (−1%). Operating profit Rs 16.59bn (−14%), helped below the line by Rs 2.59bn from associates and joint ventures (Rs 1.03bn). Profit to owners Rs 8.44bn (−9%), EPS Rs 7.24 (Rs 7.95). NAV Rs 138.59."
+    },
+    {
+      "title": "By business, profit before tax for the half",
+      "text": "Beverages Rs 14.83bn (Rs 16.23bn) on revenue +13%; tourism a loss of Rs 2.19bn (Rs 1.35bn loss) in the off-season; maritime and logistics Rs 3.45bn (Rs 2.16bn); services Rs 1.82bn (Rs 0.65bn); financial services a loss of Rs 0.11bn (profit Rs 0.25bn)."
+    },
+    {
+      "title": "September quarter",
+      "text": "EPS Rs 2.63 against Rs 3.46 (−24%): operating profit −13% and income tax Rs 5.15bn, 61% of profit before tax."
+    },
+    {
+      "title": "Cash and debt",
+      "text": "Operating cash only Rs 5.80bn in the half (Rs 12.46bn): tax paid Rs 11.30bn and payables down Rs 5.37bn. Capex Rs 9.27bn (Rs 4.59bn), including the BMW premises. Borrowings up to Rs 82.2bn (Rs 69.1bn in March); Aitken Spence Hotel Holdings raised Rs 5bn of debentures."
+    },
+    {
+      "title": "Tax dispute",
+      "text": "On 9 October 2026 the Court of Appeal dismissed Melstacorp's and Distilleries' challenges to income tax assessments on the group's restructuring: Rs 23.2bn including penalties, Rs 17.1bn of it Melstacorp's. Both are appealing to the Supreme Court; directors expect no liability and have made no provision (interim note 8)."
+    },
+    {
+      "title": "Year to March 2026",
+      "text": "Revenue Rs 286.0bn (+10%), operating profit Rs 45.34bn (+1%), profit to owners Rs 19.69bn (+15%), EPS Rs 16.89 (Rs 14.67), dividends Rs 8.15 (Rs 7.32). Beverages profit before tax Rs 31.19bn, tourism Rs 7.01bn (a record)."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          14.67,
+          16.89,
+          16.18
+        ],
+        "notes": [
+          null,
+          "Includes Rs 0.87 from discontinued operations",
+          "Trailing 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          11.41,
+          13.6,
+          12.1
+        ],
+        "notes": [
+          "Company's figure (p. 4); owners' ROE can't be worked out without 2024 equity",
+          "Owners' ROE (company's figure 10.98%)",
+          "Owners, last 12 months"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          8.66,
+          9.95,
+          11.43
+        ],
+        "notes": [
+          "At Rs 127.00",
+          "At Rs 168.00",
+          "At Rs 185.00"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          7.32,
+          8.15,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          "None declared yet for 2026/27"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          113.51,
+          134.81,
+          138.59
+        ],
+        "notes": [
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 138.59",
+      "reading": "The price is 1.33x group NAV. NAV holds Distilleries at its own small book value and the JKH and bank stakes at market."
+    },
+    {
+      "method": "Sum of the parts",
+      "value": "Rs 176 (base)",
+      "reading": "Using this site's own values for Distilleries and Aitken Spence. At their market prices the parts would be about Rs 306, so the market prices Melstacorp at a 40% discount to them."
+    },
+    {
+      "method": "Return on equity",
+      "value": "13.6%",
+      "reading": "Owners' ROE in 2025/26, 12.1% over the last year: below the 15.4% cost of equity, so the book-based methods come in under book."
+    },
+    {
+      "method": "P/E",
+      "value": "11.4x",
+      "reading": "On trailing EPS of Rs 16.18. The justified forward P/E at 15.4% is about 6x."
+    },
+    {
+      "method": "Dividends",
+      "value": "4.4% yield",
+      "reading": "Rs 8.15 for 2025/26, about half of EPS, paid from Rs 13.2bn of dividends the holding company receives (mostly from Distilleries)."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Sum of the parts (holding-company look-through)",
+      "bear": 119.73,
+      "base": 176.51,
+      "bull": 259.64,
+      "weighted": 176.1,
+      "comment": "Melstacorp's own net assets at 30 Sep 2026 (Rs 131.80bn, which carry the JKH, Commercial Bank, Lanka Milk Foods and DFCC stakes at fair value and the BMW property) with the listed subsidiaries swapped from cost (Rs 57.21bn) to value: Distilleries 4,248.26mn shares at this site's DIST scenario values Rs 24.5 / 32.8 / 44.9 (Rs 104.1 / 139.3 / 190.7bn) and Aitken Spence 208.41mn at the site's SPEN values Rs 66.7 / 102.74 / 156.76 (Rs 13.9 / 21.4 / 32.7bn); Balangoda, Madulsima and Browns Beach at their March market value Rs 4.59bn; unlisted subsidiaries at book. Less the disputed restructuring tax (company Rs 17.1bn plus 92.35% of Distilleries' Rs 6.1bn = Rs 22.7bn): all of it / half / none. Holding-company discount 20% / 10% / 0%. At market prices for DIST (Rs 58) and SPEN (Rs 150), with no tax or discount, the parts are worth about Rs 306 a share."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 73.25,
+      "base": 93.05,
+      "bull": 122.79,
+      "weighted": 93.06,
+      "comment": "EPS for the year to March 2027 of Rs 14.00 / 15.60 / 17.00 (first half Rs 7.24; second half Rs 6.8 / 8.4 / 9.8 against Rs 8.94 last year, which included Rs 0.87 from discontinued operations) times 5.2x / 6.0x / 7.2x: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − growth ÷ ROE; long-run ROE 11 / 12.5 / 14%, growth 3 / 4 / 5%). Base EPS is 3.6% below the Rs 16.18 run-rate (last 12 months); bear is 13.5% below because the September quarter (Rs 2.63, tax 61% of profit) annualises to only Rs 10.52."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 79.76,
+      "base": 103.33,
+      "bull": 140.15,
+      "weighted": 103.62,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × group NAV Rs 138.59 (30 Sep 2026): ROE 11 / 12.5 / 14%, growth 3 / 4 / 5%, cost of equity 16.9 / 15.4 / 13.9%: 0.58x / 0.75x / 1.01x book. Consolidated book holds Distilleries at its own small book value, so this understates the beverage business and overstates nothing."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 74.18,
+      "base": 96.36,
+      "bull": 131.53,
+      "weighted": 96.74,
+      "comment": "Book Rs 138.59 (Sep 2026); owners' ROE moving in a straight line from 12.1% (last 12 months) to 11 / 12.5 / 14% by year ten, book growing by ROE × (1 − 48% payout); after year ten the excess return grows at 3 / 4 / 5%; cost of equity 16.9 / 15.4 / 13.9%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 64.54,
+      "base": 84.84,
+      "bull": 115.55,
+      "weighted": 84.89,
+      "comment": "Next year's dividend Rs 7.60 / 8.30 / 9.00 (Rs 8.15 for 2025/26, about 48% of EPS) growing 3 / 4 / 5% for five years, then the payout the business can afford at long-run growth 3 / 4 / 5% and ROE 11 / 12.5 / 14% (1 − g ÷ ROE), at the cost of equity. Growth is within the 5.7% the profit kept × ROE supports. Dividends are covered about 3x by group cash after maintenance capex, so not at risk."
+    }
+  ],
+  "modelsNote": "A holding company, so the main method is a sum of the parts, with this site's own values for Distilleries and Aitken Spence (their DCFs and other methods are inside those values), alongside P/E, justified P/B, residual income and a dividend model on the consolidated owners' figures, all at the 15.4% cost of equity. No whole-company DCF: a third of group equity belongs to minorities in Distilleries, Aitken Spence and the hotels, and their operating cash flows are already valued in their own analyses. Growth check: assumed 3% / 4% / 5% against −0.3% supported by 2025/26 reinvestment (reinvestment rate −2.6% × return on capital 12.6%) and 5.7% on the holding-company view (profit kept 51.7% × ROE 11.0%); kept because working capital released Rs 2.1bn in 2025/26 while first-half 2026/27 capex already doubled to Rs 9.27bn (BMW premises, Seeduwa bottling plant). All below the 12.24% bond yield. Capex of Rs 9.63bn in 2025/26 was close to depreciation (Rs 8.53bn): mostly upkeep, plus about Rs 1.3bn of growth at Seeduwa.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 0.70)",
+        "bear": "16.9%",
+        "base": "15.4%",
+        "bull": "13.9%"
+      },
+      {
+        "label": "Distilleries per share (site value)",
+        "bear": "Rs 24.50",
+        "base": "Rs 32.80",
+        "bull": "Rs 44.90"
+      },
+      {
+        "label": "Aitken Spence per share (site value)",
+        "bear": "Rs 66.70",
+        "base": "Rs 102.74",
+        "bull": "Rs 156.76"
+      },
+      {
+        "label": "Disputed restructuring tax taken off",
+        "bear": "All Rs 22.7bn",
+        "base": "Half, Rs 11.4bn",
+        "bull": "None"
+      },
+      {
+        "label": "Holding-company discount",
+        "bear": "20%",
+        "base": "10%",
+        "bull": "0%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 14.00",
+        "base": "Rs 15.60",
+        "bull": "Rs 17.00"
+      },
+      {
+        "label": "Long-run ROE / growth",
+        "bear": "11% / 3%",
+        "base": "12.5% / 4%",
+        "bull": "14% / 5%"
+      },
+      {
+        "label": "Dividend next year",
+        "bear": "Rs 7.60",
+        "base": "Rs 8.30",
+        "bull": "Rs 9.00"
+      }
+    ],
+    "averages": {
+      "bear": 82.29,
+      "base": 110.82,
+      "bull": 153.93
+    },
+    "common": "Five methods, equal weight; scenarios weighted 30/50/20. Shares 1,165.40mn. Listed portfolio (JKH, Commercial Bank, Lanka Milk Foods, DFCC) at its 30 September fair value inside the holding company's net assets."
+  },
+  "sensitivity": {
+    "title": "Sum of the parts, base case, Rs per share",
+    "rowLabel": "Holding-company discount",
+    "columnLabel": "Distilleries valued at",
+    "rows": [
+      "0%",
+      "10%",
+      "20%"
+    ],
+    "columns": [
+      "Rs 24.50",
+      "Rs 32.80",
+      "Rs 44.90",
+      "Market Rs 58"
+    ],
+    "values": [
+      [
+        165.9,
+        196.1,
+        240.2,
+        288.0
+      ],
+      [
+        149.3,
+        176.5,
+        216.2,
+        259.2
+      ],
+      [
+        132.7,
+        156.9,
+        192.2,
+        230.4
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Aitken Spence at Rs 102.74 and half the disputed tax taken off in every cell. Each Rs 10 on Distilleries' value moves Melstacorp by about Rs 33–36. The parts beat the Rs 185 price only if Distilleries is worth well above this site's Rs 32.80 base value."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 110.9
+      },
+      {
+        "shares": 150,
+        "maxPrice": 94.3
+      },
+      {
+        "shares": 150,
+        "maxPrice": 83.2
+      }
+    ],
+    "averagePrice": 97.61,
+    "totalCost": 48805,
+    "note": "About Rs 48,805 in total, against Rs 92,500 at Rs 185.",
+    "realism": "Not realistic in the near term. Rs 110.90 needs a 40% fall; the share traded Rs 178.00–192.50 between July and September 2026 and Rs 158.50–186.50 in 2025/26. It was last near these levels in 2024 (2024/25 low Rs 73.60). Only a sharp fall in Distilleries' price, a loss in the Supreme Court on the tax case, or a broad market fall would bring them in reach."
+  },
+  "changeMyView": {
+    "higher": [
+      "Distilleries' value rising: this site values it at Rs 32.80 against a Rs 58 price; each Rs 10 on DIST adds about Rs 33 to Melstacorp's parts.",
+      "A Supreme Court ruling for the group on the Rs 23.2bn restructuring tax.",
+      "Owners' ROE moving above 15% as tourism and logistics grow and the insurer returns to profit.",
+      "A lower beta once Damodaran's file and local 5-year betas can be checked.",
+      "Lower bond yields or a smaller Sri Lanka default spread."
+    ],
+    "lower": [
+      "Losing the tax case: the full Rs 22.7bn attributable is about Rs 19.5 a share.",
+      "Another excise duty rise that Distilleries can't pass on (beverage profit already −9% in the half).",
+      "Falls in John Keells, Commercial Bank or Lanka Milk Foods, which go straight into NAV.",
+      "Spending on the BMW business or regional hotels without a clear return.",
+      "Tourism disruption from the Middle East conflict."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim report to September 2026. The interim figures are unaudited, the price is the 30 September last trade, and the beta is provisional, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 16.9,
+      "base": 15.4,
+      "bull": 13.9
+    },
+    "wacc": {
+      "bear": 13.2,
+      "base": 12.1,
+      "bull": 11.0
+    },
+    "debtWeight": 27.3,
+    "shares": 1165.397,
+    "netDebt": 80.868,
+    "pe": {
+      "bear": {
+        "eps": 14.0,
+        "roe": 11,
+        "longRun": 3
+      },
+      "base": {
+        "eps": 15.6,
+        "roe": 12.5,
+        "longRun": 4
+      },
+      "bull": {
+        "eps": 17.0,
+        "roe": 14,
+        "longRun": 5
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-run growth"
+      }
+    },
+    "pb": {
+      "book": 138.59,
+      "bear": {
+        "roe": 11,
+        "longRun": 3
+      },
+      "base": {
+        "roe": 12.5,
+        "longRun": 4
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "basis": {
+        "book": "periods: H1 FY2027.navPerShare",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-run growth"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 138.59,
+      "payout": 48,
+      "roeStart": 12.1,
+      "bear": {
+        "roe": 11,
+        "longRun": 3
+      },
+      "base": {
+        "roe": 12.5,
+        "longRun": 4
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "basis": {
+        "book": "periods: H1 FY2027.navPerShare",
+        "payout": "valuationInputs: Payout",
+        "roeStart": "valuationInputs: Long-run ROE",
+        "roe": "valuationInputs: Long-run ROE"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 7.6,
+        "eps": 14.0,
+        "growth": 3,
+        "roe": 11,
+        "longRun": 3
+      },
+      "base": {
+        "dividend": 8.3,
+        "eps": 15.6,
+        "growth": 4,
+        "roe": 12.5,
+        "longRun": 4
+      },
+      "bull": {
+        "dividend": 9.0,
+        "eps": 17.0,
+        "growth": 5,
+        "roe": 14,
+        "longRun": 5
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend next year",
+        "eps": "valuationInputs: EPS to March 2027",
+        "growth": "valuationInputs: Growth check",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-run growth"
+      }
+    },
+    "derive": {
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "netDebt": "latest.netDebt"
+    }
+  },
+  "management": {
+    "asOf": "2026-11-24",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 11–13), strategy for 2026/27 (p. 79), financial capital review (pp. 160–166) and manufactured capital (pp. 183–184); progress from the interim to 30 September 2026. Page numbers are the printed ones. There is no separate CEO's review, and no earlier management section or 2024/25 report was available, so the track record checks this year's plans against the half-year figures.",
+    "takeaway": "Management talks of a new growth phase (a bigger bottling plant, a BMW franchise, regional hotels) but gives no group capex budget or return targets, and the first half went backwards in beverages and insurance while the Rs 23.2bn tax dispute went against the group in the Court of Appeal.",
+    "said": [
+      {
+        "text": "A record year: revenue Rs 286bn (+10%), profit before tax Rs 45.5bn (+13%), profit after tax from continuing operations Rs 25.2bn (+14%).",
+        "ref": "Annual Report 2025/26, p. 11"
+      },
+      {
+        "text": "Beverages remained the main earner: revenue Rs 170.2bn and profit before tax Rs 31.2bn, on strong brands and premium positioning.",
+        "ref": "Annual Report 2025/26, pp. 11, 164"
+      },
+      {
+        "text": "Tourism had its best year, profit before tax +45% to Rs 7bn; services profit +145% on the BPO business.",
+        "ref": "Annual Report 2025/26, pp. 11, 164"
+      },
+      {
+        "text": "Financial services lost Rs 646mn on Cyclone Ditwah claims; strategic investments lost Rs 520mn after apparel lost a major customer.",
+        "ref": "Annual Report 2025/26, p. 164"
+      },
+      {
+        "text": "Fitch reaffirmed the AAA rating (Stable); net debt to equity fell to 31.86%; dividends rose 11% to Rs 8.15.",
+        "ref": "Annual Report 2025/26, pp. 12, 160–162"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Build a premium car business: Mels Automobiles became BMW's importer and dealer in April 2026.",
+        "ref": "Annual Report 2025/26, pp. 12, 166"
+      },
+      {
+        "text": "Beverages: premiumisation, new products, more production capacity and exports.",
+        "ref": "Annual Report 2025/26, pp. 79, 165"
+      },
+      {
+        "text": "Tourism: look at regional hotels, including Oman, and widen source markets.",
+        "ref": "Annual Report 2025/26, p. 79"
+      },
+      {
+        "text": "Financial services: return to profit through the new life insurance licence and bancassurance.",
+        "ref": "Annual Report 2025/26, pp. 165–166"
+      },
+      {
+        "text": "Move capital from weaker strategic investments to printing and packaging exports.",
+        "ref": "Annual Report 2025/26, p. 166"
+      }
+    ],
+    "investing": [
+      {
+        "text": "New Seeduwa bottling plant at Distilleries (Krones line)",
+        "amount": "About Rs 1.3bn, 2025/26",
+        "ref": "Annual Report 2025/26, p. 183"
+      },
+      {
+        "text": "Land, buildings and assets for the BMW business",
+        "amount": "Rs 2.68bn, after March 2026",
+        "ref": "Annual Report 2025/26, p. 183"
+      },
+      {
+        "text": "Group purchases of property, plant and equipment",
+        "amount": "Rs 9.63bn in 2025/26 (Rs 4.27bn in 2024/25)",
+        "ref": "Annual Report 2025/26, p. 263"
+      },
+      {
+        "text": "Group capex in the first half of 2026/27",
+        "amount": "Rs 9.27bn (Rs 4.59bn a year earlier)",
+        "ref": "Interim to 30 Sep 2026, p. 7"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Beverages to keep growing",
+        "result": "Revenue +13% to Rs 89.1bn in the half, but profit before tax −9% to Rs 14.83bn as excise duty rose",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, pp. 1, 8"
+      },
+      {
+        "promise": "Financial services back to profit",
+        "result": "A loss of Rs 107mn in the half against a Rs 251mn profit a year earlier",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "promise": "Maritime and logistics growth from Colombo transhipment",
+        "result": "Profit before tax +59% to Rs 3.45bn in the half",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "promise": "Services growth led by the BPO business",
+        "result": "Profit before tax Rs 1.82bn in the half (Rs 0.65bn)",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "promise": "Tourism to build on its record year",
+        "result": "Off-season half: loss Rs 2.19bn against Rs 1.35bn; the peak season is October–March",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "promise": "BMW as a new growth platform",
+        "result": "Premises bought (Rs 2.68bn); no figures for the business yet",
+        "status": "too-early",
+        "ref": "Annual Report 2025/26, p. 183"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-03-31",
+    "source": "Interim to 30 Sep 2026, p. 12 (top 25, directors, public holding); compared with the Annual Report 2025/26, p. 417 (top 25 at 31 March 2026).",
+    "takeaway": "Milford Exports (42.97%) and Lanka Milk Foods (13.03%), with the chairman Mr Harry Jayawardena (1.76%), hold the 58.5% not counted as public. The Yaseen family hold about 25.5% across four accounts and added 3.5mn shares; the EPF tripled its stake to 9.70mn; Mrs R.R. Takahashi sold 3.5mn.",
+    "groups": [
+      {
+        "name": "Milford Exports, Lanka Milk Foods, directors and related holders (not public)",
+        "pct": 58.52
+      },
+      {
+        "name": "Public",
+        "pct": 41.48
+      }
+    ],
+    "publicFloat": 41.48,
+    "publicHolders": 15178,
+    "publicHoldersPrev": 14627,
+    "directors": [
+      {
+        "name": "Mr. D. Hasitha S. Jayawardena (Chairman)",
+        "shares": 20545532
+      },
+      {
+        "name": "Ms. D.S.T. Jayawardena",
+        "shares": 38600
+      },
+      {
+        "name": "Mr. L. H. A. Lakshman Silva",
+        "shares": 8000
+      },
+      {
+        "name": "Mr. L.U.D. Fernando",
+        "shares": 0
+      },
+      {
+        "name": "Mr. C. R. Jansz",
+        "shares": 0
+      },
+      {
+        "name": "Mr. N. De S. Deva Aditya",
+        "shares": 0
+      },
+      {
+        "name": "Mr. K. J. Kahanda",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Reyaz Mihular",
+        "shares": 0
+      },
+      {
+        "name": "Dr. R.A. Fernando",
+        "shares": 0
+      },
+      {
+        "name": "Mr. A. Goonesekere",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Milford Exports (Ceylon) (Pvt) Ltd",
+        "shares": 500819000,
+        "pct": 42.97,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Lanka Milk Foods (CWE) Limited",
+        "shares": 151846000,
+        "pct": 13.03,
+        "change": 0,
+        "new": false,
+        "note": "Melstacorp in turn holds 130.36mn Lanka Milk Foods shares"
+      },
+      {
+        "name": "Mr. M.A. Yaseen",
+        "shares": 150294980,
+        "pct": 12.9,
+        "change": 1500000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mrs. L.E.M. Yaseen",
+        "shares": 82263000,
+        "pct": 7.06,
+        "change": 2000000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Commercial Bank of Ceylon PLC/M.A.Yaseen",
+        "shares": 39000000,
+        "pct": 3.35,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mrs. R.R. Takahashi",
+        "shares": 27600000,
+        "pct": 2.37,
+        "change": -3500000,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Commercial Bank of Ceylon PLC/L.E.M.Yaseen",
+        "shares": 25000000,
+        "pct": 2.15,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mr. D.H.S. Jayawardena",
+        "shares": 20545532,
+        "pct": 1.76,
+        "change": 0,
+        "new": false,
+        "note": "Chairman"
+      },
+      {
+        "name": "Mrs. P.M.P.G.N. Priyadarshani",
+        "shares": 17448213,
+        "pct": 1.5,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mrs. S.M. Chrysostom",
+        "shares": 11390000,
+        "pct": 0.98,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Employees Provident Fund",
+        "shares": 9701761,
+        "pct": 0.83,
+        "change": 6621761,
+        "new": false,
+        "note": "3,080,000 in March"
+      },
+      {
+        "name": "Stassen Exports (Pvt) Ltd",
+        "shares": 8746800,
+        "pct": 0.75,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Rubicond Enterprises Limited",
+        "shares": 5943859,
+        "pct": 0.51,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Mcsen Range (Pvt) Ltd",
+        "shares": 5459864,
+        "pct": 0.47,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "BBH-Redwheel Frontier Markets Equity Master Fund Limited",
+        "shares": 4937755,
+        "pct": 0.42,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Hatton National Bank PLC-Senfin Growth Fund",
+        "shares": 4271904,
+        "pct": 0.37,
+        "change": 247032,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Deutsche Bank AG Trustee to Lynear Wealth Dynamic Opportunities Fund",
+        "shares": 3550165,
+        "pct": 0.3,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "Hatton National Bank PLC - Capital Alliance Quantitative Equity Fund",
+        "shares": 2005814,
+        "pct": 0.17,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "Deutsche Bank AG As Trustee for JB Vantage Value Equity Fund",
+        "shares": 1998743,
+        "pct": 0.17,
+        "change": -184629,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "Renuka Hotels PLC",
+        "shares": 1800000,
+        "pct": 0.15,
+        "change": 0,
+        "new": false,
+        "note": null
+      }
+    ],
+    "gone": [
+      {
+        "name": "Citibank Newyork S/A Norges Bank Account 2",
+        "prevShares": 4813820
+      },
+      {
+        "name": "Commercial Bank of Ceylon PLC/G.A.B. Harischandra",
+        "prevShares": 3465458
+      }
+    ]
+  },
+  "fullText": "**Summary**\n\nMelstacorp PLC (MELS.N0000) is the Jayawardena group's holding company. Most of its value is two listed subsidiaries: 92.35% of Distilleries Company of Sri Lanka (arrack, beer, foreign liquor) and 51.33% of Aitken Spence (hotels in Sri Lanka, the Maldives, Oman and India, plus ports, logistics, power and apparel). It also holds listed stakes worth about Rs 54bn at fair value (1,418mn John Keells shares, Commercial Bank, Lanka Milk Foods and DFCC), Balangoda and Madulsima Plantations, Continental Insurance, a BPO business and, since April 2026, the BMW franchise.\n\n2025/26 was a record year: revenue Rs 286.0bn (+10%), profit to owners Rs 19.69bn (+15%), EPS Rs 16.89 (Rs 16.02 from continuing businesses), dividends Rs 8.15. The first half of 2026/27 was weaker: EPS Rs 7.24 against Rs 7.95, because excise duty rose faster than liquor sales, the insurer lost money and the September quarter's tax was 61% of profit.\n\nAt Rs 185 (last trade 30 September 2026) the share is 11.4x trailing EPS of Rs 16.18 and 1.33x NAV of Rs 138.59. Its listed parts at market prices are worth about Rs 306 a share, so the market already applies a 40% holding discount. The catch is that this site values Distilleries at Rs 32.70 against its Rs 58 price, and the group earns only 12–14% on owners' equity against a 15.4% cost of equity. On five methods the fair value is about **Rs 110.90**; buy at up to **Rs 94.30**, strong buy under **Rs 83.20**. The business passes 3 of 4 tests, so it's on the **watch list** (category 2).\n\n**The numbers**\n\n| | 2024/25 | 2025/26 | H1 2025/26 | H1 2026/27 |\n|---|---|---|---|---|\n| Revenue (Rs bn, gross of excise) | 260.9 | 286.0 | 130.2 | 141.3 |\n| Operating profit (Rs bn) | 44.68 | 45.34 | 19.27 | 16.59 |\n| Profit to owners (Rs bn) | 17.09 | 19.69 | 9.27 | 8.44 |\n| EPS (Rs) | 14.67 | 16.89 | 7.95 | 7.24 |\n| Dividend per share (Rs) | 7.32 | 8.15 | | |\n| NAV per share (Rs) | 113.51 | 134.81 | 129.39 | 138.59 |\n\nBeverages earned Rs 31.19bn before tax in 2025/26, about 69% of group profit before tax. In the half to September its revenue rose 13% but profit fell 9% to Rs 14.83bn. Tourism lost Rs 2.19bn in its off-season half (Rs 1.35bn a year earlier); maritime and logistics made Rs 3.45bn (+59%) and services Rs 1.82bn (Rs 0.65bn).\n\n**How it's valued**\n\n- **Sum of the parts (Rs 119.7 / 176.5 / 259.6).** Melstacorp's own net assets (Rs 131.80bn at September), with Distilleries and Aitken Spence at this site's own bear/base/bull values (DIST Rs 24.50 / 32.80 / 44.90; SPEN Rs 66.70 / 102.74 / 156.76) instead of cost. The smaller listed subsidiaries go in at market and the unlisted ones at book. From that comes off the disputed tax (all / half / none of Rs 22.7bn attributable), then a holding discount of 20% / 10% / 0%.\n- **P/E (Rs 73.3 / 93.1 / 122.8).** EPS for 2026/27 of Rs 14.00 / 15.60 / 17.00 at the justified forward P/E of 5.2x / 6.0x / 7.2x.\n- **Justified price to book (Rs 79.8 / 103.3 / 140.2)** and **residual income (Rs 74.2 / 96.4 / 131.5)**, on NAV Rs 138.59, long-run ROE 11 / 12.5 / 14% and growth 3 / 4 / 5%.\n- **Dividend model (Rs 64.5 / 84.8 / 115.6).** Rs 7.60 / 8.30 / 9.00 next year, growing 3 / 4 / 5%.\n\nCost of equity is 15.4% (beta 0.70, provisional), with bear 16.9% and bull 13.9%. A whole-company DCF isn't used: a third of group equity belongs to minorities, and the operating cash flows of Distilleries and Aitken Spence are already valued in their own analyses. Capex of Rs 9.63bn in 2025/26 was close to depreciation of Rs 8.53bn, so it was mostly upkeep, plus about Rs 1.3bn of growth at the Seeduwa bottling plant. First-half 2026/27 capex doubled to Rs 9.27bn, including the BMW premises.\n\n**Business tests (3 of 4)**\n\n- Return on equity: fail. Owners' ROE was 13.6% in 2025/26 and 12.1% over the last 12 months.\n- Debt: pass. Net debt Rs 80.87bn is 0.50x owners' equity (about 1.6x EBITDA), mostly at Aitken Spence. The holding company owes only a Rs 3.97bn overdraft. Fitch rates it AAA (lka).\n- Steady profit: pass. The group made a profit in both years shown, and the holding company has made one for seven years.\n- Cash: pass. Operating cash was Rs 32.36bn against Rs 26.26bn of profit in 2025/26. The first half of 2026/27 was weak, at Rs 5.80bn.\n\n**Risks**\n\n- **Tax.** The Inland Revenue assessed Melstacorp and Distilleries Rs 23.2bn (including Rs 7.7bn of penalties) over the group's restructuring. The Court of Appeal dismissed their challenges on 9 October 2026. They are appealing to the Supreme Court, and nothing is provided in the accounts. Losing would cost about Rs 19.5 a share.\n- **Excise and tax on liquor.** Excise is the biggest swing factor for Distilleries' profit.\n- **Portfolio prices.** The JKH, bank and dairy stakes move NAV directly.\n- **Debt and tourism.** Aitken Spence's US-dollar debt and hotels are exposed to tourism and the Middle East.\n\n**Buying 500 shares**\n\nBuy 200 at up to Rs 110.90, 150 at up to Rs 94.30 and 150 at up to Rs 83.20: about Rs 48,800 in total, against Rs 92,500 at today's price. These levels need a 40% fall. The share has traded Rs 158.50–192.50 over the past 18 months, so this is a watch-list name, not a buy. The view would rise if Distilleries is worth much more than this site's estimate (each Rs 10 on DIST adds about Rs 33 to Melstacorp), or if the Supreme Court rules for the group."
+}
