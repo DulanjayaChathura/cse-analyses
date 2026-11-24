@@ -494,7 +494,7 @@
       `;
 
     content.querySelectorAll(".bk-list.hl li").forEach((li) => li.addEventListener("click", () => li.classList.toggle("open")));
-    App.reveal(content, ".bk-card, .tiles");
+    if (App.reveal) App.reveal(content, ".bk-card, .tiles");
     /* Filterable, sorted table of every call. */
     if (!calls.length) return;
     const rowsEl = document.getElementById("rows"), countEl = document.getElementById("count");

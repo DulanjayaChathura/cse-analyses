@@ -464,7 +464,7 @@
       if (!s.after || !(s.always || has(s.key))) return;
       try { s.after(); } catch (e) { console.error(s.id, e); }
     });
-    App.reveal(content, ".section");
+    if (App.reveal) App.reveal(content, ".section");
   }
   toc.innerHTML = sections.map((s) => `<a href="#${s.id}">${App.esc(s.title)}</a>`).join("");
   const links = [...toc.querySelectorAll("a")];

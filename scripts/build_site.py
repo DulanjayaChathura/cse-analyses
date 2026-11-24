@@ -7,6 +7,7 @@
 """
 import validate_broker
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -18,6 +19,24 @@ import cse
 
 SITE = ROOT / "_site"
 STATIC = ["index.html", "company.html", "broker.html", "assets"]
+
+
+def version_assets():
+    """Add ?v=<content hash> to every script and stylesheet link in the published pages, so a
+    phone or browser that kept an old copy fetches the new one as soon as it changes (an old
+    common.js next to a new broker.js would otherwise break the page)."""
+    import hashlib
+    for page in SITE.glob("*.html"):
+        html = page.read_text(encoding="utf-8")
+
+        def tag(m):
+            f = SITE / m.group(2)
+            if not f.exists():
+                return m.group(0)
+            v = hashlib.sha1(f.read_bytes()).hexdigest()[:10]
+            return f'{m.group(1)}{m.group(2)}?v={v}"'
+        html = re.sub(r'((?:src|href)=")(assets/[^"?]+\.(?:js|css))"', tag, html)
+        page.write_text(html, encoding="utf-8")
 
 
 def git_versions(path):
@@ -295,6 +314,7 @@ def main():
     for item in STATIC:
         src = ROOT / item
         (shutil.copytree if src.is_dir() else shutil.copy2)(src, SITE / item)
+    version_assets()
 
     text = "\n".join(report) if report else "All analysis files passed the checks."
     print(text)
