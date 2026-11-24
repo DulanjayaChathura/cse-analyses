@@ -289,6 +289,7 @@ def main():
 
     write_json(SITE / "data" / "index.json", {"companies": manifest})
     write_json(SITE / "data" / "prices.json", read_json(GENERATED / "prices.json", {}))
+    write_json(SITE / "data" / "share-names.json", read_json(GENERATED / "share-names.json", {}))
     if (GENERATED / "logos").exists():
         shutil.copytree(GENERATED / "logos", SITE / "generated" / "logos")
     for item in STATIC:

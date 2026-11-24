@@ -57,7 +57,7 @@ Charts.ladder = function (el, { price, strongBuy, buy, fair, extra = [], targets
   levels.forEach(([v, t], i) => {
     const ty = barY + barH + 22 + lvRow[i] * rowH;   // label top
     // Leader: straight down from the level, then across to where its label had to move.
-    s += `<polyline fill="none" points="${x(v)},${barY} ${x(v)},${barY + barH + 6} ${lv[i].x},${ty - 2}" stroke="${css("--ink")}" stroke-width="1.2"/>` +
+    s += `<polyline pathLength="1" fill="none" points="${x(v)},${barY} ${x(v)},${barY + barH + 6} ${lv[i].x},${ty - 2}" stroke="${css("--ink")}" stroke-width="1.2"/>` +
       `<text x="${lv[i].x}" y="${ty + 9}" text-anchor="middle" font-size="${fs}" fill="${css("--ink-soft")}" ${HALO}>${t}</text>` +
       `<text x="${lv[i].x}" y="${ty + 24}" text-anchor="middle" font-size="${fs}" font-weight="600" fill="${css("--ink")}" ${HALO}>${App.rs(v)}</text>`;
   });
@@ -223,7 +223,7 @@ Charts.timeline = function (el, entries) {
   series.forEach(([k, label, c]) => {
     const p = pts.filter((e) => App.isNum(e[k]));
     if (!p.length) return;
-    s += `<polyline fill="none" stroke="${css(c)}" stroke-width="2.5" points="${p.map((e) => `${x(e.date)},${y(e[k])}`).join(" ")}"/>`;
+    s += `<polyline pathLength="1" fill="none" stroke="${css(c)}" stroke-width="2.5" points="${p.map((e) => `${x(e.date)},${y(e[k])}`).join(" ")}"/>`;
     p.forEach((e) => { s += `<circle cx="${x(e.date)}" cy="${y(e[k])}" r="4.5" fill="${css(c)}"><title>${label} ${App.rs(e[k])}, ${App.date(e.date)}</title></circle>`; });
   });
   el.innerHTML = s + "</svg>";

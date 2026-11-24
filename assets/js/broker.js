@@ -12,9 +12,10 @@
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
 
-  let list, index;
+  let list, index, shareNames;
   try {
-    [list, index] = await Promise.all([App.load("data/broker/index.json"), App.loadOptional("data/index.json", { companies: [] })]);
+    [list, index, shareNames] = await Promise.all([App.load("data/broker/index.json"), App.loadOptional("data/index.json", { companies: [] }),
+      App.loadOptional("data/share-names.json", {})]);
   } catch (e) {
     content.innerHTML = `<div class="empty">The broker updates couldn't be loaded. Reload the page.</div>`;
     sub.textContent = "";
@@ -32,6 +33,13 @@
   for (const c of index.companies || []) {
     for (const sc of c.shareClasses || [{ symbol: c.ticker }]) mine[sc.symbol] = c;
   }
+  /* A company's logo for a share code: this site's saved logo, else the one the build fetched
+     from the CSE (non-voting shares use the voting share's logo); initials if there's none. */
+  const logoFor = (code, name, size = "xs") => {
+    const k = String(code || ""), co = mine[k], x = (shareNames || {})[k] || {}, nv = (shareNames || {})[k.replace(/\.X\d{4}$/, ".N0000")] || {};
+    const logo = (co && co.logo) || x.logo || nv.logo || (mine[k.replace(/\.X\d{4}$/, ".N0000")] || {}).logo;
+    return App.logo({ name: name || (co && co.name) || x.name || k, ticker: k, logo }, size);
+  };
 
   sel.innerHTML = days.map((d) => `<option value="${App.esc(d.date)}">${App.date(d.date)}</option>`).join("");
   const wanted = new URLSearchParams(location.search).get("d");
@@ -87,7 +95,7 @@
       ? `<div class="rs-part ${cls}">${title ? `<h4>${title}</h4>` : ""}<ul>${items.map((x) => `<li>${App.esc(typeof x === "string" ? x : `${x.label}: ${x.value}`)}</li>`).join("")}</ul></div>` : "";
     return `<article class="rs-card${(r.details || []).length ? " rs-wide" : ""}">
       <div class="rs-head">
-        <div><h3>${co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">★ ${App.esc(r.company)}</a>` : App.esc(r.company)}${r.code ? ` <span class="muted-s">${App.esc(r.code.split(".")[0])}</span>` : ""}</h3>
+        <div><h3 class="co-h">${r.code ? logoFor(r.code, r.company, "sm") : ""}<span>${co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">${App.esc(r.company)}</a>` : App.esc(r.company)}${r.code ? ` <span class="muted-s">${App.esc(r.code.split(".")[0])}</span>` : ""}</span></h3>
           <div class="muted-s">${App.esc(r.report || "")}${r.date ? ` · ${App.date(r.date)}` : ""}</div></div>
         ${r.rating ? `<div class="rs-rating">${chip(r.rating)}${r.prevRating ? `<div class="muted-s">was ${App.esc(r.prevRating)}</div>` : ""}</div>` : ""}
       </div>
@@ -100,12 +108,12 @@
       ${App.isNum(r.price) && (App.isNum(fv) || App.isNum(r.target)) ? dotLine([["price", "Price", r.price], ["fv", "This site", fv], ["tg", "Their target", r.target]]) : ""}
       ${App.isNum(gap) && Math.abs(gap) >= 25 ? `<p class="rs-flag">Big gap: their target is ${pct(gap)} vs this site's fair value.</p>` : ""}
       ${(r.glance || []).length ? `<ul class="rs-glance">${r.glance.map((x) => `<li>${App.esc(x)}</li>`).join("")}</ul>` : list("Key points", r.keyPoints, "key")}
-      ${(r.details || []).length ? `<div class="rs-full"><div class="rs-full-h">Full report <span class="muted-s">${r.details.length} sections · tap to open</span></div>
-        ${(r.glance || []).length ? `<details class="rs-sec"><summary>Key points</summary>${list("", r.keyPoints, "key")}</details>` : ""}
+      ${(r.details || []).length ? `<div class="rs-full"><div class="rs-full-h">Full report <span class="muted-s">${r.details.length} sections · tap to open</span></div><div class="rs-tiles">
+        ${(r.glance || []).length ? `<details class="rs-sec">${tileSummary("Key points", "", [], r.keyPoints.length)}${list("", r.keyPoints, "key")}</details>` : ""}
         ${r.details.map((sec) => sectionHtml(sec, { price: r.price, fv, target: r.target })).join("")}
-        ${(r.forecasts || []).length ? `<details class="rs-sec"><summary>Their forecasts (summary)</summary>${list("", r.forecasts, "fc")}</details>` : ""}
-        ${(r.risks || []).length ? `<details class="rs-sec"><summary>Risks (summary)</summary>${list("", r.risks, "risk")}</details>` : ""}
-        ${(r.catalysts || []).length ? `<details class="rs-sec"><summary>Catalysts</summary>${list("", r.catalysts, "cat")}</details>` : ""}</div>`
+        ${(r.forecasts || []).length ? `<details class="rs-sec">${tileSummary("Their forecasts (summary)", "", [], r.forecasts.length)}${list("", r.forecasts, "fc")}</details>` : ""}
+        ${(r.risks || []).length ? `<details class="rs-sec">${tileSummary("Risks (summary)", "", [], r.risks.length)}${list("", r.risks, "risk")}</details>` : ""}
+        ${(r.catalysts || []).length ? `<details class="rs-sec">${tileSummary("Catalysts", "", [], r.catalysts.length)}${list("", r.catalysts, "cat")}</details>` : ""}</div></div>`
       : (r.forecasts || []).length || (r.risks || []).length || (r.catalysts || []).length ? `<details class="rs-more"><summary>Forecasts, risks and catalysts</summary>
         ${list("Their forecasts", r.forecasts, "fc")}${list("Risks", r.risks, "risk")}${list("Catalysts", r.catalysts, "cat")}</details>` : ""}
     </article>`;
@@ -161,7 +169,7 @@
     if (lo < 0 && !asLine) g += `<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="var(--ink-soft)"/>`;
     if (asLine) cols.forEach((j, k) => {
       const p = rows.map((r, i) => [x(i), numOf(r[j]), i]).filter((q) => q[1] !== null);
-      g += `<polyline fill="none" stroke="${PAL[k % 6]}" stroke-width="2" points="${p.map((q) => `${q[0].toFixed(1)},${y(q[1]).toFixed(1)}`).join(" ")}"/>`;
+      g += `<polyline pathLength="1" fill="none" stroke="${PAL[k % 6]}" stroke-width="2" points="${p.map((q) => `${q[0].toFixed(1)},${y(q[1]).toFixed(1)}`).join(" ")}"/>`;
       p.forEach((q) => { g += `<circle cx="${q[0].toFixed(1)}" cy="${y(q[1]).toFixed(1)}" r="2.5" fill="${PAL[k % 6]}"/>`; pts.push({ x: q[0] - 3, y: y(q[1]) - 3, w: 6, h: 6, line: true }); });
       trace(p.map((q) => [q[0], y(q[1])]));
     });
@@ -180,7 +188,7 @@
       const lv = rows.map((r) => numOf(r[j])).filter((v) => v !== null), lh = Math.max(...lv) * 1.1, ll = Math.min(0, ...lv);
       const y2 = (v) => T + (lh - v) / (lh - ll) * (H - T - B);
       const p = rows.map((r, i) => [x(i), numOf(r[j])]).filter((q) => q[1] !== null);
-      g += `<polyline fill="none" stroke="var(--ink)" stroke-width="1.8" points="${p.map((q) => `${q[0].toFixed(1)},${y2(q[1]).toFixed(1)}`).join(" ")}"/>`;
+      g += `<polyline pathLength="1" fill="none" stroke="var(--ink)" stroke-width="1.8" points="${p.map((q) => `${q[0].toFixed(1)},${y2(q[1]).toFixed(1)}`).join(" ")}"/>`;
       g += `<text x="${W - 2}" y="${T - 4}" text-anchor="end" class="ch-t">max ${fmt(lh / 1.1)}${String(rows[0][j]).includes("%") ? "%" : ""}</text>`;
       p.forEach((q) => pts.push({ x: q[0] - 2, y: y2(q[1]) - 2, w: 4, h: 4, line: true }));
       trace(p.map((q) => [q[0], y2(q[1])]));
@@ -294,25 +302,54 @@
     return `<div class="rs-blk">${head}${chart || numbersTable(b)}${foot}${chart && !own ? `<details class="ch-nums"><summary>Numbers</summary>${numbersTable(b)}</details>` : ""}</div>`;
   }
 
+  /* ---------- Full report: each section as a tile ----------
+     Icon, title, pages, how many charts, and a small preview of the section's first chart,
+     so the list reads at a glance. Tap a tile to open the section (it spans the full width). */
+  const SEC_ICONS = [[/key point|glance/i, "📌"], [/overview|share/i, "🏢"], [/thesis/i, "💡"], [/segment|competition/i, "🧩"],
+    [/market potential|addressable/i, "🌏"], [/revenue|margin|driver/i, "📈"], [/financial|dividend|cash/i, "💰"], [/valuation/i, "🎯"],
+    [/forecast/i, "🔮"], [/risk/i, "⚠️"], [/catalyst/i, "🚀"], [/technical/i, "📉"], [/esg|governance/i, "🌿"], [/check/i, "🔍"]];
+  const secIcon = (t) => (SEC_ICONS.find(([re]) => re.test(t)) || [0, "📄"])[1];
+  function sparkOf(blocks) {
+    const b = blocks.find((x) => x.rows && x.plot && ["vbar", "line", "hbar", "waterfall"].includes(x.plot.kind));
+    if (!b) return "";
+    const j = (b.plot.cols || [b.head.findIndex((_, k) => k > 0 && b.rows.some((r) => numOf(r[k]) !== null))])[0];
+    const vals = (b.plot.rows || b.rows.map((_, i) => i)).map((i) => b.rows[i] && numOf(b.rows[i][j])).filter((v) => v !== null && v !== undefined).slice(0, 14);
+    if (vals.length < 2) return "";
+    const W = 96, H = 34, hi = Math.max(0, ...vals), lo = Math.min(0, ...vals), y = (v) => 2 + (hi - v) / (hi - lo || 1) * (H - 4);
+    if (b.plot.kind === "line") {
+      const x = (i) => 3 + i * (W - 6) / (vals.length - 1);
+      const lo2 = Math.min(...vals), y2 = (v) => 3 + (hi - v) / (hi - lo2 || 1) * (H - 6);
+      return `<svg class="rs-spark" viewBox="0 0 ${W} ${H}" aria-hidden="true"><polyline pathLength="1" fill="none" stroke="#378ADD" stroke-width="2" points="${vals.map((v, i) => `${x(i).toFixed(1)},${y2(v).toFixed(1)}`).join(" ")}"/><circle cx="${x(vals.length - 1)}" cy="${y2(vals[vals.length - 1])}" r="2.6" fill="#378ADD"/></svg>`;
+    }
+    const bw = (W - 4) / vals.length;
+    return `<svg class="rs-spark" viewBox="0 0 ${W} ${H}" aria-hidden="true">${vals.map((v, i) => `<rect x="${(2 + i * bw + bw * 0.12).toFixed(1)}" y="${y(Math.max(0, v)).toFixed(1)}" width="${(bw * 0.76).toFixed(1)}" height="${Math.max(1, Math.abs(y(v) - y(0))).toFixed(1)}" rx="1" fill="${v < 0 ? "#E24B4A" : i === vals.length - 1 ? "#378ADD" : "#85B7EB"}"/>`).join("")}</svg>`;
+  }
+  function tileSummary(title, pages, blocks, count) {
+    const n = count !== undefined ? count : blocks.length;
+    const what = count !== undefined ? `${n} point${n === 1 ? "" : "s"}` : n ? `📊 ${n}` : "";
+    return `<summary class="rs-tile"><span class="rs-ic" aria-hidden="true">${secIcon(title)}</span>
+      <span class="rs-tt"><b>${App.esc(title)}</b><small>${pages ? `p. ${App.esc(pages)}` : ""}${pages && what ? " · " : ""}${what}</small></span>
+      ${sparkOf(blocks)}</summary>`;
+  }
+
+  /* News card icon and colour, from the item's topic (or its title when no topic is given). */
+  const NEWS_ICONS = [[/imf|econom|gdp|debt|reserve|budget/i, "🏛️", "blue"], [/bank|credit|loan|rate|liquidity|bond/i, "🏦", "blue"],
+    [/polic|regulat|law|tax|government/i, "📜", "grey"], [/energy|oil|fuel|refiner|power|electric/i, "⛽", "amber"],
+    [/construct|infrastructure|property|cement/i, "🏗️", "amber"], [/export|trade|coconut|tea|rubber|apparel/i, "🚢", "green"],
+    [/touris|hotel|arrival/i, "✈️", "green"], [/global|world|asia|us |futures|nikkei|market/i, "🌐", "purple"],
+    [/geopolit|war|attack|conflict|middle east/i, "⚠️", "red"]];
+  const newsIcon = (n) => { const hit = NEWS_ICONS.find(([re]) => re.test(n.topic || "")) || NEWS_ICONS.find(([re]) => re.test(n.title || ""));
+    return hit ? [hit[1], hit[2]] : ["📰", "grey"]; };
+
   /* One section of a long research report: short points, then each exhibit as a chart or table. */
   function sectionHtml(sec, ctx) {
     const n = (sec.tables || []).length;
-    return `<details class="rs-sec"><summary><span class="rs-sec-t">${App.esc(sec.title)}${sec.pages ? `<small>p. ${App.esc(sec.pages)}${n ? ` · ${n} charts and tables` : ""}</small>` : ""}</span></summary>
+    return `<details class="rs-sec">${tileSummary(sec.title, sec.pages, sec.tables || [])}
       ${(sec.points || []).length ? `<ul>${sec.points.map((x) => `<li>${App.esc(x)}</li>`).join("")}</ul>` : ""}
       ${(sec.tables || []).map((b) => blockHtml(b, ctx)).join("")}</details>`;
   }
 
-  /* "What was read": every item in every report, and whether it made it into the summary. */
-  function coverageHtml(cov) {
-    const ST = { included: ["✓", "In the summary"], approx: ["≈", "Approximate (read from a chart)"], "left-out": ["✗", "Left out"] };
-    const all = cov.flatMap((c) => c.items || []);
-    const n = (k) => all.filter((i) => i.status === k).length;
-    return `<details class="more cov" id="bk-cov"><summary>What's in this summary: ${cov.length} posts, ${all.length} items (${n("included")} ✓ in · ${n("approx")} ≈ approx · ${n("left-out")} ✗ left out)</summary>
-      ${cov.map((c) => `<div class="cov-post"><h4>${App.esc(c.title || "Post " + c.post)} <span class="muted-s">post ${App.esc(String(c.post))}${c.kind ? ` · ${App.esc(c.kind)}` : ""}</span></h4>
-        <ul>${(c.items || []).map((i) => `<li class="cov-${i.status}"><span class="cov-st" title="${(ST[i.status] || ["?", ""])[1]}">${(ST[i.status] || ["?"])[0]}</span>
-          <span>${App.esc(i.item)}${i.reason ? ` <em class="muted-s">(${App.esc(i.reason)})</em>` : ""}</span></li>`).join("")}</ul></div>`).join("")}
-    </details>`;
-  }
+
 
   /* ---------- page ---------- */
   function render(d) {
@@ -332,7 +369,60 @@
     const NEWS_SHOWN = 4;
     const pctBars = (items, raw) => { const mx = Math.max(...items.map((i) => Math.abs(i[1])), 1e-9);
       return `<div class="${raw ? "flow-w" : ""}">` + items.map(([lab, v]) => `<div class="flow"><span>${raw ? lab : App.esc(lab)}</span><div class="flow-bar"><div class="${v < 0 ? "neg" : "pos"}" style="width:${(Math.abs(v) / mx * 50).toFixed(1)}%"></div></div><span class="num ${v < 0 ? "down" : "up"}">${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v)}%</span></div>`).join("") + "</div>"; };
-    const codeChips = (codes, cls) => (codes || []).map((c) => `<span class="badge ${cls}">${App.esc(c)}</span>`).join("");
+    /* Company name for a share code: this site's companies first, then the day's calls and
+       dividends, then the CSE names fetched by the build; the code itself only as a last resort. */
+    const dayNames = {};
+    for (const x of [...calls, ...(d.dividends || [])]) if (x.code && x.name) dayNames[x.code] = x.name;
+    const full = (c) => { c = String(c || "").toUpperCase(); return /\.[A-Z]\d{4}$/.test(c) ? c : /\.[NX]$/.test(c) ? c + "0000" : c.includes(".") ? c : c + ".N0000"; };
+    const sn = (k) => { const x = (shareNames || {})[k]; return typeof x === "string" ? { name: x } : x || {}; };
+    const nameOf = (c) => { const k = full(c); const n = (mine[k] && mine[k].name) || dayNames[k] || sn(k).name;
+      return n ? n.replace(/\s+PLC\.?$/i, "").replace(/\s+Limited$/i, "") + (/\.X\d{4}$/.test(k) ? " (non-voting)" : "") : String(c).split(".")[0]; };
+    /* Small logo (or initials) and the company name, for rows of shares. */
+    const withLogo = (c) => { const k = full(c), nm = nameOf(c);
+      return `<span class="co-n" title="${App.esc(c)}">${logoFor(k, nm)}<span>${App.esc(nm)}</span></span>`; };
+    /* A coming dividend as a card: logo and name, the amount large, a yield ring, and a
+       timeline from today to the XD date (with a countdown) and the payment date. */
+    const DAY = 864e5, today = new Date(new Date().toDateString());
+    const daysTo = (iso) => { const t = App.parseDate(iso); return t ? Math.round((t - today) / DAY) : null; };
+    const divCard = (v) => {
+      const y = App.isNum(v.yieldPct) ? v.yieldPct : null, C = 2 * Math.PI * 22, frac = y === null ? 0 : Math.min(1, y / 12);
+      const dx = daysTo(v.xd), dp = daysTo(v.pay);
+      const when = (n) => n === null ? "" : n > 1 ? `in ${n} days` : n === 1 ? "tomorrow" : n === 0 ? "today" : "passed";
+      const span = Math.max(1, (dp ?? dx ?? 1));
+      const pos = (n) => n === null ? 0 : Math.max(0, Math.min(100, n / span * 100));
+      return `<div class="divc">
+        <div class="divc-head">${withLogo(v.code)}${v.type ? `<span class="divc-type">${App.esc(v.type)}</span>` : ""}</div>
+        <div class="divc-mid"><div><div class="divc-amt">${App.price(v.dps)}</div><div class="muted-s">a share${App.isNum(v.price) ? ` · price ${App.price(v.price)}` : ""}</div></div>
+          ${y !== null ? `<svg class="divc-ring" viewBox="0 0 56 56" role="img" aria-label="Yield ${y.toFixed(1)}%"><circle cx="28" cy="28" r="22" fill="none" stroke="var(--rule)" stroke-width="6"/>
+            <circle cx="28" cy="28" r="22" fill="none" stroke="var(--good)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(C * frac).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 28 28)"/>
+            <text x="28" y="27" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">${y.toFixed(1)}%</text><text x="28" y="38" text-anchor="middle" font-size="7.5" fill="var(--ink-soft)">yield</text></svg>` : ""}</div>
+        <div class="divc-tl">
+          <div class="divc-line"><i style="left:0"></i><i class="xd" style="left:${pos(dx)}%"></i><i class="pay" style="left:${pos(dp)}%"></i>
+            <div class="divc-run" style="width:${pos(dx)}%"></div></div>
+          <div class="divc-dates"><span>Today</span><span class="xd"><b>XD ${App.date(v.xd)}</b>${dx !== null ? `<small>${when(dx)}</small>` : ""}</span><span class="pay"><b>Paid ${App.date(v.pay)}</b>${dp !== null ? `<small>${when(dp)}</small>` : ""}</span></div>
+        </div>
+        <p class="muted-s divc-note">Own the shares before the XD date to get it.</p></div>`;
+    };
+
+    /* "Other figures" as stat tiles: a small icon, the figure large, the label under it. */
+    const STAT_ICONS = [[/yield|dividend/i, "💰"], [/p\/e|p\/b/i, "🧮"], [/foreign|dollar/i, "🌍"], [/turnover/i, "🔄"], [/cap/i, "🏦"],
+      [/credit|loan/i, "💳"], [/points|index|sl20|aspi/i, "📊"]];
+    const statTile = (o) => {
+      const unit = String(o.unit || ""), note = (unit.match(/\(([^)]*)\)/) || [])[1] || "", base = unit.replace(/\s*\([^)]*\)/, "").trim();
+      const v = o.value, num = typeof v === "number";
+      let big = String(v);
+      if (num) {
+        const t = App.num(Math.abs(v), Math.abs(v) < 10 && v % 1 ? 2 : Math.abs(v) % 1 ? 2 : 0), sign = v < 0 ? "−" : "";
+        big = base.startsWith("%") ? `${sign}${t}%` : base === "x" ? `${sign}${t}x` : base === "points" ? `${sign}${t} pts`
+          : base === "$ thousand" ? `${sign}$${t}K` : /^Rs mn/.test(base) ? `${sign}Rs ${t}mn` : `${sign}${t}${base ? " " + base : ""}`;
+      } else if (base) big += ` ${base}`;
+      const extra = [base.startsWith("%") ? base.slice(1).trim() : "", note].filter(Boolean).join(" · ");
+      const tone = num && /change/i.test(o.label) ? (v < 0 ? "down" : v > 0 ? "up" : "") : "";
+      const ic = (STAT_ICONS.find(([re]) => re.test(o.label)) || [0, "•"])[1];
+      return `<div class="stat"><span class="stat-ic" aria-hidden="true">${ic}</span><b class="stat-v ${tone}">${App.esc(big)}</b>
+        <span class="stat-l">${App.esc(o.label)}${extra ? `<small>${App.esc(extra)}</small>` : ""}</span></div>`;
+    };
+    const codeChips = (codes, cls) => (codes || []).map((c) => `<span class="badge ${cls}" title="${App.esc(c)}">${App.esc(nameOf(c))}</span>`).join("");
 
     /* Jump nav: skip straight to a section on a long day. */
     const jump = [
@@ -342,7 +432,6 @@
       (d.dividends || []).length && ["#bk-dividends", "Dividends"],
       (flows.length || (m.momentum || []).length || other.length) && ["#bk-market", "Market details"],
       news.length && ["#bk-news", "News"],
-      (d.coverage || []).length && ["#bk-cov", "What's included"],
     ].filter(Boolean);
 
     content.innerHTML = `
@@ -374,38 +463,36 @@
         <div class="call-head"><span>Price</span><span>Target</span><span>Upside</span></div>
         <div class="call-list" id="rows"></div>
         <button type="button" class="show-all" id="callsAll" hidden></button>
-        <p class="muted-s">Sorted by the broker's upside. ★ marks companies on this site.</p>
+        <p class="muted-s">Sorted by the broker's upside. Underlined names have an analysis on this site, with its fair value on the line below; tap a name to open it.</p>
       </section>` : ""}
 
       <div class="bk-grid">
-        ${(d.dividends || []).length ? `<section class="bk-card" id="bk-dividends"><h2>Coming dividends</h2>
-          <ul class="div-list">${d.dividends.map((v) => `<li><b>${App.esc(v.name.replace(/ (PLC|Limited)$/i, ""))}</b> <span class="muted-s">${App.esc(v.code.split(".")[0])}</span>
-            <div>${App.price(v.dps)}${v.type ? ` ${App.esc(v.type.toLowerCase())}` : ""}${App.isNum(v.yieldPct) ? ` · ${v.yieldPct.toFixed(1)}% yield` : ""} · XD ${App.date(v.xd)} · paid ${App.date(v.pay)}</div></li>`).join("")}</ul></section>` : ""}
+        ${(d.dividends || []).length ? `<section class="bk-card bk-full" id="bk-dividends"><h2>Coming dividends</h2>
+          <div class="divc-grid">${d.dividends.map(divCard).join("")}</div></section>` : ""}
 
-        ${flows.length || (m.momentum || []).length || other.length || (m.world || []).length ? `<section class="bk-card" id="bk-market"><details class="bk-fold"><summary><h2>Market details</h2><span class="muted-s">foreign flows, momentum, heat map, world markets</span></summary>
+        ${flows.length || (m.momentum || []).length || other.length || (m.world || []).length ? `<section class="bk-card bk-full" id="bk-market"><details class="bk-fold"><summary><h2>Market details</h2><span class="muted-s">foreign flows, momentum, heat map, world markets</span></summary>
           ${flows.length ? `<h3 class="bk-sub">Foreign buying and selling by share (Rs mn)</h3>
-          ${flows.map((f) => `<div class="flow"><span>${App.esc(f.code.split(".")[0])}</span><div class="flow-bar"><div class="${f.mn < 0 ? "neg" : "pos"}" style="width:${(Math.abs(f.mn) / maxFlow * 50).toFixed(1)}%"></div></div><span class="num">${f.approx ? "≈" : ""}${f.mn > 0 ? "+" : f.mn < 0 ? "−" : ""}${Math.abs(f.mn)}</span></div>`).join("")}
+          ${flows.map((f) => `<div class="flow flow-n">${withLogo(f.code)}<div class="flow-bar"><div class="${f.mn < 0 ? "neg" : "pos"}" style="width:${(Math.abs(f.mn) / maxFlow * 50).toFixed(1)}%"></div></div><span class="num">${f.approx ? "≈" : ""}${f.mn > 0 ? "+" : f.mn < 0 ? "−" : ""}${Math.abs(f.mn)}</span></div>`).join("")}
           ${flowsApprox ? `<p class="muted-s">≈ read from the broker's chart, which has no figures on the bars.</p>` : ""}` : ""}
-          ${other.length ? `<h3 class="bk-sub">Other figures</h3><dl class="bk-other">${other.map((o) => `<div><dt>${App.esc(o.label)}</dt><dd>${App.esc(String(o.value))}${o.unit ? ` ${App.esc(o.unit)}` : ""}</dd></div>`).join("")}</dl>` : ""}
+          ${other.length ? `<h3 class="bk-sub">Other figures</h3><div class="stat-grid">${other.map(statTile).join("")}</div>` : ""}
           ${(m.gainers || []).length ? `<div class="chip-line"><b>Lifted the index</b><div class="badges">${codeChips(m.gainers, "good")}</div></div>` : ""}
           ${(m.losers || []).length ? `<div class="chip-line"><b>Held it back</b><div class="badges">${codeChips(m.losers, "bad")}</div></div>` : ""}
-          ${(m.momentum || []).length ? `<h3 class="bk-sub">Biggest 10-day rises</h3>${pctBars(m.momentum.map((x) => [x.code.split(".")[0], x.pct]))}` : ""}
+          ${(m.momentum || []).length ? `<h3 class="bk-sub">Biggest 10-day rises</h3>${pctBars(m.momentum.map((x) => [withLogo(x.code), x.pct]), true)}` : ""}
           ${(m.heatmap || []).length ? `<h3 class="bk-sub">Notable moves today (%)</h3><div class="heat">${m.heatmap.slice().sort((a, b) => a.pct - b.pct).map((h) => `<span style="background:${h.pct < 0 ? `rgba(226,75,74,${(0.15 + Math.min(1, -h.pct / 6) * 0.6).toFixed(2)})` : `rgba(29,158,117,${(0.15 + Math.min(1, h.pct / 6) * 0.6).toFixed(2)})`}">${App.esc(h.code)} ${h.pct > 0 ? "+" : "−"}${Math.abs(h.pct).toFixed(2)}</span>`).join("")}</div>` : ""}
           ${(m.world || []).length ? `<h3 class="bk-sub">World markets</h3>${pctBars(m.world.map((w) => [w.name + (w.asOf ? ` <small>${App.esc(w.asOf)}</small>` : ""), w.pct]), true)}` : ""}
         </details></section>` : ""}
       </div>
 
       ${news.length ? `<section class="bk-card" id="bk-news"><h2>News and views <span class="muted-s">${news.length} · tap a headline</span></h2>
-        <div class="news-list">${news.map((n) => `<details class="news1"><summary>${App.esc(n.title)}</summary><p>${App.esc(n.text)}</p></details>`).join("")}</div>
+        <div class="news-grid">${news.map((n) => { const [ic, tone] = newsIcon(n);
+          return `<details class="news2 ${tone}"><summary><span class="nw-top"><span class="nw-ic" aria-hidden="true">${ic}</span><span class="nw-topic">${App.esc(n.topic || "News")}</span>${n.figure ? `<b class="nw-fig">${App.esc(n.figure)}</b>` : ""}</span>
+            <span class="nw-t">${App.esc(n.title)}</span></summary><p>${App.esc(n.text)}</p></details>`; }).join("")}</div>
       </section>` : ""}
 
-      ${(d.coverage || []).length ? coverageHtml(d.coverage) : ""}
-
-      ${d.note ? (d.note.length > 220
-          ? `<details class="more"><summary>Notes on this summary</summary><p class="muted-s">${App.esc(d.note)}</p></details>`
-          : `<p class="muted-s">${App.esc(d.note)}</p>`) : ""}`;
+      `;
 
     content.querySelectorAll(".bk-list.hl li").forEach((li) => li.addEventListener("click", () => li.classList.toggle("open")));
+    App.reveal(content, ".bk-card, .tiles");
     /* Filterable, sorted table of every call. */
     if (!calls.length) return;
     const rowsEl = document.getElementById("rows"), countEl = document.getElementById("count");
@@ -428,8 +515,8 @@
       rowsEl.innerHTML = visible.map((c) => {
         const u = upside(c), co = mine[c.code];
         const nm = c.name.replace(/ (PLC|Limited)$/i, "");
-        const name = co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">★ ${App.esc(nm)}</a>` : App.esc(nm);
-        return `<div class="call1"><div class="call1-top"><span class="call1-name">${name} <span class="muted-s">${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " NV" : ""}</span></span>${chip(c.rating)}</div>
+        const name = co ? `<a href="company.html?t=${encodeURIComponent(co.ticker)}">${App.esc(nm)}</a>` : App.esc(nm);
+        return `<div class="call1${co ? " mine" : ""}"><div class="call1-top"><span class="call1-name">${logoFor(c.code, nm, "sm")}<span>${name} <span class="muted-s">${App.esc(c.code.split(".")[0])}${c.code.includes(".X") ? " NV" : ""}</span></span></span>${chip(c.rating)}</div>
           <div class="call1-nums"><span>${n(c.price)}</span><span>${App.isNum(c.target) ? n(c.target) : "not set"}</span><span class="${u !== null && u < 0 ? "down" : "up"}">${pct(u)}</span></div>
           ${co && co.valuation && App.isNum(co.valuation.fairValue) ? `<div class="call1-dl">${dotLine([["price", "Price", c.price], ["fv", "This site", co.valuation.fairValue], ["tg", "Target", c.target]], true)}<span class="muted-s">this site ${n(co.valuation.fairValue)}</span></div>` : ""}</div>`;
       }).join("") || `<p class="muted-s">No calls match.</p>`;

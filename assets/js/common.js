@@ -505,3 +505,23 @@ App.dodge = function (items, W, gap = 8) {
   order.slice().reverse().forEach((i) => { const it = items[i]; let c = Math.min(pos[i], W - it.w / 2, nextStart - gap - it.w / 2); pos[i] = c; nextStart = c - it.w / 2; });
   return pos;
 };
+
+/* ---------- Animations ----------
+   Cards fade up as they scroll into view; bars grow, lines draw and rings fill inside them
+   (style.css, "Animations"). Children of a grid come in one after another. Nothing moves for
+   anyone whose device asks for reduced motion. */
+App.reveal = function (root, selector) {
+  if (!root || !("IntersectionObserver" in window)) return;
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const els = [...root.querySelectorAll(selector)];
+  if (reduce) { els.forEach((el) => el.classList.add("in")); return; }
+  const STAGGER = ".rs-tiles > .rs-sec, .news-grid > .news2, .stat-grid > .stat, .divc-grid > .divc, .alert-cards > .alert-card, .call-list .call1, .tiles > .tile, .hl2 > .hl2-row, .flow, .rs-glance li";
+  const obs = new IntersectionObserver((entries) => entries.forEach((e) => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    el.querySelectorAll(STAGGER).forEach((c, i) => c.style.setProperty("--i", Math.min(i, 14)));
+    el.classList.add("reveal", "in");
+    obs.unobserve(el);
+  }), { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+  els.forEach((el) => { el.classList.add("reveal"); obs.observe(el); });
+};
