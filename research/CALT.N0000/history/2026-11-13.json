@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "ticker": "CALT.N0000",
+  "company": {
+    "name": "Capital Alliance PLC",
+    "sector": "Diversified financials (primary dealer)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "CALT.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-13",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (audited, year to 31 March 2026)",
+      "Interim report to 30 Sep 2026 (unaudited)"
+    ]
+  },
+  "price": {
+    "value": 43.1,
+    "date": "2026-09-30",
+    "source": "Market price on 30 September 2026, Interim Q2 2026/27, p. 10",
+    "note": "The CSE data feed couldn't be reached and the share isn't yet in the site's price file, so this is the latest confirmed price. Undated web quotes (TradingView, Simply Wall St) showed about Rs 52.60–52.80 but are probably old. The site replaces this with the daily CSE close when available. Range: July–September 2026 Rs 42.80–52.40; 2025/26 Rs 46.30–69.90; 2024/25 Rs 39.80–67.70."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A rate-driven bond dealer now making losses, priced for boom-year returns",
+    "text": "Capital Alliance PLC (CALT.N0000) is a government-securities primary dealer, 86% owned by Capital Alliance Holdings. It borrows through repos (Rs 66.7bn in March 2026) to hold Treasury bills and bonds, so its profit comes from the interest spread and, much more, from trading gains when interest rates fall. The rate cuts of 2023–2024 produced a profit of Rs 13.89bn in 2023/24 (ROE about 127%, worked out) and Rs 4.42bn in 2024/25 (ROE 28.7%); in the calmer 2025/26 profit fell to Rs 2.00bn (EPS Rs 6.07, ROE 15.7%). In the six months to September 2026 government-securities yields moved against it and it lost Rs 3.51bn (EPS −Rs 10.66; Q1 −Rs 8.53 worked out, Q2 −Rs 2.13). It also paid out Rs 16.00 a share for 2025/26, far more than it earned, so NAV fell from Rs 43.70 (March 2025) to Rs 33.76 and then Rs 23.11 (September 2026). It has cut its bond book from Rs 81.1bn to Rs 34.6bn and sold all its quoted shares.\n\nAt Rs 43.10 (closing price on 30 September 2026, from the interim report; a current CSE close wasn't available) it trades at 1.9x NAV, which needs a long-run ROE of about 29%: close to its boom-year results. Four methods, using a through-the-cycle ROE of 20% in the base case, put fair value at about Rs 25.70, so the price is about 68% above it: overpriced. I'd buy only at up to Rs 21.80 and treat under Rs 19.30 as a strong buy (about 0.85–0.95x NAV). It passes three of the four business tests (good returns over several years, modest borrowing outside repos, generous cash dividends) but fails on steady profit, so it's a good business on the rules at too high a price: watch list (category 2). A fall in interest rates would bring trading gains back quickly; that's the upside case."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Very high returns in the rate-cut years, little borrowing outside repos and large cash dividends; but a loss in 2021/22 and a big loss again now.",
+    "assessed": "2026-11-13",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "Above 15% each year 2022/23–2025/26",
+        "note": "ROE about 69% (2022/23) and 127% (2023/24), both worked out on average equity from the five-year summary; 28.7% (2024/25) and 15.7% (2025/26) reported (Annual Report 2025/26, p. 7). 2021/22 was a loss and the last 12 months are about −30% (worked out). A pass over several years, but only thanks to the rate-cut boom."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "Bank loans less cash 0.46x equity",
+        "note": "Excluding repos (which fund the government securities they're secured on), bank loans of Rs 5.51bn less Rs 0.43bn cash against equity of Rs 11.12bn (March 2026, Annual Report p. 161). The September 2026 split isn't given. Capital ratio 20.84% against a 10% minimum (March 2026). Equity of Rs 7.61bn in September 2026 is still above the Rs 5.0bn core capital minimum from January 2027, but the cushion is shrinking. Total liabilities 4.4x equity (6.6x in March)."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2021/22 and H1 2026/27",
+        "note": "Profit −Rs 0.17bn, 2.83bn, 13.89bn, 4.42bn and 2.00bn over 2021/22–2025/26, then −Rs 3.51bn in the half year. Profit swings with interest rates."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "Rs 11.7bn paid on Rs 6.4bn earned",
+        "note": "Dividends paid of Rs 6.42bn (2024/25) and Rs 5.27bn (2025/26) against profits of Rs 4.42bn and Rs 2.00bn (Annual Report, p. 138); payout 263% in 2025/26. The stated policy is up to 50% of the year's profit, so 2026/27 dividends are unlikely after the half-year loss."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 25.7,
+    "buyPrice": 21.8,
+    "strongBuyPrice": 19.3,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 23.11,
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 1.1x NAV). No cash-flow DCF: this is a leveraged government-securities dealer, so book value and return on equity drive the value, as for a bank."
+  },
+  "dividend": {
+    "perShare": 16.0,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, p. 7 and p. 165",
+    "note": "Two interims: Rs 4.00 (September 2025) and Rs 12.00 (January 2026); Rs 19.50 for 2024/25. Nothing declared for 2026/27 by September 2026."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 23.11,
+      "unit": "Rs",
+      "note": "30 September 2026 (Rs 33.76 at March 2026, Rs 43.70 at March 2025)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.87,
+      "unit": "x"
+    },
+    {
+      "id": "eps",
+      "label": "EPS (last 12 months)",
+      "value": -10.4,
+      "unit": "Rs",
+      "note": "Loss; worked out to September 2026 (2025/26: Rs 6.07)"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 15.68,
+      "unit": "%",
+      "note": "2025/26 (28.71% in 2024/25); about −30% over the last 12 months"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield (last year)",
+      "value": 37.1,
+      "unit": "%",
+      "note": "Rs 16.00 for 2025/26, paid mostly from reserves; not repeatable"
+    },
+    {
+      "id": "car",
+      "label": "Capital adequacy ratio",
+      "value": 20.84,
+      "unit": "%",
+      "note": "March 2026; minimum 10%"
+    },
+    {
+      "id": "equity",
+      "label": "Equity",
+      "value": 7.61,
+      "unit": "Rs bn",
+      "note": "September 2026; core capital minimum Rs 5.0bn from January 2027"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 14.2,
+      "unit": "Rs bn",
+      "display": "~Rs 14bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "April–September 2026 (unaudited)",
+      "text": "Loss of Rs 3.51bn (EPS −Rs 10.66) against a Rs 1.91bn profit a year earlier (EPS Rs 5.81). Losses on government securities Rs 3.80bn; net interest income Rs 0.56bn (Rs 1.38bn). Q2 alone: loss Rs 0.70bn (EPS −Rs 2.13), smaller than Q1's loss of about Rs 2.81bn (worked out)."
+    },
+    {
+      "title": "Book value down a third in six months",
+      "text": "Equity fell from Rs 11.12bn to Rs 7.61bn (NAV Rs 33.76 → Rs 23.11). No dividend paid in the half year. The bond book was cut to Rs 34.6bn from Rs 81.1bn and all quoted shares were sold."
+    },
+    {
+      "title": "2025/26 (audited)",
+      "text": "Profit Rs 2.00bn (Rs 4.42bn), EPS Rs 6.07 (Rs 13.42), ROE 15.7% (28.7%). Trading gains Rs 2.96bn, fair-value losses Rs 1.77bn, net interest income Rs 2.46bn. Personnel costs cut to Rs 0.22bn from Rs 0.55bn as bonuses follow profit."
+    },
+    {
+      "title": "Paid out more than it earned",
+      "text": "Dividends of Rs 16.00 a share for 2025/26 (Rs 5.27bn) against profit of Rs 2.00bn, after Rs 19.50 (Rs 6.42bn) for 2024/25. Policy now limits payouts to 50% of the year's profit."
+    },
+    {
+      "title": "Capital",
+      "text": "Capital ratio 20.84% and core capital Rs 11.01bn in March 2026, against 10% and Rs 4.0bn. The core capital minimum rises to Rs 5.0bn on 1 January 2027; equity was Rs 7.61bn in September 2026."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26",
+      "Last 12 months"
+    ],
+    "series": [
+      {
+        "id": "profit",
+        "label": "Profit after tax",
+        "unit": "Rs bn",
+        "values": [
+          -0.17,
+          2.83,
+          13.89,
+          4.42,
+          2.0,
+          -3.42
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "To Sep 2026, worked out"
+        ]
+      },
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          null,
+          13.42,
+          6.07,
+          -10.4
+        ],
+        "notes": [
+          "Not in these reports",
+          "Not in these reports",
+          "Not in these reports",
+          null,
+          null,
+          "To Sep 2026, worked out"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          69.3,
+          127.0,
+          28.71,
+          15.68,
+          -30.3
+        ],
+        "notes": [
+          "Loss; opening equity not in these reports",
+          "Worked out on average equity",
+          "Worked out on average equity",
+          null,
+          null,
+          "Worked out on average equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E (year-end)",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          4.08,
+          8.5,
+          null
+        ],
+        "notes": [
+          "Loss",
+          "Not available",
+          "Not available",
+          "Worked out at Rs 54.80",
+          "Worked out at Rs 51.60",
+          "Loss"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          null,
+          19.5,
+          16.0,
+          null
+        ],
+        "notes": [
+          "Not in these reports",
+          "Not in these reports",
+          "Not in these reports",
+          null,
+          null,
+          "Nothing declared yet"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          null,
+          null,
+          null,
+          43.7,
+          33.76,
+          23.11
+        ],
+        "notes": [
+          "Not in these reports",
+          "Not in these reports",
+          "Not in these reports",
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 23.11",
+      "reading": "1.9x book. The book is mostly government securities at market value, so NAV is close to real value; it falls when yields rise and recovers when they fall."
+    },
+    {
+      "method": "Return on equity",
+      "value": "15.7% (2025/26)",
+      "reading": "About 69% and 127% in the rate-cut years, 28.7% in 2024/25, a loss now. I assume 20% through the cycle."
+    },
+    {
+      "method": "P/E",
+      "value": "Loss (last 12 months)",
+      "reading": "4.1x at March 2025 and 8.5x at March 2026; meaningless on current losses, so I use normalised earnings."
+    },
+    {
+      "method": "Dividends",
+      "value": "Rs 16.00 (2025/26)",
+      "reading": "Paid largely from reserves. With a 50%-of-profit policy and a half-year loss, little or nothing is likely for 2026/27."
+    },
+    {
+      "method": "Residual income",
+      "value": "Rs 20.40 base",
+      "reading": "A loss-making year first, then a recovery to 20% ROE: worth a little under 0.9x book at an 18.5% cost of equity."
+    },
+    {
+      "method": "Capital",
+      "value": "CAR 20.84% (March 2026)",
+      "reading": "Comfortable then; equity has since fallen a third, and the core capital minimum rises to Rs 5.0bn in January 2027."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 10.8,
+      "base": 25.9,
+      "bull": 53.2,
+      "weighted": 26.8,
+      "comment": "NAV Rs 23.11 × (ROE − growth) ÷ (cost of equity − growth); long-run ROE 12% / 20% / 30%."
+    },
+    {
+      "id": "pe",
+      "name": "P/E on normalised earnings",
+      "bear": 13.9,
+      "base": 27.7,
+      "bull": 55.5,
+      "weighted": 29.1,
+      "comment": "Normalised EPS (long-run ROE × NAV) of Rs 2.77 / 4.62 / 6.93 at 5 / 6 / 8 times (year-end P/E was 4.1x in 2024/25 and 8.5x in 2025/26)."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 8.1,
+      "base": 22.9,
+      "bull": 53.4,
+      "weighted": 24.6,
+      "comment": "No dividend / none / Rs 1.00 in the next year (the half-year loss leaves little profit to pay from), then 58% / 70% / 77% of normalised earnings, growing 5% / 6% / 7%."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 5.9,
+      "base": 20.4,
+      "bull": 50.9,
+      "weighted": 22.1,
+      "comment": "Book value Rs 23.11; ROE −10% / 5% / 20% in the next 12 months, recovering to 12% / 20% / 30% over three years."
+    }
+  ],
+  "modelsNote": "A government-securities dealer, so instead of a cash-flow DCF I used book-value methods (justified P/B and residual income), P/E on normalised earnings and a dividend model, as for a bank. All four depend mainly on the long-run ROE assumption.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "20%",
+        "base": "18.5%",
+        "bull": "17%"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "12%",
+        "base": "20%",
+        "bull": "30%"
+      },
+      {
+        "label": "Next 12 months ROE",
+        "bear": "−10%",
+        "base": "5%",
+        "bull": "20%"
+      },
+      {
+        "label": "Long-term growth",
+        "bear": "5%",
+        "base": "6%",
+        "bull": "7%"
+      },
+      {
+        "label": "Normalised EPS × P/E",
+        "bear": "2.77 × 5",
+        "base": "4.62 × 6",
+        "bull": "6.93 × 8"
+      },
+      {
+        "label": "Dividend next year",
+        "bear": "None",
+        "base": "None",
+        "bull": "Rs 1.00"
+      },
+      {
+        "label": "Payout after that",
+        "bear": "58%",
+        "base": "70%",
+        "bull": "77%"
+      }
+    ],
+    "averages": {
+      "bear": 9.7,
+      "base": 24.2,
+      "bull": 53.2
+    },
+    "common": "10-year government bond about 12.4% plus about 6 points for a leveraged, rate-driven business (same as First Capital, CFVF.N0000). Starting NAV Rs 23.11 (30 Sep 2026). Payout after next year is the level that keeps growth and ROE consistent (1 − growth ÷ ROE)."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "17%",
+      "18.5%",
+      "20%"
+    ],
+    "columns": [
+      "12%",
+      "20%",
+      "30%"
+    ],
+    "values": [
+      [
+        10.4,
+        23.6,
+        40.0
+      ],
+      [
+        9.0,
+        20.4,
+        34.4
+      ],
+      [
+        7.9,
+        17.8,
+        30.1
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Rs 43.10 needs a long-run ROE of about 29% at an 18.5% cost of equity on the justified P/B: roughly what CAL earned only when rates were being cut."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 25.7
+      },
+      {
+        "shares": 150,
+        "maxPrice": 21.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 19.3
+      }
+    ],
+    "averagePrice": 22.61,
+    "totalCost": 11305.0,
+    "note": "About Rs 11,305 in total, against Rs 21,550 at Rs 43.10.",
+    "realism": "Unrealistic for now: Rs 21.80 is about 49% below Rs 43.10 and well below the lows of the last two years (Rs 39.80 in 2024/25, Rs 42.80 in July–September 2026). It would take further losses or a broad market fall. Don't chase it."
+  },
+  "changeMyView": {
+    "higher": [
+      "Interest rates falling again: trading gains would return quickly and lift NAV.",
+      "A profitable second half of 2026/27 (Q2's loss was already much smaller than Q1's).",
+      "Evidence of steady earnings from client business (CAL Portal, TradeX) rather than rate bets.",
+      "A price near or below NAV."
+    ],
+    "lower": [
+      "Further rate rises and another large quarterly loss.",
+      "Equity falling towards the Rs 5.0bn core capital minimum (January 2027), forcing a smaller book or a capital raise.",
+      "Dividends restarting above 50% of profit and draining capital again.",
+      "Net interest income staying near the H1 2026/27 level (Rs 0.56bn for six months)."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025/26 annual report and the interim report to September 2026 (unaudited). The price used is the 30 September 2026 market price from the interim report, because the CSE close couldn't be fetched. This is analysis, not personal financial advice."
+  },
+  "Decision box": {
+    "Verdict": "Overpriced: about 68% above fair value of Rs 25.70.",
+    "Downside / upside": "Bear case Rs 9.70; bull case Rs 53.20 (+23%).",
+    "What the price assumes": "A long-run ROE of about 29%, close to the boom-year results.",
+    "Confidence": "Low: profit depends on interest-rate moves nobody can forecast.",
+    "Margin of safety": "Buy 15% below fair value (Rs 21.80), strong buy 25% below (Rs 19.30)."
+  },
+  "Business and moat": {
+    "What it does": "A standalone primary dealer in Sri Lankan government securities: buys Treasury bills and bonds at auction, trades them with banks, funds and individuals (including through the CAL Portal and its TradeX bidding system) and funds its holdings with repos and bank loans.",
+    "Moat": "Weak to moderate: a leading non-bank primary dealer with a strong research name, but every dealer trades the same instruments, and results depend on calling rates right."
+  },
+  "Management and governance": {
+    "Ownership": "Capital Alliance Holdings 86.0%; public float 12.4% (8,862 public shareholders, September 2026).",
+    "Related parties": "Repos and other dealings with CAL-managed unit trusts (related-party notes, Annual Report p. 170).",
+    "Leadership": "New CEO (L H S L Silva) from April 2025; the former CEO stays on the board."
+  },
+  "Sri Lanka checks": {
+    "Interest rates": "The main driver: a 1-point rise cut about Rs 0.85bn off pre-tax profit on the March 2026 book.",
+    "Regulation": "CBSL sets capital minimums (core capital Rs 5.0bn from January 2027) and caps dividends at 50% of the year's profit.",
+    "Liquidity": "Low: only a 12.4% free float."
+  },
+  "Suggested Telegram alerts (not set; needs your approval)": {
+    "Buy": "Rs 21.80 or lower",
+    "Strong buy": "Rs 19.30 or lower"
+  },
+  "What this analysis doesn't cover": [
+    "EPS, NAV and dividends per share before 2024/25 (not in these two reports).",
+    "The capital ratio at September 2026 (not given in the interim report).",
+    "Management's explanation of the 2026/27 losses (the interim report has no commentary).",
+    "A November 2026 CSE price."
+  ],
+  "fullText": "Capital Alliance PLC (CALT.N0000) is a government-securities primary dealer, 86% owned by Capital Alliance Holdings. It borrows through repos (Rs 66.7bn in March 2026) to hold Treasury bills and bonds, so its profit comes from the interest spread and, much more, from trading gains when interest rates fall. The rate cuts of 2023–2024 produced a profit of Rs 13.89bn in 2023/24 (ROE about 127%, worked out) and Rs 4.42bn in 2024/25 (ROE 28.7%); in the calmer 2025/26 profit fell to Rs 2.00bn (EPS Rs 6.07, ROE 15.7%). In the six months to September 2026 government-securities yields moved against it and it lost Rs 3.51bn (EPS −Rs 10.66; Q1 −Rs 8.53 worked out, Q2 −Rs 2.13). It also paid out Rs 16.00 a share for 2025/26, far more than it earned, so NAV fell from Rs 43.70 (March 2025) to Rs 33.76 and then Rs 23.11 (September 2026). It has cut its bond book from Rs 81.1bn to Rs 34.6bn and sold all its quoted shares.\n\nAt Rs 43.10 (closing price on 30 September 2026, from the interim report; a current CSE close wasn't available) it trades at 1.9x NAV, which needs a long-run ROE of about 29%: close to its boom-year results. Four methods, using a through-the-cycle ROE of 20% in the base case, put fair value at about Rs 25.70, so the price is about 68% above it: overpriced. I'd buy only at up to Rs 21.80 and treat under Rs 19.30 as a strong buy (about 0.85–0.95x NAV). It passes three of the four business tests (good returns over several years, modest borrowing outside repos, generous cash dividends) but fails on steady profit, so it's a good business on the rules at too high a price: watch list (category 2). A fall in interest rates would bring trading gains back quickly; that's the upside case.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 10.8 | 25.9 | 53.2 | 26.8\nP/E on normalised earnings | 13.9 | 27.7 | 55.5 | 29.1\nDividend model | 8.1 | 22.9 | 53.4 | 24.6\nResidual income | 5.9 | 20.4 | 50.9 | 22.1\nAverage | 9.7 | 24.2 | 53.2 | 25.7\n\nHow the business makes money: CAL buys Treasury bills and bonds and funds most of them with repos. In a normal year the spread between the two (1.47% in 2025/26) gives net interest income of about Rs 2.5–3.0bn. The big swings come from trading and fair-value gains: Rs 19.0bn of trading gains in 2023/24 when rates were cut sharply, Rs 6.1bn in 2024/25, Rs 3.0bn in 2025/26 (less Rs 1.8bn of fair-value losses), and a Rs 3.82bn loss in the six months to September 2026. A 1-point rise in rates would have cut pre-tax profit by about Rs 0.85bn on the March 2026 book (Rs 2.42bn a year earlier, when the bond book was bigger).\n\nWhat happened in 2026/27 so far: net interest income fell to Rs 0.56bn (Rs 1.38bn a year earlier) and losses on government securities were Rs 3.80bn (trading −Rs 3.65bn, remeasurement −Rs 0.15bn). The interim report gives no commentary; the losses point to rising yields. Q2 (−Rs 0.70bn) was much smaller than Q1 (about −Rs 2.81bn, worked out). Almost no tax was charged on the loss. The bond book was cut from Rs 81.1bn to Rs 34.6bn, repos and bank loans from Rs 72.2bn to Rs 33.0bn, and all quoted shares (Rs 0.89bn) were sold.\n\nWhy the price looks high: with a cost of equity of 18.5% (10-year bond about 12.4% plus about 6 points for a leveraged, rate-driven business) Rs 43.10 needs a long-run ROE of about 29% on today's book. CAL earned that only in the rate-cut years; its 'normal' year 2025/26 gave 15.7% and the last 12 months a loss. A base ROE of 20% is already generous.\n\nDividends: Rs 19.50 for 2024/25 and Rs 16.00 for 2025/26 (Rs 4.00 + Rs 12.00 interims), far above profits, which is why book value has halved. Policy is to pay up to 50% of the year's profit (CBSL rules for primary dealers), so I assume no dividend for 2026/27 in the base case. The 37% 'yield' on last year's dividend won't be repeated.\n\nCapital: core capital Rs 11.01bn and capital ratio 20.84% in March 2026, against minimums of Rs 4.0bn (5.0bn from 1 January 2027) and 10%. Equity has since fallen to Rs 7.61bn; another loss like Q1 would bring it close to Rs 5bn and could force a smaller book or new capital.\n\nBuy plan: 200 shares up to Rs 25.70, 150 up to Rs 21.80 and 150 up to Rs 19.30, about Rs 11,305 in total (average Rs 22.61), against Rs 21,550 at Rs 43.10. The lowest prices in the last 18 months were Rs 39.80 (2024/25) and Rs 42.80 (July–September 2026), so the plan needs further losses or a market fall; don't chase it.\n\nBusiness tests: 3 of 4 passed (fails steady profit), so it's rated good, but the price is far above the buy price: watch list (category 2).\n\nUncertain: the price is the 30 September 2026 close from the interim report because the CSE close couldn't be fetched; the site will show the daily close. EPS, NAV per share and dividends per share before 2024/25 aren't in these reports (the share count for earlier years wasn't checked), so they're left out. The September 2026 capital ratio isn't given."
+}
