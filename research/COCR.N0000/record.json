@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "COCR.N0000",
   "localFolder": null,
-  "updated": "2026-11-13",
+  "updated": "2026-11-25",
   "reportsRead": [
     {
       "file": "reports/COCR.N0000/2026-08-06_annual_Annual-Report-as-at-31st-March-2026.pdf",
@@ -11,8 +11,8 @@
       "periodEnd": "2026-03-31",
       "type": "annual",
       "audited": true,
-      "readOn": "2026-11-13",
-      "note": "Used: highlights (PDF p. 8), chairman's message (p. 19), income statement (p. 163), associate note 18 (p. 198), events after year-end (p. 269), ten-year summary (pp. 272–273), investor information (pp. 274–277)."
+      "readOn": "2026-11-25",
+      "note": "Re-read in full for /redo full. Page numbers are the printed ones (PDF page = printed − 2 from p. 28 on). Used: highlights (p. 6), chairperson (pp. 16–18), CEO (pp. 19–21), financial review (pp. 34–35), statements (pp. 160–166), associate note 18 (p. 194), related parties (p. 262), events after the year (p. 265), ten-year summary (pp. 270–271), investor information (pp. 272–275). First read 13 Nov 2026 (PDF page numbers then)."
     },
     {
       "file": "reports/COCR.N0000/2026-10-30_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
@@ -21,11 +21,283 @@
       "periodEnd": "2026-09-30",
       "type": "interim",
       "audited": false,
-      "readOn": "2026-11-13",
-      "note": "Balance sheet p. 1, income statements pp. 2–3, equity p. 4, cash flow p. 5, notes and shareholders pp. 12–13."
+      "readOn": "2026-11-25",
+      "note": "Re-read in full for /redo full. Printed page numbers: balance sheet p. 1, income statements pp. 2–3, equity p. 4, cash flow p. 5, segments pp. 10–11, notes and shareholders pp. 12–13. First read 13 Nov 2026."
     }
   ],
   "periods": [
+    {
+      "period": "FY 2015/16",
+      "periodEnd": "2016-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 2322.228,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "eps": {
+          "value": 7.29,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "dividendPerShare": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 318.074,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
+        },
+        "navPerShare": {
+          "value": 25.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "roe": {
+          "value": 43.3,
+          "unit": "%",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
+        },
+        "totalEquity": {
+          "value": 8014.197,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 72494.365,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 60967.186,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 50381.35,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 10212.068,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2016/17",
+      "periodEnd": "2017-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 3116.513,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "eps": {
+          "value": 9.79,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "dividendPerShare": {
+          "value": 1.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 477.112,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
+        },
+        "navPerShare": {
+          "value": 33.63,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "roe": {
+          "value": 45.26,
+          "unit": "%",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
+        },
+        "totalEquity": {
+          "value": 10695.894,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 85721.37,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 71680.227,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 54637.126,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 11930.703,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2017/18",
+      "periodEnd": "2018-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 2542.058,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "eps": {
+          "value": 7.99,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "dividendPerShare": {
+          "value": 1.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 318.078,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
+        },
+        "navPerShare": {
+          "value": 40.57,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "roe": {
+          "value": 32.79,
+          "unit": "%",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
+        },
+        "totalEquity": {
+          "value": 12903.805,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 90119.003,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 74030.75,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 55858.727,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 11951.694,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        }
+      }
+    },
+    {
+      "period": "FY 2018/19",
+      "periodEnd": "2019-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfit": {
+          "value": 2635.586,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "eps": {
+          "value": 8.28,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "dividendPerShare": {
+          "value": 0.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 238.556,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
+        },
+        "navPerShare": {
+          "value": 40.32,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "roe": {
+          "value": 27.69,
+          "unit": "%",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
+        },
+        "totalEquity": {
+          "value": 12825.967,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 89142.633,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 70082.305,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 53936.319,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 12465.523,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        }
+      }
+    },
     {
       "period": "FY 2019/20",
       "periodEnd": "2020-03-31",
@@ -34,35 +306,63 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 2.007,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "value": 2006.616,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "eps": {
           "value": 6.3,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "dividendPerShare": {
           "value": 1.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 318.074,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 45.57,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "roe": {
           "value": 15.99,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 14.496,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 14496.177,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 89862.177,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 71066.766,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 48948.642,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 10912.143,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         }
       }
     },
@@ -74,36 +374,70 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 2.335,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
+          "value": 2334.756,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
           "note": "Amalgamated figures"
         },
         "eps": {
           "value": 7.34,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
         },
         "dividendPerShare": {
           "value": null,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final); shown as '-'"
+        },
+        "dividendsPaid": {
+          "value": null,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 48.4,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
         },
         "roe": {
           "value": 15.62,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 15.396,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 15396.356,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
+        },
+        "totalAssets": {
+          "value": 91129.873,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
+        },
+        "loansNet": {
+          "value": 68567.137,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 47989.537,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
+        },
+        "netInterestIncome": {
+          "value": 9035.088,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Amalgamated figures"
         }
       }
     },
@@ -115,36 +449,70 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 4.52,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
+          "value": 4520.313,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
           "note": "Company figures"
         },
         "eps": {
           "value": 14.21,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
         },
         "dividendPerShare": {
           "value": 2.5,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 795.186,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 60.34,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
         },
         "roe": {
           "value": 26.14,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 19.193,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 19193.329,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
+        },
+        "totalAssets": {
+          "value": 93630.228,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
+        },
+        "loansNet": {
+          "value": 73993.334,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 48077.988,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
+        },
+        "netInterestIncome": {
+          "value": 11948.942,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company figures"
         }
       }
     },
@@ -156,35 +524,63 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 2.164,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "value": 2163.504,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "eps": {
           "value": 6.8,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "dividendPerShare": {
           "value": 2.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 636.149,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 62.64,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "roe": {
           "value": 11.06,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 19.923,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 19922.89,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 100927.853,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 75593.098,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 59243.651,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 13056.137,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         }
       }
     },
@@ -196,35 +592,63 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 3.641,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "value": 3640.741,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "eps": {
           "value": 11.45,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "dividendPerShare": {
           "value": 1.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 318.074,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 72.93,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "roe": {
           "value": 16.89,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 23.197,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 23196.673,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 105937.427,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 79588.214,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 62121.24,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 14897.925,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         }
       }
     },
@@ -236,56 +660,246 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 6.147,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "value": 6147.086,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "eps": {
           "value": 19.33,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "dividendPerShare": {
           "value": 4.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 1272.297,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 89.61,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "roe": {
           "value": 23.78,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 28.502,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 28502.158,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "totalAssets": {
+          "value": 110176.292,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "loansNet": {
+          "value": 69884.542,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 55681.779,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
+        },
+        "netInterestIncome": {
+          "value": 17884.191,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "interestIncome": {
+          "value": 27337.856,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "interestExpense": {
+          "value": 9453.665,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netFeeIncome": {
+          "value": 2644.681,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "impairmentCharge": {
+          "value": 1651.888,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column; charge"
+        },
+        "personnelExpenses": {
+          "value": 3454.939,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "depreciationAmortisation": {
+          "value": 570.76,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "otherOperatingExpenses": {
+          "value": 4663.087,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "vatOnFinancialServices": {
+          "value": 2216.999,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "associateProfit": {
+          "value": 322.124,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "profitBeforeTax": {
+          "value": 9621.653,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 3474.566,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 6147.086,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "cash": {
+          "value": 4731.852,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "loansAndReceivables": {
+          "value": 22163.502,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "leaseReceivables": {
+          "value": 47721.039,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "dueToBanks": {
+          "value": 15115.938,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "debtInstrumentsIssued": {
+          "value": 1295.845,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "subordinatedLoan": {
+          "value": 1500.0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Comparative column"
+        },
+        "operatingCashFlow": {
+          "value": 9699.454,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "purchasePPE": {
+          "value": 434.913,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)",
+          "note": "Comparative column"
         },
         "grossNpaPct": {
           "value": 26.07,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8 (highlights, company)"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
+        },
+        "netNpaPct": {
+          "value": 13.39,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
         },
         "tier1Ratio": {
           "value": 25.63,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
+        },
+        "totalCapitalRatio": {
+          "value": 25.74,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
+        },
+        "roeCompany": {
+          "value": 24.2,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
         },
         "priceYearEnd": {
           "value": 56.4,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 277 (share information)"
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
+        "priceHigh": {
+          "value": 56.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
+        "priceLow": {
+          "value": 50.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 275 (share information)"
         },
         "peYearEnd": {
           "value": 2.88,
           "unit": "x",
-          "source": "Annual Report 2025/26, PDF p. 277",
+          "source": "Annual Report 2025/26, p. 275 (share information)",
           "note": "Company EPS"
+        },
+        "publicHolding": {
+          "value": 18.99,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
+        "shareholders": {
+          "value": 4293,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 272"
         }
       }
     },
@@ -297,104 +911,491 @@
       "audited": true,
       "figures": {
         "netProfit": {
-          "value": 9.753,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "value": 9752.816,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Profit for the year; all attributable to owners"
         },
         "eps": {
           "value": 30.66,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
         },
         "dividendPerShare": {
           "value": 6.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)",
-          "note": "Paid during the year (previous year's dividend)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Paid during the year (the previous year's final)"
+        },
+        "dividendsPaid": {
+          "value": 1908.515,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Dividend paid in the year"
         },
         "navPerShare": {
           "value": 114.04,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)"
         },
         "roe": {
           "value": 30.11,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Company's printed ratio"
         },
-        "equity": {
-          "value": 36.274,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF pp. 272–273 (ten-year summary, group)"
+        "totalEquity": {
+          "value": 36274.415,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "totalAssets": {
+          "value": 132067.126,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "loansNet": {
+          "value": 98970.925,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 270–271 (ten-year summary)",
+          "note": "Leases, hire purchase, loans and advances"
+        },
+        "deposits": {
+          "value": 55202.695,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Due to customers"
         },
         "netInterestIncome": {
-          "value": 19.035,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 163 (income statement, group)"
+          "value": 19034.58,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
         },
-        "impairment": {
-          "value": 4.955,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 163",
-          "note": "Net reversal (release) of loan-loss provisions"
+        "interestIncome": {
+          "value": 27149.309,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "interestExpense": {
+          "value": 8114.729,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "netFeeIncome": {
+          "value": 2703.143,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "otherOperatingIncome": {
+          "value": 1017.849,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "investmentPropertyGain": {
+          "value": 432.178,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Change in fair value of investment properties"
+        },
+        "totalOperatingIncome": {
+          "value": 23203.679,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "impairmentCharge": {
+          "value": -4955.132,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Negative = net reversal (release) of loan-loss provisions"
+        },
+        "personnelExpenses": {
+          "value": 4424.039,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "depreciationAmortisation": {
+          "value": 583.587,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "otherOperatingExpenses": {
+          "value": 5042.493,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "vatOnFinancialServices": {
+          "value": 3334.689,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "sscl": {
+          "value": 463.151,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "Social Security Contribution Levy"
         },
         "associateProfit": {
-          "value": 0.805,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 163",
-          "note": "TVS Lanka (19.5%)"
+          "value": 804.957,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)",
+          "note": "TVS Lanka (Pvt) Ltd, 19.5% (note 18, p. 194)"
+        },
+        "profitBeforeTax": {
+          "value": 15115.808,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 5362.992,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "netProfitOwners": {
+          "value": 9752.816,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 161 (income statement, group)"
+        },
+        "cash": {
+          "value": 3030.811,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "placementsWithBanks": {
+          "value": 2686.824,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "loansAndReceivables": {
+          "value": 33350.952,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "leaseReceivables": {
+          "value": 65619.973,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Lease rentals receivable and stock out on hire"
+        },
+        "dueToBanks": {
+          "value": 29502.639,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "debtInstrumentsIssued": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)",
+          "note": "Listed debentures redeemed in March 2026"
+        },
+        "subordinatedLoan": {
+          "value": 1506.411,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "investmentProperties": {
+          "value": 4609.5,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "investmentInAssociate": {
+          "value": 1371.704,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 160 (balance sheet, group)"
+        },
+        "operatingCashFlow": {
+          "value": -18145.492,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)",
+          "note": "Mostly loan-book growth (leases and loans up Rs 24.1bn)"
+        },
+        "purchasePPE": {
+          "value": 774.437,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)"
+        },
+        "purchaseIntangibles": {
+          "value": 4.921,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 165–166 (cash flow, group)"
         },
         "dividendDeclared": {
           "value": 10.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 19 (chairman) and note 55 (PDF p. 269)",
-          "note": "Rs 3 interim + Rs 7 final for 2025/26"
+          "source": "Annual Report 2025/26, p. 17 (chairperson) and note 55 (p. 265)",
+          "note": "For 2025/26: Rs 3 interim (declared after year end, CBSL approval 2 April 2026) + Rs 7 final (AGM)"
         },
         "grossNpaPct": {
           "value": 4.71,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
         },
         "netNpaPct": {
           "value": 2.46,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
         },
         "tier1Ratio": {
           "value": 27.02,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)",
+          "note": "Minimum 10%"
         },
         "totalCapitalRatio": {
           "value": 28.05,
           "unit": "%",
-          "source": "Annual Report 2025/26, PDF p. 8"
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)",
+          "note": "Minimum 14%"
         },
-        "loansNet": {
-          "value": 98.971,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 8 (group)"
+        "netInterestMargin": {
+          "value": 18.7,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 35 (financial review)",
+          "note": "Company's figure"
         },
-        "deposits": {
-          "value": 55.203,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, PDF p. 8 (group)"
+        "roeCompany": {
+          "value": 30.09,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)",
+          "note": "Company, return on average shareholders' funds"
         },
         "priceYearEnd": {
           "value": 110.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, PDF p. 277"
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
+        "priceHigh": {
+          "value": 140.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
+        "priceLow": {
+          "value": 103.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 275 (share information)",
+          "note": "Conflicts with the Rs 89.40 low the Sep 2025 interim gave for April–September 2025"
         },
         "peYearEnd": {
           "value": 3.6,
           "unit": "x",
-          "source": "Annual Report 2025/26, PDF p. 277",
+          "source": "Annual Report 2025/26, p. 275 (share information)",
           "note": "Company EPS"
         },
+        "publicHolding": {
+          "value": 29.51,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 275 (share information)"
+        },
         "sharesOutstanding": {
-          "value": 318.074,
-          "unit": "mn",
-          "source": "Annual Report 2025/26, PDF p. 274"
+          "value": 318.074365,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, p. 272 (distribution of shareholders)"
+        },
+        "shareholders": {
+          "value": 7306,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 272"
+        },
+        "branches": {
+          "value": 133,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
+        },
+        "employees": {
+          "value": 3355,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 6 (highlights, company)"
+        }
+      }
+    },
+    {
+      "period": "H1 2025/26",
+      "periodEnd": "2025-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "interestIncome": {
+          "value": 14274.917,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "interestExpense": {
+          "value": 3725.631,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netInterestIncome": {
+          "value": 10549.286,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netFeeIncome": {
+          "value": 1262.838,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "impairmentCharge": {
+          "value": -957.223,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column; negative = reversal"
+        },
+        "personnelExpenses": {
+          "value": 2422.569,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "otherOperatingExpenses": {
+          "value": 2068.547,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "vatOnFinancialServices": {
+          "value": 1806.56,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column; tax on financial services"
+        },
+        "associateProfit": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column; shown as '-'"
+        },
+        "profitBeforeTax": {
+          "value": 6643.04,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 2413.008,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 4230.031,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 4230.031,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 13.3,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "operatingCashFlow": {
+          "value": -12142.095,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "purchasePPE": {
+          "value": 349.19,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "purchaseIntangibles": {
+          "value": 4.715,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "totalEquity": {
+          "value": 30823.744,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (changes in equity, group)",
+          "note": "Balance at 30 September 2025"
+        },
+        "priceHalfYearEnd": {
+          "value": 145.25,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)",
+          "note": "Comparative column"
+        },
+        "priceHigh": {
+          "value": 149.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)",
+          "note": "Comparative column; July–September 2025"
+        },
+        "priceLow": {
+          "value": 89.4,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)",
+          "note": "Comparative column; July–September 2025"
+        }
+      }
+    },
+    {
+      "period": "Q2 2025/26",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "interestExpense": {
+          "value": 1787.103,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netInterestIncome": {
+          "value": 5245.097,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "impairmentCharge": {
+          "value": -392.223,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column; negative = reversal"
+        },
+        "profitBeforeTax": {
+          "value": 3238.133,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 1137.601,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 2100.533,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 2100.533,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 6.6,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Comparative column"
         }
       }
     },
@@ -405,123 +1406,324 @@
       "type": "interim",
       "audited": false,
       "figures": {
+        "interestIncome": {
+          "value": 16599.216,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "interestExpense": {
+          "value": 4992.944,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "netInterestIncome": {
+          "value": 11606.272,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "netFeeIncome": {
+          "value": 1351.086,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Fee and commission income"
+        },
+        "otherOperatingIncome": {
+          "value": 855.236,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "totalOperatingIncome": {
+          "value": 13794.813,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "impairmentCharge": {
+          "value": 845.968,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Charge"
+        },
+        "personnelExpenses": {
+          "value": 2694.917,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "depreciationAmortisation": {
+          "value": 333.725,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Depreciation line"
+        },
+        "otherOperatingExpenses": {
+          "value": 2825.398,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "vatOnFinancialServices": {
+          "value": 1665.223,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Tax on financial services"
+        },
+        "associateProfit": {
+          "value": 705.29,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "TVS Lanka"
+        },
+        "profitBeforeTax": {
+          "value": 6134.871,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 2342.592,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
         "netProfit": {
-          "value": 3.792,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3 (group)",
-          "note": "Six months; Q2 alone Rs 1.720bn"
+          "value": 3792.278,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "All attributable to owners"
+        },
+        "netProfitOwners": {
+          "value": 3792.278,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
         },
         "eps": {
           "value": 11.92,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Six months; Q2 Rs 5.41; H1 2025/26 Rs 13.30"
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
         },
-        "netInterestIncome": {
-          "value": 11.606,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Six months, up 10%"
+        "cash": {
+          "value": 3614.008,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
         },
-        "interestExpense": {
-          "value": 4.993,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Six months, up 34%"
+        "placementsWithBanks": {
+          "value": 3142.607,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
         },
-        "impairment": {
-          "value": -0.846,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3",
-          "note": "Charge; Rs 0.957bn release in H1 2025/26"
+        "loansAndReceivables": {
+          "value": 28683.53,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
         },
-        "associateProfit": {
-          "value": 0.705,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 3"
+        "leaseReceivables": {
+          "value": 66924.044,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
+        },
+        "dueToBanks": {
+          "value": 27216.773,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
+        },
+        "deposits": {
+          "value": 60378.535,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)",
+          "note": "Due to customers"
+        },
+        "subordinatedLoan": {
+          "value": 2632.44,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
+        },
+        "investmentProperties": {
+          "value": 2751.4,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)",
+          "note": "Rs 4,609.5mn in March; freehold land in property, plant and equipment rose from Rs 3,100mn to Rs 4,615mn (p. 9)"
+        },
+        "investmentInAssociate": {
+          "value": 2076.994,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
+        },
+        "totalAssets": {
+          "value": 132434.299,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
+        },
+        "totalEquity": {
+          "value": 36885.95,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
         },
         "navPerShare": {
           "value": 115.97,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 1"
-        },
-        "equity": {
-          "value": 36.886,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 1"
-        },
-        "loansNet": {
-          "value": 95.608,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 1",
-          "note": "Loans and receivables Rs 28.68bn + leases Rs 66.92bn"
-        },
-        "deposits": {
-          "value": 60.379,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 1"
-        },
-        "dividendPaid": {
-          "value": 3.181,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 4",
-          "note": "Rs 10 a share for 2025/26"
+          "source": "Interim to 30 Sep 2026, p. 1 (balance sheet, group)"
         },
         "operatingCashFlow": {
-          "value": 7.419,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 5",
-          "note": "Six months"
+          "value": 7419.102,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)"
         },
-        "roe": {
-          "value": 20.7,
-          "unit": "%",
-          "source": "Worked out from p. 1 and p. 3",
-          "note": "Annualised on average equity"
+        "purchasePPE": {
+          "value": 434.964,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)"
+        },
+        "purchaseIntangibles": {
+          "value": 56.916,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)"
+        },
+        "dividendsPaid": {
+          "value": 3180.744,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (cash flow, group)",
+          "note": "Rs 10 a share for 2025/26 (Rs 3 interim + Rs 7 final)"
         },
         "sharesOutstanding": {
-          "value": 318.074,
-          "unit": "mn",
-          "source": "Interim to 30 Sep 2026, p. 12 (note 6)"
+          "value": 318.074365,
+          "unit": "mn shares",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)"
         },
         "priceHalfYearEnd": {
           "value": 96.7,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 12 (note 7)",
-          "note": "Quarter range Rs 96.50–122.00"
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)"
+        },
+        "priceHigh": {
+          "value": 122.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)",
+          "note": "July–September 2026"
+        },
+        "priceLow": {
+          "value": 96.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 12 (notes 6–7)",
+          "note": "July–September 2026"
+        },
+        "publicHolding": {
+          "value": 49.0,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 13 (notes 9–11)"
+        },
+        "publicShareholders": {
+          "value": 10151,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, p. 13 (notes 9–11)"
+        }
+      }
+    },
+    {
+      "period": "Q2 2026/27",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "interestExpense": {
+          "value": 2554.96,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "netInterestIncome": {
+          "value": 5817.975,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "impairmentCharge": {
+          "value": 401.968,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)",
+          "note": "Charge"
+        },
+        "profitBeforeTax": {
+          "value": 2945.162,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 1224.923,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "netProfit": {
+          "value": 1720.239,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "netProfitOwners": {
+          "value": 1720.239,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
+        },
+        "eps": {
+          "value": 5.41,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, group)"
         }
       }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "0.97 (provisional)",
+      "reason": "8 steps, 25 Nov 2026. (1) Business: a Kandy-based licensed finance company: leases and hire purchase about 70% of lending, gold loans about 22%, microfinance/SME and other loans the rest (segments, Interim to 30 Sep 2026, p. 11), plus a 19.5% stake in TVS Lanka (motorcycle distributor, 7% of profit in H1); one sector. (2)–(3) A finance company, so no relevering: the sector's levered beta. Damodaran's emerging-markets file couldn't be opened from this run; the Financial Svcs. (Non-bank & Insurance) levered beta 0.97 (January 2026, web-search extract, as used for HNB Finance on this site) is used. (4) Local 5-year betas: none found. Simply Wall St 1.14 (window not stated) and TradingView 1.51 (1-year, ignored); StockAnalysis n/a. The share traded thinly until the Group Lease stake was sold (public holding 29.5% in March 2026), so no median of three. (5) 0.97. (6) Within 0.3–2. (7)–(8) Into scripts/reinvestment.py; shown as the Required return tile. Replaces the hand-set cost of equity (21% / 19.5% / 18%) of 13 Nov. Refresh in January 2027.",
+      "since": "2026-11-25"
+    },
+    {
       "name": "Cost of equity",
-      "value": "21% / 19.5% / 18%",
-      "reason": "Government bonds about 12.4% plus about 7 points: a smaller, BBB+-rated leasing company with a history of high bad loans (1.5 points above Central Finance).",
+      "value": "Bear 19.7% / Base 18.2% / Bull 16.7%",
+      "reason": "From scripts/reinvestment.py (25 Nov 2026): 8.24% + 0.97 × (4.2% + 6.08%) = 18.2%, ±1.5 points. No WACC: a finance company's deposits and bank loans are its raw material, so it is valued on equity.",
+      "since": "2026-11-25"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "14% / 18% / 22%",
+      "reason": "Group ROE (ten-year summary, pp. 270–271): 16.0% (2019/20), 15.6%, 26.1%, 11.1%, 16.9%, 23.8%, 30.1% (2025/26, with a Rs 4.96bn provision release, p. 161); median of these seven 16.9%. H1 2026/27 profit Rs 3.79bn on equity of Rs 36.3–36.9bn is about 21% a year (calculated). Capital is very high (equity 28% of assets, core capital 27.02% against a 10% minimum, p. 6), which holds ROE down unless it is paid out or lent. Base 18%; bear 14% (2022/23-type year); bull 22% (the H1 level held). Was 16% / 19% / 22% on 13 Nov.",
+      "since": "2026-11-25"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Same in every method; below the 12.24% bond yield and the cost of equity, and below the supported growth (Growth check). Unchanged from 13 Nov.",
       "since": "2026-11-13"
     },
     {
-      "name": "Long-run ROE and growth",
-      "value": "16% / 19% / 22%; growth 5% / 6% / 7%",
-      "reason": "ROE 17–24% in 2023/24–2024/25, 30% in 2025/26 with a one-off release, 20.7% in H1 2026/27.",
-      "since": "2026-11-13"
+      "name": "Growth check",
+      "value": "Assumed 5% / 8% / 10% (dividend growth for five years); supported 24.2% by the calculator on 2025/26 cash paid, about 12% on the declared dividend (67% kept × 18% base ROE). All within 2 pts.",
+      "reason": "scripts/reinvestment.py on FY 2025/26 gives 80.4% kept × 30.1% ROE = 24.2%, because the cash dividend paid in the year (Rs 1.91bn, the Rs 6 for 2024/25, p. 166) is a year behind. On the Rs 10 declared for 2025/26 (p. 17, note 55) against EPS Rs 30.66, 67% of profit was kept; × long-run ROE 14% / 18% / 22% that supports 9.4% / 12.1% / 14.8%. Every scenario is below that. Long-run growth 5–7% needs 36–32% of profit kept at 14–22% ROE, which the stable payout (1 − g ÷ ROE) provides.",
+      "since": "2026-11-25"
+    },
+    {
+      "name": "Normal EPS 2026/27",
+      "value": "Rs 20 / 23 / 26",
+      "reason": "H1 2026/27 EPS Rs 11.92 and Q2 Rs 5.41 (Interim p. 3); × 2 = Rs 23.84, Q2 × 4 = Rs 21.64. The twelve-month run-rate of Rs 29.28 (calculated) is not used as the base because it contains the second half of 2025/26, when about Rs 4.0bn of loan-loss provisions were released (Rs 4.96bn for the year, p. 161, less Rs 0.96bn in H1, Interim p. 3); provisions are now being charged again (Rs 846mn in H1 2026/27) and interest costs rose 34%. Base Rs 23 is 21% below the run-rate for that reason.",
+      "since": "2026-11-25"
     },
     {
       "name": "2026/27 EPS × P/E",
-      "value": "22 × 3.5 / 24 × 4.5 / 26 × 5.5",
-      "reason": "H1 EPS Rs 11.92; year-end P/E 2.9–3.6x in the last two years.",
-      "since": "2026-11-13"
+      "value": "20 × 3.5 / 23 × 4.5 / 26 × 5.5",
+      "reason": "Year-end P/E 2.88x (March 2025) and 3.60x (March 2026, p. 275); 3.3x on twelve-month EPS at Rs 96.20 (calculated). Chosen P/Es sit below the justified forward P/E (1 − g ÷ ROE) ÷ (cost of equity − g): about 4.4x / 5.5x / 7.0x, so no scenario implies more growth than supported. P/E multiples unchanged from 13 Nov.",
+      "since": "2026-11-25"
     },
     {
-      "name": "Dividend model",
-      "value": "Rs 8 / 10 / 11 next, growing 5% / 8% / 10% for five years, then 5% / 6% / 7%",
-      "reason": "Rs 10 paid for 2025/26, about a third of profit.",
-      "since": "2026-11-13"
+      "name": "Dividends",
+      "value": "Next Rs 7 / 8 / 10, growing 5% / 8% / 10% for five years; then the stable payout 1 − g ÷ ROE (64% / 67% / 68%) of EPS",
+      "reason": "Rs 10 for 2025/26 (Rs 3 interim + Rs 7 final, p. 17; Rs 3.18bn paid in H1 2026/27, Interim p. 5) was 33% of EPS Rs 30.66; Rs 6 for 2024/25 (31% of Rs 19.33). About a third of normal EPS of Rs 20–26 gives Rs 7–9; bull assumes Rs 10 is held, which the 27% core capital allows. Was Rs 8 / 10 / 11 on 13 Nov, cut because profit is falling back.",
+      "since": "2026-11-25"
     },
     {
-      "name": "Residual income",
-      "value": "ROE from 19% / 21% / 22% fading to long-run over ten years; 40% payout",
-      "reason": "Starts near the H1 2026/27 annualised ROE.",
+      "name": "Residual income path",
+      "value": "ROE from 21% now to 14% / 18% / 22% over five years; payout 35%",
+      "reason": "Start: H1 2026/27 profit Rs 3.79bn × 2 on average equity of Rs 36.6bn (Interim pp. 1, 3; calculated) = about 21%. The twelve-month ROE (27.5%, calculated) is not used because it contains the 2025/26 provision release. Payout = about a third of profit, as for 2024/25 and 2025/26.",
+      "since": "2026-11-25"
+    },
+    {
+      "name": "Methods used",
+      "value": "Justified P/B, P/E, dividend model, residual income",
+      "reason": "A finance company: book value and return on equity drive the value; no cash-flow DCF (CLAUDE.md: banks and finance companies).",
       "since": "2026-11-13"
     },
     {
@@ -538,11 +1740,12 @@
     }
   ],
   "openQuestions": [
-    "Second-half 2026/27 provision charges and non-performing loan ratio (4.71% at March 2026).",
-    "Whether the loan book grows again (down 3.5% in H1) and the net interest margin as funding costs rise.",
-    "Who bought the Group Lease Holdings 30% stake, and the dividend for 2026/27.",
-    "TVS Lanka associate profit.",
-    "Current CSE price: this analysis used the 30 September 2026 close; check that the daily feed picks up COCR.N0000."
+    "Second-half 2026/27 provision charges and the non-performing loan ratio (4.71% at March 2026; not given in the September interim).",
+    "Whether the loan book grows again (down 3.4% in H1) and the net interest margin as funding costs rise (interest expense up 34%).",
+    "The 2026/27 dividend: does Rs 10 hold on lower profit?",
+    "Who the new holders are after Group Lease's 29.99% exit, and whether any builds a larger stake.",
+    "TVS Lanka associate profit (Rs 705mn in H1).",
+    "Local 5-year betas from three sources (none found on 25 Nov 2026); refresh the beta in January 2027."
   ],
   "changeLog": [
     {
@@ -554,6 +1757,16 @@
       "strongBuyPrice": 77,
       "priceAtTime": 96.7,
       "archive": null
+    },
+    {
+      "date": "2026-11-25",
+      "basedOn": "Annual Report 2025/26 and interim to 30 Sep 2026 (re-read in full)",
+      "summary": "Requested from Telegram (/redo COCR.N0000 full). Rebuilt the record to 'report figures only': printed lines for 2024/25, 2025/26, H1 and Q2 of 2025/26 and 2026/27 (comparatives as their own periods), ten-year summary 2015/16–2025/26; removed the worked-out H1 ROE. Page references are now printed page numbers. Added the current template: beta 0.97 (finance-sector, provisional) and the formula cost of equity 18.2% (was hand-set 19.5%), growth check, management and shareholders sections, modelInputs (all four methods computed by scripts/valuation.py). Normal 2026/27 EPS cut to Rs 20 / 23 / 26 (was 22 / 24 / 26) and next dividend to Rs 7 / 8 / 10 (was 8 / 10 / 11); long-run ROE 14% / 18% / 22% (was 16% / 19% / 22%). The dividend model rose most (Rs 76 → 108) because the published two-stage formula raises the payout to 1 − g ÷ ROE after the growth years. Business tests still 3 of 4; category unchanged (2, watch list). Group Lease Holdings sold its 29.99% stake in April–September 2026. Price is the 25 Nov 2026 CSE close.",
+      "fairValue": 111.13,
+      "buyPrice": 94.46,
+      "strongBuyPrice": 83.35,
+      "priceAtTime": 96.2,
+      "archive": "research/COCR.N0000/history/2026-11-13.json"
     }
   ]
 }

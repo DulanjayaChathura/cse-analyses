@@ -12,7 +12,7 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-13",
+  "analysisDate": "2026-11-25",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
@@ -23,20 +23,20 @@
     ]
   },
   "price": {
-    "value": 96.7,
-    "date": "2026-09-30",
-    "source": "Last traded price at 30 September 2026, interim report note 7",
-    "note": "The CSE price feed could not be reached from this run and web quotes found were undated or from August 2026 (about Rs 109), so the analysis uses the 30 September close; the site replaces it with the daily CSE close. July–September 2026 range Rs 96.50–122.00. Closed March 2026 at Rs 110.00."
+    "value": 96.2,
+    "date": "2026-11-25",
+    "source": "CSE closing price (generated/prices.json)",
+    "note": "July–September 2026 range Rs 96.50–122.00; closed March 2026 at Rs 110.00 and September 2026 at Rs 96.70."
   },
   "summary": {
     "verdict": "fair",
-    "headline": "High returns and a 10% yield, but profit is falling back from a one-off boost: fair at Rs 97, buy at Rs 87.50 or lower",
-    "text": "Commercial Credit and Finance (COCR.N0000) is a Kandy-based leasing and finance company that is cheap on paper and pays a large dividend, and at Rs 96.70 it trades a little below my fair value of about Rs 103. Profit for 2025/26 jumped 59% to Rs 9.75bn (EPS Rs 30.66, ROE 30%), but about Rs 5bn of that came from releasing old loan-loss provisions as bad loans were collected or written off (gross non-performing loans fell from 26% to 4.7%). The September 2026 half-year shows the more normal level: profit down 10% to Rs 3.79bn (EPS Rs 11.92), because provisions are being charged again and borrowing costs rose 34%. It trades at 0.83x NAV of Rs 115.97 and about 3.3x trailing earnings, and paid Rs 10 a share for 2025/26 (a 10% yield). With a 19.5% required return for a smaller, BBB+-rated lender, four methods put fair value at about Rs 103. I'd buy at up to Rs 87.50 and treat Rs 77 or less as a strong buy. The business passes three of the four tests (strong returns, very high capital, good dividend), but profit is not steady: it halved in 2022/23 and 2025/26 leaned on one-off provision releases."
+    "headline": "High returns and a 10% yield at 0.83x book, but profit is falling back from a one-off boost: fair value Rs 111, buy at Rs 94.50 or lower",
+    "text": "Commercial Credit and Finance (COCR.N0000) is a Kandy-based leasing, gold-loan and finance company controlled by the Egodage family's B G Investments (about 50%). At Rs 96.20 it trades at 0.83x NAV of Rs 115.97 and 3.3x trailing earnings, pays Rs 10 a share (a 10.4% yield), and sits about 13% below my fair value of Rs 111. The catch is that 2025/26 profit of Rs 9.75bn (EPS Rs 30.66, ROE 30%) was boosted by a Rs 4.96bn release of old loan-loss provisions as gross bad loans fell from 26% to 4.7%. The September 2026 half-year shows a more normal level: profit down 10% to Rs 3.79bn (EPS Rs 11.92, about 21% ROE), with provisions charged again (Rs 846mn) and interest costs up 34%. I value it on normal EPS of about Rs 23 for 2026/27, not the Rs 29 of the last twelve months. Using the site's standard required return (18.2%, from a 0.97 finance-sector beta), four equity methods put fair value at Rs 111. I'd buy at Rs 94.50 or lower, just under today's price, and treat Rs 83.35 as a strong buy. The business passes three of four tests (high returns, very strong capital, cash dividends) but profit isn't steady, so it stays on the watch list. The big shareholder change: Group Lease Holdings (in liquidation) sold its 30% stake between April and September, spread across new holders, lifting the public holding from 29.5% to 49%."
   },
   "valuation": {
-    "fairValue": 103,
-    "buyPrice": 87.5,
-    "strongBuyPrice": 77,
+    "fairValue": 111.13,
+    "buyPrice": 94.46,
+    "strongBuyPrice": 83.35,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -47,12 +47,13 @@
       "bull": 20
     },
     "nav": 115.97,
-    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.89x group NAV)."
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.96x NAV). No cash-flow DCF: a finance company's deposits and bank loans are its raw material, so it is valued on equity. All four methods are computed by scripts/valuation.py."
   },
   "dividend": {
     "perShare": 10.0,
     "label": "for 2025/26 (Rs 3 interim + Rs 7 final)",
-    "source": "Annual Report 2025/26, chairman's message (PDF p. 19) and note 55"
+    "source": "Annual Report 2025/26, chairperson's statement (p. 17) and note 55 (p. 265); Rs 3.18bn paid April–September 2026 (Interim, p. 5)",
+    "note": "Nothing declared yet for 2026/27."
   },
   "keyMetrics": [
     {
@@ -60,33 +61,33 @@
       "label": "NAV per share (group)",
       "value": 115.97,
       "unit": "Rs",
-      "note": "30 September 2026"
+      "note": "30 September 2026; Rs 114.04 in March"
     },
     {
       "id": "pnav",
       "label": "Price to NAV",
       "value": 0.83,
       "unit": "x",
-      "note": "At Rs 96.70"
+      "note": "At Rs 96.20"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
       "value": 3.3,
       "unit": "x",
-      "note": "Group EPS Rs 29.28, 12 months to Sep 2026"
+      "note": "EPS Rs 29.28, 12 months to Sep 2026 (calculated); 4.2x on normal EPS of Rs 23"
     },
     {
       "id": "roe",
       "label": "Return on equity (H1 2026/27)",
       "value": 20.7,
       "unit": "%",
-      "note": "Group, annualised; 30.1% in 2025/26"
+      "note": "Annualised on average equity (calculated); 30.1% in 2025/26"
     },
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 10.3,
+      "value": 10.4,
       "unit": "%",
       "note": "Rs 10.00 for 2025/26"
     },
@@ -109,36 +110,43 @@
       "label": "Gross non-performing loans",
       "value": 4.71,
       "unit": "%",
-      "note": "31 March 2026, down from 26.07%"
+      "note": "31 March 2026, down from 26.07%; not given for September"
+    },
+    {
+      "id": "requiredReturn",
+      "label": "Required return",
+      "value": 18.2,
+      "unit": "%",
+      "note": "Beta 0.97 (finance sector)"
     },
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 30.8,
+      "value": 30.6,
       "unit": "Rs bn",
-      "display": "~Rs 31bn"
+      "note": "318.1m shares at Rs 96.20"
     }
   ],
   "highlights": [
     {
       "title": "Six months to September 2026 (group, unaudited)",
-      "text": "Profit after tax fell 10% to Rs 3.79bn; EPS Rs 11.92 against Rs 13.30. Second-quarter profit fell 18% to Rs 1.72bn (EPS Rs 5.41)."
+      "text": "Profit after tax fell 10% to Rs 3.79bn; EPS Rs 11.92 against Rs 13.30. Second-quarter profit fell 18% to Rs 1.72bn (EPS Rs 5.41 against Rs 6.60)."
     },
     {
       "title": "What drove it",
-      "text": "Net interest income rose 10% to Rs 11.6bn, but interest costs rose 34%. Loan-loss provisions were a Rs 846mn charge against a Rs 957mn release a year earlier, a Rs 1.8bn swing. Other operating costs rose 37%. The TVS Lanka associate added Rs 705mn."
+      "text": "Net interest income rose 10% to Rs 11.6bn, but interest costs rose 34% to Rs 4.99bn. Loan-loss provisions were a Rs 846mn charge against a Rs 957mn release a year earlier, a Rs 1.8bn swing. Other operating costs rose 37% and staff costs 11%. The TVS Lanka associate added Rs 705mn (nothing a year earlier)."
     },
     {
       "title": "2025/26 (audited)",
-      "text": "Profit rose 59% to Rs 9.75bn (EPS Rs 30.66, ROE 30.1%), helped by a Rs 4.96bn release of loan-loss provisions as gross non-performing loans fell from 26.07% to 4.71% through collections and write-offs. Without the release, profit would have been roughly Rs 7–8bn (my estimate)."
+      "text": "Profit rose 59% to Rs 9.75bn (EPS Rs 30.66, ROE 30.1%), helped by a Rs 4.96bn net release of loan-loss provisions as gross non-performing loans fell from 26.07% to 4.71% through collections and write-offs. Leases and loans grew 42% to Rs 99.0bn."
     },
     {
       "title": "Balance sheet",
-      "text": "Leases and loans Rs 95.6bn at September, down 3.5% from March (loans and receivables down Rs 4.7bn). Deposits up 9% to Rs 60.4bn. Core capital 27.0% at March, nearly three times the 10% minimum."
+      "text": "Leases and loans Rs 95.6bn at September, down 3.4% from March (loans and receivables down Rs 4.7bn, leases up Rs 1.3bn). Deposits up 9% to Rs 60.4bn; bank borrowing down to Rs 27.2bn. Core capital 27.0% in March, nearly three times the 10% minimum."
     },
     {
       "title": "Dividend and shareholders",
-      "text": "Rs 10 a share for 2025/26 (Rs 3 interim + Rs 7 final), Rs 3.18bn paid in April–September 2026, up from Rs 6. Group Lease Holdings (in liquidation), which held 30%, is no longer among the top 20 shareholders at September; public holding rose to 49%."
+      "text": "Rs 10 a share for 2025/26 (Rs 3 interim + Rs 7 final), Rs 3.18bn paid in April–September 2026, up from Rs 6. Group Lease Holdings (in liquidation) sold its 29.99% stake; the public holding rose from 29.51% to 49.00% and holders from 7,306 to 10,151."
     }
   ],
   "history": {
@@ -168,8 +176,8 @@
           null,
           null,
           null,
-          "Helped by Rs 5bn provision release",
-          "H1 2026/27, annualised"
+          "Helped by Rs 4.96bn provision release",
+          "H1 2026/27, annualised (calculated)"
         ]
       },
       {
@@ -190,7 +198,7 @@
           null,
           null,
           null,
-          "12 months to Sep 2026"
+          "12 months to Sep 2026 (calculated)"
         ]
       },
       {
@@ -211,7 +219,7 @@
           "Not in the reports read",
           null,
           null,
-          "Group EPS, at Rs 96.70"
+          "Group EPS, at Rs 96.20"
         ]
       },
       {
@@ -251,168 +259,180 @@
     {
       "method": "P/E",
       "value": "3.3x",
-      "reading": "On trailing group EPS of Rs 29.28, which still includes the 2025/26 provision release; on my normal EPS of about Rs 24 it is 4.0x."
+      "reading": "On trailing EPS of Rs 29.28, which still includes the 2025/26 provision release; on normal EPS of about Rs 23 it is 4.2x."
     },
     {
       "method": "Dividends",
-      "value": "10.3% yield",
-      "reading": "Rs 10 for 2025/26, a third of profit. Paid Rs 6 the year before and Rs 4 before that."
+      "value": "10.4% yield",
+      "reading": "Rs 10 for 2025/26, a third of profit. Rs 6 the year before and Rs 4 before that."
     },
     {
       "method": "Capital",
       "value": "Core capital 27%",
-      "reading": "Equity is 28% of assets, so it can grow loans or keep paying high dividends without raising capital."
+      "reading": "Equity is 28% of assets, so it can grow loans or keep paying high dividends without raising capital; the same surplus holds ROE down."
     },
     {
       "method": "Asset quality",
       "value": "Gross NPL 4.71%",
-      "reading": "Down from 26.07% a year earlier; net 2.46%. Provisions are being charged again in 2026/27."
+      "reading": "Down from 26.07% a year earlier; net 2.46%. Provisions are being charged again in 2026/27; the September ratio isn't given."
     }
   ],
   "models": [
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 79.7,
-      "base": 111.7,
-      "bull": 158.1,
-      "weighted": 111.4,
-      "comment": "Book value Rs 115.97 × (ROE − growth) ÷ (cost of equity − growth): long-run ROE 16% / 19% / 22%."
+      "bear": 71.0,
+      "base": 114.07,
+      "bull": 179.34,
+      "weighted": 114.2,
+      "comment": "NAV Rs 115.97 × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 14% / 18% / 22%, growth 5% / 6% / 7%, cost of equity 19.7% / 18.2% / 16.7% (0.61x / 0.98x / 1.55x book)."
     },
     {
       "id": "pe",
-      "name": "P/E method",
-      "bear": 77.0,
-      "base": 108.0,
+      "name": "P/E on normal earnings",
+      "bear": 70.0,
+      "base": 103.5,
       "bull": 143.0,
-      "weighted": 105.7,
-      "comment": "2026/27 EPS of Rs 22 / 24 / 26 at 3.5 / 4.5 / 5.5 times."
+      "weighted": 101.35,
+      "comment": "Normal 2026/27 EPS of Rs 20 / 23 / 26 at 3.5x / 4.5x / 5.5x, below the justified 4.4x / 5.5x / 7.0x. The base EPS is 21% below the Rs 29.28 twelve-month run-rate on purpose: that figure includes about Rs 4bn of provisions released in the second half of 2025/26, and provisions are now being charged again."
     },
     {
       "id": "ddm",
       "name": "Dividend model",
-      "bear": 50.0,
-      "base": 78.4,
-      "bull": 109.2,
-      "weighted": 76.0,
-      "comment": "The strictest method: Rs 8 / 10 / 11 next year, growing 5% / 8% / 10% for five years, then 5% / 6% / 7%."
+      "bear": 68.31,
+      "base": 107.04,
+      "bull": 170.47,
+      "weighted": 108.11,
+      "comment": "Rs 7 / 8 / 10 next year, growing 5% / 8% / 10% (within the supported 9–15%) for five years; then EPS grows at 5% / 6% / 7% with the stable payout 1 − g ÷ ROE (64% / 67% / 68%), at the cost of equity. Higher than the 13 Nov hand-worked Rs 76 mainly because the published two-stage formula lets the payout rise from a third to about two-thirds once growth slows."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 79.6,
-      "base": 118.3,
-      "bull": 176.7,
-      "weighted": 118.4,
-      "comment": "Used instead of a cash-flow DCF: book value plus profit above the required return, ROE fading from 19–22% to the long-run level over ten years, 40% payout."
+      "bear": 73.78,
+      "base": 119.23,
+      "bull": 195.6,
+      "weighted": 120.87,
+      "comment": "Used instead of a cash-flow DCF: book Rs 115.97 plus profit above the 18.2% required return; ROE moves from about 21% now to 14% / 18% / 22% over five years, 35% payout, then excess returns grow at 5% / 6% / 7%."
     }
   ],
-  "modelsNote": "A finance company's cash flows are mostly lending and deposits, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E and dividends.",
+  "modelsNote": "Four equity methods, all computed by scripts/valuation.py from modelInputs; no cash-flow DCF for a finance company. Growth check: the calculator gives 24.2% supported growth (80% kept × 30.1% ROE) because the cash paid in 2025/26 was the previous year's Rs 6; on the Rs 10 declared (67% kept) × the 18% base ROE it is about 12%. The 5% / 8% / 10% dividend growth and 5–7% long-run growth are below it in every case. Ratio check (docs/ratio-ranges.md): beta 0.97 and cost of equity 18.2% are in range; long-run growth is below the 12.24% bond yield; chosen P/Es are below the justified P/E. Base EPS is 21% below the run-rate, for the provision-release reason given under P/E.",
   "scenarios": {
     "assumptions": [
       {
         "label": "Cost of equity",
-        "bear": "21%",
-        "base": "19.5%",
-        "bull": "18%"
+        "bear": "19.7%",
+        "base": "18.2%",
+        "bull": "16.7%"
       },
       {
         "label": "Long-run ROE",
-        "bear": "16%",
-        "base": "19%",
+        "bear": "14%",
+        "base": "18%",
         "bull": "22%"
       },
       {
-        "label": "Long-term growth",
+        "label": "Long-run growth",
         "bear": "5%",
         "base": "6%",
         "bull": "7%"
       },
       {
         "label": "2026/27 EPS × P/E",
-        "bear": "22 × 3.5",
-        "base": "24 × 4.5",
+        "bear": "20 × 3.5",
+        "base": "23 × 4.5",
         "bull": "26 × 5.5"
       },
       {
         "label": "Next dividend, five-year growth",
-        "bear": "Rs 8, 5%",
-        "base": "Rs 10, 8%",
-        "bull": "Rs 11, 10%"
+        "bear": "Rs 7, 5%",
+        "base": "Rs 8, 8%",
+        "bull": "Rs 10, 10%"
+      },
+      {
+        "label": "Stable payout (1 − g ÷ ROE)",
+        "bear": "64%",
+        "base": "67%",
+        "bull": "68%"
+      },
+      {
+        "label": "ROE path (residual income)",
+        "bear": "21% to 14% in 5 years",
+        "base": "21% to 18% in 5 years",
+        "bull": "21% to 22% in 5 years"
       }
     ],
     "averages": {
-      "bear": 71.6,
-      "base": 104.1,
-      "bull": 146.8
+      "bear": 70.77,
+      "base": 110.96,
+      "bull": 172.1
     },
-    "common": "Government bonds about 12.4% (November 2026) plus about 7 points for a smaller, BBB+-rated leasing company with a history of bad loans (1.5 points more than Central Finance). H1 EPS is Rs 11.92, so base 2026/27 EPS of Rs 24 needs the second half at about the first-half pace."
+    "common": "Cost of equity from the house formula: risk-free 8.24% (12.24% bond less a 4.0% default spread) + beta 0.97 × (4.2% + 6.08% country premium). Starting NAV Rs 115.97 (30 Sep 2026); 318.1m shares. H1 EPS is Rs 11.92, so base 2026/27 EPS of Rs 23 needs the second half slightly below the first-half pace."
   },
   "sensitivity": {
     "title": "Residual income base case, Rs per share",
     "rowLabel": "Cost of equity",
     "columnLabel": "Long-run ROE",
     "rows": [
-      "18%",
-      "19.5%",
-      "21%"
+      "16.7%",
+      "18.2%",
+      "19.7%"
     ],
     "columns": [
-      "16%",
-      "19%",
+      "14%",
+      "18%",
       "22%"
     ],
     "values": [
       [
-        111.4,
-        138.3,
-        168.8
+        94.3,
+        139.5,
+        190.3
       ],
       [
-        96.5,
-        118.3,
-        142.9
+        81.5,
+        119.2,
+        161.6
       ],
       [
-        84.9,
-        102.8,
-        122.9
+        71.5,
+        103.6,
+        139.5
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Rs 96.70 is what a 19.5% cost of equity gives if long-run ROE settles at 16%."
+    "note": "Rs 96.20 is what an 18.2% cost of equity gives if long-run ROE settles at about 15.7%, near the 2019/20–2023/24 level."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
+        "shares": 150,
+        "maxPrice": 96.2
+      },
+      {
         "shares": 200,
-        "maxPrice": 103
+        "maxPrice": 94.46
       },
       {
         "shares": 150,
-        "maxPrice": 87.5
-      },
-      {
-        "shares": 150,
-        "maxPrice": 77
+        "maxPrice": 83.35
       }
     ],
-    "averagePrice": 90.55,
-    "totalCost": 45275,
-    "note": "About Rs 45,300 in total, against Rs 48,350 for 500 shares at Rs 96.70.",
-    "realism": "The share fell from Rs 122 to Rs 96.50 in July–September 2026, and traded as low as Rs 89.40 in the September 2025 quarter. Rs 87.50 is about 10% below the September close, which looks reachable if profit keeps falling; Rs 77 would need a broad sell-off."
+    "averagePrice": 91.65,
+    "totalCost": 45825,
+    "note": "About Rs 45,800 in total, against Rs 48,100 for 500 shares at Rs 96.20. The first tier buys at today's price, which is below fair value but just above the buy price.",
+    "realism": "The share fell from Rs 122 to Rs 96.50 in July–September 2026 and closed at Rs 96.20 on 25 November, so Rs 94.50 is only 2% away and very reachable. Rs 83.35 needs a further 13% fall; the share was as low as Rs 89.40 in the September 2025 quarter (2025/26 range Rs 103–140 per the annual report, which conflicts with that low)."
   },
   "changeMyView": {
     "higher": [
-      "Loan book growing again without new bad loans (it shrank 3.5% in the half-year).",
+      "Loan book growing again without new bad loans (it shrank 3.4% in the half-year).",
       "Provision charges staying small, so ROE holds above 20%.",
-      "Another Rs 10+ dividend for 2026/27.",
-      "A stable new holder for the former Group Lease 30% stake, or a wider float lifting the market's multiple.",
-      "Lower interest rates reducing funding costs."
+      "Another Rs 10 dividend for 2026/27, or a special payout of surplus capital.",
+      "Lower interest rates reducing funding costs.",
+      "Wider public holding (now 49%) bringing more trading and a higher multiple."
     ],
     "lower": [
       "Non-performing loans rising again after the 2025/26 clean-up.",
@@ -423,28 +443,28 @@
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the 2025/26 annual report and the unaudited interim report to 30 September 2026. The price is the 30 September 2026 close because a newer CSE close wasn't available to this run, so check the current price before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the 2025/26 annual report and the unaudited interim report to 30 September 2026, at the CSE close of 25 November 2026. This is analysis, not personal financial advice."
   },
   "quality": {
     "rating": "good",
     "passed": 3,
     "outOf": 4,
-    "reason": "High returns, very strong capital and a big dividend, but profit has been uneven.",
-    "assessed": "2026-11-13",
+    "reason": "High returns, very strong capital and a big cash dividend, but profit has been uneven.",
+    "assessed": "2026-11-25",
     "tests": [
       {
         "id": "returns",
         "label": "Return on equity of 15% or more",
         "pass": true,
-        "value": "About 21–24%",
-        "note": "30.1% in 2025/26 (one-off help), 23.8% in 2024/25, 16.9% in 2023/24; 20.7% annualised in H1 2026/27. Only 11.1% in 2022/23."
+        "value": "Five-year average about 22%",
+        "note": "Group ROE 26.1% (2021/22), 11.1%, 16.9%, 23.8%, 30.1% (2025/26, one-off help); about 21% annualised in H1 2026/27 (calculated)."
       },
       {
         "id": "debt",
         "label": "Net debt no more than equity",
         "pass": true,
         "value": "Core capital 27%",
-        "note": "A finance company, so judged on capital: core capital 27.02% and total capital 28.05% against minimums of 10% and 14%; equity 28% of assets."
+        "note": "A finance company, so judged on capital: core capital 27.02% and total capital 28.05% against minimums of 10% and 14% (March 2026); equity 28% of assets at September."
       },
       {
         "id": "steady",
@@ -458,9 +478,479 @@
         "label": "Profit turns into cash and dividends",
         "pass": true,
         "value": "10% yield",
-        "note": "Rs 10 a share for 2025/26, a third of profit, paid in cash."
+        "note": "Rs 10 a share for 2025/26, a third of profit, paid in cash (Rs 3.18bn in April–September 2026). Operating cash flow swings with the loan book (−Rs 18.1bn in 2025/26 as loans grew 42%, +Rs 7.4bn in H1 2026/27), as usual for a lender."
       }
     ]
   },
-  "fullText": "Summary: Commercial Credit and Finance (COCR.N0000) is a Kandy-based leasing and finance company that is cheap on paper and pays a large dividend, and at Rs 96.70 it trades a little below my fair value of about Rs 103. Profit for 2025/26 jumped 59% to Rs 9.75bn (EPS Rs 30.66, ROE 30%), but about Rs 5bn of that came from releasing old loan-loss provisions as bad loans were collected or written off (gross non-performing loans fell from 26% to 4.7%). The September 2026 half-year shows the more normal level: profit down 10% to Rs 3.79bn (EPS Rs 11.92), because provisions are being charged again and borrowing costs rose 34%. It trades at 0.83x NAV of Rs 115.97 and about 3.3x trailing earnings, and paid Rs 10 a share for 2025/26 (a 10% yield). With a 19.5% required return for a smaller, BBB+-rated lender, four methods put fair value at about Rs 103. I'd buy at up to Rs 87.50 and treat Rs 77 or less as a strong buy. The business passes three of the four tests (strong returns, very high capital, good dividend), but profit is not steady: it halved in 2022/23 and 2025/26 leaned on one-off provision releases.\n\nPrice and key figures\nPrice: Rs 96.70, the last traded price on 30 September 2026 (interim report). July–September 2026 range Rs 96.50–122.00.\nSix months to September 2026 (group, unaudited): profit after tax Rs 3.79bn, down 10%; EPS Rs 11.92 against Rs 13.30. Net interest income up 10%, interest expense up 34%, provision charge Rs 846mn against a Rs 957mn release, other costs up 37%, TVS Lanka associate Rs 705mn.\n2025/26 (group, audited): profit Rs 9.75bn (up 59%), EPS Rs 30.66, ROE 30.1%, NAV Rs 114.04. Provision release Rs 4.96bn. Gross NPL 4.71% (26.07%), core capital 27.02%. Dividend Rs 10 (Rs 3 interim + Rs 7 final).\nBalance sheet at September 2026: leases and loans Rs 95.6bn (down 3.5%), deposits Rs 60.4bn (up 9%), bank borrowing Rs 27.2bn, equity Rs 36.9bn, NAV Rs 115.97.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 79.7 | 111.7 | 158.1 | 111.4\nP/E | 77.0 | 108.0 | 143.0 | 105.7\nDividend model | 50.0 | 78.4 | 109.2 | 76.0\nResidual income | 79.6 | 118.3 | 176.7 | 118.4\nAverage | 71.6 | 104.1 | 146.8 | 103\n\nAssumptions (bear / base / bull)\nCost of equity 21% / 19.5% / 18%; long-run ROE 16% / 19% / 22%; growth 5% / 6% / 7%; 2026/27 EPS 22 × 3.5 / 24 × 4.5 / 26 × 5.5; next dividend Rs 8 / 10 / 11 growing 5% / 8% / 10% for five years.\n\nBusiness tests: 3 of 4 passed (fails steady profit); a good business priced between fair value and the buy price: watch list.\n\n500-share plan\n200 shares up to Rs 103, 150 up to Rs 87.50, 150 up to Rs 77: about Rs 45,300 in total.\n\nUncertain: the price is the 30 September close (no newer CSE close was available to this run). The annual report gives a 2025/26 price range of Rs 103–140, which doesn't match the Rs 89.40 low the September 2025 interim gave for that quarter. Earlier year-end prices (for P/E history) weren't in the reports read."
+  "fullText": "Summary: Commercial Credit and Finance (COCR.N0000) is a Kandy-based leasing, gold-loan and finance company controlled by the Egodage family's B G Investments (about 50%). At Rs 96.20 it trades at 0.83x NAV of Rs 115.97 and 3.3x trailing earnings, pays Rs 10 a share (a 10.4% yield), and sits about 13% below my fair value of Rs 111. The catch is that 2025/26 profit of Rs 9.75bn (EPS Rs 30.66, ROE 30%) was boosted by a Rs 4.96bn release of old loan-loss provisions as gross bad loans fell from 26% to 4.7%. The September 2026 half-year shows a more normal level: profit down 10% to Rs 3.79bn (EPS Rs 11.92, about 21% ROE), with provisions charged again (Rs 846mn) and interest costs up 34%. I value it on normal EPS of about Rs 23 for 2026/27, not the Rs 29 of the last twelve months. Using the site's standard required return (18.2%, from a 0.97 finance-sector beta), four equity methods put fair value at Rs 111. I'd buy at Rs 94.50 or lower, just under today's price, and treat Rs 83.35 as a strong buy. The business passes three of four tests (high returns, very strong capital, cash dividends) but profit isn't steady, so it stays on the watch list. The big shareholder change: Group Lease Holdings (in liquidation) sold its 30% stake between April and September, spread across new holders, lifting the public holding from 29.5% to 49%.\n\nPrice and key figures\nPrice: Rs 96.20, CSE close on 25 November 2026. July–September 2026 range Rs 96.50–122.00.\nSix months to September 2026 (group, unaudited): profit after tax Rs 3.79bn, down 10%; EPS Rs 11.92 against Rs 13.30. Net interest income up 10% to Rs 11.6bn, interest expense up 34%, provision charge Rs 846mn against a Rs 957mn release, other costs up 37%, TVS Lanka associate Rs 705mn.\n2025/26 (group, audited): profit Rs 9.75bn (up 59%), EPS Rs 30.66, ROE 30.1%, NAV Rs 114.04. Provision release Rs 4.96bn. Gross NPL 4.71% (26.07%), core capital 27.02%. Dividend Rs 10 (Rs 3 interim + Rs 7 final).\nBalance sheet at September 2026: leases and loans Rs 95.6bn (down 3.4%), deposits Rs 60.4bn (up 9%), bank borrowing Rs 27.2bn, equity Rs 36.9bn, NAV Rs 115.97.\n\nRequired return: 8.24% risk-free + beta 0.97 × (4.2% + 6.08%) = 18.2% (bear 19.7%, bull 16.7%).\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 71.0 | 114.1 | 179.3 | 114.2\nP/E on normal earnings | 70.0 | 103.5 | 143.0 | 101.4\nDividend model | 68.3 | 107.0 | 170.5 | 108.1\nResidual income | 73.8 | 119.2 | 195.6 | 120.9\nAverage | 70.8 | 111.0 | 172.1 | 111.1\n\nAssumptions (bear / base / bull)\nCost of equity 19.7% / 18.2% / 16.7%; long-run ROE 14% / 18% / 22%; growth 5% / 6% / 7%; 2026/27 EPS 20 × 3.5 / 23 × 4.5 / 26 × 5.5; next dividend Rs 7 / 8 / 10 growing 5% / 8% / 10% for five years, then the stable payout 1 − g ÷ ROE. Base EPS is 21% below the Rs 29.28 run-rate because that includes about Rs 4bn of provisions released in the second half of 2025/26.\nGrowth check: supported growth about 12% (67% of profit kept on the Rs 10 dividend × 18% ROE; 24.2% on the calculator's cash-paid basis); every scenario is below it.\n\nBusiness tests: 3 of 4 passed (fails steady profit); a good business priced between fair value and the buy price: watch list (category unchanged).\n\nManagement: no growth or profit targets; plans are better credit quality, a deposit-led funding mix, EV leasing and capital from retained profit. Funding and capital promises are on track; asset quality is too early to judge, with provisions back.\n\nShareholders: B G Investments (Egodage family) 50.26%. Group Lease Holdings (in liquidation) sold its 29.99% between April and September 2026; public holding 49.00% (29.51% in March).\n\n500-share plan\n150 shares up to Rs 96.20, 200 up to Rs 94.46, 150 up to Rs 83.35: about Rs 45,800 in total.\n\nUncertain: the annual report gives a 2025/26 price range of Rs 103–140, which doesn't match the Rs 89.40 low the September 2025 interim gave for July–September 2025. No September 2026 NPL or capital ratios in the interim. No local 5-year beta could be found, so the sector beta is used. Earlier year-end prices (for P/E history before 2024/25) weren't in the reports read.",
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 19.7,
+      "base": 18.2,
+      "bull": 16.7
+    },
+    "wacc": null,
+    "debtWeight": null,
+    "shares": 318.074,
+    "netDebt": null,
+    "pb": {
+      "book": 115.97,
+      "bear": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 18,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 22,
+        "longRun": 7
+      },
+      "basis": {
+        "book": "periods: H1 2026/27.navPerShare",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 20,
+        "pe": 3.5
+      },
+      "base": {
+        "eps": 23,
+        "pe": 4.5
+      },
+      "bull": {
+        "eps": 26,
+        "pe": 5.5
+      },
+      "basis": {
+        "eps": "valuationInputs: Normal EPS 2026/27",
+        "pe": "valuationInputs: 2026/27 EPS × P/E"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 7,
+        "growth": 5,
+        "longRun": 5,
+        "eps": 20,
+        "roe": 14
+      },
+      "base": {
+        "dividend": 8,
+        "growth": 8,
+        "longRun": 6,
+        "eps": 23,
+        "roe": 18
+      },
+      "bull": {
+        "dividend": 10,
+        "growth": 10,
+        "longRun": 7,
+        "eps": 26,
+        "roe": 22
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividends",
+        "growth": "valuationInputs: Dividends",
+        "eps": "valuationInputs: Normal EPS 2026/27",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 5,
+      "book": 115.97,
+      "payout": 35,
+      "roeStart": 21,
+      "bear": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 18,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 22,
+        "longRun": 7
+      },
+      "basis": {
+        "book": "periods: H1 2026/27.navPerShare",
+        "roeStart": "valuationInputs: Residual income path",
+        "payout": "valuationInputs: Residual income path",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare"
+    }
+  },
+  "requiredReturn": {
+    "beta": 0.97,
+    "betaBasis": "Provisional. A finance company, so the sector's levered beta is used without relevering: Damodaran's Financial Svcs. (Non-bank & Insurance) 0.97 (January 2026, web-search extract; his site couldn't be opened). No local 5-year betas found (Simply Wall St 1.14 with no window stated; TradingView 1.51 is a 1-year beta). Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 19.7,
+      "base": 18.2,
+      "bull": 16.7
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-25",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: web-search extracts of Damodaran's sector betas (January 2026), Simply Wall St and TradingView (25 Nov 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.97 × (4.2% + 6.08%) = 18.2%; bear +1.5, bull −1.5 points. Replaces the hand-set 21% / 19.5% / 18% of 13 Nov. No WACC: a finance company is valued on its equity."
+  },
+  "management": {
+    "asOf": "2026-11-25",
+    "source": "Annual Report 2025/26: Chairperson's statement (pp. 16–18), CEO's review (pp. 19–21) and company financial review (pp. 34–35); progress from the interim to 30 September 2026",
+    "takeaway": "Management cleaned up the loan book in 2025/26 and is paying out more, but gives no growth or profit targets; the first half of 2026/27 shows the clean-up's limits, with provisions back and the loan book shrinking.",
+    "said": [
+      {
+        "text": "Profit after tax Rs 9.7bn; ROE 30.1%, return on assets 8.0%",
+        "ref": "p. 17"
+      },
+      {
+        "text": "Net interest margin rose to 18.7%, helped by a 14.2% cut in interest expenses",
+        "ref": "pp. 17, 20"
+      },
+      {
+        "text": "Gross NPL fell to 4.71% (26.1%) and net to 2.46% through collections and write-offs; 95.93% of loans secured",
+        "ref": "pp. 20, 34"
+      },
+      {
+        "text": "Net loans up 42% to Rs 99.0bn; gold loans up 72.9%",
+        "ref": "p. 34"
+      },
+      {
+        "text": "Capital comfortably above minimums; internally generated funds are enough for capital needs",
+        "ref": "p. 17"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Keep improving credit quality and strengthen capital",
+        "ref": "p. 17"
+      },
+      {
+        "text": "Optimise the funding mix, with public deposits as the core (64.1% of funding)",
+        "ref": "p. 20"
+      },
+      {
+        "text": "Expand electric-vehicle leasing",
+        "ref": "p. 20"
+      },
+      {
+        "text": "More women in field, collections and leadership roles (women leaders and field officers up 29%)",
+        "ref": "pp. 19–20"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Dividends for 2025/26 (Rs 3 interim + Rs 7 final)",
+        "amount": "Rs 10 a share, Rs 3.18bn paid April–September 2026",
+        "ref": "p. 17; Interim, p. 5"
+      },
+      {
+        "text": "Property, equipment and intangibles bought",
+        "amount": "Rs 779mn (2025/26); Rs 492mn (six months to Sep 2026)",
+        "ref": "p. 166; Interim, p. 5"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Enhance credit quality after the 2025/26 clean-up",
+        "result": "Provision charge Rs 846mn in H1 2026/27 against a Rs 957mn release a year earlier; the September NPL ratio isn't given",
+        "status": "too-early",
+        "ref": "Interim, p. 3"
+      },
+      {
+        "promise": "Optimise the funding mix around deposits",
+        "result": "Deposits up 9% to Rs 60.4bn and bank borrowing down 8% to Rs 27.2bn in six months, but interest expense up 34%",
+        "status": "on-track",
+        "ref": "Interim, pp. 1, 3"
+      },
+      {
+        "promise": "Fund capital needs internally",
+        "result": "No new shares; equity Rs 36.9bn after paying Rs 3.18bn of dividends",
+        "status": "on-track",
+        "ref": "Interim, pp. 1, 4"
+      },
+      {
+        "promise": "Expand EV leasing",
+        "result": "No figures given; leases up 2% to Rs 66.9bn while other loans fell 14%",
+        "status": "too-early",
+        "ref": "Interim, p. 1"
+      },
+      {
+        "promise": "Pay the proposed Rs 7 final dividend",
+        "result": "Paid with the Rs 3 interim: Rs 3.18bn in April–September 2026",
+        "status": "done",
+        "ref": "Interim, pp. 4–5"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-03-31",
+    "source": "Interim to 30 Sep 2026: twenty major shareholders, directors' holdings and public holding (p. 13), against the annual report's list at 31 March 2026 (pp. 273–274).",
+    "takeaway": "The Egodage family's B G Investments controls the company with 50.26% through three accounts (plus 1.60% held for Ms S.N. Egodage). The big move: Group Lease Holdings (in liquidation) sold its entire 29.99% stake between April and September 2026, spread across new holders such as Phantom Investments (3.65%) and Mandala Ventures (3.58%); the public holding rose from 29.51% to 49.00%.",
+    "groups": [
+      {
+        "name": "B G Investments (Egodage family)",
+        "pct": 50.26
+      },
+      {
+        "name": "Other non-public holders",
+        "pct": 0.74
+      },
+      {
+        "name": "Public",
+        "pct": 49.0
+      }
+    ],
+    "publicFloat": 49.0,
+    "publicHolders": 10151,
+    "publicHoldersPrev": 7306,
+    "directors": [
+      {
+        "name": "Mr. G.B. Egodage (Chairman)",
+        "shares": 0
+      },
+      {
+        "name": "Mr. R.S. Egodage (CEO)",
+        "shares": 0
+      },
+      {
+        "name": "Ms. G.R. Egodage",
+        "shares": 0
+      },
+      {
+        "name": "Mr. P.S.R. Casie Chitty (COO)",
+        "shares": 1629808
+      },
+      {
+        "name": "Mr. L.L.S. Wickremasinghe",
+        "shares": 0
+      },
+      {
+        "name": "Ms. G.A.M. Edwards",
+        "shares": 0
+      },
+      {
+        "name": "Ms. C.S. Jesudian",
+        "shares": 0
+      },
+      {
+        "name": "Dr. (Ms) J. Kuruppu",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M.P. Wijerathne",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "B G INVESTMENTS (PVT) LIMITED",
+        "shares": 83832175,
+        "pct": 26.36,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "LOLC FINANCE PLC/B.G.INVESTMENTS (PVT) LTD",
+        "shares": 45000000,
+        "pct": 14.15,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "PEOPLE S LEASING AND FINANCE PLC/B G INVESTMENTS (PVT) LIMITED",
+        "shares": 31000000,
+        "pct": 9.75,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "SEYLAN BANK PLC/S.R. FERNANDO",
+        "shares": 12375000,
+        "pct": 3.89,
+        "change": 2694617,
+        "new": false
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC/PHANTOM INVESTMENTS (PRIVATE) LIMITED",
+        "shares": 11600000,
+        "pct": 3.65,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "MANDALA VENTURES PVT LTD",
+        "shares": 11381544,
+        "pct": 3.58,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "PEOPLE'S LEASING & FINANCE PLC /MS.S.N.EGODAGE",
+        "shares": 5093438,
+        "pct": 1.6,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "INVENCO CAPITAL (PRIVATE) LIMITED ACCOUNT NO. 03",
+        "shares": 5000000,
+        "pct": 1.57,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "DR. E. FERNANDO",
+        "shares": 4200000,
+        "pct": 1.32,
+        "change": 0,
+        "new": false,
+        "note": "Listed in March as Dr. Erasha Fernando; same holder"
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC - CAPITAL ALLIANCE QUANTITATIVE EQUITY FUND",
+        "shares": 4050438,
+        "pct": 1.27,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "C L SYNERGY LIMITED",
+        "shares": 4000000,
+        "pct": 1.26,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "SEYLAN BANK PLC/JN LANKA HOLDINGS COMPANY (PVT) LTD",
+        "shares": 3800000,
+        "pct": 1.19,
+        "change": null,
+        "new": true,
+        "note": "833,405 shares in the March 2025 list but not in the March 2026 top 20, so marked new"
+      },
+      {
+        "name": "DEUTSCHE BANK AG AS TRUSTEE FOR JB VANTAGE VALUE EQUITY FUND",
+        "shares": 3332528,
+        "pct": 1.05,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "J.B. COCOSHELL (PVT) LTD",
+        "shares": 3000001,
+        "pct": 0.94,
+        "change": 1818042,
+        "new": false
+      },
+      {
+        "name": "MR. N.A. MADANAYAKE",
+        "shares": 2500000,
+        "pct": 0.79,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "G B ENTERPRISES (PVT) LTD",
+        "shares": 2500000,
+        "pct": 0.79,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "DFCC BANK PLC A/C NO.02",
+        "shares": 2393125,
+        "pct": 0.75,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "BNYM RE ACADIAN FRONTIER MARKETS EQUITY FUND",
+        "shares": 2130702,
+        "pct": 0.67,
+        "change": -51536,
+        "new": false
+      },
+      {
+        "name": "MRS. H.H.J. HEWAGE",
+        "shares": 1946124,
+        "pct": 0.61,
+        "change": 0,
+        "new": false,
+        "note": "Listed in March as Mrs. Hewage Harshani Jeewanthika Hewage; same holder"
+      },
+      {
+        "name": "DFCC BANK PLC/P.S.R.CASIE CHITTY",
+        "shares": 1629808,
+        "pct": 0.51,
+        "change": 1200000,
+        "new": false,
+        "note": "Director P.S.R. Casie Chitty; 429,808 in March"
+      }
+    ],
+    "gone": [
+      {
+        "name": "GROUP LEASE HOLDINGS PTE LTD (IN LIQUIDATION)",
+        "prevShares": 95390500
+      },
+      {
+        "name": "ASIA SECURITIES (PVT) LTD (TRADING ACCOUNT)",
+        "prevShares": 1605000
+      },
+      {
+        "name": "MR. THUSITHA KUMARA HEMACHANDRA",
+        "prevShares": 1355689
+      },
+      {
+        "name": "MISS. SACHINI NATHASHA EGODAGE",
+        "prevShares": 1276000
+      },
+      {
+        "name": "MR. GURUGE ISURU ANURADHA PERERA",
+        "prevShares": 1185100
+      },
+      {
+        "name": "MR. SAMPATH MIHINDU HEMACHANDRA",
+        "prevShares": 1050000
+      },
+      {
+        "name": "MR. DANESH THARAKA SEMAGE",
+        "prevShares": 488649
+      },
+      {
+        "name": "MR. AJITH SURENDRA RATNAYAKE",
+        "prevShares": 460000
+      },
+      {
+        "name": "MR. PUSHPAKUMARA SAMANTHA DANGAMPOLA",
+        "prevShares": 456400
+      },
+      {
+        "name": "N P CAPITAL LTD",
+        "prevShares": 425000
+      }
+    ]
+  }
 }
