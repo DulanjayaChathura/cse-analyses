@@ -1155,6 +1155,22 @@
       "messageId": "429",
       "requestedAt": "2026-11-25T19:53:30+00:00",
       "status": "pending"
+    },
+    {
+      "id": "20261125195807-CALT",
+      "ticker": "CALT.N0000",
+      "name": "Capital Alliance PLC",
+      "mode": "redo-full",
+      "command": "/redo CALT.N0000 full",
+      "note": null,
+      "files": [
+        "reports/CALT.N0000/2026-09-01_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/CALT.N0000/2026-10-27_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "431",
+      "requestedAt": "2026-11-25T19:58:07+00:00",
+      "status": "pending"
     }
   ]
 }
