@@ -1139,6 +1139,22 @@
       "status": "done",
       "result": "New: fair value Rs 39.40, buy Rs 33.49, strong buy Rs 29.55 (price Rs 59.70); category 2 watch list",
       "finishedAt": "2026-11-25T16:50:15+00:00"
+    },
+    {
+      "id": "20261125195330-COCR",
+      "ticker": "COCR.N0000",
+      "name": "Commercial Credit and Finance PLC",
+      "mode": "redo-full",
+      "command": "/redo COCR.N0000 full",
+      "note": null,
+      "files": [
+        "reports/COCR.N0000/2026-08-06_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/COCR.N0000/2026-10-30_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "429",
+      "requestedAt": "2026-11-25T19:53:30+00:00",
+      "status": "pending"
     }
   ]
 }
