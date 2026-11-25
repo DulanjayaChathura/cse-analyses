@@ -26,6 +26,11 @@ def save_logo(code, logo_path, quiet=False):
         out = GENERATED / "logos" / f"{code}{ext}"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(content)
+        try:
+            from trim_logos import trim
+            trim(out)  # drop the empty margin; skipped if Pillow isn't installed
+        except Exception:
+            pass
         return f"generated/logos/{code}{ext}"
     except Exception as e:
         note_problem(f"{code}: logo download failed ({e}); initials are shown instead.")

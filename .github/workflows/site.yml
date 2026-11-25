@@ -40,6 +40,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Pillow (trims the empty margin around new logos)
+        run: pip install --quiet pillow || echo "::warning::Pillow not installed; new logos are saved untrimmed."
+
       - name: Fetch names and logos for new companies
         run: python scripts/fetch_companies.py
 

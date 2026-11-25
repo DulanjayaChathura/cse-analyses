@@ -170,11 +170,18 @@ App.priceSourceText = function (pr) {
 
 /* ---------- Logo or initials ---------- */
 App.logo = function (company, size = "") {
-  const initials = (company.name || company.ticker || "?").replace(/\bPLC\b/g, "").split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+  // initials from the name's main words ("The Colombo Fort Land…" → CF, not TC)
+  const words = (company.name || company.ticker || "?").replace(/\(.*?\)/g, " ").replace(/\b(PLC|Ltd|Limited|Company|The|and|of)\b|&/gi, " ").split(/[\s.]+/).filter((w) => /^[A-Za-z0-9]/.test(w));
+  const initials = (words.length ? words : ["?"]).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+  // each company keeps its own colour, so initials badges aren't all the same teal block
+  let h = 0; for (const ch of company.ticker || company.name || "") h = (h * 31 + ch.charCodeAt(0)) % 360;
+  const badge = `<span class="logo initials ${size}" style="--h:${h}" aria-hidden="true">${App.esc(initials)}</span>`;
   if (company.logo) {
-    return `<img class="logo ${size}" src="${App.esc(company.logo)}" alt="" onerror="this.outerHTML='<span class=&quot;logo initials ${size}&quot; aria-hidden=&quot;true&quot;>${App.esc(initials)}</span>'">`;
+    // a very wide (5:1 or more) logo, mostly text, is unreadable at this size: show the initials badge instead
+    const swap = `this.outerHTML='${badge.replace(/"/g, "&quot;")}'`;
+    return `<img class="logo ${size}" src="${App.esc(company.logo)}" alt="" onerror="${swap}" onload="if(this.naturalWidth>5*this.naturalHeight){${swap}}">`;
   }
-  return `<span class="logo initials ${size}" aria-hidden="true">${App.esc(initials)}</span>`;
+  return badge;
 };
 
 /* ---------- Theme ---------- */

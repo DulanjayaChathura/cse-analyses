@@ -341,13 +341,24 @@
       return `<h2>Assumptions</h2>
         ${s.averages ? `<div class="cases">${caseCard("bear", "🐻", "Bear")}${caseCard("base", "⚖️", "Base")}${caseCard("bull", "🐂", "Bull")}
           ${App.isNum(pr) ? `<p class="cases-note"><i></i><span>Today's price <b>${App.price(pr)}</b>: the dashed line on each bar; the chips compare each case with it</span></p>` : ""}</div>` : ""}
-        <div class="arows">${(s.assumptions || []).map((a) => {
-          // a fill under each case when all three start with a number, so the spread is visible at a glance
-          const n = ["bear", "base", "bull"].map((k) => { const t = String(a[k] ?? "").replace(/,(?=\d{3})/g, ""), m = (/→/.test(t) ? t.split("→").pop() : t).match(/-?\d+(\.\d+)?/); return m ? Math.abs(+m[0]) : null; });
-          const top = n.every(App.isNum) ? Math.max(...n) : null;
-          return `<div class="arow"><div class="arow-h"><i aria-hidden="true">${iconFor(a.label)}</i>${App.term(a.label)}</div>
-            <div class="arow-v">${["bear", "base", "bull"].map((k, j) => `<div class="av ${k}"><small>${k[0].toUpperCase() + k.slice(1)}</small><b>${App.esc(a[k] ?? "–")}</b>${
-              top ? `<span class="av-bar"><span style="width:${Math.max(4, n[j] / top * 100).toFixed(0)}%"></span></span>` : ""}</div>`).join("")}</div></div>`;
+        <div class="atab" role="table">
+          <div class="atab-r atab-h" role="row"><span role="columnheader"></span><span role="columnheader" class="bear"><b class="cpill bear">🐻 Bear</b></span><span role="columnheader" class="base"><b class="cpill base">⚖️ Base</b></span><span role="columnheader" class="bull"><b class="cpill bull">🐂 Bull</b></span><span role="columnheader" class="atab-sp">Range</span></div>
+          ${(s.assumptions || []).map((a, ai) => {
+          // one row per assumption: name first, the three cases in fixed columns, and a small
+          // line with the three dots at their real positions so the spread shows at a glance
+          const K = ["bear", "base", "bull"];
+          const n = K.map((k) => { const t = String(a[k] ?? "").replace(/,(?=\d{3})/g, ""), m = (/→/.test(t) ? t.split("→").pop() : t).match(/-?\d+(\.\d+)?/); return m ? +m[0] : null; });
+          const same = K.every((k) => String(a[k] ?? "") === String(a.base ?? ""));
+          let strip = "";
+          if (same) strip = `<span class="atab-same">same in all</span>`;
+          else if (n.every(App.isNum)) {
+            const lo = Math.min(...n), hi = Math.max(...n), pad = (hi - lo) * 0.12 || 1, at = (x) => ((x - lo + pad) / (hi - lo + 2 * pad)) * 100;
+            const ps = K.map((k, j) => at(n[j]));
+            strip = `<span class="atab-line"><span class="ar-span" style="left:${Math.min(...ps).toFixed(1)}%;width:${(Math.max(...ps) - Math.min(...ps)).toFixed(1)}%"></span>${
+              K.map((k, j) => `<span class="ar-pt ${k}" style="left:${ps[j].toFixed(1)}%"></span>`).join("")}</span>`;
+          }
+          return `<div class="atab-r" role="row" style="--i:${ai}"><span class="atab-n" role="rowheader"><i aria-hidden="true">${iconFor(a.label)}</i>${App.term(a.label)}</span>${
+            K.map((k) => `<span class="${k}" role="cell"><small>${k[0].toUpperCase() + k.slice(1)}</small>${App.esc(a[k] ?? "–")}</span>`).join("")}<span class="atab-sp" role="cell">${strip}</span></div>`;
         }).join("")}</div>
         ${s.common ? `<div style="margin-top:1rem"><h3 style="margin-bottom:.3rem">Shared by all cases</h3><div class="clamp" data-lines="4">${App.md(s.common)}</div></div>` : ""}
         ${v.note ? `<div class="clamp section-lead" data-lines="3" style="margin-top:.6rem">${App.esc(v.note)}</div>` : ""}`;

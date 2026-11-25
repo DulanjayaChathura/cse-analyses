@@ -54,6 +54,8 @@
 
     // Search looks at the company name only: "dia" finds every name containing those letters.
     return `<div class="card-wrap${App.Stars.has(c.ticker) ? " is-starred" : ""}" data-search="${App.esc(c.name.toLowerCase())}">${App.Stars.button(c.ticker, c.name)}<a class="card" href="company.html?t=${encodeURIComponent(c.ticker)}">
+      ${c.logo ? `<img class="card-wm" src="${App.esc(c.logo)}" alt="" aria-hidden="true" loading="lazy" onerror="this.remove()">` : ""}
+      ${cat ? `<span class="card-flag ${cat.cls}">${{ 1: "🛒", 2: "👀", 3: "⛔" }[cat.n]} ${cat.name}</span>` : ""}
       <div class="card-top">${App.logo(c)}<div><div class="card-name">${App.esc(c.name)}</div><div class="card-sector">${App.esc(c.sector || "")}</div></div></div>
       <div class="prices">${lines.map((l) => l.html).join("")}</div>
       ${main ? Charts.mini({ price: main.value, strongBuy: v.strongBuyPrice, buy: v.buyPrice, fair: v.fairValue }) : ""}
@@ -87,8 +89,30 @@
     return App.category(c.quality, c.valuation, c.shareClasses.map((sc) => App.resolvePrice(sc.symbol, sc.symbol === c.ticker ? c.price : null, prices)));
   }
 
-  /* Cards are grouped by category; inside a group the order stays lowest gap first. */
+  /* Sector groups: each analysis names its sector in its own words, so these rules put it in
+     one of a dozen broad groups (first match wins; the order matters). */
+  const SECTORS = [
+    ["Diversified holdings", "🏢", /^diversified(?!\s+financials)/i],
+    ["Banks", "🏦", /^bank/i],
+    ["Insurance", "🛡️", /^insurance|insurtech/i],
+    ["Food, beverage and tobacco", "🍽️", /food|beverage|tobacco|poultry|plantation|dairy/i],
+    ["Retail and consumer", "🛍️", /retail/i],
+    ["Finance and leasing", "💳", /financ|leasing|primary dealer/i],
+    ["Telecom and tech", "📡", /telecom|ride-hailing|software|\bapp\b|technology/i],
+    ["Power and energy", "⚡", /power|energy|\blpg\b|petroleum|oil and gas/i],
+    ["Hotels and leisure", "🏨", /hotel|resort|leisure|travel/i],
+    ["Health care", "🏥", /hospital|health|pharma/i],
+    ["Construction and materials", "🏗️", /cement|tile|grout|alumin|cable|conductor|pvc|packaging|coating|construction|carbon|building|steel|glass|chemical/i],
+    ["Real estate", "🏘️", /real estate|property|land/i],
+    ["Consumer goods", "🧴", /consumer|household/i],
+  ];
+  const sectorOf = (c) => { const t = String(c.sector || ""); const hit = SECTORS.find(([, , re]) => re.test(t)); return hit ? hit : ["Other", "🔹", null]; };
+  let groupBy = "category";
+  try { if (localStorage.getItem("groupBy") === "sector") groupBy = "sector"; } catch (e) { /* storage unavailable */ }
+
+  /* Cards are grouped by category (or by sector, with the toggle); inside a group the order stays lowest gap first. */
   function render() {
+    if (groupBy === "sector") return renderSectors();
     if (!companies.length) {
       cardsEl.innerHTML = `<div class="empty">No companies yet. Add an analysis file to the <b>data</b> folder in GitHub and it will appear here about a minute later.</div>`;
       return;
@@ -117,6 +141,41 @@
           <span class="cov-bar"><i style="width:${(g.list.length / all * 100).toFixed(1)}%"></i></span></a>`).join("");
       if (App.reveal) App.reveal(ov.parentElement, ".cat-overview");
     }
+  }
+  /* Sector view: one group per sector, cards inside ordered Buy now → Watch → Avoid, then lowest gap;
+     the overview tiles become sector tiles, each with a small bar of its categories. */
+  function renderSectors() {
+    const ordered = companies.filter((c) => App.Stars.has(c.ticker)).concat(companies.filter((c) => !App.Stars.has(c.ticker)));
+    const byName = new Map();
+    ordered.forEach((c) => { const [name, ic] = sectorOf(c); if (!byName.has(name)) byName.set(name, { name, ic, list: [] }); byName.get(name).list.push(c); });
+    const rank = (c) => (catOf(c) || { n: 4 }).n;
+    const groups = [...byName.values()].sort((a, b) => (a.name === "Other") - (b.name === "Other") || b.list.length - a.list.length || a.name.localeCompare(b.name));
+    groups.forEach((g) => { g.list = g.list.map((c, i) => ({ c, i })).sort((a, b) => rank(a.c) - rank(b.c) || a.i - b.i).map((x) => x.c); });
+    const mix = (list) => [1, 2, 3].map((n) => ({ n, k: list.filter((c) => (catOf(c) || {}).n === n).length }));
+    const IC = { 1: "🛒", 2: "👀", 3: "⛔" };
+    cardsEl.innerHTML = groups.map((g, k) => `<section class="cat-group sec-group" id="sec-${k + 1}">
+        <h2><span class="sec-ic" aria-hidden="true">${g.ic}</span>${App.esc(g.name)} <span class="cat-count">${g.list.length}</span>
+          <span class="sec-mix">${mix(g.list).filter((m) => m.k).map((m) => `<span class="sm ${App.CATEGORIES[m.n].cls}" title="${App.esc(App.CATEGORIES[m.n].name)}">${IC[m.n]} ${m.k}</span>`).join("")}</span></h2>
+        <div class="cards">${g.list.map(card).join("")}</div></section>`).join("");
+    if (App.reveal) App.reveal(cardsEl, ".card-wrap");
+    const ov = document.getElementById("cat-overview");
+    if (ov) {
+      ov.innerHTML = `<div class="sec-tiles">${groups.map((g, k) => `<a class="sct" href="#sec-${k + 1}" style="--i:${k}"><span class="sct-ic" aria-hidden="true">${g.ic}</span>
+          <span class="sct-t">${App.esc(g.name)}</span><b>${g.list.length}</b>
+          <span class="sct-bar" aria-hidden="true">${mix(g.list).map((m) => m.k ? `<i class="${App.CATEGORIES[m.n].cls}" style="flex:${m.k}"></i>` : "").join("")}${
+            g.list.length - mix(g.list).reduce((a, m) => a + m.k, 0) ? `<i class="none" style="flex:${g.list.length - mix(g.list).reduce((a, m) => a + m.k, 0)}"></i>` : ""}</span></a>`).join("")}</div>`;
+      if (App.reveal) App.reveal(ov.parentElement, ".cat-overview");
+    }
+  }
+  const groupEl = document.getElementById("group-by");
+  if (groupEl) {
+    const mark = () => groupEl.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.g === groupBy)));
+    mark();
+    groupEl.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-g]"); if (!b || b.dataset.g === groupBy) return;
+      groupBy = b.dataset.g; try { localStorage.setItem("groupBy", groupBy); } catch (err) { /* ignore */ }
+      mark(); renderAll();
+    });
   }
   const onlyEl = document.getElementById("starred-only");
   const searchEl = document.getElementById("search");

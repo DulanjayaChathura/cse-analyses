@@ -143,9 +143,12 @@
   const PAL = ["#378ADD", "#1D9E75", "#EF9F27", "#D85A30", "#7F77DD", "#888780"];
   const numOf = (c) => {
     if (c === null || c === undefined) return null;
-    const s = String(c).replace(/[≈~]/g, "").replace(/[−–]/g, "-").replace(/,/g, "").replace(/^\s*(Rs|US\$|\$)\s*/i, "").trim();
+    let s = String(c).replace(/[≈~]/g, "").replace(/[−–]/g, "-").replace(/,/g, "").replace(/^\s*(Rs|US\$|\$)\s*/i, "").trim();
+    // accounting style: (541) or (4.8%) is a negative number
+    const neg = /^\(\s*[\d.]+\s*%?\s*\)/.test(s);
+    if (neg) s = s.replace(/^\(\s*/, "");
     const m = s.match(/^([+-]?\d*\.?\d+)/);
-    return m ? parseFloat(m[1]) : null;
+    return m ? (neg ? -1 : 1) * parseFloat(m[1]) : null;
   };
   const fmt = (v) => { const a = Math.abs(v); return (a >= 1000 ? App.num(v, 0) : a >= 100 ? v.toFixed(0) : v.toFixed(2).replace(/0$/, "").replace(/\.0$/, "")); };
   const pickRows = (t, pl) => (pl.rows || t.rows.map((_, i) => i)).map((i) => t.rows[i]).filter(Boolean);
@@ -350,8 +353,14 @@
   }
 
   function numbersTable(t) {
-    return `<div class="table-wrap grid-wrap"><table class="grid"><thead><tr>${t.head.map((h, i) => `<th${i ? ' class="num"' : ""}>${App.esc(h)}</th>`).join("")}</tr></thead>
-      <tbody>${t.rows.map((row) => `<tr>${row.map((c, i) => `<td${i && /^[≈~]?\s*(Rs\s)?[−+\-]?[\d.,]+\s?(x|%|bn|mn)?(\s\(.*\))?$|^[\d.,]+ : [\d.,]+$/.test(String(c)) ? ' class="num"' : ""}>${App.esc(String(c))}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    // a column is right-aligned when most of its cells are figures: plain, signed, in
+    // brackets (negatives), with %/x/bn/mn, or blanks like "n.m." and "–"
+    const isFig = (c) => /^[≈~]?\s*(Rs\s)?[−+\-]?\(?[\d.,]+\s?(x|%|bn|mn)?\)?(\s\(.*\))?$|^[\d.,]+ : [\d.,]+$/.test(String(c).trim());
+    const blank = (c) => /^(n\.?m\.?|n\.?a\.?|[–—-]|)$/i.test(String(c ?? "").trim());
+    const numCol = t.head.map((_, j) => { if (!j) return false; const cells = t.rows.map((r) => r[j]).filter((c) => !blank(c));
+      return cells.length > 0 && cells.filter(isFig).length >= cells.length * 0.6; });
+    return `<div class="table-wrap grid-wrap"><table class="grid"><thead><tr>${t.head.map((h, i) => `<th${numCol[i] ? ' class="num"' : ""}>${App.esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${t.rows.map((row) => `<tr>${row.map((c, i) => `<td${numCol[i] || (i && isFig(c)) ? ' class="num"' : ""}>${App.esc(String(c))}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
   }
 
   function blockHtml(b, ctx) {
