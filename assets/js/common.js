@@ -177,11 +177,33 @@ App.logo = function (company, size = "") {
   let h = 0; for (const ch of company.ticker || company.name || "") h = (h * 31 + ch.charCodeAt(0)) % 360;
   const badge = `<span class="logo initials ${size}" style="--h:${h}" aria-hidden="true">${App.esc(initials)}</span>`;
   if (company.logo) {
-    // a very wide (5:1 or more) logo, mostly text, is unreadable at this size: show the initials badge instead
     const swap = `this.outerHTML='${badge.replace(/"/g, "&quot;")}'`;
-    return `<img class="logo ${size}" src="${App.esc(company.logo)}" alt="" onerror="${swap}" onload="if(this.naturalWidth>5*this.naturalHeight){${swap}}">`;
+    return `<img class="logo ${size}" src="${App.esc(company.logo)}" alt="" onerror="${swap}" onload="if(App.logoFit(this)==='swap'){${swap}}">`;
   }
   return badge;
+};
+
+/* A wide logo (Vallibel Finance's banner, Commercial Bank's bar) gets a wider box so it can be read.
+   Only a very wide logo that is plain grey text on white (the CSE's old text-only logos, e.g.
+   "Muller and Phipps (Ceylon) Ltd.") is swapped for the initials badge: at this size it's a smudge. */
+App.logoFit = function (img) {
+  const w = img.naturalWidth, h = img.naturalHeight;
+  if (!w || !h) return "swap";
+  const r = w / h;
+  if (r > 5) {
+    try {
+      const W = 96, H = Math.max(4, Math.round(W / r)), cv = document.createElement("canvas"); cv.width = W; cv.height = H;
+      const ctx = cv.getContext("2d", { willReadFrequently: true }); ctx.drawImage(img, 0, 0, W, H);
+      const d = ctx.getImageData(0, 0, W, H).data; let n = 0, sat = 0;
+      for (let i = 0; i < d.length; i += 4) {
+        if (d[i + 3] < 40 || (d[i] > 232 && d[i + 1] > 232 && d[i + 2] > 232)) continue;
+        n++; sat += Math.max(d[i], d[i + 1], d[i + 2]) - Math.min(d[i], d[i + 1], d[i + 2]);
+      }
+      if (!n || (sat / n < 10 && n / (W * H) < 0.26)) return "swap";
+    } catch (e) { /* can't read the pixels: keep the logo */ }
+  }
+  if (r > 2.2) img.classList.add("wide");
+  return "keep";
 };
 
 /* ---------- Theme ---------- */

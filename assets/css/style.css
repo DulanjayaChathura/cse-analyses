@@ -1508,3 +1508,38 @@ table.calls td.up { color: var(--good, #1d7a46); } table.calls td.down { color: 
 .sec-group .card { padding-top: 2.1rem; border-top: 3px solid var(--fc, var(--rule)); }
 .sec-group .card:has(.card-flag.cat1) { --fc: var(--good); } .sec-group .card:has(.card-flag.cat2) { --fc: #c98400; } .sec-group .card:has(.card-flag.cat3) { --fc: var(--bad); }
 .card-flag.cat1 { --fc: var(--good); } .card-flag.cat2 { --fc: #c98400; } .card-flag.cat3 { --fc: var(--bad); }
+
+/* wide logos get a wider box so they stay readable */
+img.logo.wide { width: auto; max-width: 112px; min-width: 48px; padding: 4px 6px; box-sizing: border-box; }
+img.logo.sm.wide { max-width: 84px; } img.logo.xs.wide { max-width: 64px; }
+.hero-head img.logo.wide { max-width: 150px; }
+
+/* Company page: the header as a banner, with the company's logo large and faint on the right */
+.hero-banner { position: relative; overflow: hidden; isolation: isolate; padding: 1.1rem 1.2rem; border-radius: var(--radius-lg);
+  border: 1px solid var(--rule); background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 10%, var(--surface)), var(--surface) 65%); }
+.hero-wm { position: absolute; z-index: -1; pointer-events: none; right: 3%; top: 50%; transform: translateY(-50%); width: 42%; height: 82%;
+  object-fit: contain; object-position: right center; opacity: 0.1; mix-blend-mode: multiply; filter: saturate(1.5) contrast(1.25);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 40%); mask-image: linear-gradient(90deg, transparent, #000 40%); }
+[data-theme="dark"] .hero-wm { mix-blend-mode: screen; filter: grayscale(1) invert(1); opacity: 0.12; }
+.hero-banner .logo { background: var(--surface); box-shadow: 0 2px 10px -4px rgb(0 0 0 / 0.25); }
+@media (max-width: 560px) { .hero-wm { width: 55%; opacity: 0.08; } }
+
+/* Broker page: the header as a banner over a faint market chart */
+.bk-banner { position: relative; overflow: hidden; isolation: isolate; padding: 1.1rem 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--rule);
+  background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--surface) 70%); }
+.bk-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+.bk-bg-l1 { stroke: var(--accent); stroke-width: 2.5; opacity: 0.28; vector-effect: non-scaling-stroke; }
+.bk-bg-l2 { stroke: var(--good); stroke-width: 2; opacity: 0.18; vector-effect: non-scaling-stroke; stroke-dasharray: 0.012 0.008; }
+.bk-bg-bars rect { fill: var(--accent); opacity: 0.07; }
+.bk-h-ic { display: inline-block; margin-right: 0.4rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .bk-bg-l1 { stroke-dasharray: 1; animation: bk-draw 2.4s ease-out both; }
+  @keyframes bk-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+  .bk-bg-bars rect { transform-box: fill-box; transform-origin: bottom; animation: bk-bar 3.2s ease-in-out infinite; }
+  .bk-bg-bars rect:nth-child(3n) { animation-delay: -1s; } .bk-bg-bars rect:nth-child(3n+1) { animation-delay: -2.1s; }
+  @keyframes bk-bar { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(0.75); } }
+  .bk-h-ic { animation: ic-idle 2.6s ease-in-out infinite; }
+  .hero-wm { animation: hero-wm-in 1.2s ease-out both; } @keyframes hero-wm-in { from { opacity: 0; transform: translateY(-50%) translateX(20px); } }
+}
+@media (max-width: 560px) { .hero-head img.logo.wide { max-width: 92px; } .hero-banner { padding: 0.9rem; gap: 0.8rem; } }
+

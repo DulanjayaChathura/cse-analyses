@@ -210,7 +210,7 @@
 
       const sum = has("summary") ? d.summary : null;
       return `
-        <div class="hero-head">${App.logo(meta)}<div><h1>${App.esc(meta.name)} ${App.Stars.button(d.ticker, meta.name)}</h1>
+        <div class="hero-head hero-banner">${meta.logo ? `<img class="hero-wm" src="${App.esc(meta.logo)}" alt="" aria-hidden="true" onerror="this.remove()">` : ""}${App.logo(meta)}<div><h1>${App.esc(meta.name)} ${App.Stars.button(d.ticker, meta.name)}</h1>
           <div class="hero-meta">${App.esc(d.ticker)}${meta.sector ? ", " + App.esc(meta.sector) : ""}. Analysis of ${App.date(d.analysisDate)}.</div></div></div>
         ${valueStrip()}
         <div class="hero-grid">
