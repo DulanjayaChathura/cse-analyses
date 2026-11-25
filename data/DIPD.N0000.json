@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": 1,
+  "ticker": "DIPD.N0000",
+  "company": {
+    "name": "Dipped Products PLC",
+    "sector": "Rubber gloves (hand protection) and tea and rubber plantations",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "DIPD.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-25",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE copy)",
+      "Interim report to 30 Jun 2026 (CSE copy)",
+      "Interim report to 30 Sep 2026 (CSE copy)"
+    ]
+  },
+  "price": {
+    "value": 59.7,
+    "date": "2026-09-30",
+    "source": "Last traded price at 30 September 2026, interim report p. 11",
+    "note": "The CSE site couldn't be reached from this run and the share isn't yet in the site's price file, so the latest close wasn't available; the site's daily CSE close replaces this price. July–September 2026 range Rs 55.00–62.40; April–September Rs 49.30–62.40; 2025/26 Rs 46.70–71.50 (Annual Report p. 236)."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A good glove maker with a better 2026, but at Rs 59.70 the price is about 50% above our fair value of Rs 39.40",
+    "text": "Dipped Products PLC (DIPD.N0000), 42% owned by Hayleys (49% with Haycarb), is one of the world's big makers of rubber gloves for households, industry and medical use, with factories in Sri Lanka and Thailand. It also owns controlling stakes in three tea and rubber plantation companies (Kelani Valley, Talawakelle and Horana), which bring in 38% of revenue. Profit to shareholders rose 53% to Rs 2.75bn in April–September 2026, with glove profit up 44% on new capacity, while plantations earned 17% less.\n\nFair value is about **Rs 39.40** (buy below **Rs 33.49**, strong buy below **Rs 29.55**). The gap comes from returns: shareholders should demand about 17.3% a year (beta 0.88), and the company has earned 10–15% on equity for three years. At an ROE of 14% the shares are worth about 0.73× book, against 0.97× today.\n\n3 of the 4 business tests pass (debt, steady profit, cash); returns fail. Category 2: watch list. Debt has risen to fund a big capex programme (Rs 7.8bn in 2025/26, Rs 4.2bn more in the half), and dividends were not covered by cash after capex last year."
+  },
+  "valuation": {
+    "fairValue": 39.4,
+    "buyPrice": 33.49,
+    "strongBuyPrice": 29.55,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 61.72,
+    "note": "Fair value weights the bear/base/bull values of five methods 30/50/20 and averages them: whole-company DCF less minorities plus investments (Rs 31.04), P/E (45.61), justified P/B (45.19), residual income (38.74) and dividends (36.44). NAV (Rs 61.72) is a reading only."
+  },
+  "dividend": {
+    "perShare": 2.13,
+    "label": "for 2025/26",
+    "source": "Annual Report 2025/26, p. 499",
+    "latest": {
+      "perShare": 1.33,
+      "label": "interims for 2026/27 (Rs 0.37 paid July, Rs 0.96 paid October 2026)",
+      "source": "Interim to 30 Sep 2026, pp. 2, 11"
+    }
+  },
+  "keyMetrics": [
+    {
+      "id": "price",
+      "label": "Price",
+      "value": 59.7,
+      "unit": "Rs",
+      "note": "Last trade 30 Sep 2026 (interim p. 11)"
+    },
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 61.72,
+      "unit": "Rs",
+      "note": "30 Sep 2026, owners' equity"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 0.97,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 8.0,
+      "unit": "x",
+      "note": "Twelve-month EPS Rs 7.46 to Sep 2026; 5.9× on the Sep quarter × 4 (Rs 10.12)"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 12.6,
+      "unit": "%",
+      "note": "Twelve months to Sep 2026, on average owners' equity; 10.1% in 2025/26"
+    },
+    {
+      "id": "netdebt",
+      "label": "Net debt",
+      "value": 16.24,
+      "unit": "Rs bn",
+      "note": "30 Sep 2026 incl. leases (Rs 11.64bn at March); 0.44× owners' equity, 1.5× twelve-month EBITDA"
+    },
+    {
+      "id": "yield",
+      "label": "Dividend yield",
+      "value": 3.6,
+      "unit": "%",
+      "note": "Rs 2.13 for 2025/26; Rs 1.33 already paid for 2026/27"
+    },
+    {
+      "id": "mcap",
+      "label": "Market value",
+      "value": 35.74,
+      "unit": "Rs bn",
+      "note": "598.6mn shares × Rs 59.70"
+    },
+    {
+      "id": "gloves",
+      "label": "Glove share of profit",
+      "value": 63,
+      "unit": "%",
+      "note": "2025/26 segment operating profit; 79% in April–September 2026"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 17.3,
+      "unit": "%",
+      "note": "Beta 0.88"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (unaudited)",
+      "text": "Revenue up 20% to Rs 25.34bn, gross profit up 18% to Rs 5.55bn. Profit to shareholders up 64% to Rs 1.51bn, EPS Rs 2.53 (Rs 1.54), helped by a tax charge of only 18% of profit before tax (36% a year earlier). Finance costs rose 63% to Rs 0.54bn."
+    },
+    {
+      "title": "Six months to 30 September 2026 (unaudited)",
+      "text": "Revenue Rs 50.36bn (up 16%): gloves Rs 34.05bn (up 22%), plantations Rs 16.39bn (up 4%). Segment profit: gloves Rs 3.27bn (up 44%), plantations Rs 0.89bn (down 17%). Profit before tax Rs 3.99bn (up 23%), profit to shareholders Rs 2.75bn (up 53%), EPS Rs 4.59 (Rs 3.01)."
+    },
+    {
+      "title": "Debt up to fund capex and customers",
+      "text": "Net debt rose from Rs 11.64bn in March to Rs 16.24bn: capex Rs 4.40bn in the half (incl. moulds) and Rs 6.26bn more owed by customers, partly offset by lower stock and higher payables. Short-term loans and overdrafts rose to Rs 12.65bn. Operating cash flow was Rs 0.93bn."
+    },
+    {
+      "title": "Dividends up",
+      "text": "Interims of Rs 0.37 (July) and Rs 0.96 (October 2026), Rs 1.33 in all against Rs 0.86 a year earlier."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Revenue Rs 82.04bn (up 3%): gloves up 10%, plantations down 6% on heavy rain and lower tea and rubber prices. Profit before tax flat at Rs 6.83bn; profit to shareholders Rs 3.52bn (down 9%), EPS Rs 5.88, dividend Rs 2.13 (Rs 1.90). Capex Rs 7.78bn, the biggest programme in the company's history, including the Katunayake greenfield plant."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "TTM Sep 2026"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          8.99,
+          10.87,
+          7.47,
+          6.47,
+          5.88,
+          7.46
+        ],
+        "notes": [
+          "Decade at a glance (p. 570), on today's 598.6mn shares",
+          null,
+          null,
+          null,
+          null,
+          "Latest annual + six months − six months a year earlier"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          24.57,
+          24.12,
+          15.49,
+          12.2,
+          10.11,
+          12.6
+        ],
+        "notes": [
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Twelve months to Sep 2026, on average owners' equity"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E at year end",
+        "unit": "x",
+        "values": [
+          3.61,
+          2.55,
+          4.07,
+          8.5,
+          8.4,
+          8.0
+        ],
+        "notes": [
+          "Rs 32.50",
+          "Rs 27.70",
+          "Rs 30.40",
+          "Rs 55.00",
+          "Rs 49.40",
+          "Rs 59.70 ÷ Rs 7.46"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          2.5,
+          3.0,
+          2.25,
+          1.9,
+          2.13,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Rs 1.33 of interims paid so far for 2026/27"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 61.72",
+      "reading": "Price is 0.97× owners' book value. Book includes plantation land and bearer plants (mature and immature plantations Rs 9.9bn at March) and Rs 0.54bn of goodwill; minorities own a further Rs 9.0bn of equity, mostly in the plantations."
+    },
+    {
+      "method": "Return on equity",
+      "value": "12.6% (10.1% in 2025/26)",
+      "reading": "Below the 17.3% cost of equity. Returns were 24% in 2021/22–2022/23, when glove demand and prices were high. At a 14% long-run ROE the share is worth about 0.73× book."
+    },
+    {
+      "method": "P/E",
+      "value": "8.0× trailing",
+      "reading": "Twelve-month EPS Rs 7.46. Justified forward P/E is 4.3× / 5.2× / 6.6×; the market's 8.0× trailing (6.7× on base EPS to March 2027) prices in a long-run ROE above 20%."
+    },
+    {
+      "method": "Dividends",
+      "value": "3.6% yield",
+      "reading": "Rs 2.13 for 2025/26, about a third of profit. In 2025/26 operating cash after depreciation-level upkeep (Rs 0.73bn) didn't cover the Rs 1.68bn paid to shareholders and minorities, because working capital took Rs 5bn: flagged as at risk until that reverses."
+    },
+    {
+      "method": "DCF",
+      "value": "Rs 36.88 base",
+      "reading": "Whole-company DCF at WACC 13.3%, less net debt and minorities' book, plus investments: Rs -0.19 / 36.88 / 63.3. 71% of the base value comes after year 5."
+    }
+  ],
+  "models": [
+    {
+      "id": "sotp",
+      "name": "Whole-company DCF, less minorities, plus investments",
+      "bear": -0.19,
+      "base": 36.88,
+      "bull": 63.3,
+      "weighted": 31.04,
+      "comment": "Whole-company DCF at WACC 14.3% / 13.3% / 12.2%: after-tax operating profit Rs 5.17bn (twelve-month segment operating profit to Sep 2026, Rs 7.64bn, at the 2025/26 tax rate of 32.4%), start cash after maintenance capex Rs 3.95 / 5.45 / 5.45bn (plus depreciation and amortisation Rs 3.37bn, less maintenance Rs 4.59 / 3.09 / 3.09bn), growth 3% / 6% / 8% for five years then 4% / 5% / 6%, return on new capital 11% / 13% / 15%; less net debt Rs 16.24bn; then less the minorities' book value (Rs 9.01bn) plus other financial assets (Rs 3.35bn), −Rs 9.46 a share. In the bear case the return on new capital is below WACC, so growth destroys value and the equity is worth about nothing; 71% of the base value and 80% of the bull value come after year 5."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 32.25,
+      "base": 46.52,
+      "bull": 63.39,
+      "weighted": 45.61,
+      "comment": "EPS to March 2027 Rs 7.5 / 8.9 / 9.6 (Rs 4.59 already earned; run-rate Rs 10.12 from the September quarter × 4, but that quarter's tax was only 18%, so base is 12% below it) × justified P/E 4.3 / 5.2 / 6.6 (payout 1 − growth ÷ ROE at long-run ROE 11% / 14% / 17%, growth 4% / 5% / 6%). Today's 8.0× trailing P/E is above the bull case."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 29.19,
+      "base": 45.16,
+      "bull": 69.28,
+      "weighted": 45.19,
+      "comment": "NAV Rs 61.72 (30 Sep 2026) × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 11% / 14% / 17%, growth 4% / 5% / 6%. Justified P/B 0.47 / 0.73 / 1.12 against 0.97 today."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 24.18,
+      "base": 37.98,
+      "bull": 62.49,
+      "weighted": 38.74,
+      "comment": "Book Rs 61.72; ROE moving from 12.6% (twelve months to Sep 2026) to 11% / 14% / 17% over ten years; 30% payout; then excess returns grow at 4% / 5% / 6%. At the base 17.3% cost of equity, every ROE case below 17% is worth less than book."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 23.38,
+      "base": 36.91,
+      "bull": 54.84,
+      "weighted": 36.44,
+      "comment": "Dividend to March 2027 Rs 2.3 / 2.6 / 2.9 (Rs 1.33 already paid), growing 3% / 6% / 8% for five years, then the stable payout 1 − growth ÷ ROE (64% in the base case) on EPS Rs 7.5 / 8.9 / 9.6 grown at the same rates, long-run growth 4% / 5% / 6%. Growth is within the 6.4% supported by profit kept × ROE."
+    }
+  ],
+  "modelsNote": "Five methods are averaged in each scenario: whole-company DCF less minorities plus investments, P/E, justified price to book, residual income and the dividend model. Growth check: the calculator's supported growth (27.9%, from a 2025/26 reinvestment of 210% of after-tax operating profit) isn't a steady figure, so profit kept × ROE (63.8% × 10.1% = 6.4%) is the check; base 6% and bull 8% are within 2 points, bull backed by the Katunayake plant under construction. Maintenance capex: no company split; 2025/26 capex (Rs 7.78bn) was mostly growth, so base and bull use depreciation (Rs 3.09bn) and bear the calculator's middle (Rs 4.59bn). Ratio notes: the 6.6% cost of debt is below the usual range because much of the debt is in dollars, baht and euros (the report's capitalisation rate is 7.7%); the 32.4% tax rate of 2025/26 is above the 30% standard rate because of plantation losses and disallowed costs, and the April–September 2026 rate (21.8%) was lower. Base EPS (Rs 8.9) is 12% below the September quarter × 4 because that quarter's tax was only 18%. Dividends were more than cash after maintenance capex in 2025/26: flagged as at risk.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 0.88)",
+        "bear": "18.8%",
+        "base": "17.3%",
+        "bull": "15.8%"
+      },
+      {
+        "label": "WACC (debt weight 31%)",
+        "bear": "14.3%",
+        "base": "13.3%",
+        "bull": "12.2%"
+      },
+      {
+        "label": "After-tax operating profit, start",
+        "bear": "Rs 5.17bn",
+        "base": "Rs 5.17bn",
+        "bull": "Rs 5.17bn"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 4.59bn",
+        "base": "Rs 3.09bn",
+        "bull": "Rs 3.09bn"
+      },
+      {
+        "label": "Growth: five years, then long-term",
+        "bear": "3%, then 4%",
+        "base": "6%, then 5%",
+        "bull": "8%, then 6%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "11%",
+        "base": "13%",
+        "bull": "15%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 7.5",
+        "base": "Rs 8.9",
+        "bull": "Rs 9.6"
+      },
+      {
+        "label": "Dividend to March 2027",
+        "bear": "Rs 2.3",
+        "base": "Rs 2.6",
+        "bull": "Rs 2.9"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "11%",
+        "base": "14%",
+        "bull": "17%"
+      }
+    ],
+    "averages": {
+      "bear": 21.76,
+      "base": 40.69,
+      "bull": 62.66
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 0.88. Weights bear 30 / base 50 / bull 20. Net debt Rs 16.24bn, NAV Rs 61.72, minorities Rs 9.01bn and other financial assets Rs 3.35bn at 30 Sep 2026; 598.6mn shares."
+  },
+  "sensitivity": {
+    "title": "Residual income, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15.8%",
+      "17.3%",
+      "18.8%"
+    ],
+    "columns": [
+      "11%",
+      "14%",
+      "17%"
+    ],
+    "values": [
+      [
+        31.76,
+        45.65,
+        62.05
+      ],
+      [
+        26.93,
+        37.98,
+        50.99
+      ],
+      [
+        23.26,
+        32.21,
+        42.71
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Starting ROE 12.6%, growth 5%, payout 30%. Rs 59.70 needs a long-run ROE of about 19% at the base cost of equity, or about 16–17% at 15.8%."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 39.4
+      },
+      {
+        "shares": 150,
+        "maxPrice": 33.49
+      },
+      {
+        "shares": 150,
+        "maxPrice": 29.55
+      }
+    ],
+    "averagePrice": 34.67,
+    "totalCost": 17336,
+    "note": "About Rs 17,336 in total, against Rs 29,850 at Rs 59.70. The business is good enough to own (category 2), but not at today's price.",
+    "realism": "The buy price Rs 33.49 is 44% below Rs 59.70. The share hasn't traded that low since early 2024 (Rs 30.40 at March 2024); its lows were Rs 45.90 in April–June 2025, Rs 46.70 in 2025/26 and Rs 49.30 in April–September 2026. Reaching it would take a market fall or a glove downturn, so it is unlikely in the next year; the first tier (Rs 39.40) is also below anything seen since 2024."
+  },
+  "changeMyView": {
+    "higher": [
+      "Glove profit keeping its 40%+ growth into 2027 as the Katunayake plant starts, lifting ROE back above 15%.",
+      "Plantations recovering with better weather and tea and rubber prices.",
+      "Receivables and short-term loans coming back down, so cash after capex covers dividends again.",
+      "A lower cost of equity (a lower bond yield or country premium)."
+    ],
+    "lower": [
+      "Debt rising further to fund Katunayake and working capital (net debt already up Rs 4.6bn in six months).",
+      "Glove price competition from Malaysian, Thai and Chinese makers, or US tariffs on Sri Lankan and Thai goods.",
+      "Plantation wage increases without matching tea and rubber prices.",
+      "The low September-quarter tax rate not repeating."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. This is analysis, not personal financial advice."
+  },
+  "quality": {
+    "rating": "good",
+    "passed": 3,
+    "outOf": 4,
+    "reason": "Debt is moderate, profit has been positive every year and operating cash has matched profit over two years, but return on equity has been below 15% for three years.",
+    "assessed": "2026-11-25",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "12.6% (10–15% for three years)",
+        "note": "Company ROE 24.6% (2021/22), 24.1% (2022/23), 15.5%, 12.2% and 10.1% since (p. 570); twelve months to Sep 2026 12.6%. The five-year average (17.3%) is held up by the pandemic-era glove boom. Would pass if 2026/27 reaches about 15% (base EPS Rs 8.9 gives about 14%)."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": true,
+        "value": "0.44×",
+        "note": "30 Sep 2026: borrowings Rs 19.80bn + leases Rs 2.70bn − cash Rs 6.26bn = Rs 16.24bn against owners' equity Rs 36.95bn (0.35× total equity incl. minorities). 1.5× twelve-month EBITDA. Rising: Rs 11.64bn at March 2026, Rs 2.91bn at March 2025."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": true,
+        "value": "Yes",
+        "note": "Profit to shareholders Rs 5.38bn, 6.51bn, 4.47bn, 3.88bn, 3.52bn in 2021/22–2025/26: no loss and no large one-offs, though it fell three years in a row from the glove boom before recovering in 2026/27 (Rs 2.75bn in six months)."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": true,
+        "value": "1.1× over two years",
+        "note": "Operating cash flow (after interest and tax) Rs 6.72bn + Rs 3.81bn in 2024/25–2025/26 against profit Rs 5.03bn + Rs 4.62bn. Weaker lately: Rs 0.93bn in April–September 2026 against profit Rs 3.12bn, as receivables rose Rs 6.3bn, and free cash after capex was negative in 2025/26, so dividends were borrowed."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 0.88,
+    "betaBasis": "Provisional. Damodaran's global unlevered betas corrected for cash (January 2026; his emerging-markets file couldn't be opened): Rubber & Tires 0.78 for gloves and Farming/Agriculture 0.49 for plantations, weighted 63/37 by 2025/26 segment profit = 0.67, relevered at net debt ÷ market value 0.45 and 32.4% tax. No local 5-year beta found.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 18.8,
+      "base": 17.3,
+      "bull": 15.8
+    },
+    "costOfDebt": 6.56,
+    "wacc": {
+      "bear": 14.3,
+      "base": 13.3,
+      "bull": 12.2
+    },
+    "debtWeight": 31.2,
+    "asOf": "2026-11-25",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0%: market-based (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 0.972bn ÷ average borrowings and leases (Annual Report 2025/26, pp. 505, 547–549)",
+      "Beta: Damodaran global sector betas, January 2026 (web-search extracts)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.88 × (4.2% + 6.08%) = 17.3%; bear +1.5, bull −1.5 points. WACC weights equity 68.8% and after-tax debt (6.56% × (1 − 32.4%)) 31.2%, at Rs 59.70. The cost of debt is low for a rupee borrower because much of the group's debt is in dollars, baht and euros."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 18.8,
+      "base": 17.3,
+      "bull": 15.8
+    },
+    "wacc": {
+      "bear": 14.3,
+      "base": 13.3,
+      "bull": 12.2
+    },
+    "debtWeight": 31.2,
+    "shares": 598.615,
+    "netDebt": 16.242,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 3.947,
+        "nopat": 5.169,
+        "growth": 3,
+        "longRun": 4,
+        "roc": 11,
+        "maintenance": 4.589
+      },
+      "base": {
+        "start": 5.449,
+        "nopat": 5.169,
+        "growth": 6,
+        "longRun": 5,
+        "roc": 13,
+        "maintenance": 3.087
+      },
+      "bull": {
+        "start": 5.449,
+        "nopat": 5.169,
+        "growth": 8,
+        "longRun": 6,
+        "roc": 15,
+        "maintenance": 3.087
+      },
+      "addOn": {
+        "bear": -9.456,
+        "base": -9.456,
+        "bull": -9.456
+      },
+      "addOnNote": "Other non-current financial assets (fixed deposits, a Singer Finance subordinated trust, Martin Bauer Hayleys shares) at book, less the non-controlling interests' share of equity at book, both at 30 Sep 2026: Rs 3.353bn − Rs 9.013bn = −Rs 9.46 a share.",
+      "basis": {
+        "addOn": "valuationInputs: Investments less minorities (add-on)",
+        "roc": "valuationInputs: Return on new capital",
+        "growth": "valuationInputs: Growth",
+        "maintenance": "valuationInputs: Maintenance capex basis",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 7.5,
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 8.9,
+        "roe": 14,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 9.6,
+        "roe": 17,
+        "longRun": 6
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 2.3,
+        "eps": 7.5,
+        "growth": 3,
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "dividend": 2.6,
+        "eps": 8.9,
+        "growth": 6,
+        "roe": 14,
+        "longRun": 5
+      },
+      "bull": {
+        "dividend": 2.9,
+        "eps": 9.6,
+        "growth": 8,
+        "roe": 17,
+        "longRun": 6
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend to March 2027",
+        "eps": "valuationInputs: EPS to March 2027",
+        "growth": "valuationInputs: Growth",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 61.72,
+      "payout": 30,
+      "roeStart": 12.649,
+      "bear": {
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 17,
+        "longRun": 6
+      },
+      "basis": {
+        "payout": "valuationInputs: Payout",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pb": {
+      "book": 61.72,
+      "bear": {
+        "roe": 11,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 14,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 17,
+        "longRun": 6
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "ri.roeStart": "ttm.roe",
+      "dcf.bear.maintenance": {
+        "calc": "maintenance.base",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.base.maintenance": {
+        "calc": "maintenance.bull",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bull.maintenance": {
+        "calc": "maintenance.bull",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.bear.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.base.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bull.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bear.start": "ttm.operatingProfit * (1 - annual.taxRate / 100) + ttm.depreciationAmortisation - maintenance",
+      "dcf.base.start": "ttm.operatingProfit * (1 - annual.taxRate / 100) + ttm.depreciationAmortisation - maintenance",
+      "dcf.bull.start": "ttm.operatingProfit * (1 - annual.taxRate / 100) + ttm.depreciationAmortisation - maintenance",
+      "dcf.addOn.bear": {
+        "calc": "(latest.otherFinancialAssets - latest.nonControllingInterest) / latest.sharesOutstanding * 1000",
+        "basis": "valuationInputs: Investments less minorities (add-on)"
+      },
+      "dcf.addOn.base": {
+        "calc": "(latest.otherFinancialAssets - latest.nonControllingInterest) / latest.sharesOutstanding * 1000",
+        "basis": "valuationInputs: Investments less minorities (add-on)"
+      },
+      "dcf.addOn.bull": {
+        "calc": "(latest.otherFinancialAssets - latest.nonControllingInterest) / latest.sharesOutstanding * 1000",
+        "basis": "valuationInputs: Investments less minorities (add-on)"
+      }
+    }
+  },
+  "management": {
+    "asOf": "2026-11-25",
+    "source": "Annual Report 2025/26: joint statement of the Chairman and Managing Director (pp. 48–55), financial capital (pp. 233–236), manufactured capital (pp. 380–386), note 31 (p. 556); interims to 30 Jun and 30 Sep 2026.",
+    "takeaway": "Management is spending heavily to grow the glove business (a new Katunayake plant, automation, Thailand) and has delivered strong glove growth in 2026/27, but is funding it with debt while plantations weaken.",
+    "said": [
+      {
+        "text": "Group revenue rose 3% to Rs 82bn; gloves grew 10% to Rs 51bn on new products, markets and premium gloves",
+        "ref": "pp. 49, 233"
+      },
+      {
+        "text": "Plantations fell 6% to Rs 31bn on heavy rain and lower tea and rubber prices, with higher wages squeezing profit",
+        "ref": "pp. 49, 234"
+      },
+      {
+        "text": "Capex of Rs 7.8bn was one of the group's most significant investment programmes, mostly new lines, energy-efficient equipment and effluent treatment",
+        "ref": "p. 381"
+      },
+      {
+        "text": "Debt rose to Rs 17.6bn (debt to equity 0.40) to fund capacity, and Rs 5.0bn more went into working capital",
+        "ref": "p. 236"
+      },
+      {
+        "text": "Trade policy, raw material costs, climate and regulation (including EU deforestation rules) are the main risks ahead",
+        "ref": "pp. 51, 55"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Build a greenfield glove plant with two production lines at the Katunayake export zone",
+        "ref": "pp. 55, 385"
+      },
+      {
+        "text": "Move further into higher-value gloves: industrial, sports, electrical and mobility uses",
+        "ref": "pp. 51, 52"
+      },
+      {
+        "text": "Expand in Thailand through Hi-Care Thai Gloves (bought 2025), adding lightweight disposable gloves",
+        "ref": "p. 50"
+      },
+      {
+        "text": "More robotics, automation and AI in factories (BID-eX manufacturing system)",
+        "ref": "pp. 50, 55"
+      },
+      {
+        "text": "Improve plantation productivity and adapt to the climate",
+        "ref": "p. 49"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Capital expenditure in 2025/26 (gloves Rs 5.8bn, plantations Rs 2.0bn)",
+        "amount": "Rs 7.8bn in 2025/26",
+        "ref": "pp. 381, 556"
+      },
+      {
+        "text": "Capex already contracted but not yet provided for at March 2026",
+        "amount": "Rs 3.4bn (plus Rs 2.1bn approved, not contracted)",
+        "ref": "p. 556"
+      },
+      {
+        "text": "Katunayake greenfield plant (two lines, heater, effluent plant, new building); no cost given",
+        "amount": null,
+        "ref": "p. 385"
+      },
+      {
+        "text": "Climate-related capex (renewable energy, biomass, efficiency)",
+        "amount": "Rs 1,000mn target",
+        "ref": "p. 199"
+      },
+      {
+        "text": "Property, plant and moulds bought in April–September 2026",
+        "amount": "Rs 4.4bn in six months",
+        "ref": "Interim to 30 Sep 2026, p. 9"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Grow higher-value glove sales with new capacity",
+        "result": "Glove revenue up 22% and segment profit up 44% (Rs 3.27bn) in April–September 2026",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 10"
+      },
+      {
+        "promise": "Build the Katunayake greenfield plant",
+        "result": "Construction started in 2025/26; Rs 4.2bn of property and plant bought in the half. No start date given",
+        "status": "too-early",
+        "ref": "Annual Report p. 385; Interim to 30 Sep 2026, p. 9"
+      },
+      {
+        "promise": "Lift plantation productivity",
+        "result": "Plantation segment profit Rs 0.89bn in April–September 2026, down 17%, on revenue up 4%",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 10"
+      },
+      {
+        "promise": "Keep rewarding shareholders with dividends",
+        "result": "Rs 1.33 of interims for 2026/27 against Rs 0.86 a year earlier",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 11"
+      },
+      {
+        "promise": "Keep a prudent debt-to-equity ratio (0.40 at March 2026)",
+        "result": "Debt and leases Rs 22.5bn against equity Rs 46.0bn at Sep 2026, about 0.49, as short-term loans rose Rs 3.1bn",
+        "status": "on-track",
+        "ref": "Annual Report p. 236; Interim to 30 Sep 2026, p. 6"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, p. 11 (top 20, public holding, directors), against the top 20 at 30 June 2026 in the Interim to 30 Jun 2026.",
+    "takeaway": "Hayleys PLC controls the company with 42.12%, and 48.92% with its subsidiary Haycarb; no change in the quarter. Mr. R. C. D. De Silva sold 1.05mn shares (now 0.92%), and DFCC Bank's account and Seylan Bank / JN Lanka sold 2.45mn and 0.89mn; the number of public shareholders rose from 13,985 to 14,728.",
+    "groups": [
+      {
+        "name": "Hayleys PLC",
+        "pct": 42.12
+      },
+      {
+        "name": "Haycarb PLC (Hayleys)",
+        "pct": 6.8
+      },
+      {
+        "name": "Volanka (Private) Limited",
+        "pct": 8.14
+      },
+      {
+        "name": "Directors and others",
+        "pct": 2.04
+      },
+      {
+        "name": "Public",
+        "pct": 40.9
+      }
+    ],
+    "publicFloat": 40.9,
+    "publicHolders": 14728,
+    "publicHoldersPrev": 13985,
+    "directors": [
+      {
+        "name": "Mr. H.S.R. Kariyawasan (Deputy Chairman), joint holdings",
+        "shares": 4950710
+      },
+      {
+        "name": "Mr. R.H.P. Janadheera (Managing Director)",
+        "shares": 957302
+      },
+      {
+        "name": "Mr. N.A.R.R.S. Nanayakkara",
+        "shares": 350000
+      },
+      {
+        "name": "Mr. S.C. Ganegoda",
+        "shares": 280000
+      },
+      {
+        "name": "Mr. P.Y.S. Perera",
+        "shares": 5000
+      }
+    ],
+    "top": [
+      {
+        "name": "Hayleys PLC",
+        "shares": 252109380,
+        "pct": 42.12,
+        "change": 0
+      },
+      {
+        "name": "Volanka (Private) Limited",
+        "shares": 48736400,
+        "pct": 8.14,
+        "change": 0
+      },
+      {
+        "name": "Haycarb PLC",
+        "shares": 40687460,
+        "pct": 6.8,
+        "change": 0,
+        "note": "A Hayleys subsidiary"
+      },
+      {
+        "name": "Employee's Provident Fund",
+        "shares": 27551107,
+        "pct": 4.6,
+        "change": 0
+      },
+      {
+        "name": "Mr. D. P. Pieris",
+        "shares": 12500000,
+        "pct": 2.09,
+        "change": 0
+      },
+      {
+        "name": "Mr. R. P. Weerasooriya",
+        "shares": 6128462,
+        "pct": 1.02,
+        "change": 0
+      },
+      {
+        "name": "Ravi Industries Limited",
+        "shares": 5670000,
+        "pct": 0.95,
+        "change": 0
+      },
+      {
+        "name": "Mr. R. C. D. De Silva",
+        "shares": 5500000,
+        "pct": 0.92,
+        "change": -1054634
+      },
+      {
+        "name": "Mrs. T. T. A. De Silva Weerasooria",
+        "shares": 5124470,
+        "pct": 0.86,
+        "change": 0
+      },
+      {
+        "name": "Dr. Dilesh Jayanntha",
+        "shares": 5080000,
+        "pct": 0.85,
+        "change": 0
+      },
+      {
+        "name": "Employees Trust Fund Board",
+        "shares": 4598596,
+        "pct": 0.77,
+        "change": 50000
+      },
+      {
+        "name": "Mr.H.S.R. Kariyawasan & Mrs.K.H.S. Kariyawasan",
+        "shares": 4150850,
+        "pct": 0.69,
+        "change": 0,
+        "note": "Deputy Chairman Rajitha Kariyawasan, jointly"
+      },
+      {
+        "name": "Seylan Bank PLC / JN Lanka Holdings Company (Pvt) Ltd",
+        "shares": 3940925,
+        "pct": 0.66,
+        "change": -891552
+      },
+      {
+        "name": "Finco Holdings (Private) Limited",
+        "shares": 3848019,
+        "pct": 0.64,
+        "change": 0
+      },
+      {
+        "name": "Mr.H.A.R.Pieris",
+        "shares": 3600000,
+        "pct": 0.6,
+        "change": 200000
+      },
+      {
+        "name": "Mr. Nihal Samarasuriya",
+        "shares": 3175860,
+        "pct": 0.53,
+        "change": 0
+      },
+      {
+        "name": "Mr. Sivagurunathan Rameshan",
+        "shares": 2377480,
+        "pct": 0.4,
+        "change": 0
+      },
+      {
+        "name": "J B Cocoshell (Pvt) Ltd",
+        "shares": 2198989,
+        "pct": 0.37,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "DFCC Bank PLC A/C No .02",
+        "shares": 2040805,
+        "pct": 0.34,
+        "change": -2452330
+      },
+      {
+        "name": "Renuka Hotels PLC",
+        "shares": 2005636,
+        "pct": 0.34,
+        "change": 0
+      }
+    ],
+    "gone": [
+      {
+        "name": "Seylan Bank PLC / Mr. S. K. Wijekoon",
+        "prevShares": 1926019
+      }
+    ]
+  },
+  "fullText": "**Dipped Products PLC (DIPD.N0000): first analysis, 25 November 2026**\n\n**Summary.** A good glove maker, but the price is well above what it earns on its capital. Fair value is about **Rs 39.40**. The buy price is **Rs 33.49** and the strong buy **Rs 29.55**, against Rs 59.70 (last trade, 30 September 2026). 3 of the 4 business tests pass, so the category is **2: watch list**. The case for the share is that the glove business is growing fast again and new capacity is coming. The case against is that return on equity has been 10–15% for three years, below the 17.3% a shareholder should demand. Debt is also rising to pay for the expansion.\n\n**The business.** Hayleys PLC owns 42.12% and its subsidiary Haycarb another 6.80%. The group has two parts:\n- **Hand protection** (62% of 2025/26 revenue, 63% of segment profit). Household, industrial, medical, sports and disposable gloves from five plants in Sri Lanka and two in Thailand. About 99% is exported, with 56% of glove sales going to Europe and 16% to North America. Italian, French and Polish sales arms (ICOGUANTI, DPL France, Rozenbal) sell under the group's own brands.\n- **Plantations** (38% of revenue). Controlling stakes in Kelani Valley, Talawakelle and Horana Plantations: tea and rubber on about 65,000 acres. They also supply some of the latex the gloves need.\n\nMinorities own Rs 9.0bn of the group's Rs 46.0bn equity, mostly in the plantation companies, and took 24% of 2025/26 profit.\n\n**Results.**\n\n| | 2021/22 | 2022/23 | 2023/24 | 2024/25 | 2025/26 | Apr–Sep 2025 | Apr–Sep 2026 |\n|---|---|---|---|---|---|---|---|\n| Revenue, Rs bn | 55.3 | 80.1 | 73.9 | 79.3 | 82.0 | 43.5 | 50.4 |\n| Profit before tax, Rs bn | 7.60 | 11.22 | 7.57 | 6.84 | 6.83 | 3.25 | 3.99 |\n| Profit to shareholders, Rs bn | 5.38 | 6.51 | 4.47 | 3.88 | 3.52 | 1.80 | 2.75 |\n| EPS, Rs | 8.99 | 10.87 | 7.47 | 6.47 | 5.88 | 3.01 | 4.59 |\n| ROE (company) | 24.6% | 24.1% | 15.5% | 12.2% | 10.1% | | 12.6% (12 months) |\n| Dividend, Rs | 2.50 | 3.00 | 2.25 | 1.90 | 2.13 | 0.86 | 1.33 |\n\nProfit fell for three years after the pandemic glove boom, then turned up in 2026/27. In April–September 2026:\n- Glove revenue rose 22% to Rs 34.1bn and glove segment profit 44% to Rs 3.27bn. The new W3 plant at Hanwella (opened April 2025) and Hi-Care Thai Gloves (bought December 2024) added capacity.\n- Plantation revenue rose 4%, but segment profit fell 17% to Rs 0.89bn, on wages and weather.\n- Tax was only 21.8% of profit before tax (32.8% a year earlier), and only 18% in the September quarter. That flatters the half's 53% rise in profit to shareholders.\n\n**Balance sheet and cash.** Net debt was Rs 2.9bn in March 2025, Rs 11.6bn in March 2026 and **Rs 16.2bn** at 30 September 2026. That is 0.44× owners' equity and 1.5× twelve-month EBITDA. Three things drove it:\n- Capex: Rs 7.8bn in 2025/26 (gloves Rs 5.8bn, plantations Rs 2.0bn) and Rs 4.4bn in the half, against depreciation of about Rs 3.1bn a year. Another Rs 3.4bn is contracted and Rs 2.1bn approved.\n- Working capital: Rs 5.0bn in 2025/26 and Rs 3.4bn in the half, mostly customers paying later. Receivables reached Rs 22.6bn.\n- Dividends: Rs 1.68bn in 2025/26 including minorities, more than operating cash after depreciation-level upkeep (Rs 0.73bn). So the dividend was in effect borrowed. It is flagged as at risk until working capital stops growing.\n\nShort-term loans and overdrafts are Rs 12.65bn of the Rs 19.8bn borrowed. Interest costs rose 56% in the half to Rs 0.94bn. The group also holds Rs 3.35bn of other financial assets (fixed deposits, a Singer Finance subordinated trust and Martin Bauer Hayleys shares).\n\n**Required return.** The beta is 0.88. Damodaran's global unlevered betas for rubber products (0.78) and farming (0.49) are weighted 63/37 by segment profit, then relevered for DPL's debt. The figure is provisional, because his emerging-markets file couldn't be opened and no local 5-year beta was found. Cost of equity is 8.24% + 0.88 × (4.2% + 6.08%) = **17.3%** (bear 18.8%, bull 15.8%). Debt costs only 6.6% before tax, because much of it is in dollars, baht and euros. Debt is 31% of the company's value, so WACC is 13.3% (14.3% / 12.2%).\n\n**Methods (Rs a share).**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| DCF less minorities plus investments | −0.19 | 36.88 | 63.30 | 31.04 |\n| P/E | 32.25 | 46.52 | 63.39 | 45.61 |\n| Justified P/B | 29.19 | 45.16 | 69.28 | 45.19 |\n| Residual income | 24.18 | 37.98 | 62.49 | 38.74 |\n| Dividend model | 23.38 | 36.91 | 54.84 | 36.44 |\n| Average | 21.76 | 40.69 | 62.66 | **39.40** |\n\n- **DCF**: the whole group is valued, then net debt (Rs 16.24bn) and the minorities' book value (Rs 9.01bn) come off, and the other financial assets (Rs 3.35bn) are added.\n  - Inputs: after-tax operating profit Rs 5.17bn (twelve-month segment profit Rs 7.64bn at 32.4% tax); growth 3% / 6% / 8% for five years, then 4% / 5% / 6%; return on new capital 11% / 13% / 15%.\n  - In the bear case new capital earns less than WACC and upkeep is costlier, so the equity is worth about nothing.\n  - 71% of the base value and 80% of the bull value come after year 5.\n- **P/E**: EPS to March 2027 of Rs 7.5 / 8.9 / 9.6 (Rs 4.59 already earned), at justified P/Es of 4.3 / 5.2 / 6.6. The September quarter × 4 gives Rs 10.12. The base is 12% below that because the quarter's tax rate (18%) is unlikely to last: at 30% the quarter is about Rs 2.17, × 4 = Rs 8.7.\n- **P/B and residual income**: book Rs 61.72, with ROE settling at 11% / 14% / 17% from today's 12.6%. The justified P/B is 0.47 / 0.73 / 1.12 against 0.97 today. Rs 59.70 needs a long-run ROE of about 19%.\n- **Dividends**: Rs 2.3 / 2.6 / 2.9 for 2026/27 (Rs 1.33 already paid), then the stable payout.\n- **Growth check**: profit kept × ROE (63.8% × 10.1%) supports 6.4% a year. Base (6%) and bull (8%) are within 2 points; the bull case is backed by the Katunayake plant under construction. The calculator's capex-based figure (27.9%) comes from one exceptional year of reinvestment (210% of after-tax operating profit) and isn't used.\n- **Maintenance capex**: the company gives no split. 2025/26 capex (Rs 7.78bn) was 2.5× depreciation, and the report describes it as expansion: the Katunayake greenfield plant, W3 at Hanwella and capacity at Kottawa and Hanwella Rubber. So it is mostly growth, to be judged on its return. Base and bull use depreciation (Rs 3.09bn) as upkeep; the bear case uses Rs 4.59bn.\n- **NAV** (Rs 61.72) is shown as a reading only. It includes plantation land and bearer plants, which earn little on their book value.\n\n**Business tests (3 of 4).**\n- Debt: pass (0.44×), but rising fast.\n- Steady profit: pass. There was no loss in five years and no large one-offs, though profit fell three years running from the boom.\n- Cash: pass. Operating cash matched profit 1.1× over 2024/25–2025/26, though it was weak in the latest half (Rs 0.93bn against Rs 3.12bn profit), and free cash after capex was negative.\n- Returns: fail. ROE was 15.5%, 12.2% and 10.1% in the last three years and 12.6% over the latest twelve months.\n\n**Buy plan (500 shares).** Buy 200 at up to Rs 39.40, 150 at up to Rs 33.49 and 150 at up to Rs 29.55: about Rs 17,336, an average of Rs 34.67. The share hasn't been below Rs 45 since early 2024 (Rs 30.40 at March 2024). Its 2026/27 range so far is Rs 49.30–62.40, so the buy price is unlikely to be reached without a market fall or a glove downturn.\n\n**Management.** Management's message is growth in higher-value gloves: Katunayake, Thailand, automation and new products. The glove numbers so far back it up. What is less convincing is the funding. Debt to equity rose from 0.40 to about 0.49 in six months, and the report gives no cost or completion date for the Katunayake plant. Plantations remain the weak side.\n\n**What would change the view.** Higher: glove profit growth continuing into 2027 so ROE gets back above 15%; plantations recovering; receivables and short-term debt coming down; a lower cost of equity. Lower: more debt; glove price competition or US tariffs; plantation wage rises; the low tax rate not lasting.\n\n**Uncertain.**\n- The price is the 30 September 2026 last trade, because the CSE site couldn't be reached from this run and the share isn't yet in the site's price file. The site's daily close will replace it.\n- The beta is a global stand-in.\n- The report names its growth projects but not their cost, so maintenance capex is a judgement.\n- Depreciation here leaves out the moulds (formers), whose wear is already charged in operating profit.\n"
+}
