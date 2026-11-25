@@ -28,7 +28,12 @@ def broker_message(day):
             index[sc.get("symbol")] = d
     lines = [f"📋 <b>Broker summary, {html.escape(day['date'])}</b>" + (f" ({html.escape(day['source'])})" if day.get("source") else "")]
     for h in (day.get("highlights") or [])[:4]:
-        lines.append(f"• {html.escape(h)}")
+        if isinstance(h, dict):   # {icon, tone, title, figure, text} (docs/broker-format.md)
+            head = " ".join(x for x in (h.get("icon"), h.get("title")) if x)
+            fig = f" ({h['figure']})" if h.get("figure") else ""
+            lines.append(f"• <b>{html.escape(head + fig)}</b>: {html.escape(h.get('text') or '')}")
+        else:
+            lines.append(f"• {html.escape(str(h))}")
     own = [c for c in day.get("calls") or [] if c.get("code") in index]
     if own:
         lines.append("\n<b>Your companies</b> (broker call vs my fair value)")
