@@ -1,0 +1,1154 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-26",
+  "source": "HNB Stockbrokers",
+  "posts": 6,
+  "messageIds": [
+    435,
+    436,
+    437,
+    438,
+    439,
+    440
+  ],
+  "commands": [
+    441
+  ],
+  "callsPriceDate": null,
+  "note": "No recommendation table was posted today, so there are no broker calls apart from the Hemas research note. Foreign buying/selling by share is read off a chart without figures (≈). Heat-map tiles too small to show a percentage are left out. World index moves are from a Bloomberg screen captured at 09:10 Sri Lanka time on 26 Nov (Asian markets intraday then). Two global-news reference links (Reuters stories behind tinyurl) couldn't be downloaded (HTTP 401); the post's own text was used. The rate-hike thread on X (post 438) wasn't read, as social-media links aren't collected; only the post's own text is summarised.",
+  "highlights": [
+    {
+      "icon": "🧴",
+      "tone": "warn",
+      "title": "Hemas: broker Buy vs site fair value",
+      "figure": "Target Rs 39 vs fair value Rs 15.90",
+      "text": "HNB Stockbrokers kept Hemas Holdings (HHL.N0000) at Buy with a Rs 39.00 target (price Rs 31.80) after a September quarter with revenue +17.0% but profit to shareholders −3.0%. This site's fair value is Rs 15.90 (buy below Rs 13.52), so the broker sees more than twice the value this site does: a big disagreement."
+    },
+    {
+      "icon": "🛡️",
+      "tone": "up",
+      "title": "Janashakthi Insurance Rs 7.95 interim",
+      "figure": "Rs 7.95 a share",
+      "text": "Janashakthi Insurance (JINS.N0000) declared an interim dividend of Rs 7.95 (XD 4 Dec, paid 24 Dec), a 29.2% trailing yield on Rs 38.70; the share jumped 24.55% on 26 Nov. The site's analysis (21 Nov) noted no 2026 dividend yet and puts fair value at Rs 16.06, far below the price."
+    },
+    {
+      "icon": "📉",
+      "tone": "down",
+      "title": "Market slips, foreigners buy",
+      "figure": "ASPI −0.33%",
+      "text": "The ASPI fell 70.93 points (−0.33%) to 21,244.91 and the S&P SL20 0.21% to 6,050.18 on Rs 2.65bn turnover. Foreigners were net buyers of Rs 34.29M (bought Rs 105M, sold Rs 71M), led by HDFC and PKME; Dialog and CIC took most of the selling."
+    },
+    {
+      "icon": "🏦",
+      "tone": "info",
+      "title": "Rate hike likely the peak",
+      "figure": "OPR 9.00%",
+      "text": "HNB Stockbrokers Research says the CBSL's 20 Nov move (OPR +25bps to 9.00%, SRR to 3%) has made banks cut back lending while loan demand keeps rising, and expects 9.00% to be the peak with gradual cuts possible next year."
+    },
+    {
+      "icon": "🚢",
+      "tone": "up",
+      "title": "Record exports; spared new US tariffs",
+      "figure": "$15.28bn",
+      "text": "Exports reached a record $15.28bn in January–October (+6.03%), with October the best month on record at over $1.62bn. Sri Lanka was left out of the new US tariffs of 20–40% on 14 economies including China, India, the EU, Vietnam and Bangladesh."
+    }
+  ],
+  "research": [
+    {
+      "code": "HHL.N0000",
+      "company": "Hemas Holdings",
+      "report": "HHL.N 2QFY27 earnings summary (HNB Stockbrokers, Capital Goods)",
+      "date": "2026-11-26",
+      "rating": "Buy",
+      "prevRating": "Buy",
+      "target": 39.0,
+      "price": 31.8,
+      "priceDate": "2026-11-23",
+      "keyPoints": [
+        "September quarter revenue Rs 37.8bn (+17.0% Y/Y, +31.4% Q/Q): Consumer Brands +18.3% to Rs 15.6bn (Twiga, bought in August, added Rs 1.8bn; +4.8% without it), Life Sciences +16.2% to Rs 18.4bn, Hospitals +19.3% to Rs 3.2bn (admissions +4.4%, occupancy 73% YTD).",
+        "Gross margin fell 315bps to 29.7% as input costs and a weaker rupee were only partly passed on; Consumer Brands absorbed most of it to protect volumes, and regulated drug prices awaited the NMRA revision.",
+        "Operating costs grew only 6.4%, so EBIT rose 6.8% to Rs 3.8bn (margin 10.1%, down c.100bps); net finance cost rose more than fourfold to Rs 249mn on borrowing for pharma channel stock.",
+        "A higher dividend tax lifted the tax rate to 39.8% (37.2%), so profit to shareholders fell 3.0% to Rs 2.0bn (EPS Rs 0.67).",
+        "Working capital rose to 23.9% of trailing revenue (16.0% a year ago) and, with the Rs 5.5bn Twiga deal, HHL moved to Rs 11.9bn net debt from Rs 10.3bn net cash in March. Buy and Rs 39.00 target kept, short-term outlook Neutral."
+      ],
+      "forecasts": [
+        "Stronger 3Q FY27 expected: Sri Lankan school season plus Twiga's first full quarter during Kenya's school season",
+        "Life Sciences to use the NMRA interim relief first to recover past exchange losses of c.7% rather than raise prices further",
+        "Consumer Brands margins to recover partly but stay below FY26 because of Twiga's lower margins"
+      ],
+      "risks": [
+        "High channel and distributor stock may sell slowly, delaying the working-capital unwind and keeping borrowing high",
+        "High oil prices could prolong Consumer Brands' margin pressure",
+        "A court ruling for the NMRA could reinstate the pricing formula and limit Life Sciences' price recovery"
+      ],
+      "catalysts": [
+        "Atlas and Twiga school seasons running together should drive a strong 3Q FY27",
+        "Interim NMRA pricing relief should support Life Sciences' margins as past exchange losses are recovered",
+        "Proposed VAT removal on exercise books and a higher income-tax-free threshold should help Learning volumes and consumer demand"
+      ],
+      "post": 439,
+      "exhibits": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "details": [
+        {
+          "title": "Charts and tables",
+          "pages": "1–2",
+          "points": [
+            "Market cap Rs 95.9bn; 2,996mn shares; 52-week range Rs 27.60–36.70; beta 0.9, Sharpe ratio 0.2. Analyst: Sarah Rafaideen.",
+            "Technicals: pulled back from a late-October high to just above the 200-day EMA; the 50-day EMA is converging on the 200-day (turning bullish) but a bearish MACD crossover points to fading momentum, on thin volumes. Holding above the 200-day EMA is needed to keep the uptrend."
+          ],
+          "tables": [
+            {
+              "title": "P/E vs historical average (Exhibit 1, p. 1)",
+              "text": "Trailing P/E ≈11x now, below its 10-year average of ≈14x; it peaked at ≈30x in 2019 and dipped to ≈5x in 2021.",
+              "approx": true
+            },
+            {
+              "title": "ROE vs historical average (Exhibit 2, p. 1)",
+              "text": "ROE ≈16% now, above its 10-year average of ≈12.5%; it fell to ≈5% around 2019–2020 and has been rising since 2022.",
+              "approx": true
+            },
+            {
+              "title": "TTM EPS, Rs (Exhibit 3, p. 1)",
+              "head": [
+                "Quarter",
+                "TTM EPS"
+              ],
+              "rows": [
+                [
+                  "Q4 FY24",
+                  "≈2.05"
+                ],
+                [
+                  "Q1 FY25",
+                  "≈1.98"
+                ],
+                [
+                  "Q2 FY25",
+                  "≈2.08"
+                ],
+                [
+                  "Q3 FY25",
+                  "≈2.38"
+                ],
+                [
+                  "Q4 FY25",
+                  "≈2.00"
+                ],
+                [
+                  "Q1 FY26",
+                  "≈2.08"
+                ],
+                [
+                  "Q2 FY26",
+                  "≈2.30"
+                ],
+                [
+                  "Q3 FY26",
+                  "≈2.15"
+                ],
+                [
+                  "Q4 FY26",
+                  "≈2.97"
+                ],
+                [
+                  "Q1 FY27",
+                  "≈2.90"
+                ],
+                [
+                  "Q2 FY27",
+                  "≈2.88"
+                ]
+              ],
+              "plot": {
+                "kind": "vbar"
+              },
+              "approx": true
+            },
+            {
+              "title": "Summarised income statement, Rs mn (Exhibit 4, p. 2)",
+              "head": [
+                "Item",
+                "2Q FY27",
+                "2Q FY26",
+                "Y/Y",
+                "1Q FY27",
+                "Q/Q"
+              ],
+              "rows": [
+                [
+                  "Net revenue",
+                  "37,792",
+                  "32,287",
+                  "17.0%",
+                  "28,771",
+                  "31.4%"
+                ],
+                [
+                  "COGS",
+                  "(26,575)",
+                  "(21,687)",
+                  "22.5%",
+                  "(20,018)",
+                  "32.8%"
+                ],
+                [
+                  "Gross profit",
+                  "11,217",
+                  "10,600",
+                  "5.8%",
+                  "8,754",
+                  "28.1%"
+                ],
+                [
+                  "Net operating expenses",
+                  "(7,398)",
+                  "(7,024)",
+                  "5.3%",
+                  "(6,921)",
+                  "6.9%"
+                ],
+                [
+                  "EBIT",
+                  "3,819",
+                  "3,576",
+                  "6.8%",
+                  "1,833",
+                  "108.4%"
+                ],
+                [
+                  "Net finance income/(cost)",
+                  "(249)",
+                  "(56)",
+                  "347.8%",
+                  "(106)",
+                  "135.5%"
+                ],
+                [
+                  "Recurring PBT",
+                  "3,528",
+                  "3,440",
+                  "2.6%",
+                  "1,522",
+                  "131.8%"
+                ],
+                [
+                  "Tax",
+                  "(1,405)",
+                  "(1,279)",
+                  "9.8%",
+                  "(464)",
+                  "203.1%"
+                ],
+                [
+                  "PAT",
+                  "2,123",
+                  "2,160",
+                  "(1.7%)",
+                  "1,058",
+                  "100.6%"
+                ],
+                [
+                  "Minority interest",
+                  "123",
+                  "100",
+                  "23.4%",
+                  "121",
+                  "1.7%"
+                ],
+                [
+                  "Earnings to shareholders",
+                  "2,000",
+                  "2,061",
+                  "(3.0%)",
+                  "937",
+                  "113.4%"
+                ],
+                [
+                  "EPS (Rs)",
+                  "0.67",
+                  "0.69",
+                  "(2.9%)",
+                  "0.31",
+                  "116.1%"
+                ]
+              ],
+              "plot": {
+                "kind": "none"
+              }
+            },
+            {
+              "title": "Technical chart (Exhibit 5, p. 2)",
+              "text": "Price chart with 50- and 200-day EMAs, MACD and volume; too small to read figures. The text's reading is in the points above.",
+              "approx": true
+            },
+            {
+              "title": "ASPI vs HHL.N, indexed (Exhibit 6, p. 2)",
+              "text": "From 100 in Nov 2016, the ASPI is at ≈320 and HHL at ≈170: Hemas has lagged the market since 2021.",
+              "approx": true
+            }
+          ]
+        },
+        {
+          "title": "Checks on the report",
+          "pages": "1–2",
+          "points": [
+            "Exhibit 4 adds up: gross profit, EBIT, PAT (3,528 − 1,405 = 2,123) and earnings to shareholders (2,123 − 123 = 2,000); tax rate 1,405 ÷ 3,528 = 39.8%; gross margin 29.7% vs 32.8% (−315bps).",
+            "Recurring PBT is not EBIT less net finance cost (3,819 − 249 = 3,570 vs 3,528; also off a year ago and in 1Q): items between them aren't shown.",
+            "The text says S&D and admin costs grew 6.4%, while net operating expenses in Exhibit 4 grew 5.3% (probably different lines).",
+            "Market cap Rs 95.9bn ÷ 2,996mn shares = Rs 32.01, slightly above the Rs 31.80 price; the report is dated 26 Nov but its data are as of 23 Nov. The sector label says Capital Goods."
+          ]
+        }
+      ],
+      "glance": [
+        "Revenue +17% but profit to shareholders −3% on margin squeeze, higher finance cost and tax",
+        "Rs 11.9bn net debt after Twiga and pharma stock build; 2H unwind is key",
+        "Buy, target Rs 39.00 kept; outlook Neutral"
+      ]
+    }
+  ],
+  "market": {
+    "aspi": 21244.91,
+    "aspiChangePct": -0.33,
+    "aspiPoints": -70.93,
+    "sp20": 6050.18,
+    "sp20ChangePct": -0.21,
+    "turnoverBn": 2.65,
+    "marketPE": 10.96,
+    "marketPBV": 1.27,
+    "marketCapTn": 7.68,
+    "foreignBuyMn": 105,
+    "foreignSellMn": 71,
+    "foreignNetMn": 34.29,
+    "foreignFlows": [
+      {
+        "code": "HDFC.N0000",
+        "mn": 50,
+        "approx": true
+      },
+      {
+        "code": "PKME.N0000",
+        "mn": 37,
+        "approx": true
+      },
+      {
+        "code": "HAYL.N0000",
+        "mn": 11,
+        "approx": true
+      },
+      {
+        "code": "DIST.N0000",
+        "mn": 2,
+        "approx": true
+      },
+      {
+        "code": "BIL.N0000",
+        "mn": 1,
+        "approx": true
+      },
+      {
+        "code": "SAMP.N0000",
+        "mn": -2,
+        "approx": true
+      },
+      {
+        "code": "MELS.N0000",
+        "mn": -3,
+        "approx": true
+      },
+      {
+        "code": "JFP.N0000",
+        "mn": -4,
+        "approx": true
+      },
+      {
+        "code": "CIC.N0000",
+        "mn": -28,
+        "approx": true
+      },
+      {
+        "code": "DIAL.N0000",
+        "mn": -33,
+        "approx": true
+      }
+    ],
+    "momentum": [
+      {
+        "code": "SING.N0000",
+        "pct": 109.7
+      },
+      {
+        "code": "JINS.N0000",
+        "pct": 15.9
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 12.0
+      },
+      {
+        "code": "PARA.N0000",
+        "pct": 11.7
+      },
+      {
+        "code": "PKME.N0000",
+        "pct": 11.5
+      },
+      {
+        "code": "CFLB.N0000",
+        "pct": 8.7
+      },
+      {
+        "code": "RWSL.N0000",
+        "pct": 7.8
+      },
+      {
+        "code": "TESS.X0000",
+        "pct": 7.1
+      },
+      {
+        "code": "GHLL.N0000",
+        "pct": 6.8
+      },
+      {
+        "code": "BRR.N0000",
+        "pct": 6.1
+      }
+    ],
+    "other": [
+      {
+        "label": "S&P SL20 points change",
+        "value": -12.65,
+        "unit": "points"
+      },
+      {
+        "label": "Turnover change",
+        "value": 0.83,
+        "unit": "% (as shown)"
+      },
+      {
+        "label": "Market cap change",
+        "value": 0.0,
+        "unit": "%"
+      },
+      {
+        "label": "Turnover to market cap",
+        "value": 0.03,
+        "unit": "%"
+      },
+      {
+        "label": "Net foreign flow in dollars",
+        "value": 103.15,
+        "unit": "$ thousand"
+      },
+      {
+        "label": "Market dividend yield",
+        "value": 3.1,
+        "unit": "% (3.10 before)"
+      },
+      {
+        "label": "Market P/E, previous",
+        "value": 10.99,
+        "unit": "x"
+      },
+      {
+        "label": "Market P/BV, previous",
+        "value": 1.27,
+        "unit": "x"
+      },
+      {
+        "label": "Other shares, foreign (≈)",
+        "value": "≈ +2 bought / ≈ −1 sold",
+        "unit": "Rs mn"
+      }
+    ],
+    "heatmap": [
+      {
+        "code": "CTC",
+        "pct": 0.03
+      },
+      {
+        "code": "LION",
+        "pct": -0.05
+      },
+      {
+        "code": "CARS",
+        "pct": -0.63
+      },
+      {
+        "code": "CCS",
+        "pct": 0.2
+      },
+      {
+        "code": "DIST",
+        "pct": -1.19
+      },
+      {
+        "code": "BUKI",
+        "pct": 0
+      },
+      {
+        "code": "BREW",
+        "pct": 0
+      },
+      {
+        "code": "WATA",
+        "pct": 0.45
+      },
+      {
+        "code": "LAMB",
+        "pct": 0
+      },
+      {
+        "code": "BIL",
+        "pct": 0
+      },
+      {
+        "code": "LMF",
+        "pct": -1.16
+      },
+      {
+        "code": "NAMU",
+        "pct": -2.4
+      },
+      {
+        "code": "TAFL",
+        "pct": -1.36
+      },
+      {
+        "code": "MAL",
+        "pct": 0.76
+      },
+      {
+        "code": "CTEA",
+        "pct": 0
+      },
+      {
+        "code": "MELS",
+        "pct": 0.26
+      },
+      {
+        "code": "SUN",
+        "pct": -0.66
+      },
+      {
+        "code": "GRAN",
+        "pct": 0.11
+      },
+      {
+        "code": "COMB",
+        "pct": -0.47
+      },
+      {
+        "code": "HNB",
+        "pct": 0.19
+      },
+      {
+        "code": "SAMP",
+        "pct": 0.17
+      },
+      {
+        "code": "NTB",
+        "pct": 0.16
+      },
+      {
+        "code": "NDB",
+        "pct": 0.45
+      },
+      {
+        "code": "SEYB",
+        "pct": -0.51
+      },
+      {
+        "code": "DFCC",
+        "pct": 0.38
+      },
+      {
+        "code": "PABC",
+        "pct": -1.3
+      },
+      {
+        "code": "HNB.X",
+        "pct": -0.65
+      },
+      {
+        "code": "SEYB.X",
+        "pct": -2.02
+      },
+      {
+        "code": "CBNK",
+        "pct": 0
+      },
+      {
+        "code": "DIAL",
+        "pct": 0.21
+      },
+      {
+        "code": "SLTL",
+        "pct": -0.22
+      },
+      {
+        "code": "HAYC",
+        "pct": -1.02
+      },
+      {
+        "code": "GLAS",
+        "pct": -1.45
+      },
+      {
+        "code": "LLUB",
+        "pct": -0.85
+      },
+      {
+        "code": "DIPD",
+        "pct": 0.29
+      },
+      {
+        "code": "CIC",
+        "pct": -0.36
+      },
+      {
+        "code": "TKYO",
+        "pct": -1.33
+      },
+      {
+        "code": "CARG",
+        "pct": 0
+      },
+      {
+        "code": "CTHR",
+        "pct": 0
+      },
+      {
+        "code": "SINS",
+        "pct": -1.06
+      },
+      {
+        "code": "OSEA",
+        "pct": -0.78
+      },
+      {
+        "code": "JKH",
+        "pct": 0
+      },
+      {
+        "code": "HHL",
+        "pct": 0
+      },
+      {
+        "code": "HAYL",
+        "pct": -0.44
+      },
+      {
+        "code": "VONE",
+        "pct": -0.89
+      },
+      {
+        "code": "ACL",
+        "pct": -1.61
+      },
+      {
+        "code": "SPEN",
+        "pct": 0.33
+      },
+      {
+        "code": "RICH",
+        "pct": -1.85
+      },
+      {
+        "code": "AEL",
+        "pct": -2.25
+      },
+      {
+        "code": "RCL",
+        "pct": -0.67
+      },
+      {
+        "code": "DOCK",
+        "pct": -1.44
+      },
+      {
+        "code": "BRWN",
+        "pct": -0.43
+      },
+      {
+        "code": "KCAB",
+        "pct": -3.07
+      },
+      {
+        "code": "CFLB",
+        "pct": 0
+      },
+      {
+        "code": "LOLC",
+        "pct": -0.97
+      },
+      {
+        "code": "LOFC",
+        "pct": -2.08
+      },
+      {
+        "code": "LFIN",
+        "pct": -0.49
+      },
+      {
+        "code": "CFIN",
+        "pct": -1.15
+      },
+      {
+        "code": "PLC",
+        "pct": -2.78
+      },
+      {
+        "code": "COCR",
+        "pct": -0.94
+      },
+      {
+        "code": "SFCL",
+        "pct": -1.17
+      },
+      {
+        "code": "CALH",
+        "pct": 0
+      },
+      {
+        "code": "JXG",
+        "pct": 6.32
+      },
+      {
+        "code": "VFIN",
+        "pct": -0.95
+      },
+      {
+        "code": "CDB",
+        "pct": -0.59
+      },
+      {
+        "code": "CFVF",
+        "pct": 5.61
+      },
+      {
+        "code": "GUAR",
+        "pct": -1.28
+      },
+      {
+        "code": "WLTH",
+        "pct": -0.93
+      },
+      {
+        "code": "SFIN",
+        "pct": -0.23
+      },
+      {
+        "code": "CINS",
+        "pct": 0
+      },
+      {
+        "code": "JINS",
+        "pct": 24.55
+      },
+      {
+        "code": "UAL",
+        "pct": 0.15
+      },
+      {
+        "code": "GREG",
+        "pct": -0.58
+      },
+      {
+        "code": "TAP",
+        "pct": 0.36
+      },
+      {
+        "code": "TJL",
+        "pct": 3.03
+      },
+      {
+        "code": "PKME",
+        "pct": 1.34
+      },
+      {
+        "code": "AHUN",
+        "pct": 0.61
+      },
+      {
+        "code": "KHL",
+        "pct": 0.62
+      },
+      {
+        "code": "HUNA",
+        "pct": 1.32
+      },
+      {
+        "code": "PALM",
+        "pct": 0
+      },
+      {
+        "code": "ASIR",
+        "pct": 0
+      },
+      {
+        "code": "LIOC",
+        "pct": 0.59
+      }
+    ],
+    "world": [
+      {
+        "name": "Dow Jones",
+        "pct": 0.33,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "S&P 500",
+        "pct": -0.25,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "S&P/TSX",
+        "pct": 0.64,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Ibovespa",
+        "pct": 1.58,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Euro Stoxx 50",
+        "pct": -1.82,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "FTSE 100",
+        "pct": -0.38,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "CAC 40",
+        "pct": -0.75,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "DAX",
+        "pct": -1.26,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Nikkei",
+        "pct": 1.54,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Hang Seng",
+        "pct": 2.06,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "CSI 300",
+        "pct": 0.02,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "S&P/ASX 200",
+        "pct": 0.91,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Kospi",
+        "pct": 1.19,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Nifty",
+        "pct": 1.85,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "TAIEX",
+        "pct": 2.13,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "Jakarta Comp",
+        "pct": 0.73,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "FTSE/BM KLCI",
+        "pct": 1.44,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "FTSE/ST",
+        "pct": 0.96,
+        "asOf": "26 Nov 09:10 SL"
+      },
+      {
+        "name": "BBG World L/M",
+        "pct": 0.24,
+        "asOf": "26 Nov 09:10 SL"
+      }
+    ]
+  },
+  "calls": [],
+  "dividends": [
+    {
+      "code": "JINS.N0000",
+      "name": "Janashakthi Insurance",
+      "dps": 7.95,
+      "type": "Interim",
+      "price": 38.7,
+      "yieldPct": 29.2,
+      "xd": "2026-12-04",
+      "pay": "2026-12-24"
+    }
+  ],
+  "news": [
+    {
+      "title": "Sri Lanka left out of new US tariffs",
+      "text": "The White House announced tariffs of 20% to 40% on 14 economies after trade-practice investigations, including China (up to 40%), Vietnam (up to 35%), India, the EU and Bangladesh; Sri Lanka isn't among them. Caps agreed by the US lower the effective rate for some.",
+      "topic": "Trade",
+      "figure": "20%–40%"
+    },
+    {
+      "title": "Record exports in 10 months",
+      "text": "Exports reached $15.28bn in January–October, up 6.03%: goods +5.72% to $12.01bn and services +7.2% to $3.26bn. October was the best month on record at over $1.62bn. The EDB now expects about 6.5% growth for the year, below its 8–10% target, because of Middle East-related costs.",
+      "topic": "Exports",
+      "figure": "$15.28bn"
+    },
+    {
+      "title": "SriLankan Airlines adds fuel surcharge",
+      "text": "After a $35mn loss in the first half as jet fuel rose from $2.10 to $4.40–4.50 a gallon, the national carrier added a fuel surcharge and aims to break even by March. It took no fuel subsidy.",
+      "topic": "Aviation",
+      "figure": "$35mn"
+    },
+    {
+      "title": "Port of Colombo targets value addition",
+      "text": "The deputy minister wants each container to add $2,000–3,000 to the economy instead of $50–100 from transhipment, by drawing 5–10% of the 9 million containers into local value-added work; a Cabinet paper on a Colombo Port Logistics Hub is due within a week or two.",
+      "topic": "Shipping",
+      "figure": "$2,000–3,000"
+    },
+    {
+      "title": "President wants land released faster",
+      "text": "The President said tax breaks alone won't attract investors while getting land takes about 18 months; a committee discussed putting State land under the BOI or a land bank.",
+      "topic": "Policy",
+      "figure": "18 months"
+    },
+    {
+      "title": "National battery testing centre opens",
+      "text": "A Rs 161.5mn Centre for E-Mobility and Battery Technology opened at NERDC to test modern batteries and EV charging equipment: Rs 118mn from the government's quality-infrastructure project and Rs 43.5mn from NERDC.",
+      "topic": "Energy",
+      "figure": "Rs 161.5mn"
+    },
+    {
+      "title": "Sri Lanka seeks RCEP through ASEAN",
+      "text": "The ambassador to Indonesia repeated Sri Lanka's aim to join the RCEP trade pact via ASEAN sectoral dialogue partnership; Sri Lankan firms have invested over $1.3bn in Indonesia against little Indonesian investment here.",
+      "topic": "Trade",
+      "figure": "$1.3bn"
+    },
+    {
+      "title": "Rate hike reaches banks, not borrowers",
+      "text": "HNB Stockbrokers Research: after the CBSL raised the OPR by 25bps to 9.00% and the SRR to 3% on 20 Nov, banks have cut back lending but loan demand is still rising. It sees 9.00% as likely the peak, with gradual cuts possible next year.",
+      "topic": "Banking",
+      "figure": "9.00%"
+    },
+    {
+      "title": "New US tariffs on 14 trading partners",
+      "text": "President Trump announced tariffs over excess industrial capacity on 14 partners including China, Japan and the EU, despite his party's midterm losses.",
+      "topic": "Global markets"
+    },
+    {
+      "title": "Asian shares bounce",
+      "text": "Asian markets rallied on Thursday after Wall Street recovered from deep lows, though worries about circular AI financing and the new US tariffs kept the mood muted in holiday-thin trade. At 09:10 Sri Lanka time the Hang Seng was +2.06%, TAIEX +2.13% and Nikkei +1.54%.",
+      "topic": "Global markets",
+      "figure": "+2.06%"
+    }
+  ],
+  "coverage": [
+    {
+      "post": 435,
+      "kind": "text",
+      "title": "News highlights 26 Nov (local and global)",
+      "items": [
+        {
+          "item": "US tariffs spare Sri Lanka",
+          "status": "included"
+        },
+        {
+          "item": "Battery testing centre",
+          "status": "included"
+        },
+        {
+          "item": "SriLankan Airlines fuel surcharge",
+          "status": "included"
+        },
+        {
+          "item": "Record exports",
+          "status": "included"
+        },
+        {
+          "item": "Port of Colombo value addition",
+          "status": "included"
+        },
+        {
+          "item": "Faster land release",
+          "status": "included"
+        },
+        {
+          "item": "RCEP through ASEAN",
+          "status": "included"
+        },
+        {
+          "item": "Global: new US tariffs",
+          "status": "included"
+        },
+        {
+          "item": "Global: Asian shares bounce",
+          "status": "included"
+        },
+        {
+          "item": "Reference links 1–7 (Daily FT, The Morning, EconomyNext)",
+          "status": "left-out",
+          "reason": "reference links under news the text already describes; read, and the extra detail (tariff rates by country, export breakdown and EDB forecast, fuel price, logistics hub, funding split) folded into the news items"
+        },
+        {
+          "item": "Reference links 8–9 (global news)",
+          "status": "left-out",
+          "reason": "download failed: HTTP Error 401"
+        }
+      ]
+    },
+    {
+      "post": 436,
+      "kind": "image",
+      "title": "Bloomberg world equity indices (26 Nov 09:10)",
+      "items": [
+        {
+          "item": "% change for 19 indices",
+          "status": "included"
+        },
+        {
+          "item": "Index values, net change, futures, P/E, EPS estimates, dividend yield, YTD and AVAT columns",
+          "status": "left-out",
+          "reason": "valuation and level detail for foreign indices; only the day's moves are summarised"
+        }
+      ]
+    },
+    {
+      "post": 437,
+      "kind": "image",
+      "title": "Cash dividend: Janashakthi Insurance",
+      "items": [
+        {
+          "item": "DPS, type, price, XD and payment dates, TTM yield",
+          "status": "included"
+        }
+      ]
+    },
+    {
+      "post": 438,
+      "kind": "text",
+      "title": "HNB Stockbrokers Research: rate hike thread",
+      "items": [
+        {
+          "item": "Post text on the OPR/SRR hike and rate outlook",
+          "status": "included"
+        },
+        {
+          "item": "Link to the thread on X",
+          "status": "left-out",
+          "reason": "social media link, not collected"
+        }
+      ]
+    },
+    {
+      "post": 439,
+      "kind": "pdf",
+      "title": "HHL.N 2QFY27 earnings summary",
+      "items": [
+        {
+          "item": "Headline, summary and rating box",
+          "status": "included"
+        },
+        {
+          "item": "Working capital, outlook, risks, catalysts, technicals",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 1 P/E chart",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 2 ROE chart",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 3 TTM EPS",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 4 income statement",
+          "status": "included"
+        },
+        {
+          "item": "Exhibit 5 technical chart",
+          "status": "approx"
+        },
+        {
+          "item": "Exhibit 6 HHL vs ASPI",
+          "status": "approx"
+        },
+        {
+          "item": "Rating scale and disclaimer",
+          "status": "left-out",
+          "reason": "standard boilerplate"
+        }
+      ]
+    },
+    {
+      "post": 440,
+      "kind": "pdf",
+      "title": "Daily Market Update, 26 Nov",
+      "items": [
+        {
+          "item": "ASPI and S&P SL20 tiles",
+          "status": "included"
+        },
+        {
+          "item": "Turnover, market cap and turnover-to-market-cap tiles",
+          "status": "included"
+        },
+        {
+          "item": "Market metrics table (dividend yield, P/BV, P/E)",
+          "status": "included"
+        },
+        {
+          "item": "Net foreign flow (Rs and $) and buying/selling donut",
+          "status": "included"
+        },
+        {
+          "item": "Top 10 momentum stocks",
+          "status": "included"
+        },
+        {
+          "item": "Foreign buying/selling by stock chart",
+          "status": "approx"
+        },
+        {
+          "item": "Heat map (page 2)",
+          "status": "included"
+        },
+        {
+          "item": "Heat-map tiles too small to show a percentage",
+          "status": "left-out",
+          "reason": "no readable figure on the tile"
+        }
+      ]
+    }
+  ]
+}
