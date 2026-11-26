@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ATL.N0000",
+  "company": {
+    "name": "Amana Takaful PLC",
+    "sector": "Insurance",
+    "fiscalYearEnd": "12-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "ATL.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-26",
+  "resultsCovered": {
+    "label": "Nine months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025",
+      "Interim financial statements to 30 Jun and 30 Sep 2026"
+    ]
+  },
+  "price": {
+    "value": 22.3,
+    "date": "2026-09-30",
+    "source": "Market price at 30 September 2026, Interim to 30 Sep 2026, note 22",
+    "note": "The CSE close couldn't be fetched from this run; web quotes found were from July 2026 (about Rs 20.00). The site's daily CSE close replaces this. 2026 range to September Rs 19.10–25.50; 2025 range Rs 11.70–33.70 (year-end Rs 24.90). Rights issue at Rs 19.00 in May 2026."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "Fast premium growth, but profit depends on the Maldives and the Sri Lanka business loses money; fair value about Rs 6",
+    "text": "Amana Takaful (ATL.N0000) is a Shari'ah-compliant (takaful) insurance group: general takaful in Sri Lanka, 55% of Amana Takaful (Maldives) PLC, 76.3% of Amana Takaful Life PLC and a start-up in Uzbekistan. Premiums are growing fast (group gross written contribution up 38% to Rs 13.41bn in nine months of 2026), but owners' profit fell 58% to Rs 227mn (EPS Rs 0.89 against Rs 2.21), with a Rs 189mn loss in the third quarter. Most of the profit comes from the Maldives subsidiary; the Sri Lanka general business lost money on its own in 2024, 2025 and 2026. Owners' ROE was 7.9% in 2025 (13.0% in 2024) against a 16.5% cost of equity, and no dividend has been paid. At Rs 22.30 (30 September) it trades at 1.02x NAV of Rs 21.89. On normal owners' profit of about Rs 0.40bn (EPS Rs 1.35, ROE about 6–9%), three methods put fair value at Rs 6.02. Buy up to Rs 5.12; Rs 4.52 or less is a strong buy. Category 3, avoid for now: it fails the returns, steady-profit and cash/dividend tests."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "reason": "Low and falling returns, losses in some years and quarters, and no dividend; borrowing is small.",
+    "assessed": "2026-11-26",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "7.9% (2025)",
+        "note": "Owners' ROE on average equity 13.0% (2024), 7.9% (2025; the company gives 7.24%), about 1% in the twelve months to September 2026 (owners' profit Rs 41mn). Never 15% in the years read."
+      },
+      {
+        "id": "debt",
+        "label": "Capital comfortably above the minimum (insurer)",
+        "pass": true,
+        "value": "Net cash; CAR not disclosed",
+        "note": "Subordinated debt Rs 0.16bn and leases Rs 0.53bn at September 2026 against owners' equity Rs 6.56bn and cash Rs 1.21bn. Passes on borrowing only: the company's risk-based CAR isn't given in the reports, and the May 2026 rights issue (Rs 1.0bn) was raised to improve it, so capital was not comfortably high."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Loss in 2023 (EPS −Rs 0.06)",
+        "note": "Owners' EPS −Rs 0.06 in 2023 (ten-year summary), a fourth-quarter 2025 loss after Cyclone Ditwah, and a Rs 189mn third-quarter 2026 loss. The Sri Lanka general business lost money on its own in 2024, 2025 and nine months of 2026."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No dividend",
+        "note": "No dividend for 2024 or 2025 and none in 2026 so far. Group operating cash was Rs 2.06bn in 2025 and Rs 2.36bn in nine months of 2026, but much of it is policyholder money and the Maldives subsidiary's."
+      }
+    ]
+  },
+  "valuation": {
+    "fairValue": 6.02,
+    "buyPrice": 5.12,
+    "strongBuyPrice": 4.52,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 21.89,
+    "note": "Fair value weights the bear/base/bull values of the three methods 30/50/20 and averages them (about 0.27x NAV), all worked by scripts/valuation.py from modelInputs. No embedded value or dividend, so book value and normal profit are the anchors. NAV itself isn't averaged in: on a 6–9% ROE, book is worth less than its face value at a 16.5% required return."
+  },
+  "dividend": {
+    "perShare": null,
+    "label": "none for 2025",
+    "source": "Annual Report 2025, share information (PDF p. 161)",
+    "note": "No dividend for 2024 or 2025 and none paid or declared in 2026 to 30 September."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 21.89,
+      "unit": "Rs",
+      "note": "30 September 2026 (group)"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 1.02,
+      "unit": "x",
+      "note": "At Rs 22.30 (30 Sep 2026)"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": null,
+      "unit": "x",
+      "display": "about 160x",
+      "note": "Twelve-month EPS Rs 0.14; 16.5x on normal EPS of Rs 1.35"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity (2025)",
+      "value": 7.9,
+      "unit": "%",
+      "note": "Owners' ROE on average equity; 13.0% in 2024, about 1% in the twelve months to Sep 2026"
+    },
+    {
+      "id": "gwpGrowth",
+      "label": "Premium growth (9M 2026)",
+      "value": 38,
+      "unit": "%",
+      "note": "Group GWP Rs 13.41bn; company (Sri Lanka general) +27%"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "No dividend since at least 2024"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 16.5,
+      "unit": "%",
+      "note": "Beta 0.80 (provisional)"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 6.68,
+      "unit": "Rs bn",
+      "display": "~Rs 6.7bn",
+      "note": "299.5m shares at Rs 22.30"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Nine months to September 2026 (unaudited)",
+      "text": "Gross written contribution up 38% to Rs 13.41bn (company +27% to Rs 5.69bn; family takaful Rs 1.57bn). Retakaful ceded rose 69%, so net earned contribution grew only 17% to Rs 8.65bn. Profit before tax Rs 616mn against Rs 1,085mn; owners' profit Rs 227mn against Rs 546mn; EPS Rs 0.89 against Rs 2.21 (more shares after the rights issue)."
+    },
+    {
+      "title": "A loss in the third quarter",
+      "text": "Group loss before tax Rs 165mn against a Rs 336mn profit; owners' loss Rs 189mn (EPS −Rs 0.76). Claims rose 35% in the quarter, administration costs 21%, investment income fell 29%. The Maldives subsidiary added only about Rs 9mn of pre-tax profit in the quarter (nine months Rs 740mn against Rs 730mn at June)."
+    },
+    {
+      "title": "Where the profit comes from",
+      "text": "Amana Takaful (Maldives), 55% owned, earned Rs 933mn in 2025 (parent share Rs 513mn) and holds Rs 3.80bn of the parent's equity (about Rs 12.7 a share). The Sri Lanka general business lost money on its own: company profit less its share of subsidiaries was −Rs 61mn (2024), −Rs 117mn (2025, Cyclone Ditwah) and −Rs 165mn (nine months of 2026). Amana Takaful Life is about break-even."
+    },
+    {
+      "title": "Rights issue and balance sheet",
+      "text": "Rs 1.0bn raised in May 2026 (52.85m shares at Rs 19.00) to lift the capital adequacy ratio under the risk-based capital rules; Rs 290mn of subordinated debt repaid. Owners' equity Rs 6.56bn, NAV Rs 21.89; non-life claim liabilities Rs 10.13bn (Rs 6.42bn in December)."
+    },
+    {
+      "title": "Accounting change ahead",
+      "text": "Still reported under SLFRS 4 using the industry relief for the first three quarters of 2026. The company says SLFRS 17 and SLFRS 9 will have a material effect on its position and profit timing, but gives no figure."
+    }
+  ],
+  "history": {
+    "periods": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          null,
+          null,
+          null,
+          11.73,
+          7.24,
+          1.0
+        ],
+        "notes": [
+          "Not printed",
+          "Not printed",
+          "Owners' loss (EPS −Rs 0.06)",
+          "Company figure (13.0% on average owners' equity)",
+          "Company figure (7.9% on average owners' equity)",
+          "Twelve months to Sep 2026, about"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          5.4,
+          17.1,
+          null
+        ],
+        "notes": [
+          null,
+          null,
+          "Loss",
+          "Year-end Rs 12.80 ÷ EPS Rs 2.36",
+          "Year-end Rs 24.90 ÷ EPS Rs 1.46",
+          "About 160x on twelve-month EPS Rs 0.14: not meaningful"
+        ]
+      },
+      {
+        "id": "pb",
+        "label": "Price to book",
+        "unit": "x",
+        "values": [
+          null,
+          null,
+          null,
+          0.64,
+          1.23,
+          1.02
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          "Year-end",
+          "Year-end",
+          "NAV Rs 21.89, at Rs 22.30"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 21.89",
+      "reading": "NAV per share at 30 September 2026. The price is about 1.0x NAV."
+    },
+    {
+      "method": "Return on equity",
+      "value": "7.9% (2025)",
+      "reading": "13.0% in 2024, about 1% in the twelve months to September 2026; well below the 16.5% cost of equity."
+    },
+    {
+      "method": "P/E",
+      "value": "about 160x",
+      "reading": "On twelve-month EPS of Rs 0.14; 16.5x on normal EPS of Rs 1.35, against a justified 3.9x."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend for 2024, 2025 or 2026 so far."
+    },
+    {
+      "method": "Required return",
+      "value": "16.5%",
+      "reading": "Cost of equity from beta 0.80 (provisional); 18.0% bear, 15.0% bull."
+    },
+    {
+      "method": "Sum of the parts (check)",
+      "value": "Maldives Rs 12.7 a share of book",
+      "reading": "The 55% Maldives stake alone is Rs 3.80bn of the parent's equity and earned about 15% in 2025; the rest of the group loses money. A Sri Lanka turnaround is what the bull case needs."
+    }
+  ],
+  "models": [
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 3.13,
+      "base": 7.61,
+      "bull": 17.03,
+      "weighted": 8.15,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 21.89: 0.14x / 0.35x / 0.78x book, with ROE 6% / 9% / 13% and growth 4% / 5% / 6%. A long-run ROE below the 16.5% cost of equity is worth less than book."
+    },
+    {
+      "id": "pe",
+      "name": "P/E method (justified)",
+      "bear": 1.67,
+      "base": 5.22,
+      "bull": 12.86,
+      "weighted": 5.68,
+      "comment": "2027 EPS Rs 0.70 / 1.35 / 2.15 (owners' profit about Rs 0.21bn / 0.40bn / 0.64bn) × the justified P/E at the cost of equity, payout 1 − g ÷ ROE: 2.4x / 3.9x / 6.0x. All three are well above the Rs 0.14 twelve-month run-rate, which includes the cyclone-hit fourth quarter of 2025 and the third-quarter 2026 loss."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 1.08,
+      "base": 3.48,
+      "bull": 10.84,
+      "weighted": 4.23,
+      "comment": "Used instead of a cash-flow DCF, which doesn't suit an insurer. Book Rs 21.89 plus profit above the cost of equity: ROE moves in a straight line from 6.2% to 6% / 9% / 13% over ten years with nothing paid out (no dividend), then the excess return grows at 4% / 5% / 6%. Keeping all profit at an ROE below the cost of equity lowers value, so this is the lowest method."
+    }
+  ],
+  "modelsNote": "An insurer's cash flows are mostly premiums and claim reserves, so instead of a cash-flow DCF I used residual income and a justified price to book, alongside P/E, all at the 16.5% cost of equity (18.0% / 15.0% bear / bull) and all worked by scripts/valuation.py. No dividend model: the company pays no dividend. Growth check: long-run growth of 4% / 5% / 6% against 8.3% supported (94.9% of 2025 profit kept × 8.8% ROE); all within 2 points, and paid for by profit kept. Long-run growth stays below the 12.24% bond yield. Every method lands well below book because normal ROE (9% base) is far below the cost of equity.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity",
+        "bear": "18.0%",
+        "base": "16.5%",
+        "bull": "15.0%"
+      },
+      {
+        "label": "Normal owners' profit (2027)",
+        "bear": "Rs 0.21bn",
+        "base": "Rs 0.40bn",
+        "bull": "Rs 0.64bn"
+      },
+      {
+        "label": "2027 EPS",
+        "bear": "Rs 0.70",
+        "base": "Rs 1.35",
+        "bull": "Rs 2.15"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "6%",
+        "base": "9%",
+        "bull": "13%"
+      },
+      {
+        "label": "Return on equity path (residual income)",
+        "bear": "6.2% falling to 6%",
+        "base": "6.2% rising to 9%",
+        "bull": "6.2% rising to 13%"
+      },
+      {
+        "label": "Long-run growth",
+        "bear": "4%",
+        "base": "5%",
+        "bull": "6%"
+      },
+      {
+        "label": "Payout (residual income)",
+        "bear": "0%",
+        "base": "0%",
+        "bull": "0%"
+      }
+    ],
+    "averages": {
+      "bear": 1.96,
+      "base": 5.44,
+      "bull": 13.58
+    },
+    "common": "Cost of equity from the house formula (risk-free 8.24% + beta 0.80 × 10.28% equity premium). Bear: the Maldives stays at its weak 2026 pace and Sri Lanka keeps losing money; base: the Maldives recovers part-way and Sri Lanka is near break-even; bull: Sri Lanka turns profitable and ROE returns to 2024's 13%. 299.5m shares after the May 2026 rights issue. Stated under SLFRS 4; SLFRS 17 may change book value and the timing of profit."
+  },
+  "sensitivity": {
+    "title": "Justified price to book, base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "15.0%",
+      "16.5%",
+      "18.0%"
+    ],
+    "columns": [
+      "6%",
+      "9%",
+      "13%"
+    ],
+    "values": [
+      [
+        2.19,
+        8.76,
+        17.51
+      ],
+      [
+        1.9,
+        7.61,
+        15.23
+      ],
+      [
+        1.68,
+        6.74,
+        13.47
+      ]
+    ],
+    "base": {
+      "row": 1,
+      "column": 1
+    },
+    "note": "Book × (ROE − 5%) ÷ (cost of equity − 5%). Today's Rs 22.30 needs a lasting ROE of about 16.5%, the cost of equity, which the group hasn't reached in the years read."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 5.12
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.8
+      },
+      {
+        "shares": 150,
+        "maxPrice": 4.52
+      }
+    ],
+    "averagePrice": 4.84,
+    "totalCost": 2422,
+    "note": "About Rs 2,422 in total, against Rs 11,150 for 500 shares at Rs 22.30.",
+    "realism": "Not realistic: Rs 5.12 is 77% below the 30 September price. The 2026 low to September was Rs 19.10, the 2025 low Rs 11.70, and the rights issue was priced at Rs 19.00. Worth an alert only; the case changes if the Sri Lanka business becomes profitable and ROE rises well above 13%."
+  },
+  "changeMyView": {
+    "higher": [
+      "The Sri Lanka general business making a profit on its own for a full year.",
+      "Owners' ROE back to 13% or more (the 2024 level) with the larger, post-rights-issue equity.",
+      "A first dividend.",
+      "A disclosed capital adequacy ratio comfortably above the 120% minimum.",
+      "An SLFRS 17 contractual service margin showing the in-force book is worth more than book value."
+    ],
+    "lower": [
+      "Further quarterly losses like the third quarter of 2026.",
+      "A weaker Maldives subsidiary, which carries most of the group's profit, or a weaker rufiyaa against the rupee.",
+      "Another rights issue to support capital.",
+      "SLFRS 17 transition cutting opening equity.",
+      "Heavy start-up costs or capital needs in Uzbekistan."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the 2025 annual report and the 2026 interim reports to September 2026. The interim figures are unaudited and under SLFRS 4, the beta is provisional, and the price is the 30 September 2026 market price from the interim report, so check the current price before ordering. This is analysis, not personal financial advice."
+  },
+  "fullText": "**Amana Takaful PLC (ATL.N0000): first analysis, 26 November 2026**\n\n**Summary.** A fast-growing takaful (Islamic insurance) group whose profit comes mostly from its 55%-owned Maldives subsidiary, while the Sri Lanka general business loses money on its own. Owners' profit fell 58% to Rs 227mn in nine months of 2026 (EPS Rs 0.89), with a Rs 189mn loss in the third quarter, and no dividend has been paid. On normal owners' profit of about Rs 0.40bn a year (EPS Rs 1.35, ROE about 6–9%) and the house cost of equity of 16.5%, fair value is **Rs 6.02**. Buy up to **Rs 5.12**, strong buy at **Rs 4.52** or less. At Rs 22.30 (30 September 2026, the latest price available to this run) the share is almost four times fair value. Category 3, avoid for now: only one of the four business tests passes.\n\n**The business.** Four parts (Annual Report 2025, PDF pp. 94, 139):\n- Amana Takaful PLC itself: general takaful in Sri Lanka (motor, medical, fire, marine), gross written contribution Rs 5.76bn in 2025.\n- Amana Takaful (Maldives) PLC, 55% owned: general takaful, GWP Rs 5.43bn, profit Rs 933mn in 2025 (parent's share Rs 513mn). The parent's share of its net assets is Rs 3.80bn, about Rs 12.7 a share.\n- Amana Takaful Life PLC, 76.3% owned (listed separately): family takaful, mostly unit-linked, GWP Rs 1.76bn; about break-even.\n- Amana Sugurta, Uzbekistan, 79%: a start-up (revenue Rs 46mn in nine months of 2026).\n\nThe company's own accounts carry the subsidiaries at equity value. Its profit less its share of subsidiaries shows the Sri Lanka general business alone: −Rs 61mn (2024), −Rs 117mn (2025, with Cyclone Ditwah claims) and −Rs 165mn (nine months of 2026).\n\n**Latest results (nine months to September 2026, unaudited).**\n- Gross written contribution Rs 13.41bn, up 38% (company Rs 5.69bn, +27%; medical +46%, fire +146%). Retakaful ceded up 69%, so net earned contribution rose only 17% to Rs 8.65bn.\n- Claims and benefits Rs 5.50bn (+29%); administration costs Rs 2.50bn (+23%); investment income Rs 833mn (−11%).\n- Profit before tax Rs 616mn (Rs 1,085mn); owners' profit Rs 227mn (Rs 546mn). Third quarter: owners' loss Rs 189mn.\n- Maldives pre-tax profit Rs 740mn (Rs 1,038mn), and only about Rs 9mn of it in the third quarter.\n- Rights issue of Rs 1.0bn in May 2026 (52.85m shares at Rs 19.00); 299.5m shares now. Owners' equity Rs 6.56bn, NAV Rs 21.89.\n\n**Valuation (Rs per share).**\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| Justified price to book | 3.13 | 7.61 | 17.03 | 8.15 |\n| P/E (justified) | 1.67 | 5.22 | 12.86 | 5.68 |\n| Residual income | 1.08 | 3.48 | 10.84 | 4.23 |\n| **Fair value** | | | | **6.02** |\n\nWeights 30 / 50 / 20. Cost of equity 18.0% / 16.5% / 15.0% (beta 0.80, provisional). No cash-flow DCF (an insurer) and no dividend model (no dividend). All three methods worked by scripts/valuation.py.\n\n**Assumptions.**\n\n| | Bear | Base | Bull |\n|---|---|---|---|\n| Owners' profit 2027 | Rs 0.21bn | Rs 0.40bn | Rs 0.64bn |\n| 2027 EPS | Rs 0.70 | Rs 1.35 | Rs 2.15 |\n| Long-run ROE | 6% | 9% | 13% |\n| Long-run growth | 4% | 5% | 6% |\n\nBase assumes the Maldives recovers part-way from its weak 2026 and the Sri Lanka business gets near break-even. Bull returns ROE to 2024's 13%. Growth check: 4–6% long-run growth against 8.3% supported by profit kept (94.9% × 8.8% ROE in 2025). The twelve-month EPS of Rs 0.14 is far below all three cases because it holds the cyclone quarter and the third-quarter loss.\n\n**Why so far below the price.** The group earned 13.0% on owners' equity in 2024 and 7.9% in 2025, against a 16.5% required return. An insurer that earns less than its cost of equity is worth less than book, and the rights issue added Rs 1.0bn of equity before profit grew. The 55% Maldives stake alone is about Rs 12.7 a share of book and earned about 15% in 2025, but the rest of the group loses money. The price assumes the group can earn its cost of equity, which it hasn't done in the years read.\n\n**Business tests (1 of 4: weak, category 3).**\n- Returns: fail (7.9% in 2025, about 1% in the latest twelve months).\n- Capital and borrowing: pass on borrowing only (subordinated debt Rs 0.16bn, net cash). The company's capital adequacy ratio isn't disclosed, and the rights issue was raised to improve it.\n- Steady profit: fail (owners' loss in 2023, losses in Q4 2025 and Q3 2026).\n- Cash and dividends: fail (no dividend in 2024, 2025 or 2026 so far).\n\n**Buy plan (500 shares).** 200 at Rs 5.12 or less, 150 at Rs 4.80, 150 at Rs 4.52: about Rs 2,422 in total. Not realistic this year: the 2026 low to September was Rs 19.10 and the 2025 low Rs 11.70. Set an alert only.\n\n**Management and shareholders.** Management is promising growth through more branches, bancassurance and digital channels, and premiums are rising fast. But it gives no profit or return targets, and nine-month profit fell 58%. The Kassim family (several accounts) and Amana Bank PLC control the company. In the third quarter, Senthilverl Holdings sold about 27m shares and a new holder, Mr Mohomad Aslam Omar, took 27.0m (9.01%).\n\n**What would change the view.** Higher: the Sri Lanka business making a profit on its own, ROE back to 13% or more, a first dividend, a disclosed capital ratio well above the minimum. Lower: more quarterly losses, a weaker Maldives subsidiary, another capital raise, or SLFRS 17 cutting equity.\n\n**Uncertain.** The price is the 30 September market price from the interim report, because the CSE close couldn't be fetched from this run. The beta is provisional, and the March 2026 interim wasn't among the downloaded reports.\n",
+  "requiredReturn": {
+    "beta": 0.8,
+    "betaBasis": "Provisional. An insurer, so the sector's levered beta is used without relevering. Damodaran's emerging-markets file couldn't be opened from this run; his January 2026 global Insurance (General) beta is available here only unlevered (0.42), so the global Insurance (Life) levered beta 0.80, already used on this site, is used for prudence. No local 5-year betas could be checked. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 18.0,
+      "base": 16.5,
+      "bull": 15.0
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-26",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran global sector betas (January 2026), web-search extract as used for JINS.N0000"
+    ],
+    "note": "Cost of equity = 8.24% + 0.80 × (4.2% + 6.08%) = 16.5%; bear +1.5, bull −1.5 points. No WACC: an insurer is valued on equity (P/B, P/E, residual income)."
+  },
+  "management": {
+    "asOf": "2026-11-26",
+    "source": "Annual Report 2025: Chairman's message (PDF pp. 14–16), CEO's review (PDF pp. 17–19), Managing Director's review (PDF pp. 20–21), financial review (PDF pp. 51–52); progress from the interim to 30 Sep 2026 (notes 2, 18, PDF pp. 9, 13)",
+    "takeaway": "Management is selling growth through more branches, bancassurance and digital channels, and premiums are rising fast, but it gives no profit or return targets and 2026 profit has fallen sharply.",
+    "said": [
+      {
+        "text": "Group premiums up 7.6% to Rs 12.9bn in 2025, with life (family) premiums up 36%, mainly unit-linked",
+        "ref": "PDF p. 15"
+      },
+      {
+        "text": "Profit fell about 19% to Rs 773mn, partly because of Cyclone Ditwah claims late in 2025; ROE to shareholders 7.24%",
+        "ref": "PDF pp. 15, 52"
+      },
+      {
+        "text": "Investments over the past two to three years in branches in the Northern and Eastern provinces and new agency networks began to pay off",
+        "ref": "PDF p. 18"
+      },
+      {
+        "text": "Motor insurance grew strongly as vehicle imports reopened",
+        "ref": "PDF p. 18"
+      },
+      {
+        "text": "Non-life claim liabilities rose 43%, mainly from cyclone and flood claims",
+        "ref": "PDF p. 52"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Expand distribution, including bancassurance partnerships, and deepen insurance penetration in under-served groups",
+        "ref": "PDF pp. 15–16, 18"
+      },
+      {
+        "text": "Keep investing in digital systems, customer apps and process automation",
+        "ref": "PDF pp. 16, 18"
+      },
+      {
+        "text": "Move to SLFRS 17 with new actuarial models and data systems",
+        "ref": "PDF p. 15"
+      },
+      {
+        "text": "Strengthen capital for the risk-based capital rules through a rights issue",
+        "ref": "PDF p. 15"
+      },
+      {
+        "text": "Build climate risk into underwriting and risk management",
+        "ref": "PDF pp. 16, 20–21"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Rights issue to strengthen the equity base and capital adequacy ratio",
+        "amount": "Rs 1,004mn (52.85m shares at Rs 19.00), May 2026, fully used",
+        "ref": "Interim to 30 Sep 2026, note 18, PDF p. 13"
+      },
+      {
+        "text": "Subordinated debt raised to meet risk-based capital requirements (Rs 200mn from related party Aberdeen Holdings, Rs 245mn other investors, Rs 139.5mn from the Maldives subsidiary)",
+        "amount": "Rs 584.6mn, 5 years (company, at Dec 2025)",
+        "ref": "PDF p. 129"
+      },
+      {
+        "text": "Amana Sugurta in Uzbekistan, 79% owned, awaiting its insurance licence at the 2025 year end",
+        "amount": null,
+        "ref": "PDF p. 139"
+      },
+      {
+        "text": "Digital platforms and branch network upgrades",
+        "amount": null,
+        "ref": "PDF pp. 18, 21"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Raise capital through a rights issue to support the capital adequacy ratio",
+        "result": "Rs 1,004mn raised in May 2026 and fully applied to the equity base; Rs 290mn of subordinated debt repaid in 2026.",
+        "status": "done",
+        "ref": "Interim to 30 Sep 2026, note 18 and cash flow, PDF pp. 7, 13"
+      },
+      {
+        "promise": "Grow through wider distribution",
+        "result": "Group gross written contribution +38% to Rs 13.41bn in nine months of 2026 (company +27%, medical +46%, fire +146%).",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, note 6, PDF p. 12"
+      },
+      {
+        "promise": "Sustain profitability through disciplined underwriting and cost control",
+        "result": "Owners' profit −58% to Rs 227mn in nine months of 2026, with a Rs 189mn loss in the third quarter; administration costs +23%, claims +29%.",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 3–4"
+      },
+      {
+        "promise": "Implement SLFRS 17",
+        "result": "Still reporting under SLFRS 4 using the industry relief to September 2026; impact described as material but not yet quantified.",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, notes 2.1–2.1.2, PDF pp. 9–10"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026: twenty-five largest shareholders, public holding and directors' holdings (PDF p. 15), against the interim to 30 Jun 2026 (PDF p. 14). Top 20 shown.",
+    "takeaway": "The Kassim family (through several accounts, including margin accounts at Amana Bank and Seylan Bank) and Amana Bank PLC (14.19%) hold most of the shares, with Aberdeen Holdings at 15.08%. The big move: Senthilverl Holdings sold down from about 30.0m to 2.69m shares while a new holder, Mr Mohomad Aslam Omar, appeared with 27.0m (9.01%).",
+    "groups": [
+      {
+        "name": "Kassim family accounts",
+        "pct": 43.66
+      },
+      {
+        "name": "Aberdeen Holdings",
+        "pct": 15.08
+      },
+      {
+        "name": "Amana Bank PLC",
+        "pct": 14.19
+      },
+      {
+        "name": "Mr Mohomad Aslam Omar",
+        "pct": 9.01
+      },
+      {
+        "name": "Other shareholders",
+        "pct": 18.06
+      }
+    ],
+    "publicFloat": 66.84,
+    "publicHolders": 5520,
+    "publicHoldersPrev": 5618,
+    "directors": [
+      {
+        "name": "Mr M.H.S. Kassim (Managing Director)",
+        "shares": 17947
+      }
+    ],
+    "top": [
+      {
+        "name": "AMANA BANK PLC/MR.OSMAN KASSIM",
+        "shares": 54123493,
+        "pct": 18.07,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "ABERDEEN HOLDINGS (PRIVATE) LIMITED",
+        "shares": 45177208,
+        "pct": 15.08,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "AMANA BANK PLC",
+        "shares": 42491960,
+        "pct": 14.19,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. SATTAR KASSIM / MRS.S.S.KASSIM",
+        "shares": 37562702,
+        "pct": 12.54,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. MOHOMAD ASLAM OMAR",
+        "shares": 27000000,
+        "pct": 9.01,
+        "change": null,
+        "new": true,
+        "note": "Not in the June list; about the size of Senthilverl Holdings' fall"
+      },
+      {
+        "name": "AMANA BANK PLC/MR. SHAFIK KASSIM",
+        "shares": 19395108,
+        "pct": 6.48,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "SEYLAN BANK PLC/S.KASSIM",
+        "shares": 17602437,
+        "pct": 5.88,
+        "change": 3106312,
+        "new": false,
+        "note": "Mr Shafik Kassim's direct 3,194,030 shares left the list at the same time; possibly moved to this account"
+      },
+      {
+        "name": "SEYLAN BANK PLC/PHANTOM INVESTMENTS (PVT) LTD",
+        "shares": 12385714,
+        "pct": 4.14,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "COMMERCIAL BANK OF CEYLON PLC/JANASHAKTHI LIMITED",
+        "shares": 7676295,
+        "pct": 2.56,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "SAMPATH BANK PLC/SENTHILVERL HOLDINGS (PVT) LTD",
+        "shares": 2685345,
+        "pct": 0.9,
+        "change": -24886084,
+        "new": false
+      },
+      {
+        "name": "ESANJO CAPITAL LTD",
+        "shares": 1454056,
+        "pct": 0.49,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "SEYLAN BANK PLC/ARRC CAPITAL (PVT) LTD",
+        "shares": 1356940,
+        "pct": 0.45,
+        "change": 141825,
+        "new": false
+      },
+      {
+        "name": "MR. OSMAN KASSIM / MRS.K.KASSIM / MR.A.O.KASSIM",
+        "shares": 1095070,
+        "pct": 0.37,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. FAROOK KASSIM",
+        "shares": 970702,
+        "pct": 0.32,
+        "change": 99892,
+        "new": false
+      },
+      {
+        "name": "MR. MOHAMED SUBIAN MOHAMED RIZAL",
+        "shares": 752857,
+        "pct": 0.25,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. MOHAMED SALY MOHAMED SAMSUL MUEEN",
+        "shares": 679010,
+        "pct": 0.23,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "SAMPATH BANK PLC/L.T.R.S.L.JAYAWARDHANA",
+        "shares": 562303,
+        "pct": 0.19,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. SHANAKA ASITHA COORAY / MR.P.T.COORAY /MRS.S.NUGAPITIYA",
+        "shares": 544773,
+        "pct": 0.18,
+        "change": -15,
+        "new": false
+      },
+      {
+        "name": "MR. NAYANAKA ARJUNA SAMARAKOON / MRS.D.K.HERATH",
+        "shares": 535600,
+        "pct": 0.18,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "CITIZENS DEVELOPMENT BUSINESS FINANCE ACCOUNT NO. 01",
+        "shares": 500000,
+        "pct": 0.17,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": [
+      {
+        "name": "MR.SHAFIK KASSIM",
+        "prevShares": 3194030
+      },
+      {
+        "name": "SENTHILVERL HOLDINGS (PVT) LTD",
+        "prevShares": 2428571
+      }
+    ]
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 18.0,
+      "base": 16.5,
+      "bull": 15.0
+    },
+    "wacc": null,
+    "debtWeight": null,
+    "shares": 299.511,
+    "netDebt": null,
+    "pb": {
+      "book": 21.89,
+      "bear": {
+        "roe": 6,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 9,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 13,
+        "longRun": 6
+      },
+      "basis": {
+        "book": "periods: 9M 2026.navPerShare",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 0.7,
+        "roe": 6,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 1.35,
+        "roe": 9,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 2.15,
+        "roe": 13,
+        "longRun": 6
+      },
+      "basis": {
+        "eps": "valuationInputs: 2027 EPS (normal profit)",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 21.89,
+      "payout": 0,
+      "roeStart": 6.2,
+      "bear": {
+        "roe": 6,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 9,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 13,
+        "longRun": 6
+      },
+      "basis": {
+        "book": "periods: 9M 2026.navPerShare",
+        "roeStart": "valuationInputs: Residual income start",
+        "payout": "valuationInputs: Residual income start",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare"
+    }
+  }
+}

@@ -1,0 +1,1829 @@
+{
+  "schemaVersion": 1,
+  "ticker": "ATL.N0000",
+  "localFolder": null,
+  "updated": "2026-11-26",
+  "reportsRead": [
+    {
+      "file": "reports/ATL.N0000/2026-05-31_annual_Annual-Report-as-at-31st-December-2025.pdf",
+      "title": "Annual Report as at 31st December 2025",
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-26",
+      "note": "Statements, segments, NCI note, ten-year summary, share information, Chairman's, CEO's and MD's messages."
+    },
+    {
+      "file": "reports/ATL.N0000/2026-08-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-26",
+      "note": "Used for the six-month figures and the 30 June shareholder list."
+    },
+    {
+      "file": "reports/ATL.N0000/2026-11-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-26",
+      "note": "Nine-month and third-quarter figures, balance sheet, shareholders."
+    }
+  ],
+  "periods": [
+    {
+      "period": "FY 2021",
+      "periodEnd": "2021-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 5178.592,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "netEarnedPremium": {
+          "value": 3698.734,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "profitBeforeTax": {
+          "value": 312.963,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 36.807,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 276.157,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "eps": {
+          "value": 0.91,
+          "unit": "Rs",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Basic earnings per share"
+        },
+        "totalEquity": {
+          "value": 1713.331,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": "Equity attributable to equity holders of the parent"
+        },
+        "nonControllingInterest": {
+          "value": 677.319,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 8567.591,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2022",
+      "periodEnd": "2022-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 8260.079,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "netEarnedPremium": {
+          "value": 5793.25,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "profitBeforeTax": {
+          "value": 557.147,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 70.047,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 487.1,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "eps": {
+          "value": 1.66,
+          "unit": "Rs",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Basic earnings per share"
+        },
+        "totalEquity": {
+          "value": 2792.675,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": "Equity attributable to equity holders of the parent"
+        },
+        "nonControllingInterest": {
+          "value": 1437.268,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 12707.411,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2023",
+      "periodEnd": "2023-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 10208.348,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "netEarnedPremium": {
+          "value": 7343.599,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "profitBeforeTax": {
+          "value": 220.655,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 69.219,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 151.436,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "eps": {
+          "value": -0.06,
+          "unit": "Rs",
+          "source": "Annual Report 2025, ten-year summary (group), PDF p. 163",
+          "note": "Basic earnings per share"
+        },
+        "totalEquity": {
+          "value": 3306.725,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": "Equity attributable to equity holders of the parent"
+        },
+        "nonControllingInterest": {
+          "value": 1866.474,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 15684.995,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, ten-year summary (group balance sheet), PDF p. 164",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "FY 2024",
+      "periodEnd": "2024-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 12030.239,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "premiumCeded": {
+          "value": 2267.362,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 9501.113,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "investmentIncome": {
+          "value": 1012.042,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "otherIncome": {
+          "value": 525.64,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "netBenefitsAndClaims": {
+          "value": 5918.918,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 707.511,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount; net of reinsurance commission"
+        },
+        "changeInLifeFund": {
+          "value": 565.242,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Change in family takaful contract liability; Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 2586.569,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Other operating and administration expenses; Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 1242.766,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Profit from operations"
+        },
+        "financeCosts": {
+          "value": 90.619,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 1152.147,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 197.582,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 954.566,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Group, including non-controlling interest"
+        },
+        "netProfitOwners": {
+          "value": 480.351,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 2.36,
+          "unit": "Rs",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Weighted average (basic) EPS"
+        },
+        "totalEquity": {
+          "value": 4096.466,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Equity attributable to equity holders of the parent"
+        },
+        "nonControllingInterest": {
+          "value": 2655.239,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 19267.796,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "borrowings": {
+          "value": 289.725,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Subordinated debt (the group's only borrowing line)"
+        },
+        "leaseLiabilities": {
+          "value": 511.354,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "cash": {
+          "value": 833.456,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Cash and bank balances, excluding unit-linked cash"
+        },
+        "insuranceLiabilityNonLife": {
+          "value": 4496.369,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 1887.925,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Net cash flow from operating activities"
+        },
+        "purchasePPE": {
+          "value": 94.061,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": null
+        },
+        "purchaseIntangibles": {
+          "value": 93.19,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 92.859,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Finance cost paid, inside operating activities",
+          "section": "operating"
+        },
+        "dividendsPaid": {
+          "value": 70.204,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Dividends paid by subsidiaries to non-controlling shareholders; the company paid none"
+        },
+        "depreciation": {
+          "value": 32.431,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": "Depreciation of property, plant and equipment"
+        },
+        "depreciationRightOfUse": {
+          "value": 97.214,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": null
+        },
+        "amortisation": {
+          "value": 17.788,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 20.12,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        },
+        "priceYearEnd": {
+          "value": 12.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": "Shown as '-': no dividend for the year"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 626.06,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Company column: share of profit of equity-accounted subsidiaries (inside the company's profit)"
+        },
+        "profitBeforeTaxCompany": {
+          "value": 564.818,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Company column (includes share of subsidiaries)"
+        },
+        "maldivesProfit": {
+          "value": 1055.699,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (2024 comparatives), PDF p. 140",
+          "note": "Amana Takaful (Maldives) PLC profit for the period, 100%"
+        },
+        "maldivesProfitParent": {
+          "value": 580.634,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (2024 comparatives), PDF p. 140",
+          "note": "Attributable to the parent (55%)"
+        },
+        "maldivesNetAssets": {
+          "value": 5411.305,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (2024 comparatives), PDF p. 140",
+          "note": "100%"
+        },
+        "maldivesNetAssetsParent": {
+          "value": 2863.542,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (2024 comparatives), PDF p. 140",
+          "note": null
+        },
+        "lifeProfit": {
+          "value": 4.578,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (2024 comparatives), PDF p. 140",
+          "note": "Amana Takaful Life PLC profit, 100%"
+        },
+        "acquisitions": {
+          "value": 360.202,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Purchase of subsidiary"
+        }
+      }
+    },
+    {
+      "period": "FY 2025",
+      "periodEnd": "2025-12-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 12946.073,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "premiumCeded": {
+          "value": 3601.503,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 9419.197,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "investmentIncome": {
+          "value": 1196.415,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "otherIncome": {
+          "value": 494.681,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "netBenefitsAndClaims": {
+          "value": 5390.837,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 950.229,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount; net of reinsurance commission"
+        },
+        "changeInLifeFund": {
+          "value": 689.387,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Change in family takaful contract liability; Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 3043.797,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Other operating and administration expenses; Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 1010.067,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Profit from operations"
+        },
+        "financeCosts": {
+          "value": 84.63,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 925.437,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 152.032,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 773.405,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Group, including non-controlling interest"
+        },
+        "netProfitOwners": {
+          "value": 360.122,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 1.46,
+          "unit": "Rs",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Weighted average (basic) EPS"
+        },
+        "totalEquity": {
+          "value": 4977.41,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Equity attributable to equity holders of the parent"
+        },
+        "nonControllingInterest": {
+          "value": 3314.587,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 24418.06,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "borrowings": {
+          "value": 538.019,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Subordinated debt (the group's only borrowing line)"
+        },
+        "leaseLiabilities": {
+          "value": 549.676,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "cash": {
+          "value": 504.039,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": "Cash and bank balances, excluding unit-linked cash"
+        },
+        "insuranceLiabilityNonLife": {
+          "value": 6417.018,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of financial position, PDF p. 87",
+          "note": null
+        },
+        "operatingCashFlow": {
+          "value": 2060.741,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Net cash flow from operating activities"
+        },
+        "purchasePPE": {
+          "value": 144.657,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": null
+        },
+        "purchaseIntangibles": {
+          "value": 62.878,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 97.495,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Finance cost paid, inside operating activities",
+          "section": "operating"
+        },
+        "dividendsPaid": {
+          "value": 18.232,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "Dividends paid by subsidiaries to non-controlling shareholders; the company paid none"
+        },
+        "depreciation": {
+          "value": 56.387,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": "Depreciation of property, plant and equipment"
+        },
+        "depreciationRightOfUse": {
+          "value": 105.579,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": null
+        },
+        "amortisation": {
+          "value": 25.975,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows note A, PDF p. 92",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 20.18,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        },
+        "priceYearEnd": {
+          "value": 24.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        },
+        "dividendPerShare": {
+          "value": null,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": "Shown as '-': no dividend for the year"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 503.09,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Company column: share of profit of equity-accounted subsidiaries"
+        },
+        "profitBeforeTaxCompany": {
+          "value": 385.745,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of comprehensive income, PDF p. 88",
+          "note": "Company column (includes share of subsidiaries)"
+        },
+        "segmentPbtMaldives": {
+          "value": 1073.546,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, segmental statement of comprehensive income 2025, PDF p. 94",
+          "note": null
+        },
+        "segmentPbtLife": {
+          "value": 1.008,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, segmental statement of comprehensive income 2025, PDF p. 94",
+          "note": null
+        },
+        "maldivesProfit": {
+          "value": 932.921,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": "100%"
+        },
+        "maldivesProfitParent": {
+          "value": 513.106,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": "Attributable to the parent (55%)"
+        },
+        "maldivesNetAssets": {
+          "value": 6861.168,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": "100%"
+        },
+        "maldivesNetAssetsParent": {
+          "value": 3799.123,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": null
+        },
+        "lifeProfit": {
+          "value": -8.605,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": "Amana Takaful Life PLC, 100%"
+        },
+        "lifeNetAssets": {
+          "value": 641.754,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 36.1 (subsidiaries with material NCI), PDF p. 139",
+          "note": null
+        },
+        "sharesOutstanding": {
+          "value": 246.655997,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, note 20, PDF p. 14",
+          "note": "Comparative at 31 Dec 2025"
+        },
+        "subordinatedDebtCompany": {
+          "value": 584.557,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, note 22.1, PDF p. 129",
+          "note": "Company: Maldives subsidiary Rs 139.5mn, Aberdeen Holdings (related) Rs 200mn, other investors Rs 245.0mn, 5 years"
+        },
+        "car": {
+          "value": null,
+          "unit": "%",
+          "source": "Annual Report 2025",
+          "note": "Company's own risk-based capital adequacy ratio not disclosed in the report; IRCSL minimum 120% (PDF p. 100)"
+        },
+        "acquisitions": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025, statement of cash flows, PDF p. 91",
+          "note": "No purchase of subsidiary in 2025"
+        },
+        "priceHigh": {
+          "value": 33.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        },
+        "priceLow": {
+          "value": 11.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025, share information, PDF p. 161",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "H1 2025",
+      "periodEnd": "2025-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 6558.839,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "premiumCeded": {
+          "value": 1791.167,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 4787.882,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "investmentIncome": {
+          "value": 655.405,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "otherIncome": {
+          "value": 243.911,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "netBenefitsAndClaims": {
+          "value": 2811.973,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 459.037,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 1267.617,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 797.042,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "financeCosts": {
+          "value": 48.475,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 748.567,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 82.771,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 665.796,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 382.052,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 1.55,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 317.09,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Company column"
+        },
+        "operatingCashFlow": {
+          "value": 489.18,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column"
+        },
+        "interestPaid": {
+          "value": 48.475,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column; finance cost paid, operating",
+          "section": "operating"
+        },
+        "segmentPbtMaldives": {
+          "value": 719.018,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, note 10 (profit before tax by segment), PDF p. 12",
+          "note": "Comparative column"
+        }
+      }
+    },
+    {
+      "period": "H1 2026",
+      "periodEnd": "2026-06-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 9474.771,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "premiumCeded": {
+          "value": 2778.435,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 5858.6,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "investmentIncome": {
+          "value": 633.097,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "otherIncome": {
+          "value": 435.629,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "netBenefitsAndClaims": {
+          "value": 3541.877,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 577.018,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 1567.245,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 840.035,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "financeCosts": {
+          "value": 58.646,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 781.389,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 51.472,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 729.917,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "netProfitOwners": {
+          "value": 415.213,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 1.63,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 386.346,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, six-month statement of profit or loss, PDF p. 3",
+          "note": "Company column"
+        },
+        "operatingCashFlow": {
+          "value": 2372.441,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, cash flow statement, PDF p. 7",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 58.646,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, cash flow statement, PDF p. 7",
+          "note": "Finance cost paid, operating",
+          "section": "operating"
+        },
+        "segmentPbtMaldives": {
+          "value": 730.431,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, note 10 (profit before tax by segment), PDF p. 12",
+          "note": null
+        },
+        "segmentPbtLife": {
+          "value": 12.832,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, note 10 (profit before tax by segment), PDF p. 12",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 6744.54,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": 3886.41,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 33173.6,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "borrowings": {
+          "value": 264.804,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": "Subordinated debt"
+        },
+        "leaseLiabilities": {
+          "value": 534.135,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "cash": {
+          "value": 2048.607,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, statement of financial position, PDF p. 2",
+          "note": "Excluding unit-linked cash"
+        },
+        "navPerShare": {
+          "value": 22.52,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 22, PDF p. 13",
+          "note": null
+        },
+        "sharesOutstanding": {
+          "value": 299.510854,
+          "unit": "mn",
+          "source": "Interim to 30 Jun 2026, note 20, PDF p. 13",
+          "note": null
+        },
+        "priceHigh": {
+          "value": 23.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 22, PDF p. 13",
+          "note": "Six months"
+        },
+        "priceLow": {
+          "value": 19.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 22, PDF p. 13",
+          "note": "Six months"
+        },
+        "pricePeriodEnd": {
+          "value": 21.2,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, note 22, PDF p. 13",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "9M 2025",
+      "periodEnd": "2025-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 9720.845,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "premiumCeded": {
+          "value": 2517.791,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 7406.379,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "investmentIncome": {
+          "value": 937.577,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "otherIncome": {
+          "value": 376.906,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "netBenefitsAndClaims": {
+          "value": 4263.628,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 707.316,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "changeInLifeFund": {
+          "value": 450.21,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 2036.524,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 1176.531,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "financeCosts": {
+          "value": 91.849,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 1084.682,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 130.801,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 953.881,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 545.697,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 2.21,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 500.068,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Comparative column; Company column"
+        },
+        "operatingCashFlow": {
+          "value": 1418.534,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column"
+        },
+        "interestPaid": {
+          "value": 91.849,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column; operating",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 85.06,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column"
+        },
+        "dividendsPaid": {
+          "value": 20.741,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column; paid by subsidiaries to minorities"
+        },
+        "segmentPbtMaldives": {
+          "value": 1037.956,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 10 (profit before tax by segment), PDF p. 13",
+          "note": "Comparative column"
+        },
+        "segmentPbtLife": {
+          "value": 5.527,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 10 (profit before tax by segment), PDF p. 13",
+          "note": "Comparative column"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Comparative column; shown as '-'"
+        }
+      }
+    },
+    {
+      "period": "9M 2026",
+      "periodEnd": "2026-09-30",
+      "months": 9,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 13409.487,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "premiumCeded": {
+          "value": 4258.23,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 8649.975,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "investmentIncome": {
+          "value": 833.478,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "otherIncome": {
+          "value": 502.342,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "netBenefitsAndClaims": {
+          "value": 5500.242,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 839.518,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "changeInLifeFund": {
+          "value": 386.308,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 2500.225,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 681.219,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "financeCosts": {
+          "value": 64.766,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 616.454,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 71.753,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 544.701,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": null
+        },
+        "netProfitOwners": {
+          "value": 226.604,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 0.89,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 392.004,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, nine-month statement of profit or loss, PDF p. 3",
+          "note": "Company column"
+        },
+        "operatingCashFlow": {
+          "value": 2355.298,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": null
+        },
+        "interestPaid": {
+          "value": 64.766,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Operating",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 67.696,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": null
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": null
+        },
+        "dividendsPaid": {
+          "value": 29.252,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "Paid by subsidiaries to minorities; the company paid none"
+        },
+        "rightsIssue": {
+          "value": 1004.242,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, cash flow statement, PDF p. 7",
+          "note": "52,854,857 shares at Rs 19.00, May 2026 (note 18, PDF p. 13)"
+        },
+        "segmentPbtMaldives": {
+          "value": 739.837,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 10 (profit before tax by segment), PDF p. 13",
+          "note": null
+        },
+        "segmentPbtLife": {
+          "value": 23.439,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 10 (profit before tax by segment), PDF p. 13",
+          "note": null
+        },
+        "segmentPbtSugurta": {
+          "value": 18.577,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, note 10 (profit before tax by segment), PDF p. 13",
+          "note": null
+        },
+        "totalEquity": {
+          "value": 6556.933,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": "Owners' equity"
+        },
+        "nonControllingInterest": {
+          "value": 3886.203,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "totalAssets": {
+          "value": 32173.297,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "borrowings": {
+          "value": 158.64,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": "Subordinated debt"
+        },
+        "leaseLiabilities": {
+          "value": 526.265,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "cash": {
+          "value": 1207.95,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": "Excluding unit-linked cash"
+        },
+        "insuranceLiabilityNonLife": {
+          "value": 10126.936,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, statement of financial position, PDF p. 2",
+          "note": null
+        },
+        "navPerShare": {
+          "value": 21.89,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 22, PDF p. 14",
+          "note": "Group"
+        },
+        "sharesOutstanding": {
+          "value": 299.510854,
+          "unit": "mn",
+          "source": "Interim to 30 Sep 2026, note 20, PDF p. 14",
+          "note": null
+        },
+        "priceHigh": {
+          "value": 25.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 22, PDF p. 14",
+          "note": "Nine months"
+        },
+        "priceLow": {
+          "value": 19.1,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 22, PDF p. 14",
+          "note": "Nine months"
+        },
+        "pricePeriodEnd": {
+          "value": 22.3,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, note 22, PDF p. 14",
+          "note": null
+        },
+        "publicFloatPct": {
+          "value": 66.84,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, PDF p. 15",
+          "note": null
+        }
+      }
+    },
+    {
+      "period": "Q3 2025",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 3162.006,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "premiumCeded": {
+          "value": 726.624,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 2618.497,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "investmentIncome": {
+          "value": 282.172,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "otherIncome": {
+          "value": 132.995,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "netBenefitsAndClaims": {
+          "value": 1451.656,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 248.279,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "changeInLifeFund": {
+          "value": 151.087,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 768.907,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": 379.489,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "financeCosts": {
+          "value": 43.374,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": 336.114,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 48.03,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": 288.084,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 163.645,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": 0.66,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 182.977,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Comparative column; Company column"
+        }
+      }
+    },
+    {
+      "period": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "grossWrittenPremium": {
+          "value": 3934.716,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "premiumCeded": {
+          "value": 1479.795,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netEarnedPremium": {
+          "value": 2791.375,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "investmentIncome": {
+          "value": 200.381,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "otherIncome": {
+          "value": 66.713,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "netBenefitsAndClaims": {
+          "value": 1958.365,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "acquisitionCost": {
+          "value": 262.501,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "changeInLifeFund": {
+          "value": 67.959,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingExpenses": {
+          "value": 932.979,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "operatingProfit": {
+          "value": -158.816,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "financeCosts": {
+          "value": 6.119,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "profitBeforeTax": {
+          "value": -164.935,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "incomeTax": {
+          "value": 20.281,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Expense, stored as a positive amount"
+        },
+        "netProfit": {
+          "value": -185.216,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": null
+        },
+        "netProfitOwners": {
+          "value": -188.609,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Attributable to equity holders of the parent"
+        },
+        "eps": {
+          "value": -0.76,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Basic EPS"
+        },
+        "shareOfSubsidiaryProfitCompany": {
+          "value": 5.658,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, three-month statement of profit or loss, PDF p. 4",
+          "note": "Company column"
+        }
+      }
+    }
+  ],
+  "valuationInputs": [
+    {
+      "name": "Beta",
+      "value": "0.80 (provisional)",
+      "reason": "8 steps, 26 Nov 2026. (1) Business: a takaful (Islamic) insurance group, mostly general insurance: Sri Lanka general takaful (company, GWP Rs 5.76bn in 2025), 55% of Amana Takaful (Maldives) PLC (general, GWP Rs 5.43bn, most of the profit), 76.3% of Amana Takaful Life PLC (family takaful, GWP Rs 1.76bn) and 79% of Amana Sugurta (Uzbekistan, starting up) (Annual Report 2025, PDF pp. 94, 139). One sector: insurance. (2)–(3) An insurer, so the sector's levered beta is used without relevering. Damodaran's emerging-markets file (betaEmerg) couldn't be opened from this run (pages.stern.nyu.edu blocked). The only stand-ins already on this site are his January 2026 global Insurance (General) unlevered beta 0.42 (cash-corrected 0.47, as used for INME.N0000), which is unlevered and has no levered pair here, and his global Insurance (Life) levered beta 0.80 (as used for JINS.N0000). The higher, 0.80, is used for prudence. (4) Local 5-year betas: none could be checked from this run (the CSE site is blocked here; web results gave no 5-year beta). (5) 0.80. (6) Within 0.3–2. (7)–(8) Put into scripts/reinvestment.py and shown in the Required return tile. Refresh in January 2027 with the emerging-markets Insurance (Prop/Cas.) levered beta and three local 5-year betas.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Cost of equity",
+      "value": "Bear 18.0% / Base 16.5% / Bull 15.0%",
+      "reason": "From scripts/reinvestment.py (26 Nov 2026): 8.24% + 0.80 × (4.2% + 6.08%) = 16.5%, ±1.5 points. No WACC: an insurer is valued on equity.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 4% / 5% / 6% long-run growth; supported 8.3% (share of profit kept × ROE, FY 2025: 94.9% × 8.8%). All within 2 pts.",
+      "reason": "From scripts/reinvestment.py on FY 2025. The company itself paid no dividend in 2024, 2025 or 2026 to date; the Rs 18.2mn of dividends in the 2025 cash flow went to the subsidiaries' minority shareholders, so the share kept is really about 100%. Growth is paid for by profit kept in every method (payout 1 − g ÷ ROE in P/E; book grows by retained profit in residual income).",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "2027 EPS (normal profit)",
+      "value": "Rs 0.70 / 1.35 / 2.15 (owners' profit about Rs 0.21bn / 0.40bn / 0.64bn on 299.5mn shares)",
+      "reason": "Owners' profit Rs 480mn (2024), Rs 360mn (2025, with Cyclone Ditwah claims in Q4) and Rs 227mn in nine months of 2026 (Rs 546mn a year earlier); the third quarter of 2026 lost Rs 189mn. Most profit comes from the 55% Maldives subsidiary (parent share Rs 581mn in 2024, Rs 513mn in 2025; Maldives PBT Rs 740mn in nine months of 2026 against Rs 1,038mn), while the Sri Lanka general business lost money on its own (company PBT less share of subsidiaries: −Rs 61mn 2024, −Rs 117mn 2025, −Rs 165mn in 9M 2026). Base: Maldives share about Rs 0.45–0.5bn and Sri Lanka near break-even less some losses; bear: Maldives at 9M-2026 pace and Sri Lanka losses continue; bull: Sri Lanka turns profitable and Maldives recovers to 2024 levels. The run-rate (Rs 0.14 twelve months, negative last quarter × 4) is far below all three because it includes the cyclone quarter and the Q3 2026 loss.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "6% / 9% / 13%",
+      "reason": "Owners' ROE on average equity: 13.0% (2024: Rs 480mn on Rs 3.31–4.10bn), 7.9% (2025: Rs 360mn on Rs 4.10–4.98bn; company's own figure 7.24%), about 1% in the twelve months to Sep 2026. EPS was negative in 2023 (−Rs 0.06) and 2019–2020. Bull = the 2024 level; base below it because the May 2026 rights issue added Rs 1.0bn of equity before profit has grown.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "4% / 5% / 6%",
+      "reason": "Same in every method; below the 12.24% bond yield and the cost of equity.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Residual income start",
+      "value": "ROE 6.2% (base 2027 EPS Rs 1.35 ÷ NAV Rs 21.89); payout 0%",
+      "reason": "NAV per share Rs 21.89 at 30 Sep 2026 (note 22). No dividend has been paid by the company in 2024–2026, so all profit is kept; ROE moves in a straight line to the long-run ROE over ten years.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Dividends",
+      "value": "None; dividend model not used",
+      "reason": "Dividend per share '-' for 2024 and 2025 (Annual Report 2025, PDF p. 161) and none in 2026 to September. With no dividend to grow, the dividend model isn't meaningful.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Scenario weights",
+      "value": "Bear 30 / Base 50 / Bull 20",
+      "reason": "Standard.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Margins of safety",
+      "value": "Buy 15% / Strong buy 25%",
+      "reason": "Standard.",
+      "since": "2026-11-26"
+    },
+    {
+      "name": "Methods used",
+      "value": "Justified price to book, P/E (justified at the cost of equity), residual income",
+      "reason": "An insurer: no cash-flow DCF and no WACC (CLAUDE.md). No dividend, so no dividend model. No embedded value is published. All three worked by scripts/valuation.py.",
+      "since": "2026-11-26"
+    }
+  ],
+  "openQuestions": [
+    "Full-year 2026: did Q4 return to profit, and how much did the Sri Lanka general business lose on its own (company PBT less share of subsidiaries)?",
+    "Amana Takaful (Maldives): why did third-quarter 2026 profit nearly vanish (9M PBT Rs 740mn vs Rs 730mn at June), and the Rs 315mn translation loss in Q3?",
+    "Capital adequacy ratio for the company and Amana Takaful Life after the rights issue (not disclosed in the 2025 annual report).",
+    "SLFRS 17 and SLFRS 9 effect on opening equity and profit timing in the 2026 annual report (the interims say 'material' but give no figure).",
+    "Any dividend for 2026, and whether Mr Mohomad Aslam Omar's new 9.01% stake (bought in Q3 2026) signals a change in control or strategy.",
+    "Uzbekistan (Amana Sugurta, 79%): licence status and capital needed."
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-26",
+      "basedOn": "Interim to 30 Sep 2026",
+      "summary": "Requested from Telegram (/add ATL.N0000). First analysis from the three CSE downloads: Annual Report 2025 and the interims to 30 June and 30 September 2026 (the March 2026 interim wasn't downloaded; Q1 figures not recorded). Record holds printed figures only, FY 2021–2023 from the ten-year summary. Beta 0.80 provisional (Damodaran's site and the CSE site blocked from this run). Methods: justified P/B, justified P/E and residual income by scripts/valuation.py at a 16.5% cost of equity; no dividend model (no dividend paid). Business tests 1 of 4 (only capital/borrowing passes, with the CAR not disclosed): category 3, avoid for now. Price is the 30 Sep 2026 close from the interim (Rs 22.30), as the CSE close couldn't be fetched; the site build replaces it with the daily close.",
+      "fairValue": 6.02,
+      "buyPrice": 5.12,
+      "strongBuyPrice": 4.52,
+      "priceAtTime": 22.3,
+      "archive": null
+    }
+  ]
+}
