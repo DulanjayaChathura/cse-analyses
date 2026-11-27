@@ -12,32 +12,92 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-10",
+  "analysisDate": "2026-11-27",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 30 Jun 2026 and 30 Sep 2026"
+      "Annual Report 2025/26",
+      "Interim report to 30 June 2026",
+      "Interim report to 30 September 2026"
     ]
   },
   "price": {
-    "value": 75.0,
-    "date": "2026-11-09",
+    "value": 72.5,
+    "date": "2026-11-27",
     "source": "CSE closing price",
-    "note": "April–September 2026 range Rs 66.00–92.50; Rs 78.90 at 30 September."
+    "note": "Traded Rs 66.00–92.50 in April–September 2026 (Rs 71.50–84.90 in July–September); Rs 29.50–101.00 in the year to March 2026."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Growth is slowing and profit fell in the September quarter, while debt keeps rising",
-    "text": "Singer (Sri Lanka) PLC (SINS.N0000) is still growing, but the boom is slowing: in the six months to September 2026 revenue rose 30% and profit 20%, and in the September quarter alone profit fell 6% as finance costs doubled. At Rs 75.00 the share trades at 3.9x its NAV of Rs 19.23 and 11.1x trailing earnings, while debt keeps rising (net debt now 3.5x equity) and the business used cash rather than producing it. I've cut my earnings estimate for this year, which lowers fair value to about Rs 42.30 (from Rs 45), so the price is about 77% above it. I'd buy at up to about Rs 36 and treat under Rs 31.70 as a strong buy."
+    "headline": "A fast-growing retailer and lender earning 40% on equity, but on borrowed money; the price assumes that lasts, so it is well above value",
+    "text": "Singer (Sri Lanka) PLC (SINS.N0000), the Hayleys-controlled seller of home appliances, electronics, furniture, sewing machines and now motorcycles, mostly on credit, had a record 2025/26: revenue up 46% and profit up 83%. In the six months to September 2026 revenue rose another 30% and profit to owners 20%, but the September quarter's profit fell 6% as finance costs nearly doubled. At Rs 72.50 the share trades at 3.8x its NAV of Rs 19.23 and 10.7x the last 12 months' EPS of Rs 6.78.\n\nThe high return on equity (about 40%) comes with net debt of about 4x equity, and the business uses cash rather than producing it, because customer credit and stock grow with sales. Profit has collapsed twice since 2019. At a 20% required return, worked out from the beta, the four methods give a fair value of about **Rs 30.20**. I'd buy only up to about **Rs 25.70** and treat under **Rs 22.70** as a strong buy, so not at today's price. The fair value was Rs 42.30 on 10 November; it is lower mainly because the P/E method now uses the P/E those returns justify (5.4x base, against a chosen 9x), the required return is 20% (19% before) and the residual income fade is five years, not ten."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 1,
+    "outOf": 4,
+    "assessed": "2026-11-27",
+    "reason": "Very high returns in good years, but they rest on heavy borrowing; there was a loss two years ago and the business uses rather than produces cash as customer credit grows.",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": true,
+        "value": "40%",
+        "note": "40.3% over the last 12 months (derived.py); the company's return on average net assets was 28, 35, 1, −1, 29, 40% over 2020/21–2025/26 (average about 22%). Passes on the average, but it swings with the economy."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "4.1x equity",
+        "note": "Net debt Rs 92.9bn (loans and overdrafts 94.5 + leases 6.4 − cash and bank deposits 8.0) against owners' equity Rs 22.5bn at 30 Sep 2026; 4.1x in March too on this basis (3.4x in the report, which leaves out leases). Singer Finance also holds Rs 52.3bn of customer deposits."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Loss in 2023/24",
+        "note": "Group loss of Rs 0.09bn in 2023/24 and almost nothing in 2022/23; the September 2026 quarter's profit fell 6%."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "Negative",
+        "note": "Operating cash flow −Rs 13.9bn in 2024/25 and −Rs 41.6bn in 2025/26 as customer credit and stock grew; dividends are paid from borrowing and deposits."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.14,
+    "betaBasis": "Provisional. Weighted 57% retail (Damodaran global Retail (Special Lines) unlevered 0.90, a web-search stand-in, relevered at Singer PLC's own net debt of 0.59x market value: 1.27) and 43% finance (Financial Svcs. (Non-bank & Insurance) levered 0.97). The only local 5-year beta (StockAnalysis 0.41) is set aside: the share trades thinly. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 21.5,
+      "base": 20.0,
+      "bull": 18.5
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-27",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026), research/market-inputs.json",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: Damodaran Retail (Special Lines) global unlevered 0.90 and Financial Svcs. (Non-bank & Insurance) 0.97 (web-search extracts); segment weights from the Interim to 30 Sep 2026, PDF p. 9"
+    ],
+    "note": "Cost of equity 8.24% + 1.14 × (4.2% + 6.08%) = 20.0%, ±1.5 points for bear and bull (scripts/reinvestment.py). Treated like a finance company: most of the debt funds customer credit, so the methods are equity methods at the cost of equity and there is no WACC or whole-company DCF."
   },
   "valuation": {
-    "fairValue": 42.3,
-    "buyPrice": 36.0,
-    "strongBuyPrice": 31.7,
+    "fairValue": 30.22,
+    "buyPrice": 25.69,
+    "strongBuyPrice": 22.67,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -48,13 +108,18 @@
       "bull": 20
     },
     "nav": 19.23,
-    "note": "Fair value weights the bear/base/bull averages of the three methods 30/50/20 (about 2.2x NAV). Lowered from Rs 45 after the weaker September quarter."
+    "note": "Average of four methods (justified P/B, P/E, residual income, dividend model), each weighting bear/base/bull 30/50/20; from scripts/valuation.py. About 1.6x NAV."
   },
   "dividend": {
     "perShare": 1.84,
     "label": "for 2025/26",
-    "source": "Annual Report 2025/26, Financial highlights",
-    "note": "Four interim dividends. About Rs 0.84 a share declared for 2026/27 so far (worked out from the total, not a reported figure)"
+    "source": "Annual Report 2025/26, p. 200 and share information (p. 313)",
+    "note": "Four interims: Rs 0.32, 0.36, 0.31 and 0.85.",
+    "latest": {
+      "perShare": 0.84,
+      "label": "interims for 2026/27 so far (Rs 0.50 + Rs 0.34)",
+      "source": "Interim to 30 Sep 2026, PDF p. 12"
+    }
   },
   "keyMetrics": [
     {
@@ -67,22 +132,44 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 3.9,
-      "unit": "x"
+      "value": 3.77,
+      "unit": "x",
+      "note": "At Rs 72.50"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 11.1,
+      "value": 10.7,
       "unit": "x",
-      "note": "Trailing EPS Rs 6.78"
+      "note": "EPS Rs 6.78, 12 months to Sep 2026"
     },
     {
       "id": "roe",
       "label": "Return on equity",
-      "value": 40,
+      "value": 40.3,
       "unit": "%",
-      "note": "Last 12 months; September quarter about 25% annualised"
+      "note": "Last 12 months; about zero in 2022/23 and 2023/24"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 20.0,
+      "unit": "%",
+      "note": "Beta 1.14"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth (H1)",
+      "value": 30,
+      "unit": "%",
+      "note": "September quarter 21%"
+    },
+    {
+      "id": "netDebt",
+      "label": "Net debt",
+      "value": 92.86,
+      "unit": "Rs bn",
+      "note": "4.1x owners' equity, Sep 2026 (incl. leases)"
     },
     {
       "id": "dividendYield",
@@ -92,54 +179,37 @@
       "note": "Rs 1.84 for 2025/26"
     },
     {
-      "id": "payout",
-      "label": "Payout ratio",
-      "value": 28,
-      "unit": "%",
-      "note": "Six months to Sep 2026"
-    },
-    {
-      "id": "netDebtEquity",
-      "label": "Net debt / equity",
-      "value": 3.5,
-      "unit": "x",
-      "note": "September 2026; 3.4x in March"
-    },
-    {
-      "id": "revenueGrowth",
-      "label": "Revenue growth",
-      "value": 30,
-      "unit": "%",
-      "note": "Six months to Sep 2026; 21% in the September quarter"
-    },
-    {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 88,
-      "unit": "Rs bn",
-      "display": "~Rs 88bn"
+      "value": 84.7,
+      "unit": "Rs bn"
     }
   ],
   "highlights": [
     {
       "title": "Six months to 30 September 2026 (group, unaudited)",
-      "text": "Revenue rose 30% to Rs 74.4bn and profit attributable rose 20% to Rs 3.50bn. EPS was Rs 3.00 against Rs 2.51."
+      "text": "Revenue rose 30% to Rs 74.4bn; operating profit rose 40% to Rs 8.51bn; profit to owners rose 20% to Rs 3.50bn (EPS Rs 3.00 against Rs 2.51)."
     },
     {
-      "title": "Profit fell in the September quarter",
-      "text": "Quarter EPS Rs 1.16 against Rs 1.23 (down 6%) as net finance costs doubled and bad-debt charges rose 51%."
+      "title": "September quarter: first fall in profit",
+      "text": "Revenue up 21%, but profit to owners down 6% to Rs 1.36bn (EPS Rs 1.16 against Rs 1.23) as finance costs rose 94% and bad-debt charges 51%."
     },
     {
-      "title": "Finance arm drives growth",
-      "text": "Financial services earned Rs 3.86bn of the half's segment profit, up 52%; home appliances and electronics earned less in the quarter."
+      "title": "The finance side carries the growth",
+      "text": "Financial services earned Rs 3.86bn of the half's Rs 8.96bn segment result, up 52%; Singer Finance took in another Rs 11.0bn of customer deposits."
     },
     {
-      "title": "More debt, negative cash flow",
-      "text": "Loans and overdrafts Rs 94.5bn (Rs 82.3bn in March); net debt 3.5x equity. Operating cash flow Rs 3.6bn negative."
+      "title": "More debt, cash going out",
+      "text": "Loans and overdrafts Rs 94.5bn (Rs 82.3bn in March); net debt incl. leases Rs 92.9bn, 4.1x equity. Stock rose Rs 7.9bn and customer credit Rs 12.1bn; operating cash flow −Rs 3.6bn even with the deposits counted in it."
+    },
+    {
+      "title": "2025/26 annual report",
+      "text": "Revenue Rs 128.6bn (+46%), profit Rs 7.66bn (+83%), EPS Rs 6.29, dividends Rs 1.84. Operating cash flow −Rs 41.6bn as debtors rose Rs 48.8bn and stock Rs 11.2bn."
     }
   ],
   "history": {
     "periods": [
+      "FY2021",
       "FY2022",
       "FY2023",
       "FY2024",
@@ -153,6 +223,7 @@
         "label": "EPS",
         "unit": "Rs",
         "values": [
+          2.18,
           3.51,
           0.01,
           -0.14,
@@ -163,6 +234,7 @@
         "notes": [
           null,
           null,
+          null,
           "Loss year",
           null,
           null,
@@ -171,23 +243,25 @@
       },
       {
         "id": "roe",
-        "label": "Return on net assets",
+        "label": "Return on equity",
         "unit": "%",
         "values": [
+          28,
           35,
           1,
           -1,
           29,
           40,
-          null
+          40.3
         ],
         "notes": [
+          "Company's return on average net assets",
           null,
           null,
           null,
           null,
           null,
-          null
+          "Trailing 12 months, owners' equity"
         ]
       },
       {
@@ -195,20 +269,22 @@
         "label": "P/E",
         "unit": "x",
         "values": [
+          11.2,
           4.0,
           null,
           null,
           9.7,
           12.2,
-          11.1
+          10.7
         ],
         "notes": [
+          "Year-end",
           "Year-end",
           "Not meaningful (77x)",
           "Loss year",
           "Year-end",
           "Year-end",
-          "Trailing, at Rs 75.00"
+          "Trailing, at Rs 72.50"
         ]
       }
     ]
@@ -217,78 +293,81 @@
     {
       "method": "NAV",
       "value": "Rs 19.23",
-      "reading": "The price is 3.9x NAV."
+      "reading": "The price is 3.8x NAV."
     },
     {
       "method": "Return on equity",
       "value": "About 40%",
-      "reading": "Last 12 months, but the September quarter annualises to about 25%; -1% in 2023/24."
+      "reading": "Last 12 months, helped by debt of 4x equity; about zero in 2022/23 and 2023/24."
     },
     {
       "method": "P/E",
-      "value": "11.1x",
-      "reading": "On trailing EPS of Rs 6.78."
+      "value": "10.7x",
+      "reading": "On trailing EPS of Rs 6.78; the returns justify about 5.4x at a 20% required return."
     },
     {
       "method": "Dividends",
       "value": "2.5% yield",
-      "reading": "Rs 1.84 for 2025/26; about Rs 0.84 declared in the first half of this year."
+      "reading": "Rs 1.84 for 2025/26 (29% of profit); Rs 0.84 declared for the first half of this year."
     },
     {
       "method": "Debt",
-      "value": "Net debt 3.5x equity",
-      "reading": "About Rs 86.5bn at September 2026, up from Rs 74.7bn in March."
+      "value": "Net debt 4.1x equity",
+      "reading": "Rs 92.9bn at September 2026 including leases, up from Rs 81.4bn in March."
     }
   ],
   "models": [
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 15.6,
-      "base": 26.6,
-      "bull": 42.1,
-      "weighted": 26.4,
-      "comment": "The strictest: assumes ROE settles at its long-run level (24% base) straight away."
+      "comment": "NAV Rs 19.23 × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 18/24/30% against 21.5/20/18.5%, so about 0.8x–2.0x book.",
+      "bear": 15.15,
+      "base": 24.72,
+      "bull": 38.46,
+      "weighted": 24.6
     },
     {
       "id": "pe",
-      "name": "P/E method",
-      "bear": 38.5,
-      "base": 59.4,
-      "bull": 80.3,
-      "weighted": 57.3,
-      "comment": "The most generous: EPS for the year to March 2027 (lowered) times 7 / 9 / 11."
+      "name": "P/E (justified)",
+      "comment": "EPS to March 2027 Rs 5.80 / 6.60 / 7.20 (H1 Rs 3.00 plus a second half of Rs 2.80 / 3.60 / 4.20 against Rs 3.78 last year) × the P/E the returns justify, about 4.4x / 5.4x / 6.7x. Base EPS is 2.7% below the Rs 6.78 twelve-month run-rate because the September quarter fell 6% as finance costs rose.",
+      "bear": 25.39,
+      "base": 35.36,
+      "bull": 48.0,
+      "weighted": 34.9
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 20.1,
-      "base": 39.6,
-      "bull": 87.0,
-      "weighted": 43.2,
-      "comment": "Lets today's high ROE fade gradually over 10 years; starting ROE lowered after the September quarter."
+      "comment": "Book Rs 19.23 plus profit above the required return; ROE moves from 40.3% now to 18/24/30% over five years (five rather than ten because Singer's ROE has fallen to about zero twice since 2019), payout 30%.",
+      "bear": 19.97,
+      "base": 33.86,
+      "bull": 57.23,
+      "weighted": 34.37
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "comment": "Next year's dividend Rs 1.60 / 1.90 / 2.10 (Rs 0.84 declared for the first half), growing 4/8/12% for five years, then the payout the long-run ROE allows (1 − growth ÷ ROE: 72%, 75%, 77%).",
+      "bear": 16.72,
+      "base": 26.98,
+      "bull": 42.53,
+      "weighted": 27.01
     }
   ],
-  "modelsNote": "Singer pays out under a third of its profit, so a dividend model (Rs 10.6 / 15.5 / 22.9) understates it, and customer-credit growth swamps its free cash flow, so a cash-flow DCF isn't reliable. The fair value uses three methods.",
+  "modelsNote": "Four equity methods, averaged; values from scripts/valuation.py. No whole-company DCF: most of the debt funds customer credit and operating cash flow is negative every year while credit grows (−Rs 41.6bn in 2025/26). Growth check: dividends assumed to grow 4% / 8% / 12% for five years against supported growth of 28.3% (70.7% of profit kept × 40% ROE, 2025/26); about 17% at the base long-run ROE of 24%; all within it. Long-run growth 5/6/7% stays below the 12.24% bond yield. Long-run ROE 18/24/30% is above the company's long average (about 18–22%) in the base and bull cases because it is now larger and has a bigger finance arm.",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Cost of equity",
-        "bear": "21%",
-        "base": "19%",
-        "bull": "17.5%"
+        "label": "Cost of equity (beta 1.14)",
+        "bear": "21.5%",
+        "base": "20.0%",
+        "bull": "18.5%"
       },
       {
-        "label": "Long-run ROE (price to book)",
+        "label": "Long-run ROE",
         "bear": "18%",
         "base": "24%",
         "bull": "30%"
-      },
-      {
-        "label": "Return on equity path",
-        "bear": "28% falling to 18%",
-        "base": "34% falling to 22%",
-        "bull": "40% falling to 28%"
       },
       {
         "label": "Long-term growth",
@@ -297,131 +376,548 @@
         "bull": "7%"
       },
       {
-        "label": "EPS to March 2027 × P/E",
-        "bear": "5.5 × 7",
-        "base": "6.6 × 9",
-        "bull": "7.3 × 11"
+        "label": "EPS to March 2027",
+        "bear": "Rs 5.80",
+        "base": "Rs 6.60",
+        "bull": "Rs 7.20"
+      },
+      {
+        "label": "Dividend next year, then growth",
+        "bear": "Rs 1.60, +4%",
+        "base": "Rs 1.90, +8%",
+        "bull": "Rs 2.10, +12%"
+      },
+      {
+        "label": "ROE path (residual income)",
+        "bear": "40% → 18% in 5 years",
+        "base": "40% → 24%",
+        "bull": "40% → 30%"
       }
     ],
     "averages": {
-      "bear": 24.7,
-      "base": 41.9,
-      "bull": 69.8
+      "bear": 19.31,
+      "base": 30.23,
+      "bull": 46.55
     },
-    "common": "Sri Lankan government bonds yield about 11–12%, plus a higher premium for a cyclical, highly geared business. Base case: second-half EPS about Rs 3.60, a little below last year's Rs 3.78."
+    "common": "Bond yield 12.24%; required return from the beta (CAPM with a 6.08% country premium). Base case: second-half EPS Rs 3.60, a little below last year's Rs 3.78, because finance costs are rising faster than sales."
   },
   "sensitivity": {
     "title": "Residual income base case, Rs per share",
     "rowLabel": "Cost of equity",
     "columnLabel": "Long-run ROE",
     "rows": [
-      "17.5%",
-      "19%",
-      "21%"
+      "18.5%",
+      "20%",
+      "21.5%"
     ],
     "columns": [
       "18%",
-      "22%",
-      "28%"
+      "24%",
+      "30%"
     ],
     "values": [
       [
-        35.4,
-        47.6,
-        70.6
+        25.6,
+        39.2,
+        55.3
       ],
       [
-        29.9,
-        39.6,
-        57.8
+        22.3,
+        33.9,
+        47.5
       ],
       [
-        24.4,
-        31.8,
-        45.5
+        19.7,
+        29.6,
+        41.4
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Today's price needs ROE near 30% or more for many years."
+    "note": "Today's price (Rs 72.50) needs ROE to stay near 40% for good at a 20% required return."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 42.3
+        "maxPrice": 30.2
       },
       {
         "shares": 150,
-        "maxPrice": 36.0
+        "maxPrice": 25.7
       },
       {
         "shares": 150,
-        "maxPrice": 31.7
+        "maxPrice": 22.7
       }
     ],
-    "averagePrice": 37.23,
-    "totalCost": 18615,
-    "note": "About Rs 18,615 in total, against Rs 37,500 at Rs 75.00.",
-    "realism": "Rs 42.30 needs about a 44% fall. The share was Rs 29.50 in April–June 2025, so cyclical falls of that size happen, but it hasn't been below Rs 66 this year."
+    "averagePrice": 26.6,
+    "totalCost": 13300,
+    "note": "About Rs 13,300 in total, against Rs 36,250 at Rs 72.50.",
+    "realism": "Rs 25.70 needs about a 65% fall. This year's low is Rs 66.00, so it isn't close; but the share was Rs 29.50 in April 2025 and Rs 14.50 in August 2024, so falls of that size have happened when profit collapsed."
   },
   "changeMyView": {
     "higher": [
-      "Profit growth recovering in the December (festive) quarter.",
-      "Finance costs stabilising and debt falling relative to equity.",
-      "Bad debts staying low despite rapid credit growth.",
-      "A higher dividend payout."
+      "Profit growing again in the December (festive) quarter, with finance costs rising no faster than sales.",
+      "Net debt falling back towards 3x equity.",
+      "Bad debts staying low as Singer Finance's loan book matures.",
+      "Evidence that ROE can hold near 30% through a downturn."
     ],
     "lower": [
-      "Another quarter of falling profit.",
-      "Rising interest rates.",
-      "Bad debts climbing after rapid credit growth.",
-      "Net debt above 4x equity.",
-      "An adverse court ruling on the Rs 1.19bn deemed-VAT case."
+      "A second quarter of falling profit.",
+      "Higher interest rates or a weaker rupee (most stock is imported).",
+      "Bad-debt charges rising faster than lending.",
+      "Net debt above 4.5x equity.",
+      "Losing the Rs 1.19bn deemed-VAT case or the other tax appeals (no provision made)."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: Singer (Sri Lanka) PLC (SINS.N0000) is still growing, but the boom is slowing: in the six months to September 2026 revenue rose 30% and profit 20%, and in the September quarter alone profit fell 6% as finance costs doubled. At Rs 75.00 the share trades at 3.9x its NAV of Rs 19.23 and 11.1x trailing earnings, while debt keeps rising (net debt now 3.5x equity) and the business used cash rather than producing it. I've cut my earnings estimate for this year, which lowers fair value to about Rs 42.30 (from Rs 45), so the price is about 77% above it. I'd buy at up to about Rs 36 and treat under Rs 31.70 as a strong buy.\n\nWhat's new (six months to 30 September 2026, group, unaudited)\nRevenue rose 30% to Rs 74.4bn and profit attributable rose 20% to Rs 3.50bn. EPS was Rs 3.00 against Rs 2.51.\nSeptember quarter alone: revenue rose 21% to Rs 35.7bn, but profit attributable fell 6% to Rs 1.36bn (EPS Rs 1.16 against Rs 1.23). The first fall in profit since the recovery began.\nWhy profit fell: net finance costs more than doubled (Rs 1.05bn against Rs 0.48bn in the quarter), bad-debt charges rose 51%, and the home appliances and consumer electronics businesses earned less than a year earlier.\nWhere the profit comes from: the finance business (Singer Finance and hire purchase) earned Rs 3.86bn of the half's Rs 9.0bn segment profit, up 52%; retail segments grew more slowly.\nDebt: loans and overdrafts rose to Rs 94.5bn from Rs 82.3bn in March; net debt about Rs 86.5bn, 3.5x equity (3.4x in March). Singer Finance's public deposits rose another Rs 11bn.\nCash: operating cash flow was Rs 3.6bn negative (Rs 9.3bn negative a year earlier) as stock rose Rs 7.9bn and customer credit grew; capital spending tripled to Rs 1.65bn.\nNAV per share Rs 19.23. Dividends of about Rs 0.84 a share were declared in the half (28% of profit).\nA tax dispute over deemed VAT (Rs 1.19bn, 2014–2015) is still before the Court of Appeal; no provision has been made.\n\nPrice\nPrice: Rs 75.00 (CSE closing price, 2026-11-09). Please check it live. In April–September 2026 it traded between Rs 66.00 and Rs 92.50 (Rs 71.50–84.90 in July–September) and closed September at Rs 78.90.\n\nMethods\nNAV (Rs 19.23): 3.9x.\nReturn on equity: about 40% over the last 12 months, but the September quarter annualises to about 25%.\nP/E: 11.1x trailing EPS of Rs 6.78.\nDividends: Rs 1.84 for 2025/26, a 2.5% yield; about Rs 0.84 declared so far this year.\nDebt: net debt 3.5x equity.\nJustified price to book: Rs 15.6 / 26.6 / 42.1 across the cases, weighted Rs 26.4.\nP/E method: Rs 38.5 / 59.4 / 80.3, weighted Rs 57.3.\nResidual income: Rs 20.1 / 39.6 / 87.0, weighted Rs 43.2.\nDividend model: Rs 10.6 / 15.5 / 22.9 (not used in the fair value).\n\nSinger pays out under a third of its profit, so a dividend model understates it, and its cash flow is swamped by customer-credit growth, so a cash-flow DCF isn't reliable. The P/E method is the most generous; price to book is the strictest.\n\nAssumptions (bear / base / bull)\nCost of equity: 21% / 19% / 17.5% (unchanged).\nLong-run ROE (price to book): 18% / 24% / 30% (unchanged).\nROE path (residual income): 28% falling to 18% / 34% falling to 22% / 40% falling to 28% (starting points lowered from 30% / 38% / 42% after the weaker September quarter).\nLong-term growth: 5% / 6% / 7% (unchanged).\nEPS for the year to March 2027 × P/E: 5.5 × 7 / 6.6 × 9 / 7.3 × 11 (base and bull lowered from 7.6 and 8.5). The base case assumes the second half earns about Rs 3.60, a little below last year's Rs 3.78, because profit has started to fall.\nAverage of the three methods: Rs 24.7 / Rs 41.9 / Rs 69.8.\n\nFair value and buy price\nFair value: weighting 30/50/20 gives about Rs 42.30 (was Rs 45), so Rs 75.00 is about 77% above it.\nBuy price: a 15% margin of safety gives Rs 36.00 (was Rs 38.30), and 25% gives Rs 31.70 (was Rs 33.80).\nPlan for 500 shares: 200 at up to Rs 42.30, 150 at up to Rs 36.00 and 150 at up to Rs 31.70. That averages about Rs 37.23, about Rs 18,615, against Rs 37,500 at Rs 75.00.\nRealism: Rs 42.30 needs about a 44% fall. The share was Rs 29.50 as recently as April–June 2025, so cyclical falls of that size happen, but it hasn't been below Rs 66 this year.\n\nSensitivity (residual income base case, Rs per share)\nCost of equity 17.5%: 35.4 / 47.6 / 70.6 for long-run ROE of 18% / 22% / 28%.\nCost of equity 19%: 29.9 / 39.6 / 57.8.\nCost of equity 21%: 24.4 / 31.8 / 45.5.\n\nBusiness tests: 1 of 4 passed (category 3, avoid for now, unchanged)\nReturn on equity: passed (about 40% over 12 months). Debt: failed (3.5x equity and rising). Steady profit: failed (loss in 2023/24; profit now falling again). Cash: failed (operating cash flow negative).\n\nWhat would change my view\nSupports a higher value: profit growth recovering in the December quarter (the festive season); finance costs stabilising; debt falling relative to equity; bad debts staying low; a higher payout.\nSupports a lower value: another quarter of falling profit; interest rates rising; bad debts climbing after rapid credit growth; net debt above 4x equity; an adverse court ruling on the deemed-VAT case.\n\nThese are my estimates from the annual reports for the years to March 2025 and March 2026 and the interim reports to September 2026. The interim figures are unaudited, so check the price before ordering. This is analysis, not personal financial advice.",
-  "quality": {
-    "rating": "weak",
-    "passed": 1,
-    "outOf": 4,
-    "reason": "Growing, but very heavily borrowed, profit has started falling again, and it uses rather than produces cash.",
-    "tests": [
+  "management": {
+    "asOf": "2026-11-27",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 16–19), Group Managing Director's review (pp. 20–25), Way forward (pp. 52–53); progress from the interims to 30 June and 30 September 2026. The 2024/25 annual report wasn't read in detail, so last year's promises can't be checked; the track list follows this year's.",
+    "takeaway": "Management is pushing hard for growth (new brands, automobiles, more customer credit through Singer Finance), and it worked in 2025/26, but it is being paid for with borrowing: net debt is now about 4x equity and finance costs are rising faster than profit.",
+    "said": [
       {
-        "id": "returns",
-        "label": "Return on equity of 15% or more",
-        "pass": true,
-        "value": "About 40%",
-        "note": "Last 12 months; the September quarter annualises to about 25%. About zero in 2022–2024."
+        "text": "Profit after tax rose 83% to Rs 7.66bn on 46% revenue growth, helped by low inflation, stable interest rates and a steady rupee",
+        "ref": "pp. 16, 23"
       },
       {
-        "id": "debt",
-        "label": "Net debt no more than equity",
-        "pass": false,
-        "value": "3.5x equity",
-        "note": "Up from 3.4x in March; mostly funding customer credit and Singer Finance."
+        "text": "Operating margin improved from 9.7% to 11.6% as fixed costs were spread over higher sales",
+        "ref": "p. 23"
       },
       {
-        "id": "steady",
-        "label": "Steady profit: no loss in five years, no one-offs",
-        "pass": false,
-        "value": "Loss in 2023/24",
-        "note": "And the September 2026 quarter's profit fell 6%."
+        "text": "Growth was funded mainly by debt (up 67%) and retained profit; assets rose 49% to Rs 182bn, mostly customer credit and stock",
+        "ref": "p. 18"
       },
       {
-        "id": "cash",
-        "label": "Profit turns into cash and dividends",
-        "pass": false,
-        "value": "Negative",
-        "note": "Operating cash flow Rs 3.6bn negative in the six months to September."
+        "text": "Singer Finance grew loans 121% and deposits 115%, and earned Rs 3.3bn operating profit, 22% of the group's",
+        "ref": "p. 24"
+      },
+      {
+        "text": "Strong growth in April 2026, but headwinds expected from Middle East energy prices, inflation and the rupee",
+        "ref": "pp. 19, 25"
       }
     ],
-    "assessed": "2026-11-10"
-  }
+    "plans": [
+      {
+        "text": "Grow new categories: Piaggio two- and three-wheelers, Hikvision surveillance, HP laptops, Starlink, Bosch and DeLonghi appliances",
+        "ref": "pp. 20, 25"
+      },
+      {
+        "text": "Make furniture a 'thrust' category and buy a factory to expand it",
+        "ref": "pp. 25, 53"
+      },
+      {
+        "text": "Push washing machines and other low-penetration white goods (washing machine share rose from 38% to 46%)",
+        "ref": "pp. 18, 52"
+      },
+      {
+        "text": "Add digital transformation and sustainability as strategy pillars (ESG Roadmap 2030)",
+        "ref": "pp. 17, 25"
+      },
+      {
+        "text": "Keep growing the showroom network (12 new and 118 renovated in 2025/26, over 420 in all)",
+        "ref": "pp. 20, 53"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Land with a 60,000 sq ft factory for furniture manufacturing (agreement signed April 2026)",
+        "amount": null,
+        "ref": "pp. 25, 53"
+      },
+      {
+        "text": "More local manufacturing capacity for selected products",
+        "amount": null,
+        "ref": "p. 53"
+      },
+      {
+        "text": "Showroom openings and renovations",
+        "amount": null,
+        "ref": "pp. 20, 53"
+      },
+      {
+        "text": "Rights issue into Singer Finance to fund its lending growth",
+        "amount": "Rs 1.6bn by Singer (Rs 0.40bn from minorities), 2025/26",
+        "ref": "pp. 202, 206"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Strong growth to continue after a strong April 2026",
+        "result": "Revenue up 41% in the June quarter and 21% in the September quarter; six-month revenue up 30% to Rs 74.4bn",
+        "status": "done",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 2–3"
+      },
+      {
+        "promise": "Grow the automobile business (Piaggio) and other new categories",
+        "result": "Automobile and other revenue Rs 9.33bn in the half, up 79% from Rs 5.21bn",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, PDF p. 9"
+      },
+      {
+        "promise": "Grow Singer Finance",
+        "result": "Financial services segment result Rs 3.86bn in the half, up 52%; customer deposits up Rs 11.0bn",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 7, 9"
+      },
+      {
+        "promise": "Keep leverage stable and finance costs under control",
+        "result": "Net debt (incl. leases) up from Rs 81.4bn in March to Rs 92.9bn in September; finance costs up 74% and September-quarter profit down 6%",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 2–4"
+      },
+      {
+        "promise": "Buy a factory to expand furniture",
+        "result": "Capital spending Rs 1.65bn in the half, against Rs 0.52bn a year earlier; furniture revenue up only 5%",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, PDF pp. 7, 9"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, PDF pp. 13–14 (top 20, directors, public holding); Interim to 30 Jun 2026, PDF pp. 12–13 for the comparison; Annual Report 2025/26, pp. 312–314 for March.",
+    "takeaway": "Hayleys PLC controls Singer with 67.13% directly and about 82% with its subsidiaries; only 10.94% is held by the public, so the share trades thinly. In the September quarter the Lynear Wealth Dynamic Opportunities Fund nearly doubled its holding (+3.69mn shares) and Lynear Wealth/Hanif Yusoof entered the top 20; no big holder sold heavily.",
+    "groups": [
+      {
+        "name": "Hayleys PLC",
+        "pct": 67.13
+      },
+      {
+        "name": "Other Hayleys companies (Advantis, Aventura, Agriculture)",
+        "pct": 14.68
+      },
+      {
+        "name": "Volanka, Carbotels and Mr. D. Perera (not counted as public)",
+        "pct": 7.25
+      },
+      {
+        "name": "Public",
+        "pct": 10.94
+      }
+    ],
+    "publicFloat": 10.94,
+    "publicHolders": 8691,
+    "publicHoldersPrev": 8717,
+    "directors": [
+      {
+        "name": "Mr. Mohan Pandithage (Chairman)",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Mahesh Wijewardene (GMD)",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Deepal Sooriyaarachchi",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Sarath Ganegoda",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Dilip De Silva Wijeyeratne",
+        "shares": 0
+      },
+      {
+        "name": "Ms. Gayani De Alwis",
+        "shares": 0
+      },
+      {
+        "name": "Ms. Brindhiini Perera",
+        "shares": 0
+      },
+      {
+        "name": "Ms. Kawshi Amarasinghe",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Jonathan Alles",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Shalinka Seresinhe",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Thulitha Mendis",
+        "shares": 0
+      },
+      {
+        "name": "Mr. Vajira Tennakoon",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "HAYLEYS PLC",
+        "shares": 783801111,
+        "pct": 67.13,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "HAYLEYS ADVANTIS LIMITED",
+        "shares": 111382980,
+        "pct": 9.54,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "VOLANKA (PVT) LIMITED",
+        "shares": 34787235,
+        "pct": 2.98,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "HAYLEYS AVENTURA (PRIVATE) LIMITED",
+        "shares": 31595745,
+        "pct": 2.71,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "CARBOTELS (PVT) LIMITED",
+        "shares": 29042553,
+        "pct": 2.49,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "HAYLEYS AGRICULTURE HOLDINGS LIMITED",
+        "shares": 28404255,
+        "pct": 2.43,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. KULAPPU ARACHCHIGE DON DHAMMIKA PERERA",
+        "shares": 20807739,
+        "pct": 1.78,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "DEUTSCHE BANK AG TRUSTEE TO LYNEAR WEALTH DYNAMIC OPPORTUNITIES FUND",
+        "shares": 7957868,
+        "pct": 0.68,
+        "change": 3686658,
+        "new": false
+      },
+      {
+        "name": "MRS. MIHIRI VIRANI FERNANDO",
+        "shares": 6025000,
+        "pct": 0.52,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "PEOPLE'S LEASING AND FINANCE PLC/M.E.AMARASINGHE",
+        "shares": 5049504,
+        "pct": 0.43,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC - CAPITAL ALLIANCE QUANTITATIVE EQUITY FUND",
+        "shares": 3399096,
+        "pct": 0.29,
+        "change": -590000,
+        "new": false
+      },
+      {
+        "name": "LYNEAR WEALTH MANAGEMENT/MR. HANIF YUSOOF",
+        "shares": 3169296,
+        "pct": 0.27,
+        "change": null,
+        "new": true,
+        "note": "Not in the 30 June top 20"
+      },
+      {
+        "name": "MR. GONALAGODAGHE BUWANEKA DINUWAN THILAKARATNE",
+        "shares": 3009270,
+        "pct": 0.26,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "PEOPLE'S LEASING AND FINANCE PLC/L.P.HAPANGAMA",
+        "shares": 2742905,
+        "pct": 0.23,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "INVENCO CAPITAL PRIVATE LIMITED",
+        "shares": 2438750,
+        "pct": 0.21,
+        "change": 1209589,
+        "new": false
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC - NDB WEALTH GROWTH AND INCOME FUND",
+        "shares": 2000000,
+        "pct": 0.17,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "DEUTSCHE BANK AG - NATIONAL EQUITY FUND",
+        "shares": 1458194,
+        "pct": 0.12,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "UNION INVESTMENTS (PRIVATE) LIMITED",
+        "shares": 1300170,
+        "pct": 0.11,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MISS NAI KALUGE RUVANI HEMAMALA DE SILVA",
+        "shares": 1192914,
+        "pct": 0.1,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "MR. ABEYSIRI HEMAPALA MUNASINGHE & MR. A.R.R. MUNASINGHE",
+        "shares": 1143220,
+        "pct": 0.1,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": [
+      {
+        "name": "DFCC BANK PLC A/C NO.02",
+        "prevShares": 2305990
+      }
+    ]
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 21.5,
+      "base": 20.0,
+      "bull": 18.5
+    },
+    "wacc": null,
+    "debtWeight": null,
+    "shares": 1167.618,
+    "netDebt": 92.861,
+    "pe": {
+      "bear": {
+        "eps": 5.8,
+        "roe": 18,
+        "longRun": 5
+      },
+      "base": {
+        "eps": 6.6,
+        "roe": 24,
+        "longRun": 6
+      },
+      "bull": {
+        "eps": 7.2,
+        "roe": 30,
+        "longRun": 7
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 1.6,
+        "eps": 5.8,
+        "growth": 4,
+        "roe": 18,
+        "longRun": 5
+      },
+      "base": {
+        "dividend": 1.9,
+        "eps": 6.6,
+        "growth": 8,
+        "roe": 24,
+        "longRun": 6
+      },
+      "bull": {
+        "dividend": 2.1,
+        "eps": 7.2,
+        "growth": 12,
+        "roe": 30,
+        "longRun": 7
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend to March 2027",
+        "growth": "valuationInputs: Dividend growth",
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 5,
+      "book": 19.23,
+      "payout": 30,
+      "roeStart": 40.268,
+      "bear": {
+        "roe": 18,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 24,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 30,
+        "longRun": 7
+      },
+      "basis": {
+        "payout": "valuationInputs: Residual income path",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pb": {
+      "book": 19.23,
+      "bear": {
+        "roe": 18,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 24,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 30,
+        "longRun": 7
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "ri.roeStart": "ttm.roe"
+    }
+  },
+  "fullText": "Summary: Singer (Sri Lanka) PLC (SINS.N0000) is growing fast but on borrowed money. Revenue rose 46% and profit 83% in 2025/26, and another 30% and 20% in the six months to September 2026, but the September quarter's profit fell 6% as finance costs nearly doubled. At Rs 72.50 the share trades at 3.8x its NAV of Rs 19.23 and 10.7x trailing EPS of Rs 6.78. Return on equity is about 40%, but net debt is about 4x equity and the business uses cash as customer credit grows. At a 20% required return the fair value is about Rs 30.20 (Rs 42.30 on 10 November). I'd buy only up to about Rs 25.70 and treat under Rs 22.70 as a strong buy. Category 3 (avoid for now), unchanged: it passes 1 of the 4 business tests.\n\nWhat the business is\nSinger sells home appliances (the biggest line, about a third of sales), digital products, electronics, furniture, sewing machines and, since 2025, Piaggio two- and three-wheelers, through over 420 showrooms, mostly on credit. About 26% of revenue is made in its own four factories. Singer Finance (Lanka) PLC, a licensed finance company it controls, takes public deposits and lends. Hayleys PLC owns 67% directly and about 82% with its subsidiaries.\n\nWhat's new (six months to 30 September 2026, group, unaudited)\n- Revenue Rs 74.4bn (+30%); operating profit Rs 8.51bn (+40%); profit to owners Rs 3.50bn (+20%); EPS Rs 3.00 (Rs 2.51).\n- September quarter: revenue +21%, but profit to owners −6% (EPS Rs 1.16 against Rs 1.23). Finance costs +94% and bad-debt charges +51% in the quarter.\n- Financial services earned Rs 3.86bn of the half's Rs 8.96bn segment result (+52%). Automobiles and other revenue rose 79%.\n- Loans and overdrafts Rs 94.5bn (Rs 82.3bn in March); net debt including leases Rs 92.9bn, 4.1x owners' equity of Rs 22.5bn. Singer Finance's customer deposits rose Rs 11.0bn to Rs 52.3bn.\n- Stock rose Rs 7.9bn to Rs 41.7bn and customer credit Rs 12.1bn; operating cash flow −Rs 3.6bn (the half-year report counts the deposits inside operating cash; without them about −Rs 14.6bn).\n- Dividends Rs 0.50 and Rs 0.34 declared (Rs 0.84 so far for 2026/27).\n- Tax disputes: Rs 1.19bn deemed VAT (2014–15) before the Court of Appeal, and VAT and income tax assessments for 2017–2022 (Rs 1.51bn and Rs 1.38bn including penalties) under appeal; no provisions made.\n\n2025/26 (annual report)\nRevenue Rs 128.6bn (+46%), operating profit Rs 14.9bn (+74%), profit Rs 7.66bn (+83%), EPS Rs 6.29, dividends Rs 1.84 (four interims). Assets rose 49% to Rs 182bn, mostly customer credit and stock; operating cash flow was −Rs 41.6bn. Bad-debt charges almost doubled to Rs 1.03bn.\n\nPrice\nRs 72.50 (CSE close, 27 November 2026). Traded Rs 66.00–92.50 in April–September 2026; Rs 29.50–101.00 in 2025/26.\n\nRequired return\nBeta 1.14 (provisional): 57% retail at Damodaran's Retail (Special Lines) beta relevered for Singer's own debt (1.27), 43% finance at the non-bank financial services beta (0.97). Cost of equity 8.24% + 1.14 × 10.28% = 20.0% (bear 21.5%, bull 18.5%). No WACC: most of the debt funds lending, so Singer is valued like a finance company, on equity.\n\nMethods (bear / base / bull, Rs a share)\n- Justified price to book: 15.15 / 24.72 / 38.46 (weighted 24.60). NAV × (ROE − g) ÷ (r − g) with long-run ROE 18/24/30%.\n- P/E (justified): 25.39 / 35.36 / 48.00 (34.90). EPS to March 2027 Rs 5.80 / 6.60 / 7.20 at 4.4x / 5.4x / 6.7x.\n- Residual income: 19.97 / 33.86 / 57.23 (34.37). ROE from 40.3% to 18/24/30% over five years.\n- Dividend model: 16.72 / 26.98 / 42.53 (27.01). Rs 1.60 / 1.90 / 2.10 next year, growing 4/8/12%.\nFair value (average of the four) Rs 30.22; buy Rs 25.69 (−15%); strong buy Rs 22.67 (−25%).\n\nChecks\n- Growth: dividends assumed to grow 4/8/12% a year; supported growth 28.3% (70.7% kept × 40% ROE). Fine.\n- Earnings run-rate: base EPS Rs 6.60 is 2.7% below the Rs 6.78 twelve-month figure; the latest quarter × 4 is only Rs 4.64.\n- Ratios: ROE 40% is well above the range a business keeps for long; the base case assumes 24%. Net debt 4.1x equity is far above the 1x test. Long-run growth 5–7% is below the 12.24% bond yield.\n- No DCF: operating cash flow is negative every year while credit grows, and dividends are paid from borrowing and deposits.\n\nBusiness tests (1 of 4)\n- Return on equity: pass (40% now; average about 22% over six years, but 1% and −1% in 2022/23 and 2023/24).\n- Debt: fail (net debt 4.1x equity).\n- Steady profit: fail (loss in 2023/24; September 2026 quarter down 6%).\n- Cash: fail (operating cash flow −Rs 13.9bn and −Rs 41.6bn in the last two years).\n\nManagement and plans\nManagement wants growth from new brands and categories (Piaggio, Hikvision, HP, Starlink, Bosch), furniture (a factory is being bought), washing machines and Singer Finance's lending. Sales growth has followed, but the promise of stable leverage hasn't: net debt rose Rs 11.5bn in six months and finance costs are rising faster than profit.\n\nShareholders\nHayleys controls the company (about 82% with its subsidiaries); the public holds 10.94%. In the September quarter the Lynear Wealth Dynamic Opportunities Fund added 3.69mn shares and Invenco Capital 1.21mn; the Capital Alliance Quantitative Equity Fund sold 0.59mn.\n\nBuy plan (500 shares)\n200 shares up to Rs 30.20, 150 up to Rs 25.70, 150 up to Rs 22.70: about Rs 13,300 in all (average Rs 26.60), against Rs 36,250 at today's price. That needs a fall of about 65%. It hasn't been near that this year (low Rs 66.00), but the share was Rs 29.50 in April 2025 and Rs 14.50 in August 2024.\n\nWhat would change my view\nHigher: profit growing again in the December quarter with finance costs under control; net debt falling towards 3x equity; bad debts staying low; ROE holding near 30% through a downturn.\nLower: another fall in quarterly profit; higher interest rates or a weaker rupee; bad debts rising faster than lending; net debt above 4.5x equity; losing the tax cases.\n\nUncertain\nDamodaran's emerging-markets betas couldn't be opened, so the beta uses web-search stand-ins (provisional). The half-year report moves Singer Finance's deposits into operating cash flow, unlike the annual report and the June interim, so operating cash flows aren't on one basis. Working capital change isn't stored as one figure (no subtotal printed).\n"
 }
