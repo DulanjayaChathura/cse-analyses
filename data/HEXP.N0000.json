@@ -1,0 +1,960 @@
+{
+  "schemaVersion": 1,
+  "ticker": "HEXP.N0000",
+  "company": {
+    "name": "Hayleys Fibre PLC",
+    "sector": "Coir products and mattresses (manufacturing)",
+    "fiscalYearEnd": "03-31"
+  },
+  "shareClasses": [
+    {
+      "symbol": "HEXP.N0000",
+      "label": "Voting"
+    }
+  ],
+  "analysisDate": "2026-11-27",
+  "resultsCovered": {
+    "label": "Six months to 30 September 2026",
+    "periodEnd": "2026-09-30",
+    "audited": false,
+    "sources": [
+      "Annual Report 2025/26 (CSE download)",
+      "Interim reports to 30 June and 30 September 2026 (CSE downloads)"
+    ]
+  },
+  "price": {
+    "value": 153.25,
+    "date": "2026-09-30",
+    "source": "Interim to 30 Sep 2026, share information (p. 10): last traded price",
+    "note": "HEXP isn't yet in the site's CSE price file, and the CSE site and price websites couldn't be reached from this run, so this is the last dated price available (about two months old). Web search showed only older undated snapshots (Rs 115–122). The daily CSE close will replace it. Range April–September 2026 Rs 110.00–178.00."
+  },
+  "summary": {
+    "verdict": "overpriced",
+    "headline": "A coir exporter and mattress maker back in profit, but cash is going the wrong way, debt is above equity and the price is four times fair value",
+    "text": "Hayleys Fibre PLC (HEXP.N0000), 65% owned by Hayleys, makes coir (coconut-husk) products: coco-peat grow bags and fibre for greenhouse growers abroad, coir erosion-control blankets through its 50%-owned Bonterra, and mattresses for Sri Lanka through its 74%-owned Creative Polymats. It is small: revenue Rs 6.87bn and profit attributable Rs 171mn in 2025/26, 24mn shares. 2025/26 was a strong recovery after two loss years (EPS Rs 7.13 against −Rs 1.78), and the six months to September 2026 added EPS of Rs 4.86 (Rs 1.68), so the last 12 months' EPS is Rs 10.31 and ROE 16%. But the September quarter slowed sharply (EPS Rs 0.74, from Rs 4.12 in June), interest costs doubled, and the business is not producing cash: operating cash was −Rs 361mn in 2025/26 and −Rs 392mn in the half year as stock, debtors and amounts owed by Hayleys affiliates grew. Net debt rose to Rs 2.54bn, 1.56x owners' equity. It fails all four business tests (five-year ROE about 9%, net debt above equity, losses in 2023/24 and 2024/25, and negative operating cash), so it is category 3, avoid for now. On a provisional beta of 1.10 (cost of equity 19.5%) and a long-run ROE of 13%, the P/E, price-to-book and residual-income methods give a fair value of about Rs 35.50. At Rs 153.25 (last trade at 30 September 2026; no newer CSE close was available to this run) the share is 2.3x NAV of Rs 67.83 and 14.9x trailing EPS; the price implies a cost of equity of about 10–11%, below the 12.24% government bond. I'd only buy at up to about Rs 30 and treat Rs 26.60 or less as a strong buy, prices it hasn't traded at in the last two years."
+  },
+  "valuation": {
+    "fairValue": 35.47,
+    "buyPrice": 30.15,
+    "strongBuyPrice": 26.6,
+    "marginOfSafety": {
+      "buy": 15,
+      "strongBuy": 25
+    },
+    "scenarioWeights": {
+      "bear": 30,
+      "base": 50,
+      "bull": 20
+    },
+    "nav": 67.83,
+    "note": "Fair value averages the 30/50/20-weighted values of three methods (P/E Rs 38.97, justified P/B Rs 36.0, residual income Rs 31.44), all from scripts/valuation.py using the saved modelInputs; 0.52x NAV. Discount rate: cost of equity 19.5% from beta 1.10 (provisional). A whole-company DCF was run as a cross-check but isn't weighted (see the methods note)."
+  },
+  "dividend": {
+    "perShare": 0,
+    "label": "for 2025/26 (none declared)",
+    "source": "Annual Report 2025/26, statement of profit or loss (p. 185) and financial capital (p. 86)",
+    "note": "No dividend for 2023/24, 2024/25 or 2025/26, and none declared in the six months to September 2026. The last was Rs 3.80 paid in 2022/23."
+  },
+  "keyMetrics": [
+    {
+      "id": "nav",
+      "label": "NAV per share",
+      "value": 67.83,
+      "unit": "Rs",
+      "note": "30 Sep 2026"
+    },
+    {
+      "id": "pnav",
+      "label": "Price to NAV",
+      "value": 2.26,
+      "unit": "x"
+    },
+    {
+      "id": "pe",
+      "label": "P/E (trailing)",
+      "value": 14.9,
+      "unit": "x",
+      "note": "Last 12 months' EPS Rs 10.31"
+    },
+    {
+      "id": "roe",
+      "label": "Return on equity",
+      "value": 16.3,
+      "unit": "%",
+      "note": "Last 12 months (owners); 11.8% in 2025/26, about 9% five-year average"
+    },
+    {
+      "id": "dividendYield",
+      "label": "Dividend yield",
+      "value": 0,
+      "unit": "%",
+      "note": "No dividend for three years"
+    },
+    {
+      "id": "netDebtEquity",
+      "label": "Net debt / equity",
+      "value": 1.56,
+      "unit": "x",
+      "note": "Rs 2.54bn at Sep 2026 against owners' equity Rs 1.63bn; 1.38x in March 2026"
+    },
+    {
+      "id": "revenueGrowth",
+      "label": "Revenue growth",
+      "value": 31,
+      "unit": "%",
+      "note": "April–September 2026; +45% in 2025/26"
+    },
+    {
+      "id": "grossMargin",
+      "label": "Gross margin",
+      "value": 15.4,
+      "unit": "%",
+      "note": "H1 2026/27; 15.0% in 2025/26"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Cost of equity",
+      "value": 19.5,
+      "unit": "%",
+      "note": "Beta 1.10 (provisional); WACC 13.7%"
+    },
+    {
+      "id": "marketCap",
+      "label": "Market cap",
+      "value": 3.68,
+      "unit": "Rs bn",
+      "display": "~Rs 3.7bn"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Three months to 30 September 2026 (group, unaudited)",
+      "text": "Revenue Rs 1.94bn (+27%), gross margin 13.6% (10.4%), operating profit Rs 104mn (Rs 28mn). Interest and other finance costs Rs 71mn (Rs 36mn). Profit attributable Rs 17.8mn (loss of Rs 24.6mn); EPS Rs 0.74 (−Rs 1.03), well down from Rs 4.12 in the June quarter. The parent company alone earned Rs 4.9mn."
+    },
+    {
+      "title": "Six months to 30 September 2026",
+      "text": "Revenue Rs 4.22bn (+31%), operating profit Rs 297mn (+86%), profit attributable Rs 117mn (Rs 40mn), EPS Rs 4.86 (Rs 1.68). No dividend. NAV Rs 67.83."
+    },
+    {
+      "title": "Cash and debt",
+      "text": "Operating cash −Rs 392mn for the half (+Rs 161mn a year before): stock up Rs 340mn to Rs 1.48bn and amounts due from Hayleys affiliates up Rs 285mn to Rs 1.03bn. Borrowings Rs 2.89bn (Rs 2.25bn in March), mostly short-term; net debt Rs 2.54bn, 1.56x equity."
+    },
+    {
+      "title": "Year to March 2026 (audited)",
+      "text": "Revenue Rs 6.87bn (+45%), gross profit Rs 1.03bn (Rs 525mn), operating profit Rs 498mn (Rs 113mn), profit attributable Rs 171mn (loss Rs 43mn), EPS Rs 7.13. Export volume +36% to 15,543 tonnes. New Nikaweratiya husk plant (about Rs 600mn) opened in October 2025. No dividend."
+    }
+  ],
+  "history": {
+    "periods": [
+      "FY2022",
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "FY2026",
+      "Latest"
+    ],
+    "series": [
+      {
+        "id": "eps",
+        "label": "EPS",
+        "unit": "Rs",
+        "values": [
+          8.25,
+          12.43,
+          -1.05,
+          -1.78,
+          7.13,
+          10.31
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months"
+        ]
+      },
+      {
+        "id": "roe",
+        "label": "Return on equity",
+        "unit": "%",
+        "values": [
+          17.0,
+          22.7,
+          -1.8,
+          -3.1,
+          11.8,
+          16.3
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Last 12 months"
+        ]
+      },
+      {
+        "id": "pe",
+        "label": "P/E",
+        "unit": "x",
+        "values": [
+          6.68,
+          4.04,
+          null,
+          null,
+          15.58,
+          14.9
+        ],
+        "notes": [
+          null,
+          null,
+          "Loss",
+          "Loss",
+          null,
+          "At Rs 153.25"
+        ]
+      },
+      {
+        "id": "dps",
+        "label": "Dividend per share",
+        "unit": "Rs",
+        "values": [
+          4.0,
+          3.8,
+          0,
+          0,
+          0,
+          null
+        ],
+        "notes": [
+          "Paid in the year",
+          "Paid in the year",
+          null,
+          null,
+          null,
+          "None declared for 2026/27 so far"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share",
+        "unit": "Rs",
+        "values": [
+          50.66,
+          58.69,
+          58.21,
+          56.89,
+          63.47,
+          67.83
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
+        ]
+      }
+    ]
+  },
+  "methodReadings": [
+    {
+      "method": "NAV",
+      "value": "Rs 67.83",
+      "reading": "The price is 2.3x NAV (30 September 2026)."
+    },
+    {
+      "method": "Return on equity",
+      "value": "16.3%",
+      "reading": "Last 12 months, owners. 11.8% in 2025/26 after losses in the two years before; about 9% on average over five years, with a 23% peak in 2022/23."
+    },
+    {
+      "method": "P/E",
+      "value": "14.9x",
+      "reading": "On trailing EPS of Rs 10.31. Year-end P/E was 4.0–6.7x in the profitable years 2021/22–2022/23 and 15.6x at March 2026. At a 19.5% cost of equity the justified forward P/E is about 4x."
+    },
+    {
+      "method": "Dividends",
+      "value": "None",
+      "reading": "No dividend for 2023/24, 2024/25 or 2025/26; with operating cash negative and debt rising, one isn't likely soon."
+    },
+    {
+      "method": "Required return",
+      "value": "19.5% / WACC 13.7%",
+      "reading": "CAPM with a country premium, beta 1.10 (provisional, relevered for the debt)."
+    },
+    {
+      "method": "Debt",
+      "value": "Net debt Rs 2.54bn",
+      "reading": "1.56x owners' equity at September 2026 (1.38x in March); 3.4x the last 12 months' EBITDA. Mostly short-term loans and overdrafts funding receivables and stock."
+    },
+    {
+      "method": "Whole-company DCF (cross-check)",
+      "value": "Rs −80 / 11 / 78",
+      "reading": "Not weighted. On normalised cash the business is worth about Rs 2.8bn at WACC in the base case, barely more than its Rs 2.54bn net debt, and that's before the minority shareholders' third."
+    }
+  ],
+  "models": [
+    {
+      "id": "pe",
+      "name": "P/E method",
+      "bear": 24.51,
+      "base": 40.32,
+      "bull": 57.29,
+      "weighted": 38.97,
+      "comment": "EPS for the year to March 2027 of Rs 7.5 / 9.5 / 11.0 (H1 Rs 4.86 plus a second half of Rs 2.6 / 4.6 / 6.1; the September quarter alone was Rs 0.74) times 3.3 / 4.2 / 5.2: the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − long-run growth ÷ ROE; long-run ROE 9 / 13 / 16%, growth 4 / 5 / 6%). The run-rate is Rs 10.31 (last 12 months; September quarter × 4 only Rs 2.96): base is 8% below it because the September quarter slowed and interest is rising; bear is 27% below for a second half like the September quarter. These P/Es are far below the market's 14.9x because a 19.5% cost of equity leaves little room for growth to add value."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 19.95,
+      "base": 37.42,
+      "bull": 56.53,
+      "weighted": 36.0,
+      "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 67.83 (30 Sep 2026): ROE 9% / 13% / 16%, growth 4% / 5% / 6%, cost of equity 21.0% / 19.5% / 18.0%. Owners' ROE averaged about 9% over five years (17%, 23%, −2%, −3%, 12%) and about 11% over ten; 16% on the last 12 months. Below 1x book in every case because even the bull ROE is under the cost of equity."
+    },
+    {
+      "id": "ri",
+      "name": "Residual income",
+      "bear": 17.65,
+      "base": 31.59,
+      "bull": 51.76,
+      "weighted": 31.44,
+      "comment": "Book value Rs 67.83 (September); ROE moving in a straight line from 16.3% (last 12 months) to 9% / 13% / 16% over ten years; 20% payout (no dividend for three years; 31–49% when it last paid, 2021/22–2022/23); cost of equity 21.0% / 19.5% / 18.0%; after year ten the excess return grows at 4% / 5% / 6%."
+    }
+  ],
+  "modelsNote": "Hayleys Fibre is a manufacturer, so a whole-company DCF would normally lead. It is only a cross-check here: operating cash was negative in 2025/26 and the half year (a Rs 719mn and then Rs 582mn working-capital build), so the DCF has to start from normalised cash (after-tax operating profit Rs 0.43bn plus depreciation less maintenance: Rs 0.21 / 0.40 / 0.44bn), and with Rs 2.54bn of net debt it swings from Rs −80 to Rs 78 a share (base Rs 11, 67% of the value after year 5; bull 78%, so mostly after the growth years). The weighted methods are the P/E, justified price to book and residual income, all at the same 19.5% cost of equity. Growth check: assumed 2% / 5% / 8% a year for five years. The calculator's supported rate (31%) is inflated by the working-capital build (reinvestment 262% of after-tax operating profit), so profit kept × ROE (100% × 14.5%) is the fairer test: all scenarios are well within it. Maintenance capex range Rs 0.09–0.33bn; 2025/26 capex (Rs 256mn against Rs 93mn depreciation) was mostly growth: the Nikaweratiya plant. The calculator warns that net debt rose by more than half the year's capex, so the capex was largely borrowed. Cost of debt 8.0% is just under the usual range (bond yield − 4 points) because part of the debt is in dollars and euros (SOFR + 3.5%, export-order loans). Method values come from scripts/valuation.py, so the What if? panel reproduces them.",
+  "scenarios": {
+    "assumptions": [
+      {
+        "label": "Cost of equity (beta 1.10)",
+        "bear": "21.0%",
+        "base": "19.5%",
+        "bull": "18.0%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 7.5",
+        "base": "Rs 9.5",
+        "bull": "Rs 11.0"
+      },
+      {
+        "label": "Justified forward P/E",
+        "bear": "3.3x",
+        "base": "4.2x",
+        "bull": "5.2x"
+      },
+      {
+        "label": "Long-run ROE",
+        "bear": "9%",
+        "base": "13%",
+        "bull": "16%"
+      },
+      {
+        "label": "ROE path (residual income, ten years)",
+        "bear": "16.3% → 9%",
+        "base": "16.3% → 13%",
+        "bull": "16.3% → 16%"
+      },
+      {
+        "label": "Growth: five years (DCF), then long-term",
+        "bear": "2%, then 4%",
+        "base": "5%, then 5%",
+        "bull": "8%, then 6%"
+      },
+      {
+        "label": "What it means",
+        "bear": "The September-quarter slowdown lasts, husk costs rise, ROE back to single figures",
+        "base": "Profit near this year's level; the new plant keeps costs down but debt stays high",
+        "bull": "Exports keep growing, Creative Polymats expands, ROE holds in the mid-teens"
+      }
+    ],
+    "averages": {
+      "bear": 20.7,
+      "base": 36.44,
+      "bull": 55.19
+    },
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.10 (provisional). Book Rs 67.83 a share (30 Sep 2026), payout 20% assumed, 24.0mn shares. WACC (DCF cross-check only): cost of debt 8.01% (interest paid ÷ average borrowings and leases, 2025/26), tax 32.4%, debt weight 40.9% at Rs 153.25."
+  },
+  "sensitivity": {
+    "title": "Residual income base case, Rs per share",
+    "rowLabel": "Cost of equity",
+    "columnLabel": "Long-run ROE",
+    "rows": [
+      "16.5%",
+      "18.0%",
+      "19.5%",
+      "21.0%"
+    ],
+    "columns": [
+      "10%",
+      "13%",
+      "16%",
+      "19%",
+      "22%"
+    ],
+    "values": [
+      [
+        29.5,
+        45.1,
+        63.9,
+        86.5,
+        113.4
+      ],
+      [
+        25.0,
+        37.4,
+        52.3,
+        70.2,
+        91.5
+      ],
+      [
+        21.6,
+        31.6,
+        43.6,
+        58.0,
+        75.1
+      ],
+      [
+        18.9,
+        27.1,
+        36.9,
+        48.6,
+        62.6
+      ]
+    ],
+    "base": {
+      "row": 2,
+      "column": 1
+    },
+    "note": "Even at a 16.5% cost of equity and a 22% long-run ROE, near the 2022/23 peak, residual income gives about Rs 113, below the price. The price implies a cost of equity of about 10% at a 13% ROE, 11% at 16% or 15% at 22%, mostly below the 12.24% government bond."
+  },
+  "buyPlan": {
+    "totalShares": 500,
+    "tiers": [
+      {
+        "shares": 200,
+        "maxPrice": 35.45
+      },
+      {
+        "shares": 150,
+        "maxPrice": 30.15
+      },
+      {
+        "shares": 150,
+        "maxPrice": 26.6
+      }
+    ],
+    "averagePrice": 31.2,
+    "totalCost": 15600,
+    "note": "About Rs 15,600 in total, against Rs 76,600 at Rs 153.25. Category 3: wait for the business tests to improve before buying at all.",
+    "realism": "Not realistic. The share traded Rs 110–178 from April to September 2026 and its lowest in the last two years was Rs 45 (April 2025). These prices would need ROE to fall back into single figures with debt still above equity. Re-check after the March 2027 results and the January beta refresh."
+  },
+  "changeMyView": {
+    "higher": [
+      "Operating cash turning positive and net debt falling back below owners' equity.",
+      "ROE staying at 15% or more for two more years, showing the 2025/26 recovery isn't a one-off.",
+      "A lower beta once Damodaran's emerging-markets file and local 5-year betas can be checked.",
+      "Dividends resuming, and lower bond yields or a smaller Sri Lanka default spread."
+    ],
+    "lower": [
+      "The September quarter's slowdown (EPS Rs 0.74) continuing into the second half.",
+      "Coconut husk and fibre prices rising again after poor harvests.",
+      "US tariffs or weak project demand hurting Bonterra.",
+      "More short-term borrowing and rising interest costs.",
+      "Receivables from Hayleys affiliates (Rs 1.03bn) not being collected."
+    ]
+  },
+  "notes": {
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. The interim figures are unaudited, the beta is provisional and the price is the last trade at 30 September 2026, so check the price before ordering. This is analysis, not personal financial advice."
+  },
+  "quality": {
+    "rating": "weak",
+    "passed": 0,
+    "outOf": 4,
+    "reason": "Returns have been low and erratic, net debt is above equity and rising, there were losses in two of the last five years, and profit isn't turning into cash. First scored 27 November 2026.",
+    "assessed": "2026-11-27",
+    "tests": [
+      {
+        "id": "returns",
+        "label": "Return on equity of 15% or more",
+        "pass": false,
+        "value": "About 9% five-year average",
+        "note": "Owners' ROE 17%, 23%, −2%, −3% and 12% for 2021/22–2025/26; 16.3% on the last 12 months, the best since 2022/23."
+      },
+      {
+        "id": "debt",
+        "label": "Net debt no more than equity",
+        "pass": false,
+        "value": "1.56x equity",
+        "note": "Net debt Rs 2.54bn at Sep 2026 (borrowings Rs 2.89bn plus leases, less cash Rs 0.36bn) against owners' equity Rs 1.63bn; 1.38x in March 2026. 3.4x EBITDA."
+      },
+      {
+        "id": "steady",
+        "label": "Steady profit: no loss in five years, no one-offs",
+        "pass": false,
+        "value": "Losses in 2023/24 and 2024/25",
+        "note": "EPS −Rs 1.05 and −Rs 1.78; back to Rs 7.13 in 2025/26, partly helped by one-off cyclone replacement demand and a government mattress tender."
+      },
+      {
+        "id": "cash",
+        "label": "Profit turns into cash and dividends",
+        "pass": false,
+        "value": "No",
+        "note": "Operating cash −Rs 361mn in 2025/26 and −Rs 392mn in the six months to Sep 2026 (+Rs 351mn in 2024/25). No dividend for three years. Earlier years' cash flows weren't in the reports read."
+      }
+    ]
+  },
+  "requiredReturn": {
+    "beta": 1.1,
+    "betaBasis": "Provisional. Damodaran global unlevered, cash-corrected stand-ins (web-search extracts used elsewhere on this site; his emerging-markets file couldn't be opened): Farming/Agriculture 0.49 (grow bags, 25% of operating profit), Building Materials 0.90 (erosion control, 39%), Household Products 0.77 (mattresses, 36%) = 0.75, relevered at net debt to market value 0.69 and 32.4% tax = 1.10. No local 5-year beta found; the share traded thinly until 2025. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 21.0,
+      "base": 19.5,
+      "bull": 18.0
+    },
+    "costOfDebt": 8.01,
+    "wacc": {
+      "bear": 14.6,
+      "base": 13.7,
+      "bull": 12.9
+    },
+    "debtWeight": 40.9,
+    "asOf": "2026-11-27",
+    "sources": [
+      "10-year rupee bond 12.24%: Cbonds (13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 154mn ÷ average borrowings and leases (Annual Report 2025/26, pp. 188, 191, 212)",
+      "Weights: market cap Rs 3.68bn at Rs 153.25 (last trade 30 Sep 2026), net debt Rs 2.54bn (30 Sep 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.10 × (4.2% + 6.08%) = 19.5%; bear +1.5, bull −1.5 points. Within the 12–22% range for CSE shares. The 8.0% cost of debt is just under the usual range because some loans are in dollars and euros (SOFR + 3.5%, export-order loans). WACC is used only in the DCF cross-check."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 21.0,
+      "base": 19.5,
+      "bull": 18.0
+    },
+    "wacc": {
+      "bear": 14.6,
+      "base": 13.7,
+      "bull": 12.9
+    },
+    "debtWeight": 40.9,
+    "shares": 24.0,
+    "netDebt": 2.54,
+    "pe": {
+      "bear": {
+        "eps": 7.5,
+        "roe": 9,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 9.5,
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 11.0,
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 67.83,
+      "payout": 20,
+      "roeStart": 16.316,
+      "bear": {
+        "roe": 9,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "payout": "valuationInputs: Payout",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pb": {
+      "book": 67.83,
+      "bear": {
+        "roe": 9,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 13,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 16,
+        "longRun": 6
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "ri.roeStart": "ttm.roe"
+    }
+  },
+  "management": {
+    "asOf": "2026-11-27",
+    "source": "Annual Report 2025/26: joint statement by the Chairman and Managing Director (pp. 24–28), strategy and resource allocation (pp. 46–48), review of group operations (pp. 79–80), financial capital (pp. 84–86), manufactured capital (pp. 90–93); progress from the Interim to 30 Sep 2026",
+    "takeaway": "Management has turned the business back to profit with more exports and a new husk-processing plant, but growth is being funded with short-term debt while cash stays negative; whether receivables and stock turn back into cash is what to watch.",
+    "said": [
+      {
+        "text": "A turnaround year: revenue up 45% to Rs 6.87bn and profit after tax Rs 264mn against Rs 34mn",
+        "ref": "p. 25"
+      },
+      {
+        "text": "Export volume up 36% to 15,543 tonnes from new markets (UAE, Peru, Mexico, Central Asia) alongside Morocco",
+        "ref": "pp. 25, 79"
+      },
+      {
+        "text": "Lower coconut yields, Cyclone Ditwah and US tariffs pushed up raw-material costs and squeezed Bonterra's prices",
+        "ref": "pp. 24, 79"
+      },
+      {
+        "text": "Creative Polymats had its best year (revenue Rs 1.37bn, profit Rs 99mn) and doubled its local market share to 16%",
+        "ref": "p. 26"
+      },
+      {
+        "text": "No dividend declared for the year",
+        "ref": "p. 86"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Spread exports across more countries and distributors to cut reliance on traditional markets",
+        "ref": "p. 80"
+      },
+      {
+        "text": "Bonterra: deepen long-term B2B work in erosion control and construction, and move into premium niches",
+        "ref": "p. 80"
+      },
+      {
+        "text": "Creative Polymats: expand capacity with new machinery and automation to end its single-factory limit",
+        "ref": "p. 80"
+      },
+      {
+        "text": "Extend backward integration, including further work at Nikaweratiya",
+        "ref": "p. 93"
+      },
+      {
+        "text": "New Managing Director, K. R. Rajapakse, from 1 April 2026",
+        "ref": "p. 28"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Nikaweratiya (Kadigawa) husk-to-fibre and pith plant, opened October 2025, now about 30% of raw material",
+        "amount": "About Rs 600mn (total)",
+        "ref": "pp. 26, 79"
+      },
+      {
+        "text": "Property, plant and equipment in 2025/26, of which Rs 193mn buildings for the new plant, Rs 88mn machinery, Rs 66mn vehicles",
+        "amount": "Rs 364mn in 2025/26",
+        "ref": "p. 85"
+      },
+      {
+        "text": "Capex by company: Hayleys Fibre (fibre-mill automation, infrastructure), Bonterra (machine upgrades), Creative Polymats (fume extraction, fire line)",
+        "amount": "Rs 337.6mn / 10.4mn / 16.0mn in 2025/26",
+        "ref": "p. 91"
+      },
+      {
+        "text": "Creative Polymats capacity expansion",
+        "amount": null,
+        "ref": "p. 80"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Build the Nikaweratiya plant to secure raw material (backward integration)",
+        "result": "Opened October 2025 at about Rs 600mn; supplies about 30% of the company's raw material",
+        "status": "done",
+        "ref": "Annual Report 2025/26, pp. 26, 79"
+      },
+      {
+        "promise": "Grow exports through new markets (2026/27)",
+        "result": "H1 revenue Rs 4.22bn, +31%",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 1"
+      },
+      {
+        "promise": "Conservative leverage and a strong liquidity position (p. 47)",
+        "result": "Borrowings up from Rs 2.25bn to Rs 2.89bn in six months; operating cash −Rs 392mn",
+        "status": "missed",
+        "ref": "Interim to 30 Sep 2026, pp. 5, 8"
+      },
+      {
+        "promise": "Creative Polymats capacity expansion",
+        "result": "Group capex only Rs 34mn in H1; no amount or date given",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      },
+      {
+        "promise": "Strengthen the core business (p. 28)",
+        "result": "Parent company's September-quarter profit Rs 4.9mn (Rs 18.0mn a year before), though H1 rose to Rs 78mn",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 2"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, p. 10 (top 20 with 30 June holdings, directors, public holding); dropped-out holders from the Interim to 30 Jun 2026, p. 8.",
+    "takeaway": "Hayleys PLC controls the company with 65.00%, unchanged; nobody else holds 1.5%. The public float is a small, retail-heavy 35% (5,622 holders); in the September quarter Dr Dilesh Jayanntha sold 74,700 shares and Senkadagala Finance's account for K. R. A. L. Kahatapitiya (224,430 in June) left the top 20, while People's Leasing's account for Dr K. A. P. Gunawardhana added 86,105.",
+    "groups": [
+      {
+        "name": "Hayleys PLC",
+        "pct": 65.0
+      },
+      {
+        "name": "Directors",
+        "pct": 0.01
+      },
+      {
+        "name": "Public",
+        "pct": 34.99
+      }
+    ],
+    "publicFloat": 34.99,
+    "publicHolders": 5622,
+    "publicHoldersPrev": 5576,
+    "directors": [
+      {
+        "name": "Mr. A. M. Pandithage (Chairman)",
+        "shares": 960
+      },
+      {
+        "name": "Mr. K. R. Rajapakse (Managing Director)",
+        "shares": 0
+      },
+      {
+        "name": "Mr. H. S. R. Kariyawasan",
+        "shares": 0
+      },
+      {
+        "name": "Mr. S. C. Ganegoda",
+        "shares": 1824
+      },
+      {
+        "name": "Mr. D. K. De Silva Wijeyeratne",
+        "shares": 0
+      },
+      {
+        "name": "Mr. L. Uralagamage",
+        "shares": 0
+      },
+      {
+        "name": "Mrs. S. Amarasekera, PC",
+        "shares": 0
+      },
+      {
+        "name": "Mr. M. J. S. Rajakariar",
+        "shares": 0
+      },
+      {
+        "name": "Dr. N. S. J. Nawaratne",
+        "shares": 0
+      },
+      {
+        "name": "Mr. K. A. Karunarathna",
+        "shares": 0
+      },
+      {
+        "name": "Mr. A. S. Wijesinha (appointed 1 Sep 2026)",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Hayleys PLC",
+        "shares": 15600000,
+        "pct": 65.0,
+        "change": 0,
+        "new": false,
+        "note": "Hayleys PLC No. 3 Share Investment A/C in the annual report"
+      },
+      {
+        "name": "People's Leasing and Finance PLC / Dr. K.A.P.Gunawardhana",
+        "shares": 350000,
+        "pct": 1.46,
+        "change": 86105,
+        "new": false
+      },
+      {
+        "name": "Amana Bank PLC/Hi-Line Towers Pvt Limited",
+        "shares": 175161,
+        "pct": 0.73,
+        "change": 25161,
+        "new": false
+      },
+      {
+        "name": "Mr. H. R. M. T. L. Ranasinghe",
+        "shares": 160000,
+        "pct": 0.67,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "Assetline Finance PLC/ H.A.S.P.Kumara",
+        "shares": 155895,
+        "pct": 0.65,
+        "change": -50705,
+        "new": false
+      },
+      {
+        "name": "Mr. L. S. A. Wijekoon",
+        "shares": 122659,
+        "pct": 0.51,
+        "change": 22615,
+        "new": false
+      },
+      {
+        "name": "Mr. D. M. Gunarathna",
+        "shares": 117999,
+        "pct": 0.49,
+        "change": -3801,
+        "new": false
+      },
+      {
+        "name": "Mr. A. G. A. C. Ambakumbura",
+        "shares": 111373,
+        "pct": 0.46,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "New Benson Trading (Pvt) Ltd",
+        "shares": 107076,
+        "pct": 0.45,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Senkadagala Finance PLC / M. A. C. Withanage",
+        "shares": 100584,
+        "pct": 0.42,
+        "change": -50000,
+        "new": false
+      },
+      {
+        "name": "Mr. R. J. Rockwood",
+        "shares": 100000,
+        "pct": 0.42,
+        "change": 24352,
+        "new": false
+      },
+      {
+        "name": "Dr. Dilesh Jayanntha",
+        "shares": 96000,
+        "pct": 0.4,
+        "change": -74700,
+        "new": false
+      },
+      {
+        "name": "Mr. L. W. P. Gunawardhana",
+        "shares": 85187,
+        "pct": 0.35,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "Merchant Bank of Sri Lanka & Finance PLC/U.D. Premakumara",
+        "shares": 82472,
+        "pct": 0.34,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mrs. Sarasvathi Vasudevan & Mr. S. Vasudevan",
+        "shares": 80000,
+        "pct": 0.33,
+        "change": -22500,
+        "new": false
+      },
+      {
+        "name": "Miss. P. Navaratrnam",
+        "shares": 78156,
+        "pct": 0.33,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. P. Muralitharan",
+        "shares": 75000,
+        "pct": 0.31,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr.S. K. Thenabadu, Mrs.L.P.Thenabadu & Miss.C.S. Thenabadu",
+        "shares": 74496,
+        "pct": 0.31,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Mr. J. K. Mayakaduwage",
+        "shares": 73506,
+        "pct": 0.31,
+        "change": null,
+        "new": true
+      },
+      {
+        "name": "Mr. M. A. C. Withanage",
+        "shares": 69374,
+        "pct": 0.29,
+        "change": -1294,
+        "new": false
+      }
+    ],
+    "gone": [
+      {
+        "name": "Senkadagala Finance PLC/ K. R. A. L. Kahatapitiya",
+        "prevShares": 224430
+      },
+      {
+        "name": "People's Leasing and Finance PLC / Yaden Capital (Private) Limited",
+        "prevShares": 106000
+      },
+      {
+        "name": "Seylan Bank PLC / Hiline Towers (Pvt) Ltd",
+        "prevShares": 78994
+      },
+      {
+        "name": "Mr. P. C. Priyanjitha",
+        "prevShares": 78533
+      }
+    ]
+  },
+  "fullText": "**Summary**\n\nHayleys Fibre PLC (HEXP.N0000), 65% owned by Hayleys, makes coir (coconut-husk) products: coco-peat grow bags and fibre for greenhouse growers abroad, coir erosion-control blankets through its 50%-owned Bonterra, and mattresses for Sri Lanka through its 74%-owned Creative Polymats. It is small: revenue Rs 6.87bn and profit attributable Rs 171mn in 2025/26, 24mn shares. 2025/26 was a strong recovery after two loss years (EPS Rs 7.13 against −Rs 1.78), and the six months to September 2026 added EPS of Rs 4.86 (Rs 1.68), so the last 12 months' EPS is Rs 10.31 and ROE 16%. But the September quarter slowed sharply (EPS Rs 0.74, from Rs 4.12 in June), interest costs doubled, and the business is not producing cash: operating cash was −Rs 361mn in 2025/26 and −Rs 392mn in the half year as stock, debtors and amounts owed by Hayleys affiliates grew. Net debt rose to Rs 2.54bn, 1.56x owners' equity. It fails all four business tests (five-year ROE about 9%, net debt above equity, losses in 2023/24 and 2024/25, and negative operating cash), so it is category 3, avoid for now. On a provisional beta of 1.10 (cost of equity 19.5%) and a long-run ROE of 13%, the P/E, price-to-book and residual-income methods give a fair value of about Rs 35.50. At Rs 153.25 (last trade at 30 September 2026; no newer CSE close was available to this run) the share is 2.3x NAV of Rs 67.83 and 14.9x trailing EPS; the price implies a cost of equity of about 10–11%, below the 12.24% government bond. I'd only buy at up to about Rs 30 and treat Rs 26.60 or less as a strong buy, prices it hasn't traded at in the last two years.\n\n**The business**\n\nThree companies, all built on coconut husk. Hayleys Fibre PLC itself (58% of 2025/26 revenue, 25% of operating profit) exports coir fibre, coco-peat and grow bags, mostly to greenhouse growers (Morocco is its biggest market); it shipped 15,543 tonnes in 2025/26 (+36%). Bonterra Limited (50% owned; 22% of revenue, 39% of operating profit) makes coir erosion-control blankets and geotextiles for slopes, roads and land rehabilitation abroad. Creative Polymats (74% owned; 20% of revenue, 36% of operating profit) makes foam and coir mattresses for Sri Lankan homes and hotels. Because the two subsidiaries are partly owned, a third of group profit (Rs 93mn of Rs 264mn in 2025/26) goes to minority shareholders. Hayleys PLC owns 65.00%.\n\n**What happened**\n\n2025/26 (audited): revenue Rs 6.87bn (+45%), gross margin 15.0% (11.1%), operating profit Rs 498mn (Rs 113mn), profit attributable Rs 171mn (loss of Rs 43mn), EPS Rs 7.13. Exports rose to Rs 5.11bn and Creative Polymats' local sales to Rs 1.58bn, helped by a government tender for over 11,000 mattresses and replacement demand after Cyclone Ditwah. No dividend was declared, the third year without one.\n\nApril–September 2026: revenue Rs 4.22bn (+31%), gross margin 15.4% (13.7%), operating profit Rs 297mn (Rs 160mn), profit attributable Rs 117mn (Rs 40mn), EPS Rs 4.86 (Rs 1.68). The June quarter was very strong (EPS Rs 4.12); the September quarter much weaker (EPS Rs 0.74, though still better than the −Rs 1.03 a year before): interest costs doubled to Rs 71mn and the parent company itself earned only Rs 4.9mn.\n\nThe weak point is cash and debt. In 2025/26 working capital absorbed Rs 719mn (receivables +Rs 606mn, stock +Rs 381mn, amounts due from Hayleys affiliates such as Toyo Cushion Lanka and Singer +Rs 276mn, partly offset by more owed to affiliates). Operating cash was −Rs 361mn after interest, and the half year added −Rs 392mn. Capex was Rs 256mn (the new Nikaweratiya husk-processing plant, about Rs 600mn in all, opened in October 2025 and now supplies about 30% of the company's raw material). Borrowings rose from Rs 1.59bn (March 2025) to Rs 2.25bn (March 2026) and Rs 2.89bn (September 2026), mostly short-term loans and overdrafts. Net debt (with leases, less cash) is Rs 2.54bn against owners' equity of Rs 1.63bn.\n\n**Valuation**\n\nRequired return: CAPM with a country premium. Risk-free 8.24% (12.24% bond less a 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.10 (provisional: Damodaran global stand-ins for agriculture, building materials and household products weighted by each company's share of operating profit, relevered at net debt 0.69x market value). Cost of equity 19.5% (bear 21.0%, bull 18.0%); WACC 13.7% at a 40.9% debt weight.\n\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| P/E (justified forward) | 24.51 | 40.32 | 57.29 | 38.97 |\n| Justified price to book | 19.95 | 37.42 | 56.53 | 36.0 |\n| Residual income | 17.65 | 31.59 | 51.76 | 31.44 |\n| **Fair value** | | | | **35.47** |\n\nP/E: EPS to March 2027 of Rs 7.5 / 9.5 / 11.0 (H1 Rs 4.86 plus a second half of Rs 2.6 / 4.6 / 6.1; the second half of 2025/26 earned Rs 5.45 with one-off cyclone and tender demand), times 3.3x / 4.2x / 5.2x, the forward P/E justified at the cost of equity when growth is paid for (payout = 1 − long-run growth ÷ ROE). Base is 8% below the Rs 10.31 run-rate (last 12 months) because the September quarter earned only Rs 0.74 and interest costs are rising.\n\nPrice to book: (long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 67.83, with ROE 9% / 13% / 16% and growth 4% / 5% / 6%. Owners' ROE has been 17%, 23%, −2%, −3% and 12% over the last five years (average about 9%; ten-year about 11%); the last 12 months' 16% is the best since 2022/23. Below 1x book in every case because even the bull ROE is under the cost of equity.\n\nResidual income: book Rs 67.83, ROE moving from 16.3% (last 12 months) to 9% / 13% / 16% over ten years, 20% payout, excess return growing at 4% / 5% / 6% after year ten.\n\nWhole-company DCF (cross-check, not weighted): after-tax operating profit Rs 0.43bn (last 12 months at the 32.4% tax rate), start cash Rs 0.21 / 0.40 / 0.44bn (that plus depreciation less maintenance capex of Rs 0.33 / 0.14 / 0.09bn), growth 2% / 5% / 8% for five years paid for at a 10% / 13% / 16% return on capital, then 4% / 5% / 6%, at WACC 14.6% / 13.7% / 12.9%, less Rs 2.54bn net debt: Rs −80 / 11 / 78 a share before minorities (base 67% of value after year 5, bull 78%). Too sensitive to the debt to weight.\n\nNAV Rs 67.83 (reading only). Dividends: none for three years, so no dividend model.\n\nBuy price = fair value less 15% = Rs 30.15; strong buy = less 25% = Rs 26.6.\n\n**Business tests (0 of 4)**\n\n- Return on equity: fail. Five-year average about 9%; 16% on the last 12 months.\n- Debt: fail. Net debt Rs 2.54bn = 1.56x owners' equity; 3.4x the last 12 months' EBITDA.\n- Steady profit: fail. Losses to owners in 2023/24 and 2024/25.\n- Cash: fail. Operating cash −Rs 361mn in 2025/26 and −Rs 392mn in H1 2026/27; no dividend for three years.\n\nCategory 3, avoid for now.\n\n**Reinvestment and growth**\n\nCapex booked Rs 256mn in 2025/26 against depreciation and amortisation of Rs 93mn; the report ties the building spending to the new Nikaweratiya plant, so the year's capex was mostly growth (backward integration, judged on its return: it now covers about 30% of raw material). The calculator's maintenance range is Rs 0.09–0.33bn (the top is the two-year average of capex booked, inflated by the plant). Working capital, not capex, is the big use of money: reinvestment was Rs 881mn, 262% of after-tax operating profit, so the calculator's 31% 'supported growth' is not meaningful. On profit kept × ROE (no dividend: 100% × 14.5%, the company's own 2025/26 ROE) supported growth is about 14.5%, and the 2% / 5% / 8% assumed are within it. The calculator also warns that net debt rose by more than half the year's capex, so the spending was largely borrowed.\n\n**Buy plan (500 shares)**\n\n200 at up to Rs 35.47, 150 at up to Rs 30.15, 150 at up to Rs 26.6: about Rs 15,600, an average of about Rs 31.20. Not realistic: the share traded Rs 110–178 between April and September 2026 and hasn't been below Rs 45 in the last two years. These prices would need ROE to slip back to single figures with the debt still high, or the cost of equity to fall a long way.\n\n**What would change the view**\n\nHigher: operating cash turning positive and net debt falling back under equity; ROE holding at 15% or more for two more years; a lower beta once Damodaran's emerging-markets file can be checked; dividends resuming. Lower: the September-quarter slowdown continuing; coconut husk prices rising again; US tariffs hurting Bonterra; more short-term borrowing; losses on receivables from affiliates.\n\n**Uncertain**\n\nThe price is the last trade printed in the September interim (Rs 153.25 on 30 September 2026); the CSE site and price websites couldn't be reached from this run, and HEXP isn't yet in the site's price file. The beta is provisional (no emerging-markets file or local 5-year beta). The interims have no segment note, so the split of H1 profit between the three companies isn't known. Operating cash for 2021/22–2023/24 isn't in the reports read."
+}
