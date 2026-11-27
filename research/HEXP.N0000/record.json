@@ -1345,20 +1345,20 @@
   "valuationInputs": [
     {
       "name": "Beta",
-      "value": "1.10 (provisional)",
-      "reason": "8 steps, 27 Nov 2026. (1) Business: three companies, weighted by their share of 2025/26 group operating profit (Annual Report 2025/26, p. 79): Hayleys Fibre PLC (coir fibre, coco-peat grow bags and substrates for horticulture) 25%, Bonterra (coir erosion-control blankets and geotextiles for infrastructure projects) 39%, Creative Polymats (foam and coir mattresses for Sri Lanka) 36%. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins are the global unlevered, cash-corrected figures other analyses on this site already use from web-search extracts: Farming/Agriculture 0.49 (growing media), Building Materials 0.90 (erosion control for construction), Household Products 0.77 (mattresses). Weighted: 0.25 × 0.49 + 0.39 × 0.90 + 0.36 × 0.77 = 0.75. (3) Relevered with net debt Rs 2.540bn at 30 Sep 2026 (borrowings 2.894 + leases 0.005 − cash 0.359, Interim to 30 Sep 2026, p. 5) ÷ market value Rs 3.678bn (24.0mn shares × Rs 153.25, last trade 30 Sep 2026) = 0.69, at the 2025/26 tax rate of 32.4%: 0.75 × (1 + 0.676 × 0.69) = 1.10. (4) No local 5-year beta found by web search; the share traded thinly until 2025 (6,027 trades in 2024/25, p. 251), so a local beta would be unreliable anyway. (5) So 1.10. (6) Within 0.3–2. (7) Cost of equity from scripts/reinvestment.py. (8) Shown in the Required return tile. Refresh in January 2027 with the emerging-markets file.",
+      "value": "1.12 (provisional)",
+      "reason": "8 steps, 27 Nov 2026. (1) Business: three companies, weighted by their share of 2025/26 group operating profit (Annual Report 2025/26, p. 79): Hayleys Fibre PLC (coir fibre, coco-peat grow bags and substrates for horticulture) 25%, Bonterra (coir erosion-control blankets and geotextiles for infrastructure projects) 39%, Creative Polymats (foam and coir mattresses for Sri Lanka) 36%. (2) Damodaran's emerging-markets dataset (betaEmerg) could NOT be opened: his site is blocked by this run's network settings. Stand-ins are the global unlevered, cash-corrected figures other analyses on this site already use from web-search extracts: Farming/Agriculture 0.49 (growing media), Building Materials 0.90 (erosion control for construction), Household Products 0.77 (mattresses). Weighted: 0.25 × 0.49 + 0.39 × 0.90 + 0.36 × 0.77 = 0.75. (3) Relevered with net debt Rs 2.540bn at 30 Sep 2026 (borrowings 2.894 + leases 0.005 − cash 0.359, Interim to 30 Sep 2026, p. 5) ÷ market value Rs 3.486bn (24.0mn shares × Rs 145.25, CSE close 27 Nov 2026) = 0.73, at the 2025/26 tax rate of 32.4%: 0.75 × (1 + 0.676 × 0.73) = 1.12. (4) No local 5-year beta found by web search; the share traded thinly until 2025 (6,027 trades in 2024/25, p. 251), so a local beta would be unreliable anyway. (5) So 1.12. (6) Within 0.3–2. (7) Cost of equity from scripts/reinvestment.py. (8) Shown in the Required return tile. Refresh in January 2027 with the emerging-markets file.",
       "since": "2026-11-27"
     },
     {
       "name": "Cost of equity",
-      "value": "Bear 21.0% / Base 19.5% / Bull 18.0%",
-      "reason": "scripts/reinvestment.py, 27 Nov 2026: 8.24% + 1.10 × (4.2% + 6.08%), ±1.5 points.",
+      "value": "Bear 21.3% / Base 19.8% / Bull 18.3%",
+      "reason": "scripts/reinvestment.py, 27 Nov 2026: 8.24% + 1.12 × (4.2% + 6.08%), ±1.5 points.",
       "since": "2026-11-27"
     },
     {
       "name": "WACC",
       "value": "Bear 14.6% / Base 13.7% / Bull 12.9%",
-      "reason": "scripts/reinvestment.py, 27 Nov 2026: cost of debt 8.01% (interest paid Rs 154mn ÷ average borrowings and leases 2025/26), tax 32.4%, debt weight 40.9% at Rs 153.25. Used only in the DCF cross-check.",
+      "reason": "scripts/reinvestment.py, 27 Nov 2026: cost of debt 8.01% (interest paid Rs 154mn ÷ average borrowings and leases 2025/26), tax 32.4%, debt weight 42.2% at Rs 145.25 (CSE close 27 Nov 2026). Used only in the DCF cross-check.",
       "since": "2026-11-27"
     },
     {
@@ -1429,17 +1429,17 @@
     "Creative Polymats capacity expansion: amount and timing (not stated).",
     "Dividend: any resumption with the March 2027 results?",
     "Split of profit between Hayleys Fibre, Bonterra and Creative Polymats (no segment note in the interims).",
-    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and any local 5-year betas; switch to the CSE close once HEXP is in the price file."
+    "Refresh the beta in January 2027 with Damodaran's emerging-markets file and any local 5-year betas."
   ],
   "changeLog": [
     {
       "date": "2026-11-27",
       "basedOn": "H1 FY2027 (to Sep 2026)",
-      "summary": "Requested from Telegram (/add HEXP.N0000). First analysis, from the downloaded annual report 2025/26 and the interims to June and September 2026. Methods: P/E, justified price to book and residual income at a 19.5% cost of equity (beta 1.10, provisional, global stand-ins for agriculture, building materials and household products); DCF as a cross-check only because operating cash was negative. Business tests 0 of 4: category 3, avoid for now. Uncertain: price is the last trade at 30 Sep 2026 (Rs 153.25) printed in the interim, as the CSE site and price websites couldn't be reached and HEXP isn't in the price file; no local 5-year beta; no segment split in the interims; operating cash for 2021/22–2023/24 not in the reports read; R&D not disclosed.",
-      "fairValue": 35.47,
-      "buyPrice": 30.15,
-      "strongBuyPrice": 26.6,
-      "priceAtTime": 153.25,
+      "summary": "Requested from Telegram (/add HEXP.N0000). First analysis, from the downloaded annual report 2025/26 and the interims to June and September 2026. Methods: P/E, justified price to book and residual income at a 19.8% cost of equity (beta 1.12, provisional, global stand-ins for agriculture, building materials and household products); DCF as a cross-check only because operating cash was negative. Business tests 0 of 4: category 3, avoid for now. Price: CSE close Rs 145.25 (27 Nov 2026), which reached the price file with the first push; the beta, cost of equity and values were redone at that price (first push had Rs 153.25, the 30 Sep last trade: fair value 35.47). Uncertain: no local 5-year beta; no segment split in the interims; operating cash for 2021/22–2023/24 not in the reports read; R&D not disclosed.",
+      "fairValue": 34.6,
+      "buyPrice": 29.41,
+      "strongBuyPrice": 25.95,
+      "priceAtTime": 145.25,
       "archive": null
     }
   ]
