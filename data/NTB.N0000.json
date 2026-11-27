@@ -1,0 +1,925 @@
+{
+ "schemaVersion": 1,
+ "ticker": "NTB.N0000",
+ "analysisDate": "2026-11-27",
+ "company": {
+  "name": "Nations Trust Bank PLC",
+  "sector": "Banking",
+  "fiscalYearEnd": "12-31"
+ },
+ "models": [
+  {
+   "id": "pb",
+   "name": "Justified price to book",
+   "comment": "(Long-run ROE − growth) ÷ (cost of equity − growth) × NAV Rs 326.48: 0.76x / 1.06x / 1.74x book, with ROE 14% / 16% / 19% and growth 5% / 6% / 7%. Today's price implies a long-run ROE of about 14.7%.",
+   "bear": 246.92,
+   "base": 347.32,
+   "bull": 567.79,
+   "weighted": 361.29
+  },
+  {
+   "id": "pe",
+   "name": "P/E method",
+   "comment": "2027 EPS Rs 55 / 63 / 70 × 4.5 / 5.5 / 6.5. The base is 14% below the reported Rs 72.96 run-rate because that includes the one-off tax credit; taxed normally the run-rate is about Rs 57.6, and the base adds 9% for a full year of the HSBC book. P/Es within the 2022–2025 range and below the justified 5.7x / 7.0x / 9.8x.",
+   "bear": 247.5,
+   "base": 346.5,
+   "bull": 455.0,
+   "weighted": 338.5
+  },
+  {
+   "id": "ddm",
+   "name": "Dividend model",
+   "comment": "Next year's dividend Rs 6.6 / 7.6 / 8.4 (12% of EPS, as now, counting the scrip half), growing 8% / 12% / 15% for five years (below the 19.2% supported), then 5% / 6% / 7% with the payout rising to 1 − growth ÷ ROE (about 63%). Most of the value comes after year 5, so this method rests on the bank paying out far more later.",
+   "bear": 218.67,
+   "base": 372.43,
+   "bull": 663.1,
+   "weighted": 384.44
+  },
+  {
+   "id": "ri",
+   "name": "Residual income",
+   "comment": "Used instead of a cash-flow DCF, which doesn't suit a bank. Book Rs 326.48 plus profit above the cost of equity: ROE moves in a straight line from 19% (2026 with a normal tax rate) to 14% / 16% / 19% over ten years, 12% payout, then the excess return grows at 5% / 6% / 7%. The bull case is high because 88% of profit is kept and compounds; treat it with care.",
+   "bear": 248.21,
+   "base": 403.01,
+   "bull": 798.25,
+   "weighted": 435.62
+  }
+ ],
+ "shareClasses": [
+  {
+   "symbol": "NTB.N0000",
+   "label": "Voting"
+  },
+  {
+   "symbol": "NTB.X0000",
+   "label": "Non-voting"
+  }
+ ],
+ "resultsCovered": {
+  "label": "Nine months to 30 September 2026",
+  "periodEnd": "2026-09-30",
+  "audited": false,
+  "sources": [
+   "Annual Report 2025",
+   "Interim financial statements to 31 Mar, 30 Jun and 30 Sep 2026"
+  ]
+ },
+ "price": {
+  "value": 303.75,
+  "date": "2026-09-30",
+  "source": "Last traded price at 30 September 2026, Interim to 30 Sep 2026, PDF p. 11",
+  "note": "The CSE price feed couldn't be reached from this run and web quotes were months old; the site's daily CSE close replaces this. 2026 range to September Rs 268.50–356.00 (voting). Non-voting NTB.X0000 last traded Rs 385.25. The proposed rights issue is at Rs 305.00."
+ },
+ "summary": {
+  "verdict": "buy",
+  "headline": "A high-return bank below the buy price after buying HSBC's retail arm: Rs 304 against a Rs 323 buy price, but 2026 profit growth is a one-off tax credit and capital has thinned",
+  "text": "Nations Trust Bank (NTB.N0000) is a high-return niche bank (cards, premium retail, SME and corporate) that bought HSBC Sri Lanka's retail business on 1 May 2026. At Rs 303.75 (last trade on 30 September; the CSE close couldn't be fetched in this run) it trades at 0.93x group NAV of Rs 326.48 and about 5.3x trailing earnings taxed normally, below my buy price of Rs 323. Nine-month profit after tax rose 34% to Rs 20.0bn (EPS Rs 59.92), but that comes from a one-off tax credit tied to the acquisition: profit before tax was flat at Rs 21.8bn, and the third quarter fell 11% on Day 1 provisions and integration costs. Loans grew 35% in nine months, net Stage 3 is only 0.72%, but CET1 fell from 19.6% to 12.8% because the Rs 22.2bn of goodwill comes off capital, so the bank raised Rs 15bn of Tier 2 debt and proposes a Rs 13.9bn rights issue at Rs 305. Fair value is about Rs 380 (about Rs 371 a share if the rights issue goes ahead). Buy up to Rs 323; Rs 285 or less is a strong buy. Main risks: the HSBC book's credit quality, thinner capital, goodwill to be split into intangibles that will be amortised, and a provisional beta."
+ },
+ "quality": {
+  "rating": "good",
+  "passed": 3,
+  "outOf": 4,
+  "reason": "High returns (ROE 21–24% for three years), profit every year for a decade and capital above the minimums; but it pays out little cash, so the cash test fails.",
+  "assessed": "2026-11-27",
+  "tests": [
+   {
+    "id": "returns",
+    "label": "Return on equity of 15% or more",
+    "pass": true,
+    "value": "About 22%",
+    "note": "Group: 21.3% (2023), 24.2% (2024), 21.9% (2025); 24.1% for the twelve months to September 2026 (about 19% with a normal tax rate). 17.1% in 2022."
+   },
+   {
+    "id": "debt",
+    "label": "Net debt no more than equity",
+    "pass": true,
+    "value": "Above minimums",
+    "note": "A bank, so judged on capital: CET1 12.80% (minimum 7.0%), total capital 16.17% (minimum 12.5%) at September 2026, down from 19.61% / 20.72% because the HSBC goodwill is deducted. Rs 15bn of Tier 2 raised in June and a Rs 13.9bn rights issue proposed (adds roughly 2 points, my estimate)."
+   },
+   {
+    "id": "steady",
+    "label": "Steady profit: no loss in five years, no one-offs",
+    "pass": true,
+    "value": "Profit every year",
+    "note": "Profit in each of the ten years in the decade summary, including 2022. Caveat: 2024 had a Rs 3.2bn impairment reversal and 2026 a one-off tax credit tied to the acquisition."
+   },
+   {
+    "id": "cash",
+    "label": "Profit turns into cash and dividends",
+    "pass": false,
+    "value": "Rs 3.50 cash",
+    "note": "The 2025 dividend was Rs 7.00, half of it in shares: 12% of profit in total and about 6% in cash (1.2% cash yield). Profit is kept to fund loan growth and the HSBC purchase, and the bank is now asking shareholders for more capital."
+   }
+  ]
+ },
+ "requiredReturn": {
+  "beta": 0.7,
+  "betaBasis": "Provisional. A bank, so the sector's levered beta is used without relevering: Damodaran's January 2026 Bank (Money Center) levered beta 0.70 (web-search extract; his site couldn't be opened). Only one local 5-year beta was found (StockAnalysis 0.18), so there is no 3-source median; 1-year betas (1.13–1.25) are ignored. The higher, 0.70, is used. Refresh in January 2027.",
+  "riskFree": 8.24,
+  "matureERP": 4.2,
+  "countryPremium": 6.08,
+  "costOfEquity": {
+   "bear": 16.9,
+   "base": 15.4,
+   "bull": 13.9
+  },
+  "costOfDebt": null,
+  "wacc": null,
+  "debtWeight": null,
+  "asOf": "2026-11-27",
+  "sources": [
+   "10-year rupee bond 12.24%: research/market-inputs.json (13 Oct 2026)",
+   "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+   "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+   "Beta: web-search extracts of Damodaran's sector betas (January 2026) and StockAnalysis (27 Nov 2026)"
+  ],
+  "note": "Cost of equity = 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%; bear +1.5, bull −1.5 points. No WACC: a bank is valued on equity (P/B, P/E, dividends, residual income)."
+ },
+ "valuation": {
+  "fairValue": 379.96,
+  "buyPrice": 322.97,
+  "strongBuyPrice": 284.97,
+  "marginOfSafety": {
+   "buy": 15,
+   "strongBuy": 25
+  },
+  "scenarioWeights": {
+   "bear": 30,
+   "base": 50,
+   "bull": 20
+  },
+  "nav": 326.48,
+  "note": "Fair value weights the bear/base/bull values of the four methods 30/50/20 and averages them (about 1.16x group NAV), all worked by scripts/valuation.py from modelInputs. Per share before the proposed rights issue (333.4m shares). If the 45.5m rights shares are issued at Rs 305, fair value per share becomes about Rs 371 ((379.96 × 333.4m + Rs 13.87bn) ÷ 378.9m, my arithmetic)."
+ },
+ "dividend": {
+  "perShare": 7.0,
+  "label": "first and final for 2025 (Rs 3.50 cash + Rs 3.50 scrip)",
+  "source": "Annual Report 2025, PDF pp. 152, 313",
+  "note": "Paid once a year; no interim for 2026."
+ },
+ "keyMetrics": [
+  {
+   "id": "nav",
+   "label": "NAV per share (group)",
+   "value": 326.48,
+   "unit": "Rs",
+   "note": "30 September 2026; bank Rs 322.98; includes Rs 66 a share of provisional goodwill"
+  },
+  {
+   "id": "pnav",
+   "label": "Price to NAV",
+   "value": 0.93,
+   "unit": "x",
+   "note": "At Rs 303.75"
+  },
+  {
+   "id": "pe",
+   "label": "P/E (trailing)",
+   "value": 4.2,
+   "unit": "x",
+   "note": "EPS Rs 72.96 reported; 5.3x on about Rs 57.6 with a normal tax rate"
+  },
+  {
+   "id": "roe",
+   "label": "Return on equity (9M 2026)",
+   "value": 26.11,
+   "unit": "%",
+   "note": "Group, annualised as reported; flattered by the one-off tax credit"
+  },
+  {
+   "id": "dividendYield",
+   "label": "Dividend yield",
+   "value": 2.3,
+   "unit": "%",
+   "note": "Rs 7.00 for 2025, half in shares (cash yield 1.2%)"
+  },
+  {
+   "id": "payout",
+   "label": "Payout ratio",
+   "value": 12.1,
+   "unit": "%",
+   "note": "2025, cash and scrip together"
+  },
+  {
+   "id": "nim",
+   "label": "Net interest margin",
+   "value": 5.4,
+   "unit": "%",
+   "note": "9M 2026 (bank); 6.05% in 2025"
+  },
+  {
+   "id": "cet1",
+   "label": "CET1 capital ratio",
+   "value": 12.8,
+   "unit": "%",
+   "note": "Group; 19.61% in December 2025; minimum 7.0%"
+  },
+  {
+   "id": "stage3",
+   "label": "Net Stage 3 loans",
+   "value": 0.72,
+   "unit": "%",
+   "note": "Gross 2.39%; coverage 69.96%"
+  },
+  {
+   "id": "costOfEquity",
+   "label": "Cost of equity",
+   "value": 15.4,
+   "unit": "%",
+   "note": "Beta 0.70 (provisional)"
+  },
+  {
+   "id": "marketCap",
+   "label": "Market cap",
+   "value": 105,
+   "unit": "Rs bn",
+   "display": "~Rs 105bn",
+   "note": "288.5m voting at Rs 303.75 + 44.9m non-voting at Rs 385.25"
+  }
+ ],
+ "highlights": [
+  {
+   "title": "Nine months to September 2026 (group, unaudited)",
+   "text": "Profit after tax up 34% to Rs 20.0bn; EPS Rs 59.92 against Rs 44.72. Profit before tax was flat at Rs 21.8bn (Rs 21.9bn); the jump came from income tax of only Rs 1.8bn (Rs 7.0bn a year earlier), after a one-off tax credit tied to the HSBC acquisition in the June quarter."
+  },
+  {
+   "title": "The third quarter",
+   "text": "Profit before tax Rs 7.3bn, down 11%; after tax Rs 4.4bn, down 28% (EPS Rs 13.26 against Rs 18.35), with income up 14% but costs up 36% from the HSBC integration and Day 1 provisions on the acquired book."
+  },
+  {
+   "title": "HSBC retail business bought",
+   "text": "Completed 1 May 2026 for Rs 21.8bn in cash: about Rs 30bn of loans (mostly credit cards) and Rs 132bn of deposits, plus staff and branches. Provisional goodwill Rs 22.2bn, to be split into card and deposit intangibles by April 2027."
+  },
+  {
+   "title": "Income and costs",
+   "text": "Net interest income up 18% (margin 5.40% from 6.05% in 2025), fees up 30%; operating costs up 30%, cost-to-income 33.97%. Impairment Rs 2.3bn against a Rs 0.4bn reversal a year earlier; net Stage 3 still only 0.72%."
+  },
+  {
+   "title": "Balance sheet and capital",
+   "text": "Gross loans Rs 609bn (Rs 451bn in December), deposits Rs 676bn (+35%). CET1 12.80%, total capital 16.17%. Rs 15bn Tier 2 debentures in June (13.75–13.95%); a 3-for-22 rights issue of non-voting shares at Rs 305 (Rs 13.9bn) went to an EGM on 16 November."
+  }
+ ],
+ "history": {
+  "periods": [
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "Latest"
+  ],
+  "series": [
+   {
+    "id": "roe",
+    "label": "Return on equity (group)",
+    "unit": "%",
+    "values": [
+     17.1,
+     21.3,
+     24.22,
+     21.86,
+     24.06
+    ],
+    "notes": [
+     null,
+     null,
+     null,
+     null,
+     "Twelve months to Sep 2026 (derived.py); about 19% with a normal tax rate"
+    ]
+   },
+   {
+    "id": "pe",
+    "label": "P/E (voting)",
+    "unit": "x",
+    "values": [
+     2.1,
+     3.1,
+     3.7,
+     5.4,
+     4.16
+    ],
+    "notes": [
+     "Year-end",
+     "Year-end",
+     "Year-end",
+     "Year-end",
+     "Trailing EPS Rs 72.96 at Rs 303.75"
+    ]
+   },
+   {
+    "id": "pb",
+    "label": "Price to book (group)",
+    "unit": "x",
+    "values": [
+     0.3,
+     0.56,
+     0.77,
+     1.07,
+     0.93
+    ],
+    "notes": [
+     "Year-end",
+     "Year-end",
+     "Year-end",
+     "Year-end",
+     "NAV Rs 326.48 at Rs 303.75"
+    ]
+   }
+  ]
+ },
+ "methodReadings": [
+  {
+   "method": "NAV",
+   "value": "Rs 326.48",
+   "reading": "Group NAV per share at 30 September 2026, including about Rs 66 a share of provisional goodwill. The price is 0.93x NAV."
+  },
+  {
+   "method": "Return on equity",
+   "value": "About 19–22%",
+   "reading": "21.9% in 2025, 24.2% in 2024; 26.1% annualised for 2026 so far but flattered by the tax credit (about 19% normalised)."
+  },
+  {
+   "method": "P/E",
+   "value": "4.2x",
+   "reading": "On trailing EPS of Rs 72.96 (5.3x on about Rs 57.6 with a normal tax rate). Year-end P/E 2.1–5.4x in 2022–2025."
+  },
+  {
+   "method": "Dividends",
+   "value": "2.3% yield",
+   "reading": "Rs 7.00 for 2025, half in shares; 12% of profit. The bank keeps almost all its profit."
+  },
+  {
+   "method": "Required return",
+   "value": "15.4%",
+   "reading": "Cost of equity from beta 0.70 (provisional); 16.9% bear, 13.9% bull."
+  },
+  {
+   "method": "Capital",
+   "value": "CET1 12.80%",
+   "reading": "Down from 19.61% as the HSBC goodwill was deducted and loans grew 35%; total capital 16.17% (minimum 12.5%)."
+  },
+  {
+   "method": "Asset quality",
+   "value": "Net Stage 3 0.72%",
+   "reading": "Among the lowest in the industry (0.91% in December); gross 2.39%, 69.96% covered."
+  }
+ ],
+ "modelsNote": "A bank's cash flows are mostly lending and deposits, so I used residual income and a justified price-to-book instead of a cash-flow DCF, alongside P/E and dividends, all at the 15.4% cost of equity (16.9% / 13.9% bear / bull) and all worked by scripts/valuation.py. Growth check: assumed 8% / 12% / 15% a year for the next five years against 19.2% supported (87.9% of profit kept × 21.9% ROE); all below it, because capital (CET1 12.8%) is the real limit. Long-run growth 5–7% stays below the 12.24% bond yield. Values are per share before the proposed rights issue.",
+ "scenarios": {
+  "assumptions": [
+   {
+    "label": "Cost of equity",
+    "bear": "16.9%",
+    "base": "15.4%",
+    "bull": "13.9%"
+   },
+   {
+    "label": "Long-run ROE",
+    "bear": "14%",
+    "base": "16%",
+    "bull": "19%"
+   },
+   {
+    "label": "Return on equity path (residual income)",
+    "bear": "19% falling to 14%",
+    "base": "19% falling to 16%",
+    "bull": "19% held"
+   },
+   {
+    "label": "Profit and dividend growth, next five years",
+    "bear": "8%",
+    "base": "12%",
+    "bull": "15%"
+   },
+   {
+    "label": "Long-run growth",
+    "bear": "5%",
+    "base": "6%",
+    "bull": "7%"
+   },
+   {
+    "label": "2027 EPS × P/E",
+    "bear": "55 × 4.5",
+    "base": "63 × 5.5",
+    "bull": "70 × 6.5"
+   },
+   {
+    "label": "Payout (growth years)",
+    "bear": "12%",
+    "base": "12%",
+    "bull": "12%"
+   },
+   {
+    "label": "Next year's dividend",
+    "bear": "Rs 6.6",
+    "base": "Rs 7.6",
+    "bull": "Rs 8.4"
+   }
+  ],
+  "averages": {
+   "bear": 240.3,
+   "base": 367.3,
+   "bull": 621.0
+  },
+  "common": "Cost of equity from the house formula (risk-free 8.24% + beta 0.70 × 10.28% equity premium). 2027 EPS assumes a normal tax rate near 32% (2025: 32.2%) on pre-tax profit −5% / +9% / +21% from the normalised twelve months to September 2026 (Rs 28.3bn). 333.4m shares (288.5m voting, 44.9m non-voting), before the proposed rights issue."
+ },
+ "sensitivity": {
+  "title": "Residual income base case, Rs per share",
+  "rowLabel": "Cost of equity",
+  "columnLabel": "Long-run ROE",
+  "rows": [
+   "13.9%",
+   "15.4%",
+   "16.9%"
+  ],
+  "columns": [
+   "13%",
+   "16%",
+   "19%"
+  ],
+  "values": [
+   [
+    342.8,
+    529.7,
+    759.2
+   ],
+   [
+    263.8,
+    403.0,
+    573.8
+   ],
+   [
+    209.3,
+    315.9,
+    446.7
+   ]
+  ],
+  "base": {
+   "row": 1,
+   "column": 1
+  },
+  "note": "Long-run growth 6% throughout. Today's Rs 303.75 sits near a 16.9% cost of equity with a 16% long-run ROE, or a 15.4% cost of equity with ROE about 14.5%: well below the 21–24% of 2023–2025."
+ },
+ "buyPlan": {
+  "totalShares": 500,
+  "tiers": [
+   {
+    "shares": 200,
+    "maxPrice": 323
+   },
+   {
+    "shares": 150,
+    "maxPrice": 305
+   },
+   {
+    "shares": 150,
+    "maxPrice": 285
+   }
+  ],
+  "averagePrice": 306.2,
+  "totalCost": 153100,
+  "note": "About Rs 153,100 in total, against Rs 151,875 for 500 shares at Rs 303.75. Buy the voting shares (NTB.N0000); the non-voting shares trade about 27% higher.",
+  "realism": "At the 30 September price of Rs 303.75 the first two tiers would fill now; check the current CSE close first. Rs 285 (6% lower) is above the 2026 low of Rs 268.50 (January–March), so it is realistic. The rights issue at Rs 305 gives existing holders more shares near the second tier."
+ },
+ "changeMyView": {
+  "higher": [
+   "The HSBC card and loan book earning well with low impairments in 2027.",
+   "ROE back above 20% with a normal tax rate.",
+   "The rights issue completed and CET1 rebuilt above 14%.",
+   "Lower interest rates, which would lower the cost of equity.",
+   "A larger cash share in dividends."
+  ],
+  "lower": [
+   "Impairments rising as the acquired cards season (Day 1 provisions already in Q3).",
+   "The goodwill split into intangibles amortised through profit for years, or written down.",
+   "The rights issue failing or a further capital raise at a low price.",
+   "A beta check in January that raises the cost of equity (each 1.5 points is worth roughly Rs 85–125 a share on residual income).",
+   "Margins squeezed further (NIM 5.40% from 6.05%) as deposit costs rise.",
+   "Large share sales by the John Keells or Central Finance groups, which must cut their voting stakes to 15%."
+  ]
+ },
+ "notes": {
+  "disclaimer": "These are estimates from the 2025 annual report and the 2026 interim reports to September 2026. The interim figures are unaudited, the HSBC acquisition accounting is provisional, the beta is provisional, and the price is the last trade of 30 September 2026, so check the current price before ordering. This is analysis, not personal financial advice."
+ },
+ "Decision box": {
+  "Verdict": "Buy: Rs 303.75 (30 September) is 20% below fair value of Rs 380 and below the Rs 323 buy price. Check the current CSE price first.",
+  "Expected yearly return at Rs 303.75": "About 17–20% a year if the price stays near 0.93x book: book growth of about 15–17% (88% of a 19% ROE kept, before the rights issue) plus a small cash dividend. More if the price moves towards fair value.",
+  "Compared with": "10-year government bond 12.24%; cost of equity 15.4%.",
+  "Downside / upside": "Bear case Rs 240 (−21%); bull case Rs 621 (+104%).",
+  "What the price assumes": "At 0.93x NAV, with 6% long-run growth and a 15.4% cost of equity, a long-run ROE of about 14.7%: far below the bank's 21–24% of 2023–2025.",
+  "Confidence": "Medium: P/B, P/E and the dividend model agree on Rs 347–372 (base); residual income is higher (Rs 403). The HSBC numbers are provisional, 2026 profit is flattered by tax, and the beta is provisional.",
+  "Margin of safety": "Yes at Rs 303.75: about 20% below fair value; Rs 285 or lower is a strong buy."
+ },
+ "Business and moat": {
+  "What it does": "A mid-sized Sri Lankan commercial bank (95 branches, 2,880 staff) with consumer, commercial and corporate banking. It is the sole issuer and acquirer of American Express cards in Sri Lanka, the market leader in credit cards, and strong in premium banking; it now owns HSBC's former retail business.",
+  "Moat": "Narrow but real: the Amex franchise and card leadership, a premium customer base and the industry's lowest net Stage 3 ratio. Banking is competitive and regulated.",
+  "Growth": "Net loans grew 50% in 2025 and 36% more in nine months of 2026 (partly the HSBC book); capital, not opportunity, is the limit."
+ },
+ "Accounting quality": {
+  "Underlying earnings": "H1 2026 had a one-off tax credit tied to the HSBC acquisition (Q2 tax was a Rs 3.5bn credit; the amount of the one-off isn't separately disclosed). Taxed at the 2025 rate, twelve-month EPS to September would be about Rs 57.6 against Rs 72.96 reported (my estimate).",
+  "Acquisition accounting": "Rs 22.2bn of provisional goodwill; card, core-deposit and depositor intangibles are being valued, and will be amortised through profit once split out, with deferred tax.",
+  "Trading and exchange": "Trading gains (Rs 5.9bn) and other operating losses (−Rs 4.9bn) largely offset each other (exchange revaluation and hedges); read them together.",
+  "Group vs bank": "Bank profit includes a Rs 1.8bn dividend from subsidiaries; the group figures, used here, exclude it."
+ },
+ "Sri Lanka checks": {
+  "Interest rates": "Watch: FVOCI bond losses cut equity by Rs 6.7bn in nine months; deposit costs are rising faster than loan yields (NIM 5.40% from 6.05%).",
+  "Rupee": "Watch: a third of deposits and over a quarter of loans are in foreign currency.",
+  "Tax and regulation": "Risk: VAT and SSCL on financial services (Rs 5.8bn in nine months) on top of income tax; the Banking Act requires John Keells and Central Finance groups to cut voting stakes to 15%.",
+  "Dependence on the state": "Watch: about Rs 281bn of debt securities (FVOCI and amortised cost)."
+ },
+ "Crisis stress test (2022-style)": {
+  "What happened in 2022": "Group impairment Rs 13.8bn against Rs 3.7bn in 2021; profit still rose to Rs 7.2bn; the share fell to Rs 46 (0.30x book); the dividend was paid only in shares.",
+  "Today": "A repeat with CET1 at 12.8% and an unseasoned card book would probably mean no cash dividend, possible further capital raising, and the price could halve. The bank would very likely stay profitable."
+ },
+ "Investment case and sell rules": {
+  "Why own it": "A bank earning 19–24% on equity with the industry's best asset quality, bought at about book value, with the HSBC deal adding scale in its strongest segment.",
+  "The case is broken if": "ROE (normal tax) falls below 15% for a full year, net Stage 3 rises above 2.5%, or capital forces another issue at a low price.",
+  "Sell triggers": "Price more than 30% above fair value (above Rs 495); the case breaks; or a clearly better opportunity appears."
+ },
+ "Suggested Telegram alerts (not set; needs your approval)": {
+  "Buy": "Rs 323 or lower",
+  "Strong buy": "Rs 285 or lower",
+  "Sell trigger": "Rs 495 or higher"
+ },
+ "Key ratios (five-year trend)": {
+  "Return on equity (group)": "2021 17.9% · 2022 17.1% · 2023 21.3% · 2024 24.2% · 2025 21.9% · 9M 2026 26.1% (reported)",
+  "Net interest margin (bank)": "2024 6.94% · 2025 6.05% · 9M 2026 5.40%",
+  "Cost to income (group)": "2022 29.7% · 2023 31.3% · 2024 33.7% · 2025 32.5% · 9M 2026 34.0%",
+  "Tier 1 / CET1": "2022 14.8% · 2023 18.1% · 2024 21.5% · 2025 19.6% · Sep 2026 12.8%",
+  "Net Stage 3": "2024 1.60% · 2025 0.91% · Sep 2026 0.72%",
+  "Dividend per share": "2022 4.00 (scrip) · 2023 5.00 · 2024 6.50 · 2025 7.00 (half scrip each year)"
+ },
+ "What this analysis doesn't cover": [
+  "The CSE price feed couldn't be reached from this run; the price is the last trade at 30 September 2026.",
+  "Whether the rights issue was approved at the 16 November 2026 EGM isn't known from the reports read; valuation is per current share.",
+  "Damodaran's sector-beta pages and local beta pages couldn't be opened; only one local 5-year beta was found. Recheck in January 2027.",
+  "The size of the one-off tax credit isn't disclosed, so the normal-tax EPS of about Rs 57.6 is my estimate.",
+  "The 2024 annual report wasn't read, so last year's promises couldn't be checked; the promise tracker uses the 2025 report's plans.",
+  "Peer banks weren't compared in this run."
+ ],
+ "management": {
+  "asOf": "2026-11-27",
+  "source": "Annual Report 2025: Chairperson's message (PDF pp. 17–19), CEO's review (PDF pp. 20–22) and Strategy and Resource Allocation (PDF pp. 31–32); progress from the interim reports to 30 Sep 2026",
+  "takeaway": "The HSBC retail deal is the big bet: it makes NTB the leader in cards and premium banking, but it cost a third of its CET1 ratio, so delivery depends on the acquired book earning well while the bank rebuilds capital.",
+  "said": [
+   {
+    "text": "Record 2025: profit before tax Rs 35.3bn (before VAT on financial services), up 8%; profit after tax Rs 19.3bn, up 15%",
+    "ref": "PDF p. 21"
+   },
+   {
+    "text": "Loans grew Rs 143bn (50%); net Stage 3 0.9%, which management calls the lowest in the industry",
+    "ref": "PDF p. 21"
+   },
+   {
+    "text": "Costs contained at Rs 17.0bn (+13%); cost-to-income 32.5%",
+    "ref": "PDF p. 21"
+   },
+   {
+    "text": "Group Tier 1 19.6% and total capital 20.7% at end-2025, leaving room to grow",
+    "ref": "PDF p. 21"
+   },
+   {
+    "text": "Agreed on 24 September 2025 to buy HSBC Sri Lanka's retail banking business, with 200,000+ customers",
+    "ref": "PDF pp. 18, 22"
+   }
+  ],
+  "plans": [
+   {
+    "text": "Complete the HSBC deal in the second quarter of 2026 and integrate it to lead in premium and retail banking",
+    "ref": "PDF pp. 18–19, 22"
+   },
+   {
+    "text": "Grow through organic expansion plus selective acquisitions; strategic priorities unchanged for 2026",
+    "ref": "PDF p. 22"
+   },
+   {
+    "text": "Keep portfolio quality while capturing growth in chosen segments",
+    "ref": "PDF p. 31"
+   },
+   {
+    "text": "Keep rationalising costs through automation and digital channels (96% of transactions digital)",
+    "ref": "PDF pp. 21, 32"
+   },
+   {
+    "text": "Multi-year IT infrastructure modernisation, first phase started in 2025",
+    "ref": "PDF p. 18"
+   }
+  ],
+  "investing": [
+   {
+    "text": "HSBC Sri Lanka retail banking business, funded internally",
+    "amount": "Rs 21.8bn cash (completed 1 May 2026)",
+    "ref": "PDF p. 18; Interim to 30 Sep 2026, PDF p. 15"
+   },
+   {
+    "text": "Tier 2 debentures to support capital and lending",
+    "amount": "Rs 15bn (June 2026)",
+    "ref": "Interim to 30 Sep 2026, PDF p. 15"
+   },
+   {
+    "text": "Rights issue of non-voting convertible shares (proposed, EGM 16 Nov 2026)",
+    "amount": "Up to Rs 13.9bn",
+    "ref": "Interim to 30 Sep 2026, PDF p. 15"
+   },
+   {
+    "text": "IT modernisation: virtualised infrastructure, core banking upgrades, a security operations centre",
+    "amount": null,
+    "ref": "PDF p. 18"
+   }
+  ],
+  "track": [
+   {
+    "promise": "Complete the HSBC retail acquisition in 2Q 2026",
+    "result": "Completed 1 May 2026 for Rs 21.8bn in cash",
+    "status": "done",
+    "ref": "Interim to 30 Sep 2026, PDF p. 15"
+   },
+   {
+    "promise": "Fund the acquisition internally",
+    "result": "Paid in cash from internal funds, but CET1 fell from 19.61% to 12.80%, followed by Rs 15bn of Tier 2 and a proposed Rs 13.9bn rights issue",
+    "status": "done",
+    "ref": "Interim to 30 Sep 2026, PDF pp. 11, 15"
+   },
+   {
+    "promise": "Keep portfolio quality",
+    "result": "Net Stage 3 0.72% at September 2026, against 0.91% in December",
+    "status": "on-track",
+    "ref": "Interim to 30 Sep 2026, PDF p. 11"
+   },
+   {
+    "promise": "Keep costs efficient (cost-to-income 32.5% in 2025)",
+    "result": "33.97% for nine months of 2026, with integration costs; costs up 30%",
+    "status": "too-early",
+    "ref": "Interim to 30 Sep 2026, PDF pp. 3, 11"
+   },
+   {
+    "promise": "Grow through organic expansion and selective acquisitions",
+    "result": "Gross loans Rs 609bn, up from Rs 451bn in December (35%)",
+    "status": "done",
+    "ref": "Interim to 30 Sep 2026, PDF p. 10"
+   }
+  ]
+ },
+ "shareholders": {
+  "asOf": "2026-09-30",
+  "compareTo": "2026-06-30",
+  "source": "Interim to 30 Sep 2026: top 20 voting and non-voting shareholders, public holding and directors' holdings (PDF p. 16), against the interim to 30 Jun 2026 (PDF p. 16). No director holds voting or non-voting shares.",
+  "takeaway": "Controlled by two groups: John Keells (JKH 19.72% plus Mackinnons Keells 9.76% of the voting shares) and Central Finance (19.72% across three accounts), with HWIC Asia Fund at 15.00%; both groups must cut to 15% under the Banking Act and vote only 10% each until then. A quiet quarter: the Capital Alliance quant fund sold 1.2m shares and Mr L.J.M.A. Jayasundara bought 0.8m.",
+  "groups": [
+   {
+    "name": "John Keells group",
+    "pct": 29.48
+   },
+   {
+    "name": "Central Finance group",
+    "pct": 19.72
+   },
+   {
+    "name": "HWIC Asia Fund",
+    "pct": 15.0
+   },
+   {
+    "name": "Other shareholders",
+    "pct": 35.8
+   }
+  ],
+  "publicFloat": 35.79,
+  "publicHolders": 9537,
+  "publicHoldersPrev": 9377,
+  "directors": [],
+  "top": [
+   {
+    "name": "John Keells Holdings PLC",
+    "shares": 56897473,
+    "pct": 19.72,
+    "change": 0
+   },
+   {
+    "name": "HWIC Asia Fund",
+    "shares": 43275032,
+    "pct": 15.0,
+    "change": 0
+   },
+   {
+    "name": "Central Finance Company PLC A/C No 03",
+    "shares": 28391533,
+    "pct": 9.84,
+    "change": 0
+   },
+   {
+    "name": "Mackinnons Keells Limited",
+    "shares": 28164245,
+    "pct": 9.76,
+    "change": 0
+   },
+   {
+    "name": "Amaliya Private Limited",
+    "shares": 17251083,
+    "pct": 5.98,
+    "change": 0
+   },
+   {
+    "name": "CF Insurance Brokers (Pvt) Ltd",
+    "shares": 14301434,
+    "pct": 4.96,
+    "change": 0
+   },
+   {
+    "name": "CF Growth Fund Ltd A/C No.01",
+    "shares": 14204489,
+    "pct": 4.92,
+    "change": 0
+   },
+   {
+    "name": "Thread Capital (Private) Limited",
+    "shares": 10819556,
+    "pct": 3.75,
+    "change": 0
+   },
+   {
+    "name": "J.B. Cocoshell (Pvt) Ltd",
+    "shares": 5060937,
+    "pct": 1.75,
+    "change": -15000
+   },
+   {
+    "name": "Hatton National Bank PLC A/C No 1",
+    "shares": 4568843,
+    "pct": 1.58,
+    "change": 0
+   },
+   {
+    "name": "Hatton National Bank PLC - Capital Alliance Quantitative Equity Fund",
+    "shares": 3203018,
+    "pct": 1.11,
+    "change": -1215615
+   },
+   {
+    "name": "Mr. M.F. Hashim",
+    "shares": 2000000,
+    "pct": 0.69,
+    "change": 0
+   },
+   {
+    "name": "Mr. W.G.D.C. Ranaweera",
+    "shares": 1892996,
+    "pct": 0.66,
+    "change": 0
+   },
+   {
+    "name": "Mr. L.J.M.A. Jayasundara",
+    "shares": 1800000,
+    "pct": 0.62,
+    "change": 793067
+   },
+   {
+    "name": "Mr. N.R. Somaiya",
+    "shares": 1629173,
+    "pct": 0.56,
+    "change": 0
+   },
+   {
+    "name": "Akbar Brothers Pvt Ltd",
+    "shares": 1001220,
+    "pct": 0.35,
+    "change": null,
+    "new": true
+   },
+   {
+    "name": "Mr. Y.S.H.R.S. Silva",
+    "shares": 993883,
+    "pct": 0.34,
+    "change": -15558
+   },
+   {
+    "name": "Mr. M.A. Jafferjee",
+    "shares": 982821,
+    "pct": 0.34,
+    "change": 0
+   },
+   {
+    "name": "Rosewood (Pvt) Limited-Account No.1",
+    "shares": 795049,
+    "pct": 0.28,
+    "change": 0
+   },
+   {
+    "name": "Mr. L.J.M.C.C. Jayasundara",
+    "shares": 789888,
+    "pct": 0.27,
+    "change": null,
+    "new": true
+   }
+  ],
+  "gone": [
+   {
+    "name": "Invenco Capital Private Limited",
+    "prevShares": 976568
+   },
+   {
+    "name": "Mrs. P.D.A.S. Beruwalage",
+    "prevShares": 759047
+   }
+  ],
+  "note": "Voting shares only (288,491,548). The 44,935,218 non-voting shares are 99.7% held by the same big holders (JKH 41.35%, Central Finance 20.99%, HWIC 15.00%, Mackinnons Keells 10.78%); unchanged in the quarter apart from small holders."
+ },
+ "fullText": "Summary: Nations Trust Bank (NTB.N0000) is a high-return niche bank (cards, premium retail, SME and corporate) that bought HSBC Sri Lanka's retail business on 1 May 2026. At Rs 303.75 (last trade on 30 September; the CSE close couldn't be fetched in this run) it trades at 0.93x group NAV of Rs 326.48 and about 5.3x trailing earnings taxed normally, below my buy price of Rs 323. Nine-month profit after tax rose 34% to Rs 20.0bn (EPS Rs 59.92), but that comes from a one-off tax credit tied to the acquisition: profit before tax was flat at Rs 21.8bn, and the third quarter fell 11% on Day 1 provisions and integration costs. Loans grew 35% in nine months, net Stage 3 is only 0.72%, but CET1 fell from 19.6% to 12.8% because the Rs 22.2bn of goodwill comes off capital, so the bank raised Rs 15bn of Tier 2 debt and proposes a Rs 13.9bn rights issue at Rs 305. Fair value is about Rs 380 (about Rs 371 a share if the rights issue goes ahead). Buy up to Rs 323; Rs 285 or less is a strong buy. Main risks: the HSBC book's credit quality, thinner capital, goodwill to be split into intangibles that will be amortised, and a provisional beta.\n\nPrice and key figures\nPrice: Rs 303.75, the last trade on 30 September 2026 (the CSE close couldn't be fetched in this run; the site replaces it with the daily close). 2026 range to September Rs 268.50–356.00. Non-voting NTB.X0000 Rs 385.25.\nNine months to September 2026 (group, unaudited): net interest income Rs 34.0bn (+18%), net fees Rs 8.3bn (+30%), total operating income Rs 45.3bn (+17%), impairment Rs 2.3bn (a Rs 0.4bn reversal a year earlier), costs Rs 15.4bn (+30%), profit before tax Rs 21.8bn (flat), income tax Rs 1.8bn (Rs 7.0bn), profit after tax Rs 20.0bn (+34%), EPS Rs 59.92 (Rs 44.72).\nThird quarter: profit before tax −11%, after tax −28% (EPS Rs 13.26 against Rs 18.35).\nBalance sheet: gross loans Rs 609bn, deposits Rs 676bn, NAV Rs 326.48, provisional goodwill Rs 22.2bn, CET1 12.80%, total capital 16.17%, net Stage 3 0.72%.\n2025 (group): profit Rs 19.3bn, EPS Rs 57.76, dividend Rs 7.00 (half scrip), NAV Rs 293.12, ROE 21.86%.\n\nThe HSBC deal and capital\nNTB bought HSBC Sri Lanka's retail business on 1 May 2026 for Rs 21.8bn in cash: about Rs 30bn of loans (Rs 20.6bn of it credit cards), Rs 132bn of deposits and Rs 104bn of cash. Nearly all the price is provisional goodwill (Rs 22.2bn), which is deducted from capital, so CET1 fell from 19.6% to 12.8%. The bank issued Rs 15bn of Tier 2 debentures in June and proposes a 3-for-22 rights issue of non-voting convertible shares at Rs 305 (Rs 13.9bn; EGM 16 November 2026). The June quarter carried a one-off tax credit tied to the acquisition, which is why 2026 profit after tax is up 34% while profit before tax is flat.\n\nRequired return\nCost of equity = 8.24% risk-free (12.24% bond less 4.0% default spread) + 0.70 beta × (4.2% + 6.08%) = 15.4%; bear 16.9%, bull 13.9%. The beta is provisional (Damodaran's money-center bank beta from a web-search extract; only one local 5-year beta, 0.18, was found).\n\nValuation table (Rs per share, before the rights issue)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 246.9 | 347.3 | 567.8 | 361.3\nP/E method | 247.5 | 346.5 | 455.0 | 338.5\nDividend model | 218.7 | 372.4 | 663.1 | 384.4\nResidual income | 248.2 | 403.0 | 798.3 | 435.6\nAverage | 240.3 | 367.3 | 621.0 | 380.0\n\nFair value Rs 379.96; buy price Rs 322.97 (15% below); strong buy Rs 284.97 (25% below). With the rights issue at Rs 305, fair value per share would be about Rs 371.\n\nGrowth and earnings checks\nSupported growth is 19.2% (87.9% of profit kept × 21.9% ROE); assumed growth 8% / 12% / 15% for five years stays below it because capital is the binding limit. The base 2027 EPS (Rs 63) is 14% below the reported Rs 72.96 run-rate because that includes the one-off tax credit; taxed at 2025's 32.2%, the run-rate is about Rs 57.6. The chosen P/Es (4.5 / 5.5 / 6.5x) are below the justified 5.7 / 7.0 / 9.8x. The dividend is small (12% payout, half in shares), so the dividend model depends on the payout rising after five years as growth slows.\n\nBusiness tests: 3 of 4 pass (returns, capital, steady profit); the cash test fails on the low cash dividend. Category: buy now at Rs 303.75 (good business, price below the Rs 323 buy price).\n\nBuy plan for 500 voting shares: 200 up to Rs 323, 150 up to Rs 305, 150 up to Rs 285; average about Rs 306, total about Rs 153,100. The 2026 low was Rs 268.50, so every tier is within this year's range.\n\nMain risks: the acquired card book's credit losses as it seasons; capital (CET1 12.8%) and the rights issue; the goodwill being split into intangibles amortised through profit; falling margin (5.40%); the John Keells and Central Finance groups having to sell down to 15%; and the provisional beta.",
+ "modelInputs": {
+  "costOfEquity": {
+   "bear": 16.9,
+   "base": 15.4,
+   "bull": 13.9
+  },
+  "wacc": null,
+  "debtWeight": null,
+  "shares": 333.43,
+  "netDebt": null,
+  "pb": {
+   "book": 326.48,
+   "bear": {
+    "roe": 14,
+    "longRun": 5
+   },
+   "base": {
+    "roe": 16,
+    "longRun": 6
+   },
+   "bull": {
+    "roe": 19,
+    "longRun": 7
+   },
+   "basis": {
+    "roe": "valuationInputs: Long-run ROE (price to book)",
+    "book": "periods: 9M 2026.navPerShare"
+   }
+  },
+  "pe": {
+   "bear": {
+    "eps": 55,
+    "pe": 4.5
+   },
+   "base": {
+    "eps": 63,
+    "pe": 5.5
+   },
+   "bull": {
+    "eps": 70,
+    "pe": 6.5
+   },
+   "basis": {
+    "eps": "valuationInputs: 2027 EPS × P/E"
+   }
+  },
+  "ddm": {
+   "years": 5,
+   "bear": {
+    "dividend": 6.6,
+    "growth": 8,
+    "longRun": 5,
+    "eps": 55,
+    "roe": 14
+   },
+   "base": {
+    "dividend": 7.6,
+    "growth": 12,
+    "longRun": 6,
+    "eps": 63,
+    "roe": 16
+   },
+   "bull": {
+    "dividend": 8.4,
+    "growth": 15,
+    "longRun": 7,
+    "eps": 70,
+    "roe": 19
+   },
+   "basis": {
+    "dividend": "valuationInputs: Dividends",
+    "eps": "valuationInputs: 2027 EPS × P/E",
+    "roe": "valuationInputs: Long-run ROE (price to book)"
+   }
+  },
+  "ri": {
+   "years": 10,
+   "book": 326.48,
+   "payout": 12,
+   "roeStart": 19,
+   "bear": {
+    "roe": 14,
+    "longRun": 5
+   },
+   "base": {
+    "roe": 16,
+    "longRun": 6
+   },
+   "bull": {
+    "roe": 19,
+    "longRun": 7
+   },
+   "basis": {
+    "roeStart": "valuationInputs: ROE path (residual income)",
+    "payout": "valuationInputs: Dividends"
+   }
+  }
+ }
+}

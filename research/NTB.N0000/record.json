@@ -1,0 +1,1054 @@
+{
+ "schemaVersion": 1,
+ "ticker": "NTB.N0000",
+ "localFolder": null,
+ "updated": "2026-11-27",
+ "reportsRead": [
+  {
+   "file": "reports/NTB.N0000/2026-02-27_annual_Annual-Report-as-at-31st-December-2025.pdf",
+   "title": "Annual Report 2025",
+   "period": "FY 2025",
+   "periodEnd": "2025-12-31",
+   "type": "annual",
+   "audited": true,
+   "readOn": "2026-11-27",
+   "note": "Statements PDF pp. 151–155, EPS note 41 (p. 216), highlights p. 15, Chairperson's message pp. 17–19, CEO's review pp. 20–22, strategy pp. 31–32, investor information pp. 273–276, decade at a glance pp. 312–314."
+  },
+  {
+   "file": "reports/NTB.N0000/2026-05-14_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-31st-Marc.pdf",
+   "title": "Interim to 31 Mar 2026",
+   "period": "Q1 2026",
+   "periodEnd": "2026-03-31",
+   "type": "interim",
+   "audited": false,
+   "readOn": "2026-11-27",
+   "note": "Commentary p. 2, income statement p. 4, balance sheet p. 6, ratios p. 13."
+  },
+  {
+   "file": "reports/NTB.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+   "title": "Interim to 30 Jun 2026",
+   "period": "H1 2026",
+   "periodEnd": "2026-06-30",
+   "type": "interim",
+   "audited": false,
+   "readOn": "2026-11-27",
+   "note": "Commentary p. 2 (one-off tax credit), income statement p. 3, balance sheet p. 5, ratios p. 11, top 20 shareholders p. 16 (comparison for the shareholder changes)."
+  },
+  {
+   "file": "reports/NTB.N0000/2026-11-12_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+   "title": "Interim to 30 Sep 2026",
+   "period": "9M 2026",
+   "periodEnd": "2026-09-30",
+   "type": "interim",
+   "audited": false,
+   "readOn": "2026-11-27",
+   "note": "Commentary p. 2, income statement p. 3, balance sheet p. 5, equity p. 6, cash flow p. 7, ratios p. 11, debentures p. 13, notes p. 15 (Tier 2, rights issue, HSBC acquisition), shareholders p. 16."
+  }
+ ],
+ "periods": [
+  {
+   "period": "FY 2022",
+   "periodEnd": "2022-12-31",
+   "months": 12,
+   "type": "annual",
+   "audited": true,
+   "figures": {
+    "netProfit": {
+     "value": 7228,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "eps": {
+     "value": 22.2,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "As printed in the decade summary (not restated for later scrip issues)"
+    },
+    "navPerShare": {
+     "value": 152.7,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "roe": {
+     "value": 17.1,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "Return on average equity, group"
+    },
+    "dividendPerShare": {
+     "value": 4.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "Scrip dividend only; no cash"
+    },
+    "priceYearEnd": {
+     "value": 46.2,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "Voting"
+    },
+    "peYearEnd": {
+     "value": 2.1,
+     "unit": "x",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "totalEquity": {
+     "value": 46041,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "tier1": {
+     "value": 14.8,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "totalCapitalRatio": {
+     "value": 16.9,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    }
+   }
+  },
+  {
+   "period": "FY 2023",
+   "periodEnd": "2023-12-31",
+   "months": 12,
+   "type": "annual",
+   "audited": true,
+   "figures": {
+    "netProfit": {
+     "value": 11471,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "eps": {
+     "value": 34.7,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "navPerShare": {
+     "value": 191.2,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "roe": {
+     "value": 21.3,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "dividendPerShare": {
+     "value": 5.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "Rs 2.50 cash + Rs 2.50 scrip"
+    },
+    "priceYearEnd": {
+     "value": 107.5,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)",
+     "note": "Voting"
+    },
+    "peYearEnd": {
+     "value": 3.1,
+     "unit": "x",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "totalEquity": {
+     "value": 61126,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "tier1": {
+     "value": 18.1,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    },
+    "totalCapitalRatio": {
+     "value": 19.7,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    }
+   }
+  },
+  {
+   "period": "FY 2024",
+   "periodEnd": "2024-12-31",
+   "months": 12,
+   "type": "annual",
+   "audited": true,
+   "figures": {
+    "netInterestIncome": {
+     "value": 35915.716,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Comparative column, group"
+    },
+    "profitBeforeTax": {
+     "value": 25736.557,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "After VAT and SSCL on financial services"
+    },
+    "incomeTax": {
+     "value": 8934.125,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "netProfit": {
+     "value": 16802.432,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "netProfitOwners": {
+     "value": 16802.432,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "eps": {
+     "value": 50.39,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "dividendPerShare": {
+     "value": 6.5,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Rs 3.25 cash + Rs 3.25 scrip (PDF p. 313)"
+    },
+    "totalEquity": {
+     "value": 79477.075,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "navPerShare": {
+     "value": 243.65,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "roe": {
+     "value": 24.22,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "nim": {
+     "value": 6.94,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314",
+     "note": "Bank"
+    },
+    "cet1": {
+     "value": 21.47,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "totalCapitalRatio": {
+     "value": 22.66,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "stage3Net": {
+     "value": 1.6,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314",
+     "note": "Net Stage 3 ratio, bank"
+    },
+    "impairment": {
+     "value": -3196.442,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Net reversal"
+    },
+    "priceYearEnd": {
+     "value": 186.5,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274",
+     "note": "Voting"
+    },
+    "priceHigh": {
+     "value": 189.75,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274"
+    },
+    "priceLow": {
+     "value": 99.8,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274"
+    },
+    "peYearEnd": {
+     "value": 3.7,
+     "unit": "x",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    }
+   },
+   "note": "Comparative column of the 2025 annual report"
+  },
+  {
+   "period": "FY 2025",
+   "periodEnd": "2025-12-31",
+   "months": 12,
+   "type": "annual",
+   "audited": true,
+   "figures": {
+    "revenue": {
+     "value": 85539.387,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Gross income, group"
+    },
+    "netInterestIncome": {
+     "value": 38778.1,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "totalOperatingIncome": {
+     "value": 52199.563,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "operatingExpenses": {
+     "value": 16957.311,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "impairment": {
+     "value": -106.302,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Net reversal"
+    },
+    "taxesOnFinancialServices": {
+     "value": 6945.433,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "VAT and SSCL on financial services"
+    },
+    "profitBeforeTax": {
+     "value": 28403.121,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "incomeTax": {
+     "value": 9145.044,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "netProfit": {
+     "value": 19258.077,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "netProfitOwners": {
+     "value": 19258.077,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "eps": {
+     "value": 57.76,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 152"
+    },
+    "dividendPerShare": {
+     "value": 7.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 152",
+     "note": "Rs 3.50 cash + Rs 3.50 scrip (PDF p. 313); payout 12.1%"
+    },
+    "dividendsPaid": {
+     "value": 1218.942,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 155",
+     "note": "Cash dividend paid in 2025 (for 2024)"
+    },
+    "operatingCashFlow": {
+     "value": 17592.263,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 155"
+    },
+    "purchasePPE": {
+     "value": 1225.011,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 155"
+    },
+    "purchaseIntangibles": {
+     "value": 793.215,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 155"
+    },
+    "totalEquity": {
+     "value": 96915.623,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "navPerShare": {
+     "value": 293.12,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "sharesOutstanding": {
+     "value": 333.43017,
+     "unit": "mn",
+     "source": "Annual Report 2025, PDF p. 216 (note 41)",
+     "note": "Weighted average 333,430,170, adjusted for the 2025 scrip dividend issued in 2026; 330,637,482 in issue at 31 Dec 2025 (note 49.2, PDF p. 248)"
+    },
+    "votingShares": {
+     "value": 286.015907,
+     "unit": "mn",
+     "source": "Annual Report 2025, PDF p. 273"
+    },
+    "nonVotingShares": {
+     "value": 44.621575,
+     "unit": "mn",
+     "source": "Annual Report 2025, PDF p. 273"
+    },
+    "roe": {
+     "value": 21.86,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "nim": {
+     "value": 6.05,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314",
+     "note": "Bank"
+    },
+    "costToIncome": {
+     "value": 32.49,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "cet1": {
+     "value": 19.61,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "totalCapitalRatio": {
+     "value": 20.72,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "stage3Net": {
+     "value": 0.91,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314",
+     "note": "Net Stage 3 ratio, bank"
+    },
+    "stage3Coverage": {
+     "value": 66.69,
+     "unit": "%",
+     "source": "Annual Report 2025, PDF p. 314"
+    },
+    "netLoans": {
+     "value": 430368.007,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "deposits": {
+     "value": 502219.078,
+     "unit": "Rs mn",
+     "source": "Annual Report 2025, PDF p. 151"
+    },
+    "priceYearEnd": {
+     "value": 313.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274",
+     "note": "Voting; non-voting Rs 385.50"
+    },
+    "priceHigh": {
+     "value": 324.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274"
+    },
+    "priceLow": {
+     "value": 171.0,
+     "unit": "Rs",
+     "source": "Annual Report 2025, PDF p. 274"
+    },
+    "peYearEnd": {
+     "value": 5.4,
+     "unit": "x",
+     "source": "Annual Report 2025, PDF pp. 312–313 (Decade at a Glance, group)"
+    }
+   }
+  },
+  {
+   "period": "Q1 2025",
+   "periodEnd": "2025-03-31",
+   "months": 3,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "profitBeforeTax": {
+     "value": 6307.554,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4",
+     "note": "Comparative column"
+    },
+    "incomeTax": {
+     "value": 2222.617,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "netProfit": {
+     "value": 4084.937,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "eps": {
+     "value": 12.25,
+     "unit": "Rs",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "netInterestIncome": {
+     "value": 9280.203,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    }
+   },
+   "note": "Comparative column"
+  },
+  {
+   "period": "Q1 2026",
+   "periodEnd": "2026-03-31",
+   "months": 3,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "netInterestIncome": {
+     "value": 10329.386,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "impairment": {
+     "value": 622.972,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "profitBeforeTax": {
+     "value": 7020.871,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "incomeTax": {
+     "value": 2447.49,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "netProfit": {
+     "value": 4573.381,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "eps": {
+     "value": 13.72,
+     "unit": "Rs",
+     "source": "Interim to 31 Mar 2026, PDF p. 4"
+    },
+    "totalEquity": {
+     "value": 98488.351,
+     "unit": "Rs mn",
+     "source": "Interim to 31 Mar 2026, PDF p. 6"
+    },
+    "navPerShare": {
+     "value": 295.38,
+     "unit": "Rs",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "roe": {
+     "value": 18.98,
+     "unit": "%",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "nim": {
+     "value": 5.66,
+     "unit": "%",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "cet1": {
+     "value": 17.31,
+     "unit": "%",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "totalCapitalRatio": {
+     "value": 18.41,
+     "unit": "%",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "stage3Net": {
+     "value": 1.1,
+     "unit": "%",
+     "source": "Interim to 31 Mar 2026, PDF p. 13"
+    },
+    "priceQuarterEnd": {
+     "value": 289.25,
+     "unit": "Rs",
+     "source": "Interim to 31 Mar 2026, PDF p. 13",
+     "note": "Voting; quarter range Rs 268.50–356.00"
+    }
+   }
+  },
+  {
+   "period": "H1 2025",
+   "periodEnd": "2025-06-30",
+   "months": 6,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "profitBeforeTax": {
+     "value": 13670.485,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3",
+     "note": "Comparative column"
+    },
+    "incomeTax": {
+     "value": 4877.786,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "netProfit": {
+     "value": 8792.699,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "eps": {
+     "value": 26.37,
+     "unit": "Rs",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "netInterestIncome": {
+     "value": 19036.375,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    }
+   },
+   "note": "Comparative column"
+  },
+  {
+   "period": "H1 2026",
+   "periodEnd": "2026-06-30",
+   "months": 6,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "netInterestIncome": {
+     "value": 22221.845,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "impairment": {
+     "value": 2252.287,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "profitBeforeTax": {
+     "value": 14482.885,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "incomeTax": {
+     "value": -1076.513,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3",
+     "note": "A credit: one-off tax credit tied to the HSBC acquisition (PDF p. 2); Q2 credit Rs 3,524m"
+    },
+    "netProfit": {
+     "value": 15559.398,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "eps": {
+     "value": 46.67,
+     "unit": "Rs",
+     "source": "Interim to 30 Jun 2026, PDF p. 3"
+    },
+    "totalEquity": {
+     "value": 105029.886,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Jun 2026, PDF p. 5"
+    },
+    "navPerShare": {
+     "value": 315.0,
+     "unit": "Rs",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "roe": {
+     "value": 31.33,
+     "unit": "%",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "nim": {
+     "value": 5.58,
+     "unit": "%",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "cet1": {
+     "value": 12.76,
+     "unit": "%",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "totalCapitalRatio": {
+     "value": 16.41,
+     "unit": "%",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "stage3Net": {
+     "value": 1.05,
+     "unit": "%",
+     "source": "Interim to 30 Jun 2026, PDF p. 11"
+    },
+    "priceQuarterEnd": {
+     "value": 317.5,
+     "unit": "Rs",
+     "source": "Interim to 30 Jun 2026, PDF p. 11",
+     "note": "Voting; quarter range Rs 283.50–327.00"
+    }
+   }
+  },
+  {
+   "period": "9M 2025",
+   "periodEnd": "2025-09-30",
+   "months": 9,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "netInterestIncome": {
+     "value": 28824.838,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3",
+     "note": "Comparative column"
+    },
+    "impairment": {
+     "value": -355.67,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "operatingExpenses": {
+     "value": 11876.665,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "profitBeforeTax": {
+     "value": 21910.325,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "incomeTax": {
+     "value": 6999.629,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "netProfit": {
+     "value": 14910.696,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "netProfitOwners": {
+     "value": 14910.696,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "eps": {
+     "value": 44.72,
+     "unit": "Rs",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "operatingCashFlow": {
+     "value": 22366.422,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "purchasePPE": {
+     "value": 976.992,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "purchaseIntangibles": {
+     "value": 276.683,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "totalEquity": {
+     "value": 93356.559,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 6",
+     "note": "Statement of changes in equity, group, at 30 Sep 2025"
+    }
+   },
+   "note": "Comparative column"
+  },
+  {
+   "period": "9M 2026",
+   "periodEnd": "2026-09-30",
+   "months": 9,
+   "type": "interim",
+   "audited": false,
+   "figures": {
+    "revenue": {
+     "value": 80139.395,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3",
+     "note": "Gross income, group"
+    },
+    "netInterestIncome": {
+     "value": 34002.809,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "totalOperatingIncome": {
+     "value": 45310.708,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "impairment": {
+     "value": 2286.32,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3",
+     "note": "Includes Day 1 provisions on the HSBC portfolio (PDF p. 2)"
+    },
+    "operatingExpenses": {
+     "value": 15394.159,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "profitBeforeTax": {
+     "value": 21823.714,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "incomeTax": {
+     "value": 1843.896,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3",
+     "note": "Low: includes the one-off Q2 tax credit tied to the HSBC acquisition"
+    },
+    "netProfit": {
+     "value": 19979.818,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "netProfitOwners": {
+     "value": 19979.818,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "eps": {
+     "value": 59.92,
+     "unit": "Rs",
+     "source": "Interim to 30 Sep 2026, PDF p. 3"
+    },
+    "epsQuarter": {
+     "value": 13.26,
+     "unit": "Rs",
+     "source": "Interim to 30 Sep 2026, PDF p. 3",
+     "note": "Q3 2026 alone (Q3 2025: Rs 18.35)"
+    },
+    "operatingCashFlow": {
+     "value": 28818.648,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "purchasePPE": {
+     "value": 2029.319,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "purchaseIntangibles": {
+     "value": 1441.72,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7"
+    },
+    "acquisitions": {
+     "value": 21784.615,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 7",
+     "note": "HSBC Sri Lanka retail banking business, 1 May 2026"
+    },
+    "provisionalGoodwill": {
+     "value": 22179.585,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 5"
+    },
+    "totalEquity": {
+     "value": 108858.269,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 5"
+    },
+    "navPerShare": {
+     "value": 326.48,
+     "unit": "Rs",
+     "source": "Interim to 30 Sep 2026, PDF p. 11",
+     "note": "Bank Rs 322.98"
+    },
+    "votingShares": {
+     "value": 288.491548,
+     "unit": "mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 16"
+    },
+    "nonVotingShares": {
+     "value": 44.935218,
+     "unit": "mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 16"
+    },
+    "roe": {
+     "value": 26.11,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11"
+    },
+    "nim": {
+     "value": 5.4,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11",
+     "note": "Bank"
+    },
+    "costToIncome": {
+     "value": 33.97,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11"
+    },
+    "cet1": {
+     "value": 12.8,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11",
+     "note": "Minimum 7.0%; 19.61% at Dec 2025"
+    },
+    "totalCapitalRatio": {
+     "value": 16.17,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11",
+     "note": "Minimum 12.5%"
+    },
+    "stage3Net": {
+     "value": 0.72,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11"
+    },
+    "stage3Gross": {
+     "value": 2.39,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11"
+    },
+    "stage3Coverage": {
+     "value": 69.96,
+     "unit": "%",
+     "source": "Interim to 30 Sep 2026, PDF p. 11"
+    },
+    "grossLoans": {
+     "value": 608949.64,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 10"
+    },
+    "netLoans": {
+     "value": 585673.002,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 5"
+    },
+    "deposits": {
+     "value": 675888.908,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 5"
+    },
+    "priceQuarterEnd": {
+     "value": 303.75,
+     "unit": "Rs",
+     "source": "Interim to 30 Sep 2026, PDF p. 11",
+     "note": "Voting; quarter range Rs 301.50–329.00; non-voting Rs 385.25"
+    },
+    "rightsIssueProposed": {
+     "value": 13867.52223,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 15 (note 8)",
+     "note": "3 non-voting convertible shares for every 22 held at Rs 305.00: 45,467,286 shares; EGM 16 Nov 2026"
+    },
+    "tier2Raised": {
+     "value": 15000,
+     "unit": "Rs mn",
+     "source": "Interim to 30 Sep 2026, PDF p. 15 (note 7)",
+     "note": "Basel III Tier 2 debentures, June 2026, 13.75–13.95%"
+    }
+   }
+  }
+ ],
+ "valuationInputs": [
+  {
+   "name": "Beta",
+   "value": "0.70 (provisional)",
+   "reason": "8 steps, 27 Nov 2026. (1) Business: a Sri Lankan commercial bank (the bank is almost all of group profit; Waldock Mackenzie, Allied Properties and Nations Insurance Brokers are small), so one sector beta. (2)–(3) A bank, so no relevering: the sector's levered beta is used, Damodaran's January 2026 Bank (Money Center) levered beta 0.70, the same web-search extract the SAMP analysis uses (his site couldn't be opened from this run; whether the row is the emerging-markets or global file wasn't confirmed). (4) Local 5-year betas: only one found, StockAnalysis 0.18 (web-search extract, page not opened); TradingView's 1.13–1.25 are 1-year betas and are ignored. Fewer than 3 sources, so no usable median. (5) Higher of 0.70 and the local figure = 0.70. (6) Within 0.3–2. (7) Into the formula by scripts/reinvestment.py. Provisional: refresh in January 2027 with Damodaran's emerging-markets file and three verified local 5-year betas.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Scenario weights",
+   "value": "Bear 30 / Base 50 / Bull 20",
+   "reason": "The owner's standard weighting.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Margins of safety",
+   "value": "Buy 15% / Strong buy 25%",
+   "reason": "The owner's standard.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Cost of equity",
+   "value": "Bear 16.9% / Base 15.4% / Bull 13.9%",
+   "reason": "From scripts/reinvestment.py (27 Nov 2026): 8.24% + 0.70 × (4.2% + 6.08%) = 15.4%, ±1.5 points.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Growth check",
+   "value": "Assumed 8% / 12% / 15%; supported 19.2% (share of profit kept × ROE, FY 2025: 87.9% × 21.9%). All within 2 pts.",
+   "reason": "From scripts/reinvestment.py on the FY 2025 figures; profit and dividend growth for the next five years. The supported rate is high because only 12% of profit is paid out (half of it in shares), but capital is the real limit: CET1 fell to 12.80% after the HSBC deal and a rights issue is proposed, so the assumptions stay well below it.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Long-run ROE (price to book)",
+   "value": "14% / 16% / 19%",
+   "reason": "Group ROE 17.1% (2022), 21.3% (2023), 24.2% (2024), 21.9% (2025); about 19% for the twelve months to September 2026 with a normal tax rate (24.1% reported, flattered by the one-off tax credit). Base set below that because equity now carries Rs 22.2bn of provisional goodwill from the HSBC purchase and a Rs 13.9bn rights issue would add equity before the new business earns on it.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "ROE path (residual income)",
+   "value": "19%→14% / 19%→16% / 19%→19%",
+   "reason": "One starting ROE for every case: 19%, the twelve months to September 2026 at the 2025 tax rate (32.2%): profit before tax Rs 28.3bn (28.40 + 21.82 − 21.91) less tax, on average equity of Rs 101bn. Moves in a straight line to the long-run ROE over 10 years; then the excess return grows at the long-run rate.",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Long-term growth",
+   "value": "5% / 6% / 7%",
+   "reason": "Below the 12.24% bond yield and the cost of equity; needs 36–38% of profit kept (growth ÷ ROE).",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "2027 EPS × P/E",
+   "value": "55 × 4.5 / 63 × 5.5 / 70 × 6.5",
+   "reason": "Per share before the proposed rights issue (333.4m shares). Twelve-month EPS to September 2026 is Rs 72.96 reported but about Rs 57.6 at the 2025 tax rate, because H1 2026 had a one-off tax credit tied to the HSBC acquisition (Q2 tax was a Rs 3.5bn credit). 2027 adds a full year of the HSBC book: pre-tax profit −5% / +9% / +21% on the normalised base, taxed near 32%. Base 14% below the reported run-rate for that reason. P/Es inside the 2.1–5.4x year-end range of 2022–2025 and below the justified 7.0x base (payout 1 − 6/16 = 62.5%).",
+   "since": "2026-11-27"
+  },
+  {
+   "name": "Dividends",
+   "value": "Next year Rs 6.6 / 7.6 / 8.4 (12% of 2027 EPS, as now), growing 8% / 12% / 15% for five years, then 5% / 6% / 7%",
+   "reason": "2025 dividend Rs 7.00 = 12.1% of EPS (Rs 3.50 cash + Rs 3.50 scrip). After five years the payout becomes 1 − long-run growth ÷ ROE (Damodaran's two-stage model): 64% / 62.5% / 63%, from the 'Long-run ROE (price to book)' and 'Long-term growth' inputs, on the '2027 EPS × P/E' EPS. Scrip is counted as dividend, which flatters cash returned. Growth within the 19.2% supported.",
+   "since": "2026-11-27"
+  }
+ ],
+ "openQuestions": [
+  "Rights issue (3 for 22 at Rs 305, non-voting convertible, Rs 13.9bn): was it approved at the 16 November 2026 EGM, and when are the shares issued? Update the share count (about 378.9m afterwards).",
+  "HSBC purchase price allocation (due by 30 April 2027): how much of the Rs 22.2bn provisional goodwill becomes intangibles that are amortised through profit, and the related deferred tax.",
+  "Full-year 2026 (due February 2027): the tax rate without the one-off credit, and the 2026 dividend (cash or scrip).",
+  "Impairments on the acquired HSBC cards and loans as they season (Day 1 provisions in Q3 2026).",
+  "Capital: CET1 12.80% and total capital 16.17% at September 2026 (19.61% / 20.72% in December 2025).",
+  "Q3 2026 profit before tax fell 11%: integration costs or a lasting step-down?",
+  "John Keells and Central Finance groups must cut voting holdings to 15% (Banking Act): any share sales or a placement.",
+  "Beta: recheck in January 2027 with Damodaran's emerging-markets bank beta and three verified local 5-year betas."
+ ],
+ "changeLog": [
+  {
+   "date": "2026-11-27",
+   "basedOn": "Annual Report 2025; interim reports to 31 Mar, 30 Jun and 30 Sep 2026",
+   "summary": "Requested from Telegram (/add NTB.N0000). First analysis from the four CSE reports. Group figures; the 2026 profit jump is a one-off tax credit tied to the HSBC retail acquisition (1 May 2026), so EPS was normalised at the 2025 tax rate. Four methods (justified P/B, P/E, dividend model, residual income) worked by scripts/valuation.py at a 15.4% cost of equity (beta 0.70, provisional). Business tests 3/4 (cash fails: 12% payout, half in scrip): good; category 1 (buy now) at the 30 September price. Uncertain: the CSE price couldn't be fetched (30 Sep last trade used); the rights issue's EGM result isn't known; only one local 5-year beta found; the one-off tax credit's size isn't disclosed; the 2024 annual report wasn't read, so the promise tracker uses the 2025 plans.",
+   "fairValue": 379.96,
+   "buyPrice": 322.97,
+   "strongBuyPrice": 284.97,
+   "priceAtTime": 303.75,
+   "archive": null
+  }
+ ]
+}
