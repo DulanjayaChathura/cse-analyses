@@ -1,0 +1,689 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-27",
+  "source": "HNB Stockbrokers",
+  "posts": 4,
+  "messageIds": [
+    447,
+    448,
+    449,
+    450
+  ],
+  "commands": [
+    451
+  ],
+  "callsPriceDate": null,
+  "note": "No recommendation table or dividend card was posted, so there are no broker calls or dividends today, and the bank-results note gives no ratings or targets, so there is nothing to set against this site's fair values. Charts without figures in the Weekly Market Update (foreign flows by share, insider deals, sector turnover, technical chart, RSI) are read against gridlines and marked ≈. Two news links (EconomyNext: PAYE threshold, ADB MSME loan) returned only a captcha page and three (ADB on reforms, two Reuters global stories) couldn't be downloaded (HTTP 401/403); for those the post's own text is used. The banks thread on X (post 449) wasn't read, as social-media links aren't collected. US index moves on the Bloomberg screen (27 Nov, 08:39 Sri Lanka time) look carried over from 25 Nov (US markets were shut for Thanksgiving on 26 Nov). Checks on the weekly report: the net foreign flow doughnut shows −Rs 791.88M (outflow Rs 335.88M, inflow Rs 200.69M), the same headline as last week's report and not matching its own parts or the text page (net −Rs 53.7mn: bought Rs 305.1mn, sold Rs 358.8mn); the text page's figures are used. The momentum chart is titled 'Top 15' but shows 10 shares. Turnover is Rs 6.60bn on the tile and Rs 6.59bn in the text.",
+  "highlights": [
+    {
+      "icon": "📉",
+      "tone": "down",
+      "title": "Quiet, lower week",
+      "figure": "ASPI −0.80%",
+      "text": "The ASPI fell 171 points (−0.80%) over the four-day week to 21,198.24 and the S&P SL20 0.60% to 6,039.02. Turnover dropped to Rs 6.6bn from Rs 20.21bn (Rs 1.64bn a day vs Rs 4.04bn); market cap Rs 7,658bn (−0.5%)."
+    },
+    {
+      "icon": "🏦",
+      "tone": "warn",
+      "title": "Big four banks: mixed 3Q26",
+      "figure": "Profits −24% q/q",
+      "text": "HNB Stockbrokers says COMB, HNB, NTB and SAMP grew interest and fee income and improved asset quality, but about Rs 17.8bn of mark-to-market and FX losses cut profits by 24% q/q on average. It expects flat margins for six months and slower loan growth. No targets were given; this site's fair values are COMB Rs 182, HNB Rs 448, SAMP Rs 184.74."
+    },
+    {
+      "icon": "🌍",
+      "tone": "down",
+      "title": "Foreigners sell Dialog",
+      "figure": "DIAL ≈ −Rs 0.22bn",
+      "text": "Foreigners were small net sellers for the week (−Rs 53.7mn; bought Rs 305.1mn, sold Rs 358.8mn). Dialog (DIAL.N0000) took almost all the selling, about Rs 0.22bn; HDFC, COMB and HAYL saw the most buying. The site's Dialog fair value is Rs 29.05, below the Rs 47.60 close on 26 Nov."
+    },
+    {
+      "icon": "🚀",
+      "tone": "warn",
+      "title": "Momentum runs past fair value",
+      "figure": "SING +115.9%",
+      "text": "Singer (SING.N0000) more than doubled in ten days. Two shares analysed here are also on the list and well above this site's fair values: Janashakthi Insurance (JINS.N0000, +14.6%; Rs 48.20 on 26 Nov vs fair value Rs 16.06) and PickMe (PKME.N0000, +9.3%; Rs 189.50 vs Rs 83.25)."
+    },
+    {
+      "icon": "🧾",
+      "tone": "info",
+      "title": "Tax reliefs cost Rs 780bn",
+      "figure": "Rs 636bn + Rs 144bn",
+      "text": "The Finance Ministry's Tax Expenditure Statement puts 2025 VAT and SSCL reliefs at Rs 636bn (a conservative minimum) and customs duty reliefs at Rs 144bn, mostly fuel-duty waivers. Wholesale and retail got the most VAT relief (Rs 188bn)."
+    }
+  ],
+  "research": [
+    {
+      "code": null,
+      "company": "Banks (COMB, HNB, NTB, SAMP)",
+      "report": "3Q26 banking results review (HNB Stockbrokers Research)",
+      "date": "2026-11-27",
+      "rating": null,
+      "prevRating": null,
+      "target": null,
+      "price": null,
+      "priceDate": null,
+      "post": 449,
+      "keyPoints": [
+        "The big four banks had a mixed 3Q26: net interest income and fee income grew and asset quality improved.",
+        "Mark-to-market and foreign-exchange losses of about Rs 17.8bn weighed on results, so profits fell 24% q/q on average.",
+        "Loan growth slowed to an average of 4.9% as banks lent more selectively, even though credit demand stayed firm."
+      ],
+      "forecasts": [
+        "Net interest margins broadly flat over the next six months",
+        "Little loan repricing from the latest 25bps rate hike",
+        "Credit growth likely to slow further"
+      ],
+      "risks": [],
+      "catalysts": []
+    },
+    {
+      "code": null,
+      "company": "Market",
+      "report": "Weekly Market Update, 27 Nov 2026 (HNB Stockbrokers)",
+      "date": "2026-11-27",
+      "rating": null,
+      "prevRating": null,
+      "target": null,
+      "price": null,
+      "priceDate": null,
+      "post": 450,
+      "keyPoints": [
+        "ASPI −0.80% (−171 points) for the four-day week to 21,198.24; S&P SL20 −0.60% to 6,039.02; market cap Rs 7,658bn (−0.5%).",
+        "Turnover Rs 6.59bn (Rs 20.21bn last week), a daily average of Rs 1.64bn (−59.2%); Thursday was the busiest day at about Rs 2.7bn.",
+        "Banks were the most traded sector (26.93%, Rs 1.77bn), ahead of materials and food & beverage (about Rs 0.9bn and Rs 0.8bn on the chart).",
+        "Foreigners net sold Rs 53.7mn (Rs 0.87bn net outflow last week); Dialog drew about Rs 0.22bn of foreign selling.",
+        "The ASPI slipped below its 200-day average (≈21,700) and the 14-day RSI fell to about 43, from about 89 in mid-November."
+      ],
+      "forecasts": [],
+      "risks": [],
+      "catalysts": []
+    }
+  ],
+  "market": {
+    "aspi": 21198.24,
+    "aspiChangePct": -0.8,
+    "aspiPoints": -171,
+    "sp20": 6039.02,
+    "sp20ChangePct": -0.6,
+    "turnoverBn": 6.59,
+    "marketCapTn": 7.658,
+    "foreignBuyMn": 305.1,
+    "foreignSellMn": 358.8,
+    "foreignNetMn": -53.7,
+    "foreignFlows": [
+      {
+        "code": "HDFC.N0000",
+        "mn": 50,
+        "approx": true
+      },
+      {
+        "code": "COMB.N0000",
+        "mn": 30,
+        "approx": true
+      },
+      {
+        "code": "HAYL.N0000",
+        "mn": 25,
+        "approx": true
+      },
+      {
+        "code": "AEL.N0000",
+        "mn": 20,
+        "approx": true
+      },
+      {
+        "code": "SAMP.N0000",
+        "mn": 15,
+        "approx": true
+      },
+      {
+        "code": "DFCC.N0000",
+        "mn": 10,
+        "approx": true
+      },
+      {
+        "code": "TAP.N0000",
+        "mn": 5,
+        "approx": true
+      },
+      {
+        "code": "MULL.N0000",
+        "mn": 5,
+        "approx": true
+      },
+      {
+        "code": "CCS.N0000",
+        "mn": 5,
+        "approx": true
+      },
+      {
+        "code": "LFIN.N0000",
+        "mn": 3,
+        "approx": true
+      },
+      {
+        "code": "JINS.N0000",
+        "mn": -2,
+        "approx": true
+      },
+      {
+        "code": "HAYC.N0000",
+        "mn": -2,
+        "approx": true
+      },
+      {
+        "code": "MELS.N0000",
+        "mn": -2,
+        "approx": true
+      },
+      {
+        "code": "JKH.N0000",
+        "mn": -5,
+        "approx": true
+      },
+      {
+        "code": "SPEN.N0000",
+        "mn": -5,
+        "approx": true
+      },
+      {
+        "code": "HARI.N0000",
+        "mn": -13,
+        "approx": true
+      },
+      {
+        "code": "LHCL.N0000",
+        "mn": -18,
+        "approx": true
+      },
+      {
+        "code": "ABL.N0000",
+        "mn": -25,
+        "approx": true
+      },
+      {
+        "code": "CIC.N0000",
+        "mn": -27,
+        "approx": true
+      },
+      {
+        "code": "DIAL.N0000",
+        "mn": -220,
+        "approx": true
+      }
+    ],
+    "momentum": [
+      {
+        "code": "SING.N0000",
+        "pct": 115.9
+      },
+      {
+        "code": "JINS.N0000",
+        "pct": 14.6
+      },
+      {
+        "code": "PARA.N0000",
+        "pct": 13.4
+      },
+      {
+        "code": "RWSL.N0000",
+        "pct": 12.2
+      },
+      {
+        "code": "PHAR.N0000",
+        "pct": 9.4
+      },
+      {
+        "code": "PKME.N0000",
+        "pct": 9.3
+      },
+      {
+        "code": "MULL.N0000",
+        "pct": 7.9
+      },
+      {
+        "code": "BRR.N0000",
+        "pct": 7.1
+      },
+      {
+        "code": "TESS.X0000",
+        "pct": 7.1
+      },
+      {
+        "code": "AFS.N0000",
+        "pct": 5.6
+      }
+    ],
+    "other": [
+      {
+        "label": "Week: ASPI (last week)",
+        "value": "21,369.72",
+        "unit": "points"
+      },
+      {
+        "label": "Week: S&P SL20 change",
+        "value": "−36 (6,075.28 last week)",
+        "unit": "points"
+      },
+      {
+        "label": "Week: turnover (tile)",
+        "value": "6.60 (20.21 last week, −67.36%)",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Week: daily average turnover",
+        "value": "1.64 (4.04 last week, −59.2%)",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Daily turnover Mon / Wed / Thu / Fri (no trading Tue 24 Nov)",
+        "value": "1.1 / 1.5 / 2.7 / 1.4",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Daily foreign turnover Mon / Wed / Thu / Fri (≈, chart)",
+        "value": "≈0.11 / ≈0.15 / ≈0.21 / ≈0.01",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Week: market cap (last week)",
+        "value": "7,658 (7,712)",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Week: foreign purchases change",
+        "value": "−75.1% (1,227 last week)",
+        "unit": "Rs mn"
+      },
+      {
+        "label": "Week: banks' share of turnover",
+        "value": "26.93 (1.77)",
+        "unit": "% (Rs bn)"
+      },
+      {
+        "label": "Week: sector turnover (≈, chart)",
+        "value": "banks ≈1.78, materials ≈0.93, food & beverage ≈0.78, capital goods ≈0.62, diversified financials ≈0.48, insurance ≈0.43, transportation ≈0.39, food & staples retail ≈0.32, telecoms ≈0.26, health care ≈0.15, consumer durables ≈0.13, real estate ≈0.09, retailing ≈0.09, consumer services ≈0.06, utilities ≈0.03; others ≈0",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "Insider deals, trailing 90 days (≈, chart)",
+        "value": "bought: NHL ≈1.0, RHTL ≈0.75, DIMO ≈0.34, WATA ≈0.18, SPEN ≈0.07; sold: CARG ≈4.8, SIRA ≈1.2, HNB ≈0.68, CHOT ≈0.57, CWL ≈0.55",
+        "unit": "Rs bn"
+      },
+      {
+        "label": "ASPI vs moving averages (≈, chart)",
+        "value": "close 21,198, 200-day ≈21,700, 50-day ≈20,750",
+        "unit": "points"
+      },
+      {
+        "label": "ASPI 14-day RSI (≈, chart)",
+        "value": "≈43 (peak ≈89 on 12 Nov)",
+        "unit": ""
+      },
+      {
+        "label": "Overnight liquidity, latest (≈, chart)",
+        "value": "≈0.17 (peak label 0.46 in 2026)",
+        "unit": "Rs tn surplus"
+      },
+      {
+        "label": "Reserve money growth (latest label)",
+        "value": "15.22",
+        "unit": "% y/y"
+      },
+      {
+        "label": "CCPI headline inflation (latest label)",
+        "value": "8.30",
+        "unit": "% y/y"
+      },
+      {
+        "label": "CCPI core inflation (latest label)",
+        "value": "5.60",
+        "unit": "% y/y"
+      },
+      {
+        "label": "12-month T-bill",
+        "value": "9.95",
+        "unit": "%"
+      },
+      {
+        "label": "3-month T-bill (chart label)",
+        "value": "9.35",
+        "unit": "%"
+      },
+      {
+        "label": "Real interest rate (12M TB − core CCPI)",
+        "value": "4.35",
+        "unit": "%"
+      },
+      {
+        "label": "CBSL foreign reserves / currency and deposit liabilities (latest label)",
+        "value": "75.81",
+        "unit": "%"
+      },
+      {
+        "label": "BBG World index",
+        "value": "2,449.48 (+0.20%, +3.97% YTD in USD)",
+        "unit": "points"
+      }
+    ],
+    "world": [
+      {
+        "name": "Dow Jones",
+        "pct": 0.33,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "S&P 500",
+        "pct": -0.25,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "S&P/TSX",
+        "pct": 0.72,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Ibovespa",
+        "pct": 6.07,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Euro Stoxx 50",
+        "pct": 2.04,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "FTSE 100",
+        "pct": 1.75,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "CAC 40",
+        "pct": 1.61,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "DAX",
+        "pct": 2.08,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Nikkei",
+        "pct": 1.17,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Hang Seng",
+        "pct": 0.8,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "CSI 300",
+        "pct": -0.09,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "S&P/ASX 200",
+        "pct": 0.7,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "KOSPI",
+        "pct": 2.9,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Nifty",
+        "pct": 0.25,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "TAIEX",
+        "pct": 0.81,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "Jakarta Comp",
+        "pct": 0.72,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "FTSE/BM KLCI",
+        "pct": 0.47,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "FTSE/ST",
+        "pct": 0.0,
+        "asOf": "27 Nov 08:39 SL"
+      },
+      {
+        "name": "BBG World",
+        "pct": 0.2,
+        "asOf": "27 Nov 08:39 SL"
+      }
+    ]
+  },
+  "calls": [],
+  "dividends": [],
+  "news": [
+    {
+      "title": "Top PAYE rate threshold to rise above Rs 500,000",
+      "text": "President Anura Kumara Dissanayake said the income level at which the top 36% PAYE tax bracket starts will be raised above Rs 500,000, either next year or the year after.",
+      "topic": "Policy",
+      "figure": "36%"
+    },
+    {
+      "title": "ADB lends $200mn for small businesses",
+      "text": "Sri Lanka signed a $200mn Asian Development Bank programme to build a stronger, more inclusive financial system for micro, small and medium-sized enterprises, the Finance Ministry said.",
+      "topic": "Economy",
+      "figure": "$200mn"
+    },
+    {
+      "title": "World Bank's first Sri Lankan rupee borrowing line",
+      "text": "IFC set up a six-year fixed-rate rupee borrowing line with HSBC Sri Lanka (about $5mn), its first in Asia. With other local funding it backs a $10mn, 10-year rupee loan to one of the country's largest renewable energy companies: IFC's longest rupee loan and first infrastructure investment here since the crisis. Lending in rupees spares borrowers currency risk.",
+      "topic": "Banking",
+      "figure": "$5mn"
+    },
+    {
+      "title": "VAT and SSCL reliefs cost Rs 636bn in 2025",
+      "text": "VAT reliefs rose 25.8% to Rs 419bn and SSCL reliefs were Rs 216bn. Wholesale and retail got Rs 188bn of VAT and Rs 54bn of SSCL relief, electricity and gas Rs 65bn of VAT relief. VAT reliefs were Rs 243bn in the first half of 2026 (+17.2%). The Ministry calls the figures a conservative minimum, as they rest only on filed returns.",
+      "topic": "Policy",
+      "figure": "Rs 636bn"
+    },
+    {
+      "title": "Customs duty reliefs Rs 144bn in 2025",
+      "text": "Import duty reliefs rose 4.4% to Rs 144bn, 91% of it (Rs 131bn) Section 19A waivers, mainly on fuel as petrol and diesel imports rose 5.4% to 2.51mn tonnes; the count now also includes petrol. Animal-feed ingredients got Rs 7.8bn. First-half 2026 reliefs were Rs 74bn.",
+      "topic": "Policy",
+      "figure": "Rs 144bn"
+    },
+    {
+      "title": "ADB: stability alone won't drive the next phase",
+      "text": "ADB's country director said Sri Lanka's recovery is at a turning point where macroeconomic stability is no longer enough; domestic reforms and a push on exports are needed for long-term growth.",
+      "topic": "Economy"
+    },
+    {
+      "title": "Brent near month's high on Gulf supply fears",
+      "text": "Brent crude futures held near November's high as attacks on tankers in the Strait of Hormuz and on Saudi energy facilities raised worries about oil exports from the region.",
+      "topic": "Energy"
+    },
+    {
+      "title": "Asian shares steady; dollar heads for third monthly gain",
+      "text": "Asian markets were calmer at the end of a rough month as a holiday lull eased AI-related nerves, while the dollar was set for a third monthly rise on safe-haven buying and bets on rate hikes.",
+      "topic": "Global markets"
+    }
+  ],
+  "coverage": [
+    {
+      "post": 447,
+      "kind": "text",
+      "title": "News highlights, 27 Nov",
+      "items": [
+        {
+          "item": "Top PAYE threshold (President)",
+          "status": "included"
+        },
+        {
+          "item": "ADB $200mn MSME loan",
+          "status": "included"
+        },
+        {
+          "item": "World Bank rupee financing facility (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "VAT and SSCL reliefs (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "Customs duty reliefs (with linked article)",
+          "status": "included"
+        },
+        {
+          "item": "ADB on reforms and exports",
+          "status": "included"
+        },
+        {
+          "item": "Brent near month's high",
+          "status": "included"
+        },
+        {
+          "item": "Asian shares and the dollar",
+          "status": "included"
+        },
+        {
+          "item": "'Reference' links for PAYE threshold and ADB MSME loan",
+          "status": "left-out",
+          "reason": "the saved pages were only a captcha (no article text); the post's text is used"
+        },
+        {
+          "item": "'Reference' links for ADB reforms, Brent and Asian markets",
+          "status": "left-out",
+          "reason": "download failed (HTTP 403 / 401); the post's text is used"
+        }
+      ]
+    },
+    {
+      "post": 448,
+      "kind": "image",
+      "title": "Bloomberg world equity indices (27 Nov, 08:39)",
+      "items": [
+        {
+          "item": "Americas, EMEA, Asia/Pacific and world index moves",
+          "status": "included"
+        },
+        {
+          "item": "BBG World level and YTD",
+          "status": "included"
+        },
+        {
+          "item": "Futures, % mispricing, net change, ΔAVAT, P/E, forward P/E, dividend yield and YTD columns for each index",
+          "status": "left-out",
+          "reason": "valuation and futures columns for foreign indices, not needed for the CSE summary"
+        }
+      ]
+    },
+    {
+      "post": 449,
+      "kind": "text",
+      "title": "HNB Stockbrokers Research: big four banks 3Q26",
+      "items": [
+        {
+          "item": "3Q26 results: NII, fees, asset quality, MTM/FX losses, profit fall, loan growth",
+          "status": "included"
+        },
+        {
+          "item": "Outlook for margins and credit growth",
+          "status": "included"
+        },
+        {
+          "item": "Thread on X",
+          "status": "left-out",
+          "reason": "social-media links aren't collected"
+        }
+      ]
+    },
+    {
+      "post": 450,
+      "kind": "pdf",
+      "title": "Weekly Market Update, 27 Nov 2026",
+      "items": [
+        {
+          "item": "Index table (ASPI, S&P SL20, week on week)",
+          "status": "included"
+        },
+        {
+          "item": "Weekly turnover tiles",
+          "status": "included"
+        },
+        {
+          "item": "Daily turnover chart (total and foreign)",
+          "status": "included"
+        },
+        {
+          "item": "ASPI and S&P 20 by date chart",
+          "status": "approx",
+          "reason": "line chart without figures; only the week's start and end, given in the table, are used"
+        },
+        {
+          "item": "Top foreign buying/selling by share",
+          "status": "approx",
+          "reason": "only some bars carry labels, rounded to Rs 0.01bn"
+        },
+        {
+          "item": "Net foreign flow doughnut",
+          "status": "included"
+        },
+        {
+          "item": "Weekly sector turnover",
+          "status": "approx",
+          "reason": "bar labels rounded to whole Rs bn; read against gridlines"
+        },
+        {
+          "item": "Insider purchases/sales, trailing 90 days",
+          "status": "approx"
+        },
+        {
+          "item": "Top momentum stocks (10 days)",
+          "status": "included"
+        },
+        {
+          "item": "ASPI technical chart with moving averages",
+          "status": "approx"
+        },
+        {
+          "item": "ASPI 14-day RSI",
+          "status": "approx"
+        },
+        {
+          "item": "Overnight liquidity chart",
+          "status": "approx"
+        },
+        {
+          "item": "Reserve money and money supply trend",
+          "status": "included"
+        },
+        {
+          "item": "Inflation chart",
+          "status": "included"
+        },
+        {
+          "item": "CBSL foreign reserves vs liabilities",
+          "status": "included"
+        },
+        {
+          "item": "Treasury bill rates",
+          "status": "included"
+        },
+        {
+          "item": "Real interest rates",
+          "status": "included"
+        },
+        {
+          "item": "Market highlights text (turnover, market cap, sectors, net foreign position)",
+          "status": "included"
+        }
+      ]
+    }
+  ]
+}
