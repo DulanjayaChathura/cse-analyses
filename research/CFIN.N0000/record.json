@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "ticker": "CFIN.N0000",
   "localFolder": "central finance",
-  "updated": "2026-11-12",
+  "updated": "2026-11-27",
   "reportsRead": [
     {
       "file": "Annual Report 2023,24.pdf",
@@ -12,7 +12,7 @@
       "type": "annual",
       "audited": true,
       "readOn": "2026-11-12",
-      "note": "Figures taken from the 2025/26 decade summary."
+      "note": "Read 12 Nov 2026 from the laptop folder; figures now taken from the 2025/26 decade summary."
     },
     {
       "file": "Annual Report 2024,25.pdf",
@@ -63,9 +63,1164 @@
       "audited": false,
       "readOn": "2026-11-12",
       "note": "Income statement, balance sheet, capital and asset-quality ratios, shareholders."
+    },
+    {
+      "file": "reports/CFIN.N0000/2026-06-05_annual_Annual-Report-as-at-31st-March-2026.pdf",
+      "title": "Annual Report 2025/26",
+      "period": "FY 2025/26",
+      "periodEnd": "2026-03-31",
+      "type": "annual",
+      "audited": true,
+      "readOn": "2026-11-27",
+      "note": "Re-read for /redo full. Printed page numbers (PDF page = printed + 2). Used: highlights (p. 6), Chairman (pp. 12–15), Managing Director (pp. 16–21), strategy (pp. 40–43), financial capital (pp. 50–57), statements (pp. 192–197), notes 20, 23, 24, 33, 34 (pp. 247–266), share information (pp. 313–315), decade at a glance (pp. 316–319)."
+    },
+    {
+      "file": "reports/CFIN.N0000/2026-08-13_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+      "title": "Interim to 30 Jun 2026",
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-27",
+      "note": "Re-read for /redo full (PDF page numbers): income statement p. 2, balance sheet p. 3, notes p. 7 and p. 11."
+    },
+    {
+      "file": "reports/CFIN.N0000/2026-11-10_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf",
+      "title": "Interim to 30 Sep 2026",
+      "period": "H1 2026/27",
+      "periodEnd": "2026-09-30",
+      "type": "interim",
+      "audited": false,
+      "readOn": "2026-11-27",
+      "note": "Re-read for /redo full (PDF page numbers): income statements pp. 2–3, balance sheet p. 4, equity pp. 5–6, cash flow p. 7, notes pp. 8–12, segments p. 13."
     }
   ],
   "periods": [
+    {
+      "period": "FY 2016/17",
+      "periodEnd": "2017-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 4665.195,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 4755.029,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 6775.314,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 2020.285,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 628.89,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 302.794,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 29569.115,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 82315.371,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 35527.936,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 62782.169,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 21.52,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 135.23,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 18.05,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 509.383,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 86.2,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 4.78,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 216.758888,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2017/18",
+      "periodEnd": "2018-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 5439.837,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 5506.027,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 7809.03,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 2303.003,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 793.947,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 396.051,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 33914.231,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 92375.777,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 40570.199,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 68880.573,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 24.88,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 155.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 20.65,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 867.036,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 99.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 4.84,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 216.758888,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2018/19",
+      "periodEnd": "2019-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 5041.398,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 5128.754,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 7348.758,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 2220.004,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 765.726,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 2213.65,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 40740.64,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 110258.08,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 45149.518,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 81747.336,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 22.85,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 184.62,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 18.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 787.18,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 84.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 4.57,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 218.661027,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2019/20",
+      "periodEnd": "2020-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 3990.148,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 4109.304,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 5837.184,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 1727.88,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 859.924,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 4785.758,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 44325.69,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 117794.667,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 52912.5,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 78510.364,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 17.81,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 197.86,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 12.92,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 529.618,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 81.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 6.27,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 220.674367,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2020/21",
+      "periodEnd": "2021-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 5544.132,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 5779.968,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 6804.128,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 1024.16,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 1069.144,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 3270.465,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 50052.016,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 114397.498,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 52152.495,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 64514.535,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 24.39,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 220.15,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 18.19,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 784.087,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 80.7,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 4.44,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 224.024987,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2021/22",
+      "periodEnd": "2022-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 7002.786,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 7276.139,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 9649.482,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 2373.343,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 1388.131,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 286.966,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 55835.451,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 115605.849,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 48715.464,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 58626.258,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 30.8,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 245.59,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 23.56,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 795.741,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 68.1,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 2.89,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2022/23",
+      "periodEnd": "2023-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 7226.88,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 7559.0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 10311.818,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 2752.818,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 1886.915,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 843.425,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 59545.242,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 106728.885,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 38228.102,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 46327.586,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 31.79,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 261.9,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 21.84,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 966.256,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 72.4,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 3.32,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2023/24",
+      "periodEnd": "2024-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "netProfitOwners": {
+          "value": 7842.275,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group, attributable to equity holders of the parent"
+        },
+        "netProfit": {
+          "value": 8186.94,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group profit for the year, including non-controlling interest"
+        },
+        "profitBeforeTax": {
+          "value": 11426.259,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "incomeTax": {
+          "value": 3239.319,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "associateProfit": {
+          "value": 2664.448,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group share of equity-accounted investees (mainly Nations Trust Bank)"
+        },
+        "impairmentCharge": {
+          "value": 53.041,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group impairment and other credit losses; positive = charge"
+        },
+        "totalEquity": {
+          "value": 68052.413,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Funds attributable to equity holders of the parent (group)"
+        },
+        "totalAssets": {
+          "value": 121534.113,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "deposits": {
+          "value": 43737.485,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "loansNet": {
+          "value": 50161.453,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group advances to customers"
+        },
+        "eps": {
+          "value": 34.49,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "navPerShare": {
+          "value": 299.32,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Group"
+        },
+        "epsCompany": {
+          "value": 21.08,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company only"
+        },
+        "dividendsPaid": {
+          "value": 1023.095,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Gross dividends (company), as the decade summary prints them"
+        },
+        "priceYearEnd": {
+          "value": 106.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Market price per share at 31 March"
+        },
+        "peYearEnd": {
+          "value": 5.06,
+          "unit": "x",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)",
+          "note": "Company's printed ratio, on company EPS"
+        },
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, pp. 316–319 (decade at a glance)"
+        }
+      }
+    },
+    {
+      "period": "FY 2024/25",
+      "periodEnd": "2025-03-31",
+      "months": 12,
+      "type": "annual",
+      "audited": true,
+      "figures": {
+        "interestIncome": {
+          "value": 17232.398,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "interestExpense": {
+          "value": 4712.46,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "netInterestIncome": {
+          "value": 12519.938,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "operatingLeaseIncome": {
+          "value": 1469.016,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "netOtherRevenue": {
+          "value": 1454.955,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Mainly Central Industries (pipes) sales less cost of sales"
+        },
+        "totalOperatingIncome": {
+          "value": 17615.617,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "impairmentCharge": {
+          "value": -1901.575,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Negative = net reversal of impairment"
+        },
+        "personnelExpenses": {
+          "value": 3731.556,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "otherOperatingExpenses": {
+          "value": 3502.477,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Premises, equipment, establishment and other expenses"
+        },
+        "associateProfit": {
+          "value": 3664.776,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Share of profit of equity-accounted investees (Nations Trust Bank)"
+        },
+        "vatOnFinancialServices": {
+          "value": 2075.596,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Taxes on financial services"
+        },
+        "profitBeforeTax": {
+          "value": 13872.339,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 3654.104,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "netProfit": {
+          "value": 10218.235,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Profit for the year, including non-controlling interest"
+        },
+        "netProfitOwners": {
+          "value": 9923.975,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "eps": {
+          "value": 43.65,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "dividendPerShare": {
+          "value": 6.5,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 192 and note 24 (p. 247)",
+          "note": "Rs 2.75 interim + Rs 3.75 final"
+        },
+        "totalAssets": {
+          "value": 130153.087,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "cash": {
+          "value": 1011.416,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "loansAndReceivables": {
+          "value": 9574.069,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "leaseReceivables": {
+          "value": 56556.667,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Net investment in leases and hire purchase"
+        },
+        "investmentInAssociate": {
+          "value": 18297.316,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Equity-accounted (Nations Trust Bank)"
+        },
+        "deposits": {
+          "value": 41675.987,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "borrowings": {
+          "value": 4.444,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Interest-bearing borrowings"
+        },
+        "bankOverdrafts": {
+          "value": 464.813,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "leaseLiabilities": {
+          "value": 601.993,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "totalEquity": {
+          "value": 77215.944,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Equity excluding non-controlling interest"
+        },
+        "nonControllingInterest": {
+          "value": 2509.125,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "navPerShare": {
+          "value": 339.63,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "operatingCashFlow": {
+          "value": 3001.864,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)"
+        },
+        "interestPaid": {
+          "value": 1952.543,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Interest payments; inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 1876.119,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Purchase of property, plant and equipment/intangible assets (one line)"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Included in the purchase of property, plant and equipment line"
+        },
+        "dividendsPaid": {
+          "value": 957.94,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Dividends paid to equity holders of the parent"
+        },
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, p. 315 (share information)"
+        },
+        "priceYearEnd": {
+          "value": 194.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "priceHigh": {
+          "value": 226.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "priceLow": {
+          "value": 100.25,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "netProfitCompany": {
+          "value": 5982.171,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, company)",
+          "note": "Central Finance Company PLC on its own"
+        },
+        "roeCompany": {
+          "value": 11.34,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company's printed ratio (company only)"
+        },
+        "grossNpaPct": {
+          "value": 2.76,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company"
+        },
+        "tier1Ratio": {
+          "value": 47.05,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company; minimum 10%"
+        },
+        "totalCapitalRatio": {
+          "value": 44.79,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company; minimum 14%"
+        }
+      }
+    },
     {
       "period": "FY 2025/26",
       "periodEnd": "2026-03-31",
@@ -73,59 +1228,611 @@
       "type": "annual",
       "audited": true,
       "figures": {
+        "interestIncome": {
+          "value": 19016.505,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "interestExpense": {
+          "value": 5014.07,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "netInterestIncome": {
+          "value": 14002.435,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "operatingLeaseIncome": {
+          "value": 1679.092,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "netOtherRevenue": {
+          "value": 1901.411,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Mainly Central Industries (pipes) sales less cost of sales"
+        },
+        "totalOperatingIncome": {
+          "value": 19512.685,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "impairmentCharge": {
+          "value": -968.899,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Negative = net reversal of impairment"
+        },
+        "personnelExpenses": {
+          "value": 4325.95,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "otherOperatingExpenses": {
+          "value": 4081.485,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Premises, equipment, establishment and other expenses"
+        },
+        "associateProfit": {
+          "value": 4217.857,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Share of profit of equity-accounted investees (Nations Trust Bank)"
+        },
+        "vatOnFinancialServices": {
+          "value": 2081.138,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Taxes on financial services"
+        },
+        "profitBeforeTax": {
+          "value": 14210.868,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 3615.245,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
+        },
         "netProfit": {
-          "value": 10.25,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, p. 6",
-          "note": "Group, to shareholders"
+          "value": 10595.623,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)",
+          "note": "Profit for the year, including non-controlling interest"
+        },
+        "netProfitOwners": {
+          "value": 10250.376,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
         },
         "eps": {
           "value": 45.09,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, p. 6",
-          "note": "Group"
-        },
-        "navPerShare": {
-          "value": 375.23,
-          "unit": "Rs",
-          "source": "Annual Report 2025/26, p. 6",
-          "note": "Group"
+          "source": "Annual Report 2025/26, p. 192 (income statement, group)"
         },
         "dividendPerShare": {
           "value": 6.5,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, p. 6"
+          "source": "Annual Report 2025/26, p. 192 and note 24 (p. 247)",
+          "note": "Rs 2.75 interim + Rs 3.75 final"
         },
-        "roe": {
-          "value": 10.52,
-          "unit": "%",
-          "source": "Annual Report 2025/26, p. 6",
-          "note": "Company"
+        "totalAssets": {
+          "value": 168654.487,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
         },
-        "loans": {
-          "value": 104.824,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, p. 6"
+        "cash": {
+          "value": 1026.961,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "loansAndReceivables": {
+          "value": 21447.2,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "leaseReceivables": {
+          "value": 83377.069,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Net investment in leases and hire purchase"
+        },
+        "investmentInAssociate": {
+          "value": 21168.369,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Equity-accounted (Nations Trust Bank)"
         },
         "deposits": {
-          "value": 48.812,
-          "unit": "Rs bn",
-          "source": "Annual Report 2025/26, p. 6"
+          "value": 48811.525,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
         },
-        "grossNpl": {
-          "value": 1.65,
-          "unit": "%",
-          "source": "Annual Report 2025/26, p. 6"
+        "borrowings": {
+          "value": 20685.082,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Interest-bearing borrowings"
         },
-        "tier1": {
-          "value": 35.95,
-          "unit": "%",
-          "source": "Annual Report 2025/26, p. 6"
+        "bankOverdrafts": {
+          "value": 581.565,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "leaseLiabilities": {
+          "value": 752.003,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "totalEquity": {
+          "value": 85309.087,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)",
+          "note": "Equity excluding non-controlling interest"
+        },
+        "nonControllingInterest": {
+          "value": 2770.322,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "navPerShare": {
+          "value": 375.23,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 194 (balance sheet, group)"
+        },
+        "operatingCashFlow": {
+          "value": -17667.725,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)"
+        },
+        "interestPaid": {
+          "value": 2055.576,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Interest payments; inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 2782.691,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Purchase of property, plant and equipment/intangible assets (one line)"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Included in the purchase of property, plant and equipment line"
+        },
+        "dividendsPaid": {
+          "value": 1478.348,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 197 (cash flow, group)",
+          "note": "Dividends paid to equity holders of the parent"
+        },
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, p. 315 (share information)"
         },
         "priceYearEnd": {
           "value": 228.0,
           "unit": "Rs",
-          "source": "Annual Report 2025/26, p. 6"
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "priceHigh": {
+          "value": 319.75,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "priceLow": {
+          "value": 167.0,
+          "unit": "Rs",
+          "source": "Annual Report 2025/26, p. 314 (market value)"
+        },
+        "netProfitCompany": {
+          "value": 6040.133,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 192 (income statement, company)",
+          "note": "Central Finance Company PLC on its own"
+        },
+        "roeCompany": {
+          "value": 10.52,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company's printed ratio (company only)"
+        },
+        "grossNpaPct": {
+          "value": 1.65,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company"
+        },
+        "tier1Ratio": {
+          "value": 35.95,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company; minimum 10%"
+        },
+        "totalCapitalRatio": {
+          "value": 34.29,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Company; minimum 14%"
+        },
+        "ntbVotingStakePct": {
+          "value": 19.72,
+          "unit": "%",
+          "source": "Annual Report 2025/26, note 34.1 (p. 265)",
+          "note": "Group voting shares in Nations Trust Bank; must be cut to 15% under the Banking Act; economic interest 21.36%"
+        },
+        "ntbVotingShares": {
+          "value": 56.897456,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, note 34 (p. 264)",
+          "note": "Group: Central Finance 28,391,533 + CF Growth Fund 14,204,489 + CF Insurance Brokers 14,301,434"
+        },
+        "ntbNonVotingShares": {
+          "value": 14.331621,
+          "unit": "mn shares",
+          "source": "Annual Report 2025/26, note 34 (p. 264)",
+          "note": "Group: 9,430,274 + 2,442,339 + 2,459,008 convertible non-voting"
+        },
+        "ntbMarketValue": {
+          "value": 22190.238,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, note 34 (p. 264)",
+          "note": "Group stake in Nations Trust Bank at market, 31 March 2026"
+        },
+        "cilGroupStakePct": {
+          "value": 49.98,
+          "unit": "%",
+          "source": "Annual Report 2025/26, note 33 (p. 260)",
+          "note": "Central Industries PLC (PVC pipes), consolidated as a subsidiary"
+        },
+        "liquidAssets": {
+          "value": 8060,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, Chairman's statement (p. 14)",
+          "note": "Company; statutory minimum Rs 5.05bn"
+        },
+        "branches": {
+          "value": 110,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)"
+        },
+        "employees": {
+          "value": 1911,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)"
+        },
+        "loansNet": {
+          "value": 104824,
+          "unit": "Rs mn",
+          "source": "Annual Report 2025/26, p. 6 (financial highlights)",
+          "note": "Group loans, lease and hire purchase receivables"
+        },
+        "shareholders": {
+          "value": 6424,
+          "unit": "",
+          "source": "Annual Report 2025/26, p. 313 (share information)",
+          "note": "4,262 a year earlier"
+        },
+        "publicHolding": {
+          "value": 63.6,
+          "unit": "%",
+          "source": "Annual Report 2025/26, p. 313 (share information)"
+        }
+      }
+    },
+    {
+      "period": "H1 2025/26",
+      "periodEnd": "2025-09-30",
+      "months": 6,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "interestIncome": {
+          "value": 9068.167,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "interestExpense": {
+          "value": 2167.46,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "netInterestIncome": {
+          "value": 6900.707,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "totalOperatingIncome": {
+          "value": 9411.457,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "impairmentCharge": {
+          "value": -903.847,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column; Negative = net reversal"
+        },
+        "personnelExpenses": {
+          "value": 2067.994,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "otherOperatingExpenses": {
+          "value": 1788.131,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column; Premises, equipment, establishment and other expenses"
+        },
+        "associateProfit": {
+          "value": 2314.544,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column; Share of Nations Trust Bank profit"
+        },
+        "vatOnFinancialServices": {
+          "value": 1145.417,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column; Taxes on financial services"
+        },
+        "profitBeforeTax": {
+          "value": 7628.306,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 1884.199,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 5744.107,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column; Including non-controlling interest"
+        },
+        "netProfitOwners": {
+          "value": 5569.518,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 24.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Comparative column"
+        },
+        "netProfitCompany": {
+          "value": 3327.577,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, company)",
+          "note": "Comparative column; Company only"
+        },
+        "operatingCashFlow": {
+          "value": -3486.667,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "interestPaid": {
+          "value": 827.776,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Comparative column; Interest payments; inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 512.657,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Comparative column"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Comparative column; No separate line"
+        },
+        "dividendsPaid": {
+          "value": 852.588,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Comparative column; Dividends paid (parent)"
+        },
+        "totalEquity": {
+          "value": 81926.071,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 5 (changes in equity, group)",
+          "note": "Comparative column; Balance at 30 September 2025"
+        },
+        "tier1Ratio": {
+          "value": 38.36,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Comparative column"
+        },
+        "grossNpaPct": {
+          "value": 1.76,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Comparative column; gross Stage 3 loans ratio, company"
+        }
+      }
+    },
+    {
+      "period": "Q2 2025/26",
+      "periodEnd": "2025-09-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netInterestIncome": {
+          "value": 3532.078,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "associateProfit": {
+          "value": 1303.558,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "impairmentCharge": {
+          "value": -408.349,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column; negative = reversal"
+        },
+        "profitBeforeTax": {
+          "value": 4117.201,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "incomeTax": {
+          "value": 951.304,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "netProfit": {
+          "value": 3165.897,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "netProfitOwners": {
+          "value": 3064.457,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "eps": {
+          "value": 13.48,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Comparative column"
+        },
+        "netProfitCompany": {
+          "value": 1585.747,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, company)",
+          "note": "Comparative column"
+        }
+      }
+    },
+    {
+      "period": "Q1 2026/27",
+      "periodEnd": "2026-06-30",
+      "months": 3,
+      "type": "interim",
+      "audited": false,
+      "figures": {
+        "netInterestIncome": {
+          "value": 3713.728,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "associateProfit": {
+          "value": 974.386,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)",
+          "note": "Share of Nations Trust Bank profit"
+        },
+        "impairmentCharge": {
+          "value": -253.089,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)",
+          "note": "Negative = reversal"
+        },
+        "profitBeforeTax": {
+          "value": 3801.61,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "incomeTax": {
+          "value": 906.696,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "netProfit": {
+          "value": 2894.914,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "netProfitOwners": {
+          "value": 2796.866,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "eps": {
+          "value": 12.3,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, group)"
+        },
+        "netProfitCompany": {
+          "value": 1675.594,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 2 (income statement, company)"
+        },
+        "totalEquity": {
+          "value": 86371.315,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Jun 2026, p. 3 (balance sheet, group)",
+          "note": "Equity excluding non-controlling interest"
+        },
+        "navPerShare": {
+          "value": 379.9,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 3 (balance sheet, group)"
+        },
+        "tier1Ratio": {
+          "value": 33.18,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 11 (note 13)",
+          "note": "Company"
+        },
+        "grossNpaPct": {
+          "value": 1.53,
+          "unit": "%",
+          "source": "Interim to 30 Jun 2026, p. 11 (note 13)",
+          "note": "Company, gross Stage 3"
+        },
+        "priceQuarterEnd": {
+          "value": 230.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 7 (note 4)"
+        },
+        "priceHigh": {
+          "value": 262.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 7 (note 4)",
+          "note": "April–June 2026"
+        },
+        "priceLow": {
+          "value": 219.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 7 (note 4)",
+          "note": "April–June 2026"
         }
       }
     },
@@ -136,133 +1843,420 @@
       "type": "interim",
       "audited": false,
       "figures": {
+        "interestIncome": {
+          "value": 11447.12,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "interestExpense": {
+          "value": 3804.423,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
         "netInterestIncome": {
-          "value": 7.643,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 2",
-          "note": "Group; 6.901 a year earlier"
+          "value": 7642.697,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "totalOperatingIncome": {
+          "value": 10846.317,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "impairmentCharge": {
+          "value": -254.865,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Negative = net reversal"
+        },
+        "personnelExpenses": {
+          "value": 2336.59,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "otherOperatingExpenses": {
+          "value": 2439.76,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Premises, equipment, establishment and other expenses"
         },
         "associateProfit": {
-          "value": 3.328,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 2",
-          "note": "Nations Trust Bank; 2.315 a year earlier"
+          "value": 3327.608,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Share of Nations Trust Bank profit"
+        },
+        "vatOnFinancialServices": {
+          "value": 1074.962,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Taxes on financial services"
+        },
+        "profitBeforeTax": {
+          "value": 8577.478,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "incomeTax": {
+          "value": 1846.504,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
         },
         "netProfit": {
-          "value": 6.531,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 2",
-          "note": "Group, to shareholders; 5.570 a year earlier"
+          "value": 6730.974,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)",
+          "note": "Including non-controlling interest"
         },
-        "netProfitCompany": {
-          "value": 2.862,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, p. 2",
-          "note": "3.328 a year earlier"
+        "netProfitOwners": {
+          "value": 6530.87,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
         },
         "eps": {
           "value": 28.73,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, p. 2",
-          "note": "Group; 24.50 a year earlier"
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, six months, group)"
+        },
+        "netProfitCompany": {
+          "value": 2861.54,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 2 (income statement, company)",
+          "note": "Company only"
+        },
+        "operatingCashFlow": {
+          "value": -5086.604,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)"
+        },
+        "interestPaid": {
+          "value": 2157.652,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Interest payments; inside operating activities",
+          "section": "operating"
+        },
+        "purchasePPE": {
+          "value": 3931.191,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)"
+        },
+        "purchaseIntangibles": {
+          "value": 0,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "No separate line"
+        },
+        "dividendsPaid": {
+          "value": 854.497,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 7 (cash flow, group)",
+          "note": "Dividends paid (parent)"
+        },
+        "totalEquity": {
+          "value": 89911.393,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)",
+          "note": "Equity excluding non-controlling interest"
+        },
+        "totalAssets": {
+          "value": 183893.851,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "cash": {
+          "value": 892.045,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "loansAndReceivables": {
+          "value": 22576.302,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "leaseReceivables": {
+          "value": 96354.067,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)",
+          "note": "Net investment in leases and hire purchase"
+        },
+        "investmentInAssociate": {
+          "value": 23420.176,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)",
+          "note": "Equity-accounted (Nations Trust Bank)"
+        },
+        "deposits": {
+          "value": 51152.964,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "borrowings": {
+          "value": 29937.238,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)",
+          "note": "Interest-bearing borrowings"
+        },
+        "bankOverdrafts": {
+          "value": 316.798,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "leaseLiabilities": {
+          "value": 775.603,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
+        },
+        "nonControllingInterest": {
+          "value": 2868.015,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
         },
         "navPerShare": {
           "value": 395.47,
           "unit": "Rs",
-          "source": "Interim to 30 Sep 2026, balance sheet"
+          "source": "Interim to 30 Sep 2026, p. 4 (balance sheet, group)"
         },
-        "loans": {
-          "value": 118.93,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, balance sheet",
-          "note": "22.58 loans + 96.35 leases and HP"
+        "sharesOutstanding": {
+          "value": 227.354462,
+          "unit": "mn shares",
+          "source": "Interim to 30 Sep 2026, p. 8 (notes 3–6)"
         },
-        "borrowings": {
-          "value": 29.937,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, balance sheet"
+        "dividendDeclared": {
+          "value": 3.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Jun 2026, p. 11 (note 12)",
+          "note": "Final for 2025/26, paid 7 July 2026"
         },
-        "deposits": {
-          "value": 51.153,
-          "unit": "Rs bn",
-          "source": "Interim to 30 Sep 2026, balance sheet"
+        "priceHalfYearEnd": {
+          "value": 208.5,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 8 (notes 3–6)"
         },
-        "tier1": {
+        "priceHigh": {
+          "value": 240.0,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 8 (notes 3–6)",
+          "note": "July–September 2026"
+        },
+        "priceLow": {
+          "value": 207.75,
+          "unit": "Rs",
+          "source": "Interim to 30 Sep 2026, p. 8 (notes 3–6)",
+          "note": "July–September 2026"
+        },
+        "tier1Ratio": {
           "value": 31.86,
           "unit": "%",
-          "source": "Interim to 30 Sep 2026, selected ratios"
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company; minimum 10%"
         },
-        "grossStage3": {
+        "totalCapitalRatio": {
+          "value": 30.67,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company; minimum 14%"
+        },
+        "grossNpaPct": {
           "value": 1.79,
           "unit": "%",
-          "source": "Interim to 30 Sep 2026, selected ratios"
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company, gross Stage 3 loans ratio"
         },
-        "ntbStakePct": {
-          "value": 19.72,
+        "netNpaPct": {
+          "value": 0.73,
           "unit": "%",
-          "source": "Annual Report 2025/26, associate note",
-          "note": "9.84 + 4.92 + 4.96; must fall to 15%"
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company, net Stage 3"
+        },
+        "stage3Coverage": {
+          "value": 59.02,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company; 79.24% a year earlier"
+        },
+        "roeCompany": {
+          "value": 9.44,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 12 (note 13, company indicators)",
+          "note": "Company's printed annualised ratio"
+        },
+        "publicHolding": {
+          "value": 63.6,
+          "unit": "%",
+          "source": "Interim to 30 Sep 2026, p. 9 (note 7)"
+        },
+        "publicShareholders": {
+          "value": 6847,
+          "unit": "",
+          "source": "Interim to 30 Sep 2026, p. 9 (note 7)",
+          "note": "6,720 at 30 June"
+        },
+        "segmentLendingResult": {
+          "value": 5056.044,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 13 (segments)",
+          "note": "Leasing, hire purchase, loans and other advances"
+        },
+        "segmentManufacturingResult": {
+          "value": 542.603,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 13 (segments)",
+          "note": "Central Industries"
+        },
+        "segmentResultsTotal": {
+          "value": 6324.832,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 13 (segments)",
+          "note": "Before share of associates and taxes on financial services"
         }
       }
     },
     {
-      "period": "TTM Sep 2026",
+      "period": "Q2 2026/27",
       "periodEnd": "2026-09-30",
-      "months": 12,
+      "months": 3,
       "type": "interim",
       "audited": false,
       "figures": {
+        "netInterestIncome": {
+          "value": 3928.969,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
+        "associateProfit": {
+          "value": 2353.222,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Share of Nations Trust Bank profit; Rs 974mn in Q1"
+        },
+        "impairmentCharge": {
+          "value": -1.776,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Negative = reversal"
+        },
+        "profitBeforeTax": {
+          "value": 4775.868,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
+        "incomeTax": {
+          "value": 939.808,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
+        "netProfit": {
+          "value": 3836.06,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
+        "netProfitOwners": {
+          "value": 3734.004,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
         "eps": {
-          "value": 49.32,
+          "value": 16.42,
           "unit": "Rs",
-          "source": "Worked out: 45.09 + 28.73 − 24.50"
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)"
+        },
+        "netProfitCompany": {
+          "value": 1185.946,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, company)",
+          "note": "Down 25%"
+        },
+        "interestExpense": {
+          "value": 2019.691,
+          "unit": "Rs mn",
+          "source": "Interim to 30 Sep 2026, p. 3 (income statement, three months, group)",
+          "note": "Up 82%"
         }
       }
     }
   ],
   "valuationInputs": [
     {
+      "name": "Beta",
+      "value": "0.87 (provisional)",
+      "reason": "8 steps, 27 Nov 2026. (1) Business: a group, weighted by H1 2026/27 profit before taxes on financial services (Interim to 30 Sep 2026, PDF pp. 2 and 13): the finance company with insurance broking, investments, real estate and a hospital Rs 5.78bn of Rs 9.65bn = 60%; the share of Nations Trust Bank's profit Rs 3.33bn = 34.5%; Central Industries (PVC pipes, 49.98% owned) Rs 0.54bn = 5.6%. (2)–(3) Finance and bank parts are not relevered (sector levered betas): Damodaran's Financial Svcs. (Non-bank & Insurance) 0.97 (January 2026, the figure used for HNB Finance and Commercial Credit on this site) and Bank (Money Center) 0.70 (January 2026, as for NTB, SAMP and COMB). Manufacturing: Damodaran's global Building Materials unlevered beta, cash-corrected, 0.90 (web-search extract; his emerging-markets file couldn't be opened from this run); not relevered because Central Industries' borrowings aren't in the record, and at 5.6% weight it moves the result by under 0.01. Weighted: 0.60 × 0.97 + 0.345 × 0.70 + 0.056 × 0.90 = 0.87. (4) Local 5-year betas (web search, 27 Nov 2026, pages not opened): StockAnalysis 0.52 (5-year); Simply Wall St 0.51 (November 2024, window not stated); TradingView 1.64 is a 1-year beta and 1.17 has no window, both ignored. Fewer than three 5-year sources, so no median; both are below step 3 anyway. (5) Higher of 0.87 and the local figures = 0.87. (6) Within 0.3–2. (7)–(8) Into scripts/reinvestment.py; shown as the Required return tile. Replaces the hand-set 19.5% / 18% / 16.5% cost of equity of 12 Nov. Refresh in January 2027.",
+      "since": "2026-11-27"
+    },
+    {
       "name": "Cost of equity",
-      "value": "19.5% / 18% / 16.5%",
-      "reason": "Bond about 12.4% plus about 5.5 points.",
-      "since": "2026-11-12"
+      "value": "Bear 18.7% / Base 17.2% / Bull 15.7%",
+      "reason": "From scripts/reinvestment.py (27 Nov 2026): 8.24% (12.24% bond less 4.0% default spread) + 0.87 × (4.2% + 6.08% country premium) = 17.2%, ±1.5 points. Replaces the hand-set 19.5% / 18% / 16.5% of 12 Nov. No WACC: a finance group is valued on its equity.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Long-run ROE",
+      "value": "11% / 12.5% / 14%",
+      "reason": "Group ROE on average owners' equity (calculated from the decade at a glance, Annual Report 2025/26, pp. 316–319): 17.1% (2017/18), 13.5%, 9.4%, 11.7%, 13.2%, 12.5%, 12.3%, 13.7%, 12.6% (2025/26); median 12.6%. Twelve months to September 2026: 13.0% (derived.py). Equity is about half of group assets and a quarter of it sits in Nations Trust Bank, which holds ROE down. Base 12.5% (the median); bear 11% (a 2020/21-type year); bull 14% (the extra capital put to work in loans). Unchanged from 12 Nov.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Long-term growth",
+      "value": "5% / 6% / 7%",
+      "reason": "Same in every method; below the 12.24% bond yield and the cost of equity, and below the 11.4% supported growth (Growth check). Unchanged from 12 Nov.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Growth check",
+      "value": "Assumed 5% / 8% / 10% (dividend growth for five years); supported 11.4%",
+      "reason": "scripts/reinvestment.py on FY 2025/26: 85.6% of profit kept × 13.3% ROE = 11.4%. Every scenario is below it. Long-run growth of 6% at a 13.3% return needs 45% of profit reinvested, which the stable payout (1 − g ÷ ROE) in the dividend model provides.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Normal EPS 2026/27",
+      "value": "Rs 46 / 51 / 56",
+      "reason": "H1 2026/27 group EPS Rs 28.73 (Interim to 30 Sep 2026, p. 2); second half of 2025/26 was Rs 20.59 (Rs 45.09 − Rs 24.50, calculated). Base Rs 51 assumes the second half about 8% above last year's. Twelve-month run-rate Rs 49.32; Q2 × 4 is Rs 65.68 but is not used: Q2's share of Nations Trust Bank profit (Rs 2.35bn) was 2.4 times Q1's (Rs 0.97bn) and 81% above a year earlier, which the interim doesn't explain, while the company's own Q2 profit fell 25% (p. 3) as interest costs rose 82% and impairment reversals stopped. Bear Rs 46 (the bank's Q2 not repeated, margins squeezed); bull Rs 56 (bank profit stays high).",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "2026/27 EPS × P/E",
+      "value": "46 × 3.5 / 51 × 4.5 / 56 × 5.5",
+      "reason": "Price ÷ group EPS at March year ends (calculated from pp. 316–319): 2.2x (2022), 2.3x, 3.1x, 4.5x, 5.1x (2026); 4.4x on twelve-month EPS at Rs 215.25. Chosen P/Es are below the justified forward P/E (1 − g ÷ ROE) ÷ (cost of equity − g): about 4.0x / 4.6x / 5.7x, so no scenario implies more growth than supported. Was 4.5 / 5.5 / 6.5x on 12 Nov.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Dividends",
+      "value": "Next Rs 6.50 / 7 / 7.50, growing 5% / 8% / 10% for five years; then the stable payout 1 − g ÷ ROE (55% / 52% / 50%) of EPS",
+      "reason": "Rs 6.50 for 2025/26 (Rs 2.75 interim + Rs 3.75 final, note 24, p. 247) and the same for 2024/25: 14% of group EPS of Rs 45.09, covered 4.09 times by company profit (p. 6). Bear holds Rs 6.50; bull Rs 7.50. Growth within the 11.4% supported. Newly used on 27 Nov (left out on 12 Nov because of the low payout): the published two-stage model raises the payout once growth slows, which is what a group keeping 86% of profit at a 12–14% ROE would have to do.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Residual income path",
+      "value": "ROE from 13% now to 11% / 12.5% / 14% over five years; payout 15%",
+      "reason": "Start: twelve-month group ROE 13.0% (derived.py, average equity Sep 2025–Sep 2026). Payout 15% ≈ Rs 6.50 ÷ Rs 45.09. Was a ten-year fade with the same end points on 12 Nov; now five years, as the calculator's standard.",
+      "since": "2026-11-27"
+    },
+    {
+      "name": "Methods used",
+      "value": "Justified P/B, P/E, dividend model, residual income",
+      "reason": "A finance group: book value and return on equity drive the value; no cash-flow DCF (CLAUDE.md: banks and finance companies). The Nations Trust Bank stake (Rs 22.5bn at market, about Rs 99 a share) is inside book value, so it isn't added separately.",
+      "since": "2026-11-27"
     },
     {
       "name": "Scenario weights",
       "value": "Bear 30 / Base 50 / Bull 20",
       "reason": "Standard.",
-      "since": "2026-11-12"
-    },
-    {
-      "name": "Long-run ROE and growth",
-      "value": "11% / 12.5% / 14%; growth 5% / 6% / 7%",
-      "reason": "Group ROE 12–14% for five years.",
-      "since": "2026-11-12"
-    },
-    {
-      "name": "2026/27 EPS × P/E",
-      "value": "48 × 4.5 / 52 × 5.5 / 54 × 6.5",
-      "reason": "H1 Rs 28.73; ten-year P/E average about 5.2x.",
-      "since": "2026-11-12"
-    },
-    {
-      "name": "Dividend model",
-      "value": "Not used",
-      "reason": "Payout about 14% of group profit.",
-      "since": "2026-11-12"
+      "since": "2026-11-27"
     },
     {
       "name": "Margins of safety",
       "value": "Buy 15% / Strong buy 25%",
       "reason": "Standard.",
-      "since": "2026-11-12"
+      "since": "2026-11-27"
     }
   ],
   "openQuestions": [
-    "How and when the Nations Trust Bank stake is cut to 15%, and at what price.",
-    "Company profit trend as borrowing costs rise; net interest margin.",
-    "Asset quality of the 2025–2026 loan growth.",
-    "2025/26 final dividend and any payout increase."
+    "Why Nations Trust Bank's contribution jumped to Rs 2.35bn in Q2 2026/27 (Rs 0.97bn in Q1), and whether it repeats.",
+    "The company's own profit (down 25% in Q2) as interest costs rise on borrowed funding (borrowings Rs 29.9bn, from Rs 4m a year earlier) and impairment reversals stop.",
+    "Asset quality of the 2025–26 loan growth (gross Stage 3 1.79% at September; coverage down to 59% from 79%).",
+    "How and when the Nations Trust Bank voting stake is cut from 19.72% to 15%, and at what price.",
+    "The 2026/27 interim dividend (Rs 2.75 last year) and any payout increase.",
+    "Local 5-year betas from three sources; refresh the beta in January 2027."
   ],
   "changeLog": [
     {
@@ -274,6 +2268,16 @@
       "strongBuyPrice": 164.4,
       "priceAtTime": 231.5,
       "archive": null
+    },
+    {
+      "date": "2026-11-27",
+      "basedOn": "Annual Report 2025/26 and interims to 30 Jun and 30 Sep 2026 (re-read in full)",
+      "summary": "Requested from Telegram (/redo CFIN.N0000 full). Rebuilt the record to 'report figures only': printed group lines for 2024/25, 2025/26, H1 and Q2 of 2025/26 and 2026/27 (comparatives as their own periods), Q1 2026/27, and the decade summary 2016/17–2023/24; removed the worked-out TTM period and the Rs bn summary figures; page references are printed page numbers for the annual report and PDF pages for the interims. Added the current template: beta 0.87 (profit-weighted finance / bank / manufacturing, provisional) and the formula cost of equity 17.2% (was hand-set 18%), growth check (supported 11.4%), management and shareholders sections, and modelInputs (all four methods by scripts/valuation.py). Added the dividend model (left out on 12 Nov), which is the lowest method (Rs 181); 2026/27 EPS cut to Rs 46 / 51 / 56 (was 48 / 52 / 54) and P/E to 3.5 / 4.5 / 5.5x (was 4.5 / 5.5 / 6.5x, now below the justified P/E); residual income fade shortened to five years. Long-run ROE and growth unchanged. Business tests still 3 of 4; category unchanged (2, watch list). Missed promise: costs grew faster than income in H1. Unexplained: Nations Trust Bank's Rs 2.35bn Q2 contribution. Price is the 27 Nov 2026 CSE close.",
+      "fairValue": 209.91,
+      "buyPrice": 178.43,
+      "strongBuyPrice": 157.43,
+      "priceAtTime": 215.25,
+      "archive": "research/CFIN.N0000/history/2026-11-12.json"
     }
   ]
 }

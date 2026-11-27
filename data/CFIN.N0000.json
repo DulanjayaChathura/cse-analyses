@@ -3,7 +3,7 @@
   "ticker": "CFIN.N0000",
   "company": {
     "name": "Central Finance Company PLC",
-    "sector": "Banks and finance",
+    "sector": "Finance (leasing and loans) with a bank stake",
     "fiscalYearEnd": "03-31"
   },
   "shareClasses": [
@@ -12,68 +12,68 @@
       "label": "Voting"
     }
   ],
-  "analysisDate": "2026-11-12",
+  "analysisDate": "2026-11-27",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual reports 2023/24, 2024/25 and 2025/26",
-      "Interim reports to 31 Mar, 30 Jun and 30 Sep 2026 (unaudited)"
+      "Annual Report 2025/26 (year to 31 March 2026)",
+      "Interim financial statements to 30 June and 30 September 2026 (unaudited)"
     ]
   },
   "price": {
-    "value": 231.5,
-    "date": "2026-11-11",
-    "source": "CSE closing price (cse.lk)",
-    "note": "12-month range Rs 190.25–319.00. July–September 2026 Rs 207.75–240.00, closed September at Rs 208.50. Closed March 2026 at Rs 228.00."
+    "value": 215.25,
+    "date": "2026-11-27",
+    "source": "CSE closing price (generated/prices.json)",
+    "note": "July–September 2026 range Rs 207.75–240.00 (closed September at Rs 208.50); April–June Rs 219.75–262.00; 2025/26 range Rs 167.00–319.75, closed March 2026 at Rs 228.00."
   },
   "summary": {
     "verdict": "fair",
-    "headline": "Very safe and steadily growing, but its spare capital holds returns below what investors need",
-    "text": "Central Finance (CFIN.N0000) is one of Sri Lanka's oldest and most conservatively run finance companies (vehicle leasing and loans), and also owns 19.7% of Nations Trust Bank and most of Central Industries. It is very safe: core capital 31.9% against a 10% minimum, equity about half of total assets, gross non-performing loans 1.8%, and group profit every year for over a decade, growing EPS from Rs 30.80 (2021/22) to Rs 45.09 (2025/26) and Rs 28.73 in the six months to September 2026. At Rs 231.50 (CSE, 11 November 2026) it trades at only 0.59x its group NAV of Rs 395.47 and 4.7x trailing earnings, which looks cheap. But because it holds so much capital, its return on equity is only 12–14%, below the 18% I require, so it deserves to trade below book. Three methods put fair value at about Rs 219, so the price is about 6% above it: close to fair. I'd buy at up to Rs 186.40 (the share was Rs 190.25 at its 12-month low) and treat under Rs 164.40 as a strong buy. Watch the company's own profit, which fell 14% in the half year as interest costs rose 76% on fast loan growth; the group was carried by Nations Trust Bank."
+    "headline": "Very safe and steadily compounding, but its idle capital keeps returns near 13%, so at Rs 215 it is about fairly priced",
+    "text": "Central Finance (CFIN.N0000) is one of Sri Lanka's oldest vehicle-leasing and loan companies, and also owns 21.4% of Nations Trust Bank (19.72% of the votes) and half of Central Industries (PVC pipes). It is very safe: core capital 31.9% against a 10% minimum, equity about half of group assets, gross Stage 3 loans 1.79%, and group profit every year for at least ten years. Group EPS was Rs 45.09 in 2025/26 and Rs 28.73 in the six months to September 2026 (up 17%), but that rise came from the bank: the finance company's own profit fell 14% (25% in the September quarter) as interest costs rose 76% on new borrowing and impairment reversals dried up. At Rs 215.25 (CSE, 27 November 2026) the share is 0.54x group NAV of Rs 395.47 and 4.4x trailing EPS, which looks cheap, but with a group ROE of about 13% against the 17.2% a shareholder should demand (beta 0.87), a discount to book is deserved. Four equity methods put fair value at Rs 209.91 (was Rs 219.30), so the price is about 2.5% above it: fair. I'd buy at up to Rs 178.43 and treat Rs 157.43 or lower as a strong buy. It passes three of the four business tests (fails only on returns), so it stays on the watch list."
   },
   "quality": {
     "rating": "good",
     "passed": 3,
     "outOf": 4,
     "reason": "Exceptionally well capitalised, profitable every year and paying every year; the weakness is a 12–14% return on equity.",
-    "assessed": "2026-11-12",
+    "assessed": "2026-11-27",
     "tests": [
       {
         "id": "returns",
         "label": "Return on equity of 15% or more",
         "pass": false,
         "value": "Group about 13%",
-        "note": "Group 12–14% every year since 2021/22; company 10.5% in 2025/26. Low because equity is about half of assets."
+        "note": "Group ROE on average owners' equity 13.2% (2021/22), 12.5%, 12.3%, 13.7%, 12.6% (2025/26), 13.0% for the twelve months to September 2026 (calculated). Low because equity is about half of assets and a quarter of it is the bank stake."
       },
       {
         "id": "debt",
         "label": "Capital comfortably above the minimum (finance company)",
         "pass": true,
         "value": "Core capital 31.9%",
-        "note": "Minimum 10%; total capital 30.7% (minimum 14%). Down from 47% a year earlier as loans grew."
+        "note": "Company, September 2026: Tier 1 31.86% (minimum 10%), total capital 30.67% (minimum 14%); down from 38.4% a year earlier as loans grew. Borrowings Rs 29.9bn, deposits Rs 51.2bn, owners' equity Rs 89.9bn."
       },
       {
         "id": "steady",
         "label": "Steady profit: no loss in five years, no one-offs",
         "pass": true,
         "value": "Profit every year",
-        "note": "Group EPS rose every year from 2021/22 to 2025/26; impairment reversals help but are small (Rs 0.25bn of Rs 9.7bn operating profit in the half year)."
+        "note": "Group profit rose every year from 2020/21 to 2025/26. Impairment reversals helped (Rs 1.90bn in 2024/25, Rs 0.97bn in 2025/26, Rs 0.25bn in H1 2026/27) but are small next to Rs 14.2bn of profit before tax."
       },
       {
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": true,
-        "value": "Rs 6.50 a year, covered 4x",
-        "note": "Dividends paid every year; payout is low (about 14% of group profit), with the rest compounding book value about 11% a year."
+        "value": "Rs 6.50 a year",
+        "note": "Cash dividends every year, Rs 6.50 for 2024/25 and 2025/26, covered 4.09 times by company profit; payout is low (14% of group EPS), so book value compounds. Operating cash flow swings with loan growth (−Rs 17.7bn in 2025/26), as usual for a lender."
       }
     ]
   },
   "valuation": {
-    "fairValue": 219.3,
-    "buyPrice": 186.4,
-    "strongBuyPrice": 164.4,
+    "fairValue": 209.91,
+    "buyPrice": 178.43,
+    "strongBuyPrice": 157.43,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -84,13 +84,13 @@
       "bull": 20
     },
     "nav": 395.47,
-    "note": "Fair value weights the bear/base/bull averages of three methods 30/50/20 (about 0.55x group NAV). The dividend model isn't used because the payout is very low; see the method readings."
+    "note": "Fair value weights the bear/base/bull averages of four methods 30/50/20 (about 0.53x group NAV). No cash-flow DCF: a finance group is valued on its equity. All four methods are computed by scripts/valuation.py."
   },
   "dividend": {
     "perShare": 6.5,
-    "label": "for 2025/26",
-    "source": "Annual Report 2025/26, financial highlights (p. 6)",
-    "note": "Rs 6.50 also for 2024/25. Rs 3.75 (final) was paid in April–September 2026."
+    "label": "for 2025/26 (Rs 2.75 interim + Rs 3.75 final)",
+    "source": "Annual Report 2025/26, note 24 (p. 247) and share information (p. 315)",
+    "note": "Rs 6.50 also for 2024/25. The Rs 3.75 final was paid on 7 July 2026; no 2026/27 interim declared by 30 September."
   },
   "keyMetrics": [
     {
@@ -98,32 +98,33 @@
       "label": "NAV per share (group)",
       "value": 395.47,
       "unit": "Rs",
-      "note": "30 Sep 2026"
+      "note": "30 September 2026; Rs 375.23 in March"
     },
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 0.59,
-      "unit": "x"
+      "value": 0.54,
+      "unit": "x",
+      "note": "At Rs 215.25"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 4.7,
+      "value": 4.4,
       "unit": "x",
-      "note": "Group EPS Rs 49.32, 12 months to Sep 2026"
+      "note": "Group EPS Rs 49.32, twelve months to Sep 2026 (calculated)"
     },
     {
       "id": "roe",
       "label": "Return on equity (group)",
-      "value": 13.1,
+      "value": 13.0,
       "unit": "%",
-      "note": "12 months to Sep 2026; company 10.5% in 2025/26"
+      "note": "Twelve months to Sep 2026 (calculated); company alone 9.44% annualised in H1"
     },
     {
       "id": "dividendYield",
       "label": "Dividend yield",
-      "value": 2.8,
+      "value": 3.0,
       "unit": "%",
       "note": "Rs 6.50"
     },
@@ -132,46 +133,52 @@
       "label": "Core capital ratio",
       "value": 31.86,
       "unit": "%",
-      "note": "Minimum 10%"
+      "note": "Company; minimum 10%"
     },
     {
       "id": "stage3",
       "label": "Gross Stage 3 loans",
       "value": 1.79,
       "unit": "%",
-      "note": "Coverage 59%"
+      "note": "Company; coverage 59%"
     },
     {
       "id": "ntb",
       "label": "Nations Trust Bank stake at market",
-      "value": 82.8,
+      "value": 98.85,
       "unit": "Rs",
-      "note": "Per CF share; carried at about Rs 103"
+      "note": "Per CF share, at 27 Nov 2026 prices on the March 2026 share count; carried at Rs 103"
+    },
+    {
+      "id": "costOfEquity",
+      "label": "Required return",
+      "value": 17.2,
+      "unit": "%",
+      "note": "Beta 0.87"
     },
     {
       "id": "marketCap",
       "label": "Market cap",
-      "value": 52.6,
-      "unit": "Rs bn",
-      "display": "~Rs 53bn"
+      "value": 48.9,
+      "unit": "Rs bn"
     }
   ],
   "highlights": [
     {
       "title": "Six months to September 2026 (unaudited)",
-      "text": "Group profit to shareholders up 17% to Rs 6.53bn (EPS Rs 28.73 against Rs 24.50), helped by a 44% rise in its share of Nations Trust Bank's profit (Rs 3.33bn). The company itself earned Rs 2.86bn, down 14%: interest expenses rose 76% as borrowings funded loan growth, and impairment reversals shrank to Rs 0.26bn from Rs 0.90bn."
+      "text": "Group profit to shareholders up 17% to Rs 6.53bn (EPS Rs 28.73 against Rs 24.50), carried by a 44% rise in the share of Nations Trust Bank profit to Rs 3.33bn (Rs 2.35bn in the September quarter alone, against Rs 0.97bn in June; the interim doesn't say why). The finance company itself earned Rs 2.86bn, down 14%: interest expenses up 76%, impairment reversals down to Rs 0.26bn from Rs 0.90bn, costs up 22%."
     },
     {
-      "title": "Rapid loan growth",
-      "text": "Loans, leases and hire purchase rose 58% in 2025/26 to Rs 104.8bn and another 13% to Rs 118.9bn by September 2026, funded by borrowings (up to Rs 29.9bn from Rs 20.7bn in six months) as well as deposits (Rs 51.2bn). Core capital fell from 47% to 32%, still far above the minimum."
+      "title": "Loans growing on borrowed money",
+      "text": "Leases, hire purchase and loans rose 58% in 2025/26 and another 13% to Rs 118.9bn by September 2026. Borrowings went from almost nothing in March 2025 to Rs 29.9bn, alongside deposits of Rs 51.2bn. Core capital fell from 47.1% (March 2025) to 31.9%, still three times the minimum."
     },
     {
       "title": "2025/26 (audited)",
-      "text": "Group profit to shareholders Rs 10.25bn (Rs 9.92bn), EPS Rs 45.09; company profit Rs 6.04bn, ROE 10.5%. Gross non-performing loans fell to 1.65% from 2.76%. Dividend Rs 6.50 (unchanged)."
+      "text": "Group profit to shareholders Rs 10.25bn (Rs 9.92bn), EPS Rs 45.09, NAV Rs 375.23. Company profit Rs 6.04bn, ROE 10.52%. Gross NPL 1.65% (2.76%). Dividend Rs 6.50, unchanged."
     },
     {
       "title": "Nations Trust Bank stake must be cut",
-      "text": "The group owns 19.7% of Nations Trust Bank's voting shares, worth about Rs 18.8bn at Rs 330.75 (Rs 82.80 per CF share) against a book value of Rs 23.4bn. Banking rules require the group to reduce its voting stake to 15%."
+      "text": "The group holds 19.72% of Nations Trust Bank's votes and must bring that down to 15% under the Banking Act; its votes are capped at 10% until then. At today's prices the stake is worth about Rs 99 a CF share against a book value of about Rs 103."
     }
   ],
   "history": {
@@ -202,7 +209,7 @@
           null,
           null,
           null,
-          "To Sep 2026"
+          "To Sep 2026 (calculated)"
         ]
       },
       {
@@ -215,36 +222,36 @@
           12.3,
           13.7,
           12.6,
-          13.1
+          13.0
         ],
         "notes": [
-          "Worked out",
-          "Worked out",
-          "Worked out",
-          "Worked out",
-          "Worked out",
-          "Estimated"
+          "Calculated, average equity",
+          "Calculated, average equity",
+          "Calculated, average equity",
+          "Calculated, average equity",
+          "Calculated, average equity",
+          "To Sep 2026 (calculated)"
         ]
       },
       {
         "id": "pe",
-        "label": "P/E (company EPS, year-end)",
+        "label": "P/E (group EPS, year-end)",
         "unit": "x",
         "values": [
-          2.89,
-          3.32,
+          2.21,
+          2.28,
+          3.1,
+          4.45,
           5.06,
-          7.38,
-          8.58,
-          4.7
+          4.36
         ],
         "notes": [
-          "Company figure",
-          "Company figure",
-          "Company figure",
-          "Company figure",
-          "Company figure",
-          "Group EPS, at Rs 231.50"
+          "Calculated",
+          "Calculated",
+          "Calculated",
+          "Calculated",
+          "Calculated",
+          "At Rs 215.25"
         ]
       },
       {
@@ -252,20 +259,41 @@
         "label": "Dividend per share",
         "unit": "Rs",
         "values": [
-          3.5,
-          4.25,
-          4.5,
+          null,
+          null,
+          null,
           6.5,
           6.5,
           null
         ],
         "notes": [
-          "Worked out from gross dividends",
-          "Worked out from gross dividends",
-          "Worked out from gross dividends",
+          "Per-share figure not in the reports read",
+          "Per-share figure not in the reports read",
+          "Per-share figure not in the reports read",
           null,
           null,
-          "Not yet declared"
+          "2026/27 not yet declared"
+        ]
+      },
+      {
+        "id": "nav",
+        "label": "NAV per share (group)",
+        "unit": "Rs",
+        "values": [
+          245.59,
+          261.9,
+          299.32,
+          339.63,
+          375.23,
+          395.47
+        ],
+        "notes": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "30 Sep 2026"
         ]
       }
     ]
@@ -274,71 +302,80 @@
     {
       "method": "NAV",
       "value": "Rs 395.47",
-      "reading": "Group NAV at 30 September 2026; 0.59x. NAV has compounded about 11% a year since 2021/22."
+      "reading": "Group NAV at 30 September 2026; the price is 0.54x. NAV has compounded about 10% a year since 2021/22 (Rs 245.59)."
     },
     {
       "method": "Return on equity",
       "value": "About 13%",
-      "reading": "Group 12–14% for five years; company 10.5%. Below the 18% I require, so a discount to book is justified."
+      "reading": "Group 12–14% for five years; company alone 10.5% in 2025/26 and 9.4% annualised in H1. Below the 17.2% required return, so a discount to book is justified."
     },
     {
       "method": "P/E",
-      "value": "4.7x",
-      "reading": "On trailing group EPS of Rs 49.32. Ten-year range of year-end P/E (company EPS) 2.9–8.6x, average about 5.2x."
+      "value": "4.4x",
+      "reading": "On trailing group EPS of Rs 49.32. Year-end P/E on group EPS 2.2–5.1x over five years."
     },
     {
       "method": "Dividends",
-      "value": "2.8% yield",
-      "reading": "Rs 6.50 a year, about 14% of group profit. A dividend model gives only about Rs 60 because so little is paid out, so it isn't used in fair value."
+      "value": "3.0% yield",
+      "reading": "Rs 6.50 a year, 14% of group EPS. The dividend model gives the lowest value (Rs 181) because so little is paid out today."
     },
     {
       "method": "Capital",
       "value": "Core capital 31.9%",
-      "reading": "Three times the 10% minimum: room to grow loans without raising capital."
+      "reading": "Three times the 10% minimum: room to keep growing loans without new shares."
     },
     {
       "method": "Sum of the parts",
-      "value": "Rs 83 + rest",
-      "reading": "The Nations Trust Bank stake alone is worth Rs 82.80 a share at market; the finance company's own book value is Rs 271 a share."
+      "value": "Rs 99 + rest",
+      "reading": "The Nations Trust Bank stake alone is worth about Rs 99 a share at market; the finance company's own book value is Rs 271.01 a share."
     }
   ],
   "models": [
     {
       "id": "pb",
       "name": "Justified price to book",
-      "bear": 163.6,
-      "base": 214.2,
-      "bull": 291.4,
-      "weighted": 214.5,
-      "comment": "Book value Rs 395.47 × (ROE − growth) ÷ (cost of equity − growth): ROE 11% / 12.5% / 14%."
+      "bear": 173.2,
+      "base": 229.51,
+      "bull": 318.19,
+      "weighted": 230.35,
+      "comment": "NAV Rs 395.47 × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 11% / 12.5% / 14%, growth 5% / 6% / 7%, cost of equity 18.7% / 17.2% / 15.7% (0.44x / 0.58x / 0.80x book)."
     },
     {
       "id": "pe",
-      "name": "P/E method",
-      "bear": 216.0,
-      "base": 286.0,
-      "bull": 351.0,
-      "weighted": 278.0,
-      "comment": "EPS for 2026/27 of Rs 48 / 52 / 54 at 4.5 / 5.5 / 6.5 times."
+      "name": "P/E on 2026/27 earnings",
+      "bear": 161.0,
+      "base": 229.5,
+      "bull": 308.0,
+      "weighted": 224.65,
+      "comment": "2026/27 EPS of Rs 46 / 51 / 56 at 3.5x / 4.5x / 5.5x, below the justified 4.0x / 4.6x / 5.7x. Base EPS is above the Rs 49.32 twelve-month figure but 22% below the September quarter × 4 (Rs 65.68) on purpose: that quarter's Rs 2.35bn share of Nations Trust Bank profit was 2.4 times June's and isn't explained, while the company's own profit fell 25%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 120.94,
+      "base": 179.95,
+      "bull": 272.55,
+      "weighted": 180.77,
+      "comment": "Rs 6.50 / 7 / 7.50 next year, growing 5% / 8% / 10% (within the supported 11.4%) for five years; then EPS grows at 5% / 6% / 7% with the stable payout 1 − g ÷ ROE (55% / 52% / 50%), at the cost of equity."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 115.2,
-      "base": 163.6,
-      "bull": 244.8,
-      "weighted": 165.3,
-      "comment": "ROE moving from 13% to 11% / 12.5% / 14% over ten years; 15% payout."
+      "bear": 144.29,
+      "base": 202.17,
+      "bull": 297.52,
+      "weighted": 203.88,
+      "comment": "Used instead of a cash-flow DCF: book Rs 395.47 plus returns above the 17.2% required return. ROE moves from 13% now to 11% / 12.5% / 14% over five years, 15% payout; with ROE below the cost of equity, each year subtracts value."
     }
   ],
-  "modelsNote": "A finance company, so instead of a cash-flow DCF I used residual income and a justified price-to-book, alongside P/E. The dividend model is left out because Central Finance pays out only about 14% of group profit.",
+  "modelsNote": "Four equity methods, all computed by scripts/valuation.py from modelInputs; no cash-flow DCF for a finance group. Growth check: 85.6% of profit kept × 13.3% ROE supports 11.4% growth; the 5% / 8% / 10% dividend growth and 5–7% long-run growth are below it in every case. Ratio check (docs/ratio-ranges.md): beta 0.87 and cost of equity 17.2% are in range; long-run growth is below the 12.24% bond yield; chosen P/Es are below the justified P/E. ROE of about 13% is below the 15% business-test level, explained by the surplus capital. Base EPS is 22% below the September quarter × 4, for the reason under P/E.",
   "scenarios": {
     "assumptions": [
       {
         "label": "Cost of equity",
-        "bear": "19.5%",
-        "base": "18%",
-        "bull": "16.5%"
+        "bear": "18.7%",
+        "base": "17.2%",
+        "bull": "15.7%"
       },
       {
         "label": "Long-run ROE",
@@ -347,33 +384,51 @@
         "bull": "14%"
       },
       {
-        "label": "Long-term growth",
+        "label": "Long-run growth",
         "bear": "5%",
         "base": "6%",
         "bull": "7%"
       },
       {
         "label": "2026/27 EPS × P/E",
-        "bear": "48 × 4.5",
-        "base": "52 × 5.5",
-        "bull": "54 × 6.5"
+        "bear": "46 × 3.5",
+        "base": "51 × 4.5",
+        "bull": "56 × 5.5"
+      },
+      {
+        "label": "Next dividend, five-year growth",
+        "bear": "Rs 6.50, 5%",
+        "base": "Rs 7, 8%",
+        "bull": "Rs 7.50, 10%"
+      },
+      {
+        "label": "Stable payout (1 − g ÷ ROE)",
+        "bear": "55%",
+        "base": "52%",
+        "bull": "50%"
+      },
+      {
+        "label": "ROE path (residual income)",
+        "bear": "13% to 11% in 5 years",
+        "base": "13% to 12.5% in 5 years",
+        "bull": "13% to 14% in 5 years"
       }
     ],
     "averages": {
-      "bear": 164.9,
-      "base": 221.3,
-      "bull": 295.7
+      "bear": 149.86,
+      "base": 210.28,
+      "bull": 299.06
     },
-    "common": "10-year government bond about 12.4% (9 Nov 2026) plus about 5.5 points for a leveraged lender. Base 2026/27 EPS assumes the second half is about 10% above last year's (Rs 20.59)."
+    "common": "Cost of equity from the house formula: risk-free 8.24% (12.24% bond less a 4.0% default spread) + beta 0.87 × (4.2% + 6.08% country premium). Starting NAV Rs 395.47 (30 Sep 2026); 227.35m shares. Base 2026/27 EPS of Rs 51 needs the second half about 8% above last year's Rs 20.59."
   },
   "sensitivity": {
     "title": "Residual income base case, Rs per share",
     "rowLabel": "Cost of equity",
     "columnLabel": "Long-run ROE",
     "rows": [
-      "16.5%",
-      "18%",
-      "19.5%"
+      "15.7%",
+      "17.2%",
+      "18.7%"
     ],
     "columns": [
       "11%",
@@ -382,109 +437,513 @@
     ],
     "values": [
       [
-        155.8,
-        201.0,
-        251.2
+        186.2,
+        243.4,
+        304.2
       ],
       [
-        128.2,
-        163.6,
-        202.9
+        155.4,
+        202.2,
+        251.9
       ],
       [
-        107.6,
-        135.8,
-        167.1
+        132.3,
+        171.3,
+        212.7
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Today's Rs 231.50 needs a long-run ROE of about 13.5% at an 18% cost of equity."
+    "note": "Rs 215.25 is what a 17.2% cost of equity gives if long-run ROE settles at about 12.9%, close to today's 13%."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
+        "shares": 150,
+        "maxPrice": 209.91
+      },
+      {
         "shares": 200,
-        "maxPrice": 219.3
+        "maxPrice": 178.43
       },
       {
         "shares": 150,
-        "maxPrice": 186.4
-      },
-      {
-        "shares": 150,
-        "maxPrice": 164.4
+        "maxPrice": 157.43
       }
     ],
-    "averagePrice": 192.96,
-    "totalCost": 96480,
-    "note": "About Rs 96,480 in total, against Rs 115,750 at Rs 231.50.",
-    "realism": "Rs 186.40 is just below the 12-month low of Rs 190.25 and about 19% below today's price, so it's realistic in a market dip."
+    "averagePrice": 181.57,
+    "totalCost": 90787,
+    "note": "About Rs 90,787 in total, against Rs 107,625 for 500 shares at Rs 215.25. Today's price is just above fair value, so even the first tier waits for a small dip.",
+    "realism": "Rs 178.43 is 17% below today's price and below every quarter's low since April 2025 (lowest Rs 207.75 in July–September 2026; Rs 208.00 in January–March 2026); the share was last there in April 2025 (Rs 167.00 low). Realistic only in a market-wide dip. Rs 157.43 needs a fall of about 27%."
   },
   "changeMyView": {
     "higher": [
-      "ROE rising above 15% as the extra capital is put to work in loans.",
-      "Selling the excess Nations Trust Bank shares at or above book value and returning cash.",
+      "ROE rising above 15% as the spare capital is lent out at good margins.",
+      "Selling the excess Nations Trust Bank shares at or above book value and returning the cash.",
       "A higher dividend payout.",
-      "Falling interest rates."
+      "Falling interest rates easing the borrowing costs."
     ],
     "lower": [
-      "Bad loans rising from the fast loan growth (vehicle loans in a downturn).",
-      "Margins squeezed further by higher borrowing costs.",
+      "Bad loans rising from the fast 2025–26 loan growth (Stage 3 coverage already down to 59%).",
+      "Margins squeezed further as more lending is funded by bank borrowing.",
       "A forced sale of Nations Trust Bank shares below book value.",
-      "Vehicle import or tax changes."
+      "Tighter vehicle loan-to-value limits or import curbs (the Central Bank tightened them in 2026)."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2026 and the interim reports to September 2026 (unaudited). This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the Annual Report 2025/26 and the interim reports to September 2026 (unaudited). This is analysis, not personal financial advice."
   },
-  "Decision box": {
-    "Verdict": "About fair: 6% above fair value of Rs 219.",
-    "Expected yearly return at Rs 231.50": "About 11% a year: dividend 2.8% + book growth about 10% − about 2% a year if the price moved to fair value.",
-    "Compared with": "One-year T-bill about 9.1%; 10-year bond about 12.4%.",
-    "Downside / upside": "Bear case −29% (Rs 164.90); bull case +28% (Rs 295.70).",
-    "Confidence": "Medium to high: a predictable, conservatively run business; the main uncertainty is the fast loan growth.",
-    "Margin of safety": "Buy 15% below fair value (Rs 186.40), strong buy 25% below (Rs 164.40)."
+  "requiredReturn": {
+    "beta": 0.87,
+    "betaBasis": "Provisional. A group weighted by H1 2026/27 profit: finance and related businesses 60% (Damodaran Financial Svcs. non-bank 0.97), the Nations Trust Bank share 34.5% (Bank money-center 0.70), Central Industries 5.6% (global Building Materials unlevered 0.90). Local 5-year betas 0.52 (StockAnalysis) and 0.51 (Simply Wall St, window not stated) are lower, so the sector figure is used. Refresh in January 2027.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 18.7,
+      "base": 17.2,
+      "bull": 15.7
+    },
+    "costOfDebt": null,
+    "wacc": null,
+    "debtWeight": null,
+    "asOf": "2026-11-27",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (Cbonds, 13 Oct 2026)",
+      "Default spread 4.0%: market-based, Sri Lanka dollar bonds vs US Treasuries (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Beta: web-search extracts of Damodaran's sector betas (January 2026), StockAnalysis, Simply Wall St and TradingView (27 Nov 2026)"
+    ],
+    "note": "Cost of equity = 8.24% + 0.87 × (4.2% + 6.08%) = 17.2%; bear +1.5, bull −1.5 points. Replaces the hand-set 19.5% / 18% / 16.5% of 12 Nov. No WACC: a finance group is valued on its equity."
   },
-  "Business and moat": {
-    "What it does": "Vehicle leasing, hire purchase and loans (about 80% of lending is leases), deposits, plus a 19.7% stake in Nations Trust Bank, Central Industries (PVC pipes) and vehicle and tyre trading. 110 branches.",
-    "Moat": "Moderate: nearly 70 years in vehicle finance, a strong brand, low funding costs from a large deposit base, and very strong capital.",
-    "Growth": "Loans grew 58% in 2025/26 and 13% in the six months to September 2026 as vehicle imports resumed."
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 18.7,
+      "base": 17.2,
+      "bull": 15.7
+    },
+    "wacc": null,
+    "debtWeight": null,
+    "shares": 227.354462,
+    "netDebt": null,
+    "pb": {
+      "book": 395.47,
+      "bear": {
+        "roe": 11,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 12.5,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 7
+      },
+      "basis": {
+        "book": "periods: H1 2026/27.navPerShare",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 46,
+        "pe": 3.5
+      },
+      "base": {
+        "eps": 51,
+        "pe": 4.5
+      },
+      "bull": {
+        "eps": 56,
+        "pe": 5.5
+      },
+      "basis": {
+        "eps": "valuationInputs: Normal EPS 2026/27",
+        "pe": "valuationInputs: 2026/27 EPS × P/E"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 6.5,
+        "growth": 5,
+        "longRun": 5,
+        "eps": 46,
+        "roe": 11
+      },
+      "base": {
+        "dividend": 7,
+        "growth": 8,
+        "longRun": 6,
+        "eps": 51,
+        "roe": 12.5
+      },
+      "bull": {
+        "dividend": 7.5,
+        "growth": 10,
+        "longRun": 7,
+        "eps": 56,
+        "roe": 14
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividends",
+        "growth": "valuationInputs: Dividends",
+        "eps": "valuationInputs: Normal EPS 2026/27",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 5,
+      "book": 395.47,
+      "payout": 15,
+      "roeStart": 13,
+      "bear": {
+        "roe": 11,
+        "longRun": 5
+      },
+      "base": {
+        "roe": 12.5,
+        "longRun": 6
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 7
+      },
+      "basis": {
+        "book": "periods: H1 2026/27.navPerShare",
+        "roeStart": "valuationInputs: Residual income path",
+        "payout": "valuationInputs: Residual income path",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare"
+    }
   },
-  "Management and governance": {
-    "Ownership": "Corporate Services (Pvt) Ltd 16.1%, E.H. Wijenaike (director) 15.4%, EPF 10.0%, Thurston Investments 5.8%, Hallsville Frontier 5.8%.",
-    "Record": "Conservative: profitable through the 2022 crisis, NPLs kept low, dividends every year.",
-    "Rating": "OK"
+  "management": {
+    "asOf": "2026-11-27",
+    "source": "Annual Report 2025/26: Chairman's statement (pp. 12–15), Managing Director's review (pp. 16–21), strategy (pp. 40–43) and financial capital (pp. 50–57); progress from the interim to 30 September 2026",
+    "takeaway": "Management has switched from sitting on surplus capital to growing loans fast with borrowed money, promising no slip in asset quality; the first half of 2026/27 shows the cost, with the company's own profit down as interest bills rise, while the bank stake carries group earnings.",
+    "said": [
+      {
+        "text": "Credit portfolio up 54% to Rs 107bn; new lending volumes up 65%",
+        "ref": "pp. 12, 40"
+      },
+      {
+        "text": "Gross NPL down to 1.65% (2.76%), with an impairment reversal of Rs 970mn",
+        "ref": "pp. 14, 19"
+      },
+      {
+        "text": "Company profit after tax Rs 6.04bn; ROE 10.52%, held down by margin pressure and expansion costs",
+        "ref": "pp. 19, 56"
+      },
+      {
+        "text": "Raised Rs 21.8bn in the year: Rs 18.3bn from banks and Rs 3.5bn by securitisation",
+        "ref": "p. 53"
+      },
+      {
+        "text": "Became more cautious late in the year: tighter loan-to-value limits and less exposure to import- and fuel-sensitive sectors",
+        "ref": "pp. 18–19"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Disciplined loan growth aimed at SMEs and income-generating borrowers rather than consumption",
+        "ref": "pp. 17–18"
+      },
+      {
+        "text": "Grow the funding base with long-tenor deposits and selective long-term bank borrowing",
+        "ref": "pp. 13–14, 56"
+      },
+      {
+        "text": "Open more branches in selected places; national reach after the Northern and Eastern expansion",
+        "ref": "pp. 14, 40"
+      },
+      {
+        "text": "More analytics: credit scoring, risk-based pricing and early-warning tools for collections",
+        "ref": "pp. 18, 42"
+      },
+      {
+        "text": "Keep impairments and NPLs from rising in absolute terms while the book grows",
+        "ref": "p. 18"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Loans, leases and hire purchase",
+        "amount": "Rs 104.8bn at March 2026, up from Rs 66.1bn; Rs 118.9bn at September 2026",
+        "ref": "p. 6; Interim, p. 4"
+      },
+      {
+        "text": "Property, equipment and intangibles bought (mostly operating-lease vehicles and branches)",
+        "amount": "Rs 2.78bn (2025/26); Rs 3.93bn (six months to Sep 2026)",
+        "ref": "p. 197; Interim, p. 7"
+      },
+      {
+        "text": "New branches",
+        "amount": "7 opened and 6 relocated in 2025/26",
+        "ref": "p. 40"
+      },
+      {
+        "text": "Dividends to shareholders",
+        "amount": "Rs 6.50 a share for 2025/26 (Rs 1.48bn)",
+        "ref": "p. 315"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Disciplined credit expansion",
+        "result": "Leases, hire purchase and loans up 13% to Rs 118.9bn in six months",
+        "status": "on-track",
+        "ref": "Interim, p. 4"
+      },
+      {
+        "promise": "No deterioration in asset quality as the book grows",
+        "result": "Gross Stage 3 ratio 1.79% at September (1.65% in March, 1.53% in June); Stage 3 coverage down to 59% from 79% a year earlier",
+        "status": "too-early",
+        "ref": "Interim, p. 12"
+      },
+      {
+        "promise": "Diversify funding towards long-term borrowings and deposits",
+        "result": "Borrowings Rs 29.9bn (Rs 20.7bn in March), deposits Rs 51.2bn (Rs 48.8bn); company interest expenses up 76%",
+        "status": "done",
+        "ref": "Interim, pp. 2, 4"
+      },
+      {
+        "promise": "Keep operating costs relatively low through efficiency measures",
+        "result": "Company operating expenses up 22% against operating income up 9% in H1; own profit down 14%",
+        "status": "missed",
+        "ref": "Interim, p. 2"
+      },
+      {
+        "promise": "Open new branches in selected locations",
+        "result": "No branch count in the interims",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026"
+      }
+    ]
   },
-  "Sri Lanka checks": {
-    "Interest rates": "Watch: borrowing costs rose 76% in the half year; margins depend on rates.",
-    "Vehicle market": "Watch: vehicle import rules and taxes drive leasing demand.",
-    "Bank regulation": "The Nations Trust Bank stake must fall to 15% of voting shares.",
-    "Liquidity": "OK: 500 shares (about Rs 115,750) trade easily."
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026: directors' holdings and twenty largest shareholders (p. 8, with the 30 June comparative) and public holding (p. 9).",
+    "takeaway": "No single owner controls the company: the largest holdings are the Corporate Services (Pvt) Ltd account (16.11%), director E.H. Wijenaike (15.41%, plus 3.12% held by A.J. Wijenaike) and the EPF (10.00%). The top 20 barely moved in July–September; the biggest buy was Perera and Sons Bakers (+150,000 shares).",
+    "groups": [
+      {
+        "name": "Corporate Services (Pvt) Ltd A/C 1",
+        "pct": 16.11
+      },
+      {
+        "name": "E.H. Wijenaike (director)",
+        "pct": 15.41
+      },
+      {
+        "name": "Other non-public holders",
+        "pct": 4.88
+      },
+      {
+        "name": "Public (incl. EPF 10%)",
+        "pct": 63.6
+      }
+    ],
+    "publicFloat": 63.6,
+    "publicHolders": 6847,
+    "publicHoldersPrev": 6720,
+    "directors": [
+      {
+        "name": "M.H. de Silva (Chairman from August 2026)",
+        "shares": 0
+      },
+      {
+        "name": "A.K. Gunaratne (Managing Director/CEO)",
+        "shares": 1810661
+      },
+      {
+        "name": "D.P. de Silva (Deputy Managing Director)",
+        "shares": 225117
+      },
+      {
+        "name": "C.K. Hettiarachchi (Director, Marketing)",
+        "shares": 134399
+      },
+      {
+        "name": "E.H. Wijenaike",
+        "shares": 35039742
+      },
+      {
+        "name": "K.B. Herath",
+        "shares": 0
+      },
+      {
+        "name": "M.S. De Saram",
+        "shares": 0
+      },
+      {
+        "name": "S.H. Munasinghe",
+        "shares": 0
+      },
+      {
+        "name": "N.K. Arunatilake",
+        "shares": 0
+      },
+      {
+        "name": "S. Prabagar (appointed 16 August 2026)",
+        "shares": 0
+      }
+    ],
+    "top": [
+      {
+        "name": "Corporate Services (Pvt) Ltd. A/C No.01",
+        "shares": 36625096,
+        "pct": 16.11,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "E.H. Wijenaike",
+        "shares": 35039742,
+        "pct": 15.41,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Employees Provident Fund",
+        "shares": 22735446,
+        "pct": 10.0,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Thurston Investments Limited",
+        "shares": 13239955,
+        "pct": 5.82,
+        "change": 43512,
+        "new": false
+      },
+      {
+        "name": "Hallsville Frontier Equities Limited",
+        "shares": 13083136,
+        "pct": 5.75,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "E.W. Balasuriya & Co.(Pvt) Ltd. A/C No.01",
+        "shares": 8889789,
+        "pct": 3.91,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "A.J. Wijenaike",
+        "shares": 7091476,
+        "pct": 3.12,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Ceylon Guardian Investment Trust PLC A/C No.02",
+        "shares": 3121045,
+        "pct": 1.37,
+        "change": 0,
+        "new": false,
+        "note": "The September interim lists Ceylon Guardian with 3,121,045 and Ceylon Investment with 3,096,773; the June interim and the annual report give the two figures the other way round. Shown as the September interim prints them; no change counted."
+      },
+      {
+        "name": "Ceylon Investment PLC A/C No.02",
+        "shares": 3096773,
+        "pct": 1.36,
+        "change": 0,
+        "new": false,
+        "note": "The September interim lists Ceylon Guardian with 3,121,045 and Ceylon Investment with 3,096,773; the June interim and the annual report give the two figures the other way round. Shown as the September interim prints them; no change counted."
+      },
+      {
+        "name": "C.R. Dunuwille",
+        "shares": 2923384,
+        "pct": 1.29,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "N.M. Gunawardana",
+        "shares": 2818820,
+        "pct": 1.24,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "P.R. Munasinha",
+        "shares": 2659783,
+        "pct": 1.17,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "S.N.P.Palihena",
+        "shares": 2200000,
+        "pct": 0.97,
+        "change": 4047,
+        "new": false
+      },
+      {
+        "name": "D.P.Peiris",
+        "shares": 2000000,
+        "pct": 0.88,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "Perera and Sons Bakers (Pvt) Limited",
+        "shares": 1850000,
+        "pct": 0.81,
+        "change": 150000,
+        "new": false
+      },
+      {
+        "name": "S.K. Wedande",
+        "shares": 1847633,
+        "pct": 0.81,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "A.K.Gunaratne",
+        "shares": 1810661,
+        "pct": 0.8,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "H.Yusoof",
+        "shares": 1746233,
+        "pct": 0.77,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "N.M.Wahab",
+        "shares": 1526448,
+        "pct": 0.67,
+        "change": 0,
+        "new": false
+      },
+      {
+        "name": "E.D.Pieris",
+        "shares": 1500000,
+        "pct": 0.66,
+        "change": 0,
+        "new": false
+      }
+    ],
+    "gone": []
   },
-  "Investment case and sell rules": {
-    "Why own it": "A very safe, steadily compounding lender near book-discount levels, with a valuable bank stake.",
-    "Sell triggers": "Price more than 30% above fair value (above Rs 285); NPLs rising above 4%; or capital falling below 20%."
-  },
-  "Suggested Telegram alerts (not set; needs your approval)": {
-    "Buy": "Rs 186.40 or lower",
-    "Strong buy": "Rs 164.40 or lower",
-    "Sell trigger": "Rs 285.10 or higher"
-  },
-  "Key ratios (five-year trend)": {
-    "Group EPS": "2021/22 Rs 30.80 · 2022/23 Rs 31.79 · 2023/24 Rs 34.49 · 2024/25 Rs 43.65 · 2025/26 Rs 45.09 · H1 2026/27 Rs 28.73",
-    "Group NAV per share": "Rs 245.59 · Rs 261.90 · Rs 299.32 · Rs 339.63 · Rs 375.23 · Sep 2026 Rs 395.47",
-    "Company ROE": "2024/25 11.3% · 2025/26 10.5%",
-    "Gross NPL": "Mar 2025 2.76% · Mar 2026 1.65% · Sep 2026 1.79%",
-    "Core capital": "Mar 2025 47.1% · Mar 2026 36.0% · Sep 2026 31.9%",
-    "Loans, leases and HP": "Mar 2024 Rs 50.2bn · Mar 2025 Rs 66.1bn · Mar 2026 Rs 104.8bn · Sep 2026 Rs 118.9bn"
-  },
-  "What this analysis doesn't cover": [
-    "Nations Trust Bank's own reports (only its market price and CF's share of profit were used).",
-    "Central Industries' separate results."
-  ],
-  "fullText": "Summary: Central Finance (CFIN.N0000) is one of Sri Lanka's oldest and most conservatively run finance companies (vehicle leasing and loans), and also owns 19.7% of Nations Trust Bank and most of Central Industries. It is very safe: core capital 31.9% against a 10% minimum, equity about half of total assets, gross non-performing loans 1.8%, and group profit every year for over a decade, growing EPS from Rs 30.80 (2021/22) to Rs 45.09 (2025/26) and Rs 28.73 in the six months to September 2026. At Rs 231.50 (CSE, 11 November 2026) it trades at only 0.59x its group NAV of Rs 395.47 and 4.7x trailing earnings, which looks cheap. But because it holds so much capital, its return on equity is only 12–14%, below the 18% I require, so it deserves to trade below book. Three methods put fair value at about Rs 219, so the price is about 6% above it: close to fair. I'd buy at up to Rs 186.40 (the share was Rs 190.25 at its 12-month low) and treat under Rs 164.40 as a strong buy. Watch the company's own profit, which fell 14% in the half year as interest costs rose 76% on fast loan growth; the group was carried by Nations Trust Bank.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 163.6 | 214.2 | 291.4 | 214.5\nP/E method | 216.0 | 286.0 | 351.0 | 278.0\nResidual income | 115.2 | 163.6 | 244.8 | 165.3\nAverage | 164.9 | 221.3 | 295.7 | 219.3\n\nAssumptions\nCost of equity 19.5% / 18% / 16.5%; long-run ROE 11% / 12.5% / 14%; growth 5% / 6% / 7%; 2026/27 EPS Rs 48 / 52 / 54 at 4.5 / 5.5 / 6.5 times.\n\nBusiness tests: 3 of 4 passed (capital, steady profit, dividends; fails returns at about 13%), so it's a good business at about a fair price: watch list.\n\n500-share plan\n200 shares up to Rs 219.30, 150 up to Rs 186.40, 150 up to Rs 164.40: about Rs 96,480 in total."
+  "fullText": "Summary: Central Finance (CFIN.N0000) is one of Sri Lanka's oldest vehicle-leasing and loan companies, and also owns 21.4% of Nations Trust Bank (19.72% of the votes) and half of Central Industries (PVC pipes). It is very safe: core capital 31.9% against a 10% minimum, equity about half of group assets, gross Stage 3 loans 1.79%, and group profit every year for at least ten years. Group EPS was Rs 45.09 in 2025/26 and Rs 28.73 in the six months to September 2026 (up 17%), but that rise came from the bank: the finance company's own profit fell 14% (25% in the September quarter) as interest costs rose 76% on new borrowing and impairment reversals dried up. At Rs 215.25 (CSE, 27 November 2026) the share is 0.54x group NAV of Rs 395.47 and 4.4x trailing EPS, which looks cheap, but with a group ROE of about 13% against the 17.2% a shareholder should demand (beta 0.87), a discount to book is deserved. Four equity methods put fair value at Rs 209.91 (was Rs 219.30), so the price is about 2.5% above it: fair. I'd buy at up to Rs 178.43 and treat Rs 157.43 or lower as a strong buy. It passes three of the four business tests (fails only on returns), so it stays on the watch list.\n\nPrice and key figures\nPrice: Rs 215.25, CSE close on 27 November 2026. July–September 2026 range Rs 207.75–240.00; 2025/26 range Rs 167.00–319.75.\nSix months to September 2026 (group, unaudited): profit to shareholders Rs 6.53bn, up 17%; EPS Rs 28.73 against Rs 24.50. Share of Nations Trust Bank profit Rs 3.33bn (up 44%; Rs 2.35bn in the September quarter). Finance company alone: profit Rs 2.86bn, down 14%; interest expenses up 76%; impairment reversal Rs 0.26bn against Rs 0.90bn.\n2025/26 (group, audited): profit to shareholders Rs 10.25bn, EPS Rs 45.09, NAV Rs 375.23. Company profit Rs 6.04bn, ROE 10.52%, gross NPL 1.65%, core capital 35.95%. Dividend Rs 6.50 (Rs 2.75 interim + Rs 3.75 final).\nBalance sheet at September 2026 (group): leases, hire purchase and loans Rs 118.9bn (Rs 104.8bn in March), deposits Rs 51.2bn, borrowings Rs 29.9bn, owners' equity Rs 89.9bn, NAV Rs 395.47. Company core capital 31.86%, gross Stage 3 1.79%, Stage 3 coverage 59%.\n\nRequired return: 8.24% risk-free + beta 0.87 × (4.2% + 6.08%) = 17.2% (bear 18.7%, bull 15.7%). The beta weights the finance business (0.97), the Nations Trust Bank share (0.70) and Central Industries (0.90) by their H1 profit.\n\nValuation table (Rs per share)\nMethod | Bear | Base | Bull | Weighted\nJustified price to book | 173.2 | 229.5 | 318.2 | 230.3\nP/E on 2026/27 earnings | 161.0 | 229.5 | 308.0 | 224.7\nDividend model | 120.9 | 179.9 | 272.6 | 180.8\nResidual income | 144.3 | 202.2 | 297.5 | 203.9\nAverage | 149.9 | 210.3 | 299.1 | 209.9\n\nAssumptions (bear / base / bull)\nCost of equity 18.7% / 17.2% / 15.7%; long-run ROE 11% / 12.5% / 14%; growth 5% / 6% / 7%; 2026/27 EPS 46 × 3.5 / 51 × 4.5 / 56 × 5.5; next dividend Rs 6.50 / 7 / 7.50 growing 5% / 8% / 10% for five years, then the stable payout 1 − g ÷ ROE. Base EPS is above the Rs 49.32 twelve-month figure but 22% below the September quarter × 4, because that quarter's Rs 2.35bn bank contribution (2.4 times June's) isn't explained and the company's own profit fell 25%.\nGrowth check: 85.6% of profit kept × 13.3% ROE supports 11.4% growth; every scenario is below it.\n\nBusiness tests: 3 of 4 passed (capital, steady profit, dividends; fails returns at about 13%), so it's a good business at about a fair price: watch list (category 2, unchanged).\n\nManagement: the 2025/26 report promised disciplined loan growth, longer-term funding and no slip in asset quality. Loans grew 13% in H1 and funding shifted to borrowings as planned, but costs rose faster than income (company costs up 22%, income up 9%), and Stage 3 coverage fell to 59%.\n\nShareholders: Corporate Services (Pvt) Ltd A/C 1 16.11%, E.H. Wijenaike 15.41%, EPF 10.00%; public holding 63.60% with 6,847 public holders. Little change in July–September.\n\n500-share plan\n150 shares up to Rs 209.91, 200 up to Rs 178.43, 150 up to Rs 157.43: about Rs 90,787 in total. Rs 178.43 is 17% below today's price and below every quarter's low since April 2025 (lowest Rs 207.75 in July–September 2026; Rs 208.00 in January–March 2026); the share was last there in April 2025 (Rs 167.00 low). Realistic only in a market-wide dip. Rs 157.43 needs a fall of about 27%."
 }
