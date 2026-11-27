@@ -1234,6 +1234,23 @@
       "status": "done",
       "result": "Fair value Rs 379.96 (first analysis), buy Rs 322.97 (strong buy 284.97), buy now (category 1)",
       "finishedAt": "2026-11-27T13:13:52+00:00"
+    },
+    {
+      "id": "20261127134437-SINS",
+      "ticker": "SINS.N0000",
+      "name": "Singer (Sri Lanka) PLC",
+      "mode": "redo-full",
+      "command": "/redo SINS.N0000 full",
+      "note": null,
+      "files": [
+        "reports/SINS.N0000/2026-06-01_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/SINS.N0000/2026-08-10_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/SINS.N0000/2026-11-10_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "462",
+      "requestedAt": "2026-11-27T13:44:37+00:00",
+      "status": "pending"
     }
   ]
 }
