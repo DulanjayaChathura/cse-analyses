@@ -16,32 +16,32 @@
       "label": "Non-voting"
     }
   ],
-  "analysisDate": "2026-11-10",
+  "analysisDate": "2026-11-28",
   "resultsCovered": {
     "label": "Six months to 30 September 2026",
     "periodEnd": "2026-09-30",
     "audited": false,
     "sources": [
-      "Annual report 2024/25",
-      "Annual report 2025/26",
-      "Interim reports to 31 Mar 2026, 30 Jun 2026 and 30 Sep 2026"
+      "Annual Report 2025/26 (CSE copy, 8 Jul 2026)",
+      "Interim report to 30 Jun 2026 (CSE copy)",
+      "Interim report to 30 Sep 2026 (CSE copy)"
     ]
   },
   "price": {
-    "value": 84.7,
-    "date": "2026-11-09",
-    "source": "CSE closing price via equitylk.lk",
-    "note": "Non-voting about Rs 63.50 (same source, date not shown). July–September 2026 voting range Rs 78.50–99.90."
+    "value": 81.7,
+    "date": "2026-11-27",
+    "source": "CSE close, generated/prices.json",
+    "note": "Voting share. The non-voting share (TKYO.X0000) closed at Rs 67.40 the same day; both classes have the same rights to profit and dividends, so the same fair value applies to each."
   },
   "summary": {
     "verdict": "overpriced",
-    "headline": "Market leader growing sales, but returns are low and the price is far above value",
-    "text": "Tokyo Cement (TKYO.N0000), Sri Lanka's market-leading cement maker, is selling much more cement (revenue up 27% in the six months to September 2026), but profit is falling because the industry hasn't raised prices while costs and interest rose. Return on equity has been about 8% for two years, well below the roughly 15.5% a shareholder should expect. At Rs 84.70 the voting share is 1.17x NAV (Rs 72.51) and 15.5x trailing earnings. The methods put fair value at about Rs 45, so the price is about 88% above it. I'd buy at up to about Rs 38.30 and treat under Rs 33.80 as a strong buy. The non-voting share (about Rs 63.50) gets the same dividend and is the better class, but is also above fair value."
+    "headline": "Sri Lanka's biggest cement maker, selling more than ever, but profit is falling, debt is high and at Rs 81.70 (Rs 67.40 non-voting) the share is about four times fair value",
+    "text": "Tokyo Cement makes cement in Trincomalee (4 Mn MT a year of capacity) and ready-mix concrete, aggregates and dry mortar, with its own biomass and solar power. Sales are booming: cement volume rose 28% in 2025/26 and revenue rose 27% in April–September 2026. But the industry has not raised prices while costs, freight and the rupee moved against it, so profit fell: Rs 1.50bn in the half against Rs 1.67bn, and twelve-month return on equity is only 7.7%.\n\nFair value is about **Rs 19.35** (buy below **Rs 16.45**, strong buy below **Rs 14.51**), down from Rs 45.00 in the first analysis. The main reason is the house required return: with a beta of 1.19 (cement relevered for Rs 15.6bn of net debt) the cost of equity is 20.5%, against 15.5% assumed before. A business earning 8–11% on its equity is worth well below its Rs 72.51 book value at that rate; today's price needs a long-run ROE of about 22% (19% for the non-voting share).\n\nOnly 1 of the 4 business tests passes (debt). Category 3, avoid for now: unchanged. The non-voting share is the cheaper class if the view changes."
   },
   "valuation": {
-    "fairValue": 45.0,
-    "buyPrice": 38.3,
-    "strongBuyPrice": 33.8,
+    "fairValue": 19.35,
+    "buyPrice": 16.45,
+    "strongBuyPrice": 14.51,
     "marginOfSafety": {
       "buy": 15,
       "strongBuy": 25
@@ -52,14 +52,21 @@
       "bull": 20
     },
     "nav": 72.51,
-    "note": "Fair value weights the bear/base/bull averages of price to book, P/E and residual income 30/50/20 (about 0.62x NAV). Same value for both share classes: they share profits and dividends equally."
+    "note": "Fair value weights the bear/base/bull averages (Rs 10.78 / 18.33 / 34.74) of five methods: whole-company DCF, P/E, justified P/B, residual income and the dividend model. NAV Rs 72.51 is shown for reference, not averaged. Same value for both share classes."
   },
   "dividend": {
     "perShare": 2.5,
-    "label": "for 2025/26",
-    "source": "Annual Report 2025/26, Five-year summary (pp. 189–190)"
+    "label": "first and final for 2025/26, paid 4 Aug 2026",
+    "source": "Interim to 30 Sep 2026, p. 8; Annual Report 2025/26, p. 181"
   },
   "keyMetrics": [
+    {
+      "id": "price",
+      "label": "Price",
+      "value": 81.7,
+      "unit": "Rs",
+      "note": "Voting, CSE close 27 Nov 2026; non-voting Rs 67.40"
+    },
     {
       "id": "nav",
       "label": "NAV per share",
@@ -70,92 +77,91 @@
     {
       "id": "pnav",
       "label": "Price to NAV",
-      "value": 1.17,
+      "value": 1.13,
       "unit": "x",
-      "note": "Non-voting about 0.88x"
+      "note": "Non-voting 0.93×"
     },
     {
       "id": "pe",
       "label": "P/E (trailing)",
-      "value": 15.5,
+      "value": 15.0,
       "unit": "x",
-      "note": "Trailing EPS Rs 5.45; non-voting about 11.7x"
+      "note": "Twelve-month EPS Rs 5.45 to Sep 2026; non-voting 12.4×"
     },
     {
       "id": "roe",
       "label": "Return on equity",
-      "value": 8.1,
+      "value": 7.7,
       "unit": "%",
-      "note": "Year to March 2026; five-year average about 9%"
+      "note": "Twelve months to Sep 2026; 8.1% in 2025/26"
     },
     {
-      "id": "dividendYield",
-      "label": "Dividend yield",
-      "value": 3.0,
-      "unit": "%",
-      "note": "Rs 2.50 for 2025/26; about 3.9% on non-voting"
-    },
-    {
-      "id": "payout",
-      "label": "Payout ratio",
-      "value": 43,
-      "unit": "%"
-    },
-    {
-      "id": "netDebt",
+      "id": "netdebt",
       "label": "Net debt",
-      "value": 14.8,
+      "value": 15.57,
       "unit": "Rs bn",
-      "note": "30 Sep 2026, excluding leases"
+      "note": "30 Sep 2026, incl. overdrafts and leases; 0.49× equity, 2.2× twelve-month EBITDA"
     },
     {
-      "id": "netDebtEquity",
-      "label": "Net debt / equity",
-      "value": 0.46,
-      "unit": "x"
-    },
-    {
-      "id": "revenueGrowth",
-      "label": "Revenue growth",
-      "value": 27,
+      "id": "yield",
+      "label": "Dividend yield",
+      "value": 3.1,
       "unit": "%",
-      "note": "Six months to Sep 2026; 22% in the year to March 2026"
+      "note": "Rs 2.50; non-voting 3.7%"
     },
     {
-      "id": "marketCap",
-      "label": "Market cap",
-      "value": 34.2,
+      "id": "mcap",
+      "label": "Market value",
+      "value": 33.93,
       "unit": "Rs bn",
-      "display": "~Rs 34bn",
-      "note": "Both share classes"
+      "note": "Both classes at 27 Nov 2026 closes"
+    },
+    {
+      "id": "gm",
+      "label": "Gross margin",
+      "value": 29.6,
+      "unit": "%",
+      "note": "April–September 2026 (31.8% a year earlier); 28.0% in the September quarter"
+    },
+    {
+      "id": "coe",
+      "label": "Cost of equity",
+      "value": 20.5,
+      "unit": "%",
+      "note": "Beta 1.19"
     }
   ],
   "highlights": [
     {
+      "title": "Three months to 30 September 2026 (unaudited)",
+      "text": "Revenue up 28% to Rs 20.94bn, but gross margin fell to 28.0% (32.3%). Profit attributable to owners Rs 0.866bn against Rs 1.000bn; EPS Rs 1.96 (Rs 2.27). Finance costs Rs 0.429bn (Rs 0.380bn)."
+    },
+    {
       "title": "Six months to 30 September 2026 (unaudited)",
-      "text": "Revenue rose 27% to Rs 36.78bn, but profit to shareholders fell 10% to Rs 1.50bn. EPS Rs 3.41 against Rs 3.79. Gross margin 29.6% (31.8%)."
+      "text": "Revenue Rs 36.78bn (up 27%), gross profit Rs 10.87bn (up 19%), profit from operations Rs 2.69bn (Rs 2.77bn), finance costs Rs 0.87bn (up 25%), profit attributable to owners Rs 1.50bn (Rs 1.67bn), EPS Rs 3.41 (Rs 3.79)."
     },
     {
-      "title": "Volume up, price flat",
-      "text": "In 2025/26 sales volume rose 28% to 1.82 Mn MT against industry growth of 19%, but the industry made no price increases and absorbed higher material, freight and currency costs. Profit fell 25%."
+      "title": "Cash tied up in stock",
+      "text": "Inventories rose another Rs 2.07bn to Rs 10.94bn (Rs 5.65bn in March 2025). Operating cash after interest and tax was Rs 1.27bn in the half, against profit of Rs 1.51bn, and the Rs 1.08bn dividend was paid in August."
     },
     {
-      "title": "Expansion paid with loans",
-      "text": "Rs 4.81bn of capital spending in 2025/26 (Trincomalee expansion, a bulk cargo ship) against operating cash of Rs 1.40bn. Net debt rose to about Rs 14.8bn (0.46x equity); finance costs up 48% last year and 25% in the latest half."
+      "title": "Capex has dropped; debt hasn't",
+      "text": "Capex paid fell to Rs 0.49bn in the half (Rs 3.82bn a year earlier, when the Trinco Express vessel was bought). Borrowings and overdrafts are Rs 16.87bn (Rs 16.63bn in March); net debt Rs 15.57bn."
     },
     {
-      "title": "Oversupplied market",
-      "text": "Local capacity about 10.7 Mn MT a year against demand of about 5.3 Mn MT in 2025, plus imports."
+      "title": "2025/26 in brief (audited)",
+      "text": "Revenue Rs 61.0bn (up 22%) on 28% more cement volume (1.82 Mn MT, industry up 19%). Profit attributable Rs 2.57bn (Rs 3.45bn): prices held flat while costs rose, and finance costs rose 48% to Rs 1.55bn. Dividend Rs 2.50 (Rs 2.25)."
     }
   ],
   "history": {
     "periods": [
+      "FY2021",
       "FY2022",
       "FY2023",
       "FY2024",
       "FY2025",
       "FY2026",
-      "Latest"
+      "TTM Sep 2026"
     ],
     "series": [
       {
@@ -163,6 +169,7 @@
         "label": "EPS",
         "unit": "Rs",
         "values": [
+          13.57,
           -0.94,
           11.31,
           5.48,
@@ -171,12 +178,13 @@
           5.45
         ],
         "notes": [
+          "Annual Report 2024/25",
           "Loss year",
           null,
           null,
           null,
           null,
-          "Trailing"
+          "Latest annual + six months − six months a year earlier"
         ]
       },
       {
@@ -184,41 +192,45 @@
         "label": "Return on equity",
         "unit": "%",
         "values": [
+          24.68,
           -1.81,
           19.27,
           8.76,
           11.46,
           8.11,
-          7.6
+          7.67
         ],
         "notes": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          "Trailing, approximate"
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Company's ratio",
+          "Twelve months to Sep 2026, on average equity"
         ]
       },
       {
         "id": "pe",
-        "label": "P/E (voting, year end)",
+        "label": "P/E at year end",
         "unit": "x",
         "values": [
+          null,
           null,
           4.42,
           9.4,
           10.09,
           15.25,
-          15.5
+          15.0
         ],
         "notes": [
+          "Not recorded",
           "Loss year",
-          null,
-          null,
-          null,
-          null,
-          "At Rs 84.70"
+          "Voting",
+          "Voting",
+          "Voting",
+          "Voting; non-voting 12.50×",
+          "Rs 81.70 ÷ Rs 5.45"
         ]
       },
       {
@@ -226,7 +238,8 @@
         "label": "Dividend per share",
         "unit": "Rs",
         "values": [
-          0.0,
+          2.1,
+          0,
           1.5,
           2.0,
           2.25,
@@ -234,11 +247,12 @@
           null
         ],
         "notes": [
-          "None paid",
           null,
           null,
           null,
           null,
+          null,
+          "Paid Aug 2026",
           null
         ]
       }
@@ -248,204 +262,755 @@
     {
       "method": "NAV",
       "value": "Rs 72.51",
-      "reading": "Voting 1.17x NAV; non-voting about 0.88x."
+      "reading": "Price is 1.13× NAV (non-voting 0.93×). Most assets are the Trincomalee plant, the vessel and stock; land is at cost."
     },
     {
       "method": "Return on equity",
-      "value": "8.1%",
-      "reading": "About 8% for two years and about 9% on average over five; below the cost of equity (about 15.5%)."
+      "value": "7.7% (8–11% lately)",
+      "reading": "Well below the 20.5% cost of equity. Justified P/B at an 11% long-run ROE is 0.39×; today's price needs about 22%."
     },
     {
       "method": "P/E",
-      "value": "15.5x",
-      "reading": "On trailing EPS of Rs 5.45 for the voting share; about 11.7x for the non-voting share."
+      "value": "15.0×",
+      "reading": "On twelve-month EPS Rs 5.45. Justified forward P/E is about 3.5× at the base case (payout 55%, cost of equity 20.5%, growth 5%)."
     },
     {
       "method": "Dividends",
-      "value": "3.0% yield",
-      "reading": "Rs 2.50 for 2025/26, 43% of profit. A dividend model gives only about Rs 27 (base) and is a check, not part of fair value."
+      "value": "3.1% yield",
+      "reading": "Rs 2.50 is 43% of 2025/26 profit, but free cash flow was negative in 2025/26 and the twelve months to Sep 2026; the dividend has been paid partly with borrowed money."
     },
     {
-      "method": "Debt",
-      "value": "Net debt 0.46x equity",
-      "reading": "About Rs 14.8bn at September 2026, mostly short-term loans; interest cover 3.4x last year."
+      "method": "DCF",
+      "value": "Rs 1.67 base",
+      "reading": "At a 16% WACC the operating business is worth about Rs 16bn, barely more than the Rs 15.6bn of net debt. The return on capital (8–10%) is below WACC, so growth adds little value."
     }
   ],
   "models": [
     {
-      "id": "pb",
-      "name": "Justified price to book",
-      "bear": 18.1,
-      "base": 42.0,
-      "bull": 82.9,
-      "weighted": 43.0,
-      "comment": "(ROE − growth) ÷ (cost of equity − growth) × NAV. Base ROE 11.5% is below the 15.5% cost of equity, so value is below book."
+      "id": "dcf",
+      "name": "Whole-company DCF",
+      "bear": -2.94,
+      "base": 1.67,
+      "bull": 39.88,
+      "weighted": 7.93,
+      "comment": "Whole-company DCF at WACC 17.1% / 16.0% / 15.0%: after-tax operating profit Rs 2.94 / 3.27 / 3.27bn (twelve months to Sep 2026, Rs 4.68bn taxed at 30.1%; bear 10% lower), start cash after maintenance capex Rs 3.08 / 3.40 / 4.25bn, growth 2% / 6% / 9% for five years then 4% / 5% / 6%, return on new capital 8% / 10% / 13%; less net debt Rs 15.57bn (30 Sep 2026). Debt is 31% of the company's value and almost equals the firm value in the bear case, so the equity swings from below zero (bear Rs −2.94: a share can't be worth less than nothing, but the figure is kept as calculated) to Rs 39.88 (bull). About 65% and 74% of the base and bull values come after year 5."
     },
     {
       "id": "pe",
       "name": "P/E method",
-      "bear": 39.2,
-      "base": 57.0,
-      "bull": 79.2,
-      "weighted": 56.1,
-      "comment": "The most generous: EPS for the year to March 2027 × 8 / 10 / 12."
+      "bear": 14.44,
+      "base": 21.82,
+      "bull": 29.89,
+      "weighted": 21.22,
+      "comment": "EPS to March 2027 Rs 5.20 / 6.20 / 6.80 (six months Rs 3.41; last year's second half Rs 2.04, hit by Cyclone Ditwah) × justified P/E 2.8 / 3.5 / 4.4 (payout 1 − growth ÷ ROE at long-run ROE 8% / 11% / 14%, growth 4% / 5% / 6%, cost of equity 22.0% / 20.5% / 19.0%). The base is 21% below the Rs 7.84 run-rate (September quarter × 4) because July–September is the seasonal peak: it gave 39% of 2025/26's EPS."
+    },
+    {
+      "id": "pb",
+      "name": "Justified price to book",
+      "bear": 16.11,
+      "base": 28.07,
+      "bull": 44.62,
+      "weighted": 27.79,
+      "comment": "NAV Rs 72.51 (30 Sep 2026) × (long-run ROE − growth) ÷ (cost of equity − growth): ROE 8% / 11% / 14%, growth 4% / 5% / 6%. Justified P/B 0.22 / 0.39 / 0.62 against 1.13 today."
     },
     {
       "id": "ri",
       "name": "Residual income",
-      "bear": 18.9,
-      "base": 34.4,
-      "bull": 65.0,
-      "weighted": 35.9,
-      "comment": "ROE of 7.6% moving to 8% / 11.5% / 15% over ten years."
+      "bear": 14.35,
+      "base": 21.11,
+      "bull": 31.63,
+      "weighted": 21.19,
+      "comment": "Book Rs 72.51; ROE moving from 7.7% (twelve months to Sep 2026) to 8% / 11% / 14% over ten years; 43% payout; then excess returns grow at 4% / 5% / 6%."
+    },
+    {
+      "id": "ddm",
+      "name": "Dividend model",
+      "bear": 11.93,
+      "base": 18.99,
+      "bull": 27.67,
+      "weighted": 18.61,
+      "comment": "Next dividend Rs 2.00 / 2.50 / 2.75 (Rs 2.50 paid for 2025/26; bear cut because cash after capex hasn't covered it), growing 2% / 5% / 8% for five years, then the stable payout 1 − growth ÷ ROE at long-run ROE 8% / 11% / 14% and growth 4% / 5% / 6%, at the cost of equity."
     }
   ],
-  "modelsNote": "Capital spending has been heavy and uneven (the Trincomalee expansion and a ship), so a cash-flow DCF would mostly reflect the timing of projects. A dividend model understates a company that keeps 57% of profit, so it is shown only as a check. Fair value uses price to book, P/E and residual income.",
+  "modelsNote": "Five methods are averaged in each scenario: whole-company DCF, P/E, justified price to book, residual income and the dividend model. Growth check: 2% / 6% / 9% against 15.1% supported by 2025/26 reinvestment (186% of after-tax operating profit, swollen by Rs 3.66bn of stock and receivables and the vessel) at an 8.1% return on capital; all within. Maintenance capex: the company gives no split. 2025/26 capex booked of Rs 4.81bn was mostly growth (Rs 3.37bn for the Trinco Express vessel and dry docking), so bear and base use depreciation as reported (Rs 2.29bn) rather than the one-year capex the calculator offers as its bear; bull uses capex less the vessel (Rs 1.44bn). Ratio notes: the beta of 1.19 is high for a cement maker because net debt is 46% of market value; the 15.0× trailing P/E is above the 8–12× range for a mature business because the market expects margins to recover. Warnings: dividends are more than cash after maintenance capex (dividend at risk), and the expansion was largely borrowed (net debt up Rs 4.4bn in 2025/26).",
   "scenarios": {
     "assumptions": [
       {
-        "label": "Cost of equity",
-        "bear": "17%",
-        "base": "15.5%",
-        "bull": "14%"
+        "label": "Cost of equity (beta 1.19)",
+        "bear": "22.0%",
+        "base": "20.5%",
+        "bull": "19.0%"
+      },
+      {
+        "label": "WACC (debt weight 31%)",
+        "bear": "17.1%",
+        "base": "16.0%",
+        "bull": "15.0%"
+      },
+      {
+        "label": "After-tax operating profit, start",
+        "bear": "Rs 2.94bn",
+        "base": "Rs 3.27bn",
+        "bull": "Rs 3.27bn"
+      },
+      {
+        "label": "Maintenance capex",
+        "bear": "Rs 2.29bn",
+        "base": "Rs 2.29bn",
+        "bull": "Rs 1.44bn"
+      },
+      {
+        "label": "Growth: five years, then long-term",
+        "bear": "2%, then 4%",
+        "base": "6%, then 5%",
+        "bull": "9%, then 6%"
+      },
+      {
+        "label": "Return on new capital",
+        "bear": "8%",
+        "base": "10%",
+        "bull": "13%"
+      },
+      {
+        "label": "EPS to March 2027",
+        "bear": "Rs 5.20",
+        "base": "Rs 6.20",
+        "bull": "Rs 6.80"
       },
       {
         "label": "Long-run ROE",
         "bear": "8%",
-        "base": "11.5%",
-        "bull": "15%"
+        "base": "11%",
+        "bull": "14%"
       },
       {
-        "label": "Long-term growth",
-        "bear": "5%",
-        "base": "6%",
-        "bull": "7%"
-      },
-      {
-        "label": "EPS to March 2027 × P/E",
-        "bear": "4.90 × 8",
-        "base": "5.70 × 10",
-        "bull": "6.60 × 12"
+        "label": "Next dividend, growth",
+        "bear": "Rs 2.00, 2%",
+        "base": "Rs 2.50, 5%",
+        "bull": "Rs 2.75, 8%"
       }
     ],
     "averages": {
-      "bear": 25.4,
-      "base": 44.4,
-      "bull": 75.7
+      "bear": 10.78,
+      "base": 18.33,
+      "bull": 34.74
     },
-    "common": "Sri Lankan government bonds yield about 12% (October 2026). First-half EPS Rs 3.41; last year's second half was Rs 2.04. Payout 43%. The same value applies to voting and non-voting shares."
+    "common": "Required return from CAPM with a country premium: risk-free 8.24% (12.24% bond less 4.0% default spread), mature premium 4.2% plus country premium 6.08%, beta 1.19. Weights bear 30 / base 50 / bull 20. Net debt Rs 15.57bn and NAV Rs 72.51 at 30 Sep 2026; 441.045mn shares (voting and non-voting together)."
   },
   "sensitivity": {
-    "title": "Residual income base case, Rs per share",
+    "title": "Residual income, Rs per share",
     "rowLabel": "Cost of equity",
     "columnLabel": "Long-run ROE",
     "rows": [
-      "14%",
-      "15.5%",
-      "17%"
+      "19.0%",
+      "20.5%",
+      "22.0%"
     ],
     "columns": [
       "8%",
-      "11.5%",
-      "15%"
+      "11%",
+      "14%"
     ],
     "values": [
       [
-        22.4,
-        41.6,
-        64.4
+        16.43,
+        23.83,
+        32.28
       ],
       [
-        19.5,
-        34.4,
-        51.9
+        14.91,
+        21.11,
+        28.16
       ],
       [
-        17.3,
-        29.2,
-        43.1
+        13.65,
+        18.92,
+        24.87
       ]
     ],
     "base": {
       "row": 1,
       "column": 1
     },
-    "note": "Even a 15% long-run ROE with a 14% cost of equity gives about Rs 64, below today's voting price."
+    "note": "Starting ROE 7.7%, growth 5%, payout 43%. Rs 81.70 needs a long-run ROE near 22% at the base cost of equity; Rs 67.40 (non-voting) about 19%. The company has reached that in only two of the last six years."
   },
   "buyPlan": {
     "totalShares": 500,
     "tiers": [
       {
         "shares": 200,
-        "maxPrice": 45.0
+        "maxPrice": 19.35
       },
       {
         "shares": 150,
-        "maxPrice": 38.3
+        "maxPrice": 16.45
       },
       {
         "shares": 150,
-        "maxPrice": 33.8
+        "maxPrice": 14.51
       }
     ],
-    "averagePrice": 39.63,
-    "totalCost": 19815,
-    "note": "About Rs 19,800 in total, against Rs 42,350 at Rs 84.70 (voting) or about Rs 31,750 for non-voting shares. If you buy, prefer the non-voting share: same dividend, about 25% cheaper.",
-    "realism": "Rs 45 needs a 47% fall in the voting share (it was Rs 42 at its low in January–March 2025 and Rs 33.90 in March 2022). The non-voting share needs about a 29% fall (low of Rs 37.50 in January–March 2025). Unlikely soon unless profits keep falling."
+    "averagePrice": 17.03,
+    "totalCost": 8514,
+    "note": "About Rs 8,514 in total, against Rs 40,850 for 500 voting shares at Rs 81.70 (Rs 33,700 non-voting at Rs 67.40). Category 3: the tiers show where value is, not a plan to buy now. If buying at all, the non-voting share gives the same profit and dividend for 18% less.",
+    "realism": "Not realistic. The buy price Rs 16.45 is 80% below the voting price and 76% below the non-voting price. The lowest prices in the last 18 months were Rs 68.00 voting and Rs 58.00 non-voting (2025/26), and Rs 78.50 / 59.60 in April–September 2026."
   },
   "changeMyView": {
     "higher": [
-      "Cement price increases that lift gross margin back above 33%.",
-      "ROE back above 13% for two years.",
-      "Borrowings falling now the big projects are finished.",
-      "A construction boom: port projects, housing, rebuilding after Cyclone Ditwah."
+      "Cement prices rising enough to lift the gross margin back above 32% and ROE towards 15% or more.",
+      "Inventories falling back from Rs 10.9bn, releasing cash to repay the Rs 16.9bn of borrowings and cut interest.",
+      "Higher use of the 4 Mn MT plant (about 45% used in 2025/26) as housing and post-cyclone rebuilding pick up.",
+      "A lower required return: a falling bond yield or a lower beta as debt falls."
     ],
     "lower": [
-      "A price war in an oversupplied market (capacity about twice demand) or more imports.",
-      "Rupee weakness and fuel or freight costs rising.",
-      "Higher interest rates on about Rs 13.6bn of short-term loans and overdrafts.",
-      "Another round of large capital spending funded by debt."
+      "Price competition from importers and the other three local makers in an oversupplied market (10.7 Mn MT of capacity against 5.6 Mn MT of demand).",
+      "A weaker rupee or higher freight and fuel costs (imported clinker, Middle East shipping).",
+      "Short-term borrowings (Rs 12.6bn current) refinanced at higher rates.",
+      "The dividend kept up with borrowed money while cash flow stays weak."
     ]
   },
   "notes": {
-    "disclaimer": "These are estimates from the annual reports to March 2025 and March 2026 and the interim reports to March, June and September 2026. The three interim reports are scanned images read by text recognition, so check any figure that matters. The voting price is from equitylk.lk and the non-voting price is approximate; the site replaces both with the daily CSE close. This is analysis, not personal financial advice."
+    "disclaimer": "These are estimates from the annual report to March 2026 and the interim reports to June and September 2026. This is analysis, not personal financial advice."
   },
-  "fullText": "Summary: Tokyo Cement Company (Lanka) PLC (TKYO.N0000 voting, TKYO.X0000 non-voting) is Sri Lanka's market-leading cement maker. Sales are growing fast (revenue up 27% in the six months to September 2026, volumes up 28% last year), but profit is falling: the industry hasn't raised prices while costs rose, and interest costs went up after the Trincomalee expansion and the new coastal ship. Return on equity has been only about 8% for two years and about 9% on average over five years, well below the roughly 15.5% a Sri Lankan shareholder should expect. At Rs 84.70 the voting share is 1.17x its NAV of Rs 72.51 and 15.5x trailing earnings. The methods put fair value at about Rs 45, so the price is about 88% above it. I'd buy at up to about Rs 38.30 and treat under Rs 33.80 as a strong buy. The non-voting share (about Rs 63.50) gets the same dividend and is about 25% cheaper, so it is the better class if you buy, but it is also above fair value.\n\nPrice and key figures\nPrice: Rs 84.70 voting (close of 9 November 2026, from equitylk.lk); non-voting about Rs 63.50 (same source, date not shown). Please check both live. In July–September 2026 the voting share traded between Rs 78.50 and Rs 99.90; in January–March 2026 between Rs 68.00 and Rs 117.50.\nSix months to 30 September 2026 (unaudited): revenue Rs 36.78bn, up 27%. Gross margin fell to 29.6% from 31.8%. Finance costs rose 25% to Rs 870mn. Profit to shareholders Rs 1.50bn, down 10%; EPS Rs 3.41 (Rs 3.79). The September quarter alone: revenue up 28%, EPS Rs 1.96 (Rs 2.27).\nYear to March 2026 (audited): revenue Rs 61.01bn (up 22%), profit Rs 2.57bn (down 25%), EPS Rs 5.83 (Rs 7.83), ROE 8.1%, dividend Rs 2.50. Sales volume 1.82 Mn MT, up 28% against industry growth of 19%. The chairman says local makers chose to absorb rising costs rather than raise prices.\nDebt: borrowings and overdrafts Rs 16.87bn and cash Rs 2.08bn at September 2026, so net debt about Rs 14.8bn, 0.46x equity (Rs 10.1bn a year earlier in March 2025). Interest cover fell to 3.4x in 2025/26 from 5.6x.\nCash: operating cash flow was only Rs 1.40bn in 2025/26 (inventory rose Rs 3.2bn) against Rs 4.81bn of capital spending, so loans paid for the expansion and the dividend. In the six months to September 2026 operating cash was Rs 1.27bn and capital spending fell to Rs 0.49bn.\nIndustry: local capacity is about 10.7 Mn MT a year against demand of about 5.3 Mn MT in 2025, so the market is oversupplied and price-sensitive.\n\nRecord (years to March): EPS Rs -0.94 (2022), 11.31, 5.48, 7.83, 5.83 (2026). ROE -1.8%, 19.3%, 8.8%, 11.5%, 8.1%; 24.7% in 2021. Dividends Rs 0, 1.50, 2.00, 2.25, 2.50.\n\nMethods\nNAV (Rs 72.51): voting 1.17x, non-voting about 0.88x.\nReturn on equity: 8.1% last year, about 7.6% on the last twelve months, 9.2% average over five years. Below the cost of equity, so each rupee kept in the business is worth less than a rupee to shareholders.\nP/E: 15.5x trailing EPS of Rs 5.45 (voting); about 11.7x for the non-voting share. Year-end P/E 15.3x (2026), 10.1x (2025).\nDividends: Rs 2.50 for 2025/26, a 3.0% yield (3.9% on the non-voting share), 43% of profit. A dividend model gives only Rs 19 / 27 / 41 and is shown as a check, not used in fair value.\nJustified price to book: Rs 18.1 / 42.0 / 82.9, weighted Rs 43.0.\nP/E method: Rs 39.2 / 57.0 / 79.2, weighted Rs 56.1.\nResidual income: Rs 18.9 / 34.4 / 65.0, weighted Rs 35.9.\nScenario averages: Rs 25.4 / 44.4 / 75.7. Weighted 30/50/20: fair value about Rs 45.0 (0.62x NAV). Buy price (15% below) Rs 38.30; strong buy (25% below) Rs 33.80.\n\nAssumptions (bear / base / bull)\nCost of equity: 17% / 15.5% / 14% (bonds about 12% plus a premium; Tokyo is the market leader with moderate debt).\nLong-run ROE: 8% / 11.5% / 15% (five-year average about 9%, six-year average about 11.7%).\nLong-term growth: 5% / 6% / 7%.\nEPS for the year to March 2027 × P/E: Rs 4.90 × 8 / Rs 5.70 × 10 / Rs 6.60 × 12 (first half Rs 3.41; second half of last year Rs 2.04).\nResidual income starts from today's ROE of about 7.6% and moves to the long-run ROE over ten years, paying out 43%.\n\nWhat would change the view\nHigher: cement price increases that restore gross margin above 33%; ROE back above 13% for two years; borrowings falling now the big projects are done; a construction boom (port, housing, reconstruction after Cyclone Ditwah).\nLower: a price war with importers and other local makers in an oversupplied market; rupee weakness and fuel costs; higher interest rates on Rs 13.6bn of short-term loans; another round of large capital spending.\n\nBuy plan for 500 shares\n200 at up to Rs 45.00, 150 at up to Rs 38.30, 150 at up to Rs 33.80: about Rs 19,800 in total (average Rs 39.63), against Rs 42,350 at today's voting price or about Rs 31,750 for non-voting shares. Rs 45 is about 47% below today's voting price. The voting share was Rs 42 at its low in January–March 2025 and closed at Rs 33.90 in March 2022, so it has been there in bad years, but it isn't likely soon. The non-voting share needs about a 29% fall to reach Rs 45; it was Rs 37.50 at its low in January–March 2025.\n\nBusiness tests (1 of 4 passed: weak, category 3 'avoid for now')\nReturn on equity of 15% or more: fail (8.1%; five-year average about 9%).\nNet debt no more than equity: pass (0.46x).\nSteady profit: fail (loss in 2021/22; profit down 25% last year and 10% in the latest half).\nProfit turns into cash: fail (2025/26 operating cash Rs 1.40bn against profit Rs 2.57bn; expansion and dividend paid with loans). Borderline: 2024/25 and the latest half were better.\n\nRisks and caveats: the three interim reports are scanned images read by text recognition; check any figure that matters. The voting price is from a third-party site; the site replaces it with the daily CSE close. This is analysis, not personal financial advice.",
   "quality": {
     "rating": "weak",
     "passed": 1,
     "outOf": 4,
-    "reason": "A strong market position and moderate debt, but returns have been low and falling, and cash hasn't covered the expansion.",
-    "assessed": "2026-11-10",
+    "reason": "Debt is within the limit, but returns are low, there was a loss in 2021/22 and profit is not turning into cash.",
+    "assessed": "2026-11-28",
     "tests": [
       {
         "id": "returns",
         "label": "Return on equity of 15% or more",
         "pass": false,
-        "value": "8.1%",
-        "note": "Five-year average about 9%; above 15% only in 2022/23 (and 2020/21)."
+        "value": "8–11%",
+        "note": "Company ROE 8.8% (2023/24), 11.5% (2024/25) and 8.1% (2025/26) (p. 190); 7.7% over the twelve months to Sep 2026. Only 2020/21 (24.7%) and 2022/23 (19.3%) passed."
       },
       {
         "id": "debt",
         "label": "Net debt no more than equity",
         "pass": true,
-        "value": "0.46x equity",
-        "note": "About Rs 14.8bn; interest cover 3.4x."
+        "value": "0.49×",
+        "note": "30 Sep 2026: borrowings and overdrafts Rs 16.87bn plus leases Rs 0.78bn less cash Rs 2.08bn = Rs 15.57bn, against equity Rs 31.98bn. But 2.2× twelve-month EBITDA (Rs 7.10bn), and Rs 12.6bn of the borrowings are short-term; interest cover about 2.7×."
       },
       {
         "id": "steady",
         "label": "Steady profit: no loss in five years, no one-offs",
         "pass": false,
         "value": "Loss in 2021/22",
-        "note": "Profit down 25% last year and 10% in the latest half."
+        "note": "Loss of Rs 0.38bn in 2021/22 (p. 189), then Rs 4.99bn, 2.42bn, 3.45bn and 2.57bn. Profit fell 10% in April–September 2026 even though revenue rose 27%."
       },
       {
         "id": "cash",
         "label": "Profit turns into cash and dividends",
         "pass": false,
-        "value": "Not last year",
-        "note": "2025/26 operating cash Rs 1.40bn against profit Rs 2.57bn; borderline, as 2024/25 and the latest half were better."
+        "value": "0.5× (12 months)",
+        "note": "Operating cash (after interest and tax) Rs 1.28bn over the twelve months to Sep 2026 against profit Rs 2.41bn, as stock rose by Rs 5.3bn in 18 months. Free cash flow was −Rs 3.63bn in 2025/26 and −Rs 0.40bn over the twelve months, so the Rs 0.97bn and Rs 1.08bn dividends were partly borrowed. 2024/25 alone was good (Rs 4.92bn on Rs 3.46bn)."
       }
     ]
-  }
+  },
+  "requiredReturn": {
+    "beta": 1.19,
+    "betaBasis": "Provisional. Damodaran's global Building Materials unlevered beta corrected for cash (0.90, January 2026; his emerging-markets file couldn't be opened), relevered at net debt ÷ market value 0.459 and 30.1% tax. No local 5-year beta found.",
+    "riskFree": 8.24,
+    "matureERP": 4.2,
+    "countryPremium": 6.08,
+    "costOfEquity": {
+      "bear": 22.0,
+      "base": 20.5,
+      "bull": 19.0
+    },
+    "costOfDebt": 8.97,
+    "wacc": {
+      "bear": 17.1,
+      "base": 16.0,
+      "bull": 15.0
+    },
+    "debtWeight": 31.4,
+    "asOf": "2026-11-28",
+    "sources": [
+      "10-year rupee bond 12.24%: research/market-inputs.json (13 Oct 2026)",
+      "Default spread 4.0%: market-based (14 Nov 2026)",
+      "Mature-market premium 4.2% and volatility factor 1.52: Damodaran, Country Risk, July 2026",
+      "Cost of debt: interest paid Rs 1.394bn ÷ average borrowings and leases (Annual Report 2025/26, pp. 125, 127)",
+      "Beta: Damodaran global sector betas, January 2026 (web-search extract)"
+    ],
+    "note": "Cost of equity = 8.24% + 1.19 × (4.2% + 6.08%) = 20.5%; bear +1.5, bull −1.5 points. WACC weights equity 68.6% and after-tax debt (8.97% × (1 − 30.1%)) 31.4%, at the market value of both share classes (Rs 33.93bn, 27 Nov 2026)."
+  },
+  "modelInputs": {
+    "costOfEquity": {
+      "bear": 22.0,
+      "base": 20.5,
+      "bull": 19.0
+    },
+    "wacc": {
+      "bear": 17.1,
+      "base": 16.0,
+      "bull": 15.0
+    },
+    "debtWeight": 31.4,
+    "shares": 441.045,
+    "netDebt": 15.566,
+    "dcf": {
+      "years": 5,
+      "bear": {
+        "start": 3.075,
+        "nopat": 2.94,
+        "growth": 2,
+        "longRun": 4,
+        "roc": 8,
+        "maintenance": 2.287
+      },
+      "base": {
+        "start": 3.402,
+        "nopat": 3.267,
+        "growth": 6,
+        "longRun": 5,
+        "roc": 10,
+        "maintenance": 2.287
+      },
+      "bull": {
+        "start": 4.247,
+        "nopat": 3.267,
+        "growth": 9,
+        "longRun": 6,
+        "roc": 13,
+        "maintenance": 1.442
+      },
+      "basis": {
+        "growth": "valuationInputs: Growth",
+        "roc": "valuationInputs: Return on new capital",
+        "maintenance": "valuationInputs: Maintenance capex basis",
+        "nopat": "valuationInputs: After-tax operating profit (start)"
+      }
+    },
+    "pe": {
+      "bear": {
+        "eps": 5.2,
+        "roe": 8,
+        "longRun": 4
+      },
+      "base": {
+        "eps": 6.2,
+        "roe": 11,
+        "longRun": 5
+      },
+      "bull": {
+        "eps": 6.8,
+        "roe": 14,
+        "longRun": 6
+      },
+      "basis": {
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "pb": {
+      "book": 72.51,
+      "bear": {
+        "roe": 8,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 11,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 6
+      },
+      "basis": {
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ri": {
+      "years": 10,
+      "book": 72.51,
+      "payout": 43,
+      "roeStart": 7.67,
+      "bear": {
+        "roe": 8,
+        "longRun": 4
+      },
+      "base": {
+        "roe": 11,
+        "longRun": 5
+      },
+      "bull": {
+        "roe": 14,
+        "longRun": 6
+      },
+      "basis": {
+        "payout": "valuationInputs: Payout",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "ddm": {
+      "years": 5,
+      "bear": {
+        "dividend": 2.0,
+        "eps": 5.2,
+        "growth": 2,
+        "roe": 8,
+        "longRun": 4
+      },
+      "base": {
+        "dividend": 2.5,
+        "eps": 6.2,
+        "growth": 5,
+        "roe": 11,
+        "longRun": 5
+      },
+      "bull": {
+        "dividend": 2.75,
+        "eps": 6.8,
+        "growth": 8,
+        "roe": 14,
+        "longRun": 6
+      },
+      "basis": {
+        "dividend": "valuationInputs: Dividend next year",
+        "growth": "valuationInputs: Dividend growth",
+        "eps": "valuationInputs: EPS to March 2027",
+        "roe": "valuationInputs: Long-run ROE",
+        "longRun": "valuationInputs: Long-term growth"
+      }
+    },
+    "derive": {
+      "shares": "latest.sharesOutstanding",
+      "netDebt": "latest.netDebt",
+      "pb.book": "latest.navPerShare",
+      "ri.book": "latest.navPerShare",
+      "ri.roeStart": "ttm.roe",
+      "dcf.bear.maintenance": {
+        "calc": "annual.depreciation",
+        "basis": "valuationInputs: Maintenance capex basis"
+      },
+      "dcf.base.maintenance": "maintenance.base",
+      "dcf.bull.maintenance": "maintenance.bull",
+      "dcf.bear.nopat": {
+        "calc": "ttm.operatingProfit * (1 - annual.taxRate / 100) * 0.9",
+        "basis": "valuationInputs: After-tax operating profit (start)"
+      },
+      "dcf.base.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bull.nopat": "ttm.operatingProfit * (1 - annual.taxRate / 100)",
+      "dcf.bear.start": {
+        "calc": "ttm.operatingProfit * (1 - annual.taxRate / 100) * 0.9 + ttm.depreciationAmortisation - annual.depreciation",
+        "basis": "valuationInputs: After-tax operating profit (start)"
+      },
+      "dcf.base.start": "ttm.operatingProfit * (1 - annual.taxRate / 100) + ttm.depreciationAmortisation - maintenance.base",
+      "dcf.bull.start": "ttm.operatingProfit * (1 - annual.taxRate / 100) + ttm.depreciationAmortisation - maintenance.bull"
+    }
+  },
+  "management": {
+    "asOf": "2026-11-28",
+    "source": "Annual Report 2025/26: Chairman's message (pp. 20–22), Managing Director's review (pp. 24–27), management discussion (pp. 54–68); interim reports to June and September 2026",
+    "takeaway": "Management chose volume over price: sales grew far faster than the industry, but flat prices, rising costs and the interest on the expansion cut profit, and they expect the new capacity and vessel to pay off only as demand fills the plant.",
+    "said": [
+      {
+        "text": "Cement volume rose 28% to 1.82 Mn MT against industry growth of 19%, the best year since the 2022 crisis.",
+        "ref": "p. 25"
+      },
+      {
+        "text": "The industry kept retail prices unchanged despite higher costs, so profit after tax fell 25% while revenue rose 22%.",
+        "ref": "p. 21"
+      },
+      {
+        "text": "Finance costs rose 48% to Rs 1.5bn as the Trincomalee expansion and the vessel came into use.",
+        "ref": "p. 25"
+      },
+      {
+        "text": "Local raw materials, 24 MW of own renewable power and coastal shipping softened the rise in fuel, freight and import costs.",
+        "ref": "pp. 21, 58"
+      },
+      {
+        "text": "The technical partnership with Mitsubishi UBE Cement was renewed for five more years.",
+        "ref": "p. 22"
+      }
+    ],
+    "plans": [
+      {
+        "text": "Use the 4 Mn MT of cement capacity (expansion finished in 2024/25) to meet rising demand.",
+        "ref": "p. 56"
+      },
+      {
+        "text": "Keep investing in people, technology and modern manufacturing.",
+        "ref": "p. 26"
+      },
+      {
+        "text": "Ready-mix arm to add plastering, screed mortar and concrete-repair services.",
+        "ref": "p. 57"
+      },
+      {
+        "text": "Asks for tax and policy support for first-time home builders to revive housing demand.",
+        "ref": "p. 21"
+      }
+    ],
+    "investing": [
+      {
+        "text": "Trinco Express bulk cargo vessel, Trincomalee to the Colombo terminal (booked under vessels and dry docking).",
+        "amount": "Rs 3.37bn of additions in 2025/26",
+        "ref": "pp. 56, 148"
+      },
+      {
+        "text": "Capital spending approved by the directors but not yet provided for.",
+        "amount": "Rs 1.22bn at 31 Mar 2026",
+        "ref": "p. 163"
+      },
+      {
+        "text": "Turnkey mobile batching plant for the ready-mix business.",
+        "amount": null,
+        "ref": "p. 56"
+      },
+      {
+        "text": "Manufactured sand production started at the Mihintale aggregate plant.",
+        "amount": null,
+        "ref": "p. 59"
+      }
+    ],
+    "track": [
+      {
+        "promise": "Expansion and vessel to cut costs and improve efficiency over the long term (2025/26 report).",
+        "result": "Not yet in the margins: gross margin 29.6% in April–September 2026 against 31.8%, and 28.0% in the September quarter.",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, p. 3"
+      },
+      {
+        "promise": "Capacity ready to capture demand growth.",
+        "result": "Revenue up 27% to Rs 36.78bn in April–September 2026.",
+        "status": "on-track",
+        "ref": "Interim to 30 Sep 2026, p. 3"
+      },
+      {
+        "promise": "Higher finance costs only in the short term.",
+        "result": "Finance costs still rising: Rs 0.87bn in the half, up 25%; borrowings Rs 16.87bn against Rs 16.63bn in March.",
+        "status": "too-early",
+        "ref": "Interim to 30 Sep 2026, pp. 3, 5"
+      },
+      {
+        "promise": "Dividend of Rs 2.50 for 2025/26.",
+        "result": "Paid on 4 Aug 2026.",
+        "status": "done",
+        "ref": "Interim to 30 Sep 2026, p. 8"
+      }
+    ]
+  },
+  "shareholders": {
+    "asOf": "2026-09-30",
+    "compareTo": "2026-06-30",
+    "source": "Interim to 30 Sep 2026, pp. 9–11 (voting top 20, directors, public holding); Interim to 30 Jun 2026, p. 10 for the comparison. Voting shares only; the non-voting top 20 is on p. 10 of each report (EPF 10.0%, unchanged in the quarter).",
+    "takeaway": "The Gnanam family companies (St. Anthony's Consolidated, South Asian Investment, Capital City Holdings, St. Anthony's Hardware) hold 50.8% of the voting shares and Mitsubishi UBE's Singapore arm 10.0%. The big move this year was the Employees Provident Fund, which raised its voting stake from 7.8% in March to 10.0% by June 2026; the September quarter was quiet.",
+    "groups": [
+      {
+        "name": "Gnanam family companies (St. Anthony's group)",
+        "pct": 50.84
+      },
+      {
+        "name": "UBE Singapore Holdings (Mitsubishi UBE Cement)",
+        "pct": 10.0
+      },
+      {
+        "name": "Public",
+        "pct": 39.16
+      }
+    ],
+    "publicFloat": 39.16,
+    "publicHolders": 9558,
+    "publicHoldersPrev": null,
+    "directors": [
+      {
+        "name": "St Anthony's Consolidated (Private) Limited",
+        "shares": 80857889
+      },
+      {
+        "name": "Mr S R Gnanam (Managing Director/CEO)",
+        "shares": 15
+      },
+      {
+        "name": "Mr W C Fernando",
+        "shares": 4394
+      },
+      {
+        "name": "UBE Singapore Holdings Pte. Ltd",
+        "shares": 29403000
+      }
+    ],
+    "top": [
+      {
+        "name": "ST. ANTHONYS CONSOLIDATED (PVT) LTD",
+        "shares": 80857889,
+        "pct": 27.5,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "SOUTH ASIAN INVESTMENT (PVT) LTD",
+        "shares": 59202831,
+        "pct": 20.1,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "UBE SINGAPORE HOLDINGS PTE. LTD",
+        "shares": 29403000,
+        "pct": 10.0,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "EMPLOYEES PROVIDENT FUND",
+        "shares": 29403000,
+        "pct": 10.0,
+        "change": 0,
+        "new": false,
+        "note": "Was 22,879,611 at 31 Mar 2026 (Annual Report 2025/26, p. 187): bought 6.52mn voting shares in April–June 2026"
+      },
+      {
+        "name": "MARINA BAY HOLDING AND INVESTMENT PTE.LTD.",
+        "shares": 17641800,
+        "pct": 6.0,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "CAPITAL CITY HOLDINGS (PRIVATE) LIMITED",
+        "shares": 8821303,
+        "pct": 3.0,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "EMPLOYEES TRUST FUND BOARD",
+        "shares": 4213426,
+        "pct": 1.4,
+        "change": 590968,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "J.B. COCOSHELL (PVT) LTD",
+        "shares": 2294964,
+        "pct": 0.8,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. L.J.M.A. JAYASUNDARA",
+        "shares": 2021445,
+        "pct": 0.7,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "COMMERCIAL BANK OF CEYLON PLC/P.SUBASINGHE",
+        "shares": 1928565,
+        "pct": 0.7,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MISS M.P. RADHAKRISHNAN",
+        "shares": 1862199,
+        "pct": 0.6,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MISS A. RADHAKRISHNAN",
+        "shares": 1859699,
+        "pct": 0.6,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "MR. K.N.J. BALENDRA",
+        "shares": 1418824,
+        "pct": 0.5,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC - CAPITAL ALLIANCE QUANTI",
+        "shares": 1155805,
+        "pct": 0.4,
+        "change": -5051,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "HATTON NATIONAL BANK PLC/SRI DHAMAN RAJENDRAM ARUD",
+        "shares": 1065645,
+        "pct": 0.4,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "PEOPLES LEASING & FINANCE PLC/MR.D.M.P.DISANAYAKE",
+        "shares": 1024525,
+        "pct": 0.3,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "DEUTSCHE BANK AG-NATIONAL EQUITY FUND",
+        "shares": 1000000,
+        "pct": 0.3,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "DEUTSCHE BANK AG AS TRUSTEE TO ASSETLINE INCOME PL",
+        "shares": 1000000,
+        "pct": 0.3,
+        "change": 0,
+        "new": false,
+        "note": null
+      },
+      {
+        "name": "RENUKA PROPERTIES LIMITED",
+        "shares": 796787,
+        "pct": 0.3,
+        "change": null,
+        "new": true,
+        "note": null
+      },
+      {
+        "name": "MR. N.A. MADANAYAKE",
+        "shares": 755000,
+        "pct": 0.3,
+        "change": null,
+        "new": true,
+        "note": null
+      }
+    ],
+    "gone": [
+      {
+        "name": "DFCC BANK PLC A/C NO.02",
+        "prevShares": 1321775
+      },
+      {
+        "name": "AMANA BANK PLC/HI-LINE TRADING PVT LTD",
+        "prevShares": 1000000
+      }
+    ],
+    "note": "Group % = 149,481,844 voting shares (p. 11) ÷ 294,030,000. Mr W C Fernando also holds 78,408 non-voting shares. Public holders 9,558 (6,210 a year earlier)."
+  },
+  "fullText": "**Tokyo Cement Company (Lanka) PLC: voting TKYO.N0000 and non-voting TKYO.X0000**\nAnalysis of 28 November 2026, rebuilt from the 2025/26 annual report and the interim reports to June and September 2026. Prices: Rs 81.70 voting, Rs 67.40 non-voting (CSE closes, 27 November 2026).\n\n**Summary**\nTokyo Cement is Sri Lanka's largest cement maker (4 Mn MT a year at Trincomalee, about a third of the country's 10.7 Mn MT of capacity), with ready-mix concrete, aggregates, dry mortar and its own biomass and solar power. Demand is recovering fast: the company sold 28% more cement in 2025/26 and revenue rose 27% in April–September 2026. Profit has gone the other way. The industry has held prices while clinker, freight, fuel and the rupee moved against it, and the expansion and the new coastal vessel added depreciation and interest. Profit attributable to owners was Rs 2.57bn in 2025/26 (Rs 3.45bn) and Rs 1.50bn in the half (Rs 1.67bn).\n\nFair value is **Rs 19.35** a share (buy below **Rs 16.45**, strong buy below **Rs 14.51**), the same for both classes. That is far below both prices, and below the first analysis (Rs 45.00), mainly because the house required return is now built from a beta: 1.19 for a cement maker carrying Rs 15.6bn of net debt gives a cost of equity of 20.5% (15.5% was assumed before). At that rate a company earning 8–11% on its equity is worth well under its book value of Rs 72.51. The voting price implies a long-run ROE of about 22%, the non-voting price about 19%; the company reached that in two of the last six years.\n\nBusiness tests: 1 of 4 (debt only). Category 3, avoid for now (unchanged).\n\n**Latest results**\n- September quarter: revenue Rs 20.94bn (+28%), gross margin 28.0% (32.3%), profit attributable Rs 0.866bn (Rs 1.000bn), EPS Rs 1.96 (Rs 2.27).\n- Six months: revenue Rs 36.78bn (+27%), profit from operations Rs 2.69bn (Rs 2.77bn), finance costs Rs 0.87bn (+25%), EPS Rs 3.41 (Rs 3.79).\n- Inventories Rs 10.94bn at September (Rs 8.87bn in March, Rs 5.65bn a year before that). Operating cash after interest and tax Rs 1.27bn in the half.\n- Capex paid Rs 0.49bn in the half (Rs 3.82bn a year earlier). Borrowings and overdrafts Rs 16.87bn; net debt including leases Rs 15.57bn, 0.49× equity.\n\n**Valuation (Rs a share: bear / base / bull → weighted)**\n| Method | Bear | Base | Bull | Weighted |\n|---|---|---|---|---|\n| Whole-company DCF | −2.94 | 1.67 | 39.88 | 7.93 |\n| P/E | 14.44 | 21.82 | 29.89 | 21.22 |\n| Justified P/B | 16.11 | 28.07 | 44.62 | 27.79 |\n| Residual income | 14.35 | 21.11 | 31.63 | 21.19 |\n| Dividend model | 11.93 | 18.99 | 27.67 | 18.61 |\n| Average | 10.78 | 18.33 | 34.74 | **19.35** |\n\nWeights bear 30 / base 50 / bull 20. NAV Rs 72.51 is shown for reference, not averaged.\n\n**Assumptions**\n- Required return: risk-free 8.24% (12.24% bond less 4.0% default spread) + beta 1.19 × (4.2% + 6.08%) = 20.5%; bear 22.0%, bull 19.0%. WACC 17.1% / 16.0% / 15.0% (debt 31% of value, cost of debt 8.97% before tax).\n- DCF: after-tax operating profit Rs 3.27bn (twelve months to September, taxed at 30.1%; bear 10% lower), plus depreciation, less maintenance capex Rs 2.29bn (bull Rs 1.44bn); growth 2% / 6% / 9% for five years, then 4% / 5% / 6%; return on new capital 8% / 10% / 13%. Net debt Rs 15.57bn is taken off.\n- EPS to March 2027: Rs 5.20 / 6.20 / 6.80. The run-rate is Rs 7.84 (September quarter × 4), but July–September is the seasonal peak: last year it gave Rs 2.27 of Rs 5.83, and the cyclone-hit second half only Rs 2.04.\n- Long-run ROE 8% / 11% / 14% (2023/24–2025/26: 8.8%, 11.5%, 8.1%; six-year average about 12%). Long-term growth 4% / 5% / 6%, below the bond yield and WACC.\n- Dividend: Rs 2.00 / 2.50 / 2.75 next year, growing 2% / 5% / 8%.\n- Growth check: supported growth 15.1% (2025/26 reinvestment 186% of after-tax operating profit × 8.1% return on capital). That figure is swollen by the vessel and Rs 3.66bn of extra working capital, but every scenario is below it.\n- Capex: 2025/26 capex booked Rs 4.81bn was mostly growth (Rs 3.37bn of vessel and dry docking), judged on its return: so far the vessel hasn't lifted margins. Depreciation (Rs 2.29bn) is used as maintenance. Approved but uncommitted capex Rs 1.22bn.\n\n**What would change the view**\nHigher: cement price rises that lift the gross margin above 32% and ROE towards 15%; stock run down and debt repaid; the plant filling up; a lower bond yield or beta.\nLower: price competition from importers and the other local makers; a weaker rupee or higher freight; refinancing Rs 12.6bn of short-term loans at higher rates; dividends kept up with borrowing.\n\n**Buy plan (500 shares)**\n200 at up to Rs 19.35, 150 at up to Rs 16.45, 150 at up to Rs 14.51: average Rs 17.03, about Rs 8,514. Not realistic now: the lowest prices of the past 18 months were Rs 68.00 (voting) and Rs 58.00 (non-voting). If the view changes, the non-voting share gives the same profit and dividends for about 18% less.\n\n**Warnings**\nDividends are more than cash after maintenance capex, so the dividend is at risk; the expansion was largely paid for with borrowing (net debt up Rs 4.4bn in 2025/26).\n\n**Who owns it**\nThe Gnanam family companies hold 50.8% of the voting shares and Mitsubishi UBE Cement's Singapore arm 10.0%. The Employees Provident Fund raised its voting stake to 10.0% by June 2026 (7.8% in March) and also holds 10.0% of the non-voting shares.\n\nFigures from the CSE copies of the reports. This is analysis, not personal financial advice."
 }
