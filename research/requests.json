@@ -1310,6 +1310,23 @@
       "status": "done",
       "result": "New: fair value Rs 35.47, buy Rs 30.15, strong buy Rs 26.60; category 3 (avoid for now, 0/4 tests); price Rs 153.25",
       "finishedAt": "2026-11-27T22:01:03+00:00"
+    },
+    {
+      "id": "20261128080909-TKYO",
+      "ticker": "TKYO.N0000",
+      "name": "Tokyo Cement Company (Lanka) PLC",
+      "mode": "redo-full",
+      "command": "/redo TKYO.N0000 full",
+      "note": null,
+      "files": [
+        "reports/TKYO.N0000/2026-07-08_annual_Annual-Report-as-at-31st-March-2026.pdf",
+        "reports/TKYO.N0000/2026-08-05_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-June.pdf",
+        "reports/TKYO.N0000/2026-11-05_quarterly_Interim-Financial-Statements-for-the-Quarter-ended-30th-Sept.pdf"
+      ],
+      "problems": [],
+      "messageId": "475",
+      "requestedAt": "2026-11-28T08:09:09+00:00",
+      "status": "pending"
     }
   ]
 }
