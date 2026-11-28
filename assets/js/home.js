@@ -89,24 +89,7 @@
     return App.category(c.quality, c.valuation, c.shareClasses.map((sc) => App.resolvePrice(sc.symbol, sc.symbol === c.ticker ? c.price : null, prices)));
   }
 
-  /* Sector groups: each analysis names its sector in its own words, so these rules put it in
-     one of a dozen broad groups (first match wins; the order matters). */
-  const SECTORS = [
-    ["Diversified holdings", "🏢", /^diversified(?!\s+financials)/i],
-    ["Banks", "🏦", /^bank/i],
-    ["Insurance", "🛡️", /^insurance|insurtech/i],
-    ["Food, beverage and tobacco", "🍽️", /food|beverage|tobacco|poultry|plantation|dairy/i],
-    ["Retail and consumer", "🛍️", /retail/i],
-    ["Finance and leasing", "💳", /financ|leasing|primary dealer/i],
-    ["Telecom and tech", "📡", /telecom|ride-hailing|software|\bapp\b|technology/i],
-    ["Power and energy", "⚡", /power|energy|\blpg\b|petroleum|oil and gas/i],
-    ["Hotels and leisure", "🏨", /hotel|resort|leisure|travel/i],
-    ["Health care", "🏥", /hospital|health|pharma/i],
-    ["Construction and materials", "🏗️", /cement|tile|grout|alumin|cable|conductor|pvc|packaging|coating|construction|carbon|building|steel|glass|chemical/i],
-    ["Real estate", "🏘️", /real estate|property|land/i],
-    ["Consumer goods", "🧴", /consumer|household/i],
-  ];
-  const sectorOf = (c) => { const t = String(c.sector || ""); const hit = SECTORS.find(([, , re]) => re.test(t)); return hit ? hit : ["Other", "🔹", null]; };
+  const sectorOf = App.sectorOf;
   let groupBy = "category";
   try { if (localStorage.getItem("groupBy") === "sector") groupBy = "sector"; } catch (e) { /* storage unavailable */ }
 

@@ -132,6 +132,7 @@ If you have Python installed: `python scripts/validate.py path/to/FILE.json`
 | `index.html`, `company.html`, `assets/` | The website (plain HTML, CSS and JavaScript, with comments). |
 | `scripts/` | The data check, the site build and the CSE fetchers (Python, no extra packages). |
 | `.github/workflows/site.yml` | The automatic schedule: daily prices, the after-close alert check, building the site. |
+| `.github/workflows/portfolio-command.yml` | `/buy`, `/sell`, `/div`, `/holdings`, `/trades`, `/undo` from Telegram: updates the encrypted portfolio (`portfolio.enc.json`), shown on the Portfolio page after unlocking. Setup: `listener/README.md`. |
 | `.github/workflows/price-check.yml` | Backup: three times each weekday afternoon, reruns the site build if today's prices are missing. Skips weekends and market holidays (`research/market-holidays.json`). |
 | `.github/workflows/alerts.yml` | The 30-minute alert checks during trading. |
 | `.github/workflows/telegram-test.yml` | The "Test Telegram" button. |

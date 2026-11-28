@@ -206,6 +206,26 @@ App.logoFit = function (img) {
   return "keep";
 };
 
+/* ---------- Sector groups ----------
+   Each analysis names its sector in its own words; these rules put it in one of a dozen
+   broad groups (first match wins; the order matters). Used by the home page and the portfolio. */
+App.SECTORS = [
+  ["Diversified holdings", "🏢", /^diversified(?!\s+financials)/i],
+  ["Banks", "🏦", /^bank/i],
+  ["Insurance", "🛡️", /^insurance|insurtech/i],
+  ["Food, beverage and tobacco", "🍽️", /food|beverage|tobacco|poultry|plantation|dairy/i],
+  ["Retail and consumer", "🛍️", /retail/i],
+  ["Finance and leasing", "💳", /financ|leasing|primary dealer/i],
+  ["Telecom and tech", "📡", /telecom|ride-hailing|software|\bapp\b|technology/i],
+  ["Power and energy", "⚡", /power|energy|\blpg\b|petroleum|oil and gas/i],
+  ["Hotels and leisure", "🏨", /hotel|resort|leisure|travel/i],
+  ["Health care", "🏥", /hospital|health|pharma/i],
+  ["Construction and materials", "🏗️", /cement|tile|grout|alumin|cable|conductor|pvc|packaging|coating|construction|carbon|building|steel|glass|chemical/i],
+  ["Real estate", "🏘️", /real estate|property|land/i],
+  ["Consumer goods", "🧴", /consumer|household/i],
+];
+App.sectorOf = (c) => { const t = String(c.sector || ""); const hit = App.SECTORS.find(([, , re]) => re.test(t)); return hit || ["Other", "🔹", null]; };
+
 /* ---------- Theme ---------- */
 App.initTheme = function () {
   let saved = null;

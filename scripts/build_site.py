@@ -18,7 +18,7 @@ import alerts
 import cse
 
 SITE = ROOT / "_site"
-STATIC = ["index.html", "company.html", "broker.html", "assets"]
+STATIC = ["index.html", "company.html", "broker.html", "portfolio.html", "assets"]
 
 
 def version_assets():
@@ -312,6 +312,13 @@ def main():
     write_json(SITE / "data" / "index.json", {"companies": manifest})
     write_json(SITE / "data" / "prices.json", read_json(GENERATED / "prices.json", {}))
     write_json(SITE / "data" / "share-names.json", read_json(GENERATED / "share-names.json", {}))
+    write_json(SITE / "data" / "aspi.json", read_json(GENERATED / "aspi.json", {}))
+    write_json(SITE / "data" / "year-end.json", read_json(GENERATED / "year-end.json", {}))
+    # the encrypted portfolio: the page unlocks it in the browser with the owner's passphrase
+    if (ROOT / "portfolio.enc.json").exists():
+        shutil.copy(ROOT / "portfolio.enc.json", SITE / "data" / "portfolio.enc.json")
+    # the portfolio page compares with the 10-year bond rate
+    write_json(SITE / "data" / "bond.json", (read_json(ROOT / "research" / "market-inputs.json", {}) or {}).get("bondYield10y", {}))
     if (GENERATED / "logos").exists():
         shutil.copytree(GENERATED / "logos", SITE / "generated" / "logos")
     for item in STATIC:

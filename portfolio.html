@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My portfolio · CSE share analyses</title>
+  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline pathLength="1" points="3,17 9,11 13,14 21,6" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><polyline pathLength="1" points="15,6 21,6 21,12" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>CSE share analyses <span>Colombo Stock Exchange</span></a>
+    <nav class="topnav"><a href="./"><span class="nav-ic" aria-hidden="true">🏢</span>Companies</a><a href="broker.html"><span class="nav-ic" aria-hidden="true">🗞️</span>Broker updates</a><a href="portfolio.html" class="active"><span class="nav-ic" aria-hidden="true">💼</span>Portfolio</a></nav>
+    <button class="theme-toggle" type="button">Dark mode</button>
+  </header>
+
+  <main class="page">
+    <div class="home-head pf-banner">
+      <div>
+        <h1><span class="pf-h-ic" aria-hidden="true">💼</span>My portfolio</h1>
+        <p id="pf-sub">Loading…</p>
+      </div>
+    </div>
+    <div id="pf"></div>
+  </main>
+
+  <footer class="footer">
+    Personal analysis, not financial advice. Prices are daily closes from the Colombo Stock Exchange website and may be delayed or missing.
+  </footer>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
+</html>

@@ -48,6 +48,7 @@ const REPLY_ACK = /^(all|please|pls|ok(ay)?|yes|go(\s+ahead)?|do\s*it|k|full)?$/
 const REPLY_PREFIX = "⏳"; // the collector skips posts starting with this
 const ALERT = /^\/(alert|unalert|alerts)(?:@\w+)?(?:\s|$)/i;
 const COMMANDS = /^\/commands?(?:@\w+)?\s*$/i;
+const PORTFOLIO = /^\/(buy|sell|div|holdings|trades|undo)(?:@\w+)?(?:\s|$)/i;
 
 // The reply to /command: every command the channel understands. Keep it in step with
 // listener/README.md when a command is added or changed.
@@ -75,6 +76,14 @@ const COMMAND_LIST = [
   "/unalert DIAL: remove Dialog's alerts (/unalert DIAL below: just that one)",
   "/alerts: list your alerts with today's prices",
   "Buy and strong-buy prices of watch-list companies alert automatically.",
+  "",
+  "<b>Portfolio</b> (no Claude; kept encrypted)",
+  "/buy COCR 200 95.20: bought 200 at Rs 95.20 today (fees of 1.12% added)",
+  "/buy COCR 200 95.20 11/27: on another day (also 27, yesterday or 2026-11-27)",
+  "/sell DIAL 100 46: a sale (add fees 52 to give your contract note's fees)",
+  "/holdings: what you hold, its value and return",
+  "/trades: your trades and dividends, numbered; /undo removes the last (or /undo 12)",
+  "Dividends are read from the CSE's announcements by themselves (/div COMB 6.50 2026-04-16 only for a missing one)",
   "",
   "/command: this list",
 ].join("\n");
@@ -116,6 +125,10 @@ export default {
         chat_id: post.chat.id, text: COMMAND_LIST, parse_mode: "HTML",
         reply_to_message_id: post.message_id, disable_notification: true,
       }));
+      return new Response("ok");
+    }
+    if (PORTFOLIO.test(text)) {
+      ctx.waitUntil(portfolio(env, post, text));
       return new Response("ok");
     }
     if (ALERT.test(text)) {
@@ -230,6 +243,24 @@ async function research(env, post, text) {
 }
 
 // Starts a GitHub workflow that takes the command text; tells the channel if it can't.
+// Portfolio commands are sealed (AES-256-GCM with PORTFOLIO_LINK_KEY, the same random key as the
+// GitHub secret) before they're passed to GitHub, because a workflow's inputs show in its public logs.
+async function portfolio(env, post, text) {
+  if (!env.PORTFOLIO_LINK_KEY) {
+    await telegram(env, "sendMessage", {
+      chat_id: post.chat.id, reply_to_message_id: post.message_id, disable_notification: true,
+      text: "⚠️ The portfolio isn't set up yet: the worker needs the PORTFOLIO_LINK_KEY secret (see listener/README.md). Nothing was recorded.",
+    });
+    return;
+  }
+  const raw = Uint8Array.from(atob(env.PORTFOLIO_LINK_KEY), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["encrypt"]);
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv }, key, new TextEncoder().encode(text.slice(0, 400))));
+  const b64 = (u) => btoa(String.fromCharCode(...u));
+  await dispatch(env, post, "portfolio-command.yml", `enc:${b64(iv)}:${b64(ct)}`, "portfolio");
+}
+
 async function dispatch(env, post, workflow, text, what) {
   const repo = env.REPO || "DulanjayaChathura/cse-analyses";
   let problem = null;

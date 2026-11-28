@@ -262,6 +262,12 @@
 
     const bar = el.querySelector(".wi-bar"), methodsEl = el.querySelector(".wi-methods"), fieldsEl = el.querySelector(".wi-fields");
     const sheet = el.querySelector(".wi-sheet"), sheetBody = el.querySelector(".wi-sheet-body");
+    // The panel sits inside a section that the scroll-in animation turns into its own layer, which
+    // would pin this "fixed" sheet to the section instead of the screen: move it to the page itself.
+    document.querySelectorAll("body > .wi-sheet").forEach((old) => old.remove());
+    document.body.appendChild(sheet);
+    sheet.addEventListener("click", (e) => { if (e.target === sheet || e.target.closest(".wi-sheet-x")) closeInfo(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !sheet.hidden) closeInfo(); });
 
     function renderFields() {
       const c = state.tab;

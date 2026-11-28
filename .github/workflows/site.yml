@@ -60,11 +60,27 @@ jobs:
             python scripts/fetch_prices.py
           fi
 
+      - name: Keep year-end prices (portfolio years start on 1 January)
+        run: python scripts/year_end.py
+
+      - name: Fetch ASPI history (portfolio vs market)
+        if: github.event_name != 'schedule' || steps.day.outputs.open == 'true'
+        run: python scripts/fetch_aspi.py
+
+      - name: New dividends for the portfolio (from the CSE's announcements)
+        if: github.event_name != 'push'
+        env:
+          PORTFOLIO_KEY: ${{ secrets.PORTFOLIO_KEY }}
+        run: |
+          pip install --quiet cryptography || exit 0
+          python scripts/portfolio_dividends.py
+
       - name: Save fetched prices and logos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated
+          [ -f portfolio.enc.json ] && git add portfolio.enc.json
           if ! git diff --cached --quiet; then
             git commit -m "Update CSE prices and company details"
             git pull --rebase --autostash || true

@@ -1,0 +1,60 @@
+# Handles /buy, /sell, /div, /holdings, /trades and /undo posted in the Telegram channel.
+# The listener (listener/worker.js) starts this workflow with the command text.
+# scripts/portfolio_command.py unlocks portfolio.enc.json with the PORTFOLIO_KEY secret, changes it,
+# locks it again and replies in the channel; no Claude involved. The logs show nothing about the
+# holdings (this repository is public): the reply goes only to the channel.
+name: Portfolio command
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Command, e.g. /buy COCR 200 95.20 or /holdings"
+        required: true
+      message_id:
+        description: "Telegram message id of the command (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: write     # start the site build, so the portfolio page shows the change
+
+concurrency:
+  group: portfolio-command   # one at a time, so two quick commands don't overwrite each other
+  cancel-in-progress: false
+
+jobs:
+  command:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install the encryption library
+        run: pip install --quiet cryptography
+      - name: Run the command and reply
+        id: run
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PORTFOLIO_KEY: ${{ secrets.PORTFOLIO_KEY }}
+          PORTFOLIO_LINK_KEY: ${{ secrets.PORTFOLIO_LINK_KEY }}
+          COMMAND_TEXT: ${{ inputs.text }}   # sealed by the listener: the logs only show scrambled text
+        run: python scripts/portfolio_command.py "$COMMAND_TEXT" "${{ inputs.message_id }}"
+      - name: Save the encrypted portfolio
+        if: steps.run.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add portfolio.enc.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Portfolio updated"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
+      - name: Rebuild the site
+        if: steps.run.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run "Build and publish site" --ref main --repo "${{ github.repository }}"

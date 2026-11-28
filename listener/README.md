@@ -116,3 +116,25 @@ The worker also handles these channel commands (no Claude involved):
 | `/command` (or `/commands`) | The worker replies straight away with every command the channel understands (`COMMAND_LIST` in `worker.js`; keep it up to date when a command is added). |
 
 The price checks themselves are unchanged: `alerts.yml` every 30 minutes during trading and `site.yml` after the close read `alerts.json`. After changing `worker.js`, paste it into the Cloudflare worker and deploy again.
+
+## Portfolio (encrypted)
+The worker also handles the portfolio commands (no Claude involved). Holdings are kept in `portfolio.enc.json`, encrypted (AES-256-GCM, key from your passphrase by PBKDF2-SHA256); the site's **Portfolio** page unlocks it in your browser with the same passphrase.
+
+| Command | What happens |
+|---|---|
+| `/buy COCR 200 95.20 [date] [fees 213.25]` | Records a purchase. Fees default to the CSE's 1.12%. Dates: `2026-11-27`, `11/27`, `27/11`, `27`, `yesterday`; none means today. |
+| `/sell DIAL 100 46 [date] [fees 52]` | Records a sale and the gain or loss against your average price. |
+| `/div COMB 6.50 [xd date] [pay date]` | Only for a dividend missing from the CSE's announcements: dividends are read from them by themselves (held at the close before the XD date = yours; after 15% tax). |
+| `/holdings` | Replies with what you hold, today's value and the return. |
+| `/trades [CODE]` | Lists trades and dividends, numbered. |
+| `/undo [number]` | Removes the last entry, or a numbered one. |
+
+The worker seals each command (AES-256-GCM with `PORTFOLIO_LINK_KEY`) before passing it to the "Portfolio command" workflow (`portfolio-command.yml`, `scripts/portfolio_command.py`), because a workflow's inputs show in its public logs. The reply goes only to the channel. Keep the channel private: the command messages themselves stay there.
+
+One-time setup:
+1. **Choose a passphrase** (long, e.g. four random words). Nobody can recover it: if it's lost, the portfolio has to be entered again.
+2. **Make a link key**: a random 32-byte key in base64. In a terminal: `openssl rand -base64 32` (or in any browser console: `btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32))))`).
+3. GitHub → the `cse-analyses` repository → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**, twice: `PORTFOLIO_KEY` (the passphrase) and `PORTFOLIO_LINK_KEY` (the link key).
+4. Cloudflare → the `cse-summary` worker → **Settings** → **Variables and secrets** → add a **Secret** `PORTFOLIO_LINK_KEY` with the same link key.
+5. **Edit code**, paste the new `worker.js`, **Deploy**.
+6. Post `/buy …` for each holding (or `/holdings` to check). Open the site's Portfolio page and unlock it with the passphrase.
